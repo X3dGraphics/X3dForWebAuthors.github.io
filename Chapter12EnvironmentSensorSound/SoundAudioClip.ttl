@@ -1,0 +1,343 @@
+@prefix :        <https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter12EnvironmentSensorSound/SoundAudioClip.ttl#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema:  <http://schema.org/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix x3d:     <https://www.web3d.org/specifications/x3d-4.0.xsd#> .
+@prefix x3do:    <https://www.web3d.org/specifications/X3dOntology4.0#> .
+
+:X3D a owl:NamedIndividual, x3do:X3D ;
+  x3do:hasHead :head ;
+  x3do:hasScene :Scene ;
+  x3do:profile 'Immersive' ;
+  x3do:version '3.3' ;
+  x3do:noNamespaceSchemaLocation 'https://www.web3d.org/specifications/x3d-3.3.xsd' .
+:head a owl:NamedIndividual, x3do:head ;
+  x3do:hasParent :X3D ;
+  x3do:hasMeta :meta_1_1, :meta_1_2, :meta_1_3, :meta_1_4, :meta_1_5, :meta_1_6, :meta_1_7, :meta_1_8, :meta_1_9, :meta_1_10, :meta_1_11, :meta_1_12 .
+:meta_1_1 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'SoundAudioClip.x3d' ;
+  x3do:name 'title' .
+:meta_1_2 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'An example of the Sound and AudioClip node showing the effect of the various volume regions' ;
+  x3do:name 'description' .
+:meta_1_3 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '1 May 2006' ;
+  x3do:name 'created' .
+:meta_1_4 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '13 May 2020' ;
+  x3do:name 'modified' .
+:meta_1_5 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://X3dGraphics.com' ;
+  x3do:name 'reference' .
+:meta_1_6 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://www.web3d.org/x3d/content/examples/X3dResources.html' ;
+  x3do:name 'reference' .
+:meta_1_7 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Don Brutzman' ;
+  x3do:name 'creator' .
+:meta_1_8 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Copyright 2006, Daly Realism and Don Brutzman' ;
+  x3do:name 'rights' .
+:meta_1_9 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'X3D book, X3D graphics, X3D-Edit, http://www.x3dGraphics.com' ;
+  x3do:name 'subject' .
+:meta_1_10 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter12EnvironmentSensorSound/SoundAudioClip.x3d' ;
+  x3do:name 'identifier' .
+:meta_1_11 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'X3D-Edit 3.3, https://savage.nps.edu/X3D-Edit' ;
+  x3do:name 'generator' .
+:meta_1_12 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '../license.html' ;
+  x3do:name 'license' .
+:meta dcterms:title "SoundAudioClip.x3d" .
+:meta dcterms:description "An example of the Sound and AudioClip node showing the effect of the various volume regions" .
+:meta dcterms:created "1 May 2006" .
+:meta dcterms:modified "13 May 2020" .
+:meta dcterms:reference "https://X3dGraphics.com" .
+:meta dcterms:reference "https://www.web3d.org/x3d/content/examples/X3dResources.html" .
+:meta dcterms:creator "Don Brutzman" .
+:meta dcterms:rights "Copyright 2006, Daly Realism and Don Brutzman" .
+:meta dcterms:subject "X3D book, X3D graphics, X3D-Edit, http://www.x3dGraphics.com" .
+:meta dcterms:identifier "https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter12EnvironmentSensorSound/SoundAudioClip.x3d" .
+:meta dcterms:generator "X3D-Edit 3.3, https://savage.nps.edu/X3D-Edit" .
+:meta dcterms:license "../license.html" .
+:Scene a owl:NamedIndividual, x3do:Scene ;
+  x3do:hasParent :X3D ;
+  x3do:hasChildren :WorldInfo_2_1, :Viewpoint_2_2, :Viewpoint_2_3, :Viewpoint_2_4, :Viewpoint_2_5, :Viewpoint_2_6, :Viewpoint_2_7, :NavigationInfo_2_8, :Audible, :minShapes, :maxShapes, :ProtoInstance_2_13 ;
+  x3do:hasExternProtoDeclare :ExternProtoDeclare_2_12 .
+:WorldInfo_2_1 a owl:NamedIndividual, x3do:WorldInfo ;
+  x3do:hasParent :Scene ;
+  x3do:title 'SoundAudioClip.x3d' .
+:Viewpoint_2_2 a owl:NamedIndividual, x3do:Viewpoint ;
+  x3do:hasParent :Scene ;
+  x3do:description 'Sound spheroid approximating ellipsoid volume' ;
+  x3do:orientation ( 1 0 0 -0.2 ) ;
+  x3do:position ( 0 40 200 ) .
+:Viewpoint_2_3 a owl:NamedIndividual, x3do:Viewpoint ;
+  x3do:hasParent :Scene ;
+  x3do:description '100m distant' ;
+  x3do:orientation ( 1 0 0 -0.2 ) ;
+  x3do:position ( 0 20 100 ) .
+:Viewpoint_2_4 a owl:NamedIndividual, x3do:Viewpoint ;
+  x3do:hasParent :Scene ;
+  x3do:description '50m distant' ;
+  x3do:orientation ( 1 0 0 -0.2 ) ;
+  x3do:position ( 0 10 50 ) .
+:Viewpoint_2_5 a owl:NamedIndividual, x3do:Viewpoint ;
+  x3do:hasParent :Scene ;
+  x3do:description '25m distant' ;
+  x3do:orientation ( 1 0 0 -0.2 ) ;
+  x3do:position ( 0 5 25 ) .
+:Viewpoint_2_6 a owl:NamedIndividual, x3do:Viewpoint ;
+  x3do:hasParent :Scene ;
+  x3do:description '10m distant' ;
+  x3do:orientation ( 1 0 0 -0.2 ) ;
+  x3do:position ( 0 2 10 ) .
+:Viewpoint_2_7 a owl:NamedIndividual, x3do:Viewpoint ;
+  x3do:hasParent :Scene ;
+  x3do:description 'center' ;
+  x3do:orientation ( 0 1 0 -1.57 ) ;
+  x3do:position ( 0 2 0 ) .
+:NavigationInfo_2_8 a owl:NamedIndividual, x3do:NavigationInfo ;
+  x3do:hasParent :Scene ;
+  x3do:speed 10 ;
+  x3do:type '"WALK" "ANY"' .
+:Audible a owl:NamedIndividual, x3do:Sound ;
+  x3do:hasParent :Scene ;
+  x3do:hasSource :WaterSounds ;
+  x3do:DEF 'Audible' ;
+  x3do:location ( 0 1.6 0 ) ;
+  x3do:maxBack 20 ;
+  x3do:maxFront 100 ;
+  x3do:minBack 10 ;
+  x3do:minFront 10 ;
+  x3do:priority 1 .
+:WaterSounds a owl:NamedIndividual, x3do:AudioClip ;
+  x3do:hasParent :Audible ;
+  x3do:DEF 'WaterSounds' ;
+  x3do:description 'Running Water' ;
+  x3do:loop true ;
+  x3do:url '"aqua.wav" "https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter12EnvironmentSensorSound/aqua.wav"' .
+:minShapes a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :Shape_2_10_1, :Collision_2_10_2 ;
+  x3do:DEF 'minShapes' ;
+  x3do:scale ( 10 10 10 ) .
+:Shape_2_10_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :minShapes ;
+  x3do:hasGeometry :Cylinder_2_10_1_1 ;
+  x3do:hasAppearance :Appearance_2_10_1_2 .
+:Cylinder_2_10_1_1 a owl:NamedIndividual, x3do:Cylinder ;
+  x3do:hasParent :Shape_2_10_1 ;
+  x3do:height 0.05 .
+:Appearance_2_10_1_2 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_10_1 ;
+  x3do:hasMaterial :MinFootprintMaterial .
+:MinFootprintMaterial a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_10_1_2 ;
+  x3do:DEF 'MinFootprintMaterial' ;
+  x3do:diffuseColor ( 0.8 0 0 ) .
+:Collision_2_10_2 a owl:NamedIndividual, x3do:Collision ;
+  x3do:hasParent :minShapes ;
+  x3do:hasChildren :Shape_2_10_2_1 ;
+  x3do:enabled false .
+:Shape_2_10_2_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Collision_2_10_2 ;
+  x3do:hasGeometry :Sphere_2_10_2_1_1 ;
+  x3do:hasAppearance :Appearance_2_10_2_1_2 .
+:Sphere_2_10_2_1_1 a owl:NamedIndividual, x3do:Sphere ;
+  x3do:hasParent :Shape_2_10_2_1 .
+:Appearance_2_10_2_1_2 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_10_2_1 ;
+  x3do:hasMaterial :MinSpheroidMaterial .
+:MinSpheroidMaterial a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_10_2_1_2 ;
+  x3do:DEF 'MinSpheroidMaterial' ;
+  x3do:diffuseColor ( 0.8 0 0 ) ;
+  x3do:transparency 0.5 .
+:maxShapes a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :Shape_2_11_1, :Collision_2_11_2 ;
+  x3do:DEF 'maxShapes' ;
+  x3do:scale ( 60 45 45 ) ;
+  x3do:translation ( 40 0 0 ) .
+:Shape_2_11_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :maxShapes ;
+  x3do:hasGeometry :Cylinder_2_11_1_1 ;
+  x3do:hasAppearance :Appearance_2_11_1_2 .
+:Cylinder_2_11_1_1 a owl:NamedIndividual, x3do:Cylinder ;
+  x3do:hasParent :Shape_2_11_1 ;
+  x3do:height 0.002 .
+:Appearance_2_11_1_2 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_11_1 ;
+  x3do:hasMaterial :MaxFootprintMaterial .
+:MaxFootprintMaterial a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_11_1_2 ;
+  x3do:DEF 'MaxFootprintMaterial' ;
+  x3do:diffuseColor ( 1 0.894118 0.341176 ) .
+:Collision_2_11_2 a owl:NamedIndividual, x3do:Collision ;
+  x3do:hasParent :maxShapes ;
+  x3do:hasChildren :Shape_2_11_2_1 ;
+  x3do:enabled false .
+:Shape_2_11_2_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Collision_2_11_2 ;
+  x3do:hasGeometry :Sphere_2_11_2_1_1 ;
+  x3do:hasAppearance :Appearance_2_11_2_1_2 .
+:Sphere_2_11_2_1_1 a owl:NamedIndividual, x3do:Sphere ;
+  x3do:hasParent :Shape_2_11_2_1 .
+:Appearance_2_11_2_1_2 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_11_2_1 ;
+  x3do:hasMaterial :MaxSpheroidMaterial .
+:MaxSpheroidMaterial a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_11_2_1_2 ;
+  x3do:DEF 'MaxSpheroidMaterial' ;
+  x3do:diffuseColor ( 1 0.5 0 ) ;
+  x3do:transparency 0.75 .
+:ExternProtoDeclare_2_12 a owl:NamedIndividual, x3do:ExternProtoDeclare ;
+  x3do:hasParent :Scene ;
+  x3do:hasField :field_2_12_1, :field_2_12_2, :field_2_12_3, :field_2_12_4, :field_2_12_5, :field_2_12_6, :field_2_12_7, :field_2_12_8, :field_2_12_9, :field_2_12_10, :field_2_12_11, :field_2_12_12, :field_2_12_13 ;
+  x3do:name 'GridXZ' ;
+  x3do:url '"../../Savage/Tools/Authoring/GridXZPrototype.x3d#GridXZ" "https://savage.nps.edu/Savage/Tools/Authoring/GridXZPrototype.x3d#GridXZ" "../../Savage/Tools/Authoring/GridXZPrototype.wrl#GridXZ" "https://savage.nps.edu/Savage/Tools/Authoring/GridXZPrototype.wrl#GridXZ"' .
+:field_2_12_1 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :ExternProtoDeclare_2_12 ;
+  x3do:accessType 'initializeOnly' ;
+  x3do:name 'description' ;
+  x3do:type 'SFString' .
+:field_2_12_2 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :ExternProtoDeclare_2_12 ;
+  x3do:accessType 'inputOutput' ;
+  x3do:name 'labelColor' ;
+  x3do:type 'SFColor' .
+:field_2_12_3 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :ExternProtoDeclare_2_12 ;
+  x3do:accessType 'inputOutput' ;
+  x3do:appinfo 'default unscaled size: 10m by 10m' ;
+  x3do:name 'scale' ;
+  x3do:type 'SFVec3f' .
+:field_2_12_4 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :ExternProtoDeclare_2_12 ;
+  x3do:accessType 'inputOutput' ;
+  x3do:appinfo 'label location offset (in meters) to improve readability' ;
+  x3do:name 'labelsOffset' ;
+  x3do:type 'SFVec3f' .
+:field_2_12_5 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :ExternProtoDeclare_2_12 ;
+  x3do:accessType 'inputOutput' ;
+  x3do:name 'originLabel' ;
+  x3do:type 'MFString' .
+:field_2_12_6 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :ExternProtoDeclare_2_12 ;
+  x3do:accessType 'inputOutput' ;
+  x3do:appinfo '-Z axis' ;
+  x3do:name 'WestLabel' ;
+  x3do:type 'MFString' .
+:field_2_12_7 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :ExternProtoDeclare_2_12 ;
+  x3do:accessType 'inputOutput' ;
+  x3do:name 'NorthWestLabel' ;
+  x3do:type 'MFString' .
+:field_2_12_8 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :ExternProtoDeclare_2_12 ;
+  x3do:accessType 'inputOutput' ;
+  x3do:appinfo '+X axis' ;
+  x3do:name 'NorthLabel' ;
+  x3do:type 'MFString' .
+:field_2_12_9 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :ExternProtoDeclare_2_12 ;
+  x3do:accessType 'inputOutput' ;
+  x3do:name 'NorthEastLabel' ;
+  x3do:type 'MFString' .
+:field_2_12_10 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :ExternProtoDeclare_2_12 ;
+  x3do:accessType 'inputOutput' ;
+  x3do:appinfo '+Z axis' ;
+  x3do:name 'EastLabel' ;
+  x3do:type 'MFString' .
+:field_2_12_11 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :ExternProtoDeclare_2_12 ;
+  x3do:accessType 'inputOutput' ;
+  x3do:name 'SouthEastLabel' ;
+  x3do:type 'MFString' .
+:field_2_12_12 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :ExternProtoDeclare_2_12 ;
+  x3do:accessType 'inputOutput' ;
+  x3do:appinfo '-X axis' ;
+  x3do:name 'SouthLabel' ;
+  x3do:type 'MFString' .
+:field_2_12_13 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :ExternProtoDeclare_2_12 ;
+  x3do:accessType 'inputOutput' ;
+  x3do:name 'SouthWestLabel' ;
+  x3do:type 'MFString' .
+:ProtoInstance_2_13 a owl:NamedIndividual, x3do:ProtoInstance ;
+  x3do:hasParent :Scene ;
+  x3do:hasFieldValue :fieldValue_2_13_1, :fieldValue_2_13_2, :fieldValue_2_13_3, :fieldValue_2_13_4, :fieldValue_2_13_5, :fieldValue_2_13_6, :fieldValue_2_13_7, :fieldValue_2_13_8, :fieldValue_2_13_9, :fieldValue_2_13_10, :fieldValue_2_13_11, :fieldValue_2_13_12, :fieldValue_2_13_13 ;
+  x3do:name 'GridXZ' .
+:fieldValue_2_13_1 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :ProtoInstance_2_13 ;
+  x3do:name 'description' ;
+  x3do:value 'GridXZ' .
+:fieldValue_2_13_2 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :ProtoInstance_2_13 ;
+  x3do:name 'labelColor' ;
+  x3do:value '1 1 1' .
+:fieldValue_2_13_3 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :ProtoInstance_2_13 ;
+  x3do:name 'scale' ;
+  x3do:value '10 10 10' .
+:fieldValue_2_13_4 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :ProtoInstance_2_13 ;
+  x3do:name 'labelsOffset' ;
+  x3do:value '0 -0.5 0' .
+:fieldValue_2_13_5 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :ProtoInstance_2_13 ;
+  x3do:name 'originLabel' ;
+  x3do:value '"origin" "0 0 0"' .
+:fieldValue_2_13_6 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :ProtoInstance_2_13 ;
+  x3do:name 'NorthLabel' ;
+  x3do:value '"North" "-Z"' .
+:fieldValue_2_13_7 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :ProtoInstance_2_13 ;
+  x3do:name 'NorthEastLabel' ;
+  x3do:value '"100 0 -100"' .
+:fieldValue_2_13_8 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :ProtoInstance_2_13 ;
+  x3do:name 'EastLabel' ;
+  x3do:value '"East" "+X"' .
+:fieldValue_2_13_9 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :ProtoInstance_2_13 ;
+  x3do:name 'SouthEastLabel' ;
+  x3do:value '"100 0 100"' .
+:fieldValue_2_13_10 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :ProtoInstance_2_13 ;
+  x3do:name 'SouthLabel' ;
+  x3do:value '"South" "+Z"' .
+:fieldValue_2_13_11 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :ProtoInstance_2_13 ;
+  x3do:name 'SouthWestLabel' ;
+  x3do:value '"-100 0 100"' .
+:fieldValue_2_13_12 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :ProtoInstance_2_13 ;
+  x3do:name 'WestLabel' ;
+  x3do:value '"West" "-X"' .
+:fieldValue_2_13_13 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :ProtoInstance_2_13 ;
+  x3do:name 'NorthWestLabel' ;
+  x3do:value '"-100 0 -100"' .

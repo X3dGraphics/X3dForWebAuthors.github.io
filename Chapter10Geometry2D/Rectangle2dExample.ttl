@@ -1,0 +1,132 @@
+@prefix :        <https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter10Geometry2D/Rectangle2D.ttl#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema:  <http://schema.org/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix x3d:     <https://www.web3d.org/specifications/x3d-4.0.xsd#> .
+@prefix x3do:    <https://www.web3d.org/specifications/X3dOntology4.0#> .
+
+:X3D a owl:NamedIndividual, x3do:X3D ;
+  x3do:hasHead :head ;
+  x3do:hasScene :Scene ;
+  x3do:profile 'Immersive' ;
+  x3do:version '3.3' ;
+  x3do:noNamespaceSchemaLocation 'https://www.web3d.org/specifications/x3d-3.3.xsd' .
+:head a owl:NamedIndividual, x3do:head ;
+  x3do:hasParent :X3D ;
+  x3do:hasComponent :component_1_1 ;
+  x3do:hasMeta :meta_1_2, :meta_1_3, :meta_1_4, :meta_1_5, :meta_1_6, :meta_1_7, :meta_1_8, :meta_1_9, :meta_1_10, :meta_1_11, :meta_1_12, :meta_1_13 .
+:component_1_1 a owl:NamedIndividual, x3do:component ;
+  x3do:hasParent :head ;
+  x3do:level 2 ;
+  x3do:name 'Geometry2D' .
+:meta_1_2 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Rectangle2dExample.x3d' ;
+  x3do:name 'title' .
+:meta_1_3 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Example of Rectangle2D showing two simple polygonal shapes.' ;
+  x3do:name 'description' .
+:meta_1_4 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Leonard Daly and Don Brutzman' ;
+  x3do:name 'creator' .
+:meta_1_5 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '17 April 2006' ;
+  x3do:name 'created' .
+:meta_1_6 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '14 June 2020' ;
+  x3do:name 'modified' .
+:meta_1_7 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://X3dGraphics.com' ;
+  x3do:name 'reference' .
+:meta_1_8 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://www.web3d.org/x3d/content/examples/X3dResources.html' ;
+  x3do:name 'reference' .
+:meta_1_9 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Copyright 2006, Daly Realism and Don Brutzman' ;
+  x3do:name 'rights' .
+:meta_1_10 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'X3D book, X3D graphics, X3D-Edit, http://www.x3dGraphics.com' ;
+  x3do:name 'subject' .
+:meta_1_11 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter10Geometry2D/Rectangle2D.x3d' ;
+  x3do:name 'identifier' .
+:meta_1_12 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'X3D-Edit 3.3, https://savage.nps.edu/X3D-Edit' ;
+  x3do:name 'generator' .
+:meta_1_13 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '../license.html' ;
+  x3do:name 'license' .
+:meta dcterms:title "Rectangle2dExample.x3d" .
+:meta dcterms:description "Example of Rectangle2D showing two simple polygonal shapes." .
+:meta dcterms:creator "Leonard Daly and Don Brutzman" .
+:meta dcterms:created "17 April 2006" .
+:meta dcterms:modified "14 June 2020" .
+:meta dcterms:reference "https://X3dGraphics.com" .
+:meta dcterms:reference "https://www.web3d.org/x3d/content/examples/X3dResources.html" .
+:meta dcterms:rights "Copyright 2006, Daly Realism and Don Brutzman" .
+:meta dcterms:subject "X3D book, X3D graphics, X3D-Edit, http://www.x3dGraphics.com" .
+:meta dcterms:identifier "https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter10Geometry2D/Rectangle2D.x3d" .
+:meta dcterms:generator "X3D-Edit 3.3, https://savage.nps.edu/X3D-Edit" .
+:meta dcterms:license "../license.html" .
+:Scene a owl:NamedIndividual, x3do:Scene ;
+  x3do:hasParent :X3D ;
+  x3do:hasChildren :WorldInfo_2_1, :Background_2_2, :Viewpoint_2_3, :Transform_2_4, :Transform_2_5 .
+:WorldInfo_2_1 a owl:NamedIndividual, x3do:WorldInfo ;
+  x3do:hasParent :Scene ;
+  x3do:title 'Rectangle2D.x3d' .
+:Background_2_2 a owl:NamedIndividual, x3do:Background ;
+  x3do:hasParent :Scene ;
+  x3do:skyColor ( 1 1 1 ) .
+:Viewpoint_2_3 a owl:NamedIndividual, x3do:Viewpoint ;
+  x3do:hasParent :Scene ;
+  x3do:description 'Rectangle2D example' ;
+  x3do:orientation ( 0.981 0.178 -0.08 0.01 ) ;
+  x3do:position ( -1.52 -0.17 8.11 ) .
+:Transform_2_4 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :Shape_2_4_1 ;
+  x3do:translation ( -2.5 1 0 ) .
+:Shape_2_4_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_4 ;
+  x3do:hasGeometry :Rectangle2D_2_4_1_1 ;
+  x3do:hasAppearance :MagentaAppearance .
+:Rectangle2D_2_4_1_1 a owl:NamedIndividual, x3do:Rectangle2D ;
+  x3do:hasParent :Shape_2_4_1 ;
+  x3do:size ( 2.00 2.00 ) .
+:MagentaAppearance a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_4_1 ;
+  x3do:hasMaterial :Material_2_4_1_2_1 ;
+  x3do:DEF 'MagentaAppearance' .
+:Material_2_4_1_2_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :MagentaAppearance ;
+  x3do:diffuseColor ( 1 0 0 ) ;
+  x3do:emissiveColor ( 0 0 1 ) ;
+  x3do:specularColor ( 0 .8 0 ) .
+:Transform_2_5 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :Shape_2_5_1 ;
+  x3do:translation ( -1 -1.5 0 ) .
+:Shape_2_5_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_5 ;
+  x3do:hasGeometry :Rectangle2D_2_5_1_1 ;
+  x3do:hasAppearance :MagentaAppearance-USE-1 .
+:Rectangle2D_2_5_1_1 a owl:NamedIndividual, x3do:Rectangle2D ;
+  x3do:hasParent :Shape_2_5_1 ;
+  x3do:size ( 2 1 ) .
+:MagentaAppearance-USE-1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_5_1 ;
+  owl:sameAs :MagentaAppearance . # DEF matching this USE

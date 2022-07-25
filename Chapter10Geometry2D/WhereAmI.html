@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<!--Generated using XSLT processor: SAXON 8.7 from Saxonica--><html xmlns="http://www.w3.org/TR/xhtml1/strict">
+   <head>
+      <title>WhereAmI.x3d#WhereAmI (X3dToXhtml)</title>
+      <style type="text/css">
+
+
+span.element {color: navy}
+span.attribute {color: green}
+span.value {color: teal}
+span.plain {color: black}
+span.gray  {color: gray}
+span.idName {color: maroon}
+a.idName {color: maroon}
+div.center {text-align: center}
+div.indent {margin-left: 25px}
+
+span.prototype {color: purple}
+a.prototype {color: purple, visited: black}
+span.route {color: red}
+b.warning {color: #CC5500}
+b.error {color: #CC0000}
+
+	</style>
+      <meta name="generator" content="http://www.web3d.org/x3d/content/X3dToXhtml.xslt"/>
+      <link rel="shortcut icon"
+            href="http://www.web3d.org/x3d/content/icons/X3DtextIcon16.png"
+            title="X3D"/>
+   </head>
+   <body>
+      <pre>
+&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;!DOCTYPE X3D PUBLIC "ISO//Web3D//DTD X3D 3.1//EN"   "http://www.web3d.org/specifications/x3d-3.1.dtd"&gt;</pre>
+
+&lt;<span class="element">X3D</span>&#160;<span class="attribute">profile</span>='<span class="value">Immersive</span>'&#160;<span class="attribute">version</span>='<span class="value">3.1</span>'&#160;<span class="attribute">xmlns:xsd</span>='<a href="http://www.w3.org/2001/XMLSchema-instance" target="_blank">http://www.w3.org/2001/XMLSchema-instance</a>' <span class="attribute">xsd:noNamespaceSchemaLocation</span>='
+<a href="http://www.web3d.org/specifications/x3d-3.1.xsd">http://www.web3d.org/specifications/x3d-3.1.xsd</a> '&gt;
+<div class="indent">
+&lt;<span class="element">head</span>&gt;
+<div class="indent">
+&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">title</span>'&#160;<span class="attribute">content</span>='<a href="WhereAmI.x3d#WhereAmI" target="_blank">WhereAmI.x3d#WhereAmI</a>'/&gt;
+<br />
+&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">description</span>'&#160;<span class="attribute">content</span>='<span class="plain">PROTO for displaying current viewpoint location</span>'/&gt;
+<br />
+&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">creator</span>'&#160;<span class="attribute">content</span>='<span class="value">Leonard Daly</span>'/&gt;
+<br />
+&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">created</span>'&#160;<span class="attribute">content</span>='<span class="value">1 Jan 1999</span>'/&gt;
+<br />
+&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">translated</span>'&#160;<span class="attribute">content</span>='<span class="value">5 May 2006</span>'/&gt;
+<br />
+&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">modified</span>'&#160;<span class="attribute">content</span>='<span class="value">23 March 2007</span>'/&gt;
+<br />
+&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">reference</span>'&#160;<span class="attribute">content</span>='
+<a href="http://www.X3dGraphics.com">http://www.X3dGraphics.com</a> '/&gt;
+<br />
+&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">reference</span>'&#160;<span class="attribute">content</span>='
+<a href="http://www.web3d.org/x3d/content/examples/help.html">http://www.web3d.org/x3d/content/examples/help.html</a> '/&gt;
+<br />
+&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">rights</span>'&#160;<span class="attribute">content</span>='<span class="value">Copyright 1999, 2006, Daly Realism, Inc.</span>'/&gt;
+<br />
+&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">image</span>'&#160;<span class="attribute">content</span>='<span class="value">*enter image filename/url here*</span>'/&gt;
+<br />
+&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">subject</span>'&#160;<span class="attribute">content</span>='<span class="value">*enter keywords here*</span>'/&gt;
+<br />
+&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">identifier</span>'&#160;<span class="attribute">content</span>='
+<a href="http://www.X3dGraphics.com/examples/X3dForWebAuthors/.x3d">http://www.X3dGraphics.com/examples/X3dForWebAuthors/.x3d</a> '/&gt;
+<br />
+&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">generator</span>'&#160;<span class="attribute">content</span>='<span class="value">X3D-Edit, </span>
+            <a href="http://www.web3d.org/x3d/content/README.X3D-Edit.html" target="_blank">http://www.web3d.org/x3d/content/README.X3D-Edit.html</a>'/&gt;
+<br />
+&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">license</span>'&#160;<span class="attribute">content</span>='<a href="../license.html" target="_blank">../license.html</a>'/&gt;
+</div>&lt;/<span class="element">head</span>&gt;
+<br />
+&lt;!--
+<div class="center">
+            <hr width="100%"/>
+            <i>Index for ProtoDeclare definition</i>: 
+<a href="#ProtoDeclare_WhereAmI" class="prototype">WhereAmI</a>
+<br />
+<i>Index for DEF nodes</i>: 
+<a href="#Where" class="idName">Where</a>,
+<a href="#WhereDump" class="idName">WhereDump</a>
+            <hr width="100%"/>
+         </div>
+--&gt;
+<br />
+&lt;<span class="element">Scene</span>&gt;
+<div class="indent">
+            <a name="ProtoDeclare_WhereAmI"> </a> 
+&lt;<span class="prototype">ProtoDeclare</span>&#160;<span class="attribute">name</span>='<span class="prototype">WhereAmI</span>'&gt;
+<div class="indent">
+&lt;<span class="prototype">ProtoBody</span>&gt;
+<div class="indent">
+                  <a name="Where"> </a> 
+&lt;!-- <span class="idName">Where</span> <i>ROUTEs</i>:&#160;
+[<a href="#ROUTE_0"><i>from</i>&#160;<span class="attribute">orientation_changed</span>&#160;<i>to</i>&#160;<span class="idName">WhereDump</span>.<span class="attribute">orientation</span>
+                  </a>]
+[<a href="#ROUTE_1"><i>from</i>&#160;<span class="attribute">position_changed</span>&#160;<i>to</i>&#160;<span class="idName">WhereDump</span>.<span class="attribute">position</span>
+                  </a>]
+ --&gt;<br />
+&lt;<span class="element">ProximitySensor</span>&#160;<span class="attribute">DEF</span>='<span class="idName">Where</span>'&#160;<span class="attribute">size</span>='<span class="value">1000 1000 1000</span>'/&gt;
+<br /><a name="WhereDump"> </a> 
+&lt;!-- <span class="idName">WhereDump</span> <i>ROUTEs</i>:&#160;
+[<a href="#ROUTE_0"><i>from</i>&#160;<span class="idName">Where</span>.<span class="attribute">orientation_changed</span>&#160;<i>to</i>&#160;<span class="attribute">orientation</span>
+                  </a>]
+[<a href="#ROUTE_1"><i>from</i>&#160;<span class="idName">Where</span>.<span class="attribute">position_changed</span>&#160;<i>to</i>&#160;<span class="attribute">position</span>
+                  </a>]
+ --&gt;<br />
+&lt;<span class="element">Script</span>&#160;<span class="attribute">DEF</span>='<span class="idName">WhereDump</span>'
+<br />
+&#160;&#160;<span class="attribute">url</span>='<a href="WhereAmI.js" target="_blank">WhereAmI.js</a>'&gt;
+<div class="indent">
+&lt;<span class="prototype">field</span>&#160;<span class="attribute">name</span>='<span class="prototype">position</span>'&#160;<span class="attribute">type</span>='<span class="value">SFVec3f</span>'&#160;<span class="attribute">accessType</span>='<span class="value">inputOnly</span>'/&gt;
+<br />
+&lt;<span class="prototype">field</span>&#160;<span class="attribute">name</span>='<span class="prototype">orientation</span>'&#160;<span class="attribute">type</span>='<span class="value">SFRotation</span>'&#160;<span class="attribute">accessType</span>='<span class="value">inputOnly</span>'/&gt;
+</div>&lt;/<span class="element">Script</span>&gt;
+<br /><a name="ROUTE_0"> </a> 
+&lt;<span class="route">ROUTE</span>&#160;<span class="attribute">fromNode</span>='<a href="#Where" class="idName">Where</a>'&#160;<span class="attribute">fromField</span>='<span class="value">orientation_changed</span>'&#160;<span class="attribute">toNode</span>='<a href="#WhereDump" class="idName">WhereDump</a>'&#160;<span class="attribute">toField</span>='<span class="value">orientation</span>'/&gt;
+<br /><a name="ROUTE_1"> </a> 
+&lt;<span class="route">ROUTE</span>&#160;<span class="attribute">fromNode</span>='<a href="#Where" class="idName">Where</a>'&#160;<span class="attribute">fromField</span>='<span class="value">position_changed</span>'&#160;<span class="attribute">toNode</span>='<a href="#WhereDump" class="idName">WhereDump</a>'&#160;<span class="attribute">toField</span>='<span class="value">position</span>'/&gt;
+</div>&lt;/<span class="prototype">ProtoBody</span>&gt;
+</div>&lt;/<span class="prototype">ProtoDeclare</span>&gt;
+</div>&lt;/<span class="element">Scene</span>&gt;
+</div>&lt;/<span class="element">X3D</span>&gt;
+<br />
+&lt;!--
+<div class="center">
+         <hr width="100%"/>
+         <i>Index for ProtoDeclare definition</i>: 
+<a href="#ProtoDeclare_WhereAmI" class="prototype">WhereAmI</a>
+<br />
+<i>Index for DEF nodes</i>: 
+<a href="#Where" class="idName">Where</a>,
+<a href="#WhereDump" class="idName">WhereDump</a>
+         <hr width="100%"/>
+      </div>
+--&gt;
+<p>
+&lt;!-- Tag color codes:
+&lt;<span class="element">Node</span>
+         <span class="idName"> DEF</span>='<span class="idName">idName</span>' <span class="attribute">attribute</span>='<span class="value">value</span>'/&gt;
+&lt;<span class="prototype">Prototype</span> 
+         <span class="attribute">name</span>='<span class="prototype">ProtoName</span>'&gt;
+	&lt;<span class="prototype">field</span>
+         <span class="attribute">name</span>='<span class="prototype">fieldName</span>'/&gt; &lt;/<span class="prototype">Prototype</span>&gt; --&gt;
+</p>
+   </body>
+</html>

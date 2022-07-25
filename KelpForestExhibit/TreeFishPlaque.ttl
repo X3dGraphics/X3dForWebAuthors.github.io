@@ -1,0 +1,230 @@
+@prefix :        <https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/TreeFishPlaque.ttl#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema:  <http://schema.org/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix x3d:     <https://www.web3d.org/specifications/x3d-4.0.xsd#> .
+@prefix x3do:    <https://www.web3d.org/specifications/X3dOntology4.0#> .
+
+:X3D a owl:NamedIndividual, x3do:X3D ;
+  x3do:hasHead :head ;
+  x3do:hasScene :Scene ;
+  x3do:profile 'Interactive' ;
+  x3do:version '3.3' ;
+  x3do:noNamespaceSchemaLocation 'https://www.web3d.org/specifications/x3d-3.3.xsd' .
+:head a owl:NamedIndividual, x3do:head ;
+  x3do:hasParent :X3D ;
+  x3do:hasMeta :meta_1_1, :meta_1_2, :meta_1_3, :meta_1_4, :meta_1_5, :meta_1_6, :meta_1_7, :meta_1_8, :meta_1_9, :meta_1_10, :meta_1_11, :meta_1_12 .
+:meta_1_1 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'TreeFishPlaque.x3d' ;
+  x3do:name 'title' .
+:meta_1_2 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Michael Collins' ;
+  x3do:name 'creator' .
+:meta_1_3 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '18 February 2001' ;
+  x3do:name 'created' .
+:meta_1_4 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '25 March 2020' ;
+  x3do:name 'modified' .
+:meta_1_5 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'unfinished' ;
+  x3do:name 'warning' .
+:meta_1_6 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'One fish plaque with lithograph on one side and actual picture on the back. Click on plaque to go to picture or click on buttons to change picture.' ;
+  x3do:name 'description' .
+:meta_1_7 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'X3D-Edit 3.3, https://savage.nps.edu/X3D-Edit' ;
+  x3do:name 'generator' .
+:meta_1_8 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/TreeFishPlaque.x3d' ;
+  x3do:name 'identifier' .
+:meta_1_9 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Treefish.jpg' ;
+  x3do:name 'Image' .
+:meta_1_10 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://en.wikipedia.org/wiki/Treefish' ;
+  x3do:name 'reference' .
+:meta_1_11 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'http://faculty.nps.edu/brutzman/kelp/fish.html#Treefish' ;
+  x3do:name 'reference' .
+:meta_1_12 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '../license.html' ;
+  x3do:name 'license' .
+:meta dcterms:title "TreeFishPlaque.x3d" .
+:meta dcterms:creator "Michael Collins" .
+:meta dcterms:created "18 February 2001" .
+:meta dcterms:modified "25 March 2020" .
+:meta dcterms:warning "unfinished" .
+:meta dcterms:description "One fish plaque with lithograph on one side and actual picture on the back. Click on plaque to go to picture or click on buttons to change picture." .
+:meta dcterms:generator "X3D-Edit 3.3, https://savage.nps.edu/X3D-Edit" .
+:meta dcterms:identifier "https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/TreeFishPlaque.x3d" .
+:meta dcterms:Image "Treefish.jpg" .
+:meta dcterms:reference "https://en.wikipedia.org/wiki/Treefish" .
+:meta dcterms:reference "http://faculty.nps.edu/brutzman/kelp/fish.html#Treefish" .
+:meta dcterms:license "../license.html" .
+:Scene a owl:NamedIndividual, x3do:Scene ;
+  x3do:hasParent :X3D ;
+  x3do:hasChildren :WorldInfo_2_1, :treefish, :Group_2_3 .
+:WorldInfo_2_1 a owl:NamedIndividual, x3do:WorldInfo ;
+  x3do:hasParent :Scene ;
+  x3do:title 'TreeFishPlaque.x3d' .
+:treefish a owl:NamedIndividual, x3do:Viewpoint ;
+  x3do:hasParent :Scene ;
+  x3do:DEF 'treefish' ;
+  x3do:description 'Tree Fish' ;
+  x3do:position ( 0 0 4 ) .
+:Group_2_3 a owl:NamedIndividual, x3do:Group ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :BlueRockfishTouchSensor, :BLUEROCKFISHCLOCK, :BlueRockfishPathInterpolator, :BLUEROCKFISH_TRANSFORM, :Group_2_3_5 .
+:BlueRockfishTouchSensor a owl:NamedIndividual, x3do:TouchSensor ;
+  x3do:hasParent :Group_2_3 ;
+  x3do:DEF 'BlueRockfishTouchSensor' ;
+  x3do:description 'touch to rotate' .
+:BLUEROCKFISHCLOCK a owl:NamedIndividual, x3do:TimeSensor ;
+  x3do:hasParent :Group_2_3 ;
+  x3do:DEF 'BLUEROCKFISHCLOCK' ;
+  x3do:cycleInterval '2' .
+:BlueRockfishPathInterpolator a owl:NamedIndividual, x3do:OrientationInterpolator ;
+  x3do:hasParent :Group_2_3 ;
+  x3do:DEF 'BlueRockfishPathInterpolator' ;
+  x3do:key ( 0.0 0.50 1.0 ) ;
+  x3do:keyValue ( 0.0 1.0 0.0 0.0 0.0 1.0 0.0 1.57 0.0 1.0 0.0 3.14 ) .
+:BLUEROCKFISH_TRANSFORM a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Group_2_3 ;
+  x3do:hasChildren :Shape_2_3_4_1 ;
+  x3do:DEF 'BLUEROCKFISH_TRANSFORM' .
+:Shape_2_3_4_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :BLUEROCKFISH_TRANSFORM ;
+  x3do:hasGeometry :Box_2_3_4_1_1 ;
+  x3do:hasAppearance :Appearance_2_3_4_1_2 .
+:Box_2_3_4_1_1 a owl:NamedIndividual, x3do:Box ;
+  x3do:hasParent :Shape_2_3_4_1 ;
+  x3do:size ( 4 2 .1 ) .
+:Appearance_2_3_4_1_2 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_3_4_1 ;
+  x3do:hasTexture :ImageTexture_2_3_4_1_2_1 .
+:ImageTexture_2_3_4_1_2_1 a owl:NamedIndividual, x3do:ImageTexture ;
+  x3do:hasParent :Appearance_2_3_4_1_2 ;
+  x3do:url '"TreeFish.jpg" "https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/TreeFish.jpg"' .
+:Group_2_3_5 a owl:NamedIndividual, x3do:Group ;
+  x3do:hasParent :Group_2_3 ;
+  x3do:hasChildren :BASE_TRANSFORM, :BaseTouchSensor, :Group_2_3_5_3, :Group_2_3_5_4, :Group_2_3_5_5, :Group_2_3_5_6 .
+:BASE_TRANSFORM a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Group_2_3_5 ;
+  x3do:hasChildren :Shape_2_3_5_1_1 ;
+  x3do:DEF 'BASE_TRANSFORM' ;
+  x3do:translation ( 0 0 -0.3 ) .
+:Shape_2_3_5_1_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :BASE_TRANSFORM ;
+  x3do:hasGeometry :Box_2_3_5_1_1_1 ;
+  x3do:hasAppearance :Appearance_2_3_5_1_1_2 .
+:Box_2_3_5_1_1_1 a owl:NamedIndividual, x3do:Box ;
+  x3do:hasParent :Shape_2_3_5_1_1 ;
+  x3do:size ( 8 6 .3 ) .
+:Appearance_2_3_5_1_1_2 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_3_5_1_1 ;
+  x3do:hasMaterial :Material_2_3_5_1_1_2_1 .
+:Material_2_3_5_1_1_2_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_3_5_1_1_2 ;
+  x3do:diffuseColor ( .3 .3 .6 ) .
+:BaseTouchSensor a owl:NamedIndividual, x3do:TouchSensor ;
+  x3do:hasParent :Group_2_3_5 ;
+  x3do:DEF 'BaseTouchSensor' ;
+  x3do:description 'touch to rotate' .
+:Group_2_3_5_3 a owl:NamedIndividual, x3do:Group ;
+  x3do:hasParent :Group_2_3_5 ;
+  x3do:hasChildren :Transform_2_3_5_3_1 .
+:Transform_2_3_5_3_1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Group_2_3_5_3 ;
+  x3do:hasChildren :Shape_2_3_5_3_1_1 ;
+  x3do:translation ( 0 -2.6 0 ) .
+:Shape_2_3_5_3_1_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_3_5_3_1 ;
+  x3do:hasGeometry :Box_2_3_5_3_1_1_1 ;
+  x3do:hasAppearance :Appearance_2_3_5_3_1_1_2 .
+:Box_2_3_5_3_1_1_1 a owl:NamedIndividual, x3do:Box ;
+  x3do:hasParent :Shape_2_3_5_3_1_1 ;
+  x3do:size ( 8 1 1 ) .
+:Appearance_2_3_5_3_1_1_2 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_3_5_3_1_1 ;
+  x3do:hasMaterial :Material_2_3_5_3_1_1_2_1 .
+:Material_2_3_5_3_1_1_2_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_3_5_3_1_1_2 ;
+  x3do:diffuseColor ( 0.8 0.8 0.2 ) .
+:Group_2_3_5_4 a owl:NamedIndividual, x3do:Group ;
+  x3do:hasParent :Group_2_3_5 ;
+  x3do:hasChildren :Transform_2_3_5_4_1 .
+:Transform_2_3_5_4_1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Group_2_3_5_4 ;
+  x3do:hasChildren :Shape_2_3_5_4_1_1 ;
+  x3do:translation ( 0 2.6 0 ) .
+:Shape_2_3_5_4_1_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_3_5_4_1 ;
+  x3do:hasGeometry :Box_2_3_5_4_1_1_1 ;
+  x3do:hasAppearance :Appearance_2_3_5_4_1_1_2 .
+:Box_2_3_5_4_1_1_1 a owl:NamedIndividual, x3do:Box ;
+  x3do:hasParent :Shape_2_3_5_4_1_1 ;
+  x3do:size ( 8 1 1 ) .
+:Appearance_2_3_5_4_1_1_2 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_3_5_4_1_1 ;
+  x3do:hasMaterial :Material_2_3_5_4_1_1_2_1 .
+:Material_2_3_5_4_1_1_2_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_3_5_4_1_1_2 ;
+  x3do:diffuseColor ( 0.8 0.8 0.2 ) .
+:Group_2_3_5_5 a owl:NamedIndividual, x3do:Group ;
+  x3do:hasParent :Group_2_3_5 ;
+  x3do:hasChildren :Transform_2_3_5_5_1 .
+:Transform_2_3_5_5_1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Group_2_3_5_5 ;
+  x3do:hasChildren :Shape_2_3_5_5_1_1 ;
+  x3do:rotation ( 0 0 1 1.58 ) ;
+  x3do:translation ( 3.6 0 0 ) .
+:Shape_2_3_5_5_1_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_3_5_5_1 ;
+  x3do:hasGeometry :Box_2_3_5_5_1_1_1 ;
+  x3do:hasAppearance :Appearance_2_3_5_5_1_1_2 .
+:Box_2_3_5_5_1_1_1 a owl:NamedIndividual, x3do:Box ;
+  x3do:hasParent :Shape_2_3_5_5_1_1 ;
+  x3do:size ( 6.2 1 1 ) .
+:Appearance_2_3_5_5_1_1_2 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_3_5_5_1_1 ;
+  x3do:hasMaterial :Material_2_3_5_5_1_1_2_1 .
+:Material_2_3_5_5_1_1_2_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_3_5_5_1_1_2 ;
+  x3do:diffuseColor ( 0.8 0.8 0.2 ) .
+:Group_2_3_5_6 a owl:NamedIndividual, x3do:Group ;
+  x3do:hasParent :Group_2_3_5 ;
+  x3do:hasChildren :Transform_2_3_5_6_1 .
+:Transform_2_3_5_6_1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Group_2_3_5_6 ;
+  x3do:hasChildren :Shape_2_3_5_6_1_1 ;
+  x3do:rotation ( 0 0 1 1.58 ) ;
+  x3do:translation ( -3.6 0 0 ) .
+:Shape_2_3_5_6_1_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_3_5_6_1 ;
+  x3do:hasGeometry :Box_2_3_5_6_1_1_1 ;
+  x3do:hasAppearance :Appearance_2_3_5_6_1_1_2 .
+:Box_2_3_5_6_1_1_1 a owl:NamedIndividual, x3do:Box ;
+  x3do:hasParent :Shape_2_3_5_6_1_1 ;
+  x3do:size ( 6.2 1 1 ) .
+:Appearance_2_3_5_6_1_1_2 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_3_5_6_1_1 ;
+  x3do:hasMaterial :Material_2_3_5_6_1_1_2_1 .
+:Material_2_3_5_6_1_1_2_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_3_5_6_1_1_2 ;
+  x3do:diffuseColor ( 0.8 0.8 0.2 ) .

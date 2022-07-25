@@ -1,0 +1,418 @@
+@prefix :        <https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/KelpPrototype.ttl#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema:  <http://schema.org/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix x3d:     <https://www.web3d.org/specifications/x3d-4.0.xsd#> .
+@prefix x3do:    <https://www.web3d.org/specifications/X3dOntology4.0#> .
+
+:X3D a owl:NamedIndividual, x3do:X3D ;
+  x3do:hasHead :head ;
+  x3do:hasScene :Scene ;
+  x3do:profile 'Immersive' ;
+  x3do:version '3.3' ;
+  x3do:noNamespaceSchemaLocation 'https://www.web3d.org/specifications/x3d-3.3.xsd' .
+:head a owl:NamedIndividual, x3do:head ;
+  x3do:hasParent :X3D ;
+  x3do:hasMeta :meta_1_1, :meta_1_2, :meta_1_3, :meta_1_4, :meta_1_5, :meta_1_6, :meta_1_7, :meta_1_8, :meta_1_9, :meta_1_10, :meta_1_11, :meta_1_12, :meta_1_13 .
+:meta_1_1 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'KelpPrototype.x3d' ;
+  x3do:name 'title' .
+:meta_1_2 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Creates Kelp Prototype - this file uses Bulb and is used by KelpExamplesNoBase.' ;
+  x3do:name 'description' .
+:meta_1_3 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Joseph Cannon, Dan DeVos' ;
+  x3do:name 'creator' .
+:meta_1_4 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '18 March 1999' ;
+  x3do:name 'created' .
+:meta_1_5 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '20 October 2019' ;
+  x3do:name 'modified' .
+:meta_1_6 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'http://faculty.nps.edu/brutzman/kelp' ;
+  x3do:name 'reference' .
+:meta_1_7 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'KelpForestDesignPaperWeb3dSymposiumFebruary2002.pdf' ;
+  x3do:name 'reference' .
+:meta_1_8 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/KelpForestDesignPaperWeb3dSymposiumFebruary2002.pdf' ;
+  x3do:name 'reference' .
+:meta_1_9 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/Teaching3d-KelpForestCaseStudy.pdf' ;
+  x3do:name 'reference' .
+:meta_1_10 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'All content has permissions for free use. Please provide credit to the Naval Postgraduate School (NPS) Modeling Virtual Environments and Simulation (MOVES) Institute.' ;
+  x3do:name 'accessRights' .
+:meta_1_11 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/KelpPrototype.x3d' ;
+  x3do:name 'identifier' .
+:meta_1_12 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Vrml97ToX3dNist, http://ovrt.nist.gov/v2_x3d.html' ;
+  x3do:name 'generator' .
+:meta_1_13 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '../license.html' ;
+  x3do:name 'license' .
+:meta dcterms:title "KelpPrototype.x3d" .
+:meta dcterms:description "Creates Kelp Prototype - this file uses Bulb and is used by KelpExamplesNoBase." .
+:meta dcterms:creator "Joseph Cannon, Dan DeVos" .
+:meta dcterms:created "18 March 1999" .
+:meta dcterms:modified "20 October 2019" .
+:meta dcterms:reference "http://faculty.nps.edu/brutzman/kelp" .
+:meta dcterms:reference "KelpForestDesignPaperWeb3dSymposiumFebruary2002.pdf" .
+:meta dcterms:reference "https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/KelpForestDesignPaperWeb3dSymposiumFebruary2002.pdf" .
+:meta dcterms:reference "https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/Teaching3d-KelpForestCaseStudy.pdf" .
+:meta dcterms:accessRights "All content has permissions for free use. Please provide credit to the Naval Postgraduate School (NPS) Modeling Virtual Environments and Simulation (MOVES) Institute." .
+:meta dcterms:identifier "https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/KelpPrototype.x3d" .
+:meta dcterms:generator "Vrml97ToX3dNist, http://ovrt.nist.gov/v2_x3d.html" .
+:meta dcterms:license "../license.html" .
+:Scene a owl:NamedIndividual, x3do:Scene ;
+  x3do:hasParent :X3D ;
+  x3do:hasChildren :WorldInfo_2_1, :Viewpoint_2_3, :TouchTextForExample ;
+  x3do:hasProtoDeclare :ProtoDeclare_2_2 .
+:WorldInfo_2_1 a owl:NamedIndividual, x3do:WorldInfo ;
+  x3do:hasParent :Scene ;
+  x3do:title 'KelpPrototype.x3d' .
+:ProtoDeclare_2_2 a owl:NamedIndividual, x3do:ProtoDeclare ;
+  x3do:hasParent :Scene ;
+  x3do:hasProtoInterface :ProtoInterface_2_2_1 ;
+  x3do:hasProtoBody :ProtoBody_2_2_2 ;
+  x3do:appinfo 'Kelp strands and bulbs with no base' ;
+  x3do:name 'Kelp' .
+:ProtoInterface_2_2_1 a owl:NamedIndividual, x3do:ProtoInterface ;
+  x3do:hasParent :ProtoDeclare_2_2 ;
+  x3do:hasField :field_2_2_1_1, :field_2_2_1_2, :field_2_2_1_3, :field_2_2_1_4, :field_2_2_1_5, :field_2_2_1_6, :field_2_2_1_7, :field_2_2_1_8 .
+:field_2_2_1_1 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :ProtoInterface_2_2_1 ;
+  x3do:accessType 'inputOutput' ;
+  x3do:name 'frontBladeSize' ;
+  x3do:type 'SFVec3f' ;
+  x3do:value ( 0.7 0.7 0.7 ) .
+:field_2_2_1_2 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :ProtoInterface_2_2_1 ;
+  x3do:accessType 'inputOutput' ;
+  x3do:name 'frontSideBladeHeight' ;
+  x3do:type 'SFVec3f' ;
+  x3do:value ( 0 4 0 ) .
+:field_2_2_1_3 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :ProtoInterface_2_2_1 ;
+  x3do:accessType 'inputOutput' ;
+  x3do:name 'rightBladeSize' ;
+  x3do:type 'SFVec3f' ;
+  x3do:value ( 0.7 0.7 0.7 ) .
+:field_2_2_1_4 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :ProtoInterface_2_2_1 ;
+  x3do:accessType 'inputOutput' ;
+  x3do:name 'rightSideBladeHeight' ;
+  x3do:type 'SFVec3f' ;
+  x3do:value ( 0 12 0 ) .
+:field_2_2_1_5 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :ProtoInterface_2_2_1 ;
+  x3do:accessType 'inputOutput' ;
+  x3do:name 'rearBladeSize' ;
+  x3do:type 'SFVec3f' ;
+  x3do:value ( 0.4 0.4 0.4 ) .
+:field_2_2_1_6 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :ProtoInterface_2_2_1 ;
+  x3do:accessType 'inputOutput' ;
+  x3do:name 'rearSideBladeHeight' ;
+  x3do:type 'SFVec3f' ;
+  x3do:value ( 0 20 0 ) .
+:field_2_2_1_7 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :ProtoInterface_2_2_1 ;
+  x3do:accessType 'inputOutput' ;
+  x3do:name 'leftBladeSize' ;
+  x3do:type 'SFVec3f' ;
+  x3do:value ( 0.4 0.4 0.4 ) .
+:field_2_2_1_8 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :ProtoInterface_2_2_1 ;
+  x3do:accessType 'inputOutput' ;
+  x3do:name 'leftSideBladeHeight' ;
+  x3do:type 'SFVec3f' ;
+  x3do:value ( 0 24 0 ) .
+:ProtoBody_2_2_2 a owl:NamedIndividual, x3do:ProtoBody ;
+  x3do:hasParent :ProtoDeclare_2_2 ;
+  x3do:hasChildren :Group_2_2_2_1 ;
+  x3do:hasROUTE :ROUTE_2_2_2_2, :ROUTE_2_2_2_3 .
+:Group_2_2_2_1 a owl:NamedIndividual, x3do:Group ;
+  x3do:hasParent :ProtoBody_2_2_2 ;
+  x3do:hasChildren :stipe, :blade_Y1, :blade_Y2, :blade_Y3, :blade_Y4, :Clock, :horizontalStipeMover .
+:stipe a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Group_2_2_2_1 ;
+  x3do:hasChildren :stemShape, :horizontalStipe, :Transform_2_2_2_1_1_3 ;
+  x3do:DEF 'stipe' ;
+  x3do:center ( 0 -16 0 ) ;
+  x3do:translation ( 0 14 0 ) .
+:stemShape a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :stipe ;
+  x3do:hasAppearance :kelpColor ;
+  x3do:hasGeometry :Cylinder_2_2_2_1_1_1_2 ;
+  x3do:DEF 'stemShape' .
+:kelpColor a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :stemShape ;
+  x3do:hasMaterial :Material_2_2_2_1_1_1_1_1 ;
+  x3do:DEF 'kelpColor' .
+:Material_2_2_2_1_1_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :kelpColor ;
+  x3do:diffuseColor ( 0.882 0.757 0.184 ) .
+:Cylinder_2_2_2_1_1_1_2 a owl:NamedIndividual, x3do:Cylinder ;
+  x3do:hasParent :stemShape ;
+  x3do:bottom false ;
+  x3do:height 28.0 ;
+  x3do:radius 0.2 ;
+  x3do:top false .
+:horizontalStipe a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :stipe ;
+  x3do:hasChildren :Transform_2_2_2_1_1_2_1, :blade_X1, :blade_X2, :blade_X3 ;
+  x3do:DEF 'horizontalStipe' ;
+  x3do:center ( 0 16 0 ) ;
+  x3do:rotation ( 0 0 1 1.5707 ) ;
+  x3do:scale ( 0.5 0.3 0.5 ) ;
+  x3do:translation ( 1.3 0 0 ) .
+:Transform_2_2_2_1_1_2_1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :horizontalStipe ;
+  x3do:hasChildren :stemShape-USE-1 .
+:stemShape-USE-1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_2_2_1_1_2_1 ;
+  owl:sameAs :stemShape . # DEF matching this USE
+:blade_X1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :horizontalStipe ;
+  x3do:hasChildren :bladeRotateZ ;
+  x3do:DEF 'blade_X1' ;
+  x3do:rotation ( 0 1 0 1.0 ) ;
+  x3do:translation ( 0 12 0 ) .
+:bladeRotateZ a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :blade_X1 ;
+  x3do:hasChildren :BLADE ;
+  x3do:DEF 'bladeRotateZ' ;
+  x3do:rotation ( 0 0 1 -1.2 ) .
+:BLADE a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :bladeRotateZ ;
+  x3do:hasChildren :bulb ;
+  x3do:DEF 'BLADE' ;
+  x3do:center ( -0.5 0 0 ) ;
+  x3do:translation ( 1 0 0 ) .
+:bulb a owl:NamedIndividual, x3do:Inline ;
+  x3do:hasParent :BLADE ;
+  x3do:DEF 'bulb' ;
+  x3do:url '"KelpBulb.x3d" "https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/KelpBulb.x3d" "KelpBulb.wrl" "https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/KelpBulb.wrl"' .
+:blade_X2 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :horizontalStipe ;
+  x3do:hasChildren :bladeRotateZ-USE-1 ;
+  x3do:DEF 'blade_X2' ;
+  x3do:rotation ( 0 1 0 -1.0 ) .
+:bladeRotateZ-USE-1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :blade_X2 ;
+  owl:sameAs :bladeRotateZ . # DEF matching this USE
+:blade_X3 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :horizontalStipe ;
+  x3do:hasChildren :bladeRotateZ-USE-2 ;
+  x3do:DEF 'blade_X3' ;
+  x3do:rotation ( 0 1 0 4.342 ) ;
+  x3do:translation ( 0 -12 0 ) .
+:bladeRotateZ-USE-2 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :blade_X3 ;
+  owl:sameAs :bladeRotateZ . # DEF matching this USE
+:Transform_2_2_2_1_1_3 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :stipe ;
+  x3do:hasChildren :Shape_2_2_2_1_1_3_1 ;
+  x3do:translation ( 0 14 0 ) .
+:Shape_2_2_2_1_1_3_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_2_2_1_1_3 ;
+  x3do:hasAppearance :kelpColor-USE-1 ;
+  x3do:hasGeometry :Extrusion_2_2_2_1_1_3_1_2 .
+:kelpColor-USE-1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_2_2_1_1_3_1 ;
+  owl:sameAs :kelpColor . # DEF matching this USE
+:Extrusion_2_2_2_1_1_3_1_2 a owl:NamedIndividual, x3do:Extrusion ;
+  x3do:hasParent :Shape_2_2_2_1_1_3_1 ;
+  x3do:creaseAngle 1.57 ;
+  x3do:crossSection ( 0.2 0 0.184 -0.076 0.142 -0.142 0.076 -0.184 0 -0.2 -0.076 -0.184 -0.142 -0.142 -0.184 -0.076 -0.2 -0 -0.184 0.076 -0.142 0.142 -0.076 0.184 0 0.2 0.076 0.184 0.142 0.142 0.184 0.076 0.2 0 ) ;
+  x3do:scale ( 1 1 0.8 0.8 0.7 0.7 0.6 0.6 0.5 0.5 ) ;
+  x3do:spine ( 0 0 0 0.15 0.77 0 0.59 1.41 0 1.23 1.85 0 2 2 0 ) .
+:blade_Y1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Group_2_2_2_1 ;
+  x3do:hasIS :IS_2_2_2_1_2_1 ;
+  x3do:hasChildren :BLADE-USE-1 ;
+  x3do:DEF 'blade_Y1' ;
+  x3do:rotation ( 0 0 1 1.2 ) .
+:IS_2_2_2_1_2_1 a owl:NamedIndividual, x3do:IS ;
+  x3do:hasParent :blade_Y1 ;
+  x3do:hasConnect :connect_2_2_2_1_2_1_1, :connect_2_2_2_1_2_1_2 .
+:connect_2_2_2_1_2_1_1 a owl:NamedIndividual, x3do:connect ;
+  x3do:hasParent :IS_2_2_2_1_2_1 ;
+  x3do:nodeField 'scale' ;
+  x3do:protoField 'frontBladeSize' .
+:connect_2_2_2_1_2_1_2 a owl:NamedIndividual, x3do:connect ;
+  x3do:hasParent :IS_2_2_2_1_2_1 ;
+  x3do:nodeField 'translation' ;
+  x3do:protoField 'frontSideBladeHeight' .
+:BLADE-USE-1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :blade_Y1 ;
+  owl:sameAs :BLADE . # DEF matching this USE
+:blade_Y2 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Group_2_2_2_1 ;
+  x3do:hasIS :IS_2_2_2_1_3_1 ;
+  x3do:hasChildren :bladeToTheSide ;
+  x3do:DEF 'blade_Y2' ;
+  x3do:rotation ( 0 1 0 4.2 ) .
+:IS_2_2_2_1_3_1 a owl:NamedIndividual, x3do:IS ;
+  x3do:hasParent :blade_Y2 ;
+  x3do:hasConnect :connect_2_2_2_1_3_1_1, :connect_2_2_2_1_3_1_2 .
+:connect_2_2_2_1_3_1_1 a owl:NamedIndividual, x3do:connect ;
+  x3do:hasParent :IS_2_2_2_1_3_1 ;
+  x3do:nodeField 'scale' ;
+  x3do:protoField 'rightBladeSize' .
+:connect_2_2_2_1_3_1_2 a owl:NamedIndividual, x3do:connect ;
+  x3do:hasParent :IS_2_2_2_1_3_1 ;
+  x3do:nodeField 'translation' ;
+  x3do:protoField 'rightSideBladeHeight' .
+:bladeToTheSide a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :blade_Y2 ;
+  x3do:hasChildren :Transform_2_2_2_1_3_2_1 ;
+  x3do:DEF 'bladeToTheSide' ;
+  x3do:rotation ( 1 0 0 3.142 ) .
+:Transform_2_2_2_1_3_2_1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :bladeToTheSide ;
+  x3do:hasChildren :rotateBlade90 ;
+  x3do:rotation ( 0 0 1 -1.2 ) .
+:rotateBlade90 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_2_2_1_3_2_1 ;
+  x3do:hasChildren :bulb-USE-1 ;
+  x3do:DEF 'rotateBlade90' ;
+  x3do:center ( -0.5 0 0 ) ;
+  x3do:rotation ( 1 0 0 1.5707 ) ;
+  x3do:translation ( 1 0 0 ) .
+:bulb-USE-1 a owl:NamedIndividual, x3do:Inline ;
+  x3do:hasParent :rotateBlade90 ;
+  owl:sameAs :bulb . # DEF matching this USE
+:blade_Y3 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Group_2_2_2_1 ;
+  x3do:hasIS :IS_2_2_2_1_4_1 ;
+  x3do:hasChildren :Blade-Z ;
+  x3do:DEF 'blade_Y3' ;
+  x3do:rotation ( 0 1 0 3.2 ) .
+:IS_2_2_2_1_4_1 a owl:NamedIndividual, x3do:IS ;
+  x3do:hasParent :blade_Y3 ;
+  x3do:hasConnect :connect_2_2_2_1_4_1_1, :connect_2_2_2_1_4_1_2 .
+:connect_2_2_2_1_4_1_1 a owl:NamedIndividual, x3do:connect ;
+  x3do:hasParent :IS_2_2_2_1_4_1 ;
+  x3do:nodeField 'scale' ;
+  x3do:protoField 'rearBladeSize' .
+:connect_2_2_2_1_4_1_2 a owl:NamedIndividual, x3do:connect ;
+  x3do:hasParent :IS_2_2_2_1_4_1 ;
+  x3do:nodeField 'translation' ;
+  x3do:protoField 'rearSideBladeHeight' .
+:Blade-Z a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :blade_Y3 ;
+  x3do:hasChildren :Transform_2_2_2_1_4_2_1 ;
+  x3do:DEF 'Blade-Z' ;
+  x3do:rotation ( 1 0 0 3.142 ) .
+:Transform_2_2_2_1_4_2_1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Blade-Z ;
+  x3do:hasChildren :BLADE-USE-2 ;
+  x3do:rotation ( 0 0 1 -1.2 ) .
+:BLADE-USE-2 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_2_2_1_4_2_1 ;
+  owl:sameAs :BLADE . # DEF matching this USE
+:blade_Y4 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Group_2_2_2_1 ;
+  x3do:hasIS :IS_2_2_2_1_5_1 ;
+  x3do:hasChildren :bladeToTheSide-USE-1 ;
+  x3do:DEF 'blade_Y4' ;
+  x3do:rotation ( 0 1 0 1.2 ) .
+:IS_2_2_2_1_5_1 a owl:NamedIndividual, x3do:IS ;
+  x3do:hasParent :blade_Y4 ;
+  x3do:hasConnect :connect_2_2_2_1_5_1_1, :connect_2_2_2_1_5_1_2 .
+:connect_2_2_2_1_5_1_1 a owl:NamedIndividual, x3do:connect ;
+  x3do:hasParent :IS_2_2_2_1_5_1 ;
+  x3do:nodeField 'scale' ;
+  x3do:protoField 'leftBladeSize' .
+:connect_2_2_2_1_5_1_2 a owl:NamedIndividual, x3do:connect ;
+  x3do:hasParent :IS_2_2_2_1_5_1 ;
+  x3do:nodeField 'translation' ;
+  x3do:protoField 'leftSideBladeHeight' .
+:bladeToTheSide-USE-1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :blade_Y4 ;
+  owl:sameAs :bladeToTheSide . # DEF matching this USE
+:Clock a owl:NamedIndividual, x3do:TimeSensor ;
+  x3do:hasParent :Group_2_2_2_1 ;
+  x3do:DEF 'Clock' ;
+  x3do:cycleInterval '5.5' ;
+  x3do:loop true .
+:horizontalStipeMover a owl:NamedIndividual, x3do:OrientationInterpolator ;
+  x3do:hasParent :Group_2_2_2_1 ;
+  x3do:DEF 'horizontalStipeMover' ;
+  x3do:key ( 0 0.25 0.5 0.75 1.0 ) ;
+  x3do:keyValue ( 0 0 1 1.471 0 0 1 1.571 0 0 1 1.671 0 0 1 1.571 0 0 1 1.471 ) .
+:ROUTE_2_2_2_2 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :ProtoBody_2_2_2 ;
+  x3do:fromField 'fraction_changed' ;
+  x3do:fromNode 'Clock' ;
+  x3do:toField 'set_fraction' ;
+  x3do:toNode 'horizontalStipeMover' .
+:ROUTE_2_2_2_3 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :ProtoBody_2_2_2 ;
+  x3do:fromField 'value_changed' ;
+  x3do:fromNode 'horizontalStipeMover' ;
+  x3do:toField 'set_rotation' ;
+  x3do:toNode 'horizontalStipe' .
+:Viewpoint_2_3 a owl:NamedIndividual, x3do:Viewpoint ;
+  x3do:hasParent :Scene ;
+  x3do:description 'click message to view example' ;
+  x3do:position ( 0 0 8 ) .
+:TouchTextForExample a owl:NamedIndividual, x3do:Anchor ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :Shape_2_4_1, :Shape_2_4_2 ;
+  x3do:DEF 'TouchTextForExample' ;
+  x3do:description 'KelpNoBase' ;
+  x3do:parameter '"target=_blank"' ;
+  x3do:url '"KelpExamplesNoBase.x3d" "https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/KelpExamplesNoBase.x3d" "KelpExamplesNoBase.wrl" "https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/KelpExamplesNoBase.wrl"' .
+:Shape_2_4_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :TouchTextForExample ;
+  x3do:hasAppearance :Appearance_2_4_1_1 ;
+  x3do:hasGeometry :Text_2_4_1_2 .
+:Appearance_2_4_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_4_1 ;
+  x3do:hasMaterial :Material_2_4_1_1_1 .
+:Material_2_4_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_4_1_1 ;
+  x3do:diffuseColor ( 0 1 1 ) ;
+  x3do:emissiveColor ( 0 1 1 ) .
+:Text_2_4_1_2 a owl:NamedIndividual, x3do:Text ;
+  x3do:hasParent :Shape_2_4_1 ;
+  x3do:hasFontStyle :FontStyle_2_4_1_2_1 ;
+  x3do:string '"KelpPrototype" "is a Prototype declaration file." "" "To see an example using 3 instances of" "this new node, click this text and view" "KelpNoBase scene"' .
+:FontStyle_2_4_1_2_1 a owl:NamedIndividual, x3do:FontStyle ;
+  x3do:hasParent :Text_2_4_1_2 ;
+  x3do:justify '"MIDDLE" "MIDDLE"' ;
+  x3do:size 0.5 .
+:Shape_2_4_2 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :TouchTextForExample ;
+  x3do:hasGeometry :Box_2_4_2_1 ;
+  x3do:hasAppearance :Appearance_2_4_2_2 .
+:Box_2_4_2_1 a owl:NamedIndividual, x3do:Box ;
+  x3do:hasParent :Shape_2_4_2 ;
+  x3do:size ( 8 3 .001 ) .
+:Appearance_2_4_2_2 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_4_2 ;
+  x3do:hasMaterial :Material_2_4_2_2_1 .
+:Material_2_4_2_2_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_4_2_2 ;
+  x3do:transparency 1 .

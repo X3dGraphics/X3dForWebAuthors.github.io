@@ -1,0 +1,448 @@
+@prefix :        <https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter08UserInteractivity/UserInteractivitySensorNodes.ttl#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema:  <http://schema.org/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix x3d:     <https://www.web3d.org/specifications/x3d-4.0.xsd#> .
+@prefix x3do:    <https://www.web3d.org/specifications/X3dOntology4.0#> .
+
+:X3D a owl:NamedIndividual, x3do:X3D ;
+  x3do:hasHead :head ;
+  x3do:hasScene :Scene ;
+  x3do:profile 'Immersive' ;
+  x3do:version '3.3' ;
+  x3do:noNamespaceSchemaLocation 'https://www.web3d.org/specifications/x3d-3.3.xsd' .
+:head a owl:NamedIndividual, x3do:head ;
+  x3do:hasParent :X3D ;
+  x3do:hasMeta :meta_1_1, :meta_1_2, :meta_1_3, :meta_1_4, :meta_1_5, :meta_1_6, :meta_1_7, :meta_1_8, :meta_1_9, :meta_1_10, :meta_1_11 .
+:meta_1_1 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'UserInteractivitySensorNodes.x3d' ;
+  x3do:name 'title' .
+:meta_1_2 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'A collection of all of the user interactivity sensor nodes: TouchSensor, PlaceSensor, CylinderSensor, SphereSensor, KeySensor, and StringSensor.' ;
+  x3do:name 'description' .
+:meta_1_3 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Don Brutzman' ;
+  x3do:name 'creator' .
+:meta_1_4 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '30 April 2005' ;
+  x3do:name 'created' .
+:meta_1_5 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '20 October 2019' ;
+  x3do:name 'modified' .
+:meta_1_6 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Copyright 2006, Daly Realism and Don Brutzman' ;
+  x3do:name 'rights' .
+:meta_1_7 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'UserInteractivitySensorNodes.png' ;
+  x3do:name 'Image' .
+:meta_1_8 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'UserInteractivitySensorNodesModified.png' ;
+  x3do:name 'Image' .
+:meta_1_9 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter08UserInteractivity/UserInteractivitySensorNodes.x3d' ;
+  x3do:name 'identifier' .
+:meta_1_10 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'X3D-Edit 3.3, https://savage.nps.edu/X3D-Edit' ;
+  x3do:name 'generator' .
+:meta_1_11 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '../license.html' ;
+  x3do:name 'license' .
+:meta dcterms:title "UserInteractivitySensorNodes.x3d" .
+:meta dcterms:description "A collection of all of the user interactivity sensor nodes: TouchSensor, PlaceSensor, CylinderSensor, SphereSensor, KeySensor, and StringSensor." .
+:meta dcterms:creator "Don Brutzman" .
+:meta dcterms:created "30 April 2005" .
+:meta dcterms:modified "20 October 2019" .
+:meta dcterms:rights "Copyright 2006, Daly Realism and Don Brutzman" .
+:meta dcterms:Image "UserInteractivitySensorNodes.png" .
+:meta dcterms:Image "UserInteractivitySensorNodesModified.png" .
+:meta dcterms:identifier "https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter08UserInteractivity/UserInteractivitySensorNodes.x3d" .
+:meta dcterms:generator "X3D-Edit 3.3, https://savage.nps.edu/X3D-Edit" .
+:meta dcterms:license "../license.html" .
+:Scene a owl:NamedIndividual, x3do:Scene ;
+  x3do:hasParent :X3D ;
+  x3do:hasChildren :WorldInfo_2_1, :Viewpoint_2_2, :BackgroundDefault, :BackgroundTouchCone, :Transform_2_5, :Transform_2_6, :Group_2_7 .
+:WorldInfo_2_1 a owl:NamedIndividual, x3do:WorldInfo ;
+  x3do:hasParent :Scene ;
+  x3do:title 'UserInteractivitySensorNodes.x3d' .
+:Viewpoint_2_2 a owl:NamedIndividual, x3do:Viewpoint ;
+  x3do:hasParent :Scene ;
+  x3do:description 'User interactivity sensor nodes' ;
+  x3do:position ( 0 0 12 ) .
+:BackgroundDefault a owl:NamedIndividual, x3do:Background ;
+  x3do:hasParent :Scene ;
+  x3do:DEF 'BackgroundDefault' ;
+  x3do:groundColor ( 0.2 0.4 0.6 ) ;
+  x3do:skyColor ( 0.2 0.4 0.6 ) .
+:BackgroundTouchCone a owl:NamedIndividual, x3do:Background ;
+  x3do:hasParent :Scene ;
+  x3do:DEF 'BackgroundTouchCone' ;
+  x3do:skyColor ( 0.5 0.7 0.9 ) .
+:Transform_2_5 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :Shape_2_5_1 ;
+  x3do:translation ( 0 4 0 ) .
+:Shape_2_5_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_5 ;
+  x3do:hasGeometry :Text_2_5_1_1 ;
+  x3do:hasAppearance :Appearance_2_5_1_2 .
+:Text_2_5_1_1 a owl:NamedIndividual, x3do:Text ;
+  x3do:hasParent :Shape_2_5_1 ;
+  x3do:hasFontStyle :FontStyle_2_5_1_1_1 ;
+  x3do:string '"Sensor node examples"' .
+:FontStyle_2_5_1_1_1 a owl:NamedIndividual, x3do:FontStyle ;
+  x3do:hasParent :Text_2_5_1_1 ;
+  x3do:justify '"MIDDLE" "MIDDLE"' ;
+  x3do:size 1.5 .
+:Appearance_2_5_1_2 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_5_1 ;
+  x3do:hasMaterial :DefaultMaterial .
+:DefaultMaterial a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_5_1_2 ;
+  x3do:DEF 'DefaultMaterial' ;
+  x3do:diffuseColor ( 0.8 0.6 0.4 ) .
+:Transform_2_6 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :Transform_2_6_1, :TransformBox, :TransformCylinder, :TransformSphere ;
+  x3do:translation ( 0 1 0 ) .
+:Transform_2_6_1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_6 ;
+  x3do:hasChildren :DefaultTouchSensor, :Shape_2_6_1_2, :Transform_2_6_1_3 ;
+  x3do:hasROUTE :ROUTE_2_6_1_4 ;
+  x3do:translation ( -6 0 0 ) .
+:DefaultTouchSensor a owl:NamedIndividual, x3do:TouchSensor ;
+  x3do:hasParent :Transform_2_6_1 ;
+  x3do:DEF 'DefaultTouchSensor' ;
+  x3do:description 'click to activate TouchSensor bind alternate Background' .
+:Shape_2_6_1_2 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_6_1 ;
+  x3do:hasGeometry :Cone_2_6_1_2_1 ;
+  x3do:hasAppearance :RedAppearance .
+:Cone_2_6_1_2_1 a owl:NamedIndividual, x3do:Cone ;
+  x3do:hasParent :Shape_2_6_1_2 .
+:RedAppearance a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_6_1_2 ;
+  x3do:hasMaterial :Material_2_6_1_2_2_1 ;
+  x3do:DEF 'RedAppearance' .
+:Material_2_6_1_2_2_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :RedAppearance ;
+  x3do:diffuseColor ( 1 0.2 0.2 ) .
+:Transform_2_6_1_3 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_6_1 ;
+  x3do:hasChildren :Shape_2_6_1_3_1 ;
+  x3do:translation ( 0 -2 0 ) .
+:Shape_2_6_1_3_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_6_1_3 ;
+  x3do:hasGeometry :Text_2_6_1_3_1_1 ;
+  x3do:hasAppearance :RedAppearance-USE-1 .
+:Text_2_6_1_3_1_1 a owl:NamedIndividual, x3do:Text ;
+  x3do:hasParent :Shape_2_6_1_3_1 ;
+  x3do:hasFontStyle :JustifyMiddle ;
+  x3do:string '"Touch" "Sensor"' .
+:JustifyMiddle a owl:NamedIndividual, x3do:FontStyle ;
+  x3do:hasParent :Text_2_6_1_3_1_1 ;
+  x3do:DEF 'JustifyMiddle' ;
+  x3do:justify '"MIDDLE" "MIDDLE"' .
+:RedAppearance-USE-1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_6_1_3_1 ;
+  owl:sameAs :RedAppearance . # DEF matching this USE
+:ROUTE_2_6_1_4 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Transform_2_6_1 ;
+  x3do:fromField 'isActive' ;
+  x3do:fromNode 'DefaultTouchSensor' ;
+  x3do:toField 'set_bind' ;
+  x3do:toNode 'BackgroundTouchCone' .
+:TransformBox a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_6 ;
+  x3do:hasChildren :DefaultPlaneSensor, :Shape_2_6_2_2, :Transform_2_6_2_3 ;
+  x3do:hasROUTE :ROUTE_2_6_2_4 ;
+  x3do:DEF 'TransformBox' ;
+  x3do:translation ( -2 0 0 ) .
+:DefaultPlaneSensor a owl:NamedIndividual, x3do:PlaneSensor ;
+  x3do:hasParent :TransformBox ;
+  x3do:DEF 'DefaultPlaneSensor' ;
+  x3do:description 'drag Box to activate PlaneSensor' .
+:Shape_2_6_2_2 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :TransformBox ;
+  x3do:hasGeometry :Box_2_6_2_2_1 ;
+  x3do:hasAppearance :GreenAppearance .
+:Box_2_6_2_2_1 a owl:NamedIndividual, x3do:Box ;
+  x3do:hasParent :Shape_2_6_2_2 .
+:GreenAppearance a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_6_2_2 ;
+  x3do:hasMaterial :Material_2_6_2_2_2_1 ;
+  x3do:DEF 'GreenAppearance' .
+:Material_2_6_2_2_2_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :GreenAppearance ;
+  x3do:diffuseColor ( 0.2 1 0.2 ) .
+:Transform_2_6_2_3 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :TransformBox ;
+  x3do:hasChildren :Shape_2_6_2_3_1 ;
+  x3do:translation ( 0 -2 0 ) .
+:Shape_2_6_2_3_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_6_2_3 ;
+  x3do:hasGeometry :Text_2_6_2_3_1_1 ;
+  x3do:hasAppearance :GreenAppearance-USE-1 .
+:Text_2_6_2_3_1_1 a owl:NamedIndividual, x3do:Text ;
+  x3do:hasParent :Shape_2_6_2_3_1 ;
+  x3do:hasFontStyle :JustifyMiddle-USE-1 ;
+  x3do:string '"Plane" "Sensor"' .
+:JustifyMiddle-USE-1 a owl:NamedIndividual, x3do:FontStyle ;
+  x3do:hasParent :Text_2_6_2_3_1_1 ;
+  owl:sameAs :JustifyMiddle . # DEF matching this USE
+:GreenAppearance-USE-1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_6_2_3_1 ;
+  owl:sameAs :GreenAppearance . # DEF matching this USE
+:ROUTE_2_6_2_4 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :TransformBox ;
+  x3do:fromField 'offset' ;
+  x3do:fromNode 'DefaultPlaneSensor' ;
+  x3do:toField 'set_translation' ;
+  x3do:toNode 'TransformBox' .
+:TransformCylinder a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_6 ;
+  x3do:hasChildren :DefaultCylinderSensor, :Shape_2_6_3_2, :Transform_2_6_3_3 ;
+  x3do:hasROUTE :ROUTE_2_6_3_4 ;
+  x3do:DEF 'TransformCylinder' ;
+  x3do:translation ( 2 0 0 ) .
+:DefaultCylinderSensor a owl:NamedIndividual, x3do:CylinderSensor ;
+  x3do:hasParent :TransformCylinder ;
+  x3do:DEF 'DefaultCylinderSensor' ;
+  x3do:description 'drag to activate CylinderSensor' .
+:Shape_2_6_3_2 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :TransformCylinder ;
+  x3do:hasGeometry :Cylinder_2_6_3_2_1 ;
+  x3do:hasAppearance :Appearance_2_6_3_2_2 .
+:Cylinder_2_6_3_2_1 a owl:NamedIndividual, x3do:Cylinder ;
+  x3do:hasParent :Shape_2_6_3_2 .
+:Appearance_2_6_3_2_2 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_6_3_2 ;
+  x3do:hasTexture :ReferenceTexture ;
+  x3do:hasMaterial :DarkBlue .
+:ReferenceTexture a owl:NamedIndividual, x3do:ImageTexture ;
+  x3do:hasParent :Appearance_2_6_3_2_2 ;
+  x3do:DEF 'ReferenceTexture' ;
+  x3do:url '"../Chapter05AppearanceMaterialTextures/ImageTextureFigure18.1X3dSpecification.png" "../Chapter05AppearanceMaterialTextures/ImageTextureFigure18.1X3dSpecification.gif" "https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter05AppearanceMaterialTextures/ImageTextureFigure18.1X3dSpecification.png" "https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter05AppearanceMaterialTextures/ImageTextureFigure18.1X3dSpecification.gif"' .
+:DarkBlue a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_6_3_2_2 ;
+  x3do:DEF 'DarkBlue' ;
+  x3do:diffuseColor ( 0 0 0.9 ) .
+:Transform_2_6_3_3 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :TransformCylinder ;
+  x3do:hasChildren :Shape_2_6_3_3_1 ;
+  x3do:translation ( 0 -2 0 ) .
+:Shape_2_6_3_3_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_6_3_3 ;
+  x3do:hasGeometry :Text_2_6_3_3_1_1 ;
+  x3do:hasAppearance :Appearance_2_6_3_3_1_2 .
+:Text_2_6_3_3_1_1 a owl:NamedIndividual, x3do:Text ;
+  x3do:hasParent :Shape_2_6_3_3_1 ;
+  x3do:hasFontStyle :JustifyMiddle-USE-2 ;
+  x3do:string '"Cylinder" "Sensor"' .
+:JustifyMiddle-USE-2 a owl:NamedIndividual, x3do:FontStyle ;
+  x3do:hasParent :Text_2_6_3_3_1_1 ;
+  owl:sameAs :JustifyMiddle . # DEF matching this USE
+:Appearance_2_6_3_3_1_2 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_6_3_3_1 ;
+  x3do:hasMaterial :DarkBlue-USE-1 .
+:DarkBlue-USE-1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_6_3_3_1_2 ;
+  owl:sameAs :DarkBlue . # DEF matching this USE
+:ROUTE_2_6_3_4 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :TransformCylinder ;
+  x3do:fromField 'rotation_changed' ;
+  x3do:fromNode 'DefaultCylinderSensor' ;
+  x3do:toField 'set_rotation' ;
+  x3do:toNode 'TransformCylinder' .
+:TransformSphere a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_6 ;
+  x3do:hasChildren :DefaultSphereSensor, :Shape_2_6_4_2, :SphereSensorText ;
+  x3do:hasROUTE :ROUTE_2_6_4_4 ;
+  x3do:DEF 'TransformSphere' ;
+  x3do:translation ( 6 0 0 ) .
+:DefaultSphereSensor a owl:NamedIndividual, x3do:SphereSensor ;
+  x3do:hasParent :TransformSphere ;
+  x3do:DEF 'DefaultSphereSensor' ;
+  x3do:description 'click to activate SphereSensor' .
+:Shape_2_6_4_2 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :TransformSphere ;
+  x3do:hasGeometry :Sphere_2_6_4_2_1 ;
+  x3do:hasAppearance :Appearance_2_6_4_2_2 .
+:Sphere_2_6_4_2_1 a owl:NamedIndividual, x3do:Sphere ;
+  x3do:hasParent :Shape_2_6_4_2 .
+:Appearance_2_6_4_2_2 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_6_4_2 ;
+  x3do:hasTexture :ReferenceTexture-USE-1 .
+:ReferenceTexture-USE-1 a owl:NamedIndividual, x3do:ImageTexture ;
+  x3do:hasParent :Appearance_2_6_4_2_2 ;
+  owl:sameAs :ReferenceTexture . # DEF matching this USE
+:SphereSensorText a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :TransformSphere ;
+  x3do:hasChildren :Shape_2_6_4_3_1 ;
+  x3do:DEF 'SphereSensorText' ;
+  x3do:translation ( 0 -2 0 ) .
+:Shape_2_6_4_3_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :SphereSensorText ;
+  x3do:hasGeometry :Text_2_6_4_3_1_1 ;
+  x3do:hasAppearance :Appearance_2_6_4_3_1_2 .
+:Text_2_6_4_3_1_1 a owl:NamedIndividual, x3do:Text ;
+  x3do:hasParent :Shape_2_6_4_3_1 ;
+  x3do:hasFontStyle :JustifyMiddle-USE-3 ;
+  x3do:string '"Sphere" "Sensor"' .
+:JustifyMiddle-USE-3 a owl:NamedIndividual, x3do:FontStyle ;
+  x3do:hasParent :Text_2_6_4_3_1_1 ;
+  owl:sameAs :JustifyMiddle . # DEF matching this USE
+:Appearance_2_6_4_3_1_2 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_6_4_3_1 ;
+  x3do:hasMaterial :GreyMaterial .
+:GreyMaterial a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_6_4_3_1_2 ;
+  x3do:DEF 'GreyMaterial' .
+:ROUTE_2_6_4_4 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :TransformSphere ;
+  x3do:fromField 'rotation_changed' ;
+  x3do:fromNode 'DefaultSphereSensor' ;
+  x3do:toField 'set_rotation' ;
+  x3do:toNode 'TransformSphere' .
+:Group_2_7 a owl:NamedIndividual, x3do:Group ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :Transform_2_7_1, :Transform_2_7_2, :DefaultKeySensor, :DefaultStringSensor, :KeyboardProcessor ;
+  x3do:hasROUTE :ROUTE_2_7_6, :ROUTE_2_7_7, :ROUTE_2_7_8, :ROUTE_2_7_9, :ROUTE_2_7_10 .
+:Transform_2_7_1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Group_2_7 ;
+  x3do:hasChildren :Shape_2_7_1_1 ;
+  x3do:translation ( -4 -3 0 ) .
+:Shape_2_7_1_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_7_1 ;
+  x3do:hasGeometry :KeyText ;
+  x3do:hasAppearance :LightBrownAppearance .
+:KeyText a owl:NamedIndividual, x3do:Text ;
+  x3do:hasParent :Shape_2_7_1_1 ;
+  x3do:hasFontStyle :JustifyMiddle-USE-4 ;
+  x3do:DEF 'KeyText' ;
+  x3do:string '"?"' .
+:JustifyMiddle-USE-4 a owl:NamedIndividual, x3do:FontStyle ;
+  x3do:hasParent :KeyText ;
+  owl:sameAs :JustifyMiddle . # DEF matching this USE
+:LightBrownAppearance a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_7_1_1 ;
+  x3do:hasMaterial :Material_2_7_1_1_2_1 ;
+  x3do:DEF 'LightBrownAppearance' .
+:Material_2_7_1_1_2_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :LightBrownAppearance ;
+  x3do:diffuseColor ( 1 0.862745 0.141176 ) .
+:Transform_2_7_2 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Group_2_7 ;
+  x3do:hasChildren :Shape_2_7_2_1 ;
+  x3do:translation ( -2 -3 0 ) .
+:Shape_2_7_2_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_7_2 ;
+  x3do:hasGeometry :StringText ;
+  x3do:hasAppearance :LightBrownAppearance-USE-1 .
+:StringText a owl:NamedIndividual, x3do:Text ;
+  x3do:hasParent :Shape_2_7_2_1 ;
+  x3do:hasFontStyle :FontStyle_2_7_2_1_1_1 ;
+  x3do:DEF 'StringText' ;
+  x3do:string '"Press keys then <Enter>"' .
+:FontStyle_2_7_2_1_1_1 a owl:NamedIndividual, x3do:FontStyle ;
+  x3do:hasParent :StringText ;
+  x3do:justify '"BEGIN" "MIDDLE"' .
+:LightBrownAppearance-USE-1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_7_2_1 ;
+  owl:sameAs :LightBrownAppearance . # DEF matching this USE
+:DefaultKeySensor a owl:NamedIndividual, x3do:KeySensor ;
+  x3do:hasParent :Group_2_7 ;
+  x3do:DEF 'DefaultKeySensor' .
+:DefaultStringSensor a owl:NamedIndividual, x3do:StringSensor ;
+  x3do:hasParent :Group_2_7 ;
+  x3do:DEF 'DefaultStringSensor' .
+:KeyboardProcessor a owl:NamedIndividual, x3do:Script ;
+  x3do:hasParent :Group_2_7 ;
+  x3do:hasField :field_2_7_5_1, :field_2_7_5_2, :field_2_7_5_3, :field_2_7_5_4, :field_2_7_5_5 ;
+  x3do:DEF 'KeyboardProcessor' ;
+  x3do:sourceCode """
+ecmascript:
+
+function keyInput (inputValue)
+{
+//  Browser.print ('keyInput=' + inputValue + '\n'); // console output
+    keyOutput = new MFString (inputValue); // type conversion
+}
+function finalTextInput (inputValue)
+{
+//  Browser.print ('finalText=' + inputValue + '\n'); // console output
+    stringOutput = new MFString (inputValue); // type conversion
+}
+function enteredTextInput (inputValue)
+{
+    Browser.print ('enteredText=' + inputValue + '\n'); // console output
+}
+""" .
+:field_2_7_5_1 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :KeyboardProcessor ;
+  x3do:accessType 'inputOnly' ;
+  x3do:name 'keyInput' ;
+  x3do:type 'SFString' .
+:field_2_7_5_2 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :KeyboardProcessor ;
+  x3do:accessType 'inputOnly' ;
+  x3do:name 'finalTextInput' ;
+  x3do:type 'SFString' .
+:field_2_7_5_3 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :KeyboardProcessor ;
+  x3do:accessType 'inputOnly' ;
+  x3do:name 'enteredTextInput' ;
+  x3do:type 'SFString' .
+:field_2_7_5_4 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :KeyboardProcessor ;
+  x3do:accessType 'outputOnly' ;
+  x3do:name 'keyOutput' ;
+  x3do:type 'MFString' .
+:field_2_7_5_5 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :KeyboardProcessor ;
+  x3do:accessType 'outputOnly' ;
+  x3do:name 'stringOutput' ;
+  x3do:type 'MFString' .
+:ROUTE_2_7_6 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Group_2_7 ;
+  x3do:fromField 'keyPress' ;
+  x3do:fromNode 'DefaultKeySensor' ;
+  x3do:toField 'keyInput' ;
+  x3do:toNode 'KeyboardProcessor' .
+:ROUTE_2_7_7 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Group_2_7 ;
+  x3do:fromField 'finalText' ;
+  x3do:fromNode 'DefaultStringSensor' ;
+  x3do:toField 'finalTextInput' ;
+  x3do:toNode 'KeyboardProcessor' .
+:ROUTE_2_7_8 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Group_2_7 ;
+  x3do:fromField 'enteredText' ;
+  x3do:fromNode 'DefaultStringSensor' ;
+  x3do:toField 'enteredTextInput' ;
+  x3do:toNode 'KeyboardProcessor' .
+:ROUTE_2_7_9 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Group_2_7 ;
+  x3do:fromField 'keyOutput' ;
+  x3do:fromNode 'KeyboardProcessor' ;
+  x3do:toField 'string' ;
+  x3do:toNode 'KeyText' .
+:ROUTE_2_7_10 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Group_2_7 ;
+  x3do:fromField 'stringOutput' ;
+  x3do:fromNode 'KeyboardProcessor' ;
+  x3do:toField 'string' ;
+  x3do:toNode 'StringText' .

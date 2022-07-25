@@ -1,0 +1,1 @@
+<ProtoInstance name='SeaStar' DEF=''> <fieldValue name='rotation' value='0 1 0 0'/> has matching ProtoDeclare but no corresponding match for this fieldValue [/X3D/Scene/ProtoInstance/fieldValue, hint]

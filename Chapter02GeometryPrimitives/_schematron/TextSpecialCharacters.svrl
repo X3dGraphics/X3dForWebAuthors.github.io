@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<svrl:schematron-output xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                        xmlns:schold="http://www.ascc.net/xml/schematron"
+                        xmlns:iso="http://purl.oclc.org/dsdl/schematron"
+                        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+                        xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
+                        title="X3D Graphics Validity Checks using Schematron"
+                        schemaVersion=""><!--   
+		   
+		   
+		 --><svrl:active-pattern document="file:/C:/x3d-code/www.web3d.org/x3d/content/examples/X3dForWebAuthors/Chapter02GeometryPrimitives/TextSpecialCharacters.x3d"/>
+   <svrl:fired-rule context="X3D | *[(upper-case(local-name()) = 'X3D')]"/>
+   <svrl:fired-rule context="head | *[(lower-case(local-name()) = 'head')]"/>
+   <svrl:fired-rule context="meta | *[(lower-case(local-name()) = 'meta')]"/>
+   <svrl:fired-rule context="meta | *[(lower-case(local-name()) = 'meta')]"/>
+   <svrl:fired-rule context="meta | *[(lower-case(local-name()) = 'meta')]"/>
+   <svrl:fired-rule context="meta | *[(lower-case(local-name()) = 'meta')]"/>
+   <svrl:fired-rule context="meta | *[(lower-case(local-name()) = 'meta')]"/>
+   <svrl:fired-rule context="meta[(@name='error') or (@name='warning') or (@name='hint') or (@name='info') or starts-with(@name,'TODO')]"/>
+   <svrl:successful-report test="true()" role="diagnostic" location="/X3D/head/meta[6]">
+      <svrl:text>&lt;meta name='info' content='See screenshot figures and various encoding conversions to note that multiple equivalences in XML character representations lead to consistent results despite slight differences in source.'/&gt;</svrl:text>
+   </svrl:successful-report>
+   <svrl:fired-rule context="meta | *[(lower-case(local-name()) = 'meta')]"/>
+   <svrl:fired-rule context="meta | *[(lower-case(local-name()) = 'meta')]"/>
+   <svrl:fired-rule context="meta | *[(lower-case(local-name()) = 'meta')]"/>
+   <svrl:fired-rule context="meta | *[(lower-case(local-name()) = 'meta')]"/>
+   <svrl:fired-rule context="meta | *[(lower-case(local-name()) = 'meta')]"/>
+   <svrl:fired-rule context="meta | *[(lower-case(local-name()) = 'meta')]"/>
+   <svrl:fired-rule context="meta | *[(lower-case(local-name()) = 'meta')]"/>
+   <svrl:fired-rule context="meta | *[(lower-case(local-name()) = 'meta')]"/>
+   <svrl:fired-rule context="Scene | *[(lower-case(local-name()) = 'scene')]"/>
+   <svrl:fired-rule context="WorldInfo"/>
+   <svrl:fired-rule context="Background"/>
+   <svrl:fired-rule context="Viewpoint | OrthoViewpoint"/>
+   <svrl:fired-rule context="Shape"/>
+   <svrl:fired-rule context="Text"/>
+   <svrl:successful-report test="not(@USE) and (@string) and (contains(@string,'\&#34;'))" role="warning"
+                           location="/X3D/Scene/Shape/Text">
+      <svrl:text>&lt;Text DEF='DefaultText' string='"Character entity substitutions:"         "empty string \"\" skips a line:"         ""         "apostrophe  '  is &amp;apos;"          "ampersand &amp; is &amp;"         "quote mark  \"  is &amp;quot;"         "backslash \\ is X3D escape character"         "double backslash \\\\ is X3D backslash \\ character"         "Pi Π is &amp;#928; XML character entity"'/&gt; has 21 quote marks with at least one escaped quote mark \" so double-check to ensure paired "quote marks" for each line are matched </svrl:text>
+   </svrl:successful-report>
+   <svrl:fired-rule context="FontStyle"/>
+   <svrl:fired-rule context="Appearance"/>
+   <svrl:fired-rule context="Material"/>
+</svrl:schematron-output>

@@ -1,0 +1,134 @@
+{ "X3D": {
+    "encoding":"UTF-8",
+    "@profile":"Immersive",
+    "@version":"3.3",
+    "@xsd:noNamespaceSchemaLocation":"http://www.web3d.org/specifications/x3d-3.3.xsd",
+    "JSON schema":"http://www.web3d.org/specifications/x3d-3.3-JSONSchema.json",
+    "head": {
+        "meta": [
+          {
+            "@name":"title",
+            "@content":"TextHavingFunWithX3D.x3d"
+          },
+          {
+            "@name":"description",
+            "@content":"Simple emoticon happy-face example illustrating a character entity used in MFString Text."
+          },
+          {
+            "@name":"creator",
+            "@content":"Don Brutzman"
+          },
+          {
+            "@name":"created",
+            "@content":"26 April 2017"
+          },
+          {
+            "@name":"modified",
+            "@content":"26 April 2017"
+          },
+          {
+            "@name":"reference",
+            "@content":"http://unicode.org/emoji/charts/full-emoji-list.html"
+          },
+          {
+            "@name":"reference",
+            "@content":"https://en.wikipedia.org/wiki/Emoticons_(Unicode_block)"
+          },
+          {
+            "@name":"reference",
+            "@content":"https://en.wikipedia.org/wiki/Universal_Character_Set_characters"
+          },
+          {
+            "@name":"reference",
+            "@content":"https://www.w3.org/TR/html4/sgml/entities.html"
+          },
+          {
+            "@name":"reference",
+            "@content":"https://dev.w3.org/html5/html-author/charref"
+          },
+          {
+            "@name":"reference",
+            "@content":"https://www.w3.org/wiki/Common_HTML_entities_used_for_typography"
+          },
+          {
+            "@name":"reference",
+            "@content":"http://X3dGraphics.com"
+          },
+          {
+            "@name":"reference",
+            "@content":"http://www.web3d.org/x3d/content/examples/X3dResources.html"
+          },
+          {
+            "@name":"rights",
+            "@content":"Copyright Don Brutzman and Leonard Daly 2007"
+          },
+          {
+            "@name":"subject",
+            "@content":"emoji emoticon, X3D book, X3D graphics, X3D-Edit, http://www.x3dGraphics.com"
+          },
+          {
+            "@name":"identifier",
+            "@content":"http://X3dGraphics.com/examples/X3dForWebAuthors/Chapter02GeometryPrimitives/TextHavingFunWithX3D.x3d"
+          },
+          {
+            "@name":"generator",
+            "@content":"X3D-Edit 3.3, https://savage.nps.edu/X3D-Edit"
+          },
+          {
+            "@name":"license",
+            "@content":"../license.html"
+          },
+          {
+            "@name":"translated",
+            "@content":"26 April 2017"
+          },
+          {
+            "@name":"generator",
+            "@content":"X3dToJson.xslt, http://www.web3d.org/x3d/stylesheets/X3dToJson.html"
+          },
+          {
+            "@name":"reference",
+            "@content":"X3D JSON encoding: http://www.web3d.org/wiki/index.php/X3D_JSON_Encoding"
+          }
+        ]
+    },
+    "Scene": {
+        "-children":[
+          { "Shape":
+            {
+              "-children":[
+                {
+                  "#comment":"&#9786; = smiley face emoticon"
+                }
+              ],
+              "-geometry":
+                { "Text":
+                  {
+                    "@string":["Having fun","with X3D!",":) ☺"],
+                    "-fontStyle":
+                      { "FontStyle":
+                        {
+                          "@family":["SANS"],
+                          "@justify":["MIDDLE","MIDDLE"],
+                          "@style":"BOLD"
+                        }
+                      }
+                  }
+                },
+              "-appearance":
+                { "Appearance":
+                  {
+                    "-material":
+                      { "Material":
+                        {
+                          "@diffuseColor":[0.9,0.9,0.9]
+                        }
+                      }
+                  }
+                }
+            }
+          }
+        ]
+    }
+  }
+}

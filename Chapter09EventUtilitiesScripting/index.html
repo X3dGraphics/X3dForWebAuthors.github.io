@@ -1,0 +1,712 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <link rel="shortcut icon" href="../images/X3DtextIcon16.png" title="X3D"/>
+      <title>X3D4WA, X3D for Web Authors Examples Archive, Chapter 09 Event Utilities Scripting</title>
+      <meta http-equiv="X-UA-Compatible" content="chrome=1,IE=edge"/>
+      <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+      <meta name="author" content="Don Brutzman"/>
+      <meta name="generator"
+             content="https://www.web3d.org/x3d/tools/CreateContentCatalog/CreateContentCatalogPages.xslt"/>
+      <meta name="modified" content="2022-07-03-07:00"/>
+      <meta name="keyword"
+             content="X3D, X3DV, VRML, VRML97, Extensible 3D, Virtual Reality Modeling Language"/>
+   </head>
+   <body>
+      <table
+              align="center"
+              summary="navigation"
+              border="1"
+              cellpadding="2"
+              width="95%">
+         <tr>
+            <td align="center" width="17%">
+               <a href="../index.html" target="_top">
+                  <img src="../images/ToC.png"
+                        title="Table of Contents"
+                        alt="Table of Contents"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter08UserInteractivity/index.html" target="_top">
+                  <img src="../images/PreviousChapter.png"
+                        title="Previous Directory Summary"
+                        alt="Previous Directory Summary"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="viewpointSlideshow.html" target="_top">
+                  <img src="../images/MootoolsSlideshowLogo.jpg"
+                        title="Directory Viewpoint Slideshow"
+                        alt="Directory Viewpoint Slideshow"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="15%">
+               <a href="../javadoc/index.html?X3dForWebAuthors/Chapter09EventUtilitiesScripting/package-summary.html"
+                   title="Javadoc for translated java source"
+                   alt="Javadoc for translated java source"
+                   target="_blank">
+                  <img src="../images/Java-32.png"
+                        title="Javadoc for translated java source"
+                        alt="Javadoc for translated java source"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter10Geometry2D/index.html" target="_top">
+                  <img src="../images/NextChapter.png"
+                        title="Next Directory Summary"
+                        alt="Next Directory Summary"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="15%">
+               <a href="../../X3dResources.html" target="helpPage">
+                  <img src="../images/Help.png"
+                        title="X3D Resources"
+                        alt="X3D Resources"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+         </tr>
+      </table>
+      <h2 align="center">
+         <i> X3D Example Archives: </i>X3D4WA, X3D for Web Authors, Chapter 09 Event Utilities Scripting</h2>
+      <table align="center"
+              width="85%"
+              summary=""
+              border="0"
+              cellpadding="0">
+         <tr align="center">
+            <td><!--ChapterPackageDescription--><!--Contents of file ../../content/examples/X3dForWebAuthors/Chapter09EventUtilitiesScripting/package-catalog.html-->
+    
+    <table bgColor="#ffffff" border="0" width="100%">
+        <tbody>
+            <tr>
+                <td align="left" cellpadding="10">
+                    
+                    <a href="index.html"><img alt="IntegerSequencer example:  Road Work Ahead!" title="IntegerSequencer example:  Road Work Ahead!" border="0" hspace="10" src="RoadSignRoadWorkAhead.jpg" width="205" height="153" align="left"/></a>
+                </td>
+
+                <td>
+    <p>
+				Event-utility nodes allow conversion and connection of different data types via ROUTEs, while
+				Script nodes allow authors to write their own event-handling code for special scene capabilities.
+    </p>
+    
+
+    <p>
+                 Event utility nodes simplify data-type conversion of events when producing animation chains between nodes.
+                 These include
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#BooleanFilter" target="X3dTooltips" title="X3D Tooltip">BooleanFilter</a>,
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#BooleanSequencer" target="X3dTooltips" title="X3D Tooltip">BooleanSequencer</a>,
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#BooleanToggle" target="X3dTooltips" title="X3D Tooltip">BooleanToggle</a>,
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#IntegerSequencer" target="X3dTooltips" title="X3D Tooltip">IntegerSequencer</a>,
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#IntegerTrigger" target="X3dTooltips" title="X3D Tooltip">IntegerTrigger</a>, 
+                 and 
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#TimeTrigger" target="X3dTooltips" title="X3D Tooltip">TimeTrigger</a>
+                 nodes.
+    </p>
+    
+
+    <p>
+                 The quick-reference sheet
+                 <a href="X3dEventUtilityNodeEventDiagrams.pdf" target="_blank">X3D&nbsp;Event&nbsp;Utility&nbsp;Nodes: Field&nbsp;Event&nbsp;Diagrams</a>
+                 illustrates the functionality of the event utility nodes.
+                 These nodes receive and pass values that are sent via 
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#ROUTE" target="X3dTooltips" title="X3D Tooltip">ROUTE</a>
+                 connections.
+    </p>
+    
+
+    <p>
+                 The
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#Script" target="X3dTooltips" title="X3D Tooltip">Script</a>
+                 node allows authors to define new functionality produced by JavaScript (ECMAscript) or Java code.
+                 Authors can add
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#field" target="X3dTooltips" title="X3D Tooltip">field</a>
+                 declarations that define 
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#accessType" target="X3dTooltips" title="X3D Tooltip">accessType</a>
+                 (inputOnly, outputOnly, initializeOnly and inputOutput)
+                 and  
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#type" target="X3dTooltips" title="X3D Tooltip">type</a>
+                 for each field.
+    </p>
+    
+
+    <p>
+                 The supporting
+                 <a href="http://x3dgraphics.com/slidesets/X3dForWebAuthors/Chapter09EventUtilitiesScripting.pdf" target="X3dChapterSlideset">Chapter&nbsp;9 slideset</a>
+                 and course videos
+                (<a href="https://www.movesinstitute.org/Video/Courses/X3dForWebAuthors/X3dForWebAuthorsVideo.html#9" target="X3dChapterVideos">NPS</a>,
+                 <a href="https://www.youtube.com/playlist?list=PLuSIsM-86sik26mcDz0w_wdFXOUp56FTr" target="X3dChapterYouTubeVideos">YouTube</a>)
+                 for <i>X3D for Web Authors</i> are available online via
+                 <a href="http://X3dGraphics.com" target="_blank">X3dGraphics.com</a>.
+    </p>
+    
+
+    <p>
+                     Also available:
+                     <a href="https://www.web3d.org/x3d/content/examples/X3dSceneAuthoringHints.html#Scripts" target="_blank">X3D Scene Authoring Hints</a>
+                     for
+                     <a href="https://www.web3d.org/x3d/content/examples/X3dSceneAuthoringHints.html#Scripts" target="_blank">Scripts</a>
+                     and
+                     <a href="https://www.web3d.org/x3d/content/examples/X3dSceneAuthoringHints.html#urls" target="_blank">URL&nbsp;Links</a>.
+    </p>
+    
+
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    
+
+
+  </td>
+         </tr>
+      </table>
+      <table align="center"
+              width="85%"
+              summary=""
+              border="1"
+              cellpadding="6">
+         <tr align="center">
+            <th colspan="2" width="25%" align="center">&nbsp;&nbsp;28 X3D Models</th>
+            <th width="75%" align="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;X3D Model Descriptions</th>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="BackgroundColorArrayAnimation"/>
+               <a href="BackgroundColorArrayAnimationIndex.html">
+                  <img src="_thumbnails/BackgroundColorArrayAnimationThumbnail.png"
+                        height="48"
+                        alt="BackgroundColorArrayAnimation"
+                        title="BackgroundColorArrayAnimation"/>
+               </a>
+            </td>
+            <td>
+               <a href="BackgroundColorArrayAnimationIndex.html">Background Color Array Animation</a>
+            </td>
+            <td>Design pattern demonstrating type conversion from single SFColor value (sent from a ColorInterpolator node) to an MFColor array (in a Background node).</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="BooleanFilterPumpHouse"/>
+               <a href="BooleanFilterPumpHouseIndex.html">
+                  <img src="_thumbnails/BooleanFilterPumpHouseThumbnail.png"
+                        height="48"
+                        alt="BooleanFilterPumpHouse"
+                        title="BooleanFilterPumpHouse"/>
+               </a>
+            </td>
+            <td>
+               <a href="BooleanFilterPumpHouseIndex.html">Boolean Filter Pump House</a>
+            </td>
+            <td>A BooleanFilter node starts the animation of cones orbiting near the pump house, instead of an unfiltered TouchSensor toggling the animation on/off during selection/deselection.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="BooleanSequencerIntegerSequencer"/>
+               <a href="BooleanSequencerIntegerSequencerIndex.html">
+                  <img src="_thumbnails/BooleanSequencerIntegerSequencerThumbnail.png"
+                        height="48"
+                        alt="BooleanSequencerIntegerSequencer"
+                        title="BooleanSequencerIntegerSequencer"/>
+               </a>
+            </td>
+            <td>
+               <a href="BooleanSequencerIntegerSequencerIndex.html">Boolean Sequencer Integer Sequencer</a>
+            </td>
+            <td>Show synchronized use of BooleanSequencer and IntegerSequencer nodes for SpotLight enabled and Switch whichChoice control, respectively</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="BooleanSequencerPumpHouse"/>
+               <a href="BooleanSequencerPumpHouseIndex.html">
+                  <img src="_thumbnails/BooleanSequencerPumpHouseThumbnail.png"
+                        height="48"
+                        alt="BooleanSequencerPumpHouse"
+                        title="BooleanSequencerPumpHouse"/>
+               </a>
+            </td>
+            <td>
+               <a href="BooleanSequencerPumpHouseIndex.html">Boolean Sequencer Pump House</a>
+            </td>
+            <td>A BooleanSequencer node intermittently interrupts animation of the pump house.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="BooleanToggleExample"/>
+               <a href="BooleanToggleExampleIndex.html">
+                  <img src="_thumbnails/BooleanToggleExampleThumbnail.png"
+                        height="48"
+                        alt="BooleanToggleExample"
+                        title="BooleanToggleExample"/>
+               </a>
+            </td>
+            <td>
+               <a href="BooleanToggleExampleIndex.html">Boolean Toggle Example</a>
+            </td>
+            <td>A BooleanToggle button determines whether an animated Cone is jittery or not.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="BooleanTogglePumpHouse"/>
+               <a href="BooleanTogglePumpHouseIndex.html">
+                  <img src="_thumbnails/BooleanTogglePumpHouseThumbnail.png"
+                        height="48"
+                        alt="BooleanTogglePumpHouse"
+                        title="BooleanTogglePumpHouse"/>
+               </a>
+            </td>
+            <td>
+               <a href="BooleanTogglePumpHouseIndex.html">Boolean Toggle Pump House</a>
+            </td>
+            <td>A BooleanToggle node controls pump house animation: select to stop, then select again to restart.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="BooleanTriggerPumpHouse"/>
+               <a href="BooleanTriggerPumpHouseIndex.html">
+                  <img src="_thumbnails/BooleanTriggerPumpHouseThumbnail.png"
+                        height="48"
+                        alt="BooleanTriggerPumpHouse"
+                        title="BooleanTriggerPumpHouse"/>
+               </a>
+            </td>
+            <td>
+               <a href="BooleanTriggerPumpHouseIndex.html">Boolean Trigger Pump House</a>
+            </td>
+            <td>A BooleanTrigger node initiates the pump house animation: select to start. This model shows a positive-displacement cylinder pump to emulate breakers surge, designed and built by David Packard.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="CircleLinesExample"/>
+               <a href="CircleLinesExampleIndex.html">
+                  <img src="_thumbnails/CircleLinesExampleThumbnail.png"
+                        height="48"
+                        alt="CircleLinesExample"
+                        title="CircleLinesExample"/>
+               </a>
+            </td>
+            <td>
+               <a href="CircleLinesExampleIndex.html">Circle Lines Example</a>
+            </td>
+            <td>Example circle and cross-hairs made out of line segments, autogenerated by a simple Java program.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="CircleLinesExample60"/>
+               <a href="CircleLinesExample60Index.html">
+                  <img src="_thumbnails/CircleLinesExample60Thumbnail.png"
+                        height="48"
+                        alt="CircleLinesExample60"
+                        title="CircleLinesExample60"/>
+               </a>
+            </td>
+            <td>
+               <a href="CircleLinesExample60Index.html">Circle Lines Example 60</a>
+            </td>
+            <td>Example circle and cross-hairs made out of line segments, autogenerated by a simple Java program.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="CircleLinesSphereLatitude"/>
+               <a href="CircleLinesSphereLatitudeIndex.html">
+                  <img src="_thumbnails/CircleLinesSphereLatitudeThumbnail.png"
+                        height="48"
+                        alt="CircleLinesSphereLatitude"
+                        title="CircleLinesSphereLatitude"/>
+               </a>
+            </td>
+            <td>
+               <a href="CircleLinesSphereLatitudeIndex.html">Circle Lines Sphere Latitude</a>
+            </td>
+            <td>Build a sphere outline by using multiple CircleLine circles as latitude rings, with actual semitransparent Sphere and axes added as a visualization hint.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="CircleLinesSphereLongitude"/>
+               <a href="CircleLinesSphereLongitudeIndex.html">
+                  <img src="_thumbnails/CircleLinesSphereLongitudeThumbnail.png"
+                        height="48"
+                        alt="CircleLinesSphereLongitude"
+                        title="CircleLinesSphereLongitude"/>
+               </a>
+            </td>
+            <td>
+               <a href="CircleLinesSphereLongitudeIndex.html">Circle Lines Sphere Longitude</a>
+            </td>
+            <td>Build a sphere outline by using multiple CircleLine circles as longitude rings, with actual semitransparent Sphere and axes added as a visualization hint.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="ElevationGridSimpleWaveAnimation"/>
+               <a href="ElevationGridSimpleWaveAnimationIndex.html">
+                  <img src="_thumbnails/ElevationGridSimpleWaveAnimationThumbnail.png"
+                        height="48"
+                        alt="ElevationGridSimpleWaveAnimation"
+                        title="ElevationGridSimpleWaveAnimation"/>
+               </a>
+            </td>
+            <td>
+               <a href="ElevationGridSimpleWaveAnimationIndex.html">Elevation Grid Simple Wave Animation</a>
+            </td>
+            <td>Simple Javascript animation of ElevationGrid</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="IntegerSequencerPumpHouse"/>
+               <a href="IntegerSequencerPumpHouseIndex.html">
+                  <img src="_thumbnails/IntegerSequencerPumpHouseThumbnail.png"
+                        height="48"
+                        alt="IntegerSequencerPumpHouse"
+                        title="IntegerSequencerPumpHouse"/>
+               </a>
+            </td>
+            <td>
+               <a href="IntegerSequencerPumpHouseIndex.html">Integer Sequencer Pump House</a>
+            </td>
+            <td>An IntegerSequencer node switches the display of colored cones near the pump house.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="IntegerSequencerRoadSignSwitcher"/>
+               <a href="IntegerSequencerRoadSignSwitcherIndex.html">
+                  <img src="_thumbnails/IntegerSequencerRoadSignSwitcherThumbnail.png"
+                        height="48"
+                        alt="IntegerSequencerRoadSignSwitcher"
+                        title="IntegerSequencerRoadSignSwitcher"/>
+               </a>
+            </td>
+            <td>
+               <a href="IntegerSequencerRoadSignSwitcherIndex.html">Integer Sequencer Road Sign Switcher</a>
+            </td>
+            <td>Switch among different road signs using IntegerSequencer</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="IntegerTriggerExample"/>
+            </td>
+            <td>
+               <a href="IntegerTriggerExampleIndex.html">Integer Trigger Example</a>
+            </td>
+            <td>An IntegerTrigger node controls the display of colored text.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="IntegerTriggerPumpHouse"/>
+               <a href="IntegerTriggerPumpHouseIndex.html">
+                  <img src="_thumbnails/IntegerTriggerPumpHouseThumbnail.png"
+                        height="48"
+                        alt="IntegerTriggerPumpHouse"
+                        title="IntegerTriggerPumpHouse"/>
+               </a>
+            </td>
+            <td>
+               <a href="IntegerTriggerPumpHouseIndex.html">Integer Trigger Pump House</a>
+            </td>
+            <td>An IntegerTrigger node controls the display of colored cones near the pump house.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="MoodSelector"/>
+               <a href="MoodSelectorIndex.html">
+                  <img src="_thumbnails/MoodSelectorThumbnail.png"
+                        height="48"
+                        alt="MoodSelector"
+                        title="MoodSelector"/>
+               </a>
+            </td>
+            <td>
+               <a href="MoodSelectorIndex.html">Mood Selector</a>
+            </td>
+            <td>Design pattern demonstrating multiple TouchSensor, IntegerTrigger, Shape and ROUTE combinations for selecting a Switch</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="newECMAscriptTest"/>
+               <a href="newECMAscriptTestIndex.html">
+                  <img src="_thumbnails/newECMAscriptTestThumbnail.png"
+                        height="48"
+                        alt="newECMAscriptTest"
+                        title="newECMAscriptTest"/>
+               </a>
+            </td>
+            <td>
+               <a href="newECMAscriptTestIndex.html">new ECMAscript Test</a>
+            </td>
+            <td>Example scene providing a unit test for newECMAscript template javascript source code, first load this scene and then see console for test output.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="ScriptComplexStateEvents"/>
+               <a href="ScriptComplexStateEventsIndex.html">
+                  <img src="_thumbnails/ScriptComplexStateEventsThumbnail.png"
+                        height="48"
+                        alt="ScriptComplexStateEvents"
+                        title="ScriptComplexStateEvents"/>
+               </a>
+            </td>
+            <td>
+               <a href="ScriptComplexStateEventsIndex.html">Script Complex State Events</a>
+            </td>
+            <td>A lamp with 4 intensities (off low medium high) and a push-button switcher, all controlled by a Script node.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="ScriptControlEvents"/>
+               <a href="ScriptControlEventsIndex.html">
+                  <img src="_thumbnails/ScriptControlEventsThumbnail.png"
+                        height="48"
+                        alt="ScriptControlEvents"
+                        title="ScriptControlEvents"/>
+               </a>
+            </td>
+            <td>
+               <a href="ScriptControlEventsIndex.html">Script Control Events</a>
+            </td>
+            <td>A three-way light controlled by a Script node.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="ScriptEvents"/>
+               <a href="ScriptEventsIndex.html">
+                  <img src="_thumbnails/ScriptEventsThumbnail.png"
+                        height="48"
+                        alt="ScriptEvents"
+                        title="ScriptEvents"/>
+               </a>
+            </td>
+            <td>
+               <a href="ScriptEventsIndex.html">Script Events</a>
+            </td>
+            <td>A Script node drives the position and orientation of orbiting cones near the pump house.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="ScriptEventsPumpHouse"/>
+               <a href="ScriptEventsPumpHouseIndex.html">
+                  <img src="_thumbnails/ScriptEventsPumpHouseThumbnail.png"
+                        height="48"
+                        alt="ScriptEventsPumpHouse"
+                        title="ScriptEventsPumpHouse"/>
+               </a>
+            </td>
+            <td>
+               <a href="ScriptEventsPumpHouseIndex.html">Script Events Pump House</a>
+            </td>
+            <td>A Script node provides the path and orientation animation for three cones that orbit near the pump house.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="ScriptNodeEventOutControlEcmaScript"/>
+               <a href="ScriptNodeEventOutControlEcmaScriptIndex.html">
+                  <img src="_thumbnails/ScriptNodeEventOutControlEcmaScriptThumbnail.png"
+                        height="48"
+                        alt="ScriptNodeEventOutControlEcmaScript"
+                        title="ScriptNodeEventOutControlEcmaScript"/>
+               </a>
+            </td>
+            <td>
+               <a href="ScriptNodeEventOutControlEcmaScriptIndex.html">Script Node Event Out Control Ecma Script</a>
+            </td>
+            <td>Script node interface between X3D and EcmaScript: this conformance example tests event-based X3D-EcmaScript functionality.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="ScriptNodeFieldControlEcmaScript"/>
+               <a href="ScriptNodeFieldControlEcmaScriptIndex.html">
+                  <img src="_thumbnails/ScriptNodeFieldControlEcmaScriptThumbnail.png"
+                        height="48"
+                        alt="ScriptNodeFieldControlEcmaScript"
+                        title="ScriptNodeFieldControlEcmaScript"/>
+               </a>
+            </td>
+            <td>
+               <a href="ScriptNodeFieldControlEcmaScriptIndex.html">Script Node Field Control Ecma Script</a>
+            </td>
+            <td>Script node interface between X3D and EcmaScript: this conformance example tests field-based X3D-EcmaScript functionality.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="ScriptSimpleStateEvents"/>
+               <a href="ScriptSimpleStateEventsIndex.html">
+                  <img src="_thumbnails/ScriptSimpleStateEventsThumbnail.png"
+                        height="48"
+                        alt="ScriptSimpleStateEvents"
+                        title="ScriptSimpleStateEvents"/>
+               </a>
+            </td>
+            <td>
+               <a href="ScriptSimpleStateEventsIndex.html">Script Simple State Events</a>
+            </td>
+            <td>A Script node drives an animated push button that turns a light on and off.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="TestScriptInitialization"/>
+               <a href="TestScriptInitializationIndex.html">
+                  <img src="_thumbnails/TestScriptInitializationThumbnail.png"
+                        height="48"
+                        alt="TestScriptInitialization"
+                        title="TestScriptInitialization"/>
+               </a>
+            </td>
+            <td>
+               <a href="TestScriptInitializationIndex.html">Test Script Initialization</a>
+            </td>
+            <td>Test ability to perform Script initialize() method using ECMAsript</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="TimeTriggerPumpHouse"/>
+               <a href="TimeTriggerPumpHouseIndex.html">
+                  <img src="_thumbnails/TimeTriggerPumpHouseThumbnail.png"
+                        height="48"
+                        alt="TimeTriggerPumpHouse"
+                        title="TimeTriggerPumpHouse"/>
+               </a>
+            </td>
+            <td>
+               <a href="TimeTriggerPumpHouseIndex.html">Time Trigger Pump House</a>
+            </td>
+            <td>Pump house animation activated by a TimeTrigger node.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="TimeTriggerTest"/>
+               <a href="TimeTriggerTestIndex.html">
+                  <img src="_thumbnails/TimeTriggerTestThumbnail.png"
+                        height="48"
+                        alt="TimeTriggerTest"
+                        title="TimeTriggerTest"/>
+               </a>
+            </td>
+            <td>
+               <a href="TimeTriggerTestIndex.html">Time Trigger Test</a>
+            </td>
+            <td>Test of TimeTrigger node.</td>
+         </tr>
+      </table>
+      <table width="80%" border="0" align="center">
+         <tr>
+            <td>
+               <p style="text-align:center">Online at <a href="https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter09EventUtilitiesScripting/index.html">https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter09EventUtilitiesScripting</a>
+               </p>
+               <p align="center" width="80%">
+                  <a href="https://validator.w3.org/check?uri=https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter09EventUtilitiesScripting/index.html"
+                      target="_blank">
+                     <img src="https://www.w3.org/Icons/valid-xhtml10"
+                           title="Validate XHTML 1.1"
+                           alt="Validate XHTML 1.1"
+                           height="31"
+                           width="88"
+                           border="0"
+                           align="right"/>
+                  </a>
+               </p>
+               <p style="text-align:center">Master source-code model archive is under subversion control at <br/>
+                  <a href="https://sourceforge.net/p/x3d/code/HEAD/tree/www.web3d.org/x3d/content/examples/X3dForWebAuthors/Chapter09EventUtilitiesScripting/"
+                      target="_blank">https://sourceforge.net/p/x3d/code/HEAD/tree/www.web3d.org/x3d/content/examples/X3dForWebAuthors/Chapter09EventUtilitiesScripting</a>
+               </p>
+            </td>
+         </tr>
+      </table>
+      <p align="center">
+The 
+<a href="../../X3dResources.html#X3dForWebAuthors">X3D Resources: Examples</a> page
+and
+<a href="https://savage.nps.edu/Savage/developers.html">Savage Developers Guide</a>
+provide more information about the production of this archive.</p>
+      <table
+              align="center"
+              summary="navigation"
+              border="1"
+              cellpadding="2"
+              width="95%">
+         <tr>
+            <td align="center" width="17%">
+               <a href="../index.html" target="_top">
+                  <img src="../images/ToC.png"
+                        title="Table of Contents"
+                        alt="Table of Contents"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter08UserInteractivity/index.html" target="_top">
+                  <img src="../images/PreviousChapter.png"
+                        title="Previous Directory Summary"
+                        alt="Previous Directory Summary"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="viewpointSlideshow.html" target="_top">
+                  <img src="../images/MootoolsSlideshowLogo.jpg"
+                        title="Directory Viewpoint Slideshow"
+                        alt="Directory Viewpoint Slideshow"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="15%">
+               <a href="../javadoc/index.html?X3dForWebAuthors/Chapter09EventUtilitiesScripting/package-summary.html"
+                   title="Javadoc for translated java source"
+                   alt="Javadoc for translated java source"
+                   target="_blank">
+                  <img src="../images/Java-32.png"
+                        title="Javadoc for translated java source"
+                        alt="Javadoc for translated java source"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter10Geometry2D/index.html" target="_top">
+                  <img src="../images/NextChapter.png"
+                        title="Next Directory Summary"
+                        alt="Next Directory Summary"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="15%">
+               <a href="../../X3dResources.html" target="helpPage">
+                  <img src="../images/Help.png"
+                        title="X3D Resources"
+                        alt="X3D Resources"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+         </tr>
+      </table>
+   </body>
+</html>

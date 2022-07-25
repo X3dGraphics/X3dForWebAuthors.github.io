@@ -1,0 +1,3 @@
+<ProtoDeclare name='HalfMoon'> ProtoInterface can only contain field declarations or comments [/X3D/Scene/ProtoDeclare/ProtoInterface, error]
+<TimeSensor DEF='Timer'/> missing description [/X3D/Scene/ProtoDeclare/ProtoBody/Transform/Group/TimeSensor[1], warning]
+<TimeSensor DEF='OrbitClock'/> missing description [/X3D/Scene/ProtoDeclare/ProtoBody/Transform/Group/TimeSensor[2], warning]

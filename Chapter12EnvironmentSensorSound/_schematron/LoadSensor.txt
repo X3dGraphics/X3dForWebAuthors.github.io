@@ -1,0 +1,4 @@
+<Viewpoint DEF='ViewAll'/> missing description [/X3D/Scene/Viewpoint, warning]
+<Viewpoint DEF='ViewAll'/> description should be different than DEF [/X3D/Scene/Viewpoint, warning]
+<TimeSensor DEF='SignRotationClock'/> missing description [/X3D/Scene/TimeSensor, warning]
+<Script DEF='TraceScript'/> must have url or contained CDATA source [/X3D/Scene/Script, error]

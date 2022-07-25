@@ -1,0 +1,3 @@
+<X3D profile='Immersive'> but actual profile='Interchange' [/X3D, info]
+<NormalInterpolator DEF='NormalPath'/> key array (size=3) does not match keyValue array (size=12) [/X3D/Scene/NormalInterpolator, error]
+<TimeSensor DEF='Clock'/> missing description [/X3D/Scene/TimeSensor, warning]

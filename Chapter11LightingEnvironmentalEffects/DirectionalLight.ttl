@@ -1,0 +1,222 @@
+@prefix :       <http://X3dGraphics.com/examples/X3dForWebAuthors/Chapter11LightingEnvironmentalEffects/DirectionalLight.ttl#> .
+@prefix dc:     <http://purl.org/dc/terms/> .
+@prefix owl:    <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix x3d:    <http://www.web3d.org/specifications/x3d-4.0.xsd#> .
+@prefix x3do:   <http://www.web3d.org/specifications/X3dOntology4.0#> .
+
+:X3D a owl:NamedIndividual, x3do:X3D ;
+  x3do:hasHead :head ;
+  x3do:hasScene :Scene ;
+  x3do:profile 'Interchange' ;
+  x3do:version '3.3' ;
+  x3do:noNamespaceSchemaLocation 'http://www.web3d.org/specifications/x3d-3.3.xsd' .
+:head a owl:NamedIndividual, x3do:head ;
+  x3do:hasParent :X3D ;
+  x3do:hasMeta :meta_1_1, :meta_1_2, :meta_1_3, :meta_1_4, :meta_1_5, :meta_1_6, :meta_1_7, :meta_1_8, :meta_1_9, :meta_1_10, :meta_1_11, :meta_1_12, :meta_1_13 .
+:meta_1_1 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'DirectionalLight.x3d' ;
+  x3do:name 'title' .
+:meta_1_2 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'An example of the DirectionalLight node showing no shadows on the lit geometry.' ;
+  x3do:name 'description' .
+:meta_1_3 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Leonard Daly and Don Brutzman' ;
+  x3do:name 'creator' .
+:meta_1_4 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '24 April 2006' ;
+  x3do:name 'created' .
+:meta_1_5 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '20 October 2019' ;
+  x3do:name 'modified' .
+:meta_1_6 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'DirectionalLightFigure.png' ;
+  x3do:name 'Image' .
+:meta_1_7 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'http://X3dGraphics.com' ;
+  x3do:name 'reference' .
+:meta_1_8 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://www.web3d.org/x3d/content/examples/X3dResources.html' ;
+  x3do:name 'reference' .
+:meta_1_9 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Copyright 2006, Daly Realism and Don Brutzman' ;
+  x3do:name 'rights' .
+:meta_1_10 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'X3D book, X3D graphics, X3D-Edit, http://www.x3dGraphics.com' ;
+  x3do:name 'subject' .
+:meta_1_11 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'http://X3dGraphics.com/examples/X3dForWebAuthors/Chapter11LightingEnvironmentalEffects/DirectionalLight.x3d' ;
+  x3do:name 'identifier' .
+:meta_1_12 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'X3D-Edit 3.3, https://savage.nps.edu/X3D-Edit' ;
+  x3do:name 'generator' .
+:meta_1_13 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '../license.html' ;
+  x3do:name 'license' .
+:Scene a owl:NamedIndividual, x3do:Scene ;
+  x3do:hasParent :X3D ;
+  x3do:hasChildren :WorldInfo_2_1, :Background_2_2, :Viewpoint_2_3, :NavigationInfo_2_4, :DirectionalLight_2_5, :Transform_2_6, :Transform_2_7, :Transform_2_8, :Transform_2_9, :Transform_2_10 .
+:WorldInfo_2_1 a owl:NamedIndividual, x3do:WorldInfo ;
+  x3do:hasParent :Scene ;
+  x3do:title 'DirectionalLight.x3d' .
+:Background_2_2 a owl:NamedIndividual, x3do:Background ;
+  x3do:hasParent :Scene ;
+  x3do:skyColor ( 1 1 1 ) .
+:Viewpoint_2_3 a owl:NamedIndividual, x3do:Viewpoint ;
+  x3do:hasParent :Scene ;
+  x3do:description 'Book Viewpoint' ;
+  x3do:orientation ( 0.627 -0.707 -0.326 -0.93 ) ;
+  x3do:position ( 6.03 6.69 9.25 ) .
+:NavigationInfo_2_4 a owl:NamedIndividual, x3do:NavigationInfo ;
+  x3do:hasParent :Scene ;
+  x3do:headlight false .
+:DirectionalLight_2_5 a owl:NamedIndividual, x3do:DirectionalLight ;
+  x3do:hasParent :Scene .
+:Transform_2_6 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :Arrow ;
+  x3do:translation ( 0 1.5 7 ) .
+:Arrow a owl:NamedIndividual, x3do:Group ;
+  x3do:hasParent :Transform_2_6 ;
+  x3do:hasChildren :Transform_2_6_1_1, :Transform_2_6_1_2 .
+:Transform_2_6_1_1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Arrow ;
+  x3do:hasChildren :Shape_2_6_1_1_1 ;
+  x3do:rotation ( 1 0 0 1.57 ) .
+:Shape_2_6_1_1_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_6_1_1 ;
+  x3do:hasAppearance :ArrowApp ;
+  x3do:hasGeometry :Cylinder_2_6_1_1_1_2 .
+:ArrowApp a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_6_1_1_1 ;
+  x3do:hasMaterial :ArrowColor .
+:ArrowColor a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :ArrowApp .
+:Cylinder_2_6_1_1_1_2 a owl:NamedIndividual, x3do:Cylinder ;
+  x3do:hasParent :Shape_2_6_1_1_1 ;
+  x3do:radius .1 .
+:Transform_2_6_1_2 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Arrow ;
+  x3do:hasChildren :Shape_2_6_1_2_1 ;
+  x3do:rotation ( 1 0 0 -1.57 ) ;
+  x3do:translation ( 0 0 -1 ) .
+:Shape_2_6_1_2_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_6_1_2 ;
+  x3do:hasAppearance :ArrowApp-USE-1 ;
+  x3do:hasGeometry :Cone_2_6_1_2_1_2 .
+:ArrowApp-USE-1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_6_1_2_1 ;
+  owl:sameAs :ArrowApp . # DEF matching this USE
+:Cone_2_6_1_2_1_2 a owl:NamedIndividual, x3do:Cone ;
+  x3do:hasParent :Shape_2_6_1_2_1 ;
+  x3do:bottomRadius .25 ;
+  x3do:height .5 .
+:Transform_2_7 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :Arrow-USE-1 ;
+  x3do:translation ( 0 .5 7 ) .
+:Arrow-USE-1 a owl:NamedIndividual, x3do:Group ;
+  x3do:hasParent :Transform_2_7 ;
+  owl:sameAs :Arrow . # DEF matching this USE
+:Transform_2_8 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :Arrow-USE-2 ;
+  x3do:translation ( 0 -0.5 7 ) .
+:Arrow-USE-2 a owl:NamedIndividual, x3do:Group ;
+  x3do:hasParent :Transform_2_8 ;
+  owl:sameAs :Arrow . # DEF matching this USE
+:Transform_2_9 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :Arrow-USE-3 ;
+  x3do:translation ( 0 -1.5 7 ) .
+:Arrow-USE-3 a owl:NamedIndividual, x3do:Group ;
+  x3do:hasParent :Transform_2_9 ;
+  owl:sameAs :Arrow . # DEF matching this USE
+:Transform_2_10 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :Box, :rod, :hat, :ball .
+:Box a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_10 ;
+  x3do:hasChildren :Shape_2_10_1_1 ;
+  x3do:translation ( 0 0 4 ) .
+:Shape_2_10_1_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Box ;
+  x3do:hasAppearance :Appearance_2_10_1_1_1 ;
+  x3do:hasGeometry :Box_2_10_1_1_2 .
+:Appearance_2_10_1_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_10_1_1 ;
+  x3do:hasMaterial :Material_2_10_1_1_1_1 .
+:Material_2_10_1_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_10_1_1_1 ;
+  x3do:diffuseColor ( 1 0 0 ) .
+:Box_2_10_1_1_2 a owl:NamedIndividual, x3do:Box ;
+  x3do:hasParent :Shape_2_10_1_1 ;
+  x3do:size ( 2 2 .2 ) .
+:rod a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_10 ;
+  x3do:hasChildren :Shape_2_10_2_1 ;
+  x3do:translation ( 0 0 1 ) .
+:Shape_2_10_2_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :rod ;
+  x3do:hasAppearance :Appearance_2_10_2_1_1 ;
+  x3do:hasGeometry :Cylinder_2_10_2_1_2 .
+:Appearance_2_10_2_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_10_2_1 ;
+  x3do:hasMaterial :Material_2_10_2_1_1_1 .
+:Material_2_10_2_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_10_2_1_1 ;
+  x3do:diffuseColor ( 0 .8 0 ) .
+:Cylinder_2_10_2_1_2 a owl:NamedIndividual, x3do:Cylinder ;
+  x3do:hasParent :Shape_2_10_2_1 ;
+  x3do:height 4 .
+:hat a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_10 ;
+  x3do:hasChildren :Shape_2_10_3_1 ;
+  x3do:rotation ( 0 0 1 1.57 ) ;
+  x3do:translation ( 1 0 -2 ) .
+:Shape_2_10_3_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :hat ;
+  x3do:hasAppearance :Appearance_2_10_3_1_1 ;
+  x3do:hasGeometry :Cone_2_10_3_1_2 .
+:Appearance_2_10_3_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_10_3_1 ;
+  x3do:hasMaterial :Material_2_10_3_1_1_1 .
+:Material_2_10_3_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_10_3_1_1 ;
+  x3do:diffuseColor ( 0 0 1 ) .
+:Cone_2_10_3_1_2 a owl:NamedIndividual, x3do:Cone ;
+  x3do:hasParent :Shape_2_10_3_1 ;
+  x3do:height 4 .
+:ball a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_10 ;
+  x3do:hasChildren :Shape_2_10_4_1 ;
+  x3do:translation ( 3 0 -5 ) .
+:Shape_2_10_4_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :ball ;
+  x3do:hasAppearance :Appearance_2_10_4_1_1 ;
+  x3do:hasGeometry :Sphere_2_10_4_1_2 .
+:Appearance_2_10_4_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_10_4_1 ;
+  x3do:hasMaterial :Material_2_10_4_1_1_1 .
+:Material_2_10_4_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_10_4_1_1 ;
+  x3do:diffuseColor ( 0 1 1 ) .
+:Sphere_2_10_4_1_2 a owl:NamedIndividual, x3do:Sphere ;
+  x3do:hasParent :Shape_2_10_4_1 ;
+  x3do:radius 2 .

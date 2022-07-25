@@ -1,0 +1,3 @@
+<TimeSensor DEF='SHARK1_CLOCK'/> missing description [/X3D/Scene/Transform[2]/Group/TimeSensor, warning]
+<TimeSensor DEF='_4'/> missing description [/X3D/Scene/TimeSensor, warning]
+<Script DEF='sharkSwimmingInTankTrigger_5'/> must have url or contained CDATA source [/X3D/Scene/Script, error]

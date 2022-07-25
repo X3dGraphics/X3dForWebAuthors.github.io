@@ -1,0 +1,493 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <link rel="shortcut icon" href="../images/X3DtextIcon16.png" title="X3D"/>
+      <title>X3D4WA, X3D for Web Authors Examples Archive, Chapter 11 Lighting Environmental Effects</title>
+      <meta http-equiv="X-UA-Compatible" content="chrome=1,IE=edge"/>
+      <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+      <meta name="author" content="Don Brutzman"/>
+      <meta name="generator"
+             content="https://www.web3d.org/x3d/tools/CreateContentCatalog/CreateContentCatalogPages.xslt"/>
+      <meta name="modified" content="2022-07-03-07:00"/>
+      <meta name="keyword"
+             content="X3D, X3DV, VRML, VRML97, Extensible 3D, Virtual Reality Modeling Language"/>
+   </head>
+   <body>
+      <table
+              align="center"
+              summary="navigation"
+              border="1"
+              cellpadding="2"
+              width="95%">
+         <tr>
+            <td align="center" width="17%">
+               <a href="../index.html" target="_top">
+                  <img src="../images/ToC.png"
+                        title="Table of Contents"
+                        alt="Table of Contents"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter10Geometry2D/index.html" target="_top">
+                  <img src="../images/PreviousChapter.png"
+                        title="Previous Directory Summary"
+                        alt="Previous Directory Summary"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="viewpointSlideshow.html" target="_top">
+                  <img src="../images/MootoolsSlideshowLogo.jpg"
+                        title="Directory Viewpoint Slideshow"
+                        alt="Directory Viewpoint Slideshow"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="15%">
+               <a href="../javadoc/index.html?X3dForWebAuthors/Chapter11LightingEnvironmentalEffects/package-summary.html"
+                   title="Javadoc for translated java source"
+                   alt="Javadoc for translated java source"
+                   target="_blank">
+                  <img src="../images/Java-32.png"
+                        title="Javadoc for translated java source"
+                        alt="Javadoc for translated java source"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter12EnvironmentSensorSound/index.html" target="_top">
+                  <img src="../images/NextChapter.png"
+                        title="Next Directory Summary"
+                        alt="Next Directory Summary"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="15%">
+               <a href="../../X3dResources.html" target="helpPage">
+                  <img src="../images/Help.png"
+                        title="X3D Resources"
+                        alt="X3D Resources"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+         </tr>
+      </table>
+      <h2 align="center">
+         <i> X3D Example Archives: </i>X3D4WA, X3D for Web Authors, Chapter 11 Lighting Environmental Effects</h2>
+      <table align="center"
+              width="85%"
+              summary=""
+              border="0"
+              cellpadding="0">
+         <tr align="center">
+            <td><!--ChapterPackageDescription--><!--Contents of file ../../content/examples/X3dForWebAuthors/Chapter11LightingEnvironmentalEffects/package-catalog.html-->
+    
+    <table bgColor="#ffffff" border="0" width="100%">
+        <tbody>
+            <tr>
+                <td align="left" cellpadding="10">
+                    
+                    <a href="index.html"><img alt="DirectionalLight Diagram" title="DirectionalLight Diagram" border="0" hspace="10" src="DirectionalLightFigure.png" width="303" height="156" align="left"/></a>
+                </td>
+
+                <td>
+                    &nbsp;&nbsp;&nbsp;
+                </td>
+
+                <td>               
+    <p>
+				Light nodes make the appearance of geometry visible and viewable in a scene.
+    </p>
+    
+
+    <p>
+                 Lights illuminate geometry in a scene relative to the user's view.
+                 Lighting nodes include 
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#DirectionalLight" target="X3dTooltips" title="X3D Tooltip">DirectionalLight</a>,
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#PointLight" target="X3dTooltips" title="X3D Tooltip">PointLight</a>,
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#SpotLight" target="X3dTooltips" title="X3D Tooltip">SpotLight</a>,
+                 and the active 
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#NavigationInfo" target="X3dTooltips" title="X3D Tooltip">NavigationInfo</a>
+                 headlight (which points along the user's viewing direction).
+    </p>
+    
+
+    <p>
+                 Environmental effects include 
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#Background" target="X3dTooltips" title="X3D Tooltip">Background</a>,
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#TextureBackground" target="X3dTooltips" title="X3D Tooltip">TextureBackground</a>,
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#Fog" target="X3dTooltips" title="X3D Tooltip">Fog</a>
+                 and 
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#LocalFog" target="X3dTooltips" title="X3D Tooltip">LocalFog</a>.
+                 Each set of light nodes, NavigationInfo nodes, background nodes and fog nodes are bound on a separate binding stack,
+                 meaning that only one of each can be active at a time.
+    </p>
+    
+
+    <p>
+                 The supporting
+                 <a href="http://x3dgraphics.com/slidesets/X3dForWebAuthors/Chapter11LightingEnvironment.pdf" target="X3dChapterSlideset">Chapter&nbsp;11 slideset</a>
+                 and course videos
+                (<a href="https://www.movesinstitute.org/Video/Courses/X3dForWebAuthors/X3dForWebAuthorsVideo.html#11" target="X3dChapterVideos">NPS</a>,
+                 <a href="https://www.youtube.com/playlist?list=PLuSIsM-86sinCdhttlFIr5ZLBXRjzazWU" target="X3dChapterYouTubeVideos">YouTube</a>)
+                 for <i>X3D for Web Authors</i> are available online via
+                 <a href="http://X3dGraphics.com" target="_blank">X3dGraphics.com</a>.
+    </p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    
+
+
+  </td>
+         </tr>
+      </table>
+      <table align="center"
+              width="85%"
+              summary=""
+              border="1"
+              cellpadding="6">
+         <tr align="center">
+            <th colspan="2" width="25%" align="center">&nbsp;&nbsp;15 X3D Models</th>
+            <th width="75%" align="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;X3D Model Descriptions</th>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="BackgroundColorsOnly"/>
+               <a href="BackgroundColorsOnlyIndex.html">
+                  <img src="_thumbnails/BackgroundColorsOnlyThumbnail.png"
+                        height="48"
+                        alt="BackgroundColorsOnly"
+                        title="BackgroundColorsOnly"/>
+               </a>
+            </td>
+            <td>
+               <a href="BackgroundColorsOnlyIndex.html">Background Colors Only</a>
+            </td>
+            <td>Added a Background node to the KelpForest world.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="BackgroundImagesOnly"/>
+               <a href="BackgroundImagesOnlyIndex.html">
+                  <img src="_thumbnails/BackgroundImagesOnlyThumbnail.png"
+                        height="48"
+                        alt="BackgroundImagesOnly"
+                        title="BackgroundImagesOnly"/>
+               </a>
+            </td>
+            <td>
+               <a href="BackgroundImagesOnlyIndex.html">Background Images Only</a>
+            </td>
+            <td>Simple Background node with images only.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="BackgroundKelpForestMain"/>
+               <a href="BackgroundKelpForestMainIndex.html">
+                  <img src="_thumbnails/BackgroundKelpForestMainThumbnail.png"
+                        height="48"
+                        alt="BackgroundKelpForestMain"
+                        title="BackgroundKelpForestMain"/>
+               </a>
+            </td>
+            <td>
+               <a href="BackgroundKelpForestMainIndex.html">Background Kelp Forest Main</a>
+            </td>
+            <td>Added a Background node to the KelpForest world.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="BackgroundSelector"/>
+               <a href="BackgroundSelectorIndex.html">
+                  <img src="_thumbnails/BackgroundSelectorThumbnail.png"
+                        height="48"
+                        alt="BackgroundSelector"
+                        title="BackgroundSelector"/>
+               </a>
+            </td>
+            <td>
+               <a href="BackgroundSelectorIndex.html">Background Selector</a>
+            </td>
+            <td>Select one of four Background nodes to show a time-of-day effect.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="BackgroundSequencer"/>
+               <a href="BackgroundSequencerIndex.html">
+                  <img src="_thumbnails/BackgroundSequencerThumbnail.png"
+                        height="48"
+                        alt="BackgroundSequencer"
+                        title="BackgroundSequencer"/>
+               </a>
+            </td>
+            <td>
+               <a href="BackgroundSequencerIndex.html">Background Sequencer</a>
+            </td>
+            <td>Cycle through four Background nodes to show a time-of-day effect.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="BackgroundTimeOfDay"/>
+               <a href="BackgroundTimeOfDayIndex.html">
+                  <img src="_thumbnails/BackgroundTimeOfDayThumbnail.png"
+                        height="48"
+                        alt="BackgroundTimeOfDay"
+                        title="BackgroundTimeOfDay"/>
+               </a>
+            </td>
+            <td>
+               <a href="BackgroundTimeOfDayIndex.html">Background Time Of Day</a>
+            </td>
+            <td>Interpolate between Background color arrays to show a gradually changing time-of-day effect.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="DirectionalLightExample"/>
+               <a href="DirectionalLightExampleIndex.html">
+                  <img src="_thumbnails/DirectionalLightExampleThumbnail.png"
+                        height="48"
+                        alt="DirectionalLightExample"
+                        title="DirectionalLightExample"/>
+               </a>
+            </td>
+            <td>
+               <a href="DirectionalLightExampleIndex.html">Directional Light Example</a>
+            </td>
+            <td>An example of the DirectionalLight node showing no shadows on the lit geometry.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="FogKelpForestMain"/>
+               <a href="FogKelpForestMainIndex.html">
+                  <img src="_thumbnails/FogKelpForestMainThumbnail.png"
+                        height="48"
+                        alt="FogKelpForestMain"
+                        title="FogKelpForestMain"/>
+               </a>
+            </td>
+            <td>
+               <a href="FogKelpForestMainIndex.html">Fog Kelp Forest Main</a>
+            </td>
+            <td>Added fog to the KelpForest world to simulate the typical weather pattern in June in Monterey, CA.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="PointLightColor"/>
+               <a href="PointLightColorIndex.html">
+                  <img src="_thumbnails/PointLightColorThumbnail.png"
+                        height="48"
+                        alt="PointLightColor"
+                        title="PointLightColor"/>
+               </a>
+            </td>
+            <td>
+               <a href="PointLightColorIndex.html">Point Light Color</a>
+            </td>
+            <td>Example of a PointLight node showing the effect of distance on lighting of geometry.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="PointLightExample"/>
+               <a href="PointLightExampleIndex.html">
+                  <img src="_thumbnails/PointLightExampleThumbnail.png"
+                        height="48"
+                        alt="PointLightExample"
+                        title="PointLightExample"/>
+               </a>
+            </td>
+            <td>
+               <a href="PointLightExampleIndex.html">Point Light Example</a>
+            </td>
+            <td>Two examples of scoped PointLight nodes showing the effects of distance on lit geometry. Faceted IndexedFaceSet is on the left, simple Box on the right.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="SpotLightColor"/>
+               <a href="SpotLightColorIndex.html">
+                  <img src="_thumbnails/SpotLightColorThumbnail.png"
+                        height="48"
+                        alt="SpotLightColor"
+                        title="SpotLightColor"/>
+               </a>
+            </td>
+            <td>
+               <a href="SpotLightColorIndex.html">Spot Light Color</a>
+            </td>
+            <td>Example of SpotLight showing effect of varying light colors on appearance</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="SpotLightExample"/>
+               <a href="SpotLightExampleIndex.html">
+                  <img src="_thumbnails/SpotLightExampleThumbnail.png"
+                        height="48"
+                        alt="SpotLightExample"
+                        title="SpotLightExample"/>
+               </a>
+            </td>
+            <td>
+               <a href="SpotLightExampleIndex.html">Spot Light Example</a>
+            </td>
+            <td>Example SpotLight node showing effects of beamWidth and cutOffAngle</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="SpotLightVisualization"/>
+               <a href="SpotLightVisualizationIndex.html">
+                  <img src="_thumbnails/SpotLightVisualizationThumbnail.png"
+                        height="48"
+                        alt="SpotLightVisualization"
+                        title="SpotLightVisualization"/>
+               </a>
+            </td>
+            <td>
+               <a href="SpotLightVisualizationIndex.html">Spot Light Visualization</a>
+            </td>
+            <td>Create outline geometry to show SpotLight coverage. Author TODO: use the X3D-Edit SpotLight editor to modify and re-visualize the first SpotLight.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="TextureBackgroundExample"/>
+            </td>
+            <td>
+               <a href="TextureBackgroundExampleIndex.html">Texture Background Example</a>
+            </td>
+            <td>Simple TextureBackground node with images only.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="TextureBackgroundKelpForestMain"/>
+               <a href="TextureBackgroundKelpForestMainIndex.html">
+                  <img src="_thumbnails/TextureBackgroundKelpForestMainThumbnail.png"
+                        height="48"
+                        alt="TextureBackgroundKelpForestMain"
+                        title="TextureBackgroundKelpForestMain"/>
+               </a>
+            </td>
+            <td>
+               <a href="TextureBackgroundKelpForestMainIndex.html">Texture Background Kelp Forest Main</a>
+            </td>
+            <td>Added an image panorama with the Background node to the Kelp Forest world.</td>
+         </tr>
+      </table>
+      <table width="80%" border="0" align="center">
+         <tr>
+            <td>
+               <p style="text-align:center">Online at <a href="https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter11LightingEnvironmentalEffects/index.html">https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter11LightingEnvironmentalEffects</a>
+               </p>
+               <p align="center" width="80%">
+                  <a href="https://validator.w3.org/check?uri=https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter11LightingEnvironmentalEffects/index.html"
+                      target="_blank">
+                     <img src="https://www.w3.org/Icons/valid-xhtml10"
+                           title="Validate XHTML 1.1"
+                           alt="Validate XHTML 1.1"
+                           height="31"
+                           width="88"
+                           border="0"
+                           align="right"/>
+                  </a>
+               </p>
+               <p style="text-align:center">Master source-code model archive is under subversion control at <br/>
+                  <a href="https://sourceforge.net/p/x3d/code/HEAD/tree/www.web3d.org/x3d/content/examples/X3dForWebAuthors/Chapter11LightingEnvironmentalEffects/"
+                      target="_blank">https://sourceforge.net/p/x3d/code/HEAD/tree/www.web3d.org/x3d/content/examples/X3dForWebAuthors/Chapter11LightingEnvironmentalEffects</a>
+               </p>
+            </td>
+         </tr>
+      </table>
+      <p align="center">
+The 
+<a href="../../X3dResources.html#X3dForWebAuthors">X3D Resources: Examples</a> page
+and
+<a href="https://savage.nps.edu/Savage/developers.html">Savage Developers Guide</a>
+provide more information about the production of this archive.</p>
+      <table
+              align="center"
+              summary="navigation"
+              border="1"
+              cellpadding="2"
+              width="95%">
+         <tr>
+            <td align="center" width="17%">
+               <a href="../index.html" target="_top">
+                  <img src="../images/ToC.png"
+                        title="Table of Contents"
+                        alt="Table of Contents"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter10Geometry2D/index.html" target="_top">
+                  <img src="../images/PreviousChapter.png"
+                        title="Previous Directory Summary"
+                        alt="Previous Directory Summary"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="viewpointSlideshow.html" target="_top">
+                  <img src="../images/MootoolsSlideshowLogo.jpg"
+                        title="Directory Viewpoint Slideshow"
+                        alt="Directory Viewpoint Slideshow"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="15%">
+               <a href="../javadoc/index.html?X3dForWebAuthors/Chapter11LightingEnvironmentalEffects/package-summary.html"
+                   title="Javadoc for translated java source"
+                   alt="Javadoc for translated java source"
+                   target="_blank">
+                  <img src="../images/Java-32.png"
+                        title="Javadoc for translated java source"
+                        alt="Javadoc for translated java source"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter12EnvironmentSensorSound/index.html" target="_top">
+                  <img src="../images/NextChapter.png"
+                        title="Next Directory Summary"
+                        alt="Next Directory Summary"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="15%">
+               <a href="../../X3dResources.html" target="helpPage">
+                  <img src="../images/Help.png"
+                        title="X3D Resources"
+                        alt="X3D Resources"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+         </tr>
+      </table>
+   </body>
+</html>

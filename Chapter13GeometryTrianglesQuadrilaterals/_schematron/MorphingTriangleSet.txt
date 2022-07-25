@@ -1,0 +1,3 @@
+<X3D profile='Immersive'> but actual profile='Interchange' [/X3D, info]
+<Shape DEF=''/> found without child Appearance [/X3D/Scene/Transform/Shape, warning]
+<TimeSensor DEF='Timer'/> missing description [/X3D/Scene/TimeSensor, warning]

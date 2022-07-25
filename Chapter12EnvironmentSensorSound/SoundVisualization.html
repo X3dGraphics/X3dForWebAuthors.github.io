@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/TR/xhtml1/strict"
+       xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
+       xmlns:saxon="http://icl.com/saxon">
+   <head>
+      <title>SoundVisualization.x3d (X3dToXhtml listing)</title>
+      <!-- I18N -->
+      <meta http-equiv="X-UA-Compatible" content="chrome=1,IE=edge"/>
+      <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+      <style type="text/css">
+span.element {color: navy}
+span.attribute {color: green}
+span.value {color: teal}
+span.plain {color: black}
+span.gray  {color: gray}
+span.idName {color: maroon}
+span.addedDocumentation {background-color:#EEEEEE} /* slightly darker for html page contrast */
+span.behaviorNode       {background-color:#DDEEFF} /*      light blue for html page contrast */
+span.extensibilityNode  {background-color:#FFEEFF} /*    lighter blue for html page contrast */
+a.idName {color: maroon}
+div.center {text-align: center}
+div.indent {margin-left: 25px}
+
+span.prototype {color: purple}
+a.prototype {color: purple}
+a.prototype:visited {color: black}
+span.route {color: red}
+b.warning {color: #CC5500}
+b.error {color: #CC0000}
+
+                </style>
+      <style type="text/css">
+table.curvedEdges { border:10px solid RoyalBlue;-webkit-border-radius:13px;-moz-border-radius:13px;-ms-border-radius:13px;-o-border-radius:13px;border-radius:13px; }
+table.curvedEdges td, table.curvedEdges th { border-bottom:1px dotted black;padding:5px; }
+</style>
+      <meta name="generator" content="XSLT processor Saxonica"/>
+      <meta name="generator"
+             content="https://www.web3d.org/x3d/stylesheets/X3dToXhtml.xslt"/>
+      <meta name="generator"
+             content="https://sourceforge.net/p/x3d/code/HEAD/tree/www.web3d.org/x3d/stylesheets/X3dToXhtml.xslt"/>
+      <link rel="shortcut icon"
+             href="https://www.web3d.org/x3d/content/icons/X3DtextIcon16.png"
+             title="X3D"/>
+   </head>
+   <body>
+      <code title="XML declaration">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</code>
+      <br/>
+      <code title="Document Type Declaration (DTD) for X3D validation">&lt;!DOCTYPE X3D PUBLIC "ISO//Web3D//DTD X3D 3.3//EN" "<a href="https://www.web3d.org/specifications/x3d-3.3.dtd">https://www.web3d.org/specifications/x3d-3.3.dtd</a>"&gt;</code>
+      <div>
+<span title="X3D is the top-most XML element for an Extensible 3D (X3D) Graphics file">&lt;<span class="element">X3D</span>&#160;<span title="X3D Immersive Profile supports most nodes, similar to VRML97"><span class="attribute">profile</span>='<span class="value">Immersive</span>'</span>&#160;<span class="attribute">version</span>='<span class="value">3.3</span>'&#160;<span title="XML namespace for X3D Graphics schema validation"><span title="XML namespace for XML Schema validation">
+            <span class="attribute">xmlns:xsd</span>='<a href="http://www.w3.org/2001/XMLSchema-instance" target="_blank">http://www.w3.org/2001/XMLSchema-instance</a>'
+</span>
+         <span title="XML namespace for X3D Graphics schema validation">
+            <span class="attribute">xsd:noNamespaceSchemaLocation</span>
+         </span>='
+<a href="https://www.web3d.org/specifications/x3d-3.3.xsd" target="_blank">https://www.web3d.org/specifications/x3d-3.3.xsd</a>
+'</span>&gt;
+</span><div class="indent">
+<span title="head can contain component, unit, and author-defined metadata (meta) tags">&lt;<span class="element">head</span>&gt;
+</span><div class="indent">
+<span title="meta 'title' provides file name for this resource">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">title</span>'&#160;<span class="attribute">content</span>='<a href="SoundVisualization.x3d">SoundVisualization.x3d</a>'/&gt;
+</span><br />
+
+<span title="meta 'description' provides summary overview describing this resource">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">description</span>'&#160;<span class="attribute">content</span>='<span class="plain">An example of the Sound node for testing X3D-Edit author-assist visualization</span>'/&gt;
+</span><br />
+
+<span title="meta 'created' provides date of initial version">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">created</span>'&#160;<span class="attribute">content</span>='<span class="value">15 November 2009</span>'/&gt;
+</span><br />
+
+<span title="meta 'modified' provides date of modified version">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">modified</span>'&#160;<span class="attribute">content</span>='<span class="value">20 October 2019</span>'/&gt;
+</span><br />
+
+<span title="meta 'image' provides name or reference link to a supporting image file">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">Image</span>'&#160;<span class="attribute">content</span>='<a href="SoundVisualization.png">SoundVisualization.png</a>'/&gt;
+</span><br />
+
+<span title="meta 'reference' provides name or reference link to a supporting resource">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">reference</span>'&#160;<span class="attribute">content</span>='
+<a href="https://X3dGraphics.com" target="_blank">https://X3dGraphics.com</a>
+'/&gt;
+</span><br />
+
+<span title="meta 'reference' provides name or reference link to a supporting resource">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">reference</span>'&#160;<span class="attribute">content</span>='
+<a href="https://www.web3d.org/x3d/content/examples/X3dResources.html"
+                   target="_blank">https://www.web3d.org/x3d/content/examples/X3dResources.html</a>
+'/&gt;
+</span><br />
+
+<span title="meta 'creator' provides name of original author">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">creator</span>'&#160;<span class="attribute">content</span>='<span class="value">Don Brutzman</span>'/&gt;
+</span><br />
+
+<span title="meta 'rights' defines intellectual property rights (IPR) for this scene">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">rights</span>'&#160;<span class="attribute">content</span>='<span class="value">Copyright 2009, Daly Realism and Don Brutzman</span>'/&gt;
+</span><br />
+
+<span title="meta 'subject' provides search-index subject keywords, key phrases, or classification codes">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">subject</span>'&#160;<span class="attribute">content</span>='
+X3D book, X3D graphics, X3D-Edit, <a href="http://www.x3dGraphics.com" target="_blank">http://www.x3dGraphics.com</a>
+'/&gt;
+</span><br />
+
+<span title="meta 'identifier' provides the unique Uniform Resource Identifier (URI) or url address for this resource">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">identifier</span>'&#160;<span class="attribute">content</span>='
+<a href="https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter12EnvironmentSensorSound/SoundVisualization.x3d"
+                   target="_blank">https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter12EnvironmentSensorSound/SoundVisualization.x3d</a>
+'/&gt;
+</span><br />
+
+<span title="meta 'generator' provides name of authoring tool or translation tool producing this scene">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">generator</span>'&#160;<span class="attribute">content</span>='<span class="value">X3D-Edit 3.3, </span>
+               <a href="https://savage.nps.edu/X3D-Edit" target="_blank">https://savage.nps.edu/X3D-Edit</a>'/&gt;
+</span><br />
+
+<span title="meta 'license' provides software license link or information">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">license</span>'&#160;<span class="attribute">content</span>='
+<a href="../license.html">../license.html</a>'/&gt;
+</span></div><span title="head can contain component, unit, and author-defined metadata (meta) tags">&lt;/<span class="element">head</span>&gt;
+</span><br /><span style="color:white">
+&lt;!--
+</span>
+            <div class="center">
+               <hr style="width:100%"/>
+               <b>
+                  <i>Index for DEF nodes</i>
+               </b>: 
+<a title="go to this Inline node"
+                   href="#CoordinateAxes"
+                   class="idName">CoordinateAxes</a>,
+<a title="go to this Inline node"
+                   href="#GridXZ_20x20Fixed"
+                   class="idName">GridXZ_20x20Fixed</a>,
+<a title="go to this NavigationInfo node"
+                   href="#NavInside"
+                   class="idName">NavInside</a>,
+<a title="go to this NavigationInfo node"
+                   href="#NavOutside"
+                   class="idName">NavOutside</a>,
+<a title="go to this Viewpoint node" href="#ViewAbove" class="idName">ViewAbove</a>,
+<a title="go to this Viewpoint node" href="#ViewInside" class="idName">ViewInside</a>,
+<a title="go to this Viewpoint node"
+                   href="#ViewOutside"
+                   class="idName">ViewOutside</a>,
+<a title="go to this AudioClip node"
+                   href="#WaterSounds"
+                   class="idName">WaterSounds</a>
+<br /><hr width="50%"/>
+               <b>
+                  <i>Index for Viewpoint images</i>
+               </b>: 
+<a title="go to this Viewpoint node: above"
+                   href="#ViewAbove"
+                   class="idName">ViewAbove</a>,
+<a title="go to this Viewpoint node: inside"
+                   href="#ViewInside"
+                   class="idName">ViewInside</a>,
+<a title="go to this Viewpoint node: outside"
+                   href="#ViewOutside"
+                   class="idName">ViewOutside</a>
+               <hr style="width:100%"/>
+            </div>
+            <span style="color:white">
+--&gt;
+</span><br />
+
+<span title="Scene is the root node that contains an X3D scene graph">&lt;<span class="element">Scene</span>&gt;
+</span><div class="indent">
+               <span title="XML comment">&lt;!--  Note  that  navigation  mode  shifts  to  WALK  when  ViewInside  is  bound,  otherwise  default  is  EXAMINE  --&gt;</span>
+<br />
+
+<span title="WorldInfo contains persistent documentation information about the 3D world">&lt;<span class="element">WorldInfo</span>&#160;<span class="attribute">title</span>='<span class="value">SoundVisualization.x3d</span>'/&gt;
+</span><br />
+<a name="ViewOutside"> </a> 
+<span style="background-color:#EEEEEE;" title="inserted documentation about ROUTE connections">&lt;!-- <i>ROUTE</i> information for <span class="idName">ViewOutside</span> node:&#160;
+[<a title="go to this ROUTE" href="#ROUTE_0"><i>from</i>&#160;<span class="attribute">isBound</span>&#160;<i>to</i>&#160;<span class="idName">NavOutside</span>.<span class="attribute">set_bind</span>
+               </a>]
+ --&gt;<br /></span>
+<span title="Viewpoint provides a specific location and direction where the user may view the scene">&lt;<span class="element">Viewpoint</span>&#160;<span class="attribute">DEF</span>='<a title="bookmark link to ViewOutside"
+                   href="#ViewOutside"
+                   class="idName">ViewOutside</a>'&#160;<span class="attribute">description</span>='<a title="viewpoint image (produced using Xj3D)"
+                   href="_viewpoints/SoundVisualization.x3d._VP_outside.png">outside</a>'&#160;<span class="attribute">position</span>='<span class="value">0 8 40</span>'/&gt;
+</span><br />
+<a name="NavOutside"> </a> 
+<span style="background-color:#EEEEEE;" title="inserted documentation about ROUTE connections">&lt;!-- <i>ROUTE</i> information for <span class="idName">NavOutside</span> node:&#160;
+[<a title="go to this ROUTE" href="#ROUTE_0"><i>from</i>&#160;<span class="idName">ViewOutside</span>.<span class="attribute">isBound</span>&#160;<i>to</i>&#160;<span class="attribute">set_bind</span>
+               </a>]
+[<a title="go to this ROUTE" href="#ROUTE_2"><i>from</i>&#160;<span class="idName">ViewAbove</span>.<span class="attribute">isBound</span>&#160;<i>to</i>&#160;<span class="attribute">set_bind</span>
+               </a>]
+ --&gt;<br /></span>
+<span title="NavigationInfo describes the viewing model and physical characteristics of the viewer's avatar">&lt;<span class="element">NavigationInfo</span>&#160;<span class="attribute">DEF</span>='<a title="bookmark link to NavOutside"
+                   href="#NavOutside"
+                   class="idName">NavOutside</a>'/&gt;
+</span><br />
+<a name="ROUTE_0"> </a> 
+<span title="ROUTE connects fields between nodes to enable event passing" style="background-color:#DDEEFF">&lt;<span class="route">ROUTE</span>&#160;<span class="attribute">fromNode</span>='<a title="go to the original DEF node definition"
+                   href="#ViewOutside"
+                   class="idName">ViewOutside</a>'&#160;<span class="attribute">fromField</span>='<span class="value">isBound</span>'&#160;<span class="attribute">toNode</span>='<a title="go to the original DEF node definition"
+                   href="#NavOutside"
+                   class="idName">NavOutside</a>'&#160;<span class="attribute">toField</span>='<span class="value">set_bind</span>'/&gt;
+</span><br />
+<a name="ViewInside"> </a> 
+<span style="background-color:#EEEEEE;" title="inserted documentation about ROUTE connections">&lt;!-- <i>ROUTE</i> information for <span class="idName">ViewInside</span> node:&#160;
+[<a title="go to this ROUTE" href="#ROUTE_1"><i>from</i>&#160;<span class="attribute">isBound</span>&#160;<i>to</i>&#160;<span class="idName">NavInside</span>.<span class="attribute">set_bind</span>
+               </a>]
+ --&gt;<br /></span>
+<span title="Viewpoint provides a specific location and direction where the user may view the scene">&lt;<span class="element">Viewpoint</span>&#160;<span class="attribute">DEF</span>='<a title="bookmark link to ViewInside"
+                   href="#ViewInside"
+                   class="idName">ViewInside</a>'&#160;<span class="attribute">description</span>='<a title="viewpoint image (produced using Xj3D)"
+                   href="_viewpoints/SoundVisualization.x3d._VP_inside.png">inside</a>'&#160;<span class="attribute">position</span>='<span class="value">0 1.6 6</span>'/&gt;
+</span><br />
+<a name="NavInside"> </a> 
+<span style="background-color:#EEEEEE;" title="inserted documentation about ROUTE connections">&lt;!-- <i>ROUTE</i> information for <span class="idName">NavInside</span> node:&#160;
+[<a title="go to this ROUTE" href="#ROUTE_1"><i>from</i>&#160;<span class="idName">ViewInside</span>.<span class="attribute">isBound</span>&#160;<i>to</i>&#160;<span class="attribute">set_bind</span>
+               </a>]
+ --&gt;<br /></span>
+<span title="NavigationInfo describes the viewing model and physical characteristics of the viewer's avatar">&lt;<span class="element">NavigationInfo</span>&#160;<span class="attribute">DEF</span>='<a title="bookmark link to NavInside" href="#NavInside" class="idName">NavInside</a>'&#160;<span class="attribute">type</span>='<span class="value">"WALK" "ANY"</span>'/&gt;
+</span><br />
+<a name="ROUTE_1"> </a> 
+<span title="ROUTE connects fields between nodes to enable event passing" style="background-color:#DDEEFF">&lt;<span class="route">ROUTE</span>&#160;<span class="attribute">fromNode</span>='<a title="go to the original DEF node definition"
+                   href="#ViewInside"
+                   class="idName">ViewInside</a>'&#160;<span class="attribute">fromField</span>='<span class="value">isBound</span>'&#160;<span class="attribute">toNode</span>='<a title="go to the original DEF node definition"
+                   href="#NavInside"
+                   class="idName">NavInside</a>'&#160;<span class="attribute">toField</span>='<span class="value">set_bind</span>'/&gt;
+</span><br />
+<a name="ViewAbove"> </a> 
+<span style="background-color:#EEEEEE;" title="inserted documentation about ROUTE connections">&lt;!-- <i>ROUTE</i> information for <span class="idName">ViewAbove</span> node:&#160;
+[<a title="go to this ROUTE" href="#ROUTE_2"><i>from</i>&#160;<span class="attribute">isBound</span>&#160;<i>to</i>&#160;<span class="idName">NavOutside</span>.<span class="attribute">set_bind</span>
+               </a>]
+ --&gt;<br /></span>
+<span title="Viewpoint provides a specific location and direction where the user may view the scene">&lt;<span class="element">Viewpoint</span>&#160;<span class="attribute">DEF</span>='<a title="bookmark link to ViewAbove" href="#ViewAbove" class="idName">ViewAbove</a>'&#160;<span class="attribute">description</span>='<a title="viewpoint image (produced using Xj3D)"
+                   href="_viewpoints/SoundVisualization.x3d._VP_above.png">above</a>'&#160;<span class="attribute">orientation</span>='<span class="value">1 0 0 -1.57079</span>'&#160;<span class="attribute">position</span>='<span class="value">0 40 0</span>'/&gt;
+</span><br />
+<a name="GridXZ_20x20Fixed"> </a> 
+<span title="Inline is a Grouping node that can load nodes from another X3D scene via url">&lt;<span class="element">Inline</span>&#160;<span class="attribute">DEF</span>='<a title="bookmark link to GridXZ_20x20Fixed"
+                   href="#GridXZ_20x20Fixed"
+                   class="idName">GridXZ_20x20Fixed</a>'
+<br />
+&#160;&#160;<span title="uniform resource locator (url) list of relative or absolute file addresses, performed in order until resource retrieval succeeds"><span class="attribute">url</span>='
+ "<a href="GridXZ_20x20Fixed.x3d" target="_blank">GridXZ_20x20Fixed.x3d</a>" "<a href="../../../Savage/Tools/Authoring/GridXZ_20x20Fixed.x3d"
+                   target="_blank">../../../Savage/Tools/Authoring/GridXZ_20x20Fixed.x3d</a>"
+"<a href="https://savage.nps.edu/Savage/Tools/Authoring/GridXZ_20x20Fixed.x3d"
+                   target="_blank">https://savage.nps.edu/Savage/Tools/Authoring/GridXZ_20x20Fixed.x3d</a>"  "<a href="GridXZ_20x20Fixed.wrl" target="_blank">GridXZ_20x20Fixed.wrl</a>" "<a href="../../../Savage/Tools/Authoring/GridXZ_20x20Fixed.wrl"
+                   target="_blank">../../../Savage/Tools/Authoring/GridXZ_20x20Fixed.wrl</a>"
+"<a href="https://savage.nps.edu/Savage/Tools/Authoring/GridXZ_20x20Fixed.wrl"
+                   target="_blank">https://savage.nps.edu/Savage/Tools/Authoring/GridXZ_20x20Fixed.wrl</a>" '</span>/&gt;
+</span><br />
+<a name="ROUTE_2"> </a> 
+<span title="ROUTE connects fields between nodes to enable event passing" style="background-color:#DDEEFF">&lt;<span class="route">ROUTE</span>&#160;<span class="attribute">fromNode</span>='<a title="go to the original DEF node definition"
+                   href="#ViewAbove"
+                   class="idName">ViewAbove</a>'&#160;<span class="attribute">fromField</span>='<span class="value">isBound</span>'&#160;<span class="attribute">toNode</span>='<a title="go to the original DEF node definition"
+                   href="#NavOutside"
+                   class="idName">NavOutside</a>'&#160;<span class="attribute">toField</span>='<span class="value">set_bind</span>'/&gt;
+</span><br /><span title="XML comment">&lt;!--  Sound  node  example  --&gt;</span>
+<br />
+
+<span title="Sound controls an AudioClip or MovieTexture for sound playback">&lt;<span class="element">Sound</span>&#160;<span class="attribute">direction</span>='<span class="value">1 0 1</span>'&#160;<span class="attribute">location</span>='<span class="value">-3 1.6 -3</span>'&#160;<span class="attribute">maxBack</span>='<span class="value">6</span>'&#160;<span class="attribute">minBack</span>='<span class="value">5</span>'&gt;
+</span><div class="indent">
+                  <a name="WaterSounds"> </a> 
+<span title="AudioClip provides audio data used by Sound nodes">&lt;<span class="element">AudioClip</span>&#160;<span class="attribute">DEF</span>='<a title="bookmark link to WaterSounds"
+                      href="#WaterSounds"
+                      class="idName">WaterSounds</a>'&#160;<span class="attribute">description</span>='<span class="value">Running Water</span>'
+<br />
+&#160;&#160;<span title="uniform resource locator (url) list of relative or absolute file addresses, performed in order until resource retrieval succeeds"><span class="attribute">url</span>='
+ "<a href="aqua.wav" target="_blank">aqua.wav</a>" "<a href="https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter12EnvironmentSensorSound/aqua.wav"
+                      target="_blank">https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter12EnvironmentSensorSound/aqua.wav</a>" '</span>/&gt;
+</span></div><span title="Sound controls an AudioClip or MovieTexture for sound playback">&lt;/<span class="element">Sound</span>&gt;
+</span><br /><span title="XML comment">&lt;!--  ==================  --&gt;</span>
+<br /><span title="XML comment">&lt;!--  Sound  outlines,  patterned  after <a href="https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter12EnvironmentSensorSound/SoundAudioClip.x3d"
+                      target="_blank">https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter12EnvironmentSensorSound/SoundAudioClip.x3d</a>
+ --&gt;</span>
+<br /><span title="XML comment">&lt;!--  Approximate  ellipsoidal  footprints  and  envelope  using  Cylinders  and  Spheres,  respectively  --&gt;</span>
+<br /><span title="XML comment">&lt;!--  Sound  direction  is  x  axis,  so  minimum-attenuation  minLength  =  (minBack  +  minFront)  and  minRadius  =  minLength/2  along  x  axis  --&gt;</span>
+<br /><span title="XML comment">&lt;!--  and  so  width,  height  dimensions  ~=  maximum-attenuation  halfwidth  =  maxWidth  ~=  45  along  y,  z  axes  --&gt;</span>
+<br /><span title="XML comment">&lt;!--  Ellipsoid  focus  is  (0  0  0)  but  geometric  center  offset  for  spheroidal  approximation  is  (-minBack  +  minRadius)  --&gt;</span>
+<br />
+
+<span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;<span class="element">Transform</span>&#160;<span class="attribute">rotation</span>='<span class="value">0 1 0 -2.356194490192345</span>'&#160;<span class="attribute">translation</span>='<span class="value">-3 1.6 -3</span>'&gt;
+</span><div class="indent">
+<span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;<span class="element">Transform</span>&#160;<span class="attribute">rotation</span>='<span class="value">1 0 0 0.0</span>'&gt;
+</span><div class="indent">
+                     <span title="XML comment">&lt;!--  here  is  local  center  of  sound  ellipse,  with  local  X  axis  pointed  along  direction  vector  --&gt;</span>
+<br />
+<a name="CoordinateAxes"> </a> 
+<span title="Inline is a Grouping node that can load nodes from another X3D scene via url">&lt;<span class="element">Inline</span>&#160;<span class="attribute">DEF</span>='<a title="bookmark link to CoordinateAxes"
+                         href="#CoordinateAxes"
+                         class="idName">CoordinateAxes</a>'
+<br />
+&#160;&#160;<span title="uniform resource locator (url) list of relative or absolute file addresses, performed in order until resource retrieval succeeds"><span class="attribute">url</span>='
+"<a href="../Chapter03Grouping/CoordinateAxes.x3d" target="_blank">../Chapter03Grouping/CoordinateAxes.x3d</a>"
+"<a href="../../Savage/Tools/Authoring/CoordinateAxes.x3d" target="_blank">../../Savage/Tools/Authoring/CoordinateAxes.x3d</a>"
+"<a href="https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter03Grouping/CoordinateAxes.x3d"
+                         target="_blank">https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter03Grouping/CoordinateAxes.x3d</a>" "<a href="https://savage.nps.edu/Savage/Tools/Authoring/CoordinateAxes.x3d"
+                         target="_blank">https://savage.nps.edu/Savage/Tools/Authoring/CoordinateAxes.x3d</a>" "<a href="../Chapter03Grouping/CoordinateAxes.wrl" target="_blank">../Chapter03Grouping/CoordinateAxes.wrl</a>"
+"<a href="../../Savage/Tools/Authoring/CoordinateAxes.wrl" target="_blank">../../Savage/Tools/Authoring/CoordinateAxes.wrl</a>"
+"<a href="https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter03Grouping/CoordinateAxes.wrl"
+                         target="_blank">https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter03Grouping/CoordinateAxes.wrl</a>" "<a href="https://savage.nps.edu/Savage/Tools/Authoring/CoordinateAxes.wrl"
+                         target="_blank">https://savage.nps.edu/Savage/Tools/Authoring/CoordinateAxes.wrl</a>" '</span>/&gt;
+</span><br />
+
+<span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;<span class="element">Transform</span>&#160;<span class="attribute">scale</span>='<span class="value">6.0 2.23606797749979 2.23606797749979</span>'&#160;<span class="attribute">translation</span>='<span class="value">-2 0 0</span>'&gt;
+</span><div class="indent">
+<span title="Collision detects camera-to-object contact using current view and NavigationInfo avatarSize">&lt;<span class="element">Collision</span>&#160;<span class="attribute">enabled</span>='<span class="value">false</span>'&gt;
+</span><div class="indent">
+<span title="Shape contains geometry and optional corresponding Appearance">&lt;<span class="element">Shape</span>&gt;
+</span><div class="indent">
+<span title="Cylinder is a geometry primitive node">&lt;<span class="element">Cylinder</span>&#160;<span class="attribute">height</span>='<span class="value">0.04</span>'&#160;<span class="attribute">radius</span>='<span class="value">0.5</span>'&#160;<span class="attribute">side</span>='<span class="value">false</span>'/&gt;
+</span><br />
+
+<span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;<span class="element">Appearance</span>&gt;
+</span><div class="indent">
+<span title="Material specifies surface rendering properties for associated geometry">&lt;<span class="element">Material</span>&#160;<span class="attribute">diffuseColor</span>='<span class="value">0.8 0.6 0.4</span>'&#160;<span class="attribute">emissiveColor</span>='<span class="value">0.8 0.6 0.4</span>'&#160;<span class="attribute">transparency</span>='<span class="value">0.7</span>'/&gt;
+</span></div><span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;/<span class="element">Appearance</span>&gt;
+</span></div><span title="Shape contains geometry and optional corresponding Appearance">&lt;/<span class="element">Shape</span>&gt;
+</span><br />
+
+<span title="Shape contains geometry and optional corresponding Appearance">&lt;<span class="element">Shape</span>&gt;
+</span><div class="indent">
+<span title="Sphere is a geometry primitive node">&lt;<span class="element">Sphere</span>&#160;<span class="attribute">radius</span>='<span class="value">0.5</span>'/&gt;
+</span><br />
+
+<span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;<span class="element">Appearance</span>&gt;
+</span><div class="indent">
+<span title="Material specifies surface rendering properties for associated geometry">&lt;<span class="element">Material</span>&#160;<span class="attribute">diffuseColor</span>='<span class="value">0.8 0.6 0.4</span>'&#160;<span class="attribute">emissiveColor</span>='<span class="value">0.8 0.6 0.4</span>'&#160;<span class="attribute">transparency</span>='<span class="value">0.7</span>'/&gt;
+</span></div><span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;/<span class="element">Appearance</span>&gt;
+</span></div><span title="Shape contains geometry and optional corresponding Appearance">&lt;/<span class="element">Shape</span>&gt;
+</span></div><span title="Collision detects camera-to-object contact using current view and NavigationInfo avatarSize">&lt;/<span class="element">Collision</span>&gt;
+</span></div><span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;/<span class="element">Transform</span>&gt;
+</span><br />
+
+<span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;<span class="element">Transform</span>&#160;<span class="attribute">scale</span>='<span class="value">16.0 7.745966692414834 7.745966692414834</span>'&#160;<span class="attribute">translation</span>='<span class="value">2 0 0</span>'&gt;
+</span><div class="indent">
+<span title="Collision detects camera-to-object contact using current view and NavigationInfo avatarSize">&lt;<span class="element">Collision</span>&#160;<span class="attribute">enabled</span>='<span class="value">false</span>'&gt;
+</span><div class="indent">
+<span title="Shape contains geometry and optional corresponding Appearance">&lt;<span class="element">Shape</span>&gt;
+</span><div class="indent">
+<span title="Cylinder is a geometry primitive node">&lt;<span class="element">Cylinder</span>&#160;<span class="attribute">height</span>='<span class="value">0.02</span>'&#160;<span class="attribute">radius</span>='<span class="value">0.5</span>'&#160;<span class="attribute">side</span>='<span class="value">false</span>'/&gt;
+</span><br />
+
+<span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;<span class="element">Appearance</span>&gt;
+</span><div class="indent">
+<span title="Material specifies surface rendering properties for associated geometry">&lt;<span class="element">Material</span>&#160;<span class="attribute">diffuseColor</span>='<span class="value">0.4 0.3 0.2</span>'&#160;<span class="attribute">emissiveColor</span>='<span class="value">0.4 0.3 0.2</span>'&#160;<span class="attribute">transparency</span>='<span class="value">0.85</span>'/&gt;
+</span></div><span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;/<span class="element">Appearance</span>&gt;
+</span></div><span title="Shape contains geometry and optional corresponding Appearance">&lt;/<span class="element">Shape</span>&gt;
+</span><br />
+
+<span title="Shape contains geometry and optional corresponding Appearance">&lt;<span class="element">Shape</span>&gt;
+</span><div class="indent">
+<span title="Sphere is a geometry primitive node">&lt;<span class="element">Sphere</span>&#160;<span class="attribute">radius</span>='<span class="value">0.5</span>'/&gt;
+</span><br />
+
+<span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;<span class="element">Appearance</span>&gt;
+</span><div class="indent">
+<span title="Material specifies surface rendering properties for associated geometry">&lt;<span class="element">Material</span>&#160;<span class="attribute">diffuseColor</span>='<span class="value">0.4 0.3 0.2</span>'&#160;<span class="attribute">emissiveColor</span>='<span class="value">0.4 0.3 0.2</span>'&#160;<span class="attribute">transparency</span>='<span class="value">0.85</span>'/&gt;
+</span></div><span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;/<span class="element">Appearance</span>&gt;
+</span></div><span title="Shape contains geometry and optional corresponding Appearance">&lt;/<span class="element">Shape</span>&gt;
+</span></div><span title="Collision detects camera-to-object contact using current view and NavigationInfo avatarSize">&lt;/<span class="element">Collision</span>&gt;
+</span></div><span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;/<span class="element">Transform</span>&gt;
+</span></div><span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;/<span class="element">Transform</span>&gt;
+</span></div><span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;/<span class="element">Transform</span>&gt;
+</span><br /><span title="XML comment">&lt;!--  ==================  --&gt;</span>
+            </div><span title="Scene is the root node that contains an X3D scene graph">&lt;/<span class="element">Scene</span>&gt;
+</span></div><span title="X3D is the top-most XML element for an Extensible 3D (X3D) Graphics file">&lt;/<span class="element">X3D</span>&gt;
+</span><br /><span style="color:white">
+&lt;!--
+</span>
+         <div class="center">
+            <hr style="width:100%"/>
+            <b>
+               <i>Index for DEF nodes</i>
+            </b>: 
+<a title="go to this Inline node"
+                href="#CoordinateAxes"
+                class="idName">CoordinateAxes</a>,
+<a title="go to this Inline node"
+                href="#GridXZ_20x20Fixed"
+                class="idName">GridXZ_20x20Fixed</a>,
+<a title="go to this NavigationInfo node"
+                href="#NavInside"
+                class="idName">NavInside</a>,
+<a title="go to this NavigationInfo node"
+                href="#NavOutside"
+                class="idName">NavOutside</a>,
+<a title="go to this Viewpoint node" href="#ViewAbove" class="idName">ViewAbove</a>,
+<a title="go to this Viewpoint node" href="#ViewInside" class="idName">ViewInside</a>,
+<a title="go to this Viewpoint node"
+                href="#ViewOutside"
+                class="idName">ViewOutside</a>,
+<a title="go to this AudioClip node"
+                href="#WaterSounds"
+                class="idName">WaterSounds</a>
+<br /><hr width="50%"/>
+            <b>
+               <i>Index for Viewpoint images</i>
+            </b>: 
+<a title="go to this Viewpoint node: above"
+                href="#ViewAbove"
+                class="idName">ViewAbove</a>,
+<a title="go to this Viewpoint node: inside"
+                href="#ViewInside"
+                class="idName">ViewInside</a>,
+<a title="go to this Viewpoint node: outside"
+                href="#ViewOutside"
+                class="idName">ViewOutside</a>
+            <hr style="width:100%"/>
+         </div>
+         <span style="color:white">
+--&gt;
+</span>
+      </div>
+      <p style="text-align:center;">
+         <span style="color:white">&lt;!--</span>
+Color key: <!--(matching X3D and XML terminology) -->
+&lt;<span class="element">X3dNode</span>
+         <span class="idName"> DEF</span>='<span class="idName">idName</span>' <span class="attribute">field</span>='<span class="value">value</span>'/&gt; 
+ matches 
+&lt;<span class="element">XmlElement</span>
+         <span class="idName"> DEF</span>='<span class="idName">idName</span>' <span class="attribute">attribute</span>='<span class="value">value</span>'/&gt; <br/>
+<span title="behavior node" style="background-color:#DDEEFF;">(Light blue background: behavior node)</span> <span title="inserted documentation about ROUTE connections" style="background-color:#EEEEEE;">(Grey background: inserted documentation)</span> <span title="X3D Extensibility" style="background-color:#FFEEFF;">(Magenta background: X3D Extensibility)</span><br/>
+         <span style="color:white"> --&gt;</span>
+      </p>
+      <p style="text-align:center; background-color:white">
+         <span style="color:white">&lt;!--</span>
+For additional help information about X3D scenes, please see <a href="https://www.web3d.org/x3d/content/X3dTooltips.html"
+             title="Summary descriptions and authoring hints for each X3D node (element) and field (attribute)"
+             target="_blank">X3D Tooltips</a>, <a href="https://www.web3d.org/x3d/content/examples/X3dResources.html"
+             title="Numerous resources that support X3D graphics"
+             target="_blank">X3D Resources</a> and <a href="https://www.web3d.org/x3d/content/examples/X3dSceneAuthoringHints.html"
+             title="Style guidelines, authoring tips and best practices"
+             target="_blank">X3D Scene Authoring Hints</a>.
+<span style="color:white">--&gt;</span>
+      </p>
+   </body>
+</html>

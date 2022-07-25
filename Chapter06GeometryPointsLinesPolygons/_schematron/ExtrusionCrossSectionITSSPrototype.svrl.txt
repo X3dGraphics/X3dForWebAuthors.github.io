@@ -1,0 +1,3 @@
+X3D/head/meta title (i.e. filename 'ExtrusionCrossSectionITSSPrototype.x3d') is expected at end of identifier (url) value [/X3D/head, warning]
+<meta name='hint' content='Utilize ExtrusionCrossSectionITSS ProtoInstance as if it is a Shape node (with containerField="children") rather than an Extrusion node (with containerField="geometry") under a Shape.'/>[/X3D/head/meta[6], diagnostic]
+<connect nodeField=point/> cannot have multiple definitions to a single field of this node[/X3D/Scene/ProtoDeclare/ProtoBody/Group[1]/Shape[1]/IndexedLineSet/Coordinate/IS/connect[2], error]

@@ -1,0 +1,369 @@
+@prefix :        <https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/FishPrototype.ttl#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema:  <http://schema.org/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix x3d:     <https://www.web3d.org/specifications/x3d-4.0.xsd#> .
+@prefix x3do:    <https://www.web3d.org/specifications/X3dOntology4.0#> .
+
+:X3D a owl:NamedIndividual, x3do:X3D ;
+  x3do:hasHead :head ;
+  x3do:hasScene :Scene ;
+  x3do:profile 'Immersive' ;
+  x3do:version '3.3' ;
+  x3do:noNamespaceSchemaLocation 'https://www.web3d.org/specifications/x3d-3.3.xsd' .
+:head a owl:NamedIndividual, x3do:head ;
+  x3do:hasParent :X3D ;
+  x3do:hasMeta :meta_1_1, :meta_1_2, :meta_1_3, :meta_1_4, :meta_1_5, :meta_1_6, :meta_1_7, :meta_1_8, :meta_1_9, :meta_1_10, :meta_1_11 .
+:meta_1_1 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'FishPrototype.x3d' ;
+  x3do:name 'title' .
+:meta_1_2 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'This is a reusable prototype of a generic fish, which can be configured upon instancing to create customized fish.' ;
+  x3do:name 'description' .
+:meta_1_3 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Circular fish behavior is embedded in prototype, instead the circular path needs to be used in external files or possibly parameterized.' ;
+  x3do:name 'warning' .
+:meta_1_4 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Ildeniz Duman' ;
+  x3do:name 'creator' .
+:meta_1_5 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Scott Tufts' ;
+  x3do:name 'translator' .
+:meta_1_6 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '1 June 1998' ;
+  x3do:name 'created' .
+:meta_1_7 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '9 December 2001' ;
+  x3do:name 'translated' .
+:meta_1_8 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '20 October 2019' ;
+  x3do:name 'modified' .
+:meta_1_9 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/FishPrototype.x3d' ;
+  x3do:name 'identifier' .
+:meta_1_10 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'X3D-Edit 3.3, https://savage.nps.edu/X3D-Edit' ;
+  x3do:name 'generator' .
+:meta_1_11 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '../license.html' ;
+  x3do:name 'license' .
+:meta dcterms:title "FishPrototype.x3d" .
+:meta dcterms:description "This is a reusable prototype of a generic fish, which can be configured upon instancing to create customized fish." .
+:meta dcterms:warning "Circular fish behavior is embedded in prototype, instead the circular path needs to be used in external files or possibly parameterized." .
+:meta dcterms:creator "Ildeniz Duman" .
+:meta dcterms:translator "Scott Tufts" .
+:meta dcterms:created "1 June 1998" .
+:meta dcterms:translated "9 December 2001" .
+:meta dcterms:modified "20 October 2019" .
+:meta dcterms:identifier "https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/FishPrototype.x3d" .
+:meta dcterms:generator "X3D-Edit 3.3, https://savage.nps.edu/X3D-Edit" .
+:meta dcterms:license "../license.html" .
+:Scene a owl:NamedIndividual, x3do:Scene ;
+  x3do:hasParent :X3D ;
+  x3do:hasChildren :WorldInfo_2_1, :ProtoInstance_2_3 ;
+  x3do:hasProtoDeclare :ProtoDeclare_2_2 .
+:WorldInfo_2_1 a owl:NamedIndividual, x3do:WorldInfo ;
+  x3do:hasParent :Scene ;
+  x3do:title 'FishPrototype.x3d' .
+:ProtoDeclare_2_2 a owl:NamedIndividual, x3do:ProtoDeclare ;
+  x3do:hasParent :Scene ;
+  x3do:hasProtoInterface :ProtoInterface_2_2_1 ;
+  x3do:hasProtoBody :ProtoBody_2_2_2 ;
+  x3do:name 'Fish' .
+:ProtoInterface_2_2_1 a owl:NamedIndividual, x3do:ProtoInterface ;
+  x3do:hasParent :ProtoDeclare_2_2 ;
+  x3do:hasField :field_2_2_1_1, :field_2_2_1_2, :field_2_2_1_3 .
+:field_2_2_1_1 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :ProtoInterface_2_2_1 ;
+  x3do:accessType 'inputOutput' ;
+  x3do:name 'skinTextureUrl' ;
+  x3do:type 'MFString' .
+:field_2_2_1_2 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :ProtoInterface_2_2_1 ;
+  x3do:accessType 'inputOutput' ;
+  x3do:name 'fishScale' ;
+  x3do:type 'SFVec3f' ;
+  x3do:value ( 1 1 1 ) .
+:field_2_2_1_3 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :ProtoInterface_2_2_1 ;
+  x3do:accessType 'inputOutput' ;
+  x3do:name 'fishColor' ;
+  x3do:type 'SFColor' ;
+  x3do:value ( 0.7 0.7 0.7 ) .
+:ProtoBody_2_2_2 a owl:NamedIndividual, x3do:ProtoBody ;
+  x3do:hasParent :ProtoDeclare_2_2 ;
+  x3do:hasChildren :FishTransform .
+:FishTransform a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :ProtoBody_2_2_2 ;
+  x3do:hasIS :IS_2_2_2_1_1 ;
+  x3do:hasChildren :Way, :AnimationGroup ;
+  x3do:DEF 'FishTransform' .
+:IS_2_2_2_1_1 a owl:NamedIndividual, x3do:IS ;
+  x3do:hasParent :FishTransform ;
+  x3do:hasConnect :connect_2_2_2_1_1_1 .
+:connect_2_2_2_1_1_1 a owl:NamedIndividual, x3do:connect ;
+  x3do:hasParent :IS_2_2_2_1_1 ;
+  x3do:nodeField 'scale' ;
+  x3do:protoField 'fishScale' .
+:Way a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :FishTransform ;
+  x3do:hasChildren :Transform_2_2_2_1_2_1 ;
+  x3do:DEF 'Way' .
+:Transform_2_2_2_1_2_1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Way ;
+  x3do:hasChildren :Transform_2_2_2_1_2_1_1 ;
+  x3do:translation ( 4 0 0 ) .
+:Transform_2_2_2_1_2_1_1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_2_2_1_2_1 ;
+  x3do:hasChildren :Shape_2_2_2_1_2_1_1_1, :Shape_2_2_2_1_2_1_1_2, :Transform_2_2_2_1_2_1_1_3, :Transform_2_2_2_1_2_1_1_4, :Transform_2_2_2_1_2_1_1_5, :LeftPectoral, :RightPectoral ;
+  x3do:rotation ( 1 0 0 1.57 ) .
+:Shape_2_2_2_1_2_1_1_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_2_2_1_2_1_1 ;
+  x3do:hasAppearance :Appearance_2_2_2_1_2_1_1_1_1 ;
+  x3do:hasGeometry :FishShape .
+:Appearance_2_2_2_1_2_1_1_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_2_2_1_2_1_1_1 ;
+  x3do:hasMaterial :FishColor ;
+  x3do:hasTexture :FishTexture .
+:FishColor a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_2_2_1_2_1_1_1_1 ;
+  x3do:hasIS :IS_2_2_2_1_2_1_1_1_1_1_1 ;
+  x3do:DEF 'FishColor' .
+:IS_2_2_2_1_2_1_1_1_1_1_1 a owl:NamedIndividual, x3do:IS ;
+  x3do:hasParent :FishColor ;
+  x3do:hasConnect :connect_2_2_2_1_2_1_1_1_1_1_1_1 .
+:connect_2_2_2_1_2_1_1_1_1_1_1_1 a owl:NamedIndividual, x3do:connect ;
+  x3do:hasParent :IS_2_2_2_1_2_1_1_1_1_1_1 ;
+  x3do:nodeField 'diffuseColor' ;
+  x3do:protoField 'fishColor' .
+:FishTexture a owl:NamedIndividual, x3do:ImageTexture ;
+  x3do:hasParent :Appearance_2_2_2_1_2_1_1_1_1 ;
+  x3do:hasIS :IS_2_2_2_1_2_1_1_1_1_2_1 ;
+  x3do:DEF 'FishTexture' .
+:IS_2_2_2_1_2_1_1_1_1_2_1 a owl:NamedIndividual, x3do:IS ;
+  x3do:hasParent :FishTexture ;
+  x3do:hasConnect :connect_2_2_2_1_2_1_1_1_1_2_1_1 .
+:connect_2_2_2_1_2_1_1_1_1_2_1_1 a owl:NamedIndividual, x3do:connect ;
+  x3do:hasParent :IS_2_2_2_1_2_1_1_1_1_2_1 ;
+  x3do:nodeField 'url' ;
+  x3do:protoField 'skinTextureUrl' .
+:FishShape a owl:NamedIndividual, x3do:Extrusion ;
+  x3do:hasParent :Shape_2_2_2_1_2_1_1_1 ;
+  x3do:DEF 'FishShape' ;
+  x3do:creaseAngle 1.57 ;
+  x3do:crossSection ( 1.00 0.00 0.92 -0.38 0.71 -0.71 0.38 -0.92 0.00 -1.00 -0.38 -0.92 -0.71 -0.71 -0.92 -0.38 -1.00 -0.00 -0.92 0.38 -0.71 0.71 -0.38 0.92 0.00 1.00 0.38 0.92 0.71 0.71 0.92 0.38 1.00 0.00 ) ;
+  x3do:scale ( 0.03 0.03 0.1 0.15 0.4 0.7 0.5 0.75 0.4 0.55 0.2 0.3 0.05 0.1 0.03 0.6 ) ;
+  x3do:spine ( 0 3.51 0 0 3.50 0 0 2.80 0 0 2.3 0 0 1.5 0 0 0.5 0 0 0 0 0 -0.6 0 ) .
+:Shape_2_2_2_1_2_1_1_2 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_2_2_1_2_1_1 ;
+  x3do:hasAppearance :FinSkin ;
+  x3do:hasGeometry :IndexedFaceSet_2_2_2_1_2_1_1_2_2 .
+:FinSkin a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_2_2_1_2_1_1_2 ;
+  x3do:hasMaterial :Material_2_2_2_1_2_1_1_2_1_1 ;
+  x3do:DEF 'FinSkin' .
+:Material_2_2_2_1_2_1_1_2_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :FinSkin ;
+  x3do:diffuseColor ( 0.7 0.7 0.7 ) ;
+  x3do:transparency 0.3 .
+:IndexedFaceSet_2_2_2_1_2_1_1_2_2 a owl:NamedIndividual, x3do:IndexedFaceSet ;
+  x3do:hasParent :Shape_2_2_2_1_2_1_1_2 ;
+  x3do:hasCoord :Pelvic ;
+  x3do:coordIndex ( 0 1 2 3 -1 ) ;
+  x3do:solid false .
+:Pelvic a owl:NamedIndividual, x3do:Coordinate ;
+  x3do:hasParent :IndexedFaceSet_2_2_2_1_2_1_1_2_2 ;
+  x3do:DEF 'Pelvic' ;
+  x3do:point ( 0 2.2 0.6 0 2.2 -0.7 0 0.3 -0.3 0 0.7 0.5 ) .
+:Transform_2_2_2_1_2_1_1_3 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_2_2_1_2_1_1 ;
+  x3do:hasChildren :Eye ;
+  x3do:translation ( 0.3 2.8 -0.4 ) .
+:Eye a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_2_2_1_2_1_1_3 ;
+  x3do:hasAppearance :Appearance_2_2_2_1_2_1_1_3_1_1 ;
+  x3do:hasGeometry :Sphere_2_2_2_1_2_1_1_3_1_2 ;
+  x3do:DEF 'Eye' .
+:Appearance_2_2_2_1_2_1_1_3_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Eye ;
+  x3do:hasMaterial :Material_2_2_2_1_2_1_1_3_1_1_1 .
+:Material_2_2_2_1_2_1_1_3_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_2_2_1_2_1_1_3_1_1 ;
+  x3do:diffuseColor ( 0.5 0.5 0.5 ) ;
+  x3do:shininess 1 ;
+  x3do:specularColor ( 0.3 0.3 0.3 ) .
+:Sphere_2_2_2_1_2_1_1_3_1_2 a owl:NamedIndividual, x3do:Sphere ;
+  x3do:hasParent :Eye ;
+  x3do:radius 0.08 .
+:Transform_2_2_2_1_2_1_1_4 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_2_2_1_2_1_1 ;
+  x3do:hasChildren :Eye-USE-1 ;
+  x3do:translation ( -0.3 2.8 -0.4 ) .
+:Eye-USE-1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_2_2_1_2_1_1_4 ;
+  owl:sameAs :Eye . # DEF matching this USE
+:Transform_2_2_2_1_2_1_1_5 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_2_2_1_2_1_1 ;
+  x3do:hasChildren :Eye-USE-2 ;
+  x3do:scale ( 2.6 1 0.7 ) ;
+  x3do:translation ( 0 3.44 -0.1 ) .
+:Eye-USE-2 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_2_2_1_2_1_1_5 ;
+  owl:sameAs :Eye . # DEF matching this USE
+:LeftPectoral a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_2_2_1_2_1_1 ;
+  x3do:hasChildren :Shape_2_2_2_1_2_1_1_6_1 ;
+  x3do:DEF 'LeftPectoral' ;
+  x3do:translation ( -0.3 2.7 0.1 ) .
+:Shape_2_2_2_1_2_1_1_6_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :LeftPectoral ;
+  x3do:hasAppearance :FinSkin-USE-1 ;
+  x3do:hasGeometry :IndexedFaceSet_2_2_2_1_2_1_1_6_1_2 .
+:FinSkin-USE-1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_2_2_1_2_1_1_6_1 ;
+  owl:sameAs :FinSkin . # DEF matching this USE
+:IndexedFaceSet_2_2_2_1_2_1_1_6_1_2 a owl:NamedIndividual, x3do:IndexedFaceSet ;
+  x3do:hasParent :Shape_2_2_2_1_2_1_1_6_1 ;
+  x3do:hasCoord :Coordinate_2_2_2_1_2_1_1_6_1_2_1 ;
+  x3do:coordIndex ( 0 1 2 -1 ) ;
+  x3do:solid false .
+:Coordinate_2_2_2_1_2_1_1_6_1_2_1 a owl:NamedIndividual, x3do:Coordinate ;
+  x3do:hasParent :IndexedFaceSet_2_2_2_1_2_1_1_6_1_2 ;
+  x3do:point ( 0 0 0 -0.5 -0.2 0.1 -0.25 0.2 0.25 ) .
+:RightPectoral a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_2_2_1_2_1_1 ;
+  x3do:hasChildren :Shape_2_2_2_1_2_1_1_7_1 ;
+  x3do:DEF 'RightPectoral' ;
+  x3do:translation ( 0.3 2.7 0.1 ) .
+:Shape_2_2_2_1_2_1_1_7_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :RightPectoral ;
+  x3do:hasAppearance :FinSkin-USE-2 ;
+  x3do:hasGeometry :IndexedFaceSet_2_2_2_1_2_1_1_7_1_2 .
+:FinSkin-USE-2 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_2_2_1_2_1_1_7_1 ;
+  owl:sameAs :FinSkin . # DEF matching this USE
+:IndexedFaceSet_2_2_2_1_2_1_1_7_1_2 a owl:NamedIndividual, x3do:IndexedFaceSet ;
+  x3do:hasParent :Shape_2_2_2_1_2_1_1_7_1 ;
+  x3do:hasCoord :Coordinate_2_2_2_1_2_1_1_7_1_2_1 ;
+  x3do:coordIndex ( 0 1 2 -1 ) ;
+  x3do:solid false .
+:Coordinate_2_2_2_1_2_1_1_7_1_2_1 a owl:NamedIndividual, x3do:Coordinate ;
+  x3do:hasParent :IndexedFaceSet_2_2_2_1_2_1_1_7_1_2 ;
+  x3do:point ( 0 0 0 0.5 -0.2 0.1 0.25 0.2 0.25 ) .
+:AnimationGroup a owl:NamedIndividual, x3do:Group ;
+  x3do:hasParent :FishTransform ;
+  x3do:hasChildren :RouteTImer, :Timer, :Waggler, :Points, :LeftPectoralRotation, :RightPectoralRotation, :Turn ;
+  x3do:hasROUTE :ROUTE_2_2_2_1_3_4, :ROUTE_2_2_2_1_3_5, :ROUTE_2_2_2_1_3_7, :ROUTE_2_2_2_1_3_8, :ROUTE_2_2_2_1_3_10, :ROUTE_2_2_2_1_3_11, :ROUTE_2_2_2_1_3_13, :ROUTE_2_2_2_1_3_14, :ROUTE_2_2_2_1_3_16, :ROUTE_2_2_2_1_3_17 ;
+  x3do:DEF 'AnimationGroup' .
+:RouteTImer a owl:NamedIndividual, x3do:TimeSensor ;
+  x3do:hasParent :AnimationGroup ;
+  x3do:DEF 'RouteTImer' ;
+  x3do:cycleInterval '50' ;
+  x3do:loop true .
+:Timer a owl:NamedIndividual, x3do:TimeSensor ;
+  x3do:hasParent :AnimationGroup ;
+  x3do:DEF 'Timer' ;
+  x3do:cycleInterval '1.5' ;
+  x3do:loop true .
+:Waggler a owl:NamedIndividual, x3do:CoordinateInterpolator ;
+  x3do:hasParent :AnimationGroup ;
+  x3do:DEF 'Waggler' ;
+  x3do:key ( 0.0 0.5 1.0 ) ;
+  x3do:keyValue ( 0 3.55 0 0 3.50 0 0 2.80 0 0 2.3 0 -0.05 1.5 0 0.1 0.5 0 0.2 0 0 0.3 -0.6 0 0 3.55 0 0 3.50 0 0 2.80 0 0 2.3 0 0.05 1.5 0 -0.1 0.5 0 -0.2 0 0 -0.3 -0.6 0 0 3.55 0 0 3.50 0 0 2.80 0 0 2.3 0 -0.05 1.5 0 0.1 0.5 0 0.2 0 0 0.3 -0.6 0 ) .
+:ROUTE_2_2_2_1_3_4 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :AnimationGroup ;
+  x3do:fromField 'fraction_changed' ;
+  x3do:fromNode 'Timer' ;
+  x3do:toField 'set_fraction' ;
+  x3do:toNode 'Waggler' .
+:ROUTE_2_2_2_1_3_5 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :AnimationGroup ;
+  x3do:fromField 'value_changed' ;
+  x3do:fromNode 'Waggler' ;
+  x3do:toField 'set_spine' ;
+  x3do:toNode 'FishShape' .
+:Points a owl:NamedIndividual, x3do:CoordinateInterpolator ;
+  x3do:hasParent :AnimationGroup ;
+  x3do:DEF 'Points' ;
+  x3do:key ( 0.0 0.5 1.0 ) ;
+  x3do:keyValue ( 0 2.2 0.6 0 2.2 -0.7 0.2 0.3 -0.3 0.2 0.7 0.5 0 2.2 0.6 0 2.2 -0.7 -0.2 0.3 -0.3 -0.2 0.7 0.5 0 2.2 0.6 0 2.2 -0.7 0.2 0.3 -0.3 0.2 0.7 0.5 ) .
+:ROUTE_2_2_2_1_3_7 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :AnimationGroup ;
+  x3do:fromField 'fraction_changed' ;
+  x3do:fromNode 'Timer' ;
+  x3do:toField 'set_fraction' ;
+  x3do:toNode 'Points' .
+:ROUTE_2_2_2_1_3_8 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :AnimationGroup ;
+  x3do:fromField 'value_changed' ;
+  x3do:fromNode 'Points' ;
+  x3do:toField 'set_point' ;
+  x3do:toNode 'Pelvic' .
+:LeftPectoralRotation a owl:NamedIndividual, x3do:OrientationInterpolator ;
+  x3do:hasParent :AnimationGroup ;
+  x3do:DEF 'LeftPectoralRotation' ;
+  x3do:key ( 0 0.3 0.7 1 ) ;
+  x3do:keyValue ( 0 1 0 0.523 0 1 0 0 0 1 0 0 0 1 0 0.523 ) .
+:ROUTE_2_2_2_1_3_10 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :AnimationGroup ;
+  x3do:fromField 'fraction_changed' ;
+  x3do:fromNode 'Timer' ;
+  x3do:toField 'set_fraction' ;
+  x3do:toNode 'LeftPectoralRotation' .
+:ROUTE_2_2_2_1_3_11 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :AnimationGroup ;
+  x3do:fromField 'value_changed' ;
+  x3do:fromNode 'LeftPectoralRotation' ;
+  x3do:toField 'set_rotation' ;
+  x3do:toNode 'LeftPectoral' .
+:RightPectoralRotation a owl:NamedIndividual, x3do:OrientationInterpolator ;
+  x3do:hasParent :AnimationGroup ;
+  x3do:DEF 'RightPectoralRotation' ;
+  x3do:key ( 0 0.3 0.7 1 ) ;
+  x3do:keyValue ( 0 1 0 -0.523 0 1 0 0 0 1 0 0 0 1 0 -0.523 ) .
+:ROUTE_2_2_2_1_3_13 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :AnimationGroup ;
+  x3do:fromField 'fraction_changed' ;
+  x3do:fromNode 'Timer' ;
+  x3do:toField 'set_fraction' ;
+  x3do:toNode 'RightPectoralRotation' .
+:ROUTE_2_2_2_1_3_14 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :AnimationGroup ;
+  x3do:fromField 'value_changed' ;
+  x3do:fromNode 'RightPectoralRotation' ;
+  x3do:toField 'set_rotation' ;
+  x3do:toNode 'RightPectoral' .
+:Turn a owl:NamedIndividual, x3do:OrientationInterpolator ;
+  x3do:hasParent :AnimationGroup ;
+  x3do:DEF 'Turn' ;
+  x3do:key ( 0 0.25 0.5 0.75 1 ) ;
+  x3do:keyValue ( 0 1 0 0 0 1 0 -1.57 0 1 0 -3.14 0 1 0 -4.71 0 1 0 0 ) .
+:ROUTE_2_2_2_1_3_16 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :AnimationGroup ;
+  x3do:fromField 'fraction_changed' ;
+  x3do:fromNode 'RouteTImer' ;
+  x3do:toField 'set_fraction' ;
+  x3do:toNode 'Turn' .
+:ROUTE_2_2_2_1_3_17 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :AnimationGroup ;
+  x3do:fromField 'value_changed' ;
+  x3do:fromNode 'Turn' ;
+  x3do:toField 'set_rotation' ;
+  x3do:toNode 'Way' .
+:ProtoInstance_2_3 a owl:NamedIndividual, x3do:ProtoInstance ;
+  x3do:hasParent :Scene ;
+  x3do:name 'Fish' .

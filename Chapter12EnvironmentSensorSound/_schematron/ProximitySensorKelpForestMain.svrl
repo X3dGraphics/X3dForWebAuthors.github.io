@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<svrl:schematron-output xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                        xmlns:schold="http://www.ascc.net/xml/schematron"
+                        xmlns:iso="http://purl.oclc.org/dsdl/schematron"
+                        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+                        xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
+                        title="X3D Graphics Validity Checks using Schematron"
+                        schemaVersion=""><!--   
+		   
+		   
+		 --><svrl:active-pattern document="file:/C:/x3d-code/www.web3d.org/x3d/content/examples/X3dForWebAuthors/Chapter12EnvironmentSensorSound/ProximitySensorKelpForestMain.x3d"/>
+   <svrl:fired-rule context="X3D | *[(upper-case(local-name()) = 'X3D')]"/>
+   <svrl:successful-report test="$profileLegal and (//Inline[not(MetadataString)][not(@USE)]) and not($fullProfile)"
+                           role="info"
+                           location="/X3D">
+      <svrl:text>&lt;X3D profile='Immersive'&gt; is defined satisfactorily for this scene, but ensure that child Inline scenes do not exceed this profile/component combination since a parent scene must have an equal or higher profile/component combination </svrl:text>
+   </svrl:successful-report>
+   <svrl:fired-rule context="head | *[(lower-case(local-name()) = 'head')]"/>
+   <svrl:fired-rule context="meta | *[(lower-case(local-name()) = 'meta')]"/>
+   <svrl:fired-rule context="meta | *[(lower-case(local-name()) = 'meta')]"/>
+   <svrl:fired-rule context="meta | *[(lower-case(local-name()) = 'meta')]"/>
+   <svrl:fired-rule context="meta | *[(lower-case(local-name()) = 'meta')]"/>
+   <svrl:fired-rule context="meta | *[(lower-case(local-name()) = 'meta')]"/>
+   <svrl:fired-rule context="meta | *[(lower-case(local-name()) = 'meta')]"/>
+   <svrl:fired-rule context="meta | *[(lower-case(local-name()) = 'meta')]"/>
+   <svrl:fired-rule context="meta | *[(lower-case(local-name()) = 'meta')]"/>
+   <svrl:fired-rule context="meta | *[(lower-case(local-name()) = 'meta')]"/>
+   <svrl:fired-rule context="meta | *[(lower-case(local-name()) = 'meta')]"/>
+   <svrl:fired-rule context="meta | *[(lower-case(local-name()) = 'meta')]"/>
+   <svrl:fired-rule context="meta | *[(lower-case(local-name()) = 'meta')]"/>
+   <svrl:fired-rule context="meta | *[(lower-case(local-name()) = 'meta')]"/>
+   <svrl:fired-rule context="Scene | *[(lower-case(local-name()) = 'scene')]"/>
+   <svrl:fired-rule context="WorldInfo"/>
+   <svrl:fired-rule context="NavigationInfo"/>
+   <svrl:fired-rule context="ExternProtoDeclare"/>
+   <svrl:fired-rule context="ProtoInstance"/>
+   <svrl:fired-rule context="ExternProtoDeclare"/>
+   <svrl:fired-rule context="field | *[(lower-case(local-name()) = 'field')]"/>
+   <svrl:fired-rule context="field | *[(lower-case(local-name()) = 'field')]"/>
+   <svrl:fired-rule context="field | *[(lower-case(local-name()) = 'field')]"/>
+   <svrl:fired-rule context="field | *[(lower-case(local-name()) = 'field')]"/>
+   <svrl:fired-rule context="field | *[(lower-case(local-name()) = 'field')]"/>
+   <svrl:fired-rule context="field | *[(lower-case(local-name()) = 'field')]"/>
+   <svrl:fired-rule context="field | *[(lower-case(local-name()) = 'field')]"/>
+   <svrl:fired-rule context="field | *[(lower-case(local-name()) = 'field')]"/>
+   <svrl:fired-rule context="field | *[(lower-case(local-name()) = 'field')]"/>
+   <svrl:fired-rule context="field | *[(lower-case(local-name()) = 'field')]"/>
+   <svrl:fired-rule context="field | *[(lower-case(local-name()) = 'field')]"/>
+   <svrl:fired-rule context="field | *[(lower-case(local-name()) = 'field')]"/>
+   <svrl:fired-rule context="field | *[(lower-case(local-name()) = 'field')]"/>
+   <svrl:fired-rule context="field | *[(lower-case(local-name()) = 'field')]"/>
+   <svrl:fired-rule context="field | *[(lower-case(local-name()) = 'field')]"/>
+   <svrl:fired-rule context="field | *[(lower-case(local-name()) = 'field')]"/>
+   <svrl:fired-rule context="field | *[(lower-case(local-name()) = 'field')]"/>
+   <svrl:fired-rule context="field | *[(lower-case(local-name()) = 'field')]"/>
+   <svrl:fired-rule context="field | *[(lower-case(local-name()) = 'field')]"/>
+   <svrl:fired-rule context="field | *[(lower-case(local-name()) = 'field')]"/>
+   <svrl:fired-rule context="field | *[(lower-case(local-name()) = 'field')]"/>
+   <svrl:fired-rule context="field | *[(lower-case(local-name()) = 'field')]"/>
+   <svrl:fired-rule context="field | *[(lower-case(local-name()) = 'field')]"/>
+   <svrl:fired-rule context="field | *[(lower-case(local-name()) = 'field')]"/>
+   <svrl:fired-rule context="field | *[(lower-case(local-name()) = 'field')]"/>
+   <svrl:fired-rule context="Group"/>
+   <svrl:fired-rule context="Viewpoint | OrthoViewpoint"/>
+   <svrl:fired-rule context="Viewpoint | OrthoViewpoint"/>
+   <svrl:successful-report test="not((local-name(..)='HAnimSite') and (local-name(../..)='HAnimHumanoid')) and not($defaultHeights) and not(string-length(@orientation) = 0) and not((normalize-space(@orientation) = '0 1 0 0') or (normalize-space(@orientation) = '0.0 1.0 0.0 0.0') or (normalize-space(@orientation) = '0 0 1 0') or (normalize-space(@orientation) = '0.0 0.0 1.0 0.0')) and (starts-with(normalize-space(@orientation),'0 1 0 ') or starts-with(normalize-space(@orientation),'0.0 1.0 0.0 ')) and (number($centerOfRotationY) != number($positionY))"
+                           role="warning"
+                           location="/X3D/Scene/Group[1]/Viewpoint[2]">
+      <svrl:text>&lt;Viewpoint DEF=''/&gt; centerOfRotation='0 0 0' has mismatched Y-value height of 0 compared to position='25.0 -4.0 15.0' which has Y-value height of -4.0</svrl:text>
+   </svrl:successful-report>
+   <svrl:fired-rule context="Viewpoint | OrthoViewpoint"/>
+   <svrl:successful-report test="not((local-name(..)='HAnimSite') and (local-name(../..)='HAnimHumanoid')) and not($defaultHeights) and not(string-length(@orientation) = 0) and not((normalize-space(@orientation) = '0 1 0 0') or (normalize-space(@orientation) = '0.0 1.0 0.0 0.0') or (normalize-space(@orientation) = '0 0 1 0') or (normalize-space(@orientation) = '0.0 0.0 1.0 0.0')) and (starts-with(normalize-space(@orientation),'0 1 0 ') or starts-with(normalize-space(@orientation),'0.0 1.0 0.0 ')) and (number($centerOfRotationY) != number($positionY))"
+                           role="warning"
+                           location="/X3D/Scene/Group[1]/Viewpoint[3]">
+      <svrl:text>&lt;Viewpoint DEF=''/&gt; centerOfRotation='0 0 0' has mismatched Y-value height of 0 compared to position='14.0 -5.75 1.0' which has Y-value height of -5.75</svrl:text>
+   </svrl:successful-report>
+   <svrl:fired-rule context="Viewpoint | OrthoViewpoint"/>
+   <svrl:successful-report test="not((local-name(..)='HAnimSite') and (local-name(../..)='HAnimHumanoid')) and not($defaultHeights) and not(string-length(@orientation) = 0) and not((normalize-space(@orientation) = '0 1 0 0') or (normalize-space(@orientation) = '0.0 1.0 0.0 0.0') or (normalize-space(@orientation) = '0 0 1 0') or (normalize-space(@orientation) = '0.0 0.0 1.0 0.0')) and (starts-with(normalize-space(@orientation),'0 1 0 ') or starts-with(normalize-space(@orientation),'0.0 1.0 0.0 ')) and (number($centerOfRotationY) != number($positionY))"
+                           role="warning"
+                           location="/X3D/Scene/Group[1]/Viewpoint[4]">
+      <svrl:text>&lt;Viewpoint DEF=''/&gt; centerOfRotation='0 0 0' has mismatched Y-value height of 0 compared to position='0.0 -5.0 -7.0' which has Y-value height of -5.0</svrl:text>
+   </svrl:successful-report>
+   <svrl:fired-rule context="Viewpoint | OrthoViewpoint"/>
+   <svrl:fired-rule context="Viewpoint | OrthoViewpoint"/>
+   <svrl:fired-rule context="Viewpoint | OrthoViewpoint"/>
+   <svrl:successful-report test="not((local-name(..)='HAnimSite') and (local-name(../..)='HAnimHumanoid')) and not($defaultHeights) and not(string-length(@orientation) = 0) and not((normalize-space(@orientation) = '0 1 0 0') or (normalize-space(@orientation) = '0.0 1.0 0.0 0.0') or (normalize-space(@orientation) = '0 0 1 0') or (normalize-space(@orientation) = '0.0 0.0 1.0 0.0')) and (starts-with(normalize-space(@orientation),'0 1 0 ') or starts-with(normalize-space(@orientation),'0.0 1.0 0.0 ')) and (number($centerOfRotationY) != number($positionY))"
+                           role="warning"
+                           location="/X3D/Scene/Group[1]/Viewpoint[7]">
+      <svrl:text>&lt;Viewpoint DEF=''/&gt; centerOfRotation='0 0 0' has mismatched Y-value height of 0 compared to position='-5.0 1.0 0.0' which has Y-value height of 1.0</svrl:text>
+   </svrl:successful-report>
+   <svrl:fired-rule context="Group"/>
+   <svrl:fired-rule context="Background"/>
+   <svrl:fired-rule context="Inline"/>
+   <svrl:fired-rule context="Collision"/>
+   <svrl:successful-report test="(@enabled='false') and not(//ROUTE[@toNode=$DEF][(@toField='enabled') or (@toField='set_enabled')] or (IS/connect[nodeField='enabled']))"
+                           role="warning"
+                           location="/X3D/Scene/Group[2]/Collision">
+      <svrl:text>&lt;Collision DEF=''/&gt; is inactive since enabled='false' (and no ROUTE is provided to change this value) </svrl:text>
+   </svrl:successful-report>
+   <svrl:fired-rule context="Transform"/>
+   <svrl:fired-rule context="Inline"/>
+   <svrl:fired-rule context="Transform"/>
+   <svrl:fired-rule context="Inline"/>
+   <svrl:fired-rule context="Transform"/>
+   <svrl:fired-rule context="Inline"/>
+   <svrl:fired-rule context="Transform"/>
+   <svrl:fired-rule context="Inline"/>
+   <svrl:fired-rule context="Transform"/>
+   <svrl:fired-rule context="Transform"/>
+   <svrl:fired-rule context="Inline"/>
+   <svrl:fired-rule context="Transform"/>
+   <svrl:fired-rule context="Inline"/>
+   <svrl:fired-rule context="Transform"/>
+   <svrl:fired-rule context="Transform"/>
+   <svrl:fired-rule context="Inline"/>
+   <svrl:fired-rule context="Transform"/>
+   <svrl:fired-rule context="Inline"/>
+   <svrl:fired-rule context="Transform"/>
+   <svrl:fired-rule context="Transform"/>
+   <svrl:fired-rule context="Inline"/>
+   <svrl:fired-rule context="Transform"/>
+   <svrl:fired-rule context="Inline"/>
+   <svrl:fired-rule context="Transform"/>
+   <svrl:fired-rule context="Transform"/>
+   <svrl:fired-rule context="Inline"/>
+   <svrl:fired-rule context="Transform"/>
+   <svrl:fired-rule context="Inline"/>
+   <svrl:fired-rule context="Transform"/>
+   <svrl:fired-rule context="Transform"/>
+   <svrl:fired-rule context="Inline"/>
+   <svrl:fired-rule context="Transform"/>
+   <svrl:fired-rule context="Inline"/>
+   <svrl:fired-rule context="Transform"/>
+   <svrl:fired-rule context="Inline"/>
+   <svrl:fired-rule context="Transform"/>
+   <svrl:fired-rule context="Inline"/>
+   <svrl:fired-rule context="Transform"/>
+   <svrl:fired-rule context="Transform"/>
+   <svrl:fired-rule context="Inline"/>
+   <svrl:fired-rule context="Transform"/>
+   <svrl:fired-rule context="Inline"/>
+   <svrl:fired-rule context="Transform"/>
+   <svrl:fired-rule context="Transform"/>
+   <svrl:fired-rule context="Inline"/>
+   <svrl:fired-rule context="Transform"/>
+   <svrl:fired-rule context="Transform"/>
+   <svrl:fired-rule context="Inline"/>
+   <svrl:fired-rule context="TimeSensor"/>
+   <svrl:fired-rule context="PositionInterpolator"/>
+   <svrl:successful-report test="((@DEF) and not(//ROUTE[@toNode=$DEF]) and not((local-name(..)='field') or (local-name(..)='fieldValue') or IS/connect)) and (contains(local-name(),'Interpolator') or contains(local-name(),'Sequencer'))"
+                           role="warning"
+                           location="/X3D/Scene/Group[2]/Collision/PositionInterpolator[1]">
+      <svrl:text>&lt;PositionInterpolator DEF='LEFT_SHALLOW_WAVE'/&gt; is missing ROUTE to receive input events, for example &lt;ROUTE fromNode='SomeTimeSensorDEFname' fromField='fraction_changed' toNode='LEFT_SHALLOW_WAVE' toField='set_fraction'/&gt; </svrl:text>
+   </svrl:successful-report>
+   <svrl:successful-report test="not( $touchSensorNoDEF or $touchSensorHasDescription or not(@DEF) or //ROUTE[@fromNode=$DEF] or (local-name(..)='field') or (local-name(..)='fieldValue') or IS/connect) and contains(local-name(),'Interpolator')"
+                           role="warning"
+                           location="/X3D/Scene/Group[2]/Collision/PositionInterpolator[1]">
+      <svrl:text>&lt;PositionInterpolator DEF='LEFT_SHALLOW_WAVE'/&gt; is missing ROUTE to send output events, for example &lt;ROUTE fromNode='LEFT_SHALLOW_WAVE' fromField='value_changed' toNode='SomeTargetDEFname' toField='set_something'/&gt; </svrl:text>
+   </svrl:successful-report>
+   <svrl:fired-rule context="PositionInterpolator"/>
+   <svrl:successful-report test="((@DEF) and not(//ROUTE[@toNode=$DEF]) and not((local-name(..)='field') or (local-name(..)='fieldValue') or IS/connect)) and (contains(local-name(),'Interpolator') or contains(local-name(),'Sequencer'))"
+                           role="warning"
+                           location="/X3D/Scene/Group[2]/Collision/PositionInterpolator[2]">
+      <svrl:text>&lt;PositionInterpolator DEF='LEFT_DEEP_WAVE'/&gt; is missing ROUTE to receive input events, for example &lt;ROUTE fromNode='SomeTimeSensorDEFname' fromField='fraction_changed' toNode='LEFT_DEEP_WAVE' toField='set_fraction'/&gt; </svrl:text>
+   </svrl:successful-report>
+   <svrl:fired-rule context="PositionInterpolator"/>
+   <svrl:fired-rule context="PositionInterpolator"/>
+   <svrl:successful-report test="((@DEF) and not(//ROUTE[@toNode=$DEF]) and not((local-name(..)='field') or (local-name(..)='fieldValue') or IS/connect)) and (contains(local-name(),'Interpolator') or contains(local-name(),'Sequencer'))"
+                           role="warning"
+                           location="/X3D/Scene/Group[2]/Collision/PositionInterpolator[4]">
+      <svrl:text>&lt;PositionInterpolator DEF='RIGHT_SHALLOW_WAVE'/&gt; is missing ROUTE to receive input events, for example &lt;ROUTE fromNode='SomeTimeSensorDEFname' fromField='fraction_changed' toNode='RIGHT_SHALLOW_WAVE' toField='set_fraction'/&gt; </svrl:text>
+   </svrl:successful-report>
+   <svrl:fired-rule context="PositionInterpolator"/>
+   <svrl:successful-report test="((@DEF) and not(//ROUTE[@toNode=$DEF]) and not((local-name(..)='field') or (local-name(..)='fieldValue') or IS/connect)) and (contains(local-name(),'Interpolator') or contains(local-name(),'Sequencer'))"
+                           role="warning"
+                           location="/X3D/Scene/Group[2]/Collision/PositionInterpolator[5]">
+      <svrl:text>&lt;PositionInterpolator DEF='RIGHT_DEEP_WAVE'/&gt; is missing ROUTE to receive input events, for example &lt;ROUTE fromNode='SomeTimeSensorDEFname' fromField='fraction_changed' toNode='RIGHT_DEEP_WAVE' toField='set_fraction'/&gt; </svrl:text>
+   </svrl:successful-report>
+   <svrl:fired-rule context="ROUTE | *[(upper-case(local-name()) = 'ROUTE')]"/>
+   <svrl:fired-rule context="ROUTE | *[(upper-case(local-name()) = 'ROUTE')]"/>
+   <svrl:fired-rule context="ROUTE | *[(upper-case(local-name()) = 'ROUTE')]"/>
+   <svrl:fired-rule context="ROUTE | *[(upper-case(local-name()) = 'ROUTE')]"/>
+   <svrl:fired-rule context="ROUTE | *[(upper-case(local-name()) = 'ROUTE')]"/>
+   <svrl:fired-rule context="ROUTE | *[(upper-case(local-name()) = 'ROUTE')]"/>
+   <svrl:fired-rule context="ROUTE | *[(upper-case(local-name()) = 'ROUTE')]"/>
+   <svrl:fired-rule context="ROUTE | *[(upper-case(local-name()) = 'ROUTE')]"/>
+   <svrl:fired-rule context="ROUTE | *[(upper-case(local-name()) = 'ROUTE')]"/>
+   <svrl:fired-rule context="ROUTE | *[(upper-case(local-name()) = 'ROUTE')]"/>
+   <svrl:fired-rule context="TimeSensor"/>
+   <svrl:successful-report test="not( $touchSensorNoDEF or $touchSensorHasDescription or not(@DEF) or //ROUTE[@fromNode=$DEF] or (local-name(..)='field') or (local-name(..)='fieldValue') or IS/connect) and (local-name() = 'TimeSensor')"
+                           role="warning"
+                           location="/X3D/Scene/TimeSensor">
+      <svrl:text>&lt;TimeSensor DEF='MasterClock'/&gt; is missing ROUTE to send output events, for example &lt;ROUTE fromNode='MasterClock' fromField='fraction_changed' toNode='SomeInterpolatorDEFname' toField='set_fraction'/&gt; </svrl:text>
+   </svrl:successful-report>
+   <svrl:fired-rule context="Group"/>
+   <svrl:fired-rule context="Transform"/>
+   <svrl:fired-rule context="Inline"/>
+   <svrl:fired-rule context="TimeSensor"/>
+   <svrl:fired-rule context="ProtoInstance"/>
+   <svrl:fired-rule context="fieldValue | *[(lower-case(local-name()) = 'fieldValue')]"/>
+   <svrl:fired-rule context="fieldValue | *[(lower-case(local-name()) = 'fieldValue')]"/>
+   <svrl:fired-rule context="fieldValue | *[(lower-case(local-name()) = 'fieldValue')]"/>
+   <svrl:fired-rule context="fieldValue | *[(lower-case(local-name()) = 'fieldValue')]"/>
+   <svrl:fired-rule context="fieldValue | *[(lower-case(local-name()) = 'fieldValue')]"/>
+   <svrl:fired-rule context="fieldValue | *[(lower-case(local-name()) = 'fieldValue')]"/>
+   <svrl:fired-rule context="fieldValue | *[(lower-case(local-name()) = 'fieldValue')]"/>
+   <svrl:fired-rule context="fieldValue | *[(lower-case(local-name()) = 'fieldValue')]"/>
+   <svrl:fired-rule context="fieldValue | *[(lower-case(local-name()) = 'fieldValue')]"/>
+   <svrl:fired-rule context="fieldValue | *[(lower-case(local-name()) = 'fieldValue')]"/>
+   <svrl:fired-rule context="fieldValue | *[(lower-case(local-name()) = 'fieldValue')]"/>
+   <svrl:fired-rule context="fieldValue | *[(lower-case(local-name()) = 'fieldValue')]"/>
+   <svrl:fired-rule context="ROUTE | *[(upper-case(local-name()) = 'ROUTE')]"/>
+   <svrl:fired-rule context="ROUTE | *[(upper-case(local-name()) = 'ROUTE')]"/>
+   <svrl:fired-rule context="ROUTE | *[(upper-case(local-name()) = 'ROUTE')]"/>
+</svrl:schematron-output>

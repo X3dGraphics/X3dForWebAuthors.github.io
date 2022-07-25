@@ -1,0 +1,3 @@
+<ProtoDeclare name="ArtDeco01"/> has no corresponding <ProtoInstance name='ArtDeco01'/> [/X3D/Scene/ProtoDeclare[2], warning]
+<ProtoDeclare name="ArtDeco02"/> has no corresponding <ProtoInstance name='ArtDeco02'/> [/X3D/Scene/ProtoDeclare[3], warning]
+<Anchor DEF=''/> description='ArtDecoPrototypeExample' can include space characters in description [/X3D/Scene/Anchor, hint]

@@ -1,0 +1,2 @@
+<TimeSensor DEF='TimerLeft'/> missing description [/X3D/Scene/Transform[2]/TimeSensor, warning]
+<TimeSensor DEF='TimerRight'/> missing description [/X3D/Scene/Transform[3]/TimeSensor, warning]

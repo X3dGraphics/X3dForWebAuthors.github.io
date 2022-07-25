@@ -1,0 +1,5 @@
+Missing name of X3D scene author in meta tag, add <meta name='creator' content='Author Name'/> [/X3D/head, warning]
+<Viewpoint DEF='CopperRockfish'/> description should be different than DEF [/X3D/Scene/Viewpoint, warning]
+<TimeSensor DEF='BLUEROCKFISHCLOCK'/> missing description [/X3D/Scene/Group/TimeSensor, warning]
+<TimeSensor DEF='FRONTTOUCHSENSORCLOCK'/> missing description [/X3D/Scene/Group/Group[1]/TimeSensor, warning]
+<TouchSensor DEF='BaseTouchSensor'/> missing ROUTE to send output events [/X3D/Scene/Group/Group[3]/TouchSensor, warning]

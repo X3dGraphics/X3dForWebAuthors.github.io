@@ -1,0 +1,1 @@
+<Viewpoint DEF=''/> centerOfRotation='0 0 0' has mismatched Y-value height of 0 compared to position='0.92 0.07 0.63' which has Y-value height of 0.07[/X3D/Scene/Viewpoint[2], warning]

@@ -1,0 +1,320 @@
+@prefix :        <https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/CircleFishLodPrototype.ttl#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema:  <http://schema.org/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix x3d:     <https://www.web3d.org/specifications/x3d-4.0.xsd#> .
+@prefix x3do:    <https://www.web3d.org/specifications/X3dOntology4.0#> .
+
+:X3D a owl:NamedIndividual, x3do:X3D ;
+  x3do:hasHead :head ;
+  x3do:hasScene :Scene ;
+  x3do:profile 'Immersive' ;
+  x3do:version '3.3' ;
+  x3do:noNamespaceSchemaLocation 'https://www.web3d.org/specifications/x3d-3.3.xsd' .
+:head a owl:NamedIndividual, x3do:head ;
+  x3do:hasParent :X3D ;
+  x3do:hasMeta :meta_1_1, :meta_1_2, :meta_1_3, :meta_1_4, :meta_1_5, :meta_1_6, :meta_1_7, :meta_1_8, :meta_1_9, :meta_1_10 .
+:meta_1_1 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'CircleFishLodPrototype.x3d' ;
+  x3do:name 'title' .
+:meta_1_2 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Modifies an externally defined CircleFish prototype by adding Level of Detail (LOD)' ;
+  x3do:name 'description' .
+:meta_1_3 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Ildeniz Duman' ;
+  x3do:name 'creator' .
+:meta_1_4 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Scott Tufts' ;
+  x3do:name 'translator' .
+:meta_1_5 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '1998' ;
+  x3do:name 'created' .
+:meta_1_6 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '11 December 2001' ;
+  x3do:name 'translated' .
+:meta_1_7 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '20 October 2019' ;
+  x3do:name 'modified' .
+:meta_1_8 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/CircleFishLodPrototype.x3d' ;
+  x3do:name 'identifier' .
+:meta_1_9 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'X3D-Edit 3.3, https://savage.nps.edu/X3D-Edit' ;
+  x3do:name 'generator' .
+:meta_1_10 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '../license.html' ;
+  x3do:name 'license' .
+:meta dcterms:title "CircleFishLodPrototype.x3d" .
+:meta dcterms:description "Modifies an externally defined CircleFish prototype by adding Level of Detail (LOD)" .
+:meta dcterms:creator "Ildeniz Duman" .
+:meta dcterms:translator "Scott Tufts" .
+:meta dcterms:created "1998" .
+:meta dcterms:translated "11 December 2001" .
+:meta dcterms:modified "20 October 2019" .
+:meta dcterms:identifier "https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/CircleFishLodPrototype.x3d" .
+:meta dcterms:generator "X3D-Edit 3.3, https://savage.nps.edu/X3D-Edit" .
+:meta dcterms:license "../license.html" .
+:Scene a owl:NamedIndividual, x3do:Scene ;
+  x3do:hasParent :X3D ;
+  x3do:hasExternProtoDeclare :ExternProtoDeclare_2_1 ;
+  x3do:hasProtoDeclare :ProtoDeclare_2_2 ;
+  x3do:hasChildren :Anchor_2_3 .
+:ExternProtoDeclare_2_1 a owl:NamedIndividual, x3do:ExternProtoDeclare ;
+  x3do:hasParent :Scene ;
+  x3do:hasField :field_2_1_1, :field_2_1_2, :field_2_1_3, :field_2_1_4, :field_2_1_5, :field_2_1_6, :field_2_1_7, :field_2_1_8, :field_2_1_9 ;
+  x3do:appinfo 'Simple model of a fish swimming in a cirlce' ;
+  x3do:name 'CircleFish' ;
+  x3do:url '"CircleFishPrototype.x3d#CircleFish" "https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/CircleFishPrototype.x3d#CircleFish" "CircleFishPrototype.wrl#CircleFish" "https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/CircleFishPrototype.wrl#CircleFish"' .
+:field_2_1_1 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :ExternProtoDeclare_2_1 ;
+  x3do:accessType 'inputOutput' ;
+  x3do:name 'skinTextureUrl' ;
+  x3do:type 'MFString' .
+:field_2_1_2 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :ExternProtoDeclare_2_1 ;
+  x3do:accessType 'inputOutput' ;
+  x3do:name 'fishScale' ;
+  x3do:type 'SFVec3f' .
+:field_2_1_3 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :ExternProtoDeclare_2_1 ;
+  x3do:accessType 'inputOutput' ;
+  x3do:name 'fishColor' ;
+  x3do:type 'SFColor' .
+:field_2_1_4 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :ExternProtoDeclare_2_1 ;
+  x3do:accessType 'inputOutput' ;
+  x3do:name 'finColor' ;
+  x3do:type 'SFColor' .
+:field_2_1_5 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :ExternProtoDeclare_2_1 ;
+  x3do:accessType 'inputOutput' ;
+  x3do:name 'positionKey' ;
+  x3do:type 'MFFloat' .
+:field_2_1_6 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :ExternProtoDeclare_2_1 ;
+  x3do:accessType 'inputOutput' ;
+  x3do:name 'positionKeyValue' ;
+  x3do:type 'MFVec3f' .
+:field_2_1_7 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :ExternProtoDeclare_2_1 ;
+  x3do:accessType 'inputOutput' ;
+  x3do:name 'orientationKey' ;
+  x3do:type 'MFFloat' .
+:field_2_1_8 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :ExternProtoDeclare_2_1 ;
+  x3do:accessType 'inputOutput' ;
+  x3do:name 'orientationKeyValue' ;
+  x3do:type 'MFRotation' .
+:field_2_1_9 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :ExternProtoDeclare_2_1 ;
+  x3do:accessType 'inputOutput' ;
+  x3do:name 'orbitTime' ;
+  x3do:type 'SFTime' .
+:ProtoDeclare_2_2 a owl:NamedIndividual, x3do:ProtoDeclare ;
+  x3do:hasParent :Scene ;
+  x3do:hasProtoInterface :ProtoInterface_2_2_1 ;
+  x3do:hasProtoBody :ProtoBody_2_2_2 ;
+  x3do:appinfo 'CircleFish prototype with LOD added' ;
+  x3do:name 'CircleFishLod' .
+:ProtoInterface_2_2_1 a owl:NamedIndividual, x3do:ProtoInterface ;
+  x3do:hasParent :ProtoDeclare_2_2 ;
+  x3do:hasField :field_2_2_1_1, :field_2_2_1_2, :field_2_2_1_3, :field_2_2_1_4, :field_2_2_1_5, :field_2_2_1_6, :field_2_2_1_7, :field_2_2_1_8, :field_2_2_1_9 .
+:field_2_2_1_1 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :ProtoInterface_2_2_1 ;
+  x3do:accessType 'inputOutput' ;
+  x3do:name 'skinTextureUrl' ;
+  x3do:type 'MFString' .
+:field_2_2_1_2 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :ProtoInterface_2_2_1 ;
+  x3do:accessType 'inputOutput' ;
+  x3do:name 'fishScale' ;
+  x3do:type 'SFVec3f' ;
+  x3do:value ( 1 1 1 ) .
+:field_2_2_1_3 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :ProtoInterface_2_2_1 ;
+  x3do:accessType 'inputOutput' ;
+  x3do:name 'fishColor' ;
+  x3do:type 'SFColor' ;
+  x3do:value ( 0.5 0.5 0.5 ) .
+:field_2_2_1_4 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :ProtoInterface_2_2_1 ;
+  x3do:accessType 'inputOutput' ;
+  x3do:name 'finColor' ;
+  x3do:type 'SFColor' ;
+  x3do:value ( 0.5 0.5 0.5 ) .
+:field_2_2_1_5 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :ProtoInterface_2_2_1 ;
+  x3do:accessType 'inputOutput' ;
+  x3do:name 'positionKey' ;
+  x3do:type 'MFFloat' ;
+  x3do:value ( 0.0 0.125 0.25 0.375 0.5 0.625 0.750 0.875 1 ) .
+:field_2_2_1_6 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :ProtoInterface_2_2_1 ;
+  x3do:accessType 'inputOutput' ;
+  x3do:name 'positionKeyValue' ;
+  x3do:type 'MFVec3f' ;
+  x3do:value ( 1.5 0.5 0 1.3 0 -0.8 0 -0.5 -1.0 -1.3 0 -0.8 -1.5 0.5 0 -1.3 0 0.8 0 -0.5 1.0 1.3 0 0.8 1.5 0.5 0 ) .
+:field_2_2_1_7 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :ProtoInterface_2_2_1 ;
+  x3do:accessType 'inputOutput' ;
+  x3do:name 'orientationKey' ;
+  x3do:type 'MFFloat' ;
+  x3do:value ( 0.0 0.25 0.5 0.750 1 ) .
+:field_2_2_1_8 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :ProtoInterface_2_2_1 ;
+  x3do:accessType 'inputOutput' ;
+  x3do:name 'orientationKeyValue' ;
+  x3do:type 'MFRotation' ;
+  x3do:value ( 0 1 0 -3.14 0 1 0 -1.57 0 1 0 0 0 1 0 1.57 0 1 0 3.14 ) .
+:field_2_2_1_9 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :ProtoInterface_2_2_1 ;
+  x3do:accessType 'inputOutput' ;
+  x3do:name 'orbitTime' ;
+  x3do:type 'SFTime' ;
+  x3do:value '45' .
+:ProtoBody_2_2_2 a owl:NamedIndividual, x3do:ProtoBody ;
+  x3do:hasParent :ProtoDeclare_2_2 ;
+  x3do:hasChildren :LOD_2_2_2_1 .
+:LOD_2_2_2_1 a owl:NamedIndividual, x3do:LOD ;
+  x3do:hasParent :ProtoBody_2_2_2 ;
+  x3do:hasChildren :NearInstance, :MidRangeInstance, :WorldInfo_2_2_2_1_3 ;
+  x3do:forceTransitions true ;
+  x3do:range ( 20 40 ) .
+:NearInstance a owl:NamedIndividual, x3do:ProtoInstance ;
+  x3do:hasParent :LOD_2_2_2_1 ;
+  x3do:hasIS :IS_2_2_2_1_1_1 ;
+  x3do:DEF 'NearInstance' ;
+  x3do:name 'CircleFish' .
+:IS_2_2_2_1_1_1 a owl:NamedIndividual, x3do:IS ;
+  x3do:hasParent :NearInstance ;
+  x3do:hasConnect :connect_2_2_2_1_1_1_1, :connect_2_2_2_1_1_1_2, :connect_2_2_2_1_1_1_3, :connect_2_2_2_1_1_1_4, :connect_2_2_2_1_1_1_5, :connect_2_2_2_1_1_1_6, :connect_2_2_2_1_1_1_7, :connect_2_2_2_1_1_1_8, :connect_2_2_2_1_1_1_9 .
+:connect_2_2_2_1_1_1_1 a owl:NamedIndividual, x3do:connect ;
+  x3do:hasParent :IS_2_2_2_1_1_1 ;
+  x3do:nodeField 'skinTextureUrl' ;
+  x3do:protoField 'skinTextureUrl' .
+:connect_2_2_2_1_1_1_2 a owl:NamedIndividual, x3do:connect ;
+  x3do:hasParent :IS_2_2_2_1_1_1 ;
+  x3do:nodeField 'fishScale' ;
+  x3do:protoField 'fishScale' .
+:connect_2_2_2_1_1_1_3 a owl:NamedIndividual, x3do:connect ;
+  x3do:hasParent :IS_2_2_2_1_1_1 ;
+  x3do:nodeField 'fishColor' ;
+  x3do:protoField 'fishColor' .
+:connect_2_2_2_1_1_1_4 a owl:NamedIndividual, x3do:connect ;
+  x3do:hasParent :IS_2_2_2_1_1_1 ;
+  x3do:nodeField 'finColor' ;
+  x3do:protoField 'finColor' .
+:connect_2_2_2_1_1_1_5 a owl:NamedIndividual, x3do:connect ;
+  x3do:hasParent :IS_2_2_2_1_1_1 ;
+  x3do:nodeField 'positionKey' ;
+  x3do:protoField 'positionKey' .
+:connect_2_2_2_1_1_1_6 a owl:NamedIndividual, x3do:connect ;
+  x3do:hasParent :IS_2_2_2_1_1_1 ;
+  x3do:nodeField 'positionKeyValue' ;
+  x3do:protoField 'positionKeyValue' .
+:connect_2_2_2_1_1_1_7 a owl:NamedIndividual, x3do:connect ;
+  x3do:hasParent :IS_2_2_2_1_1_1 ;
+  x3do:nodeField 'orientationKey' ;
+  x3do:protoField 'orientationKey' .
+:connect_2_2_2_1_1_1_8 a owl:NamedIndividual, x3do:connect ;
+  x3do:hasParent :IS_2_2_2_1_1_1 ;
+  x3do:nodeField 'orientationKeyValue' ;
+  x3do:protoField 'orientationKeyValue' .
+:connect_2_2_2_1_1_1_9 a owl:NamedIndividual, x3do:connect ;
+  x3do:hasParent :IS_2_2_2_1_1_1 ;
+  x3do:nodeField 'orbitTime' ;
+  x3do:protoField 'orbitTime' .
+:MidRangeInstance a owl:NamedIndividual, x3do:ProtoInstance ;
+  x3do:hasParent :LOD_2_2_2_1 ;
+  x3do:hasIS :IS_2_2_2_1_2_1 ;
+  x3do:DEF 'MidRangeInstance' ;
+  x3do:name 'CircleFish' .
+:IS_2_2_2_1_2_1 a owl:NamedIndividual, x3do:IS ;
+  x3do:hasParent :MidRangeInstance ;
+  x3do:hasConnect :connect_2_2_2_1_2_1_1, :connect_2_2_2_1_2_1_2, :connect_2_2_2_1_2_1_3, :connect_2_2_2_1_2_1_4, :connect_2_2_2_1_2_1_5, :connect_2_2_2_1_2_1_6, :connect_2_2_2_1_2_1_7, :connect_2_2_2_1_2_1_8 .
+:connect_2_2_2_1_2_1_1 a owl:NamedIndividual, x3do:connect ;
+  x3do:hasParent :IS_2_2_2_1_2_1 ;
+  x3do:nodeField 'fishScale' ;
+  x3do:protoField 'fishScale' .
+:connect_2_2_2_1_2_1_2 a owl:NamedIndividual, x3do:connect ;
+  x3do:hasParent :IS_2_2_2_1_2_1 ;
+  x3do:nodeField 'fishColor' ;
+  x3do:protoField 'fishColor' .
+:connect_2_2_2_1_2_1_3 a owl:NamedIndividual, x3do:connect ;
+  x3do:hasParent :IS_2_2_2_1_2_1 ;
+  x3do:nodeField 'finColor' ;
+  x3do:protoField 'finColor' .
+:connect_2_2_2_1_2_1_4 a owl:NamedIndividual, x3do:connect ;
+  x3do:hasParent :IS_2_2_2_1_2_1 ;
+  x3do:nodeField 'positionKey' ;
+  x3do:protoField 'positionKey' .
+:connect_2_2_2_1_2_1_5 a owl:NamedIndividual, x3do:connect ;
+  x3do:hasParent :IS_2_2_2_1_2_1 ;
+  x3do:nodeField 'positionKeyValue' ;
+  x3do:protoField 'positionKeyValue' .
+:connect_2_2_2_1_2_1_6 a owl:NamedIndividual, x3do:connect ;
+  x3do:hasParent :IS_2_2_2_1_2_1 ;
+  x3do:nodeField 'orientationKey' ;
+  x3do:protoField 'orientationKey' .
+:connect_2_2_2_1_2_1_7 a owl:NamedIndividual, x3do:connect ;
+  x3do:hasParent :IS_2_2_2_1_2_1 ;
+  x3do:nodeField 'orientationKeyValue' ;
+  x3do:protoField 'orientationKeyValue' .
+:connect_2_2_2_1_2_1_8 a owl:NamedIndividual, x3do:connect ;
+  x3do:hasParent :IS_2_2_2_1_2_1 ;
+  x3do:nodeField 'orbitTime' ;
+  x3do:protoField 'orbitTime' .
+:WorldInfo_2_2_2_1_3 a owl:NamedIndividual, x3do:WorldInfo ;
+  x3do:hasParent :LOD_2_2_2_1 ;
+  x3do:info '"null node"' .
+:Anchor_2_3 a owl:NamedIndividual, x3do:Anchor ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :Shape_2_3_1, :Shape_2_3_2 ;
+  x3do:description 'CircleFishLod Example' ;
+  x3do:parameter '"target=_blank"' ;
+  x3do:url '"CircleFishLodExample.x3d" "https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/CircleFishLodExample.x3d" "CircleFishLodExample.wrl" "https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/CircleFishLodExample.wrl"' .
+:Shape_2_3_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Anchor_2_3 ;
+  x3do:hasAppearance :Appearance_2_3_1_1 ;
+  x3do:hasGeometry :Text_2_3_1_2 .
+:Appearance_2_3_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_3_1 ;
+  x3do:hasMaterial :Material_2_3_1_1_1 .
+:Material_2_3_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_3_1_1 ;
+  x3do:diffuseColor ( 0 1 1 ) ;
+  x3do:emissiveColor ( 0 1 1 ) .
+:Text_2_3_1_2 a owl:NamedIndividual, x3do:Text ;
+  x3do:hasParent :Shape_2_3_1 ;
+  x3do:hasFontStyle :FontStyle_2_3_1_2_1 ;
+  x3do:string '"CircleFishLodPrototype" "is a Prototype declaration file." "" "To see an example using this new node," "click this text and view" "CircleFishLodExample scene"' .
+:FontStyle_2_3_1_2_1 a owl:NamedIndividual, x3do:FontStyle ;
+  x3do:hasParent :Text_2_3_1_2 ;
+  x3do:justify '"MIDDLE" "MIDDLE"' ;
+  x3do:size 0.7 .
+:Shape_2_3_2 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Anchor_2_3 ;
+  x3do:hasGeometry :Box_2_3_2_1 ;
+  x3do:hasAppearance :Appearance_2_3_2_2 .
+:Box_2_3_2_1 a owl:NamedIndividual, x3do:Box ;
+  x3do:hasParent :Shape_2_3_2 ;
+  x3do:size ( 12 5 .001 ) .
+:Appearance_2_3_2_2 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_3_2 ;
+  x3do:hasMaterial :Material_2_3_2_2_1 .
+:Material_2_3_2_2_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_3_2_2 ;
+  x3do:transparency 1 .

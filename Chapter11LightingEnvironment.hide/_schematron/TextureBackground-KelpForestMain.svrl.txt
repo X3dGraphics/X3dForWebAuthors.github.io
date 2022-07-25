@@ -1,0 +1,8 @@
+<X3D profile='Immersive'> doesn't match contained nodes, increase profile or add <component/> definition(s) [/X3D, error]
+<X3D profile='Immersive'> but actual profile='Full' [/X3D, info]
+<PositionInterpolator DEF='LEFT_SHALLOW_WAVE'/> missing ROUTE to receive input events [/X3D/Scene/Group[2]/Collision/PositionInterpolator[1], error]
+<PositionInterpolator DEF='LEFT_SHALLOW_WAVE'/> missing ROUTE to send output events [/X3D/Scene/Group[2]/Collision/PositionInterpolator[1], warning]
+<PositionInterpolator DEF='LEFT_DEEP_WAVE'/> missing ROUTE to receive input events [/X3D/Scene/Group[2]/Collision/PositionInterpolator[2], error]
+<PositionInterpolator DEF='RIGHT_SHALLOW_WAVE'/> missing ROUTE to receive input events [/X3D/Scene/Group[2]/Collision/PositionInterpolator[4], error]
+<PositionInterpolator DEF='RIGHT_DEEP_WAVE'/> missing ROUTE to receive input events [/X3D/Scene/Group[2]/Collision/PositionInterpolator[5], error]
+<TimeSensor DEF='MasterClock'/> missing ROUTE to send output events [/X3D/Scene/TimeSensor, warning]

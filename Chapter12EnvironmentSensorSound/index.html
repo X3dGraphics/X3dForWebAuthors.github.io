@@ -1,0 +1,532 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <link rel="shortcut icon" href="../images/X3DtextIcon16.png" title="X3D"/>
+      <title>X3D4WA, X3D for Web Authors Examples Archive, Chapter 12 Environment Sensor Sound</title>
+      <meta http-equiv="X-UA-Compatible" content="chrome=1,IE=edge"/>
+      <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+      <meta name="author" content="Don Brutzman"/>
+      <meta name="generator"
+             content="https://www.web3d.org/x3d/tools/CreateContentCatalog/CreateContentCatalogPages.xslt"/>
+      <meta name="modified" content="2022-07-03-07:00"/>
+      <meta name="keyword"
+             content="X3D, X3DV, VRML, VRML97, Extensible 3D, Virtual Reality Modeling Language"/>
+   </head>
+   <body>
+      <table
+              align="center"
+              summary="navigation"
+              border="1"
+              cellpadding="2"
+              width="95%">
+         <tr>
+            <td align="center" width="17%">
+               <a href="../index.html" target="_top">
+                  <img src="../images/ToC.png"
+                        title="Table of Contents"
+                        alt="Table of Contents"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter11LightingEnvironmentalEffects/index.html"
+                   target="_top">
+                  <img src="../images/PreviousChapter.png"
+                        title="Previous Directory Summary"
+                        alt="Previous Directory Summary"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="viewpointSlideshow.html" target="_top">
+                  <img src="../images/MootoolsSlideshowLogo.jpg"
+                        title="Directory Viewpoint Slideshow"
+                        alt="Directory Viewpoint Slideshow"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="15%">
+               <a href="../javadoc/index.html?X3dForWebAuthors/Chapter12EnvironmentSensorSound/package-summary.html"
+                   title="Javadoc for translated java source"
+                   alt="Javadoc for translated java source"
+                   target="_blank">
+                  <img src="../images/Java-32.png"
+                        title="Javadoc for translated java source"
+                        alt="Javadoc for translated java source"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter13GeometryTrianglesQuadrilaterals/index.html"
+                   target="_top">
+                  <img src="../images/NextChapter.png"
+                        title="Next Directory Summary"
+                        alt="Next Directory Summary"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="15%">
+               <a href="../../X3dResources.html" target="helpPage">
+                  <img src="../images/Help.png"
+                        title="X3D Resources"
+                        alt="X3D Resources"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+         </tr>
+      </table>
+      <h2 align="center">
+         <i> X3D Example Archives: </i>X3D4WA, X3D for Web Authors, Chapter 12 Environment Sensor Sound</h2>
+      <table align="center"
+              width="85%"
+              summary=""
+              border="0"
+              cellpadding="0">
+         <tr align="center">
+            <td><!--ChapterPackageDescription--><!--Contents of file ../../content/examples/X3dForWebAuthors/Chapter12EnvironmentSensorSound/package-catalog.html-->
+
+    <table bgColor="#ffffff" border="0" width="100%">
+        <tbody>
+            <tr>
+                <td align="left" rowspan="3">
+                    
+                    <a href="index.html"><img alt="ProximitySensor Visualization" title="ProximitySensor coverage visualization" border="0" hspace="10" src="ProximitySensorVisualization.png" height="132" align="left"/></a>
+                </td>
+                
+                <td align="left">
+    <p>
+					Environmental sensors detect user visibility proximity and collision, while
+					3D spatial sound sources can greatly improve user engagement in a scene.
+    </p>
+    
+
+    <p>
+                     Event-producing environmental sensor nodes include
+                     <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#LoadSensor" target="X3dTooltips" title="X3D Tooltip">LoadSensor</a>,
+                     <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#ProximitySensor" target="X3dTooltips" title="X3D Tooltip">ProximitySensor</a>,
+                     and 
+                     <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#VisibilitySensor" target="X3dTooltips" title="X3D Tooltip">VisibilitySensor</a>.
+                     Audio nodes include 
+                     <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#Sound" target="X3dTooltips" title="X3D Tooltip">Sound</a>
+                     for aural spatialization and 
+                     <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#AudioClip" target="X3dTooltips" title="X3D Tooltip">AudioClip</a>
+                     for identifying sound files.
+                     <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#MovieTexture" target="X3dTooltips" title="X3D Tooltip">MovieTexture</a>
+                     nodes can also be used as an audio soundtrack source.    </p>
+    
+
+    <p>
+                    Relevant
+                    <a href="https://www.web3d.org/files/specifications/19775-1/V3.3/Part01/Architecture.html" target="X3dSpecification">X3D Specification</a>
+                    resources include the
+                    <a href="https://www.web3d.org/files/specifications/19775-1/V3.3/Part01/components/envsensor.html" target="X3dSpecification">Environmental sensor component</a>,
+                    <a href="https://www.web3d.org/files/specifications/19775-1/V3.3/Part01/components/sound.html" target="X3dSpecification">Sound component</a>
+                    and
+                    <a href="https://www.web3d.org/files/specifications/19775-1/V3.3/Part01/components/texturing.html" target="X3dSpecification">Texturing component</a>.
+    </p>
+    
+
+    <p>
+                     The supporting
+                     <a href="http://x3dgraphics.com/slidesets/X3dForWebAuthors/Chapter12EnvironmentSensorSound.pdf" target="X3dChapterSlideset">Chapter&nbsp;12 slideset</a>
+                     and course videos
+                    (<a href="https://www.movesinstitute.org/Video/Courses/X3dForWebAuthors/X3dForWebAuthorsVideo.html#12" target="X3dChapterVideos">NPS</a>,
+                     <a href="https://www.youtube.com/playlist?list=PLuSIsM-86sinCRRshWpzgr335AiO1Whp2" target="X3dChapterYouTubeVideos">YouTube</a>)
+					 for <i>X3D for Web Authors</i> are available online via
+                     <a href="http://X3dGraphics.com" target="_blank">X3dGraphics.com</a>.
+    </p>
+    
+
+    <p>
+                      Also available:
+                      <a href="https://www.web3d.org/x3d/content/examples/X3dSceneAuthoringHints.html#Images" target="_blank">X3D Scene Authoring Hints</a>
+                      for
+                      <a href="https://www.web3d.org/x3d/content/examples/X3dSceneAuthoringHints.html#Audio" target="_blank">Audio</a>
+                      and
+                      <a href="https://www.web3d.org/x3d/content/examples/X3dSceneAuthoringHints.html#urls" target="_blank">URL&nbsp;Links</a>.
+    </p>
+    
+
+                </td>
+                
+                <td align="left" rowspan="3">
+                    
+                    <a href="index.html"><img alt="Sound node coverage visualization" title="Sound node coverage visualization" border="0" hspace="10" src="SoundVisualization.png" width="170" height="132" align="middle"/></a>
+                </td>
+            </tr>
+            
+        </tbody>
+    </table>
+    
+    
+
+
+    <p>
+                 
+    </p>
+    
+
+
+    <p>
+                 
+    </p>
+    
+
+
+  </td>
+         </tr>
+      </table>
+      <table align="center"
+              width="85%"
+              summary=""
+              border="1"
+              cellpadding="6">
+         <tr align="center">
+            <th colspan="2" width="25%" align="center">&nbsp;&nbsp;15 X3D Models</th>
+            <th width="75%" align="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;X3D Model Descriptions</th>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="CollisionKelpForestMain"/>
+               <a href="CollisionKelpForestMainIndex.html">
+                  <img src="_thumbnails/CollisionKelpForestMainThumbnail.png"
+                        height="48"
+                        alt="CollisionKelpForestMain"
+                        title="CollisionKelpForestMain"/>
+               </a>
+            </td>
+            <td>
+               <a href="CollisionKelpForestMainIndex.html">Collision Kelp Forest Main</a>
+            </td>
+            <td>Disabled collision with all objects with a Collision node in the Kelp Forest world.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="LoadSensorExample"/>
+               <a href="LoadSensorExampleIndex.html">
+                  <img src="_thumbnails/LoadSensorExampleThumbnail.png"
+                        height="48"
+                        alt="LoadSensorExample"
+                        title="LoadSensorExample"/>
+               </a>
+            </td>
+            <td>
+               <a href="LoadSensorExampleIndex.html">Load Sensor Example</a>
+            </td>
+            <td>Simple test of LoadSensor node</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="LoadSensorKelpForestMain"/>
+               <a href="LoadSensorKelpForestMainIndex.html">
+                  <img src="_thumbnails/LoadSensorKelpForestMainThumbnail.png"
+                        height="48"
+                        alt="LoadSensorKelpForestMain"
+                        title="LoadSensorKelpForestMain"/>
+               </a>
+            </td>
+            <td>
+               <a href="LoadSensorKelpForestMainIndex.html">Load Sensor Kelp Forest Main</a>
+            </td>
+            <td>An example use of the LoadSensor node in the Kelp Forest world.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="LoadSensorKelpForestMain_timeOut"/>
+               <a href="LoadSensorKelpForestMain_timeOutIndex.html">
+                  <img src="_thumbnails/LoadSensorKelpForestMain_timeOutThumbnail.png"
+                        height="48"
+                        alt="LoadSensorKelpForestMain_timeOut"
+                        title="LoadSensorKelpForestMain_timeOut"/>
+               </a>
+            </td>
+            <td>
+               <a href="LoadSensorKelpForestMain_timeOutIndex.html">Load Sensor Kelp Forest Main time Out</a>
+            </td>
+            <td>An example use of the LoadSensor node in the Kelp Forest world.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="ProximitySensorExample"/>
+               <a href="ProximitySensorExampleIndex.html">
+                  <img src="_thumbnails/ProximitySensorExampleThumbnail.png"
+                        height="48"
+                        alt="ProximitySensorExample"
+                        title="ProximitySensorExample"/>
+               </a>
+            </td>
+            <td>
+               <a href="ProximitySensorExampleIndex.html">Proximity Sensor Example</a>
+            </td>
+            <td>Demonstrates use of a ProximitySensor in building a HUD</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="ProximitySensorKelpForestMain"/>
+               <a href="ProximitySensorKelpForestMainIndex.html">
+                  <img src="_thumbnails/ProximitySensorKelpForestMainThumbnail.png"
+                        height="48"
+                        alt="ProximitySensorKelpForestMain"
+                        title="ProximitySensorKelpForestMain"/>
+               </a>
+            </td>
+            <td>
+               <a href="ProximitySensorKelpForestMainIndex.html">Proximity Sensor Kelp Forest Main</a>
+            </td>
+            <td>This example uses a ProximitySensor node to position a heads-up display (HUD) in the Kelp Forest world.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="ProximitySensorMultiple"/>
+               <a href="ProximitySensorMultipleIndex.html">
+                  <img src="_thumbnails/ProximitySensorMultipleThumbnail.png"
+                        height="48"
+                        alt="ProximitySensorMultiple"
+                        title="ProximitySensorMultiple"/>
+               </a>
+            </td>
+            <td>
+               <a href="ProximitySensorMultipleIndex.html">Proximity Sensor Multiple</a>
+            </td>
+            <td>Example multiple ProximitySensor non-overlapping regions</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="ProximitySensorNoOverlap"/>
+               <a href="ProximitySensorNoOverlapIndex.html">
+                  <img src="_thumbnails/ProximitySensorNoOverlapThumbnail.png"
+                        height="48"
+                        alt="ProximitySensorNoOverlap"
+                        title="ProximitySensorNoOverlap"/>
+               </a>
+            </td>
+            <td>
+               <a href="ProximitySensorNoOverlapIndex.html">Proximity Sensor No Overlap</a>
+            </td>
+            <td>Example ProximitySensor regions</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="ProximitySensorOverlap"/>
+               <a href="ProximitySensorOverlapIndex.html">
+                  <img src="_thumbnails/ProximitySensorOverlapThumbnail.png"
+                        height="48"
+                        alt="ProximitySensorOverlap"
+                        title="ProximitySensorOverlap"/>
+               </a>
+            </td>
+            <td>
+               <a href="ProximitySensorOverlapIndex.html">Proximity Sensor Overlap</a>
+            </td>
+            <td>Example multiply-instanced ProximitySensor with overlapping regions</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="ProximitySensorSingle"/>
+               <a href="ProximitySensorSingleIndex.html">
+                  <img src="_thumbnails/ProximitySensorSingleThumbnail.png"
+                        height="48"
+                        alt="ProximitySensorSingle"
+                        title="ProximitySensorSingle"/>
+               </a>
+            </td>
+            <td>
+               <a href="ProximitySensorSingleIndex.html">Proximity Sensor Single</a>
+            </td>
+            <td>Example of a single ProximitySensor region</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="SoundAudioClip"/>
+               <a href="SoundAudioClipIndex.html">
+                  <img src="_thumbnails/SoundAudioClipThumbnail.png"
+                        height="48"
+                        alt="SoundAudioClip"
+                        title="SoundAudioClip"/>
+               </a>
+            </td>
+            <td>
+               <a href="SoundAudioClipIndex.html">Sound Audio Clip</a>
+            </td>
+            <td>An example of the Sound and AudioClip node showing the effect of the various volume regions</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="SoundFileFormats"/>
+               <a href="SoundFileFormatsIndex.html">
+                  <img src="_thumbnails/SoundFileFormatsThumbnail.png"
+                        height="48"
+                        alt="SoundFileFormats"
+                        title="SoundFileFormats"/>
+               </a>
+            </td>
+            <td>
+               <a href="SoundFileFormatsIndex.html">Sound File Formats</a>
+            </td>
+            <td>Provide a test scene for sound files using various audio formats.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="SoundLoadSensorTest"/>
+               <a href="SoundLoadSensorTestIndex.html">
+                  <img src="_thumbnails/SoundLoadSensorTestThumbnail.png"
+                        height="48"
+                        alt="SoundLoadSensorTest"
+                        title="SoundLoadSensorTest"/>
+               </a>
+            </td>
+            <td>
+               <a href="SoundLoadSensorTestIndex.html">Sound Load Sensor Test</a>
+            </td>
+            <td>UsingLoadSensor to test when AudioClip loading is complete</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="SoundVisualization"/>
+               <a href="SoundVisualizationIndex.html">
+                  <img src="_thumbnails/SoundVisualizationThumbnail.png"
+                        height="48"
+                        alt="SoundVisualization"
+                        title="SoundVisualization"/>
+               </a>
+            </td>
+            <td>
+               <a href="SoundVisualizationIndex.html">Sound Visualization</a>
+            </td>
+            <td>An example of the Sound node for testing X3D-Edit author-assist visualization</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="VisibilitySensorKelpForestMain"/>
+               <a href="VisibilitySensorKelpForestMainIndex.html">
+                  <img src="_thumbnails/VisibilitySensorKelpForestMainThumbnail.png"
+                        height="48"
+                        alt="VisibilitySensorKelpForestMain"
+                        title="VisibilitySensorKelpForestMain"/>
+               </a>
+            </td>
+            <td>
+               <a href="VisibilitySensorKelpForestMainIndex.html">Visibility Sensor Kelp Forest Main</a>
+            </td>
+            <td>VisibilitySensor example.</td>
+         </tr>
+      </table>
+      <table width="80%" border="0" align="center">
+         <tr>
+            <td>
+               <p style="text-align:center">Online at <a href="https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter12EnvironmentSensorSound/index.html">https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter12EnvironmentSensorSound</a>
+               </p>
+               <p align="center" width="80%">
+                  <a href="https://validator.w3.org/check?uri=https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter12EnvironmentSensorSound/index.html"
+                      target="_blank">
+                     <img src="https://www.w3.org/Icons/valid-xhtml10"
+                           title="Validate XHTML 1.1"
+                           alt="Validate XHTML 1.1"
+                           height="31"
+                           width="88"
+                           border="0"
+                           align="right"/>
+                  </a>
+               </p>
+               <p style="text-align:center">Master source-code model archive is under subversion control at <br/>
+                  <a href="https://sourceforge.net/p/x3d/code/HEAD/tree/www.web3d.org/x3d/content/examples/X3dForWebAuthors/Chapter12EnvironmentSensorSound/"
+                      target="_blank">https://sourceforge.net/p/x3d/code/HEAD/tree/www.web3d.org/x3d/content/examples/X3dForWebAuthors/Chapter12EnvironmentSensorSound</a>
+               </p>
+            </td>
+         </tr>
+      </table>
+      <p align="center">
+The 
+<a href="../../X3dResources.html#X3dForWebAuthors">X3D Resources: Examples</a> page
+and
+<a href="https://savage.nps.edu/Savage/developers.html">Savage Developers Guide</a>
+provide more information about the production of this archive.</p>
+      <table
+              align="center"
+              summary="navigation"
+              border="1"
+              cellpadding="2"
+              width="95%">
+         <tr>
+            <td align="center" width="17%">
+               <a href="../index.html" target="_top">
+                  <img src="../images/ToC.png"
+                        title="Table of Contents"
+                        alt="Table of Contents"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter11LightingEnvironmentalEffects/index.html"
+                   target="_top">
+                  <img src="../images/PreviousChapter.png"
+                        title="Previous Directory Summary"
+                        alt="Previous Directory Summary"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="viewpointSlideshow.html" target="_top">
+                  <img src="../images/MootoolsSlideshowLogo.jpg"
+                        title="Directory Viewpoint Slideshow"
+                        alt="Directory Viewpoint Slideshow"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="15%">
+               <a href="../javadoc/index.html?X3dForWebAuthors/Chapter12EnvironmentSensorSound/package-summary.html"
+                   title="Javadoc for translated java source"
+                   alt="Javadoc for translated java source"
+                   target="_blank">
+                  <img src="../images/Java-32.png"
+                        title="Javadoc for translated java source"
+                        alt="Javadoc for translated java source"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter13GeometryTrianglesQuadrilaterals/index.html"
+                   target="_top">
+                  <img src="../images/NextChapter.png"
+                        title="Next Directory Summary"
+                        alt="Next Directory Summary"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="15%">
+               <a href="../../X3dResources.html" target="helpPage">
+                  <img src="../images/Help.png"
+                        title="X3D Resources"
+                        alt="X3D Resources"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+         </tr>
+      </table>
+   </body>
+</html>

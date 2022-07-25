@@ -1,0 +1,5 @@
+<X3D profile='Immersive'> but actual profile='Interactive' [/X3D, info]
+<X3D profile='Immersive'> but actual profile='Interactive' [/X3D, info]
+Missing name of X3D scene author in meta tag, add <meta name='creator' content='Author Name'/> [/X3D/head, warning]
+<TimeSensor DEF='Timer'/> missing description [/X3D/Scene/Transform/Transform/TimeSensor, warning]
+<TimeSensor DEF='PistonClock'/> missing description [/X3D/Scene/Group[2]/Transform/Transform/TimeSensor, warning]

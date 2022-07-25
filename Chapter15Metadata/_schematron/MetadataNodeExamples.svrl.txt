@@ -1,0 +1,2 @@
+<meta name='info' content='Information in head and meta elements is retained after a scene is parsed and loaded, and can be referenced via the Scene Access Interface (SAI) or Document Object Model (DOM)'/> [/X3D/head/meta[6], diagnostic]
+<meta name='info' content='Authoring note: MetadataBoolean requires X3D version 3.3, as used in this example scene'/> [/X3D/head/meta[7], diagnostic]

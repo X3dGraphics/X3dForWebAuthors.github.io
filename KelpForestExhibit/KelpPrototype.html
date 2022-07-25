@@ -1,0 +1,579 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/TR/xhtml1/strict"
+       xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
+       xmlns:saxon="http://icl.com/saxon">
+   <head>
+      <title>KelpPrototype.x3d (X3dToXhtml listing)</title>
+      <!-- I18N -->
+      <meta http-equiv="X-UA-Compatible" content="chrome=1,IE=edge"/>
+      <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+      <style type="text/css">
+span.element {color: navy}
+span.attribute {color: green}
+span.value {color: teal}
+span.plain {color: black}
+span.gray  {color: gray}
+span.idName {color: maroon}
+span.addedDocumentation {background-color:#EEEEEE} /* slightly darker for html page contrast */
+span.behaviorNode       {background-color:#DDEEFF} /*      light blue for html page contrast */
+span.extensibilityNode  {background-color:#FFEEFF} /*    lighter blue for html page contrast */
+a.idName {color: maroon}
+div.center {text-align: center}
+div.indent {margin-left: 25px}
+
+span.prototype {color: purple}
+a.prototype {color: purple}
+a.prototype:visited {color: black}
+span.route {color: red}
+b.warning {color: #CC5500}
+b.error {color: #CC0000}
+
+                </style>
+      <style type="text/css">
+table.curvedEdges { border:10px solid RoyalBlue;-webkit-border-radius:13px;-moz-border-radius:13px;-ms-border-radius:13px;-o-border-radius:13px;border-radius:13px; }
+table.curvedEdges td, table.curvedEdges th { border-bottom:1px dotted black;padding:5px; }
+</style>
+      <meta name="generator" content="XSLT processor Saxonica"/>
+      <meta name="generator"
+             content="https://www.web3d.org/x3d/stylesheets/X3dToXhtml.xslt"/>
+      <meta name="generator"
+             content="https://sourceforge.net/p/x3d/code/HEAD/tree/www.web3d.org/x3d/stylesheets/X3dToXhtml.xslt"/>
+      <link rel="shortcut icon"
+             href="https://www.web3d.org/x3d/content/icons/X3DtextIcon16.png"
+             title="X3D"/>
+   </head>
+   <body>
+      <code title="XML declaration">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</code>
+      <br/>
+      <code title="Document Type Declaration (DTD) for X3D validation">&lt;!DOCTYPE X3D PUBLIC "ISO//Web3D//DTD X3D 3.3//EN" "<a href="https://www.web3d.org/specifications/x3d-3.3.dtd">https://www.web3d.org/specifications/x3d-3.3.dtd</a>"&gt;</code>
+      <div>
+<span title="X3D is the top-most XML element for an Extensible 3D (X3D) Graphics file">&lt;<span class="element">X3D</span>&#160;<span title="X3D Immersive Profile supports most nodes, similar to VRML97"><span class="attribute">profile</span>='<span class="value">Immersive</span>'</span>&#160;<span class="attribute">version</span>='<span class="value">3.3</span>'&#160;<span title="XML namespace for X3D Graphics schema validation"><span title="XML namespace for XML Schema validation">
+            <span class="attribute">xmlns:xsd</span>='<a href="http://www.w3.org/2001/XMLSchema-instance" target="_blank">http://www.w3.org/2001/XMLSchema-instance</a>'
+</span>
+         <span title="XML namespace for X3D Graphics schema validation">
+            <span class="attribute">xsd:noNamespaceSchemaLocation</span>
+         </span>='
+<a href="https://www.web3d.org/specifications/x3d-3.3.xsd" target="_blank">https://www.web3d.org/specifications/x3d-3.3.xsd</a>
+'</span>&gt;
+</span><div class="indent">
+<span title="head can contain component, unit, and author-defined metadata (meta) tags">&lt;<span class="element">head</span>&gt;
+</span><div class="indent">
+<span title="meta 'title' provides file name for this resource">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">title</span>'&#160;<span class="attribute">content</span>='<a href="KelpPrototype.x3d">KelpPrototype.x3d</a>'/&gt;
+</span><br />
+
+<span title="meta 'description' provides summary overview describing this resource">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">description</span>'&#160;<span class="attribute">content</span>='<span class="plain">Creates Kelp Prototype - this file uses Bulb and is used by KelpExamplesNoBase.</span>'/&gt;
+</span><br />
+
+<span title="meta 'creator' provides name of original author">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">creator</span>'&#160;<span class="attribute">content</span>='<span class="value">Joseph Cannon, Dan DeVos</span>'/&gt;
+</span><br />
+
+<span title="meta 'created' provides date of initial version">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">created</span>'&#160;<span class="attribute">content</span>='<span class="value">18 March 1999</span>'/&gt;
+</span><br />
+
+<span title="meta 'modified' provides date of modified version">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">modified</span>'&#160;<span class="attribute">content</span>='<span class="value">20 October 2019</span>'/&gt;
+</span><br />
+
+<span title="meta 'reference' provides name or reference link to a supporting resource">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">reference</span>'&#160;<span class="attribute">content</span>='
+<a href="http://faculty.nps.edu/brutzman/kelp" target="_blank">http://faculty.nps.edu/brutzman/kelp</a>
+'/&gt;
+</span><br />
+
+<span title="meta 'reference' provides name or reference link to a supporting resource">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">reference</span>'&#160;<span class="attribute">content</span>='<a href="KelpForestDesignPaperWeb3dSymposiumFebruary2002.pdf">KelpForestDesignPaperWeb3dSymposiumFebruary2002.pdf</a>'/&gt;
+</span><br />
+
+<span title="meta 'reference' provides name or reference link to a supporting resource">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">reference</span>'&#160;<span class="attribute">content</span>='
+<a href="https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/KelpForestDesignPaperWeb3dSymposiumFebruary2002.pdf"
+                   target="_blank">https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/KelpForestDesignPaperWeb3dSymposiumFebruary2002.pdf</a>
+'/&gt;
+</span><br />
+
+<span title="meta 'reference' provides name or reference link to a supporting resource">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">reference</span>'&#160;<span class="attribute">content</span>='
+<a href="https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/Teaching3d-KelpForestCaseStudy.pdf"
+                   target="_blank">https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/Teaching3d-KelpForestCaseStudy.pdf</a>
+'/&gt;
+</span><br />
+
+<span title="meta 'accessRights' defines permission required to access resource or security status">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">accessRights</span>'&#160;<span class="attribute">content</span>='<span class="value">All content has permissions for free use. Please provide credit to the Naval Postgraduate School (NPS) Modeling Virtual Environments and Simulation (MOVES) Institute.</span>'/&gt;
+</span><br />
+
+<span title="meta 'identifier' provides the unique Uniform Resource Identifier (URI) or url address for this resource">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">identifier</span>'&#160;<span class="attribute">content</span>='
+<a href="https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/KelpPrototype.x3d"
+                   target="_blank">https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/KelpPrototype.x3d</a>
+'/&gt;
+</span><br />
+
+<span title="meta 'generator' provides name of authoring tool or translation tool producing this scene">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">generator</span>'&#160;<span class="attribute">content</span>='<span class="value">Vrml97ToX3dNist, </span>
+               <a href="http://ovrt.nist.gov/v2_x3d.html" target="_blank">http://ovrt.nist.gov/v2_x3d.html</a>'/&gt;
+</span><br />
+
+<span title="meta 'license' provides software license link or information">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">license</span>'&#160;<span class="attribute">content</span>='
+<a href="../license.html">../license.html</a>'/&gt;
+</span></div><span title="head can contain component, unit, and author-defined metadata (meta) tags">&lt;/<span class="element">head</span>&gt;
+</span><br /><span style="color:white">
+&lt;!--
+</span>
+            <div class="center">
+               <hr style="width:100%"/>
+               <b>
+                  <i>Index for ProtoDeclare definition</i>
+               </b>: 
+<a title="go to this declaration"
+                   href="#ProtoDeclare_Kelp"
+                   class="prototype">Kelp</a>
+<br /><hr width="50%"/>
+               <b>
+                  <i>Index for DEF nodes</i>
+               </b>: 
+<a title="go to this Transform node" href="#BLADE" class="idName">BLADE</a>,
+<a title="go to this Transform node" href="#blade_X1" class="idName">blade_X1</a>,
+<a title="go to this Transform node" href="#blade_X2" class="idName">blade_X2</a>,
+<a title="go to this Transform node" href="#blade_X3" class="idName">blade_X3</a>,
+<a title="go to this Transform node" href="#blade_Y1" class="idName">blade_Y1</a>,
+<a title="go to this Transform node" href="#blade_Y2" class="idName">blade_Y2</a>,
+<a title="go to this Transform node" href="#blade_Y3" class="idName">blade_Y3</a>,
+<a title="go to this Transform node" href="#blade_Y4" class="idName">blade_Y4</a>,
+<a title="go to this Transform node"
+                   href="#bladeRotateZ"
+                   class="idName">bladeRotateZ</a>,
+<a title="go to this Transform node"
+                   href="#bladeToTheSide"
+                   class="idName">bladeToTheSide</a>,
+<a title="go to this Transform node" href="#Blade-Z" class="idName">Blade-Z</a>,
+<a title="go to this Inline node" href="#bulb" class="idName">bulb</a>,
+<a title="go to this TimeSensor node" href="#Clock" class="idName">Clock</a>,
+<a title="go to this Transform node"
+                   href="#horizontalStipe"
+                   class="idName">horizontalStipe</a>,
+<a title="go to this OrientationInterpolator node"
+                   href="#horizontalStipeMover"
+                   class="idName">horizontalStipeMover</a>,
+<a title="go to this Appearance node" href="#kelpColor" class="idName">kelpColor</a>,
+<a title="go to this Transform node"
+                   href="#rotateBlade90"
+                   class="idName">rotateBlade90</a>,
+<a title="go to this Shape node" href="#stemShape" class="idName">stemShape</a>,
+<a title="go to this Transform node" href="#stipe" class="idName">stipe</a>,
+<a title="go to this Anchor node"
+                   href="#TouchTextForExample"
+                   class="idName">TouchTextForExample</a>
+<br /><hr width="50%"/>
+               <b>
+                  <i>Index for Viewpoint image</i>
+               </b>: 
+<a title="go to this Viewpoint node: click message to view example"
+                   href="#Viewpoint_1"
+                   class="idName">Viewpoint_1</a>
+               <hr style="width:100%"/>
+            </div>
+            <span style="color:white">
+--&gt;
+</span><br />
+
+<span title="Scene is the root node that contains an X3D scene graph">&lt;<span class="element">Scene</span>&gt;
+</span><div class="indent">
+<span title="WorldInfo contains persistent documentation information about the 3D world">&lt;<span class="element">WorldInfo</span>&#160;<span class="attribute">title</span>='<span class="value">KelpPrototype.x3d</span>'/&gt;
+</span><br />
+<a name="ProtoDeclare_Kelp"> </a> 
+<span title="ProtoDeclare is a Prototype declaration, defining a new node made up of other node(s)" style="background-color:#FFEEFF">&lt;<span class="prototype">ProtoDeclare</span>&#160;<span class="attribute">name</span>='<span class="prototype">Kelp</span>'&#160;<span title="application information for this ProtoDeclare"><span class="gray">appinfo</span>='<span class="value">Kelp strands and bulbs with no base</span>'</span>&gt;
+</span><div class="indent">
+<span title="ProtoInterface is first statement inside a ProtoDeclare statement and holds field definitions" style="background-color:#FFEEFF">&lt;<span class="prototype">ProtoInterface</span>&gt;
+</span><div class="indent">
+                     <a name="KelpProtoField_frontBladeSize"> </a> 
+<span title="A field element defines an interface attribute or node" style="background-color:#FFEEFF">&lt;<span class="prototype">field</span>&#160;<span class="attribute">name</span>='<span class="prototype">frontBladeSize</span>'&#160;<span class="attribute">type</span>='<span class="value">SFVec3f</span>'&#160;<span class="attribute">value</span>='<span class="value">0.7 0.7 0.7</span>'&#160;<span class="attribute">accessType</span>='<span class="value">inputOutput</span>'/&gt;
+</span><br />
+<a name="KelpProtoField_frontSideBladeHeight"> </a> 
+<span title="A field element defines an interface attribute or node" style="background-color:#FFEEFF">&lt;<span class="prototype">field</span>&#160;<span class="attribute">name</span>='<span class="prototype">frontSideBladeHeight</span>'&#160;<span class="attribute">type</span>='<span class="value">SFVec3f</span>'&#160;<span class="attribute">value</span>='<span class="value">0 4 0</span>'&#160;<span class="attribute">accessType</span>='<span class="value">inputOutput</span>'/&gt;
+</span><br />
+<a name="KelpProtoField_rightBladeSize"> </a> 
+<span title="A field element defines an interface attribute or node" style="background-color:#FFEEFF">&lt;<span class="prototype">field</span>&#160;<span class="attribute">name</span>='<span class="prototype">rightBladeSize</span>'&#160;<span class="attribute">type</span>='<span class="value">SFVec3f</span>'&#160;<span class="attribute">value</span>='<span class="value">0.7 0.7 0.7</span>'&#160;<span class="attribute">accessType</span>='<span class="value">inputOutput</span>'/&gt;
+</span><br />
+<a name="KelpProtoField_rightSideBladeHeight"> </a> 
+<span title="A field element defines an interface attribute or node" style="background-color:#FFEEFF">&lt;<span class="prototype">field</span>&#160;<span class="attribute">name</span>='<span class="prototype">rightSideBladeHeight</span>'&#160;<span class="attribute">type</span>='<span class="value">SFVec3f</span>'&#160;<span class="attribute">value</span>='<span class="value">0 12 0</span>'&#160;<span class="attribute">accessType</span>='<span class="value">inputOutput</span>'/&gt;
+</span><br />
+<a name="KelpProtoField_rearBladeSize"> </a> 
+<span title="A field element defines an interface attribute or node" style="background-color:#FFEEFF">&lt;<span class="prototype">field</span>&#160;<span class="attribute">name</span>='<span class="prototype">rearBladeSize</span>'&#160;<span class="attribute">type</span>='<span class="value">SFVec3f</span>'&#160;<span class="attribute">value</span>='<span class="value">0.4 0.4 0.4</span>'&#160;<span class="attribute">accessType</span>='<span class="value">inputOutput</span>'/&gt;
+</span><br />
+<a name="KelpProtoField_rearSideBladeHeight"> </a> 
+<span title="A field element defines an interface attribute or node" style="background-color:#FFEEFF">&lt;<span class="prototype">field</span>&#160;<span class="attribute">name</span>='<span class="prototype">rearSideBladeHeight</span>'&#160;<span class="attribute">type</span>='<span class="value">SFVec3f</span>'&#160;<span class="attribute">value</span>='<span class="value">0 20 0</span>'&#160;<span class="attribute">accessType</span>='<span class="value">inputOutput</span>'/&gt;
+</span><br />
+<a name="KelpProtoField_leftBladeSize"> </a> 
+<span title="A field element defines an interface attribute or node" style="background-color:#FFEEFF">&lt;<span class="prototype">field</span>&#160;<span class="attribute">name</span>='<span class="prototype">leftBladeSize</span>'&#160;<span class="attribute">type</span>='<span class="value">SFVec3f</span>'&#160;<span class="attribute">value</span>='<span class="value">0.4 0.4 0.4</span>'&#160;<span class="attribute">accessType</span>='<span class="value">inputOutput</span>'/&gt;
+</span><br />
+<a name="KelpProtoField_leftSideBladeHeight"> </a> 
+<span title="A field element defines an interface attribute or node" style="background-color:#FFEEFF">&lt;<span class="prototype">field</span>&#160;<span class="attribute">name</span>='<span class="prototype">leftSideBladeHeight</span>'&#160;<span class="attribute">type</span>='<span class="value">SFVec3f</span>'&#160;<span class="attribute">value</span>='<span class="value">0 24 0</span>'&#160;<span class="attribute">accessType</span>='<span class="value">inputOutput</span>'/&gt;
+</span></div><span title="ProtoInterface is first statement inside a ProtoDeclare statement and holds field definitions" style="background-color:#FFEEFF">&lt;/<span class="prototype">ProtoInterface</span>&gt;
+</span><br />
+
+<span title="Initial scene node in ProtoDeclare/ProtoBody statement determines this prototype's node type" style="background-color:#FFEEFF">&lt;<span class="prototype">ProtoBody</span>&gt;
+</span><div class="indent">
+<span title="Group is a Grouping node that can contain most nodes">&lt;<span class="element">Group</span>&gt;
+</span><div class="indent">
+                        <a name="stipe"> </a> 
+<span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;<span class="element">Transform</span>&#160;<span class="attribute">DEF</span>='<a title="bookmark link to stipe" href="#stipe" class="idName">stipe</a>'&#160;<span class="attribute">center</span>='<span class="value">0 -16 0</span>'&#160;<span class="attribute">translation</span>='<span class="value">0 14 0</span>'&gt;
+</span><div class="indent">
+                           <a name="stemShape"> </a> 
+<span title="Shape contains geometry and optional corresponding Appearance">&lt;<span class="element">Shape</span>&#160;<span class="attribute">DEF</span>='<a title="bookmark link to stemShape" href="#stemShape" class="idName">stemShape</a>'&gt;
+</span><div class="indent">
+                              <a name="kelpColor"> </a> 
+<span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;<span class="element">Appearance</span>&#160;<span class="attribute">DEF</span>='<a title="bookmark link to kelpColor" href="#kelpColor" class="idName">kelpColor</a>'&gt;
+</span><div class="indent">
+<span title="Material specifies surface rendering properties for associated geometry">&lt;<span class="element">Material</span>&#160;<span class="attribute">diffuseColor</span>='<span class="value">0.882 0.757 0.184</span>'/&gt;
+</span></div><span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;/<span class="element">Appearance</span>&gt;
+</span><br />
+
+<span title="Cylinder is a geometry primitive node">&lt;<span class="element">Cylinder</span>&#160;<span class="attribute">bottom</span>='<span class="value">false</span>'&#160;<span class="attribute">height</span>='<span class="value">28.0</span>'&#160;<span class="attribute">radius</span>='<span class="value">0.2</span>'&#160;<span class="attribute">top</span>='<span class="value">false</span>'/&gt;
+</span></div><span title="Shape contains geometry and optional corresponding Appearance">&lt;/<span class="element">Shape</span>&gt;
+</span><br />
+<a name="horizontalStipe"> </a> 
+<span style="background-color:#EEEEEE;" title="inserted documentation about ROUTE connections">&lt;!-- <i>ROUTE</i> information for <span class="idName">horizontalStipe</span> node:&#160;
+[<a title="go to this ROUTE" href="#ROUTE_1"><i>from</i>&#160;<span class="idName">horizontalStipeMover</span>.<span class="attribute">value_changed</span>&#160;<i>to</i>&#160;<span class="attribute">set_rotation</span>
+                           </a>]
+ --&gt;<br /></span>
+<span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;<span class="element">Transform</span>&#160;<span class="attribute">DEF</span>='<a title="bookmark link to horizontalStipe"
+                               href="#horizontalStipe"
+                               class="idName">horizontalStipe</a>'&#160;<span class="attribute">center</span>='<span class="value">0 16 0</span>'&#160;<span class="attribute">rotation</span>='<span class="value">0 0 1 1.5707</span>'&#160;<span class="attribute">scale</span>='<span class="value">0.5 0.3 0.5</span>'&#160;<span class="attribute">translation</span>='<span class="value">1.3 0 0</span>'&gt;
+</span><div class="indent">
+<span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;<span class="element">Transform</span>&gt;
+</span><div class="indent">
+<span title="Shape contains geometry and optional corresponding Appearance">&lt;<span class="element">Shape</span>&#160;<span class="attribute">USE</span>='<a title="go to the original DEF node definition"
+                                     href="#stemShape"
+                                     class="idName">stemShape</a>'/&gt;
+</span></div><span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;/<span class="element">Transform</span>&gt;
+</span><br />
+<a name="blade_X1"> </a> 
+<span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;<span class="element">Transform</span>&#160;<span class="attribute">DEF</span>='<a title="bookmark link to blade_X1" href="#blade_X1" class="idName">blade_X1</a>'&#160;<span class="attribute">rotation</span>='<span class="value">0 1 0 1.0</span>'&#160;<span class="attribute">translation</span>='<span class="value">0 12 0</span>'&gt;
+</span><div class="indent">
+                                 <a name="bladeRotateZ"> </a> 
+<span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;<span class="element">Transform</span>&#160;<span class="attribute">DEF</span>='<a title="bookmark link to bladeRotateZ"
+                                     href="#bladeRotateZ"
+                                     class="idName">bladeRotateZ</a>'&#160;<span class="attribute">rotation</span>='<span class="value">0 0 1 -1.2</span>'&gt;
+</span><div class="indent">
+                                    <a name="BLADE"> </a> 
+<span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;<span class="element">Transform</span>&#160;<span class="attribute">DEF</span>='<a title="bookmark link to BLADE" href="#BLADE" class="idName">BLADE</a>'&#160;<span class="attribute">center</span>='<span class="value">-0.5 0 0</span>'&#160;<span class="attribute">translation</span>='<span class="value">1 0 0</span>'&gt;
+</span><div class="indent">
+                                       <a name="bulb"> </a> 
+<span title="Inline is a Grouping node that can load nodes from another X3D scene via url">&lt;<span class="element">Inline</span>&#160;<span class="attribute">DEF</span>='<a title="bookmark link to bulb" href="#bulb" class="idName">bulb</a>'
+<br />
+&#160;&#160;<span title="uniform resource locator (url) list of relative or absolute file addresses, performed in order until resource retrieval succeeds"><span class="attribute">url</span>='
+ "<a href="KelpBulb.x3d" target="_blank">KelpBulb.x3d</a>" "<a href="https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/KelpBulb.x3d"
+                                           target="_blank">https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/KelpBulb.x3d</a>"  "<a href="KelpBulb.wrl" target="_blank">KelpBulb.wrl</a>" "<a href="https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/KelpBulb.wrl"
+                                           target="_blank">https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/KelpBulb.wrl</a>" '</span>/&gt;
+</span></div><span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;/<span class="element">Transform</span>&gt;
+</span></div><span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;/<span class="element">Transform</span>&gt;
+</span></div><span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;/<span class="element">Transform</span>&gt;
+</span><br />
+<a name="blade_X2"> </a> 
+<span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;<span class="element">Transform</span>&#160;<span class="attribute">DEF</span>='<a title="bookmark link to blade_X2" href="#blade_X2" class="idName">blade_X2</a>'&#160;<span class="attribute">rotation</span>='<span class="value">0 1 0 -1.0</span>'&gt;
+</span><div class="indent">
+<span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;<span class="element">Transform</span>&#160;<span class="attribute">USE</span>='<a title="go to the original DEF node definition"
+                                     href="#bladeRotateZ"
+                                     class="idName">bladeRotateZ</a>'/&gt;
+</span></div><span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;/<span class="element">Transform</span>&gt;
+</span><br />
+<a name="blade_X3"> </a> 
+<span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;<span class="element">Transform</span>&#160;<span class="attribute">DEF</span>='<a title="bookmark link to blade_X3" href="#blade_X3" class="idName">blade_X3</a>'&#160;<span class="attribute">rotation</span>='<span class="value">0 1 0 4.342</span>'&#160;<span class="attribute">translation</span>='<span class="value">0 -12 0</span>'&gt;
+</span><div class="indent">
+<span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;<span class="element">Transform</span>&#160;<span class="attribute">USE</span>='<a title="go to the original DEF node definition"
+                                     href="#bladeRotateZ"
+                                     class="idName">bladeRotateZ</a>'/&gt;
+</span></div><span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;/<span class="element">Transform</span>&gt;
+</span></div><span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;/<span class="element">Transform</span>&gt;
+</span><br />
+
+<span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;<span class="element">Transform</span>&#160;<span class="attribute">translation</span>='<span class="value">0 14 0</span>'&gt;
+</span><div class="indent">
+<span title="Shape contains geometry and optional corresponding Appearance">&lt;<span class="element">Shape</span>&gt;
+</span><div class="indent">
+<span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;<span class="element">Appearance</span>&#160;<span class="attribute">USE</span>='<a title="go to the original DEF node definition"
+                                     href="#kelpColor"
+                                     class="idName">kelpColor</a>'/&gt;
+</span><br />
+
+<span title="Extrusion is a geometry node">&lt;<span class="element">Extrusion</span>&#160;<span class="attribute">creaseAngle</span>='<span class="value">1.57</span>'&#160;<span class="attribute">crossSection</span>='<a title="Extrusion crossSection shown as Scalable Vector Graphics (SVG) plot"
+                                     href="_svg/KelpPrototype.Extrusion1.svg">0.2 0 0.184 -0.076 0.142 -0.142 0.076 -0.184 0 -0.2 -0.076 -0.184 -0.142 -0.142 -0.184 -0.076 -0.2 -0 -0.184 0.076 -0.142 0.142 -0.076 0.184 0 0.2 0.076 0.184 0.142 0.142 0.184 0.076 0.2 0</a>'&#160;<span class="attribute">scale</span>='<span class="value">1 1 0.8 0.8 0.7 0.7 0.6 0.6 0.5 0.5</span>'&#160;<span class="attribute">spine</span>='<span class="value">0 0 0 0.15 0.77 0 0.59 1.41 0 1.23 1.85 0 2 2 0</span>'/&gt;
+</span></div><span title="Shape contains geometry and optional corresponding Appearance">&lt;/<span class="element">Shape</span>&gt;
+</span></div><span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;/<span class="element">Transform</span>&gt;
+</span></div><span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;/<span class="element">Transform</span>&gt;
+</span><br />
+<a name="blade_Y1"> </a> 
+<span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;<span class="element">Transform</span>&#160;<span class="attribute">DEF</span>='<a title="bookmark link to blade_Y1" href="#blade_Y1" class="idName">blade_Y1</a>'&#160;<span class="attribute">rotation</span>='<span class="value">0 0 1 1.2</span>'&gt;
+</span><div class="indent">
+<span title="IS connects ProtoDeclare interface fields to node fields inside ProtoDeclare definitions" style="background-color:#FFEEFF">&lt;<span class="element">IS</span>&gt;
+</span><div class="indent">
+<span title="connect tags define each ProtoDeclare field connection within ProtoDeclare definitions" style="background-color:#FFEEFF">&lt;<span class="element">connect</span>&#160;<span class="attribute">nodeField</span>='<span class="prototype"
+                                     title="connect interface events to this field in given node">scale</span>'&#160;<span class="attribute">protoField</span>='<span title="field interface connecting events into the prototype interior"><span class="prototype"><a title="go to the protoField definition"
+                                     href="#KelpProtoField_frontBladeSize"
+                                     class="prototype">frontBladeSize</a></span></span>'/&gt;
+</span><br />
+
+<span title="connect tags define each ProtoDeclare field connection within ProtoDeclare definitions" style="background-color:#FFEEFF">&lt;<span class="element">connect</span>&#160;<span class="attribute">nodeField</span>='<span class="prototype"
+                                     title="connect interface events to this field in given node">translation</span>'&#160;<span class="attribute">protoField</span>='<span title="field interface connecting events into the prototype interior"><span class="prototype"><a title="go to the protoField definition"
+                                     href="#KelpProtoField_frontSideBladeHeight"
+                                     class="prototype">frontSideBladeHeight</a></span></span>'/&gt;
+</span></div><span title="IS connects ProtoDeclare interface fields to node fields inside ProtoDeclare definitions" style="background-color:#FFEEFF">&lt;/<span class="element">IS</span>&gt;
+</span><br />
+
+<span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;<span class="element">Transform</span>&#160;<span class="attribute">USE</span>='<a title="go to the original DEF node definition"
+                               href="#BLADE"
+                               class="idName">BLADE</a>'/&gt;
+</span></div><span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;/<span class="element">Transform</span>&gt;
+</span><br />
+<a name="blade_Y2"> </a> 
+<span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;<span class="element">Transform</span>&#160;<span class="attribute">DEF</span>='<a title="bookmark link to blade_Y2" href="#blade_Y2" class="idName">blade_Y2</a>'&#160;<span class="attribute">rotation</span>='<span class="value">0 1 0 4.2</span>'&gt;
+</span><div class="indent">
+<span title="IS connects ProtoDeclare interface fields to node fields inside ProtoDeclare definitions" style="background-color:#FFEEFF">&lt;<span class="element">IS</span>&gt;
+</span><div class="indent">
+<span title="connect tags define each ProtoDeclare field connection within ProtoDeclare definitions" style="background-color:#FFEEFF">&lt;<span class="element">connect</span>&#160;<span class="attribute">nodeField</span>='<span class="prototype"
+                                     title="connect interface events to this field in given node">scale</span>'&#160;<span class="attribute">protoField</span>='<span title="field interface connecting events into the prototype interior"><span class="prototype"><a title="go to the protoField definition"
+                                     href="#KelpProtoField_rightBladeSize"
+                                     class="prototype">rightBladeSize</a></span></span>'/&gt;
+</span><br />
+
+<span title="connect tags define each ProtoDeclare field connection within ProtoDeclare definitions" style="background-color:#FFEEFF">&lt;<span class="element">connect</span>&#160;<span class="attribute">nodeField</span>='<span class="prototype"
+                                     title="connect interface events to this field in given node">translation</span>'&#160;<span class="attribute">protoField</span>='<span title="field interface connecting events into the prototype interior"><span class="prototype"><a title="go to the protoField definition"
+                                     href="#KelpProtoField_rightSideBladeHeight"
+                                     class="prototype">rightSideBladeHeight</a></span></span>'/&gt;
+</span></div><span title="IS connects ProtoDeclare interface fields to node fields inside ProtoDeclare definitions" style="background-color:#FFEEFF">&lt;/<span class="element">IS</span>&gt;
+</span><br />
+<a name="bladeToTheSide"> </a> 
+<span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;<span class="element">Transform</span>&#160;<span class="attribute">DEF</span>='<a title="bookmark link to bladeToTheSide"
+                               href="#bladeToTheSide"
+                               class="idName">bladeToTheSide</a>'&#160;<span class="attribute">rotation</span>='<span class="value">1 0 0 3.142</span>'&gt;
+</span><div class="indent">
+<span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;<span class="element">Transform</span>&#160;<span class="attribute">rotation</span>='<span class="value">0 0 1 -1.2</span>'&gt;
+</span><div class="indent">
+                                 <a name="rotateBlade90"> </a> 
+<span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;<span class="element">Transform</span>&#160;<span class="attribute">DEF</span>='<a title="bookmark link to rotateBlade90"
+                                     href="#rotateBlade90"
+                                     class="idName">rotateBlade90</a>'&#160;<span class="attribute">center</span>='<span class="value">-0.5 0 0</span>'&#160;<span class="attribute">rotation</span>='<span class="value">1 0 0 1.5707</span>'&#160;<span class="attribute">translation</span>='<span class="value">1 0 0</span>'&gt;
+</span><div class="indent">
+<span title="Inline is a Grouping node that can load nodes from another X3D scene via url">&lt;<span class="element">Inline</span>&#160;<span class="attribute">USE</span>='<a title="go to the original DEF node definition"
+                                        href="#bulb"
+                                        class="idName">bulb</a>'/&gt;
+</span></div><span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;/<span class="element">Transform</span>&gt;
+</span></div><span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;/<span class="element">Transform</span>&gt;
+</span></div><span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;/<span class="element">Transform</span>&gt;
+</span></div><span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;/<span class="element">Transform</span>&gt;
+</span><br />
+<a name="blade_Y3"> </a> 
+<span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;<span class="element">Transform</span>&#160;<span class="attribute">DEF</span>='<a title="bookmark link to blade_Y3" href="#blade_Y3" class="idName">blade_Y3</a>'&#160;<span class="attribute">rotation</span>='<span class="value">0 1 0 3.2</span>'&gt;
+</span><div class="indent">
+<span title="IS connects ProtoDeclare interface fields to node fields inside ProtoDeclare definitions" style="background-color:#FFEEFF">&lt;<span class="element">IS</span>&gt;
+</span><div class="indent">
+<span title="connect tags define each ProtoDeclare field connection within ProtoDeclare definitions" style="background-color:#FFEEFF">&lt;<span class="element">connect</span>&#160;<span class="attribute">nodeField</span>='<span class="prototype"
+                                     title="connect interface events to this field in given node">scale</span>'&#160;<span class="attribute">protoField</span>='<span title="field interface connecting events into the prototype interior"><span class="prototype"><a title="go to the protoField definition"
+                                     href="#KelpProtoField_rearBladeSize"
+                                     class="prototype">rearBladeSize</a></span></span>'/&gt;
+</span><br />
+
+<span title="connect tags define each ProtoDeclare field connection within ProtoDeclare definitions" style="background-color:#FFEEFF">&lt;<span class="element">connect</span>&#160;<span class="attribute">nodeField</span>='<span class="prototype"
+                                     title="connect interface events to this field in given node">translation</span>'&#160;<span class="attribute">protoField</span>='<span title="field interface connecting events into the prototype interior"><span class="prototype"><a title="go to the protoField definition"
+                                     href="#KelpProtoField_rearSideBladeHeight"
+                                     class="prototype">rearSideBladeHeight</a></span></span>'/&gt;
+</span></div><span title="IS connects ProtoDeclare interface fields to node fields inside ProtoDeclare definitions" style="background-color:#FFEEFF">&lt;/<span class="element">IS</span>&gt;
+</span><br />
+<a name="Blade-Z"> </a> 
+<span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;<span class="element">Transform</span>&#160;<span class="attribute">DEF</span>='<a title="bookmark link to Blade-Z" href="#Blade-Z" class="idName">Blade-Z</a>'&#160;<span class="attribute">rotation</span>='<span class="value">1 0 0 3.142</span>'&gt;
+</span><div class="indent">
+<span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;<span class="element">Transform</span>&#160;<span class="attribute">rotation</span>='<span class="value">0 0 1 -1.2</span>'&gt;
+</span><div class="indent">
+<span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;<span class="element">Transform</span>&#160;<span class="attribute">USE</span>='<a title="go to the original DEF node definition"
+                                     href="#BLADE"
+                                     class="idName">BLADE</a>'/&gt;
+</span></div><span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;/<span class="element">Transform</span>&gt;
+</span></div><span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;/<span class="element">Transform</span>&gt;
+</span></div><span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;/<span class="element">Transform</span>&gt;
+</span><br />
+<a name="blade_Y4"> </a> 
+<span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;<span class="element">Transform</span>&#160;<span class="attribute">DEF</span>='<a title="bookmark link to blade_Y4" href="#blade_Y4" class="idName">blade_Y4</a>'&#160;<span class="attribute">rotation</span>='<span class="value">0 1 0 1.2</span>'&gt;
+</span><div class="indent">
+<span title="IS connects ProtoDeclare interface fields to node fields inside ProtoDeclare definitions" style="background-color:#FFEEFF">&lt;<span class="element">IS</span>&gt;
+</span><div class="indent">
+<span title="connect tags define each ProtoDeclare field connection within ProtoDeclare definitions" style="background-color:#FFEEFF">&lt;<span class="element">connect</span>&#160;<span class="attribute">nodeField</span>='<span class="prototype"
+                                     title="connect interface events to this field in given node">scale</span>'&#160;<span class="attribute">protoField</span>='<span title="field interface connecting events into the prototype interior"><span class="prototype"><a title="go to the protoField definition"
+                                     href="#KelpProtoField_leftBladeSize"
+                                     class="prototype">leftBladeSize</a></span></span>'/&gt;
+</span><br />
+
+<span title="connect tags define each ProtoDeclare field connection within ProtoDeclare definitions" style="background-color:#FFEEFF">&lt;<span class="element">connect</span>&#160;<span class="attribute">nodeField</span>='<span class="prototype"
+                                     title="connect interface events to this field in given node">translation</span>'&#160;<span class="attribute">protoField</span>='<span title="field interface connecting events into the prototype interior"><span class="prototype"><a title="go to the protoField definition"
+                                     href="#KelpProtoField_leftSideBladeHeight"
+                                     class="prototype">leftSideBladeHeight</a></span></span>'/&gt;
+</span></div><span title="IS connects ProtoDeclare interface fields to node fields inside ProtoDeclare definitions" style="background-color:#FFEEFF">&lt;/<span class="element">IS</span>&gt;
+</span><br />
+
+<span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;<span class="element">Transform</span>&#160;<span class="attribute">USE</span>='<a title="go to the original DEF node definition"
+                               href="#bladeToTheSide"
+                               class="idName">bladeToTheSide</a>'/&gt;
+</span></div><span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;/<span class="element">Transform</span>&gt;
+</span><br />
+<a name="Clock"> </a> 
+<span style="background-color:#EEEEEE;" title="inserted documentation about ROUTE connections">&lt;!-- <i>ROUTE</i> information for <span class="idName">Clock</span> node:&#160;
+[<a title="go to this ROUTE" href="#ROUTE_0"><i>from</i>&#160;<span class="attribute">fraction_changed</span>&#160;<i>to</i>&#160;<span class="idName">horizontalStipeMover</span>.<span class="attribute">set_fraction</span>
+                        </a>]
+ --&gt;<br /></span>
+<span title="TimeSensor continuously generates events as time passes" style="background-color:#DDEEFF">&lt;<span class="element">TimeSensor</span>&#160;<span class="attribute">DEF</span>='<a title="bookmark link to Clock" href="#Clock" class="idName">Clock</a>'&#160;<span class="attribute">cycleInterval</span>='<span class="value">5.5</span>'&#160;<span class="attribute">loop</span>='<span class="value">true</span>'/&gt;
+</span><br />
+<a name="horizontalStipeMover"> </a> 
+<span style="background-color:#EEEEEE;" title="inserted documentation about ROUTE connections">&lt;!-- <i>ROUTE</i> information for <span class="idName">horizontalStipeMover</span> node:&#160;
+[<a title="go to this ROUTE" href="#ROUTE_0"><i>from</i>&#160;<span class="idName">Clock</span>.<span class="attribute">fraction_changed</span>&#160;<i>to</i>&#160;<span class="attribute">set_fraction</span>
+                        </a>]
+[<a title="go to this ROUTE" href="#ROUTE_1"><i>from</i>&#160;<span class="attribute">value_changed</span>&#160;<i>to</i>&#160;<span class="idName">horizontalStipe</span>.<span class="attribute">set_rotation</span>
+                        </a>]
+ --&gt;<br /></span>
+<span title="Interpolator nodes output event values using piecewise-linear function definitions" style="background-color:#DDEEFF">&lt;<span class="element">OrientationInterpolator</span>&#160;<span class="attribute">DEF</span>='<a title="bookmark link to horizontalStipeMover"
+                            href="#horizontalStipeMover"
+                            class="idName">horizontalStipeMover</a>'&#160;<span class="attribute">key</span>='<span class="value">0 0.25 0.5 0.75 1.0</span>'&#160;<span class="attribute">keyValue</span>='<span class="value">0 0 1 1.471 0 0 1 1.571 0 0 1 1.671 0 0 1 1.571 0 0 1 1.471</span>'/&gt;
+</span></div><span title="Group is a Grouping node that can contain most nodes">&lt;/<span class="element">Group</span>&gt;
+</span><br />
+<a name="ROUTE_0"> </a> 
+<span title="ROUTE connects fields between nodes to enable event passing" style="background-color:#DDEEFF">&lt;<span class="route">ROUTE</span>&#160;<span class="attribute">fromNode</span>='<a title="go to the original DEF node definition"
+                         href="#Clock"
+                         class="idName">Clock</a>'&#160;<span class="attribute">fromField</span>='<span class="value">fraction_changed</span>'&#160;<span class="attribute">toNode</span>='<a title="go to the original DEF node definition"
+                         href="#horizontalStipeMover"
+                         class="idName">horizontalStipeMover</a>'&#160;<span class="attribute">toField</span>='<span class="value">set_fraction</span>'/&gt;
+</span><br />
+<a name="ROUTE_1"> </a> 
+<span title="ROUTE connects fields between nodes to enable event passing" style="background-color:#DDEEFF">&lt;<span class="route">ROUTE</span>&#160;<span class="attribute">fromNode</span>='<a title="go to the original DEF node definition"
+                         href="#horizontalStipeMover"
+                         class="idName">horizontalStipeMover</a>'&#160;<span class="attribute">fromField</span>='<span class="value">value_changed</span>'&#160;<span class="attribute">toNode</span>='<a title="go to the original DEF node definition"
+                         href="#horizontalStipe"
+                         class="idName">horizontalStipe</a>'&#160;<span class="attribute">toField</span>='<span class="value">set_rotation</span>'/&gt;
+</span></div><span title="Initial scene node in ProtoDeclare/ProtoBody statement determines this prototype's node type" style="background-color:#FFEEFF">&lt;/<span class="prototype">ProtoBody</span>&gt;
+</span></div><span title="ProtoDeclare is a Prototype declaration, defining a new node made up of other node(s)" style="background-color:#FFEEFF">&lt;/<span class="prototype">ProtoDeclare</span>&gt;
+</span><br /><span title="XML comment">&lt;!--  Example  use  of  this  prototype  is  in  KelpNoBase.x3d,  .wrl  --&gt;</span>
+<br />
+<a name="Viewpoint_1"> </a> 
+<span title="Viewpoint provides a specific location and direction where the user may view the scene">&lt;<span class="element">Viewpoint</span>&#160;<span class="attribute">description</span>='<a title="viewpoint image (produced using Xj3D)"
+                   href="_viewpoints/KelpPrototype.x3d._VP_click_message_to_view_example.png">click message to view example</a>'&#160;<span class="attribute">position</span>='<span class="value">0 0 8</span>'/&gt;
+</span><br /><span title="XML comment">&lt;!--  Redirection  text  in  case  a  user  examines  this  PROTO  file  via  a  3D  browser:  --&gt;</span>
+<br />
+<a name="TouchTextForExample"> </a> 
+<span title="Selecting Anchored geometry loads content specified by the url field">&lt;<span class="element">Anchor</span>&#160;<span class="attribute">DEF</span>='<a title="bookmark link to TouchTextForExample"
+                   href="#TouchTextForExample"
+                   class="idName">TouchTextForExample</a>'&#160;<span class="attribute">description</span>='<span class="value">KelpNoBase</span>'&#160;<span class="attribute">parameter</span>='<span class="value">"target=_blank"</span>'
+<br />
+&#160;&#160;<span title="uniform resource locator (url) list of relative or absolute file addresses, performed in order until resource retrieval succeeds"><span class="attribute">url</span>='
+ "<a href="KelpExamplesNoBase.x3d" target="_blank">KelpExamplesNoBase.x3d</a>" "<a href="https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/KelpExamplesNoBase.x3d"
+                   target="_blank">https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/KelpExamplesNoBase.x3d</a>"  "<a href="KelpExamplesNoBase.wrl" target="_blank">KelpExamplesNoBase.wrl</a>" "<a href="https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/KelpExamplesNoBase.wrl"
+                   target="_blank">https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/KelpExamplesNoBase.wrl</a>" '</span>&gt;
+</span><div class="indent">
+<span title="Shape contains geometry and optional corresponding Appearance">&lt;<span class="element">Shape</span>&gt;
+</span><div class="indent">
+<span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;<span class="element">Appearance</span>&gt;
+</span><div class="indent">
+<span title="Material specifies surface rendering properties for associated geometry">&lt;<span class="element">Material</span>&#160;<span class="attribute">diffuseColor</span>='<span class="value">0 1 1</span>'&#160;<span class="attribute">emissiveColor</span>='<span class="value">0 1 1</span>'/&gt;
+</span></div><span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;/<span class="element">Appearance</span>&gt;
+</span><br />
+
+<span title="Text is a geometry primitive node">&lt;<span class="element">Text</span>&#160;<span class="attribute">string</span>='<span class="value">"KelpPrototype" "is a Prototype declaration file." "" "To see an example using 3 instances of" "this new node, click this text and view" "KelpNoBase scene"</span>'&gt;
+</span><div class="indent">
+<span title="FontStyle defines the size, family, justification, and other styles used by Text nodes">&lt;<span class="element">FontStyle</span>&#160;<span class="attribute">justify</span>='<span class="value">"MIDDLE" "MIDDLE"</span>'&#160;<span class="attribute">size</span>='<span class="value">0.5</span>'/&gt;
+</span></div><span title="Text is a geometry primitive node">&lt;/<span class="element">Text</span>&gt;
+</span></div><span title="Shape contains geometry and optional corresponding Appearance">&lt;/<span class="element">Shape</span>&gt;
+</span><br /><span title="XML comment">&lt;!--  Selectable  Text  design  pattern  has  transparent  Box  and  TouchSensor  description  as  a  tooltip  --&gt;</span>
+<br />
+
+<span title="Shape contains geometry and optional corresponding Appearance">&lt;<span class="element">Shape</span>&gt;
+</span><div class="indent">
+<span title="Box is a geometry primitive node">&lt;<span class="element">Box</span>&#160;<span class="attribute">size</span>='<span class="value">8 3 .001</span>'/&gt;
+</span><br />
+
+<span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;<span class="element">Appearance</span>&gt;
+</span><div class="indent">
+<span title="Material specifies surface rendering properties for associated geometry">&lt;<span class="element">Material</span>&#160;<span class="attribute">transparency</span>='<span class="value">1</span>'/&gt;
+</span></div><span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;/<span class="element">Appearance</span>&gt;
+</span></div><span title="Shape contains geometry and optional corresponding Appearance">&lt;/<span class="element">Shape</span>&gt;
+</span></div><span title="Selecting Anchored geometry loads content specified by the url field">&lt;/<span class="element">Anchor</span>&gt;
+</span></div><span title="Scene is the root node that contains an X3D scene graph">&lt;/<span class="element">Scene</span>&gt;
+</span></div><span title="X3D is the top-most XML element for an Extensible 3D (X3D) Graphics file">&lt;/<span class="element">X3D</span>&gt;
+</span><br /><span style="color:white">
+&lt;!--
+</span>
+         <div class="center">
+            <hr style="width:100%"/>
+            <b>
+               <i>Index for ProtoDeclare definition</i>
+            </b>: 
+<a title="go to this declaration"
+                href="#ProtoDeclare_Kelp"
+                class="prototype">Kelp</a>
+<br /><hr width="50%"/>
+            <b>
+               <i>Index for DEF nodes</i>
+            </b>: 
+<a title="go to this Transform node" href="#BLADE" class="idName">BLADE</a>,
+<a title="go to this Transform node" href="#blade_X1" class="idName">blade_X1</a>,
+<a title="go to this Transform node" href="#blade_X2" class="idName">blade_X2</a>,
+<a title="go to this Transform node" href="#blade_X3" class="idName">blade_X3</a>,
+<a title="go to this Transform node" href="#blade_Y1" class="idName">blade_Y1</a>,
+<a title="go to this Transform node" href="#blade_Y2" class="idName">blade_Y2</a>,
+<a title="go to this Transform node" href="#blade_Y3" class="idName">blade_Y3</a>,
+<a title="go to this Transform node" href="#blade_Y4" class="idName">blade_Y4</a>,
+<a title="go to this Transform node"
+                href="#bladeRotateZ"
+                class="idName">bladeRotateZ</a>,
+<a title="go to this Transform node"
+                href="#bladeToTheSide"
+                class="idName">bladeToTheSide</a>,
+<a title="go to this Transform node" href="#Blade-Z" class="idName">Blade-Z</a>,
+<a title="go to this Inline node" href="#bulb" class="idName">bulb</a>,
+<a title="go to this TimeSensor node" href="#Clock" class="idName">Clock</a>,
+<a title="go to this Transform node"
+                href="#horizontalStipe"
+                class="idName">horizontalStipe</a>,
+<a title="go to this OrientationInterpolator node"
+                href="#horizontalStipeMover"
+                class="idName">horizontalStipeMover</a>,
+<a title="go to this Appearance node" href="#kelpColor" class="idName">kelpColor</a>,
+<a title="go to this Transform node"
+                href="#rotateBlade90"
+                class="idName">rotateBlade90</a>,
+<a title="go to this Shape node" href="#stemShape" class="idName">stemShape</a>,
+<a title="go to this Transform node" href="#stipe" class="idName">stipe</a>,
+<a title="go to this Anchor node"
+                href="#TouchTextForExample"
+                class="idName">TouchTextForExample</a>
+<br /><hr width="50%"/>
+            <b>
+               <i>Index for Viewpoint image</i>
+            </b>: 
+<a title="go to this Viewpoint node: click message to view example"
+                href="#Viewpoint_1"
+                class="idName">Viewpoint_1</a>
+            <hr style="width:100%"/>
+         </div>
+         <span style="color:white">
+--&gt;
+</span>
+      </div>
+      <p style="text-align:center;">
+         <span style="color:white">&lt;!--</span>
+Color key: <!--(matching X3D and XML terminology) -->
+&lt;<span class="element">X3dNode</span>
+         <span class="idName"> DEF</span>='<span class="idName">idName</span>' <span class="attribute">field</span>='<span class="value">value</span>'/&gt; 
+ matches 
+&lt;<span class="element">XmlElement</span>
+         <span class="idName"> DEF</span>='<span class="idName">idName</span>' <span class="attribute">attribute</span>='<span class="value">value</span>'/&gt; <br/>
+<span title="behavior node" style="background-color:#DDEEFF;">(Light blue background: behavior node)</span> <span title="inserted documentation about ROUTE connections" style="background-color:#EEEEEE;">(Grey background: inserted documentation)</span> <span title="X3D Extensibility" style="background-color:#FFEEFF;">(Magenta background: X3D Extensibility)</span><br/>
+&#160;&#160;&#160;
+&lt;<span class="prototype">Prototype</span>
+         <span class="attribute">name</span>='<span class="prototype">ProtoName</span>'&gt;
+	&lt;<span class="prototype">field</span>
+         <span class="attribute">name</span>='<span class="prototype">fieldName</span>'/&gt; &lt;/<span class="prototype">Prototype</span>&gt;
+<span style="color:white"> --&gt;</span>
+      </p>
+      <p style="text-align:center; background-color:white">
+         <span style="color:white">&lt;!--</span>
+For additional help information about X3D scenes, please see <a href="https://www.web3d.org/x3d/content/X3dTooltips.html"
+             title="Summary descriptions and authoring hints for each X3D node (element) and field (attribute)"
+             target="_blank">X3D Tooltips</a>, <a href="https://www.web3d.org/x3d/content/examples/X3dResources.html"
+             title="Numerous resources that support X3D graphics"
+             target="_blank">X3D Resources</a> and <a href="https://www.web3d.org/x3d/content/examples/X3dSceneAuthoringHints.html"
+             title="Style guidelines, authoring tips and best practices"
+             target="_blank">X3D Scene Authoring Hints</a>.
+<span style="color:white">--&gt;</span>
+      </p>
+   </body>
+</html>

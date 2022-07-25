@@ -1,0 +1,743 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <link rel="shortcut icon" href="../images/X3DtextIcon16.png" title="X3D"/>
+      <title>X3D4WA, X3D for Web Authors Examples Archive, Chapter 05 Appearance Material Textures</title>
+      <meta http-equiv="X-UA-Compatible" content="chrome=1,IE=edge"/>
+      <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+      <meta name="author" content="Don Brutzman"/>
+      <meta name="generator"
+             content="https://www.web3d.org/x3d/tools/CreateContentCatalog/CreateContentCatalogPages.xslt"/>
+      <meta name="modified" content="2022-07-03-07:00"/>
+      <meta name="keyword"
+             content="X3D, X3DV, VRML, VRML97, Extensible 3D, Virtual Reality Modeling Language"/>
+   </head>
+   <body>
+      <table
+              align="center"
+              summary="navigation"
+              border="1"
+              cellpadding="2"
+              width="95%">
+         <tr>
+            <td align="center" width="17%">
+               <a href="../index.html" target="_top">
+                  <img src="../images/ToC.png"
+                        title="Table of Contents"
+                        alt="Table of Contents"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter04ViewingNavigation/index.html" target="_top">
+                  <img src="../images/PreviousChapter.png"
+                        title="Previous Directory Summary"
+                        alt="Previous Directory Summary"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="viewpointSlideshow.html" target="_top">
+                  <img src="../images/MootoolsSlideshowLogo.jpg"
+                        title="Directory Viewpoint Slideshow"
+                        alt="Directory Viewpoint Slideshow"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="15%">
+               <a href="../javadoc/index.html?X3dForWebAuthors/Chapter05AppearanceMaterialTextures/package-summary.html"
+                   title="Javadoc for translated java source"
+                   alt="Javadoc for translated java source"
+                   target="_blank">
+                  <img src="../images/Java-32.png"
+                        title="Javadoc for translated java source"
+                        alt="Javadoc for translated java source"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter06GeometryPointsLinesPolygons/index.html" target="_top">
+                  <img src="../images/NextChapter.png"
+                        title="Next Directory Summary"
+                        alt="Next Directory Summary"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="15%">
+               <a href="../../X3dResources.html" target="helpPage">
+                  <img src="../images/Help.png"
+                        title="X3D Resources"
+                        alt="X3D Resources"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+         </tr>
+      </table>
+      <h2 align="center">
+         <i> X3D Example Archives: </i>X3D4WA, X3D for Web Authors, Chapter 05 Appearance Material Textures</h2>
+      <table align="center"
+              width="85%"
+              summary=""
+              border="0"
+              cellpadding="0">
+         <tr align="center">
+            <td><!--ChapterPackageDescription--><!--Contents of file ../../content/examples/X3dForWebAuthors/Chapter05AppearanceMaterialTextures/package-catalog.html-->
+
+    <table bgColor="#ffffff" border="0" width="100%">
+        <tbody>
+            <tr>
+                <td align="center" valign="top">
+                    
+                    <a href="index.html"><img alt="FillProperties Hatch Style" title="FillProperties Hatch Style" border="0" hspace="10" src="FillPropertiesHatchStyle.png" width="166" height="115" align="middle"/></a>
+                </td>
+                <td align="center" valign="top">
+                    
+                    <a href="index.html"><img alt="LineProperties Linetype Options" title="LineProperties Linetype Options" title="LineProperties Linetype Options" border="0" hspace="10" src="LinePropertiesLinetypeExample.png" height="115" align="left"/></a>
+                </td>
+                <td align="center" valign="top">
+                    
+                    <a href="index.html"><img alt="MovieTexture Authoring Options" title="MovieTexture Authoring Options" border="0" hspace="10" src="MovieTextureAuthoringOptions.png" height="115" align="left"/></a>
+                </td>
+                <td align="center" valign="top">
+                    
+                    <a href="index.html"><img alt="ImageTexture Example" title="ImageTexture Example" border="0" hspace="10" src="ImageTextureFigure18.1X3dSpecification.gif" height="115" align="left"/></a>
+                </td>
+                <td align="center" valign="top">
+                    
+                    <a href="index.html"><img alt="PixelTexture Snowman" title="PixelTexture Snowman" border="0" hspace="10" src="PixelTextureSnowmanSnapshot.png" height="115" align="left"/></a>
+                </td>
+            </tr>
+                
+            <tr>
+                
+                <td align="left" colspan="5">
+    <p>
+				Appearance defines how color, material and texture images are applied as the visual characteristics of a shape.
+    </p>
+    
+
+
+    <p>
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#Appearance" target="X3dTooltips" title="X3D Tooltip">Appearance</a>
+                 is individually associated with specific geometry within a shared 
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#Shape" target="X3dTooltips" title="X3D Tooltip">Shape</a>
+                 node.
+                 
+                 Each Appearance is a container node that can include 
+                 
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#Material" target="X3dTooltips" title="X3D Tooltip">Material</a>,
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#TwoSidedMaterial" target="X3dTooltips" title="X3D Tooltip">TwoSidedMaterial</a>,
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#ImageTexture" target="X3dTooltips" title="X3D Tooltip">ImageTexture</a>,
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#MovieTexture" target="X3dTooltips" title="X3D Tooltip">MovieTexture</a>,
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#PixelTexture" target="X3dTooltips" title="X3D Tooltip">PixelTexture</a>
+                 and 
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#MultiTexture" target="X3dTooltips" title="X3D Tooltip">MultiTexture</a>
+                 nodes.
+    </p>
+    
+
+
+    <p>
+                 Appearance can also contain property nodes for controlling rendering and texture:
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#FillProperties" target="X3dTooltips" title="X3D Tooltip">FillProperties</a>,
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#LineProperties" target="X3dTooltips" title="X3D Tooltip">LineProperties</a>,
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#TextureProperties" target="X3dTooltips" title="X3D Tooltip">TextureProperties</a>,
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#TextureTransform" target="X3dTooltips" title="X3D Tooltip">TextureTransform</a>
+                 and
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#MultiTextureTransform" target="X3dTooltips" title="X3D Tooltip">MultiTextureTransform</a>
+                 nodes.
+    </p>
+    
+
+    <p>
+                 The supporting
+                 <a href="http://x3dgraphics.com/slidesets/X3dForWebAuthors/Chapter05AppearanceMaterialTextures.pdf" target="X3dChapterSlideset">Chapter&nbsp;5 slideset</a>
+                 and course videos
+                (<a href="https://www.movesinstitute.org/Video/Courses/X3dForWebAuthors/X3dForWebAuthorsVideo.html#5" target="X3dChapterVideos">NPS</a>,
+                 <a href="https://www.youtube.com/playlist?list=PLuSIsM-86simimJiemZgl1GRxY-5yOzcB" target="X3dChapterYouTubeVideos">YouTube</a>)
+                 for <i>X3D for Web Authors</i> are available online via
+                 <a href="http://X3dGraphics.com" target="_blank">X3dGraphics.com</a>.
+    </p>
+    
+
+    <p>
+                     Also available:
+                     <a href="https://www.web3d.org/x3d/content/examples/X3dSceneAuthoringHints.html#Images" target="_blank">X3D Scene Authoring Hints</a>
+                     for
+                     <a href="https://www.web3d.org/x3d/content/examples/X3dSceneAuthoringHints.html#Images" target="_blank">Images and Videos</a>
+                      and
+                      <a href="https://www.web3d.org/x3d/content/examples/X3dSceneAuthoringHints.html#urls" target="_blank">URL&nbsp;Links</a>.
+    </p>
+    
+
+                </td>
+            </tr>
+            
+        </tbody>
+    </table>
+
+  </td>
+         </tr>
+      </table>
+      <table align="center"
+              width="85%"
+              summary=""
+              border="1"
+              cellpadding="6">
+         <tr align="center">
+            <th colspan="2" width="25%" align="center">&nbsp;&nbsp;29 X3D Models</th>
+            <th width="75%" align="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;X3D Model Descriptions</th>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="AmbientIntensity"/>
+               <a href="AmbientIntensityIndex.html">
+                  <img src="_thumbnails/AmbientIntensityThumbnail.png"
+                        height="48"
+                        alt="AmbientIntensity"
+                        title="AmbientIntensity"/>
+               </a>
+            </td>
+            <td>
+               <a href="AmbientIntensityIndex.html">Ambient Intensity</a>
+            </td>
+            <td>This example illustrates the effect of an ambientIntensity field from a Sphere on a Cone. Note that navigation reports of user position and orientation from the WhereAmI prototype appear in the player console.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="CircleFishPrototype"/>
+               <a href="CircleFishPrototypeIndex.html">
+                  <img src="_thumbnails/CircleFishPrototypeThumbnail.png"
+                        height="48"
+                        alt="CircleFishPrototype"
+                        title="CircleFishPrototype"/>
+               </a>
+            </td>
+            <td>
+               <a href="CircleFishPrototypeIndex.html">Circle Fish Prototype</a>
+            </td>
+            <td>This is a prototype for a CircleFish, which is also used by CircleFishLod. Default fish size: length is 1 m (Y-axis), max Height is 1 m (Z-axis), max Width is 10 cm (X-axis).</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="CircleFishPTPrototype"/>
+               <a href="CircleFishPTPrototypeIndex.html">
+                  <img src="_thumbnails/CircleFishPTPrototypeThumbnail.png"
+                        height="48"
+                        alt="CircleFishPTPrototype"
+                        title="CircleFishPTPrototype"/>
+               </a>
+            </td>
+            <td>
+               <a href="CircleFishPTPrototypeIndex.html">Circle Fish PTPrototype</a>
+            </td>
+            <td>This is a prototype for a CircleFish, which is also used by CircleFishLod. Default fish size: length is 1 m (Y-axis), max Height is 1 m (Z-axis), max Width is 10 cm (X-axis).</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="DiffuseColor"/>
+               <a href="DiffuseColorIndex.html">
+                  <img src="_thumbnails/DiffuseColorThumbnail.png"
+                        height="48"
+                        alt="DiffuseColor"
+                        title="DiffuseColor"/>
+               </a>
+            </td>
+            <td>
+               <a href="DiffuseColorIndex.html">Diffuse Color</a>
+            </td>
+            <td>A Sphere colored only with an diffuseColor.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="EmissiveColor"/>
+               <a href="EmissiveColorIndex.html">
+                  <img src="_thumbnails/EmissiveColorThumbnail.png"
+                        height="48"
+                        alt="EmissiveColor"
+                        title="EmissiveColor"/>
+               </a>
+            </td>
+            <td>
+               <a href="EmissiveColorIndex.html">Emissive Color</a>
+            </td>
+            <td>A Sphere colored only with an emissiveColor.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="FillPropertiesExample"/>
+               <a href="FillPropertiesExampleIndex.html">
+                  <img src="_thumbnails/FillPropertiesExampleThumbnail.png"
+                        height="48"
+                        alt="FillPropertiesExample"
+                        title="FillPropertiesExample"/>
+               </a>
+            </td>
+            <td>
+               <a href="FillPropertiesExampleIndex.html">Fill Properties Example</a>
+            </td>
+            <td>Demonstrate various FillProperties values.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Garibaldi"/>
+               <a href="GaribaldiIndex.html">
+                  <img src="_thumbnails/GaribaldiThumbnail.png"
+                        height="48"
+                        alt="Garibaldi"
+                        title="Garibaldi"/>
+               </a>
+            </td>
+            <td>
+               <a href="GaribaldiIndex.html">Garibaldi</a>
+            </td>
+            <td>Instantiate the standard Garibaldi fish prototype.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="GaribaldiLocalTexture"/>
+               <a href="GaribaldiLocalTextureIndex.html">
+                  <img src="_thumbnails/GaribaldiLocalTextureThumbnail.png"
+                        height="48"
+                        alt="GaribaldiLocalTexture"
+                        title="GaribaldiLocalTexture"/>
+               </a>
+            </td>
+            <td>
+               <a href="GaribaldiLocalTextureIndex.html">Garibaldi Local Texture</a>
+            </td>
+            <td>Instantiate the Garibaldi fish prototype using a local skin texture file.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="GaribaldiRemote"/>
+               <a href="GaribaldiRemoteIndex.html">
+                  <img src="_thumbnails/GaribaldiRemoteThumbnail.png"
+                        height="48"
+                        alt="GaribaldiRemote"
+                        title="GaribaldiRemote"/>
+               </a>
+            </td>
+            <td>
+               <a href="GaribaldiRemoteIndex.html">Garibaldi Remote</a>
+            </td>
+            <td>Instancing a prototype to match a specific fish.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="GaribaldiRemoteNoTexture"/>
+               <a href="GaribaldiRemoteNoTextureIndex.html">
+                  <img src="_thumbnails/GaribaldiRemoteNoTextureThumbnail.png"
+                        height="48"
+                        alt="GaribaldiRemoteNoTexture"
+                        title="GaribaldiRemoteNoTexture"/>
+               </a>
+            </td>
+            <td>
+               <a href="GaribaldiRemoteNoTextureIndex.html">Garibaldi Remote No Texture</a>
+            </td>
+            <td>Instantiate the Garibaldi fish prototype using a remote skin texture file.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="GeometryPrimitiveNodesImageTexture"/>
+               <a href="GeometryPrimitiveNodesImageTextureIndex.html">
+                  <img src="_thumbnails/GeometryPrimitiveNodesImageTextureThumbnail.png"
+                        height="48"
+                        alt="GeometryPrimitiveNodesImageTexture"
+                        title="GeometryPrimitiveNodesImageTexture"/>
+               </a>
+            </td>
+            <td>
+               <a href="GeometryPrimitiveNodesImageTextureIndex.html">Geometry Primitive Nodes Image Texture</a>
+            </td>
+            <td>Geometry Primitive Nodes: Shape, Box, Cone, Cylinder, Sphere, Text, FontStyle, with ImageTexture applied</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="LinePropertiesExample"/>
+               <a href="LinePropertiesExampleIndex.html">
+                  <img src="_thumbnails/LinePropertiesExampleThumbnail.png"
+                        height="48"
+                        alt="LinePropertiesExample"
+                        title="LinePropertiesExample"/>
+               </a>
+            </td>
+            <td>
+               <a href="LinePropertiesExampleIndex.html">Line Properties Example</a>
+            </td>
+            <td>Demonstrate each of the various LineProperties enumeration values.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="MovieTextureAuthoringOptions"/>
+               <a href="MovieTextureAuthoringOptionsIndex.html">
+                  <img src="_thumbnails/MovieTextureAuthoringOptionsThumbnail.png"
+                        height="48"
+                        alt="MovieTextureAuthoringOptions"
+                        title="MovieTextureAuthoringOptions"/>
+               </a>
+            </td>
+            <td>
+               <a href="MovieTextureAuthoringOptionsIndex.html">Movie Texture Authoring Options</a>
+            </td>
+            <td>Provide examples of helpful MovieTexture usage</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="PixelTextureBW"/>
+               <a href="PixelTextureBWIndex.html">
+                  <img src="_thumbnails/PixelTextureBWThumbnail.png"
+                        height="48"
+                        alt="PixelTextureBW"
+                        title="PixelTextureBW"/>
+               </a>
+            </td>
+            <td>
+               <a href="PixelTextureBWIndex.html">Pixel Texture BW</a>
+            </td>
+            <td>Illustration of a checkerboard pattern using the PixelTexture node.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="PixelTextureComponentExamples"/>
+               <a href="PixelTextureComponentExamplesIndex.html">
+                  <img src="_thumbnails/PixelTextureComponentExamplesThumbnail.png"
+                        height="48"
+                        alt="PixelTextureComponentExamples"
+                        title="PixelTextureComponentExamples"/>
+               </a>
+            </td>
+            <td>
+               <a href="PixelTextureComponentExamplesIndex.html">Pixel Texture Component Examples</a>
+            </td>
+            <td>This example shows the five PixelTexture components, with 0 to 4 components each, shown in Table 5-18.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="PixelTextureExample"/>
+               <a href="PixelTextureExampleIndex.html">
+                  <img src="_thumbnails/PixelTextureExampleThumbnail.png"
+                        height="48"
+                        alt="PixelTextureExample"
+                        title="PixelTextureExample"/>
+               </a>
+            </td>
+            <td>
+               <a href="PixelTextureExampleIndex.html">Pixel Texture Example</a>
+            </td>
+            <td>This example shows a colorful PixelTexture applied to the standard primitive shapes.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="PixelTextureGaribaldi"/>
+               <a href="PixelTextureGaribaldiIndex.html">
+                  <img src="_thumbnails/PixelTextureGaribaldiThumbnail.png"
+                        height="48"
+                        alt="PixelTextureGaribaldi"
+                        title="PixelTextureGaribaldi"/>
+               </a>
+            </td>
+            <td>
+               <a href="PixelTextureGaribaldiIndex.html">Pixel Texture Garibaldi</a>
+            </td>
+            <td>The Garibaldi with a PixelTexture instead of a file texture.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="PixelTextureSnowman"/>
+               <a href="PixelTextureSnowmanIndex.html">
+                  <img src="_thumbnails/PixelTextureSnowmanThumbnail.png"
+                        height="48"
+                        alt="PixelTextureSnowman"
+                        title="PixelTextureSnowman"/>
+               </a>
+            </td>
+            <td>
+               <a href="PixelTextureSnowmanIndex.html">Pixel Texture Snowman</a>
+            </td>
+            <td>This snowman example shows a colorful PixelTexture applied to X3D primitive shapes - happy holidays!</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="PixelTextureTransformScale"/>
+               <a href="PixelTextureTransformScaleIndex.html">
+                  <img src="_thumbnails/PixelTextureTransformScaleThumbnail.png"
+                        height="48"
+                        alt="PixelTextureTransformScale"
+                        title="PixelTextureTransformScale"/>
+               </a>
+            </td>
+            <td>
+               <a href="PixelTextureTransformScaleIndex.html">Pixel Texture Transform Scale</a>
+            </td>
+            <td>This example illustrates a PixelTexture with a scaled TextureTransform.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="SpecularColor"/>
+               <a href="SpecularColorIndex.html">
+                  <img src="_thumbnails/SpecularColorThumbnail.png"
+                        height="48"
+                        alt="SpecularColor"
+                        title="SpecularColor"/>
+               </a>
+            </td>
+            <td>
+               <a href="SpecularColorIndex.html">Specular Color</a>
+            </td>
+            <td>A Sphere with specularColor applied over diffuseColor with default shininess.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Table5_18PixelTexture"/>
+               <a href="Table5_18PixelTextureIndex.html">
+                  <img src="_thumbnails/Table5_18PixelTextureThumbnail.png"
+                        height="48"
+                        alt="Table5_18PixelTexture"
+                        title="Table5_18PixelTexture"/>
+               </a>
+            </td>
+            <td>
+               <a href="Table5_18PixelTextureIndex.html">Table 5 18 Pixel Texture</a>
+            </td>
+            <td>PixelTexture example for Table 5.18</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="TextureLocalGaribaldi"/>
+               <a href="TextureLocalGaribaldiIndex.html">
+                  <img src="_thumbnails/TextureLocalGaribaldiThumbnail.png"
+                        height="48"
+                        alt="TextureLocalGaribaldi"
+                        title="TextureLocalGaribaldi"/>
+               </a>
+            </td>
+            <td>
+               <a href="TextureLocalGaribaldiIndex.html">Texture Local Garibaldi</a>
+            </td>
+            <td>Instantiate the Garibaldi fish prototype using a local texture file.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="TextureRemoteGaribaldi"/>
+               <a href="TextureRemoteGaribaldiIndex.html">
+                  <img src="_thumbnails/TextureRemoteGaribaldiThumbnail.png"
+                        height="48"
+                        alt="TextureRemoteGaribaldi"
+                        title="TextureRemoteGaribaldi"/>
+               </a>
+            </td>
+            <td>
+               <a href="TextureRemoteGaribaldiIndex.html">Texture Remote Garibaldi</a>
+            </td>
+            <td>Instantiate the Garibaldi fish prototype without a skin texture.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="TextureTransformExample"/>
+               <a href="TextureTransformExampleIndex.html">
+                  <img src="_thumbnails/TextureTransformExampleThumbnail.png"
+                        height="48"
+                        alt="TextureTransformExample"
+                        title="TextureTransformExample"/>
+               </a>
+            </td>
+            <td>
+               <a href="TextureTransformExampleIndex.html">Texture Transform Example</a>
+            </td>
+            <td>An illustration of the same PixelTexture applied to a cone with different TextureTransform values</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="TextureTransformFull"/>
+               <a href="TextureTransformFullIndex.html">
+                  <img src="_thumbnails/TextureTransformFullThumbnail.png"
+                        height="48"
+                        alt="TextureTransformFull"
+                        title="TextureTransformFull"/>
+               </a>
+            </td>
+            <td>
+               <a href="TextureTransformFullIndex.html">Texture Transform Full</a>
+            </td>
+            <td>Two Boxes with the same PixelTexture showing different TextureTransform field values.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="TextureTransformScale"/>
+               <a href="TextureTransformScaleIndex.html">
+                  <img src="_thumbnails/TextureTransformScaleThumbnail.png"
+                        height="48"
+                        alt="TextureTransformScale"
+                        title="TextureTransformScale"/>
+               </a>
+            </td>
+            <td>
+               <a href="TextureTransformScaleIndex.html">Texture Transform Scale</a>
+            </td>
+            <td>This is an example of 2 Boxes with the same PixelTexture with different rotations, centers, and scaling.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="TextureTransformTranslation"/>
+               <a href="TextureTransformTranslationIndex.html">
+                  <img src="_thumbnails/TextureTransformTranslationThumbnail.png"
+                        height="48"
+                        alt="TextureTransformTranslation"
+                        title="TextureTransformTranslation"/>
+               </a>
+            </td>
+            <td>
+               <a href="TextureTransformTranslationIndex.html">Texture Transform Translation</a>
+            </td>
+            <td>3 Boxes with the same PixelTexture and different TextureTransform translation values.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Transparency"/>
+               <a href="TransparencyIndex.html">
+                  <img src="_thumbnails/TransparencyThumbnail.png"
+                        height="48"
+                        alt="Transparency"
+                        title="Transparency"/>
+               </a>
+            </td>
+            <td>
+               <a href="TransparencyIndex.html">Transparency</a>
+            </td>
+            <td>This example shows a partially transparent Sphere in front of an opaque Box and Cylinder.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="TwoSidedMaterialExample"/>
+               <a href="TwoSidedMaterialExampleIndex.html">
+                  <img src="_thumbnails/TwoSidedMaterialExampleThumbnail.png"
+                        height="48"
+                        alt="TwoSidedMaterialExample"
+                        title="TwoSidedMaterialExample"/>
+               </a>
+            </td>
+            <td>
+               <a href="TwoSidedMaterialExampleIndex.html">Two Sided Material Example</a>
+            </td>
+            <td>A Sphere colored red on outside and orange on inside using TwoSidedMaterial</td>
+         </tr>
+      </table>
+      <table width="80%" border="0" align="center">
+         <tr>
+            <td>
+               <p style="text-align:center">Online at <a href="https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter05AppearanceMaterialTextures/index.html">https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter05AppearanceMaterialTextures</a>
+               </p>
+               <p align="center" width="80%">
+                  <a href="https://validator.w3.org/check?uri=https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter05AppearanceMaterialTextures/index.html"
+                      target="_blank">
+                     <img src="https://www.w3.org/Icons/valid-xhtml10"
+                           title="Validate XHTML 1.1"
+                           alt="Validate XHTML 1.1"
+                           height="31"
+                           width="88"
+                           border="0"
+                           align="right"/>
+                  </a>
+               </p>
+               <p style="text-align:center">Master source-code model archive is under subversion control at <br/>
+                  <a href="https://sourceforge.net/p/x3d/code/HEAD/tree/www.web3d.org/x3d/content/examples/X3dForWebAuthors/Chapter05AppearanceMaterialTextures/"
+                      target="_blank">https://sourceforge.net/p/x3d/code/HEAD/tree/www.web3d.org/x3d/content/examples/X3dForWebAuthors/Chapter05AppearanceMaterialTextures</a>
+               </p>
+            </td>
+         </tr>
+      </table>
+      <p align="center">
+The 
+<a href="../../X3dResources.html#X3dForWebAuthors">X3D Resources: Examples</a> page
+and
+<a href="https://savage.nps.edu/Savage/developers.html">Savage Developers Guide</a>
+provide more information about the production of this archive.</p>
+      <table
+              align="center"
+              summary="navigation"
+              border="1"
+              cellpadding="2"
+              width="95%">
+         <tr>
+            <td align="center" width="17%">
+               <a href="../index.html" target="_top">
+                  <img src="../images/ToC.png"
+                        title="Table of Contents"
+                        alt="Table of Contents"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter04ViewingNavigation/index.html" target="_top">
+                  <img src="../images/PreviousChapter.png"
+                        title="Previous Directory Summary"
+                        alt="Previous Directory Summary"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="viewpointSlideshow.html" target="_top">
+                  <img src="../images/MootoolsSlideshowLogo.jpg"
+                        title="Directory Viewpoint Slideshow"
+                        alt="Directory Viewpoint Slideshow"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="15%">
+               <a href="../javadoc/index.html?X3dForWebAuthors/Chapter05AppearanceMaterialTextures/package-summary.html"
+                   title="Javadoc for translated java source"
+                   alt="Javadoc for translated java source"
+                   target="_blank">
+                  <img src="../images/Java-32.png"
+                        title="Javadoc for translated java source"
+                        alt="Javadoc for translated java source"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter06GeometryPointsLinesPolygons/index.html" target="_top">
+                  <img src="../images/NextChapter.png"
+                        title="Next Directory Summary"
+                        alt="Next Directory Summary"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="15%">
+               <a href="../../X3dResources.html" target="helpPage">
+                  <img src="../images/Help.png"
+                        title="X3D Resources"
+                        alt="X3D Resources"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+         </tr>
+      </table>
+   </body>
+</html>

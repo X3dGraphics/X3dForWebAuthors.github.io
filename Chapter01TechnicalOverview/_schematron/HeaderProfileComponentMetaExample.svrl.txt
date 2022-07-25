@@ -1,0 +1,1 @@
+<WorldInfo DEF='' title='HeaderProfileComponentMetaExample.x3d'/> and <WorldInfo DEF='' title='HeaderProfileComponentMetaExample.x3d'/> have both defined window title[/X3D/Scene/WorldInfo[2], warning]

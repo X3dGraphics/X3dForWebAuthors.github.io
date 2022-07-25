@@ -1,0 +1,514 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <link rel="shortcut icon" href="../images/X3DtextIcon16.png" title="X3D"/>
+      <title>X3D4WA, X3D for Web Authors Examples Archive, Chapter 03 Grouping</title>
+      <meta http-equiv="X-UA-Compatible" content="chrome=1,IE=edge"/>
+      <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+      <meta name="author" content="Don Brutzman"/>
+      <meta name="generator"
+             content="https://www.web3d.org/x3d/tools/CreateContentCatalog/CreateContentCatalogPages.xslt"/>
+      <meta name="modified" content="2022-07-03-07:00"/>
+      <meta name="keyword"
+             content="X3D, X3DV, VRML, VRML97, Extensible 3D, Virtual Reality Modeling Language"/>
+   </head>
+   <body>
+      <table
+              align="center"
+              summary="navigation"
+              border="1"
+              cellpadding="2"
+              width="95%">
+         <tr>
+            <td align="center" width="17%">
+               <a href="../index.html" target="_top">
+                  <img src="../images/ToC.png"
+                        title="Table of Contents"
+                        alt="Table of Contents"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter02GeometryPrimitives/index.html" target="_top">
+                  <img src="../images/PreviousChapter.png"
+                        title="Previous Directory Summary"
+                        alt="Previous Directory Summary"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="viewpointSlideshow.html" target="_top">
+                  <img src="../images/MootoolsSlideshowLogo.jpg"
+                        title="Directory Viewpoint Slideshow"
+                        alt="Directory Viewpoint Slideshow"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="15%">
+               <a href="../javadoc/index.html?X3dForWebAuthors/Chapter03Grouping/package-summary.html"
+                   title="Javadoc for translated java source"
+                   alt="Javadoc for translated java source"
+                   target="_blank">
+                  <img src="../images/Java-32.png"
+                        title="Javadoc for translated java source"
+                        alt="Javadoc for translated java source"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter04ViewingNavigation/index.html" target="_top">
+                  <img src="../images/NextChapter.png"
+                        title="Next Directory Summary"
+                        alt="Next Directory Summary"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="15%">
+               <a href="../../X3dResources.html" target="helpPage">
+                  <img src="../images/Help.png"
+                        title="X3D Resources"
+                        alt="X3D Resources"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+         </tr>
+      </table>
+      <h2 align="center">
+         <i> X3D Example Archives: </i>X3D4WA, X3D for Web Authors, Chapter 03 Grouping</h2>
+      <table align="center"
+              width="85%"
+              summary=""
+              border="0"
+              cellpadding="0">
+         <tr align="center">
+            <td><!--ChapterPackageDescription--><!--Contents of file ../../content/examples/X3dForWebAuthors/Chapter03Grouping/package-catalog.html-->
+    
+    <table bgColor="#ffffff" border="0" width="100%">
+        <tbody>
+            <tr>
+                <td align="left" cellpadding="10">
+                    
+                    <a href="index.html"><img alt="Coordinate Axes (North South East West)" title="Coordinate Axes (North South East West)" border="0" hspace="10" src="CoordinateAxesNSEW.WhiteBackground.png" width="163" height="177" align="left"/></a>
+                </td>
+
+                <td>
+    <p>
+                    Grouping nodes help to organize the scene graph, can establish relative coordinate systems,
+                    and can contain most other kinds of X3D nodes.
+    </p>
+    
+
+    <p>
+                 Grouping nodes include the 
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#Anchor" target="X3dTooltips" title="X3D Tooltip">Anchor</a>,
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#Billboard" target="X3dTooltips" title="X3D Tooltip">Billboard</a>,
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#Collision" target="X3dTooltips" title="X3D Tooltip">Collision</a>,
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#Group" target="X3dTooltips" title="X3D Tooltip">Group</a>,
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#StaticGroup" target="X3dTooltips" title="X3D Tooltip">StaticGroup</a>,
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#Switch" target="X3dTooltips" title="X3D Tooltip">Switch</a>
+                 and
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#Transform" target="X3dTooltips" title="X3D Tooltip">Transform</a>
+                 nodes.
+                 The 
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#Inline" target="X3dTooltips" title="X3D Tooltip">Inline</a>
+                 node is also similar since it adds nodes into the current scene that loaded from another X3D scene, retrieved
+                 via a local or online url address.
+    </p>
+    
+
+    <p>
+                 The supporting
+                 <a href="http://x3dgraphics.com/slidesets/X3dForWebAuthors/Chapter03Grouping.pdf" target="X3dChapterSlideset">Chapter&nbsp;3 slideset</a>
+                 and course videos
+                (<a href="https://www.movesinstitute.org/Video/Courses/X3dForWebAuthors/X3dForWebAuthorsVideo.html#3" target="X3dChapterVideos">NPS</a>,
+                 <a href="https://www.youtube.com/playlist?list=PLuSIsM-86sim7B4ScA35FzmA8DxYXElEq" target="X3dChapterYouTubeVideos">YouTube</a>)
+                 for <i>X3D for Web Authors</i> are available online via
+                 <a href="http://X3dGraphics.com" target="_blank">X3dGraphics.com</a>.
+    </p>
+    
+
+    <p>
+                 Also available:
+                 <a href="https://www.web3d.org/x3d/content/examples/X3dSceneAuthoringHints.html" target="_blank">X3D Scene Authoring Hints</a>
+                 for
+                 <a href="https://www.web3d.org/x3d/content/examples/X3dSceneAuthoringHints.html#CoordinateSystems" target="_blank">Coordinate Systems</a>,
+                 <a href="https://www.web3d.org/x3d/content/examples/X3dSceneAuthoringHints.html#InlinesPrototypes" target="_blank">Inline Scenes</a>,
+                 <a href="https://www.web3d.org/x3d/content/examples/X3dSceneAuthoringHints.html#Scale" target="_blank">Scale Factors</a>
+                 and
+                 <a href="https://www.web3d.org/x3d/content/examples/X3dSceneAuthoringHints.html#urls" target="_blank">URL&nbsp;Links</a>.
+    </p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+  </td>
+         </tr>
+      </table>
+      <table align="center"
+              width="85%"
+              summary=""
+              border="1"
+              cellpadding="6">
+         <tr align="center">
+            <th colspan="2" width="25%" align="center">&nbsp;&nbsp;16 X3D Models</th>
+            <th width="75%" align="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;X3D Model Descriptions</th>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="BoundingBoxIllustration"/>
+               <a href="BoundingBoxIllustrationIndex.html">
+                  <img src="_thumbnails/BoundingBoxIllustrationThumbnail.png"
+                        height="48"
+                        alt="BoundingBoxIllustration"
+                        title="BoundingBoxIllustration"/>
+               </a>
+            </td>
+            <td>
+               <a href="BoundingBoxIllustrationIndex.html">Bounding Box Illustration</a>
+            </td>
+            <td>Simple Inline example illustrating bounding box coverage. Bounding box lines are not typically rendered.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="CoordinateAxes"/>
+               <a href="CoordinateAxesIndex.html">
+                  <img src="_thumbnails/CoordinateAxesThumbnail.png"
+                        height="48"
+                        alt="CoordinateAxes"
+                        title="CoordinateAxes"/>
+               </a>
+            </td>
+            <td>
+               <a href="CoordinateAxesIndex.html">Coordinate Axes</a>
+            </td>
+            <td>X Y Z axis arrows and labels in X3D coordinate system. See CoordinateAxesExample for use as an Inline coordinate-system reference frame.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="CoordinateAxesInlineExample"/>
+               <a href="CoordinateAxesInlineExampleIndex.html">
+                  <img src="_thumbnails/CoordinateAxesInlineExampleThumbnail.png"
+                        height="48"
+                        alt="CoordinateAxesInlineExample"
+                        title="CoordinateAxesInlineExample"/>
+               </a>
+            </td>
+            <td>
+               <a href="CoordinateAxesInlineExampleIndex.html">Coordinate Axes Inline Example</a>
+            </td>
+            <td>X Y Z axis arrows and labels in X3D/VRML coordinate system. Shows use of CoordinateAxesVrml as Inline for coordinate-system reference frames.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="CoordinateAxesLines"/>
+               <a href="CoordinateAxesLinesIndex.html">
+                  <img src="_thumbnails/CoordinateAxesLinesThumbnail.png"
+                        height="48"
+                        alt="CoordinateAxesLines"
+                        title="CoordinateAxesLines"/>
+               </a>
+            </td>
+            <td>
+               <a href="CoordinateAxesLinesIndex.html">Coordinate Axes Lines</a>
+            </td>
+            <td>X Y Z axis lines (red green blue, respectively) in X3D coordinate system, providing a simple reusable widget.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="CoordinateAxesNSEW"/>
+               <a href="CoordinateAxesNSEWIndex.html">
+                  <img src="_thumbnails/CoordinateAxesNSEWThumbnail.png"
+                        height="48"
+                        alt="CoordinateAxesNSEW"
+                        title="CoordinateAxesNSEW"/>
+               </a>
+            </td>
+            <td>
+               <a href="CoordinateAxesNSEWIndex.html">Coordinate Axes NSEW</a>
+            </td>
+            <td>X Y Z axis arrows and labels in X3D coordinate system. See CoordinateAxesExample for use as an Inline coordinate-system reference frame.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="GroupAnimated"/>
+               <a href="GroupAnimatedIndex.html">
+                  <img src="_thumbnails/GroupAnimatedThumbnail.png"
+                        height="48"
+                        alt="GroupAnimated"
+                        title="GroupAnimated"/>
+               </a>
+            </td>
+            <td>
+               <a href="GroupAnimatedIndex.html">Group Animated</a>
+            </td>
+            <td>Example for Group node, with animated color for the Sphere</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="GroupExample"/>
+               <a href="GroupExampleIndex.html">
+                  <img src="_thumbnails/GroupExampleThumbnail.png"
+                        height="48"
+                        alt="GroupExample"
+                        title="GroupExample"/>
+               </a>
+            </td>
+            <td>
+               <a href="GroupExampleIndex.html">Group Example</a>
+            </td>
+            <td>Example for Group node</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="InlineKelpForest"/>
+               <a href="InlineKelpForestIndex.html">
+                  <img src="_thumbnails/InlineKelpForestThumbnail.png"
+                        height="48"
+                        alt="InlineKelpForest"
+                        title="InlineKelpForest"/>
+               </a>
+            </td>
+            <td>
+               <a href="InlineKelpForestIndex.html">Inline Kelp Forest</a>
+            </td>
+            <td>Inline example that loads the Kelp Forest world.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="LODExample"/>
+               <a href="LODExampleIndex.html">
+                  <img src="_thumbnails/LODExampleThumbnail.png"
+                        height="48"
+                        alt="LODExample"
+                        title="LODExample"/>
+               </a>
+            </td>
+            <td>
+               <a href="LODExampleIndex.html">LODExample</a>
+            </td>
+            <td>Example for LOD node</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="LodWithDifferentShapes"/>
+               <a href="LodWithDifferentShapesIndex.html">
+                  <img src="_thumbnails/LodWithDifferentShapesThumbnail.png"
+                        height="48"
+                        alt="LodWithDifferentShapes"
+                        title="LodWithDifferentShapes"/>
+               </a>
+            </td>
+            <td>
+               <a href="LodWithDifferentShapesIndex.html">Lod With Different Shapes</a>
+            </td>
+            <td>Example to demonstrate LOD forceTransitions field for animating different shapes, navigate in/out or else check Viewpoints to see each separate Shape</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="OrderOfOperations1"/>
+               <a href="OrderOfOperations1Index.html">
+                  <img src="_thumbnails/OrderOfOperations1Thumbnail.png"
+                        height="48"
+                        alt="OrderOfOperations1"
+                        title="OrderOfOperations1"/>
+               </a>
+            </td>
+            <td>
+               <a href="OrderOfOperations1Index.html">Order Of Operations 1</a>
+            </td>
+            <td>Illustration of Order of Operations: initial and final results from translation, rotation, and scale operations.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="OrderOfOperations2"/>
+               <a href="OrderOfOperations2Index.html">
+                  <img src="_thumbnails/OrderOfOperations2Thumbnail.png"
+                        height="48"
+                        alt="OrderOfOperations2"
+                        title="OrderOfOperations2"/>
+               </a>
+            </td>
+            <td>
+               <a href="OrderOfOperations2Index.html">Order Of Operations 2</a>
+            </td>
+            <td>Illustration of Order of Operations: initial, intermediate and final results for scale, rotation, and translation operations.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="StaticGroupExample"/>
+               <a href="StaticGroupExampleIndex.html">
+                  <img src="_thumbnails/StaticGroupExampleThumbnail.png"
+                        height="48"
+                        alt="StaticGroupExample"
+                        title="StaticGroupExample"/>
+               </a>
+            </td>
+            <td>
+               <a href="StaticGroupExampleIndex.html">Static Group Example</a>
+            </td>
+            <td>Example for StaticGroup node</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="SwitchExample"/>
+               <a href="SwitchExampleIndex.html">
+                  <img src="_thumbnails/SwitchExampleThumbnail.png"
+                        height="48"
+                        alt="SwitchExample"
+                        title="SwitchExample"/>
+               </a>
+            </td>
+            <td>
+               <a href="SwitchExampleIndex.html">Switch Example</a>
+            </td>
+            <td>Example for Switch node</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="TransformCenterOffsetForRotation"/>
+               <a href="TransformCenterOffsetForRotationIndex.html">
+                  <img src="_thumbnails/TransformCenterOffsetForRotationThumbnail.png"
+                        height="48"
+                        alt="TransformCenterOffsetForRotation"
+                        title="TransformCenterOffsetForRotation"/>
+               </a>
+            </td>
+            <td>
+               <a href="TransformCenterOffsetForRotationIndex.html">Transform Center Offset For Rotation</a>
+            </td>
+            <td>Use Transform center field to compare original Cylinder (left) to rotation about middle of object (middle Cylinder) to rotation about bottom of object (right Cylinder).</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="TransformExample"/>
+               <a href="TransformExampleIndex.html">
+                  <img src="_thumbnails/TransformExampleThumbnail.png"
+                        height="48"
+                        alt="TransformExample"
+                        title="TransformExample"/>
+               </a>
+            </td>
+            <td>
+               <a href="TransformExampleIndex.html">Transform Example</a>
+            </td>
+            <td>Example for Transform node</td>
+         </tr>
+      </table>
+      <table width="80%" border="0" align="center">
+         <tr>
+            <td>
+               <p style="text-align:center">Online at <a href="https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter03Grouping/index.html">https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter03Grouping</a>
+               </p>
+               <p align="center" width="80%">
+                  <a href="https://validator.w3.org/check?uri=https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter03Grouping/index.html"
+                      target="_blank">
+                     <img src="https://www.w3.org/Icons/valid-xhtml10"
+                           title="Validate XHTML 1.1"
+                           alt="Validate XHTML 1.1"
+                           height="31"
+                           width="88"
+                           border="0"
+                           align="right"/>
+                  </a>
+               </p>
+               <p style="text-align:center">Master source-code model archive is under subversion control at <br/>
+                  <a href="https://sourceforge.net/p/x3d/code/HEAD/tree/www.web3d.org/x3d/content/examples/X3dForWebAuthors/Chapter03Grouping/"
+                      target="_blank">https://sourceforge.net/p/x3d/code/HEAD/tree/www.web3d.org/x3d/content/examples/X3dForWebAuthors/Chapter03Grouping</a>
+               </p>
+            </td>
+         </tr>
+      </table>
+      <p align="center">
+The 
+<a href="../../X3dResources.html#X3dForWebAuthors">X3D Resources: Examples</a> page
+and
+<a href="https://savage.nps.edu/Savage/developers.html">Savage Developers Guide</a>
+provide more information about the production of this archive.</p>
+      <table
+              align="center"
+              summary="navigation"
+              border="1"
+              cellpadding="2"
+              width="95%">
+         <tr>
+            <td align="center" width="17%">
+               <a href="../index.html" target="_top">
+                  <img src="../images/ToC.png"
+                        title="Table of Contents"
+                        alt="Table of Contents"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter02GeometryPrimitives/index.html" target="_top">
+                  <img src="../images/PreviousChapter.png"
+                        title="Previous Directory Summary"
+                        alt="Previous Directory Summary"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="viewpointSlideshow.html" target="_top">
+                  <img src="../images/MootoolsSlideshowLogo.jpg"
+                        title="Directory Viewpoint Slideshow"
+                        alt="Directory Viewpoint Slideshow"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="15%">
+               <a href="../javadoc/index.html?X3dForWebAuthors/Chapter03Grouping/package-summary.html"
+                   title="Javadoc for translated java source"
+                   alt="Javadoc for translated java source"
+                   target="_blank">
+                  <img src="../images/Java-32.png"
+                        title="Javadoc for translated java source"
+                        alt="Javadoc for translated java source"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter04ViewingNavigation/index.html" target="_top">
+                  <img src="../images/NextChapter.png"
+                        title="Next Directory Summary"
+                        alt="Next Directory Summary"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="15%">
+               <a href="../../X3dResources.html" target="helpPage">
+                  <img src="../images/Help.png"
+                        title="X3D Resources"
+                        alt="X3D Resources"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+         </tr>
+      </table>
+   </body>
+</html>

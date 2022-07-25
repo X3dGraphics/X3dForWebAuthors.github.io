@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<!--Generated using XSLT processor: SAXON 8.7 from Saxonica--><html xmlns="http://www.w3.org/TR/xhtml1/strict">
+   <head>
+      <title>BooleanTrigger-PumpHouse.x3d (X3dToXhtml)</title>
+      <style type="text/css">
+
+
+span.element {color: navy}
+span.attribute {color: green}
+span.value {color: teal}
+span.plain {color: black}
+span.gray  {color: gray}
+span.idName {color: maroon}
+a.idName {color: maroon}
+div.center {text-align: center}
+div.indent {margin-left: 25px}
+
+span.prototype {color: purple}
+a.prototype {color: purple, visited: black}
+span.route {color: red}
+b.warning {color: #CC5500}
+b.error {color: #CC0000}
+
+	</style>
+      <meta name="generator" content="http://www.web3d.org/x3d/content/X3dToXhtml.xslt"/>
+      <link rel="shortcut icon"
+            href="http://www.web3d.org/x3d/content/icons/X3DtextIcon16.png"
+            title="X3D"/>
+   </head>
+   <body>
+      <pre>
+&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;!DOCTYPE X3D PUBLIC "ISO//Web3D//DTD X3D 3.1//EN"   "http://www.web3d.org/specifications/x3d-3.1.dtd"&gt;</pre>
+
+&lt;<span class="element">X3D</span>&#160;<span class="attribute">profile</span>='<span class="value">Immersive</span>'&#160;<span class="attribute">version</span>='<span class="value">3.1</span>'&#160;<span class="attribute">xmlns:xsd</span>='<a href="http://www.w3.org/2001/XMLSchema-instance" target="_blank">http://www.w3.org/2001/XMLSchema-instance</a>' <span class="attribute">xsd:noNamespaceSchemaLocation</span>='
+<a href="http://www.web3d.org/specifications/x3d-3.0.xsd">http://www.web3d.org/specifications/x3d-3.0.xsd</a> '&gt;
+<div class="indent">
+&lt;<span class="element">head</span>&gt;
+<div class="indent">
+&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">title</span>'&#160;<span class="attribute">content</span>='<a href="BooleanTrigger-PumpHouse.x3d" target="_blank">BooleanTrigger-PumpHouse.x3d</a>'/&gt;
+<br />
+&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">description</span>'&#160;<span class="attribute">content</span>='<span class="plain">A BooleanTrigger node controls the pump house animation.</span>'/&gt;
+<br />
+&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">description</span>'&#160;<span class="attribute">content</span>='<span class="plain">Positive-displacement cylinder pump to emulate breakers surge, designed and built by David Packard.</span>'/&gt;
+<br />
+&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">authors</span>'&#160;<span class="attribute">content</span>='<span class="value">Todd Gagnon and Mark A. Boyd</span>'/&gt;
+<br />
+&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">translator</span>'&#160;<span class="attribute">content</span>='<span class="value">Xeena VRML importer</span>'/&gt;
+<br />
+&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">created</span>'&#160;<span class="attribute">content</span>='<span class="value">8 June 1998</span>'/&gt;
+<br />
+&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">imported</span>'&#160;<span class="attribute">content</span>='<span class="value">20 December 2002</span>'/&gt;
+<br />
+&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">modified</span>'&#160;<span class="attribute">content</span>='<span class="value">21 December 2002, 11 March 2006</span>'/&gt;
+<br />
+&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">modified</span>'&#160;<span class="attribute">content</span>='<span class="value">2006-06-10 (10 June 2006)</span>'/&gt;
+<br />
+&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">reference</span>'&#160;<span class="attribute">content</span>='<a href="KelpTank.x3d" target="_blank">KelpTank.x3d</a>'/&gt;
+<br />
+&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">identifier</span>'&#160;<span class="attribute">content</span>='
+<a href="http://www.web3d.org/x3d/content/examples/KelpForestExhibit/PumpHouse.x3d">http://www.web3d.org/x3d/content/examples/KelpForestExhibit/PumpHouse.x3d</a> '/&gt;
+<br />
+&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">generator</span>'&#160;<span class="attribute">content</span>='<span class="value">X3D-Edit, </span>
+            <a href="http://www.web3d.org/x3d/content/README.X3D-Edit.html" target="_blank">http://www.web3d.org/x3d/content/README.X3D-Edit.html</a>'/&gt;
+<br />
+&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">generator</span>'&#160;<span class="attribute">content</span>='<span class="value">Vrml97ToX3dNist, </span>
+            <a href="http://ovrt.nist.gov/v2_x3d.html" target="_blank">http://ovrt.nist.gov/v2_x3d.html</a>'/&gt;
+<br />
+&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">license</span>'&#160;<span class="attribute">content</span>='<a href="../license.html" target="_blank">../license.html</a>'/&gt;
+</div>&lt;/<span class="element">head</span>&gt;
+<br />
+&lt;!--
+<div class="center">
+            <hr width="100%"/>
+            <i>Index for ExternProtoDeclare definition</i>: 
+<a href="#ExternProtoDeclare_WhereAmI" class="prototype">WhereAmI</a>
+<br />
+<i>Index for DEF nodes</i>: 
+<a href="#CylinderRod" class="idName">CylinderRod</a>,
+<a href="#Filter" class="idName">Filter</a>,
+<a href="#PISTON" class="idName">PISTON</a>,
+<a href="#PISTONClock" class="idName">PISTONClock</a>,
+<a href="#PISTONPath" class="idName">PISTONPath</a>,
+<a href="#pumpHouse" class="idName">pumpHouse</a>,
+<a href="#ROCKER1Path" class="idName">ROCKER1Path</a>,
+<a href="#ROCKER1Rotation" class="idName">ROCKER1Rotation</a>,
+<a href="#ROCKER2Path" class="idName">ROCKER2Path</a>,
+<a href="#ROCKER2Rotation" class="idName">ROCKER2Rotation</a>,
+<a href="#ROCKERARM1" class="idName">ROCKERARM1</a>,
+<a href="#ROCKERARM2" class="idName">ROCKERARM2</a>,
+<a href="#RunPump" class="idName">RunPump</a>
+            <hr width="100%"/>
+         </div>
+--&gt;
+<br />
+&lt;<span class="element">Scene</span>&gt;
+<div class="indent">
+&lt;<span class="element">WorldInfo</span>&#160;<span class="attribute">info</span>='<span class="value">DTG of last update: 081200Jun98 Added: Updated: cycleInterval to 5.5 Modeled by: Todd Gagnon and Mark A. Boyd</span>'&#160;<span class="attribute">title</span>='<span class="value">pumpHouse1.4.wrl</span>'/&gt;
+<br /><a name="ExternProtoDeclare_WhereAmI"> </a> 
+&lt;<span class="prototype">ExternProtoDeclare</span>&#160;<span class="attribute">name</span>='<span class="prototype">WhereAmI</span>'
+<br />
+&#160;&#160;<span class="attribute">url</span>='
+"<a href="../Chapter14-Prototypes/WhereAmI.x3d#WhereAmI">../Chapter14-Prototypes/WhereAmI.x3d#WhereAmI</a>"
+"<a href="http://www.X3dGraphics.com/examples/X3dForWebAuthors/Chapter14-Prototypes/WhereAmI.x3d#WhereAmI">http://www.X3dGraphics.com/examples/X3dForWebAuthors/Chapter14-Prototypes/WhereAmI.x3d#WhereAmI</a>"
+"<a href="../Chapter14-Prototypes/WhereAmI.wrl#WhereAmI">../Chapter14-Prototypes/WhereAmI.wrl#WhereAmI</a>"
+"<a href="http://www.X3dGraphics.com/examples/X3dForWebAuthors/Chapter14-Prototypes/WhereAmI.wrl#WhereAmI">http://www.X3dGraphics.com/examples/X3dForWebAuthors/Chapter14-Prototypes/WhereAmI.wrl#WhereAmI</a>"
+'/&gt;
+<br />
+&lt;<span class="prototype">ProtoInstance</span>&#160;<span class="attribute">name</span>='<a href="#ExternProtoDeclare_WhereAmI" class="prototype">WhereAmI</a>'&#160;<span class="attribute">containerField</span>='<span class="value">children</span>'/&gt;
+<br />
+&lt;<span class="element">Background</span>&#160;<span class="attribute">skyColor</span>='<span class="value">1 1 1</span>'/&gt;
+<br />
+&lt;<span class="element">NavigationInfo</span>&#160;<span class="attribute">type</span>='<span class="value">"ANY"</span>'&#160;<span class="attribute">transitionType</span>='<span class="value">"ANIMATE"</span>'&#160;<span class="attribute">transitionTime</span>='<span class="value">1.0</span>'&#160;<span class="attribute">transitionComplete</span>='<!--no value, no action-->'/&gt;
+<br />
+&lt;<span class="element">Viewpoint</span>&#160;<span class="attribute">description</span>='<span class="value">Book View</span>'&#160;<span class="attribute">orientation</span>='<span class="value">-0.969 0.239 0.056 0.13</span>'&#160;<span class="attribute">position</span>='<span class="value">1.66 1.34 5.95</span>'/&gt;
+<br />
+&lt;<span class="element">Group</span>&gt;
+<div class="indent">
+&lt;<span class="element">Transform</span>&#160;<span class="attribute">scale</span>='<span class="value">0.91 0.6 0.3</span>'&#160;<span class="attribute">translation</span>='<span class="value">0.8 -0.65 0.5</span>'&gt;
+<div class="indent">
+&lt;<span class="element">Shape</span>&gt;
+<div class="indent">
+&lt;<span class="element">Appearance</span>&gt;
+<div class="indent">
+&lt;<span class="element">Material</span>&#160;<span class="attribute">diffuseColor</span>='<span class="value">0.749 0.694 0.651</span>'/&gt;
+</div>&lt;/<span class="element">Appearance</span>&gt;
+<br />
+&lt;<span class="element">Cylinder</span>&#160;<span class="attribute">bottom</span>='<span class="value">false</span>'&#160;<span class="attribute">top</span>='<span class="value">false</span>'/&gt;
+</div>&lt;/<span class="element">Shape</span>&gt;
+</div>&lt;/<span class="element">Transform</span>&gt;
+<br />
+&lt;<span class="element">Group</span>&gt;
+<div class="indent">
+&lt;<span class="element">Shape</span>&gt;
+<div class="indent">
+                     <a name="pumpHouse"> </a> 
+&lt;<span class="element">Appearance</span>&#160;<span class="attribute">DEF</span>='<span class="idName">pumpHouse</span>'&gt;
+<div class="indent">
+&lt;<span class="element">Material</span>&#160;<span class="attribute">diffuseColor</span>='<span class="value">0.82 0.78 0.74</span>'/&gt;
+</div>&lt;/<span class="element">Appearance</span>&gt;
+<br />
+&lt;<span class="element">IndexedFaceSet</span>&#160;<span class="attribute">coordIndex</span>='<span class="value">0 1 5 4 -1 5 1 2 6 -1 6 2 3 7 -1 3 0 4 7 -1 1 12 13 2 -1 2 13 14 -1 12 15 16 13 -1 15 0 3 16 -1 16 3 17 -1 9 5 6 10 -1 8 9 10 11 -1 4 8 11 7 -1 4 5 9 8 -1 11 10 6 7 -1 3 2 14 17 -1 13 16 17 14 -1</span>'&gt;
+<div class="indent">
+&lt;<span class="element">Coordinate</span>&#160;<span class="attribute">point</span>='<span class="value">0.0 0.0 0.0 2.0 0.0 0.0 2.0 1.75 0.0 0.0 1.75 0.0 0.625 0.75 0.0 1.0 0.75 0.0 1.0 1.6 0.0 0.625 1.6 0.0 0.625 0.75 -0.65 1.0 0.75 -0.65 1.0 1.6 -0.65 0.625 1.6 -0.65 2.0 0.0 -2.7 2.0 1.75 -2.7 2.0 2.5 -1.0 0.0 0.0 -2.7 0.0 1.75 -2.7 0.0 2.5 -1.0</span>'/&gt;
+</div>&lt;/<span class="element">IndexedFaceSet</span>&gt;
+</div>&lt;/<span class="element">Shape</span>&gt;
+<br /><a name="RunPump"> </a> 
+&lt;!-- <span class="idName">RunPump</span> <i>ROUTE</i>:&#160;
+[<a href="#ROUTE_0"><i>from</i>&#160;<span class="attribute">touchTime</span>&#160;<i>to</i>&#160;<span class="idName">Filter</span>.<span class="attribute">set_triggerTime</span>
+                  </a>]
+ --&gt;<br />
+&lt;<span class="element">TouchSensor</span>&#160;<span class="attribute">DEF</span>='<span class="idName">RunPump</span>'/&gt;
+</div>&lt;/<span class="element">Group</span>&gt;
+</div>&lt;/<span class="element">Group</span>&gt;
+<br />
+&lt;<span class="element">Group</span>&gt;
+<div class="indent">
+&lt;<span class="element">Transform</span>&#160;<span class="attribute">scale</span>='<span class="value">0.5 0.5 0.5</span>'&#160;<span class="attribute">translation</span>='<span class="value">1.0 1.1 -1.5</span>'&gt;
+<div class="indent">
+                  <a name="PISTON"> </a> 
+&lt;!-- <span class="idName">PISTON</span> <i>ROUTE</i>:&#160;
+[<a href="#ROUTE_3"><i>from</i>&#160;<span class="idName">PISTONPath</span>.<span class="attribute">value_changed</span>&#160;<i>to</i>&#160;<span class="attribute">set_translation</span>
+                  </a>]
+ --&gt;<br />
+&lt;<span class="element">Transform</span>&#160;<span class="attribute">DEF</span>='<span class="idName">PISTON</span>'&gt;
+<div class="indent">
+&lt;<span class="element">Transform</span>&#160;<span class="attribute">scale</span>='<span class="value">1.8 1.2 0.6</span>'&#160;<span class="attribute">translation</span>='<span class="value">0.0 -0.2 0.0</span>'&gt;
+<div class="indent">
+&lt;<span class="element">Shape</span>&gt;
+<div class="indent">
+&lt;<span class="element">Appearance</span>&gt;
+<div class="indent">
+&lt;<span class="element">Material</span>&#160;<span class="attribute">diffuseColor</span>='<span class="value">0.427 0.427 0.42</span>'/&gt;
+</div>&lt;/<span class="element">Appearance</span>&gt;
+<br />
+&lt;<span class="element">Cylinder</span>&#160;<span class="attribute">height</span>='<span class="value">1.0</span>'&#160;<span class="attribute">radius</span>='<span class="value">0.98</span>'/&gt;
+</div>&lt;/<span class="element">Shape</span>&gt;
+</div>&lt;/<span class="element">Transform</span>&gt;
+<br /><a name="CylinderRod"> </a> 
+&lt;<span class="element">Transform</span>&#160;<span class="attribute">DEF</span>='<span class="idName">CylinderRod</span>'&#160;<span class="attribute">rotation</span>='<span class="value">0.0 0.0 -1.0 0.523599</span>'&#160;<span class="attribute">translation</span>='<span class="value">-0.25 0.75 0.0</span>'&gt;
+<div class="indent">
+&lt;<span class="element">Shape</span>&gt;
+<div class="indent">
+&lt;<span class="element">Appearance</span>&#160;<span class="attribute">USE</span>='<a href="#pumpHouse" class="idName">pumpHouse</a>'/&gt;
+<br />
+&lt;<span class="element">Cylinder</span>&#160;<span class="attribute">height</span>='<span class="value">1.0</span>'&#160;<span class="attribute">radius</span>='<span class="value">0.1</span>'/&gt;
+</div>&lt;/<span class="element">Shape</span>&gt;
+</div>&lt;/<span class="element">Transform</span>&gt;
+<br />
+&lt;<span class="element">Transform</span>&#160;<span class="attribute">rotation</span>='<span class="value">0.0 0.0 1.0 1.047198</span>'&#160;<span class="attribute">translation</span>='<span class="value">1.0 0.6 0.0</span>'&gt;
+<div class="indent">
+&lt;<span class="element">Transform</span>&#160;<span class="attribute">USE</span>='<a href="#CylinderRod" class="idName">CylinderRod</a>'/&gt;
+</div>&lt;/<span class="element">Transform</span>&gt;
+<br />
+&lt;<span class="element">Transform</span>&#160;<span class="attribute">translation</span>='<span class="value">0.0 1.2 0.0</span>'&gt;
+<div class="indent">
+&lt;<span class="element">Shape</span>&gt;
+<div class="indent">
+&lt;<span class="element">Appearance</span>&#160;<span class="attribute">USE</span>='<a href="#pumpHouse" class="idName">pumpHouse</a>'/&gt;
+<br />
+&lt;<span class="element">Sphere</span>&#160;<span class="attribute">radius</span>='<span class="value">0.15</span>'/&gt;
+</div>&lt;/<span class="element">Shape</span>&gt;
+</div>&lt;/<span class="element">Transform</span>&gt;
+<br /><a name="ROCKERARM1"> </a> 
+&lt;!-- <span class="idName">ROCKERARM1</span> <i>ROUTEs</i>:&#160;
+[<a href="#ROUTE_5"><i>from</i>&#160;<span class="idName">ROCKER1Path</span>.<span class="attribute">value_changed</span>&#160;<i>to</i>&#160;<span class="attribute">set_translation</span>
+                     </a>]
+[<a href="#ROUTE_7"><i>from</i>&#160;<span class="idName">ROCKER1Rotation</span>.<span class="attribute">value_changed</span>&#160;<i>to</i>&#160;<span class="attribute">set_rotation</span>
+                     </a>]
+ --&gt;<br />
+&lt;<span class="element">Transform</span>&#160;<span class="attribute">DEF</span>='<span class="idName">ROCKERARM1</span>'&#160;<span class="attribute">center</span>='<span class="value">0.0 -0.4 0.0</span>'&gt;
+<div class="indent">
+&lt;<span class="element">Shape</span>&gt;
+<div class="indent">
+&lt;<span class="element">Appearance</span>&#160;<span class="attribute">USE</span>='<a href="#pumpHouse" class="idName">pumpHouse</a>'/&gt;
+<br />
+&lt;<span class="element">Cylinder</span>&#160;<span class="attribute">height</span>='<span class="value">1.8</span>'&#160;<span class="attribute">radius</span>='<span class="value">0.1</span>'/&gt;
+</div>&lt;/<span class="element">Shape</span>&gt;
+<br />
+&lt;<span class="element">Transform</span>&#160;<span class="attribute">translation</span>='<span class="value">0.0 0.95 0.0</span>'&gt;
+<div class="indent">
+&lt;<span class="element">Shape</span>&gt;
+<div class="indent">
+&lt;<span class="element">Appearance</span>&#160;<span class="attribute">USE</span>='<a href="#pumpHouse" class="idName">pumpHouse</a>'/&gt;
+<br />
+&lt;<span class="element">Sphere</span>&#160;<span class="attribute">radius</span>='<span class="value">0.15</span>'/&gt;
+</div>&lt;/<span class="element">Shape</span>&gt;
+</div>&lt;/<span class="element">Transform</span>&gt;
+<br /><a name="ROCKER1Path"> </a> 
+&lt;!-- <span class="idName">ROCKER1Path</span> <i>ROUTEs</i>:&#160;
+[<a href="#ROUTE_4"><i>from</i>&#160;<span class="idName">PISTONClock</span>.<span class="attribute">fraction_changed</span>&#160;<i>to</i>&#160;<span class="attribute">set_fraction</span>
+                        </a>]
+[<a href="#ROUTE_5"><i>from</i>&#160;<span class="attribute">value_changed</span>&#160;<i>to</i>&#160;<span class="idName">ROCKERARM1</span>.<span class="attribute">set_translation</span>
+                        </a>]
+ --&gt;<br />
+&lt;<span class="element">PositionInterpolator</span>&#160;<span class="attribute">DEF</span>='<span class="idName">ROCKER1Path</span>'&#160;<span class="attribute">key</span>='<span class="value">0.0 0.3 0.32 0.5 0.75 1.0</span>'&#160;<span class="attribute">keyValue</span>='<span class="value">0.0 2.0 -0.25 0.0 1.8 -0.35 0.0 1.8 -0.35 0.0 2.0 -0.25 0.0 2.0 -0.12 0.0 2.0 -0.25</span>'/&gt;
+<br /><a name="ROCKER1Rotation"> </a> 
+&lt;!-- <span class="idName">ROCKER1Rotation</span> <i>ROUTEs</i>:&#160;
+[<a href="#ROUTE_6"><i>from</i>&#160;<span class="idName">PISTONClock</span>.<span class="attribute">fraction_changed</span>&#160;<i>to</i>&#160;<span class="attribute">set_fraction</span>
+                        </a>]
+[<a href="#ROUTE_7"><i>from</i>&#160;<span class="attribute">value_changed</span>&#160;<i>to</i>&#160;<span class="idName">ROCKERARM1</span>.<span class="attribute">set_rotation</span>
+                        </a>]
+ --&gt;<br />
+&lt;<span class="element">OrientationInterpolator</span>&#160;<span class="attribute">DEF</span>='<span class="idName">ROCKER1Rotation</span>'&#160;<span class="attribute">key</span>='<span class="value">0.0 0.3 0.32 0.5 0.75 1.0</span>'&#160;<span class="attribute">keyValue</span>='<span class="value">-1.0 0.0 0.0 0.523599 -1.0 0.0 0.0 1.0471976 -1.0 0.0 0.0 1.0471976 -1.0 0.0 0.0 0.523599 -1.0 0.0 0.0 0.2617994 -1.0 0.0 0.0 0.523599</span>'/&gt;
+</div>&lt;/<span class="element">Transform</span>&gt;
+<br /><a name="ROCKERARM2"> </a> 
+&lt;!-- <span class="idName">ROCKERARM2</span> <i>ROUTEs</i>:&#160;
+[<a href="#ROUTE_9"><i>from</i>&#160;<span class="idName">ROCKER2Path</span>.<span class="attribute">value_changed</span>&#160;<i>to</i>&#160;<span class="attribute">set_translation</span>
+                     </a>]
+[<a href="#ROUTE_11"><i>from</i>&#160;<span class="idName">ROCKER2Rotation</span>.<span class="attribute">value_changed</span>&#160;<i>to</i>&#160;<span class="attribute">set_rotation</span>
+                     </a>]
+ --&gt;<br />
+&lt;<span class="element">Transform</span>&#160;<span class="attribute">DEF</span>='<span class="idName">ROCKERARM2</span>'&#160;<span class="attribute">center</span>='<span class="value">0.0 0.7 0.0</span>'&gt;
+<div class="indent">
+&lt;<span class="element">Shape</span>&gt;
+<div class="indent">
+&lt;<span class="element">Appearance</span>&#160;<span class="attribute">USE</span>='<a href="#pumpHouse" class="idName">pumpHouse</a>'/&gt;
+<br />
+&lt;<span class="element">Cylinder</span>&#160;<span class="attribute">height</span>='<span class="value">1.8</span>'&#160;<span class="attribute">radius</span>='<span class="value">0.1</span>'/&gt;
+</div>&lt;/<span class="element">Shape</span>&gt;
+<br />
+&lt;<span class="element">Transform</span>&#160;<span class="attribute">translation</span>='<span class="value">0.0 -0.95 0.0</span>'&gt;
+<div class="indent">
+&lt;<span class="element">Shape</span>&gt;
+<div class="indent">
+&lt;<span class="element">Appearance</span>&#160;<span class="attribute">USE</span>='<a href="#pumpHouse" class="idName">pumpHouse</a>'/&gt;
+<br />
+&lt;<span class="element">Sphere</span>&#160;<span class="attribute">radius</span>='<span class="value">0.15</span>'/&gt;
+</div>&lt;/<span class="element">Shape</span>&gt;
+</div>&lt;/<span class="element">Transform</span>&gt;
+<br /><a name="ROCKER2Path"> </a> 
+&lt;!-- <span class="idName">ROCKER2Path</span> <i>ROUTEs</i>:&#160;
+[<a href="#ROUTE_8"><i>from</i>&#160;<span class="idName">PISTONClock</span>.<span class="attribute">fraction_changed</span>&#160;<i>to</i>&#160;<span class="attribute">set_fraction</span>
+                        </a>]
+[<a href="#ROUTE_9"><i>from</i>&#160;<span class="attribute">value_changed</span>&#160;<i>to</i>&#160;<span class="idName">ROCKERARM2</span>.<span class="attribute">set_translation</span>
+                        </a>]
+ --&gt;<br />
+&lt;<span class="element">PositionInterpolator</span>&#160;<span class="attribute">DEF</span>='<span class="idName">ROCKER2Path</span>'&#160;<span class="attribute">key</span>='<span class="value">0.0 0.3 0.32 0.5 0.75 1.0</span>'&#160;<span class="attribute">keyValue</span>='<span class="value">0.0 1.95 -1.0 0.0 1.2 -1.6 0.0 1.2 -1.6 0.0 1.95 -1.0 0.0 2.2 -0.65 0.0 1.95 -1.0</span>'/&gt;
+<br /><a name="ROCKER2Rotation"> </a> 
+&lt;!-- <span class="idName">ROCKER2Rotation</span> <i>ROUTEs</i>:&#160;
+[<a href="#ROUTE_10"><i>from</i>&#160;<span class="idName">PISTONClock</span>.<span class="attribute">fraction_changed</span>&#160;<i>to</i>&#160;<span class="attribute">set_fraction</span>
+                        </a>]
+[<a href="#ROUTE_11"><i>from</i>&#160;<span class="attribute">value_changed</span>&#160;<i>to</i>&#160;<span class="idName">ROCKERARM2</span>.<span class="attribute">set_rotation</span>
+                        </a>]
+ --&gt;<br />
+&lt;<span class="element">OrientationInterpolator</span>&#160;<span class="attribute">DEF</span>='<span class="idName">ROCKER2Rotation</span>'&#160;<span class="attribute">key</span>='<span class="value">0.0 0.3 0.32 0.5 0.75 1.0</span>'&#160;<span class="attribute">keyValue</span>='<span class="value">1.0 0.0 0.0 0.523599 1.0 0.0 0.0 0.4 1.0 0.0 0.0 0.4 1.0 0.0 0.0 0.523599 1.0 0.0 0.0 1.570796 1.0 0.0 0.0 0.523599</span>'/&gt;
+</div>&lt;/<span class="element">Transform</span>&gt;
+</div>&lt;/<span class="element">Transform</span>&gt;
+<br /><a name="PISTONClock"> </a> 
+&lt;!-- <span class="idName">PISTONClock</span> <i>ROUTEs</i>:&#160;
+[<a href="#ROUTE_1"><i>from</i>&#160;<span class="idName">Filter</span>.<span class="attribute">triggerTrue</span>&#160;<i>to</i>&#160;<span class="attribute">enabled</span>
+                  </a>]
+[<a href="#ROUTE_2"><i>from</i>&#160;<span class="attribute">fraction_changed</span>&#160;<i>to</i>&#160;<span class="idName">PISTONPath</span>.<span class="attribute">set_fraction</span>
+                  </a>]
+[<a href="#ROUTE_4"><i>from</i>&#160;<span class="attribute">fraction_changed</span>&#160;<i>to</i>&#160;<span class="idName">ROCKER1Path</span>.<span class="attribute">set_fraction</span>
+                  </a>]
+[<a href="#ROUTE_6"><i>from</i>&#160;<span class="attribute">fraction_changed</span>&#160;<i>to</i>&#160;<span class="idName">ROCKER1Rotation</span>.<span class="attribute">set_fraction</span>
+                  </a>]
+[<a href="#ROUTE_8"><i>from</i>&#160;<span class="attribute">fraction_changed</span>&#160;<i>to</i>&#160;<span class="idName">ROCKER2Path</span>.<span class="attribute">set_fraction</span>
+                  </a>]
+[<a href="#ROUTE_10"><i>from</i>&#160;<span class="attribute">fraction_changed</span>&#160;<i>to</i>&#160;<span class="idName">ROCKER2Rotation</span>.<span class="attribute">set_fraction</span>
+                  </a>]
+ --&gt;<br />
+&lt;<span class="element">TimeSensor</span>&#160;<span class="attribute">DEF</span>='<span class="idName">PISTONClock</span>'&#160;<span class="attribute">cycleInterval</span>='<span class="value">5.5</span>'&#160;<span class="attribute">enabled</span>='<span class="value">false</span>'&#160;<span class="attribute">loop</span>='<span class="value">true</span>'/&gt;
+<br /><a name="PISTONPath"> </a> 
+&lt;!-- <span class="idName">PISTONPath</span> <i>ROUTEs</i>:&#160;
+[<a href="#ROUTE_2"><i>from</i>&#160;<span class="idName">PISTONClock</span>.<span class="attribute">fraction_changed</span>&#160;<i>to</i>&#160;<span class="attribute">set_fraction</span>
+                  </a>]
+[<a href="#ROUTE_3"><i>from</i>&#160;<span class="attribute">value_changed</span>&#160;<i>to</i>&#160;<span class="idName">PISTON</span>.<span class="attribute">set_translation</span>
+                  </a>]
+ --&gt;<br />
+&lt;<span class="element">PositionInterpolator</span>&#160;<span class="attribute">DEF</span>='<span class="idName">PISTONPath</span>'&#160;<span class="attribute">key</span>='<span class="value">0.0 0.3 0.32 0.5 0.75 1.0</span>'&#160;<span class="attribute">keyValue</span>='<span class="value">-0.4 -2.3 4.0 -0.4 -1.5 4.0 -0.4 -1.5 4.0 -0.4 -2.3 4.0 -0.4 -3.3 4.0 -0.4 -2.3 4.0</span>'/&gt;
+<br /><a name="Filter"> </a> 
+&lt;!-- <span class="idName">Filter</span> <i>ROUTEs</i>:&#160;
+[<a href="#ROUTE_0"><i>from</i>&#160;<span class="idName">RunPump</span>.<span class="attribute">touchTime</span>&#160;<i>to</i>&#160;<span class="attribute">set_triggerTime</span>
+                  </a>]
+[<a href="#ROUTE_1"><i>from</i>&#160;<span class="attribute">triggerTrue</span>&#160;<i>to</i>&#160;<span class="idName">PISTONClock</span>.<span class="attribute">enabled</span>
+                  </a>]
+ --&gt;<br />
+&lt;<span class="element">BooleanTrigger</span>&#160;<span class="attribute">DEF</span>='<span class="idName">Filter</span>'&#160;<span class="attribute">containerField</span>='<span class="value">children</span>'/&gt;
+</div>&lt;/<span class="element">Transform</span>&gt;
+</div>&lt;/<span class="element">Group</span>&gt;
+<br /><a name="ROUTE_0"> </a> 
+&lt;<span class="route">ROUTE</span>&#160;<span class="attribute">fromNode</span>='<a href="#RunPump" class="idName">RunPump</a>'&#160;<span class="attribute">fromField</span>='<span class="value">touchTime</span>'&#160;<span class="attribute">toNode</span>='<a href="#Filter" class="idName">Filter</a>'&#160;<span class="attribute">toField</span>='<span class="value">set_triggerTime</span>'/&gt;
+<br /><a name="ROUTE_1"> </a> 
+&lt;<span class="route">ROUTE</span>&#160;<span class="attribute">fromNode</span>='<a href="#Filter" class="idName">Filter</a>'&#160;<span class="attribute">fromField</span>='<span class="value">triggerTrue</span>'&#160;<span class="attribute">toNode</span>='<a href="#PISTONClock" class="idName">PISTONClock</a>'&#160;<span class="attribute">toField</span>='<span class="value">enabled</span>'/&gt;
+<br /><a name="ROUTE_2"> </a> 
+&lt;<span class="route">ROUTE</span>&#160;<span class="attribute">fromNode</span>='<a href="#PISTONClock" class="idName">PISTONClock</a>'&#160;<span class="attribute">fromField</span>='<span class="value">fraction_changed</span>'&#160;<span class="attribute">toNode</span>='<a href="#PISTONPath" class="idName">PISTONPath</a>'&#160;<span class="attribute">toField</span>='<span class="value">set_fraction</span>'/&gt;
+<br /><a name="ROUTE_3"> </a> 
+&lt;<span class="route">ROUTE</span>&#160;<span class="attribute">fromNode</span>='<a href="#PISTONPath" class="idName">PISTONPath</a>'&#160;<span class="attribute">fromField</span>='<span class="value">value_changed</span>'&#160;<span class="attribute">toNode</span>='<a href="#PISTON" class="idName">PISTON</a>'&#160;<span class="attribute">toField</span>='<span class="value">set_translation</span>'/&gt;
+<br /><a name="ROUTE_4"> </a> 
+&lt;<span class="route">ROUTE</span>&#160;<span class="attribute">fromNode</span>='<a href="#PISTONClock" class="idName">PISTONClock</a>'&#160;<span class="attribute">fromField</span>='<span class="value">fraction_changed</span>'&#160;<span class="attribute">toNode</span>='<a href="#ROCKER1Path" class="idName">ROCKER1Path</a>'&#160;<span class="attribute">toField</span>='<span class="value">set_fraction</span>'/&gt;
+<br /><a name="ROUTE_5"> </a> 
+&lt;<span class="route">ROUTE</span>&#160;<span class="attribute">fromNode</span>='<a href="#ROCKER1Path" class="idName">ROCKER1Path</a>'&#160;<span class="attribute">fromField</span>='<span class="value">value_changed</span>'&#160;<span class="attribute">toNode</span>='<a href="#ROCKERARM1" class="idName">ROCKERARM1</a>'&#160;<span class="attribute">toField</span>='<span class="value">set_translation</span>'/&gt;
+<br /><a name="ROUTE_6"> </a> 
+&lt;<span class="route">ROUTE</span>&#160;<span class="attribute">fromNode</span>='<a href="#PISTONClock" class="idName">PISTONClock</a>'&#160;<span class="attribute">fromField</span>='<span class="value">fraction_changed</span>'&#160;<span class="attribute">toNode</span>='<a href="#ROCKER1Rotation" class="idName">ROCKER1Rotation</a>'&#160;<span class="attribute">toField</span>='<span class="value">set_fraction</span>'/&gt;
+<br /><a name="ROUTE_7"> </a> 
+&lt;<span class="route">ROUTE</span>&#160;<span class="attribute">fromNode</span>='<a href="#ROCKER1Rotation" class="idName">ROCKER1Rotation</a>'&#160;<span class="attribute">fromField</span>='<span class="value">value_changed</span>'&#160;<span class="attribute">toNode</span>='<a href="#ROCKERARM1" class="idName">ROCKERARM1</a>'&#160;<span class="attribute">toField</span>='<span class="value">set_rotation</span>'/&gt;
+<br /><a name="ROUTE_8"> </a> 
+&lt;<span class="route">ROUTE</span>&#160;<span class="attribute">fromNode</span>='<a href="#PISTONClock" class="idName">PISTONClock</a>'&#160;<span class="attribute">fromField</span>='<span class="value">fraction_changed</span>'&#160;<span class="attribute">toNode</span>='<a href="#ROCKER2Path" class="idName">ROCKER2Path</a>'&#160;<span class="attribute">toField</span>='<span class="value">set_fraction</span>'/&gt;
+<br /><a name="ROUTE_9"> </a> 
+&lt;<span class="route">ROUTE</span>&#160;<span class="attribute">fromNode</span>='<a href="#ROCKER2Path" class="idName">ROCKER2Path</a>'&#160;<span class="attribute">fromField</span>='<span class="value">value_changed</span>'&#160;<span class="attribute">toNode</span>='<a href="#ROCKERARM2" class="idName">ROCKERARM2</a>'&#160;<span class="attribute">toField</span>='<span class="value">set_translation</span>'/&gt;
+<br /><a name="ROUTE_10"> </a> 
+&lt;<span class="route">ROUTE</span>&#160;<span class="attribute">fromNode</span>='<a href="#PISTONClock" class="idName">PISTONClock</a>'&#160;<span class="attribute">fromField</span>='<span class="value">fraction_changed</span>'&#160;<span class="attribute">toNode</span>='<a href="#ROCKER2Rotation" class="idName">ROCKER2Rotation</a>'&#160;<span class="attribute">toField</span>='<span class="value">set_fraction</span>'/&gt;
+<br /><a name="ROUTE_11"> </a> 
+&lt;<span class="route">ROUTE</span>&#160;<span class="attribute">fromNode</span>='<a href="#ROCKER2Rotation" class="idName">ROCKER2Rotation</a>'&#160;<span class="attribute">fromField</span>='<span class="value">value_changed</span>'&#160;<span class="attribute">toNode</span>='<a href="#ROCKERARM2" class="idName">ROCKERARM2</a>'&#160;<span class="attribute">toField</span>='<span class="value">set_rotation</span>'/&gt;
+</div>&lt;/<span class="element">Scene</span>&gt;
+</div>&lt;/<span class="element">X3D</span>&gt;
+<br />
+&lt;!--
+<div class="center">
+         <hr width="100%"/>
+         <i>Index for ExternProtoDeclare definition</i>: 
+<a href="#ExternProtoDeclare_WhereAmI" class="prototype">WhereAmI</a>
+<br />
+<i>Index for DEF nodes</i>: 
+<a href="#CylinderRod" class="idName">CylinderRod</a>,
+<a href="#Filter" class="idName">Filter</a>,
+<a href="#PISTON" class="idName">PISTON</a>,
+<a href="#PISTONClock" class="idName">PISTONClock</a>,
+<a href="#PISTONPath" class="idName">PISTONPath</a>,
+<a href="#pumpHouse" class="idName">pumpHouse</a>,
+<a href="#ROCKER1Path" class="idName">ROCKER1Path</a>,
+<a href="#ROCKER1Rotation" class="idName">ROCKER1Rotation</a>,
+<a href="#ROCKER2Path" class="idName">ROCKER2Path</a>,
+<a href="#ROCKER2Rotation" class="idName">ROCKER2Rotation</a>,
+<a href="#ROCKERARM1" class="idName">ROCKERARM1</a>,
+<a href="#ROCKERARM2" class="idName">ROCKERARM2</a>,
+<a href="#RunPump" class="idName">RunPump</a>
+         <hr width="100%"/>
+      </div>
+--&gt;
+<p>
+&lt;!-- Tag color codes:
+&lt;<span class="element">Node</span>
+         <span class="idName"> DEF</span>='<span class="idName">idName</span>' <span class="attribute">attribute</span>='<span class="value">value</span>'/&gt;
+&lt;<span class="prototype">Prototype</span> 
+         <span class="attribute">name</span>='<span class="prototype">ProtoName</span>'&gt;
+	&lt;<span class="prototype">field</span>
+         <span class="attribute">name</span>='<span class="prototype">fieldName</span>'/&gt; &lt;/<span class="prototype">Prototype</span>&gt; --&gt;
+</p>
+   </body>
+</html>

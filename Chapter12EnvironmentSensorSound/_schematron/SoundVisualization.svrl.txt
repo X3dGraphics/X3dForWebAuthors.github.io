@@ -1,0 +1,3 @@
+<X3D profile='Immersive'> is defined satisfactorily for this scene, but ensure that child Inline scenes do not exceed this profile/component combination since a parent scene must have an equal or higher profile/component combination [/X3D, info]
+<Collision DEF=''/> is inactive since enabled='false' (and no ROUTE is provided to change this value) [/X3D/Scene/Transform/Transform/Transform[1]/Collision, warning]
+<Collision DEF=''/> is inactive since enabled='false' (and no ROUTE is provided to change this value) [/X3D/Scene/Transform/Transform/Transform[2]/Collision, warning]

@@ -1,0 +1,1132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/TR/xhtml1/strict"
+      xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
+      xmlns:saxon="http://icl.com/saxon">
+   <head>
+      <title>FillProperties.x3d (X3dToXhtml listing)</title>
+      <!-- I18N -->
+      <meta http-equiv="X-UA-Compatible" content="chrome=1,IE=edge"/>
+      <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+      <style type="text/css">
+span.element {color: navy}
+span.attribute {color: green}
+span.value {color: teal}
+span.plain {color: black}
+span.gray  {color: gray}
+span.idName {color: maroon}
+span.addedDocumentation {background-color:#EEEEEE} /* slightly darker for html page contrast */
+span.behaviorNode       {background-color:#DDEEFF} /*      light blue for html page contrast */
+span.extensibilityNode  {background-color:#FFEEFF} /*    lighter blue for html page contrast */
+a.idName {color: maroon}
+div.center {text-align: center}
+div.indent {margin-left: 25px}
+
+span.prototype {color: purple}
+a.prototype {color: purple}
+a.prototype:visited {color: black}
+span.route {color: red}
+b.warning {color: #CC5500}
+b.error {color: #CC0000}
+
+                </style>
+      <style type="text/css">
+table.curvedEdges { border:10px solid RoyalBlue;-webkit-border-radius:13px;-moz-border-radius:13px;-ms-border-radius:13px;-o-border-radius:13px;border-radius:13px; }
+table.curvedEdges td, table.curvedEdges th { border-bottom:1px dotted black;padding:5px; }
+</style>
+      <meta name="generator" content="XSLT processor Saxonica"/>
+      <meta name="generator"
+            content="https://www.web3d.org/x3d/stylesheets/X3dToXhtml.xslt"/>
+      <meta name="generator"
+            content="https://sourceforge.net/p/x3d/code/HEAD/tree/www.web3d.org/x3d/stylesheets/X3dToXhtml.xslt"/>
+      <link rel="shortcut icon"
+            href="https://www.web3d.org/x3d/content/icons/X3DtextIcon16.png"
+            title="X3D"/>
+   </head>
+   <body>
+      <code title="XML declaration">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</code>
+      <br/>
+      <code title="Document Type Declaration (DTD) for X3D validation">&lt;!DOCTYPE X3D PUBLIC "ISO//Web3D//DTD X3D 3.3//EN" "<a href="http://www.web3d.org/specifications/x3d-3.3.dtd">http://www.web3d.org/specifications/x3d-3.3.dtd</a>"&gt;</code>
+      <div>
+<span title="X3D is the top-most XML element for an Extensible 3D (X3D) Graphics file">&lt;<span class="element">X3D</span>&#160;<span title="X3D Immersive Profile supports most nodes, similar to VRML97"><span class="attribute">profile</span>='<span class="value">Immersive</span>'</span>&#160;<span class="attribute">version</span>='<span class="value">3.3</span>'&#160;<span title="XML namespace for X3D Graphics schema validation"><span title="XML namespace for XML Schema validation">
+            <span class="attribute">xmlns:xsd</span>='<a href="http://www.w3.org/2001/XMLSchema-instance" target="_blank">http://www.w3.org/2001/XMLSchema-instance</a>'
+</span>
+         <span title="XML namespace for X3D Graphics schema validation">
+            <span class="attribute">xsd:noNamespaceSchemaLocation</span>
+         </span>='
+<a href="http://www.web3d.org/specifications/x3d-3.3.xsd">http://www.web3d.org/specifications/x3d-3.3.xsd</a>
+'</span>&gt;
+</span><div class="indent">
+<span title="head can contain component, unit, and author-defined metadata (meta) tags">&lt;<span class="element">head</span>&gt;
+</span><div class="indent">
+               <span title="XML comment">&lt;!-- The following component tag is needed since FillProperties node is not part of the default Immersive profile --&gt;</span>
+<br />
+
+<span title="X3D component name and level indicate any additional scene functionality needed above the given X3D profile">&lt;<span class="element">component</span>&#160;<span class="attribute">level</span>='<span class="value">3</span>'&#160;<span class="attribute">name</span>='<span class="value">Shape</span>'/&gt;
+</span><br />
+
+<span title="meta 'title' provides file name for this resource">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">title</span>'&#160;<span class="attribute">content</span>='<a href="FillProperties.x3d">FillProperties.x3d</a>'/&gt;
+</span><br />
+
+<span title="meta 'description' provides summary overview describing this resource">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">description</span>'&#160;<span class="attribute">content</span>='<span class="plain">Demonstrate various FillProperties values.</span>'/&gt;
+</span><br />
+
+<span title="meta 'creator' provides name of original author">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">creator</span>'&#160;<span class="attribute">content</span>='<span class="value">Don Brutzman</span>'/&gt;
+</span><br />
+
+<span title="meta 'created' provides date of initial version">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">created</span>'&#160;<span class="attribute">content</span>='<span class="value">20 August 2008</span>'/&gt;
+</span><br />
+
+<span title="meta 'modified' provides date of modified version">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">modified</span>'&#160;<span class="attribute">content</span>='<span class="value">20 October 2019</span>'/&gt;
+</span><br />
+
+<span title="meta 'image' provides name or reference link to a supporting image file">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">Image</span>'&#160;<span class="attribute">content</span>='<a href="FillPropertiesHatchStyle.png">FillPropertiesHatchStyle.png</a>'/&gt;
+</span><br />
+
+<span title="meta 'image' provides name or reference link to a supporting image file">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">Image</span>'&#160;<span class="attribute">content</span>='<a href="FillPropertiesHatchStyleOctaga.png">FillPropertiesHatchStyleOctaga.png</a>'/&gt;
+</span><br />
+
+<span title="meta 'reference' provides name or reference link to a supporting resource">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">reference</span>'&#160;<span class="attribute">content</span>='
+<a href="http://X3dGraphics.com">http://X3dGraphics.com</a>
+'/&gt;
+</span><br />
+
+<span title="meta 'reference' provides name or reference link to a supporting resource">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">reference</span>'&#160;<span class="attribute">content</span>='
+<a href="https://www.web3d.org/x3d/content/examples/X3dResources.html">https://www.web3d.org/x3d/content/examples/X3dResources.html</a>
+'/&gt;
+</span><br />
+
+<span title="meta 'subject' provides search-index subject keywords, key phrases, or classification codes">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">subject</span>'&#160;<span class="attribute">content</span>='
+X3D book, X3D graphics, X3D-Edit, <a href="http://www.x3dGraphics.com">http://www.x3dGraphics.com</a>
+'/&gt;
+</span><br />
+
+<span title="meta 'identifier' provides the unique Uniform Resource Identifier (URI) or url address for this resource">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">identifier</span>'&#160;<span class="attribute">content</span>='
+<a href="http://X3dGraphics.com/examples/X3dForWebAuthors/Chapter05AppearanceMaterialTextures/FillProperties.x3d">http://X3dGraphics.com/examples/X3dForWebAuthors/Chapter05AppearanceMaterialTextures/FillProperties.x3d</a>
+'/&gt;
+</span><br />
+
+<span title="meta 'generator' provides name of authoring tool or translation tool producing this scene">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">generator</span>'&#160;<span class="attribute">content</span>='<span class="value">X3D-Edit 3.3, </span>
+               <a href="https://savage.nps.edu/X3D-Edit" target="_blank">https://savage.nps.edu/X3D-Edit</a>'/&gt;
+</span><br />
+
+<span title="meta 'license' provides software license link or information">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">license</span>'&#160;<span class="attribute">content</span>='
+<a href="../license.html">../license.html</a>'/&gt;
+</span></div><span title="head can contain component, unit, and author-defined metadata (meta) tags">&lt;/<span class="element">head</span>&gt;
+</span><br /><span style="color:white">
+&lt;!--
+</span>
+            <div class="center">
+               <hr style="width:100%"/>
+               <b>
+                  <i>Index for DEF nodes</i>
+               </b>: 
+<a title="go to this Transform node"
+                  href="#FifthRowBoxes"
+                  class="idName">FifthRowBoxes</a>,
+<a title="go to this Appearance node"
+                  href="#FillAppearance1"
+                  class="idName">FillAppearance1</a>,
+<a title="go to this Appearance node"
+                  href="#FillAppearance10"
+                  class="idName">FillAppearance10</a>,
+<a title="go to this Appearance node"
+                  href="#FillAppearance11"
+                  class="idName">FillAppearance11</a>,
+<a title="go to this Appearance node"
+                  href="#FillAppearance12"
+                  class="idName">FillAppearance12</a>,
+<a title="go to this Appearance node"
+                  href="#FillAppearance13"
+                  class="idName">FillAppearance13</a>,
+<a title="go to this Appearance node"
+                  href="#FillAppearance14"
+                  class="idName">FillAppearance14</a>,
+<a title="go to this Appearance node"
+                  href="#FillAppearance15"
+                  class="idName">FillAppearance15</a>,
+<a title="go to this Appearance node"
+                  href="#FillAppearance16"
+                  class="idName">FillAppearance16</a>,
+<a title="go to this Appearance node"
+                  href="#FillAppearance17"
+                  class="idName">FillAppearance17</a>,
+<a title="go to this Appearance node"
+                  href="#FillAppearance18"
+                  class="idName">FillAppearance18</a>,
+<a title="go to this Appearance node"
+                  href="#FillAppearance19"
+                  class="idName">FillAppearance19</a>,
+<a title="go to this Appearance node"
+                  href="#FillAppearance2"
+                  class="idName">FillAppearance2</a>,
+<a title="go to this Appearance node"
+                  href="#FillAppearance3"
+                  class="idName">FillAppearance3</a>,
+<a title="go to this Appearance node"
+                  href="#FillAppearance4"
+                  class="idName">FillAppearance4</a>,
+<a title="go to this Appearance node"
+                  href="#FillAppearance5"
+                  class="idName">FillAppearance5</a>,
+<a title="go to this Appearance node"
+                  href="#FillAppearance6"
+                  class="idName">FillAppearance6</a>,
+<a title="go to this Appearance node"
+                  href="#FillAppearance7"
+                  class="idName">FillAppearance7</a>,
+<a title="go to this Appearance node"
+                  href="#FillAppearance8"
+                  class="idName">FillAppearance8</a>,
+<a title="go to this Appearance node"
+                  href="#FillAppearance9"
+                  class="idName">FillAppearance9</a>,
+<a title="go to this Transform node"
+                  href="#FirstRowBoxes"
+                  class="idName">FirstRowBoxes</a>,
+<a title="go to this Transform node"
+                  href="#FourthRowText"
+                  class="idName">FourthRowText</a>,
+<a title="go to this FontStyle node" href="#Middle" class="idName">Middle</a>,
+<a title="go to this Transform node"
+                  href="#OverallAdjustment"
+                  class="idName">OverallAdjustment</a>,
+<a title="go to this Transform node"
+                  href="#SecondRowText"
+                  class="idName">SecondRowText</a>,
+<a title="go to this Transform node"
+                  href="#SixthRowText"
+                  class="idName">SixthRowText</a>,
+<a title="go to this Transform node"
+                  href="#ThirdRowBoxes"
+                  class="idName">ThirdRowBoxes</a>
+<br /><hr width="50%"/>
+               <b>
+                  <i>Index for Viewpoint image</i>
+               </b>: 
+<a title="go to this Viewpoint node"
+                  href="#Viewpoint_1"
+                  class="idName">Viewpoint_1</a>
+               <hr style="width:100%"/>
+            </div>
+            <span style="color:white">
+--&gt;
+</span><br />
+
+<span title="Scene is the root node that contains an X3D scene graph">&lt;<span class="element">Scene</span>&gt;
+</span><div class="indent">
+<span title="WorldInfo contains persistent documentation information about the 3D world">&lt;<span class="element">WorldInfo</span>&#160;<span class="attribute">title</span>='<span class="value">FillProperties.x3d</span>'/&gt;
+</span><br />
+<a name="Viewpoint_1"> </a> 
+<span title="Viewpoint provides a specific location and direction where the user may view the scene">&lt;<span class="element">Viewpoint</span>&#160;<span class="attribute">description</span>='<a title="viewpoint image (produced using Xj3D)"
+                  href="_viewpoints/FillProperties.x3d._VP_FillProperties_hatchStyle_examples.png">FillProperties hatchStyle examples</a>'&#160;<span class="attribute">position</span>='<span class="value">0 0 24</span>'/&gt;
+</span><br />
+<a name="OverallAdjustment"> </a> 
+<span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;<span class="element">Transform</span>&#160;<span class="attribute">DEF</span>='<span class="idName" title="DEF name is a unique ID for a given node">OverallAdjustment</span>'&#160;<span class="attribute">bboxCenter</span>='<span class="value">0 0 0</span>'&#160;<span class="attribute">bboxSize</span>='<span class="value">-1 -1 -1</span>'&gt;
+</span><div class="indent">
+                  <a name="FirstRowBoxes"> </a> 
+<span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;<span class="element">Transform</span>&#160;<span class="attribute">DEF</span>='<span class="idName" title="DEF name is a unique ID for a given node">FirstRowBoxes</span>'&#160;<span class="attribute">translation</span>='<span class="value">0 7 0</span>'&#160;<span class="attribute">bboxCenter</span>='<span class="value">0 0 0</span>'&#160;<span class="attribute">bboxSize</span>='<span class="value">-1 -1 -1</span>'&gt;
+</span><div class="indent">
+<span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;<span class="element">Transform</span>&#160;<span class="attribute">translation</span>='<span class="value">-9 0 0</span>'&#160;<span class="attribute">bboxCenter</span>='<span class="value">0 0 0</span>'&#160;<span class="attribute">bboxSize</span>='<span class="value">-1 -1 -1</span>'&gt;
+</span><div class="indent">
+<span title="Shape contains geometry and optional corresponding Appearance">&lt;<span class="element">Shape</span>&#160;<span class="attribute">bboxCenter</span>='<span class="value">0 0 0</span>'&#160;<span class="attribute">bboxSize</span>='<span class="value">-1 -1 -1</span>'&gt;
+</span><div class="indent">
+<span title="Box is a geometry primitive node">&lt;<span class="element">Box</span>&#160;<span class="attribute">size</span>='<span class="value">2 2 2</span>'&#160;<span class="attribute">solid</span>='<span class="value">true</span>'/&gt;
+</span><br />
+<a name="FillAppearance1"> </a> 
+<span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;<span class="element">Appearance</span>&#160;<span class="attribute">DEF</span>='<span class="idName" title="DEF name is a unique ID for a given node">FillAppearance1</span>'&gt;
+</span><div class="indent">
+<span title="Material specifies surface rendering properties for associated geometry">&lt;<span class="element">Material</span>&#160;<span class="attribute">diffuseColor</span>='<span class="value">1 0 0</span>'/&gt;
+</span><br />
+
+&lt;<span class="element">FillProperties</span>&#160;<span class="attribute">containerField</span>='<span class="value">fillProperties</span>'&gt;
+<div class="indent">
+                                 <span title="XML comment">&lt;!-- hatchStyle='1' horizontal equally-spaced parallel lines --&gt;</span>
+                              </div>&lt;/<span class="element">FillProperties</span>&gt;
+</div><span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;/<span class="element">Appearance</span>&gt;
+</span></div><span title="Shape contains geometry and optional corresponding Appearance">&lt;/<span class="element">Shape</span>&gt;
+</span></div><span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;/<span class="element">Transform</span>&gt;
+</span><br />
+
+<span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;<span class="element">Transform</span>&#160;<span class="attribute">translation</span>='<span class="value">-6 0 0</span>'&#160;<span class="attribute">bboxCenter</span>='<span class="value">0 0 0</span>'&#160;<span class="attribute">bboxSize</span>='<span class="value">-1 -1 -1</span>'&gt;
+</span><div class="indent">
+<span title="Shape contains geometry and optional corresponding Appearance">&lt;<span class="element">Shape</span>&#160;<span class="attribute">bboxCenter</span>='<span class="value">0 0 0</span>'&#160;<span class="attribute">bboxSize</span>='<span class="value">-1 -1 -1</span>'&gt;
+</span><div class="indent">
+<span title="Box is a geometry primitive node">&lt;<span class="element">Box</span>&#160;<span class="attribute">size</span>='<span class="value">2 2 2</span>'&#160;<span class="attribute">solid</span>='<span class="value">true</span>'/&gt;
+</span><br />
+<a name="FillAppearance2"> </a> 
+<span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;<span class="element">Appearance</span>&#160;<span class="attribute">DEF</span>='<span class="idName" title="DEF name is a unique ID for a given node">FillAppearance2</span>'&gt;
+</span><div class="indent">
+<span title="Material specifies surface rendering properties for associated geometry">&lt;<span class="element">Material</span>&#160;<span class="attribute">diffuseColor</span>='<span class="value">1 0.5 0</span>'/&gt;
+</span><br />
+
+&lt;<span class="element">FillProperties</span>&#160;<span class="attribute">hatchStyle</span>='<span class="value">2</span>'&#160;<span class="attribute">containerField</span>='<span class="value">fillProperties</span>'&gt;
+<div class="indent">
+                                 <span title="XML comment">&lt;!-- hatchStyle='2' vertical equally-spaced parallel lines --&gt;</span>
+                              </div>&lt;/<span class="element">FillProperties</span>&gt;
+</div><span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;/<span class="element">Appearance</span>&gt;
+</span></div><span title="Shape contains geometry and optional corresponding Appearance">&lt;/<span class="element">Shape</span>&gt;
+</span></div><span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;/<span class="element">Transform</span>&gt;
+</span><br />
+
+<span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;<span class="element">Transform</span>&#160;<span class="attribute">translation</span>='<span class="value">-3 0 0</span>'&#160;<span class="attribute">bboxCenter</span>='<span class="value">0 0 0</span>'&#160;<span class="attribute">bboxSize</span>='<span class="value">-1 -1 -1</span>'&gt;
+</span><div class="indent">
+<span title="Shape contains geometry and optional corresponding Appearance">&lt;<span class="element">Shape</span>&#160;<span class="attribute">bboxCenter</span>='<span class="value">0 0 0</span>'&#160;<span class="attribute">bboxSize</span>='<span class="value">-1 -1 -1</span>'&gt;
+</span><div class="indent">
+<span title="Box is a geometry primitive node">&lt;<span class="element">Box</span>&#160;<span class="attribute">size</span>='<span class="value">2 2 2</span>'&#160;<span class="attribute">solid</span>='<span class="value">true</span>'/&gt;
+</span><br />
+<a name="FillAppearance3"> </a> 
+<span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;<span class="element">Appearance</span>&#160;<span class="attribute">DEF</span>='<span class="idName" title="DEF name is a unique ID for a given node">FillAppearance3</span>'&gt;
+</span><div class="indent">
+<span title="Material specifies surface rendering properties for associated geometry">&lt;<span class="element">Material</span>&#160;<span class="attribute">diffuseColor</span>='<span class="value">1 1 0</span>'/&gt;
+</span><br />
+
+&lt;<span class="element">FillProperties</span>&#160;<span class="attribute">hatchStyle</span>='<span class="value">3</span>'&#160;<span class="attribute">containerField</span>='<span class="value">fillProperties</span>'&gt;
+<div class="indent">
+                                 <span title="XML comment">&lt;!-- hatchStyle='3' positive slope equally-spaced parallel lines --&gt;</span>
+                              </div>&lt;/<span class="element">FillProperties</span>&gt;
+</div><span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;/<span class="element">Appearance</span>&gt;
+</span></div><span title="Shape contains geometry and optional corresponding Appearance">&lt;/<span class="element">Shape</span>&gt;
+</span></div><span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;/<span class="element">Transform</span>&gt;
+</span><br />
+
+<span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;<span class="element">Transform</span>&#160;<span class="attribute">bboxCenter</span>='<span class="value">0 0 0</span>'&#160;<span class="attribute">bboxSize</span>='<span class="value">-1 -1 -1</span>'&gt;
+</span><div class="indent">
+<span title="Shape contains geometry and optional corresponding Appearance">&lt;<span class="element">Shape</span>&#160;<span class="attribute">bboxCenter</span>='<span class="value">0 0 0</span>'&#160;<span class="attribute">bboxSize</span>='<span class="value">-1 -1 -1</span>'&gt;
+</span><div class="indent">
+<span title="Box is a geometry primitive node">&lt;<span class="element">Box</span>&#160;<span class="attribute">size</span>='<span class="value">2 2 2</span>'&#160;<span class="attribute">solid</span>='<span class="value">true</span>'/&gt;
+</span><br />
+<a name="FillAppearance4"> </a> 
+<span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;<span class="element">Appearance</span>&#160;<span class="attribute">DEF</span>='<span class="idName" title="DEF name is a unique ID for a given node">FillAppearance4</span>'&gt;
+</span><div class="indent">
+<span title="Material specifies surface rendering properties for associated geometry">&lt;<span class="element">Material</span>&#160;<span class="attribute">diffuseColor</span>='<span class="value">0 1 0</span>'/&gt;
+</span><br />
+
+&lt;<span class="element">FillProperties</span>&#160;<span class="attribute">hatchStyle</span>='<span class="value">4</span>'&#160;<span class="attribute">containerField</span>='<span class="value">fillProperties</span>'&gt;
+<div class="indent">
+                                 <span title="XML comment">&lt;!-- hatchStyle='4' negative slope equally-spaced parallel lines --&gt;</span>
+                              </div>&lt;/<span class="element">FillProperties</span>&gt;
+</div><span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;/<span class="element">Appearance</span>&gt;
+</span></div><span title="Shape contains geometry and optional corresponding Appearance">&lt;/<span class="element">Shape</span>&gt;
+</span></div><span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;/<span class="element">Transform</span>&gt;
+</span><br />
+
+<span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;<span class="element">Transform</span>&#160;<span class="attribute">translation</span>='<span class="value">3 0 0</span>'&#160;<span class="attribute">bboxCenter</span>='<span class="value">0 0 0</span>'&#160;<span class="attribute">bboxSize</span>='<span class="value">-1 -1 -1</span>'&gt;
+</span><div class="indent">
+<span title="Shape contains geometry and optional corresponding Appearance">&lt;<span class="element">Shape</span>&#160;<span class="attribute">bboxCenter</span>='<span class="value">0 0 0</span>'&#160;<span class="attribute">bboxSize</span>='<span class="value">-1 -1 -1</span>'&gt;
+</span><div class="indent">
+<span title="Box is a geometry primitive node">&lt;<span class="element">Box</span>&#160;<span class="attribute">size</span>='<span class="value">2 2 2</span>'&#160;<span class="attribute">solid</span>='<span class="value">true</span>'/&gt;
+</span><br />
+<a name="FillAppearance5"> </a> 
+<span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;<span class="element">Appearance</span>&#160;<span class="attribute">DEF</span>='<span class="idName" title="DEF name is a unique ID for a given node">FillAppearance5</span>'&gt;
+</span><div class="indent">
+<span title="Material specifies surface rendering properties for associated geometry">&lt;<span class="element">Material</span>&#160;<span class="attribute">diffuseColor</span>='<span class="value">0 0 1</span>'/&gt;
+</span><br />
+
+&lt;<span class="element">FillProperties</span>&#160;<span class="attribute">hatchStyle</span>='<span class="value">5</span>'&#160;<span class="attribute">containerField</span>='<span class="value">fillProperties</span>'&gt;
+<div class="indent">
+                                 <span title="XML comment">&lt;!-- hatchStyle='5' horizontal/vertical crosshatch --&gt;</span>
+                              </div>&lt;/<span class="element">FillProperties</span>&gt;
+</div><span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;/<span class="element">Appearance</span>&gt;
+</span></div><span title="Shape contains geometry and optional corresponding Appearance">&lt;/<span class="element">Shape</span>&gt;
+</span></div><span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;/<span class="element">Transform</span>&gt;
+</span><br />
+
+<span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;<span class="element">Transform</span>&#160;<span class="attribute">translation</span>='<span class="value">6 0 0</span>'&#160;<span class="attribute">bboxCenter</span>='<span class="value">0 0 0</span>'&#160;<span class="attribute">bboxSize</span>='<span class="value">-1 -1 -1</span>'&gt;
+</span><div class="indent">
+<span title="Shape contains geometry and optional corresponding Appearance">&lt;<span class="element">Shape</span>&#160;<span class="attribute">bboxCenter</span>='<span class="value">0 0 0</span>'&#160;<span class="attribute">bboxSize</span>='<span class="value">-1 -1 -1</span>'&gt;
+</span><div class="indent">
+<span title="Box is a geometry primitive node">&lt;<span class="element">Box</span>&#160;<span class="attribute">size</span>='<span class="value">2 2 2</span>'&#160;<span class="attribute">solid</span>='<span class="value">true</span>'/&gt;
+</span><br />
+<a name="FillAppearance6"> </a> 
+<span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;<span class="element">Appearance</span>&#160;<span class="attribute">DEF</span>='<span class="idName" title="DEF name is a unique ID for a given node">FillAppearance6</span>'&gt;
+</span><div class="indent">
+<span title="Material specifies surface rendering properties for associated geometry">&lt;<span class="element">Material</span>&#160;<span class="attribute">diffuseColor</span>='<span class="value">0 1 1</span>'/&gt;
+</span><br />
+
+&lt;<span class="element">FillProperties</span>&#160;<span class="attribute">hatchStyle</span>='<span class="value">6</span>'&#160;<span class="attribute">containerField</span>='<span class="value">fillProperties</span>'&gt;
+<div class="indent">
+                                 <span title="XML comment">&lt;!-- hatchStyle='6' positive slope / negative slope crosshatch --&gt;</span>
+                              </div>&lt;/<span class="element">FillProperties</span>&gt;
+</div><span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;/<span class="element">Appearance</span>&gt;
+</span></div><span title="Shape contains geometry and optional corresponding Appearance">&lt;/<span class="element">Shape</span>&gt;
+</span></div><span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;/<span class="element">Transform</span>&gt;
+</span></div><span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;/<span class="element">Transform</span>&gt;
+</span><br />
+<a name="SecondRowText"> </a> 
+<span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;<span class="element">Transform</span>&#160;<span class="attribute">DEF</span>='<span class="idName" title="DEF name is a unique ID for a given node">SecondRowText</span>'&#160;<span class="attribute">translation</span>='<span class="value">0 5 0</span>'&#160;<span class="attribute">bboxCenter</span>='<span class="value">0 0 0</span>'&#160;<span class="attribute">bboxSize</span>='<span class="value">-1 -1 -1</span>'&gt;
+</span><div class="indent">
+<span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;<span class="element">Transform</span>&#160;<span class="attribute">translation</span>='<span class="value">-9 0 0</span>'&#160;<span class="attribute">bboxCenter</span>='<span class="value">0 0 0</span>'&#160;<span class="attribute">bboxSize</span>='<span class="value">-1 -1 -1</span>'&gt;
+</span><div class="indent">
+<span title="Shape contains geometry and optional corresponding Appearance">&lt;<span class="element">Shape</span>&#160;<span class="attribute">bboxCenter</span>='<span class="value">0 0 0</span>'&#160;<span class="attribute">bboxSize</span>='<span class="value">-1 -1 -1</span>'&gt;
+</span><div class="indent">
+<span title="Text is a geometry primitive node">&lt;<span class="element">Text</span>&#160;<span class="attribute">string</span>='<span class="value">"1"</span>'&gt;
+</span><div class="indent">
+                              <a name="Middle"> </a> 
+<span title="FontStyle defines the size, family, justification, and other styles used by Text nodes">&lt;<span class="element">FontStyle</span>&#160;<span class="attribute">DEF</span>='<span class="idName" title="DEF name is a unique ID for a given node">Middle</span>'&#160;<span class="attribute">justify</span>='<span class="value">"MIDDLE" "MIDDLE"</span>'&#160;<span class="attribute">size</span>='<span class="value">2</span>'&#160;<span class="attribute">style</span>='<span class="value">BOLD</span>'/&gt;
+</span></div><span title="Text is a geometry primitive node">&lt;/<span class="element">Text</span>&gt;
+</span><br />
+
+<span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;<span class="element">Appearance</span>&#160;<span class="attribute">USE</span>='<a title="go to the original DEF node definition"
+                              href="#FillAppearance1"
+                              class="idName">FillAppearance1</a>'/&gt;
+</span></div><span title="Shape contains geometry and optional corresponding Appearance">&lt;/<span class="element">Shape</span>&gt;
+</span></div><span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;/<span class="element">Transform</span>&gt;
+</span><br />
+
+<span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;<span class="element">Transform</span>&#160;<span class="attribute">translation</span>='<span class="value">-6 0 0</span>'&#160;<span class="attribute">bboxCenter</span>='<span class="value">0 0 0</span>'&#160;<span class="attribute">bboxSize</span>='<span class="value">-1 -1 -1</span>'&gt;
+</span><div class="indent">
+<span title="Shape contains geometry and optional corresponding Appearance">&lt;<span class="element">Shape</span>&#160;<span class="attribute">bboxCenter</span>='<span class="value">0 0 0</span>'&#160;<span class="attribute">bboxSize</span>='<span class="value">-1 -1 -1</span>'&gt;
+</span><div class="indent">
+<span title="Text is a geometry primitive node">&lt;<span class="element">Text</span>&#160;<span class="attribute">string</span>='<span class="value">"2"</span>'&gt;
+</span><div class="indent">
+<span title="FontStyle defines the size, family, justification, and other styles used by Text nodes">&lt;<span class="element">FontStyle</span>&#160;<span class="attribute">USE</span>='<a title="go to the original DEF node definition"
+                                 href="#Middle"
+                                 class="idName">Middle</a>'/&gt;
+</span></div><span title="Text is a geometry primitive node">&lt;/<span class="element">Text</span>&gt;
+</span><br />
+
+<span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;<span class="element">Appearance</span>&#160;<span class="attribute">USE</span>='<a title="go to the original DEF node definition"
+                              href="#FillAppearance2"
+                              class="idName">FillAppearance2</a>'/&gt;
+</span></div><span title="Shape contains geometry and optional corresponding Appearance">&lt;/<span class="element">Shape</span>&gt;
+</span></div><span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;/<span class="element">Transform</span>&gt;
+</span><br />
+
+<span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;<span class="element">Transform</span>&#160;<span class="attribute">translation</span>='<span class="value">-3 0 0</span>'&#160;<span class="attribute">bboxCenter</span>='<span class="value">0 0 0</span>'&#160;<span class="attribute">bboxSize</span>='<span class="value">-1 -1 -1</span>'&gt;
+</span><div class="indent">
+<span title="Shape contains geometry and optional corresponding Appearance">&lt;<span class="element">Shape</span>&#160;<span class="attribute">bboxCenter</span>='<span class="value">0 0 0</span>'&#160;<span class="attribute">bboxSize</span>='<span class="value">-1 -1 -1</span>'&gt;
+</span><div class="indent">
+<span title="Text is a geometry primitive node">&lt;<span class="element">Text</span>&#160;<span class="attribute">string</span>='<span class="value">"3"</span>'&gt;
+</span><div class="indent">
+<span title="FontStyle defines the size, family, justification, and other styles used by Text nodes">&lt;<span class="element">FontStyle</span>&#160;<span class="attribute">USE</span>='<a title="go to the original DEF node definition"
+                                 href="#Middle"
+                                 class="idName">Middle</a>'/&gt;
+</span></div><span title="Text is a geometry primitive node">&lt;/<span class="element">Text</span>&gt;
+</span><br />
+
+<span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;<span class="element">Appearance</span>&#160;<span class="attribute">USE</span>='<a title="go to the original DEF node definition"
+                              href="#FillAppearance3"
+                              class="idName">FillAppearance3</a>'/&gt;
+</span></div><span title="Shape contains geometry and optional corresponding Appearance">&lt;/<span class="element">Shape</span>&gt;
+</span></div><span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;/<span class="element">Transform</span>&gt;
+</span><br />
+
+<span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;<span class="element">Transform</span>&#160;<span class="attribute">bboxCenter</span>='<span class="value">0 0 0</span>'&#160;<span class="attribute">bboxSize</span>='<span class="value">-1 -1 -1</span>'&gt;
+</span><div class="indent">
+<span title="Shape contains geometry and optional corresponding Appearance">&lt;<span class="element">Shape</span>&#160;<span class="attribute">bboxCenter</span>='<span class="value">0 0 0</span>'&#160;<span class="attribute">bboxSize</span>='<span class="value">-1 -1 -1</span>'&gt;
+</span><div class="indent">
+<span title="Text is a geometry primitive node">&lt;<span class="element">Text</span>&#160;<span class="attribute">string</span>='<span class="value">"4"</span>'&gt;
+</span><div class="indent">
+<span title="FontStyle defines the size, family, justification, and other styles used by Text nodes">&lt;<span class="element">FontStyle</span>&#160;<span class="attribute">USE</span>='<a title="go to the original DEF node definition"
+                                 href="#Middle"
+                                 class="idName">Middle</a>'/&gt;
+</span></div><span title="Text is a geometry primitive node">&lt;/<span class="element">Text</span>&gt;
+</span><br />
+
+<span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;<span class="element">Appearance</span>&#160;<span class="attribute">USE</span>='<a title="go to the original DEF node definition"
+                              href="#FillAppearance4"
+                              class="idName">FillAppearance4</a>'/&gt;
+</span></div><span title="Shape contains geometry and optional corresponding Appearance">&lt;/<span class="element">Shape</span>&gt;
+</span></div><span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;/<span class="element">Transform</span>&gt;
+</span><br />
+
+<span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;<span class="element">Transform</span>&#160;<span class="attribute">translation</span>='<span class="value">3 0 0</span>'&#160;<span class="attribute">bboxCenter</span>='<span class="value">0 0 0</span>'&#160;<span class="attribute">bboxSize</span>='<span class="value">-1 -1 -1</span>'&gt;
+</span><div class="indent">
+<span title="Shape contains geometry and optional corresponding Appearance">&lt;<span class="element">Shape</span>&#160;<span class="attribute">bboxCenter</span>='<span class="value">0 0 0</span>'&#160;<span class="attribute">bboxSize</span>='<span class="value">-1 -1 -1</span>'&gt;
+</span><div class="indent">
+<span title="Text is a geometry primitive node">&lt;<span class="element">Text</span>&#160;<span class="attribute">string</span>='<span class="value">"5"</span>'&gt;
+</span><div class="indent">
+<span title="FontStyle defines the size, family, justification, and other styles used by Text nodes">&lt;<span class="element">FontStyle</span>&#160;<span class="attribute">USE</span>='<a title="go to the original DEF node definition"
+                                 href="#Middle"
+                                 class="idName">Middle</a>'/&gt;
+</span></div><span title="Text is a geometry primitive node">&lt;/<span class="element">Text</span>&gt;
+</span><br />
+
+<span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;<span class="element">Appearance</span>&#160;<span class="attribute">USE</span>='<a title="go to the original DEF node definition"
+                              href="#FillAppearance5"
+                              class="idName">FillAppearance5</a>'/&gt;
+</span></div><span title="Shape contains geometry and optional corresponding Appearance">&lt;/<span class="element">Shape</span>&gt;
+</span></div><span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;/<span class="element">Transform</span>&gt;
+</span><br />
+
+<span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;<span class="element">Transform</span>&#160;<span class="attribute">translation</span>='<span class="value">6 0 0</span>'&#160;<span class="attribute">bboxCenter</span>='<span class="value">0 0 0</span>'&#160;<span class="attribute">bboxSize</span>='<span class="value">-1 -1 -1</span>'&gt;
+</span><div class="indent">
+<span title="Shape contains geometry and optional corresponding Appearance">&lt;<span class="element">Shape</span>&#160;<span class="attribute">bboxCenter</span>='<span class="value">0 0 0</span>'&#160;<span class="attribute">bboxSize</span>='<span class="value">-1 -1 -1</span>'&gt;
+</span><div class="indent">
+<span title="Text is a geometry primitive node">&lt;<span class="element">Text</span>&#160;<span class="attribute">string</span>='<span class="value">"6"</span>'&gt;
+</span><div class="indent">
+<span title="FontStyle defines the size, family, justification, and other styles used by Text nodes">&lt;<span class="element">FontStyle</span>&#160;<span class="attribute">USE</span>='<a title="go to the original DEF node definition"
+                                 href="#Middle"
+                                 class="idName">Middle</a>'/&gt;
+</span></div><span title="Text is a geometry primitive node">&lt;/<span class="element">Text</span>&gt;
+</span><br />
+
+<span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;<span class="element">Appearance</span>&#160;<span class="attribute">USE</span>='<a title="go to the original DEF node definition"
+                              href="#FillAppearance6"
+                              class="idName">FillAppearance6</a>'/&gt;
+</span></div><span title="Shape contains geometry and optional corresponding Appearance">&lt;/<span class="element">Shape</span>&gt;
+</span></div><span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;/<span class="element">Transform</span>&gt;
+</span></div><span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;/<span class="element">Transform</span>&gt;
+</span><br />
+<a name="ThirdRowBoxes"> </a> 
+<span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;<span class="element">Transform</span>&#160;<span class="attribute">DEF</span>='<span class="idName" title="DEF name is a unique ID for a given node">ThirdRowBoxes</span>'&#160;<span class="attribute">translation</span>='<span class="value">0 2 0</span>'&#160;<span class="attribute">bboxCenter</span>='<span class="value">0 0 0</span>'&#160;<span class="attribute">bboxSize</span>='<span class="value">-1 -1 -1</span>'&gt;
+</span><div class="indent">
+<span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;<span class="element">Transform</span>&#160;<span class="attribute">translation</span>='<span class="value">-9 0 0</span>'&#160;<span class="attribute">bboxCenter</span>='<span class="value">0 0 0</span>'&#160;<span class="attribute">bboxSize</span>='<span class="value">-1 -1 -1</span>'&gt;
+</span><div class="indent">
+<span title="Shape contains geometry and optional corresponding Appearance">&lt;<span class="element">Shape</span>&#160;<span class="attribute">bboxCenter</span>='<span class="value">0 0 0</span>'&#160;<span class="attribute">bboxSize</span>='<span class="value">-1 -1 -1</span>'&gt;
+</span><div class="indent">
+<span title="Box is a geometry primitive node">&lt;<span class="element">Box</span>&#160;<span class="attribute">size</span>='<span class="value">2 2 2</span>'&#160;<span class="attribute">solid</span>='<span class="value">true</span>'/&gt;
+</span><br />
+<a name="FillAppearance7"> </a> 
+<span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;<span class="element">Appearance</span>&#160;<span class="attribute">DEF</span>='<span class="idName" title="DEF name is a unique ID for a given node">FillAppearance7</span>'&gt;
+</span><div class="indent">
+<span title="Material specifies surface rendering properties for associated geometry">&lt;<span class="element">Material</span>&#160;<span class="attribute">diffuseColor</span>='<span class="value">1 0 0</span>'/&gt;
+</span><br />
+
+&lt;<span class="element">FillProperties</span>&#160;<span class="attribute">hatchStyle</span>='<span class="value">7</span>'&#160;<span class="attribute">containerField</span>='<span class="value">fillProperties</span>'&gt;
+<div class="indent">
+                                 <span title="XML comment">&lt;!-- hatchStyle='7' (optional support) cast iron or malleable iron and general use for all materials --&gt;</span>
+                              </div>&lt;/<span class="element">FillProperties</span>&gt;
+</div><span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;/<span class="element">Appearance</span>&gt;
+</span></div><span title="Shape contains geometry and optional corresponding Appearance">&lt;/<span class="element">Shape</span>&gt;
+</span></div><span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;/<span class="element">Transform</span>&gt;
+</span><br />
+
+<span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;<span class="element">Transform</span>&#160;<span class="attribute">translation</span>='<span class="value">-6 0 0</span>'&#160;<span class="attribute">bboxCenter</span>='<span class="value">0 0 0</span>'&#160;<span class="attribute">bboxSize</span>='<span class="value">-1 -1 -1</span>'&gt;
+</span><div class="indent">
+<span title="Shape contains geometry and optional corresponding Appearance">&lt;<span class="element">Shape</span>&#160;<span class="attribute">bboxCenter</span>='<span class="value">0 0 0</span>'&#160;<span class="attribute">bboxSize</span>='<span class="value">-1 -1 -1</span>'&gt;
+</span><div class="indent">
+<span title="Box is a geometry primitive node">&lt;<span class="element">Box</span>&#160;<span class="attribute">size</span>='<span class="value">2 2 2</span>'&#160;<span class="attribute">solid</span>='<span class="value">true</span>'/&gt;
+</span><br />
+<a name="FillAppearance8"> </a> 
+<span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;<span class="element">Appearance</span>&#160;<span class="attribute">DEF</span>='<span class="idName" title="DEF name is a unique ID for a given node">FillAppearance8</span>'&gt;
+</span><div class="indent">
+<span title="Material specifies surface rendering properties for associated geometry">&lt;<span class="element">Material</span>&#160;<span class="attribute">diffuseColor</span>='<span class="value">1 0.5 0</span>'/&gt;
+</span><br />
+
+&lt;<span class="element">FillProperties</span>&#160;<span class="attribute">hatchStyle</span>='<span class="value">8</span>'&#160;<span class="attribute">containerField</span>='<span class="value">fillProperties</span>'&gt;
+<div class="indent">
+                                 <span title="XML comment">&lt;!-- hatchStyle='8' (optional support) steel --&gt;</span>
+                              </div>&lt;/<span class="element">FillProperties</span>&gt;
+</div><span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;/<span class="element">Appearance</span>&gt;
+</span></div><span title="Shape contains geometry and optional corresponding Appearance">&lt;/<span class="element">Shape</span>&gt;
+</span></div><span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;/<span class="element">Transform</span>&gt;
+</span><br />
+
+<span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;<span class="element">Transform</span>&#160;<span class="attribute">translation</span>='<span class="value">-3 0 0</span>'&#160;<span class="attribute">bboxCenter</span>='<span class="value">0 0 0</span>'&#160;<span class="attribute">bboxSize</span>='<span class="value">-1 -1 -1</span>'&gt;
+</span><div class="indent">
+<span title="Shape contains geometry and optional corresponding Appearance">&lt;<span class="element">Shape</span>&#160;<span class="attribute">bboxCenter</span>='<span class="value">0 0 0</span>'&#160;<span class="attribute">bboxSize</span>='<span class="value">-1 -1 -1</span>'&gt;
+</span><div class="indent">
+<span title="Box is a geometry primitive node">&lt;<span class="element">Box</span>&#160;<span class="attribute">size</span>='<span class="value">2 2 2</span>'&#160;<span class="attribute">solid</span>='<span class="value">true</span>'/&gt;
+</span><br />
+<a name="FillAppearance9"> </a> 
+<span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;<span class="element">Appearance</span>&#160;<span class="attribute">DEF</span>='<span class="idName" title="DEF name is a unique ID for a given node">FillAppearance9</span>'&gt;
+</span><div class="indent">
+<span title="Material specifies surface rendering properties for associated geometry">&lt;<span class="element">Material</span>&#160;<span class="attribute">diffuseColor</span>='<span class="value">1 1 0</span>'/&gt;
+</span><br />
+
+&lt;<span class="element">FillProperties</span>&#160;<span class="attribute">hatchStyle</span>='<span class="value">9</span>'&#160;<span class="attribute">containerField</span>='<span class="value">fillProperties</span>'&gt;
+<div class="indent">
+                                 <span title="XML comment">&lt;!-- hatchStyle='9' (optional support) bronze, brass, copper, and compositions --&gt;</span>
+                              </div>&lt;/<span class="element">FillProperties</span>&gt;
+</div><span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;/<span class="element">Appearance</span>&gt;
+</span></div><span title="Shape contains geometry and optional corresponding Appearance">&lt;/<span class="element">Shape</span>&gt;
+</span></div><span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;/<span class="element">Transform</span>&gt;
+</span><br />
+
+<span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;<span class="element">Transform</span>&#160;<span class="attribute">bboxCenter</span>='<span class="value">0 0 0</span>'&#160;<span class="attribute">bboxSize</span>='<span class="value">-1 -1 -1</span>'&gt;
+</span><div class="indent">
+<span title="Shape contains geometry and optional corresponding Appearance">&lt;<span class="element">Shape</span>&#160;<span class="attribute">bboxCenter</span>='<span class="value">0 0 0</span>'&#160;<span class="attribute">bboxSize</span>='<span class="value">-1 -1 -1</span>'&gt;
+</span><div class="indent">
+<span title="Box is a geometry primitive node">&lt;<span class="element">Box</span>&#160;<span class="attribute">size</span>='<span class="value">2 2 2</span>'&#160;<span class="attribute">solid</span>='<span class="value">true</span>'/&gt;
+</span><br />
+<a name="FillAppearance10"> </a> 
+<span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;<span class="element">Appearance</span>&#160;<span class="attribute">DEF</span>='<span class="idName" title="DEF name is a unique ID for a given node">FillAppearance10</span>'&gt;
+</span><div class="indent">
+<span title="Material specifies surface rendering properties for associated geometry">&lt;<span class="element">Material</span>&#160;<span class="attribute">diffuseColor</span>='<span class="value">0 1 0</span>'/&gt;
+</span><br />
+
+&lt;<span class="element">FillProperties</span>&#160;<span class="attribute">hatchStyle</span>='<span class="value">10</span>'&#160;<span class="attribute">containerField</span>='<span class="value">fillProperties</span>'&gt;
+<div class="indent">
+                                 <span title="XML comment">&lt;!-- hatchStyle='10' (optional support) white metal, zinc, lead, babbit, and alloys --&gt;</span>
+                              </div>&lt;/<span class="element">FillProperties</span>&gt;
+</div><span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;/<span class="element">Appearance</span>&gt;
+</span></div><span title="Shape contains geometry and optional corresponding Appearance">&lt;/<span class="element">Shape</span>&gt;
+</span></div><span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;/<span class="element">Transform</span>&gt;
+</span><br />
+
+<span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;<span class="element">Transform</span>&#160;<span class="attribute">translation</span>='<span class="value">3 0 0</span>'&#160;<span class="attribute">bboxCenter</span>='<span class="value">0 0 0</span>'&#160;<span class="attribute">bboxSize</span>='<span class="value">-1 -1 -1</span>'&gt;
+</span><div class="indent">
+<span title="Shape contains geometry and optional corresponding Appearance">&lt;<span class="element">Shape</span>&#160;<span class="attribute">bboxCenter</span>='<span class="value">0 0 0</span>'&#160;<span class="attribute">bboxSize</span>='<span class="value">-1 -1 -1</span>'&gt;
+</span><div class="indent">
+<span title="Box is a geometry primitive node">&lt;<span class="element">Box</span>&#160;<span class="attribute">size</span>='<span class="value">2 2 2</span>'&#160;<span class="attribute">solid</span>='<span class="value">true</span>'/&gt;
+</span><br />
+<a name="FillAppearance11"> </a> 
+<span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;<span class="element">Appearance</span>&#160;<span class="attribute">DEF</span>='<span class="idName" title="DEF name is a unique ID for a given node">FillAppearance11</span>'&gt;
+</span><div class="indent">
+<span title="Material specifies surface rendering properties for associated geometry">&lt;<span class="element">Material</span>&#160;<span class="attribute">diffuseColor</span>='<span class="value">0 0 1</span>'/&gt;
+</span><br />
+
+&lt;<span class="element">FillProperties</span>&#160;<span class="attribute">hatchStyle</span>='<span class="value">11</span>'&#160;<span class="attribute">containerField</span>='<span class="value">fillProperties</span>'&gt;
+<div class="indent">
+                                 <span title="XML comment">&lt;!-- hatchStyle='11' (optional support) magnesium, aluminum, and aluminum alloys --&gt;</span>
+                              </div>&lt;/<span class="element">FillProperties</span>&gt;
+</div><span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;/<span class="element">Appearance</span>&gt;
+</span></div><span title="Shape contains geometry and optional corresponding Appearance">&lt;/<span class="element">Shape</span>&gt;
+</span></div><span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;/<span class="element">Transform</span>&gt;
+</span><br />
+
+<span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;<span class="element">Transform</span>&#160;<span class="attribute">translation</span>='<span class="value">6 0 0</span>'&#160;<span class="attribute">bboxCenter</span>='<span class="value">0 0 0</span>'&#160;<span class="attribute">bboxSize</span>='<span class="value">-1 -1 -1</span>'&gt;
+</span><div class="indent">
+<span title="Shape contains geometry and optional corresponding Appearance">&lt;<span class="element">Shape</span>&#160;<span class="attribute">bboxCenter</span>='<span class="value">0 0 0</span>'&#160;<span class="attribute">bboxSize</span>='<span class="value">-1 -1 -1</span>'&gt;
+</span><div class="indent">
+<span title="Box is a geometry primitive node">&lt;<span class="element">Box</span>&#160;<span class="attribute">size</span>='<span class="value">2 2 2</span>'&#160;<span class="attribute">solid</span>='<span class="value">true</span>'/&gt;
+</span><br />
+<a name="FillAppearance12"> </a> 
+<span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;<span class="element">Appearance</span>&#160;<span class="attribute">DEF</span>='<span class="idName" title="DEF name is a unique ID for a given node">FillAppearance12</span>'&gt;
+</span><div class="indent">
+<span title="Material specifies surface rendering properties for associated geometry">&lt;<span class="element">Material</span>&#160;<span class="attribute">diffuseColor</span>='<span class="value">0 1 1</span>'/&gt;
+</span><br />
+
+&lt;<span class="element">FillProperties</span>&#160;<span class="attribute">hatchStyle</span>='<span class="value">12</span>'&#160;<span class="attribute">containerField</span>='<span class="value">fillProperties</span>'&gt;
+<div class="indent">
+                                 <span title="XML comment">&lt;!-- hatchStyle='12' (optional support) rubber, plastic, and electrical insulation --&gt;</span>
+                              </div>&lt;/<span class="element">FillProperties</span>&gt;
+</div><span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;/<span class="element">Appearance</span>&gt;
+</span></div><span title="Shape contains geometry and optional corresponding Appearance">&lt;/<span class="element">Shape</span>&gt;
+</span></div><span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;/<span class="element">Transform</span>&gt;
+</span></div><span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;/<span class="element">Transform</span>&gt;
+</span><br />
+<a name="FourthRowText"> </a> 
+<span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;<span class="element">Transform</span>&#160;<span class="attribute">DEF</span>='<span class="idName" title="DEF name is a unique ID for a given node">FourthRowText</span>'&#160;<span class="attribute">bboxCenter</span>='<span class="value">0 0 0</span>'&#160;<span class="attribute">bboxSize</span>='<span class="value">-1 -1 -1</span>'&gt;
+</span><div class="indent">
+<span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;<span class="element">Transform</span>&#160;<span class="attribute">translation</span>='<span class="value">-9 0 0</span>'&#160;<span class="attribute">bboxCenter</span>='<span class="value">0 0 0</span>'&#160;<span class="attribute">bboxSize</span>='<span class="value">-1 -1 -1</span>'&gt;
+</span><div class="indent">
+<span title="Shape contains geometry and optional corresponding Appearance">&lt;<span class="element">Shape</span>&#160;<span class="attribute">bboxCenter</span>='<span class="value">0 0 0</span>'&#160;<span class="attribute">bboxSize</span>='<span class="value">-1 -1 -1</span>'&gt;
+</span><div class="indent">
+<span title="Text is a geometry primitive node">&lt;<span class="element">Text</span>&#160;<span class="attribute">string</span>='<span class="value">"7"</span>'&gt;
+</span><div class="indent">
+<span title="FontStyle defines the size, family, justification, and other styles used by Text nodes">&lt;<span class="element">FontStyle</span>&#160;<span class="attribute">USE</span>='<a title="go to the original DEF node definition"
+                                 href="#Middle"
+                                 class="idName">Middle</a>'/&gt;
+</span></div><span title="Text is a geometry primitive node">&lt;/<span class="element">Text</span>&gt;
+</span><br />
+
+<span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;<span class="element">Appearance</span>&#160;<span class="attribute">USE</span>='<a title="go to the original DEF node definition"
+                              href="#FillAppearance7"
+                              class="idName">FillAppearance7</a>'/&gt;
+</span></div><span title="Shape contains geometry and optional corresponding Appearance">&lt;/<span class="element">Shape</span>&gt;
+</span></div><span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;/<span class="element">Transform</span>&gt;
+</span><br />
+
+<span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;<span class="element">Transform</span>&#160;<span class="attribute">translation</span>='<span class="value">-6 0 0</span>'&#160;<span class="attribute">bboxCenter</span>='<span class="value">0 0 0</span>'&#160;<span class="attribute">bboxSize</span>='<span class="value">-1 -1 -1</span>'&gt;
+</span><div class="indent">
+<span title="Shape contains geometry and optional corresponding Appearance">&lt;<span class="element">Shape</span>&#160;<span class="attribute">bboxCenter</span>='<span class="value">0 0 0</span>'&#160;<span class="attribute">bboxSize</span>='<span class="value">-1 -1 -1</span>'&gt;
+</span><div class="indent">
+<span title="Text is a geometry primitive node">&lt;<span class="element">Text</span>&#160;<span class="attribute">string</span>='<span class="value">"8"</span>'&gt;
+</span><div class="indent">
+<span title="FontStyle defines the size, family, justification, and other styles used by Text nodes">&lt;<span class="element">FontStyle</span>&#160;<span class="attribute">USE</span>='<a title="go to the original DEF node definition"
+                                 href="#Middle"
+                                 class="idName">Middle</a>'/&gt;
+</span></div><span title="Text is a geometry primitive node">&lt;/<span class="element">Text</span>&gt;
+</span><br />
+
+<span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;<span class="element">Appearance</span>&#160;<span class="attribute">USE</span>='<a title="go to the original DEF node definition"
+                              href="#FillAppearance8"
+                              class="idName">FillAppearance8</a>'/&gt;
+</span></div><span title="Shape contains geometry and optional corresponding Appearance">&lt;/<span class="element">Shape</span>&gt;
+</span></div><span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;/<span class="element">Transform</span>&gt;
+</span><br />
+
+<span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;<span class="element">Transform</span>&#160;<span class="attribute">translation</span>='<span class="value">-3 0 0</span>'&#160;<span class="attribute">bboxCenter</span>='<span class="value">0 0 0</span>'&#160;<span class="attribute">bboxSize</span>='<span class="value">-1 -1 -1</span>'&gt;
+</span><div class="indent">
+<span title="Shape contains geometry and optional corresponding Appearance">&lt;<span class="element">Shape</span>&#160;<span class="attribute">bboxCenter</span>='<span class="value">0 0 0</span>'&#160;<span class="attribute">bboxSize</span>='<span class="value">-1 -1 -1</span>'&gt;
+</span><div class="indent">
+<span title="Text is a geometry primitive node">&lt;<span class="element">Text</span>&#160;<span class="attribute">string</span>='<span class="value">"9"</span>'&gt;
+</span><div class="indent">
+<span title="FontStyle defines the size, family, justification, and other styles used by Text nodes">&lt;<span class="element">FontStyle</span>&#160;<span class="attribute">USE</span>='<a title="go to the original DEF node definition"
+                                 href="#Middle"
+                                 class="idName">Middle</a>'/&gt;
+</span></div><span title="Text is a geometry primitive node">&lt;/<span class="element">Text</span>&gt;
+</span><br />
+
+<span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;<span class="element">Appearance</span>&#160;<span class="attribute">USE</span>='<a title="go to the original DEF node definition"
+                              href="#FillAppearance9"
+                              class="idName">FillAppearance9</a>'/&gt;
+</span></div><span title="Shape contains geometry and optional corresponding Appearance">&lt;/<span class="element">Shape</span>&gt;
+</span></div><span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;/<span class="element">Transform</span>&gt;
+</span><br />
+
+<span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;<span class="element">Transform</span>&#160;<span class="attribute">bboxCenter</span>='<span class="value">0 0 0</span>'&#160;<span class="attribute">bboxSize</span>='<span class="value">-1 -1 -1</span>'&gt;
+</span><div class="indent">
+<span title="Shape contains geometry and optional corresponding Appearance">&lt;<span class="element">Shape</span>&#160;<span class="attribute">bboxCenter</span>='<span class="value">0 0 0</span>'&#160;<span class="attribute">bboxSize</span>='<span class="value">-1 -1 -1</span>'&gt;
+</span><div class="indent">
+<span title="Text is a geometry primitive node">&lt;<span class="element">Text</span>&#160;<span class="attribute">string</span>='<span class="value">"10"</span>'&gt;
+</span><div class="indent">
+<span title="FontStyle defines the size, family, justification, and other styles used by Text nodes">&lt;<span class="element">FontStyle</span>&#160;<span class="attribute">USE</span>='<a title="go to the original DEF node definition"
+                                 href="#Middle"
+                                 class="idName">Middle</a>'/&gt;
+</span></div><span title="Text is a geometry primitive node">&lt;/<span class="element">Text</span>&gt;
+</span><br />
+
+<span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;<span class="element">Appearance</span>&#160;<span class="attribute">USE</span>='<a title="go to the original DEF node definition"
+                              href="#FillAppearance10"
+                              class="idName">FillAppearance10</a>'/&gt;
+</span></div><span title="Shape contains geometry and optional corresponding Appearance">&lt;/<span class="element">Shape</span>&gt;
+</span></div><span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;/<span class="element">Transform</span>&gt;
+</span><br />
+
+<span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;<span class="element">Transform</span>&#160;<span class="attribute">translation</span>='<span class="value">3 0 0</span>'&#160;<span class="attribute">bboxCenter</span>='<span class="value">0 0 0</span>'&#160;<span class="attribute">bboxSize</span>='<span class="value">-1 -1 -1</span>'&gt;
+</span><div class="indent">
+<span title="Shape contains geometry and optional corresponding Appearance">&lt;<span class="element">Shape</span>&#160;<span class="attribute">bboxCenter</span>='<span class="value">0 0 0</span>'&#160;<span class="attribute">bboxSize</span>='<span class="value">-1 -1 -1</span>'&gt;
+</span><div class="indent">
+<span title="Text is a geometry primitive node">&lt;<span class="element">Text</span>&#160;<span class="attribute">string</span>='<span class="value">"11"</span>'&gt;
+</span><div class="indent">
+<span title="FontStyle defines the size, family, justification, and other styles used by Text nodes">&lt;<span class="element">FontStyle</span>&#160;<span class="attribute">USE</span>='<a title="go to the original DEF node definition"
+                                 href="#Middle"
+                                 class="idName">Middle</a>'/&gt;
+</span></div><span title="Text is a geometry primitive node">&lt;/<span class="element">Text</span>&gt;
+</span><br />
+
+<span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;<span class="element">Appearance</span>&#160;<span class="attribute">USE</span>='<a title="go to the original DEF node definition"
+                              href="#FillAppearance11"
+                              class="idName">FillAppearance11</a>'/&gt;
+</span></div><span title="Shape contains geometry and optional corresponding Appearance">&lt;/<span class="element">Shape</span>&gt;
+</span></div><span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;/<span class="element">Transform</span>&gt;
+</span><br />
+
+<span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;<span class="element">Transform</span>&#160;<span class="attribute">translation</span>='<span class="value">6 0 0</span>'&#160;<span class="attribute">bboxCenter</span>='<span class="value">0 0 0</span>'&#160;<span class="attribute">bboxSize</span>='<span class="value">-1 -1 -1</span>'&gt;
+</span><div class="indent">
+<span title="Shape contains geometry and optional corresponding Appearance">&lt;<span class="element">Shape</span>&#160;<span class="attribute">bboxCenter</span>='<span class="value">0 0 0</span>'&#160;<span class="attribute">bboxSize</span>='<span class="value">-1 -1 -1</span>'&gt;
+</span><div class="indent">
+<span title="Text is a geometry primitive node">&lt;<span class="element">Text</span>&#160;<span class="attribute">string</span>='<span class="value">"12"</span>'&gt;
+</span><div class="indent">
+<span title="FontStyle defines the size, family, justification, and other styles used by Text nodes">&lt;<span class="element">FontStyle</span>&#160;<span class="attribute">USE</span>='<a title="go to the original DEF node definition"
+                                 href="#Middle"
+                                 class="idName">Middle</a>'/&gt;
+</span></div><span title="Text is a geometry primitive node">&lt;/<span class="element">Text</span>&gt;
+</span><br />
+
+<span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;<span class="element">Appearance</span>&#160;<span class="attribute">USE</span>='<a title="go to the original DEF node definition"
+                              href="#FillAppearance12"
+                              class="idName">FillAppearance12</a>'/&gt;
+</span></div><span title="Shape contains geometry and optional corresponding Appearance">&lt;/<span class="element">Shape</span>&gt;
+</span></div><span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;/<span class="element">Transform</span>&gt;
+</span></div><span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;/<span class="element">Transform</span>&gt;
+</span><br />
+<a name="FifthRowBoxes"> </a> 
+<span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;<span class="element">Transform</span>&#160;<span class="attribute">DEF</span>='<span class="idName" title="DEF name is a unique ID for a given node">FifthRowBoxes</span>'&#160;<span class="attribute">translation</span>='<span class="value">0 -3 0</span>'&#160;<span class="attribute">bboxCenter</span>='<span class="value">0 0 0</span>'&#160;<span class="attribute">bboxSize</span>='<span class="value">-1 -1 -1</span>'&gt;
+</span><div class="indent">
+<span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;<span class="element">Transform</span>&#160;<span class="attribute">translation</span>='<span class="value">-9 0 0</span>'&#160;<span class="attribute">bboxCenter</span>='<span class="value">0 0 0</span>'&#160;<span class="attribute">bboxSize</span>='<span class="value">-1 -1 -1</span>'&gt;
+</span><div class="indent">
+<span title="Shape contains geometry and optional corresponding Appearance">&lt;<span class="element">Shape</span>&#160;<span class="attribute">bboxCenter</span>='<span class="value">0 0 0</span>'&#160;<span class="attribute">bboxSize</span>='<span class="value">-1 -1 -1</span>'&gt;
+</span><div class="indent">
+<span title="Box is a geometry primitive node">&lt;<span class="element">Box</span>&#160;<span class="attribute">size</span>='<span class="value">2 2 2</span>'&#160;<span class="attribute">solid</span>='<span class="value">true</span>'/&gt;
+</span><br />
+<a name="FillAppearance13"> </a> 
+<span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;<span class="element">Appearance</span>&#160;<span class="attribute">DEF</span>='<span class="idName" title="DEF name is a unique ID for a given node">FillAppearance13</span>'&gt;
+</span><div class="indent">
+<span title="Material specifies surface rendering properties for associated geometry">&lt;<span class="element">Material</span>&#160;<span class="attribute">diffuseColor</span>='<span class="value">1 0 0</span>'/&gt;
+</span><br />
+
+&lt;<span class="element">FillProperties</span>&#160;<span class="attribute">hatchStyle</span>='<span class="value">13</span>'&#160;<span class="attribute">containerField</span>='<span class="value">fillProperties</span>'&gt;
+<div class="indent">
+                                 <span title="XML comment">&lt;!-- hatchStyle='13' (optional support) cork, felt, fabric, leather, and fibre --&gt;</span>
+                              </div>&lt;/<span class="element">FillProperties</span>&gt;
+</div><span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;/<span class="element">Appearance</span>&gt;
+</span></div><span title="Shape contains geometry and optional corresponding Appearance">&lt;/<span class="element">Shape</span>&gt;
+</span></div><span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;/<span class="element">Transform</span>&gt;
+</span><br />
+
+<span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;<span class="element">Transform</span>&#160;<span class="attribute">translation</span>='<span class="value">-6 0 0</span>'&#160;<span class="attribute">bboxCenter</span>='<span class="value">0 0 0</span>'&#160;<span class="attribute">bboxSize</span>='<span class="value">-1 -1 -1</span>'&gt;
+</span><div class="indent">
+<span title="Shape contains geometry and optional corresponding Appearance">&lt;<span class="element">Shape</span>&#160;<span class="attribute">bboxCenter</span>='<span class="value">0 0 0</span>'&#160;<span class="attribute">bboxSize</span>='<span class="value">-1 -1 -1</span>'&gt;
+</span><div class="indent">
+<span title="Box is a geometry primitive node">&lt;<span class="element">Box</span>&#160;<span class="attribute">size</span>='<span class="value">2 2 2</span>'&#160;<span class="attribute">solid</span>='<span class="value">true</span>'/&gt;
+</span><br />
+<a name="FillAppearance14"> </a> 
+<span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;<span class="element">Appearance</span>&#160;<span class="attribute">DEF</span>='<span class="idName" title="DEF name is a unique ID for a given node">FillAppearance14</span>'&gt;
+</span><div class="indent">
+<span title="Material specifies surface rendering properties for associated geometry">&lt;<span class="element">Material</span>&#160;<span class="attribute">diffuseColor</span>='<span class="value">1 0.5 0</span>'/&gt;
+</span><br />
+
+&lt;<span class="element">FillProperties</span>&#160;<span class="attribute">hatchStyle</span>='<span class="value">14</span>'&#160;<span class="attribute">containerField</span>='<span class="value">fillProperties</span>'&gt;
+<div class="indent">
+                                 <span title="XML comment">&lt;!-- hatchStyle='14' (optional support) thermal insulation --&gt;</span>
+                              </div>&lt;/<span class="element">FillProperties</span>&gt;
+</div><span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;/<span class="element">Appearance</span>&gt;
+</span></div><span title="Shape contains geometry and optional corresponding Appearance">&lt;/<span class="element">Shape</span>&gt;
+</span></div><span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;/<span class="element">Transform</span>&gt;
+</span><br />
+
+<span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;<span class="element">Transform</span>&#160;<span class="attribute">translation</span>='<span class="value">-3 0 0</span>'&#160;<span class="attribute">bboxCenter</span>='<span class="value">0 0 0</span>'&#160;<span class="attribute">bboxSize</span>='<span class="value">-1 -1 -1</span>'&gt;
+</span><div class="indent">
+<span title="Shape contains geometry and optional corresponding Appearance">&lt;<span class="element">Shape</span>&#160;<span class="attribute">bboxCenter</span>='<span class="value">0 0 0</span>'&#160;<span class="attribute">bboxSize</span>='<span class="value">-1 -1 -1</span>'&gt;
+</span><div class="indent">
+<span title="Box is a geometry primitive node">&lt;<span class="element">Box</span>&#160;<span class="attribute">size</span>='<span class="value">2 2 2</span>'&#160;<span class="attribute">solid</span>='<span class="value">true</span>'/&gt;
+</span><br />
+<a name="FillAppearance15"> </a> 
+<span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;<span class="element">Appearance</span>&#160;<span class="attribute">DEF</span>='<span class="idName" title="DEF name is a unique ID for a given node">FillAppearance15</span>'&gt;
+</span><div class="indent">
+<span title="Material specifies surface rendering properties for associated geometry">&lt;<span class="element">Material</span>&#160;<span class="attribute">diffuseColor</span>='<span class="value">1 1 0</span>'/&gt;
+</span><br />
+
+&lt;<span class="element">FillProperties</span>&#160;<span class="attribute">hatchStyle</span>='<span class="value">15</span>'&#160;<span class="attribute">containerField</span>='<span class="value">fillProperties</span>'&gt;
+<div class="indent">
+                                 <span title="XML comment">&lt;!-- hatchStyle='15' (optional support) titanium and refractory material --&gt;</span>
+                              </div>&lt;/<span class="element">FillProperties</span>&gt;
+</div><span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;/<span class="element">Appearance</span>&gt;
+</span></div><span title="Shape contains geometry and optional corresponding Appearance">&lt;/<span class="element">Shape</span>&gt;
+</span></div><span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;/<span class="element">Transform</span>&gt;
+</span><br />
+
+<span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;<span class="element">Transform</span>&#160;<span class="attribute">bboxCenter</span>='<span class="value">0 0 0</span>'&#160;<span class="attribute">bboxSize</span>='<span class="value">-1 -1 -1</span>'&gt;
+</span><div class="indent">
+<span title="Shape contains geometry and optional corresponding Appearance">&lt;<span class="element">Shape</span>&#160;<span class="attribute">bboxCenter</span>='<span class="value">0 0 0</span>'&#160;<span class="attribute">bboxSize</span>='<span class="value">-1 -1 -1</span>'&gt;
+</span><div class="indent">
+<span title="Box is a geometry primitive node">&lt;<span class="element">Box</span>&#160;<span class="attribute">size</span>='<span class="value">2 2 2</span>'&#160;<span class="attribute">solid</span>='<span class="value">true</span>'/&gt;
+</span><br />
+<a name="FillAppearance16"> </a> 
+<span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;<span class="element">Appearance</span>&#160;<span class="attribute">DEF</span>='<span class="idName" title="DEF name is a unique ID for a given node">FillAppearance16</span>'&gt;
+</span><div class="indent">
+<span title="Material specifies surface rendering properties for associated geometry">&lt;<span class="element">Material</span>&#160;<span class="attribute">diffuseColor</span>='<span class="value">0 1 0</span>'/&gt;
+</span><br />
+
+&lt;<span class="element">FillProperties</span>&#160;<span class="attribute">hatchStyle</span>='<span class="value">16</span>'&#160;<span class="attribute">containerField</span>='<span class="value">fillProperties</span>'&gt;
+<div class="indent">
+                                 <span title="XML comment">&lt;!-- hatchStyle='16' (optional support) marble, slate, porcelain, glass, etc. --&gt;</span>
+                              </div>&lt;/<span class="element">FillProperties</span>&gt;
+</div><span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;/<span class="element">Appearance</span>&gt;
+</span></div><span title="Shape contains geometry and optional corresponding Appearance">&lt;/<span class="element">Shape</span>&gt;
+</span></div><span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;/<span class="element">Transform</span>&gt;
+</span><br />
+
+<span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;<span class="element">Transform</span>&#160;<span class="attribute">translation</span>='<span class="value">3 0 0</span>'&#160;<span class="attribute">bboxCenter</span>='<span class="value">0 0 0</span>'&#160;<span class="attribute">bboxSize</span>='<span class="value">-1 -1 -1</span>'&gt;
+</span><div class="indent">
+<span title="Shape contains geometry and optional corresponding Appearance">&lt;<span class="element">Shape</span>&#160;<span class="attribute">bboxCenter</span>='<span class="value">0 0 0</span>'&#160;<span class="attribute">bboxSize</span>='<span class="value">-1 -1 -1</span>'&gt;
+</span><div class="indent">
+<span title="Box is a geometry primitive node">&lt;<span class="element">Box</span>&#160;<span class="attribute">size</span>='<span class="value">2 2 2</span>'&#160;<span class="attribute">solid</span>='<span class="value">true</span>'/&gt;
+</span><br />
+<a name="FillAppearance17"> </a> 
+<span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;<span class="element">Appearance</span>&#160;<span class="attribute">DEF</span>='<span class="idName" title="DEF name is a unique ID for a given node">FillAppearance17</span>'&gt;
+</span><div class="indent">
+<span title="Material specifies surface rendering properties for associated geometry">&lt;<span class="element">Material</span>&#160;<span class="attribute">diffuseColor</span>='<span class="value">0 0 1</span>'/&gt;
+</span><br />
+
+&lt;<span class="element">FillProperties</span>&#160;<span class="attribute">hatchStyle</span>='<span class="value">17</span>'&#160;<span class="attribute">containerField</span>='<span class="value">fillProperties</span>'&gt;
+<div class="indent">
+                                 <span title="XML comment">&lt;!-- hatchStyle='17' (optional support) earth --&gt;</span>
+                              </div>&lt;/<span class="element">FillProperties</span>&gt;
+</div><span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;/<span class="element">Appearance</span>&gt;
+</span></div><span title="Shape contains geometry and optional corresponding Appearance">&lt;/<span class="element">Shape</span>&gt;
+</span></div><span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;/<span class="element">Transform</span>&gt;
+</span><br />
+
+<span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;<span class="element">Transform</span>&#160;<span class="attribute">translation</span>='<span class="value">6 0 0</span>'&#160;<span class="attribute">bboxCenter</span>='<span class="value">0 0 0</span>'&#160;<span class="attribute">bboxSize</span>='<span class="value">-1 -1 -1</span>'&gt;
+</span><div class="indent">
+<span title="Shape contains geometry and optional corresponding Appearance">&lt;<span class="element">Shape</span>&#160;<span class="attribute">bboxCenter</span>='<span class="value">0 0 0</span>'&#160;<span class="attribute">bboxSize</span>='<span class="value">-1 -1 -1</span>'&gt;
+</span><div class="indent">
+<span title="Box is a geometry primitive node">&lt;<span class="element">Box</span>&#160;<span class="attribute">size</span>='<span class="value">2 2 2</span>'&#160;<span class="attribute">solid</span>='<span class="value">true</span>'/&gt;
+</span><br />
+<a name="FillAppearance18"> </a> 
+<span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;<span class="element">Appearance</span>&#160;<span class="attribute">DEF</span>='<span class="idName" title="DEF name is a unique ID for a given node">FillAppearance18</span>'&gt;
+</span><div class="indent">
+<span title="Material specifies surface rendering properties for associated geometry">&lt;<span class="element">Material</span>&#160;<span class="attribute">diffuseColor</span>='<span class="value">0 1 1</span>'/&gt;
+</span><br />
+
+&lt;<span class="element">FillProperties</span>&#160;<span class="attribute">hatchStyle</span>='<span class="value">18</span>'&#160;<span class="attribute">containerField</span>='<span class="value">fillProperties</span>'&gt;
+<div class="indent">
+                                 <span title="XML comment">&lt;!-- hatchStyle='18' (optional support) sand --&gt;</span>
+                              </div>&lt;/<span class="element">FillProperties</span>&gt;
+</div><span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;/<span class="element">Appearance</span>&gt;
+</span></div><span title="Shape contains geometry and optional corresponding Appearance">&lt;/<span class="element">Shape</span>&gt;
+</span></div><span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;/<span class="element">Transform</span>&gt;
+</span><br />
+
+<span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;<span class="element">Transform</span>&#160;<span class="attribute">translation</span>='<span class="value">9 0 0</span>'&#160;<span class="attribute">bboxCenter</span>='<span class="value">0 0 0</span>'&#160;<span class="attribute">bboxSize</span>='<span class="value">-1 -1 -1</span>'&gt;
+</span><div class="indent">
+<span title="Shape contains geometry and optional corresponding Appearance">&lt;<span class="element">Shape</span>&#160;<span class="attribute">bboxCenter</span>='<span class="value">0 0 0</span>'&#160;<span class="attribute">bboxSize</span>='<span class="value">-1 -1 -1</span>'&gt;
+</span><div class="indent">
+<span title="Box is a geometry primitive node">&lt;<span class="element">Box</span>&#160;<span class="attribute">size</span>='<span class="value">2 2 2</span>'&#160;<span class="attribute">solid</span>='<span class="value">true</span>'/&gt;
+</span><br />
+<a name="FillAppearance19"> </a> 
+<span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;<span class="element">Appearance</span>&#160;<span class="attribute">DEF</span>='<span class="idName" title="DEF name is a unique ID for a given node">FillAppearance19</span>'&gt;
+</span><div class="indent">
+<span title="Material specifies surface rendering properties for associated geometry">&lt;<span class="element">Material</span>&#160;<span class="attribute">diffuseColor</span>='<span class="value">0.3 0.3 0.3</span>'/&gt;
+</span><br />
+
+&lt;<span class="element">FillProperties</span>&#160;<span class="attribute">hatchStyle</span>='<span class="value">19</span>'&#160;<span class="attribute">containerField</span>='<span class="value">fillProperties</span>'&gt;
+<div class="indent">
+                                 <span title="XML comment">&lt;!-- hatchStyle='19' (optional support) repeating dot --&gt;</span>
+                              </div>&lt;/<span class="element">FillProperties</span>&gt;
+</div><span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;/<span class="element">Appearance</span>&gt;
+</span></div><span title="Shape contains geometry and optional corresponding Appearance">&lt;/<span class="element">Shape</span>&gt;
+</span></div><span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;/<span class="element">Transform</span>&gt;
+</span></div><span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;/<span class="element">Transform</span>&gt;
+</span><br />
+<a name="SixthRowText"> </a> 
+<span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;<span class="element">Transform</span>&#160;<span class="attribute">DEF</span>='<span class="idName" title="DEF name is a unique ID for a given node">SixthRowText</span>'&#160;<span class="attribute">translation</span>='<span class="value">0 -5 0</span>'&#160;<span class="attribute">bboxCenter</span>='<span class="value">0 0 0</span>'&#160;<span class="attribute">bboxSize</span>='<span class="value">-1 -1 -1</span>'&gt;
+</span><div class="indent">
+<span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;<span class="element">Transform</span>&#160;<span class="attribute">translation</span>='<span class="value">-9 0 0</span>'&#160;<span class="attribute">bboxCenter</span>='<span class="value">0 0 0</span>'&#160;<span class="attribute">bboxSize</span>='<span class="value">-1 -1 -1</span>'&gt;
+</span><div class="indent">
+<span title="Shape contains geometry and optional corresponding Appearance">&lt;<span class="element">Shape</span>&#160;<span class="attribute">bboxCenter</span>='<span class="value">0 0 0</span>'&#160;<span class="attribute">bboxSize</span>='<span class="value">-1 -1 -1</span>'&gt;
+</span><div class="indent">
+<span title="Text is a geometry primitive node">&lt;<span class="element">Text</span>&#160;<span class="attribute">string</span>='<span class="value">"13"</span>'&gt;
+</span><div class="indent">
+<span title="FontStyle defines the size, family, justification, and other styles used by Text nodes">&lt;<span class="element">FontStyle</span>&#160;<span class="attribute">USE</span>='<a title="go to the original DEF node definition"
+                                 href="#Middle"
+                                 class="idName">Middle</a>'/&gt;
+</span></div><span title="Text is a geometry primitive node">&lt;/<span class="element">Text</span>&gt;
+</span><br />
+
+<span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;<span class="element">Appearance</span>&#160;<span class="attribute">USE</span>='<a title="go to the original DEF node definition"
+                              href="#FillAppearance13"
+                              class="idName">FillAppearance13</a>'/&gt;
+</span></div><span title="Shape contains geometry and optional corresponding Appearance">&lt;/<span class="element">Shape</span>&gt;
+</span></div><span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;/<span class="element">Transform</span>&gt;
+</span><br />
+
+<span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;<span class="element">Transform</span>&#160;<span class="attribute">translation</span>='<span class="value">-6 0 0</span>'&#160;<span class="attribute">bboxCenter</span>='<span class="value">0 0 0</span>'&#160;<span class="attribute">bboxSize</span>='<span class="value">-1 -1 -1</span>'&gt;
+</span><div class="indent">
+<span title="Shape contains geometry and optional corresponding Appearance">&lt;<span class="element">Shape</span>&#160;<span class="attribute">bboxCenter</span>='<span class="value">0 0 0</span>'&#160;<span class="attribute">bboxSize</span>='<span class="value">-1 -1 -1</span>'&gt;
+</span><div class="indent">
+<span title="Text is a geometry primitive node">&lt;<span class="element">Text</span>&#160;<span class="attribute">string</span>='<span class="value">"14"</span>'&gt;
+</span><div class="indent">
+<span title="FontStyle defines the size, family, justification, and other styles used by Text nodes">&lt;<span class="element">FontStyle</span>&#160;<span class="attribute">USE</span>='<a title="go to the original DEF node definition"
+                                 href="#Middle"
+                                 class="idName">Middle</a>'/&gt;
+</span></div><span title="Text is a geometry primitive node">&lt;/<span class="element">Text</span>&gt;
+</span><br />
+
+<span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;<span class="element">Appearance</span>&#160;<span class="attribute">USE</span>='<a title="go to the original DEF node definition"
+                              href="#FillAppearance14"
+                              class="idName">FillAppearance14</a>'/&gt;
+</span></div><span title="Shape contains geometry and optional corresponding Appearance">&lt;/<span class="element">Shape</span>&gt;
+</span></div><span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;/<span class="element">Transform</span>&gt;
+</span><br />
+
+<span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;<span class="element">Transform</span>&#160;<span class="attribute">translation</span>='<span class="value">-3 0 0</span>'&#160;<span class="attribute">bboxCenter</span>='<span class="value">0 0 0</span>'&#160;<span class="attribute">bboxSize</span>='<span class="value">-1 -1 -1</span>'&gt;
+</span><div class="indent">
+<span title="Shape contains geometry and optional corresponding Appearance">&lt;<span class="element">Shape</span>&#160;<span class="attribute">bboxCenter</span>='<span class="value">0 0 0</span>'&#160;<span class="attribute">bboxSize</span>='<span class="value">-1 -1 -1</span>'&gt;
+</span><div class="indent">
+<span title="Text is a geometry primitive node">&lt;<span class="element">Text</span>&#160;<span class="attribute">string</span>='<span class="value">"15"</span>'&gt;
+</span><div class="indent">
+<span title="FontStyle defines the size, family, justification, and other styles used by Text nodes">&lt;<span class="element">FontStyle</span>&#160;<span class="attribute">USE</span>='<a title="go to the original DEF node definition"
+                                 href="#Middle"
+                                 class="idName">Middle</a>'/&gt;
+</span></div><span title="Text is a geometry primitive node">&lt;/<span class="element">Text</span>&gt;
+</span><br />
+
+<span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;<span class="element">Appearance</span>&#160;<span class="attribute">USE</span>='<a title="go to the original DEF node definition"
+                              href="#FillAppearance15"
+                              class="idName">FillAppearance15</a>'/&gt;
+</span></div><span title="Shape contains geometry and optional corresponding Appearance">&lt;/<span class="element">Shape</span>&gt;
+</span></div><span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;/<span class="element">Transform</span>&gt;
+</span><br />
+
+<span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;<span class="element">Transform</span>&#160;<span class="attribute">bboxCenter</span>='<span class="value">0 0 0</span>'&#160;<span class="attribute">bboxSize</span>='<span class="value">-1 -1 -1</span>'&gt;
+</span><div class="indent">
+<span title="Shape contains geometry and optional corresponding Appearance">&lt;<span class="element">Shape</span>&#160;<span class="attribute">bboxCenter</span>='<span class="value">0 0 0</span>'&#160;<span class="attribute">bboxSize</span>='<span class="value">-1 -1 -1</span>'&gt;
+</span><div class="indent">
+<span title="Text is a geometry primitive node">&lt;<span class="element">Text</span>&#160;<span class="attribute">string</span>='<span class="value">"16"</span>'&gt;
+</span><div class="indent">
+<span title="FontStyle defines the size, family, justification, and other styles used by Text nodes">&lt;<span class="element">FontStyle</span>&#160;<span class="attribute">USE</span>='<a title="go to the original DEF node definition"
+                                 href="#Middle"
+                                 class="idName">Middle</a>'/&gt;
+</span></div><span title="Text is a geometry primitive node">&lt;/<span class="element">Text</span>&gt;
+</span><br />
+
+<span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;<span class="element">Appearance</span>&#160;<span class="attribute">USE</span>='<a title="go to the original DEF node definition"
+                              href="#FillAppearance16"
+                              class="idName">FillAppearance16</a>'/&gt;
+</span></div><span title="Shape contains geometry and optional corresponding Appearance">&lt;/<span class="element">Shape</span>&gt;
+</span></div><span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;/<span class="element">Transform</span>&gt;
+</span><br />
+
+<span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;<span class="element">Transform</span>&#160;<span class="attribute">translation</span>='<span class="value">3 0 0</span>'&#160;<span class="attribute">bboxCenter</span>='<span class="value">0 0 0</span>'&#160;<span class="attribute">bboxSize</span>='<span class="value">-1 -1 -1</span>'&gt;
+</span><div class="indent">
+<span title="Shape contains geometry and optional corresponding Appearance">&lt;<span class="element">Shape</span>&#160;<span class="attribute">bboxCenter</span>='<span class="value">0 0 0</span>'&#160;<span class="attribute">bboxSize</span>='<span class="value">-1 -1 -1</span>'&gt;
+</span><div class="indent">
+<span title="Text is a geometry primitive node">&lt;<span class="element">Text</span>&#160;<span class="attribute">string</span>='<span class="value">"17"</span>'&gt;
+</span><div class="indent">
+<span title="FontStyle defines the size, family, justification, and other styles used by Text nodes">&lt;<span class="element">FontStyle</span>&#160;<span class="attribute">USE</span>='<a title="go to the original DEF node definition"
+                                 href="#Middle"
+                                 class="idName">Middle</a>'/&gt;
+</span></div><span title="Text is a geometry primitive node">&lt;/<span class="element">Text</span>&gt;
+</span><br />
+
+<span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;<span class="element">Appearance</span>&#160;<span class="attribute">USE</span>='<a title="go to the original DEF node definition"
+                              href="#FillAppearance17"
+                              class="idName">FillAppearance17</a>'/&gt;
+</span></div><span title="Shape contains geometry and optional corresponding Appearance">&lt;/<span class="element">Shape</span>&gt;
+</span></div><span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;/<span class="element">Transform</span>&gt;
+</span><br />
+
+<span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;<span class="element">Transform</span>&#160;<span class="attribute">translation</span>='<span class="value">6 0 0</span>'&#160;<span class="attribute">bboxCenter</span>='<span class="value">0 0 0</span>'&#160;<span class="attribute">bboxSize</span>='<span class="value">-1 -1 -1</span>'&gt;
+</span><div class="indent">
+<span title="Shape contains geometry and optional corresponding Appearance">&lt;<span class="element">Shape</span>&#160;<span class="attribute">bboxCenter</span>='<span class="value">0 0 0</span>'&#160;<span class="attribute">bboxSize</span>='<span class="value">-1 -1 -1</span>'&gt;
+</span><div class="indent">
+<span title="Text is a geometry primitive node">&lt;<span class="element">Text</span>&#160;<span class="attribute">string</span>='<span class="value">"18"</span>'&gt;
+</span><div class="indent">
+<span title="FontStyle defines the size, family, justification, and other styles used by Text nodes">&lt;<span class="element">FontStyle</span>&#160;<span class="attribute">USE</span>='<a title="go to the original DEF node definition"
+                                 href="#Middle"
+                                 class="idName">Middle</a>'/&gt;
+</span></div><span title="Text is a geometry primitive node">&lt;/<span class="element">Text</span>&gt;
+</span><br />
+
+<span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;<span class="element">Appearance</span>&#160;<span class="attribute">USE</span>='<a title="go to the original DEF node definition"
+                              href="#FillAppearance18"
+                              class="idName">FillAppearance18</a>'/&gt;
+</span></div><span title="Shape contains geometry and optional corresponding Appearance">&lt;/<span class="element">Shape</span>&gt;
+</span></div><span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;/<span class="element">Transform</span>&gt;
+</span><br />
+
+<span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;<span class="element">Transform</span>&#160;<span class="attribute">translation</span>='<span class="value">9 0 0</span>'&#160;<span class="attribute">bboxCenter</span>='<span class="value">0 0 0</span>'&#160;<span class="attribute">bboxSize</span>='<span class="value">-1 -1 -1</span>'&gt;
+</span><div class="indent">
+<span title="Shape contains geometry and optional corresponding Appearance">&lt;<span class="element">Shape</span>&#160;<span class="attribute">bboxCenter</span>='<span class="value">0 0 0</span>'&#160;<span class="attribute">bboxSize</span>='<span class="value">-1 -1 -1</span>'&gt;
+</span><div class="indent">
+<span title="Text is a geometry primitive node">&lt;<span class="element">Text</span>&#160;<span class="attribute">string</span>='<span class="value">"19"</span>'&gt;
+</span><div class="indent">
+<span title="FontStyle defines the size, family, justification, and other styles used by Text nodes">&lt;<span class="element">FontStyle</span>&#160;<span class="attribute">USE</span>='<a title="go to the original DEF node definition"
+                                 href="#Middle"
+                                 class="idName">Middle</a>'/&gt;
+</span></div><span title="Text is a geometry primitive node">&lt;/<span class="element">Text</span>&gt;
+</span><br />
+
+<span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;<span class="element">Appearance</span>&#160;<span class="attribute">USE</span>='<a title="go to the original DEF node definition"
+                              href="#FillAppearance19"
+                              class="idName">FillAppearance19</a>'/&gt;
+</span></div><span title="Shape contains geometry and optional corresponding Appearance">&lt;/<span class="element">Shape</span>&gt;
+</span></div><span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;/<span class="element">Transform</span>&gt;
+</span></div><span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;/<span class="element">Transform</span>&gt;
+</span></div><span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;/<span class="element">Transform</span>&gt;
+</span></div><span title="Scene is the root node that contains an X3D scene graph">&lt;/<span class="element">Scene</span>&gt;
+</span></div><span title="X3D is the top-most XML element for an Extensible 3D (X3D) Graphics file">&lt;/<span class="element">X3D</span>&gt;
+</span><br /><span style="color:white">
+&lt;!--
+</span>
+         <div class="center">
+            <hr style="width:100%"/>
+            <b>
+               <i>Index for DEF nodes</i>
+            </b>: 
+<a title="go to this Transform node"
+               href="#FifthRowBoxes"
+               class="idName">FifthRowBoxes</a>,
+<a title="go to this Appearance node"
+               href="#FillAppearance1"
+               class="idName">FillAppearance1</a>,
+<a title="go to this Appearance node"
+               href="#FillAppearance10"
+               class="idName">FillAppearance10</a>,
+<a title="go to this Appearance node"
+               href="#FillAppearance11"
+               class="idName">FillAppearance11</a>,
+<a title="go to this Appearance node"
+               href="#FillAppearance12"
+               class="idName">FillAppearance12</a>,
+<a title="go to this Appearance node"
+               href="#FillAppearance13"
+               class="idName">FillAppearance13</a>,
+<a title="go to this Appearance node"
+               href="#FillAppearance14"
+               class="idName">FillAppearance14</a>,
+<a title="go to this Appearance node"
+               href="#FillAppearance15"
+               class="idName">FillAppearance15</a>,
+<a title="go to this Appearance node"
+               href="#FillAppearance16"
+               class="idName">FillAppearance16</a>,
+<a title="go to this Appearance node"
+               href="#FillAppearance17"
+               class="idName">FillAppearance17</a>,
+<a title="go to this Appearance node"
+               href="#FillAppearance18"
+               class="idName">FillAppearance18</a>,
+<a title="go to this Appearance node"
+               href="#FillAppearance19"
+               class="idName">FillAppearance19</a>,
+<a title="go to this Appearance node"
+               href="#FillAppearance2"
+               class="idName">FillAppearance2</a>,
+<a title="go to this Appearance node"
+               href="#FillAppearance3"
+               class="idName">FillAppearance3</a>,
+<a title="go to this Appearance node"
+               href="#FillAppearance4"
+               class="idName">FillAppearance4</a>,
+<a title="go to this Appearance node"
+               href="#FillAppearance5"
+               class="idName">FillAppearance5</a>,
+<a title="go to this Appearance node"
+               href="#FillAppearance6"
+               class="idName">FillAppearance6</a>,
+<a title="go to this Appearance node"
+               href="#FillAppearance7"
+               class="idName">FillAppearance7</a>,
+<a title="go to this Appearance node"
+               href="#FillAppearance8"
+               class="idName">FillAppearance8</a>,
+<a title="go to this Appearance node"
+               href="#FillAppearance9"
+               class="idName">FillAppearance9</a>,
+<a title="go to this Transform node"
+               href="#FirstRowBoxes"
+               class="idName">FirstRowBoxes</a>,
+<a title="go to this Transform node"
+               href="#FourthRowText"
+               class="idName">FourthRowText</a>,
+<a title="go to this FontStyle node" href="#Middle" class="idName">Middle</a>,
+<a title="go to this Transform node"
+               href="#OverallAdjustment"
+               class="idName">OverallAdjustment</a>,
+<a title="go to this Transform node"
+               href="#SecondRowText"
+               class="idName">SecondRowText</a>,
+<a title="go to this Transform node"
+               href="#SixthRowText"
+               class="idName">SixthRowText</a>,
+<a title="go to this Transform node"
+               href="#ThirdRowBoxes"
+               class="idName">ThirdRowBoxes</a>
+<br /><hr width="50%"/>
+            <b>
+               <i>Index for Viewpoint image</i>
+            </b>: 
+<a title="go to this Viewpoint node"
+               href="#Viewpoint_1"
+               class="idName">Viewpoint_1</a>
+            <hr style="width:100%"/>
+         </div>
+         <span style="color:white">
+--&gt;
+</span>
+      </div>
+      <p style="text-align:center;">
+         <span style="color:white">&lt;!--</span>
+Color key: <!--(matching X3D and XML terminology) -->
+&lt;<span class="element">X3dNode</span>
+         <span class="idName"> DEF</span>='<span class="idName">idName</span>' <span class="attribute">field</span>='<span class="value">value</span>'/&gt; 
+ matches 
+&lt;<span class="element">XmlElement</span>
+         <span class="idName"> DEF</span>='<span class="idName">idName</span>' <span class="attribute">attribute</span>='<span class="value">value</span>'/&gt; <br/>
+<span title="behavior node" style="background-color:#DDEEFF;">(Light blue background: behavior node)</span> <span title="inserted documentation about ROUTE connections" style="background-color:#EEEEEE;">(Grey background: inserted documentation)</span> <span title="X3D Extensibility" style="background-color:#FFEEFF;">(Magenta background: X3D Extensibility)</span><br/>
+
+         <span style="color:white"> --&gt;</span>
+      </p>
+      <p style="text-align:center; background-color:white">
+         <span style="color:white">&lt;!--</span>
+
+                    Additional help information about X3D scenes:  
+                    <a href="https://www.web3d.org/x3d/content/examples/X3dResources.html"
+            title="Numerous resources that support X3D graphics">X3D Resources</a>,
+                    <a href="https://www.web3d.org/x3d/content/examples/X3dSceneAuthoringHints.html"
+            title="Style guidelines, authoring tips and best practices">X3D Scene Authoring Hints</a>
+                    and
+                    <a href="https://www.web3d.org/x3d/content/X3dTooltips.html"
+            title="Summary descriptions and authoring hints for each X3D node (element) and field (attribute)">X3D Tooltips</a>
+         <span style="color:white">--&gt;</span>
+      </p>
+   </body>
+</html>

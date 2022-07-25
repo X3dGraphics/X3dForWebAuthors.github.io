@@ -1,0 +1,179 @@
+@prefix :        <https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter14Prototypes/X3dArchitectureConceptsPrototypeBodyValidationExample.ttl#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema:  <http://schema.org/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix x3d:     <https://www.web3d.org/specifications/x3d-4.0.xsd#> .
+@prefix x3do:    <https://www.web3d.org/specifications/X3dOntology4.0#> .
+
+:X3D a owl:NamedIndividual, x3do:X3D ;
+  x3do:hasHead :head ;
+  x3do:hasScene :Scene ;
+  x3do:profile 'Immersive' ;
+  x3do:version '4.0' ;
+  x3do:noNamespaceSchemaLocation 'https://www.web3d.org/specifications/x3d-4.0.xsd' .
+:head a owl:NamedIndividual, x3do:head ;
+  x3do:hasParent :X3D ;
+  x3do:hasMeta :meta_1_1, :meta_1_2, :meta_1_3, :meta_1_4, :meta_1_5, :meta_1_6, :meta_1_7, :meta_1_8, :meta_1_9, :meta_1_10, :meta_1_11, :meta_1_12, :meta_1_13, :meta_1_14, :meta_1_15, :meta_1_16 .
+:meta_1_1 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'X3dArchitectureConceptsPrototypeBodyValidationExample.x3d' ;
+  x3do:name 'title' .
+:meta_1_2 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Prototype example to illustrate why additional non-rendering nodes might be needed after first node in ProtoBody' ;
+  x3do:name 'description' .
+:meta_1_3 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '*Don Brutzman' ;
+  x3do:name 'creator' .
+:meta_1_4 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '10 September 2021' ;
+  x3do:name 'created' .
+:meta_1_5 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '19 September 2021' ;
+  x3do:name 'version' .
+:meta_1_6 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'X3dArchitectureConceptsPrototypeBodyValidationDiagram.png' ;
+  x3do:name 'drawing' .
+:meta_1_7 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'X3dArchitectureConceptsPrototypeBodyValidationDiagram.vsdx' ;
+  x3do:name 'drawing' .
+:meta_1_8 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'X3dArchitectureConceptsPrototypeBodyValidationExampleX_ITE.png' ;
+  x3do:name 'Image' .
+:meta_1_9 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://www.web3d.org/member-only/mantis/view.php?id=1372' ;
+  x3do:name 'reference' .
+:meta_1_10 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'X3D Architecture, ISO/IEC 19775-1: 202x, Clause 4 Concepts, 4.4.4.3 PROTO definition semantics' ;
+  x3do:name 'specificationSection' .
+:meta_1_11 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://www.web3d.org/specifications/X3Dv4Draft/ISO-IEC19775-1v4-CD1/Part01/concepts.html#PROTOdefinitionsemantics' ;
+  x3do:name 'specificationUrl' .
+:meta_1_12 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '(c) Web3D Consortium Inc. 2021' ;
+  x3do:name 'rights' .
+:meta_1_13 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'X3D prototype specification' ;
+  x3do:name 'subject' .
+:meta_1_14 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter14Prototypes/X3dArchitectureConceptsPrototypeBodyValidationExample.x3d' ;
+  x3do:name 'identifier' .
+:meta_1_15 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'X3D-Edit 4.0, https://savage.nps.edu/X3D-Edit' ;
+  x3do:name 'generator' .
+:meta_1_16 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '../license.html' ;
+  x3do:name 'license' .
+:meta dcterms:title "X3dArchitectureConceptsPrototypeBodyValidationExample.x3d" .
+:meta dcterms:description "Prototype example to illustrate why additional non-rendering nodes might be needed after first node in ProtoBody" .
+:meta dcterms:creator "*Don Brutzman" .
+:meta dcterms:created "10 September 2021" .
+:meta dcterms:version "19 September 2021" .
+:meta dcterms:drawing "X3dArchitectureConceptsPrototypeBodyValidationDiagram.png" .
+:meta dcterms:drawing "X3dArchitectureConceptsPrototypeBodyValidationDiagram.vsdx" .
+:meta dcterms:Image "X3dArchitectureConceptsPrototypeBodyValidationExampleX_ITE.png" .
+:meta dcterms:reference "https://www.web3d.org/member-only/mantis/view.php?id=1372" .
+:meta dcterms:rights "(c) Web3D Consortium Inc. 2021" .
+:meta dcterms:subject "X3D prototype specification" .
+:meta dcterms:identifier "https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter14Prototypes/X3dArchitectureConceptsPrototypeBodyValidationExample.x3d" .
+:meta dcterms:generator "X3D-Edit 4.0, https://savage.nps.edu/X3D-Edit" .
+:meta dcterms:license "../license.html" .
+:Scene a owl:NamedIndividual, x3do:Scene ;
+  x3do:hasParent :X3D ;
+  x3do:hasChildren :Background_2_1, :NavigationInfo_2_2, :MyBox ;
+  x3do:hasProtoDeclare :ProtoDeclare_2_3 .
+:Background_2_1 a owl:NamedIndividual, x3do:Background ;
+  x3do:hasParent :Scene ;
+  x3do:skyColor ( 0.058824 0.886275 1 ) .
+:NavigationInfo_2_2 a owl:NamedIndividual, x3do:NavigationInfo ;
+  x3do:hasParent :Scene .
+:ProtoDeclare_2_3 a owl:NamedIndividual, x3do:ProtoDeclare ;
+  x3do:hasParent :Scene ;
+  x3do:hasProtoInterface :ProtoInterface_2_3_1 ;
+  x3do:hasProtoBody :ProtoBody_2_3_2 ;
+  x3do:name 'PulsingBoxShape' .
+:ProtoInterface_2_3_1 a owl:NamedIndividual, x3do:ProtoInterface ;
+  x3do:hasParent :ProtoDeclare_2_3 ;
+  x3do:hasField :field_2_3_1_1 .
+:field_2_3_1_1 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :ProtoInterface_2_3_1 ;
+  x3do:accessType 'inputOutput' ;
+  x3do:name 'boxColor' ;
+  x3do:type 'SFColor' ;
+  x3do:value ( 1 0 0 ) .
+:ProtoBody_2_3_2 a owl:NamedIndividual, x3do:ProtoBody ;
+  x3do:hasParent :ProtoDeclare_2_3 ;
+  x3do:hasChildren :PrototypeRootNode, :TransparencyInterpolator, :Timer ;
+  x3do:hasROUTE :ROUTE_2_3_2_4, :ROUTE_2_3_2_5 .
+:PrototypeRootNode a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :ProtoBody_2_3_2 ;
+  x3do:hasAppearance :Appearance_2_3_2_1_1 ;
+  x3do:hasGeometry :PulsingBox ;
+  x3do:DEF 'PrototypeRootNode' .
+:Appearance_2_3_2_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :PrototypeRootNode ;
+  x3do:hasMaterial :BoxMaterial .
+:BoxMaterial a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_3_2_1_1 ;
+  x3do:hasIS :IS_2_3_2_1_1_1_1 ;
+  x3do:DEF 'BoxMaterial' ;
+  x3do:diffuseColor ( 0.980392 0 0 ) .
+:IS_2_3_2_1_1_1_1 a owl:NamedIndividual, x3do:IS ;
+  x3do:hasParent :BoxMaterial ;
+  x3do:hasConnect :connect_2_3_2_1_1_1_1_1 .
+:connect_2_3_2_1_1_1_1_1 a owl:NamedIndividual, x3do:connect ;
+  x3do:hasParent :IS_2_3_2_1_1_1_1 ;
+  x3do:nodeField 'diffuseColor' ;
+  x3do:protoField 'boxColor' .
+:PulsingBox a owl:NamedIndividual, x3do:Box ;
+  x3do:hasParent :PrototypeRootNode ;
+  x3do:DEF 'PulsingBox' ;
+  x3do:size ( 4 4 4 ) .
+:TransparencyInterpolator a owl:NamedIndividual, x3do:ScalarInterpolator ;
+  x3do:hasParent :ProtoBody_2_3_2 ;
+  x3do:DEF 'TransparencyInterpolator' ;
+  x3do:key ( 0 0.5 1 ) ;
+  x3do:keyValue ( 1 0 1 ) .
+:Timer a owl:NamedIndividual, x3do:TimeSensor ;
+  x3do:hasParent :ProtoBody_2_3_2 ;
+  x3do:DEF 'Timer' ;
+  x3do:cycleInterval '10' ;
+  x3do:loop true .
+:ROUTE_2_3_2_4 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :ProtoBody_2_3_2 ;
+  x3do:fromField 'fraction_changed' ;
+  x3do:fromNode 'Timer' ;
+  x3do:toField 'set_fraction' ;
+  x3do:toNode 'TransparencyInterpolator' .
+:ROUTE_2_3_2_5 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :ProtoBody_2_3_2 ;
+  x3do:fromField 'value_changed' ;
+  x3do:fromNode 'TransparencyInterpolator' ;
+  x3do:toField 'transparency' ;
+  x3do:toNode 'BoxMaterial' .
+:MyBox a owl:NamedIndividual, x3do:ProtoInstance ;
+  x3do:hasParent :Scene ;
+  x3do:hasFieldValue :fieldValue_2_4_1 ;
+  x3do:DEF 'MyBox' ;
+  x3do:name 'PulsingBoxShape' .
+:fieldValue_2_4_1 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :MyBox ;
+  x3do:name 'boxColor' ;
+  x3do:value '0 0 0.5' .

@@ -1,0 +1,1 @@
+<Shape DEF=''/> found without child geometry node [/X3D/Scene/ProtoDeclare/ProtoBody/Transform/Transform/Transform/Shape[2], warning]

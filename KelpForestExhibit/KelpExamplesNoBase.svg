@@ -1,0 +1,29 @@
+
+        
+ecmascript:
+
+function set_fraction (value, timestamp)
+{
+	delay = 0.25;
+	delayedValue = value + (delay/5.5); // delay/interval, seconds
+	if (delayedValue &gt; 1) delayedValue--;
+	value_changed = delayedValue;
+
+//	Browser.print ('TimeDelay1 value=' + value + ', value_changed=' + value_changed);
+}
+
+      
+        
+ecmascript:
+
+function set_fraction (value, timestamp)
+{
+	delay = 0.5;
+	delayedValue = value + (delay/5.5); // delay/interval, seconds
+	if (delayedValue &gt; 1) delayedValue--;
+	value_changed = delayedValue;
+
+//	Browser.print ('TimeDelay2 value=' + value + ', value_changed=' + value_changed);
+}
+
+      

@@ -1,0 +1,523 @@
+@prefix :        <https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter09EventUtilitiesScripting/IntegerTriggerPumpHouse.ttl#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema:  <http://schema.org/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix x3d:     <https://www.web3d.org/specifications/x3d-4.0.xsd#> .
+@prefix x3do:    <https://www.web3d.org/specifications/X3dOntology4.0#> .
+
+:X3D a owl:NamedIndividual, x3do:X3D ;
+  x3do:hasHead :head ;
+  x3do:hasScene :Scene ;
+  x3do:profile 'Interactive' ;
+  x3do:version '3.3' ;
+  x3do:noNamespaceSchemaLocation 'https://www.web3d.org/specifications/x3d-3.3.xsd' .
+:head a owl:NamedIndividual, x3do:head ;
+  x3do:hasParent :X3D ;
+  x3do:hasMeta :meta_1_1, :meta_1_2, :meta_1_3, :meta_1_4, :meta_1_5, :meta_1_6, :meta_1_7, :meta_1_8, :meta_1_9, :meta_1_10, :meta_1_11, :meta_1_12, :meta_1_13, :meta_1_14 .
+:meta_1_1 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'IntegerTriggerPumpHouse.x3d' ;
+  x3do:name 'title' .
+:meta_1_2 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'An IntegerTrigger node controls the display of colored cones near the pump house.' ;
+  x3do:name 'description' .
+:meta_1_3 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Todd Gagnon and Mark A. Boyd' ;
+  x3do:name 'creator' .
+:meta_1_4 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Xeena VRML importer, X3D-Edit 3.1, https://www.web3d.org/x3d/content/README.X3D-Edit.html' ;
+  x3do:name 'translator' .
+:meta_1_5 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '8 June 1998' ;
+  x3do:name 'created' .
+:meta_1_6 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '20 December 2002' ;
+  x3do:name 'translated' .
+:meta_1_7 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '20 October 2019' ;
+  x3do:name 'modified' .
+:meta_1_8 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'needs debugging' ;
+  x3do:name 'warning' .
+:meta_1_9 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'KelpTank.x3d' ;
+  x3do:name 'reference' .
+:meta_1_10 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/PumpHouse.x3d' ;
+  x3do:name 'reference' .
+:meta_1_11 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter09EventUtilitiesScripting/IntegerTriggerPumpHouse.x3d' ;
+  x3do:name 'identifier' .
+:meta_1_12 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'X3D-Edit 3.3, https://savage.nps.edu/X3D-Edit' ;
+  x3do:name 'generator' .
+:meta_1_13 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Vrml97ToX3dNist, http://ovrt.nist.gov/v2_x3d.html' ;
+  x3do:name 'generator' .
+:meta_1_14 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '../license.html' ;
+  x3do:name 'license' .
+:meta dcterms:title "IntegerTriggerPumpHouse.x3d" .
+:meta dcterms:description "An IntegerTrigger node controls the display of colored cones near the pump house." .
+:meta dcterms:creator "Todd Gagnon and Mark A. Boyd" .
+:meta dcterms:translator "Xeena VRML importer, X3D-Edit 3.1, https://www.web3d.org/x3d/content/README.X3D-Edit.html" .
+:meta dcterms:created "8 June 1998" .
+:meta dcterms:translated "20 December 2002" .
+:meta dcterms:modified "20 October 2019" .
+:meta dcterms:warning "needs debugging" .
+:meta dcterms:reference "KelpTank.x3d" .
+:meta dcterms:reference "https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/PumpHouse.x3d" .
+:meta dcterms:identifier "https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter09EventUtilitiesScripting/IntegerTriggerPumpHouse.x3d" .
+:meta dcterms:generator "X3D-Edit 3.3, https://savage.nps.edu/X3D-Edit" .
+:meta dcterms:generator "Vrml97ToX3dNist, http://ovrt.nist.gov/v2_x3d.html" .
+:meta dcterms:license "../license.html" .
+:Scene a owl:NamedIndividual, x3do:Scene ;
+  x3do:hasParent :X3D ;
+  x3do:hasChildren :WorldInfo_2_1, :Background_2_2, :Viewpoint_2_3, :Group_2_4, :Group_2_5 ;
+  x3do:hasROUTE :ROUTE_2_6, :ROUTE_2_7, :ROUTE_2_8, :ROUTE_2_9, :ROUTE_2_10, :ROUTE_2_11, :ROUTE_2_12, :ROUTE_2_13, :ROUTE_2_14, :ROUTE_2_15, :ROUTE_2_16, :ROUTE_2_17, :ROUTE_2_18, :ROUTE_2_19, :ROUTE_2_20, :ROUTE_2_21, :ROUTE_2_22, :ROUTE_2_23 .
+:WorldInfo_2_1 a owl:NamedIndividual, x3do:WorldInfo ;
+  x3do:hasParent :Scene ;
+  x3do:title 'IntegerTriggerPumpHouse.x3d' .
+:Background_2_2 a owl:NamedIndividual, x3do:Background ;
+  x3do:hasParent :Scene ;
+  x3do:skyColor ( 1 1 1 ) .
+:Viewpoint_2_3 a owl:NamedIndividual, x3do:Viewpoint ;
+  x3do:hasParent :Scene ;
+  x3do:description 'Book View' ;
+  x3do:orientation ( -0.969 0.239 0.056 0.13 ) ;
+  x3do:position ( 1.66 1.34 5.95 ) .
+:Group_2_4 a owl:NamedIndividual, x3do:Group ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :Transform_2_4_1, :Group_2_4_2 .
+:Transform_2_4_1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Group_2_4 ;
+  x3do:hasChildren :Shape_2_4_1_1 ;
+  x3do:scale ( 0.91 0.6 0.3 ) ;
+  x3do:translation ( 0.8 -0.65 0.5 ) .
+:Shape_2_4_1_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_4_1 ;
+  x3do:hasAppearance :Appearance_2_4_1_1_1 ;
+  x3do:hasGeometry :Cylinder_2_4_1_1_2 .
+:Appearance_2_4_1_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_4_1_1 ;
+  x3do:hasMaterial :Material_2_4_1_1_1_1 .
+:Material_2_4_1_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_4_1_1_1 ;
+  x3do:diffuseColor ( 0.749 0.694 0.651 ) .
+:Cylinder_2_4_1_1_2 a owl:NamedIndividual, x3do:Cylinder ;
+  x3do:hasParent :Shape_2_4_1_1 ;
+  x3do:bottom false ;
+  x3do:top false .
+:Group_2_4_2 a owl:NamedIndividual, x3do:Group ;
+  x3do:hasParent :Group_2_4 ;
+  x3do:hasChildren :Shape_2_4_2_1, :PumpTouched .
+:Shape_2_4_2_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Group_2_4_2 ;
+  x3do:hasAppearance :PumpHouseAppearance ;
+  x3do:hasGeometry :IndexedFaceSet_2_4_2_1_2 .
+:PumpHouseAppearance a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_4_2_1 ;
+  x3do:hasMaterial :Material_2_4_2_1_1_1 ;
+  x3do:DEF 'PumpHouseAppearance' .
+:Material_2_4_2_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :PumpHouseAppearance ;
+  x3do:diffuseColor ( 0.82 0.78 0.74 ) .
+:IndexedFaceSet_2_4_2_1_2 a owl:NamedIndividual, x3do:IndexedFaceSet ;
+  x3do:hasParent :Shape_2_4_2_1 ;
+  x3do:hasCoord :Coordinate_2_4_2_1_2_1 ;
+  x3do:coordIndex ( 0 1 5 4 -1 5 1 2 6 -1 6 2 3 7 -1 3 0 4 7 -1 1 12 13 2 -1 2 13 14 -1 12 15 16 13 -1 15 0 3 16 -1 16 3 17 -1 9 5 6 10 -1 8 9 10 11 -1 4 8 11 7 -1 4 5 9 8 -1 11 10 6 7 -1 3 2 14 17 -1 13 16 17 14 -1 ) .
+:Coordinate_2_4_2_1_2_1 a owl:NamedIndividual, x3do:Coordinate ;
+  x3do:hasParent :IndexedFaceSet_2_4_2_1_2 ;
+  x3do:point ( 0.0 0.0 0.0 2.0 0.0 0.0 2.0 1.75 0.0 0.0 1.75 0.0 0.625 0.75 0.0 1.0 0.75 0.0 1.0 1.6 0.0 0.625 1.6 0.0 0.625 0.75 -0.65 1.0 0.75 -0.65 1.0 1.6 -0.65 0.625 1.6 -0.65 2.0 0.0 -2.7 2.0 1.75 -2.7 2.0 2.5 -1.0 0.0 0.0 -2.7 0.0 1.75 -2.7 0.0 2.5 -1.0 ) .
+:PumpTouched a owl:NamedIndividual, x3do:TouchSensor ;
+  x3do:hasParent :Group_2_4_2 ;
+  x3do:DEF 'PumpTouched' ;
+  x3do:description 'touch to activate' .
+:Group_2_5 a owl:NamedIndividual, x3do:Group ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :Transform_2_5_1 .
+:Transform_2_5_1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Group_2_5 ;
+  x3do:hasChildren :PistonTransform, :PistonClock, :PistonPath, :Timer, :Rotator, :Filter1, :Filter2, :Filter3, :Transform_2_5_1_9 ;
+  x3do:scale ( 0.5 0.5 0.5 ) ;
+  x3do:translation ( 1.0 1.1 -1.5 ) .
+:PistonTransform a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_5_1 ;
+  x3do:hasChildren :Transform_2_5_1_1_1, :CylinderRod, :Transform_2_5_1_1_3, :Transform_2_5_1_1_4, :RockerArm1, :RockerArm2 ;
+  x3do:DEF 'PistonTransform' .
+:Transform_2_5_1_1_1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :PistonTransform ;
+  x3do:hasChildren :Shape_2_5_1_1_1_1 ;
+  x3do:scale ( 1.8 1.2 0.6 ) ;
+  x3do:translation ( 0.0 -0.2 0.0 ) .
+:Shape_2_5_1_1_1_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_5_1_1_1 ;
+  x3do:hasAppearance :Appearance_2_5_1_1_1_1_1 ;
+  x3do:hasGeometry :Cylinder_2_5_1_1_1_1_2 .
+:Appearance_2_5_1_1_1_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_5_1_1_1_1 ;
+  x3do:hasMaterial :Material_2_5_1_1_1_1_1_1 .
+:Material_2_5_1_1_1_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_5_1_1_1_1_1 ;
+  x3do:diffuseColor ( 0.427 0.427 0.42 ) .
+:Cylinder_2_5_1_1_1_1_2 a owl:NamedIndividual, x3do:Cylinder ;
+  x3do:hasParent :Shape_2_5_1_1_1_1 ;
+  x3do:height 1.0 ;
+  x3do:radius 0.98 .
+:CylinderRod a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :PistonTransform ;
+  x3do:hasChildren :Shape_2_5_1_1_2_1 ;
+  x3do:DEF 'CylinderRod' ;
+  x3do:rotation ( 0.0 0.0 -1.0 0.523599 ) ;
+  x3do:translation ( -0.25 0.75 0.0 ) .
+:Shape_2_5_1_1_2_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :CylinderRod ;
+  x3do:hasAppearance :PumpHouseAppearance-USE-1 ;
+  x3do:hasGeometry :Cylinder_2_5_1_1_2_1_2 .
+:PumpHouseAppearance-USE-1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_5_1_1_2_1 ;
+  owl:sameAs :PumpHouseAppearance . # DEF matching this USE
+:Cylinder_2_5_1_1_2_1_2 a owl:NamedIndividual, x3do:Cylinder ;
+  x3do:hasParent :Shape_2_5_1_1_2_1 ;
+  x3do:height 1.0 ;
+  x3do:radius 0.1 .
+:Transform_2_5_1_1_3 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :PistonTransform ;
+  x3do:hasChildren :CylinderRod-USE-1 ;
+  x3do:rotation ( 0.0 0.0 1.0 1.047198 ) ;
+  x3do:translation ( 1.0 0.6 0.0 ) .
+:CylinderRod-USE-1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_5_1_1_3 ;
+  owl:sameAs :CylinderRod . # DEF matching this USE
+:Transform_2_5_1_1_4 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :PistonTransform ;
+  x3do:hasChildren :Shape_2_5_1_1_4_1 ;
+  x3do:translation ( 0.0 1.2 0.0 ) .
+:Shape_2_5_1_1_4_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_5_1_1_4 ;
+  x3do:hasAppearance :PumpHouseAppearance-USE-2 ;
+  x3do:hasGeometry :Sphere_2_5_1_1_4_1_2 .
+:PumpHouseAppearance-USE-2 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_5_1_1_4_1 ;
+  owl:sameAs :PumpHouseAppearance . # DEF matching this USE
+:Sphere_2_5_1_1_4_1_2 a owl:NamedIndividual, x3do:Sphere ;
+  x3do:hasParent :Shape_2_5_1_1_4_1 ;
+  x3do:radius 0.15 .
+:RockerArm1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :PistonTransform ;
+  x3do:hasChildren :Shape_2_5_1_1_5_1, :Transform_2_5_1_1_5_2, :Rocker1Path, :Rocker1Rotation ;
+  x3do:DEF 'RockerArm1' ;
+  x3do:center ( 0.0 -0.4 0.0 ) .
+:Shape_2_5_1_1_5_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :RockerArm1 ;
+  x3do:hasAppearance :PumpHouseAppearance-USE-3 ;
+  x3do:hasGeometry :Cylinder_2_5_1_1_5_1_2 .
+:PumpHouseAppearance-USE-3 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_5_1_1_5_1 ;
+  owl:sameAs :PumpHouseAppearance . # DEF matching this USE
+:Cylinder_2_5_1_1_5_1_2 a owl:NamedIndividual, x3do:Cylinder ;
+  x3do:hasParent :Shape_2_5_1_1_5_1 ;
+  x3do:height 1.8 ;
+  x3do:radius 0.1 .
+:Transform_2_5_1_1_5_2 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :RockerArm1 ;
+  x3do:hasChildren :Shape_2_5_1_1_5_2_1 ;
+  x3do:translation ( 0.0 0.95 0.0 ) .
+:Shape_2_5_1_1_5_2_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_5_1_1_5_2 ;
+  x3do:hasAppearance :PumpHouseAppearance-USE-4 ;
+  x3do:hasGeometry :Sphere_2_5_1_1_5_2_1_2 .
+:PumpHouseAppearance-USE-4 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_5_1_1_5_2_1 ;
+  owl:sameAs :PumpHouseAppearance . # DEF matching this USE
+:Sphere_2_5_1_1_5_2_1_2 a owl:NamedIndividual, x3do:Sphere ;
+  x3do:hasParent :Shape_2_5_1_1_5_2_1 ;
+  x3do:radius 0.15 .
+:Rocker1Path a owl:NamedIndividual, x3do:PositionInterpolator ;
+  x3do:hasParent :RockerArm1 ;
+  x3do:DEF 'Rocker1Path' ;
+  x3do:key ( 0.0 0.3 0.32 0.5 0.75 1.0 ) ;
+  x3do:keyValue ( 0.0 2.0 -0.25 0.0 1.8 -0.35 0.0 1.8 -0.35 0.0 2.0 -0.25 0.0 2.0 -0.12 0.0 2.0 -0.25 ) .
+:Rocker1Rotation a owl:NamedIndividual, x3do:OrientationInterpolator ;
+  x3do:hasParent :RockerArm1 ;
+  x3do:DEF 'Rocker1Rotation' ;
+  x3do:key ( 0.0 0.3 0.32 0.5 0.75 1.0 ) ;
+  x3do:keyValue ( -1.0 0.0 0.0 0.523599 -1.0 0.0 0.0 1.0471976 -1.0 0.0 0.0 1.0471976 -1.0 0.0 0.0 0.523599 -1.0 0.0 0.0 0.2617994 -1.0 0.0 0.0 0.523599 ) .
+:RockerArm2 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :PistonTransform ;
+  x3do:hasChildren :Shape_2_5_1_1_6_1, :Transform_2_5_1_1_6_2, :Rocker2Path, :Rocker2Rotation ;
+  x3do:DEF 'RockerArm2' ;
+  x3do:center ( 0.0 0.7 0.0 ) .
+:Shape_2_5_1_1_6_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :RockerArm2 ;
+  x3do:hasAppearance :PumpHouseAppearance-USE-5 ;
+  x3do:hasGeometry :Cylinder_2_5_1_1_6_1_2 .
+:PumpHouseAppearance-USE-5 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_5_1_1_6_1 ;
+  owl:sameAs :PumpHouseAppearance . # DEF matching this USE
+:Cylinder_2_5_1_1_6_1_2 a owl:NamedIndividual, x3do:Cylinder ;
+  x3do:hasParent :Shape_2_5_1_1_6_1 ;
+  x3do:height 1.8 ;
+  x3do:radius 0.1 .
+:Transform_2_5_1_1_6_2 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :RockerArm2 ;
+  x3do:hasChildren :Shape_2_5_1_1_6_2_1 ;
+  x3do:translation ( 0.0 -0.95 0.0 ) .
+:Shape_2_5_1_1_6_2_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_5_1_1_6_2 ;
+  x3do:hasAppearance :PumpHouseAppearance-USE-6 ;
+  x3do:hasGeometry :Sphere_2_5_1_1_6_2_1_2 .
+:PumpHouseAppearance-USE-6 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_5_1_1_6_2_1 ;
+  owl:sameAs :PumpHouseAppearance . # DEF matching this USE
+:Sphere_2_5_1_1_6_2_1_2 a owl:NamedIndividual, x3do:Sphere ;
+  x3do:hasParent :Shape_2_5_1_1_6_2_1 ;
+  x3do:radius 0.15 .
+:Rocker2Path a owl:NamedIndividual, x3do:PositionInterpolator ;
+  x3do:hasParent :RockerArm2 ;
+  x3do:DEF 'Rocker2Path' ;
+  x3do:key ( 0.0 0.3 0.32 0.5 0.75 1.0 ) ;
+  x3do:keyValue ( 0.0 1.95 -1.0 0.0 1.2 -1.6 0.0 1.2 -1.6 0.0 1.95 -1.0 0.0 2.2 -0.65 0.0 1.95 -1.0 ) .
+:Rocker2Rotation a owl:NamedIndividual, x3do:OrientationInterpolator ;
+  x3do:hasParent :RockerArm2 ;
+  x3do:DEF 'Rocker2Rotation' ;
+  x3do:key ( 0.0 0.3 0.32 0.5 0.75 1.0 ) ;
+  x3do:keyValue ( 1.0 0.0 0.0 0.523599 1.0 0.0 0.0 0.4 1.0 0.0 0.0 0.4 1.0 0.0 0.0 0.523599 1.0 0.0 0.0 1.570796 1.0 0.0 0.0 0.523599 ) .
+:PistonClock a owl:NamedIndividual, x3do:TimeSensor ;
+  x3do:hasParent :Transform_2_5_1 ;
+  x3do:DEF 'PistonClock' ;
+  x3do:cycleInterval '5.5' ;
+  x3do:loop true .
+:PistonPath a owl:NamedIndividual, x3do:PositionInterpolator ;
+  x3do:hasParent :Transform_2_5_1 ;
+  x3do:DEF 'PistonPath' ;
+  x3do:key ( 0.0 0.3 0.32 0.5 0.75 1.0 ) ;
+  x3do:keyValue ( -0.4 -2.3 4.0 -0.4 -1.5 4.0 -0.4 -1.5 4.0 -0.4 -2.3 4.0 -0.4 -3.3 4.0 -0.4 -2.3 4.0 ) .
+:Timer a owl:NamedIndividual, x3do:TimeSensor ;
+  x3do:hasParent :Transform_2_5_1 ;
+  x3do:DEF 'Timer' ;
+  x3do:cycleInterval '2' ;
+  x3do:loop true ;
+  x3do:startTime '1' .
+:Rotator a owl:NamedIndividual, x3do:OrientationInterpolator ;
+  x3do:hasParent :Transform_2_5_1 ;
+  x3do:DEF 'Rotator' ;
+  x3do:key ( 0 .33 .67 1 ) ;
+  x3do:keyValue ( 0 0 1 0 0 0 1 2 0 0 1 4 0 0 1 6.28 ) .
+:Filter1 a owl:NamedIndividual, x3do:IntegerTrigger ;
+  x3do:hasParent :Transform_2_5_1 ;
+  x3do:DEF 'Filter1' ;
+  x3do:integerKey 1 .
+:Filter2 a owl:NamedIndividual, x3do:IntegerTrigger ;
+  x3do:hasParent :Transform_2_5_1 ;
+  x3do:DEF 'Filter2' ;
+  x3do:integerKey 2 .
+:Filter3 a owl:NamedIndividual, x3do:IntegerTrigger ;
+  x3do:hasParent :Transform_2_5_1 ;
+  x3do:DEF 'Filter3' ;
+  x3do:integerKey 0 .
+:Transform_2_5_1_9 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_5_1 ;
+  x3do:hasChildren :EyeCandy ;
+  x3do:translation ( 3 2 4 ) .
+:EyeCandy a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_5_1_9 ;
+  x3do:hasChildren :Switcher ;
+  x3do:DEF 'EyeCandy' .
+:Switcher a owl:NamedIndividual, x3do:Switch ;
+  x3do:hasParent :EyeCandy ;
+  x3do:hasChildren :Transform_2_5_1_9_1_1_1, :Transform_2_5_1_9_1_1_2, :Transform_2_5_1_9_1_1_3 ;
+  x3do:DEF 'Switcher' ;
+  x3do:whichChoice 0 .
+:Transform_2_5_1_9_1_1_1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Switcher ;
+  x3do:hasChildren :Shape_2_5_1_9_1_1_1_1, :Touch1 ;
+  x3do:rotation ( 0 0 1 3.14 ) ;
+  x3do:translation ( 0 -1.5 .5 ) .
+:Shape_2_5_1_9_1_1_1_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_5_1_9_1_1_1 ;
+  x3do:hasAppearance :Appearance_2_5_1_9_1_1_1_1_1 ;
+  x3do:hasGeometry :b1 .
+:Appearance_2_5_1_9_1_1_1_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_5_1_9_1_1_1_1 ;
+  x3do:hasMaterial :Material_2_5_1_9_1_1_1_1_1_1 .
+:Material_2_5_1_9_1_1_1_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_5_1_9_1_1_1_1_1 ;
+  x3do:diffuseColor ( 1 0 0 ) .
+:b1 a owl:NamedIndividual, x3do:Cone ;
+  x3do:hasParent :Shape_2_5_1_9_1_1_1_1 ;
+  x3do:DEF 'b1' ;
+  x3do:bottomRadius .5 ;
+  x3do:height 1 .
+:Touch1 a owl:NamedIndividual, x3do:TouchSensor ;
+  x3do:hasParent :Transform_2_5_1_9_1_1_1 ;
+  x3do:DEF 'Touch1' ;
+  x3do:description 'touch to activate' .
+:Transform_2_5_1_9_1_1_2 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Switcher ;
+  x3do:hasChildren :Shape_2_5_1_9_1_1_2_1, :Touch2 ;
+  x3do:rotation ( 0 0 1 -1.05 ) ;
+  x3do:translation ( 1.3 .75 0 ) .
+:Shape_2_5_1_9_1_1_2_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_5_1_9_1_1_2 ;
+  x3do:hasAppearance :Appearance_2_5_1_9_1_1_2_1_1 ;
+  x3do:hasGeometry :b1-USE-1 .
+:Appearance_2_5_1_9_1_1_2_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_5_1_9_1_1_2_1 ;
+  x3do:hasMaterial :Material_2_5_1_9_1_1_2_1_1_1 .
+:Material_2_5_1_9_1_1_2_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_5_1_9_1_1_2_1_1 ;
+  x3do:diffuseColor ( 0 1 1 ) .
+:b1-USE-1 a owl:NamedIndividual, x3do:Cone ;
+  x3do:hasParent :Shape_2_5_1_9_1_1_2_1 ;
+  owl:sameAs :b1 . # DEF matching this USE
+:Touch2 a owl:NamedIndividual, x3do:TouchSensor ;
+  x3do:hasParent :Transform_2_5_1_9_1_1_2 ;
+  x3do:DEF 'Touch2' ;
+  x3do:description 'touch to activate' .
+:Transform_2_5_1_9_1_1_3 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Switcher ;
+  x3do:hasChildren :Shape_2_5_1_9_1_1_3_1, :Touch3 ;
+  x3do:rotation ( 0 0 1 1.05 ) ;
+  x3do:translation ( -1.3 .75 -0.5 ) .
+:Shape_2_5_1_9_1_1_3_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_5_1_9_1_1_3 ;
+  x3do:hasAppearance :Appearance_2_5_1_9_1_1_3_1_1 ;
+  x3do:hasGeometry :b1-USE-2 .
+:Appearance_2_5_1_9_1_1_3_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_5_1_9_1_1_3_1 ;
+  x3do:hasMaterial :Material_2_5_1_9_1_1_3_1_1_1 .
+:Material_2_5_1_9_1_1_3_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_5_1_9_1_1_3_1_1 ;
+  x3do:diffuseColor ( 1 1 0 ) .
+:b1-USE-2 a owl:NamedIndividual, x3do:Cone ;
+  x3do:hasParent :Shape_2_5_1_9_1_1_3_1 ;
+  owl:sameAs :b1 . # DEF matching this USE
+:Touch3 a owl:NamedIndividual, x3do:TouchSensor ;
+  x3do:hasParent :Transform_2_5_1_9_1_1_3 ;
+  x3do:DEF 'Touch3' ;
+  x3do:description 'touch to activate' .
+:ROUTE_2_6 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'isActive' ;
+  x3do:fromNode 'Touch1' ;
+  x3do:toField 'set_boolean' ;
+  x3do:toNode 'Filter1' .
+:ROUTE_2_7 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'isActive' ;
+  x3do:fromNode 'Touch2' ;
+  x3do:toField 'set_boolean' ;
+  x3do:toNode 'Filter2' .
+:ROUTE_2_8 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'isActive' ;
+  x3do:fromNode 'Touch3' ;
+  x3do:toField 'set_boolean' ;
+  x3do:toNode 'Filter3' .
+:ROUTE_2_9 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'triggerValue' ;
+  x3do:fromNode 'Filter1' ;
+  x3do:toField 'whichChoice' ;
+  x3do:toNode 'Switcher' .
+:ROUTE_2_10 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'triggerValue' ;
+  x3do:fromNode 'Filter2' ;
+  x3do:toField 'whichChoice' ;
+  x3do:toNode 'Switcher' .
+:ROUTE_2_11 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'triggerValue' ;
+  x3do:fromNode 'Filter3' ;
+  x3do:toField 'whichChoice' ;
+  x3do:toNode 'Switcher' .
+:ROUTE_2_12 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'fraction_changed' ;
+  x3do:fromNode 'Timer' ;
+  x3do:toField 'set_fraction' ;
+  x3do:toNode 'Rotator' .
+:ROUTE_2_13 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'value_changed' ;
+  x3do:fromNode 'Rotator' ;
+  x3do:toField 'rotation' ;
+  x3do:toNode 'EyeCandy' .
+:ROUTE_2_14 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'fraction_changed' ;
+  x3do:fromNode 'PistonClock' ;
+  x3do:toField 'set_fraction' ;
+  x3do:toNode 'PistonPath' .
+:ROUTE_2_15 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'value_changed' ;
+  x3do:fromNode 'PistonPath' ;
+  x3do:toField 'set_translation' ;
+  x3do:toNode 'PistonTransform' .
+:ROUTE_2_16 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'fraction_changed' ;
+  x3do:fromNode 'PistonClock' ;
+  x3do:toField 'set_fraction' ;
+  x3do:toNode 'Rocker1Path' .
+:ROUTE_2_17 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'value_changed' ;
+  x3do:fromNode 'Rocker1Path' ;
+  x3do:toField 'set_translation' ;
+  x3do:toNode 'RockerArm1' .
+:ROUTE_2_18 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'fraction_changed' ;
+  x3do:fromNode 'PistonClock' ;
+  x3do:toField 'set_fraction' ;
+  x3do:toNode 'Rocker1Rotation' .
+:ROUTE_2_19 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'value_changed' ;
+  x3do:fromNode 'Rocker1Rotation' ;
+  x3do:toField 'set_rotation' ;
+  x3do:toNode 'RockerArm1' .
+:ROUTE_2_20 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'fraction_changed' ;
+  x3do:fromNode 'PistonClock' ;
+  x3do:toField 'set_fraction' ;
+  x3do:toNode 'Rocker2Path' .
+:ROUTE_2_21 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'value_changed' ;
+  x3do:fromNode 'Rocker2Path' ;
+  x3do:toField 'set_translation' ;
+  x3do:toNode 'RockerArm2' .
+:ROUTE_2_22 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'fraction_changed' ;
+  x3do:fromNode 'PistonClock' ;
+  x3do:toField 'set_fraction' ;
+  x3do:toNode 'Rocker2Rotation' .
+:ROUTE_2_23 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'value_changed' ;
+  x3do:fromNode 'Rocker2Rotation' ;
+  x3do:toField 'set_rotation' ;
+  x3do:toNode 'RockerArm2' .

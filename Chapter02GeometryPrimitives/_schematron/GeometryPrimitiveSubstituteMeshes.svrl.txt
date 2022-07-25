@@ -1,0 +1,4 @@
+<meta name='TODO' content='Fix Cone and Cylinder IFS, add Sphere IFS'/>[/X3D/head/meta[6], diagnostic]
+<meta name='TODO' content='Meshlab: submit issue to support import of Box Cone Cylinder Sphere'/>[/X3D/head/meta[7], diagnostic]
+<meta name='TODO' content='X3D-Edit authoring tool Shape wizard: fix height value and endpoint stitching on Cone and Cylinder, add Sphere'/>[/X3D/head/meta[8], diagnostic]
+<meta name='hint' content='Default values have been added to geometry nodes for clarity, ordinarily default values are omitted.'/>[/X3D/head/meta[9], diagnostic]

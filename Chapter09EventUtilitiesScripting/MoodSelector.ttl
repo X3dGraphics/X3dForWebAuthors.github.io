@@ -1,0 +1,416 @@
+@prefix :        <https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter09EventUtilitiesScripting/MoodSelector.ttl#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema:  <http://schema.org/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix x3d:     <https://www.web3d.org/specifications/x3d-4.0.xsd#> .
+@prefix x3do:    <https://www.web3d.org/specifications/X3dOntology4.0#> .
+
+:X3D a owl:NamedIndividual, x3do:X3D ;
+  x3do:hasHead :head ;
+  x3do:hasScene :Scene ;
+  x3do:profile 'Immersive' ;
+  x3do:version '3.3' ;
+  x3do:noNamespaceSchemaLocation 'https://www.web3d.org/specifications/x3d-3.3.xsd' .
+:head a owl:NamedIndividual, x3do:head ;
+  x3do:hasParent :X3D ;
+  x3do:hasMeta :meta_1_1, :meta_1_2, :meta_1_3, :meta_1_4, :meta_1_5, :meta_1_6, :meta_1_7, :meta_1_8, :meta_1_9, :meta_1_10 .
+:meta_1_1 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'MoodSelector.x3d' ;
+  x3do:name 'title' .
+:meta_1_2 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Design pattern demonstrating multiple TouchSensor, IntegerTrigger, Shape and ROUTE combinations for selecting a Switch' ;
+  x3do:name 'description' .
+:meta_1_3 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Jason Nelson and MV4205 class' ;
+  x3do:name 'creator' .
+:meta_1_4 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '6 April 2009' ;
+  x3do:name 'created' .
+:meta_1_5 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '20 October 2019' ;
+  x3do:name 'modified' .
+:meta_1_6 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'smiley images are open source' ;
+  x3do:name 'license' .
+:meta_1_7 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'http://openclipart.org/media/tags/smiley' ;
+  x3do:name 'reference' .
+:meta_1_8 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter09EventUtilitiesScripting/MoodSelector.x3d' ;
+  x3do:name 'identifier' .
+:meta_1_9 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'X3D-Edit 3.3, https://savage.nps.edu/X3D-Edit' ;
+  x3do:name 'generator' .
+:meta_1_10 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '../license.html' ;
+  x3do:name 'license' .
+:meta dcterms:title "MoodSelector.x3d" .
+:meta dcterms:description "Design pattern demonstrating multiple TouchSensor, IntegerTrigger, Shape and ROUTE combinations for selecting a Switch" .
+:meta dcterms:creator "Jason Nelson and MV4205 class" .
+:meta dcterms:created "6 April 2009" .
+:meta dcterms:modified "20 October 2019" .
+:meta dcterms:license "smiley images are open source" .
+:meta dcterms:reference "http://openclipart.org/media/tags/smiley" .
+:meta dcterms:identifier "https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter09EventUtilitiesScripting/MoodSelector.x3d" .
+:meta dcterms:generator "X3D-Edit 3.3, https://savage.nps.edu/X3D-Edit" .
+:meta dcterms:license "../license.html" .
+:Scene a owl:NamedIndividual, x3do:Scene ;
+  x3do:hasParent :X3D ;
+  x3do:hasChildren :WorldInfo_2_1, :Viewpoint_2_2, :Transform_2_3, :Transform_2_4, :Transform_2_5, :Transform_2_6, :Transform_2_7, :display, :nodisplay, :happydisplay, :nbdisplay, :saddisplay, :bulldisplay ;
+  x3do:hasROUTE :ROUTE_2_14, :ROUTE_2_15, :ROUTE_2_16, :ROUTE_2_17, :ROUTE_2_18, :ROUTE_2_19, :ROUTE_2_20, :ROUTE_2_21, :ROUTE_2_22, :ROUTE_2_23 .
+:WorldInfo_2_1 a owl:NamedIndividual, x3do:WorldInfo ;
+  x3do:hasParent :Scene ;
+  x3do:title 'MoodSelector.x3d' .
+:Viewpoint_2_2 a owl:NamedIndividual, x3do:Viewpoint ;
+  x3do:hasParent :Scene ;
+  x3do:description 'How do you feel today?' ;
+  x3do:position ( 0 0 15 ) .
+:Transform_2_3 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :howFeelText, :Shape_2_3_2 ;
+  x3do:translation ( 0 3 0 ) .
+:howFeelText a owl:NamedIndividual, x3do:TouchSensor ;
+  x3do:hasParent :Transform_2_3 ;
+  x3do:DEF 'howFeelText' ;
+  x3do:description 'Touch to select your mood face' .
+:Shape_2_3_2 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_3 ;
+  x3do:hasGeometry :Text_2_3_2_1 ;
+  x3do:hasAppearance :Appearance_2_3_2_2 .
+:Text_2_3_2_1 a owl:NamedIndividual, x3do:Text ;
+  x3do:hasParent :Shape_2_3_2 ;
+  x3do:hasFontStyle :FontStyle_2_3_2_1_1 ;
+  x3do:string '"How do you feel today?"' .
+:FontStyle_2_3_2_1_1 a owl:NamedIndividual, x3do:FontStyle ;
+  x3do:hasParent :Text_2_3_2_1 ;
+  x3do:justify '"MIDDLE" "MIDDLE"' .
+:Appearance_2_3_2_2 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_3_2 ;
+  x3do:hasMaterial :Material_2_3_2_2_1 .
+:Material_2_3_2_2_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_3_2_2 .
+:Transform_2_4 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :happyText, :Shape_2_4_2, :Shape_2_4_3 ;
+  x3do:translation ( -5 0 0 ) .
+:happyText a owl:NamedIndividual, x3do:TouchSensor ;
+  x3do:hasParent :Transform_2_4 ;
+  x3do:DEF 'happyText' ;
+  x3do:description 'I feel happy I feel happy...' .
+:Shape_2_4_2 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_4 ;
+  x3do:hasGeometry :Text_2_4_2_1 ;
+  x3do:hasAppearance :Appearance_2_4_2_2 .
+:Text_2_4_2_1 a owl:NamedIndividual, x3do:Text ;
+  x3do:hasParent :Shape_2_4_2 ;
+  x3do:hasFontStyle :FontStyle_2_4_2_1_1 ;
+  x3do:string '"Happy"' .
+:FontStyle_2_4_2_1_1 a owl:NamedIndividual, x3do:FontStyle ;
+  x3do:hasParent :Text_2_4_2_1 ;
+  x3do:justify '"MIDDLE" "MIDDLE"' .
+:Appearance_2_4_2_2 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_4_2 ;
+  x3do:hasMaterial :Material_2_4_2_2_1 .
+:Material_2_4_2_2_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_4_2_2 ;
+  x3do:diffuseColor ( 0.129412 1 0.019608 ) .
+:Shape_2_4_3 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_4 ;
+  x3do:hasGeometry :Box_2_4_3_1 ;
+  x3do:hasAppearance :TransparentAppearance .
+:Box_2_4_3_1 a owl:NamedIndividual, x3do:Box ;
+  x3do:hasParent :Shape_2_4_3 ;
+  x3do:size ( 2.5 1 0.1 ) .
+:TransparentAppearance a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_4_3 ;
+  x3do:hasMaterial :Material_2_4_3_2_1 ;
+  x3do:DEF 'TransparentAppearance' .
+:Material_2_4_3_2_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :TransparentAppearance ;
+  x3do:transparency 1 .
+:Transform_2_5 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :notBadText, :Shape_2_5_2, :Shape_2_5_3 ;
+  x3do:translation ( -1.3 0 0 ) .
+:notBadText a owl:NamedIndividual, x3do:TouchSensor ;
+  x3do:hasParent :Transform_2_5 ;
+  x3do:DEF 'notBadText' ;
+  x3do:description 'OK mediocre just plain average no comment' .
+:Shape_2_5_2 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_5 ;
+  x3do:hasGeometry :Text_2_5_2_1 ;
+  x3do:hasAppearance :Appearance_2_5_2_2 .
+:Text_2_5_2_1 a owl:NamedIndividual, x3do:Text ;
+  x3do:hasParent :Shape_2_5_2 ;
+  x3do:hasFontStyle :FontStyle_2_5_2_1_1 ;
+  x3do:string '"Average"' .
+:FontStyle_2_5_2_1_1 a owl:NamedIndividual, x3do:FontStyle ;
+  x3do:hasParent :Text_2_5_2_1 ;
+  x3do:justify '"MIDDLE" "MIDDLE"' .
+:Appearance_2_5_2_2 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_5_2 ;
+  x3do:hasMaterial :Material_2_5_2_2_1 .
+:Material_2_5_2_2_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_5_2_2 ;
+  x3do:diffuseColor ( 1 0.960784 0.019608 ) .
+:Shape_2_5_3 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_5 ;
+  x3do:hasGeometry :Box_2_5_3_1 ;
+  x3do:hasAppearance :TransparentAppearance-USE-1 .
+:Box_2_5_3_1 a owl:NamedIndividual, x3do:Box ;
+  x3do:hasParent :Shape_2_5_3 ;
+  x3do:size ( 3 1 0.1 ) .
+:TransparentAppearance-USE-1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_5_3 ;
+  owl:sameAs :TransparentAppearance . # DEF matching this USE
+:Transform_2_6 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :sadText, :Shape_2_6_2, :Shape_2_6_3 ;
+  x3do:translation ( 2.2 0 0 ) .
+:sadText a owl:NamedIndividual, x3do:TouchSensor ;
+  x3do:hasParent :Transform_2_6 ;
+  x3do:DEF 'sadText' ;
+  x3do:description 'Poor poor pitiful me' .
+:Shape_2_6_2 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_6 ;
+  x3do:hasGeometry :Text_2_6_2_1 ;
+  x3do:hasAppearance :Appearance_2_6_2_2 .
+:Text_2_6_2_1 a owl:NamedIndividual, x3do:Text ;
+  x3do:hasParent :Shape_2_6_2 ;
+  x3do:hasFontStyle :FontStyle_2_6_2_1_1 ;
+  x3do:string '"Sad"' .
+:FontStyle_2_6_2_1_1 a owl:NamedIndividual, x3do:FontStyle ;
+  x3do:hasParent :Text_2_6_2_1 ;
+  x3do:justify '"MIDDLE" "MIDDLE"' .
+:Appearance_2_6_2_2 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_6_2 ;
+  x3do:hasMaterial :Material_2_6_2_2_1 .
+:Material_2_6_2_2_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_6_2_2 ;
+  x3do:diffuseColor ( 0.180392 0.705882 1 ) .
+:Shape_2_6_3 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_6 ;
+  x3do:hasGeometry :Box_2_6_3_1 ;
+  x3do:hasAppearance :TransparentAppearance-USE-2 .
+:Box_2_6_3_1 a owl:NamedIndividual, x3do:Box ;
+  x3do:hasParent :Shape_2_6_3 ;
+  x3do:size ( 2 1 0.1 ) .
+:TransparentAppearance-USE-2 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_6_3 ;
+  owl:sameAs :TransparentAppearance . # DEF matching this USE
+:Transform_2_7 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :badText, :Shape_2_7_2, :Shape_2_7_3 ;
+  x3do:translation ( 5 0 0 ) .
+:badText a owl:NamedIndividual, x3do:TouchSensor ;
+  x3do:hasParent :Transform_2_7 ;
+  x3do:DEF 'badText' ;
+  x3do:description 'Look out below!' .
+:Shape_2_7_2 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_7 ;
+  x3do:hasGeometry :Text_2_7_2_1 ;
+  x3do:hasAppearance :Appearance_2_7_2_2 .
+:Text_2_7_2_1 a owl:NamedIndividual, x3do:Text ;
+  x3do:hasParent :Shape_2_7_2 ;
+  x3do:hasFontStyle :FontStyle_2_7_2_1_1 ;
+  x3do:string '"Bad"' .
+:FontStyle_2_7_2_1_1 a owl:NamedIndividual, x3do:FontStyle ;
+  x3do:hasParent :Text_2_7_2_1 ;
+  x3do:justify '"MIDDLE" "MIDDLE"' .
+:Appearance_2_7_2_2 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_7_2 ;
+  x3do:hasMaterial :Material_2_7_2_2_1 .
+:Material_2_7_2_2_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_7_2_2 ;
+  x3do:diffuseColor ( 1 0.019608 0.05098 ) .
+:Shape_2_7_3 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_7 ;
+  x3do:hasGeometry :Box_2_7_3_1 ;
+  x3do:hasAppearance :TransparentAppearance-USE-3 .
+:Box_2_7_3_1 a owl:NamedIndividual, x3do:Box ;
+  x3do:hasParent :Shape_2_7_3 ;
+  x3do:size ( 4.5 1 0.1 ) .
+:TransparentAppearance-USE-3 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_7_3 ;
+  owl:sameAs :TransparentAppearance . # DEF matching this USE
+:display a owl:NamedIndividual, x3do:Switch ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :Transform_2_8_1, :Transform_2_8_2, :Transform_2_8_3, :Transform_2_8_4 ;
+  x3do:DEF 'display' ;
+  x3do:whichChoice -1 .
+:Transform_2_8_1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :display ;
+  x3do:hasChildren :happyimg ;
+  x3do:translation ( -5 -3 0 ) .
+:happyimg a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_8_1 ;
+  x3do:hasGeometry :Box_2_8_1_1_1 ;
+  x3do:hasAppearance :Appearance_2_8_1_1_2 ;
+  x3do:DEF 'happyimg' .
+:Box_2_8_1_1_1 a owl:NamedIndividual, x3do:Box ;
+  x3do:hasParent :happyimg .
+:Appearance_2_8_1_1_2 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :happyimg ;
+  x3do:hasMaterial :Material_2_8_1_1_2_1 ;
+  x3do:hasTexture :ImageTexture_2_8_1_1_2_2 .
+:Material_2_8_1_1_2_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_8_1_1_2 ;
+  x3do:diffuseColor ( 0 0.819608 0.156863 ) .
+:ImageTexture_2_8_1_1_2_2 a owl:NamedIndividual, x3do:ImageTexture ;
+  x3do:hasParent :Appearance_2_8_1_1_2 ;
+  x3do:url '"images/nicubunu_Emoticons_Laughing_face.png" "https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter09EventUtilitiesScripting/images/nicubunu_Emoticons_Laughing_face.png"' .
+:Transform_2_8_2 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :display ;
+  x3do:hasChildren :nbimg ;
+  x3do:translation ( -1.3 -3 0 ) .
+:nbimg a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_8_2 ;
+  x3do:hasGeometry :Box_2_8_2_1_1 ;
+  x3do:hasAppearance :Appearance_2_8_2_1_2 ;
+  x3do:DEF 'nbimg' .
+:Box_2_8_2_1_1 a owl:NamedIndividual, x3do:Box ;
+  x3do:hasParent :nbimg .
+:Appearance_2_8_2_1_2 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :nbimg ;
+  x3do:hasMaterial :Material_2_8_2_1_2_1 ;
+  x3do:hasTexture :ImageTexture_2_8_2_1_2_2 .
+:Material_2_8_2_1_2_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_8_2_1_2 ;
+  x3do:diffuseColor ( 0 0.066667 0.941176 ) .
+:ImageTexture_2_8_2_1_2_2 a owl:NamedIndividual, x3do:ImageTexture ;
+  x3do:hasParent :Appearance_2_8_2_1_2 ;
+  x3do:url '"images/nicubunu_Emoticons_Worried_face.png" "https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter09EventUtilitiesScripting/images/nicubunu_Emoticons_Worried_face.png"' .
+:Transform_2_8_3 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :display ;
+  x3do:hasChildren :sadimg ;
+  x3do:translation ( 2.2 -3 0 ) .
+:sadimg a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_8_3 ;
+  x3do:hasGeometry :Box_2_8_3_1_1 ;
+  x3do:hasAppearance :Appearance_2_8_3_1_2 ;
+  x3do:DEF 'sadimg' .
+:Box_2_8_3_1_1 a owl:NamedIndividual, x3do:Box ;
+  x3do:hasParent :sadimg .
+:Appearance_2_8_3_1_2 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :sadimg ;
+  x3do:hasMaterial :Material_2_8_3_1_2_1 ;
+  x3do:hasTexture :ImageTexture_2_8_3_1_2_2 .
+:Material_2_8_3_1_2_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_8_3_1_2 ;
+  x3do:diffuseColor ( 0.980392 0.968627 0 ) .
+:ImageTexture_2_8_3_1_2_2 a owl:NamedIndividual, x3do:ImageTexture ;
+  x3do:hasParent :Appearance_2_8_3_1_2 ;
+  x3do:url '"images/nicubunu_Emoticons_Crying_face.png" "https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter09EventUtilitiesScripting/images/nicubunu_Emoticons_Crying_face.png"' .
+:Transform_2_8_4 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :display ;
+  x3do:hasChildren :bullimg ;
+  x3do:translation ( 4.7 -3 0 ) .
+:bullimg a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_8_4 ;
+  x3do:hasGeometry :Box_2_8_4_1_1 ;
+  x3do:hasAppearance :Appearance_2_8_4_1_2 ;
+  x3do:DEF 'bullimg' .
+:Box_2_8_4_1_1 a owl:NamedIndividual, x3do:Box ;
+  x3do:hasParent :bullimg .
+:Appearance_2_8_4_1_2 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :bullimg ;
+  x3do:hasMaterial :Material_2_8_4_1_2_1 ;
+  x3do:hasTexture :ImageTexture_2_8_4_1_2_2 .
+:Material_2_8_4_1_2_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_8_4_1_2 ;
+  x3do:diffuseColor ( 1 0.101961 0.180392 ) .
+:ImageTexture_2_8_4_1_2_2 a owl:NamedIndividual, x3do:ImageTexture ;
+  x3do:hasParent :Appearance_2_8_4_1_2 ;
+  x3do:url '"images/nicubunu_Emoticons_Devil_face.png" "https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter09EventUtilitiesScripting/images/nicubunu_Emoticons_Devil_face.png"' .
+:nodisplay a owl:NamedIndividual, x3do:IntegerTrigger ;
+  x3do:hasParent :Scene ;
+  x3do:DEF 'nodisplay' .
+:happydisplay a owl:NamedIndividual, x3do:IntegerTrigger ;
+  x3do:hasParent :Scene ;
+  x3do:DEF 'happydisplay' ;
+  x3do:integerKey 0 .
+:nbdisplay a owl:NamedIndividual, x3do:IntegerTrigger ;
+  x3do:hasParent :Scene ;
+  x3do:DEF 'nbdisplay' ;
+  x3do:integerKey 1 .
+:saddisplay a owl:NamedIndividual, x3do:IntegerTrigger ;
+  x3do:hasParent :Scene ;
+  x3do:DEF 'saddisplay' ;
+  x3do:integerKey 2 .
+:bulldisplay a owl:NamedIndividual, x3do:IntegerTrigger ;
+  x3do:hasParent :Scene ;
+  x3do:DEF 'bulldisplay' ;
+  x3do:integerKey 3 .
+:ROUTE_2_14 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'isActive' ;
+  x3do:fromNode 'howFeelText' ;
+  x3do:toField 'set_boolean' ;
+  x3do:toNode 'nodisplay' .
+:ROUTE_2_15 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'isActive' ;
+  x3do:fromNode 'happyText' ;
+  x3do:toField 'set_boolean' ;
+  x3do:toNode 'happydisplay' .
+:ROUTE_2_16 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'isActive' ;
+  x3do:fromNode 'notBadText' ;
+  x3do:toField 'set_boolean' ;
+  x3do:toNode 'nbdisplay' .
+:ROUTE_2_17 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'isActive' ;
+  x3do:fromNode 'sadText' ;
+  x3do:toField 'set_boolean' ;
+  x3do:toNode 'saddisplay' .
+:ROUTE_2_18 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'isActive' ;
+  x3do:fromNode 'badText' ;
+  x3do:toField 'set_boolean' ;
+  x3do:toNode 'bulldisplay' .
+:ROUTE_2_19 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'triggerValue' ;
+  x3do:fromNode 'nodisplay' ;
+  x3do:toField 'whichChoice' ;
+  x3do:toNode 'display' .
+:ROUTE_2_20 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'triggerValue' ;
+  x3do:fromNode 'happydisplay' ;
+  x3do:toField 'whichChoice' ;
+  x3do:toNode 'display' .
+:ROUTE_2_21 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'triggerValue' ;
+  x3do:fromNode 'nbdisplay' ;
+  x3do:toField 'whichChoice' ;
+  x3do:toNode 'display' .
+:ROUTE_2_22 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'triggerValue' ;
+  x3do:fromNode 'saddisplay' ;
+  x3do:toField 'whichChoice' ;
+  x3do:toNode 'display' .
+:ROUTE_2_23 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'triggerValue' ;
+  x3do:fromNode 'bulldisplay' ;
+  x3do:toField 'whichChoice' ;
+  x3do:toNode 'display' .

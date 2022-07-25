@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<svrl:schematron-output title="X3D Validity Checks using Schematron" schemaVersion="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:schold="http://www.ascc.net/xml/schematron" xmlns:iso="http://purl.oclc.org/dsdl/schematron" xmlns:svrl="http://purl.oclc.org/dsdl/svrl" xmlns:sch="http://www.ascc.net/xml/schematron">
+<!--   
+		   
+		   
+		 -->
+<svrl:active-pattern/>
+<svrl:fired-rule context="/"/>
+<svrl:fired-rule context="X3D"/>
+<svrl:failed-assert test="(@profile='Full') or ((@profile='Immersive') and ($coreProfile or $interchangeProfile or $cadInterchangeProfile or $interactiveProfile or $immersiveProfile)) or ((@profile='Interactive') and ($coreProfile or $interchangeProfile or $cadInterchangeProfile or $interactiveProfile)) or ((@profile='CADInterchange') and ($coreProfile or $interchangeProfile or $cadInterchangeProfile)) or ((@profile='Interchange') and ($coreProfile or $interchangeProfile)) or ((@profile='Core') and ($coreProfile)) or ($profileLegal and /head/component)" role="error" location="/X3D">
+<svrl:text>&lt;X3D profile='Immersive'&gt; doesn't match contained nodes, increase profile or add &lt;component/&gt; definition(s) </svrl:text>
+</svrl:failed-assert>
+<svrl:successful-report test="$profileLegal and not($profileMatch) and $fullProfile" role="info" location="/X3D">
+<svrl:text>&lt;X3D profile='Immersive'&gt; but actual profile='Full' </svrl:text>
+</svrl:successful-report>
+<svrl:fired-rule context="head"/>
+<svrl:fired-rule context="Scene"/>
+<svrl:fired-rule context="WorldInfo"/>
+<svrl:fired-rule context="ExternProtoDeclare"/>
+<svrl:fired-rule context="field"/>
+<svrl:fired-rule context="field"/>
+<svrl:fired-rule context="field"/>
+<svrl:fired-rule context="field"/>
+<svrl:fired-rule context="field"/>
+<svrl:fired-rule context="field"/>
+<svrl:fired-rule context="ProtoInstance"/>
+<svrl:fired-rule context="ExternProtoDeclare"/>
+<svrl:fired-rule context="field"/>
+<svrl:fired-rule context="field"/>
+<svrl:fired-rule context="field"/>
+<svrl:fired-rule context="field"/>
+<svrl:fired-rule context="field"/>
+<svrl:fired-rule context="field"/>
+<svrl:fired-rule context="field"/>
+<svrl:fired-rule context="field"/>
+<svrl:fired-rule context="field"/>
+<svrl:fired-rule context="field"/>
+<svrl:fired-rule context="field"/>
+<svrl:fired-rule context="field"/>
+<svrl:fired-rule context="field"/>
+<svrl:fired-rule context="field"/>
+<svrl:fired-rule context="field"/>
+<svrl:fired-rule context="field"/>
+<svrl:fired-rule context="field"/>
+<svrl:fired-rule context="field"/>
+<svrl:fired-rule context="field"/>
+<svrl:fired-rule context="field"/>
+<svrl:fired-rule context="Viewpoint"/>
+<svrl:fired-rule context="Viewpoint"/>
+<svrl:fired-rule context="Viewpoint"/>
+<svrl:fired-rule context="Viewpoint"/>
+<svrl:fired-rule context="Viewpoint"/>
+<svrl:fired-rule context="Viewpoint"/>
+<svrl:fired-rule context="Viewpoint"/>
+<svrl:fired-rule context="Inline[not(@USE)]"/>
+<svrl:fired-rule context="Inline[not(@USE)]"/>
+<svrl:fired-rule context="Inline[not(@USE)]"/>
+<svrl:fired-rule context="Inline[not(@USE)]"/>
+<svrl:fired-rule context="Inline[not(@USE)]"/>
+<svrl:fired-rule context="Inline[not(@USE)]"/>
+<svrl:fired-rule context="Inline[not(@USE)]"/>
+<svrl:fired-rule context="Inline[not(@USE)]"/>
+<svrl:fired-rule context="*[@USE]"/>
+<svrl:fired-rule context="Inline[not(@USE)]"/>
+<svrl:fired-rule context="*[@USE]"/>
+<svrl:fired-rule context="Inline[not(@USE)]"/>
+<svrl:fired-rule context="*[@USE]"/>
+<svrl:fired-rule context="Inline[not(@USE)]"/>
+<svrl:fired-rule context="Inline[not(@USE)]"/>
+<svrl:fired-rule context="*[@USE]"/>
+<svrl:fired-rule context="Inline[not(@USE)]"/>
+<svrl:fired-rule context="Inline[not(@USE)]"/>
+<svrl:fired-rule context="Inline[not(@USE)]"/>
+<svrl:fired-rule context="Inline[not(@USE)]"/>
+<svrl:fired-rule context="Inline[not(@USE)]"/>
+<svrl:fired-rule context="*[contains(local-name(),'Sensor')][not(@USE) and string-length(@DEF)&gt;1]" id="DefaultSensorNode"/>
+<svrl:fired-rule context="*[contains(local-name(),'Interpolator')][not(@USE) and not(IS) and not(parent::field)]"/>
+<svrl:failed-assert test="not(@DEF) or //ROUTE[@toNode=$DEF]" role="error" location="/X3D/Scene/Group[2]/Collision/PositionInterpolator[1]">
+<svrl:text>&lt;PositionInterpolator DEF='LEFT_SHALLOW_WAVE'/&gt; missing ROUTE to receive input events </svrl:text>
+</svrl:failed-assert>
+<svrl:failed-assert test="not(@DEF) or //ROUTE[@fromNode=$DEF]" role="warning" location="/X3D/Scene/Group[2]/Collision/PositionInterpolator[1]">
+<svrl:text>&lt;PositionInterpolator DEF='LEFT_SHALLOW_WAVE'/&gt; missing ROUTE to send output events </svrl:text>
+</svrl:failed-assert>
+<svrl:fired-rule context="*[contains(local-name(),'Interpolator')][not(@USE) and not(IS) and not(parent::field)]"/>
+<svrl:failed-assert test="not(@DEF) or //ROUTE[@toNode=$DEF]" role="error" location="/X3D/Scene/Group[2]/Collision/PositionInterpolator[2]">
+<svrl:text>&lt;PositionInterpolator DEF='LEFT_DEEP_WAVE'/&gt; missing ROUTE to receive input events </svrl:text>
+</svrl:failed-assert>
+<svrl:fired-rule context="*[contains(local-name(),'Interpolator')][not(@USE) and not(IS) and not(parent::field)]"/>
+<svrl:fired-rule context="*[contains(local-name(),'Interpolator')][not(@USE) and not(IS) and not(parent::field)]"/>
+<svrl:failed-assert test="not(@DEF) or //ROUTE[@toNode=$DEF]" role="error" location="/X3D/Scene/Group[2]/Collision/PositionInterpolator[4]">
+<svrl:text>&lt;PositionInterpolator DEF='RIGHT_SHALLOW_WAVE'/&gt; missing ROUTE to receive input events </svrl:text>
+</svrl:failed-assert>
+<svrl:fired-rule context="*[contains(local-name(),'Interpolator')][not(@USE) and not(IS) and not(parent::field)]"/>
+<svrl:failed-assert test="not(@DEF) or //ROUTE[@toNode=$DEF]" role="error" location="/X3D/Scene/Group[2]/Collision/PositionInterpolator[5]">
+<svrl:text>&lt;PositionInterpolator DEF='RIGHT_DEEP_WAVE'/&gt; missing ROUTE to receive input events </svrl:text>
+</svrl:failed-assert>
+<svrl:fired-rule context="*[contains(local-name(),'Sensor')][not(@USE) and string-length(@DEF)&gt;1]" id="DefaultSensorNode"/>
+<svrl:failed-assert test="not(@DEF) or //ROUTE[@fromNode=$DEF]" role="warning" location="/X3D/Scene/TimeSensor">
+<svrl:text>&lt;TimeSensor DEF='MasterClock'/&gt; missing ROUTE to send output events </svrl:text>
+</svrl:failed-assert>
+<svrl:fired-rule context="Inline[not(@USE)]"/>
+<svrl:fired-rule context="*[contains(local-name(),'Sensor')][not(@USE) and string-length(@DEF)&gt;1]" id="DefaultSensorNode"/>
+<svrl:fired-rule context="ProtoInstance"/>
+</svrl:schematron-output>

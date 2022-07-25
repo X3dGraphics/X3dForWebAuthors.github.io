@@ -1,0 +1,100 @@
+@prefix :       <http://X3dGraphics.com/examples/X3dForWebAuthors/Chapter06GeometryPointsLinesPolygons/ElevationGrid.ttl#> .
+@prefix dc:     <http://purl.org/dc/terms/> .
+@prefix owl:    <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix x3d:    <http://www.web3d.org/specifications/x3d-4.0.xsd#> .
+@prefix x3do:   <http://www.web3d.org/specifications/X3dOntology4.0#> .
+
+:X3D a owl:NamedIndividual, x3do:X3D ;
+  x3do:hasHead :head ;
+  x3do:hasScene :Scene ;
+  x3do:profile 'Interactive' ;
+  x3do:version '3.3' ;
+  x3do:noNamespaceSchemaLocation 'http://www.web3d.org/specifications/x3d-3.3.xsd' .
+:head a owl:NamedIndividual, x3do:head ;
+  x3do:hasParent :X3D ;
+  x3do:hasMeta :meta_1_1, :meta_1_2, :meta_1_3, :meta_1_4, :meta_1_5, :meta_1_6, :meta_1_7, :meta_1_8, :meta_1_9 .
+:meta_1_1 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'ElevationGrid.x3d' ;
+  x3do:name 'title' .
+:meta_1_2 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Simple ElevationGrid example.' ;
+  x3do:name 'description' .
+:meta_1_3 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Don Brutzman' ;
+  x3do:name 'creator' .
+:meta_1_4 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'U.S. Naval Postgraduate School (NPS)' ;
+  x3do:name 'organization' .
+:meta_1_5 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '8 May 2008' ;
+  x3do:name 'created' .
+:meta_1_6 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '20 October 2019' ;
+  x3do:name 'modified' .
+:meta_1_7 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'http://X3dGraphics.com/examples/X3dForWebAuthors/Chapter06GeometryPointsLinesPolygons/ElevationGrid.x3d' ;
+  x3do:name 'identifier' .
+:meta_1_8 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'X3D-Edit 3.3, https://savage.nps.edu/X3D-Edit' ;
+  x3do:name 'generator' .
+:meta_1_9 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '../license.html' ;
+  x3do:name 'license' .
+:Scene a owl:NamedIndividual, x3do:Scene ;
+  x3do:hasParent :X3D ;
+  x3do:hasChildren :WorldInfo_2_1, :Background_2_2, :NavigationInfo_2_3, :Viewpoint_2_4, :Viewpoint_2_5, :Viewpoint_2_6, :Transform_2_7 .
+:WorldInfo_2_1 a owl:NamedIndividual, x3do:WorldInfo ;
+  x3do:hasParent :Scene ;
+  x3do:title 'ElevationGrid.x3d' .
+:Background_2_2 a owl:NamedIndividual, x3do:Background ;
+  x3do:hasParent :Scene ;
+  x3do:skyColor ( 1 1 1 ) .
+:NavigationInfo_2_3 a owl:NamedIndividual, x3do:NavigationInfo ;
+  x3do:hasParent :Scene .
+:Viewpoint_2_4 a owl:NamedIndividual, x3do:Viewpoint ;
+  x3do:hasParent :Scene ;
+  x3do:description 'ElevationGrid oblique view' ;
+  x3do:orientation ( 1 0 0 -0.588003 ) ;
+  x3do:position ( 0 4 6 ) .
+:Viewpoint_2_5 a owl:NamedIndividual, x3do:Viewpoint ;
+  x3do:hasParent :Scene ;
+  x3do:description 'ElevationGrid overhead view' ;
+  x3do:orientation ( 1 0 0 -1.570796 ) ;
+  x3do:position ( 0 8 0 ) .
+:Viewpoint_2_6 a owl:NamedIndividual, x3do:Viewpoint ;
+  x3do:hasParent :Scene ;
+  x3do:description 'ElevationGrid ground-level view' ;
+  x3do:position ( 0 0.2 6 ) .
+:Transform_2_7 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :ExampleElevationGridShape ;
+  x3do:translation ( -2.5 0 -2.5 ) .
+:ExampleElevationGridShape a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_7 ;
+  x3do:hasGeometry :ElevationGrid_2_7_1_1 ;
+  x3do:hasAppearance :DiffuseRedAppearance .
+:ElevationGrid_2_7_1_1 a owl:NamedIndividual, x3do:ElevationGrid ;
+  x3do:hasParent :ExampleElevationGridShape ;
+  x3do:height ( 0 0 0 0 0 0 0 1 1 1 1 0 0 1 2 2 1 0 0 1 2 2 1 0 0 1 1 1 1 0 0 0 0 0 0 0 ) ;
+  x3do:solid false ;
+  x3do:xDimension 6 ;
+  x3do:zDimension 6 .
+:DiffuseRedAppearance a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :ExampleElevationGridShape ;
+  x3do:hasMaterial :Material_2_7_1_2_1 .
+:Material_2_7_1_2_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :DiffuseRedAppearance ;
+  x3do:diffuseColor ( 0.9 0.1 0.1 ) .

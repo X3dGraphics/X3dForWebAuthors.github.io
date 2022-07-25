@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE X3D PUBLIC "ISO//Web3D//DTD X3D 3.1//EN" "http://www.web3d.org/specifications/x3d-3.1.dtd">
+<X3D profile='Immersive' version='3.1' xmlns:xsd='http://www.w3.org/2001/XMLSchema-instance' xsd:noNamespaceSchemaLocation='http://www.web3d.org/specifications/x3d-3.1.xsd'>
+  <head>
+    <meta content='CircleFish.x3d' name='title'/>
+    <meta content='This is a circle fish using the CircleFish prototype. fish size max width is 10 cm (X-axis) length is 1 m (Y-axis) max height is 1 m (Z-axis)' name='description'/>
+    <meta content='Ildeniz Duman' name='creator'/>
+    <meta content='Scott Tufts' name='translator'/>
+    <meta content='May 1998' name='created'/>
+    <meta content='22 December 2002' name='modified'/>
+    <meta content='http://x3dgraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/CircleFish.x3d' name='identifier'/>
+    <meta content='X3D-Edit, https://savage.nps.edu/X3D-Edit' name='generator'/>
+    <meta content='../license.html' name='license'/>
+  </head>
+  <Scene>
+    <ExternProtoDeclare name='CircleFish' url='CircleFishPrototype.wrl#CircleFish'>
+      <field accessType='inputOutput' name='skinTextureUrl' type='MFString'/>
+      <field accessType='inputOutput' name='fishScale' type='SFVec3f'/>
+      <field accessType='inputOutput' name='fishColor' type='SFColor'/>
+      <field accessType='inputOutput' name='finColor' type='SFColor'/>
+      <field accessType='inputOutput' name='positionKey' type='MFFloat'/>
+      <field accessType='inputOutput' name='positionKeyValue' type='MFVec3f'/>
+      <field accessType='inputOutput' name='orientationKey' type='MFFloat'/>
+      <field accessType='inputOutput' name='orientationKeyValue' type='MFRotation'/>
+      <field accessType='inputOutput' name='orbitTime' type='SFTime'/>
+    </ExternProtoDeclare>
+    <Viewpoint description='Circle Fish'/>
+    <ProtoInstance name='CircleFish'>
+      <!-- define new values here -->
+      <fieldValue name='skinTextureUrl' value='"blue.jpg" "http://x3dgraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/blue.jpg"'/>
+      <fieldValue name='fishScale' value='1 0.5 1'/>
+      <fieldValue name='finColor' value='0 0 1'/>
+      <fieldValue name='positionKey' value='0 1'/>
+      <fieldValue name='positionKeyValue' value='0 0 0 1 1 1'/>
+      <fieldValue name='orbitTime' value='10'/>
+    </ProtoInstance>
+  </Scene>
+</X3D>

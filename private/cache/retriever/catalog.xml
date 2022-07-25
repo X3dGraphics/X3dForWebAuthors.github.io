@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="https://www.web3d.org/specifications/x3d-4.0.xsd" uri="www.web3d.org/specifications/x3d-4.0.xsd"/>
+    <system systemId="https://www.web3d.org/specifications/x3d-4.0-Web3dExtensionsPublic.xsd" uri="www.web3d.org/specifications/x3d-4.0-Web3dExtensionsPublic.xsd"/>
+    <system systemId="https://www.web3d.org/specifications/x3d-4.0-Web3dExtensionsPrivate.xsd" uri="www.web3d.org/specifications/x3d-4.0-Web3dExtensionsPrivate.xsd"/>
+</catalog>

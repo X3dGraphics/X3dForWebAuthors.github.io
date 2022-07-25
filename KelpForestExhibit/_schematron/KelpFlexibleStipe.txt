@@ -1,0 +1,1 @@
+<TimeSensor DEF='CLOCK'/> missing description [/X3D/Scene/TimeSensor, warning]

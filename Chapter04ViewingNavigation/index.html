@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <link rel="shortcut icon" href="../images/X3DtextIcon16.png" title="X3D"/>
+      <title>X3D4WA, X3D for Web Authors Examples Archive, Chapter 04 Viewing Navigation</title>
+      <meta http-equiv="X-UA-Compatible" content="chrome=1,IE=edge"/>
+      <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+      <meta name="author" content="Don Brutzman"/>
+      <meta name="generator"
+             content="https://www.web3d.org/x3d/tools/CreateContentCatalog/CreateContentCatalogPages.xslt"/>
+      <meta name="modified" content="2022-07-03-07:00"/>
+      <meta name="keyword"
+             content="X3D, X3DV, VRML, VRML97, Extensible 3D, Virtual Reality Modeling Language"/>
+   </head>
+   <body>
+      <table
+              align="center"
+              summary="navigation"
+              border="1"
+              cellpadding="2"
+              width="95%">
+         <tr>
+            <td align="center" width="17%">
+               <a href="../index.html" target="_top">
+                  <img src="../images/ToC.png"
+                        title="Table of Contents"
+                        alt="Table of Contents"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter03Grouping/index.html" target="_top">
+                  <img src="../images/PreviousChapter.png"
+                        title="Previous Directory Summary"
+                        alt="Previous Directory Summary"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="viewpointSlideshow.html" target="_top">
+                  <img src="../images/MootoolsSlideshowLogo.jpg"
+                        title="Directory Viewpoint Slideshow"
+                        alt="Directory Viewpoint Slideshow"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="15%">
+               <a href="../javadoc/index.html?X3dForWebAuthors/Chapter04ViewingNavigation/package-summary.html"
+                   title="Javadoc for translated java source"
+                   alt="Javadoc for translated java source"
+                   target="_blank">
+                  <img src="../images/Java-32.png"
+                        title="Javadoc for translated java source"
+                        alt="Javadoc for translated java source"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter05AppearanceMaterialTextures/index.html" target="_top">
+                  <img src="../images/NextChapter.png"
+                        title="Next Directory Summary"
+                        alt="Next Directory Summary"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="15%">
+               <a href="../../X3dResources.html" target="helpPage">
+                  <img src="../images/Help.png"
+                        title="X3D Resources"
+                        alt="X3D Resources"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+         </tr>
+      </table>
+      <h2 align="center">
+         <i> X3D Example Archives: </i>X3D4WA, X3D for Web Authors, Chapter 04 Viewing Navigation</h2>
+      <table align="center"
+              width="85%"
+              summary=""
+              border="0"
+              cellpadding="0">
+         <tr align="center">
+            <td><!--ChapterPackageDescription--><!--Contents of file ../../content/examples/X3dForWebAuthors/Chapter04ViewingNavigation/package-catalog.html-->
+
+    <table bgColor="#ffffff" border="0" width="100%">
+        <tbody>
+            <tr>
+                <td align="left" rowspan="2">
+                    
+                    <a href="index.html"><img alt="Anchor bookmarked-Viewpoint comparison, view from front" title="Anchor bookmarked-Viewpoint comparison, view from front" border="0" hspace="10" src="AnchorComparisonFrontViewpoint.png" width="142" height="121" align="middle"/></a>
+                </td>
+                
+                <td align="left">
+    <p>
+					Authors can design scenes to help users navigate to Viewpoints of interest,
+					and also create user-selectable geometry links using an Anchor (just like HTML).
+    </p>
+    
+
+    <p>
+                    <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#Viewpoint" target="X3dTooltips" title="X3D Tooltip">Viewpoint</a>
+                    nodes are the primary means for users to explore a scene.
+                    <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#NavigationInfo" target="X3dTooltips" title="X3D Tooltip">NavigationInfo</a>
+                    nodes enable different user-interaction styles (FLY, WALK, EXAMINE etc.) as appropriate.
+                    Only one Viewpoint and one NavigationInfo node can each be active a time,
+                    with order of selection controlled via a binding stack.
+    </p>
+    
+
+    <p>
+                     The supporting
+                     <a href="http://x3dgraphics.com/slidesets/X3dForWebAuthors/Chapter04ViewingNavigation.pdf" target="X3dChapterSlideset">Chapter&nbsp;4 slideset</a>
+                     and course videos
+                    (<a href="https://www.movesinstitute.org/Video/Courses/X3dForWebAuthors/X3dForWebAuthorsVideo.html#4" target="X3dChapterVideos">NPS</a>,
+                     <a href="https://www.youtube.com/playlist?list=PLuSIsM-86siktIQeGO8EEJmNork1OIEbu" target="X3dChapterYouTubeVideos">YouTube</a>)
+					 for <i>X3D for Web Authors</i> are available online via
+                     <a href="http://X3dGraphics.com" target="_blank">X3dGraphics.com</a>.
+    </p>
+    
+
+    <p>
+                     Also available:
+                     <a href="https://www.web3d.org/x3d/content/examples/X3dSceneAuthoringHints.html#Viewpoints" target="_blank">X3D Scene Authoring Hints: Viewpoints and Navigation</a>.
+    </p>
+    
+
+                </td>
+                
+                <td align="left" rowspan="2">
+                    
+                    <a href="index.html"><img alt="Anchor bookmarked-Viewpoint comparison, oblique view from right side" title="Anchor bookmarked-Viewpoint comparison, oblique view from right side" border="0" hspace="10" src="AnchorComparisonObliqueViewpoint.png" width="101" height="143" align="left"/></a>
+                </td>
+            </tr>
+            
+        </tbody>
+    </table>
+    
+    
+
+
+  </td>
+         </tr>
+      </table>
+      <table align="center"
+              width="85%"
+              summary=""
+              border="1"
+              cellpadding="6">
+         <tr align="center">
+            <th colspan="2" width="25%" align="center">&nbsp;&nbsp;8 X3D Models</th>
+            <th width="75%" align="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;X3D Model Descriptions</th>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="AliasingExample"/>
+               <a href="AliasingExampleIndex.html">
+                  <img src="_thumbnails/AliasingExampleThumbnail.png"
+                        height="48"
+                        alt="AliasingExample"
+                        title="AliasingExample"/>
+               </a>
+            </td>
+            <td>
+               <a href="AliasingExampleIndex.html">Aliasing Example</a>
+            </td>
+            <td>Illustrates the effect of aliasing (tearing) by the coplanar overlap of two cubes with different colors.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="AnchorComparison"/>
+               <a href="AnchorComparisonIndex.html">
+                  <img src="_thumbnails/AnchorComparisonThumbnail.png"
+                        height="48"
+                        alt="AnchorComparison"
+                        title="AnchorComparison"/>
+               </a>
+            </td>
+            <td>
+               <a href="AnchorComparisonIndex.html">Anchor Comparison</a>
+            </td>
+            <td>Anchor-node examples comparing HTML page launch, shifting Viewpoints, and loading another X3D scene.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="AnchorExample"/>
+               <a href="AnchorExampleIndex.html">
+                  <img src="_thumbnails/AnchorExampleThumbnail.png"
+                        height="48"
+                        alt="AnchorExample"
+                        title="AnchorExample"/>
+               </a>
+            </td>
+            <td>
+               <a href="AnchorExampleIndex.html">Anchor Example</a>
+            </td>
+            <td>Anchor example using the Kelp Forest world.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="BillboardExample"/>
+               <a href="BillboardExampleIndex.html">
+                  <img src="_thumbnails/BillboardExampleThumbnail.png"
+                        height="48"
+                        alt="BillboardExample"
+                        title="BillboardExample"/>
+               </a>
+            </td>
+            <td>
+               <a href="BillboardExampleIndex.html">Billboard Example</a>
+            </td>
+            <td>Illustrates Billboard operation using Kelp Forest example scenes for Figure 4.4, X3D for Web Authors.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="BindingOperations"/>
+               <a href="BindingOperationsIndex.html">
+                  <img src="_thumbnails/BindingOperationsThumbnail.png"
+                        height="48"
+                        alt="BindingOperations"
+                        title="BindingOperations"/>
+               </a>
+            </td>
+            <td>
+               <a href="BindingOperationsIndex.html">Binding Operations</a>
+            </td>
+            <td>Illustrate Viewpoint binding operations (in gory detail!) as described in Chapter 4 concepts. Scene design: a TimeSensor clock drives and IntegerSequencer for each t0/t1/etc. event, and a customized Script node sends bind/unbind events to the correct Viewpoint. Display the browser console to see occurrence of each event.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="CollisionExample"/>
+               <a href="CollisionExampleIndex.html">
+                  <img src="_thumbnails/CollisionExampleThumbnail.png"
+                        height="48"
+                        alt="CollisionExample"
+                        title="CollisionExample"/>
+               </a>
+            </td>
+            <td>
+               <a href="CollisionExampleIndex.html">Collision Example</a>
+            </td>
+            <td>Illustrate Collision node operation: set Collision enabled="true" to block user navigation through the Kelp Forest tank glass.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="NavigationInfoExample"/>
+               <a href="NavigationInfoExampleIndex.html">
+                  <img src="_thumbnails/NavigationInfoExampleThumbnail.png"
+                        height="48"
+                        alt="NavigationInfoExample"
+                        title="NavigationInfoExample"/>
+               </a>
+            </td>
+            <td>
+               <a href="NavigationInfoExampleIndex.html">Navigation Info Example</a>
+            </td>
+            <td>NavigationInfo override example for Kelp Forest world.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="ViewpointExample"/>
+               <a href="ViewpointExampleIndex.html">
+                  <img src="_thumbnails/ViewpointExampleThumbnail.png"
+                        height="48"
+                        alt="ViewpointExample"
+                        title="ViewpointExample"/>
+               </a>
+            </td>
+            <td>
+               <a href="ViewpointExampleIndex.html">Viewpoint Example</a>
+            </td>
+            <td>Viewpoint example added to Kelp Forest world.</td>
+         </tr>
+      </table>
+      <table width="80%" border="0" align="center">
+         <tr>
+            <td>
+               <p style="text-align:center">Online at <a href="https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter04ViewingNavigation/index.html">https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter04ViewingNavigation</a>
+               </p>
+               <p align="center" width="80%">
+                  <a href="https://validator.w3.org/check?uri=https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter04ViewingNavigation/index.html"
+                      target="_blank">
+                     <img src="https://www.w3.org/Icons/valid-xhtml10"
+                           title="Validate XHTML 1.1"
+                           alt="Validate XHTML 1.1"
+                           height="31"
+                           width="88"
+                           border="0"
+                           align="right"/>
+                  </a>
+               </p>
+               <p style="text-align:center">Master source-code model archive is under subversion control at <br/>
+                  <a href="https://sourceforge.net/p/x3d/code/HEAD/tree/www.web3d.org/x3d/content/examples/X3dForWebAuthors/Chapter04ViewingNavigation/"
+                      target="_blank">https://sourceforge.net/p/x3d/code/HEAD/tree/www.web3d.org/x3d/content/examples/X3dForWebAuthors/Chapter04ViewingNavigation</a>
+               </p>
+            </td>
+         </tr>
+      </table>
+      <p align="center">
+The 
+<a href="../../X3dResources.html#X3dForWebAuthors">X3D Resources: Examples</a> page
+and
+<a href="https://savage.nps.edu/Savage/developers.html">Savage Developers Guide</a>
+provide more information about the production of this archive.</p>
+      <table
+              align="center"
+              summary="navigation"
+              border="1"
+              cellpadding="2"
+              width="95%">
+         <tr>
+            <td align="center" width="17%">
+               <a href="../index.html" target="_top">
+                  <img src="../images/ToC.png"
+                        title="Table of Contents"
+                        alt="Table of Contents"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter03Grouping/index.html" target="_top">
+                  <img src="../images/PreviousChapter.png"
+                        title="Previous Directory Summary"
+                        alt="Previous Directory Summary"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="viewpointSlideshow.html" target="_top">
+                  <img src="../images/MootoolsSlideshowLogo.jpg"
+                        title="Directory Viewpoint Slideshow"
+                        alt="Directory Viewpoint Slideshow"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="15%">
+               <a href="../javadoc/index.html?X3dForWebAuthors/Chapter04ViewingNavigation/package-summary.html"
+                   title="Javadoc for translated java source"
+                   alt="Javadoc for translated java source"
+                   target="_blank">
+                  <img src="../images/Java-32.png"
+                        title="Javadoc for translated java source"
+                        alt="Javadoc for translated java source"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter05AppearanceMaterialTextures/index.html" target="_top">
+                  <img src="../images/NextChapter.png"
+                        title="Next Directory Summary"
+                        alt="Next Directory Summary"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="15%">
+               <a href="../../X3dResources.html" target="helpPage">
+                  <img src="../images/Help.png"
+                        title="X3D Resources"
+                        alt="X3D Resources"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+         </tr>
+      </table>
+   </body>
+</html>

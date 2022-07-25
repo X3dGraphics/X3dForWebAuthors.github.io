@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE X3D PUBLIC "ISO//Web3D//DTD X3D 3.1//EN" "http://www.web3d.org/specifications/x3d-3.1.dtd">
+<X3D profile='Immersive' version='3.1' xmlns:xsd='http://www.w3.org/2001/XMLSchema-instance' xsd:noNamespaceSchemaLocation='http://www.web3d.org/specifications/x3d-3.0.xsd'>
+  <head>
+    <meta content='Garibaldi-remote.x3d' name='title'/>
+    <meta content='Instantiate the Garibaldi fish prototype using a remote skin texture file.' name='description'/>
+    <meta content='Instancing a prototype to match a specific fish.' name='description'/>
+    <meta content='Ildeniz Duman' name='creator'/>
+    <meta content='1 June 1998' name='created'/>
+    <meta content='29 December 2002' name='modified'/>
+    <meta content='http://www.web3d.org/x3d/content/examples/KelpForestExhibit/Garibaldi.x3d' name='identifier'/>
+    <meta content='X3D-Edit, http://www.web3d.org/x3d/content/README.X3D-Edit.html' name='generator'/>
+    <meta content='../license.html' name='license'/>
+  </head>
+  <Scene>
+    <ExternProtoDeclare name='CircleFish' url='"CircleFishPrototype.wrl#CircleFish" "http://www.web3d.org/x3d/content/examples/KelpForestExhibit/CircleFishPrototype.wrl#CircleFish"'>
+      <field accessType='inputOutput' name='skinTextureUrl' type='MFString'/>
+      <field accessType='inputOutput' name='fishScale' type='SFVec3f'/>
+      <field accessType='inputOutput' name='fishColor' type='SFColor'/>
+      <field accessType='inputOutput' name='finColor' type='SFColor'/>
+      <field accessType='inputOutput' name='positionKey' type='MFFloat'/>
+      <field accessType='inputOutput' name='positionKeyValue' type='MFVec3f'/>
+      <field accessType='inputOutput' name='orientationKey' type='MFFloat'/>
+      <field accessType='inputOutput' name='orientationKeyValue' type='MFRotation'/>
+      <field accessType='inputOutput' name='orbitTime' type='SFTime'/>
+    </ExternProtoDeclare>
+    <Viewpoint description='Garibaldi' orientation='0.0 1.0 0.0 120.0' position='2.0 0.0 2.0'/>
+    <ProtoInstance name='CircleFish'>
+      <fieldValue name='skinTextureUrl' value='"http://www.web3d.org/x3d/content/examples/KelpForestExhibit/GaribaldiPatch.jpg"'/>
+      <fieldValue name='fishScale' value='1.0 0.39 0.4'/>
+      <fieldValue name='finColor' value='0.9 0.66 0.4'/>
+      <fieldValue name='fishColor' value='.97 .75 .3'/>
+      <fieldValue name='positionKey' value='0.0 0.4 0.7 0.95 1.0'/>
+      <fieldValue name='positionKeyValue' value='0.0 0.0 0.0 0.5 0.0 0.0 0.0 0.0 0.0 0.5 0.0 0.0 0.2 0.0 0.0'/>
+      <fieldValue name='orientationKey' value='0.0 1.0'/>
+      <fieldValue name='orientationKeyValue' value='0.0 1.0 0.0 90.0 0.0 1.0 0.0 90.0'/>
+      <fieldValue name='orbitTime' value='80.0'/>
+    </ProtoInstance>
+  </Scene>
+</X3D>

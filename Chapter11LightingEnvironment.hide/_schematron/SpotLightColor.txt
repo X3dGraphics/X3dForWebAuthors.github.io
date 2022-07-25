@@ -1,0 +1,2 @@
+<ColorInterpolator DEF='LightColor'/> key array (size=7) does not match keyValue array (size=8) [/X3D/Scene/ColorInterpolator, error]
+<TimeSensor DEF='Timer'/> missing description [/X3D/Scene/TimeSensor, warning]

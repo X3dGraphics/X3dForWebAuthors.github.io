@@ -1,0 +1,2 @@
+<TimeSensor DEF='animationTime_2'/> missing description [/X3D/Scene/LOD/Transform[1]/Group/TimeSensor, warning]
+<CoordinateInterpolator DEF='coordinatePointInterp_3'/> has illegal character eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee in keyValue array [/X3D/Scene/LOD/Transform[1]/Group/CoordinateInterpolator, error]

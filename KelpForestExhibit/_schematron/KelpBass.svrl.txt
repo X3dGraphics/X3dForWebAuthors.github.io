@@ -1,0 +1,2 @@
+Missing name of X3D scene author in meta tag, add <meta name='creator' content='Author Name'/> [/X3D/head, info]
+<Viewpoint DEF=''/> centerOfRotation='0 0 0' has mismatched Y-value height of 0 compared to position='3.0 1.0 4.0' which has Y-value height of 1.0[/X3D/Scene/Viewpoint, warning]

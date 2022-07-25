@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/TR/xhtml1/strict"
+       xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
+       xmlns:saxon="http://icl.com/saxon">
+   <head>
+      <title>SoundAudioClip.x3d (X3dToXhtml listing)</title>
+      <!-- I18N -->
+      <meta http-equiv="X-UA-Compatible" content="chrome=1,IE=edge"/>
+      <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+      <style type="text/css">
+span.element {color: navy}
+span.attribute {color: green}
+span.value {color: teal}
+span.plain {color: black}
+span.gray  {color: gray}
+span.idName {color: maroon}
+span.addedDocumentation {background-color:#EEEEEE} /* slightly darker for html page contrast */
+span.behaviorNode       {background-color:#DDEEFF} /*      light blue for html page contrast */
+span.extensibilityNode  {background-color:#FFEEFF} /*    lighter blue for html page contrast */
+a.idName {color: maroon}
+div.center {text-align: center}
+div.indent {margin-left: 25px}
+
+span.prototype {color: purple}
+a.prototype {color: purple}
+a.prototype:visited {color: black}
+span.route {color: red}
+b.warning {color: #CC5500}
+b.error {color: #CC0000}
+
+                </style>
+      <style type="text/css">
+table.curvedEdges { border:10px solid RoyalBlue;-webkit-border-radius:13px;-moz-border-radius:13px;-ms-border-radius:13px;-o-border-radius:13px;border-radius:13px; }
+table.curvedEdges td, table.curvedEdges th { border-bottom:1px dotted black;padding:5px; }
+</style>
+      <meta name="generator" content="XSLT processor Saxonica"/>
+      <meta name="generator"
+             content="https://www.web3d.org/x3d/stylesheets/X3dToXhtml.xslt"/>
+      <meta name="generator"
+             content="https://sourceforge.net/p/x3d/code/HEAD/tree/www.web3d.org/x3d/stylesheets/X3dToXhtml.xslt"/>
+      <link rel="shortcut icon"
+             href="https://www.web3d.org/x3d/content/icons/X3DtextIcon16.png"
+             title="X3D"/>
+   </head>
+   <body>
+      <code title="XML declaration">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</code>
+      <br/>
+      <code title="Document Type Declaration (DTD) for X3D validation">&lt;!DOCTYPE X3D PUBLIC "ISO//Web3D//DTD X3D 3.3//EN" "<a href="https://www.web3d.org/specifications/x3d-3.3.dtd">https://www.web3d.org/specifications/x3d-3.3.dtd</a>"&gt;</code>
+      <div>
+<span title="X3D is the top-most XML element for an Extensible 3D (X3D) Graphics file">&lt;<span class="element">X3D</span>&#160;<span title="X3D Immersive Profile supports most nodes, similar to VRML97"><span class="attribute">profile</span>='<span class="value">Immersive</span>'</span>&#160;<span class="attribute">version</span>='<span class="value">3.3</span>'&#160;<span title="XML namespace for X3D Graphics schema validation"><span title="XML namespace for XML Schema validation">
+            <span class="attribute">xmlns:xsd</span>='<a href="http://www.w3.org/2001/XMLSchema-instance" target="_blank">http://www.w3.org/2001/XMLSchema-instance</a>'
+</span>
+         <span title="XML namespace for X3D Graphics schema validation">
+            <span class="attribute">xsd:noNamespaceSchemaLocation</span>
+         </span>='
+<a href="https://www.web3d.org/specifications/x3d-3.3.xsd" target="_blank">https://www.web3d.org/specifications/x3d-3.3.xsd</a>
+'</span>&gt;
+</span><div class="indent">
+<span title="head can contain component, unit, and author-defined metadata (meta) tags">&lt;<span class="element">head</span>&gt;
+</span><div class="indent">
+<span title="meta 'title' provides file name for this resource">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">title</span>'&#160;<span class="attribute">content</span>='<a href="SoundAudioClip.x3d">SoundAudioClip.x3d</a>'/&gt;
+</span><br />
+
+<span title="meta 'description' provides summary overview describing this resource">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">description</span>'&#160;<span class="attribute">content</span>='<span class="plain">An example of the Sound and AudioClip node showing the effect of the various volume regions</span>'/&gt;
+</span><br />
+
+<span title="meta 'created' provides date of initial version">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">created</span>'&#160;<span class="attribute">content</span>='<span class="value">1 May 2006</span>'/&gt;
+</span><br />
+
+<span title="meta 'modified' provides date of modified version">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">modified</span>'&#160;<span class="attribute">content</span>='<span class="value">13 May 2020</span>'/&gt;
+</span><br />
+
+<span title="meta 'reference' provides name or reference link to a supporting resource">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">reference</span>'&#160;<span class="attribute">content</span>='
+<a href="https://X3dGraphics.com" target="_blank">https://X3dGraphics.com</a>
+'/&gt;
+</span><br />
+
+<span title="meta 'reference' provides name or reference link to a supporting resource">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">reference</span>'&#160;<span class="attribute">content</span>='
+<a href="https://www.web3d.org/x3d/content/examples/X3dResources.html"
+                   target="_blank">https://www.web3d.org/x3d/content/examples/X3dResources.html</a>
+'/&gt;
+</span><br />
+
+<span title="meta 'creator' provides name of original author">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">creator</span>'&#160;<span class="attribute">content</span>='<span class="value">Don Brutzman</span>'/&gt;
+</span><br />
+
+<span title="meta 'rights' defines intellectual property rights (IPR) for this scene">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">rights</span>'&#160;<span class="attribute">content</span>='<span class="value">Copyright 2006, Daly Realism and Don Brutzman</span>'/&gt;
+</span><br />
+
+<span title="meta 'subject' provides search-index subject keywords, key phrases, or classification codes">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">subject</span>'&#160;<span class="attribute">content</span>='
+X3D book, X3D graphics, X3D-Edit, <a href="http://www.x3dGraphics.com" target="_blank">http://www.x3dGraphics.com</a>
+'/&gt;
+</span><br />
+
+<span title="meta 'identifier' provides the unique Uniform Resource Identifier (URI) or url address for this resource">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">identifier</span>'&#160;<span class="attribute">content</span>='
+<a href="https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter12EnvironmentSensorSound/SoundAudioClip.x3d"
+                   target="_blank">https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter12EnvironmentSensorSound/SoundAudioClip.x3d</a>
+'/&gt;
+</span><br />
+
+<span title="meta 'generator' provides name of authoring tool or translation tool producing this scene">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">generator</span>'&#160;<span class="attribute">content</span>='<span class="value">X3D-Edit 3.3, </span>
+               <a href="https://savage.nps.edu/X3D-Edit" target="_blank">https://savage.nps.edu/X3D-Edit</a>'/&gt;
+</span><br />
+
+<span title="meta 'license' provides software license link or information">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">license</span>'&#160;<span class="attribute">content</span>='
+<a href="../license.html">../license.html</a>'/&gt;
+</span></div><span title="head can contain component, unit, and author-defined metadata (meta) tags">&lt;/<span class="element">head</span>&gt;
+</span><br /><span style="color:white">
+&lt;!--
+</span>
+            <div class="center">
+               <hr style="width:100%"/>
+               <b>
+                  <i>Index for ExternProtoDeclare definition</i>
+               </b>: 
+<a title="go to this declaration"
+                   href="#ExternProtoDeclare_GridXZ"
+                   class="prototype">GridXZ</a>
+<br /><hr width="50%"/>
+               <b>
+                  <i>Index for DEF nodes</i>
+               </b>: 
+<a title="go to this Sound node" href="#Audible" class="idName">Audible</a>,
+<a title="go to this Material node"
+                   href="#MaxFootprintMaterial"
+                   class="idName">MaxFootprintMaterial</a>,
+<a title="go to this Transform node" href="#maxShapes" class="idName">maxShapes</a>,
+<a title="go to this Material node"
+                   href="#MaxSpheroidMaterial"
+                   class="idName">MaxSpheroidMaterial</a>,
+<a title="go to this Material node"
+                   href="#MinFootprintMaterial"
+                   class="idName">MinFootprintMaterial</a>,
+<a title="go to this Transform node" href="#minShapes" class="idName">minShapes</a>,
+<a title="go to this Material node"
+                   href="#MinSpheroidMaterial"
+                   class="idName">MinSpheroidMaterial</a>,
+<a title="go to this AudioClip node"
+                   href="#WaterSounds"
+                   class="idName">WaterSounds</a>
+<br /><hr width="50%"/>
+               <b>
+                  <i>Index for Viewpoint images</i>
+               </b>: 
+<a title="go to this Viewpoint node: Sound spheroid approximating ellipsoid volume"
+                   href="#Viewpoint_1"
+                   class="idName">Viewpoint_1</a>,
+<a title="go to this Viewpoint node: 100m distant"
+                   href="#Viewpoint_2"
+                   class="idName">Viewpoint_2</a>,
+<a title="go to this Viewpoint node: 50m distant"
+                   href="#Viewpoint_3"
+                   class="idName">Viewpoint_3</a>,
+<a title="go to this Viewpoint node: 25m distant"
+                   href="#Viewpoint_4"
+                   class="idName">Viewpoint_4</a>,
+<a title="go to this Viewpoint node: 10m distant"
+                   href="#Viewpoint_5"
+                   class="idName">Viewpoint_5</a>,
+<a title="go to this Viewpoint node: center"
+                   href="#Viewpoint_6"
+                   class="idName">Viewpoint_6</a>
+               <hr style="width:100%"/>
+            </div>
+            <span style="color:white">
+--&gt;
+</span><br />
+
+<span title="Scene is the root node that contains an X3D scene graph">&lt;<span class="element">Scene</span>&gt;
+</span><div class="indent">
+<span title="WorldInfo contains persistent documentation information about the 3D world">&lt;<span class="element">WorldInfo</span>&#160;<span class="attribute">title</span>='<span class="value">SoundAudioClip.x3d</span>'/&gt;
+</span><br />
+<a name="Viewpoint_1"> </a> 
+<span title="Viewpoint provides a specific location and direction where the user may view the scene">&lt;<span class="element">Viewpoint</span>&#160;<span class="attribute">description</span>='<a title="viewpoint image (produced using Xj3D)"
+                   href="_viewpoints/SoundAudioClip.x3d._VP_Sound_spheroid_approximating_ellipsoid_volume.png">Sound spheroid approximating ellipsoid volume</a>'&#160;<span class="attribute">orientation</span>='<span class="value">1 0 0 -0.2</span>'&#160;<span class="attribute">position</span>='<span class="value">0 40 200</span>'/&gt;
+</span><br />
+<a name="Viewpoint_2"> </a> 
+<span title="Viewpoint provides a specific location and direction where the user may view the scene">&lt;<span class="element">Viewpoint</span>&#160;<span class="attribute">description</span>='<a title="viewpoint image (produced using Xj3D)"
+                   href="_viewpoints/SoundAudioClip.x3d._VP_100m_distant.png">100m distant</a>'&#160;<span class="attribute">orientation</span>='<span class="value">1 0 0 -0.2</span>'&#160;<span class="attribute">position</span>='<span class="value">0 20 100</span>'/&gt;
+</span><br />
+<a name="Viewpoint_3"> </a> 
+<span title="Viewpoint provides a specific location and direction where the user may view the scene">&lt;<span class="element">Viewpoint</span>&#160;<span class="attribute">description</span>='<a title="viewpoint image (produced using Xj3D)"
+                   href="_viewpoints/SoundAudioClip.x3d._VP_50m_distant.png">50m distant</a>'&#160;<span class="attribute">orientation</span>='<span class="value">1 0 0 -0.2</span>'&#160;<span class="attribute">position</span>='<span class="value">0 10 50</span>'/&gt;
+</span><br />
+<a name="Viewpoint_4"> </a> 
+<span title="Viewpoint provides a specific location and direction where the user may view the scene">&lt;<span class="element">Viewpoint</span>&#160;<span class="attribute">description</span>='<a title="viewpoint image (produced using Xj3D)"
+                   href="_viewpoints/SoundAudioClip.x3d._VP_25m_distant.png">25m distant</a>'&#160;<span class="attribute">orientation</span>='<span class="value">1 0 0 -0.2</span>'&#160;<span class="attribute">position</span>='<span class="value">0 5 25</span>'/&gt;
+</span><br />
+<a name="Viewpoint_5"> </a> 
+<span title="Viewpoint provides a specific location and direction where the user may view the scene">&lt;<span class="element">Viewpoint</span>&#160;<span class="attribute">description</span>='<a title="viewpoint image (produced using Xj3D)"
+                   href="_viewpoints/SoundAudioClip.x3d._VP_10m_distant.png">10m distant</a>'&#160;<span class="attribute">orientation</span>='<span class="value">1 0 0 -0.2</span>'&#160;<span class="attribute">position</span>='<span class="value">0 2 10</span>'/&gt;
+</span><br />
+<a name="Viewpoint_6"> </a> 
+<span title="Viewpoint provides a specific location and direction where the user may view the scene">&lt;<span class="element">Viewpoint</span>&#160;<span class="attribute">description</span>='<a title="viewpoint image (produced using Xj3D)"
+                   href="_viewpoints/SoundAudioClip.x3d._VP_center.png">center</a>'&#160;<span class="attribute">orientation</span>='<span class="value">0 1 0 -1.57</span>'&#160;<span class="attribute">position</span>='<span class="value">0 2 0</span>'/&gt;
+</span><br />
+
+<span title="NavigationInfo describes the viewing model and physical characteristics of the viewer's avatar">&lt;<span class="element">NavigationInfo</span>&#160;<span class="attribute">speed</span>='<span class="value">10</span>'&#160;<span class="attribute">type</span>='<span class="value">"WALK" "ANY"</span>'/&gt;
+</span><br /><span title="XML comment">&lt;!--  Sound  node  is  positioned  and  oriented  in  local  coordinate  reference  frame  of  scene  graph  at  origin  of  sound  --&gt;</span>
+<br /><span title="XML comment">&lt;!--  Sound  location  y-value  is  1.6  in  order  to  match  typical  avatar  height  (in  meters)  --&gt;</span>
+<br />
+<a name="Audible"> </a> 
+<span title="Sound controls an AudioClip or MovieTexture for sound playback">&lt;<span class="element">Sound</span>&#160;<span class="attribute">DEF</span>='<a title="bookmark link to Audible" href="#Audible" class="idName">Audible</a>'&#160;<span class="attribute">location</span>='<span class="value">0 1.6 0</span>'&#160;<span class="attribute">maxBack</span>='<span class="value">20</span>'&#160;<span class="attribute">maxFront</span>='<span class="value">100</span>'&#160;<span class="attribute">minBack</span>='<span class="value">10</span>'&#160;<span class="attribute">minFront</span>='<span class="value">10</span>'&#160;<span class="attribute">priority</span>='<span class="value">1</span>'&gt;
+</span><div class="indent">
+                  <a name="WaterSounds"> </a> 
+<span title="AudioClip provides audio data used by Sound nodes">&lt;<span class="element">AudioClip</span>&#160;<span class="attribute">DEF</span>='<a title="bookmark link to WaterSounds"
+                      href="#WaterSounds"
+                      class="idName">WaterSounds</a>'&#160;<span class="attribute">description</span>='<span class="value">Running Water</span>'&#160;<span class="attribute">loop</span>='<span class="value">true</span>'
+<br />
+&#160;&#160;<span title="uniform resource locator (url) list of relative or absolute file addresses, performed in order until resource retrieval succeeds"><span class="attribute">url</span>='
+ "<a href="aqua.wav" target="_blank">aqua.wav</a>" "<a href="https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter12EnvironmentSensorSound/aqua.wav"
+                      target="_blank">https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter12EnvironmentSensorSound/aqua.wav</a>" '</span>/&gt;
+</span></div><span title="Sound controls an AudioClip or MovieTexture for sound playback">&lt;/<span class="element">Sound</span>&gt;
+</span><br /><span title="XML comment">&lt;!--  minWidth  =  sqrt  (minBack  *  minFront)  =  10  --&gt;</span>
+<br /><span title="XML comment">&lt;!--  maxWidth  =  sqrt  (maxBack  *  maxFront)  =  45  --&gt;</span>
+<br /><span title="XML comment">&lt;!--  Approximate  ellipsoidal  footprints  and  envelope  using  Cylinders  and  Spheres,  respectively  --&gt;</span>
+<br /><span title="XML comment">&lt;!--  Minimum  attenuation  parameters  10,  10,  10  produce  a  Cylinder  and  Sphere  with  uniform  scale  --&gt;</span>
+<br />
+<a name="minShapes"> </a> 
+<span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;<span class="element">Transform</span>&#160;<span class="attribute">DEF</span>='<a title="bookmark link to minShapes" href="#minShapes" class="idName">minShapes</a>'&#160;<span class="attribute">scale</span>='<span class="value">10 10 10</span>'&gt;
+</span><div class="indent">
+<span title="Shape contains geometry and optional corresponding Appearance">&lt;<span class="element">Shape</span>&gt;
+</span><div class="indent">
+<span title="Cylinder is a geometry primitive node">&lt;<span class="element">Cylinder</span>&#160;<span class="attribute">height</span>='<span class="value">0.05</span>'/&gt;
+</span><br />
+
+<span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;<span class="element">Appearance</span>&gt;
+</span><div class="indent">
+                        <a name="MinFootprintMaterial"> </a> 
+<span title="Material specifies surface rendering properties for associated geometry">&lt;<span class="element">Material</span>&#160;<span class="attribute">DEF</span>='<a title="bookmark link to MinFootprintMaterial"
+                            href="#MinFootprintMaterial"
+                            class="idName">MinFootprintMaterial</a>'&#160;<span class="attribute">diffuseColor</span>='<span class="value">0.8 0 0</span>'/&gt;
+</span></div><span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;/<span class="element">Appearance</span>&gt;
+</span></div><span title="Shape contains geometry and optional corresponding Appearance">&lt;/<span class="element">Shape</span>&gt;
+</span><br />
+
+<span title="Collision detects camera-to-object contact using current view and NavigationInfo avatarSize">&lt;<span class="element">Collision</span>&#160;<span class="attribute">enabled</span>='<span class="value">false</span>'&gt;
+</span><div class="indent">
+<span title="Shape contains geometry and optional corresponding Appearance">&lt;<span class="element">Shape</span>&gt;
+</span><div class="indent">
+<span title="Sphere is a geometry primitive node">&lt;<span class="element">Sphere</span>/&gt;
+</span><br />
+
+<span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;<span class="element">Appearance</span>&gt;
+</span><div class="indent">
+                           <a name="MinSpheroidMaterial"> </a> 
+<span title="Material specifies surface rendering properties for associated geometry">&lt;<span class="element">Material</span>&#160;<span class="attribute">DEF</span>='<a title="bookmark link to MinSpheroidMaterial"
+                               href="#MinSpheroidMaterial"
+                               class="idName">MinSpheroidMaterial</a>'&#160;<span class="attribute">diffuseColor</span>='<span class="value">0.8 0 0</span>'&#160;<span class="attribute">transparency</span>='<span class="value">0.5</span>'/&gt;
+</span></div><span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;/<span class="element">Appearance</span>&gt;
+</span></div><span title="Shape contains geometry and optional corresponding Appearance">&lt;/<span class="element">Shape</span>&gt;
+</span></div><span title="Collision detects camera-to-object contact using current view and NavigationInfo avatarSize">&lt;/<span class="element">Collision</span>&gt;
+</span></div><span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;/<span class="element">Transform</span>&gt;
+</span><br /><span title="XML comment">&lt;!--  Maximum  attenuation  parameters  20,  100,  45  produce  a  Cylinder  and  Sphere  with  non-uniform  scale  --&gt;</span>
+<br /><span title="XML comment">&lt;!--  Sound  direction  is  x  axis,  so  maximum-attenuation  length  =  (100  +  20)  =  120  and  radius  =  120  /  2  =  60  along  x  axis  --&gt;</span>
+<br /><span title="XML comment">&lt;!--  and  so  width,  height  dimensions  ~=  maximum-attenuation  halfwidth  =  maxWidth  ~=  45  along  y,  z  axes  --&gt;</span>
+<br /><span title="XML comment">&lt;!--  Ellipsoid  focus  is  (0  0  0)  but  geometric  center  of  spheroidal  approximation  is  (-maxBack  +  x  radius)  =  (-20  +  60)  =  40  along  x  axis  --&gt;</span>
+<br />
+<a name="maxShapes"> </a> 
+<span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;<span class="element">Transform</span>&#160;<span class="attribute">DEF</span>='<a title="bookmark link to maxShapes" href="#maxShapes" class="idName">maxShapes</a>'&#160;<span class="attribute">scale</span>='<span class="value">60 45 45</span>'&#160;<span class="attribute">translation</span>='<span class="value">40 0 0</span>'&gt;
+</span><div class="indent">
+<span title="Shape contains geometry and optional corresponding Appearance">&lt;<span class="element">Shape</span>&gt;
+</span><div class="indent">
+<span title="Cylinder is a geometry primitive node">&lt;<span class="element">Cylinder</span>&#160;<span class="attribute">height</span>='<span class="value">0.002</span>'/&gt;
+</span><br />
+
+<span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;<span class="element">Appearance</span>&gt;
+</span><div class="indent">
+                        <a name="MaxFootprintMaterial"> </a> 
+<span title="Material specifies surface rendering properties for associated geometry">&lt;<span class="element">Material</span>&#160;<span class="attribute">DEF</span>='<a title="bookmark link to MaxFootprintMaterial"
+                            href="#MaxFootprintMaterial"
+                            class="idName">MaxFootprintMaterial</a>'&#160;<span class="attribute">diffuseColor</span>='<span class="value">1 0.894118 0.341176</span>'/&gt;
+</span></div><span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;/<span class="element">Appearance</span>&gt;
+</span></div><span title="Shape contains geometry and optional corresponding Appearance">&lt;/<span class="element">Shape</span>&gt;
+</span><br />
+
+<span title="Collision detects camera-to-object contact using current view and NavigationInfo avatarSize">&lt;<span class="element">Collision</span>&#160;<span class="attribute">enabled</span>='<span class="value">false</span>'&gt;
+</span><div class="indent">
+<span title="Shape contains geometry and optional corresponding Appearance">&lt;<span class="element">Shape</span>&gt;
+</span><div class="indent">
+<span title="Sphere is a geometry primitive node">&lt;<span class="element">Sphere</span>/&gt;
+</span><br />
+
+<span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;<span class="element">Appearance</span>&gt;
+</span><div class="indent">
+                           <a name="MaxSpheroidMaterial"> </a> 
+<span title="Material specifies surface rendering properties for associated geometry">&lt;<span class="element">Material</span>&#160;<span class="attribute">DEF</span>='<a title="bookmark link to MaxSpheroidMaterial"
+                               href="#MaxSpheroidMaterial"
+                               class="idName">MaxSpheroidMaterial</a>'&#160;<span class="attribute">diffuseColor</span>='<span class="value">1 0.5 0</span>'&#160;<span class="attribute">transparency</span>='<span class="value">0.75</span>'/&gt;
+</span></div><span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;/<span class="element">Appearance</span>&gt;
+</span></div><span title="Shape contains geometry and optional corresponding Appearance">&lt;/<span class="element">Shape</span>&gt;
+</span></div><span title="Collision detects camera-to-object contact using current view and NavigationInfo avatarSize">&lt;/<span class="element">Collision</span>&gt;
+</span></div><span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;/<span class="element">Transform</span>&gt;
+</span><br /><span title="XML comment">&lt;!--  Author-assist  prototype  from  Savage  X3D  model  archive  --&gt;</span>
+<br />
+<a name="ExternProtoDeclare_GridXZ"> </a> 
+<span title="ExternProtoDeclare refers to a ProtoDeclare node declaration provided in another file">&lt;<span class="prototype">ExternProtoDeclare</span>&#160;<span class="attribute">name</span>='<span class="prototype">GridXZ</span>'
+<br />
+&#160;&#160;<span title="uniform resource locator (url) list of relative or absolute file addresses, performed in order until resource retrieval succeeds"><span class="attribute">url</span>='
+"<a href="../../Savage/Tools/Authoring/GridXZPrototype.x3d#GridXZ"
+                   target="_blank">../../Savage/Tools/Authoring/GridXZPrototype.x3d#GridXZ</a>"
+"<a href="https://savage.nps.edu/Savage/Tools/Authoring/GridXZPrototype.x3d#GridXZ"
+                   target="_blank">https://savage.nps.edu/Savage/Tools/Authoring/GridXZPrototype.x3d#GridXZ</a>" "<a href="../../Savage/Tools/Authoring/GridXZPrototype.wrl#GridXZ"
+                   target="_blank">../../Savage/Tools/Authoring/GridXZPrototype.wrl#GridXZ</a>"
+"<a href="https://savage.nps.edu/Savage/Tools/Authoring/GridXZPrototype.wrl#GridXZ"
+                   target="_blank">https://savage.nps.edu/Savage/Tools/Authoring/GridXZPrototype.wrl#GridXZ</a>" '</span>&gt;
+</span><div class="indent">
+<span title="A field element defines an interface attribute or node for a parent ExternProtoDeclare" style="background-color:#FFEEFF">&lt;<span class="prototype">field</span>&#160;<span class="attribute">name</span>='<span class="prototype">description</span>'&#160;<span class="attribute">type</span>='<span class="value">SFString</span>'&#160;<span class="attribute">accessType</span>='<span class="value">initializeOnly</span>'/&gt;
+</span><br />
+
+<span title="A field element defines an interface attribute or node for a parent ExternProtoDeclare" style="background-color:#FFEEFF">&lt;<span class="prototype">field</span>&#160;<span class="attribute">name</span>='<span class="prototype">labelColor</span>'&#160;<span class="attribute">type</span>='<span class="value">SFColor</span>'&#160;<span class="attribute">accessType</span>='<span class="value">inputOutput</span>'/&gt;
+</span><br />
+
+<span title="A field element defines an interface attribute or node for a parent ExternProtoDeclare" style="background-color:#FFEEFF">&lt;<span class="prototype">field</span>&#160;<span class="attribute">name</span>='<span class="prototype">scale</span>'&#160;<span class="attribute">type</span>='<span class="value">SFVec3f</span>'&#160;<span class="attribute">accessType</span>='<span class="value">inputOutput</span>'
+<br />
+&#160;<span title="application information for this field"><span class="gray">appinfo</span>='<span class="gray">default unscaled size: 10m by 10m</span>'</span>/&gt;
+</span><br />
+
+<span title="A field element defines an interface attribute or node for a parent ExternProtoDeclare" style="background-color:#FFEEFF">&lt;<span class="prototype">field</span>&#160;<span class="attribute">name</span>='<span class="prototype">labelsOffset</span>'&#160;<span class="attribute">type</span>='<span class="value">SFVec3f</span>'&#160;<span class="attribute">accessType</span>='<span class="value">inputOutput</span>'
+<br />
+&#160;<span title="application information for this field"><span class="gray">appinfo</span>='<span class="gray">label location offset (in meters) to improve readability</span>'</span>/&gt;
+</span><br />
+
+<span title="A field element defines an interface attribute or node for a parent ExternProtoDeclare" style="background-color:#FFEEFF">&lt;<span class="prototype">field</span>&#160;<span class="attribute">name</span>='<span class="prototype">originLabel</span>'&#160;<span class="attribute">type</span>='<span class="value">MFString</span>'&#160;<span class="attribute">accessType</span>='<span class="value">inputOutput</span>'/&gt;
+</span><br />
+
+<span title="A field element defines an interface attribute or node for a parent ExternProtoDeclare" style="background-color:#FFEEFF">&lt;<span class="prototype">field</span>&#160;<span class="attribute">name</span>='<span class="prototype">WestLabel</span>'&#160;<span class="attribute">type</span>='<span class="value">MFString</span>'&#160;<span class="attribute">accessType</span>='<span class="value">inputOutput</span>'
+<br />
+&#160;<span title="application information for this field"><span class="gray">appinfo</span>='<span class="gray">-Z axis</span>'</span>/&gt;
+</span><br />
+
+<span title="A field element defines an interface attribute or node for a parent ExternProtoDeclare" style="background-color:#FFEEFF">&lt;<span class="prototype">field</span>&#160;<span class="attribute">name</span>='<span class="prototype">NorthWestLabel</span>'&#160;<span class="attribute">type</span>='<span class="value">MFString</span>'&#160;<span class="attribute">accessType</span>='<span class="value">inputOutput</span>'/&gt;
+</span><br />
+
+<span title="A field element defines an interface attribute or node for a parent ExternProtoDeclare" style="background-color:#FFEEFF">&lt;<span class="prototype">field</span>&#160;<span class="attribute">name</span>='<span class="prototype">NorthLabel</span>'&#160;<span class="attribute">type</span>='<span class="value">MFString</span>'&#160;<span class="attribute">accessType</span>='<span class="value">inputOutput</span>'
+<br />
+&#160;<span title="application information for this field"><span class="gray">appinfo</span>='<span class="gray">+X axis</span>'</span>/&gt;
+</span><br />
+
+<span title="A field element defines an interface attribute or node for a parent ExternProtoDeclare" style="background-color:#FFEEFF">&lt;<span class="prototype">field</span>&#160;<span class="attribute">name</span>='<span class="prototype">NorthEastLabel</span>'&#160;<span class="attribute">type</span>='<span class="value">MFString</span>'&#160;<span class="attribute">accessType</span>='<span class="value">inputOutput</span>'/&gt;
+</span><br />
+
+<span title="A field element defines an interface attribute or node for a parent ExternProtoDeclare" style="background-color:#FFEEFF">&lt;<span class="prototype">field</span>&#160;<span class="attribute">name</span>='<span class="prototype">EastLabel</span>'&#160;<span class="attribute">type</span>='<span class="value">MFString</span>'&#160;<span class="attribute">accessType</span>='<span class="value">inputOutput</span>'
+<br />
+&#160;<span title="application information for this field"><span class="gray">appinfo</span>='<span class="gray">+Z axis</span>'</span>/&gt;
+</span><br />
+
+<span title="A field element defines an interface attribute or node for a parent ExternProtoDeclare" style="background-color:#FFEEFF">&lt;<span class="prototype">field</span>&#160;<span class="attribute">name</span>='<span class="prototype">SouthEastLabel</span>'&#160;<span class="attribute">type</span>='<span class="value">MFString</span>'&#160;<span class="attribute">accessType</span>='<span class="value">inputOutput</span>'/&gt;
+</span><br />
+
+<span title="A field element defines an interface attribute or node for a parent ExternProtoDeclare" style="background-color:#FFEEFF">&lt;<span class="prototype">field</span>&#160;<span class="attribute">name</span>='<span class="prototype">SouthLabel</span>'&#160;<span class="attribute">type</span>='<span class="value">MFString</span>'&#160;<span class="attribute">accessType</span>='<span class="value">inputOutput</span>'
+<br />
+&#160;<span title="application information for this field"><span class="gray">appinfo</span>='<span class="gray">-X axis</span>'</span>/&gt;
+</span><br />
+
+<span title="A field element defines an interface attribute or node for a parent ExternProtoDeclare" style="background-color:#FFEEFF">&lt;<span class="prototype">field</span>&#160;<span class="attribute">name</span>='<span class="prototype">SouthWestLabel</span>'&#160;<span class="attribute">type</span>='<span class="value">MFString</span>'&#160;<span class="attribute">accessType</span>='<span class="value">inputOutput</span>'/&gt;
+</span></div><span title="ExternProtoDeclare refers to a ProtoDeclare node declaration provided in another file">&lt;/<span class="prototype">ExternProtoDeclare</span>&gt;
+</span><br /><span title="XML comment">&lt;!--  default  values  scaled  up  by  factor  of  10  in  this  instance  --&gt;</span>
+<br />
+
+<span title="ProtoInstance creates an instance of a locally or externally declared prototype node" style="background-color:#FFEEFF">&lt;<span class="prototype">ProtoInstance</span>&#160;<span class="attribute">name</span>='<a title="go to the defining ExternProtoDeclare for this prototype instance"
+                   href="#ExternProtoDeclare_GridXZ"
+                   class="prototype">GridXZ</a>'&gt;
+</span><div class="indent">
+<span title="A fieldValue element is used to re-initialize a default field value in a ProtoInstance" style="background-color:#FFEEFF">&lt;<span class="prototype">fieldValue</span>&#160;<span class="attribute">name</span>='<span class="prototype">description</span>'&#160;<span class="attribute">value</span>='<span class="value">GridXZ</span>'/&gt;
+</span><br />
+
+<span title="A fieldValue element is used to re-initialize a default field value in a ProtoInstance" style="background-color:#FFEEFF">&lt;<span class="prototype">fieldValue</span>&#160;<span class="attribute">name</span>='<span class="prototype">labelColor</span>'&#160;<span class="attribute">value</span>='<span class="value">1 1 1</span>'/&gt;
+</span><br />
+
+<span title="A fieldValue element is used to re-initialize a default field value in a ProtoInstance" style="background-color:#FFEEFF">&lt;<span class="prototype">fieldValue</span>&#160;<span class="attribute">name</span>='<span class="prototype">scale</span>'&#160;<span class="attribute">value</span>='<span class="value">10 10 10</span>'/&gt;
+</span><br />
+
+<span title="A fieldValue element is used to re-initialize a default field value in a ProtoInstance" style="background-color:#FFEEFF">&lt;<span class="prototype">fieldValue</span>&#160;<span class="attribute">name</span>='<span class="prototype">labelsOffset</span>'&#160;<span class="attribute">value</span>='<span class="value">0 -0.5 0</span>'/&gt;
+</span><br />
+
+<span title="A fieldValue element is used to re-initialize a default field value in a ProtoInstance" style="background-color:#FFEEFF">&lt;<span class="prototype">fieldValue</span>&#160;<span class="attribute">name</span>='<span class="prototype">originLabel</span>'&#160;<span class="attribute">value</span>='<span class="value">"origin" "0 0 0"</span>'/&gt;
+</span><br />
+
+<span title="A fieldValue element is used to re-initialize a default field value in a ProtoInstance" style="background-color:#FFEEFF">&lt;<span class="prototype">fieldValue</span>&#160;<span class="attribute">name</span>='<span class="prototype">NorthLabel</span>'&#160;<span class="attribute">value</span>='<span class="value">"North" "-Z"</span>'/&gt;
+</span><br />
+
+<span title="A fieldValue element is used to re-initialize a default field value in a ProtoInstance" style="background-color:#FFEEFF">&lt;<span class="prototype">fieldValue</span>&#160;<span class="attribute">name</span>='<span class="prototype">NorthEastLabel</span>'&#160;<span class="attribute">value</span>='<span class="value">"100 0 -100"</span>'/&gt;
+</span><br />
+
+<span title="A fieldValue element is used to re-initialize a default field value in a ProtoInstance" style="background-color:#FFEEFF">&lt;<span class="prototype">fieldValue</span>&#160;<span class="attribute">name</span>='<span class="prototype">EastLabel</span>'&#160;<span class="attribute">value</span>='<span class="value">"East" "+X"</span>'/&gt;
+</span><br />
+
+<span title="A fieldValue element is used to re-initialize a default field value in a ProtoInstance" style="background-color:#FFEEFF">&lt;<span class="prototype">fieldValue</span>&#160;<span class="attribute">name</span>='<span class="prototype">SouthEastLabel</span>'&#160;<span class="attribute">value</span>='<span class="value">"100 0 100"</span>'/&gt;
+</span><br />
+
+<span title="A fieldValue element is used to re-initialize a default field value in a ProtoInstance" style="background-color:#FFEEFF">&lt;<span class="prototype">fieldValue</span>&#160;<span class="attribute">name</span>='<span class="prototype">SouthLabel</span>'&#160;<span class="attribute">value</span>='<span class="value">"South" "+Z"</span>'/&gt;
+</span><br />
+
+<span title="A fieldValue element is used to re-initialize a default field value in a ProtoInstance" style="background-color:#FFEEFF">&lt;<span class="prototype">fieldValue</span>&#160;<span class="attribute">name</span>='<span class="prototype">SouthWestLabel</span>'&#160;<span class="attribute">value</span>='<span class="value">"-100 0 100"</span>'/&gt;
+</span><br />
+
+<span title="A fieldValue element is used to re-initialize a default field value in a ProtoInstance" style="background-color:#FFEEFF">&lt;<span class="prototype">fieldValue</span>&#160;<span class="attribute">name</span>='<span class="prototype">WestLabel</span>'&#160;<span class="attribute">value</span>='<span class="value">"West" "-X"</span>'/&gt;
+</span><br />
+
+<span title="A fieldValue element is used to re-initialize a default field value in a ProtoInstance" style="background-color:#FFEEFF">&lt;<span class="prototype">fieldValue</span>&#160;<span class="attribute">name</span>='<span class="prototype">NorthWestLabel</span>'&#160;<span class="attribute">value</span>='<span class="value">"-100 0 -100"</span>'/&gt;
+</span></div><span title="ProtoInstance creates an instance of a locally or externally declared prototype node" style="background-color:#FFEEFF">&lt;/<span class="prototype">ProtoInstance</span>&gt;
+</span></div><span title="Scene is the root node that contains an X3D scene graph">&lt;/<span class="element">Scene</span>&gt;
+</span></div><span title="X3D is the top-most XML element for an Extensible 3D (X3D) Graphics file">&lt;/<span class="element">X3D</span>&gt;
+</span><br /><span style="color:white">
+&lt;!--
+</span>
+         <div class="center">
+            <hr style="width:100%"/>
+            <b>
+               <i>Index for ExternProtoDeclare definition</i>
+            </b>: 
+<a title="go to this declaration"
+                href="#ExternProtoDeclare_GridXZ"
+                class="prototype">GridXZ</a>
+<br /><hr width="50%"/>
+            <b>
+               <i>Index for DEF nodes</i>
+            </b>: 
+<a title="go to this Sound node" href="#Audible" class="idName">Audible</a>,
+<a title="go to this Material node"
+                href="#MaxFootprintMaterial"
+                class="idName">MaxFootprintMaterial</a>,
+<a title="go to this Transform node" href="#maxShapes" class="idName">maxShapes</a>,
+<a title="go to this Material node"
+                href="#MaxSpheroidMaterial"
+                class="idName">MaxSpheroidMaterial</a>,
+<a title="go to this Material node"
+                href="#MinFootprintMaterial"
+                class="idName">MinFootprintMaterial</a>,
+<a title="go to this Transform node" href="#minShapes" class="idName">minShapes</a>,
+<a title="go to this Material node"
+                href="#MinSpheroidMaterial"
+                class="idName">MinSpheroidMaterial</a>,
+<a title="go to this AudioClip node"
+                href="#WaterSounds"
+                class="idName">WaterSounds</a>
+<br /><hr width="50%"/>
+            <b>
+               <i>Index for Viewpoint images</i>
+            </b>: 
+<a title="go to this Viewpoint node: Sound spheroid approximating ellipsoid volume"
+                href="#Viewpoint_1"
+                class="idName">Viewpoint_1</a>,
+<a title="go to this Viewpoint node: 100m distant"
+                href="#Viewpoint_2"
+                class="idName">Viewpoint_2</a>,
+<a title="go to this Viewpoint node: 50m distant"
+                href="#Viewpoint_3"
+                class="idName">Viewpoint_3</a>,
+<a title="go to this Viewpoint node: 25m distant"
+                href="#Viewpoint_4"
+                class="idName">Viewpoint_4</a>,
+<a title="go to this Viewpoint node: 10m distant"
+                href="#Viewpoint_5"
+                class="idName">Viewpoint_5</a>,
+<a title="go to this Viewpoint node: center"
+                href="#Viewpoint_6"
+                class="idName">Viewpoint_6</a>
+            <hr style="width:100%"/>
+         </div>
+         <span style="color:white">
+--&gt;
+</span>
+      </div>
+      <p style="text-align:center;">
+         <span style="color:white">&lt;!--</span>
+Color key: <!--(matching X3D and XML terminology) -->
+&lt;<span class="element">X3dNode</span>
+         <span class="idName"> DEF</span>='<span class="idName">idName</span>' <span class="attribute">field</span>='<span class="value">value</span>'/&gt; 
+ matches 
+&lt;<span class="element">XmlElement</span>
+         <span class="idName"> DEF</span>='<span class="idName">idName</span>' <span class="attribute">attribute</span>='<span class="value">value</span>'/&gt; <br/>
+<span title="behavior node" style="background-color:#DDEEFF;">(Light blue background: behavior node)</span> <span title="inserted documentation about ROUTE connections" style="background-color:#EEEEEE;">(Grey background: inserted documentation)</span> <span title="X3D Extensibility" style="background-color:#FFEEFF;">(Magenta background: X3D Extensibility)</span><br/>
+&#160;&#160;&#160;
+&lt;<span class="prototype">Prototype</span>
+         <span class="attribute">name</span>='<span class="prototype">ProtoName</span>'&gt;
+	&lt;<span class="prototype">field</span>
+         <span class="attribute">name</span>='<span class="prototype">fieldName</span>'/&gt; &lt;/<span class="prototype">Prototype</span>&gt;
+<span style="color:white"> --&gt;</span>
+      </p>
+      <p style="text-align:center; background-color:white">
+         <span style="color:white">&lt;!--</span>
+For additional help information about X3D scenes, please see <a href="https://www.web3d.org/x3d/content/X3dTooltips.html"
+             title="Summary descriptions and authoring hints for each X3D node (element) and field (attribute)"
+             target="_blank">X3D Tooltips</a>, <a href="https://www.web3d.org/x3d/content/examples/X3dResources.html"
+             title="Numerous resources that support X3D graphics"
+             target="_blank">X3D Resources</a> and <a href="https://www.web3d.org/x3d/content/examples/X3dSceneAuthoringHints.html"
+             title="Style guidelines, authoring tips and best practices"
+             target="_blank">X3D Scene Authoring Hints</a>.
+<span style="color:white">--&gt;</span>
+      </p>
+   </body>
+</html>

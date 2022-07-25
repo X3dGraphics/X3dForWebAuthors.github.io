@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <link rel="shortcut icon" href="../images/X3DtextIcon16.png" title="X3D"/>
+      <title>X3D4WA, X3D for Web Authors Examples Archive, Chapter 15 Metadata</title>
+      <meta http-equiv="X-UA-Compatible" content="chrome=1,IE=edge"/>
+      <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+      <meta name="author" content="Don Brutzman"/>
+      <meta name="generator"
+             content="https://www.web3d.org/x3d/tools/CreateContentCatalog/CreateContentCatalogPages.xslt"/>
+      <meta name="modified" content="2022-07-03-07:00"/>
+      <meta name="keyword"
+             content="X3D, X3DV, VRML, VRML97, Extensible 3D, Virtual Reality Modeling Language"/>
+   </head>
+   <body>
+      <table
+              align="center"
+              summary="navigation"
+              border="1"
+              cellpadding="2"
+              width="95%">
+         <tr>
+            <td align="center" width="17%">
+               <a href="../index.html" target="_top">
+                  <img src="../images/ToC.png"
+                        title="Table of Contents"
+                        alt="Table of Contents"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter14Prototypes/index.html" target="_top">
+                  <img src="../images/PreviousChapter.png"
+                        title="Previous Directory Summary"
+                        alt="Previous Directory Summary"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="viewpointSlideshow.html" target="_top">
+                  <img src="../images/MootoolsSlideshowLogo.jpg"
+                        title="Directory Viewpoint Slideshow"
+                        alt="Directory Viewpoint Slideshow"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="15%">
+               <a href="../javadoc/index.html?X3dForWebAuthors/Chapter15Metadata/package-summary.html"
+                   title="Javadoc for translated java source"
+                   alt="Javadoc for translated java source"
+                   target="_blank">
+                  <img src="../images/Java-32.png"
+                        title="Javadoc for translated java source"
+                        alt="Javadoc for translated java source"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../KelpForestExhibit/index.html" target="_top">
+                  <img src="../images/NextChapter.png"
+                        title="Next Directory Summary"
+                        alt="Next Directory Summary"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="15%">
+               <a href="../../X3dResources.html" target="helpPage">
+                  <img src="../images/Help.png"
+                        title="X3D Resources"
+                        alt="X3D Resources"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+         </tr>
+      </table>
+      <h2 align="center">
+         <i> X3D Example Archives: </i>X3D4WA, X3D for Web Authors, Chapter 15 Metadata</h2>
+      <table align="center"
+              width="85%"
+              summary=""
+              border="0"
+              cellpadding="0">
+         <tr align="center">
+            <td><!--ChapterPackageDescription--><!--Contents of file ../../content/examples/X3dForWebAuthors/Chapter15Metadata/package-catalog.html-->
+
+    <table border="0" width="100%">
+        <tbody>
+            <tr>
+                <td align="center">
+                    
+                    <a href="index.html"><img border="0" alt="Metadata (book with question mark)" title="Metadata (book with question mark)" hspace="10" src="200px-Question_book-new.svg.png" width="133" height="104" align="middle"/></a>
+                </td>
+                <td align="left">
+
+    <p>
+				Metadata is used to identify the data relevant to X3D scenes and shapes, enabling the possibility of
+				further correlation, discovery and Web-based mashups to occur.
+    </p>
+    
+
+
+    <p>
+                 <a href="http://en.wikipedia.org/wiki/Metadata" target="_blank">Metadata</a> 
+                 is about forms of data relating to other data.
+                 For example, metadata can provide a variety of information regarding a document such as author, date revised, relevant key words, etc.
+                 As another example, metadata might annotate X3D CAD geometry to provide key references such as part numbers, documentation references, inventory links, etc.
+    </p>
+    
+
+
+    <p>
+                 Simple name=value paired information can be provided in document
+                 <code>&lt;<a href="https://www.web3d.org/x3d/content/X3dTooltips.html#head" target="X3dTooltips">head</a>&gt;</code>
+                 and
+                 <code>&lt;<a href="https://www.web3d.org/x3d/content/X3dTooltips.html#meta" target="X3dTooltips">meta</a>&gt;</code>
+                 tags, just like in HTML.
+                 Furthermore, typed metadata information can annotate any X3D node, either for use offline or for queries within an active scene graph at run time.
+                 X3D metadata nodes include 
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#MetadataBoolean" target="X3dTooltips" title="X3D Tooltip">MetadataBoolean</a>,
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#MetadataDouble" target="X3dTooltips" title="X3D Tooltip">MetadataDouble</a>,
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#MetadataFloat" target="X3dTooltips" title="X3D Tooltip">MetadataFloat</a>,
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#MetadataInteger" target="X3dTooltips" title="X3D Tooltip">MetadataInteger</a>,
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#MetadataString" target="X3dTooltips" title="X3D Tooltip">MetadataString</a>,
+                 and 
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#MetadataSet" target="X3dTooltips" title="X3D Tooltip">MetadataSet</a>
+                 (a&nbsp;set holder which contains a collection of other X3D Metadata nodes).
+    </p>
+    
+
+
+    <p>
+                 The supporting
+                 <a href="Chapter15MetadataInformation.html" target="_blank">Chapter&nbsp;15 Metadata Information</a>
+
+                 from <i>X3D for Web Authors</i> is
+                 available online via
+                 <a href="http://X3dGraphics.com/">X3dGraphics.com</a>.
+                 
+                Also available:
+
+                <ul>
+                   <li>
+                       <a href="https://www.web3d.org/x3d/content/examples/X3dSceneAuthoringHints.html#metaTags" target="_blank">X3D Scene Authoring Hints: meta Tags</a>
+                   </li>
+
+                   <li>
+                       <a href="https://savage.nps.edu/Savage/Tools/SMAL/SMAL.html" target="_blank">Savage Modeling and Analysis Language (SMAL) Resources</a> reference website,
+                       plus
+                       <a href="https://savage.nps.edu/Savage/Tools/SMAL/index.html" target="_blank">Savage/Tools/SMAL</a>
+                       example-archive template scenes showing matching X3D/XML metadata.
+                   </li>
+
+                   <li>
+                       Rauch, Travis M.,
+                       <a href="http://calhoun.nps.edu/public/handle/10945/2971" target="_blank">Savage Modeling and Analysis Language (SMAL) metadata for tactical simulations and X3D visualizations</a>,
+                       Masters Thesis, Naval Postgraduate School, Monterey, California, 2006.
+                   </li>
+                </ul>
+
+                </td>
+				
+                <td align="center">
+					
+                    <a href="index.html"><img border="0" alt="Library card catalogs provide metadata" title="Library card catalogs provide metadata" hspace="10" src="Schlagwortkatalog.jpg" width="142" height="120" align="middle"/></a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    
+
+    
+  </td>
+         </tr>
+      </table>
+      <table align="center"
+              width="85%"
+              summary=""
+              border="1"
+              cellpadding="6">
+         <tr align="center">
+            <th colspan="2" width="25%" align="center">&nbsp;&nbsp;6 X3D Models</th>
+            <th width="75%" align="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;X3D Model Descriptions</th>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="MetadataNodeExamplesX3D3"/>
+            </td>
+            <td>
+               <a href="MetadataNodeExamplesX3D3Index.html">Metadata Node Examples X3D 3</a>
+            </td>
+            <td>Simple examples of meta statements, comments, WorldInfo node and typed metadata nodes.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="MetadataNodeExamplesX3D4"/>
+            </td>
+            <td>
+               <a href="MetadataNodeExamplesX3D4Index.html">Metadata Node Examples X3D 4</a>
+            </td>
+            <td>Simple examples of meta statements, comments, WorldInfo node and typed metadata nodes.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="WorldInfoExample"/>
+            </td>
+            <td>
+               <a href="WorldInfoExampleIndex.html">World Info Example</a>
+            </td>
+            <td>Simple examples of meta statements, comments, a WorldInfo node and a MetadataString node.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="WorldInfoExampleMetadataSetX3D3"/>
+            </td>
+            <td>
+               <a href="WorldInfoExampleMetadataSetX3D3Index.html">World Info Example Metadata Set X3D 3</a>
+            </td>
+            <td>Test target for python x3d package development. Can x3d.py package generate this valid X3D file? This scene contains MetadataSet with a non-null metadata field.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="WorldInfoExampleMetadataSetX3D4"/>
+            </td>
+            <td>
+               <a href="WorldInfoExampleMetadataSetX3D4Index.html">World Info Example Metadata Set X3D 4</a>
+            </td>
+            <td>Test target for python x3d package development. Can x3d.py package generate this valid X3D file? This scene contains MetadataSet with a non-null metadata field.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="XmpMetadataEmbedded"/>
+            </td>
+            <td>
+               <a href="XmpMetadataEmbeddedIndex.html">Xmp Metadata Embedded</a>
+            </td>
+            <td>Simple XMP sidecar example: Hello XMP metadata!</td>
+         </tr>
+      </table>
+      <table width="80%" border="0" align="center">
+         <tr>
+            <td>
+               <p style="text-align:center">Online at <a href="https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter15Metadata/index.html">https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter15Metadata</a>
+               </p>
+               <p align="center" width="80%">
+                  <a href="https://validator.w3.org/check?uri=https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter15Metadata/index.html"
+                      target="_blank">
+                     <img src="https://www.w3.org/Icons/valid-xhtml10"
+                           title="Validate XHTML 1.1"
+                           alt="Validate XHTML 1.1"
+                           height="31"
+                           width="88"
+                           border="0"
+                           align="right"/>
+                  </a>
+               </p>
+               <p style="text-align:center">Master source-code model archive is under subversion control at <br/>
+                  <a href="https://sourceforge.net/p/x3d/code/HEAD/tree/www.web3d.org/x3d/content/examples/X3dForWebAuthors/Chapter15Metadata/"
+                      target="_blank">https://sourceforge.net/p/x3d/code/HEAD/tree/www.web3d.org/x3d/content/examples/X3dForWebAuthors/Chapter15Metadata</a>
+               </p>
+            </td>
+         </tr>
+      </table>
+      <p align="center">
+The 
+<a href="../../X3dResources.html#X3dForWebAuthors">X3D Resources: Examples</a> page
+and
+<a href="https://savage.nps.edu/Savage/developers.html">Savage Developers Guide</a>
+provide more information about the production of this archive.</p>
+      <table
+              align="center"
+              summary="navigation"
+              border="1"
+              cellpadding="2"
+              width="95%">
+         <tr>
+            <td align="center" width="17%">
+               <a href="../index.html" target="_top">
+                  <img src="../images/ToC.png"
+                        title="Table of Contents"
+                        alt="Table of Contents"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter14Prototypes/index.html" target="_top">
+                  <img src="../images/PreviousChapter.png"
+                        title="Previous Directory Summary"
+                        alt="Previous Directory Summary"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="viewpointSlideshow.html" target="_top">
+                  <img src="../images/MootoolsSlideshowLogo.jpg"
+                        title="Directory Viewpoint Slideshow"
+                        alt="Directory Viewpoint Slideshow"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="15%">
+               <a href="../javadoc/index.html?X3dForWebAuthors/Chapter15Metadata/package-summary.html"
+                   title="Javadoc for translated java source"
+                   alt="Javadoc for translated java source"
+                   target="_blank">
+                  <img src="../images/Java-32.png"
+                        title="Javadoc for translated java source"
+                        alt="Javadoc for translated java source"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../KelpForestExhibit/index.html" target="_top">
+                  <img src="../images/NextChapter.png"
+                        title="Next Directory Summary"
+                        alt="Next Directory Summary"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="15%">
+               <a href="../../X3dResources.html" target="helpPage">
+                  <img src="../images/Help.png"
+                        title="X3D Resources"
+                        alt="X3D Resources"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+         </tr>
+      </table>
+   </body>
+</html>

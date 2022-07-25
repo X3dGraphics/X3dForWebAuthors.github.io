@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--Generated using XSLT processor: SAXON 8.7 from Saxonica--><html xmlns="http://www.w3.org/TR/xhtml1/strict" xmlns:saxon="http://icl.com/saxon">
+   <head>
+      <title>ViewFrustrumExample.x3d (X3dToXhtml)</title>
+      <style type="text/css">
+span.element {color: navy}
+span.attribute {color: green}
+span.value {color: teal}
+span.plain {color: black}
+span.gray  {color: gray}
+span.idName {color: maroon}
+a.idName {color: maroon}
+div.center {text-align: center}
+div.indent {margin-left: 25px}
+
+span.prototype {color: purple}
+a.prototype {color: purple, visited: black}
+span.route {color: red}
+b.warning {color: #CC5500}
+b.error {color: #CC0000}
+                </style>
+      <meta name="generator" content="http://www.web3d.org/x3d/content/X3dToXhtml.xslt"/>
+      <link rel="shortcut icon"
+            href="http://www.web3d.org/x3d/content/icons/X3DtextIcon16.png"
+            title="X3D"/>
+   </head>
+   <body>
+      <pre>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;!DOCTYPE X3D PUBLIC "ISO//Web3D//DTD X3D 3.2//EN"   "http://www.web3d.org/specifications/x3d-3.2.dtd"&gt;</pre>
+
+&lt;<span class="element">X3D</span>&#160;<span class="attribute">profile</span>='<span class="value">Immersive</span>'&#160;<span class="attribute">version</span>='<span class="value">3.2</span>'&#160;<span class="attribute">xmlns:xsd</span>='<a href="http://www.w3.org/2001/XMLSchema-instance" target="_blank">http://www.w3.org/2001/XMLSchema-instance</a>' <span class="attribute">xsd:noNamespaceSchemaLocation</span>='
+<a href="http://www.web3d.org/specifications/x3d-3.2.xsd">http://www.web3d.org/specifications/x3d-3.2.xsd</a> '&gt;
+<div class="indent">
+&lt;<span class="element">head</span>&gt;
+<div class="indent">
+&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">title</span>'&#160;<span class="attribute">content</span>='<a href="ViewFrustrumExample.x3d" target="_blank">ViewFrustrumExample.x3d</a>'/&gt;
+<br />
+&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">description</span>'&#160;<span class="attribute">content</span>='<span class="plain">Display view frustrum associated with a given pair of Viewpoint, NavigationInfo nodes</span>'/&gt;
+<br />
+&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">creator</span>'&#160;<span class="attribute">content</span>='<span class="value">Don Brutzman</span>'/&gt;
+<br />
+&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">translated</span>'&#160;<span class="attribute">content</span>='<span class="value">16 August 2008</span>'/&gt;
+<br />
+&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">modified</span>'&#160;<span class="attribute">content</span>='<span class="value">17 August 2008</span>'/&gt;
+<br />
+&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">reference</span>'&#160;<span class="attribute">content</span>='<a href="ViewFrustrumPrototype.x3d" target="_blank">ViewFrustrumPrototype.x3d</a>'/&gt;
+<br />
+&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">drawing</span>'&#160;<span class="attribute">content</span>='<a href="ViewFrustrumComputation.png" target="_blank">ViewFrustrumComputation.png</a>'/&gt;
+<br />
+&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">image</span>'&#160;<span class="attribute">content</span>='<a href="ViewFrustrumOverheadView.png" target="_blank">ViewFrustrumOverheadView.png</a>'/&gt;
+<br />
+&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">image</span>'&#160;<span class="attribute">content</span>='<a href="ViewFrustrumObliqueView.png" target="_blank">ViewFrustrumObliqueView.png</a>'/&gt;
+<br />
+&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">subject</span>'&#160;<span class="attribute">content</span>='<span class="value">view culling frustrum</span>'/&gt;
+<br />
+&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">identifier</span>'&#160;<span class="attribute">content</span>='
+<a href="http://X3dGraphics.com/examples/X3dForWebAuthors/Chapter14-Prototypes/ViewFrustrumExample.x3d">http://X3dGraphics.com/examples/X3dForWebAuthors/Chapter14-Prototypes/ViewFrustrumExample.x3d</a> '/&gt;
+<br />
+&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">generator</span>'&#160;<span class="attribute">content</span>='<span class="value">X3D-Edit, </span>
+            <a href="https://savage.nps.edu/X3D-Edit" target="_blank">https://savage.nps.edu/X3D-Edit</a>'/&gt;
+<br />
+&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">license</span>'&#160;<span class="attribute">content</span>='<a href="../license.html" target="_blank">../license.html</a>'/&gt;
+</div>&lt;/<span class="element">head</span>&gt;
+<br />
+&lt;!--
+<div class="center">
+            <hr width="100%"/>
+            <i>Index for ExternProtoDeclare definition</i>: 
+<a href="#ExternProtoDeclare_ViewFrustrum" class="prototype">ViewFrustrum</a>
+<br />
+<i>Index for DEF nodes</i>: 
+<a href="#CoordinateAxes" class="idName">CoordinateAxes</a>,
+<a href="#GridXZ" class="idName">GridXZ</a>,
+<a href="#TestNavigationInfo" class="idName">TestNavigationInfo</a>,
+<a href="#TestViewpoint" class="idName">TestViewpoint</a>
+<br />
+<i>Index for Viewpoint images</i>: 
+<a href="#TestViewpoint" class="idName">TestViewpoint</a>,
+<a href="#Viewpoint_2" class="idName">Viewpoint_2</a>,
+<a href="#Viewpoint_3" class="idName">Viewpoint_3</a>,
+<a href="#Viewpoint_4" class="idName">Viewpoint_4</a>
+            <hr width="100%"/>
+         </div>
+--&gt;
+<br />
+&lt;<span class="element">Scene</span>&gt;
+<div class="indent">
+            <a name="ExternProtoDeclare_ViewFrustrum"> </a> 
+&lt;<span class="prototype">ExternProtoDeclare</span>&#160;<span class="attribute">name</span>='<span class="prototype">ViewFrustrum</span>'&#160;<span class="attribute">appinfo</span>='<span class="value">Display view frustrum associated with a given pair of Viewpoint NavigationInfo nodes</span>'
+<br />
+&#160;&#160;<span class="attribute">url</span>='
+"<a href="ViewFrustrumPrototype.x3d">ViewFrustrumPrototype.x3d</a>"
+"<a href="http://X3dGraphics.com/examples/X3dForWebAuthors/Chapter14-Prototypes/ViewFrustrumPrototype.x3d">http://X3dGraphics.com/examples/X3dForWebAuthors/Chapter14-Prototypes/ViewFrustrumPrototype.x3d</a>"
+'&gt;
+<div class="indent">
+&lt;<span class="prototype">field</span>&#160;<span class="attribute">name</span>='<span class="prototype">ViewpointNode</span>'&#160;<span class="attribute">type</span>='<span class="value">SFNode</span>'&#160;<span class="attribute">accessType</span>='<span class="value">initializeOnly</span>'/&gt;
+<br />
+&lt;<span class="prototype">field</span>&#160;<span class="attribute">name</span>='<span class="prototype">NavigationInfoNode</span>'&#160;<span class="attribute">type</span>='<span class="value">SFNode</span>'&#160;<span class="attribute">accessType</span>='<span class="value">initializeOnly</span>'/&gt;
+<br />
+&lt;<span class="prototype">field</span>&#160;<span class="attribute">name</span>='<span class="prototype">lineColor</span>'&#160;<span class="attribute">type</span>='<span class="value">SFColor</span>'&#160;<span class="attribute">accessType</span>='<span class="value">inputOutput</span>'/&gt;
+<br />
+&lt;<span class="prototype">field</span>&#160;<span class="attribute">name</span>='<span class="prototype">frustrumColor</span>'&#160;<span class="attribute">type</span>='<span class="value">SFColor</span>'&#160;<span class="attribute">accessType</span>='<span class="value">inputOutput</span>'/&gt;
+<br />
+&lt;<span class="prototype">field</span>&#160;<span class="attribute">name</span>='<span class="prototype">transparency</span>'&#160;<span class="attribute">type</span>='<span class="value">SFFloat</span>'&#160;<span class="attribute">accessType</span>='<span class="value">inputOutput</span>'/&gt;
+<br />
+&lt;<span class="prototype">field</span>&#160;<span class="attribute">name</span>='<span class="prototype">aspectRatio</span>'&#160;<span class="attribute">type</span>='<span class="value">SFFloat</span>'&#160;<span class="attribute">accessType</span>='<span class="value">inputOutput</span>'
+<br />
+&#160;<span class="gray">appinfo</span>='<span class="gray">assumed ratio height/width</span>'/&gt;
+<br />
+&lt;<span class="prototype">field</span>&#160;<span class="attribute">name</span>='<span class="prototype">trace</span>'&#160;<span class="attribute">type</span>='<span class="value">SFBool</span>'&#160;<span class="attribute">accessType</span>='<span class="value">initializeOnly</span>'/&gt;
+</div>&lt;/<span class="prototype">ExternProtoDeclare</span>&gt;
+<br />&lt;!-- Example use --&gt;
+<br />
+&lt;<span class="prototype">ProtoInstance</span>&#160;<span class="attribute">name</span>='<a href="#ExternProtoDeclare_ViewFrustrum" class="prototype">ViewFrustrum</a>'&#160;<span class="attribute">containerField</span>='<span class="value">children</span>'&gt;
+<div class="indent">
+&lt;<span class="prototype">fieldValue</span>&#160;<span class="attribute">name</span>='<span class="prototype">ViewpointNode</span>'&gt;
+<div class="indent">
+                  <a name="TestViewpoint"> </a> 
+&lt;<span class="element">Viewpoint</span>&#160;<span class="attribute">DEF</span>='<span class="idName">TestViewpoint</span>'&#160;<span class="attribute">fieldOfView</span>='<span class="value">0.78</span>'&#160;<span class="attribute">retainUserOffsets</span>='<span class="value">false</span>'/&gt;
+</div>&lt;/<span class="prototype">fieldValue</span>&gt;
+<br />
+&lt;<span class="prototype">fieldValue</span>&#160;<span class="attribute">name</span>='<span class="prototype">NavigationInfoNode</span>'&gt;
+<div class="indent">
+                  <a name="TestNavigationInfo"> </a> 
+&lt;<span class="element">NavigationInfo</span>&#160;<span class="attribute">DEF</span>='<span class="idName">TestNavigationInfo</span>'&#160;<span class="attribute">avatarSize</span>='<span class="value">1 1.6 0.75</span>'&#160;<span class="attribute">visibilityLimit</span>='<span class="value">15</span>'&#160;<span class="attribute">type</span>='<span class="value">"EXAMINE" "ANY"</span>'&#160;<span class="attribute">transitionType</span>='<span class="value">"ANIMATE"</span>'&#160;<span class="attribute">transitionTime</span>='<span class="value">1.0</span>'/&gt;
+</div>&lt;/<span class="prototype">fieldValue</span>&gt;
+<br />
+&lt;<span class="prototype">fieldValue</span>&#160;<span class="attribute">name</span>='<span class="prototype">lineColor</span>'&#160;<span class="attribute">value</span>='<span class="value">0.9 0.9 0.9</span>'/&gt;
+<br />
+&lt;<span class="prototype">fieldValue</span>&#160;<span class="attribute">name</span>='<span class="prototype">frustrumColor</span>'&#160;<span class="attribute">value</span>='<span class="value">0.8 0.8 0.8</span>'/&gt;
+<br />
+&lt;<span class="prototype">fieldValue</span>&#160;<span class="attribute">name</span>='<span class="prototype">transparency</span>'&#160;<span class="attribute">value</span>='<span class="value">0.75</span>'/&gt;
+</div>&lt;/<span class="prototype">ProtoInstance</span>&gt;
+<br /><a name="Viewpoint_1"> </a> 
+&lt;<span class="element">Viewpoint</span>&#160;<a href="_viewpoints/ViewFrustrumExample.x3d.Above_view.png">description</a>='<span class="value">Above view</span>'&#160;<span class="attribute">orientation</span>='<span class="value">1 0 0 -1.57</span>'&#160;<span class="attribute">position</span>='<span class="value">0 40 0</span>'&#160;<span class="attribute">retainUserOffsets</span>='<span class="value">false</span>'/&gt;
+<br /><a name="Viewpoint_2"> </a> 
+&lt;<span class="element">Viewpoint</span>&#160;<a href="_viewpoints/ViewFrustrumExample.x3d.Frustrum_viewpoint.png">description</a>='<span class="value">Frustrum viewpoint</span>'&#160;<span class="attribute">retainUserOffsets</span>='<span class="value">false</span>'/&gt;
+<br /><a name="Viewpoint_3"> </a> 
+&lt;<span class="element">Viewpoint</span>&#160;<a href="_viewpoints/ViewFrustrumExample.x3d.Behind_frustrum_viewpoint.png">description</a>='<span class="value">Behind frustrum viewpoint</span>'&#160;<span class="attribute">position</span>='<span class="value">0 0 15</span>'&#160;<span class="attribute">retainUserOffsets</span>='<span class="value">false</span>'/&gt;
+<br />
+&lt;<span class="element">NavigationInfo</span>&#160;<span class="attribute">type</span>='<span class="value">"EXAMINE" "FLY" "ANY"</span>'&#160;<span class="attribute">transitionType</span>='<span class="value">"ANIMATE"</span>'&#160;<span class="attribute">transitionTime</span>='<span class="value">1.0</span>'/&gt;
+<br />&lt;!-- Visualization assists --&gt;
+<br /><a name="GridXZ"> </a> 
+&lt;<span class="element">Inline</span>&#160;<span class="attribute">DEF</span>='<span class="idName">GridXZ</span>'
+<br />
+&#160;&#160;<span class="attribute">url</span>='
+"<a href="../../Savage/Tools/Authoring/GridXZ_20x20Fixed.x3d">../../Savage/Tools/Authoring/GridXZ_20x20Fixed.x3d</a>"
+"<a href="https://savage.nps.edu/Savage/Tools/Authoring/GridXZ_20x20Fixed.x3d">https://savage.nps.edu/Savage/Tools/Authoring/GridXZ_20x20Fixed.x3d</a>"
+'/&gt;
+<br />
+&lt;<span class="element">Transform</span>&#160;<span class="attribute">scale</span>='<span class="value">5 5 5</span>'&gt;
+<div class="indent">
+               <a name="CoordinateAxes"> </a> 
+&lt;<span class="element">Inline</span>&#160;<span class="attribute">DEF</span>='<span class="idName">CoordinateAxes</span>'
+<br />
+&#160;&#160;<span class="attribute">url</span>='
+"<a href="../Chapter03-Grouping/CoordinateAxes.x3d">../Chapter03-Grouping/CoordinateAxes.x3d</a>"
+"<a href="http://X3dGraphics.com/examples/X3dForWebAuthors/Chapter03-Grouping/CoordinateAxes.x3d">http://X3dGraphics.com/examples/X3dForWebAuthors/Chapter03-Grouping/CoordinateAxes.x3d</a>"
+'/&gt;
+</div>&lt;/<span class="element">Transform</span>&gt;
+</div>&lt;/<span class="element">Scene</span>&gt;
+</div>&lt;/<span class="element">X3D</span>&gt;
+<br />
+&lt;!--
+<div class="center">
+         <hr width="100%"/>
+         <i>Index for ExternProtoDeclare definition</i>: 
+<a href="#ExternProtoDeclare_ViewFrustrum" class="prototype">ViewFrustrum</a>
+<br />
+<i>Index for DEF nodes</i>: 
+<a href="#CoordinateAxes" class="idName">CoordinateAxes</a>,
+<a href="#GridXZ" class="idName">GridXZ</a>,
+<a href="#TestNavigationInfo" class="idName">TestNavigationInfo</a>,
+<a href="#TestViewpoint" class="idName">TestViewpoint</a>
+<br />
+<i>Index for Viewpoint images</i>: 
+<a href="#TestViewpoint" class="idName">TestViewpoint</a>,
+<a href="#Viewpoint_2" class="idName">Viewpoint_2</a>,
+<a href="#Viewpoint_3" class="idName">Viewpoint_3</a>,
+<a href="#Viewpoint_4" class="idName">Viewpoint_4</a>
+         <hr width="100%"/>
+      </div>
+--&gt;
+<p>
+&lt;!-- Tag color codes:
+&lt;<span class="element">Node</span>
+         <span class="idName"> DEF</span>='<span class="idName">idName</span>' <span class="attribute">attribute</span>='<span class="value">value</span>'/&gt;
+&lt;<span class="prototype">Prototype</span> 
+         <span class="attribute">name</span>='<span class="prototype">ProtoName</span>'&gt;
+	&lt;<span class="prototype">field</span>
+         <span class="attribute">name</span>='<span class="prototype">fieldName</span>'/&gt; &lt;/<span class="prototype">Prototype</span>&gt; --&gt;
+</p>
+   </body>
+</html>

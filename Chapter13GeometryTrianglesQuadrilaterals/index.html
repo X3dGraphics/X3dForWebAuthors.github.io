@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <link rel="shortcut icon" href="../images/X3DtextIcon16.png" title="X3D"/>
+      <title>X3D4WA, X3D for Web Authors Examples Archive, Chapter 13 Geometry Triangles Quadrilaterals</title>
+      <meta http-equiv="X-UA-Compatible" content="chrome=1,IE=edge"/>
+      <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+      <meta name="author" content="Don Brutzman"/>
+      <meta name="generator"
+             content="https://www.web3d.org/x3d/tools/CreateContentCatalog/CreateContentCatalogPages.xslt"/>
+      <meta name="modified" content="2022-07-03-07:00"/>
+      <meta name="keyword"
+             content="X3D, X3DV, VRML, VRML97, Extensible 3D, Virtual Reality Modeling Language"/>
+   </head>
+   <body>
+      <table
+              align="center"
+              summary="navigation"
+              border="1"
+              cellpadding="2"
+              width="95%">
+         <tr>
+            <td align="center" width="17%">
+               <a href="../index.html" target="_top">
+                  <img src="../images/ToC.png"
+                        title="Table of Contents"
+                        alt="Table of Contents"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter12EnvironmentSensorSound/index.html" target="_top">
+                  <img src="../images/PreviousChapter.png"
+                        title="Previous Directory Summary"
+                        alt="Previous Directory Summary"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="viewpointSlideshow.html" target="_top">
+                  <img src="../images/MootoolsSlideshowLogo.jpg"
+                        title="Directory Viewpoint Slideshow"
+                        alt="Directory Viewpoint Slideshow"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="15%">
+               <a href="../javadoc/index.html?X3dForWebAuthors/Chapter13GeometryTrianglesQuadrilaterals/package-summary.html"
+                   title="Javadoc for translated java source"
+                   alt="Javadoc for translated java source"
+                   target="_blank">
+                  <img src="../images/Java-32.png"
+                        title="Javadoc for translated java source"
+                        alt="Javadoc for translated java source"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter14Prototypes/index.html" target="_top">
+                  <img src="../images/NextChapter.png"
+                        title="Next Directory Summary"
+                        alt="Next Directory Summary"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="15%">
+               <a href="../../X3dResources.html" target="helpPage">
+                  <img src="../images/Help.png"
+                        title="X3D Resources"
+                        alt="X3D Resources"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+         </tr>
+      </table>
+      <h2 align="center">
+         <i> X3D Example Archives: </i>X3D4WA, X3D for Web Authors, Chapter 13 Geometry Triangles Quadrilaterals</h2>
+      <table align="center"
+              width="85%"
+              summary=""
+              border="0"
+              cellpadding="0">
+         <tr align="center">
+            <td><!--ChapterPackageDescription--><!--Contents of file ../../content/examples/X3dForWebAuthors/Chapter13GeometryTrianglesQuadrilaterals/package-catalog.html-->
+    
+    <table bgColor="#ffffff" border="0" width="100%">
+        <tbody>
+            <tr>
+                <td>
+    <p>
+				Triangles and quadrilaterals are fundamental geometry representations that are
+				typically created by authoring tools to build complex polygonal meshes and shapes.
+    </p>
+    
+
+    <p>
+                 Low-level high-performance nodes for geometry definition and fast rendering include
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#TriangleSet" target="X3dTooltips" title="X3D Tooltip">TriangleSet</a>,
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#TriangleFanSet" target="X3dTooltips" title="X3D Tooltip">TriangleFanSet</a>,
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#TriangleStripSet" target="X3dTooltips" title="X3D Tooltip">TriangleStripSet</a>,
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#IndexedTriangleSet" target="X3dTooltips" title="X3D Tooltip">IndexedTriangleSet</a>,
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#IndexedTriangleFanSet" target="X3dTooltips" title="X3D Tooltip">IndexedTriangleFanSet</a>,
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#IndexedTriangleStripSet" target="X3dTooltips" title="X3D Tooltip">IndexedTriangleStripSet</a>,
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#QuadSet" target="X3dTooltips" title="X3D Tooltip">QuadSet</a>
+                 and
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#IndexedQuadSet" target="X3dTooltips" title="X3D Tooltip">IndexedQuadSet</a>.
+                Special definition rules apply to each node in order to best match underlying graphics hardware requirements.
+                 Each is placed individually inside a
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#Shape" target="X3dTooltips" title="X3D Tooltip">Shape</a>
+                 node.
+    </p>
+    
+
+    <p>
+                 The supporting
+                 <a href="http://x3dgraphics.com/slidesets/X3dForWebAuthors/Chapter13GeometryTrianglesQuadrilaterals.pdf" target="X3dChapterSlideset">Chapter&nbsp;13 slideset</a>
+                 and course videos
+                (<a href="https://www.movesinstitute.org/Video/Courses/X3dForWebAuthors/X3dForWebAuthorsVideo.html#13" target="X3dChapterVideos">NPS</a>,
+                 <a href="https://www.youtube.com/playlist?list=PLuSIsM-86simfHMmPs_98xGwJ8es90TYy" target="X3dChapterYouTubeVideos">YouTube</a>)
+                 for <i>X3D for Web Authors</i> are available online via
+                 <a href="http://X3dGraphics.com" target="_blank">X3dGraphics.com</a>.
+    </p>
+    
+
+    <p>
+                     Also available:
+                     <a href="https://www.web3d.org/x3d/content/examples/X3dSceneAuthoringHints.html#Meshes" target="_blank">X3D Scene Authoring Hints: Meshes</a>.
+    </p>
+    
+
+                </td>
+                
+                <td align="left" cellpadding="10">
+                    
+                    <a href="index.html"><img alt="Nonplanar Polygons" title="Nonplanar Polygons" border="0" hspace="10" src="NonplanarPolygons.png" width="190" height="102" align="left"/></a>
+                </td>
+
+            </tr>
+        </tbody>
+    </table>
+
+    
+
+  </td>
+         </tr>
+      </table>
+      <table align="center"
+              width="85%"
+              summary=""
+              border="1"
+              cellpadding="6">
+         <tr align="center">
+            <th colspan="2" width="25%" align="center">&nbsp;&nbsp;12 X3D Models</th>
+            <th width="75%" align="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;X3D Model Descriptions</th>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="IndexedQuadSetExample"/>
+            </td>
+            <td>
+               <a href="IndexedQuadSetExampleIndex.html">Indexed Quad Set Example</a>
+            </td>
+            <td>A simple example of the use of the IndexedQuadSet node.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="IndexedTriangleFanSetExample"/>
+            </td>
+            <td>
+               <a href="IndexedTriangleFanSetExampleIndex.html">Indexed Triangle Fan Set Example</a>
+            </td>
+            <td>A simple example of the use of the IndexedTriangleFanSet node.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="IndexedTriangleSetExample"/>
+            </td>
+            <td>
+               <a href="IndexedTriangleSetExampleIndex.html">Indexed Triangle Set Example</a>
+            </td>
+            <td>A simple example of the use of the IndexedTriangleSet node.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="IndexedTriangleStripSetExample"/>
+            </td>
+            <td>
+               <a href="IndexedTriangleStripSetExampleIndex.html">Indexed Triangle Strip Set Example</a>
+            </td>
+            <td>An example of the use of the IndexedTriangleStripSet node.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="MorphingTriangleSet"/>
+               <a href="MorphingTriangleSetIndex.html">
+                  <img src="_thumbnails/MorphingTriangleSetThumbnail.png"
+                        height="48"
+                        alt="MorphingTriangleSet"
+                        title="MorphingTriangleSet"/>
+               </a>
+            </td>
+            <td>
+               <a href="MorphingTriangleSetIndex.html">Morphing Triangle Set</a>
+            </td>
+            <td>Animated example of a morphing TriangleSet</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="NonplanarPolygons"/>
+               <a href="NonplanarPolygonsIndex.html">
+                  <img src="_thumbnails/NonplanarPolygonsThumbnail.png"
+                        height="48"
+                        alt="NonplanarPolygons"
+                        title="NonplanarPolygons"/>
+               </a>
+            </td>
+            <td>
+               <a href="NonplanarPolygonsIndex.html">Nonplanar Polygons</a>
+            </td>
+            <td>Illustration of nonplanar polygons.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="NormalExample"/>
+            </td>
+            <td>
+               <a href="NormalExampleIndex.html">Normal Example</a>
+            </td>
+            <td>A simple illustration of the Normal node on the coloring of triangles.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="QuadSetExample"/>
+            </td>
+            <td>
+               <a href="QuadSetExampleIndex.html">Quad Set Example</a>
+            </td>
+            <td>A simple example of the use of the QuadSet node.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="SummaryIndexedTriangleSets"/>
+               <a href="SummaryIndexedTriangleSetsIndex.html">
+                  <img src="_thumbnails/SummaryIndexedTriangleSetsThumbnail.png"
+                        height="48"
+                        alt="SummaryIndexedTriangleSets"
+                        title="SummaryIndexedTriangleSets"/>
+               </a>
+            </td>
+            <td>
+               <a href="SummaryIndexedTriangleSetsIndex.html">Summary Indexed Triangle Sets</a>
+            </td>
+            <td>A collection of example usage for all IndexedTriangle*Set nodes.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="TriangleFanSetExample"/>
+            </td>
+            <td>
+               <a href="TriangleFanSetExampleIndex.html">Triangle Fan Set Example</a>
+            </td>
+            <td>A simple example of the use of the TriangleFanSet node.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="TriangleSetExample"/>
+            </td>
+            <td>
+               <a href="TriangleSetExampleIndex.html">Triangle Set Example</a>
+            </td>
+            <td>A simple example of the use of the TriangleSet node.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="TriangleStripSetExample"/>
+            </td>
+            <td>
+               <a href="TriangleStripSetExampleIndex.html">Triangle Strip Set Example</a>
+            </td>
+            <td>A simple example of the use of the TriangleStripSet node.</td>
+         </tr>
+      </table>
+      <table width="80%" border="0" align="center">
+         <tr>
+            <td>
+               <p style="text-align:center">Online at <a href="https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter13GeometryTrianglesQuadrilaterals/index.html">https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter13GeometryTrianglesQuadrilaterals</a>
+               </p>
+               <p align="center" width="80%">
+                  <a href="https://validator.w3.org/check?uri=https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter13GeometryTrianglesQuadrilaterals/index.html"
+                      target="_blank">
+                     <img src="https://www.w3.org/Icons/valid-xhtml10"
+                           title="Validate XHTML 1.1"
+                           alt="Validate XHTML 1.1"
+                           height="31"
+                           width="88"
+                           border="0"
+                           align="right"/>
+                  </a>
+               </p>
+               <p style="text-align:center">Master source-code model archive is under subversion control at <br/>
+                  <a href="https://sourceforge.net/p/x3d/code/HEAD/tree/www.web3d.org/x3d/content/examples/X3dForWebAuthors/Chapter13GeometryTrianglesQuadrilaterals/"
+                      target="_blank">https://sourceforge.net/p/x3d/code/HEAD/tree/www.web3d.org/x3d/content/examples/X3dForWebAuthors/Chapter13GeometryTrianglesQuadrilaterals</a>
+               </p>
+            </td>
+         </tr>
+      </table>
+      <p align="center">
+The 
+<a href="../../X3dResources.html#X3dForWebAuthors">X3D Resources: Examples</a> page
+and
+<a href="https://savage.nps.edu/Savage/developers.html">Savage Developers Guide</a>
+provide more information about the production of this archive.</p>
+      <table
+              align="center"
+              summary="navigation"
+              border="1"
+              cellpadding="2"
+              width="95%">
+         <tr>
+            <td align="center" width="17%">
+               <a href="../index.html" target="_top">
+                  <img src="../images/ToC.png"
+                        title="Table of Contents"
+                        alt="Table of Contents"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter12EnvironmentSensorSound/index.html" target="_top">
+                  <img src="../images/PreviousChapter.png"
+                        title="Previous Directory Summary"
+                        alt="Previous Directory Summary"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="viewpointSlideshow.html" target="_top">
+                  <img src="../images/MootoolsSlideshowLogo.jpg"
+                        title="Directory Viewpoint Slideshow"
+                        alt="Directory Viewpoint Slideshow"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="15%">
+               <a href="../javadoc/index.html?X3dForWebAuthors/Chapter13GeometryTrianglesQuadrilaterals/package-summary.html"
+                   title="Javadoc for translated java source"
+                   alt="Javadoc for translated java source"
+                   target="_blank">
+                  <img src="../images/Java-32.png"
+                        title="Javadoc for translated java source"
+                        alt="Javadoc for translated java source"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter14Prototypes/index.html" target="_top">
+                  <img src="../images/NextChapter.png"
+                        title="Next Directory Summary"
+                        alt="Next Directory Summary"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="15%">
+               <a href="../../X3dResources.html" target="helpPage">
+                  <img src="../images/Help.png"
+                        title="X3D Resources"
+                        alt="X3D Resources"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+         </tr>
+      </table>
+   </body>
+</html>

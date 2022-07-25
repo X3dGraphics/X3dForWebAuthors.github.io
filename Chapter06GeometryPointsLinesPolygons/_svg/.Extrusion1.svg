@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20001102//EN" "http://www.w3.org/TR/2000/CR-SVG-20001102/DTD/svg-20001102.dtd">
+
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" id=".Extrusion1.svg" width="900"
+     height="620">
+   <rect width="900" height="620" fill="cyan" stroke="black"/>
+   <!--<x3d:Extrusion crossSection='
+-3.5 -1 -2.1 2.9 2.2 2.9 3.6 -1 0 -3.5 -3.5 -1'/>
+-->
+<!--
+			Min xPos = -3.5
+			Max xPos = 0			
+			Min yPos = 0
+			Max yPos = 0-->
+<g transform="translate(450 310) scale(100 -100)">
+      <circle id="marker1" style="fill:red;stroke:red;stroke-width:0.001" cx="-3.5"
+              cy="-1 -2.1 2.9 2.2 2.9 3.6 -1 0 -3.5 -3.5 -1"
+              r="0.05"/>
+      <set xlink:href="#markerText1" attributeType="CSS" attributeName="visibility"
+           to="visible"
+           begin="marker1.mouseover"
+           end="marker1.mouseout"/>
+   </g>
+   <g id="markerTexts" transform="translate(450 310)">
+      <text id="markerText1"
+            style="visibility:hidden;font-size:14;font-weight:bold; fill:green; stroke:none"
+            x="-345"
+            y="NaN">(-3.5,-1 -2.1 2.9 2.2 2.9 3.6 -1 0 -3.5 -3.5 -1)</text>
+   </g>
+   <g transform="translate(450 310) scale(100 -100)">
+      <line x1="0" y1="0" x2="0" y2="0"
+            style="fill:none;stroke:rgb(0,0,0);stroke-width:0.03"/>
+      <line x1="-3.8500000000000007" y1="0" x2="0" y2="0"
+            style="fill:none;stroke:rgb(0,0,0);stroke-width:0.03"/>
+      <line x1="-3.8000000000000009" y1="-0.03" x2="-3.8000000000000009" y2="0.03"
+            style="fill:none;stroke:rgb(0,0,0);stroke-width:0.03"/>
+      <line x1="-3.6000000000000007" y1="-0.03" x2="-3.6000000000000007" y2="0.03"
+            style="fill:none;stroke:rgb(0,0,0);stroke-width:0.03"/>
+      <line x1="-3.4000000000000005" y1="-0.03" x2="-3.4000000000000005" y2="0.03"
+            style="fill:none;stroke:rgb(0,0,0);stroke-width:0.03"/>
+      <line x1="-3.2" y1="-0.03" x2="-3.2" y2="0.03"
+            style="fill:none;stroke:rgb(0,0,0);stroke-width:0.03"/>
+      <line x1="-3" y1="-0.03" x2="-3" y2="0.03"
+            style="fill:none;stroke:rgb(0,0,0);stroke-width:0.03"/>
+      <line x1="-2.8" y1="-0.03" x2="-2.8" y2="0.03"
+            style="fill:none;stroke:rgb(0,0,0);stroke-width:0.03"/>
+      <line x1="-2.6" y1="-0.03" x2="-2.6" y2="0.03"
+            style="fill:none;stroke:rgb(0,0,0);stroke-width:0.03"/>
+      <line x1="-2.3999999999999993" y1="-0.03" x2="-2.3999999999999993" y2="0.03"
+            style="fill:none;stroke:rgb(0,0,0);stroke-width:0.03"/>
+      <line x1="-2.1999999999999991" y1="-0.03" x2="-2.1999999999999991" y2="0.03"
+            style="fill:none;stroke:rgb(0,0,0);stroke-width:0.03"/>
+      <line x1="-1.9999999999999993" y1="-0.03" x2="-1.9999999999999993" y2="0.03"
+            style="fill:none;stroke:rgb(0,0,0);stroke-width:0.03"/>
+      <line x1="-1.7999999999999993" y1="-0.03" x2="-1.7999999999999993" y2="0.03"
+            style="fill:none;stroke:rgb(0,0,0);stroke-width:0.03"/>
+      <line x1="-1.5999999999999994" y1="-0.03" x2="-1.5999999999999994" y2="0.03"
+            style="fill:none;stroke:rgb(0,0,0);stroke-width:0.03"/>
+      <line x1="-1.4" y1="-0.03" x2="-1.4" y2="0.03"
+            style="fill:none;stroke:rgb(0,0,0);stroke-width:0.03"/>
+      <line x1="-1.2" y1="-0.03" x2="-1.2" y2="0.03"
+            style="fill:none;stroke:rgb(0,0,0);stroke-width:0.03"/>
+      <line x1="-0.9999999999999996" y1="-0.03" x2="-0.9999999999999996" y2="0.03"
+            style="fill:none;stroke:rgb(0,0,0);stroke-width:0.03"/>
+      <line x1="-0.7999999999999996" y1="-0.03" x2="-0.7999999999999996" y2="0.03"
+            style="fill:none;stroke:rgb(0,0,0);stroke-width:0.03"/>
+      <line x1="-0.5999999999999996" y1="-0.03" x2="-0.5999999999999996" y2="0.03"
+            style="fill:none;stroke:rgb(0,0,0);stroke-width:0.03"/>
+      <line x1="-0.39999999999999961" y1="-0.03" x2="-0.39999999999999961" y2="0.03"
+            style="fill:none;stroke:rgb(0,0,0);stroke-width:0.03"/>
+   </g>
+</svg>

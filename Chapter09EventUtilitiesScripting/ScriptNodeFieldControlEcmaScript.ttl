@@ -1,0 +1,269 @@
+@prefix :        <https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter09EventUtilitiesScripting/ScriptNodeFieldControlEcmaScript.ttl#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema:  <http://schema.org/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix x3d:     <https://www.web3d.org/specifications/x3d-4.0.xsd#> .
+@prefix x3do:    <https://www.web3d.org/specifications/X3dOntology4.0#> .
+
+:X3D a owl:NamedIndividual, x3do:X3D ;
+  x3do:hasHead :head ;
+  x3do:hasScene :Scene ;
+  x3do:profile 'Immersive' ;
+  x3do:version '3.3' ;
+  x3do:noNamespaceSchemaLocation 'https://www.web3d.org/specifications/x3d-3.3.xsd' .
+:head a owl:NamedIndividual, x3do:head ;
+  x3do:hasParent :X3D ;
+  x3do:hasMeta :meta_1_1, :meta_1_2, :meta_1_3, :meta_1_4, :meta_1_5, :meta_1_6, :meta_1_7, :meta_1_8, :meta_1_9, :meta_1_10, :meta_1_11, :meta_1_12, :meta_1_13, :meta_1_14, :meta_1_15, :meta_1_16, :meta_1_17, :meta_1_18, :meta_1_19 .
+:meta_1_1 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'ScriptNodeFieldControlEcmaScript.x3d' ;
+  x3do:name 'title' .
+:meta_1_2 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Script node interface between X3D and EcmaScript: this conformance example tests field-based X3D-EcmaScript functionality.' ;
+  x3do:name 'description' .
+:meta_1_3 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Don Brutzman' ;
+  x3do:name 'creator' .
+:meta_1_4 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '30 November 1997' ;
+  x3do:name 'created' .
+:meta_1_5 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '13 May 2001' ;
+  x3do:name 'translated' .
+:meta_1_6 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '20 October 2019' ;
+  x3do:name 'modified' .
+:meta_1_7 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://www.web3d.org/x3d/content/examples/Basic/ScriptConformance/ScriptNodeFieldControlEcmaScript.x3d' ;
+  x3do:name 'reference' .
+:meta_1_8 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter09EventUtilitiesScripting/ScriptNodeFieldControlEcmaScript.x3d' ;
+  x3do:name 'identifier' .
+:meta_1_9 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'VRML 97 Specification, Annex C, ECMAScript scripting reference' ;
+  x3do:name 'reference' .
+:meta_1_10 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://www.web3d.org/technicalinfo/specifications/vrml97/part1/javascript.html' ;
+  x3do:name 'reference' .
+:meta_1_11 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://www.web3d.org/technicalinfo/specifications/vrml97/part1/javascript.html#AccessingFields' ;
+  x3do:name 'reference' .
+:meta_1_12 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Makefile' ;
+  x3do:name 'reference' .
+:meta_1_13 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Makefile.out' ;
+  x3do:name 'reference' .
+:meta_1_14 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'ScriptNodeFieldControlEcmaScript-VrmlConsoleOutput.txt' ;
+  x3do:name 'reference' .
+:meta_1_15 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'ScriptNodeFieldControlEcmaScriptSnapshots.html' ;
+  x3do:name 'reference' .
+:meta_1_16 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'ScriptNodeFieldControl-Java.x3d' ;
+  x3do:name 'reference' .
+:meta_1_17 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'VRML X3D EcmaScript Script conformance' ;
+  x3do:name 'subject' .
+:meta_1_18 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'X3D-Edit 3.3, https://savage.nps.edu/X3D-Edit' ;
+  x3do:name 'generator' .
+:meta_1_19 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '../license.html' ;
+  x3do:name 'license' .
+:meta dcterms:title "ScriptNodeFieldControlEcmaScript.x3d" .
+:meta dcterms:description "Script node interface between X3D and EcmaScript: this conformance example tests field-based X3D-EcmaScript functionality." .
+:meta dcterms:creator "Don Brutzman" .
+:meta dcterms:created "30 November 1997" .
+:meta dcterms:translated "13 May 2001" .
+:meta dcterms:modified "20 October 2019" .
+:meta dcterms:reference "https://www.web3d.org/x3d/content/examples/Basic/ScriptConformance/ScriptNodeFieldControlEcmaScript.x3d" .
+:meta dcterms:identifier "https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter09EventUtilitiesScripting/ScriptNodeFieldControlEcmaScript.x3d" .
+:meta dcterms:reference "VRML 97 Specification, Annex C, ECMAScript scripting reference" .
+:meta dcterms:reference "https://www.web3d.org/technicalinfo/specifications/vrml97/part1/javascript.html" .
+:meta dcterms:reference "https://www.web3d.org/technicalinfo/specifications/vrml97/part1/javascript.html#AccessingFields" .
+:meta dcterms:reference "Makefile" .
+:meta dcterms:reference "Makefile.out" .
+:meta dcterms:reference "ScriptNodeFieldControlEcmaScript-VrmlConsoleOutput.txt" .
+:meta dcterms:reference "ScriptNodeFieldControlEcmaScriptSnapshots.html" .
+:meta dcterms:reference "ScriptNodeFieldControl-Java.x3d" .
+:meta dcterms:subject "VRML X3D EcmaScript Script conformance" .
+:meta dcterms:generator "X3D-Edit 3.3, https://savage.nps.edu/X3D-Edit" .
+:meta dcterms:license "../license.html" .
+:Scene a owl:NamedIndividual, x3do:Scene ;
+  x3do:hasParent :X3D ;
+  x3do:hasChildren :WorldInfo_2_1, :Viewpoint_2_2, :Group_2_3 ;
+  x3do:hasROUTE :ROUTE_2_4 .
+:WorldInfo_2_1 a owl:NamedIndividual, x3do:WorldInfo ;
+  x3do:hasParent :Scene ;
+  x3do:title 'ScriptNodeFieldControlEcmaScript.x3d' .
+:Viewpoint_2_2 a owl:NamedIndividual, x3do:Viewpoint ;
+  x3do:hasParent :Scene ;
+  x3do:description 'View test' ;
+  x3do:position ( 0 0 12 ) .
+:Group_2_3 a owl:NamedIndividual, x3do:Group ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :ClickTextToTest, :TextPosition, :InterfaceScriptNode .
+:ClickTextToTest a owl:NamedIndividual, x3do:TouchSensor ;
+  x3do:hasParent :Group_2_3 ;
+  x3do:DEF 'ClickTextToTest' ;
+  x3do:description 'Click text to test' .
+:TextPosition a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Group_2_3 ;
+  x3do:hasChildren :Shape_2_3_2_1 ;
+  x3do:DEF 'TextPosition' .
+:Shape_2_3_2_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :TextPosition ;
+  x3do:hasGeometry :MessageToUser ;
+  x3do:hasAppearance :Appearance_2_3_2_1_2 .
+:MessageToUser a owl:NamedIndividual, x3do:Text ;
+  x3do:hasParent :Shape_2_3_2_1 ;
+  x3do:hasFontStyle :FontStyle_2_3_2_1_1_1 ;
+  x3do:DEF 'MessageToUser' ;
+  x3do:string '"Default text in X3D scene will be replaced by" "Java initialize() in Script using EventOut control." "This text appears first, if Java initialization fails." ""' .
+:FontStyle_2_3_2_1_1_1 a owl:NamedIndividual, x3do:FontStyle ;
+  x3do:hasParent :MessageToUser ;
+  x3do:justify '"MIDDLE" "MIDDLE"' ;
+  x3do:size 0.8 .
+:Appearance_2_3_2_1_2 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_3_2_1 ;
+  x3do:hasMaterial :TextMaterial .
+:TextMaterial a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_3_2_1_2 ;
+  x3do:DEF 'TextMaterial' ;
+  x3do:diffuseColor ( 0.8 0.2 0.2 ) ;
+  x3do:shininess 0.9 .
+:InterfaceScriptNode a owl:NamedIndividual, x3do:Script ;
+  x3do:hasParent :Group_2_3 ;
+  x3do:hasField :field_2_3_3_1, :field_2_3_3_2, :field_2_3_3_3, :field_2_3_3_4 ;
+  x3do:DEF 'InterfaceScriptNode' ;
+  x3do:directOutput true ;
+  x3do:sourceCode """
+ecmascript:
+
+function initialize ()
+{
+	DEBUG = true;
+	mode  = 1;
+	if (DEBUG) Browser.print ('initialize ():');
+
+	sceneText.string = new MFString (
+	'EcmaScript initialize () with field control',
+ 	'has reinitialized the changedText node.',
+ 	'',
+ 	'Please click text for additional results.');
+	sceneTransform.translation = new SFVec3f ( 0, 3, 0 );
+	sceneMaterial.diffuseColor = new SFColor ( 0.8, 0.8, 0.2 );
+	if (DEBUG) Browser.print ('sceneText.string           =' + sceneText.string);
+	if (DEBUG) Browser.print ('sceneTransform.translation =' + sceneTransform.translation);
+	if (DEBUG) Browser.print ('sceneMaterial.diffuseColor =' + sceneMaterial.diffuseColor);
+}
+function startTime (value, timestamp)
+{
+	if (DEBUG) Browser.print ('==============================');
+	if (DEBUG) Browser.print ('touchEvent startTime =' + value);
+
+	mode = (mode + 1) % 3;
+	if (DEBUG) Browser.print ('mode =' + mode);
+	switch (mode)
+	{
+	  case 0:	// pre-initialize error messsage
+		sceneText.string = new MFString (
+		'Default text in X3D scene will be replaced by',
+ 		'EcmaScript initialize() in Script using field control.',
+ 		'This text appears first, if EcmaScript initialization fails.',
+ 		'');
+ 		sceneTransform.translation = new SFVec3f ( 0, 1, 0 );
+		sceneMaterial.diffuseColor = new SFColor ( 0.8, 0.2, 0.2 ); 
+	  	break;
+
+	  case 1:	// post-initialize ready-to-click message
+		initialize ();
+		break;
+
+	  case 2:	// post-click all-done message
+		sceneText.string = new MFString (
+		'User click on text seen by EcmaScript',
+ 		'function via Script node eventIn.',
+ 		'Text & position successfully changed',
+ 		'via field control.  Test passed.');
+	 	sceneTransform.translation = new SFVec3f ( 0, -1, 0 );
+	 	sceneMaterial.diffuseColor = new SFColor ( 0.2, 0.8, 0.2 );
+		break;
+	}
+		
+	if (mode != 1)
+	{
+	 	if (DEBUG) Browser.print ('sceneText.string           =' + sceneText.string);
+	 	if (DEBUG) Browser.print ('sceneTransform.translation =' + sceneTransform.translation);
+	 	if (DEBUG) Browser.print ('sceneMaterial.diffuseColor =' + sceneMaterial.diffuseColor);
+	 	if (DEBUG) Browser.print ();
+ 	}
+}
+function shutdown()
+{
+	if (DEBUG) Browser.print ('==============================');
+  	if (DEBUG) Browser.print ('script shutdown.');
+	if (DEBUG) Browser.print ('==============================');
+}
+""" .
+:field_2_3_3_1 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :InterfaceScriptNode ;
+  x3do:accessType 'inputOnly' ;
+  x3do:name 'startTime' ;
+  x3do:type 'SFTime' .
+:field_2_3_3_2 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :InterfaceScriptNode ;
+  x3do:hasGeometry :MessageToUser-USE-1 ;
+  x3do:accessType 'initializeOnly' ;
+  x3do:name 'sceneText' ;
+  x3do:type 'SFNode' .
+:MessageToUser-USE-1 a owl:NamedIndividual, x3do:Text ;
+  x3do:hasParent :field_2_3_3_2 ;
+  owl:sameAs :MessageToUser . # DEF matching this USE
+:field_2_3_3_3 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :InterfaceScriptNode ;
+  x3do:hasChildren :TextPosition-USE-1 ;
+  x3do:accessType 'initializeOnly' ;
+  x3do:name 'sceneTransform' ;
+  x3do:type 'SFNode' .
+:TextPosition-USE-1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :field_2_3_3_3 ;
+  owl:sameAs :TextPosition . # DEF matching this USE
+:field_2_3_3_4 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :InterfaceScriptNode ;
+  x3do:hasMaterial :TextMaterial-USE-1 ;
+  x3do:accessType 'initializeOnly' ;
+  x3do:name 'sceneMaterial' ;
+  x3do:type 'SFNode' .
+:TextMaterial-USE-1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :field_2_3_3_4 ;
+  owl:sameAs :TextMaterial . # DEF matching this USE
+:ROUTE_2_4 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'touchTime' ;
+  x3do:fromNode 'ClickTextToTest' ;
+  x3do:toField 'startTime' ;
+  x3do:toNode 'InterfaceScriptNode' .

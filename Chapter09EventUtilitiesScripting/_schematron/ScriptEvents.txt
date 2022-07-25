@@ -1,0 +1,4 @@
+Missing name of X3D scene author in meta tag, add <meta name='creator' content='Author Name'/> [/X3D/head, warning]
+<TimeSensor DEF='PistonClock'/> missing description [/X3D/Scene/Group[2]/Transform/TimeSensor, warning]
+<Script DEF='ControlScript'/> must have url or contained CDATA source [/X3D/Scene/Group[2]/Transform/Script, error]
+<TimeSensor DEF='SpinAngleTimer'/> missing description [/X3D/Scene/TimeSensor, warning]

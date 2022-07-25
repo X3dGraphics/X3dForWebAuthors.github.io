@@ -1,0 +1,11 @@
+
+      
+ecmascript:
+
+function triggerIn (value, time)
+{
+	startTime = value;
+	firstTime = false;
+}
+
+    

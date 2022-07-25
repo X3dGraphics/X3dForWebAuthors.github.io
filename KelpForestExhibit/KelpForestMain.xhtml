@@ -1,0 +1,555 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<!-- =================================================================== -->
+<!-- embedded X3D scene appears after html/head/script and style entries -->
+<!-- =================================================================== -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <title>KelpForestMain.x3d (X3dToDom)</title>
+      <meta http-equiv="X-UA-Compatible" content="chrome=1,IE=edge"/>
+      <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+      <meta name="generator" content="http://www.web3d.org/x3d/stylesheets/X3dToX3dom.xslt"/>
+      <!-- Numbered X3DOM release versions: http://www.x3dom.org/download -->
+<!-- Developer X3DOM release version: http://www.x3dom.org/download/dev -->
+<link rel="stylesheet" type="text/css"
+            href="http://www.x3dom.org/download/dev/x3dom.css"/>
+      <script type="text/javascript" src="http://www.x3dom.org/download/dev/x3dom-full.js"/>
+      <meta name="warning"
+            content="Webfonts must be loaded prior to using Text node in X3D scene... see http://x3dom.org/x3dom/example/x3dom_text.html"/>
+      <!-- X3DOM needs Web Fonts when an X3D Text node is included --><!-- adapted from http://x3dom.org/x3dom/example/x3dom_text.html and http://web.mit.edu/jmorzins/www/fonts.html -->
+<style type="text/css">
+/* ============================================================================= */
+@font-face {
+  font-family: 'SERIF'; /* default original */
+  font-style: normal;
+  font-weight: 700;
+  src: local('Roman'), url('Roman.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'SERIF'; /* default alternate */
+  font-style: normal;
+  font-weight: 700;
+  src: local('Times New Roman'), local('TimesNewRoman'), url('Times New Roman.ttf') format('truetype');
+}
+/* ============================================================================= */
+@font-face {
+  font-family: 'SANS'; /* default original */
+  font-style: normal;
+  font-weight: 400;
+  src: local('Arial'), url('Arial.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'SANS'; /* default alternate */
+  font-style: normal;
+  font-weight: 400;
+  src: local('Helvetica'), url('Helvetica.ttf') format('truetype');
+}
+/* ============================================================================= */
+@font-face {
+  font-family: 'TYPEWRITER'; /* default original */
+  font-style: normal;
+  font-weight: 900;
+  src: local('Courier'), url('Courier.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'TYPEWRITER'; /* default alternate */
+  font-style: normal;
+  font-weight: 900;
+  src: local('Courier New'), url('Courier New.ttf') format('truetype');
+}
+/* ============================================================================= */
+</style>
+      <style type="text/css" media="screen, print">
+.webfont { font-size:200%; font-family:'TYPEWRITER'; color:green;} /* Conversion TODO font families: SANS SERIF TYPEWRITER */
+</style>
+      <!-- Button zoom adapted from http://x3dom.org/docs/dev/tutorial/styling.html -->
+<style type="text/css">
+
+html {width:100%;height:100%;margin:0;padding:0;}
+body {margin:0;padding:10px;width:100%;height:100%;}
+
+#rootX3dElement {
+    height: 450px;
+    width:  800px;
+    border: none;
+    display: block;
+    position:relative;
+    background:#000;
+}
+
+#toggleZoomButton {
+    position: absolute;
+    float: left;
+    z-index: 1;
+    top: 0px;
+    left: 0px;
+    width: 10em;
+    height: 2em;
+    border: none;
+    background-color: #202021;
+    color: #ccc;
+}
+
+#toggleZoomButton:hover {
+    background-color:blue;
+}
+</style>
+      <!-- http://x3dom.org/docs/dev/api.html and http://x3dom.org/docs/dev/configuration.html -->
+<script type="text/javascript">
+var zoomed = false;
+var showStatistics = false;
+var showDebugLog   = true;
+
+function toggleZoom(button) {
+
+        var new_height;
+        var new_width;
+        var x3d_element;
+        
+        htmlBody       = document.getElementById('htmlBody');
+        htmlPageHeader = document.getElementById('htmlPageHeader');
+        htmlPageFooter = document.getElementById('htmlPageFooter');
+        x3d_element    = document.getElementById('rootX3dElement');
+
+        if (zoomed) // previous value
+        {
+                // unzoom
+                new_height = "450px";
+                new_width  = "800px";
+                button.innerHTML = "Zoom";
+                htmlPageHeader.style.display = "table-row";
+                htmlPageFooter.style.display = "table-row";
+                document.getElementById('checkBoxCell').style="text-align:right";
+                htmlBody.style.padding = "10px";
+                x3d_element.showStat   = showStatistics;
+                x3d_element.showLog    = showDebugLog;
+                x3d_element.runtime.debug(showDebugLog);
+                document.getElementById("details").hidden = (!showDebugLog);
+        } else {
+                // zoom
+                new_height = "100%";
+                new_width  = "100%";
+                button.innerHTML = "Unzoom";
+                htmlPageHeader.style.display = "none";
+                htmlPageFooter.style.display = "none";
+                htmlBody.style.padding = "0px";
+                x3d_element.showStat   = false;
+                x3d_element.showLog    = false;
+                x3d_element.runtime.debug(false);
+                document.getElementById("details").hidden = true;
+                // TODO how to hide browser interface?
+        }
+        zoomed = !zoomed; // toggle
+
+        x3d_element.style.height = new_height;
+        x3d_element.style.width  = new_width;
+}
+                    
+    // Browser information table adapted from http://www.w3schools.com/js/js_window_navigator.asp
+    
+    document.addEventListener("DOMContentLoaded", function()
+    {
+        document.getElementById("browserCodeName"      ).innerHTML = navigator.appCodeName;
+        document.getElementById("browserAppName"       ).innerHTML = navigator.appName;
+        document.getElementById("browserAppVersion"    ).innerHTML = navigator.appVersion;
+        document.getElementById("browserCookieEnabled" ).innerHTML = navigator.cookieEnabled;
+        document.getElementById("browserPlatform"      ).innerHTML = navigator.platform;
+        document.getElementById("browserUserAgent"     ).innerHTML = navigator.userAgent;
+    if (navigator.systemLanguage)
+        document.getElementById("browserSystemLanguage").innerHTML = navigator.systemLanguage;
+    else
+        document.getElementById("browserSystemLanguage").innerHTML = navigator.language;
+    }, false);
+
+function toggleOverlayStatistics()
+{
+        showStatistics = !showStatistics; // toggle
+        x3d_element = document.getElementById('rootX3dElement');
+        x3d_element.runtime.statistics(showStatistics);
+}
+function toggleShowDebugLogs()
+{
+        showDebugLog  = !showDebugLog; // toggle
+        x3d_element = document.getElementById('rootX3dElement');
+        x3d_element.runtime.debug(showDebugLog);
+        document.getElementById("details").hidden = (!showDebugLog);
+}
+</script>
+   </head>
+   <body id="htmlBody">
+      <table style="width:96%" id="htmlPageHeader">
+         <tr>
+            <td style="text-align:left;">
+               <h2>KelpForestMain.x3d</h2>
+            </td>
+            <td id="checkBoxCell" style="text-align:right"> (<a href="http://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/KelpForestMain.x3d"
+                  title="View .x3d scene">.x3d scene</a>, 
+<a href="http://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/KelpForestMain.html"
+                  title="View .html pretty-print source">pretty-print source</a>, 
+<input id="checkBoxOverlayStatistics" type="checkbox" value="Overlay scene statistics"
+                      onclick="toggleOverlayStatistics();"/>
+               <span title="Overlay scene performance statistics">statistics</span>, 
+<input id="checkBoxShowDebugLogs" type="checkbox" value="Display debugger logs"
+                      checked="checked"
+                      onclick="toggleShowDebugLogs();"/>
+               <span title="Show meta information and debug logs">info &amp; logs</span>)</td>
+         </tr>
+         <tr>
+            <td colspan="2">
+               <p>
+                  <span class="webfont">This is the main entry to the Kelp Forest that loads all of the other components as Inline scenes.</span>
+               </p>
+            </td>
+         </tr>
+      </table>
+      <div>
+<!-- ================================ -->
+<!-- embedded X3D scene appears here: -->
+<X3D id='rootX3dElement' showStat='false' showLog='true' showProgress='bar'
+ profile='Immersive' version='3.3' noNamespaceSchemaLocation='http://www.web3d.org/specifications/x3d-3.3.xsd'>
+<head>
+<meta content='KelpForestMain.x3d' name='title'/>
+<meta content='This is the main entry to the Kelp Forest that loads all of the other components as Inline scenes.' name='description'/>
+<meta content='Don Brutzman' name='creator'/>
+<meta content='1 June 1998' name='created'/>
+<meta content='10 January 2014' name='modified'/>
+<meta content='http://faculty.nps.edu/brutzman/kelp' name='reference'/>
+<meta content='http://faculty.nps.edu/brutzman/kelp/KelpForestDesignPaper.pdf' name='reference'/>
+<meta content='Kelp Forest 3D models' name='subject'/>
+<meta content='All content has permissions for free use. Please provide credit to the Naval Postgraduate School (NPS) Modeling Virtual Environments and Simulation (MOVES) Institute.' name='accessRights'/>
+<meta content='http://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/KelpForestMain.x3d' name='identifier'/>
+<meta content='X3D-Edit 3.3, https://savage.nps.edu/X3D-Edit' name='generator'/>
+<meta content='../license.html' name='license'/>
+</head>
+<!-- Conversion note: the following HTML button is overlaid on top of the X3D scene -->
+<button id="toggleZoomButton" onclick="toggleZoom(this); return false;">Zoom</button>
+<Scene>
+<WorldInfo info='&quot;kelpForestMain3.4.wrl&quot; &quot;Model of the Monterey Bay Aquarium Kelp Forest&quot; &quot;DTG of last updated: 111500Jun98&quot; &quot;Updated: kelpTank2.9.wrl; &quot; &quot;Created by Naval Postgraduate School students under the supervision of Don Brutzman&quot; &quot;Feel free to copy anything you wish - just give credit where it is due&quot; &quot;http://faculty.nps.edu/brutzman/kelp&quot;' title='NPS Virtual Kelp Forest Exhibit'/>
+<NavigationInfo speed='3.0' type='&quot;EXAMINE&quot; &quot;FLY&quot; &quot;WALK&quot; &quot;ANY&quot;'/>
+<ExternProtoDeclare appinfo='ViewPositionOrientation prototype provides local position and orientation as user navigates with optional console output' name='ViewPositionOrientation' url='&quot;../../Savage/Tools/Authoring/ViewPositionOrientationPrototype.x3d#ViewPositionOrientation&quot; &quot;https://savage.nps.edu/Savage/Tools/Authoring/ViewPositionOrientationPrototype.x3d#ViewPositionOrientation&quot; &quot;../../Savage/Tools/Authoring/ViewPositionOrientationPrototype.wrl#ViewPositionOrientation&quot; &quot;https://savage.nps.edu/Savage/Tools/Authoring/ViewPositionOrientationPrototype.wrl#ViewPositionOrientation&quot;'>
+<field accessType='inputOutput' appinfo='Whether or not ViewPositionOrientation sends output to console.' name='enabled' type='SFBool'/>
+<field accessType='initializeOnly' appinfo='Output internal trace messages for debugging this node - developer use only can be ignored.' name='traceEnabled' type='SFBool'/>
+<field accessType='inputOnly' appinfo='Ability to turn output tracing on/off at runtime.' name='set_traceEnabled' type='SFBool'/>
+<field accessType='outputOnly' appinfo='Output local position.' name='position_changed' type='SFVec3f'/>
+<field accessType='outputOnly' appinfo='Output local orientation.' name='orientation_changed' type='SFRotation'/>
+<field accessType='outputOnly' appinfo='MFString value of new Viewpoint for example: &lt;Viewpoint position=&quot;20 15 20&quot; orientation=&quot;-0.516 0.83 0.212 0.9195&quot;/&gt;' name='outputViewpointString' type='MFString'/>
+</ExternProtoDeclare>
+<ProtoInstance name='ViewPositionOrientation'>
+<fieldValue name='enabled' value='false'/>
+</ProtoInstance>
+<ExternProtoDeclare appinfo='Reads waypoints and legSpeeds/legDurations/defaultSpeed to provide a customizable position/orientation interpolator.' name='WaypointInterpolator' url='&quot;../../../Savage/Tools/Animation/WaypointInterpolatorPrototype.x3d#WaypointInterpolator&quot; &quot;https://savage.nps.edu/Savage/Tools/Animation/WaypointInterpolatorPrototype.x3d#WaypointInterpolator&quot; &quot;../../../Savage/Tools/Animation/WaypointInterpolatorPrototype.wrl#WaypointInterpolator&quot; &quot;https://savage.nps.edu/Savage/Tools/Animation/WaypointInterpolatorPrototype.wrl#WaypointInterpolator&quot;'>
+<field accessType='initializeOnly' appinfo='Short description of what is animated by this WaypointInterpolator.' name='description' type='SFString'/>
+<field accessType='initializeOnly' appinfo='Waypoints being traversed with interpolation of intermediate positions and orientations.' name='waypoints' type='MFVec3f'/>
+<field accessType='inputOnly' appinfo='Add another single waypoint to array of waypoints recalculate interpolator values.' name='add_waypoint' type='SFVec3f'/>
+<field accessType='inputOnly' appinfo='Replace all waypoints recalculate interpolator values.' name='set_waypoints' type='MFVec3f'/>
+<field accessType='initializeOnly' appinfo='Whether to pitch child geometry (such as a vehicle) up or down to match vertical slope' name='pitchUpDownForVerticalWaypoints' type='SFBool'/>
+<field accessType='initializeOnly' appinfo='Units m/sec. If used array lengths for legSpeeds and legDurations must be one less than number of waypoints.' name='legSpeeds' type='MFFloat'/>
+<field accessType='initializeOnly' appinfo='Units in seconds. If used array lengths for legSpeeds and legDurations must be one less than number of waypoints.' name='legDurations' type='MFTime'/>
+<field accessType='initializeOnly' appinfo='Units m/sec.' name='defaultSpeed' type='SFFloat'/>
+<field accessType='initializeOnly' appinfo='turningRate (degrees/second) also determines standoff distance prior to waypoint where turn commences. If 0 turns are instantaneous.' name='turningRate' type='SFFloat'/>
+<field accessType='outputOnly' appinfo='Output calculation summing all leg durations, useful for setting TimeSensor cycleInterval. Units in seconds.' name='totalDuration' type='SFTime'/>
+<field accessType='inputOnly' appinfo='exposed PositionInterpolator and OrientationInterpolator setting' name='set_fraction' type='SFFloat'/>
+<field accessType='outputOnly' appinfo='exposed PositionInterpolator setting' name='position_changed' type='SFVec3f'/>
+<field accessType='outputOnly' appinfo='exposed OrientationInterpolator setting' name='orientation_changed' type='SFRotation'/>
+<field accessType='inputOutput' appinfo='default color for non-active line segments' name='lineColor' type='SFColor'/>
+<field accessType='inputOutput' appinfo='highlightSegmentColors must contain two color values for each endpoint of the highlight segment.' name='highlightSegmentColor' type='SFColor'/>
+<field accessType='inputOutput' appinfo='1.0 is completely transparent, 0.0 is completely opaque.' name='transparency' type='SFFloat'/>
+<field accessType='initializeOnly' appinfo='allowed values: none; waypoints (produce labels at each waypoint); or interpolation (produce single moving label at interpolator time course speed location)' name='labelDisplayMode' type='SFString'/>
+<field accessType='initializeOnly' appinfo='allowed values: altitude depth (negate Y value) none' name='heightLabel' type='SFString'/>
+<field accessType='initializeOnly' appinfo='heightLabel relative location' name='labelOffset' type='SFVec3f'/>
+<field accessType='initializeOnly' appinfo='heightLabel text size' name='labelFontSize' type='SFFloat'/>
+<field accessType='initializeOnly' appinfo='heightLabel text color' name='labelColor' type='SFColor'/>
+<field accessType='initializeOnly' appinfo='enable console output to trace script computations and prototype progress' name='traceEnabled' type='SFBool'/>
+<field accessType='initializeOnly' appinfo='Output the number of waypoints totalDistance and totalDuration to console upon initialization' name='outputInitializationComputations' type='SFBool'/>
+<field accessType='inputOutput' appinfo='default color for vertical drop-line segments' name='verticalDropLineColor' type='SFColor'/>
+<field accessType='inputOutput' appinfo='1.0 is completely transparent, 0.0 is completely opaque.' name='verticalDropLineTransparency' type='SFFloat'/>
+</ExternProtoDeclare>
+<Group DEF='Viewpoints'>
+<Viewpoint description='Kelp Forest Monterey Bay Aquarium' position='0.0 -5.0 45.0'/>
+<Viewpoint description='Side Windows' fieldOfView='0.5' orientation='0.0 1.0 0.0 0.9' position='25.0 -4.0 15.0'/>
+<Viewpoint description='Star Fish' orientation='0.0 1.0 0.0 1.25' position='14.0 -5.75 1.0'/>
+<Viewpoint description='Inside Tank' orientation='0.0 1.0 0.0 3.14' position='0.0 -5.0 -7.0'/>
+<Viewpoint description='Top floor' fieldOfView='1.04719' orientation='-0.3 1.0 0.3 1.57079' position='12.5 5.0 -2.0'/>
+<Viewpoint description="Bird&apos;s Eye View" orientation='1.0 0.0 0.0 -1.57' position='0.0 19.0 -3.5'/>
+<Viewpoint description='Pump House' fieldOfView='0.6' orientation='0.0 1.0 0.0 1.3' position='-5.0 1.0 0.0'/>
+</Group>
+<Group DEF='Root'>
+<Background groundAngle='1.309 1.5707' groundColor='0.1 0.1 0.0 0.4 0.25 0.2 0.6 0.6 0.6' skyAngle='1.309 1.5707' skyColor='0.0 0.5 1.0 0.0 0.0 1.0 0.0 0.0 1.0'/>
+<Inline url='&quot;IntroductionMessage.x3d&quot; &quot;http://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/IntroductionMessage.x3d&quot; &quot;IntroductionMessage.wrl&quot; &quot;http://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/IntroductionMessage.wrl&quot;'/>
+<Collision enabled='false'>
+<Transform>
+<Inline url='&quot;SharkLeftyLocale.x3d&quot; &quot;http://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/SharkLeftyLocale.x3d&quot; &quot;SharkLeftyLocale.wrl&quot; &quot;http://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/SharkLeftyLocale.wrl&quot;'/>
+</Transform>
+<Transform>
+<Inline url='&quot;SharkLucyLocale.x3d&quot; &quot;http://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/SharkLucyLocale.x3d&quot; &quot;SharkLucyLocale.wrl&quot; &quot;http://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/SharkLucyLocale.wrl&quot;'/>
+</Transform>
+<Transform>
+<Inline url='&quot;KelpTank.x3d&quot; &quot;http://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/KelpTank.x3d&quot; &quot;KelpTank.wrl&quot; &quot;http://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/KelpTank.wrl&quot;'/>
+</Transform>
+<Transform scale='0.54 0.75 0.52' translation='0.3 -2.88 7.3'>
+<Inline url='&quot;RockFloor.x3d&quot; &quot;http://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/RockFloor.x3d&quot; &quot;RockFloor.wrl&quot; &quot;http://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/RockFloor.wrl&quot;'/>
+</Transform>
+<Transform DEF='K2_LOCALE' translation='-4.0 0.0 1.0'>
+<Transform DEF='K2_MIDWATER' scale='0.2 0.2 0.2' translation='-1.0 -4.0 -4.0'>
+<Inline url='&quot;SardineSchool.x3d&quot; &quot;http://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/SardineSchool.x3d&quot; &quot;SardineSchool.wrl&quot; &quot;http://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/SardineSchool.wrl&quot;'/>
+</Transform>
+<Transform DEF='K2_FLOOR' rotation='0.0 1.0 0.0 0.44' scale='0.5 0.9 0.5' translation='-1.9 -8.5 -1.5'>
+<Inline DEF='KelpExamplesNoBase' url='&quot;KelpExamplesNoBase.x3d&quot; &quot;http://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/KelpExamplesNoBase.x3d&quot; &quot;KelpExamplesNoBase.wrl&quot; &quot;http://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/KelpExamplesNoBase.wrl&quot;'/>
+</Transform>
+</Transform>
+<Transform DEF='K4_LOCALE' translation='-2.5 0.0 -2.5'>
+<Transform DEF='K4_MIDWATER' translation='-10.0 -2.0 -2.0'>
+<Inline url='&quot;HalfMoonGroup.x3d&quot; &quot;http://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/HalfMoonGroup.x3d&quot; &quot;HalfMoonGroup.wrl&quot; &quot;http://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/HalfMoonGroup.wrl&quot;'/>
+</Transform>
+<Transform DEF='K4_FLOOR' rotation='0.0 1.0 0.0 -0.3' scale='0.5 0.8 0.5' translation='-1.5 -7.5 0.5'>
+<Inline USE='KelpExamplesNoBase'/>
+</Transform>
+</Transform>
+<Transform DEF='K7_LOCALE' translation='2.0 0.0 -2.5'>
+<Transform DEF='K7_MIDWATER' scale='0.25 0.25 0.25' translation='2.0 -4.0 0.0'>
+<Inline url='&quot;RubberLipGroup.x3d&quot; &quot;http://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/RubberLipGroup.x3d&quot; &quot;RubberLipGroup.wrl&quot; &quot;http://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/RubberLipGroup.wrl&quot;'/>
+</Transform>
+<Transform DEF='K7_FLOOR' scale='0.5 0.85 0.5' translation='0.0 -7.75 0.0'>
+<Inline USE='KelpExamplesNoBase'/>
+</Transform>
+</Transform>
+<Transform DEF='K10_LOCALE' translation='7.0 0.0 2.0'>
+<Transform DEF='K10_DEEP' translation='0.0 -5.0 0.0'>
+<Inline url='&quot;StripedSurfPerch.x3d&quot; &quot;http://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/StripedSurfPerch.x3d&quot; &quot;StripedSurfPerch.wrl&quot; &quot;http://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/StripedSurfPerch.wrl&quot;'/>
+</Transform>
+<Transform DEF='K10_FLOOR' rotation='0.0 1.0 0.0 0.16' scale='0.5 0.75 0.5' translation='-1.0 -7.0 -1.0'>
+<Inline USE='KelpExamplesNoBase'/>
+</Transform>
+</Transform>
+<Transform DEF='K11_LOCALE' translation='8.0 0.0 -2.0'>
+<Transform DEF='K11_MIDWATER' rotation='0.0 1.0 0.0 0.3' translation='2.19 -7.0 0.15'>
+<Inline url='&quot;SeaStarSimple.x3d&quot; &quot;http://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/SeaStarSimple.x3d&quot; &quot;SeaStarSimple.wrl&quot; &quot;http://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/SeaStarSimple.wrl&quot;'/>
+</Transform>
+<Transform DEF='K11_DEEP' rotation='0.0 1.0 0.0 0.9' translation='1.0 -5.0 0.0'>
+<Inline url='&quot;BlackSurfPerch.x3d&quot; &quot;http://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/BlackSurfPerch.x3d&quot; &quot;BlackSurfPerch.wrl&quot; &quot;http://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/BlackSurfPerch.wrl&quot;'/>
+</Transform>
+<Transform DEF='K11_FLOOR' rotation='0.0 1.0 0.0 0.3' scale='0.5 0.75 0.5' translation='-0.3 -7.0 0.0'>
+<Inline USE='KelpExamplesNoBase'/>
+</Transform>
+<Transform translation='1.3 -5.0 3.0'>
+<Inline url='&quot;SeaStarGroup.x3d&quot; &quot;http://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/SeaStarGroup.x3d&quot; &quot;SeaStarGroup.wrl&quot; &quot;http://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/SeaStarGroup.wrl&quot;'/>
+</Transform>
+</Transform>
+<Transform DEF='R2_LOCALE' translation='-1.0 0.0 -1.0'>
+<Transform DEF='R2_MIDWATER' translation='-1.0 -6.0 -2.0'>
+<Inline url='&quot;BlueRockFish.x3d&quot; &quot;http://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/BlueRockFish.x3d&quot; &quot;BlueRockFish.wrl&quot; &quot;http://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/BlueRockFish.wrl&quot;'/>
+</Transform>
+<Transform DEF='R2_DEEP' translation='1.0 -6.5 -1.0'>
+<Inline url='&quot;KelpSurfPerch.x3d&quot; &quot;http://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/KelpSurfPerch.x3d&quot; &quot;KelpSurfPerch.wrl&quot; &quot;http://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/KelpSurfPerch.wrl&quot;'/>
+</Transform>
+</Transform>
+<Transform DEF='R3_LOCALE' translation='3.0 0.0 -4.0'>
+<Transform DEF='R3_MIDWATER' translation='0.0 -6.0 0.0'>
+<Inline url='&quot;Garibaldi.x3d&quot; &quot;http://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/Garibaldi.x3d&quot; &quot;Garibaldi.wrl&quot; &quot;http://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/Garibaldi.wrl&quot;'/>
+</Transform>
+</Transform>
+<Transform DEF='R5_LOCALE' translation='8.0 0.0 -2.0'>
+<Transform DEF='R5_SHALLOW' translation='-2.0 -2.0 0.0'>
+<Inline url='&quot;KelpBass.x3d&quot; &quot;http://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/KelpBass.x3d&quot; &quot;KelpBass.wrl&quot; &quot;http://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/KelpBass.wrl&quot;'/>
+</Transform>
+</Transform>
+<TimeSensor DEF='WAVE_CLOCK' cycleInterval='5.5' enabled='false' loop='true'/>
+<PositionInterpolator DEF='LEFT_SHALLOW_WAVE' key='0.0 0.125 0.25 0.375 0.5 0.625 0.75 0.875 1.0' keyValue='0.0 0.0 0.0 0.056 -0.085 0.0 0.08 -0.12 0.0 0.056 -0.085 0.0 0.0 0.0 0.0 -0.056 0.085 0.0 -0.08 0.12 0.0 -0.056 0.085 0.0 0.0 0.0 0.0'/>
+<PositionInterpolator DEF='LEFT_DEEP_WAVE' key='0.0 0.125 0.25 0.375 0.5 0.625 0.75 0.875 1.0' keyValue='0.0 0.0 0.0 0.035 -0.035 0.0 0.05 -0.05 0.0 0.035 -0.035 0.0 0.0 0.0 0.0 -0.035 0.035 0.0 -0.05 0.05 0.0 -0.035 0.035 0.0 0.0 0.0 0.0'/>
+<PositionInterpolator DEF='CENTER_WAVE' key='0.0 0.125 0.25 0.375 0.5 0.625 0.75 0.875 1.0' keyValue='0.0 0.0 0.0 0.106 0.0 0.0 0.15 0.0 0.0 0.106 0.0 0.0 0.0 0.0 0.0 -0.106 0.0 0.0 -0.15 0.0 0.0 -0.106 0.0 0.0 0.0 0.0 0.0'/>
+<PositionInterpolator DEF='RIGHT_SHALLOW_WAVE' key='0.0 0.125 0.25 0.375 0.5 0.625 0.75 0.875 1.0' keyValue='0.0 0.0 0.0 0.056 0.085 0.0 0.08 0.12 0.0 0.056 0.085 0.0 0.0 0.0 0.0 -0.056 -0.085 0.0 -0.08 -0.12 0.0 -0.056 -0.085 0.0 0.0 0.0 0.0'/>
+<PositionInterpolator DEF='RIGHT_DEEP_WAVE' key='0.0 0.125 0.25 0.375 0.5 0.625 0.75 0.875 1.0' keyValue='0.0 0.0 0.0 0.035 0.035 0.0 0.05 0.05 0.0 0.035 0.035 0.0 0.0 0.0 0.0 -0.035 -0.035 0.0 -0.05 -0.05 0.0 -0.035 -0.035 0.0 0.0 0.0 0.0'/>
+</Collision>
+</Group>
+<ROUTE fromField='fraction_changed' fromNode='WAVE_CLOCK' toField='set_fraction' toNode='CENTER_WAVE'/>
+<ROUTE fromField='value_changed' fromNode='CENTER_WAVE' toField='set_translation' toNode='K7_MIDWATER'/>
+<ROUTE fromField='value_changed' fromNode='RIGHT_DEEP_WAVE' toField='set_translation' toNode='K2_MIDWATER'/>
+<ROUTE fromField='value_changed' fromNode='CENTER_WAVE' toField='set_translation' toNode='K4_MIDWATER'/>
+<ROUTE fromField='value_changed' fromNode='LEFT_DEEP_WAVE' toField='set_translation' toNode='K10_DEEP'/>
+<ROUTE fromField='value_changed' fromNode='LEFT_DEEP_WAVE' toField='set_translation' toNode='K11_DEEP'/>
+<ROUTE fromField='value_changed' fromNode='RIGHT_SHALLOW_WAVE' toField='set_translation' toNode='R2_MIDWATER'/>
+<ROUTE fromField='value_changed' fromNode='RIGHT_DEEP_WAVE' toField='set_translation' toNode='R2_DEEP'/>
+<ROUTE fromField='value_changed' fromNode='CENTER_WAVE' toField='set_translation' toNode='R3_MIDWATER'/>
+<ROUTE fromField='value_changed' fromNode='RIGHT_SHALLOW_WAVE' toField='set_translation' toNode='R5_SHALLOW'/>
+<TimeSensor DEF='MasterClock' loop='true'/>
+<Group DEF='Nancy'>
+<Transform DEF='NancyTransform' rotation='-0.45 0.77 -0.45 1.82' scale='1.3 1.3 1.3' translation='3 -6.5 -2'>
+<Inline url='&quot;../../Basic/HumanoidAnimation/NancyDiving.x3d&quot; &quot;http://www.web3d.org/x3d/content/examples/Basic/HumanoidAnimation/NancyDiving.x3d&quot; &quot;../../Basic/HumanoidAnimation/NancyDiving.wrl&quot; &quot;http://www.web3d.org/x3d/content/examples/Basic/HumanoidAnimation/NancyDiving.wrl&quot;'/>
+</Transform>
+<TimeSensor DEF='JEFFSCLOCK' cycleInterval='100' loop='true'/>
+<ProtoInstance DEF='NancyInterpolator' name='WaypointInterpolator'>
+<fieldValue name='description' value='Nancy track'/>
+<fieldValue name='waypoints' value='-5.5 -5.7 -.2 -7.7 -2.7 -1.7 6 -3 -3 2 -2 -2 1 -4 -1 -2 -2 -2 -5.5 -5.7 -.2'/>
+<fieldValue name='defaultSpeed' value='0.5'/>
+<fieldValue name='pitchUpDownForVerticalWaypoints' value='true'/>
+<fieldValue name='labelDisplayMode' value='none'/>
+<fieldValue name='lineColor' value='0 0 0'/>
+<fieldValue name='labelColor' value='0 0.8 0.8'/>
+<fieldValue name='labelOffset' value='0 -1.6 0'/>
+<fieldValue name='labelFontSize' value='6'/>
+<fieldValue name='traceEnabled' value='false'/>
+<fieldValue name='transparency' value='1'/>
+<fieldValue name='turningRate' value='18'/>
+</ProtoInstance>
+</Group>
+<ROUTE fromField='fraction_changed' fromNode='JEFFSCLOCK' toField='set_fraction' toNode='NancyInterpolator'/>
+<ROUTE fromField='position_changed' fromNode='NancyInterpolator' toField='set_translation' toNode='NancyTransform'/>
+<ROUTE fromField='orientation_changed' fromNode='NancyInterpolator' toField='set_rotation' toNode='NancyTransform'/>
+</Scene>
+</X3D>
+
+<!-- ================================ -->
+</div>
+      <div id="details">
+         <p style="clear:both;">&nbsp;</p>
+         <table style="border:0px solid; border-spacing:0px; margin:auto; margin-top:20px;margin-left:5%;">
+            <tr style="background-color:silver; border-color:silver;">
+               <th style="text-align:right;">X3D&nbsp;Scene </th>
+               <th style="text-align:left;"> Metadata </th>
+            </tr>
+            <tr style="background-color:silver; border-color:silver;">
+               <td style="text-align:right;color:green;">
+                  <i> archive </i>
+               </td>
+               <td>
+                  <i>
+                     <a href="http://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit">http://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit</a>
+                  </i>
+               </td>
+            </tr>
+            <tr>
+               <td style="text-align:right;color:green">title</td>
+               <td>
+                  <a href="KelpForestMain.x3d">KelpForestMain.x3d</a>
+               </td>
+            </tr>
+            <tr>
+               <td style="text-align:right;color:green">description</td>
+               <td>This is the main entry to the Kelp Forest that loads all of the other components as Inline scenes.</td>
+            </tr>
+            <tr>
+               <td style="text-align:right;color:green">creator</td>
+               <td>Don Brutzman</td>
+            </tr>
+            <tr>
+               <td style="text-align:right;color:green">created</td>
+               <td>1 June 1998</td>
+            </tr>
+            <tr>
+               <td style="text-align:right;color:green">modified</td>
+               <td>10 January 2014</td>
+            </tr>
+            <tr>
+               <td style="text-align:right;color:green">reference</td>
+               <td>
+                  <a href="http://faculty.nps.edu/brutzman/kelp">http://faculty.nps.edu/brutzman/kelp</a>
+               </td>
+            </tr>
+            <tr>
+               <td style="text-align:right;color:green">reference</td>
+               <td>
+                  <a href="http://faculty.nps.edu/brutzman/kelp/KelpForestDesignPaper.pdf">http://faculty.nps.edu/brutzman/kelp/KelpForestDesignPaper.pdf</a>
+               </td>
+            </tr>
+            <tr>
+               <td style="text-align:right;color:green">subject</td>
+               <td>Kelp Forest 3D models</td>
+            </tr>
+            <tr>
+               <td style="text-align:right;color:green">accessRights</td>
+               <td>All content has permissions for free use. Please provide credit to the Naval Postgraduate School (NPS) Modeling Virtual Environments and Simulation (MOVES) Institute.</td>
+            </tr>
+            <tr>
+               <td style="text-align:right;color:green">identifier</td>
+               <td>
+                  <a href="http://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/KelpForestMain.x3d">http://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/KelpForestMain.x3d</a>
+               </td>
+            </tr>
+            <tr>
+               <td style="text-align:right;color:green">generator</td>
+               <td>X3D-Edit 3.3, <a href="https://savage.nps.edu/X3D-Edit">https://savage.nps.edu/X3D-Edit</a>
+               </td>
+            </tr>
+            <tr>
+               <td style="text-align:right;color:green">license</td>
+               <td>
+                  <a href="../license.html">../license.html</a>
+               </td>
+            </tr>
+            <tr>
+               <td colspan="2">&nbsp;</td>
+            </tr>
+            <tr style="background-color:silver;border-color:silver;">
+               <th style="text-align:right;"> HTML&nbsp;Browser </th>
+               <th style="text-align:left;"> Information </th>
+            </tr>
+            <tr>
+               <td style="text-align:right;"> Browser code name: </td>
+               <td id="browserCodeName"/>
+            </tr>
+            <tr>
+               <td style="text-align:right;"> Browser application name: </td>
+               <td id="browserAppName"/>
+            </tr>
+            <tr>
+               <td style="text-align:right;"> Browser version: </td>
+               <td id="browserAppVersion"/>
+            </tr>
+            <tr>
+               <td style="text-align:right;"> Cookies enabled: </td>
+               <td id="browserCookieEnabled"/>
+            </tr>
+            <tr>
+               <td style="text-align:right;"> Platform: </td>
+               <td id="browserPlatform"/>
+            </tr>
+            <tr>
+               <td style="text-align:right;"> User Agent: </td>
+               <td id="browserUserAgent"/>
+            </tr>
+            <tr>
+               <td style="text-align:right;"> System language: </td>
+               <td id="browserSystemLanguage"/>
+            </tr>
+            <tr>
+               <td colspan="2">
+                  <div id="htmlPageFooter">
+                     <table border="1"
+                            style="float:left; margin:auto; margin-top:20px; border:1px solid black;">
+                        <caption style="text-align:center;background-color:silver;border-color:silver; padding:4px;">
+                           <b>X3DOM node coverage</b>
+                        </caption>
+                        <tr style="text-align:center; padding:4px; border:1px solid black;">
+                           <th> Supported nodes found </th>
+                           <th> Unsupported nodes found </th>
+                           <th> Partial support</th>
+                        </tr>
+                        <tr style="border:1px solid black;">
+                           <td style="text-align:left;vertical-align:text-top;padding:4px;">
+                              <span style="color:green;">Background<br/>Collision<br/>field<br/>Group<br/>Inline<br/>NavigationInfo<br/>PositionInterpolator<br/>ROUTE<br/>TimeSensor<br/>Transform<br/>Viewpoint<br/>WorldInfo<br/>
+                              </span> 
+                           </td>
+                           <td style="text-align:left;vertical-align:text-top;padding:4px;">
+                              <span style="color:red;">ExternProtoDeclare<br/>fieldValue<br/>ProtoInstance<br/>
+                              </span> 
+                           </td>
+                           <td style="text-align:left;vertical-align:text-top;padding:4px;"> </td>
+                        </tr>
+                        <tr style="text-align:center; background-color:silver;border-color:silver; padding:6px;">
+                           <td colspan="3" style="cellpadding:3px"> &nbsp;&nbsp;&nbsp; References: <a href="http://www.x3dom.org/check" onclick="target='_blank';">X3DOM browser check</a>,
+                                <a href="http://www.x3dom.org" onclick="target='_blank';">X3DOM home</a>,
+                                <a href="http://doc.x3dom.org" onclick="target='_blank';">X3DOM documentation</a>,
+                                <a href="http://x3dom.org/x3dom/test/functional/dumpNodeTypeTree.html"
+                                 onclick="target='_blank';">X3DOM list of supported nodes</a>,
+                                and
+                                <a href="http://www.web3d.org/x3d/content/examples/X3dResources.html"
+                                 onclick="target='_blank';">X3D Resources</a> &nbsp;&nbsp;&nbsp; </td>
+                        </tr>
+                     </table>
+                  </div>
+               </td>
+            </tr>
+         </table>
+      </div>
+   </body>
+</html>

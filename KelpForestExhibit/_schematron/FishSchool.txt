@@ -1,0 +1,1 @@
+<TimeSensor DEF='GlobalClock'/> missing description [/X3D/Scene/TimeSensor, warning]

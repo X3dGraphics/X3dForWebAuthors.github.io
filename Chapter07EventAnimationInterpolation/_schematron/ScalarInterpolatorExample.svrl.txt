@@ -1,0 +1,1 @@
+<Shape DEF=''/> found without child Appearance [/X3D/Scene/Transform[2]/Shape, warning]

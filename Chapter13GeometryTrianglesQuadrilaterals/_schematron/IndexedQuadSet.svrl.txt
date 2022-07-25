@@ -1,0 +1,2 @@
+<Viewpoint DEF=''/> requires at least <component name='Navigation' level='1'/> or <X3D profile='Interchange'/> [/X3D/Scene/Viewpoint, error]
+<IndexedQuadSet DEF=''/> missing coordIndex array for contained Coordinate node [/X3D/Scene/Transform/Shape/IndexedQuadSet, error]

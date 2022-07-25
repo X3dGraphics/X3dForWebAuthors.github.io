@@ -1,0 +1,2 @@
+<ProtoDeclare name='HUD'> ProtoInterface can only contain field declarations or comments [/X3D/Scene/ProtoDeclare/ProtoInterface, error]
+<ProximitySensor DEF='HereIAm'/> missing description [/X3D/Scene/ProtoDeclare/ProtoBody/Group/ProximitySensor, warning]

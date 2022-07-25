@@ -1,0 +1,27 @@
+
+      
+ecmascript:
+
+function newInputValue (eventValue)
+{
+   fraction = eventValue; // connected by ROUTE, receives values from TimeSensor Clock fraction_changed
+   
+   value0 = 0.2 * Math.sin (2 * Math.PI * (fraction - 4*waveStep));
+   value1 = 0.2 * Math.sin (2 * Math.PI * (fraction - 3*waveStep));
+   value2 = 0.2 * Math.sin (2 * Math.PI * (fraction - 2*waveStep));
+   value3 = 0.2 * Math.sin (2 * Math.PI * (fraction -   waveStep));
+   value4 = 0.2 * Math.sin (2 * Math.PI * (fraction             ));
+   value5 = 0.2 * Math.sin (2 * Math.PI * (fraction +   waveStep));
+   value6 = 0.2 * Math.sin (2 * Math.PI * (fraction + 2*waveStep));
+   value7 = 0.2 * Math.sin (2 * Math.PI * (fraction + 3*waveStep));
+   value8 = 0.2 * Math.sin (2 * Math.PI * (fraction + 4*waveStep));
+   
+   // setting the gridOutput value creates an output event that is connected via ROUTE to the ElevationGrid set_height field.
+   // note that types match (MFFloat) and accessTypes also match (output_only connects to inputOnly).
+   gridOutput = new MFFloat (
+		value0, value1, value2, value3, value4, value5, value6, value7, value8,
+		value0, value1, value2, value3, value4, value5, value6, value7, value8,
+		value0, value1, value2, value3, value4, value5, value6, value7, value8 );
+}
+
+    

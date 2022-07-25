@@ -1,0 +1,2 @@
+<TimeSensor DEF='AnimationClock'/> missing description [/X3D/Scene/TimeSensor, warning]
+<Shape DEF=''/> found without child Appearance [/X3D/Scene/Transform[2]/Shape, warning]

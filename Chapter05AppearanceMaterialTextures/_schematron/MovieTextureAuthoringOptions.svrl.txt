@@ -1,0 +1,1 @@
+<IndexedFaceSet DEF='Quadrilateral320x240'/> missing texCoordIndex array for contained TextureCoordinate node [/X3D/Scene/Group[1]/Transform[1]/Shape/IndexedFaceSet, error]

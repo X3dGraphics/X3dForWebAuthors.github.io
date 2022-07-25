@@ -1,0 +1,552 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+   <head>
+      <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+      <link rel="shortcut icon" href="../images/X3DtextIcon16.png" title="X3D"/>
+      <title>Viewpoint Slideshow: X3D4WA, X3D for Web Authors Examples Archive, Chapter 01 Technical Overview</title>
+      <meta http-equiv="X-UA-Compatible" content="chrome=1,IE=edge"/>
+      <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+      <meta name="filename" content="viewpointSlideshow.html"/>
+      <meta name="description"
+             content="Slideshow showing all captured Viewpoint images for this chapter"/>
+      <meta name="author" content="Don Brutzman"/>
+      <meta name="generator"
+             content="https://www.web3d.org/x3d/tools/CreateContentCatalog/CreateContentCatalogPages.xslt"/>
+      <meta name="generator" content="X3D-Edit, https://savage.nps.edu/X3D-Edit"/>
+      <meta name="created" content="21 January 2011"/>
+      <meta name="modified" content="2022-07-03-07:00"/>
+      <meta name="reference" content="https://code.google.com/p/slideshow"/>
+      <!--
+            Slideshow project from Google Code http://code.google.com/p/slideshow
+            license:  Creative Commons         https://creativecommons.org/licenses/by/3.0
+            Copyright (c) 2008 [Aeron Glemann] http://www.electricprism.com/aeron
+        -->
+      <link rel="stylesheet"
+             type="text/css"
+             href="../slideshow/css/slideshow.css"
+             media="screen"/>
+      <script type="text/javascript" src="../slideshow/js/mootools-1.3.2-core.js"> </script>
+      <script type="text/javascript" src="../slideshow/js/mootools-1.3.2.1-more.js"> </script>
+      <script type="text/javascript" src="../slideshow/js/slideshow.js"> </script>
+      <script type="text/javascript" src="../slideshow/js/slideshow.flash.js"> </script>
+      <script type="text/javascript" src="../slideshow/js/slideshow.fold.js"> </script>
+      <script type="text/javascript" src="../slideshow/js/slideshow.kenburns.js"> </script>
+      <script type="text/javascript" src="../slideshow/js/slideshow.push.js"> </script>
+      <script type="text/javascript">
+	//<![CDATA[
+	  window.addEvent('domready', function(){
+	    var data = {
+      'EmptyScene.x3d._VP_Default_viewpoint.png': { 'caption': '[1] EmptyScene.x3d (default X3D view from 0 0 10)' },
+      'EmptySceneCoreProfile.x3d._VP_Default_viewpoint.png': { 'caption': '[2] EmptySceneCoreProfile.x3d (default X3D view from 0 0 10)' },
+<!--not found:       'HeaderProfileComponentUnitMetaExample.x3d._VP_Default_viewpoint.png': { 'caption': '[3] HeaderProfileComponentUnitMetaExample.x3d (default X3D view)' },-->
+      'HelloTriangle.x3d._VP_Default_viewpoint.png': { 'caption': '[4] HelloTriangle.x3d (default X3D view from 0 0 10)' },
+      'HelloWorld.x3d._VP_Hello_world!.png': { 'caption': '[5] HelloWorld.x3d Hello world!' },
+      'HelloWorld.x3d._VP_Default_viewpoint.png': { 'caption': '[6] HelloWorld.x3d (default X3D view from 0 0 10)' },
+      'newScene.x3d._VP_Default_viewpoint.png': { 'caption': '[7] newScene.x3d (default X3D view from 0 0 10)' }
+              };
+	    var myShow = new Slideshow('show', data, {captions: true, center: true, controller: true, delay: 2000, height: 465 , width:792, hu: '_viewpoints/', linked: true, preload: true, thumbnails: false});
+	  });
+	//]]>
+</script>
+   </head>
+   <body>
+      <table align="center"
+              summary="navigation"
+              border="1"
+              cellpadding="2"
+              width="95%">
+         <tr>
+            <td align="center" width="17%">
+               <a href="../index.html" target="_top">
+                  <img src="../images/ToC.png"
+                        title="Table of Contents"
+                        alt="Table of Contents"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../KelpForestExhibit/viewpointSlideshow.html" target="_top">
+                  <img src="../images/PreviousChapter.png"
+                        title="Previous Directory Viewpoint Slideshow"
+                        alt="Previous Directory Viewpoint Slideshow"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">&nbsp;&nbsp; <a href="index.html" target="_top">
+                  <img src="../images/ThisChapter.png"
+                        title="Directory Summary"
+                        alt="Directory Viewpoint Slideshow"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="15%">
+               <a href="../javadoc/index.html?X3dForWebAuthors/Chapter01TechnicalOverview/package-summary.html"
+                   title="Javadoc for translated java source"
+                   alt="Javadoc for translated java source"
+                   target="_blank">
+                  <img src="../images/Java-32.png"
+                        title="Javadoc for translated java source"
+                        alt="Javadoc for translated java source"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter02GeometryPrimitives/viewpointSlideshow.html"
+                   target="_top">
+                  <img src="../images/NextChapter.png"
+                        title="Next Directory Viewpoint Slideshow"
+                        alt="Next Directory Viewpoint Slideshow"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="15%">
+               <a href="../../X3dResources.html" target="helpPage">
+                  <img src="../images/Help.png"
+                        title="X3D Resources"
+                        alt="X3D Resources"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+         </tr>
+      </table>
+      <h2 align="center">
+         <i> X3D Example Archives: </i>X3D4WA, X3D for Web Authors, Chapter 01 Technical Overview</h2>
+      <div id="show"
+            class="slideshow"
+            style="align: center; text-align: center; width:792;">
+         <div class="slideshow-images"
+               style="align: center; text-align: center; width:792;">
+            <img src="_viewpoints/EmptyScene.x3d._VP_Default_viewpoint.png"
+                  alt="[1] EmptyScene.x3d (default X3D view from 0 0 10)"
+                  title="[1] EmptyScene.x3d (default X3D view from 0 0 10)"
+                  height="465"
+                  width="792"
+                  align=""
+                  float=""
+                  position=""/>
+         </div>
+      </div>
+      <table align="center"
+              summary=""
+              style="background-color: white; border-width:0px; padding: 2px; width:80%">
+         <tr>
+            <td colspan="5" align="center">
+               <b>Directory Viewpoint Slideshow</b>
+            </td>
+         </tr>
+         <tr>
+            <td colspan="5"><!--ChapterPackageDescription--><!--Contents of file ../../content/examples/X3dForWebAuthors/Chapter01TechnicalOverview/package-catalog.html-->
+
+    <table bgColor="#ffffff" border="0" width="100%">
+        <tbody>
+            <tr>
+                <td align="left" rowspan="1">
+                    
+                    <a href="index.html"><img alt="X3D for Web Authors book" title="X3D for Web Authors book" border="0" hspace="10" src="X3dForWebAuthorsBookCoverScan.400x498.jpg" width="90" height="112" align="middle"/></a>
+                    
+                    <br/>
+                    
+                    <a href="index.html"><img alt="X3d for Web Authors video course is online" title="X3d for Web Authors video course is online" border="0" hspace="10" src="X3dForWebAuthorsVideo.jpg" width="90" height="57" align="left"/></a>
+                </td>
+                
+                <td align="left">
+    <p>
+                     Introductory slidesets for
+                     <a href="http://x3dgraphics.com/slidesets/X3dForWebAuthors/Chapter00GettingStarted.pdf">Getting Started</a>
+                     and
+                     <a href="http://x3dgraphics.com/slidesets/X3dForWebAuthors/Chapter00GettingStarted.pdf">X3D-Edit Update</a>
+                     describe good ways to begin learning and authoring X3D.
+                     The supporting
+                     <a href="http://x3dgraphics.com/slidesets/X3dForWebAuthors/Chapter01TechnicalOverview.pdf">Chapter&nbsp;1 slideset</a>,
+					 course videos
+                    (<a href="https://www.movesinstitute.org/Video/Courses/X3dForWebAuthors/X3dForWebAuthorsVideo.html" target="X3dChapterVideos">NPS</a>,
+                     <a href="https://www.youtube.com/playlist?list=PLuSIsM-86sikI5ut0Seh0JQ2S_yZMI3xp" target="X3dChapterYouTubeVideos">YouTube</a>)
+                     and the complete
+                     <a href="Chapter01Technical_Overview.pdf">Chapter&nbsp;1 Technical Overview</a>
+                     for <i>X3D for Web Authors</i> are available online via
+                     <a href="http://X3dGraphics.com" target="_blank">X3dGraphics.com</a>.
+    
+
+                 All of these examples were created using the
+                 <a href="https://savage.nps.edu/X3D-Edit">X3D-Edit authoring tool</a>.  
+    </p>
+    
+
+    <p>
+                 
+                 A published paper
+                 "<a href="CGEMS_X3dGraphicsForWebAuthorsModule_Brutzman2008October16.pdf">Computer Graphics Teaching Support using X3D</a>"
+                 describes how X3D is used to teach introductory 3D in university courses.
+                 Together these assets can be used to learn X3D.
+    </p>
+    
+
+				Also available: 
+                     <a href="https://www.web3d.org/x3d/content/examples/X3dSceneAuthoringHints.html" target="_blank">X3D Scene Authoring Hints</a>
+                     for
+                     <a href="https://www.web3d.org/x3d/content/examples/X3dSceneAuthoringHints.html#Authoring" target="_blank">Authoring Practices</a>,
+                     <a href="https://www.web3d.org/x3d/content/examples/X3dSceneAuthoringHints.html#Credits" target="_blank">Credits</a>,
+                     <a href="https://www.web3d.org/x3d/content/examples/X3dSceneAuthoringHints.html#Dates" target="_blank">Dates</a>,
+                     <a href="https://www.web3d.org/x3d/content/examples/X3dSceneAuthoringHints.html#license" target="_blank">License</a>,
+                     <a href="https://www.web3d.org/x3d/content/examples/X3dSceneAuthoringHints.html#metaTags" target="_blank">meta Tags</a> and
+                     <a href="https://www.web3d.org/x3d/content/examples/X3dSceneAuthoringHints.html#NamingConventions" target="_blank">Naming Conventions</a>.
+    </p>
+                </td>
+                
+                <td align="left" rowspan="1">
+                    
+                    <a href="index.html"><img alt="X3D for Web Authors book" title="X3D for Web Authors book" border="0" hspace="10" src="X3dSpecificationsHoneycombDiagram.png" width="100" height="85" align="middle"/></a>
+                    
+                    <br/>
+                    
+                    <a href="index.html"><img alt="X3D Profiles define levels of common functionality" title="X3D Profiles define levels of common functionality" border="0" hspace="10" src="X3dProfilesOnionDiagramBook.png" width="100" height="100" align="left"/></a>
+                </td>
+            </tr>
+    
+        </tbody>
+    </table>
+
+    
+
+
+  </td>
+         </tr>
+         <tr>
+            <td colspan="5" align="center">
+               <table align="center"
+                       summary=""
+                       style="background-color: white; border-width:1; width:100%">
+                  <tr>
+                     <th align="center" style="background-color:lightgrey" colspan="2">
+6 X3D Models &nbsp;&nbsp;&nbsp; 
+</th>
+                     <th align="left" style="background-color:lightgrey" colspan="2">
+ &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp; 6 X3D Model Viewpoint Snapshots
+</th>
+                  </tr>
+                  <tr>
+                     <td colspan="4">
+                        <br/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="left" valign="top" rowspan="1">
+                        <a href="EmptySceneIndex.html">
+                           <img src="_thumbnails/EmptySceneThumbnail.png"
+                                 width="64"
+                                 height="64"
+                                 align="left"
+                                 alt="EmptyScene"
+                                 title="X3D model EmptyScene.x3d"/>
+                        </a>
+                     </td>
+                     <td align="left" valign="top" rowspan="1">
+                        <br/>
+                        <a href="EmptySceneIndex.html" title="X3D model EmptyScene.x3d">Empty Scene.x3d</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/EmptyScene.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/EmptyScene.x3d._VP_Default_viewpoint.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/EmptyScene.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[1] EmptyScene.x3d (default X3D view from 0 0 10)</a>
+                     </td>
+                  </tr>
+                  <tr style="border-spacing:0px; padding:0px;">
+                     <td colspan="4">
+                        <hr/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="left" valign="top" rowspan="1">
+                        <a href="EmptySceneCoreProfileIndex.html">
+                           <img src="_thumbnails/EmptySceneCoreProfileThumbnail.png"
+                                 width="64"
+                                 height="64"
+                                 align="left"
+                                 alt="EmptySceneCoreProfile"
+                                 title="X3D model EmptySceneCoreProfile.x3d"/>
+                        </a>
+                     </td>
+                     <td align="left" valign="top" rowspan="1">
+                        <br/>
+                        <a href="EmptySceneCoreProfileIndex.html"
+                            title="X3D model EmptySceneCoreProfile.x3d">Empty Scene Core Profile.x3d</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/EmptySceneCoreProfile.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/EmptySceneCoreProfile.x3d._VP_Default_viewpoint.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/EmptySceneCoreProfile.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[2] EmptySceneCoreProfile.x3d (default X3D view from 0 0 10)</a>
+                     </td>
+                  </tr>
+                  <tr style="border-spacing:0px; padding:0px;">
+                     <td colspan="4">
+                        <hr/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="left" valign="top" rowspan="1">
+</td>
+                     <td align="left" valign="top" rowspan="1">
+                        <br/>
+                        <a href="HeaderProfileComponentUnitMetaExampleIndex.html"
+                            title="X3D model HeaderProfileComponentUnitMetaExample.x3d">Header Profile Component Unit Meta Example.x3d</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="left" valign="middle" width="26"><!--file not found: _viewpoints/HeaderProfileComponentUnitMetaExample.x3d._VP_Default_viewpoint.png--></td>
+                     <td>
+                        <span title="viewpoint image file not found">[3] HeaderProfileComponentUnitMetaExample.x3d (default X3D view)</span>
+                     </td>
+                  </tr>
+                  <tr style="border-spacing:0px; padding:0px;">
+                     <td colspan="4">
+                        <hr/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="left" valign="top" rowspan="1">
+                        <a href="HelloTriangleIndex.html">
+                           <img src="_thumbnails/HelloTriangleThumbnail.png"
+                                 width="64"
+                                 height="64"
+                                 align="left"
+                                 alt="HelloTriangle"
+                                 title="X3D model HelloTriangle.x3d"/>
+                        </a>
+                     </td>
+                     <td align="left" valign="top" rowspan="1">
+                        <br/>
+                        <a href="HelloTriangleIndex.html" title="X3D model HelloTriangle.x3d">Hello Triangle.x3d</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/HelloTriangle.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/HelloTriangle.x3d._VP_Default_viewpoint.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/HelloTriangle.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[4] HelloTriangle.x3d (default X3D view from 0 0 10)</a>
+                     </td>
+                  </tr>
+                  <tr style="border-spacing:0px; padding:0px;">
+                     <td colspan="4">
+                        <hr/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="left" valign="top" rowspan="2">
+                        <a href="HelloWorldIndex.html">
+                           <img src="_thumbnails/HelloWorldThumbnail.png"
+                                 width="64"
+                                 height="64"
+                                 align="left"
+                                 alt="HelloWorld"
+                                 title="X3D model HelloWorld.x3d"/>
+                        </a>
+                     </td>
+                     <td align="left" valign="top" rowspan="2">
+                        <br/>
+                        <a href="HelloWorldIndex.html" title="X3D model HelloWorld.x3d">Hello World.x3d</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/HelloWorld.x3d._VP_Hello_world!.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/HelloWorld.x3d._VP_Hello_world!.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/HelloWorld.x3d._VP_Hello_world!.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[5] HelloWorld.x3d Hello world!</a>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/HelloWorld.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/HelloWorld.x3d._VP_Default_viewpoint.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/HelloWorld.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[6] HelloWorld.x3d (default X3D view from 0 0 10)</a>
+                     </td>
+                  </tr>
+                  <tr style="border-spacing:0px; padding:0px;">
+                     <td colspan="4">
+                        <hr/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="left" valign="top" rowspan="1">
+                        <a href="newSceneIndex.html">
+                           <img src="_thumbnails/newSceneThumbnail.png"
+                                 width="64"
+                                 height="64"
+                                 align="left"
+                                 alt="newScene"
+                                 title="X3D model newScene.x3d"/>
+                        </a>
+                     </td>
+                     <td align="left" valign="top" rowspan="1">
+                        <br/>
+                        <a href="newSceneIndex.html" title="X3D model newScene.x3d">new Scene.x3d</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/newScene.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/newScene.x3d._VP_Default_viewpoint.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/newScene.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[7] newScene.x3d (default X3D view from 0 0 10)</a>
+                     </td>
+                  </tr>
+               </table>
+            </td>
+         </tr>
+         <tr>
+            <td colspan="5" style="background-color:lightgrey">&nbsp;</td>
+         </tr>
+         <tr>
+            <td colspan="5">
+               <p align="center">This viewpoint slideshow is online at <br/>
+                  <a href="https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter01TechnicalOverview/viewpointSlideshow.html">https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter01TechnicalOverview/viewpointSlideshow.html</a>
+               </p>
+               <p align="center">
+                  <a href="https://validator.w3.org/check?uri=https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter01TechnicalOverview/viewpointSlideshow.html"
+                      target="_blank">
+                     <img src="https://www.w3.org/Icons/valid-xhtml10"
+                           title="Validate XHTML 1.1"
+                           alt="Validate XHTML 1.1"
+                           height="31"
+                           width="88"
+                           border="0"
+                           align="right"/>
+                  </a>
+               </p>
+               <p style="text-align:center">Viewpoint image version history at <br/>
+                  <a href="https://sourceforge.net/p/x3d/code/HEAD/tree/www.web3d.org/x3d/content/examples/X3dForWebAuthors/Chapter01TechnicalOverview/_viewpoints/"
+                      target="_blank">https://sourceforge.net/p/x3d/code/HEAD/tree/www.web3d.org/x3d/content/examples/X3dForWebAuthors/Chapter01TechnicalOverview/_viewpoints</a>
+               </p>
+            </td>
+         </tr>
+      </table>
+      <table align="center"
+              summary="navigation"
+              border="1"
+              cellpadding="2"
+              width="95%">
+         <tr>
+            <td align="center" width="17%">
+               <a href="../index.html" target="_top">
+                  <img src="../images/ToC.png"
+                        title="Table of Contents"
+                        alt="Table of Contents"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../KelpForestExhibit/viewpointSlideshow.html" target="_top">
+                  <img src="../images/PreviousChapter.png"
+                        title="Previous Directory Viewpoint Slideshow"
+                        alt="Previous Directory Viewpoint Slideshow"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">&nbsp;&nbsp; <a href="index.html" target="_top">
+                  <img src="../images/ThisChapter.png"
+                        title="Directory Summary"
+                        alt="Directory Viewpoint Slideshow"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="15%">
+               <a href="../javadoc/index.html?X3dForWebAuthors/Chapter01TechnicalOverview/package-summary.html"
+                   title="Javadoc for translated java source"
+                   alt="Javadoc for translated java source"
+                   target="_blank">
+                  <img src="../images/Java-32.png"
+                        title="Javadoc for translated java source"
+                        alt="Javadoc for translated java source"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter02GeometryPrimitives/viewpointSlideshow.html"
+                   target="_top">
+                  <img src="../images/NextChapter.png"
+                        title="Next Directory Viewpoint Slideshow"
+                        alt="Next Directory Viewpoint Slideshow"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="15%">
+               <a href="../../X3dResources.html" target="helpPage">
+                  <img src="../images/Help.png"
+                        title="X3D Resources"
+                        alt="X3D Resources"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+         </tr>
+      </table>
+   </body>
+</html>

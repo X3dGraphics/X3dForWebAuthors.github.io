@@ -1,0 +1,4 @@
+<Shape DEF='QuadOutlineShape'/> found without child Appearance [/X3D/Scene/Transform/Transform[1]/Transform/Group/Group/Shape[1], warning]
+<Shape DEF='QuadVerticalLineShape'/> found without child Appearance [/X3D/Scene/Transform/Transform[1]/Transform/Group/Group/Shape[3], warning]
+<Shape DEF='QuadCrossDiagonalLineShape'/> found without child Appearance [/X3D/Scene/Transform/Transform[1]/Transform/Group/Shape[2], warning]
+<Shape DEF='QuadCenterDiagonalLineShape'/> found without child Appearance [/X3D/Scene/Transform/Transform[1]/Transform/Group/Shape[3], warning]

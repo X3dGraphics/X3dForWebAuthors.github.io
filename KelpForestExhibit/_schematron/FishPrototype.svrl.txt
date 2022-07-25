@@ -1,0 +1,1 @@
+<meta name='warning' content='Circular fish behavior is embedded in prototype, instead the circular path needs to be used in external files or possibly parameterized.'/>[/X3D/head/meta[3], diagnostic]

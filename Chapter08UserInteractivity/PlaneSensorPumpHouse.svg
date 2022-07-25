@@ -1,0 +1,9 @@
+
+          
+ecmascript:
+
+function SFVec3fY_SFFloat (value) {
+  SFFloat_Yout = value[1];
+}
+
+        

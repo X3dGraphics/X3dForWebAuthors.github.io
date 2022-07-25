@@ -1,0 +1,169 @@
+@prefix :        <https://x3dgraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/StripedSurfPerch.ttl#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema:  <http://schema.org/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix x3d:     <https://www.web3d.org/specifications/x3d-4.0.xsd#> .
+@prefix x3do:    <https://www.web3d.org/specifications/X3dOntology4.0#> .
+
+:X3D a owl:NamedIndividual, x3do:X3D ;
+  x3do:hasHead :head ;
+  x3do:hasScene :Scene ;
+  x3do:profile 'Immersive' ;
+  x3do:version '3.3' ;
+  x3do:noNamespaceSchemaLocation 'https://www.web3d.org/specifications/x3d-3.3.xsd' .
+:head a owl:NamedIndividual, x3do:head ;
+  x3do:hasParent :X3D ;
+  x3do:hasMeta :meta_1_1, :meta_1_2, :meta_1_3, :meta_1_4, :meta_1_5, :meta_1_6, :meta_1_7, :meta_1_8, :meta_1_9, :meta_1_10 .
+:meta_1_1 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'StripedSurfPerch.x3d' ;
+  x3do:name 'title' .
+:meta_1_2 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Create a new fish type through configuration of the CircleFishLod prototype.' ;
+  x3do:name 'description' .
+:meta_1_3 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Ildeniz Duman' ;
+  x3do:name 'creator' .
+:meta_1_4 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Jeff Weekley' ;
+  x3do:name 'translator' .
+:meta_1_5 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '1 May 1998' ;
+  x3do:name 'created' .
+:meta_1_6 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '25 February 2001' ;
+  x3do:name 'translated' .
+:meta_1_7 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '20 October 2019' ;
+  x3do:name 'modified' .
+:meta_1_8 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://x3dgraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/StripedSurfPerch.x3d' ;
+  x3do:name 'identifier' .
+:meta_1_9 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'X3D-Edit 3.3, https://savage.nps.edu/X3D-Edit' ;
+  x3do:name 'generator' .
+:meta_1_10 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '../license.html' ;
+  x3do:name 'license' .
+:meta dcterms:title "StripedSurfPerch.x3d" .
+:meta dcterms:description "Create a new fish type through configuration of the CircleFishLod prototype." .
+:meta dcterms:creator "Ildeniz Duman" .
+:meta dcterms:translator "Jeff Weekley" .
+:meta dcterms:created "1 May 1998" .
+:meta dcterms:translated "25 February 2001" .
+:meta dcterms:modified "20 October 2019" .
+:meta dcterms:identifier "https://x3dgraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/StripedSurfPerch.x3d" .
+:meta dcterms:generator "X3D-Edit 3.3, https://savage.nps.edu/X3D-Edit" .
+:meta dcterms:license "../license.html" .
+:Scene a owl:NamedIndividual, x3do:Scene ;
+  x3do:hasParent :X3D ;
+  x3do:hasChildren :WorldInfo_2_1, :Viewpoint_2_3, :StripedSurfPerch ;
+  x3do:hasExternProtoDeclare :ExternProtoDeclare_2_2 .
+:WorldInfo_2_1 a owl:NamedIndividual, x3do:WorldInfo ;
+  x3do:hasParent :Scene ;
+  x3do:title 'StripedSurfPerch.x3d' .
+:ExternProtoDeclare_2_2 a owl:NamedIndividual, x3do:ExternProtoDeclare ;
+  x3do:hasParent :Scene ;
+  x3do:hasField :field_2_2_1, :field_2_2_2, :field_2_2_3, :field_2_2_4, :field_2_2_5, :field_2_2_6, :field_2_2_7, :field_2_2_8, :field_2_2_9 ;
+  x3do:appinfo 'CircleFish prototype with LOD added' ;
+  x3do:name 'CircleFishLod' ;
+  x3do:url '"CircleFishLodPrototype.x3d#CircleFishLod" "https://x3dgraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/CircleFishLodPrototype.x3d#CircleFishLod" "CircleFishLodPrototype.wrl#CircleFishLod" "https://x3dgraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/CircleFishLodPrototype.wrl#CircleFishLod"' .
+:field_2_2_1 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :ExternProtoDeclare_2_2 ;
+  x3do:accessType 'inputOutput' ;
+  x3do:name 'skinTextureUrl' ;
+  x3do:type 'MFString' .
+:field_2_2_2 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :ExternProtoDeclare_2_2 ;
+  x3do:accessType 'inputOutput' ;
+  x3do:name 'fishScale' ;
+  x3do:type 'SFVec3f' .
+:field_2_2_3 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :ExternProtoDeclare_2_2 ;
+  x3do:accessType 'inputOutput' ;
+  x3do:name 'fishColor' ;
+  x3do:type 'SFColor' .
+:field_2_2_4 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :ExternProtoDeclare_2_2 ;
+  x3do:accessType 'inputOutput' ;
+  x3do:name 'finColor' ;
+  x3do:type 'SFColor' .
+:field_2_2_5 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :ExternProtoDeclare_2_2 ;
+  x3do:accessType 'inputOutput' ;
+  x3do:name 'positionKey' ;
+  x3do:type 'MFFloat' .
+:field_2_2_6 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :ExternProtoDeclare_2_2 ;
+  x3do:accessType 'inputOutput' ;
+  x3do:name 'positionKeyValue' ;
+  x3do:type 'MFVec3f' .
+:field_2_2_7 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :ExternProtoDeclare_2_2 ;
+  x3do:accessType 'inputOutput' ;
+  x3do:name 'orientationKey' ;
+  x3do:type 'MFFloat' .
+:field_2_2_8 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :ExternProtoDeclare_2_2 ;
+  x3do:accessType 'inputOutput' ;
+  x3do:name 'orientationKeyValue' ;
+  x3do:type 'MFRotation' .
+:field_2_2_9 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :ExternProtoDeclare_2_2 ;
+  x3do:accessType 'inputOutput' ;
+  x3do:name 'orbitTime' ;
+  x3do:type 'SFTime' .
+:Viewpoint_2_3 a owl:NamedIndividual, x3do:Viewpoint ;
+  x3do:hasParent :Scene ;
+  x3do:description 'Striped SurfPerch' ;
+  x3do:orientation ( 0.0 1.0 0.0 89.9 ) ;
+  x3do:position ( 4.0 0.0 -1.0 ) .
+:StripedSurfPerch a owl:NamedIndividual, x3do:ProtoInstance ;
+  x3do:hasParent :Scene ;
+  x3do:hasFieldValue :fieldValue_2_4_1, :fieldValue_2_4_2, :fieldValue_2_4_3, :fieldValue_2_4_4, :fieldValue_2_4_5, :fieldValue_2_4_6, :fieldValue_2_4_7, :fieldValue_2_4_8 ;
+  x3do:DEF 'StripedSurfPerch' ;
+  x3do:name 'CircleFishLod' .
+:fieldValue_2_4_1 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :StripedSurfPerch ;
+  x3do:name 'skinTextureUrl' ;
+  x3do:value '"StripedSurfPerchPatch.jpg" "https://x3dgraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/StripedSurfPerchPatch.jpg"' .
+:fieldValue_2_4_2 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :StripedSurfPerch ;
+  x3do:name 'fishScale' ;
+  x3do:value '0.39 0.26 0.2' .
+:fieldValue_2_4_3 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :StripedSurfPerch ;
+  x3do:name 'finColor' ;
+  x3do:value '0.73 0.56 0.56' .
+:fieldValue_2_4_4 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :StripedSurfPerch ;
+  x3do:name 'positionKey' ;
+  x3do:value '0 0.25 0.5 0.75 1' .
+:fieldValue_2_4_5 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :StripedSurfPerch ;
+  x3do:name 'positionKeyValue' ;
+  x3do:value '0 0 -0.5 0.5 0 0 0 0 0.5 -0.5 0 0 0 0 -0.5' .
+:fieldValue_2_4_6 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :StripedSurfPerch ;
+  x3do:name 'orientationKey' ;
+  x3do:value '0 0.25 0.5 0.75 1' .
+:fieldValue_2_4_7 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :StripedSurfPerch ;
+  x3do:name 'orientationKeyValue' ;
+  x3do:value '0 1 0 -6.28 0 1 0 -3.14 0 1 0 0 0 1 0 3.14 0 1 0 6.28' .
+:fieldValue_2_4_8 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :StripedSurfPerch ;
+  x3do:name 'orbitTime' ;
+  x3do:value '80.0' .

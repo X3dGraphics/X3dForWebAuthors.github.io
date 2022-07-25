@@ -1,0 +1,167 @@
+@prefix :        <https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter03Grouping/LODExample.ttl#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema:  <http://schema.org/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix x3d:     <https://www.web3d.org/specifications/x3d-4.0.xsd#> .
+@prefix x3do:    <https://www.web3d.org/specifications/X3dOntology4.0#> .
+
+:X3D a owl:NamedIndividual, x3do:X3D ;
+  x3do:hasHead :head ;
+  x3do:hasScene :Scene ;
+  x3do:profile 'Immersive' ;
+  x3do:version '3.3' ;
+  x3do:noNamespaceSchemaLocation 'https://www.web3d.org/specifications/x3d-3.3.xsd' .
+:head a owl:NamedIndividual, x3do:head ;
+  x3do:hasParent :X3D ;
+  x3do:hasMeta :meta_1_1, :meta_1_2, :meta_1_3, :meta_1_4, :meta_1_5, :meta_1_6, :meta_1_7, :meta_1_8, :meta_1_9, :meta_1_10, :meta_1_11, :meta_1_12, :meta_1_13, :meta_1_14 .
+:meta_1_1 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'LODExample.x3d' ;
+  x3do:name 'title' .
+:meta_1_2 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Example for LOD node' ;
+  x3do:name 'description' .
+:meta_1_3 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Leonard Daly and Don Brutzman' ;
+  x3do:name 'creator' .
+:meta_1_4 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '14 November 2005' ;
+  x3do:name 'created' .
+:meta_1_5 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '14 June 2020' ;
+  x3do:name 'modified' .
+:meta_1_6 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://github.com/create3000/x_ite/issues/38' ;
+  x3do:name 'reference' .
+:meta_1_7 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://X3dGraphics.com' ;
+  x3do:name 'reference' .
+:meta_1_8 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://www.web3d.org/x3d/content/examples/X3dResources.html' ;
+  x3do:name 'reference' .
+:meta_1_9 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Copyright 2006, Daly Realism and Don Brutzman' ;
+  x3do:name 'rights' .
+:meta_1_10 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'X3DJSAIL: Warning: NavigationInfo type newValue=""FLY" "ANY"" has an unrecognized value not matching any of the optional string tokens.' ;
+  x3do:name 'warning' .
+:meta_1_11 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'X3D book, X3D graphics, X3D-Edit, http://www.x3dGraphics.com' ;
+  x3do:name 'subject' .
+:meta_1_12 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter03Grouping/LODExample.x3d' ;
+  x3do:name 'identifier' .
+:meta_1_13 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'X3D-Edit 3.3, https://savage.nps.edu/X3D-Edit' ;
+  x3do:name 'generator' .
+:meta_1_14 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '../license.html' ;
+  x3do:name 'license' .
+:meta dcterms:title "LODExample.x3d" .
+:meta dcterms:description "Example for LOD node" .
+:meta dcterms:creator "Leonard Daly and Don Brutzman" .
+:meta dcterms:created "14 November 2005" .
+:meta dcterms:modified "14 June 2020" .
+:meta dcterms:reference "https://github.com/create3000/x_ite/issues/38" .
+:meta dcterms:reference "https://X3dGraphics.com" .
+:meta dcterms:reference "https://www.web3d.org/x3d/content/examples/X3dResources.html" .
+:meta dcterms:rights "Copyright 2006, Daly Realism and Don Brutzman" .
+:meta dcterms:warning "X3DJSAIL: Warning: NavigationInfo type newValue=\"\"FLY\" \"ANY\"\" has an unrecognized value not matching any of the optional string tokens." .
+:meta dcterms:subject "X3D book, X3D graphics, X3D-Edit, http://www.x3dGraphics.com" .
+:meta dcterms:identifier "https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter03Grouping/LODExample.x3d" .
+:meta dcterms:generator "X3D-Edit 3.3, https://savage.nps.edu/X3D-Edit" .
+:meta dcterms:license "../license.html" .
+:Scene a owl:NamedIndividual, x3do:Scene ;
+  x3do:hasParent :X3D ;
+  x3do:hasChildren :Background_2_1, :NavigationInfo_2_2, :Viewpoint_2_3, :Viewpoint_2_4, :Viewpoint_2_5, :LOD_2_6 .
+:Background_2_1 a owl:NamedIndividual, x3do:Background ;
+  x3do:hasParent :Scene ;
+  x3do:skyColor ( 1 1 1 ) .
+:NavigationInfo_2_2 a owl:NamedIndividual, x3do:NavigationInfo ;
+  x3do:hasParent :Scene ;
+  x3do:type '"FLY" "ANY"' .
+:Viewpoint_2_3 a owl:NamedIndividual, x3do:Viewpoint ;
+  x3do:hasParent :Scene ;
+  x3do:description 'Book View - Near, all shapes shown' ;
+  x3do:orientation ( 0.866 -0.497 0.058 -0.59 ) ;
+  x3do:position ( 1.2 1.98 3.4 ) .
+:Viewpoint_2_4 a owl:NamedIndividual, x3do:Viewpoint ;
+  x3do:hasParent :Scene ;
+  x3do:description 'Book View - Farther, texture shown' ;
+  x3do:orientation ( 0.866 -0.497 0.058 -0.59 ) ;
+  x3do:position ( 1.47 2.43 4.18 ) .
+:Viewpoint_2_5 a owl:NamedIndividual, x3do:Viewpoint ;
+  x3do:hasParent :Scene ;
+  x3do:description 'Book View - Farthest, nothing shown' ;
+  x3do:position ( 0 0 12 ) .
+:LOD_2_6 a owl:NamedIndividual, x3do:LOD ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :View3dModelAtCloseRange, :View2dImageAtLongerRange, :WorldInfo_2_6_3 ;
+  x3do:range ( 5 9 ) .
+:View3dModelAtCloseRange a owl:NamedIndividual, x3do:Group ;
+  x3do:hasParent :LOD_2_6 ;
+  x3do:hasChildren :Shape_2_6_1_1, :Shape_2_6_1_2 ;
+  x3do:DEF 'View3dModelAtCloseRange' .
+:Shape_2_6_1_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :View3dModelAtCloseRange ;
+  x3do:hasAppearance :Appearance_2_6_1_1_1 ;
+  x3do:hasGeometry :Box_2_6_1_1_2 .
+:Appearance_2_6_1_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_6_1_1 ;
+  x3do:hasMaterial :Material_2_6_1_1_1_1 .
+:Material_2_6_1_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_6_1_1_1 ;
+  x3do:diffuseColor ( 1 0 0 ) .
+:Box_2_6_1_1_2 a owl:NamedIndividual, x3do:Box ;
+  x3do:hasParent :Shape_2_6_1_1 .
+:Shape_2_6_1_2 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :View3dModelAtCloseRange ;
+  x3do:hasAppearance :Appearance_2_6_1_2_1 ;
+  x3do:hasGeometry :Sphere_2_6_1_2_2 .
+:Appearance_2_6_1_2_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_6_1_2 ;
+  x3do:hasMaterial :Material_2_6_1_2_1_1 .
+:Material_2_6_1_2_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_6_1_2_1 ;
+  x3do:diffuseColor ( 0 0 1 ) .
+:Sphere_2_6_1_2_2 a owl:NamedIndividual, x3do:Sphere ;
+  x3do:hasParent :Shape_2_6_1_2 ;
+  x3do:radius 1.4 .
+:View2dImageAtLongerRange a owl:NamedIndividual, x3do:Group ;
+  x3do:hasParent :LOD_2_6 ;
+  x3do:hasChildren :Shape_2_6_2_1 ;
+  x3do:DEF 'View2dImageAtLongerRange' .
+:Shape_2_6_2_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :View2dImageAtLongerRange ;
+  x3do:hasAppearance :Appearance_2_6_2_1_1 ;
+  x3do:hasGeometry :Box_2_6_2_1_2 .
+:Appearance_2_6_2_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_6_2_1 ;
+  x3do:hasMaterial :Material_2_6_2_1_1_1 ;
+  x3do:hasTexture :ImageTexture_2_6_2_1_1_2 .
+:Material_2_6_2_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_6_2_1_1 .
+:ImageTexture_2_6_2_1_1_2 a owl:NamedIndividual, x3do:ImageTexture ;
+  x3do:hasParent :Appearance_2_6_2_1_1 ;
+  x3do:url '"LOD.jpg" "https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter03Grouping/LOD.jpg"' .
+:Box_2_6_2_1_2 a owl:NamedIndividual, x3do:Box ;
+  x3do:hasParent :Shape_2_6_2_1 .
+:WorldInfo_2_6_3 a owl:NamedIndividual, x3do:WorldInfo ;
+  x3do:hasParent :LOD_2_6 ;
+  x3do:info '"Not visible at farthest range"' .

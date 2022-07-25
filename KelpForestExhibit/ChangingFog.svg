@@ -1,0 +1,72 @@
+
+      
+ecmascript:
+// REF: http://astronomy.swin.edu.au/pbourke/geometry/rotate/
+
+function initialize () {
+   visibility = 20;
+   depth = 0;
+   pos = (0,0,0);
+   Browser.print ('Position output from ProximitySensor.');
+}
+
+function get_clock_hit (clock_msg) {
+     run_script = true;
+}
+
+function get_depth ( position ) {
+
+   pos = position;
+   depth = position[1] - 30;   
+
+}
+
+function set_visibility( rotation ) {
+
+ if (run_script) {
+
+//z coordinate of the default viewpoint direction(0,0,-1)
+   initZ = -1;  
+
+   rX = rotation[0];  // x coordinate of the rotation
+   rY = rotation[1];  // y coordinate of the rotation
+   rZ = rotation[2];  // z coordinate of the rotation
+
+   theta = rotation[3];  // angle of rotation in radians
+	
+Browser.print ('theta:' + theta);
+     
+   cosTheta = Math.cos(theta);
+   sinTheta = Math.sin(theta);
+
+Browser.print ('cosTheta:' + cosTheta + ' sinTheta:'+ sinTheta);
+
+
+// calculate the y coordinate of the point after rotation
+/* there are 8 other terms in the full conversion, but 6 are equal
+to zero because of the choice of a starting point on the z-axis. The
+other two are not calculated since all we need is the y coordinate
+*/
+   finalY = ((1 - cosTheta) * rY * rZ - rX * sinTheta) * initZ;
+
+Browser.print ('final y:' + finalY);
+
+//calculate the elevation/depression angle of the final point location
+
+   elevation = Math.asin(finalY);
+
+Browser.print ('elevation:' + elevation);
+
+   directionFactor = 1 + 0.2 * (4 * elevation / Math.PI);
+   depthAdjust = (60 + depth)/60
+   depthFactor = Math.max(depthAdjust,0.05);
+
+   visibility_changed =  60 * depthFactor * directionFactor; 
+   Browser.print ('depth=' + depth + ', elevation=' + elevation + 
+        ', visibility_changed=' + visibility_changed);
+   run_script = false;
+   
+ }
+}
+
+    

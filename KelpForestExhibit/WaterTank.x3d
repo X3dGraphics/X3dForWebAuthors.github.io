@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE X3D PUBLIC "ISO//Web3D//DTD X3D 3.1//EN" "http://www.web3d.org/specifications/x3d-3.1.dtd">
+<X3D profile='Interchange' version='3.1' xmlns:xsd='http://www.w3.org/2001/XMLSchema-instance' xsd:noNamespaceSchemaLocation='http://www.web3d.org/specifications/x3d-3.1.xsd'>
+  <head>
+    <meta content='WaterTank.x3d' name='title'/>
+    <meta content='Tsardas Nikolaos' name='creator'/>
+    <meta content='June 1998' name='created'/>
+    <meta content='17 March 2002' name='modified'/>
+    <meta content='Student project showing a small aquarium.' name='description'/>
+    <meta content='Check dimensions - too big. Probably will move this scene to student projects.' name='warning'/>
+    <meta content='http://x3dgraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/WaterTank.x3d' name='identifier'/>
+    <meta content='X3D-Edit, https://savage.nps.edu/X3D-Edit' name='generator'/>
+    <meta content='../license.html' name='license'/>
+  </head>
+  <Scene>
+    <Viewpoint description='Water tank on a table' position='0 0 20'/>
+    <Group>
+      <Transform>
+        <Transform translation='0.0 0.25 0.0'>
+          <Shape>
+            <Appearance>
+              <Material diffuseColor='1.0 1.0 1.0' transparency='0.5'/>
+            </Appearance>
+            <Box size='12.0 4.5 4.0'/>
+          </Shape>
+        </Transform>
+        <Transform>
+          <Shape>
+            <Appearance>
+              <Material diffuseColor='0 0 1' transparency='0.5'/>
+            </Appearance>
+            <Box size='12.0 4.0 4.0'/>
+          </Shape>
+        </Transform>
+      </Transform>
+      <Transform translation='0.0 -2.5 0.0'>
+        <Shape>
+          <Appearance>
+            <Material diffuseColor='0.5 0.4 0.3'/>
+          </Appearance>
+          <Box size='16.0 1.0 8.0'/>
+        </Shape>
+      </Transform>
+      <Transform translation='-7.5 -5.5 -3.5'>
+        <Shape>
+          <Appearance>
+            <Material diffuseColor='0.5 0.4 0.3'/>
+          </Appearance>
+          <Box size='1.0 5.0 1.0'/>
+        </Shape>
+      </Transform>
+      <Transform translation='7.5 -5.5 -3.5'>
+        <Shape>
+          <Appearance>
+            <Material diffuseColor='0.5 0.4 0.3'/>
+          </Appearance>
+          <Box size='1.0 5.0 1.0'/>
+        </Shape>
+      </Transform>
+      <Transform translation='-7.5 -5.5 3.5'>
+        <Shape>
+          <Appearance>
+            <Material diffuseColor='0.5 0.4 0.3'/>
+          </Appearance>
+          <Box size='1.0 5.0 1.0'/>
+        </Shape>
+      </Transform>
+      <Transform translation='7.5 -5.5 3.5'>
+        <Shape>
+          <Appearance>
+            <Material diffuseColor='0.5 0.4 0.3'/>
+          </Appearance>
+          <Box size='1.0 5.0 1.0'/>
+        </Shape>
+      </Transform>
+    </Group>
+  </Scene>
+</X3D>

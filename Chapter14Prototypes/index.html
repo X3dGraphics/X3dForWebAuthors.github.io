@@ -1,0 +1,532 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <link rel="shortcut icon" href="../images/X3DtextIcon16.png" title="X3D"/>
+      <title>X3D4WA, X3D for Web Authors Examples Archive, Chapter 14 Prototypes</title>
+      <meta http-equiv="X-UA-Compatible" content="chrome=1,IE=edge"/>
+      <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+      <meta name="author" content="Don Brutzman"/>
+      <meta name="generator"
+             content="https://www.web3d.org/x3d/tools/CreateContentCatalog/CreateContentCatalogPages.xslt"/>
+      <meta name="modified" content="2022-07-03-07:00"/>
+      <meta name="keyword"
+             content="X3D, X3DV, VRML, VRML97, Extensible 3D, Virtual Reality Modeling Language"/>
+   </head>
+   <body>
+      <table
+              align="center"
+              summary="navigation"
+              border="1"
+              cellpadding="2"
+              width="95%">
+         <tr>
+            <td align="center" width="17%">
+               <a href="../index.html" target="_top">
+                  <img src="../images/ToC.png"
+                        title="Table of Contents"
+                        alt="Table of Contents"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter13GeometryTrianglesQuadrilaterals/index.html"
+                   target="_top">
+                  <img src="../images/PreviousChapter.png"
+                        title="Previous Directory Summary"
+                        alt="Previous Directory Summary"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="viewpointSlideshow.html" target="_top">
+                  <img src="../images/MootoolsSlideshowLogo.jpg"
+                        title="Directory Viewpoint Slideshow"
+                        alt="Directory Viewpoint Slideshow"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="15%">
+               <a href="../javadoc/index.html?X3dForWebAuthors/Chapter14Prototypes/package-summary.html"
+                   title="Javadoc for translated java source"
+                   alt="Javadoc for translated java source"
+                   target="_blank">
+                  <img src="../images/Java-32.png"
+                        title="Javadoc for translated java source"
+                        alt="Javadoc for translated java source"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter15Metadata/index.html" target="_top">
+                  <img src="../images/NextChapter.png"
+                        title="Next Directory Summary"
+                        alt="Next Directory Summary"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="15%">
+               <a href="../../X3dResources.html" target="helpPage">
+                  <img src="../images/Help.png"
+                        title="X3D Resources"
+                        alt="X3D Resources"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+         </tr>
+      </table>
+      <h2 align="center">
+         <i> X3D Example Archives: </i>X3D4WA, X3D for Web Authors, Chapter 14 Prototypes</h2>
+      <table align="center"
+              width="85%"
+              summary=""
+              border="0"
+              cellpadding="0">
+         <tr align="center">
+            <td><!--ChapterPackageDescription--><!--Contents of file ../../content/examples/X3dForWebAuthors/Chapter14Prototypes/package-catalog.html-->
+    
+    <table bgColor="#ffffff" border="0" width="100%">
+        <tbody>
+            <tr>
+                <td align="right">
+                    
+                    <a href="index.html"><img title="MaterialModulator prototype demonstration" alt="MaterialModulator prototype demonstration" border="0" hspace="0" src="MaterialModulator.png" height="112" align="middle"/></a>
+                </td>
+                
+                <td  align="left">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </td>
+                
+                <td  align="left">
+                    
+                    <a href="index.html"><img title="ViewFrustum prototype demonstration" alt="ViewFrustum prototype demonstration" border="0" hspace="0" src="ViewFrustumObliqueView.png" width="253" height="112" align="middle"/></a>
+                </td>
+                    
+            </tr>
+        </tbody>
+    </table>
+
+    <p>
+				Prototypes let authors define a new X3D node made up of other X3D nodes,
+				extending the language for any scenes in new and interesting ways.
+    </p>
+    
+
+
+    <p>
+                 X3D extensibility includes a tremendous capability: 
+                 authors can create prototype declarations and instances to define new X3D nodes.
+				 This is a powerful feature that puts the full power of this graphics language in the hands of Web authors.
+	
+	
+
+
+                 Prototype templates are themselves built using 
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#ProtoDeclare" target="X3dTooltips" title="X3D Tooltip">ProtoDeclare</a> 
+                 definitions or corresponding
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#ExternProtoDeclare" target="X3dTooltips" title="X3D Tooltip">ExternProtoDeclare</a>
+                 references.
+                 
+                 ProtoDeclare field definitions are found in the
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#ProtoInterface" target="X3dTooltips" title="X3D Tooltip">ProtoInterface</a>
+                 tag, which can include multiple
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#field" target="X3dTooltips" title="X3D Tooltip">field</a>
+                 declarations that define a name, initial value (if appropriate),
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#accessType" target="X3dTooltips" title="X3D Tooltip">accessType</a>
+                 (inputOnly, outputOnly, initializeOnly and inputOutput)
+                 and  
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#type" target="X3dTooltips" title="X3D Tooltip">type</a>
+                 for each field.
+                 The
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#IS" target="X3dTooltips" title="X3D Tooltip">IS</a>
+                 and
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#connect" target="X3dTooltips" title="X3D Tooltip">connect</a>
+                 statements allow an internal field inside the ProtoBody to directly relay values and events via the exposed ProtoInterface field.
+    </p>
+    
+
+
+    <p>
+                 The node type of each ProtoDeclare is defined by the first node inside the
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#ProtoBody" target="X3dTooltips" title="X3D Tooltip">ProtoBody</a>
+                 declaration.
+                 Copies of a new node are created by name with 
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#ProtoInstance" target="X3dTooltips" title="X3D Tooltip">ProtoInstance</a>
+                 nodes.
+                 Default values for ProtoInstance fields can be overridden with
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#fieldValue" target="X3dTooltips" title="X3D Tooltip">fieldValue</a>
+                 initializations.
+                 A ProtoInstance node can replace any other node in the scene graph having the same node type.
+    </p>
+    
+
+
+    <p>
+                 The supporting
+                 <a href="http://x3dgraphics.com/slidesets/X3dForWebAuthors/Chapter14Prototypes.pdf" target="X3dChapterSlideset">Chapter&nbsp;14 slideset</a>
+                 and course videos
+                (<a href="https://www.movesinstitute.org/Video/Courses/X3dForWebAuthors/X3dForWebAuthorsVideo.html#14" target="X3dChapterVideos">NPS</a>,
+                 <a href="https://www.youtube.com/playlist?list=PLuSIsM-86simQ4u2XxKZS7PU381BfFjIk" target="X3dChapterYouTubeVideos">YouTube</a>)
+                 for <i>X3D for Web Authors</i> are available online via
+                 <a href="http://X3dGraphics.com" target="_blank">X3dGraphics.com</a>.
+    </p>
+    
+
+
+    <p>
+                     Also available:
+                     <a href="https://www.web3d.org/x3d/content/examples/X3dSceneAuthoringHints.html" target="_blank">X3D Scene Authoring Hints</a>
+                     for
+                     <a href="https://www.web3d.org/x3d/content/examples/X3dSceneAuthoringHints.html#InlinesPrototypes" target="_blank">Inline Scenes and Prototype Templates</a>
+                      and
+                      <a href="https://www.web3d.org/x3d/content/examples/X3dSceneAuthoringHints.html#urls" target="_blank">URL&nbsp;Links</a>.
+    </p>
+    
+
+
+  </td>
+         </tr>
+      </table>
+      <table align="center"
+              width="85%"
+              summary=""
+              border="1"
+              cellpadding="6">
+         <tr align="center">
+            <th colspan="2" width="25%" align="center">&nbsp;&nbsp;14 X3D Models</th>
+            <th width="75%" align="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;X3D Model Descriptions</th>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="ArtDecoExamplesExcerpt"/>
+               <a href="ArtDecoExamplesExcerptIndex.html">
+                  <img src="_thumbnails/ArtDecoExamplesExcerptThumbnail.png"
+                        height="48"
+                        alt="ArtDecoExamplesExcerpt"
+                        title="ArtDecoExamplesExcerpt"/>
+               </a>
+            </td>
+            <td>
+               <a href="ArtDecoExamplesExcerptIndex.html">Art Deco Examples Excerpt</a>
+            </td>
+            <td>Example ExternProtoDeclare/ProtoInstance usage of X3D/VRML materials, originally converted from SGI's Open Inventor material examples. Excerpted from original.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="ArtDecoPrototypesExcerpt"/>
+               <a href="ArtDecoPrototypesExcerptIndex.html">
+                  <img src="_thumbnails/ArtDecoPrototypesExcerptThumbnail.png"
+                        height="48"
+                        alt="ArtDecoPrototypesExcerpt"
+                        title="ArtDecoPrototypesExcerpt"/>
+               </a>
+            </td>
+            <td>
+               <a href="ArtDecoPrototypesExcerptIndex.html">Art Deco Prototypes Excerpt</a>
+            </td>
+            <td>Prototype declarations defining values for X3D/VRML materials, originally converted from SGI's Open Inventor material examples. Excerpted from original.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="HeadsUpDisplayExample"/>
+               <a href="HeadsUpDisplayExampleIndex.html">
+                  <img src="_thumbnails/HeadsUpDisplayExampleThumbnail.png"
+                        height="48"
+                        alt="HeadsUpDisplayExample"
+                        title="HeadsUpDisplayExample"/>
+               </a>
+            </td>
+            <td>
+               <a href="HeadsUpDisplayExampleIndex.html">Heads Up Display Example</a>
+            </td>
+            <td>Prototype definition that demonstrates use of a simple HeadsUpDisplay (HUD) prototype that maintains a stable position for its children on the screen.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="HeadsUpDisplayPrototype"/>
+               <a href="HeadsUpDisplayPrototypeIndex.html">
+                  <img src="_thumbnails/HeadsUpDisplayPrototypeThumbnail.png"
+                        height="48"
+                        alt="HeadsUpDisplayPrototype"
+                        title="HeadsUpDisplayPrototype"/>
+               </a>
+            </td>
+            <td>
+               <a href="HeadsUpDisplayPrototypeIndex.html">Heads Up Display Prototype</a>
+            </td>
+            <td>Reusable Prototype definition that applies a ProximitySensor for a simple HeadsUpDisplay (HUD) prototype that maintains a stable position for its children on the screen.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="HudKelpForest"/>
+               <a href="HudKelpForestIndex.html">
+                  <img src="_thumbnails/HudKelpForestThumbnail.png"
+                        height="48"
+                        alt="HudKelpForest"
+                        title="HudKelpForest"/>
+               </a>
+            </td>
+            <td>
+               <a href="HudKelpForestIndex.html">Hud Kelp Forest</a>
+            </td>
+            <td>Demonstrates use of a ProximitySensor in building a HUD, with display values showing current view location.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="MaterialModulator"/>
+               <a href="MaterialModulatorIndex.html">
+                  <img src="_thumbnails/MaterialModulatorThumbnail.png"
+                        height="48"
+                        alt="MaterialModulator"
+                        title="MaterialModulator"/>
+               </a>
+            </td>
+            <td>
+               <a href="MaterialModulatorIndex.html">Material Modulator</a>
+            </td>
+            <td>Mimic a Material node and modulate the diffuseColor field as an animation effect, provided as a prototype for reusability.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="MaterialModulatorExamples"/>
+               <a href="MaterialModulatorExamplesIndex.html">
+                  <img src="_thumbnails/MaterialModulatorExamplesThumbnail.png"
+                        height="48"
+                        alt="MaterialModulatorExamples"
+                        title="MaterialModulatorExamples"/>
+               </a>
+            </td>
+            <td>
+               <a href="MaterialModulatorExamplesIndex.html">Material Modulator Examples</a>
+            </td>
+            <td>Demonstrate multiple instances of an external prototype.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="MaterialModulatorPrototypeExpanded"/>
+               <a href="MaterialModulatorPrototypeExpandedIndex.html">
+                  <img src="_thumbnails/MaterialModulatorPrototypeExpandedThumbnail.png"
+                        height="48"
+                        alt="MaterialModulatorPrototypeExpanded"
+                        title="MaterialModulatorPrototypeExpanded"/>
+               </a>
+            </td>
+            <td>
+               <a href="MaterialModulatorPrototypeExpandedIndex.html">Material Modulator Prototype Expanded</a>
+            </td>
+            <td>Provide example for expansion of a MaterialModulator as regular X3D nodes, rather than a ProtoDeclare/ProtoInstance combination. MaterialModulator mimics a Material node and modulates diffuseColor field as an animation effect.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="TextStringPrototype"/>
+               <a href="TextStringPrototypeIndex.html">
+                  <img src="_thumbnails/TextStringPrototypeThumbnail.png"
+                        height="48"
+                        alt="TextStringPrototype"
+                        title="TextStringPrototype"/>
+               </a>
+            </td>
+            <td>
+               <a href="TextStringPrototypeIndex.html">Text String Prototype</a>
+            </td>
+            <td>Simple Prototype for the display of text strings, combining functionality of Text and FontStyle nodes.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="ViewFrustumExample"/>
+               <a href="ViewFrustumExampleIndex.html">
+                  <img src="_thumbnails/ViewFrustumExampleThumbnail.png"
+                        height="48"
+                        alt="ViewFrustumExample"
+                        title="ViewFrustumExample"/>
+               </a>
+            </td>
+            <td>
+               <a href="ViewFrustumExampleIndex.html">View Frustum Example</a>
+            </td>
+            <td>Display view frustum associated with a given pair of Viewpoint and NavigationInfo nodes, illustrating ProtoInstance reuse of a separately declared prototype.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="ViewFrustumPrototype"/>
+               <a href="ViewFrustumPrototypeIndex.html">
+                  <img src="_thumbnails/ViewFrustumPrototypeThumbnail.png"
+                        height="48"
+                        alt="ViewFrustumPrototype"
+                        title="ViewFrustumPrototype"/>
+               </a>
+            </td>
+            <td>
+               <a href="ViewFrustumPrototypeIndex.html">View Frustum Prototype</a>
+            </td>
+            <td>Define a view frustum associated with a given pair of Viewpoint and NavigationInfo nodes, provided as a reusable prototype.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="WhereAmIExample"/>
+               <a href="WhereAmIExampleIndex.html">
+                  <img src="_thumbnails/WhereAmIExampleThumbnail.png"
+                        height="48"
+                        alt="WhereAmIExample"
+                        title="WhereAmIExample"/>
+               </a>
+            </td>
+            <td>
+               <a href="WhereAmIExampleIndex.html">Where Am IExample</a>
+            </td>
+            <td>Example use of prototype node for displaying current viewpoint location and orientation in the player console.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="WhereAmIPrototype"/>
+               <a href="WhereAmIPrototypeIndex.html">
+                  <img src="_thumbnails/WhereAmIPrototypeThumbnail.png"
+                        height="48"
+                        alt="WhereAmIPrototype"
+                        title="WhereAmIPrototype"/>
+               </a>
+            </td>
+            <td>
+               <a href="WhereAmIPrototypeIndex.html">Where Am IPrototype</a>
+            </td>
+            <td>Prototype node declaration for displaying current viewpoint location and orientation in the player console.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="X3dArchitectureConceptsPrototypeBodyValidationExample"/>
+            </td>
+            <td>
+               <a href="X3dArchitectureConceptsPrototypeBodyValidationExampleIndex.html"> X3D Architecture Concepts Prototype Body Validation Example</a>
+            </td>
+            <td>
+               <a href="https://www.web3d.org/specifications/X3Dv4Draft/ISO-IEC19775-1v4-CD1/Part01/concepts.html#PROTOdefinitionsemantics"
+                   target="_blank">
+                  <img src="../images/X3dSpecificationLogo.png"
+                        title="Specification reference: X3D Architecture, ISO/IEC 19775-1: 202x, Clause 4 Concepts, 4.4.4.3 PROTO definition semantics"
+                        alt="Specification reference: X3D Architecture, ISO/IEC 19775-1: 202x, Clause 4 Concepts, 4.4.4.3 PROTO definition semantics"
+                        height="66"
+                        width="132"
+                        align="right"/>
+               </a>Prototype example to illustrate why additional non-rendering nodes might be needed after first node in ProtoBody<br/>
+               <br/>Specification reference: <a href="https://www.web3d.org/specifications/X3Dv4Draft/ISO-IEC19775-1v4-CD1/Part01/concepts.html#PROTOdefinitionsemantics"
+                   target="_blank">X3D Architecture, ISO/IEC 19775-1: 202x, Clause 4 Concepts, 4.4.4.3 PROTO definition semantics</a>
+            </td>
+         </tr>
+      </table>
+      <table width="80%" border="0" align="center">
+         <tr>
+            <td>
+               <p style="text-align:center">Online at <a href="https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter14Prototypes/index.html">https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter14Prototypes</a>
+               </p>
+               <p align="center" width="80%">
+                  <a href="https://validator.w3.org/check?uri=https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter14Prototypes/index.html"
+                      target="_blank">
+                     <img src="https://www.w3.org/Icons/valid-xhtml10"
+                           title="Validate XHTML 1.1"
+                           alt="Validate XHTML 1.1"
+                           height="31"
+                           width="88"
+                           border="0"
+                           align="right"/>
+                  </a>
+               </p>
+               <p style="text-align:center">Master source-code model archive is under subversion control at <br/>
+                  <a href="https://sourceforge.net/p/x3d/code/HEAD/tree/www.web3d.org/x3d/content/examples/X3dForWebAuthors/Chapter14Prototypes/"
+                      target="_blank">https://sourceforge.net/p/x3d/code/HEAD/tree/www.web3d.org/x3d/content/examples/X3dForWebAuthors/Chapter14Prototypes</a>
+               </p>
+            </td>
+         </tr>
+      </table>
+      <p align="center">
+The 
+<a href="../../X3dResources.html#X3dForWebAuthors">X3D Resources: Examples</a> page
+and
+<a href="https://savage.nps.edu/Savage/developers.html">Savage Developers Guide</a>
+provide more information about the production of this archive.</p>
+      <table
+              align="center"
+              summary="navigation"
+              border="1"
+              cellpadding="2"
+              width="95%">
+         <tr>
+            <td align="center" width="17%">
+               <a href="../index.html" target="_top">
+                  <img src="../images/ToC.png"
+                        title="Table of Contents"
+                        alt="Table of Contents"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter13GeometryTrianglesQuadrilaterals/index.html"
+                   target="_top">
+                  <img src="../images/PreviousChapter.png"
+                        title="Previous Directory Summary"
+                        alt="Previous Directory Summary"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="viewpointSlideshow.html" target="_top">
+                  <img src="../images/MootoolsSlideshowLogo.jpg"
+                        title="Directory Viewpoint Slideshow"
+                        alt="Directory Viewpoint Slideshow"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="15%">
+               <a href="../javadoc/index.html?X3dForWebAuthors/Chapter14Prototypes/package-summary.html"
+                   title="Javadoc for translated java source"
+                   alt="Javadoc for translated java source"
+                   target="_blank">
+                  <img src="../images/Java-32.png"
+                        title="Javadoc for translated java source"
+                        alt="Javadoc for translated java source"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter15Metadata/index.html" target="_top">
+                  <img src="../images/NextChapter.png"
+                        title="Next Directory Summary"
+                        alt="Next Directory Summary"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="15%">
+               <a href="../../X3dResources.html" target="helpPage">
+                  <img src="../images/Help.png"
+                        title="X3D Resources"
+                        alt="X3D Resources"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+         </tr>
+      </table>
+   </body>
+</html>

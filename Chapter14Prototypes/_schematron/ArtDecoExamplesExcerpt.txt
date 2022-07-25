@@ -1,0 +1,3 @@
+<Viewpoint DEF='Front'/> description should be different than DEF [/X3D/Scene/Group/Viewpoint[1], warning]
+<Viewpoint DEF='Back'/> description should be different than DEF [/X3D/Scene/Group/Viewpoint[4], warning]
+<TimeSensor DEF='Close_Time'/> missing description [/X3D/Scene/Group/Transform[1]/TimeSensor, warning]

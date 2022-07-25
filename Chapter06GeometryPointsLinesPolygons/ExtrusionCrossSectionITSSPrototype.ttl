@@ -1,0 +1,692 @@
+@prefix :        <https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter06GeometryPointsLinesPolygons/ExtrusionCrossSectionPrototype.ttl#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema:  <http://schema.org/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix x3d:     <https://www.web3d.org/specifications/x3d-4.0.xsd#> .
+@prefix x3do:    <https://www.web3d.org/specifications/X3dOntology4.0#> .
+
+:X3D a owl:NamedIndividual, x3do:X3D ;
+  x3do:hasHead :head ;
+  x3do:hasScene :Scene ;
+  x3do:profile 'Immersive' ;
+  x3do:version '3.3' ;
+  x3do:noNamespaceSchemaLocation 'https://www.web3d.org/specifications/x3d-3.3.xsd' .
+:head a owl:NamedIndividual, x3do:head ;
+  x3do:hasParent :X3D ;
+  x3do:hasMeta :meta_1_1, :meta_1_2, :meta_1_3, :meta_1_4, :meta_1_5, :meta_1_6, :meta_1_7, :meta_1_8, :meta_1_9, :meta_1_10, :meta_1_11, :meta_1_12, :meta_1_13, :meta_1_14, :meta_1_15, :meta_1_16, :meta_1_17 .
+:meta_1_1 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'ExtrusionCrossSectionITSSPrototype.x3d' ;
+  x3do:name 'title' .
+:meta_1_2 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Don Brutzman and Sungmin Kwon' ;
+  x3do:name 'creator' .
+:meta_1_3 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '23 October 2017' ;
+  x3do:name 'created' .
+:meta_1_4 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '20 October 2019' ;
+  x3do:name 'modified' .
+:meta_1_5 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Shape prototype for Enclosing IndexedTriangleStripSet that also draws spine line plus oriented, scaled cross sections at each spine point.' ;
+  x3do:name 'description' .
+:meta_1_6 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Utilize ExtrusionCrossSectionITSS ProtoInstance as if it is a Shape node (with containerField="children") rather than an Extrusion node (with containerField="geometry") under a Shape.' ;
+  x3do:name 'hint' .
+:meta_1_7 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'VRML 97 Specification, 6.18 Extrusion' ;
+  x3do:name 'reference' .
+:meta_1_8 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://www.web3d.org/technicalinfo/specifications/vrml97/part1/nodesRef.html#Extrusion' ;
+  x3do:name 'reference' .
+:meta_1_9 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'VRML 97 Specification, Figure 6.6' ;
+  x3do:name 'Image' .
+:meta_1_10 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://www.web3d.org/technicalinfo/specifications/vrml97/Images/Extrusion.gif' ;
+  x3do:name 'Image' .
+:meta_1_11 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'http://realism.com/x3d/examples/Extrusion/_frame.html' ;
+  x3do:name 'reference' .
+:meta_1_12 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'http://www.cs.brown.edu/~gss/vrml/drawpoly.html' ;
+  x3do:name 'reference' .
+:meta_1_13 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'ExtrusionXj3dGoldberg1999.java' ;
+  x3do:name 'reference' .
+:meta_1_14 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'http://web3d.metrolink.com/cgi-bin/cvsweb.cgi/x3d/src/com/sun/j3d/loaders/vrml97/impl/Attic/Extrusion.java' ;
+  x3do:name 'reference' .
+:meta_1_15 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter06GeometryPointsLinesPolygons/ExtrusionCrossSectionPrototype.x3d' ;
+  x3do:name 'identifier' .
+:meta_1_16 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'X3D-Edit 3.3, https://savage.nps.edu/X3D-Edit' ;
+  x3do:name 'generator' .
+:meta_1_17 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '../license.html' ;
+  x3do:name 'license' .
+:meta dcterms:title "ExtrusionCrossSectionITSSPrototype.x3d" .
+:meta dcterms:creator "Don Brutzman and Sungmin Kwon" .
+:meta dcterms:created "23 October 2017" .
+:meta dcterms:modified "20 October 2019" .
+:meta dcterms:description "Shape prototype for Enclosing IndexedTriangleStripSet that also draws spine line plus oriented, scaled cross sections at each spine point." .
+:meta dcterms:reference "VRML 97 Specification, 6.18 Extrusion" .
+:meta dcterms:reference "https://www.web3d.org/technicalinfo/specifications/vrml97/part1/nodesRef.html#Extrusion" .
+:meta dcterms:Image "VRML 97 Specification, Figure 6.6" .
+:meta dcterms:Image "https://www.web3d.org/technicalinfo/specifications/vrml97/Images/Extrusion.gif" .
+:meta dcterms:reference "http://realism.com/x3d/examples/Extrusion/_frame.html" .
+:meta dcterms:reference "http://www.cs.brown.edu/~gss/vrml/drawpoly.html" .
+:meta dcterms:reference "ExtrusionXj3dGoldberg1999.java" .
+:meta dcterms:reference "http://web3d.metrolink.com/cgi-bin/cvsweb.cgi/x3d/src/com/sun/j3d/loaders/vrml97/impl/Attic/Extrusion.java" .
+:meta dcterms:identifier "https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter06GeometryPointsLinesPolygons/ExtrusionCrossSectionPrototype.x3d" .
+:meta dcterms:generator "X3D-Edit 3.3, https://savage.nps.edu/X3D-Edit" .
+:meta dcterms:license "../license.html" .
+:Scene a owl:NamedIndividual, x3do:Scene ;
+  x3do:hasParent :X3D ;
+  x3do:hasChildren :WorldInfo_2_1, :Group_2_3 ;
+  x3do:hasProtoDeclare :ProtoDeclare_2_2 .
+:WorldInfo_2_1 a owl:NamedIndividual, x3do:WorldInfo ;
+  x3do:hasParent :Scene ;
+  x3do:title 'ExtrusionCrossSectionITSSPrototype.x3d' .
+:ProtoDeclare_2_2 a owl:NamedIndividual, x3do:ProtoDeclare ;
+  x3do:hasParent :Scene ;
+  x3do:hasProtoInterface :ProtoInterface_2_2_1 ;
+  x3do:hasProtoBody :ProtoBody_2_2_2 ;
+  x3do:appinfo 'Shape prototype for Extrusion node that also draws spine line plus oriented scaled cross sections at each spine point' ;
+  x3do:documentation 'https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter06GeometryPointsLinesPolygons/ExtrusionCrossSectionPrototype.x3d' ;
+  x3do:name 'ExtrusionCrossSectionITSS' .
+:ProtoInterface_2_2_1 a owl:NamedIndividual, x3do:ProtoInterface ;
+  x3do:hasParent :ProtoDeclare_2_2 ;
+  x3do:hasField :field_2_2_1_1, :field_2_2_1_2, :field_2_2_1_3, :field_2_2_1_4, :field_2_2_1_5, :field_2_2_1_6, :field_2_2_1_7, :field_2_2_1_8, :field_2_2_1_9, :field_2_2_1_10, :field_2_2_1_11, :field_2_2_1_12, :field_2_2_1_13, :field_2_2_1_14, :field_2_2_1_15, :field_2_2_1_16, :field_2_2_1_17, :field_2_2_1_18, :field_2_2_1_19, :field_2_2_1_20, :field_2_2_1_21, :field_2_2_1_22, :field_2_2_1_23 .
+:field_2_2_1_1 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :ProtoInterface_2_2_1 ;
+  x3do:accessType 'initializeOnly' ;
+  x3do:appinfo 'Extrusion name' ;
+  x3do:name 'name' ;
+  x3do:type 'SFString' .
+:field_2_2_1_2 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :ProtoInterface_2_2_1 ;
+  x3do:accessType 'initializeOnly' ;
+  x3do:appinfo 'Extrusion field' ;
+  x3do:name 'crossSection' ;
+  x3do:type 'MFVec2f' ;
+  x3do:value ( 1 1 1 -1 -1 -1 -1 1 1 1 ) .
+:field_2_2_1_3 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :ProtoInterface_2_2_1 ;
+  x3do:accessType 'initializeOnly' ;
+  x3do:appinfo 'Extrusion field' ;
+  x3do:name 'spine' ;
+  x3do:type 'MFVec3f' ;
+  x3do:value ( 0 0 0 0 1 0 ) .
+:field_2_2_1_4 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :ProtoInterface_2_2_1 ;
+  x3do:accessType 'initializeOnly' ;
+  x3do:appinfo 'Extrusion field' ;
+  x3do:name 'scale' ;
+  x3do:type 'MFVec2f' ;
+  x3do:value ( 1 1 ) .
+:field_2_2_1_5 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :ProtoInterface_2_2_1 ;
+  x3do:accessType 'initializeOnly' ;
+  x3do:appinfo 'Extrusion field' ;
+  x3do:name 'orientation' ;
+  x3do:type 'MFRotation' ;
+  x3do:value ( 0 0 1 0 ) .
+:field_2_2_1_6 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :ProtoInterface_2_2_1 ;
+  x3do:accessType 'initializeOnly' ;
+  x3do:appinfo 'Extrusion field' ;
+  x3do:name 'beginCap' ;
+  x3do:type 'SFBool' ;
+  x3do:value false .
+:field_2_2_1_7 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :ProtoInterface_2_2_1 ;
+  x3do:accessType 'initializeOnly' ;
+  x3do:appinfo 'Extrusion field' ;
+  x3do:name 'endCap' ;
+  x3do:type 'SFBool' ;
+  x3do:value false .
+:field_2_2_1_8 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :ProtoInterface_2_2_1 ;
+  x3do:accessType 'initializeOnly' ;
+  x3do:appinfo 'Extrusion field' ;
+  x3do:name 'ccw' ;
+  x3do:type 'SFBool' ;
+  x3do:value true .
+:field_2_2_1_9 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :ProtoInterface_2_2_1 ;
+  x3do:accessType 'initializeOnly' ;
+  x3do:appinfo 'Extrusion field' ;
+  x3do:name 'convex' ;
+  x3do:type 'SFBool' ;
+  x3do:value true .
+:field_2_2_1_10 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :ProtoInterface_2_2_1 ;
+  x3do:accessType 'initializeOnly' ;
+  x3do:appinfo 'Extrusion field' ;
+  x3do:name 'creaseAngle' ;
+  x3do:type 'SFFloat' ;
+  x3do:value 0 .
+:field_2_2_1_11 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :ProtoInterface_2_2_1 ;
+  x3do:accessType 'initializeOnly' ;
+  x3do:appinfo 'Extrusion field' ;
+  x3do:name 'solid' ;
+  x3do:type 'SFBool' ;
+  x3do:value true .
+:field_2_2_1_12 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :ProtoInterface_2_2_1 ;
+  x3do:accessType 'inputOutput' ;
+  x3do:appinfo 'emissiveColor of spine' ;
+  x3do:name 'spineColor' ;
+  x3do:type 'SFColor' ;
+  x3do:value ( 0 0.9 0.8 ) .
+:field_2_2_1_13 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :ProtoInterface_2_2_1 ;
+  x3do:accessType 'inputOutput' ;
+  x3do:appinfo 'diffuseColor of crossSection' ;
+  x3do:name 'crossSectionColor' ;
+  x3do:type 'SFColor' ;
+  x3do:value ( 0.2 0.8 0.3 ) .
+:field_2_2_1_14 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :ProtoInterface_2_2_1 ;
+  x3do:accessType 'inputOutput' ;
+  x3do:appinfo 'transparency of crossSection' ;
+  x3do:name 'crossSectionTransparency' ;
+  x3do:type 'SFFloat' ;
+  x3do:value 0.2 .
+:field_2_2_1_15 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :ProtoInterface_2_2_1 ;
+  x3do:accessType 'inputOutput' ;
+  x3do:appinfo 'diffuseColor of extrusion hull' ;
+  x3do:name 'extrusionColor' ;
+  x3do:type 'SFColor' ;
+  x3do:value ( 0.3 0.3 0.3 ) .
+:field_2_2_1_16 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :ProtoInterface_2_2_1 ;
+  x3do:accessType 'inputOutput' ;
+  x3do:appinfo 'transparency of extrusion hull' ;
+  x3do:name 'extrusionTransparency' ;
+  x3do:type 'SFFloat' ;
+  x3do:value 0.7 .
+:field_2_2_1_17 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :ProtoInterface_2_2_1 ;
+  x3do:accessType 'initializeOnly' ;
+  x3do:appinfo 'Image to apply to Extrusion' ;
+  x3do:name 'extrusionImageTexture' ;
+  x3do:type 'SFNode' .
+:field_2_2_1_18 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :ProtoInterface_2_2_1 ;
+  x3do:accessType 'initializeOnly' ;
+  x3do:appinfo 'TextureTransform coordinates of image applied to Extrusion' ;
+  x3do:name 'extrusionTextureTransform' ;
+  x3do:type 'SFNode' .
+:field_2_2_1_19 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :ProtoInterface_2_2_1 ;
+  x3do:accessType 'inputOnly' ;
+  x3do:appinfo 'Extrusion field' ;
+  x3do:name 'set_crossSection' ;
+  x3do:type 'MFVec2f' .
+:field_2_2_1_20 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :ProtoInterface_2_2_1 ;
+  x3do:accessType 'inputOnly' ;
+  x3do:appinfo 'Extrusion field' ;
+  x3do:name 'set_spine' ;
+  x3do:type 'MFVec3f' .
+:field_2_2_1_21 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :ProtoInterface_2_2_1 ;
+  x3do:accessType 'inputOnly' ;
+  x3do:appinfo 'Extrusion field' ;
+  x3do:name 'set_scale' ;
+  x3do:type 'MFVec2f' .
+:field_2_2_1_22 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :ProtoInterface_2_2_1 ;
+  x3do:accessType 'inputOnly' ;
+  x3do:appinfo 'Extrusion field' ;
+  x3do:name 'set_orientation' ;
+  x3do:type 'MFRotation' .
+:field_2_2_1_23 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :ProtoInterface_2_2_1 ;
+  x3do:accessType 'initializeOnly' ;
+  x3do:appinfo 'Whether to provide initialization trace statements showing node construction' ;
+  x3do:name 'traceEnabled' ;
+  x3do:type 'SFBool' ;
+  x3do:value false .
+:ProtoBody_2_2_2 a owl:NamedIndividual, x3do:ProtoBody ;
+  x3do:hasParent :ProtoDeclare_2_2 ;
+  x3do:hasChildren :Group_2_2_2_1, :CrossSectionScript, :Group_2_2_2_7 ;
+  x3do:hasROUTE :ROUTE_2_2_2_3, :ROUTE_2_2_2_4, :ROUTE_2_2_2_5, :ROUTE_2_2_2_6, :ROUTE_2_2_2_8 .
+:Group_2_2_2_1 a owl:NamedIndividual, x3do:Group ;
+  x3do:hasParent :ProtoBody_2_2_2 ;
+  x3do:hasChildren :Spine, :InternalCrossSections, :ExternalExtrusion2 .
+:Spine a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Group_2_2_2_1 ;
+  x3do:hasGeometry :SpineLine ;
+  x3do:hasAppearance :Appearance_2_2_2_1_1_2 ;
+  x3do:DEF 'Spine' .
+:SpineLine a owl:NamedIndividual, x3do:IndexedLineSet ;
+  x3do:hasParent :Spine ;
+  x3do:hasCoord :SpineCoordinates ;
+  x3do:DEF 'SpineLine' ;
+  x3do:colorPerVertex false .
+:SpineCoordinates a owl:NamedIndividual, x3do:Coordinate ;
+  x3do:hasParent :SpineLine ;
+  x3do:hasIS :IS_2_2_2_1_1_1_1_1 ;
+  x3do:DEF 'SpineCoordinates' .
+:IS_2_2_2_1_1_1_1_1 a owl:NamedIndividual, x3do:IS ;
+  x3do:hasParent :SpineCoordinates ;
+  x3do:hasConnect :connect_2_2_2_1_1_1_1_1_1, :connect_2_2_2_1_1_1_1_1_2 .
+:connect_2_2_2_1_1_1_1_1_1 a owl:NamedIndividual, x3do:connect ;
+  x3do:hasParent :IS_2_2_2_1_1_1_1_1 ;
+  x3do:nodeField 'point' ;
+  x3do:protoField 'spine' .
+:connect_2_2_2_1_1_1_1_1_2 a owl:NamedIndividual, x3do:connect ;
+  x3do:hasParent :IS_2_2_2_1_1_1_1_1 ;
+  x3do:nodeField 'point' ;
+  x3do:protoField 'set_spine' .
+:Appearance_2_2_2_1_1_2 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Spine ;
+  x3do:hasMaterial :SpineMaterial .
+:SpineMaterial a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_2_2_1_1_2 ;
+  x3do:hasIS :IS_2_2_2_1_1_2_1_1 ;
+  x3do:DEF 'SpineMaterial' .
+:IS_2_2_2_1_1_2_1_1 a owl:NamedIndividual, x3do:IS ;
+  x3do:hasParent :SpineMaterial ;
+  x3do:hasConnect :connect_2_2_2_1_1_2_1_1_1 .
+:connect_2_2_2_1_1_2_1_1_1 a owl:NamedIndividual, x3do:connect ;
+  x3do:hasParent :IS_2_2_2_1_1_2_1_1 ;
+  x3do:nodeField 'emissiveColor' ;
+  x3do:protoField 'spineColor' .
+:InternalCrossSections a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Group_2_2_2_1 ;
+  x3do:hasGeometry :CrossSectionFaces ;
+  x3do:hasAppearance :Appearance_2_2_2_1_2_2 ;
+  x3do:DEF 'InternalCrossSections' .
+:CrossSectionFaces a owl:NamedIndividual, x3do:IndexedTriangleFanSet ;
+  x3do:hasParent :InternalCrossSections ;
+  x3do:hasCoord :CrossSectionFacesCoordinates ;
+  x3do:DEF 'CrossSectionFaces' ;
+  x3do:ccw true ;
+  x3do:colorPerVertex true ;
+  x3do:normalPerVertex true ;
+  x3do:solid false .
+:CrossSectionFacesCoordinates a owl:NamedIndividual, x3do:Coordinate ;
+  x3do:hasParent :CrossSectionFaces ;
+  x3do:DEF 'CrossSectionFacesCoordinates' .
+:Appearance_2_2_2_1_2_2 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :InternalCrossSections ;
+  x3do:hasMaterial :CrossSectionMaterial .
+:CrossSectionMaterial a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_2_2_1_2_2 ;
+  x3do:hasIS :IS_2_2_2_1_2_2_1_1 ;
+  x3do:DEF 'CrossSectionMaterial' .
+:IS_2_2_2_1_2_2_1_1 a owl:NamedIndividual, x3do:IS ;
+  x3do:hasParent :CrossSectionMaterial ;
+  x3do:hasConnect :connect_2_2_2_1_2_2_1_1_1, :connect_2_2_2_1_2_2_1_1_2 .
+:connect_2_2_2_1_2_2_1_1_1 a owl:NamedIndividual, x3do:connect ;
+  x3do:hasParent :IS_2_2_2_1_2_2_1_1 ;
+  x3do:nodeField 'diffuseColor' ;
+  x3do:protoField 'crossSectionColor' .
+:connect_2_2_2_1_2_2_1_1_2 a owl:NamedIndividual, x3do:connect ;
+  x3do:hasParent :IS_2_2_2_1_2_2_1_1 ;
+  x3do:nodeField 'transparency' ;
+  x3do:protoField 'crossSectionTransparency' .
+:ExternalExtrusion2 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Group_2_2_2_1 ;
+  x3do:hasAppearance :ExtrusionAppearance2 ;
+  x3do:hasGeometry :EnclosingExtrusion2 ;
+  x3do:DEF 'ExternalExtrusion2' .
+:ExtrusionAppearance2 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :ExternalExtrusion2 ;
+  x3do:hasIS :IS_2_2_2_1_3_1_1 ;
+  x3do:hasMaterial :ExtrusionMaterial2 ;
+  x3do:DEF 'ExtrusionAppearance2' .
+:IS_2_2_2_1_3_1_1 a owl:NamedIndividual, x3do:IS ;
+  x3do:hasParent :ExtrusionAppearance2 ;
+  x3do:hasConnect :connect_2_2_2_1_3_1_1_1, :connect_2_2_2_1_3_1_1_2 .
+:connect_2_2_2_1_3_1_1_1 a owl:NamedIndividual, x3do:connect ;
+  x3do:hasParent :IS_2_2_2_1_3_1_1 ;
+  x3do:nodeField 'texture' ;
+  x3do:protoField 'extrusionImageTexture' .
+:connect_2_2_2_1_3_1_1_2 a owl:NamedIndividual, x3do:connect ;
+  x3do:hasParent :IS_2_2_2_1_3_1_1 ;
+  x3do:nodeField 'textureTransform' ;
+  x3do:protoField 'extrusionTextureTransform' .
+:ExtrusionMaterial2 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :ExtrusionAppearance2 ;
+  x3do:hasIS :IS_2_2_2_1_3_1_2_1 ;
+  x3do:DEF 'ExtrusionMaterial2' .
+:IS_2_2_2_1_3_1_2_1 a owl:NamedIndividual, x3do:IS ;
+  x3do:hasParent :ExtrusionMaterial2 ;
+  x3do:hasConnect :connect_2_2_2_1_3_1_2_1_1, :connect_2_2_2_1_3_1_2_1_2 .
+:connect_2_2_2_1_3_1_2_1_1 a owl:NamedIndividual, x3do:connect ;
+  x3do:hasParent :IS_2_2_2_1_3_1_2_1 ;
+  x3do:nodeField 'diffuseColor' ;
+  x3do:protoField 'extrusionColor' .
+:connect_2_2_2_1_3_1_2_1_2 a owl:NamedIndividual, x3do:connect ;
+  x3do:hasParent :IS_2_2_2_1_3_1_2_1 ;
+  x3do:nodeField 'transparency' ;
+  x3do:protoField 'extrusionTransparency' .
+:EnclosingExtrusion2 a owl:NamedIndividual, x3do:IndexedTriangleStripSet ;
+  x3do:hasParent :ExternalExtrusion2 ;
+  x3do:hasCoord :ExtrusionCoordinates2 ;
+  x3do:DEF 'EnclosingExtrusion2' ;
+  x3do:ccw true ;
+  x3do:colorPerVertex true ;
+  x3do:index ( 0 1 2 ) ;
+  x3do:normalPerVertex true ;
+  x3do:solid true .
+:ExtrusionCoordinates2 a owl:NamedIndividual, x3do:Coordinate ;
+  x3do:hasParent :EnclosingExtrusion2 ;
+  x3do:DEF 'ExtrusionCoordinates2' .
+:CrossSectionScript a owl:NamedIndividual, x3do:Script ;
+  x3do:hasParent :ProtoBody_2_2_2 ;
+  x3do:hasField :field_2_2_2_2_1, :field_2_2_2_2_2, :field_2_2_2_2_3, :field_2_2_2_2_4, :field_2_2_2_2_5, :field_2_2_2_2_6, :field_2_2_2_2_7, :field_2_2_2_2_8, :field_2_2_2_2_9, :field_2_2_2_2_10, :field_2_2_2_2_11, :field_2_2_2_2_12, :field_2_2_2_2_13, :field_2_2_2_2_14, :field_2_2_2_2_15, :field_2_2_2_2_16, :field_2_2_2_2_17, :field_2_2_2_2_18, :field_2_2_2_2_19, :field_2_2_2_2_20, :field_2_2_2_2_21, :field_2_2_2_2_22 ;
+  x3do:hasIS :IS_2_2_2_2_23 ;
+  x3do:DEF 'CrossSectionScript' ;
+  x3do:url '"ExtrusionCrossSectionITSSPrototype.js" "https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter06GeometryPointsLinesPolygons/ExtrusionCrossSectionITSSPrototype.js"' .
+:field_2_2_2_2_1 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :CrossSectionScript ;
+  x3do:accessType 'initializeOnly' ;
+  x3do:name 'name' ;
+  x3do:type 'SFString' .
+:field_2_2_2_2_2 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :CrossSectionScript ;
+  x3do:accessType 'initializeOnly' ;
+  x3do:name 'crossSection' ;
+  x3do:type 'MFVec2f' .
+:field_2_2_2_2_3 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :CrossSectionScript ;
+  x3do:accessType 'initializeOnly' ;
+  x3do:name 'spine' ;
+  x3do:type 'MFVec3f' .
+:field_2_2_2_2_4 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :CrossSectionScript ;
+  x3do:accessType 'initializeOnly' ;
+  x3do:name 'scale' ;
+  x3do:type 'MFVec2f' .
+:field_2_2_2_2_5 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :CrossSectionScript ;
+  x3do:accessType 'initializeOnly' ;
+  x3do:name 'orientation' ;
+  x3do:type 'MFRotation' .
+:field_2_2_2_2_6 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :CrossSectionScript ;
+  x3do:accessType 'inputOutput' ;
+  x3do:name 'spineColor' ;
+  x3do:type 'SFColor' .
+:field_2_2_2_2_7 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :CrossSectionScript ;
+  x3do:accessType 'inputOutput' ;
+  x3do:name 'crossSectionColor' ;
+  x3do:type 'SFColor' .
+:field_2_2_2_2_8 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :CrossSectionScript ;
+  x3do:accessType 'inputOutput' ;
+  x3do:name 'crossSectionTransparency' ;
+  x3do:type 'SFFloat' .
+:field_2_2_2_2_9 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :CrossSectionScript ;
+  x3do:accessType 'inputOutput' ;
+  x3do:name 'extrusionColor' ;
+  x3do:type 'SFColor' .
+:field_2_2_2_2_10 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :CrossSectionScript ;
+  x3do:accessType 'inputOutput' ;
+  x3do:name 'extrusionTransparency' ;
+  x3do:type 'SFFloat' .
+:field_2_2_2_2_11 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :CrossSectionScript ;
+  x3do:accessType 'inputOnly' ;
+  x3do:name 'set_crossSection' ;
+  x3do:type 'MFVec2f' .
+:field_2_2_2_2_12 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :CrossSectionScript ;
+  x3do:accessType 'inputOnly' ;
+  x3do:name 'set_spine' ;
+  x3do:type 'MFVec3f' .
+:field_2_2_2_2_13 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :CrossSectionScript ;
+  x3do:accessType 'inputOnly' ;
+  x3do:name 'set_scale' ;
+  x3do:type 'MFVec2f' .
+:field_2_2_2_2_14 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :CrossSectionScript ;
+  x3do:accessType 'inputOnly' ;
+  x3do:name 'set_orientation' ;
+  x3do:type 'MFRotation' .
+:field_2_2_2_2_15 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :CrossSectionScript ;
+  x3do:accessType 'outputOnly' ;
+  x3do:name 'spineIndex' ;
+  x3do:type 'MFInt32' .
+:field_2_2_2_2_16 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :CrossSectionScript ;
+  x3do:accessType 'outputOnly' ;
+  x3do:name 'facesIndex' ;
+  x3do:type 'MFInt32' .
+:field_2_2_2_2_17 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :CrossSectionScript ;
+  x3do:accessType 'outputOnly' ;
+  x3do:name 'facePoints' ;
+  x3do:type 'MFVec3f' .
+:field_2_2_2_2_18 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :CrossSectionScript ;
+  x3do:accessType 'outputOnly' ;
+  x3do:name 'triStripIndex' ;
+  x3do:type 'MFInt32' .
+:field_2_2_2_2_19 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :CrossSectionScript ;
+  x3do:accessType 'initializeOnly' ;
+  x3do:name 'traceEnabled' ;
+  x3do:type 'SFBool' .
+:field_2_2_2_2_20 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :CrossSectionScript ;
+  x3do:accessType 'initializeOnly' ;
+  x3do:name 'computedFacesIndex' ;
+  x3do:type 'MFInt32' .
+:field_2_2_2_2_21 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :CrossSectionScript ;
+  x3do:accessType 'initializeOnly' ;
+  x3do:name 'computedFacePoints' ;
+  x3do:type 'MFVec3f' .
+:field_2_2_2_2_22 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :CrossSectionScript ;
+  x3do:accessType 'initializeOnly' ;
+  x3do:name 'computedTriStripIndex' ;
+  x3do:type 'MFInt32' .
+:IS_2_2_2_2_23 a owl:NamedIndividual, x3do:IS ;
+  x3do:hasParent :CrossSectionScript ;
+  x3do:hasConnect :connect_2_2_2_2_23_1, :connect_2_2_2_2_23_2, :connect_2_2_2_2_23_3, :connect_2_2_2_2_23_4, :connect_2_2_2_2_23_5, :connect_2_2_2_2_23_6, :connect_2_2_2_2_23_7, :connect_2_2_2_2_23_8, :connect_2_2_2_2_23_9, :connect_2_2_2_2_23_10, :connect_2_2_2_2_23_11, :connect_2_2_2_2_23_12, :connect_2_2_2_2_23_13, :connect_2_2_2_2_23_14, :connect_2_2_2_2_23_15 .
+:connect_2_2_2_2_23_1 a owl:NamedIndividual, x3do:connect ;
+  x3do:hasParent :IS_2_2_2_2_23 ;
+  x3do:nodeField 'name' ;
+  x3do:protoField 'name' .
+:connect_2_2_2_2_23_2 a owl:NamedIndividual, x3do:connect ;
+  x3do:hasParent :IS_2_2_2_2_23 ;
+  x3do:nodeField 'crossSection' ;
+  x3do:protoField 'crossSection' .
+:connect_2_2_2_2_23_3 a owl:NamedIndividual, x3do:connect ;
+  x3do:hasParent :IS_2_2_2_2_23 ;
+  x3do:nodeField 'spine' ;
+  x3do:protoField 'spine' .
+:connect_2_2_2_2_23_4 a owl:NamedIndividual, x3do:connect ;
+  x3do:hasParent :IS_2_2_2_2_23 ;
+  x3do:nodeField 'scale' ;
+  x3do:protoField 'scale' .
+:connect_2_2_2_2_23_5 a owl:NamedIndividual, x3do:connect ;
+  x3do:hasParent :IS_2_2_2_2_23 ;
+  x3do:nodeField 'spineColor' ;
+  x3do:protoField 'spineColor' .
+:connect_2_2_2_2_23_6 a owl:NamedIndividual, x3do:connect ;
+  x3do:hasParent :IS_2_2_2_2_23 ;
+  x3do:nodeField 'crossSectionColor' ;
+  x3do:protoField 'crossSectionColor' .
+:connect_2_2_2_2_23_7 a owl:NamedIndividual, x3do:connect ;
+  x3do:hasParent :IS_2_2_2_2_23 ;
+  x3do:nodeField 'crossSectionTransparency' ;
+  x3do:protoField 'crossSectionTransparency' .
+:connect_2_2_2_2_23_8 a owl:NamedIndividual, x3do:connect ;
+  x3do:hasParent :IS_2_2_2_2_23 ;
+  x3do:nodeField 'extrusionColor' ;
+  x3do:protoField 'extrusionColor' .
+:connect_2_2_2_2_23_9 a owl:NamedIndividual, x3do:connect ;
+  x3do:hasParent :IS_2_2_2_2_23 ;
+  x3do:nodeField 'extrusionTransparency' ;
+  x3do:protoField 'extrusionTransparency' .
+:connect_2_2_2_2_23_10 a owl:NamedIndividual, x3do:connect ;
+  x3do:hasParent :IS_2_2_2_2_23 ;
+  x3do:nodeField 'orientation' ;
+  x3do:protoField 'orientation' .
+:connect_2_2_2_2_23_11 a owl:NamedIndividual, x3do:connect ;
+  x3do:hasParent :IS_2_2_2_2_23 ;
+  x3do:nodeField 'set_crossSection' ;
+  x3do:protoField 'set_crossSection' .
+:connect_2_2_2_2_23_12 a owl:NamedIndividual, x3do:connect ;
+  x3do:hasParent :IS_2_2_2_2_23 ;
+  x3do:nodeField 'set_spine' ;
+  x3do:protoField 'set_spine' .
+:connect_2_2_2_2_23_13 a owl:NamedIndividual, x3do:connect ;
+  x3do:hasParent :IS_2_2_2_2_23 ;
+  x3do:nodeField 'set_scale' ;
+  x3do:protoField 'set_scale' .
+:connect_2_2_2_2_23_14 a owl:NamedIndividual, x3do:connect ;
+  x3do:hasParent :IS_2_2_2_2_23 ;
+  x3do:nodeField 'set_orientation' ;
+  x3do:protoField 'set_orientation' .
+:connect_2_2_2_2_23_15 a owl:NamedIndividual, x3do:connect ;
+  x3do:hasParent :IS_2_2_2_2_23 ;
+  x3do:nodeField 'traceEnabled' ;
+  x3do:protoField 'traceEnabled' .
+:ROUTE_2_2_2_3 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :ProtoBody_2_2_2 ;
+  x3do:fromField 'spineIndex' ;
+  x3do:fromNode 'CrossSectionScript' ;
+  x3do:toField 'set_coordIndex' ;
+  x3do:toNode 'SpineLine' .
+:ROUTE_2_2_2_4 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :ProtoBody_2_2_2 ;
+  x3do:fromField 'facesIndex' ;
+  x3do:fromNode 'CrossSectionScript' ;
+  x3do:toField 'set_index' ;
+  x3do:toNode 'CrossSectionFaces' .
+:ROUTE_2_2_2_5 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :ProtoBody_2_2_2 ;
+  x3do:fromField 'facePoints' ;
+  x3do:fromNode 'CrossSectionScript' ;
+  x3do:toField 'point' ;
+  x3do:toNode 'CrossSectionFacesCoordinates' .
+:ROUTE_2_2_2_6 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :ProtoBody_2_2_2 ;
+  x3do:fromField 'triStripIndex' ;
+  x3do:fromNode 'CrossSectionScript' ;
+  x3do:toField 'set_index' ;
+  x3do:toNode 'EnclosingExtrusion2' .
+:Group_2_2_2_7 a owl:NamedIndividual, x3do:Group ;
+  x3do:hasParent :ProtoBody_2_2_2 ;
+  x3do:hasChildren :Trace_ROUTE_CrossSectionScript.triStripIndex_TO_EnclosingExtrusion2.set_index ;
+  x3do:hasROUTE :ROUTE_2_2_2_7_2 .
+:Trace_ROUTE_CrossSectionScript.triStripIndex_TO_EnclosingExtrusion2.set_index a owl:NamedIndividual, x3do:Script ;
+  x3do:hasParent :Group_2_2_2_7 ;
+  x3do:hasField :field_2_2_2_7_1_1, :field_2_2_2_7_1_2, :field_2_2_2_7_1_3 ;
+  x3do:DEF 'Trace_ROUTE_CrossSectionScript.triStripIndex_TO_EnclosingExtrusion2.set_index' ;
+  x3do:mustEvaluate true ;
+  x3do:sourceCode """
+ecmascript:
+    function traceValue (eventValue, timeStamp) {
+      // input eventValue received for trace field
+      if (timeStamp - timeStampPreviousReport >= reportInterval) {
+        Browser.print ('Trace_ROUTE_CrossSectionScript.triStripIndex_TO_EnclosingExtrusion2.set_index type=MFInt32 value=' + eventValue.toString() + '\n');
+        timeStampPreviousReport = timeStamp;
+      }
+    }
+    function timeOfDay (someTime) {
+      hh = Math.floor (someTime /(60*60)) % 24;
+      mm = Math.floor (someTime / 60)     % 60;
+      ss = Math.floor (someTime)          % 60;
+      if (hh < 9) hour   = '0' + hh;
+      else        hour   =       hh;
+      if (mm < 9) minute = '0' + mm;
+      else        minute =       mm;
+      if (ss < 9) second = '0' + ss;
+      else        second =       ss;
+      return '(' + hour + ':' + minute + ':' + second + ' GMT)';
+    }
+""" .
+:field_2_2_2_7_1_1 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :Trace_ROUTE_CrossSectionScript.triStripIndex_TO_EnclosingExtrusion2.set_index ;
+  x3do:accessType 'initializeOnly' ;
+  x3do:appinfo 'Sampling frequency in seconds (0 means all values)' ;
+  x3do:name 'reportInterval' ;
+  x3do:type 'SFTime' ;
+  x3do:value '1.0' .
+:field_2_2_2_7_1_2 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :Trace_ROUTE_CrossSectionScript.triStripIndex_TO_EnclosingExtrusion2.set_index ;
+  x3do:accessType 'inputOnly' ;
+  x3do:name 'traceValue' ;
+  x3do:type 'MFInt32' .
+:field_2_2_2_7_1_3 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :Trace_ROUTE_CrossSectionScript.triStripIndex_TO_EnclosingExtrusion2.set_index ;
+  x3do:accessType 'initializeOnly' ;
+  x3do:name 'timeStampPreviousReport' ;
+  x3do:type 'SFTime' ;
+  x3do:value '-1' .
+:ROUTE_2_2_2_7_2 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Group_2_2_2_7 ;
+  x3do:fromField 'triStripIndex' ;
+  x3do:fromNode 'CrossSectionScript' ;
+  x3do:toField 'traceValue' ;
+  x3do:toNode 'Trace_ROUTE_CrossSectionScript.triStripIndex_TO_EnclosingExtrusion2.set_index' .
+:ROUTE_2_2_2_8 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :ProtoBody_2_2_2 ;
+  x3do:fromField 'facePoints' ;
+  x3do:fromNode 'CrossSectionScript' ;
+  x3do:toField 'point' ;
+  x3do:toNode 'ExtrusionCoordinates2' .
+:Group_2_3 a owl:NamedIndividual, x3do:Group ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :Transform_2_3_1 .
+:Transform_2_3_1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Group_2_3 ;
+  x3do:hasChildren :Shape_2_3_1_1 ;
+  x3do:translation ( 0 0.5 0 ) .
+:Shape_2_3_1_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_3_1 ;
+  x3do:hasAppearance :Appearance_2_3_1_1_1 ;
+  x3do:hasGeometry :Text_2_3_1_1_2 .
+:Appearance_2_3_1_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_3_1_1 ;
+  x3do:hasMaterial :Material_2_3_1_1_1_1 .
+:Material_2_3_1_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_3_1_1_1 ;
+  x3do:diffuseColor ( 0 1 1 ) ;
+  x3do:emissiveColor ( 0 1 1 ) .
+:Text_2_3_1_1_2 a owl:NamedIndividual, x3do:Text ;
+  x3do:hasParent :Shape_2_3_1_1 ;
+  x3do:hasFontStyle :FontStyle_2_3_1_1_2_1 ;
+  x3do:string '"ExtrusionCrossSectionITSS" "is a Prototype definition scene"' .
+:FontStyle_2_3_1_1_2_1 a owl:NamedIndividual, x3do:FontStyle ;
+  x3do:hasParent :Text_2_3_1_1_2 ;
+  x3do:justify '"MIDDLE" "MIDDLE"' ;
+  x3do:size 0.7 .

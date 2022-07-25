@@ -1,0 +1,27 @@
+
+          
+ecmascript:
+function initialize ()
+{
+    newColor = diffuseColor; // start with original color
+}
+function clockTrigger (timeValue)
+{
+    if (!enabled) return;
+    red   = newColor.r;
+    green = newColor.g;
+    blue  = newColor.b;
+    
+    // note different modulation rates for each color component, % is modulus operator
+    newColor = new SFColor ((red + 0.02) % 1, (green + 0.03) % 1, (blue + 0.04) % 1);
+	if (enabled)
+	{
+		Browser.print ('diffuseColor=(' + red +',' + green + ',' + blue + ') newColor=' + newColor.toString() + '\n');
+	}
+}
+function set_enabled (newValue)
+{
+	enabled = newValue;
+}
+
+        

@@ -1,0 +1,809 @@
+@prefix :        <https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter05AppearanceMaterialTextures/LinePropertiesExample.ttl#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema:  <http://schema.org/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix x3d:     <https://www.web3d.org/specifications/x3d-4.0.xsd#> .
+@prefix x3do:    <https://www.web3d.org/specifications/X3dOntology4.0#> .
+
+:X3D a owl:NamedIndividual, x3do:X3D ;
+  x3do:hasHead :head ;
+  x3do:hasScene :Scene ;
+  x3do:profile 'Immersive' ;
+  x3do:version '3.3' ;
+  x3do:noNamespaceSchemaLocation 'https://www.web3d.org/specifications/x3d-3.3.xsd' .
+:head a owl:NamedIndividual, x3do:head ;
+  x3do:hasParent :X3D ;
+  x3do:hasComponent :component_1_1 ;
+  x3do:hasMeta :meta_1_2, :meta_1_3, :meta_1_4, :meta_1_5, :meta_1_6, :meta_1_7, :meta_1_8, :meta_1_9, :meta_1_10, :meta_1_11, :meta_1_12, :meta_1_13 .
+:component_1_1 a owl:NamedIndividual, x3do:component ;
+  x3do:hasParent :head ;
+  x3do:level 2 ;
+  x3do:name 'Shape' .
+:meta_1_2 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'LinePropertiesExample.x3d' ;
+  x3do:name 'title' .
+:meta_1_3 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Demonstrate each of the various LineProperties enumeration values.' ;
+  x3do:name 'description' .
+:meta_1_4 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Don Brutzman' ;
+  x3do:name 'creator' .
+:meta_1_5 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '20 August 2008' ;
+  x3do:name 'created' .
+:meta_1_6 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '26 July 2021' ;
+  x3do:name 'modified' .
+:meta_1_7 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'LinePropertiesLinetypeExample.png' ;
+  x3do:name 'Image' .
+:meta_1_8 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://X3dGraphics.com' ;
+  x3do:name 'reference' .
+:meta_1_9 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://www.web3d.org/x3d/content/examples/X3dResources.html' ;
+  x3do:name 'reference' .
+:meta_1_10 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'X3D book, X3D graphics, X3D-Edit, http://www.x3dGraphics.com' ;
+  x3do:name 'subject' .
+:meta_1_11 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter05AppearanceMaterialTextures/LinePropertiesExample.x3d' ;
+  x3do:name 'identifier' .
+:meta_1_12 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'X3D-Edit 3.3, https://savage.nps.edu/X3D-Edit' ;
+  x3do:name 'generator' .
+:meta_1_13 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '../license.html' ;
+  x3do:name 'license' .
+:meta dcterms:title "LinePropertiesExample.x3d" .
+:meta dcterms:description "Demonstrate each of the various LineProperties enumeration values." .
+:meta dcterms:creator "Don Brutzman" .
+:meta dcterms:created "20 August 2008" .
+:meta dcterms:modified "26 July 2021" .
+:meta dcterms:Image "LinePropertiesLinetypeExample.png" .
+:meta dcterms:reference "https://X3dGraphics.com" .
+:meta dcterms:reference "https://www.web3d.org/x3d/content/examples/X3dResources.html" .
+:meta dcterms:subject "X3D book, X3D graphics, X3D-Edit, http://www.x3dGraphics.com" .
+:meta dcterms:identifier "https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter05AppearanceMaterialTextures/LinePropertiesExample.x3d" .
+:meta dcterms:generator "X3D-Edit 3.3, https://savage.nps.edu/X3D-Edit" .
+:meta dcterms:license "../license.html" .
+:Scene a owl:NamedIndividual, x3do:Scene ;
+  x3do:hasParent :X3D ;
+  x3do:hasChildren :WorldInfo_2_1, :Viewpoint_2_2, :Transform_2_3 .
+:WorldInfo_2_1 a owl:NamedIndividual, x3do:WorldInfo ;
+  x3do:hasParent :Scene ;
+  x3do:title 'LineProperties.x3d' .
+:Viewpoint_2_2 a owl:NamedIndividual, x3do:Viewpoint ;
+  x3do:hasParent :Scene ;
+  x3do:description 'LineProperties linetype examples' ;
+  x3do:position ( 0 0 22 ) .
+:Transform_2_3 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :Transform_2_3_1, :Transform_2_3_2, :Transform_2_3_3, :Transform_2_3_4, :Transform_2_3_5, :Transform_2_3_6, :Transform_2_3_7, :Transform_2_3_8, :Transform_2_3_9, :Transform_2_3_10, :Transform_2_3_11, :Transform_2_3_12, :Transform_2_3_13, :Transform_2_3_14, :Transform_2_3_15, :Transform_2_3_16 ;
+  x3do:translation ( 1 -6 0 ) .
+:Transform_2_3_1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_3 ;
+  x3do:hasChildren :Shape_2_3_1_1, :Transform_2_3_1_2 ;
+  x3do:translation ( -4 14 0 ) .
+:Shape_2_3_1_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_3_1 ;
+  x3do:hasGeometry :Text_2_3_1_1_1 ;
+  x3do:hasAppearance :Appearance_2_3_1_1_2 .
+:Text_2_3_1_1_1 a owl:NamedIndividual, x3do:Text ;
+  x3do:hasParent :Shape_2_3_1_1 ;
+  x3do:hasFontStyle :LeftJustify ;
+  x3do:string '"1 Solid"' .
+:LeftJustify a owl:NamedIndividual, x3do:FontStyle ;
+  x3do:hasParent :Text_2_3_1_1_1 ;
+  x3do:DEF 'LeftJustify' ;
+  x3do:justify '"BEGIN" "MIDDLE"' .
+:Appearance_2_3_1_1_2 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_3_1_1 ;
+  x3do:hasMaterial :Material_2_3_1_1_2_1 .
+:Material_2_3_1_1_2_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_3_1_1_2 ;
+  x3do:diffuseColor ( 1 0 0 ) .
+:Transform_2_3_1_2 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_3_1 ;
+  x3do:hasChildren :Shape_2_3_1_2_1 ;
+  x3do:translation ( -4 0 0 ) .
+:Shape_2_3_1_2_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_3_1_2 ;
+  x3do:hasGeometry :IndexedLineSet_2_3_1_2_1_1 ;
+  x3do:hasAppearance :Appearance_2_3_1_2_1_2 .
+:IndexedLineSet_2_3_1_2_1_1 a owl:NamedIndividual, x3do:IndexedLineSet ;
+  x3do:hasParent :Shape_2_3_1_2_1 ;
+  x3do:hasCoord :Segment ;
+  x3do:coordIndex ( 0 1 ) .
+:Segment a owl:NamedIndividual, x3do:Coordinate ;
+  x3do:hasParent :IndexedLineSet_2_3_1_2_1_1 ;
+  x3do:DEF 'Segment' ;
+  x3do:point ( 0 0 0 2 0 0 ) .
+:Appearance_2_3_1_2_1_2 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_3_1_2_1 ;
+  x3do:hasMaterial :Material_2_3_1_2_1_2_1 ;
+  x3do:hasLineProperties :LineProperties_2_3_1_2_1_2_2 .
+:Material_2_3_1_2_1_2_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_3_1_2_1_2 ;
+  x3do:emissiveColor ( 1 0 0 ) .
+:LineProperties_2_3_1_2_1_2_2 a owl:NamedIndividual, x3do:LineProperties ;
+  x3do:hasParent :Appearance_2_3_1_2_1_2 .
+:Transform_2_3_2 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_3 ;
+  x3do:hasChildren :Shape_2_3_2_1, :Transform_2_3_2_2 ;
+  x3do:translation ( -4 13 0 ) .
+:Shape_2_3_2_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_3_2 ;
+  x3do:hasGeometry :Text_2_3_2_1_1 ;
+  x3do:hasAppearance :Appearance_2_3_2_1_2 .
+:Text_2_3_2_1_1 a owl:NamedIndividual, x3do:Text ;
+  x3do:hasParent :Shape_2_3_2_1 ;
+  x3do:hasFontStyle :LeftJustify-USE-1 ;
+  x3do:string '"2 Dashed"' .
+:LeftJustify-USE-1 a owl:NamedIndividual, x3do:FontStyle ;
+  x3do:hasParent :Text_2_3_2_1_1 ;
+  owl:sameAs :LeftJustify . # DEF matching this USE
+:Appearance_2_3_2_1_2 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_3_2_1 ;
+  x3do:hasMaterial :Material_2_3_2_1_2_1 .
+:Material_2_3_2_1_2_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_3_2_1_2 ;
+  x3do:diffuseColor ( 1 0.5 0 ) .
+:Transform_2_3_2_2 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_3_2 ;
+  x3do:hasChildren :Shape_2_3_2_2_1 ;
+  x3do:translation ( -4 0 0 ) .
+:Shape_2_3_2_2_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_3_2_2 ;
+  x3do:hasGeometry :IndexedLineSet_2_3_2_2_1_1 ;
+  x3do:hasAppearance :Appearance_2_3_2_2_1_2 .
+:IndexedLineSet_2_3_2_2_1_1 a owl:NamedIndividual, x3do:IndexedLineSet ;
+  x3do:hasParent :Shape_2_3_2_2_1 ;
+  x3do:hasCoord :Segment-USE-1 ;
+  x3do:coordIndex ( 0 1 -1 ) .
+:Segment-USE-1 a owl:NamedIndividual, x3do:Coordinate ;
+  x3do:hasParent :IndexedLineSet_2_3_2_2_1_1 ;
+  owl:sameAs :Segment . # DEF matching this USE
+:Appearance_2_3_2_2_1_2 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_3_2_2_1 ;
+  x3do:hasMaterial :Material_2_3_2_2_1_2_1 ;
+  x3do:hasLineProperties :LineProperties_2_3_2_2_1_2_2 .
+:Material_2_3_2_2_1_2_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_3_2_2_1_2 ;
+  x3do:emissiveColor ( 1 0.5 0 ) .
+:LineProperties_2_3_2_2_1_2_2 a owl:NamedIndividual, x3do:LineProperties ;
+  x3do:hasParent :Appearance_2_3_2_2_1_2 ;
+  x3do:linetype 2 .
+:Transform_2_3_3 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_3 ;
+  x3do:hasChildren :Shape_2_3_3_1, :Transform_2_3_3_2 ;
+  x3do:translation ( -4 12 0 ) .
+:Shape_2_3_3_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_3_3 ;
+  x3do:hasGeometry :Text_2_3_3_1_1 ;
+  x3do:hasAppearance :Appearance_2_3_3_1_2 .
+:Text_2_3_3_1_1 a owl:NamedIndividual, x3do:Text ;
+  x3do:hasParent :Shape_2_3_3_1 ;
+  x3do:hasFontStyle :LeftJustify-USE-2 ;
+  x3do:string '"3 Dotted"' .
+:LeftJustify-USE-2 a owl:NamedIndividual, x3do:FontStyle ;
+  x3do:hasParent :Text_2_3_3_1_1 ;
+  owl:sameAs :LeftJustify . # DEF matching this USE
+:Appearance_2_3_3_1_2 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_3_3_1 ;
+  x3do:hasMaterial :Material_2_3_3_1_2_1 .
+:Material_2_3_3_1_2_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_3_3_1_2 ;
+  x3do:diffuseColor ( 1 1 0 ) .
+:Transform_2_3_3_2 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_3_3 ;
+  x3do:hasChildren :Shape_2_3_3_2_1 ;
+  x3do:translation ( -4 0 0 ) .
+:Shape_2_3_3_2_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_3_3_2 ;
+  x3do:hasGeometry :IndexedLineSet_2_3_3_2_1_1 ;
+  x3do:hasAppearance :Appearance_2_3_3_2_1_2 .
+:IndexedLineSet_2_3_3_2_1_1 a owl:NamedIndividual, x3do:IndexedLineSet ;
+  x3do:hasParent :Shape_2_3_3_2_1 ;
+  x3do:hasCoord :Segment-USE-2 ;
+  x3do:coordIndex ( 0 1 -1 ) .
+:Segment-USE-2 a owl:NamedIndividual, x3do:Coordinate ;
+  x3do:hasParent :IndexedLineSet_2_3_3_2_1_1 ;
+  owl:sameAs :Segment . # DEF matching this USE
+:Appearance_2_3_3_2_1_2 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_3_3_2_1 ;
+  x3do:hasMaterial :Material_2_3_3_2_1_2_1 ;
+  x3do:hasLineProperties :LineProperties_2_3_3_2_1_2_2 .
+:Material_2_3_3_2_1_2_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_3_3_2_1_2 ;
+  x3do:emissiveColor ( 1 1 0 ) .
+:LineProperties_2_3_3_2_1_2_2 a owl:NamedIndividual, x3do:LineProperties ;
+  x3do:hasParent :Appearance_2_3_3_2_1_2 ;
+  x3do:linetype 3 .
+:Transform_2_3_4 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_3 ;
+  x3do:hasChildren :Shape_2_3_4_1, :Transform_2_3_4_2 ;
+  x3do:translation ( -4 11 0 ) .
+:Shape_2_3_4_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_3_4 ;
+  x3do:hasGeometry :Text_2_3_4_1_1 ;
+  x3do:hasAppearance :Appearance_2_3_4_1_2 .
+:Text_2_3_4_1_1 a owl:NamedIndividual, x3do:Text ;
+  x3do:hasParent :Shape_2_3_4_1 ;
+  x3do:hasFontStyle :LeftJustify-USE-3 ;
+  x3do:string '"4 Dashed-dotted"' .
+:LeftJustify-USE-3 a owl:NamedIndividual, x3do:FontStyle ;
+  x3do:hasParent :Text_2_3_4_1_1 ;
+  owl:sameAs :LeftJustify . # DEF matching this USE
+:Appearance_2_3_4_1_2 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_3_4_1 ;
+  x3do:hasMaterial :Material_2_3_4_1_2_1 .
+:Material_2_3_4_1_2_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_3_4_1_2 ;
+  x3do:diffuseColor ( 0 1 0 ) .
+:Transform_2_3_4_2 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_3_4 ;
+  x3do:hasChildren :Shape_2_3_4_2_1 ;
+  x3do:translation ( -4 0 0 ) .
+:Shape_2_3_4_2_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_3_4_2 ;
+  x3do:hasGeometry :IndexedLineSet_2_3_4_2_1_1 ;
+  x3do:hasAppearance :Appearance_2_3_4_2_1_2 .
+:IndexedLineSet_2_3_4_2_1_1 a owl:NamedIndividual, x3do:IndexedLineSet ;
+  x3do:hasParent :Shape_2_3_4_2_1 ;
+  x3do:hasCoord :Segment-USE-3 ;
+  x3do:coordIndex ( 0 1 -1 ) .
+:Segment-USE-3 a owl:NamedIndividual, x3do:Coordinate ;
+  x3do:hasParent :IndexedLineSet_2_3_4_2_1_1 ;
+  owl:sameAs :Segment . # DEF matching this USE
+:Appearance_2_3_4_2_1_2 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_3_4_2_1 ;
+  x3do:hasMaterial :Material_2_3_4_2_1_2_1 ;
+  x3do:hasLineProperties :LineProperties_2_3_4_2_1_2_2 .
+:Material_2_3_4_2_1_2_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_3_4_2_1_2 ;
+  x3do:emissiveColor ( 0 1 0 ) .
+:LineProperties_2_3_4_2_1_2_2 a owl:NamedIndividual, x3do:LineProperties ;
+  x3do:hasParent :Appearance_2_3_4_2_1_2 ;
+  x3do:linetype 4 .
+:Transform_2_3_5 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_3 ;
+  x3do:hasChildren :Shape_2_3_5_1, :Transform_2_3_5_2 ;
+  x3do:translation ( -4 10 0 ) .
+:Shape_2_3_5_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_3_5 ;
+  x3do:hasGeometry :Text_2_3_5_1_1 ;
+  x3do:hasAppearance :Appearance_2_3_5_1_2 .
+:Text_2_3_5_1_1 a owl:NamedIndividual, x3do:Text ;
+  x3do:hasParent :Shape_2_3_5_1 ;
+  x3do:hasFontStyle :LeftJustify-USE-4 ;
+  x3do:string '"5 Dash-dot-dot"' .
+:LeftJustify-USE-4 a owl:NamedIndividual, x3do:FontStyle ;
+  x3do:hasParent :Text_2_3_5_1_1 ;
+  owl:sameAs :LeftJustify . # DEF matching this USE
+:Appearance_2_3_5_1_2 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_3_5_1 ;
+  x3do:hasMaterial :Material_2_3_5_1_2_1 .
+:Material_2_3_5_1_2_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_3_5_1_2 ;
+  x3do:diffuseColor ( 0.2 0.2 1 ) .
+:Transform_2_3_5_2 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_3_5 ;
+  x3do:hasChildren :Shape_2_3_5_2_1 ;
+  x3do:translation ( -4 0 0 ) .
+:Shape_2_3_5_2_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_3_5_2 ;
+  x3do:hasGeometry :IndexedLineSet_2_3_5_2_1_1 ;
+  x3do:hasAppearance :Appearance_2_3_5_2_1_2 .
+:IndexedLineSet_2_3_5_2_1_1 a owl:NamedIndividual, x3do:IndexedLineSet ;
+  x3do:hasParent :Shape_2_3_5_2_1 ;
+  x3do:hasCoord :Segment-USE-4 ;
+  x3do:coordIndex ( 0 1 -1 ) .
+:Segment-USE-4 a owl:NamedIndividual, x3do:Coordinate ;
+  x3do:hasParent :IndexedLineSet_2_3_5_2_1_1 ;
+  owl:sameAs :Segment . # DEF matching this USE
+:Appearance_2_3_5_2_1_2 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_3_5_2_1 ;
+  x3do:hasMaterial :Material_2_3_5_2_1_2_1 ;
+  x3do:hasLineProperties :LineProperties_2_3_5_2_1_2_2 .
+:Material_2_3_5_2_1_2_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_3_5_2_1_2 ;
+  x3do:emissiveColor ( 0 0 1 ) .
+:LineProperties_2_3_5_2_1_2_2 a owl:NamedIndividual, x3do:LineProperties ;
+  x3do:hasParent :Appearance_2_3_5_2_1_2 ;
+  x3do:linetype 5 .
+:Transform_2_3_6 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_3 ;
+  x3do:hasChildren :Shape_2_3_6_1, :Transform_2_3_6_2 ;
+  x3do:translation ( -4 9 0 ) .
+:Shape_2_3_6_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_3_6 ;
+  x3do:hasGeometry :Text_2_3_6_1_1 ;
+  x3do:hasAppearance :Appearance_2_3_6_1_2 .
+:Text_2_3_6_1_1 a owl:NamedIndividual, x3do:Text ;
+  x3do:hasParent :Shape_2_3_6_1 ;
+  x3do:hasFontStyle :LeftJustify-USE-5 ;
+  x3do:string '"6 (single arrow)"' .
+:LeftJustify-USE-5 a owl:NamedIndividual, x3do:FontStyle ;
+  x3do:hasParent :Text_2_3_6_1_1 ;
+  owl:sameAs :LeftJustify . # DEF matching this USE
+:Appearance_2_3_6_1_2 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_3_6_1 ;
+  x3do:hasMaterial :Material_2_3_6_1_2_1 .
+:Material_2_3_6_1_2_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_3_6_1_2 ;
+  x3do:diffuseColor ( 1 0 1 ) .
+:Transform_2_3_6_2 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_3_6 ;
+  x3do:hasChildren :Shape_2_3_6_2_1 ;
+  x3do:translation ( -4 0 0 ) .
+:Shape_2_3_6_2_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_3_6_2 ;
+  x3do:hasGeometry :IndexedLineSet_2_3_6_2_1_1 ;
+  x3do:hasAppearance :Appearance_2_3_6_2_1_2 .
+:IndexedLineSet_2_3_6_2_1_1 a owl:NamedIndividual, x3do:IndexedLineSet ;
+  x3do:hasParent :Shape_2_3_6_2_1 ;
+  x3do:hasCoord :Segment-USE-5 ;
+  x3do:coordIndex ( 0 1 -1 ) .
+:Segment-USE-5 a owl:NamedIndividual, x3do:Coordinate ;
+  x3do:hasParent :IndexedLineSet_2_3_6_2_1_1 ;
+  owl:sameAs :Segment . # DEF matching this USE
+:Appearance_2_3_6_2_1_2 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_3_6_2_1 ;
+  x3do:hasMaterial :Material_2_3_6_2_1_2_1 ;
+  x3do:hasLineProperties :LineProperties_2_3_6_2_1_2_2 .
+:Material_2_3_6_2_1_2_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_3_6_2_1_2 ;
+  x3do:emissiveColor ( 1 0 1 ) .
+:LineProperties_2_3_6_2_1_2_2 a owl:NamedIndividual, x3do:LineProperties ;
+  x3do:hasParent :Appearance_2_3_6_2_1_2 ;
+  x3do:linetype 6 .
+:Transform_2_3_7 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_3 ;
+  x3do:hasChildren :Shape_2_3_7_1, :Transform_2_3_7_2 ;
+  x3do:translation ( -4 8 0 ) .
+:Shape_2_3_7_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_3_7 ;
+  x3do:hasGeometry :Text_2_3_7_1_1 ;
+  x3do:hasAppearance :Appearance_2_3_7_1_2 .
+:Text_2_3_7_1_1 a owl:NamedIndividual, x3do:Text ;
+  x3do:hasParent :Shape_2_3_7_1 ;
+  x3do:hasFontStyle :LeftJustify-USE-6 ;
+  x3do:string '"7 (single dot)"' .
+:LeftJustify-USE-6 a owl:NamedIndividual, x3do:FontStyle ;
+  x3do:hasParent :Text_2_3_7_1_1 ;
+  owl:sameAs :LeftJustify . # DEF matching this USE
+:Appearance_2_3_7_1_2 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_3_7_1 ;
+  x3do:hasMaterial :Material_2_3_7_1_2_1 .
+:Material_2_3_7_1_2_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_3_7_1_2 ;
+  x3do:diffuseColor ( 0 1 1 ) .
+:Transform_2_3_7_2 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_3_7 ;
+  x3do:hasChildren :Shape_2_3_7_2_1 ;
+  x3do:translation ( -4 0 0 ) .
+:Shape_2_3_7_2_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_3_7_2 ;
+  x3do:hasGeometry :IndexedLineSet_2_3_7_2_1_1 ;
+  x3do:hasAppearance :Appearance_2_3_7_2_1_2 .
+:IndexedLineSet_2_3_7_2_1_1 a owl:NamedIndividual, x3do:IndexedLineSet ;
+  x3do:hasParent :Shape_2_3_7_2_1 ;
+  x3do:hasCoord :Segment-USE-6 ;
+  x3do:coordIndex ( 0 1 -1 ) .
+:Segment-USE-6 a owl:NamedIndividual, x3do:Coordinate ;
+  x3do:hasParent :IndexedLineSet_2_3_7_2_1_1 ;
+  owl:sameAs :Segment . # DEF matching this USE
+:Appearance_2_3_7_2_1_2 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_3_7_2_1 ;
+  x3do:hasMaterial :Material_2_3_7_2_1_2_1 ;
+  x3do:hasLineProperties :LineProperties_2_3_7_2_1_2_2 .
+:Material_2_3_7_2_1_2_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_3_7_2_1_2 ;
+  x3do:emissiveColor ( 0 1 1 ) .
+:LineProperties_2_3_7_2_1_2_2 a owl:NamedIndividual, x3do:LineProperties ;
+  x3do:hasParent :Appearance_2_3_7_2_1_2 ;
+  x3do:linetype 7 .
+:Transform_2_3_8 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_3 ;
+  x3do:hasChildren :Shape_2_3_8_1, :Transform_2_3_8_2 ;
+  x3do:translation ( -4 7 0 ) .
+:Shape_2_3_8_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_3_8 ;
+  x3do:hasGeometry :Text_2_3_8_1_1 ;
+  x3do:hasAppearance :Appearance_2_3_8_1_2 .
+:Text_2_3_8_1_1 a owl:NamedIndividual, x3do:Text ;
+  x3do:hasParent :Shape_2_3_8_1 ;
+  x3do:hasFontStyle :LeftJustify-USE-7 ;
+  x3do:string '"8 (double arrow)"' .
+:LeftJustify-USE-7 a owl:NamedIndividual, x3do:FontStyle ;
+  x3do:hasParent :Text_2_3_8_1_1 ;
+  owl:sameAs :LeftJustify . # DEF matching this USE
+:Appearance_2_3_8_1_2 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_3_8_1 ;
+  x3do:hasMaterial :Material_2_3_8_1_2_1 .
+:Material_2_3_8_1_2_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_3_8_1_2 ;
+  x3do:diffuseColor ( 1 1 1 ) .
+:Transform_2_3_8_2 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_3_8 ;
+  x3do:hasChildren :Shape_2_3_8_2_1 ;
+  x3do:translation ( -4 0 0 ) .
+:Shape_2_3_8_2_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_3_8_2 ;
+  x3do:hasGeometry :IndexedLineSet_2_3_8_2_1_1 ;
+  x3do:hasAppearance :Appearance_2_3_8_2_1_2 .
+:IndexedLineSet_2_3_8_2_1_1 a owl:NamedIndividual, x3do:IndexedLineSet ;
+  x3do:hasParent :Shape_2_3_8_2_1 ;
+  x3do:hasCoord :Segment-USE-7 ;
+  x3do:coordIndex ( 0 1 -1 ) .
+:Segment-USE-7 a owl:NamedIndividual, x3do:Coordinate ;
+  x3do:hasParent :IndexedLineSet_2_3_8_2_1_1 ;
+  owl:sameAs :Segment . # DEF matching this USE
+:Appearance_2_3_8_2_1_2 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_3_8_2_1 ;
+  x3do:hasMaterial :Material_2_3_8_2_1_2_1 ;
+  x3do:hasLineProperties :LineProperties_2_3_8_2_1_2_2 .
+:Material_2_3_8_2_1_2_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_3_8_2_1_2 .
+:LineProperties_2_3_8_2_1_2_2 a owl:NamedIndividual, x3do:LineProperties ;
+  x3do:hasParent :Appearance_2_3_8_2_1_2 ;
+  x3do:linetype 8 .
+:Transform_2_3_9 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_3 ;
+  x3do:hasChildren :Shape_2_3_9_1 ;
+  x3do:translation ( -4 6 0 ) .
+:Shape_2_3_9_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_3_9 ;
+  x3do:hasGeometry :Text_2_3_9_1_1 ;
+  x3do:hasAppearance :Appearance_2_3_9_1_2 .
+:Text_2_3_9_1_1 a owl:NamedIndividual, x3do:Text ;
+  x3do:hasParent :Shape_2_3_9_1 ;
+  x3do:hasFontStyle :LeftJustify-USE-8 ;
+  x3do:string '"9 [no entry]"' .
+:LeftJustify-USE-8 a owl:NamedIndividual, x3do:FontStyle ;
+  x3do:hasParent :Text_2_3_9_1_1 ;
+  owl:sameAs :LeftJustify . # DEF matching this USE
+:Appearance_2_3_9_1_2 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_3_9_1 ;
+  x3do:hasMaterial :Material_2_3_9_1_2_1 .
+:Material_2_3_9_1_2_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_3_9_1_2 ;
+  x3do:diffuseColor ( 0.2 0.2 0.2 ) .
+:Transform_2_3_10 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_3 ;
+  x3do:hasChildren :Shape_2_3_10_1, :Transform_2_3_10_2 ;
+  x3do:translation ( -4 5 0 ) .
+:Shape_2_3_10_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_3_10 ;
+  x3do:hasGeometry :Text_2_3_10_1_1 ;
+  x3do:hasAppearance :Appearance_2_3_10_1_2 .
+:Text_2_3_10_1_1 a owl:NamedIndividual, x3do:Text ;
+  x3do:hasParent :Shape_2_3_10_1 ;
+  x3do:hasFontStyle :LeftJustify-USE-9 ;
+  x3do:string '"10 (chain line)"' .
+:LeftJustify-USE-9 a owl:NamedIndividual, x3do:FontStyle ;
+  x3do:hasParent :Text_2_3_10_1_1 ;
+  owl:sameAs :LeftJustify . # DEF matching this USE
+:Appearance_2_3_10_1_2 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_3_10_1 ;
+  x3do:hasMaterial :Material_2_3_10_1_2_1 .
+:Material_2_3_10_1_2_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_3_10_1_2 ;
+  x3do:diffuseColor ( 0.5 0.5 0.5 ) .
+:Transform_2_3_10_2 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_3_10 ;
+  x3do:hasChildren :Shape_2_3_10_2_1 ;
+  x3do:translation ( -4 0 0 ) .
+:Shape_2_3_10_2_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_3_10_2 ;
+  x3do:hasGeometry :IndexedLineSet_2_3_10_2_1_1 ;
+  x3do:hasAppearance :Appearance_2_3_10_2_1_2 .
+:IndexedLineSet_2_3_10_2_1_1 a owl:NamedIndividual, x3do:IndexedLineSet ;
+  x3do:hasParent :Shape_2_3_10_2_1 ;
+  x3do:hasCoord :Segment-USE-8 ;
+  x3do:coordIndex ( 0 1 -1 ) .
+:Segment-USE-8 a owl:NamedIndividual, x3do:Coordinate ;
+  x3do:hasParent :IndexedLineSet_2_3_10_2_1_1 ;
+  owl:sameAs :Segment . # DEF matching this USE
+:Appearance_2_3_10_2_1_2 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_3_10_2_1 ;
+  x3do:hasMaterial :Material_2_3_10_2_1_2_1 ;
+  x3do:hasLineProperties :LineProperties_2_3_10_2_1_2_2 .
+:Material_2_3_10_2_1_2_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_3_10_2_1_2 ;
+  x3do:emissiveColor ( 1 0 0 ) .
+:LineProperties_2_3_10_2_1_2_2 a owl:NamedIndividual, x3do:LineProperties ;
+  x3do:hasParent :Appearance_2_3_10_2_1_2 ;
+  x3do:linetype 10 .
+:Transform_2_3_11 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_3 ;
+  x3do:hasChildren :Shape_2_3_11_1, :Transform_2_3_11_2 ;
+  x3do:translation ( -4 4 0 ) .
+:Shape_2_3_11_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_3_11 ;
+  x3do:hasGeometry :Text_2_3_11_1_1 ;
+  x3do:hasAppearance :Appearance_2_3_11_1_2 .
+:Text_2_3_11_1_1 a owl:NamedIndividual, x3do:Text ;
+  x3do:hasParent :Shape_2_3_11_1 ;
+  x3do:hasFontStyle :LeftJustify-USE-10 ;
+  x3do:string '"11 (center line)"' .
+:LeftJustify-USE-10 a owl:NamedIndividual, x3do:FontStyle ;
+  x3do:hasParent :Text_2_3_11_1_1 ;
+  owl:sameAs :LeftJustify . # DEF matching this USE
+:Appearance_2_3_11_1_2 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_3_11_1 ;
+  x3do:hasMaterial :Material_2_3_11_1_2_1 .
+:Material_2_3_11_1_2_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_3_11_1_2 ;
+  x3do:diffuseColor ( 0.8 0.2 0.2 ) .
+:Transform_2_3_11_2 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_3_11 ;
+  x3do:hasChildren :Shape_2_3_11_2_1 ;
+  x3do:translation ( -4 0 0 ) .
+:Shape_2_3_11_2_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_3_11_2 ;
+  x3do:hasGeometry :IndexedLineSet_2_3_11_2_1_1 ;
+  x3do:hasAppearance :Appearance_2_3_11_2_1_2 .
+:IndexedLineSet_2_3_11_2_1_1 a owl:NamedIndividual, x3do:IndexedLineSet ;
+  x3do:hasParent :Shape_2_3_11_2_1 ;
+  x3do:hasCoord :Segment-USE-9 ;
+  x3do:coordIndex ( 0 1 -1 ) .
+:Segment-USE-9 a owl:NamedIndividual, x3do:Coordinate ;
+  x3do:hasParent :IndexedLineSet_2_3_11_2_1_1 ;
+  owl:sameAs :Segment . # DEF matching this USE
+:Appearance_2_3_11_2_1_2 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_3_11_2_1 ;
+  x3do:hasMaterial :Material_2_3_11_2_1_2_1 ;
+  x3do:hasLineProperties :LineProperties_2_3_11_2_1_2_2 .
+:Material_2_3_11_2_1_2_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_3_11_2_1_2 ;
+  x3do:emissiveColor ( 0.8 0.2 0.2 ) .
+:LineProperties_2_3_11_2_1_2_2 a owl:NamedIndividual, x3do:LineProperties ;
+  x3do:hasParent :Appearance_2_3_11_2_1_2 ;
+  x3do:linetype 11 .
+:Transform_2_3_12 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_3 ;
+  x3do:hasChildren :Shape_2_3_12_1, :Transform_2_3_12_2 ;
+  x3do:translation ( -4 3 0 ) .
+:Shape_2_3_12_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_3_12 ;
+  x3do:hasGeometry :Text_2_3_12_1_1 ;
+  x3do:hasAppearance :Appearance_2_3_12_1_2 .
+:Text_2_3_12_1_1 a owl:NamedIndividual, x3do:Text ;
+  x3do:hasParent :Shape_2_3_12_1 ;
+  x3do:hasFontStyle :LeftJustify-USE-11 ;
+  x3do:string '"12 (hidden line)"' .
+:LeftJustify-USE-11 a owl:NamedIndividual, x3do:FontStyle ;
+  x3do:hasParent :Text_2_3_12_1_1 ;
+  owl:sameAs :LeftJustify . # DEF matching this USE
+:Appearance_2_3_12_1_2 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_3_12_1 ;
+  x3do:hasMaterial :Material_2_3_12_1_2_1 .
+:Material_2_3_12_1_2_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_3_12_1_2 ;
+  x3do:diffuseColor ( 0.5 0.5 0.1 ) .
+:Transform_2_3_12_2 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_3_12 ;
+  x3do:hasChildren :Shape_2_3_12_2_1 ;
+  x3do:translation ( -4 0 0 ) .
+:Shape_2_3_12_2_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_3_12_2 ;
+  x3do:hasGeometry :IndexedLineSet_2_3_12_2_1_1 ;
+  x3do:hasAppearance :Appearance_2_3_12_2_1_2 .
+:IndexedLineSet_2_3_12_2_1_1 a owl:NamedIndividual, x3do:IndexedLineSet ;
+  x3do:hasParent :Shape_2_3_12_2_1 ;
+  x3do:hasCoord :Segment-USE-10 ;
+  x3do:coordIndex ( 0 1 -1 ) .
+:Segment-USE-10 a owl:NamedIndividual, x3do:Coordinate ;
+  x3do:hasParent :IndexedLineSet_2_3_12_2_1_1 ;
+  owl:sameAs :Segment . # DEF matching this USE
+:Appearance_2_3_12_2_1_2 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_3_12_2_1 ;
+  x3do:hasMaterial :Material_2_3_12_2_1_2_1 ;
+  x3do:hasLineProperties :LineProperties_2_3_12_2_1_2_2 .
+:Material_2_3_12_2_1_2_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_3_12_2_1_2 ;
+  x3do:emissiveColor ( 0.5 0.5 0.1 ) .
+:LineProperties_2_3_12_2_1_2_2 a owl:NamedIndividual, x3do:LineProperties ;
+  x3do:hasParent :Appearance_2_3_12_2_1_2 ;
+  x3do:linetype 12 .
+:Transform_2_3_13 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_3 ;
+  x3do:hasChildren :Shape_2_3_13_1, :Transform_2_3_13_2 ;
+  x3do:translation ( -4 2 0 ) .
+:Shape_2_3_13_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_3_13 ;
+  x3do:hasGeometry :Text_2_3_13_1_1 ;
+  x3do:hasAppearance :Appearance_2_3_13_1_2 .
+:Text_2_3_13_1_1 a owl:NamedIndividual, x3do:Text ;
+  x3do:hasParent :Shape_2_3_13_1 ;
+  x3do:hasFontStyle :LeftJustify-USE-12 ;
+  x3do:string '"13 (phantom line)"' .
+:LeftJustify-USE-12 a owl:NamedIndividual, x3do:FontStyle ;
+  x3do:hasParent :Text_2_3_13_1_1 ;
+  owl:sameAs :LeftJustify . # DEF matching this USE
+:Appearance_2_3_13_1_2 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_3_13_1 ;
+  x3do:hasMaterial :Material_2_3_13_1_2_1 .
+:Material_2_3_13_1_2_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_3_13_1_2 ;
+  x3do:diffuseColor ( 0.8 0.8 0.2 ) .
+:Transform_2_3_13_2 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_3_13 ;
+  x3do:hasChildren :Shape_2_3_13_2_1 ;
+  x3do:translation ( -4 0 0 ) .
+:Shape_2_3_13_2_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_3_13_2 ;
+  x3do:hasGeometry :IndexedLineSet_2_3_13_2_1_1 ;
+  x3do:hasAppearance :Appearance_2_3_13_2_1_2 .
+:IndexedLineSet_2_3_13_2_1_1 a owl:NamedIndividual, x3do:IndexedLineSet ;
+  x3do:hasParent :Shape_2_3_13_2_1 ;
+  x3do:hasCoord :Segment-USE-11 ;
+  x3do:coordIndex ( 0 1 -1 ) .
+:Segment-USE-11 a owl:NamedIndividual, x3do:Coordinate ;
+  x3do:hasParent :IndexedLineSet_2_3_13_2_1_1 ;
+  owl:sameAs :Segment . # DEF matching this USE
+:Appearance_2_3_13_2_1_2 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_3_13_2_1 ;
+  x3do:hasMaterial :Material_2_3_13_2_1_2_1 ;
+  x3do:hasLineProperties :LineProperties_2_3_13_2_1_2_2 .
+:Material_2_3_13_2_1_2_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_3_13_2_1_2 ;
+  x3do:emissiveColor ( 0.8 0.8 0.2 ) .
+:LineProperties_2_3_13_2_1_2_2 a owl:NamedIndividual, x3do:LineProperties ;
+  x3do:hasParent :Appearance_2_3_13_2_1_2 ;
+  x3do:linetype 13 .
+:Transform_2_3_14 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_3 ;
+  x3do:hasChildren :Shape_2_3_14_1, :Transform_2_3_14_2 ;
+  x3do:translation ( -4 1 0 ) .
+:Shape_2_3_14_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_3_14 ;
+  x3do:hasGeometry :Text_2_3_14_1_1 ;
+  x3do:hasAppearance :Appearance_2_3_14_1_2 .
+:Text_2_3_14_1_1 a owl:NamedIndividual, x3do:Text ;
+  x3do:hasParent :Shape_2_3_14_1 ;
+  x3do:hasFontStyle :LeftJustify-USE-13 ;
+  x3do:string '"14 (break line 1)"' .
+:LeftJustify-USE-13 a owl:NamedIndividual, x3do:FontStyle ;
+  x3do:hasParent :Text_2_3_14_1_1 ;
+  owl:sameAs :LeftJustify . # DEF matching this USE
+:Appearance_2_3_14_1_2 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_3_14_1 ;
+  x3do:hasMaterial :Material_2_3_14_1_2_1 .
+:Material_2_3_14_1_2_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_3_14_1_2 ;
+  x3do:diffuseColor ( 0.2 0.8 0.2 ) .
+:Transform_2_3_14_2 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_3_14 ;
+  x3do:hasChildren :Shape_2_3_14_2_1 ;
+  x3do:translation ( -4 0 0 ) .
+:Shape_2_3_14_2_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_3_14_2 ;
+  x3do:hasGeometry :IndexedLineSet_2_3_14_2_1_1 ;
+  x3do:hasAppearance :Appearance_2_3_14_2_1_2 .
+:IndexedLineSet_2_3_14_2_1_1 a owl:NamedIndividual, x3do:IndexedLineSet ;
+  x3do:hasParent :Shape_2_3_14_2_1 ;
+  x3do:hasCoord :Segment-USE-12 ;
+  x3do:coordIndex ( 0 1 -1 ) .
+:Segment-USE-12 a owl:NamedIndividual, x3do:Coordinate ;
+  x3do:hasParent :IndexedLineSet_2_3_14_2_1_1 ;
+  owl:sameAs :Segment . # DEF matching this USE
+:Appearance_2_3_14_2_1_2 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_3_14_2_1 ;
+  x3do:hasMaterial :Material_2_3_14_2_1_2_1 ;
+  x3do:hasLineProperties :LineProperties_2_3_14_2_1_2_2 .
+:Material_2_3_14_2_1_2_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_3_14_2_1_2 ;
+  x3do:emissiveColor ( 0.2 0.8 0.2 ) .
+:LineProperties_2_3_14_2_1_2_2 a owl:NamedIndividual, x3do:LineProperties ;
+  x3do:hasParent :Appearance_2_3_14_2_1_2 ;
+  x3do:linetype 14 .
+:Transform_2_3_15 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_3 ;
+  x3do:hasChildren :Shape_2_3_15_1, :Transform_2_3_15_2 ;
+  x3do:translation ( -4 0 0 ) .
+:Shape_2_3_15_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_3_15 ;
+  x3do:hasGeometry :Text_2_3_15_1_1 ;
+  x3do:hasAppearance :Appearance_2_3_15_1_2 .
+:Text_2_3_15_1_1 a owl:NamedIndividual, x3do:Text ;
+  x3do:hasParent :Shape_2_3_15_1 ;
+  x3do:hasFontStyle :LeftJustify-USE-14 ;
+  x3do:string '"15 (break line 2)"' .
+:LeftJustify-USE-14 a owl:NamedIndividual, x3do:FontStyle ;
+  x3do:hasParent :Text_2_3_15_1_1 ;
+  owl:sameAs :LeftJustify . # DEF matching this USE
+:Appearance_2_3_15_1_2 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_3_15_1 ;
+  x3do:hasMaterial :Material_2_3_15_1_2_1 .
+:Material_2_3_15_1_2_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_3_15_1_2 ;
+  x3do:diffuseColor ( 0.2 0.2 0.8 ) .
+:Transform_2_3_15_2 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_3_15 ;
+  x3do:hasChildren :Shape_2_3_15_2_1 ;
+  x3do:translation ( -4 0 0 ) .
+:Shape_2_3_15_2_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_3_15_2 ;
+  x3do:hasGeometry :IndexedLineSet_2_3_15_2_1_1 ;
+  x3do:hasAppearance :Appearance_2_3_15_2_1_2 .
+:IndexedLineSet_2_3_15_2_1_1 a owl:NamedIndividual, x3do:IndexedLineSet ;
+  x3do:hasParent :Shape_2_3_15_2_1 ;
+  x3do:hasCoord :Segment-USE-13 ;
+  x3do:coordIndex ( 0 1 -1 ) .
+:Segment-USE-13 a owl:NamedIndividual, x3do:Coordinate ;
+  x3do:hasParent :IndexedLineSet_2_3_15_2_1_1 ;
+  owl:sameAs :Segment . # DEF matching this USE
+:Appearance_2_3_15_2_1_2 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_3_15_2_1 ;
+  x3do:hasMaterial :Material_2_3_15_2_1_2_1 ;
+  x3do:hasLineProperties :LineProperties_2_3_15_2_1_2_2 .
+:Material_2_3_15_2_1_2_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_3_15_2_1_2 ;
+  x3do:emissiveColor ( 0.2 0.2 0.8 ) .
+:LineProperties_2_3_15_2_1_2_2 a owl:NamedIndividual, x3do:LineProperties ;
+  x3do:hasParent :Appearance_2_3_15_2_1_2 ;
+  x3do:linetype 15 .
+:Transform_2_3_16 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_3 ;
+  x3do:hasChildren :Shape_2_3_16_1, :Transform_2_3_16_2 ;
+  x3do:translation ( -4 -1 0 ) .
+:Shape_2_3_16_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_3_16 ;
+  x3do:hasGeometry :Text_2_3_16_1_1 ;
+  x3do:hasAppearance :Appearance_2_3_16_1_2 .
+:Text_2_3_16_1_1 a owl:NamedIndividual, x3do:Text ;
+  x3do:hasParent :Shape_2_3_16_1 ;
+  x3do:hasFontStyle :LeftJustify-USE-15 ;
+  x3do:string '"16 (user-specified dash pattern)"' .
+:LeftJustify-USE-15 a owl:NamedIndividual, x3do:FontStyle ;
+  x3do:hasParent :Text_2_3_16_1_1 ;
+  owl:sameAs :LeftJustify . # DEF matching this USE
+:Appearance_2_3_16_1_2 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_3_16_1 ;
+  x3do:hasMaterial :Material_2_3_16_1_2_1 .
+:Material_2_3_16_1_2_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_3_16_1_2 ;
+  x3do:diffuseColor ( 0.7 0.7 0.7 ) .
+:Transform_2_3_16_2 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_3_16 ;
+  x3do:hasChildren :Shape_2_3_16_2_1 ;
+  x3do:translation ( -4 0 0 ) .
+:Shape_2_3_16_2_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_3_16_2 ;
+  x3do:hasGeometry :IndexedLineSet_2_3_16_2_1_1 ;
+  x3do:hasAppearance :Appearance_2_3_16_2_1_2 .
+:IndexedLineSet_2_3_16_2_1_1 a owl:NamedIndividual, x3do:IndexedLineSet ;
+  x3do:hasParent :Shape_2_3_16_2_1 ;
+  x3do:hasCoord :Segment-USE-14 ;
+  x3do:coordIndex ( 0 1 -1 ) .
+:Segment-USE-14 a owl:NamedIndividual, x3do:Coordinate ;
+  x3do:hasParent :IndexedLineSet_2_3_16_2_1_1 ;
+  owl:sameAs :Segment . # DEF matching this USE
+:Appearance_2_3_16_2_1_2 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_3_16_2_1 ;
+  x3do:hasMaterial :Material_2_3_16_2_1_2_1 ;
+  x3do:hasLineProperties :LineProperties_2_3_16_2_1_2_2 .
+:Material_2_3_16_2_1_2_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_3_16_2_1_2 ;
+  x3do:emissiveColor ( 0.7 0.7 0.7 ) .
+:LineProperties_2_3_16_2_1_2_2 a owl:NamedIndividual, x3do:LineProperties ;
+  x3do:hasParent :Appearance_2_3_16_2_1_2 ;
+  x3do:linetype 16 .

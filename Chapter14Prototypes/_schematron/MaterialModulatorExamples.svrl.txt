@@ -1,0 +1,1 @@
+<meta name='hint' content='Learning suggestion for authors: try changing the modulation script so that it goes from [0 ... 1] and then [1 ... 0] alternating, rather than abruptly shifting from 1 immediately back to 0.'/>[/X3D/head/meta[3], diagnostic]

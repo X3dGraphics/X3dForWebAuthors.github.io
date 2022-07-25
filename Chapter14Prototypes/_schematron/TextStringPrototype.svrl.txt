@@ -1,0 +1,3 @@
+<ProtoInstance name='TextString' DEF='MyTextStringInstance'> <fieldValue name='string' value='"This example TextString node" "creates a prototype instance" "that combines functionality" "of Text and FontStyle nodes"'/> has matching ProtoDeclare but no corresponding match for this fieldValue [/X3D/Scene/ProtoInstance/fieldValue[1], hint]
+<ProtoInstance name='TextString' DEF='MyTextStringInstance'> <fieldValue name='size' value='0.8'/> has matching ProtoDeclare but no corresponding match for this fieldValue [/X3D/Scene/ProtoInstance/fieldValue[2], hint]
+<ProtoInstance name='TextString' DEF='MyTextStringInstance'> <fieldValue name='style' value='BOLD'/> has matching ProtoDeclare but no corresponding match for this fieldValue [/X3D/Scene/ProtoInstance/fieldValue[3], hint]

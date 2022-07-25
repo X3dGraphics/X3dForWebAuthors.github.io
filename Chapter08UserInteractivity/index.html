@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <link rel="shortcut icon" href="../images/X3DtextIcon16.png" title="X3D"/>
+      <title>X3D4WA, X3D for Web Authors Examples Archive, Chapter 08 User Interactivity</title>
+      <meta http-equiv="X-UA-Compatible" content="chrome=1,IE=edge"/>
+      <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+      <meta name="author" content="Don Brutzman"/>
+      <meta name="generator"
+             content="https://www.web3d.org/x3d/tools/CreateContentCatalog/CreateContentCatalogPages.xslt"/>
+      <meta name="modified" content="2022-07-03-07:00"/>
+      <meta name="keyword"
+             content="X3D, X3DV, VRML, VRML97, Extensible 3D, Virtual Reality Modeling Language"/>
+   </head>
+   <body>
+      <table
+              align="center"
+              summary="navigation"
+              border="1"
+              cellpadding="2"
+              width="95%">
+         <tr>
+            <td align="center" width="17%">
+               <a href="../index.html" target="_top">
+                  <img src="../images/ToC.png"
+                        title="Table of Contents"
+                        alt="Table of Contents"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter07EventAnimationInterpolation/index.html" target="_top">
+                  <img src="../images/PreviousChapter.png"
+                        title="Previous Directory Summary"
+                        alt="Previous Directory Summary"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="viewpointSlideshow.html" target="_top">
+                  <img src="../images/MootoolsSlideshowLogo.jpg"
+                        title="Directory Viewpoint Slideshow"
+                        alt="Directory Viewpoint Slideshow"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="15%">
+               <a href="../javadoc/index.html?X3dForWebAuthors/Chapter08UserInteractivity/package-summary.html"
+                   title="Javadoc for translated java source"
+                   alt="Javadoc for translated java source"
+                   target="_blank">
+                  <img src="../images/Java-32.png"
+                        title="Javadoc for translated java source"
+                        alt="Javadoc for translated java source"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter09EventUtilitiesScripting/index.html" target="_top">
+                  <img src="../images/NextChapter.png"
+                        title="Next Directory Summary"
+                        alt="Next Directory Summary"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="15%">
+               <a href="../../X3dResources.html" target="helpPage">
+                  <img src="../images/Help.png"
+                        title="X3D Resources"
+                        alt="X3D Resources"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+         </tr>
+      </table>
+      <h2 align="center">
+         <i> X3D Example Archives: </i>X3D4WA, X3D for Web Authors, Chapter 08 User Interactivity</h2>
+      <table align="center"
+              width="85%"
+              summary=""
+              border="0"
+              cellpadding="0">
+         <tr align="center">
+            <td><!--ChapterPackageDescription--><!--Contents of file ../../content/examples/X3dForWebAuthors/Chapter08UserInteractivity/package-catalog.html-->
+    
+    <table bgColor="#ffffff" border="0" width="100%">
+        <tbody>
+            <tr>
+                
+                <td align="left" cellpadding="10">
+                    
+                    <a href="index.html"><img alt="User Interactivity Sensor Nodes" title="User Interactivity Sensor Nodes" border="0" hspace="10" src="UserInteractivitySensorNodesModified.png" width="220" height="137" align="left"/></a>
+                </td>
+            
+                <td>
+    <p>
+				A variety of sensors detect user interactivity with a scene, allowing authors to
+				define animation responses in a device-independent, display-independent way.
+    </p>
+    
+
+    <p>
+                 User interactivity is accomplished by sensing user actions, which create events that are sent via 
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#ROUTE" target="X3dTooltips" title="X3D Tooltip">ROUTE</a>
+                 connections.
+    </p>
+    
+
+    <p>
+                 Sensor output values are produced by 
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#CylinderSensor" target="X3dTooltips" title="X3D Tooltip">CylinderSensor</a>,
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#KeySensor" target="X3dTooltips" title="X3D Tooltip">KeySensor</a>,
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#PlaneSensor" target="X3dTooltips" title="X3D Tooltip">PlaneSensor</a></a>,
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#StringSensor" target="X3dTooltips" title="X3D Tooltip">StringSensor</a>
+                 and 
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#TouchSensor" target="X3dTooltips" title="X3D Tooltip">TouchSensor</a>
+                 nodes.
+    </p>
+    
+
+    <p>
+                 The supporting
+                 <a href="http://x3dgraphics.com/slidesets/X3dForWebAuthors/Chapter08UserInteractivity.pdf" target="X3dChapterSlideset">Chapter&nbsp;8 slideset</a>
+                 and course videos
+                (<a href="https://www.movesinstitute.org/Video/Courses/X3dForWebAuthors/X3dForWebAuthorsVideo.html#8" target="X3dChapterVideos">NPS</a>,
+                 <a href="https://www.youtube.com/playlist?list=PLuSIsM-86sinqMN552yQfjaV_DKI53D7i" target="X3dChapterYouTubeVideos">YouTube</a>)
+                 for <i>X3D for Web Authors</i> are available online via
+                 <a href="http://X3dGraphics.com" target="_blank">X3dGraphics.com</a>.
+    </p>
+                </td>
+
+            </tr>
+        </tbody>
+    </table>
+
+    
+
+
+  </td>
+         </tr>
+      </table>
+      <table align="center"
+              width="85%"
+              summary=""
+              border="1"
+              cellpadding="6">
+         <tr align="center">
+            <th colspan="2" width="25%" align="center">&nbsp;&nbsp;8 X3D Models</th>
+            <th width="75%" align="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;X3D Model Descriptions</th>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="CylinderSensorPumpHouse"/>
+               <a href="CylinderSensorPumpHouseIndex.html">
+                  <img src="_thumbnails/CylinderSensorPumpHouseThumbnail.png"
+                        height="48"
+                        alt="CylinderSensorPumpHouse"
+                        title="CylinderSensorPumpHouse"/>
+               </a>
+            </td>
+            <td>
+               <a href="CylinderSensorPumpHouseIndex.html">Cylinder Sensor Pump House</a>
+            </td>
+            <td>A CylinderSensor changes the viewing position of a positive-displacement cylinder pump house.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Doors"/>
+               <a href="DoorsIndex.html">
+                  <img src="_thumbnails/DoorsThumbnail.png"
+                        height="48"
+                        alt="Doors"
+                        title="Doors"/>
+               </a>
+            </td>
+            <td>
+               <a href="DoorsIndex.html">Doors</a>
+            </td>
+            <td>Two doors activated by different fields from a TouchSensor node.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="KeySensorLefty"/>
+               <a href="KeySensorLeftyIndex.html">
+                  <img src="_thumbnails/KeySensorLeftyThumbnail.png"
+                        height="48"
+                        alt="KeySensorLefty"
+                        title="KeySensorLefty"/>
+               </a>
+            </td>
+            <td>
+               <a href="KeySensorLeftyIndex.html">Key Sensor Lefty</a>
+            </td>
+            <td>A KeySensor is used to change relative Viewpoints looking at the shark Lefty, while a SphereSensor can also rotate Lefty in place.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="PlaneSensorPumpHouse"/>
+               <a href="PlaneSensorPumpHouseIndex.html">
+                  <img src="_thumbnails/PlaneSensorPumpHouseThumbnail.png"
+                        height="48"
+                        alt="PlaneSensorPumpHouse"
+                        title="PlaneSensorPumpHouse"/>
+               </a>
+            </td>
+            <td>
+               <a href="PlaneSensorPumpHouseIndex.html">Plane Sensor Pump House</a>
+            </td>
+            <td>PlaneSensor on the red handle controls the overall movement of a positive-displacement cylinder pump.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="SphereSensorLefty"/>
+               <a href="SphereSensorLeftyIndex.html">
+                  <img src="_thumbnails/SphereSensorLeftyThumbnail.png"
+                        height="48"
+                        alt="SphereSensorLefty"
+                        title="SphereSensorLefty"/>
+               </a>
+            </td>
+            <td>
+               <a href="SphereSensorLeftyIndex.html">Sphere Sensor Lefty</a>
+            </td>
+            <td>Using a separate SphereSensor, Lefty shark can be oriented in any direction by remote control. Navigation locked so that no other scene rotation is possible.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="StringSensorExample"/>
+               <a href="StringSensorExampleIndex.html">
+                  <img src="_thumbnails/StringSensorExampleThumbnail.png"
+                        height="48"
+                        alt="StringSensorExample"
+                        title="StringSensorExample"/>
+               </a>
+            </td>
+            <td>
+               <a href="StringSensorExampleIndex.html">String Sensor Example</a>
+            </td>
+            <td>A StringSensor example that displays typed text in the world.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="TouchSensorPumpHouse"/>
+               <a href="TouchSensorPumpHouseIndex.html">
+                  <img src="_thumbnails/TouchSensorPumpHouseThumbnail.png"
+                        height="48"
+                        alt="TouchSensorPumpHouse"
+                        title="TouchSensorPumpHouse"/>
+               </a>
+            </td>
+            <td>
+               <a href="TouchSensorPumpHouseIndex.html">Touch Sensor Pump House</a>
+            </td>
+            <td>TouchSensor activated positive-displacement cylinder pump house.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="UserInteractivitySensorNodes"/>
+               <a href="UserInteractivitySensorNodesIndex.html">
+                  <img src="_thumbnails/UserInteractivitySensorNodesThumbnail.png"
+                        height="48"
+                        alt="UserInteractivitySensorNodes"
+                        title="UserInteractivitySensorNodes"/>
+               </a>
+            </td>
+            <td>
+               <a href="UserInteractivitySensorNodesIndex.html">User Interactivity Sensor Nodes</a>
+            </td>
+            <td>A collection of all of the user interactivity sensor nodes: TouchSensor, PlaceSensor, CylinderSensor, SphereSensor, KeySensor, and StringSensor.</td>
+         </tr>
+      </table>
+      <table width="80%" border="0" align="center">
+         <tr>
+            <td>
+               <p style="text-align:center">Online at <a href="https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter08UserInteractivity/index.html">https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter08UserInteractivity</a>
+               </p>
+               <p align="center" width="80%">
+                  <a href="https://validator.w3.org/check?uri=https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter08UserInteractivity/index.html"
+                      target="_blank">
+                     <img src="https://www.w3.org/Icons/valid-xhtml10"
+                           title="Validate XHTML 1.1"
+                           alt="Validate XHTML 1.1"
+                           height="31"
+                           width="88"
+                           border="0"
+                           align="right"/>
+                  </a>
+               </p>
+               <p style="text-align:center">Master source-code model archive is under subversion control at <br/>
+                  <a href="https://sourceforge.net/p/x3d/code/HEAD/tree/www.web3d.org/x3d/content/examples/X3dForWebAuthors/Chapter08UserInteractivity/"
+                      target="_blank">https://sourceforge.net/p/x3d/code/HEAD/tree/www.web3d.org/x3d/content/examples/X3dForWebAuthors/Chapter08UserInteractivity</a>
+               </p>
+            </td>
+         </tr>
+      </table>
+      <p align="center">
+The 
+<a href="../../X3dResources.html#X3dForWebAuthors">X3D Resources: Examples</a> page
+and
+<a href="https://savage.nps.edu/Savage/developers.html">Savage Developers Guide</a>
+provide more information about the production of this archive.</p>
+      <table
+              align="center"
+              summary="navigation"
+              border="1"
+              cellpadding="2"
+              width="95%">
+         <tr>
+            <td align="center" width="17%">
+               <a href="../index.html" target="_top">
+                  <img src="../images/ToC.png"
+                        title="Table of Contents"
+                        alt="Table of Contents"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter07EventAnimationInterpolation/index.html" target="_top">
+                  <img src="../images/PreviousChapter.png"
+                        title="Previous Directory Summary"
+                        alt="Previous Directory Summary"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="viewpointSlideshow.html" target="_top">
+                  <img src="../images/MootoolsSlideshowLogo.jpg"
+                        title="Directory Viewpoint Slideshow"
+                        alt="Directory Viewpoint Slideshow"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="15%">
+               <a href="../javadoc/index.html?X3dForWebAuthors/Chapter08UserInteractivity/package-summary.html"
+                   title="Javadoc for translated java source"
+                   alt="Javadoc for translated java source"
+                   target="_blank">
+                  <img src="../images/Java-32.png"
+                        title="Javadoc for translated java source"
+                        alt="Javadoc for translated java source"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter09EventUtilitiesScripting/index.html" target="_top">
+                  <img src="../images/NextChapter.png"
+                        title="Next Directory Summary"
+                        alt="Next Directory Summary"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="15%">
+               <a href="../../X3dResources.html" target="helpPage">
+                  <img src="../images/Help.png"
+                        title="X3D Resources"
+                        alt="X3D Resources"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+         </tr>
+      </table>
+   </body>
+</html>

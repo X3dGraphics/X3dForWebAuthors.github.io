@@ -1,0 +1,3 @@
+<Shape DEF=''/> found without child Appearance [/X3D/Scene/Group/Transform[4]/Shape, warning]
+<TimeSensor DEF='Clock'/> missing description [/X3D/Scene/Transform/TimeSensor, warning]
+<Script DEF='BindingSequencerEngine'/> must have url or contained CDATA source [/X3D/Scene/Transform/Script, error]

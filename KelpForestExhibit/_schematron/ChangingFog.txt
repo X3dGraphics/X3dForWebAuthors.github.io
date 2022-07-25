@@ -1,0 +1,3 @@
+<ProximitySensor DEF='ProxSensor'/> missing description [/X3D/Scene/ProximitySensor, warning]
+<TimeSensor DEF='Clock'/> missing description [/X3D/Scene/TimeSensor, warning]
+<Script DEF='ChangeVisibility'/> must have url or contained CDATA source [/X3D/Scene/Script, error]

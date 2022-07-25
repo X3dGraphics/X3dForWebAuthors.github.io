@@ -1,0 +1,2 @@
+<meta name='hint' content='enable TouchSensor to show hitPoint values in console window'/>[/X3D/head/meta[8], diagnostic]
+<TouchSensor DEF='TouchDetect'/> is inactive since enabled='false' (and no ROUTE is provided to change this value) [/X3D/Scene/Transform/TouchSensor, warning]

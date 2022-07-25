@@ -1,0 +1,1 @@
+<TimeSensor DEF='OrbitalTimeInterval'/> missing description [/X3D/Scene/TimeSensor, warning]

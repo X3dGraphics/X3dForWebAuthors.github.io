@@ -1,0 +1,1079 @@
+@prefix :        <https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter05AppearanceMaterialTextures/PixelTextureSnowman.ttl#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema:  <http://schema.org/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix x3d:     <https://www.web3d.org/specifications/x3d-4.0.xsd#> .
+@prefix x3do:    <https://www.web3d.org/specifications/X3dOntology4.0#> .
+
+:X3D a owl:NamedIndividual, x3do:X3D ;
+  x3do:hasHead :head ;
+  x3do:hasScene :Scene ;
+  x3do:profile 'Immersive' ;
+  x3do:version '3.3' ;
+  x3do:noNamespaceSchemaLocation 'https://www.web3d.org/specifications/x3d-3.3.xsd' .
+:head a owl:NamedIndividual, x3do:head ;
+  x3do:hasParent :X3D ;
+  x3do:hasMeta :meta_1_1, :meta_1_2, :meta_1_3, :meta_1_4, :meta_1_5, :meta_1_6, :meta_1_7, :meta_1_8, :meta_1_9, :meta_1_10, :meta_1_11, :meta_1_12, :meta_1_13, :meta_1_14, :meta_1_15 .
+:meta_1_1 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'PixelTextureSnowman.x3d' ;
+  x3do:name 'title' .
+:meta_1_2 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'This snowman example shows a colorful PixelTexture applied to X3D primitive shapes - happy holidays!' ;
+  x3do:name 'description' .
+:meta_1_3 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Craig Schwetje, Leonard Daly and Don Brutzman' ;
+  x3do:name 'creator' .
+:meta_1_4 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '2 February 2006' ;
+  x3do:name 'created' .
+:meta_1_5 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '25 August 2008' ;
+  x3do:name 'translated' .
+:meta_1_6 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '29 September 2020' ;
+  x3do:name 'modified' .
+:meta_1_7 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://en.wikipedia.org/wiki/Snowman' ;
+  x3do:name 'reference' .
+:meta_1_8 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter05AppearanceMaterialTextures/frosty2.mid' ;
+  x3do:name 'Sound' .
+:meta_1_9 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'http://www.the-north-pole.com/carols/frosty.html' ;
+  x3do:name 'reference' .
+:meta_1_10 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://X3dGraphics.com' ;
+  x3do:name 'reference' .
+:meta_1_11 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://www.web3d.org/x3d/content/examples/X3dResources.html' ;
+  x3do:name 'reference' .
+:meta_1_12 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'X3D book, X3D graphics, X3D-Edit, http://www.x3dGraphics.com' ;
+  x3do:name 'subject' .
+:meta_1_13 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter05AppearanceMaterialTextures/PixelTextureSnowman.x3d' ;
+  x3do:name 'identifier' .
+:meta_1_14 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'X3D-Edit 3.3, https://savage.nps.edu/X3D-Edit' ;
+  x3do:name 'generator' .
+:meta_1_15 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '../license.html' ;
+  x3do:name 'license' .
+:meta dcterms:title "PixelTextureSnowman.x3d" .
+:meta dcterms:description "This snowman example shows a colorful PixelTexture applied to X3D primitive shapes - happy holidays!" .
+:meta dcterms:creator "Craig Schwetje, Leonard Daly and Don Brutzman" .
+:meta dcterms:created "2 February 2006" .
+:meta dcterms:translated "25 August 2008" .
+:meta dcterms:modified "29 September 2020" .
+:meta dcterms:reference "https://en.wikipedia.org/wiki/Snowman" .
+:meta dcterms:Sound "https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter05AppearanceMaterialTextures/frosty2.mid" .
+:meta dcterms:reference "http://www.the-north-pole.com/carols/frosty.html" .
+:meta dcterms:reference "https://X3dGraphics.com" .
+:meta dcterms:reference "https://www.web3d.org/x3d/content/examples/X3dResources.html" .
+:meta dcterms:subject "X3D book, X3D graphics, X3D-Edit, http://www.x3dGraphics.com" .
+:meta dcterms:identifier "https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter05AppearanceMaterialTextures/PixelTextureSnowman.x3d" .
+:meta dcterms:generator "X3D-Edit 3.3, https://savage.nps.edu/X3D-Edit" .
+:meta dcterms:license "../license.html" .
+:Scene a owl:NamedIndividual, x3do:Scene ;
+  x3do:hasParent :X3D ;
+  x3do:hasChildren :WorldInfo_2_1, :Background_2_2, :Viewpoint_2_3, :Sound_2_4, :Transform_2_5, :SnowmanRoot .
+:WorldInfo_2_1 a owl:NamedIndividual, x3do:WorldInfo ;
+  x3do:hasParent :Scene ;
+  x3do:title 'PixelTextureSnowman.x3d' .
+:Background_2_2 a owl:NamedIndividual, x3do:Background ;
+  x3do:hasParent :Scene ;
+  x3do:skyColor ( 1 1 1 ) .
+:Viewpoint_2_3 a owl:NamedIndividual, x3do:Viewpoint ;
+  x3do:hasParent :Scene ;
+  x3do:description 'PixelTexture Snowman' ;
+  x3do:orientation ( 1 0 0 -0.17985 ) ;
+  x3do:position ( 0 2 11 ) .
+:Sound_2_4 a owl:NamedIndividual, x3do:Sound ;
+  x3do:hasParent :Scene ;
+  x3do:hasSource :AudioClip_2_4_1 ;
+  x3do:location ( 0 1.6 0 ) ;
+  x3do:maxBack 50 ;
+  x3do:maxFront 50 ;
+  x3do:minBack 5 ;
+  x3do:minFront 5 ;
+  x3do:priority 1 .
+:AudioClip_2_4_1 a owl:NamedIndividual, x3do:AudioClip ;
+  x3do:hasParent :Sound_2_4 ;
+  x3do:description 'Frosty the Snowman' ;
+  x3do:loop true ;
+  x3do:url '"frosty2.mid" "https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter05AppearanceMaterialTextures/frosty2.mid"' .
+:Transform_2_5 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :Billboard_2_5_1 ;
+  x3do:translation ( 0 -2.5 2 ) .
+:Billboard_2_5_1 a owl:NamedIndividual, x3do:Billboard ;
+  x3do:hasParent :Transform_2_5 ;
+  x3do:hasChildren :WikipediaAnchorLink .
+:WikipediaAnchorLink a owl:NamedIndividual, x3do:Anchor ;
+  x3do:hasParent :Billboard_2_5_1 ;
+  x3do:hasChildren :Shape_2_5_1_1_1, :Shape_2_5_1_1_2 ;
+  x3do:DEF 'WikipediaAnchorLink' ;
+  x3do:description 'Wikipedia Snowman entry' ;
+  x3do:parameter '"target=_blank"' ;
+  x3do:url '"https://en.wikipedia.org/wiki/Snowman"' .
+:Shape_2_5_1_1_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :WikipediaAnchorLink ;
+  x3do:hasGeometry :Text_2_5_1_1_1_1 ;
+  x3do:hasAppearance :Appearance_2_5_1_1_1_2 .
+:Text_2_5_1_1_1_1 a owl:NamedIndividual, x3do:Text ;
+  x3do:hasParent :Shape_2_5_1_1_1 ;
+  x3do:hasFontStyle :FontStyle_2_5_1_1_1_1_1 ;
+  x3do:string '"Click here to learn more" "about snowmen"' .
+:FontStyle_2_5_1_1_1_1_1 a owl:NamedIndividual, x3do:FontStyle ;
+  x3do:hasParent :Text_2_5_1_1_1_1 ;
+  x3do:justify '"MIDDLE" "MIDDLE"' ;
+  x3do:size 0.6 .
+:Appearance_2_5_1_1_1_2 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_5_1_1_1 ;
+  x3do:hasMaterial :Autumn11 .
+:Autumn11 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_5_1_1_1_2 ;
+  x3do:DEF 'Autumn11' ;
+  x3do:ambientIntensity 0.25641 ;
+  x3do:diffuseColor ( 1 0.160784 0.764706 ) ;
+  x3do:shininess 1 ;
+  x3do:specularColor ( 0.48655 0.319155 0.444036 ) .
+:Shape_2_5_1_1_2 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :WikipediaAnchorLink ;
+  x3do:hasGeometry :Box_2_5_1_1_2_1 ;
+  x3do:hasAppearance :Appearance_2_5_1_1_2_2 .
+:Box_2_5_1_1_2_1 a owl:NamedIndividual, x3do:Box ;
+  x3do:hasParent :Shape_2_5_1_1_2 ;
+  x3do:size ( 6 1.5 0.02 ) .
+:Appearance_2_5_1_1_2_2 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_5_1_1_2 ;
+  x3do:hasMaterial :Material_2_5_1_1_2_2_1 .
+:Material_2_5_1_1_2_2_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_5_1_1_2_2 ;
+  x3do:transparency 1 .
+:SnowmanRoot a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :TwistInterpolator, :Clock, :Transform_2_6_5, :Transform_2_6_6, :Transform_2_6_7, :Transform_2_6_8, :Transform_2_6_9, :Transform_2_6_10, :Transform_2_6_11, :Transform_2_6_12, :Transform_2_6_13, :Transform_2_6_14, :Transform_2_6_15, :Transform_2_6_16, :Transform_2_6_17, :Transform_2_6_18, :Transform_2_6_19, :Transform_2_6_20, :Transform_2_6_21, :Transform_2_6_22, :Transform_2_6_23, :Transform_2_6_24, :Transform_2_6_25, :Transform_2_6_26, :Transform_2_6_27, :Transform_2_6_28, :Transform_2_6_29, :Transform_2_6_30, :Transform_2_6_31, :Transform_2_6_32, :Transform_2_6_33, :Transform_2_6_34, :Transform_2_6_35, :Transform_2_6_36, :Transform_2_6_37, :Transform_2_6_38, :Transform_2_6_39, :Transform_2_6_40, :Transform_2_6_41, :Transform_2_6_42, :Transform_2_6_43, :Transform_2_6_44, :Transform_2_6_45, :Transform_2_6_46, :Transform_2_6_47, :Transform_2_6_48, :Transform_2_6_49, :Transform_2_6_50, :Transform_2_6_51, :Transform_2_6_52, :Transform_2_6_53, :Transform_2_6_54 ;
+  x3do:hasROUTE :ROUTE_2_6_3, :ROUTE_2_6_4 ;
+  x3do:DEF 'SnowmanRoot' .
+:TwistInterpolator a owl:NamedIndividual, x3do:OrientationInterpolator ;
+  x3do:hasParent :SnowmanRoot ;
+  x3do:DEF 'TwistInterpolator' ;
+  x3do:key ( 0 0.22 0.25 0.5 0.73 0.75 1 ) ;
+  x3do:keyValue ( 0 1 0 0 0 1 0 5.75959 0 1 0 5.75959 0 1 0 0 0 1 0 0.5236 0 1 0 0.5236 0 1 0 0 ) .
+:Clock a owl:NamedIndividual, x3do:TimeSensor ;
+  x3do:hasParent :SnowmanRoot ;
+  x3do:DEF 'Clock' ;
+  x3do:cycleInterval '6' ;
+  x3do:loop true .
+:ROUTE_2_6_3 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :SnowmanRoot ;
+  x3do:fromField 'value_changed' ;
+  x3do:fromNode 'TwistInterpolator' ;
+  x3do:toField 'rotation' ;
+  x3do:toNode 'SnowmanRoot' .
+:ROUTE_2_6_4 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :SnowmanRoot ;
+  x3do:fromField 'fraction_changed' ;
+  x3do:fromNode 'Clock' ;
+  x3do:toField 'set_fraction' ;
+  x3do:toNode 'TwistInterpolator' .
+:Transform_2_6_5 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :SnowmanRoot ;
+  x3do:hasChildren :Shape_2_6_5_1 ;
+  x3do:translation ( 0 3.6 0 ) .
+:Shape_2_6_5_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_6_5 ;
+  x3do:hasAppearance :Appearance_2_6_5_1_1 ;
+  x3do:hasGeometry :Cylinder_2_6_5_1_2 .
+:Appearance_2_6_5_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_6_5_1 ;
+  x3do:hasMaterial :Material_2_6_5_1_1_1 .
+:Material_2_6_5_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_6_5_1_1 ;
+  x3do:diffuseColor ( 0.003922 0.003922 0.003922 ) .
+:Cylinder_2_6_5_1_2 a owl:NamedIndividual, x3do:Cylinder ;
+  x3do:hasParent :Shape_2_6_5_1 ;
+  x3do:height 1 ;
+  x3do:radius 0.5 .
+:Transform_2_6_6 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :SnowmanRoot ;
+  x3do:hasChildren :Shape_2_6_6_1 ;
+  x3do:translation ( 0 3.2 0 ) .
+:Shape_2_6_6_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_6_6 ;
+  x3do:hasAppearance :Appearance_2_6_6_1_1 ;
+  x3do:hasGeometry :Cylinder_2_6_6_1_2 .
+:Appearance_2_6_6_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_6_6_1 ;
+  x3do:hasMaterial :Material_2_6_6_1_1_1 .
+:Material_2_6_6_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_6_6_1_1 ;
+  x3do:diffuseColor ( 0.003922 0.003922 0.003922 ) .
+:Cylinder_2_6_6_1_2 a owl:NamedIndividual, x3do:Cylinder ;
+  x3do:hasParent :Shape_2_6_6_1 ;
+  x3do:height 0.2 .
+:Transform_2_6_7 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :SnowmanRoot ;
+  x3do:hasChildren :Shape_2_6_7_1 ;
+  x3do:translation ( 0 2.6 0 ) .
+:Shape_2_6_7_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_6_7 ;
+  x3do:hasAppearance :Appearance_2_6_7_1_1 ;
+  x3do:hasGeometry :Sphere_2_6_7_1_2 .
+:Appearance_2_6_7_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_6_7_1 ;
+  x3do:hasTexture :PixelColors .
+:PixelColors a owl:NamedIndividual, x3do:PixelTexture ;
+  x3do:hasParent :Appearance_2_6_7_1_1 ;
+  x3do:DEF 'PixelColors' ;
+  x3do:image '2 4 3 0xff0000 0xffff00 0x007700 0xff0077 0x0000ff 0xff7700 0x00ff77 0x888888' ;
+  x3do:repeatS false ;
+  x3do:repeatT false .
+:Sphere_2_6_7_1_2 a owl:NamedIndividual, x3do:Sphere ;
+  x3do:hasParent :Shape_2_6_7_1 ;
+  x3do:radius .75 .
+:Transform_2_6_8 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :SnowmanRoot ;
+  x3do:hasChildren :Shape_2_6_8_1 ;
+  x3do:translation ( 0.3 2.7 .55 ) .
+:Shape_2_6_8_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_6_8 ;
+  x3do:hasAppearance :Appearance_2_6_8_1_1 ;
+  x3do:hasGeometry :Sphere_2_6_8_1_2 .
+:Appearance_2_6_8_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_6_8_1 ;
+  x3do:hasMaterial :Material_2_6_8_1_1_1 .
+:Material_2_6_8_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_6_8_1_1 ;
+  x3do:diffuseColor ( 0 0 0 ) .
+:Sphere_2_6_8_1_2 a owl:NamedIndividual, x3do:Sphere ;
+  x3do:hasParent :Shape_2_6_8_1 ;
+  x3do:radius .18 .
+:Transform_2_6_9 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :SnowmanRoot ;
+  x3do:hasChildren :Shape_2_6_9_1 ;
+  x3do:translation ( -0.3 2.7 .55 ) .
+:Shape_2_6_9_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_6_9 ;
+  x3do:hasAppearance :Appearance_2_6_9_1_1 ;
+  x3do:hasGeometry :Sphere_2_6_9_1_2 .
+:Appearance_2_6_9_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_6_9_1 ;
+  x3do:hasMaterial :Material_2_6_9_1_1_1 .
+:Material_2_6_9_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_6_9_1_1 ;
+  x3do:diffuseColor ( 0 0 0 ) .
+:Sphere_2_6_9_1_2 a owl:NamedIndividual, x3do:Sphere ;
+  x3do:hasParent :Shape_2_6_9_1 ;
+  x3do:radius .18 .
+:Transform_2_6_10 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :SnowmanRoot ;
+  x3do:hasChildren :Shape_2_6_10_1 ;
+  x3do:rotation ( 1 0 0 1.57 ) ;
+  x3do:translation ( 0 2.5 0.55 ) .
+:Shape_2_6_10_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_6_10 ;
+  x3do:hasAppearance :Appearance_2_6_10_1_1 ;
+  x3do:hasGeometry :Cone_2_6_10_1_2 .
+:Appearance_2_6_10_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_6_10_1 ;
+  x3do:hasMaterial :Material_2_6_10_1_1_1 .
+:Material_2_6_10_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_6_10_1_1 ;
+  x3do:diffuseColor ( 0.901961 0.403922 0 ) ;
+  x3do:emissiveColor ( 1 0.145098 0.058824 ) ;
+  x3do:specularColor ( 1 0.454902 0.360784 ) .
+:Cone_2_6_10_1_2 a owl:NamedIndividual, x3do:Cone ;
+  x3do:hasParent :Shape_2_6_10_1 ;
+  x3do:bottomRadius 0.3 ;
+  x3do:height 1.75 .
+:Transform_2_6_11 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :SnowmanRoot ;
+  x3do:hasChildren :Shape_2_6_11_1 ;
+  x3do:translation ( 0 1.975 0 ) .
+:Shape_2_6_11_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_6_11 ;
+  x3do:hasAppearance :Appearance_2_6_11_1_1 ;
+  x3do:hasGeometry :Cylinder_2_6_11_1_2 .
+:Appearance_2_6_11_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_6_11_1 ;
+  x3do:hasMaterial :Material_2_6_11_1_1_1 .
+:Material_2_6_11_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_6_11_1_1 ;
+  x3do:diffuseColor ( 1 0.039216 0.243137 ) .
+:Cylinder_2_6_11_1_2 a owl:NamedIndividual, x3do:Cylinder ;
+  x3do:hasParent :Shape_2_6_11_1 ;
+  x3do:height 0.175 ;
+  x3do:radius 0.8 .
+:Transform_2_6_12 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :SnowmanRoot ;
+  x3do:hasChildren :Shape_2_6_12_1 ;
+  x3do:translation ( .7 1.1 .8 ) .
+:Shape_2_6_12_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_6_12 ;
+  x3do:hasAppearance :Appearance_2_6_12_1_1 ;
+  x3do:hasGeometry :Sphere_2_6_12_1_2 .
+:Appearance_2_6_12_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_6_12_1 ;
+  x3do:hasMaterial :Material_2_6_12_1_1_1 .
+:Material_2_6_12_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_6_12_1_1 ;
+  x3do:diffuseColor ( 1 0.039216 0.243137 ) .
+:Sphere_2_6_12_1_2 a owl:NamedIndividual, x3do:Sphere ;
+  x3do:hasParent :Shape_2_6_12_1 ;
+  x3do:radius .1 .
+:Transform_2_6_13 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :SnowmanRoot ;
+  x3do:hasChildren :Shape_2_6_13_1 ;
+  x3do:translation ( .725 1.2 .85 ) .
+:Shape_2_6_13_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_6_13 ;
+  x3do:hasAppearance :Appearance_2_6_13_1_1 ;
+  x3do:hasGeometry :Sphere_2_6_13_1_2 .
+:Appearance_2_6_13_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_6_13_1 ;
+  x3do:hasMaterial :Material_2_6_13_1_1_1 .
+:Material_2_6_13_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_6_13_1_1 ;
+  x3do:diffuseColor ( 1 0.039216 0.243137 ) .
+:Sphere_2_6_13_1_2 a owl:NamedIndividual, x3do:Sphere ;
+  x3do:hasParent :Shape_2_6_13_1 ;
+  x3do:radius .1 .
+:Transform_2_6_14 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :SnowmanRoot ;
+  x3do:hasChildren :Shape_2_6_14_1 ;
+  x3do:translation ( .7 1.3 .8 ) .
+:Shape_2_6_14_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_6_14 ;
+  x3do:hasAppearance :Appearance_2_6_14_1_1 ;
+  x3do:hasGeometry :Sphere_2_6_14_1_2 .
+:Appearance_2_6_14_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_6_14_1 ;
+  x3do:hasMaterial :Material_2_6_14_1_1_1 .
+:Material_2_6_14_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_6_14_1_1 ;
+  x3do:diffuseColor ( 1 0.039216 0.243137 ) .
+:Sphere_2_6_14_1_2 a owl:NamedIndividual, x3do:Sphere ;
+  x3do:hasParent :Shape_2_6_14_1 ;
+  x3do:radius .1 .
+:Transform_2_6_15 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :SnowmanRoot ;
+  x3do:hasChildren :Shape_2_6_15_1 ;
+  x3do:translation ( .7 1.4 .75 ) .
+:Shape_2_6_15_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_6_15 ;
+  x3do:hasAppearance :Appearance_2_6_15_1_1 ;
+  x3do:hasGeometry :Sphere_2_6_15_1_2 .
+:Appearance_2_6_15_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_6_15_1 ;
+  x3do:hasMaterial :Material_2_6_15_1_1_1 .
+:Material_2_6_15_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_6_15_1_1 ;
+  x3do:diffuseColor ( 1 0.039216 0.243137 ) .
+:Sphere_2_6_15_1_2 a owl:NamedIndividual, x3do:Sphere ;
+  x3do:hasParent :Shape_2_6_15_1 ;
+  x3do:radius .1 .
+:Transform_2_6_16 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :SnowmanRoot ;
+  x3do:hasChildren :Shape_2_6_16_1 ;
+  x3do:translation ( .7 1.5 .75 ) .
+:Shape_2_6_16_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_6_16 ;
+  x3do:hasAppearance :Appearance_2_6_16_1_1 ;
+  x3do:hasGeometry :Sphere_2_6_16_1_2 .
+:Appearance_2_6_16_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_6_16_1 ;
+  x3do:hasMaterial :Material_2_6_16_1_1_1 .
+:Material_2_6_16_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_6_16_1_1 ;
+  x3do:diffuseColor ( 1 0.039216 0.243137 ) .
+:Sphere_2_6_16_1_2 a owl:NamedIndividual, x3do:Sphere ;
+  x3do:hasParent :Shape_2_6_16_1 ;
+  x3do:radius .1 .
+:Transform_2_6_17 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :SnowmanRoot ;
+  x3do:hasChildren :Shape_2_6_17_1 ;
+  x3do:translation ( .7 1.6 .7 ) .
+:Shape_2_6_17_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_6_17 ;
+  x3do:hasAppearance :Appearance_2_6_17_1_1 ;
+  x3do:hasGeometry :Sphere_2_6_17_1_2 .
+:Appearance_2_6_17_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_6_17_1 ;
+  x3do:hasMaterial :Material_2_6_17_1_1_1 .
+:Material_2_6_17_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_6_17_1_1 ;
+  x3do:diffuseColor ( 1 0.039216 0.243137 ) .
+:Sphere_2_6_17_1_2 a owl:NamedIndividual, x3do:Sphere ;
+  x3do:hasParent :Shape_2_6_17_1 ;
+  x3do:radius .1 .
+:Transform_2_6_18 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :SnowmanRoot ;
+  x3do:hasChildren :Shape_2_6_18_1 ;
+  x3do:translation ( .7 1.7 .65 ) .
+:Shape_2_6_18_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_6_18 ;
+  x3do:hasAppearance :Appearance_2_6_18_1_1 ;
+  x3do:hasGeometry :Sphere_2_6_18_1_2 .
+:Appearance_2_6_18_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_6_18_1 ;
+  x3do:hasMaterial :Material_2_6_18_1_1_1 .
+:Material_2_6_18_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_6_18_1_1 ;
+  x3do:diffuseColor ( 1 0.039216 0.243137 ) .
+:Sphere_2_6_18_1_2 a owl:NamedIndividual, x3do:Sphere ;
+  x3do:hasParent :Shape_2_6_18_1 ;
+  x3do:radius .1 .
+:Transform_2_6_19 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :SnowmanRoot ;
+  x3do:hasChildren :Shape_2_6_19_1 ;
+  x3do:translation ( .6 1.8 .65 ) .
+:Shape_2_6_19_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_6_19 ;
+  x3do:hasAppearance :Appearance_2_6_19_1_1 ;
+  x3do:hasGeometry :Sphere_2_6_19_1_2 .
+:Appearance_2_6_19_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_6_19_1 ;
+  x3do:hasMaterial :Material_2_6_19_1_1_1 .
+:Material_2_6_19_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_6_19_1_1 ;
+  x3do:diffuseColor ( 1 0.039216 0.243137 ) .
+:Sphere_2_6_19_1_2 a owl:NamedIndividual, x3do:Sphere ;
+  x3do:hasParent :Shape_2_6_19_1 ;
+  x3do:radius .1 .
+:Transform_2_6_20 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :SnowmanRoot ;
+  x3do:hasChildren :Shape_2_6_20_1 ;
+  x3do:translation ( .55 1.9 .65 ) .
+:Shape_2_6_20_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_6_20 ;
+  x3do:hasAppearance :Appearance_2_6_20_1_1 ;
+  x3do:hasGeometry :Sphere_2_6_20_1_2 .
+:Appearance_2_6_20_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_6_20_1 ;
+  x3do:hasMaterial :Material_2_6_20_1_1_1 .
+:Material_2_6_20_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_6_20_1_1 ;
+  x3do:diffuseColor ( 1 0.039216 0.243137 ) .
+:Sphere_2_6_20_1_2 a owl:NamedIndividual, x3do:Sphere ;
+  x3do:hasParent :Shape_2_6_20_1 ;
+  x3do:radius .1 .
+:Transform_2_6_21 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :SnowmanRoot ;
+  x3do:hasChildren :Shape_2_6_21_1 ;
+  x3do:translation ( .55 2 .65 ) .
+:Shape_2_6_21_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_6_21 ;
+  x3do:hasAppearance :Appearance_2_6_21_1_1 ;
+  x3do:hasGeometry :Sphere_2_6_21_1_2 .
+:Appearance_2_6_21_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_6_21_1 ;
+  x3do:hasMaterial :Material_2_6_21_1_1_1 .
+:Material_2_6_21_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_6_21_1_1 ;
+  x3do:diffuseColor ( 1 0.039216 0.243137 ) .
+:Sphere_2_6_21_1_2 a owl:NamedIndividual, x3do:Sphere ;
+  x3do:hasParent :Shape_2_6_21_1 ;
+  x3do:radius .1 .
+:Transform_2_6_22 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :SnowmanRoot ;
+  x3do:hasChildren :Shape_2_6_22_1 ;
+  x3do:translation ( -0.7 1.1 -0.8 ) .
+:Shape_2_6_22_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_6_22 ;
+  x3do:hasAppearance :Appearance_2_6_22_1_1 ;
+  x3do:hasGeometry :Sphere_2_6_22_1_2 .
+:Appearance_2_6_22_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_6_22_1 ;
+  x3do:hasMaterial :Material_2_6_22_1_1_1 .
+:Material_2_6_22_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_6_22_1_1 ;
+  x3do:diffuseColor ( 1 0.039216 0.243137 ) .
+:Sphere_2_6_22_1_2 a owl:NamedIndividual, x3do:Sphere ;
+  x3do:hasParent :Shape_2_6_22_1 ;
+  x3do:radius .1 .
+:Transform_2_6_23 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :SnowmanRoot ;
+  x3do:hasChildren :Shape_2_6_23_1 ;
+  x3do:translation ( -0.725 1.2 -0.85 ) .
+:Shape_2_6_23_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_6_23 ;
+  x3do:hasAppearance :Appearance_2_6_23_1_1 ;
+  x3do:hasGeometry :Sphere_2_6_23_1_2 .
+:Appearance_2_6_23_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_6_23_1 ;
+  x3do:hasMaterial :Material_2_6_23_1_1_1 .
+:Material_2_6_23_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_6_23_1_1 ;
+  x3do:diffuseColor ( 1 0.039216 0.243137 ) .
+:Sphere_2_6_23_1_2 a owl:NamedIndividual, x3do:Sphere ;
+  x3do:hasParent :Shape_2_6_23_1 ;
+  x3do:radius .1 .
+:Transform_2_6_24 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :SnowmanRoot ;
+  x3do:hasChildren :Shape_2_6_24_1 ;
+  x3do:translation ( -0.7 1.3 -0.8 ) .
+:Shape_2_6_24_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_6_24 ;
+  x3do:hasAppearance :Appearance_2_6_24_1_1 ;
+  x3do:hasGeometry :Sphere_2_6_24_1_2 .
+:Appearance_2_6_24_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_6_24_1 ;
+  x3do:hasMaterial :Material_2_6_24_1_1_1 .
+:Material_2_6_24_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_6_24_1_1 ;
+  x3do:diffuseColor ( 1 0.039216 0.243137 ) .
+:Sphere_2_6_24_1_2 a owl:NamedIndividual, x3do:Sphere ;
+  x3do:hasParent :Shape_2_6_24_1 ;
+  x3do:radius .1 .
+:Transform_2_6_25 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :SnowmanRoot ;
+  x3do:hasChildren :Shape_2_6_25_1 ;
+  x3do:translation ( -0.7 1.4 -0.75 ) .
+:Shape_2_6_25_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_6_25 ;
+  x3do:hasAppearance :Appearance_2_6_25_1_1 ;
+  x3do:hasGeometry :Sphere_2_6_25_1_2 .
+:Appearance_2_6_25_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_6_25_1 ;
+  x3do:hasMaterial :Material_2_6_25_1_1_1 .
+:Material_2_6_25_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_6_25_1_1 ;
+  x3do:diffuseColor ( 1 0.039216 0.243137 ) .
+:Sphere_2_6_25_1_2 a owl:NamedIndividual, x3do:Sphere ;
+  x3do:hasParent :Shape_2_6_25_1 ;
+  x3do:radius .1 .
+:Transform_2_6_26 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :SnowmanRoot ;
+  x3do:hasChildren :Shape_2_6_26_1 ;
+  x3do:translation ( -0.7 1.5 -0.75 ) .
+:Shape_2_6_26_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_6_26 ;
+  x3do:hasAppearance :Appearance_2_6_26_1_1 ;
+  x3do:hasGeometry :Sphere_2_6_26_1_2 .
+:Appearance_2_6_26_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_6_26_1 ;
+  x3do:hasMaterial :Material_2_6_26_1_1_1 .
+:Material_2_6_26_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_6_26_1_1 ;
+  x3do:diffuseColor ( 1 0.039216 0.243137 ) .
+:Sphere_2_6_26_1_2 a owl:NamedIndividual, x3do:Sphere ;
+  x3do:hasParent :Shape_2_6_26_1 ;
+  x3do:radius .1 .
+:Transform_2_6_27 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :SnowmanRoot ;
+  x3do:hasChildren :Shape_2_6_27_1 ;
+  x3do:translation ( -0.7 1.6 -0.7 ) .
+:Shape_2_6_27_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_6_27 ;
+  x3do:hasAppearance :Appearance_2_6_27_1_1 ;
+  x3do:hasGeometry :Sphere_2_6_27_1_2 .
+:Appearance_2_6_27_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_6_27_1 ;
+  x3do:hasMaterial :Material_2_6_27_1_1_1 .
+:Material_2_6_27_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_6_27_1_1 ;
+  x3do:diffuseColor ( 1 0.039216 0.243137 ) .
+:Sphere_2_6_27_1_2 a owl:NamedIndividual, x3do:Sphere ;
+  x3do:hasParent :Shape_2_6_27_1 ;
+  x3do:radius .1 .
+:Transform_2_6_28 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :SnowmanRoot ;
+  x3do:hasChildren :Shape_2_6_28_1 ;
+  x3do:translation ( -0.7 1.7 -0.65 ) .
+:Shape_2_6_28_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_6_28 ;
+  x3do:hasAppearance :Appearance_2_6_28_1_1 ;
+  x3do:hasGeometry :Sphere_2_6_28_1_2 .
+:Appearance_2_6_28_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_6_28_1 ;
+  x3do:hasMaterial :Material_2_6_28_1_1_1 .
+:Material_2_6_28_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_6_28_1_1 ;
+  x3do:diffuseColor ( 1 0.039216 0.243137 ) .
+:Sphere_2_6_28_1_2 a owl:NamedIndividual, x3do:Sphere ;
+  x3do:hasParent :Shape_2_6_28_1 ;
+  x3do:radius .1 .
+:Transform_2_6_29 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :SnowmanRoot ;
+  x3do:hasChildren :Shape_2_6_29_1 ;
+  x3do:translation ( -0.6 1.8 -0.65 ) .
+:Shape_2_6_29_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_6_29 ;
+  x3do:hasAppearance :Appearance_2_6_29_1_1 ;
+  x3do:hasGeometry :Sphere_2_6_29_1_2 .
+:Appearance_2_6_29_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_6_29_1 ;
+  x3do:hasMaterial :Material_2_6_29_1_1_1 .
+:Material_2_6_29_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_6_29_1_1 ;
+  x3do:diffuseColor ( 1 0.039216 0.243137 ) .
+:Sphere_2_6_29_1_2 a owl:NamedIndividual, x3do:Sphere ;
+  x3do:hasParent :Shape_2_6_29_1 ;
+  x3do:radius .1 .
+:Transform_2_6_30 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :SnowmanRoot ;
+  x3do:hasChildren :Shape_2_6_30_1 ;
+  x3do:translation ( -0.55 1.9 -0.65 ) .
+:Shape_2_6_30_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_6_30 ;
+  x3do:hasAppearance :Appearance_2_6_30_1_1 ;
+  x3do:hasGeometry :Sphere_2_6_30_1_2 .
+:Appearance_2_6_30_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_6_30_1 ;
+  x3do:hasMaterial :Material_2_6_30_1_1_1 .
+:Material_2_6_30_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_6_30_1_1 ;
+  x3do:diffuseColor ( 1 0.039216 0.243137 ) .
+:Sphere_2_6_30_1_2 a owl:NamedIndividual, x3do:Sphere ;
+  x3do:hasParent :Shape_2_6_30_1 ;
+  x3do:radius .1 .
+:Transform_2_6_31 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :SnowmanRoot ;
+  x3do:hasChildren :Shape_2_6_31_1 ;
+  x3do:translation ( -0.55 2 -0.65 ) .
+:Shape_2_6_31_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_6_31 ;
+  x3do:hasAppearance :Appearance_2_6_31_1_1 ;
+  x3do:hasGeometry :Sphere_2_6_31_1_2 .
+:Appearance_2_6_31_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_6_31_1 ;
+  x3do:hasMaterial :Material_2_6_31_1_1_1 .
+:Material_2_6_31_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_6_31_1_1 ;
+  x3do:diffuseColor ( 1 0.039216 0.243137 ) .
+:Sphere_2_6_31_1_2 a owl:NamedIndividual, x3do:Sphere ;
+  x3do:hasParent :Shape_2_6_31_1 ;
+  x3do:radius .1 .
+:Transform_2_6_32 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :SnowmanRoot ;
+  x3do:hasChildren :Shape_2_6_32_1 ;
+  x3do:translation ( 0 2.2 .55 ) .
+:Shape_2_6_32_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_6_32 ;
+  x3do:hasAppearance :Appearance_2_6_32_1_1 ;
+  x3do:hasGeometry :Sphere_2_6_32_1_2 .
+:Appearance_2_6_32_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_6_32_1 ;
+  x3do:hasMaterial :Material_2_6_32_1_1_1 .
+:Material_2_6_32_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_6_32_1_1 ;
+  x3do:diffuseColor ( 0 0 0 ) .
+:Sphere_2_6_32_1_2 a owl:NamedIndividual, x3do:Sphere ;
+  x3do:hasParent :Shape_2_6_32_1 ;
+  x3do:radius .1 .
+:Transform_2_6_33 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :SnowmanRoot ;
+  x3do:hasChildren :Shape_2_6_33_1 ;
+  x3do:translation ( 0.1 2.2 .55 ) .
+:Shape_2_6_33_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_6_33 ;
+  x3do:hasAppearance :Appearance_2_6_33_1_1 ;
+  x3do:hasGeometry :Sphere_2_6_33_1_2 .
+:Appearance_2_6_33_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_6_33_1 ;
+  x3do:hasMaterial :Material_2_6_33_1_1_1 .
+:Material_2_6_33_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_6_33_1_1 ;
+  x3do:diffuseColor ( 0 0 0 ) .
+:Sphere_2_6_33_1_2 a owl:NamedIndividual, x3do:Sphere ;
+  x3do:hasParent :Shape_2_6_33_1 ;
+  x3do:radius .1 .
+:Transform_2_6_34 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :SnowmanRoot ;
+  x3do:hasChildren :Shape_2_6_34_1 ;
+  x3do:translation ( 0.2 2.2 .55 ) .
+:Shape_2_6_34_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_6_34 ;
+  x3do:hasAppearance :Appearance_2_6_34_1_1 ;
+  x3do:hasGeometry :Sphere_2_6_34_1_2 .
+:Appearance_2_6_34_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_6_34_1 ;
+  x3do:hasMaterial :Material_2_6_34_1_1_1 .
+:Material_2_6_34_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_6_34_1_1 ;
+  x3do:diffuseColor ( 0 0 0 ) .
+:Sphere_2_6_34_1_2 a owl:NamedIndividual, x3do:Sphere ;
+  x3do:hasParent :Shape_2_6_34_1 ;
+  x3do:radius .1 .
+:Transform_2_6_35 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :SnowmanRoot ;
+  x3do:hasChildren :Shape_2_6_35_1 ;
+  x3do:translation ( -0.1 2.2 .55 ) .
+:Shape_2_6_35_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_6_35 ;
+  x3do:hasAppearance :Appearance_2_6_35_1_1 ;
+  x3do:hasGeometry :Sphere_2_6_35_1_2 .
+:Appearance_2_6_35_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_6_35_1 ;
+  x3do:hasMaterial :Material_2_6_35_1_1_1 .
+:Material_2_6_35_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_6_35_1_1 ;
+  x3do:diffuseColor ( 0 0 0 ) .
+:Sphere_2_6_35_1_2 a owl:NamedIndividual, x3do:Sphere ;
+  x3do:hasParent :Shape_2_6_35_1 ;
+  x3do:radius .1 .
+:Transform_2_6_36 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :SnowmanRoot ;
+  x3do:hasChildren :Shape_2_6_36_1 ;
+  x3do:translation ( -0.2 2.2 .55 ) .
+:Shape_2_6_36_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_6_36 ;
+  x3do:hasAppearance :Appearance_2_6_36_1_1 ;
+  x3do:hasGeometry :Sphere_2_6_36_1_2 .
+:Appearance_2_6_36_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_6_36_1 ;
+  x3do:hasMaterial :Material_2_6_36_1_1_1 .
+:Material_2_6_36_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_6_36_1_1 ;
+  x3do:diffuseColor ( 0 0 0 ) .
+:Sphere_2_6_36_1_2 a owl:NamedIndividual, x3do:Sphere ;
+  x3do:hasParent :Shape_2_6_36_1 ;
+  x3do:radius .1 .
+:Transform_2_6_37 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :SnowmanRoot ;
+  x3do:hasChildren :Shape_2_6_37_1 ;
+  x3do:rotation ( 0.96225 0.19245 -0.19245 1.57 ) ;
+  x3do:translation ( 0.1 2.2 0.55 ) .
+:Shape_2_6_37_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_6_37 ;
+  x3do:hasAppearance :Appearance_2_6_37_1_1 ;
+  x3do:hasGeometry :Cylinder_2_6_37_1_2 .
+:Appearance_2_6_37_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_6_37_1 ;
+  x3do:hasMaterial :Material_2_6_37_1_1_1 .
+:Material_2_6_37_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_6_37_1_1 ;
+  x3do:diffuseColor ( 0.219608 0.137255 0 ) .
+:Cylinder_2_6_37_1_2 a owl:NamedIndividual, x3do:Cylinder ;
+  x3do:hasParent :Shape_2_6_37_1 ;
+  x3do:radius 0.03 .
+:Transform_2_6_38 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :SnowmanRoot ;
+  x3do:hasChildren :Shape_2_6_38_1 ;
+  x3do:translation ( .45 2.3 1.5 ) .
+:Shape_2_6_38_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_6_38 ;
+  x3do:hasAppearance :Appearance_2_6_38_1_1 ;
+  x3do:hasGeometry :Cylinder_2_6_38_1_2 .
+:Appearance_2_6_38_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_6_38_1 ;
+  x3do:hasMaterial :Material_2_6_38_1_1_1 .
+:Material_2_6_38_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_6_38_1_1 ;
+  x3do:diffuseColor ( 0.219608 0.137255 0 ) .
+:Cylinder_2_6_38_1_2 a owl:NamedIndividual, x3do:Cylinder ;
+  x3do:hasParent :Shape_2_6_38_1 ;
+  x3do:height .2 ;
+  x3do:radius .1 .
+:Transform_2_6_39 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :SnowmanRoot ;
+  x3do:hasChildren :Shape_2_6_39_1 ;
+  x3do:translation ( 0 1.15 0 ) .
+:Shape_2_6_39_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_6_39 ;
+  x3do:hasAppearance :Appearance_2_6_39_1_1 ;
+  x3do:hasGeometry :Sphere_2_6_39_1_2 .
+:Appearance_2_6_39_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_6_39_1 ;
+  x3do:hasTexture :PixelColors-USE-1 .
+:PixelColors-USE-1 a owl:NamedIndividual, x3do:PixelTexture ;
+  x3do:hasParent :Appearance_2_6_39_1_1 ;
+  owl:sameAs :PixelColors . # DEF matching this USE
+:Sphere_2_6_39_1_2 a owl:NamedIndividual, x3do:Sphere ;
+  x3do:hasParent :Shape_2_6_39_1 ;
+  x3do:radius 1.1 .
+:Transform_2_6_40 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :SnowmanRoot ;
+  x3do:hasChildren :Shape_2_6_40_1 ;
+  x3do:rotation ( 0 0 1 1.57 ) ;
+  x3do:translation ( 0 1.5 0 ) .
+:Shape_2_6_40_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_6_40 ;
+  x3do:hasAppearance :Appearance_2_6_40_1_1 ;
+  x3do:hasGeometry :Cylinder_2_6_40_1_2 .
+:Appearance_2_6_40_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_6_40_1 ;
+  x3do:hasMaterial :Material_2_6_40_1_1_1 .
+:Material_2_6_40_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_6_40_1_1 ;
+  x3do:diffuseColor ( .5 .25 .05 ) .
+:Cylinder_2_6_40_1_2 a owl:NamedIndividual, x3do:Cylinder ;
+  x3do:hasParent :Shape_2_6_40_1 ;
+  x3do:height 4.9 ;
+  x3do:radius 0.1 .
+:Transform_2_6_41 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :SnowmanRoot ;
+  x3do:hasChildren :Shape_2_6_41_1 ;
+  x3do:rotation ( 0 0.92848 0.37139 1.57 ) ;
+  x3do:translation ( 2 1.5 0 ) .
+:Shape_2_6_41_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_6_41 ;
+  x3do:hasAppearance :Appearance_2_6_41_1_1 ;
+  x3do:hasGeometry :Cylinder_2_6_41_1_2 .
+:Appearance_2_6_41_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_6_41_1 ;
+  x3do:hasMaterial :Material_2_6_41_1_1_1 .
+:Material_2_6_41_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_6_41_1_1 ;
+  x3do:diffuseColor ( .5 .25 .05 ) .
+:Cylinder_2_6_41_1_2 a owl:NamedIndividual, x3do:Cylinder ;
+  x3do:hasParent :Shape_2_6_41_1 ;
+  x3do:height .9 ;
+  x3do:radius 0.05 .
+:Transform_2_6_42 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :SnowmanRoot ;
+  x3do:hasChildren :Shape_2_6_42_1 ;
+  x3do:rotation ( 0.84515 -0.50709 0.16903 1.57 ) ;
+  x3do:translation ( 1.5 1.5 0 ) .
+:Shape_2_6_42_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_6_42 ;
+  x3do:hasAppearance :Appearance_2_6_42_1_1 ;
+  x3do:hasGeometry :Cylinder_2_6_42_1_2 .
+:Appearance_2_6_42_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_6_42_1 ;
+  x3do:hasMaterial :Material_2_6_42_1_1_1 .
+:Material_2_6_42_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_6_42_1_1 ;
+  x3do:diffuseColor ( .5 .25 .05 ) .
+:Cylinder_2_6_42_1_2 a owl:NamedIndividual, x3do:Cylinder ;
+  x3do:hasParent :Shape_2_6_42_1 ;
+  x3do:height .7 ;
+  x3do:radius 0.03 .
+:Transform_2_6_43 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :SnowmanRoot ;
+  x3do:hasChildren :Shape_2_6_43_1 ;
+  x3do:rotation ( 0 0.64018 0.76822 1.57 ) ;
+  x3do:translation ( -1 1.5 0 ) .
+:Shape_2_6_43_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_6_43 ;
+  x3do:hasAppearance :Appearance_2_6_43_1_1 ;
+  x3do:hasGeometry :Cylinder_2_6_43_1_2 .
+:Appearance_2_6_43_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_6_43_1 ;
+  x3do:hasMaterial :Material_2_6_43_1_1_1 .
+:Material_2_6_43_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_6_43_1_1 ;
+  x3do:diffuseColor ( .5 .25 .05 ) .
+:Cylinder_2_6_43_1_2 a owl:NamedIndividual, x3do:Cylinder ;
+  x3do:hasParent :Shape_2_6_43_1 ;
+  x3do:height 1 ;
+  x3do:radius 0.05 .
+:Transform_2_6_44 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :SnowmanRoot ;
+  x3do:hasChildren :Shape_2_6_44_1 ;
+  x3do:rotation ( 0 0.70711 -0.70711 1 ) ;
+  x3do:translation ( -1.9 1.5 0 ) .
+:Shape_2_6_44_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_6_44 ;
+  x3do:hasAppearance :Appearance_2_6_44_1_1 ;
+  x3do:hasGeometry :Cylinder_2_6_44_1_2 .
+:Appearance_2_6_44_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_6_44_1 ;
+  x3do:hasMaterial :Material_2_6_44_1_1_1 .
+:Material_2_6_44_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_6_44_1_1 ;
+  x3do:diffuseColor ( .5 .25 .05 ) .
+:Cylinder_2_6_44_1_2 a owl:NamedIndividual, x3do:Cylinder ;
+  x3do:hasParent :Shape_2_6_44_1 ;
+  x3do:height .5 ;
+  x3do:radius 0.04 .
+:Transform_2_6_45 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :SnowmanRoot ;
+  x3do:hasChildren :Shape_2_6_45_1 ;
+  x3do:rotation ( 0 0 1 1.57 ) ;
+  x3do:translation ( 2.45 1.5 0 ) .
+:Shape_2_6_45_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_6_45 ;
+  x3do:hasAppearance :Appearance_2_6_45_1_1 ;
+  x3do:hasGeometry :Box_2_6_45_1_2 .
+:Appearance_2_6_45_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_6_45_1 ;
+  x3do:hasMaterial :Material_2_6_45_1_1_1 .
+:Material_2_6_45_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_6_45_1_1 ;
+  x3do:diffuseColor ( 1 0.039216 0.243137 ) .
+:Box_2_6_45_1_2 a owl:NamedIndividual, x3do:Box ;
+  x3do:hasParent :Shape_2_6_45_1 ;
+  x3do:size ( 0.5 0.5 0.25 ) .
+:Transform_2_6_46 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :SnowmanRoot ;
+  x3do:hasChildren :Shape_2_6_46_1 ;
+  x3do:rotation ( 0.95285 0 0.30345 1.57 ) ;
+  x3do:translation ( 2.75 1.5 0.05 ) .
+:Shape_2_6_46_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_6_46 ;
+  x3do:hasAppearance :Appearance_2_6_46_1_1 ;
+  x3do:hasGeometry :Cylinder_2_6_46_1_2 .
+:Appearance_2_6_46_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_6_46_1 ;
+  x3do:hasMaterial :Material_2_6_46_1_1_1 .
+:Material_2_6_46_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_6_46_1_1 ;
+  x3do:diffuseColor ( 1 0.039216 0.243137 ) .
+:Cylinder_2_6_46_1_2 a owl:NamedIndividual, x3do:Cylinder ;
+  x3do:hasParent :Shape_2_6_46_1 ;
+  x3do:height .25 ;
+  x3do:radius 0.25 .
+:Transform_2_6_47 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :SnowmanRoot ;
+  x3do:hasChildren :Shape_2_6_47_1 ;
+  x3do:rotation ( 0.96352 0 0.26764 1.57 ) ;
+  x3do:translation ( 2.55 1.85 0 ) .
+:Shape_2_6_47_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_6_47 ;
+  x3do:hasAppearance :Appearance_2_6_47_1_1 ;
+  x3do:hasGeometry :Cylinder_2_6_47_1_2 .
+:Appearance_2_6_47_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_6_47_1 ;
+  x3do:hasMaterial :Material_2_6_47_1_1_1 .
+:Material_2_6_47_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_6_47_1_1 ;
+  x3do:diffuseColor ( 1 0.039216 0.243137 ) .
+:Cylinder_2_6_47_1_2 a owl:NamedIndividual, x3do:Cylinder ;
+  x3do:hasParent :Shape_2_6_47_1 ;
+  x3do:height .15 ;
+  x3do:radius 0.15 .
+:Transform_2_6_48 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :SnowmanRoot ;
+  x3do:hasChildren :Shape_2_6_48_1 ;
+  x3do:rotation ( 0 0 1 1.57 ) ;
+  x3do:translation ( -2.45 1.5 0 ) .
+:Shape_2_6_48_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_6_48 ;
+  x3do:hasAppearance :Appearance_2_6_48_1_1 ;
+  x3do:hasGeometry :Box_2_6_48_1_2 .
+:Appearance_2_6_48_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_6_48_1 ;
+  x3do:hasMaterial :Material_2_6_48_1_1_1 .
+:Material_2_6_48_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_6_48_1_1 ;
+  x3do:diffuseColor ( 1 0.039216 0.243137 ) .
+:Box_2_6_48_1_2 a owl:NamedIndividual, x3do:Box ;
+  x3do:hasParent :Shape_2_6_48_1 ;
+  x3do:size ( 0.5 0.5 0.25 ) .
+:Transform_2_6_49 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :SnowmanRoot ;
+  x3do:hasChildren :Shape_2_6_49_1 ;
+  x3do:rotation ( -0.95285 0 0.30345 1.57 ) ;
+  x3do:translation ( -2.75 1.5 0.05 ) .
+:Shape_2_6_49_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_6_49 ;
+  x3do:hasAppearance :Appearance_2_6_49_1_1 ;
+  x3do:hasGeometry :Cylinder_2_6_49_1_2 .
+:Appearance_2_6_49_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_6_49_1 ;
+  x3do:hasMaterial :Material_2_6_49_1_1_1 .
+:Material_2_6_49_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_6_49_1_1 ;
+  x3do:diffuseColor ( 1 0.039216 0.243137 ) .
+:Cylinder_2_6_49_1_2 a owl:NamedIndividual, x3do:Cylinder ;
+  x3do:hasParent :Shape_2_6_49_1 ;
+  x3do:height .25 ;
+  x3do:radius 0.25 .
+:Transform_2_6_50 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :SnowmanRoot ;
+  x3do:hasChildren :Shape_2_6_50_1 ;
+  x3do:rotation ( -0.96352 0 0.26764 1.57 ) ;
+  x3do:translation ( -2.55 1.85 0 ) .
+:Shape_2_6_50_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_6_50 ;
+  x3do:hasAppearance :Appearance_2_6_50_1_1 ;
+  x3do:hasGeometry :Cylinder_2_6_50_1_2 .
+:Appearance_2_6_50_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_6_50_1 ;
+  x3do:hasMaterial :Material_2_6_50_1_1_1 .
+:Material_2_6_50_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_6_50_1_1 ;
+  x3do:diffuseColor ( 1 0.039216 0.243137 ) .
+:Cylinder_2_6_50_1_2 a owl:NamedIndividual, x3do:Cylinder ;
+  x3do:hasParent :Shape_2_6_50_1 ;
+  x3do:height .15 ;
+  x3do:radius 0.15 .
+:Transform_2_6_51 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :SnowmanRoot ;
+  x3do:hasChildren :Shape_2_6_51_1 ;
+  x3do:translation ( 0 1.7 .95 ) .
+:Shape_2_6_51_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_6_51 ;
+  x3do:hasAppearance :Appearance_2_6_51_1_1 ;
+  x3do:hasGeometry :Sphere_2_6_51_1_2 .
+:Appearance_2_6_51_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_6_51_1 ;
+  x3do:hasMaterial :Material_2_6_51_1_1_1 .
+:Material_2_6_51_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_6_51_1_1 ;
+  x3do:diffuseColor ( 0 0 0 ) .
+:Sphere_2_6_51_1_2 a owl:NamedIndividual, x3do:Sphere ;
+  x3do:hasParent :Shape_2_6_51_1 ;
+  x3do:radius .1 .
+:Transform_2_6_52 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :SnowmanRoot ;
+  x3do:hasChildren :Shape_2_6_52_1 ;
+  x3do:translation ( 0 1.25 1.05 ) .
+:Shape_2_6_52_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_6_52 ;
+  x3do:hasAppearance :Appearance_2_6_52_1_1 ;
+  x3do:hasGeometry :Sphere_2_6_52_1_2 .
+:Appearance_2_6_52_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_6_52_1 ;
+  x3do:hasMaterial :Material_2_6_52_1_1_1 .
+:Material_2_6_52_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_6_52_1_1 ;
+  x3do:diffuseColor ( 0 0 0 ) .
+:Sphere_2_6_52_1_2 a owl:NamedIndividual, x3do:Sphere ;
+  x3do:hasParent :Shape_2_6_52_1 ;
+  x3do:radius .1 .
+:Transform_2_6_53 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :SnowmanRoot ;
+  x3do:hasChildren :Shape_2_6_53_1 ;
+  x3do:translation ( 0 .8 1.05 ) .
+:Shape_2_6_53_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_6_53 ;
+  x3do:hasAppearance :Appearance_2_6_53_1_1 ;
+  x3do:hasGeometry :Sphere_2_6_53_1_2 .
+:Appearance_2_6_53_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_6_53_1 ;
+  x3do:hasMaterial :Material_2_6_53_1_1_1 .
+:Material_2_6_53_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_6_53_1_1 ;
+  x3do:diffuseColor ( 0 0 0 ) .
+:Sphere_2_6_53_1_2 a owl:NamedIndividual, x3do:Sphere ;
+  x3do:hasParent :Shape_2_6_53_1 ;
+  x3do:radius .1 .
+:Transform_2_6_54 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :SnowmanRoot ;
+  x3do:hasChildren :Shape_2_6_54_1 ;
+  x3do:translation ( 0 -1 0 ) .
+:Shape_2_6_54_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_6_54 ;
+  x3do:hasAppearance :Appearance_2_6_54_1_1 ;
+  x3do:hasGeometry :Sphere_2_6_54_1_2 .
+:Appearance_2_6_54_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_6_54_1 ;
+  x3do:hasTexture :PixelColors-USE-2 .
+:PixelColors-USE-2 a owl:NamedIndividual, x3do:PixelTexture ;
+  x3do:hasParent :Appearance_2_6_54_1_1 ;
+  owl:sameAs :PixelColors . # DEF matching this USE
+:Sphere_2_6_54_1_2 a owl:NamedIndividual, x3do:Sphere ;
+  x3do:hasParent :Shape_2_6_54_1 ;
+  x3do:radius 1.75 .

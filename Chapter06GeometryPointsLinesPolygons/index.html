@@ -1,0 +1,504 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <link rel="shortcut icon" href="../images/X3DtextIcon16.png" title="X3D"/>
+      <title>X3D4WA, X3D for Web Authors Examples Archive, Chapter 06 Geometry Points Lines Polygons</title>
+      <meta http-equiv="X-UA-Compatible" content="chrome=1,IE=edge"/>
+      <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+      <meta name="author" content="Don Brutzman"/>
+      <meta name="generator"
+             content="https://www.web3d.org/x3d/tools/CreateContentCatalog/CreateContentCatalogPages.xslt"/>
+      <meta name="modified" content="2022-07-03-07:00"/>
+      <meta name="keyword"
+             content="X3D, X3DV, VRML, VRML97, Extensible 3D, Virtual Reality Modeling Language"/>
+   </head>
+   <body>
+      <table
+              align="center"
+              summary="navigation"
+              border="1"
+              cellpadding="2"
+              width="95%">
+         <tr>
+            <td align="center" width="17%">
+               <a href="../index.html" target="_top">
+                  <img src="../images/ToC.png"
+                        title="Table of Contents"
+                        alt="Table of Contents"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter05AppearanceMaterialTextures/index.html" target="_top">
+                  <img src="../images/PreviousChapter.png"
+                        title="Previous Directory Summary"
+                        alt="Previous Directory Summary"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="viewpointSlideshow.html" target="_top">
+                  <img src="../images/MootoolsSlideshowLogo.jpg"
+                        title="Directory Viewpoint Slideshow"
+                        alt="Directory Viewpoint Slideshow"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="15%">
+               <a href="../javadoc/index.html?X3dForWebAuthors/Chapter06GeometryPointsLinesPolygons/package-summary.html"
+                   title="Javadoc for translated java source"
+                   alt="Javadoc for translated java source"
+                   target="_blank">
+                  <img src="../images/Java-32.png"
+                        title="Javadoc for translated java source"
+                        alt="Javadoc for translated java source"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter07EventAnimationInterpolation/index.html" target="_top">
+                  <img src="../images/NextChapter.png"
+                        title="Next Directory Summary"
+                        alt="Next Directory Summary"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="15%">
+               <a href="../../X3dResources.html" target="helpPage">
+                  <img src="../images/Help.png"
+                        title="X3D Resources"
+                        alt="X3D Resources"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+         </tr>
+      </table>
+      <h2 align="center">
+         <i> X3D Example Archives: </i>X3D4WA, X3D for Web Authors, Chapter 06 Geometry Points Lines Polygons</h2>
+      <table align="center"
+              width="85%"
+              summary=""
+              border="0"
+              cellpadding="0">
+         <tr align="center">
+            <td><!--ChapterPackageDescription--><!--Contents of file ../../content/examples/X3dForWebAuthors/Chapter06GeometryPointsLinesPolygons/package-catalog.html-->
+    
+    <table bgColor="#ffffff" border="0" width="100%">
+        <tbody>
+            <tr>
+                <td width="100%" align="center">
+                    <br />
+                    
+                    <a href="index.html"><img alt="Color Per Vertex Examples" title="Color Per Vertex Examples" border="0" hspace="0" src="ColorPerVertexExamples.png" width="600" height="100" align="middle"/></a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <p>
+				Numerous X3D nodes are available for presenting points, lines, and a variety of polygonal meshes.
+    </p>
+    
+
+    
+    <p>
+                 Many kinds of geometry can be created using 
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#PointSet" target="X3dTooltips" title="X3D Tooltip">PointSet</a>,
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#LineSet" target="X3dTooltips" title="X3D Tooltip">LineSet</a>,
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#IndexedLineSet" target="X3dTooltips" title="X3D Tooltip">IndexedLineSet</a>,
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#IndexedFaceSet" target="X3dTooltips" title="X3D Tooltip">IndexedFaceSet</a>,
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#ElevationGrid" target="X3dTooltips" title="X3D Tooltip">ElevationGrid</a>
+                 and 
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#Extrusion" target="X3dTooltips" title="X3D Tooltip">Extrusion</a> 
+                 nodes.
+                 Each is placed individually inside a
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#Shape" target="X3dTooltips" title="X3D Tooltip">Shape</a>
+                 node.
+    </p>
+    
+
+    
+    <p>
+                 Geometric properties are controlled by 
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#Color" target="X3dTooltips" title="X3D Tooltip">Color</a>,
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#ColorRGBA" target="X3dTooltips" title="X3D Tooltip">ColorRGBA</a>,
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#Coordinate" target="X3dTooltips" title="X3D Tooltip">Coordinate</a>,
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#CoordinateDouble" target="X3dTooltips" title="X3D Tooltip">CoordinateDouble</a>,
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#Normal" target="X3dTooltips" title="X3D Tooltip">Normal</a>,
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#TextureCoordinate" target="X3dTooltips" title="X3D Tooltip">TextureCoordinate</a>,
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#TextureCoordinateGenerator" target="X3dTooltips" title="X3D Tooltip">TextureCoordinateGenerator</a>
+                 and 
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#MultiTextureCoordinate" target="X3dTooltips" title="X3D Tooltip">MultiTextureCoordinate</a> 
+                 nodes.
+    </p>
+    
+
+    
+    <p>
+                 The supporting
+                 <a href="http://x3dgraphics.com/slidesets/X3dForWebAuthors/Chapter06GeometryPointsLinesPolygons.pdf" target="X3dChapterSlideset">Chapter&nbsp;6 slideset</a>
+                 and course videos
+                (<a href="https://www.movesinstitute.org/Video/Courses/X3dForWebAuthors/X3dForWebAuthorsVideo.html#6" target="X3dChapterVideos">NPS</a>,
+                 <a href="https://www.youtube.com/playlist?list=PLuSIsM-86silXbPFOJ43Qgn47Pw6RufeB" target="X3dChapterYouTubeVideos">YouTube</a>)
+                 for <i>X3D for Web Authors</i> are available online via
+                 <a href="http://X3dGraphics.com" target="_blank">X3dGraphics.com</a>.
+    </p>
+    
+
+    
+    <p>
+                     Also available:
+                     <a href="https://www.web3d.org/x3d/content/examples/X3dSceneAuthoringHints.html#Meshes" target="_blank">X3D Scene Authoring Hints: Meshes</a>.
+    </p>
+    
+
+
+  </td>
+         </tr>
+      </table>
+      <table align="center"
+              width="85%"
+              summary=""
+              border="1"
+              cellpadding="6">
+         <tr align="center">
+            <th colspan="2" width="25%" align="center">&nbsp;&nbsp;15 X3D Models</th>
+            <th width="75%" align="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;X3D Model Descriptions</th>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="ColorExample"/>
+            </td>
+            <td>
+               <a href="ColorExampleIndex.html">Color Example</a>
+            </td>
+            <td>Vertex color applied to IndexedFaceSet built positive-displacement cylinder pump house. Note that this scene is not really static because the PositionInterpolators contain an initial offest of the piston and rocker arm.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="ColorPerVertexExamples"/>
+               <a href="ColorPerVertexExamplesIndex.html">
+                  <img src="_thumbnails/ColorPerVertexExamplesThumbnail.png"
+                        height="48"
+                        alt="ColorPerVertexExamples"
+                        title="ColorPerVertexExamples"/>
+               </a>
+            </td>
+            <td>
+               <a href="ColorPerVertexExamplesIndex.html">Color Per Vertex Examples</a>
+            </td>
+            <td>Geometry Polygons Nodes: Color, Coordinate, IndexedFaceSet, IndexedLineSet, PointSet</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="ElevationGridNonPlanarQuadrilaterals"/>
+               <a href="ElevationGridNonPlanarQuadrilateralsIndex.html">
+                  <img src="_thumbnails/ElevationGridNonPlanarQuadrilateralsThumbnail.png"
+                        height="48"
+                        alt="ElevationGridNonPlanarQuadrilaterals"
+                        title="ElevationGridNonPlanarQuadrilaterals"/>
+               </a>
+            </td>
+            <td>
+               <a href="ElevationGridNonPlanarQuadrilateralsIndex.html">Elevation Grid Non Planar Quadrilaterals</a>
+            </td>
+            <td>Show how a single nonplanar quadrilateral can be tesselated in 2 different ways.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="ExtrusionCrossSectionITSSPrototype"/>
+               <a href="ExtrusionCrossSectionITSSPrototypeIndex.html">
+                  <img src="_thumbnails/ExtrusionCrossSectionITSSPrototypeThumbnail.png"
+                        height="48"
+                        alt="ExtrusionCrossSectionITSSPrototype"
+                        title="ExtrusionCrossSectionITSSPrototype"/>
+               </a>
+            </td>
+            <td>
+               <a href="ExtrusionCrossSectionITSSPrototypeIndex.html">Extrusion Cross Section ITSSPrototype</a>
+            </td>
+            <td>Shape prototype for Enclosing IndexedTriangleStripSet that also draws spine line plus oriented, scaled cross sections at each spine point.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="ExtrusionCrossSectionPrototype"/>
+               <a href="ExtrusionCrossSectionPrototypeIndex.html">
+                  <img src="_thumbnails/ExtrusionCrossSectionPrototypeThumbnail.png"
+                        height="48"
+                        alt="ExtrusionCrossSectionPrototype"
+                        title="ExtrusionCrossSectionPrototype"/>
+               </a>
+            </td>
+            <td>
+               <a href="ExtrusionCrossSectionPrototypeIndex.html">Extrusion Cross Section Prototype</a>
+            </td>
+            <td>Shape prototype for Extrusion node that also draws spine line plus oriented, scaled cross sections at each spine point.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="ExtrusionPentagon"/>
+               <a href="ExtrusionPentagonIndex.html">
+                  <img src="_thumbnails/ExtrusionPentagonThumbnail.png"
+                        height="48"
+                        alt="ExtrusionPentagon"
+                        title="ExtrusionPentagon"/>
+               </a>
+            </td>
+            <td>
+               <a href="ExtrusionPentagonIndex.html">Extrusion Pentagon</a>
+            </td>
+            <td>Simple regular pentagon extruded vertically, shown side-by-side with an ExtrusionCrossSection visualization.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="ExtrusionPentagonCrossSectionItss"/>
+               <a href="ExtrusionPentagonCrossSectionItssIndex.html">
+                  <img src="_thumbnails/ExtrusionPentagonCrossSectionItssThumbnail.png"
+                        height="48"
+                        alt="ExtrusionPentagonCrossSectionItss"
+                        title="ExtrusionPentagonCrossSectionItss"/>
+               </a>
+            </td>
+            <td>
+               <a href="ExtrusionPentagonCrossSectionItssIndex.html">Extrusion Pentagon Cross Section Itss</a>
+            </td>
+            <td>Comparison of Extrusion, ExtrusionCrossSectionPrototype, ExtrusionCrossSectionITSSPrototype.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="ExtrusionPentagonCrossSectionItssTexture"/>
+               <a href="ExtrusionPentagonCrossSectionItssTextureIndex.html">
+                  <img src="_thumbnails/ExtrusionPentagonCrossSectionItssTextureThumbnail.png"
+                        height="48"
+                        alt="ExtrusionPentagonCrossSectionItssTexture"
+                        title="ExtrusionPentagonCrossSectionItssTexture"/>
+               </a>
+            </td>
+            <td>
+               <a href="ExtrusionPentagonCrossSectionItssTextureIndex.html">Extrusion Pentagon Cross Section Itss Texture</a>
+            </td>
+            <td>Comparison of Extrusion, ExtrusionCrossSectionPrototype, ExtrusionCrossSectionITSSPrototype for Texture Mapping.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="ExtrusionRoomWalls"/>
+               <a href="ExtrusionRoomWallsIndex.html">
+                  <img src="_thumbnails/ExtrusionRoomWallsThumbnail.png"
+                        height="48"
+                        alt="ExtrusionRoomWalls"
+                        title="ExtrusionRoomWalls"/>
+               </a>
+            </td>
+            <td>
+               <a href="ExtrusionRoomWallsIndex.html">Extrusion Room Walls</a>
+            </td>
+            <td>Wall definition for a room, defined as a cross section and extruded vertically.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="IndexedFaceSetExample"/>
+               <a href="IndexedFaceSetExampleIndex.html">
+                  <img src="_thumbnails/IndexedFaceSetExampleThumbnail.png"
+                        height="48"
+                        alt="IndexedFaceSetExample"
+                        title="IndexedFaceSetExample"/>
+               </a>
+            </td>
+            <td>
+               <a href="IndexedFaceSetExampleIndex.html">Indexed Face Set Example</a>
+            </td>
+            <td>Positive-displacement cylinder pump house built using IndexedFaceSet nodes.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="IndexedLineSetExample"/>
+               <a href="IndexedLineSetExampleIndex.html">
+                  <img src="_thumbnails/IndexedLineSetExampleThumbnail.png"
+                        height="48"
+                        alt="IndexedLineSetExample"
+                        title="IndexedLineSetExample"/>
+               </a>
+            </td>
+            <td>
+               <a href="IndexedLineSetExampleIndex.html">Indexed Line Set Example</a>
+            </td>
+            <td>The way points and path of the animated shark Lucy traversing the tank, using IndexedLineSet node.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="LineSetComparison"/>
+               <a href="LineSetComparisonIndex.html">
+                  <img src="_thumbnails/LineSetComparisonThumbnail.png"
+                        height="48"
+                        alt="LineSetComparison"
+                        title="LineSetComparison"/>
+               </a>
+            </td>
+            <td>
+               <a href="LineSetComparisonIndex.html">Line Set Comparison</a>
+            </td>
+            <td>A simple wireframe cube, comparing two functionally equivalent nodes: IndexedLineSet (per-vertex coloring) with LineSet (per-segment coloring). Keeping track of how each node "connects the dots" is simply a book-keeping problem.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="LineSetExample"/>
+               <a href="LineSetExampleIndex.html">
+                  <img src="_thumbnails/LineSetExampleThumbnail.png"
+                        height="48"
+                        alt="LineSetExample"
+                        title="LineSetExample"/>
+               </a>
+            </td>
+            <td>
+               <a href="LineSetExampleIndex.html">Line Set Example</a>
+            </td>
+            <td>The way points and path of the animated shark Lucy traversing the tank, using LineSet node.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="PointSetExample"/>
+               <a href="PointSetExampleIndex.html">
+                  <img src="_thumbnails/PointSetExampleThumbnail.png"
+                        height="48"
+                        alt="PointSetExample"
+                        title="PointSetExample"/>
+               </a>
+            </td>
+            <td>
+               <a href="PointSetExampleIndex.html">Point Set Example</a>
+            </td>
+            <td>Way points for the animated shark Lucy traversing the tank.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="X3dBookWebsiteLogo"/>
+               <a href="X3dBookWebsiteLogoIndex.html">
+                  <img src="_thumbnails/X3dBookWebsiteLogoThumbnail.png"
+                        height="48"
+                        alt="X3dBookWebsiteLogo"
+                        title="X3dBookWebsiteLogo"/>
+               </a>
+            </td>
+            <td>
+               <a href="X3dBookWebsiteLogoIndex.html"> X3D Book Website Logo</a>
+            </td>
+            <td>Extrusion of X3D book used for x3dGraphics.com website logo</td>
+         </tr>
+      </table>
+      <table width="80%" border="0" align="center">
+         <tr>
+            <td>
+               <p style="text-align:center">Online at <a href="https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter06GeometryPointsLinesPolygons/index.html">https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter06GeometryPointsLinesPolygons</a>
+               </p>
+               <p align="center" width="80%">
+                  <a href="https://validator.w3.org/check?uri=https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter06GeometryPointsLinesPolygons/index.html"
+                      target="_blank">
+                     <img src="https://www.w3.org/Icons/valid-xhtml10"
+                           title="Validate XHTML 1.1"
+                           alt="Validate XHTML 1.1"
+                           height="31"
+                           width="88"
+                           border="0"
+                           align="right"/>
+                  </a>
+               </p>
+               <p style="text-align:center">Master source-code model archive is under subversion control at <br/>
+                  <a href="https://sourceforge.net/p/x3d/code/HEAD/tree/www.web3d.org/x3d/content/examples/X3dForWebAuthors/Chapter06GeometryPointsLinesPolygons/"
+                      target="_blank">https://sourceforge.net/p/x3d/code/HEAD/tree/www.web3d.org/x3d/content/examples/X3dForWebAuthors/Chapter06GeometryPointsLinesPolygons</a>
+               </p>
+            </td>
+         </tr>
+      </table>
+      <p align="center">
+The 
+<a href="../../X3dResources.html#X3dForWebAuthors">X3D Resources: Examples</a> page
+and
+<a href="https://savage.nps.edu/Savage/developers.html">Savage Developers Guide</a>
+provide more information about the production of this archive.</p>
+      <table
+              align="center"
+              summary="navigation"
+              border="1"
+              cellpadding="2"
+              width="95%">
+         <tr>
+            <td align="center" width="17%">
+               <a href="../index.html" target="_top">
+                  <img src="../images/ToC.png"
+                        title="Table of Contents"
+                        alt="Table of Contents"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter05AppearanceMaterialTextures/index.html" target="_top">
+                  <img src="../images/PreviousChapter.png"
+                        title="Previous Directory Summary"
+                        alt="Previous Directory Summary"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="viewpointSlideshow.html" target="_top">
+                  <img src="../images/MootoolsSlideshowLogo.jpg"
+                        title="Directory Viewpoint Slideshow"
+                        alt="Directory Viewpoint Slideshow"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="15%">
+               <a href="../javadoc/index.html?X3dForWebAuthors/Chapter06GeometryPointsLinesPolygons/package-summary.html"
+                   title="Javadoc for translated java source"
+                   alt="Javadoc for translated java source"
+                   target="_blank">
+                  <img src="../images/Java-32.png"
+                        title="Javadoc for translated java source"
+                        alt="Javadoc for translated java source"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter07EventAnimationInterpolation/index.html" target="_top">
+                  <img src="../images/NextChapter.png"
+                        title="Next Directory Summary"
+                        alt="Next Directory Summary"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="15%">
+               <a href="../../X3dResources.html" target="helpPage">
+                  <img src="../images/Help.png"
+                        title="X3D Resources"
+                        alt="X3D Resources"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+         </tr>
+      </table>
+   </body>
+</html>

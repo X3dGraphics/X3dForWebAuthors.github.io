@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <link rel="shortcut icon" href="../images/X3DtextIcon16.png" title="X3D"/>
+      <title>X3D4WA, X3D for Web Authors Examples Archive, Chapter 10 Geometry 2D</title>
+      <meta http-equiv="X-UA-Compatible" content="chrome=1,IE=edge"/>
+      <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+      <meta name="author" content="Don Brutzman"/>
+      <meta name="generator"
+             content="https://www.web3d.org/x3d/tools/CreateContentCatalog/CreateContentCatalogPages.xslt"/>
+      <meta name="modified" content="2022-07-03-07:00"/>
+      <meta name="keyword"
+             content="X3D, X3DV, VRML, VRML97, Extensible 3D, Virtual Reality Modeling Language"/>
+   </head>
+   <body>
+      <table
+              align="center"
+              summary="navigation"
+              border="1"
+              cellpadding="2"
+              width="95%">
+         <tr>
+            <td align="center" width="17%">
+               <a href="../index.html" target="_top">
+                  <img src="../images/ToC.png"
+                        title="Table of Contents"
+                        alt="Table of Contents"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter09EventUtilitiesScripting/index.html" target="_top">
+                  <img src="../images/PreviousChapter.png"
+                        title="Previous Directory Summary"
+                        alt="Previous Directory Summary"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="viewpointSlideshow.html" target="_top">
+                  <img src="../images/MootoolsSlideshowLogo.jpg"
+                        title="Directory Viewpoint Slideshow"
+                        alt="Directory Viewpoint Slideshow"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="15%">
+               <a href="../javadoc/index.html?X3dForWebAuthors/Chapter10Geometry2D/package-summary.html"
+                   title="Javadoc for translated java source"
+                   alt="Javadoc for translated java source"
+                   target="_blank">
+                  <img src="../images/Java-32.png"
+                        title="Javadoc for translated java source"
+                        alt="Javadoc for translated java source"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter11LightingEnvironmentalEffects/index.html"
+                   target="_top">
+                  <img src="../images/NextChapter.png"
+                        title="Next Directory Summary"
+                        alt="Next Directory Summary"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="15%">
+               <a href="../../X3dResources.html" target="helpPage">
+                  <img src="../images/Help.png"
+                        title="X3D Resources"
+                        alt="X3D Resources"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+         </tr>
+      </table>
+      <h2 align="center">
+         <i> X3D Example Archives: </i>X3D4WA, X3D for Web Authors, Chapter 10 Geometry 2D</h2>
+      <table align="center"
+              width="85%"
+              summary=""
+              border="0"
+              cellpadding="0">
+         <tr align="center">
+            <td><!--ChapterPackageDescription--><!--Contents of file ../../content/examples/X3dForWebAuthors/Chapter10Geometry2D/package-catalog.html-->
+    
+    <table bgColor="#ffffff" border="0" width="100%">
+        <tbody>
+            <tr>
+                <td>
+    <p>
+				Geometry2D nodes simplify creation of simple planar shapes, which can be helpful for billboards and user interfaces.
+    </p>
+    
+
+    <p>
+                 Geometry2D nodes simplify creation of simple planar shapes.
+                 Planar geometry includes the
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#Arc2D" target="X3dTooltips" title="X3D Tooltip">Arc2D</a>,
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#ArcClose2D" target="X3dTooltips" title="X3D Tooltip">ArcClose2D</a>,
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#Circle2D" target="X3dTooltips" title="X3D Tooltip">Circle2D</a>,
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#Disk2D" target="X3dTooltips" title="X3D Tooltip">Disk2D</a>,
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#Polyline2D" target="X3dTooltips" title="X3D Tooltip">Polyline2D</a>,
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#Polypoint2D" target="X3dTooltips" title="X3D Tooltip">Polypoint2D</a>,
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#Rectangle2D" target="X3dTooltips" title="X3D Tooltip">Rectangle2D</a> 
+                 and 
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#TriangleSet2D" target="X3dTooltips" title="X3D Tooltip">TriangleSet2D</a>
+                 nodes.
+                 Each Geometry2D node is placed individually inside a
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#Shape" target="X3dTooltips" title="X3D Tooltip">Shape</a>
+                 node.
+    </p>
+    
+
+    <p>
+                 The supporting
+                 <a href="http://x3dgraphics.com/slidesets/X3dForWebAuthors/Chapter10Geometry2D.pdf" target="X3dChapterSlideset">Chapter&nbsp;10 slideset</a>
+                 and course videos
+                (<a href="https://www.movesinstitute.org/Video/Courses/X3dForWebAuthors/X3dForWebAuthorsVideo.html#10" target="X3dChapterVideos">NPS</a>,
+                 <a href="https://www.youtube.com/playlist?list=PLuSIsM-86simpd5kk-Iftauhpz5GDGgz0" target="X3dChapterYouTubeVideos">YouTube</a>)
+                 for <i>X3D for Web Authors</i> are available online via
+                 <a href="http://X3dGraphics.com" target="_blank">X3dGraphics.com</a>.
+    </p>
+    
+
+                </td>
+                
+                <td align="left" cellpadding="10">
+                    
+                    <a href="index.html"><img alt="X3D Geometry2D nodes are planar" title="X3D Geometry2D nodes are planar" border="0" hspace="10" src="Summary2D.png" width="138" height="119" align="left"/></a>
+                </td>
+
+            </tr>
+        </tbody>
+    </table>
+
+    
+
+
+  </td>
+         </tr>
+      </table>
+      <table align="center"
+              width="85%"
+              summary=""
+              border="1"
+              cellpadding="6">
+         <tr align="center">
+            <th colspan="2" width="25%" align="center">&nbsp;&nbsp;9 X3D Models</th>
+            <th width="75%" align="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;X3D Model Descriptions</th>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Arc2dExample"/>
+               <a href="Arc2dExampleIndex.html">
+                  <img src="_thumbnails/Arc2dExampleThumbnail.png"
+                        height="48"
+                        alt="Arc2dExample"
+                        title="Arc2dExample"/>
+               </a>
+            </td>
+            <td>
+               <a href="Arc2dExampleIndex.html">Arc 2D Example</a>
+            </td>
+            <td>Example of Arc2D node showing semicircular arcs</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="ArcClose2dExample"/>
+               <a href="ArcClose2dExampleIndex.html">
+                  <img src="_thumbnails/ArcClose2dExampleThumbnail.png"
+                        height="48"
+                        alt="ArcClose2dExample"
+                        title="ArcClose2dExample"/>
+               </a>
+            </td>
+            <td>
+               <a href="ArcClose2dExampleIndex.html">Arc Close 2D Example</a>
+            </td>
+            <td>Example of ArcClose2D showing PIE or CHORD subsections of circular geometry.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Circle2dExample"/>
+               <a href="Circle2dExampleIndex.html">
+                  <img src="_thumbnails/Circle2dExampleThumbnail.png"
+                        height="48"
+                        alt="Circle2dExample"
+                        title="Circle2dExample"/>
+               </a>
+            </td>
+            <td>
+               <a href="Circle2dExampleIndex.html">Circle 2D Example</a>
+            </td>
+            <td>Example of Circle2D node showing a simple circular circumference.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Disk2dExample"/>
+               <a href="Disk2dExampleIndex.html">
+                  <img src="_thumbnails/Disk2dExampleThumbnail.png"
+                        height="48"
+                        alt="Disk2dExample"
+                        title="Disk2dExample"/>
+               </a>
+            </td>
+            <td>
+               <a href="Disk2dExampleIndex.html">Disk 2D Example</a>
+            </td>
+            <td>Example of Disk2D showing circular geometry with an optional center hole.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Polyline2dExample"/>
+               <a href="Polyline2dExampleIndex.html">
+                  <img src="_thumbnails/Polyline2dExampleThumbnail.png"
+                        height="48"
+                        alt="Polyline2dExample"
+                        title="Polyline2dExample"/>
+               </a>
+            </td>
+            <td>
+               <a href="Polyline2dExampleIndex.html">Polyline 2D Example</a>
+            </td>
+            <td>Example of Polyline2D showing multiple 2D line segments.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Polypoint2dExample"/>
+               <a href="Polypoint2dExampleIndex.html">
+                  <img src="_thumbnails/Polypoint2dExampleThumbnail.png"
+                        height="48"
+                        alt="Polypoint2dExample"
+                        title="Polypoint2dExample"/>
+               </a>
+            </td>
+            <td>
+               <a href="Polypoint2dExampleIndex.html">Polypoint 2D Example</a>
+            </td>
+            <td>Example of Polypoint2D showing a simple set of points.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Rectangle2dExample"/>
+               <a href="Rectangle2dExampleIndex.html">
+                  <img src="_thumbnails/Rectangle2dExampleThumbnail.png"
+                        height="48"
+                        alt="Rectangle2dExample"
+                        title="Rectangle2dExample"/>
+               </a>
+            </td>
+            <td>
+               <a href="Rectangle2dExampleIndex.html">Rectangle 2D Example</a>
+            </td>
+            <td>Example of Rectangle2D showing two simple polygonal shapes.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Summary2D"/>
+               <a href="Summary2DIndex.html">
+                  <img src="_thumbnails/Summary2DThumbnail.png"
+                        height="48"
+                        alt="Summary2D"
+                        title="Summary2D"/>
+               </a>
+            </td>
+            <td>
+               <a href="Summary2DIndex.html">Summary 2D</a>
+            </td>
+            <td>Example of all of the Geometry2D nodes for the X3D Book.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="TriangleSet2dExample"/>
+               <a href="TriangleSet2dExampleIndex.html">
+                  <img src="_thumbnails/TriangleSet2dExampleThumbnail.png"
+                        height="48"
+                        alt="TriangleSet2dExample"
+                        title="TriangleSet2dExample"/>
+               </a>
+            </td>
+            <td>
+               <a href="TriangleSet2dExampleIndex.html">Triangle Set 2D Example</a>
+            </td>
+            <td>Example of TriangleSet2D showing multiple simple triangle shapes.</td>
+         </tr>
+      </table>
+      <table width="80%" border="0" align="center">
+         <tr>
+            <td>
+               <p style="text-align:center">Online at <a href="https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter10Geometry2D/index.html">https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter10Geometry2D</a>
+               </p>
+               <p align="center" width="80%">
+                  <a href="https://validator.w3.org/check?uri=https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter10Geometry2D/index.html"
+                      target="_blank">
+                     <img src="https://www.w3.org/Icons/valid-xhtml10"
+                           title="Validate XHTML 1.1"
+                           alt="Validate XHTML 1.1"
+                           height="31"
+                           width="88"
+                           border="0"
+                           align="right"/>
+                  </a>
+               </p>
+               <p style="text-align:center">Master source-code model archive is under subversion control at <br/>
+                  <a href="https://sourceforge.net/p/x3d/code/HEAD/tree/www.web3d.org/x3d/content/examples/X3dForWebAuthors/Chapter10Geometry2D/"
+                      target="_blank">https://sourceforge.net/p/x3d/code/HEAD/tree/www.web3d.org/x3d/content/examples/X3dForWebAuthors/Chapter10Geometry2D</a>
+               </p>
+            </td>
+         </tr>
+      </table>
+      <p align="center">
+The 
+<a href="../../X3dResources.html#X3dForWebAuthors">X3D Resources: Examples</a> page
+and
+<a href="https://savage.nps.edu/Savage/developers.html">Savage Developers Guide</a>
+provide more information about the production of this archive.</p>
+      <table
+              align="center"
+              summary="navigation"
+              border="1"
+              cellpadding="2"
+              width="95%">
+         <tr>
+            <td align="center" width="17%">
+               <a href="../index.html" target="_top">
+                  <img src="../images/ToC.png"
+                        title="Table of Contents"
+                        alt="Table of Contents"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter09EventUtilitiesScripting/index.html" target="_top">
+                  <img src="../images/PreviousChapter.png"
+                        title="Previous Directory Summary"
+                        alt="Previous Directory Summary"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="viewpointSlideshow.html" target="_top">
+                  <img src="../images/MootoolsSlideshowLogo.jpg"
+                        title="Directory Viewpoint Slideshow"
+                        alt="Directory Viewpoint Slideshow"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="15%">
+               <a href="../javadoc/index.html?X3dForWebAuthors/Chapter10Geometry2D/package-summary.html"
+                   title="Javadoc for translated java source"
+                   alt="Javadoc for translated java source"
+                   target="_blank">
+                  <img src="../images/Java-32.png"
+                        title="Javadoc for translated java source"
+                        alt="Javadoc for translated java source"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter11LightingEnvironmentalEffects/index.html"
+                   target="_top">
+                  <img src="../images/NextChapter.png"
+                        title="Next Directory Summary"
+                        alt="Next Directory Summary"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="15%">
+               <a href="../../X3dResources.html" target="helpPage">
+                  <img src="../images/Help.png"
+                        title="X3D Resources"
+                        alt="X3D Resources"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+         </tr>
+      </table>
+   </body>
+</html>

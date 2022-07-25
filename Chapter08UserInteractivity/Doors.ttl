@@ -1,0 +1,256 @@
+@prefix :        <https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter08UserInteractivity/Doors.ttl#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema:  <http://schema.org/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix x3d:     <https://www.web3d.org/specifications/x3d-4.0.xsd#> .
+@prefix x3do:    <https://www.web3d.org/specifications/X3dOntology4.0#> .
+
+:X3D a owl:NamedIndividual, x3do:X3D ;
+  x3do:hasHead :head ;
+  x3do:hasScene :Scene ;
+  x3do:profile 'Interactive' ;
+  x3do:version '3.3' ;
+  x3do:noNamespaceSchemaLocation 'https://www.web3d.org/specifications/x3d-3.3.xsd' .
+:head a owl:NamedIndividual, x3do:head ;
+  x3do:hasParent :X3D ;
+  x3do:hasMeta :meta_1_1, :meta_1_2, :meta_1_3, :meta_1_4, :meta_1_5, :meta_1_6, :meta_1_7, :meta_1_8, :meta_1_9, :meta_1_10, :meta_1_11, :meta_1_12 .
+:meta_1_1 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Doors.x3d' ;
+  x3do:name 'title' .
+:meta_1_2 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Two doors activated by different fields from a TouchSensor node.' ;
+  x3do:name 'description' .
+:meta_1_3 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Leonard Daly and Don Brutzman' ;
+  x3do:name 'creator' .
+:meta_1_4 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '6 June 2006' ;
+  x3do:name 'created' .
+:meta_1_5 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '20 October 2019' ;
+  x3do:name 'modified' .
+:meta_1_6 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://X3dGraphics.com' ;
+  x3do:name 'reference' .
+:meta_1_7 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://www.web3d.org/x3d/content/examples/X3dResources.html' ;
+  x3do:name 'reference' .
+:meta_1_8 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Copyright 2006, Daly Realism and Don Brutzman' ;
+  x3do:name 'rights' .
+:meta_1_9 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'X3D book, X3D graphics, X3D-Edit, http://www.x3dGraphics.com' ;
+  x3do:name 'subject' .
+:meta_1_10 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter08UserInteractivity/Doors.x3d' ;
+  x3do:name 'identifier' .
+:meta_1_11 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'X3D-Edit 3.3, https://savage.nps.edu/X3D-Edit' ;
+  x3do:name 'generator' .
+:meta_1_12 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '../license.html' ;
+  x3do:name 'license' .
+:meta dcterms:title "Doors.x3d" .
+:meta dcterms:description "Two doors activated by different fields from a TouchSensor node." .
+:meta dcterms:creator "Leonard Daly and Don Brutzman" .
+:meta dcterms:created "6 June 2006" .
+:meta dcterms:modified "20 October 2019" .
+:meta dcterms:reference "https://X3dGraphics.com" .
+:meta dcterms:reference "https://www.web3d.org/x3d/content/examples/X3dResources.html" .
+:meta dcterms:rights "Copyright 2006, Daly Realism and Don Brutzman" .
+:meta dcterms:subject "X3D book, X3D graphics, X3D-Edit, http://www.x3dGraphics.com" .
+:meta dcterms:identifier "https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter08UserInteractivity/Doors.x3d" .
+:meta dcterms:generator "X3D-Edit 3.3, https://savage.nps.edu/X3D-Edit" .
+:meta dcterms:license "../license.html" .
+:Scene a owl:NamedIndividual, x3do:Scene ;
+  x3do:hasParent :X3D ;
+  x3do:hasChildren :WorldInfo_2_1, :Background_2_2, :NavigationInfo_2_3, :Viewpoint_2_4, :Viewpoint_2_5, :Transform_2_6, :DoorLeftTransform, :DoorRight .
+:WorldInfo_2_1 a owl:NamedIndividual, x3do:WorldInfo ;
+  x3do:hasParent :Scene ;
+  x3do:title 'Doors.x3d' .
+:Background_2_2 a owl:NamedIndividual, x3do:Background ;
+  x3do:hasParent :Scene ;
+  x3do:skyColor ( 1 1 1 ) .
+:NavigationInfo_2_3 a owl:NamedIndividual, x3do:NavigationInfo ;
+  x3do:hasParent :Scene ;
+  x3do:type '"WALK" "ANY"' .
+:Viewpoint_2_4 a owl:NamedIndividual, x3do:Viewpoint ;
+  x3do:hasParent :Scene ;
+  x3do:description 'Initial default' ;
+  x3do:position ( 0 1.4 10 ) .
+:Viewpoint_2_5 a owl:NamedIndividual, x3do:Viewpoint ;
+  x3do:hasParent :Scene ;
+  x3do:description 'Book View' ;
+  x3do:position ( 0 1.4 4.5 ) .
+:Transform_2_6 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :Shape_2_6_1 .
+:Shape_2_6_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_6 ;
+  x3do:hasAppearance :Appearance_2_6_1_1 ;
+  x3do:hasGeometry :Wall .
+:Appearance_2_6_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_6_1 ;
+  x3do:hasMaterial :Material_2_6_1_1_1 ;
+  x3do:hasTexture :ImageTexture_2_6_1_1_2 .
+:Material_2_6_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_6_1_1 ;
+  x3do:diffuseColor ( .6 .2 0 ) ;
+  x3do:shininess 0 .
+:ImageTexture_2_6_1_1_2 a owl:NamedIndividual, x3do:ImageTexture ;
+  x3do:hasParent :Appearance_2_6_1_1 ;
+  x3do:url '"brick_3.jpg" "https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter08UserInteractivity/brick_3.jpg" "http://www.dei.isep.ipp.pt/~losa/public/cg/UniversalMedia/textures/urban/brick_3.jpg"' .
+:Wall a owl:NamedIndividual, x3do:IndexedFaceSet ;
+  x3do:hasParent :Shape_2_6_1 ;
+  x3do:hasCoord :Coordinate_2_6_1_2_1 ;
+  x3do:DEF 'Wall' ;
+  x3do:coordIndex ( 0 1 2 3 -1 0 3 8 11 -1 4 5 6 7 -1 8 9 10 11 -1 12 15 14 13 -1 12 23 20 15 -1 16 19 18 17 -1 20 23 22 21 -1 0 1 13 12 -1 2 14 15 3 -1 4 16 17 5 -1 7 6 18 19 -1 8 20 21 9 -1 11 10 22 23 -1 0 11 23 12 -1 1 13 14 2 -1 3 15 16 4 -1 7 19 20 8 -1 5 17 18 6 -1 9 21 22 10 -1 ) .
+:Coordinate_2_6_1_2_1 a owl:NamedIndividual, x3do:Coordinate ;
+  x3do:hasParent :Wall ;
+  x3do:point ( -2 3 0 -2 0 0 -1.5 0 0 -1.5 2.25 0 -0.5 2.25 0 -0.5 0 0 .5 0 0 .5 2.25 0 1.5 2.25 0 1.5 0 0 2 0 0 2 3 0 -2 3 -0.1 -2 0 -0.1 -1.5 0 -0.1 -1.5 2.25 -0.1 -0.5 2.25 -0.1 -0.5 0 -0.1 .5 0 -0.1 .5 2.25 -0.1 1.5 2.25 -0.1 1.5 0 -0.1 2 0 -0.1 2 3 -0.1 ) .
+:DoorLeftTransform a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :Door, :MoverLeft, :TimerLeft, :TriggerLeft, :FilterLeft, :TouchLeft ;
+  x3do:hasROUTE :ROUTE_2_7_7, :ROUTE_2_7_8, :ROUTE_2_7_9, :ROUTE_2_7_10, :ROUTE_2_7_11 ;
+  x3do:DEF 'DoorLeftTransform' ;
+  x3do:center ( -0.5 0 0 ) ;
+  x3do:translation ( -1 1.125 -0.05 ) .
+:Door a owl:NamedIndividual, x3do:Group ;
+  x3do:hasParent :DoorLeftTransform ;
+  x3do:hasChildren :DoorShape ;
+  x3do:DEF 'Door' .
+:DoorShape a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Door ;
+  x3do:hasAppearance :DoorApp ;
+  x3do:hasGeometry :DoorGeometry ;
+  x3do:DEF 'DoorShape' .
+:DoorApp a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :DoorShape ;
+  x3do:hasMaterial :DoorMat ;
+  x3do:hasTexture :DoorImage ;
+  x3do:DEF 'DoorApp' .
+:DoorMat a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :DoorApp ;
+  x3do:DEF 'DoorMat' ;
+  x3do:diffuseColor ( 0 .7 0 ) .
+:DoorImage a owl:NamedIndividual, x3do:ImageTexture ;
+  x3do:hasParent :DoorApp ;
+  x3do:DEF 'DoorImage' ;
+  x3do:url '"door_1.jpg" "https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter08UserInteractivity/door_1.jpg" "http://www.dei.isep.ipp.pt/~losa/public/cg/UniversalMedia/textures/urban/door_1.jpg"' .
+:DoorGeometry a owl:NamedIndividual, x3do:IndexedFaceSet ;
+  x3do:hasParent :DoorShape ;
+  x3do:hasCoord :Coordinate_2_7_1_1_2_1 ;
+  x3do:hasTexCoord :TextureCoordinate_2_7_1_1_2_2 ;
+  x3do:DEF 'DoorGeometry' ;
+  x3do:coordIndex ( 0 1 2 3 -1 4 7 6 5 -1 0 1 5 4 -1 1 5 6 2 -1 2 6 7 3 -1 3 7 6 4 -1 ) .
+:Coordinate_2_7_1_1_2_1 a owl:NamedIndividual, x3do:Coordinate ;
+  x3do:hasParent :DoorGeometry ;
+  x3do:point ( -0.5 -1.125 .05 .5 -1.125 .05 .5 1.125 .05 -0.5 1.125 .05 -0.5 -1.125 -0.05 .5 -1.125 -0.05 .5 1.125 -0.05 -0.5 1.125 -0.05 ) .
+:TextureCoordinate_2_7_1_1_2_2 a owl:NamedIndividual, x3do:TextureCoordinate ;
+  x3do:hasParent :DoorGeometry ;
+  x3do:point ( 0 0 1 0 1 1 0 1 0 0 1 0 1 1 0 1 1 0 .95 0 1 .95 .95 .95 1 0 .95 0 1 .95 .95 .95 1 0 .95 0 1 .95 .95 .95 1 0 .95 0 1 .95 .95 .95 ) .
+:MoverLeft a owl:NamedIndividual, x3do:OrientationInterpolator ;
+  x3do:hasParent :DoorLeftTransform ;
+  x3do:DEF 'MoverLeft' ;
+  x3do:key ( 0 1 ) ;
+  x3do:keyValue ( 0 1 0 0 0 1 0 -1 ) .
+:TimerLeft a owl:NamedIndividual, x3do:TimeSensor ;
+  x3do:hasParent :DoorLeftTransform ;
+  x3do:DEF 'TimerLeft' ;
+  x3do:cycleInterval '3' .
+:TriggerLeft a owl:NamedIndividual, x3do:TimeTrigger ;
+  x3do:hasParent :DoorLeftTransform ;
+  x3do:DEF 'TriggerLeft' .
+:FilterLeft a owl:NamedIndividual, x3do:BooleanFilter ;
+  x3do:hasParent :DoorLeftTransform ;
+  x3do:DEF 'FilterLeft' .
+:TouchLeft a owl:NamedIndividual, x3do:TouchSensor ;
+  x3do:hasParent :DoorLeftTransform ;
+  x3do:DEF 'TouchLeft' ;
+  x3do:description 'touch to activate' .
+:ROUTE_2_7_7 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :DoorLeftTransform ;
+  x3do:fromField 'isActive' ;
+  x3do:fromNode 'TouchLeft' ;
+  x3do:toField 'set_boolean' ;
+  x3do:toNode 'FilterLeft' .
+:ROUTE_2_7_8 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :DoorLeftTransform ;
+  x3do:fromField 'inputTrue' ;
+  x3do:fromNode 'FilterLeft' ;
+  x3do:toField 'set_boolean' ;
+  x3do:toNode 'TriggerLeft' .
+:ROUTE_2_7_9 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :DoorLeftTransform ;
+  x3do:fromField 'triggerTime' ;
+  x3do:fromNode 'TriggerLeft' ;
+  x3do:toField 'startTime' ;
+  x3do:toNode 'TimerLeft' .
+:ROUTE_2_7_10 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :DoorLeftTransform ;
+  x3do:fromField 'fraction_changed' ;
+  x3do:fromNode 'TimerLeft' ;
+  x3do:toField 'set_fraction' ;
+  x3do:toNode 'MoverLeft' .
+:ROUTE_2_7_11 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :DoorLeftTransform ;
+  x3do:fromField 'value_changed' ;
+  x3do:fromNode 'MoverLeft' ;
+  x3do:toField 'rotation' ;
+  x3do:toNode 'DoorLeftTransform' .
+:DoorRight a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :Door-USE-1, :MoverRight, :TimerRight, :TouchRight ;
+  x3do:hasROUTE :ROUTE_2_8_5, :ROUTE_2_8_6, :ROUTE_2_8_7 ;
+  x3do:DEF 'DoorRight' ;
+  x3do:center ( -0.5 0 0 ) ;
+  x3do:translation ( 1 1.125 -0.05 ) .
+:Door-USE-1 a owl:NamedIndividual, x3do:Group ;
+  x3do:hasParent :DoorRight ;
+  owl:sameAs :Door . # DEF matching this USE
+:MoverRight a owl:NamedIndividual, x3do:OrientationInterpolator ;
+  x3do:hasParent :DoorRight ;
+  x3do:DEF 'MoverRight' ;
+  x3do:key ( 0 1 ) ;
+  x3do:keyValue ( 0 1 0 0 0 1 0 -1 ) .
+:TimerRight a owl:NamedIndividual, x3do:TimeSensor ;
+  x3do:hasParent :DoorRight ;
+  x3do:DEF 'TimerRight' ;
+  x3do:cycleInterval '3' .
+:TouchRight a owl:NamedIndividual, x3do:TouchSensor ;
+  x3do:hasParent :DoorRight ;
+  x3do:DEF 'TouchRight' ;
+  x3do:description 'touch to activate' .
+:ROUTE_2_8_5 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :DoorRight ;
+  x3do:fromField 'touchTime' ;
+  x3do:fromNode 'TouchRight' ;
+  x3do:toField 'startTime' ;
+  x3do:toNode 'TimerRight' .
+:ROUTE_2_8_6 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :DoorRight ;
+  x3do:fromField 'fraction_changed' ;
+  x3do:fromNode 'TimerRight' ;
+  x3do:toField 'set_fraction' ;
+  x3do:toNode 'MoverRight' .
+:ROUTE_2_8_7 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :DoorRight ;
+  x3do:fromField 'value_changed' ;
+  x3do:fromNode 'MoverRight' ;
+  x3do:toField 'rotation' ;
+  x3do:toNode 'DoorRight' .

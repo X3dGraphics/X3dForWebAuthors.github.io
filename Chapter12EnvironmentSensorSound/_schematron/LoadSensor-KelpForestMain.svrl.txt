@@ -1,0 +1,7 @@
+<PositionInterpolator DEF='LEFT_SHALLOW_WAVE'/> missing ROUTE to receive input events [/X3D/Scene/Group[2]/Collision/PositionInterpolator[1], error]
+<PositionInterpolator DEF='LEFT_SHALLOW_WAVE'/> missing ROUTE to send output events [/X3D/Scene/Group[2]/Collision/PositionInterpolator[1], warning]
+<PositionInterpolator DEF='LEFT_DEEP_WAVE'/> missing ROUTE to receive input events [/X3D/Scene/Group[2]/Collision/PositionInterpolator[2], error]
+<PositionInterpolator DEF='RIGHT_SHALLOW_WAVE'/> missing ROUTE to receive input events [/X3D/Scene/Group[2]/Collision/PositionInterpolator[4], error]
+<PositionInterpolator DEF='RIGHT_DEEP_WAVE'/> missing ROUTE to receive input events [/X3D/Scene/Group[2]/Collision/PositionInterpolator[5], error]
+<TimeSensor DEF='MasterClock'/> missing ROUTE to send output events [/X3D/Scene/TimeSensor, warning]
+<LoadSensor DEF='LoadExternal'/> has illegal child node (only single Metadata* node allowed) [/X3D/Scene/LoadSensor, error]

@@ -1,0 +1,11 @@
+#Avalon/Talic System Info:
+#Please mail this information to
+#avalon@ini-graphics.net to get a valid license
+
+appName:     C:\Program Files\Instant Player\bin\InstantPlayer.exe
+userName:    brutzman
+hostName:    IT150751
+sysName:     Windows XP
+machineName: i686
+cpuCount:    2
+hostID:      i172MgUuv/bhb+0Jk1CSdp8QuKY=

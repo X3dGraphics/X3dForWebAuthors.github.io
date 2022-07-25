@@ -1,0 +1,227 @@
+@prefix :        <https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter12EnvironmentSensorSound/SoundLoadSensorTest.ttl#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema:  <http://schema.org/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix x3d:     <https://www.web3d.org/specifications/x3d-4.0.xsd#> .
+@prefix x3do:    <https://www.web3d.org/specifications/X3dOntology4.0#> .
+
+:X3D a owl:NamedIndividual, x3do:X3D ;
+  x3do:hasHead :head ;
+  x3do:hasScene :Scene ;
+  x3do:profile 'Immersive' ;
+  x3do:version '3.3' ;
+  x3do:noNamespaceSchemaLocation 'https://www.web3d.org/specifications/x3d-3.3.xsd' .
+:head a owl:NamedIndividual, x3do:head ;
+  x3do:hasParent :X3D ;
+  x3do:hasMeta :meta_1_1, :meta_1_2, :meta_1_3, :meta_1_4, :meta_1_5, :meta_1_6, :meta_1_7, :meta_1_8, :meta_1_9, :meta_1_10, :meta_1_11, :meta_1_12 .
+:meta_1_1 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'SoundLoadSensorTest.x3d' ;
+  x3do:name 'title' .
+:meta_1_2 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'UsingLoadSensor to test when AudioClip loading is complete' ;
+  x3do:name 'description' .
+:meta_1_3 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '19 July 2008' ;
+  x3do:name 'created' .
+:meta_1_4 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '20 October 2019' ;
+  x3do:name 'modified' .
+:meta_1_5 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Leonard Daly and Don Brutzman' ;
+  x3do:name 'creator' .
+:meta_1_6 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://X3dGraphics.com' ;
+  x3do:name 'reference' .
+:meta_1_7 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://www.web3d.org/x3d/content/examples/X3dResources.html' ;
+  x3do:name 'reference' .
+:meta_1_8 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Copyright 2006, Daly Realism and Don Brutzman' ;
+  x3do:name 'rights' .
+:meta_1_9 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'X3D book, X3D graphics, X3D-Edit, http://www.x3dGraphics.com' ;
+  x3do:name 'subject' .
+:meta_1_10 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter12EnvironmentSensorSound/SoundLoadSensorTest.x3d' ;
+  x3do:name 'identifier' .
+:meta_1_11 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'X3D-Edit 3.3, https://savage.nps.edu/X3D-Edit' ;
+  x3do:name 'generator' .
+:meta_1_12 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '../license.html' ;
+  x3do:name 'license' .
+:meta dcterms:title "SoundLoadSensorTest.x3d" .
+:meta dcterms:description "UsingLoadSensor to test when AudioClip loading is complete" .
+:meta dcterms:created "19 July 2008" .
+:meta dcterms:modified "20 October 2019" .
+:meta dcterms:creator "Leonard Daly and Don Brutzman" .
+:meta dcterms:reference "https://X3dGraphics.com" .
+:meta dcterms:reference "https://www.web3d.org/x3d/content/examples/X3dResources.html" .
+:meta dcterms:rights "Copyright 2006, Daly Realism and Don Brutzman" .
+:meta dcterms:subject "X3D book, X3D graphics, X3D-Edit, http://www.x3dGraphics.com" .
+:meta dcterms:identifier "https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter12EnvironmentSensorSound/SoundLoadSensorTest.x3d" .
+:meta dcterms:generator "X3D-Edit 3.3, https://savage.nps.edu/X3D-Edit" .
+:meta dcterms:license "../license.html" .
+:Scene a owl:NamedIndividual, x3do:Scene ;
+  x3do:hasParent :X3D ;
+  x3do:hasChildren :WorldInfo_2_1, :SomeSound, :ReportWhenLoaded, :ConsoleReport, :PivotTextSigns, :SignRotationInterpolator, :SignRotationClock ;
+  x3do:hasROUTE :ROUTE_2_4, :ROUTE_2_6, :ROUTE_2_7, :ROUTE_2_11, :ROUTE_2_12, :ROUTE_2_13 .
+:WorldInfo_2_1 a owl:NamedIndividual, x3do:WorldInfo ;
+  x3do:hasParent :Scene ;
+  x3do:title 'SoundLoadSensorTest.x3d' .
+:SomeSound a owl:NamedIndividual, x3do:Sound ;
+  x3do:hasParent :Scene ;
+  x3do:hasSource :WaterSounds ;
+  x3do:DEF 'SomeSound' ;
+  x3do:location ( 0 1.6 0 ) ;
+  x3do:maxBack 100 ;
+  x3do:maxFront 100 ;
+  x3do:minBack 10 ;
+  x3do:minFront 10 .
+:WaterSounds a owl:NamedIndividual, x3do:AudioClip ;
+  x3do:hasParent :SomeSound ;
+  x3do:DEF 'WaterSounds' ;
+  x3do:description 'Running Water' ;
+  x3do:url '"aqua.wav" "https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter12EnvironmentSensorSound/aqua.wav"' .
+:ReportWhenLoaded a owl:NamedIndividual, x3do:LoadSensor ;
+  x3do:hasParent :Scene ;
+  x3do:hasWatchList :WaterSounds-USE-1 ;
+  x3do:DEF 'ReportWhenLoaded' .
+:WaterSounds-USE-1 a owl:NamedIndividual, x3do:AudioClip ;
+  x3do:hasParent :ReportWhenLoaded ;
+  owl:sameAs :WaterSounds . # DEF matching this USE
+:ROUTE_2_4 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'loadTime' ;
+  x3do:fromNode 'ReportWhenLoaded' ;
+  x3do:toField 'startTime' ;
+  x3do:toNode 'WaterSounds' .
+:ConsoleReport a owl:NamedIndividual, x3do:Script ;
+  x3do:hasParent :Scene ;
+  x3do:hasField :field_2_5_1, :field_2_5_2 ;
+  x3do:DEF 'ConsoleReport' ;
+  x3do:sourceCode """
+ecmascript:
+function initialize ()
+{
+	Browser.println ('Script initialize() complete');
+}
+function loadComplete (value)
+{
+	Browser.println ('LoadSensor AudioClip isLoaded=' + value);
+}
+function loadTime (value)
+{
+	Browser.println ('LoadSensor AudioClip loadTime=' + value);
+}
+""" .
+:field_2_5_1 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :ConsoleReport ;
+  x3do:accessType 'inputOnly' ;
+  x3do:name 'loadComplete' ;
+  x3do:type 'SFBool' .
+:field_2_5_2 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :ConsoleReport ;
+  x3do:accessType 'inputOnly' ;
+  x3do:name 'loadTime' ;
+  x3do:type 'SFTime' .
+:ROUTE_2_6 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'isLoaded' ;
+  x3do:fromNode 'ReportWhenLoaded' ;
+  x3do:toField 'loadComplete' ;
+  x3do:toNode 'ConsoleReport' .
+:ROUTE_2_7 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'loadTime' ;
+  x3do:fromNode 'ReportWhenLoaded' ;
+  x3do:toField 'loadTime' ;
+  x3do:toNode 'ConsoleReport' .
+:PivotTextSigns a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :Shape_2_8_1, :Transform_2_8_2 ;
+  x3do:DEF 'PivotTextSigns' .
+:Shape_2_8_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :PivotTextSigns ;
+  x3do:hasGeometry :Text_2_8_1_1 ;
+  x3do:hasAppearance :Appearance_2_8_1_2 .
+:Text_2_8_1_1 a owl:NamedIndividual, x3do:Text ;
+  x3do:hasParent :Shape_2_8_1 ;
+  x3do:hasFontStyle :FontStyle_2_8_1_1_1 ;
+  x3do:string '"LoadSensor waiting for AudioClip..."' .
+:FontStyle_2_8_1_1_1 a owl:NamedIndividual, x3do:FontStyle ;
+  x3do:hasParent :Text_2_8_1_1 ;
+  x3do:justify '"MIDDLE" "MIDDLE"' ;
+  x3do:size 0.7 ;
+  x3do:cssStyle 'ITALIC' .
+:Appearance_2_8_1_2 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_8_1 ;
+  x3do:hasMaterial :Material_2_8_1_2_1 .
+:Material_2_8_1_2_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_8_1_2 ;
+  x3do:emissiveColor ( 0.878431 0.262745 0 ) .
+:Transform_2_8_2 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :PivotTextSigns ;
+  x3do:hasChildren :Shape_2_8_2_1 ;
+  x3do:rotation ( 0 1 0 1.57 ) .
+:Shape_2_8_2_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_8_2 ;
+  x3do:hasGeometry :Text_2_8_2_1_1 ;
+  x3do:hasAppearance :Appearance_2_8_2_1_2 .
+:Text_2_8_2_1_1 a owl:NamedIndividual, x3do:Text ;
+  x3do:hasParent :Shape_2_8_2_1 ;
+  x3do:hasFontStyle :FontStyle_2_8_2_1_1_1 ;
+  x3do:string '"LoadSensor reports AudioClip loading complete."' .
+:FontStyle_2_8_2_1_1_1 a owl:NamedIndividual, x3do:FontStyle ;
+  x3do:hasParent :Text_2_8_2_1_1 ;
+  x3do:justify '"MIDDLE" "MIDDLE"' ;
+  x3do:size 0.7 ;
+  x3do:cssStyle 'ITALIC' .
+:Appearance_2_8_2_1_2 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_8_2_1 ;
+  x3do:hasMaterial :Material_2_8_2_1_2_1 .
+:Material_2_8_2_1_2_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_8_2_1_2 ;
+  x3do:emissiveColor ( 0 0.278431 0.027451 ) .
+:SignRotationInterpolator a owl:NamedIndividual, x3do:OrientationInterpolator ;
+  x3do:hasParent :Scene ;
+  x3do:DEF 'SignRotationInterpolator' ;
+  x3do:key ( 0 1 ) ;
+  x3do:keyValue ( 0 1 0 0 0 1 0 -1.57 ) .
+:SignRotationClock a owl:NamedIndividual, x3do:TimeSensor ;
+  x3do:hasParent :Scene ;
+  x3do:DEF 'SignRotationClock' ;
+  x3do:cycleInterval '0.8' .
+:ROUTE_2_11 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'loadTime' ;
+  x3do:fromNode 'ReportWhenLoaded' ;
+  x3do:toField 'startTime' ;
+  x3do:toNode 'SignRotationClock' .
+:ROUTE_2_12 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'fraction_changed' ;
+  x3do:fromNode 'SignRotationClock' ;
+  x3do:toField 'set_fraction' ;
+  x3do:toNode 'SignRotationInterpolator' .
+:ROUTE_2_13 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'value_changed' ;
+  x3do:fromNode 'SignRotationInterpolator' ;
+  x3do:toField 'rotation' ;
+  x3do:toNode 'PivotTextSigns' .

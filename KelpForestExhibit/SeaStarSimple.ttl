@@ -1,0 +1,218 @@
+@prefix :        <https://x3dgraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/SeaStarSimple.ttl#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema:  <http://schema.org/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix x3d:     <https://www.web3d.org/specifications/x3d-4.0.xsd#> .
+@prefix x3do:    <https://www.web3d.org/specifications/X3dOntology4.0#> .
+
+:X3D a owl:NamedIndividual, x3do:X3D ;
+  x3do:hasHead :head ;
+  x3do:hasScene :Scene ;
+  x3do:profile 'Interchange' ;
+  x3do:version '3.3' ;
+  x3do:noNamespaceSchemaLocation 'https://www.web3d.org/specifications/x3d-3.3.xsd' .
+:head a owl:NamedIndividual, x3do:head ;
+  x3do:hasParent :X3D ;
+  x3do:hasMeta :meta_1_1, :meta_1_2, :meta_1_3, :meta_1_4, :meta_1_5, :meta_1_6, :meta_1_7, :meta_1_8, :meta_1_9, :meta_1_10, :meta_1_11, :meta_1_12, :meta_1_13, :meta_1_14 .
+:meta_1_1 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'SeaStarSimple.x3d' ;
+  x3do:name 'title' .
+:meta_1_2 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'A simple sea star constructed out of scaled Sphere primitives.' ;
+  x3do:name 'description' .
+:meta_1_3 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Karl Tenney' ;
+  x3do:name 'creator' .
+:meta_1_4 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Scott Tufts' ;
+  x3do:name 'translator' .
+:meta_1_5 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Don Brutzman' ;
+  x3do:name 'translator' .
+:meta_1_6 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '1 June 1998' ;
+  x3do:name 'created' .
+:meta_1_7 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '13 December 2001' ;
+  x3do:name 'translated' .
+:meta_1_8 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '20 October 2019' ;
+  x3do:name 'modified' .
+:meta_1_9 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '20 October 2019' ;
+  x3do:name 'modified' .
+:meta_1_10 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://x3dgraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/SeaStarSimple.x3d' ;
+  x3do:name 'identifier' .
+:meta_1_11 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Cosmo Worlds V2.0' ;
+  x3do:name 'generator' .
+:meta_1_12 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'X3D-Edit 3.3, https://savage.nps.edu/X3D-Edit' ;
+  x3do:name 'generator' .
+:meta_1_13 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Vrml97ToX3dNist, http://ovrt.nist.gov/v2_x3d.html' ;
+  x3do:name 'generator' .
+:meta_1_14 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '../license.html' ;
+  x3do:name 'license' .
+:meta dcterms:title "SeaStarSimple.x3d" .
+:meta dcterms:description "A simple sea star constructed out of scaled Sphere primitives." .
+:meta dcterms:creator "Karl Tenney" .
+:meta dcterms:translator "Scott Tufts" .
+:meta dcterms:translator "Don Brutzman" .
+:meta dcterms:created "1 June 1998" .
+:meta dcterms:translated "13 December 2001" .
+:meta dcterms:modified "20 October 2019" .
+:meta dcterms:modified "20 October 2019" .
+:meta dcterms:identifier "https://x3dgraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/SeaStarSimple.x3d" .
+:meta dcterms:generator "Cosmo Worlds V2.0" .
+:meta dcterms:generator "X3D-Edit 3.3, https://savage.nps.edu/X3D-Edit" .
+:meta dcterms:generator "Vrml97ToX3dNist, http://ovrt.nist.gov/v2_x3d.html" .
+:meta dcterms:license "../license.html" .
+:Scene a owl:NamedIndividual, x3do:Scene ;
+  x3do:hasParent :X3D ;
+  x3do:hasChildren :WorldInfo_2_1, :AuthoringViewpoints, :Transform_2_3 .
+:WorldInfo_2_1 a owl:NamedIndividual, x3do:WorldInfo ;
+  x3do:hasParent :Scene ;
+  x3do:title 'SeaStarSimple.x3d' .
+:AuthoringViewpoints a owl:NamedIndividual, x3do:Group ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :Viewpoint_2_2_1, :Main, :Above ;
+  x3do:DEF 'AuthoringViewpoints' .
+:Viewpoint_2_2_1 a owl:NamedIndividual, x3do:Viewpoint ;
+  x3do:hasParent :AuthoringViewpoints ;
+  x3do:description 'SeaStarSimple default' .
+:Main a owl:NamedIndividual, x3do:Viewpoint ;
+  x3do:hasParent :AuthoringViewpoints ;
+  x3do:DEF 'Main' ;
+  x3do:description 'SeaStarSimple main' ;
+  x3do:position ( -0.079625 0.149682 2.32008 ) .
+:Above a owl:NamedIndividual, x3do:Viewpoint ;
+  x3do:hasParent :AuthoringViewpoints ;
+  x3do:DEF 'Above' ;
+  x3do:description 'SeaStarSimple from above' ;
+  x3do:orientation ( -0.999868 0.0140676 0.00816969 1.0524 ) ;
+  x3do:position ( -0.0604298 2.20843 1.12432 ) .
+:Transform_2_3 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :Transform_2_3_1, :Transform_2_3_2, :Transform_2_3_3, :Transform_2_3_4, :Transform_2_3_5, :Transform_2_3_6, :Transform_2_3_7, :Transform_2_3_8, :Transform_2_3_9, :Transform_2_3_10 .
+:Transform_2_3_1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_3 ;
+  x3do:hasChildren :star_segment ;
+  x3do:rotation ( 0.0160324 0.999622 0.0223337 0.494856 ) ;
+  x3do:scale ( 0.0564878 0.00994367 0.0245735 ) ;
+  x3do:translation ( -0.359698 0.00994363 1.36377 ) .
+:star_segment a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_3_1 ;
+  x3do:hasAppearance :Appearance_2_3_1_1_1 ;
+  x3do:hasGeometry :Sphere_2_3_1_1_2 ;
+  x3do:DEF 'star_segment' .
+:Appearance_2_3_1_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :star_segment ;
+  x3do:hasMaterial :SantaFe27 .
+:SantaFe27 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_3_1_1_1 ;
+  x3do:DEF 'SantaFe27' ;
+  x3do:ambientIntensity 0.240502 ;
+  x3do:diffuseColor ( 0.484043 0.338715 0.035729 ) ;
+  x3do:shininess 0.085106 ;
+  x3do:specularColor ( 0.223676 0.109052 0.033373 ) .
+:Sphere_2_3_1_1_2 a owl:NamedIndividual, x3do:Sphere ;
+  x3do:hasParent :star_segment .
+:Transform_2_3_2 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_3 ;
+  x3do:hasChildren :star_segment-USE-1 ;
+  x3do:scale ( .0276058 0.0102856 0.0691647 ) ;
+  x3do:translation ( -0.45535 0.0102856 1.22615 ) .
+:star_segment-USE-1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_3_2 ;
+  owl:sameAs :star_segment . # DEF matching this USE
+:Transform_2_3_3 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_3 ;
+  x3do:hasChildren :star_segment-USE-2 ;
+  x3do:rotation ( 6.36314e-008 1 -7.41821e-009 0.631741 ) ;
+  x3do:scale ( 0.0276058 0.0102856 0.0691647 ) ;
+  x3do:translation ( -0.426702 0.0102856 1.34188 ) .
+:star_segment-USE-2 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_3_3 ;
+  owl:sameAs :star_segment . # DEF matching this USE
+:Transform_2_3_4 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_3 ;
+  x3do:hasChildren :star_segment-USE-3 ;
+  x3do:rotation ( -2.40082e-007 -1 3.43709e-007 0.712123 ) ;
+  x3do:scale ( 0.0276058 0.0102856 0.0691647 ) ;
+  x3do:translation ( -0.5 0.0102856 1.32509 ) .
+:star_segment-USE-3 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_3_4 ;
+  owl:sameAs :star_segment . # DEF matching this USE
+:Transform_2_3_5 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_3 ;
+  x3do:hasChildren :star_segment-USE-4 ;
+  x3do:rotation ( 1.85515e-008 -1 -1.05709e-007 0.919461 ) ;
+  x3do:scale ( 0.0276058 0.0102856 0.0691647 ) ;
+  x3do:translation ( -0.39858 0.0102856 1.25 ) .
+:star_segment-USE-4 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_3_5 ;
+  owl:sameAs :star_segment . # DEF matching this USE
+:Transform_2_3_6 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_3 ;
+  x3do:hasChildren :star_segment-USE-5 ;
+  x3do:rotation ( 3.53588e-007 1 1.0134e-006 0.84627 ) ;
+  x3do:scale ( 0.0276058 0.0102856 0.0691647 ) ;
+  x3do:translation ( -0.5 0.0102858 1.25 ) .
+:star_segment-USE-5 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_3_6 ;
+  owl:sameAs :star_segment . # DEF matching this USE
+:Transform_2_3_7 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_3 ;
+  x3do:hasChildren :star_segment-USE-6 ;
+  x3do:rotation ( 1.48158e-008 1 -3.7903e-008 1.57079 ) ;
+  x3do:scale ( 0.0564878 0.00994367 0.0245735 ) ;
+  x3do:translation ( -0.364396 0.00994358 1.19351 ) .
+:star_segment-USE-6 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_3_7 ;
+  owl:sameAs :star_segment . # DEF matching this USE
+:Transform_2_3_8 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_3 ;
+  x3do:hasChildren :star_segment-USE-7 ;
+  x3do:scale ( 0.0564878 0.00994367 0.0245735 ) ;
+  x3do:translation ( -0.569653 0.00994355 1.21309 ) .
+:star_segment-USE-7 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_3_8 ;
+  owl:sameAs :star_segment . # DEF matching this USE
+:Transform_2_3_9 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_3 ;
+  x3do:hasChildren :star_segment-USE-8 ;
+  x3do:rotation ( 4.05455e-007 -1 1.915e-007 1.02836 ) ;
+  x3do:scale ( 0.0564878 0.00994367 0.0245735 ) ;
+  x3do:translation ( -0.464063 0.00994362 1.1596 ) .
+:star_segment-USE-8 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_3_9 ;
+  owl:sameAs :star_segment . # DEF matching this USE
+:Transform_2_3_10 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_3 ;
+  x3do:hasChildren :star_segment-USE-9 ;
+  x3do:rotation ( -5.59581e-009 -1 -9.59606e-009 0.878147 ) ;
+  x3do:scale ( 0.0564878 0.00994367 0.0245735 ) ;
+  x3do:translation ( -0.510391 0.00994369 1.40221 ) .
+:star_segment-USE-9 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_3_10 ;
+  owl:sameAs :star_segment . # DEF matching this USE

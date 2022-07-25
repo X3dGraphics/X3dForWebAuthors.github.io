@@ -1,0 +1,604 @@
+@prefix :        <https://x3dgraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/SeaStarGroup.ttl#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema:  <http://schema.org/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix x3d:     <https://www.web3d.org/specifications/x3d-4.0.xsd#> .
+@prefix x3do:    <https://www.web3d.org/specifications/X3dOntology4.0#> .
+
+:X3D a owl:NamedIndividual, x3do:X3D ;
+  x3do:hasHead :head ;
+  x3do:hasScene :Scene ;
+  x3do:profile 'Immersive' ;
+  x3do:version '3.3' ;
+  x3do:noNamespaceSchemaLocation 'https://www.web3d.org/specifications/x3d-3.3.xsd' .
+:head a owl:NamedIndividual, x3do:head ;
+  x3do:hasParent :X3D ;
+  x3do:hasMeta :meta_1_1, :meta_1_2, :meta_1_3, :meta_1_4, :meta_1_5, :meta_1_6, :meta_1_7, :meta_1_8, :meta_1_9, :meta_1_10 .
+:meta_1_1 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'SeaStarGroup.x3d' ;
+  x3do:name 'title' .
+:meta_1_2 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'SeaStar used in the kelp forest project' ;
+  x3do:name 'description' .
+:meta_1_3 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Karl Tenney' ;
+  x3do:name 'creator' .
+:meta_1_4 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Scott Tufts' ;
+  x3do:name 'translator' .
+:meta_1_5 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '1 June 1998' ;
+  x3do:name 'created' .
+:meta_1_6 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '13 December 2001' ;
+  x3do:name 'translated' .
+:meta_1_7 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '20 October 2019' ;
+  x3do:name 'modified' .
+:meta_1_8 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://x3dgraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/SeaStarGroup.x3d' ;
+  x3do:name 'identifier' .
+:meta_1_9 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'X3D-Edit 3.3, https://savage.nps.edu/X3D-Edit' ;
+  x3do:name 'generator' .
+:meta_1_10 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '../license.html' ;
+  x3do:name 'license' .
+:meta dcterms:title "SeaStarGroup.x3d" .
+:meta dcterms:description "SeaStar used in the kelp forest project" .
+:meta dcterms:creator "Karl Tenney" .
+:meta dcterms:translator "Scott Tufts" .
+:meta dcterms:created "1 June 1998" .
+:meta dcterms:translated "13 December 2001" .
+:meta dcterms:modified "20 October 2019" .
+:meta dcterms:identifier "https://x3dgraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/SeaStarGroup.x3d" .
+:meta dcterms:generator "X3D-Edit 3.3, https://savage.nps.edu/X3D-Edit" .
+:meta dcterms:license "../license.html" .
+:Scene a owl:NamedIndividual, x3do:Scene ;
+  x3do:hasParent :X3D ;
+  x3do:hasChildren :Stars .
+:Stars a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :LOD_2_1_1 ;
+  x3do:DEF 'Stars' .
+:LOD_2_1_1 a owl:NamedIndividual, x3do:LOD ;
+  x3do:hasParent :Stars ;
+  x3do:hasChildren :Transform_2_1_1_1, :WorldInfo_2_1_1_2 ;
+  x3do:range ( 25 ) .
+:Transform_2_1_1_1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :LOD_2_1_1 ;
+  x3do:hasChildren :Transform_2_1_1_1_1, :Transform_2_1_1_1_2, :Transform_2_1_1_1_3, :Transform_2_1_1_1_4, :Transform_2_1_1_1_5, :_5 ;
+  x3do:rotation ( 0.00284295 -0.117658 -0.99305 1.40621 ) ;
+  x3do:scale ( 0.501645 0.501645 0.501645 ) ;
+  x3do:scaleOrientation ( 0.599706 0.727936 -0.332359 0.508576 ) ;
+  x3do:translation ( -0.812513 0.185385 -0.905324 ) .
+:Transform_2_1_1_1_1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_1_1_1 ;
+  x3do:hasChildren :_O ;
+  x3do:rotation ( 0.749116 -0.639071 0.174397 2.97944 ) ;
+  x3do:scaleOrientation ( 0.49262 -0.0627393 -0.86798 0.83046 ) ;
+  x3do:translation ( -0.792837 0.269129 -1.06333 ) .
+:_O a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_1_1_1_1 ;
+  x3do:hasChildren :Transform_2_1_1_1_1_1_1, :Transform_2_1_1_1_1_1_2, :Transform_2_1_1_1_1_1_3, :Transform_2_1_1_1_1_1_4, :Transform_2_1_1_1_1_1_5, :Transform_2_1_1_1_1_1_6 ;
+  x3do:DEF '_O' ;
+  x3do:scale ( 0.659575 0.659575 0.659575 ) ;
+  x3do:translation ( 0.609729 0.00350194 -0.205184 ) .
+:Transform_2_1_1_1_1_1_1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :_O ;
+  x3do:hasChildren :Shape_2_1_1_1_1_1_1_1 ;
+  x3do:rotation ( -1.14191e-007 -1 -5.32201e-006 0.814114 ) ;
+  x3do:scale ( 0.0276058 0.0102856 0.0774523 ) ;
+  x3do:translation ( -0.0454274 0.0102855 0.0416858 ) .
+:Shape_2_1_1_1_1_1_1_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_1_1_1_1_1_1 ;
+  x3do:hasAppearance :Appearance_2_1_1_1_1_1_1_1_1 ;
+  x3do:hasGeometry :Sphere_2_1_1_1_1_1_1_1_2 .
+:Appearance_2_1_1_1_1_1_1_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_1_1_1_1_1_1_1 ;
+  x3do:hasMaterial :_1 .
+:_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_1_1_1_1_1_1_1_1 ;
+  x3do:DEF '_1' ;
+  x3do:ambientIntensity 0.25 .
+:Sphere_2_1_1_1_1_1_1_1_2 a owl:NamedIndividual, x3do:Sphere ;
+  x3do:hasParent :Shape_2_1_1_1_1_1_1_1 .
+:Transform_2_1_1_1_1_1_2 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :_O ;
+  x3do:hasChildren :Shape_2_1_1_1_1_1_2_1 ;
+  x3do:rotation ( 1.6646e-007 1 6.79179e-007 0.915243 ) ;
+  x3do:scale ( 0.0276058 0.0102856 0.118301 ) ;
+  x3do:translation ( -0.0731081 0.0102856 -0.047631 ) .
+:Shape_2_1_1_1_1_1_2_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_1_1_1_1_1_2 ;
+  x3do:hasAppearance :Appearance_2_1_1_1_1_1_2_1_1 ;
+  x3do:hasGeometry :Sphere_2_1_1_1_1_1_2_1_2 .
+:Appearance_2_1_1_1_1_1_2_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_1_1_1_1_1_2_1 ;
+  x3do:hasMaterial :_1-USE-1 .
+:_1-USE-1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_1_1_1_1_1_2_1_1 ;
+  owl:sameAs :_1 . # DEF matching this USE
+:Sphere_2_1_1_1_1_1_2_1_2 a owl:NamedIndividual, x3do:Sphere ;
+  x3do:hasParent :Shape_2_1_1_1_1_1_2_1 .
+:Transform_2_1_1_1_1_1_3 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :_O ;
+  x3do:hasChildren :Shape_2_1_1_1_1_1_3_1 ;
+  x3do:scale ( 0.0276058 0.0102856 0.118301 ) ;
+  x3do:translation ( -1.21519e-009 0.0102856 -0.086997 ) .
+:Shape_2_1_1_1_1_1_3_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_1_1_1_1_1_3 ;
+  x3do:hasAppearance :Appearance_2_1_1_1_1_1_3_1_1 ;
+  x3do:hasGeometry :Sphere_2_1_1_1_1_1_3_1_2 .
+:Appearance_2_1_1_1_1_1_3_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_1_1_1_1_1_3_1 ;
+  x3do:hasMaterial :_1-USE-2 .
+:_1-USE-2 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_1_1_1_1_1_3_1_1 ;
+  owl:sameAs :_1 . # DEF matching this USE
+:Sphere_2_1_1_1_1_1_3_1_2 a owl:NamedIndividual, x3do:Sphere ;
+  x3do:hasParent :Shape_2_1_1_1_1_1_3_1 .
+:Transform_2_1_1_1_1_1_4 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :_O ;
+  x3do:hasChildren :Shape_2_1_1_1_1_1_4_1 ;
+  x3do:rotation ( 7.02699e-008 1 -9.67549e-009 4.71239 ) ;
+  x3do:scale ( 0.0276058 0.0102856 0.118301 ) ;
+  x3do:translation ( 0.0943676 0.0102856 -9.2235e-010 ) .
+:Shape_2_1_1_1_1_1_4_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_1_1_1_1_1_4 ;
+  x3do:hasAppearance :Appearance_2_1_1_1_1_1_4_1_1 ;
+  x3do:hasGeometry :Sphere_2_1_1_1_1_1_4_1_2 .
+:Appearance_2_1_1_1_1_1_4_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_1_1_1_1_1_4_1 ;
+  x3do:hasMaterial :_1-USE-3 .
+:_1-USE-3 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_1_1_1_1_1_4_1_1 ;
+  owl:sameAs :_1 . # DEF matching this USE
+:Sphere_2_1_1_1_1_1_4_1_2 a owl:NamedIndividual, x3do:Sphere ;
+  x3do:hasParent :Shape_2_1_1_1_1_1_4_1 .
+:Transform_2_1_1_1_1_1_5 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :_O ;
+  x3do:hasChildren :Shape_2_1_1_1_1_1_5_1 ;
+  x3do:rotation ( -2.28035e-007 1 -1.9708e-007 0.399743 ) ;
+  x3do:scale ( 0.0276058 0.0102856 0.118301 ) ;
+  x3do:translation ( 0.0273156 0.0102856 0.0869062 ) .
+:Shape_2_1_1_1_1_1_5_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_1_1_1_1_1_5 ;
+  x3do:hasAppearance :Appearance_2_1_1_1_1_1_5_1_1 ;
+  x3do:hasGeometry :Sphere_2_1_1_1_1_1_5_1_2 .
+:Appearance_2_1_1_1_1_1_5_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_1_1_1_1_1_5_1 ;
+  x3do:hasMaterial :_1-USE-4 .
+:_1-USE-4 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_1_1_1_1_1_5_1_1 ;
+  owl:sameAs :_1 . # DEF matching this USE
+:Sphere_2_1_1_1_1_1_5_1_2 a owl:NamedIndividual, x3do:Sphere ;
+  x3do:hasParent :Shape_2_1_1_1_1_1_5_1 .
+:Transform_2_1_1_1_1_1_6 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :_O ;
+  x3do:hasChildren :Shape_2_1_1_1_1_1_6_1 ;
+  x3do:rotation ( 1.74007e-006 -1 -1.7261e-007 0.240595 ) ;
+  x3do:scale ( 0.0564878 0.00994367 0.0245735 ) ;
+  x3do:translation ( -0.12392 0.00994368 0.0707975 ) .
+:Shape_2_1_1_1_1_1_6_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_1_1_1_1_1_6 ;
+  x3do:hasAppearance :Appearance_2_1_1_1_1_1_6_1_1 ;
+  x3do:hasGeometry :Sphere_2_1_1_1_1_1_6_1_2 .
+:Appearance_2_1_1_1_1_1_6_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_1_1_1_1_1_6_1 ;
+  x3do:hasMaterial :_1-USE-5 .
+:_1-USE-5 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_1_1_1_1_1_6_1_1 ;
+  owl:sameAs :_1 . # DEF matching this USE
+:Sphere_2_1_1_1_1_1_6_1_2 a owl:NamedIndividual, x3do:Sphere ;
+  x3do:hasParent :Shape_2_1_1_1_1_1_6_1 .
+:Transform_2_1_1_1_2 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_1_1_1 ;
+  x3do:hasChildren :_O-USE-1 ;
+  x3do:rotation ( 0.00284286 -0.117657 -0.99305 1.40621 ) ;
+  x3do:scaleOrientation ( 0.510123 -0.709858 0.48567 0.155947 ) ;
+  x3do:translation ( -1.13874 1.52467 -0.123565 ) .
+:_O-USE-1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_1_1_1_2 ;
+  owl:sameAs :_O . # DEF matching this USE
+:Transform_2_1_1_1_3 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_1_1_1 ;
+  x3do:hasChildren :_O-USE-2 ;
+  x3do:rotation ( 0.528326 0.818819 0.224514 3.53479 ) ;
+  x3do:scaleOrientation ( 0.448831 0.876981 -0.171628 1.58567 ) ;
+  x3do:translation ( -0.629386 0.0675117 -1.5183 ) .
+:_O-USE-2 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_1_1_1_3 ;
+  owl:sameAs :_O . # DEF matching this USE
+:Transform_2_1_1_1_4 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_1_1_1 ;
+  x3do:hasChildren :_O-USE-3 ;
+  x3do:rotation ( 0.486797 0.486306 0.725628 4.34197 ) ;
+  x3do:scaleOrientation ( 0.0307922 0.0594577 0.997756 3.92155 ) ;
+  x3do:translation ( -0.80193 0.586843 -0.848469 ) .
+:_O-USE-3 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_1_1_1_4 ;
+  owl:sameAs :_O . # DEF matching this USE
+:Transform_2_1_1_1_5 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_1_1_1 ;
+  x3do:hasChildren :_2, :Transform_2_1_1_1_5_2, :Transform_2_1_1_1_5_3, :Transform_2_1_1_1_5_4, :Transform_2_1_1_1_5_5, :Transform_2_1_1_1_5_6, :Transform_2_1_1_1_5_7, :Transform_2_1_1_1_5_8, :Transform_2_1_1_1_5_9, :Transform_2_1_1_1_5_10 ;
+  x3do:rotation ( 0.0028429 -0.117657 -0.99305 1.40621 ) ;
+  x3do:scale ( 0.521406 0.521406 0.521406 ) ;
+  x3do:scaleOrientation ( 0.973919 -0.14782 -0.172137 0.289729 ) ;
+  x3do:translation ( -0.861705 -0.0343103 0.030513 ) .
+:_2 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_1_1_1_5 ;
+  x3do:hasChildren :Transform_2_1_1_1_5_1_1 ;
+  x3do:DEF '_2' ;
+  x3do:rotation ( 0.00284286 -0.117657 -0.99305 1.40621 ) ;
+  x3do:scaleOrientation ( 0.510123 -0.709858 0.48567 0.155947 ) ;
+  x3do:translation ( -0.85937 0.397126 -0.511331 ) .
+:Transform_2_1_1_1_5_1_1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :_2 ;
+  x3do:hasChildren :Transform_2_1_1_1_5_1_1_1 ;
+  x3do:rotation ( 0.48655 0.87342 -0.0201627 1.21112 ) ;
+  x3do:scale ( 0.709989 0.709989 0.709989 ) ;
+  x3do:translation ( -0.194527 -0.18028 0.656123 ) .
+:Transform_2_1_1_1_5_1_1_1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_1_1_1_5_1_1 ;
+  x3do:hasChildren :Transform_2_1_1_1_5_1_1_1_1, :Transform_2_1_1_1_5_1_1_1_2, :Transform_2_1_1_1_5_1_1_1_3, :Transform_2_1_1_1_5_1_1_1_4, :Transform_2_1_1_1_5_1_1_1_5, :Transform_2_1_1_1_5_1_1_1_6 ;
+  x3do:scale ( 0.659575 0.659575 0.659575 ) ;
+  x3do:translation ( 0.609729 0.00350194 -0.205184 ) .
+:Transform_2_1_1_1_5_1_1_1_1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_1_1_1_5_1_1_1 ;
+  x3do:hasChildren :Shape_2_1_1_1_5_1_1_1_1_1 ;
+  x3do:rotation ( -1.14191e-007 -1 -5.32201e-006 0.814114 ) ;
+  x3do:scale ( 0.0276058 0.0102856 0.0774523 ) ;
+  x3do:translation ( -0.0454274 0.0102855 0.0416858 ) .
+:Shape_2_1_1_1_5_1_1_1_1_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_1_1_1_5_1_1_1_1 ;
+  x3do:hasAppearance :Appearance_2_1_1_1_5_1_1_1_1_1_1 ;
+  x3do:hasGeometry :Sphere_2_1_1_1_5_1_1_1_1_1_2 .
+:Appearance_2_1_1_1_5_1_1_1_1_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_1_1_1_5_1_1_1_1_1 ;
+  x3do:hasMaterial :_3 .
+:_3 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_1_1_1_5_1_1_1_1_1_1 ;
+  x3do:DEF '_3' ;
+  x3do:ambientIntensity 0.25 ;
+  x3do:diffuseColor ( 0.8 0.51 0.09 ) ;
+  x3do:shininess 0.4 ;
+  x3do:specularColor ( 0.92 0.43 0.01 ) .
+:Sphere_2_1_1_1_5_1_1_1_1_1_2 a owl:NamedIndividual, x3do:Sphere ;
+  x3do:hasParent :Shape_2_1_1_1_5_1_1_1_1_1 .
+:Transform_2_1_1_1_5_1_1_1_2 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_1_1_1_5_1_1_1 ;
+  x3do:hasChildren :Shape_2_1_1_1_5_1_1_1_2_1 ;
+  x3do:rotation ( 1.6646e-007 1 6.79179e-007 0.915243 ) ;
+  x3do:scale ( 0.0276058 0.0102856 0.118301 ) ;
+  x3do:translation ( -0.0731081 0.0102856 -0.047631 ) .
+:Shape_2_1_1_1_5_1_1_1_2_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_1_1_1_5_1_1_1_2 ;
+  x3do:hasAppearance :Appearance_2_1_1_1_5_1_1_1_2_1_1 ;
+  x3do:hasGeometry :Sphere_2_1_1_1_5_1_1_1_2_1_2 .
+:Appearance_2_1_1_1_5_1_1_1_2_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_1_1_1_5_1_1_1_2_1 ;
+  x3do:hasMaterial :_3-USE-1 .
+:_3-USE-1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_1_1_1_5_1_1_1_2_1_1 ;
+  owl:sameAs :_3 . # DEF matching this USE
+:Sphere_2_1_1_1_5_1_1_1_2_1_2 a owl:NamedIndividual, x3do:Sphere ;
+  x3do:hasParent :Shape_2_1_1_1_5_1_1_1_2_1 .
+:Transform_2_1_1_1_5_1_1_1_3 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_1_1_1_5_1_1_1 ;
+  x3do:hasChildren :Shape_2_1_1_1_5_1_1_1_3_1 ;
+  x3do:scale ( 0.0276058 0.0102856 0.118301 ) ;
+  x3do:translation ( -1.21519e-009 0.0102856 -0.086997 ) .
+:Shape_2_1_1_1_5_1_1_1_3_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_1_1_1_5_1_1_1_3 ;
+  x3do:hasAppearance :Appearance_2_1_1_1_5_1_1_1_3_1_1 ;
+  x3do:hasGeometry :Sphere_2_1_1_1_5_1_1_1_3_1_2 .
+:Appearance_2_1_1_1_5_1_1_1_3_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_1_1_1_5_1_1_1_3_1 ;
+  x3do:hasMaterial :_3-USE-2 .
+:_3-USE-2 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_1_1_1_5_1_1_1_3_1_1 ;
+  owl:sameAs :_3 . # DEF matching this USE
+:Sphere_2_1_1_1_5_1_1_1_3_1_2 a owl:NamedIndividual, x3do:Sphere ;
+  x3do:hasParent :Shape_2_1_1_1_5_1_1_1_3_1 .
+:Transform_2_1_1_1_5_1_1_1_4 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_1_1_1_5_1_1_1 ;
+  x3do:hasChildren :Shape_2_1_1_1_5_1_1_1_4_1 ;
+  x3do:rotation ( 7.02699e-008 1 -9.67549e-009 4.71239 ) ;
+  x3do:scale ( 0.0276058 0.0102856 0.118301 ) ;
+  x3do:translation ( 0.0943676 0.0102856 -9.2235e-010 ) .
+:Shape_2_1_1_1_5_1_1_1_4_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_1_1_1_5_1_1_1_4 ;
+  x3do:hasAppearance :Appearance_2_1_1_1_5_1_1_1_4_1_1 ;
+  x3do:hasGeometry :Sphere_2_1_1_1_5_1_1_1_4_1_2 .
+:Appearance_2_1_1_1_5_1_1_1_4_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_1_1_1_5_1_1_1_4_1 ;
+  x3do:hasMaterial :_3-USE-3 .
+:_3-USE-3 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_1_1_1_5_1_1_1_4_1_1 ;
+  owl:sameAs :_3 . # DEF matching this USE
+:Sphere_2_1_1_1_5_1_1_1_4_1_2 a owl:NamedIndividual, x3do:Sphere ;
+  x3do:hasParent :Shape_2_1_1_1_5_1_1_1_4_1 .
+:Transform_2_1_1_1_5_1_1_1_5 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_1_1_1_5_1_1_1 ;
+  x3do:hasChildren :Shape_2_1_1_1_5_1_1_1_5_1 ;
+  x3do:rotation ( -2.28035e-007 1 -1.9708e-007 0.399743 ) ;
+  x3do:scale ( 0.0276058 0.0102856 0.118301 ) ;
+  x3do:translation ( 0.0273156 0.0102856 0.0869062 ) .
+:Shape_2_1_1_1_5_1_1_1_5_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_1_1_1_5_1_1_1_5 ;
+  x3do:hasAppearance :Appearance_2_1_1_1_5_1_1_1_5_1_1 ;
+  x3do:hasGeometry :Sphere_2_1_1_1_5_1_1_1_5_1_2 .
+:Appearance_2_1_1_1_5_1_1_1_5_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_1_1_1_5_1_1_1_5_1 ;
+  x3do:hasMaterial :_3-USE-4 .
+:_3-USE-4 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_1_1_1_5_1_1_1_5_1_1 ;
+  owl:sameAs :_3 . # DEF matching this USE
+:Sphere_2_1_1_1_5_1_1_1_5_1_2 a owl:NamedIndividual, x3do:Sphere ;
+  x3do:hasParent :Shape_2_1_1_1_5_1_1_1_5_1 .
+:Transform_2_1_1_1_5_1_1_1_6 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_1_1_1_5_1_1_1 ;
+  x3do:hasChildren :Shape_2_1_1_1_5_1_1_1_6_1 ;
+  x3do:rotation ( 1.74007e-006 -1 -1.7261e-007 0.240595 ) ;
+  x3do:scale ( 0.0564878 0.00994367 0.0245735 ) ;
+  x3do:translation ( -0.12392 0.00994368 0.0707975 ) .
+:Shape_2_1_1_1_5_1_1_1_6_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_1_1_1_5_1_1_1_6 ;
+  x3do:hasAppearance :Appearance_2_1_1_1_5_1_1_1_6_1_1 ;
+  x3do:hasGeometry :Sphere_2_1_1_1_5_1_1_1_6_1_2 .
+:Appearance_2_1_1_1_5_1_1_1_6_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_1_1_1_5_1_1_1_6_1 ;
+  x3do:hasMaterial :_3-USE-5 .
+:_3-USE-5 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_1_1_1_5_1_1_1_6_1_1 ;
+  owl:sameAs :_3 . # DEF matching this USE
+:Sphere_2_1_1_1_5_1_1_1_6_1_2 a owl:NamedIndividual, x3do:Sphere ;
+  x3do:hasParent :Shape_2_1_1_1_5_1_1_1_6_1 .
+:Transform_2_1_1_1_5_2 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_1_1_1_5 ;
+  x3do:hasChildren :_2-USE-1 ;
+  x3do:rotation ( 0.758872 -0.613643 -0.218072 3.62512 ) ;
+  x3do:scaleOrientation ( 0.183361 0.515897 -0.836797 0.680897 ) ;
+  x3do:translation ( -0.785972 -0.272973 0.109283 ) .
+:_2-USE-1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_1_1_1_5_2 ;
+  owl:sameAs :_2 . # DEF matching this USE
+:Transform_2_1_1_1_5_3 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_1_1_1_5 ;
+  x3do:hasChildren :SeaStar_leg_4 ;
+  x3do:rotation ( 0.0160324 0.999622 0.0223337 0.494856 ) ;
+  x3do:scale ( 0.0564878 0.00994367 0.0245735 ) ;
+  x3do:translation ( -0.359698 0.00994363 1.36377 ) .
+:SeaStar_leg_4 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_1_1_1_5_3 ;
+  x3do:hasAppearance :Appearance_2_1_1_1_5_3_1_1 ;
+  x3do:hasGeometry :Sphere_2_1_1_1_5_3_1_2 ;
+  x3do:DEF 'SeaStar_leg_4' .
+:Appearance_2_1_1_1_5_3_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :SeaStar_leg_4 ;
+  x3do:hasMaterial :_4 .
+:_4 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_1_1_1_5_3_1_1 ;
+  x3do:DEF '_4' ;
+  x3do:ambientIntensity 0.252747 ;
+  x3do:diffuseColor ( 0.91 0.44 0.35 ) ;
+  x3do:specularColor ( 0.35 0.14 0 ) .
+:Sphere_2_1_1_1_5_3_1_2 a owl:NamedIndividual, x3do:Sphere ;
+  x3do:hasParent :SeaStar_leg_4 .
+:Transform_2_1_1_1_5_4 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_1_1_1_5 ;
+  x3do:hasChildren :SeaStar_leg_4-USE-1 ;
+  x3do:scale ( 0.0276058 0.0102856 0.0691647 ) ;
+  x3do:translation ( -0.45535 0.0102856 1.22615 ) .
+:SeaStar_leg_4-USE-1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_1_1_1_5_4 ;
+  owl:sameAs :SeaStar_leg_4 . # DEF matching this USE
+:Transform_2_1_1_1_5_5 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_1_1_1_5 ;
+  x3do:hasChildren :SeaStar_leg_4-USE-2 ;
+  x3do:rotation ( 6.36314e-008 1 -7.41821e-009 0.631741 ) ;
+  x3do:scale ( 0.0276058 0.0102856 0.0691647 ) ;
+  x3do:translation ( -0.426702 0.0102856 1.34188 ) .
+:SeaStar_leg_4-USE-2 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_1_1_1_5_5 ;
+  owl:sameAs :SeaStar_leg_4 . # DEF matching this USE
+:Transform_2_1_1_1_5_6 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_1_1_1_5 ;
+  x3do:hasChildren :SeaStar_leg_4-USE-3 ;
+  x3do:rotation ( -2.40082e-007 -1 3.43709e-007 0.712123 ) ;
+  x3do:scale ( 0.0276058 0.0102856 0.0691647 ) ;
+  x3do:translation ( -0.5 0.0102856 1.32509 ) .
+:SeaStar_leg_4-USE-3 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_1_1_1_5_6 ;
+  owl:sameAs :SeaStar_leg_4 . # DEF matching this USE
+:Transform_2_1_1_1_5_7 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_1_1_1_5 ;
+  x3do:hasChildren :SeaStar_leg_4-USE-4 ;
+  x3do:rotation ( 1.85515e-008 -1 -1.05709e-007 0.919461 ) ;
+  x3do:scale ( 0.0276058 0.0102856 0.0691647 ) ;
+  x3do:translation ( -0.39858 0.0102856 1.25 ) .
+:SeaStar_leg_4-USE-4 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_1_1_1_5_7 ;
+  owl:sameAs :SeaStar_leg_4 . # DEF matching this USE
+:Transform_2_1_1_1_5_8 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_1_1_1_5 ;
+  x3do:hasChildren :SeaStar_leg_4-USE-5 ;
+  x3do:rotation ( 3.53588e-007 1 1.0134e-006 0.84627 ) ;
+  x3do:scale ( 0.0276058 0.0102856 0.0691647 ) ;
+  x3do:translation ( -0.5 0.0102858 1.25 ) .
+:SeaStar_leg_4-USE-5 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_1_1_1_5_8 ;
+  owl:sameAs :SeaStar_leg_4 . # DEF matching this USE
+:Transform_2_1_1_1_5_9 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_1_1_1_5 ;
+  x3do:hasChildren :SeaStar_leg_4-USE-6 ;
+  x3do:rotation ( 1.48158e-008 1 -3.7903e-008 1.57079 ) ;
+  x3do:scale ( 0.0564878 0.00994367 0.0245735 ) ;
+  x3do:translation ( -0.364396 0.00994358 1.19351 ) .
+:SeaStar_leg_4-USE-6 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_1_1_1_5_9 ;
+  owl:sameAs :SeaStar_leg_4 . # DEF matching this USE
+:Transform_2_1_1_1_5_10 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_1_1_1_5 ;
+  x3do:hasChildren :Transform_2_1_1_1_5_10_1, :Transform_2_1_1_1_5_10_2, :Transform_2_1_1_1_5_10_3 .
+:Transform_2_1_1_1_5_10_1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_1_1_1_5_10 ;
+  x3do:hasChildren :SeaStar_leg_4-USE-7 ;
+  x3do:scale ( 0.0564878 0.00994367 0.0245735 ) ;
+  x3do:translation ( -0.569653 0.00994355 1.21309 ) .
+:SeaStar_leg_4-USE-7 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_1_1_1_5_10_1 ;
+  owl:sameAs :SeaStar_leg_4 . # DEF matching this USE
+:Transform_2_1_1_1_5_10_2 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_1_1_1_5_10 ;
+  x3do:hasChildren :SeaStar_leg_4-USE-8 ;
+  x3do:rotation ( 4.05455e-007 -1 1.915e-007 1.02836 ) ;
+  x3do:scale ( 0.0564878 0.00994367 0.0245735 ) ;
+  x3do:translation ( -0.464063 0.00994362 1.1596 ) .
+:SeaStar_leg_4-USE-8 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_1_1_1_5_10_2 ;
+  owl:sameAs :SeaStar_leg_4 . # DEF matching this USE
+:Transform_2_1_1_1_5_10_3 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_1_1_1_5_10 ;
+  x3do:hasChildren :SeaStar_leg_4-USE-9 ;
+  x3do:rotation ( -5.59581e-009 -1 -9.59606e-009 0.878147 ) ;
+  x3do:scale ( 0.0564878 0.00994367 0.0245735 ) ;
+  x3do:translation ( -0.510391 0.00994369 1.40221 ) .
+:SeaStar_leg_4-USE-9 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_1_1_1_5_10_3 ;
+  owl:sameAs :SeaStar_leg_4 . # DEF matching this USE
+:_5 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_1_1_1 ;
+  x3do:hasChildren :Transform_2_1_1_1_6_1, :Transform_2_1_1_1_6_2, :Transform_2_1_1_1_6_3, :Transform_2_1_1_1_6_4, :Transform_2_1_1_1_6_5, :Transform_2_1_1_1_6_6, :Transform_2_1_1_1_6_7, :Transform_2_1_1_1_6_8, :Transform_2_1_1_1_6_9, :Transform_2_1_1_1_6_10, :Transform_2_1_1_1_6_11 ;
+  x3do:DEF '_5' ;
+  x3do:translation ( 0.46739 -3.72529e-009 -1.27889 ) .
+:Transform_2_1_1_1_6_1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :_5 ;
+  x3do:hasChildren :_6 ;
+  x3do:rotation ( 0.0160324 0.999622 0.0223337 0.494856 ) ;
+  x3do:scale ( 0.0564878 0.00994367 0.0245735 ) ;
+  x3do:translation ( -0.359698 0.00994363 1.36377 ) .
+:_6 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_1_1_1_6_1 ;
+  x3do:hasAppearance :Appearance_2_1_1_1_6_1_1_1 ;
+  x3do:hasGeometry :Sphere_2_1_1_1_6_1_1_2 ;
+  x3do:DEF '_6' .
+:Appearance_2_1_1_1_6_1_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :_6 ;
+  x3do:hasMaterial :Material_2_1_1_1_6_1_1_1_1 .
+:Material_2_1_1_1_6_1_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_1_1_1_6_1_1_1 ;
+  x3do:ambientIntensity 0.252747 ;
+  x3do:diffuseColor ( 0.91 0.44 0.35 ) ;
+  x3do:shininess 0.13 ;
+  x3do:specularColor ( 0.35 0.14 0 ) .
+:Sphere_2_1_1_1_6_1_1_2 a owl:NamedIndividual, x3do:Sphere ;
+  x3do:hasParent :_6 .
+:Transform_2_1_1_1_6_2 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :_5 ;
+  x3do:hasChildren :_6-USE-1 ;
+  x3do:scale ( 0.0276058 0.0102856 0.0691647 ) ;
+  x3do:translation ( -0.45535 0.0102856 1.22615 ) .
+:_6-USE-1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_1_1_1_6_2 ;
+  owl:sameAs :_6 . # DEF matching this USE
+:Transform_2_1_1_1_6_3 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :_5 ;
+  x3do:hasChildren :_6-USE-2 ;
+  x3do:rotation ( 6.36314e-008 1 -7.41821e-009 0.631741 ) ;
+  x3do:scale ( 0.0276058 0.0102856 0.0691647 ) ;
+  x3do:translation ( -0.426702 0.0102856 1.34188 ) .
+:_6-USE-2 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_1_1_1_6_3 ;
+  owl:sameAs :_6 . # DEF matching this USE
+:Transform_2_1_1_1_6_4 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :_5 ;
+  x3do:hasChildren :_6-USE-3 ;
+  x3do:rotation ( -2.40082e-007 -1 3.43709e-007 0.712123 ) ;
+  x3do:scale ( 0.0276058 0.0102856 0.0691647 ) ;
+  x3do:translation ( -0.5 0.0102856 1.32509 ) .
+:_6-USE-3 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_1_1_1_6_4 ;
+  owl:sameAs :_6 . # DEF matching this USE
+:Transform_2_1_1_1_6_5 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :_5 ;
+  x3do:hasChildren :_6-USE-4 ;
+  x3do:rotation ( 1.85515e-008 -1 -1.05709e-007 0.919461 ) ;
+  x3do:scale ( 0.0276058 0.0102856 0.0691647 ) ;
+  x3do:translation ( -0.39858 0.0102856 1.25 ) .
+:_6-USE-4 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_1_1_1_6_5 ;
+  owl:sameAs :_6 . # DEF matching this USE
+:Transform_2_1_1_1_6_6 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :_5 ;
+  x3do:hasChildren :_6-USE-5 ;
+  x3do:rotation ( 3.53588e-007 1 1.0134e-006 0.84627 ) ;
+  x3do:scale ( 0.0276058 0.0102856 0.0691647 ) ;
+  x3do:translation ( -0.5 0.0102858 1.25 ) .
+:_6-USE-5 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_1_1_1_6_6 ;
+  owl:sameAs :_6 . # DEF matching this USE
+:Transform_2_1_1_1_6_7 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :_5 ;
+  x3do:hasChildren :_6-USE-6 ;
+  x3do:rotation ( 1.48158e-008 1 -3.7903e-008 1.57079 ) ;
+  x3do:scale ( 0.0564878 0.00994367 0.0245735 ) ;
+  x3do:translation ( -0.364396 0.00994358 1.19351 ) .
+:_6-USE-6 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_1_1_1_6_7 ;
+  owl:sameAs :_6 . # DEF matching this USE
+:Transform_2_1_1_1_6_8 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :_5 ;
+  x3do:hasChildren :_6-USE-7 ;
+  x3do:rotation ( 0.0160324 0.999622 0.0223337 0.494856 ) ;
+  x3do:scale ( 0.0564878 0.00994367 0.0245735 ) ;
+  x3do:translation ( -0.359698 0.00994363 1.36377 ) .
+:_6-USE-7 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_1_1_1_6_8 ;
+  owl:sameAs :_6 . # DEF matching this USE
+:Transform_2_1_1_1_6_9 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :_5 ;
+  x3do:hasChildren :Transform_2_1_1_1_6_9_1 .
+:Transform_2_1_1_1_6_9_1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_1_1_1_6_9 ;
+  x3do:hasChildren :_6-USE-8 ;
+  x3do:scale ( 0.0564878 0.00994367 0.0245735 ) ;
+  x3do:translation ( -0.569653 0.00994355 1.21309 ) .
+:_6-USE-8 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_1_1_1_6_9_1 ;
+  owl:sameAs :_6 . # DEF matching this USE
+:Transform_2_1_1_1_6_10 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :_5 ;
+  x3do:hasChildren :_6-USE-9 ;
+  x3do:rotation ( 4.05455e-007 -1 1.915e-007 1.02836 ) ;
+  x3do:scale ( 0.0564878 0.00994367 0.0245735 ) ;
+  x3do:translation ( -0.464063 0.00994362 1.1596 ) .
+:_6-USE-9 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_1_1_1_6_10 ;
+  owl:sameAs :_6 . # DEF matching this USE
+:Transform_2_1_1_1_6_11 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :_5 ;
+  x3do:hasChildren :_6-USE-10 ;
+  x3do:rotation ( -5.59581e-009 -1 -9.59606e-009 0.878147 ) ;
+  x3do:scale ( 0.0564878 0.00994367 0.0245735 ) ;
+  x3do:translation ( -0.510391 0.00994369 1.40221 ) .
+:_6-USE-10 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_1_1_1_6_11 ;
+  owl:sameAs :_6 . # DEF matching this USE
+:WorldInfo_2_1_1_2 a owl:NamedIndividual, x3do:WorldInfo ;
+  x3do:hasParent :LOD_2_1_1 ;
+  x3do:info '"null node"' .

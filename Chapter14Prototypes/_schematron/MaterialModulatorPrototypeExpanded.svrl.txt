@@ -1,0 +1,5 @@
+<meta name='TODO' content='Create corresponding web page describing Prototype Expander design.'/>[/X3D/head/meta[10], diagnostic]
+<meta name='TODO' content='Create stylesheet converter matching this Prototype Expander design pattern.'/>[/X3D/head/meta[11], diagnostic]
+<meta name='TODO' content='Add external ROUTEs to original example as a further test case for Prototype Expander design.'/>[/X3D/head/meta[12], diagnostic]
+<Script DEF='MaterialModulatorScriptExpanded1'> <field name='enabled' accessType='inputOutput'/> does not send output event via assignment statement enabled=___; [/X3D/Scene/Switch/Group/Script/field[1], warning]
+<Script DEF='MaterialModulatorScriptExpanded1'> <field name='diffuseColor' accessType='inputOutput'/> does not send output event via assignment statement diffuseColor=___; [/X3D/Scene/Switch/Group/Script/field[2], warning]

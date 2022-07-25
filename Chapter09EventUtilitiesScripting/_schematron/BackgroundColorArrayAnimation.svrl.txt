@@ -1,0 +1,1 @@
+<meta name='TODO' content='also create a new prototype ColorArrayInterpolator in Chapter 14'/>[/X3D/head/meta[6], diagnostic]

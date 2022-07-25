@@ -1,0 +1,207 @@
+@prefix :        <https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter06GeometryPointsLinesPolygons/ColorPerVertexExamples.ttl#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema:  <http://schema.org/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix x3d:     <https://www.web3d.org/specifications/x3d-4.0.xsd#> .
+@prefix x3do:    <https://www.web3d.org/specifications/X3dOntology4.0#> .
+
+:X3D a owl:NamedIndividual, x3do:X3D ;
+  x3do:hasHead :head ;
+  x3do:hasScene :Scene ;
+  x3do:profile 'Interchange' ;
+  x3do:version '3.3' ;
+  x3do:noNamespaceSchemaLocation 'https://www.web3d.org/specifications/x3d-3.3.xsd' .
+:head a owl:NamedIndividual, x3do:head ;
+  x3do:hasParent :X3D ;
+  x3do:hasMeta :meta_1_1, :meta_1_2, :meta_1_3, :meta_1_4, :meta_1_5, :meta_1_6, :meta_1_7, :meta_1_8, :meta_1_9, :meta_1_10, :meta_1_11, :meta_1_12, :meta_1_13, :meta_1_14, :meta_1_15, :meta_1_16, :meta_1_17, :meta_1_18 .
+:meta_1_1 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'ColorPerVertexExamples.x3d' ;
+  x3do:name 'title' .
+:meta_1_2 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Geometry Polygons Nodes: Color, Coordinate, IndexedFaceSet, IndexedLineSet, PointSet' ;
+  x3do:name 'description' .
+:meta_1_3 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Don Brutzman' ;
+  x3do:name 'creator' .
+:meta_1_4 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '5 September 2005' ;
+  x3do:name 'created' .
+:meta_1_5 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '11 May 2021' ;
+  x3do:name 'modified' .
+:meta_1_6 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'ColorPerVertexExamples.png' ;
+  x3do:name 'Image' .
+:meta_1_7 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Blender import problems' ;
+  x3do:name 'TODO' .
+:meta_1_8 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'ColorPerVertexExamplesBlender.png' ;
+  x3do:name 'Image' .
+:meta_1_9 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Xj3D rendering problems' ;
+  x3do:name 'TODO' .
+:meta_1_10 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'ColorPerVertexExamplesXj3D.png' ;
+  x3do:name 'Image' .
+:meta_1_11 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://www.web3d.org/x3d/tooltips/X3dTooltips.html#IndexedFaceSet' ;
+  x3do:name 'reference' .
+:meta_1_12 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://www.web3d.org/x3d/tooltips/X3dTooltips.html#IndexedLineSet' ;
+  x3do:name 'reference' .
+:meta_1_13 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://www.web3d.org/x3d/tooltips/X3dTooltips.html#Coordinate' ;
+  x3do:name 'reference' .
+:meta_1_14 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://www.web3d.org/x3d/tooltips/X3dTooltips.html#Color' ;
+  x3do:name 'reference' .
+:meta_1_15 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Copyright (c) 2005, Daly Realism and Don Brutzman' ;
+  x3do:name 'rights' .
+:meta_1_16 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter06GeometryPointsLinesPolygons/ColorPerVertexExamples.x3d' ;
+  x3do:name 'identifier' .
+:meta_1_17 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'X3D-Edit 3.3, https://savage.nps.edu/X3D-Edit' ;
+  x3do:name 'generator' .
+:meta_1_18 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '../license.html' ;
+  x3do:name 'license' .
+:meta dcterms:title "ColorPerVertexExamples.x3d" .
+:meta dcterms:description "Geometry Polygons Nodes: Color, Coordinate, IndexedFaceSet, IndexedLineSet, PointSet" .
+:meta dcterms:creator "Don Brutzman" .
+:meta dcterms:created "5 September 2005" .
+:meta dcterms:modified "11 May 2021" .
+:meta dcterms:Image "ColorPerVertexExamples.png" .
+:meta dcterms:Image "ColorPerVertexExamplesBlender.png" .
+:meta dcterms:Image "ColorPerVertexExamplesXj3D.png" .
+:meta dcterms:reference "https://www.web3d.org/x3d/tooltips/X3dTooltips.html#IndexedFaceSet" .
+:meta dcterms:reference "https://www.web3d.org/x3d/tooltips/X3dTooltips.html#IndexedLineSet" .
+:meta dcterms:reference "https://www.web3d.org/x3d/tooltips/X3dTooltips.html#Coordinate" .
+:meta dcterms:reference "https://www.web3d.org/x3d/tooltips/X3dTooltips.html#Color" .
+:meta dcterms:rights "Copyright (c) 2005, Daly Realism and Don Brutzman" .
+:meta dcterms:identifier "https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter06GeometryPointsLinesPolygons/ColorPerVertexExamples.x3d" .
+:meta dcterms:generator "X3D-Edit 3.3, https://savage.nps.edu/X3D-Edit" .
+:meta dcterms:license "../license.html" .
+:Scene a owl:NamedIndividual, x3do:Scene ;
+  x3do:hasParent :X3D ;
+  x3do:hasChildren :WorldInfo_2_1, :Viewpoint_2_2, :Background_2_3, :Transform_2_4 .
+:WorldInfo_2_1 a owl:NamedIndividual, x3do:WorldInfo ;
+  x3do:hasParent :Scene ;
+  x3do:title 'ColorPerVertexExamples.x3d' .
+:Viewpoint_2_2 a owl:NamedIndividual, x3do:Viewpoint ;
+  x3do:hasParent :Scene ;
+  x3do:description 'ColorPerVertex Examples' ;
+  x3do:position ( 0 0 6 ) .
+:Background_2_3 a owl:NamedIndividual, x3do:Background ;
+  x3do:hasParent :Scene ;
+  x3do:groundColor ( 0.1 0.1 0.1 ) ;
+  x3do:skyColor ( 0.1 0.1 0.1 ) .
+:Transform_2_4 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :Transform_2_4_1, :Transform_2_4_2, :Transform_2_4_3, :Transform_2_4_4 ;
+  x3do:translation ( -0.5 0 0 ) .
+:Transform_2_4_1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_4 ;
+  x3do:hasChildren :Shape_2_4_1_1 ;
+  x3do:translation ( -3 0 0 ) .
+:Shape_2_4_1_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_4_1 ;
+  x3do:hasGeometry :IndexedFaceSet_2_4_1_1_1 .
+:IndexedFaceSet_2_4_1_1_1 a owl:NamedIndividual, x3do:IndexedFaceSet ;
+  x3do:hasParent :Shape_2_4_1_1 ;
+  x3do:hasCoord :FourPoints ;
+  x3do:hasColor :FourColors ;
+  x3do:colorIndex ( 0 1 2 3 0 -1 ) ;
+  x3do:coordIndex ( 0 1 2 3 0 -1 ) .
+:FourPoints a owl:NamedIndividual, x3do:Coordinate ;
+  x3do:hasParent :IndexedFaceSet_2_4_1_1_1 ;
+  x3do:DEF 'FourPoints' ;
+  x3do:point ( 0 0 0 1 0 0 1 1 0 0 1 0 ) .
+:FourColors a owl:NamedIndividual, x3do:Color ;
+  x3do:hasParent :IndexedFaceSet_2_4_1_1_1 ;
+  x3do:DEF 'FourColors' ;
+  x3do:color ( 1 0 0 0 1 0 0 0 1 0.8 0.8 0.8 ) .
+:Transform_2_4_2 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_4 ;
+  x3do:hasChildren :Shape_2_4_2_1 ;
+  x3do:translation ( -1 0 0 ) .
+:Shape_2_4_2_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_4_2 ;
+  x3do:hasGeometry :IndexedFaceSet_2_4_2_1_1 .
+:IndexedFaceSet_2_4_2_1_1 a owl:NamedIndividual, x3do:IndexedFaceSet ;
+  x3do:hasParent :Shape_2_4_2_1 ;
+  x3do:hasCoord :FourPoints-USE-1 ;
+  x3do:hasColor :FourColorsRGBA ;
+  x3do:colorIndex ( 2 ) ;
+  x3do:colorPerVertex false ;
+  x3do:coordIndex ( 0 1 2 3 0 -1 ) ;
+  x3do:solid false .
+:FourPoints-USE-1 a owl:NamedIndividual, x3do:Coordinate ;
+  x3do:hasParent :IndexedFaceSet_2_4_2_1_1 ;
+  owl:sameAs :FourPoints . # DEF matching this USE
+:FourColorsRGBA a owl:NamedIndividual, x3do:ColorRGBA ;
+  x3do:hasParent :IndexedFaceSet_2_4_2_1_1 ;
+  x3do:DEF 'FourColorsRGBA' ;
+  x3do:color ( 1 0 0 1 0 1 0 1 0 0 1 0.5 0.8 0.8 0.8 0 ) .
+:Transform_2_4_3 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_4 ;
+  x3do:hasChildren :Shape_2_4_3_1 ;
+  x3do:translation ( 1 0 0 ) .
+:Shape_2_4_3_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_4_3 ;
+  x3do:hasGeometry :IndexedLineSet_2_4_3_1_1 .
+:IndexedLineSet_2_4_3_1_1 a owl:NamedIndividual, x3do:IndexedLineSet ;
+  x3do:hasParent :Shape_2_4_3_1 ;
+  x3do:hasCoord :FourPoints-USE-2 ;
+  x3do:hasColor :FourColors-USE-1 ;
+  x3do:colorIndex ( 0 1 2 3 0 -1 ) ;
+  x3do:coordIndex ( 0 1 2 3 0 -1 ) .
+:FourPoints-USE-2 a owl:NamedIndividual, x3do:Coordinate ;
+  x3do:hasParent :IndexedLineSet_2_4_3_1_1 ;
+  owl:sameAs :FourPoints . # DEF matching this USE
+:FourColors-USE-1 a owl:NamedIndividual, x3do:Color ;
+  x3do:hasParent :IndexedLineSet_2_4_3_1_1 ;
+  owl:sameAs :FourColors . # DEF matching this USE
+:Transform_2_4_4 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_4 ;
+  x3do:hasChildren :Shape_2_4_4_1 ;
+  x3do:translation ( 3 0 0 ) .
+:Shape_2_4_4_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_4_4 ;
+  x3do:hasGeometry :IndexedLineSet_2_4_4_1_1 .
+:IndexedLineSet_2_4_4_1_1 a owl:NamedIndividual, x3do:IndexedLineSet ;
+  x3do:hasParent :Shape_2_4_4_1 ;
+  x3do:hasCoord :FourPoints-USE-3 ;
+  x3do:hasColor :FourColors-USE-2 ;
+  x3do:colorIndex ( 0 ) ;
+  x3do:colorPerVertex false ;
+  x3do:coordIndex ( 0 1 2 3 0 -1 ) .
+:FourPoints-USE-3 a owl:NamedIndividual, x3do:Coordinate ;
+  x3do:hasParent :IndexedLineSet_2_4_4_1_1 ;
+  owl:sameAs :FourPoints . # DEF matching this USE
+:FourColors-USE-2 a owl:NamedIndividual, x3do:Color ;
+  x3do:hasParent :IndexedLineSet_2_4_4_1_1 ;
+  owl:sameAs :FourColors . # DEF matching this USE

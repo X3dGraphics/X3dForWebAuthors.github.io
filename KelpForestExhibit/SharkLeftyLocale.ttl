@@ -1,0 +1,176 @@
+@prefix :        <https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/SharkLeftyLocale.ttl#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema:  <http://schema.org/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix x3d:     <https://www.web3d.org/specifications/x3d-4.0.xsd#> .
+@prefix x3do:    <https://www.web3d.org/specifications/X3dOntology4.0#> .
+
+:X3D a owl:NamedIndividual, x3do:X3D ;
+  x3do:hasHead :head ;
+  x3do:hasScene :Scene ;
+  x3do:profile 'Immersive' ;
+  x3do:version '3.3' ;
+  x3do:noNamespaceSchemaLocation 'https://www.web3d.org/specifications/x3d-3.3.xsd' .
+:head a owl:NamedIndividual, x3do:head ;
+  x3do:hasParent :X3D ;
+  x3do:hasMeta :meta_1_1, :meta_1_2, :meta_1_3, :meta_1_4, :meta_1_5, :meta_1_6, :meta_1_7, :meta_1_8, :meta_1_9, :meta_1_10 .
+:meta_1_1 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'SharkLeftyLocale.x3d' ;
+  x3do:name 'title' .
+:meta_1_2 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Lefty Shark with animation to traverse the tank' ;
+  x3do:name 'description' .
+:meta_1_3 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Tim McLean' ;
+  x3do:name 'creator' .
+:meta_1_4 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Don Brutzman' ;
+  x3do:name 'translator' .
+:meta_1_5 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '1 June 1998' ;
+  x3do:name 'created' .
+:meta_1_6 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '20 October 2019' ;
+  x3do:name 'modified' .
+:meta_1_7 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'http://faculty.nps.edu/brutzman/kelp' ;
+  x3do:name 'reference' .
+:meta_1_8 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/SharkLeftyLocale.x3d' ;
+  x3do:name 'identifier' .
+:meta_1_9 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'X3D-Edit 3.3, https://savage.nps.edu/X3D-Edit' ;
+  x3do:name 'generator' .
+:meta_1_10 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '../license.html' ;
+  x3do:name 'license' .
+:meta dcterms:title "SharkLeftyLocale.x3d" .
+:meta dcterms:description "Lefty Shark with animation to traverse the tank" .
+:meta dcterms:creator "Tim McLean" .
+:meta dcterms:translator "Don Brutzman" .
+:meta dcterms:created "1 June 1998" .
+:meta dcterms:modified "20 October 2019" .
+:meta dcterms:reference "http://faculty.nps.edu/brutzman/kelp" .
+:meta dcterms:identifier "https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/SharkLeftyLocale.x3d" .
+:meta dcterms:generator "X3D-Edit 3.3, https://savage.nps.edu/X3D-Edit" .
+:meta dcterms:license "../license.html" .
+:Scene a owl:NamedIndividual, x3do:Scene ;
+  x3do:hasParent :X3D ;
+  x3do:hasChildren :WorldInfo_2_1, :_0, :_4, :sharkSwimmingInTankTrigger_5 ;
+  x3do:hasROUTE :ROUTE_2_5, :ROUTE_2_6, :ROUTE_2_7, :ROUTE_2_8, :ROUTE_2_9, :ROUTE_2_10, :ROUTE_2_11 .
+:WorldInfo_2_1 a owl:NamedIndividual, x3do:WorldInfo ;
+  x3do:hasParent :Scene ;
+  x3do:title 'SharkLeftyLocale.x3d' .
+:_0 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :Inline_2_2_1, :Group_2_2_2 ;
+  x3do:DEF '_0' ;
+  x3do:translation ( 0.0 -5.5 -1.0 ) .
+:Inline_2_2_1 a owl:NamedIndividual, x3do:Inline ;
+  x3do:hasParent :_0 ;
+  x3do:url '"SharkLefty.x3d" "https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/SharkLefty.x3d" "SharkLefty.wrl" "https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/SharkLefty.wrl"' .
+:Group_2_2_2 a owl:NamedIndividual, x3do:Group ;
+  x3do:hasParent :_0 ;
+  x3do:hasChildren :SHARK2_CLOCK, :SHARK2_POSITION, :SHARK2_ORIENTATION .
+:SHARK2_CLOCK a owl:NamedIndividual, x3do:TimeSensor ;
+  x3do:hasParent :Group_2_2_2 ;
+  x3do:DEF 'SHARK2_CLOCK' ;
+  x3do:cycleInterval '110.0' ;
+  x3do:loop true .
+:SHARK2_POSITION a owl:NamedIndividual, x3do:PositionInterpolator ;
+  x3do:hasParent :Group_2_2_2 ;
+  x3do:DEF 'SHARK2_POSITION' ;
+  x3do:key ( 0.0 0.152 0.194 0.224 0.288 0.35 0.427 0.549 0.632 0.7 0.813 1.0 ) ;
+  x3do:keyValue ( 0.0 -4.25 -1.0 3.75 -4.5 -0.75 4.75 -4.5 -1.0 4.75 -4.5 -2.0 3.25 -4.0 -2.5 1.75 -4.0 -2.75 0.0 -4.0 -3.25 -3.0 -3.5 -4.0 -5.0 -4.0 -2.5 -5.75 -4.5 0.0 -4.5 -4.5 0.25 0.0 -4.25 -1.0 ) .
+:SHARK2_ORIENTATION a owl:NamedIndividual, x3do:OrientationInterpolator ;
+  x3do:hasParent :Group_2_2_2 ;
+  x3do:DEF 'SHARK2_ORIENTATION' ;
+  x3do:key ( 0.0 0.152 0.194 0.224 0.288 0.35 0.427 0.549 0.632 0.7 0.813 1.0 ) ;
+  x3do:keyValue ( 0.0 1.0 0.0 6.2134 0.0 1.0 0.0 0.244 0.0 1.0 0.0 1.57 0.1564 0.9974 -0.0262 2.8141 0.0 1.0 0.0 2.967 0.0 1.0 0.0 2.7227 0.0872 0.9961 -0.0107 2.8982 -0.1218 0.9917 -0.0407 3.7824 -0.1469 0.9832 -0.1087 4.3995 0.0 1.0 0.0 6.0912 0.0 1.0 0.0 0.2618 0.0 1.0 0.0 6.2134 ) .
+:_4 a owl:NamedIndividual, x3do:TimeSensor ;
+  x3do:hasParent :Scene ;
+  x3do:DEF '_4' ;
+  x3do:loop true .
+:sharkSwimmingInTankTrigger_5 a owl:NamedIndividual, x3do:Script ;
+  x3do:hasParent :Scene ;
+  x3do:hasField :field_2_4_1, :field_2_4_2, :field_2_4_3 ;
+  x3do:DEF 'sharkSwimmingInTankTrigger_5' ;
+  x3do:sourceCode """
+ecmascript:
+
+function triggerIn (value, time) 
+{
+	startTime = value;
+	firstTime = false;
+}
+""" .
+:field_2_4_1 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :sharkSwimmingInTankTrigger_5 ;
+  x3do:accessType 'inputOnly' ;
+  x3do:name 'triggerIn' ;
+  x3do:type 'SFTime' .
+:field_2_4_2 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :sharkSwimmingInTankTrigger_5 ;
+  x3do:accessType 'outputOnly' ;
+  x3do:name 'startTime' ;
+  x3do:type 'SFTime' .
+:field_2_4_3 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :sharkSwimmingInTankTrigger_5 ;
+  x3do:accessType 'outputOnly' ;
+  x3do:name 'firstTime' ;
+  x3do:type 'SFBool' .
+:ROUTE_2_5 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'startTime' ;
+  x3do:fromNode 'sharkSwimmingInTankTrigger_5' ;
+  x3do:toField 'set_startTime' ;
+  x3do:toNode 'SHARK2_CLOCK' .
+:ROUTE_2_6 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'fraction_changed' ;
+  x3do:fromNode 'SHARK2_CLOCK' ;
+  x3do:toField 'set_fraction' ;
+  x3do:toNode 'SHARK2_POSITION' .
+:ROUTE_2_7 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'fraction_changed' ;
+  x3do:fromNode 'SHARK2_CLOCK' ;
+  x3do:toField 'set_fraction' ;
+  x3do:toNode 'SHARK2_ORIENTATION' .
+:ROUTE_2_8 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'value_changed' ;
+  x3do:fromNode 'SHARK2_POSITION' ;
+  x3do:toField 'set_translation' ;
+  x3do:toNode '_0' .
+:ROUTE_2_9 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'value_changed' ;
+  x3do:fromNode 'SHARK2_ORIENTATION' ;
+  x3do:toField 'set_rotation' ;
+  x3do:toNode '_0' .
+:ROUTE_2_10 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'firstTime' ;
+  x3do:fromNode 'sharkSwimmingInTankTrigger_5' ;
+  x3do:toField 'set_enabled' ;
+  x3do:toNode '_4' .
+:ROUTE_2_11 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'time' ;
+  x3do:fromNode '_4' ;
+  x3do:toField 'triggerIn' ;
+  x3do:toNode 'sharkSwimmingInTankTrigger_5' .

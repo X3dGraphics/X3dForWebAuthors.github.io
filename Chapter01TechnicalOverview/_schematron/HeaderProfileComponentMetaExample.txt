@@ -1,0 +1,3 @@
+Update all meta tag(s) with content='*enter new value...'[/X3D/head, warning]
+X3D/head/meta title (filename) should appear at end of identifier (url) value [/X3D/head, warning]
+X3D/head/meta identifier (url) content should start with http:// or 'https:// [/X3D/head, warning]

@@ -1,0 +1,2 @@
+<SphereSensor DEF='Rotator'/> missing description [/X3D/Scene/Transform[2]/SphereSensor, warning]
+<KeySensor DEF='KeyDetector'/> missing description [/X3D/Scene/KeySensor, warning]

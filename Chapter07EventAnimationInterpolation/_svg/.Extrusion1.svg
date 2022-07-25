@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20001102//EN" "http://www.w3.org/TR/2000/CR-SVG-20001102/DTD/svg-20001102.dtd">
+
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" id=".Extrusion1.svg" width="900"
+     height="620">
+   <rect width="900" height="620" fill="cyan" stroke="black"/>
+   <!--<x3d:Extrusion crossSection='
+-0.1 1.00.1 10.5 0.5 0.5 -0.5 0.1 -1-0.1 -1 -0.5 -0.5 -0.5 0.5 -0.1 1'/>
+-->
+<!--
+			Min xPos = -0.1
+			Max xPos = 0			
+			Min yPos = 0
+			Max yPos = 0-->
+<g transform="translate(450 310) scale(100 -100)">
+      <circle id="marker1" style="fill:red;stroke:red;stroke-width:0.001" cx="-0.1"
+              cy="1.00.1 10.5 0.5 0.5 -0.5 0.1 -1-0.1 -1 -0.5 -0.5 -0.5 0.5 -0.1 1"
+              r="0.05"/>
+      <set xlink:href="#markerText1" attributeType="CSS" attributeName="visibility"
+           to="visible"
+           begin="marker1.mouseover"
+           end="marker1.mouseout"/>
+   </g>
+   <g id="markerTexts" transform="translate(450 310)">
+      <text id="markerText1"
+            style="visibility:hidden;font-size:14;font-weight:bold; fill:green; stroke:none"
+            x="-5"
+            y="NaN">(-0.1,1.00.1 10.5 0.5 0.5 -0.5 0.1 -1-0.1 -1 -0.5 -0.5 -0.5 0.5 -0.1 1)</text>
+   </g>
+   <g transform="translate(450 310) scale(100 -100)">
+      <line x1="0" y1="0" x2="0" y2="0"
+            style="fill:none;stroke:rgb(0,0,0);stroke-width:0.03"/>
+      <line x1="-0.11" y1="0" x2="0" y2="0"
+            style="fill:none;stroke:rgb(0,0,0);stroke-width:0.03"/>
+   </g>
+</svg>

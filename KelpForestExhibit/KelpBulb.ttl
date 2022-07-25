@@ -1,0 +1,215 @@
+@prefix :        <https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/KelpBulb.ttl#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema:  <http://schema.org/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix x3d:     <https://www.web3d.org/specifications/x3d-4.0.xsd#> .
+@prefix x3do:    <https://www.web3d.org/specifications/X3dOntology4.0#> .
+
+:X3D a owl:NamedIndividual, x3do:X3D ;
+  x3do:hasHead :head ;
+  x3do:hasScene :Scene ;
+  x3do:profile 'Immersive' ;
+  x3do:version '3.3' ;
+  x3do:noNamespaceSchemaLocation 'https://www.web3d.org/specifications/x3d-3.3.xsd' .
+:head a owl:NamedIndividual, x3do:head ;
+  x3do:hasParent :X3D ;
+  x3do:hasMeta :meta_1_1, :meta_1_2, :meta_1_3, :meta_1_4, :meta_1_5, :meta_1_6, :meta_1_7, :meta_1_8, :meta_1_9, :meta_1_10, :meta_1_11, :meta_1_12, :meta_1_13, :meta_1_14 .
+:meta_1_1 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'KelpBulb.x3d' ;
+  x3do:name 'title' .
+:meta_1_2 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'One leaf of Kelp moving around a Bulb. Cycle time is 11 seconds, which is twice the cycle time of tank surface motion.' ;
+  x3do:name 'description' .
+:meta_1_3 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Joseph Cannon, Dan DeVos' ;
+  x3do:name 'creator' .
+:meta_1_4 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '25 September 1998' ;
+  x3do:name 'created' .
+:meta_1_5 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '20 October 2019' ;
+  x3do:name 'modified' .
+:meta_1_6 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'KelpPrototype.x3d' ;
+  x3do:name 'reference' .
+:meta_1_7 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'http://faculty.nps.edu/brutzman/kelp' ;
+  x3do:name 'reference' .
+:meta_1_8 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'KelpForestDesignPaperWeb3dSymposiumFebruary2002.pdf' ;
+  x3do:name 'reference' .
+:meta_1_9 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/KelpForestDesignPaperWeb3dSymposiumFebruary2002.pdf' ;
+  x3do:name 'reference' .
+:meta_1_10 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/Teaching3d-KelpForestCaseStudy.pdf' ;
+  x3do:name 'reference' .
+:meta_1_11 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'All content has permissions for free use. Please provide credit to the Naval Postgraduate School (NPS) Modeling Virtual Environments and Simulation (MOVES) Institute.' ;
+  x3do:name 'accessRights' .
+:meta_1_12 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/KelpBulb.x3d' ;
+  x3do:name 'identifier' .
+:meta_1_13 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Vrml97ToX3dNist, http://ovrt.nist.gov/v2_x3d.html' ;
+  x3do:name 'generator' .
+:meta_1_14 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '../license.html' ;
+  x3do:name 'license' .
+:meta dcterms:title "KelpBulb.x3d" .
+:meta dcterms:description "One leaf of Kelp moving around a Bulb. Cycle time is 11 seconds, which is twice the cycle time of tank surface motion." .
+:meta dcterms:creator "Joseph Cannon, Dan DeVos" .
+:meta dcterms:created "25 September 1998" .
+:meta dcterms:modified "20 October 2019" .
+:meta dcterms:reference "KelpPrototype.x3d" .
+:meta dcterms:reference "http://faculty.nps.edu/brutzman/kelp" .
+:meta dcterms:reference "KelpForestDesignPaperWeb3dSymposiumFebruary2002.pdf" .
+:meta dcterms:reference "https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/KelpForestDesignPaperWeb3dSymposiumFebruary2002.pdf" .
+:meta dcterms:reference "https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/Teaching3d-KelpForestCaseStudy.pdf" .
+:meta dcterms:accessRights "All content has permissions for free use. Please provide credit to the Naval Postgraduate School (NPS) Modeling Virtual Environments and Simulation (MOVES) Institute." .
+:meta dcterms:identifier "https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/KelpBulb.x3d" .
+:meta dcterms:generator "Vrml97ToX3dNist, http://ovrt.nist.gov/v2_x3d.html" .
+:meta dcterms:license "../license.html" .
+:Scene a owl:NamedIndividual, x3do:Scene ;
+  x3do:hasParent :X3D ;
+  x3do:hasChildren :WorldInfo_2_1, :Group_2_2, :ANIMATOR, :BLADE_MOTION ;
+  x3do:hasROUTE :ROUTE_2_5, :ROUTE_2_6 .
+:WorldInfo_2_1 a owl:NamedIndividual, x3do:WorldInfo ;
+  x3do:hasParent :Scene ;
+  x3do:title 'KelpBulb.x3d' .
+:Group_2_2 a owl:NamedIndividual, x3do:Group ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :Group_2_2_1, :Leaf .
+:Group_2_2_1 a owl:NamedIndividual, x3do:Group ;
+  x3do:hasParent :Group_2_2 ;
+  x3do:hasChildren :Transform_2_2_1_1, :Transform_2_2_1_2 .
+:Transform_2_2_1_1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Group_2_2_1 ;
+  x3do:hasChildren :Stem ;
+  x3do:rotation ( 0.0 0.0 1.0 1.5707 ) .
+:Stem a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_2_1_1 ;
+  x3do:hasAppearance :Appearance_2_2_1_1_1_1 ;
+  x3do:hasGeometry :Cylinder_2_2_1_1_1_2 ;
+  x3do:DEF 'Stem' .
+:Appearance_2_2_1_1_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Stem ;
+  x3do:hasMaterial :stipeColor .
+:stipeColor a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_2_1_1_1_1 ;
+  x3do:DEF 'stipeColor' ;
+  x3do:diffuseColor ( 0.882 0.757 0.184 ) .
+:Cylinder_2_2_1_1_1_2 a owl:NamedIndividual, x3do:Cylinder ;
+  x3do:hasParent :Stem ;
+  x3do:height 2.5 ;
+  x3do:radius 0.15 .
+:Transform_2_2_1_2 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Group_2_2_1 ;
+  x3do:hasChildren :Bulb ;
+  x3do:scale ( 0.75 0.6 0.6 ) ;
+  x3do:translation ( 1.8 0.0 0.0 ) .
+:Bulb a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_2_1_2 ;
+  x3do:hasAppearance :Appearance_2_2_1_2_1_1 ;
+  x3do:hasGeometry :Sphere_2_2_1_2_1_2 ;
+  x3do:DEF 'Bulb' .
+:Appearance_2_2_1_2_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Bulb ;
+  x3do:hasMaterial :stipeColor-USE-1 .
+:stipeColor-USE-1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_2_1_2_1_1 ;
+  owl:sameAs :stipeColor . # DEF matching this USE
+:Sphere_2_2_1_2_1_2 a owl:NamedIndividual, x3do:Sphere ;
+  x3do:hasParent :Bulb .
+:Leaf a owl:NamedIndividual, x3do:LOD ;
+  x3do:hasParent :Group_2_2 ;
+  x3do:hasChildren :Transform_2_2_2_1, :Transform_2_2_2_2 ;
+  x3do:DEF 'Leaf' ;
+  x3do:range ( 90 ) .
+:Transform_2_2_2_1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Leaf ;
+  x3do:hasChildren :HighResolutionLeaf .
+:HighResolutionLeaf a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_2_2_1 ;
+  x3do:hasAppearance :Appearance_2_2_2_1_1_1 ;
+  x3do:hasGeometry :BLADE_SHAPE ;
+  x3do:DEF 'HighResolutionLeaf' .
+:Appearance_2_2_2_1_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :HighResolutionLeaf ;
+  x3do:hasMaterial :Material_2_2_2_1_1_1_1 .
+:Material_2_2_2_1_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_2_2_1_1_1 ;
+  x3do:diffuseColor ( 0.694 0.525 0.176 ) .
+:BLADE_SHAPE a owl:NamedIndividual, x3do:Extrusion ;
+  x3do:hasParent :HighResolutionLeaf ;
+  x3do:DEF 'BLADE_SHAPE' ;
+  x3do:beginCap false ;
+  x3do:creaseAngle 1.57 ;
+  x3do:crossSection ( 0.06 1.0 0.06 -1.0 -0.06 -1.0 -0.06 1.0 ) ;
+  x3do:endCap false ;
+  x3do:orientation ( 0.0 1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 0.0 0.2 0.0 1.0 0.0 0.9 0.0 1.0 0.0 0.45 0.0 1.0 0.0 0.0 ) ;
+  x3do:scale ( 1.0 0.1 1.0 0.3 1.0 0.55 1.0 0.75 1.0 0.4 1.0 0.01 ) ;
+  x3do:solid false ;
+  x3do:spine ( 1.9 0.0 0.0 2.5 0.0 0.0 4.0 0.0 0.0 7.0 0.0 0.0 16.0 0.0 0.0 21.0 0.0 0.0 ) .
+:Transform_2_2_2_2 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Leaf ;
+  x3do:hasChildren :LowResolutionLeaf ;
+  x3do:translation ( 1.0 0.0 0.0 ) .
+:LowResolutionLeaf a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_2_2_2 ;
+  x3do:hasAppearance :Appearance_2_2_2_2_1_1 ;
+  x3do:hasGeometry :IndexedFaceSet_2_2_2_2_1_2 ;
+  x3do:DEF 'LowResolutionLeaf' .
+:Appearance_2_2_2_2_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :LowResolutionLeaf ;
+  x3do:hasMaterial :Material_2_2_2_2_1_1_1 .
+:Material_2_2_2_2_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_2_2_2_1_1 ;
+  x3do:diffuseColor ( 0.694 0.525 0.176 ) .
+:IndexedFaceSet_2_2_2_2_1_2 a owl:NamedIndividual, x3do:IndexedFaceSet ;
+  x3do:hasParent :LowResolutionLeaf ;
+  x3do:hasCoord :Coordinate_2_2_2_2_1_2_1 ;
+  x3do:coordIndex ( 1 0 9 -1 2 1 9 8 -1 3 2 8 7 -1 4 3 7 6 -1 5 4 6 ) ;
+  x3do:solid false .
+:Coordinate_2_2_2_2_1_2_1 a owl:NamedIndividual, x3do:Coordinate ;
+  x3do:hasParent :IndexedFaceSet_2_2_2_2_1_2 ;
+  x3do:point ( 0.0 0.0 0.0 1.0 0.5 0.0 4.0 1.1 0.0 7.0 1.5 0.0 16.0 0.8 0.0 21.0 0.0 0.0 16.0 -0.8 0.0 7.0 -1.5 0.0 4.0 -1.1 0.0 1.0 -0.5 0.0 ) .
+:ANIMATOR a owl:NamedIndividual, x3do:TimeSensor ;
+  x3do:hasParent :Scene ;
+  x3do:DEF 'ANIMATOR' ;
+  x3do:cycleInterval '11.0' ;
+  x3do:loop true .
+:BLADE_MOTION a owl:NamedIndividual, x3do:CoordinateInterpolator ;
+  x3do:hasParent :Scene ;
+  x3do:DEF 'BLADE_MOTION' ;
+  x3do:key ( 0.0 0.25 0.5 0.75 1.0 ) ;
+  x3do:keyValue ( 1.9 0.0 0.0 2.5 0.0 0.0 4.0 0.0 0.0 7.0 0.0 0.0 16.0 0.0 0.0 21.0 0.0 0.0 1.9 0.0 0.0 2.5 0.6 0.0 4.0 1.0 0.0 7.0 3.0 0.0 16.0 3.5 0.0 21.0 0.0 0.0 1.9 0.0 0.0 2.5 0.0 0.0 4.0 0.0 0.0 7.0 0.0 0.0 16.0 0.6 0.0 21.0 2.0 0.0 1.9 0.0 0.0 2.5 -0.6 0.0 4.0 -1.0 0.0 7.0 -3.0 0.0 16.0 -3.5 0.0 21.0 0.0 0.0 1.9 0.0 0.0 2.5 0.0 0.0 4.0 0.0 0.0 7.0 0.0 0.0 16.0 0.0 0.0 21.0 0.0 0.0 ) .
+:ROUTE_2_5 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'fraction_changed' ;
+  x3do:fromNode 'ANIMATOR' ;
+  x3do:toField 'set_fraction' ;
+  x3do:toNode 'BLADE_MOTION' .
+:ROUTE_2_6 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'value_changed' ;
+  x3do:fromNode 'BLADE_MOTION' ;
+  x3do:toField 'set_spine' ;
+  x3do:toNode 'BLADE_SHAPE' .

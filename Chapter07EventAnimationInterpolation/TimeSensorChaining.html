@@ -1,0 +1,696 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/TR/xhtml1/strict"
+       xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
+       xmlns:saxon="http://icl.com/saxon">
+   <head>
+      <title>TimeSensorChaining.x3d (X3dToXhtml listing)</title>
+      <!-- I18N -->
+      <meta http-equiv="X-UA-Compatible" content="chrome=1,IE=edge"/>
+      <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+      <style type="text/css">
+span.element {color: navy}
+span.attribute {color: green}
+span.value {color: teal}
+span.plain {color: black}
+span.gray  {color: gray}
+span.idName {color: maroon}
+span.addedDocumentation {background-color:#EEEEEE} /* slightly darker for html page contrast */
+span.behaviorNode       {background-color:#DDEEFF} /*      light blue for html page contrast */
+span.extensibilityNode  {background-color:#FFEEFF} /*    lighter blue for html page contrast */
+a.idName {color: maroon}
+div.center {text-align: center}
+div.indent {margin-left: 25px}
+
+span.prototype {color: purple}
+a.prototype {color: purple}
+a.prototype:visited {color: black}
+span.route {color: red}
+b.warning {color: #CC5500}
+b.error {color: #CC0000}
+
+                </style>
+      <style type="text/css">
+table.curvedEdges { border:10px solid RoyalBlue;-webkit-border-radius:13px;-moz-border-radius:13px;-ms-border-radius:13px;-o-border-radius:13px;border-radius:13px; }
+table.curvedEdges td, table.curvedEdges th { border-bottom:1px dotted black;padding:5px; }
+</style>
+      <meta name="generator" content="XSLT processor Saxonica"/>
+      <meta name="generator"
+             content="https://www.web3d.org/x3d/stylesheets/X3dToXhtml.xslt"/>
+      <meta name="generator"
+             content="https://sourceforge.net/p/x3d/code/HEAD/tree/www.web3d.org/x3d/stylesheets/X3dToXhtml.xslt"/>
+      <link rel="shortcut icon"
+             href="https://www.web3d.org/x3d/content/icons/X3DtextIcon16.png"
+             title="X3D"/>
+   </head>
+   <body>
+      <code title="XML declaration">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</code>
+      <br/>
+      <code title="Document Type Declaration (DTD) for X3D validation">&lt;!DOCTYPE X3D PUBLIC "ISO//Web3D//DTD X3D 3.3//EN" "<a href="https://www.web3d.org/specifications/x3d-3.3.dtd">https://www.web3d.org/specifications/x3d-3.3.dtd</a>"&gt;</code>
+      <div>
+<span title="X3D is the top-most XML element for an Extensible 3D (X3D) Graphics file">&lt;<span class="element">X3D</span>&#160;<span title="X3D Immersive Profile supports most nodes, similar to VRML97"><span class="attribute">profile</span>='<span class="value">Immersive</span>'</span>&#160;<span class="attribute">version</span>='<span class="value">3.3</span>'&#160;<span title="XML namespace for X3D Graphics schema validation"><span title="XML namespace for XML Schema validation">
+            <span class="attribute">xmlns:xsd</span>='<a href="http://www.w3.org/2001/XMLSchema-instance" target="_blank">http://www.w3.org/2001/XMLSchema-instance</a>'
+</span>
+         <span title="XML namespace for X3D Graphics schema validation">
+            <span class="attribute">xsd:noNamespaceSchemaLocation</span>
+         </span>='
+<a href="https://www.web3d.org/specifications/x3d-3.3.xsd" target="_blank">https://www.web3d.org/specifications/x3d-3.3.xsd</a>
+'</span>&gt;
+</span><div class="indent">
+<span title="head can contain component, unit, and author-defined metadata (meta) tags">&lt;<span class="element">head</span>&gt;
+</span><div class="indent">
+<span title="meta 'title' provides file name for this resource">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">title</span>'&#160;<span class="attribute">content</span>='<a href="TimeSensorChaining.x3d">TimeSensorChaining.x3d</a>'/&gt;
+</span><br />
+
+<span title="meta 'description' provides summary overview describing this resource">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">description</span>'&#160;<span class="attribute">content</span>='<span class="plain">Connecting TimeSensor nodes so that the completion of one behavior chain triggers another.</span>'/&gt;
+</span><br />
+
+<span title="meta 'creator' provides name of original author">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">creator</span>'&#160;<span class="attribute">content</span>='<span class="value">Don Brutzman and MV3204 class</span>'/&gt;
+</span><br />
+
+<span title="meta 'created' provides date of initial version">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">created</span>'&#160;<span class="attribute">content</span>='<span class="value">2 September 2009</span>'/&gt;
+</span><br />
+
+<span title="meta 'modified' provides date of modified version">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">modified</span>'&#160;<span class="attribute">content</span>='<span class="value">20 October 2019</span>'/&gt;
+</span><br />
+
+<span title="meta 'warning' provides warning information about a known problem that impedes proper operation">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<b class="warning"> warning </b>'&#160;<span class="attribute">content</span>='<b class="warning"> under  development </b>'/&gt;
+</span><br />
+
+<span title="meta 'identifier' provides the unique Uniform Resource Identifier (URI) or url address for this resource">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">identifier</span>'&#160;<span class="attribute">content</span>='
+<a href="https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter07EventAnimationInterpolation/TimeSensorChaining.x3d"
+                   target="_blank">https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter07EventAnimationInterpolation/TimeSensorChaining.x3d</a>
+'/&gt;
+</span><br />
+
+<span title="meta 'generator' provides name of authoring tool or translation tool producing this scene">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">generator</span>'&#160;<span class="attribute">content</span>='<span class="value">X3D-Edit 3.3, </span>
+               <a href="https://savage.nps.edu/X3D-Edit" target="_blank">https://savage.nps.edu/X3D-Edit</a>'/&gt;
+</span><br />
+
+<span title="meta 'license' provides software license link or information">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">license</span>'&#160;<span class="attribute">content</span>='
+<a href="../license.html">../license.html</a>'/&gt;
+</span></div><span title="head can contain component, unit, and author-defined metadata (meta) tags">&lt;/<span class="element">head</span>&gt;
+</span><br /><span style="color:white">
+&lt;!--
+</span>
+            <div class="center">
+               <hr style="width:100%"/>
+               <b>
+                  <i>Index for DEF nodes</i>
+               </b>: 
+<a title="go to this BooleanTrigger node"
+                   href="#Clock3CompleteTrigger"
+                   class="idName">Clock3CompleteTrigger</a>,
+<a title="go to this TimeSensor node"
+                   href="#ClockNumber1"
+                   class="idName">ClockNumber1</a>,
+<a title="go to this TimeSensor node"
+                   href="#ClockNumber2"
+                   class="idName">ClockNumber2</a>,
+<a title="go to this TimeSensor node"
+                   href="#ClockNumber3"
+                   class="idName">ClockNumber3</a>,
+<a title="go to this ScalarInterpolator node"
+                   href="#ClockReversal"
+                   class="idName">ClockReversal</a>,
+<a title="go to this Material node" href="#DoorColor" class="idName">DoorColor</a>,
+<a title="go to this ColorInterpolator node"
+                   href="#DoorColorInterpolator"
+                   class="idName">DoorColorInterpolator</a>,
+<a title="go to this Transform node"
+                   href="#DoorHingeTransform"
+                   class="idName">DoorHingeTransform</a>,
+<a title="go to this BooleanFilter node"
+                   href="#DoorOpenComplete"
+                   class="idName">DoorOpenComplete</a>,
+<a title="go to this OrientationInterpolator node"
+                   href="#DoorOpener"
+                   class="idName">DoorOpener</a>,
+<a title="go to this FontStyle node"
+                   href="#MiddleJustify"
+                   class="idName">MiddleJustify</a>,
+<a title="go to this IntegerTrigger node"
+                   href="#SetTextInMotion"
+                   class="idName">SetTextInMotion</a>,
+<a title="go to this IntegerTrigger node"
+                   href="#SetTextOpen"
+                   class="idName">SetTextOpen</a>,
+<a title="go to this IntegerTrigger node"
+                   href="#SetTextShut"
+                   class="idName">SetTextShut</a>,
+<a title="go to this Appearance node"
+                   href="#TextAppearance"
+                   class="idName">TextAppearance</a>,
+<a title="go to this Switch node" href="#TextSwitcher" class="idName">TextSwitcher</a>,
+<a title="go to this TimeTrigger node"
+                   href="#TriggerOpeningAnimation"
+                   class="idName">TriggerOpeningAnimation</a>,
+<a title="go to this TouchSensor node"
+                   href="#UserClick"
+                   class="idName">UserClick</a>
+<br /><hr width="50%"/>
+               <b>
+                  <i>Index for Viewpoint image</i>
+               </b>: 
+<a title="go to this Viewpoint node: TimeSensor chaining example"
+                   href="#Viewpoint_1"
+                   class="idName">Viewpoint_1</a>
+               <hr style="width:100%"/>
+            </div>
+            <span style="color:white">
+--&gt;
+</span><br />
+
+<span title="Scene is the root node that contains an X3D scene graph">&lt;<span class="element">Scene</span>&gt;
+</span><div class="indent">
+<span title="WorldInfo contains persistent documentation information about the 3D world">&lt;<span class="element">WorldInfo</span>&#160;<span class="attribute">title</span>='<span class="value">TimeSensorChaining.x3d</span>'/&gt;
+</span><br />
+<a name="Viewpoint_1"> </a> 
+<span title="Viewpoint provides a specific location and direction where the user may view the scene">&lt;<span class="element">Viewpoint</span>&#160;<span class="attribute">description</span>='<a title="viewpoint image (produced using Xj3D)"
+                   href="_viewpoints/TimeSensorChaining.x3d._VP_TimeSensor_chaining_example.png">TimeSensor chaining example</a>'&#160;<span class="attribute">position</span>='<span class="value">0 1 6</span>'/&gt;
+</span><br />
+<a name="DoorHingeTransform"> </a> 
+<span style="background-color:#EEEEEE;" title="inserted documentation about ROUTE connections">&lt;!-- <i>ROUTE</i> information for <span class="idName">DoorHingeTransform</span> node:&#160;
+[<a title="go to this ROUTE" href="#ROUTE_2"><i>from</i>&#160;<span class="idName">DoorOpener</span>.<span class="attribute">value_changed</span>&#160;<i>to</i>&#160;<span class="attribute">rotation</span>
+               </a>]
+ --&gt;<br /></span>
+<span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;<span class="element">Transform</span>&#160;<span class="attribute">DEF</span>='<a title="bookmark link to DoorHingeTransform"
+                   href="#DoorHingeTransform"
+                   class="idName">DoorHingeTransform</a>'&#160;<span class="attribute">center</span>='<span class="value">-0.65 0 0</span>'&#160;<span class="attribute">translation</span>='<span class="value">0 1 0</span>'&gt;
+</span><div class="indent">
+                  <a name="UserClick"> </a> 
+<span style="background-color:#EEEEEE;" title="inserted documentation about ROUTE connections">&lt;!-- <i>ROUTE</i> information for <span class="idName">UserClick</span> node:&#160;
+[<a title="go to this ROUTE" href="#ROUTE_0"><i>from</i>&#160;<span class="attribute">touchTime</span>&#160;<i>to</i>&#160;<span class="idName">ClockNumber1</span>.<span class="attribute">startTime</span>
+                  </a>]
+[<a title="go to this ROUTE" href="#ROUTE_3"><i>from</i>&#160;<span class="attribute">isActive</span>&#160;<i>to</i>&#160;<span class="idName">SetTextInMotion</span>.<span class="attribute">set_boolean</span>
+                  </a>]
+[<a title="go to this ROUTE" href="#ROUTE_13"><i>from</i>&#160;<span class="attribute">touchTime</span>&#160;<i>to</i>&#160;<span class="idName">ClockNumber3</span>.<span class="attribute">startTime</span>
+                  </a>]
+ --&gt;<br /></span>
+<span title="TouchSensor tracks location &amp; state of the pointing device, and detects when user points at geometry" style="background-color:#DDEEFF">&lt;<span class="element">TouchSensor</span>&#160;<span class="attribute">DEF</span>='<a title="bookmark link to UserClick" href="#UserClick" class="idName">UserClick</a>'&#160;<span class="attribute">description</span>='<span class="value">click to operate door</span>'/&gt;
+</span><br />
+
+<span title="Shape contains geometry and optional corresponding Appearance">&lt;<span class="element">Shape</span>&gt;
+</span><div class="indent">
+<span title="Box is a geometry primitive node">&lt;<span class="element">Box</span>&#160;<span class="attribute">size</span>='<span class="value">1.3 2.5 0.08</span>'/&gt;
+</span><br />
+
+<span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;<span class="element">Appearance</span>&gt;
+</span><div class="indent">
+                        <a name="DoorColor"> </a> 
+<span style="background-color:#EEEEEE;" title="inserted documentation about ROUTE connections">&lt;!-- <i>ROUTE</i> information for <span class="idName">DoorColor</span> node:&#160;
+[<a title="go to this ROUTE" href="#ROUTE_12"><i>from</i>&#160;<span class="idName">DoorColorInterpolator</span>.<span class="attribute">value_changed</span>&#160;<i>to</i>&#160;<span class="attribute">diffuseColor</span>
+                        </a>]
+ --&gt;<br /></span>
+<span title="Material specifies surface rendering properties for associated geometry">&lt;<span class="element">Material</span>&#160;<span class="attribute">DEF</span>='<a title="bookmark link to DoorColor" href="#DoorColor" class="idName">DoorColor</a>'&#160;<span class="attribute">diffuseColor</span>='<span class="value">1 0 0</span>'/&gt;
+</span></div><span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;/<span class="element">Appearance</span>&gt;
+</span></div><span title="Shape contains geometry and optional corresponding Appearance">&lt;/<span class="element">Shape</span>&gt;
+</span></div><span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;/<span class="element">Transform</span>&gt;
+</span><br />
+
+<span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;<span class="element">Transform</span>&#160;<span class="attribute">scale</span>='<span class="value">0.6 0.6 0.6</span>'&#160;<span class="attribute">translation</span>='<span class="value">0 -1 0</span>'&gt;
+</span><div class="indent">
+                  <a name="TextSwitcher"> </a> 
+<span style="background-color:#EEEEEE;" title="inserted documentation about ROUTE connections">&lt;!-- <i>ROUTE</i> information for <span class="idName">TextSwitcher</span> node:&#160;
+[<a title="go to this ROUTE" href="#ROUTE_4"><i>from</i>&#160;<span class="idName">SetTextInMotion</span>.<span class="attribute">triggerValue</span>&#160;<i>to</i>&#160;<span class="attribute">whichChoice</span>
+                  </a>]
+[<a title="go to this ROUTE" href="#ROUTE_10"><i>from</i>&#160;<span class="idName">SetTextOpen</span>.<span class="attribute">triggerValue</span>&#160;<i>to</i>&#160;<span class="attribute">whichChoice</span>
+                  </a>]
+[<a title="go to this ROUTE" href="#ROUTE_21"><i>from</i>&#160;<span class="idName">SetTextShut</span>.<span class="attribute">triggerValue</span>&#160;<i>to</i>&#160;<span class="attribute">whichChoice</span>
+                  </a>]
+ --&gt;<br /></span>
+<span title="Switch is a Grouping node that only renders one (or zero) child at a time">&lt;<span class="element">Switch</span>&#160;<span class="attribute">DEF</span>='<a title="bookmark link to TextSwitcher"
+                      href="#TextSwitcher"
+                      class="idName">TextSwitcher</a>'&#160;<span class="attribute">whichChoice</span>='<span class="value">0</span>'&gt;
+</span><div class="indent">
+<span title="Group is a Grouping node that can contain most nodes">&lt;<span class="element">Group</span>&gt;
+</span><div class="indent">
+<span title="Shape contains geometry and optional corresponding Appearance">&lt;<span class="element">Shape</span>&gt;
+</span><div class="indent">
+<span title="Text is a geometry primitive node">&lt;<span class="element">Text</span>&#160;<span class="attribute">string</span>='<span class="value">"Door is closed"</span>'&gt;
+</span><div class="indent">
+                              <a name="MiddleJustify"> </a> 
+<span title="FontStyle defines the size, family, justification, and other styles used by Text nodes">&lt;<span class="element">FontStyle</span>&#160;<span class="attribute">DEF</span>='<a title="bookmark link to MiddleJustify"
+                                  href="#MiddleJustify"
+                                  class="idName">MiddleJustify</a>'&#160;<span class="attribute">justify</span>='<span class="value">"MIDDLE" "MIDDLE"</span>'/&gt;
+</span></div><span title="Text is a geometry primitive node">&lt;/<span class="element">Text</span>&gt;
+</span><br />
+<a name="TextAppearance"> </a> 
+<span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;<span class="element">Appearance</span>&#160;<span class="attribute">DEF</span>='<a title="bookmark link to TextAppearance"
+                               href="#TextAppearance"
+                               class="idName">TextAppearance</a>'&gt;
+</span><div class="indent">
+<span title="Material specifies surface rendering properties for associated geometry">&lt;<span class="element">Material</span>/&gt;
+</span></div><span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;/<span class="element">Appearance</span>&gt;
+</span></div><span title="Shape contains geometry and optional corresponding Appearance">&lt;/<span class="element">Shape</span>&gt;
+</span></div><span title="Group is a Grouping node that can contain most nodes">&lt;/<span class="element">Group</span>&gt;
+</span><br />
+
+<span title="Group is a Grouping node that can contain most nodes">&lt;<span class="element">Group</span>&gt;
+</span><div class="indent">
+<span title="Shape contains geometry and optional corresponding Appearance">&lt;<span class="element">Shape</span>&gt;
+</span><div class="indent">
+<span title="Text is a geometry primitive node">&lt;<span class="element">Text</span>&#160;<span class="attribute">string</span>='<span class="value">"Door in motion..."</span>'&gt;
+</span><div class="indent">
+<span title="FontStyle defines the size, family, justification, and other styles used by Text nodes">&lt;<span class="element">FontStyle</span>&#160;<span class="attribute">USE</span>='<a title="go to the original DEF node definition"
+                                  href="#MiddleJustify"
+                                  class="idName">MiddleJustify</a>'/&gt;
+</span></div><span title="Text is a geometry primitive node">&lt;/<span class="element">Text</span>&gt;
+</span><br />
+
+<span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;<span class="element">Appearance</span>&#160;<span class="attribute">USE</span>='<a title="go to the original DEF node definition"
+                               href="#TextAppearance"
+                               class="idName">TextAppearance</a>'/&gt;
+</span></div><span title="Shape contains geometry and optional corresponding Appearance">&lt;/<span class="element">Shape</span>&gt;
+</span></div><span title="Group is a Grouping node that can contain most nodes">&lt;/<span class="element">Group</span>&gt;
+</span><br />
+
+<span title="Group is a Grouping node that can contain most nodes">&lt;<span class="element">Group</span>&gt;
+</span><div class="indent">
+<span title="Shape contains geometry and optional corresponding Appearance">&lt;<span class="element">Shape</span>&gt;
+</span><div class="indent">
+<span title="Text is a geometry primitive node">&lt;<span class="element">Text</span>&#160;<span class="attribute">string</span>='<span class="value">"Door is open"</span>'&gt;
+</span><div class="indent">
+<span title="FontStyle defines the size, family, justification, and other styles used by Text nodes">&lt;<span class="element">FontStyle</span>&#160;<span class="attribute">USE</span>='<a title="go to the original DEF node definition"
+                                  href="#MiddleJustify"
+                                  class="idName">MiddleJustify</a>'/&gt;
+</span></div><span title="Text is a geometry primitive node">&lt;/<span class="element">Text</span>&gt;
+</span><br />
+
+<span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;<span class="element">Appearance</span>&#160;<span class="attribute">USE</span>='<a title="go to the original DEF node definition"
+                               href="#TextAppearance"
+                               class="idName">TextAppearance</a>'/&gt;
+</span></div><span title="Shape contains geometry and optional corresponding Appearance">&lt;/<span class="element">Shape</span>&gt;
+</span></div><span title="Group is a Grouping node that can contain most nodes">&lt;/<span class="element">Group</span>&gt;
+</span></div><span title="Switch is a Grouping node that only renders one (or zero) child at a time">&lt;/<span class="element">Switch</span>&gt;
+</span></div><span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;/<span class="element">Transform</span>&gt;
+</span><br /><span title="XML comment">&lt;!--  =====  open  the  door  =====  --&gt;</span>
+<br />
+<a name="ClockNumber1"> </a> 
+<span style="background-color:#EEEEEE;" title="inserted documentation about ROUTE connections">&lt;!-- <i>ROUTE</i> information for <span class="idName">ClockNumber1</span> node:&#160;
+[<a title="go to this ROUTE" href="#ROUTE_0"><i>from</i>&#160;<span class="idName">UserClick</span>.<span class="attribute">touchTime</span>&#160;<i>to</i>&#160;<span class="attribute">startTime</span>
+               </a>]
+[<a title="go to this ROUTE" href="#ROUTE_1"><i>from</i>&#160;<span class="attribute">fraction_changed</span>&#160;<i>to</i>&#160;<span class="idName">DoorOpener</span>.<span class="attribute">set_fraction</span>
+               </a>]
+[<a title="go to this ROUTE" href="#ROUTE_5"><i>from</i>&#160;<span class="attribute">isActive</span>&#160;<i>to</i>&#160;<span class="idName">DoorOpenComplete</span>.<span class="attribute">set_boolean</span>
+               </a>]
+[<a href="#ROUTE_6">self-route&#160;<i>from</i>&#160;<span class="attribute">isActive</span>&#160;<i>to</i>&#160;<span class="attribute">enabled</span>
+               </a>]
+ --&gt;<br /></span>
+<span title="TimeSensor continuously generates events as time passes" style="background-color:#DDEEFF">&lt;<span class="element">TimeSensor</span>&#160;<span class="attribute">DEF</span>='<a title="bookmark link to ClockNumber1"
+                   href="#ClockNumber1"
+                   class="idName">ClockNumber1</a>'&#160;<span class="attribute">cycleInterval</span>='<span class="value">2</span>'/&gt;
+</span><br />
+<a name="ROUTE_0"> </a> 
+<span title="ROUTE connects fields between nodes to enable event passing" style="background-color:#DDEEFF">&lt;<span class="route">ROUTE</span>&#160;<span class="attribute">fromNode</span>='<a title="go to the original DEF node definition"
+                   href="#UserClick"
+                   class="idName">UserClick</a>'&#160;<span class="attribute">fromField</span>='<span class="value">touchTime</span>'&#160;<span class="attribute">toNode</span>='<a title="go to the original DEF node definition"
+                   href="#ClockNumber1"
+                   class="idName">ClockNumber1</a>'&#160;<span class="attribute">toField</span>='<span class="value">startTime</span>'/&gt;
+</span><br />
+<a name="DoorOpener"> </a> 
+<span style="background-color:#EEEEEE;" title="inserted documentation about ROUTE connections">&lt;!-- <i>ROUTE</i> information for <span class="idName">DoorOpener</span> node:&#160;
+[<a title="go to this ROUTE" href="#ROUTE_1"><i>from</i>&#160;<span class="idName">ClockNumber1</span>.<span class="attribute">fraction_changed</span>&#160;<i>to</i>&#160;<span class="attribute">set_fraction</span>
+               </a>]
+[<a title="go to this ROUTE" href="#ROUTE_17"><i>from</i>&#160;<span class="idName">ClockReversal</span>.<span class="attribute">value_changed</span>&#160;<i>to</i>&#160;<span class="attribute">set_fraction</span>
+               </a>]
+[<a title="go to this ROUTE" href="#ROUTE_2"><i>from</i>&#160;<span class="attribute">value_changed</span>&#160;<i>to</i>&#160;<span class="idName">DoorHingeTransform</span>.<span class="attribute">rotation</span>
+               </a>]
+ --&gt;<br /></span>
+<span title="Interpolator nodes output event values using piecewise-linear function definitions" style="background-color:#DDEEFF">&lt;<span class="element">OrientationInterpolator</span>&#160;<span class="attribute">DEF</span>='<a title="bookmark link to DoorOpener"
+                   href="#DoorOpener"
+                   class="idName">DoorOpener</a>'&#160;<span class="attribute">key</span>='<span class="value">0 0.5 1</span>'&#160;<span class="attribute">keyValue</span>='<span class="value">0 1 0 0 0 1 0 4.7124 0 1 0 3</span>'/&gt;
+</span><br />
+<a name="ROUTE_1"> </a> 
+<span title="ROUTE connects fields between nodes to enable event passing" style="background-color:#DDEEFF">&lt;<span class="route">ROUTE</span>&#160;<span class="attribute">fromNode</span>='<a title="go to the original DEF node definition"
+                   href="#ClockNumber1"
+                   class="idName">ClockNumber1</a>'&#160;<span class="attribute">fromField</span>='<span class="value">fraction_changed</span>'&#160;<span class="attribute">toNode</span>='<a title="go to the original DEF node definition"
+                   href="#DoorOpener"
+                   class="idName">DoorOpener</a>'&#160;<span class="attribute">toField</span>='<span class="value">set_fraction</span>'/&gt;
+</span><br />
+<a name="ROUTE_2"> </a> 
+<span title="ROUTE connects fields between nodes to enable event passing" style="background-color:#DDEEFF">&lt;<span class="route">ROUTE</span>&#160;<span class="attribute">fromNode</span>='<a title="go to the original DEF node definition"
+                   href="#DoorOpener"
+                   class="idName">DoorOpener</a>'&#160;<span class="attribute">fromField</span>='<span class="value">value_changed</span>'&#160;<span class="attribute">toNode</span>='<a title="go to the original DEF node definition"
+                   href="#DoorHingeTransform"
+                   class="idName">DoorHingeTransform</a>'&#160;<span class="attribute">toField</span>='<span class="value">rotation</span>'/&gt;
+</span><br />
+<a name="SetTextInMotion"> </a> 
+<span style="background-color:#EEEEEE;" title="inserted documentation about ROUTE connections">&lt;!-- <i>ROUTE</i> information for <span class="idName">SetTextInMotion</span> node:&#160;
+[<a title="go to this ROUTE" href="#ROUTE_3"><i>from</i>&#160;<span class="idName">UserClick</span>.<span class="attribute">isActive</span>&#160;<i>to</i>&#160;<span class="attribute">set_boolean</span>
+               </a>]
+[<a title="go to this ROUTE" href="#ROUTE_4"><i>from</i>&#160;<span class="attribute">triggerValue</span>&#160;<i>to</i>&#160;<span class="idName">TextSwitcher</span>.<span class="attribute">whichChoice</span>
+               </a>]
+ --&gt;<br /></span>
+<span title="IntegerTrigger converts boolean true or time input events to an integer value" style="background-color:#DDEEFF">&lt;<span class="element">IntegerTrigger</span>&#160;<span class="attribute">DEF</span>='<a title="bookmark link to SetTextInMotion"
+                   href="#SetTextInMotion"
+                   class="idName">SetTextInMotion</a>'&#160;<span class="attribute">integerKey</span>='<span class="value">1</span>'&#160;<span class="attribute">containerField</span>='<span class="value">children</span>'/&gt;
+</span><br />
+<a name="ROUTE_3"> </a> 
+<span title="ROUTE connects fields between nodes to enable event passing" style="background-color:#DDEEFF">&lt;<span class="route">ROUTE</span>&#160;<span class="attribute">fromNode</span>='<a title="go to the original DEF node definition"
+                   href="#UserClick"
+                   class="idName">UserClick</a>'&#160;<span class="attribute">fromField</span>='<span class="value">isActive</span>'&#160;<span class="attribute">toNode</span>='<a title="go to the original DEF node definition"
+                   href="#SetTextInMotion"
+                   class="idName">SetTextInMotion</a>'&#160;<span class="attribute">toField</span>='<span class="value">set_boolean</span>'/&gt;
+</span><br />
+<a name="ROUTE_4"> </a> 
+<span title="ROUTE connects fields between nodes to enable event passing" style="background-color:#DDEEFF">&lt;<span class="route">ROUTE</span>&#160;<span class="attribute">fromNode</span>='<a title="go to the original DEF node definition"
+                   href="#SetTextInMotion"
+                   class="idName">SetTextInMotion</a>'&#160;<span class="attribute">fromField</span>='<span class="value">triggerValue</span>'&#160;<span class="attribute">toNode</span>='<a title="go to the original DEF node definition"
+                   href="#TextSwitcher"
+                   class="idName">TextSwitcher</a>'&#160;<span class="attribute">toField</span>='<span class="value">whichChoice</span>'/&gt;
+</span><br /><span title="XML comment">&lt;!--  =====  door  is  now  open  =====  --&gt;</span>
+<br />
+<a name="DoorOpenComplete"> </a> 
+<span style="background-color:#EEEEEE;" title="inserted documentation about ROUTE connections">&lt;!-- <i>ROUTE</i> information for <span class="idName">DoorOpenComplete</span> node:&#160;
+[<a title="go to this ROUTE" href="#ROUTE_5"><i>from</i>&#160;<span class="idName">ClockNumber1</span>.<span class="attribute">isActive</span>&#160;<i>to</i>&#160;<span class="attribute">set_boolean</span>
+               </a>]
+[<a title="go to this ROUTE" href="#ROUTE_7"><i>from</i>&#160;<span class="attribute">inputFalse</span>&#160;<i>to</i>&#160;<span class="idName">TriggerOpeningAnimation</span>.<span class="attribute">set_boolean</span>
+               </a>]
+[<a title="go to this ROUTE" href="#ROUTE_9"><i>from</i>&#160;<span class="attribute">inputFalse</span>&#160;<i>to</i>&#160;<span class="idName">SetTextOpen</span>.<span class="attribute">set_boolean</span>
+               </a>]
+[<a title="go to this ROUTE" href="#ROUTE_14"><i>from</i>&#160;<span class="attribute">inputFalse</span>&#160;<i>to</i>&#160;<span class="idName">ClockNumber3</span>.<span class="attribute">enabled</span>
+               </a>]
+ --&gt;<br /></span>
+<span title="BooleanFilter selectively passes true, false or negated events" style="background-color:#DDEEFF">&lt;<span class="element">BooleanFilter</span>&#160;<span class="attribute">DEF</span>='<a title="bookmark link to DoorOpenComplete"
+                   href="#DoorOpenComplete"
+                   class="idName">DoorOpenComplete</a>'&#160;<span class="attribute">containerField</span>='<span class="value">children</span>'/&gt;
+</span><br />
+<a name="ROUTE_5"> </a> 
+<span title="ROUTE connects fields between nodes to enable event passing" style="background-color:#DDEEFF">&lt;<span class="route">ROUTE</span>&#160;<span class="attribute">fromNode</span>='<a title="go to the original DEF node definition"
+                   href="#ClockNumber1"
+                   class="idName">ClockNumber1</a>'&#160;<span class="attribute">fromField</span>='<span class="value">isActive</span>'&#160;<span class="attribute">toNode</span>='<a title="go to the original DEF node definition"
+                   href="#DoorOpenComplete"
+                   class="idName">DoorOpenComplete</a>'&#160;<span class="attribute">toField</span>='<span class="value">set_boolean</span>'/&gt;
+</span><br /><span title="XML comment">&lt;!--  disable  ClockNumber1  by  turning  itself  off  when  complete  --&gt;</span>
+<br />
+<a name="ROUTE_6"> </a> 
+<span title="ROUTE connects fields between nodes to enable event passing" style="background-color:#DDEEFF">&lt;<span class="route">ROUTE</span>&#160;<span class="attribute">fromNode</span>='<a title="go to the original DEF node definition"
+                   href="#ClockNumber1"
+                   class="idName">ClockNumber1</a>'&#160;<span class="attribute">fromField</span>='<span class="value">isActive</span>'&#160;<span class="attribute">toNode</span>='<a title="go to the original DEF node definition"
+                   href="#ClockNumber1"
+                   class="idName">ClockNumber1</a>'&#160;<span class="attribute">toField</span>='<span class="value">enabled</span>'/&gt;
+</span><br />
+<a name="TriggerOpeningAnimation"> </a> 
+<span style="background-color:#EEEEEE;" title="inserted documentation about ROUTE connections">&lt;!-- <i>ROUTE</i> information for <span class="idName">TriggerOpeningAnimation</span> node:&#160;
+[<a title="go to this ROUTE" href="#ROUTE_7"><i>from</i>&#160;<span class="idName">DoorOpenComplete</span>.<span class="attribute">inputFalse</span>&#160;<i>to</i>&#160;<span class="attribute">set_boolean</span>
+               </a>]
+[<a title="go to this ROUTE" href="#ROUTE_8"><i>from</i>&#160;<span class="attribute">triggerTime</span>&#160;<i>to</i>&#160;<span class="idName">ClockNumber2</span>.<span class="attribute">startTime</span>
+               </a>]
+ --&gt;<br /></span>
+<span title="TimeTrigger converts boolean true events to time events" style="background-color:#DDEEFF">&lt;<span class="element">TimeTrigger</span>&#160;<span class="attribute">DEF</span>='<a title="bookmark link to TriggerOpeningAnimation"
+                   href="#TriggerOpeningAnimation"
+                   class="idName">TriggerOpeningAnimation</a>'&#160;<span class="attribute">containerField</span>='<span class="value">children</span>'/&gt;
+</span><br />
+<a name="ROUTE_7"> </a> 
+<span title="ROUTE connects fields between nodes to enable event passing" style="background-color:#DDEEFF">&lt;<span class="route">ROUTE</span>&#160;<span class="attribute">fromNode</span>='<a title="go to the original DEF node definition"
+                   href="#DoorOpenComplete"
+                   class="idName">DoorOpenComplete</a>'&#160;<span class="attribute">fromField</span>='<span class="value">inputFalse</span>'&#160;<span class="attribute">toNode</span>='<a title="go to the original DEF node definition"
+                   href="#TriggerOpeningAnimation"
+                   class="idName">TriggerOpeningAnimation</a>'&#160;<span class="attribute">toField</span>='<span class="value">set_boolean</span>'/&gt;
+</span><br />
+<a name="ClockNumber2"> </a> 
+<span style="background-color:#EEEEEE;" title="inserted documentation about ROUTE connections">&lt;!-- <i>ROUTE</i> information for <span class="idName">ClockNumber2</span> node:&#160;
+[<a title="go to this ROUTE" href="#ROUTE_8"><i>from</i>&#160;<span class="idName">TriggerOpeningAnimation</span>.<span class="attribute">triggerTime</span>&#160;<i>to</i>&#160;<span class="attribute">startTime</span>
+               </a>]
+[<a title="go to this ROUTE" href="#ROUTE_11"><i>from</i>&#160;<span class="attribute">fraction_changed</span>&#160;<i>to</i>&#160;<span class="idName">DoorColorInterpolator</span>.<span class="attribute">set_fraction</span>
+               </a>]
+ --&gt;<br /></span>
+<span title="TimeSensor continuously generates events as time passes" style="background-color:#DDEEFF">&lt;<span class="element">TimeSensor</span>&#160;<span class="attribute">DEF</span>='<a title="bookmark link to ClockNumber2"
+                   href="#ClockNumber2"
+                   class="idName">ClockNumber2</a>'&#160;<span class="attribute">cycleInterval</span>='<span class="value">0.5</span>'/&gt;
+</span><br />
+<a name="ROUTE_8"> </a> 
+<span title="ROUTE connects fields between nodes to enable event passing" style="background-color:#DDEEFF">&lt;<span class="route">ROUTE</span>&#160;<span class="attribute">fromNode</span>='<a title="go to the original DEF node definition"
+                   href="#TriggerOpeningAnimation"
+                   class="idName">TriggerOpeningAnimation</a>'&#160;<span class="attribute">fromField</span>='<span class="value">triggerTime</span>'&#160;<span class="attribute">toNode</span>='<a title="go to the original DEF node definition"
+                   href="#ClockNumber2"
+                   class="idName">ClockNumber2</a>'&#160;<span class="attribute">toField</span>='<span class="value">startTime</span>'/&gt;
+</span><br />
+<a name="SetTextOpen"> </a> 
+<span style="background-color:#EEEEEE;" title="inserted documentation about ROUTE connections">&lt;!-- <i>ROUTE</i> information for <span class="idName">SetTextOpen</span> node:&#160;
+[<a title="go to this ROUTE" href="#ROUTE_9"><i>from</i>&#160;<span class="idName">DoorOpenComplete</span>.<span class="attribute">inputFalse</span>&#160;<i>to</i>&#160;<span class="attribute">set_boolean</span>
+               </a>]
+[<a title="go to this ROUTE" href="#ROUTE_10"><i>from</i>&#160;<span class="attribute">triggerValue</span>&#160;<i>to</i>&#160;<span class="idName">TextSwitcher</span>.<span class="attribute">whichChoice</span>
+               </a>]
+ --&gt;<br /></span>
+<span title="IntegerTrigger converts boolean true or time input events to an integer value" style="background-color:#DDEEFF">&lt;<span class="element">IntegerTrigger</span>&#160;<span class="attribute">DEF</span>='<a title="bookmark link to SetTextOpen"
+                   href="#SetTextOpen"
+                   class="idName">SetTextOpen</a>'&#160;<span class="attribute">integerKey</span>='<span class="value">2</span>'&#160;<span class="attribute">containerField</span>='<span class="value">children</span>'/&gt;
+</span><br />
+<a name="ROUTE_9"> </a> 
+<span title="ROUTE connects fields between nodes to enable event passing" style="background-color:#DDEEFF">&lt;<span class="route">ROUTE</span>&#160;<span class="attribute">fromNode</span>='<a title="go to the original DEF node definition"
+                   href="#DoorOpenComplete"
+                   class="idName">DoorOpenComplete</a>'&#160;<span class="attribute">fromField</span>='<span class="value">inputFalse</span>'&#160;<span class="attribute">toNode</span>='<a title="go to the original DEF node definition"
+                   href="#SetTextOpen"
+                   class="idName">SetTextOpen</a>'&#160;<span class="attribute">toField</span>='<span class="value">set_boolean</span>'/&gt;
+</span><br />
+<a name="ROUTE_10"> </a> 
+<span title="ROUTE connects fields between nodes to enable event passing" style="background-color:#DDEEFF">&lt;<span class="route">ROUTE</span>&#160;<span class="attribute">fromNode</span>='<a title="go to the original DEF node definition"
+                   href="#SetTextOpen"
+                   class="idName">SetTextOpen</a>'&#160;<span class="attribute">fromField</span>='<span class="value">triggerValue</span>'&#160;<span class="attribute">toNode</span>='<a title="go to the original DEF node definition"
+                   href="#TextSwitcher"
+                   class="idName">TextSwitcher</a>'&#160;<span class="attribute">toField</span>='<span class="value">whichChoice</span>'/&gt;
+</span><br />
+<a name="DoorColorInterpolator"> </a> 
+<span style="background-color:#EEEEEE;" title="inserted documentation about ROUTE connections">&lt;!-- <i>ROUTE</i> information for <span class="idName">DoorColorInterpolator</span> node:&#160;
+[<a title="go to this ROUTE" href="#ROUTE_11"><i>from</i>&#160;<span class="idName">ClockNumber2</span>.<span class="attribute">fraction_changed</span>&#160;<i>to</i>&#160;<span class="attribute">set_fraction</span>
+               </a>]
+[<a title="go to this ROUTE" href="#ROUTE_18"><i>from</i>&#160;<span class="idName">ClockReversal</span>.<span class="attribute">value_changed</span>&#160;<i>to</i>&#160;<span class="attribute">set_fraction</span>
+               </a>]
+[<a title="go to this ROUTE" href="#ROUTE_12"><i>from</i>&#160;<span class="attribute">value_changed</span>&#160;<i>to</i>&#160;<span class="idName">DoorColor</span>.<span class="attribute">diffuseColor</span>
+               </a>]
+ --&gt;<br /></span>
+<span title="Interpolator nodes output event values using piecewise-linear function definitions" style="background-color:#DDEEFF">&lt;<span class="element">ColorInterpolator</span>&#160;<span class="attribute">DEF</span>='<a title="bookmark link to DoorColorInterpolator"
+                   href="#DoorColorInterpolator"
+                   class="idName">DoorColorInterpolator</a>'&#160;<span class="attribute">key</span>='<span class="value">0 0.5 1</span>'&#160;<span class="attribute">keyValue</span>='<span class="value">1 0 0 0.1 0.1 0.1 0.203922 0.701961 0</span>'/&gt;
+</span><br />
+<a name="ROUTE_11"> </a> 
+<span title="ROUTE connects fields between nodes to enable event passing" style="background-color:#DDEEFF">&lt;<span class="route">ROUTE</span>&#160;<span class="attribute">fromNode</span>='<a title="go to the original DEF node definition"
+                   href="#ClockNumber2"
+                   class="idName">ClockNumber2</a>'&#160;<span class="attribute">fromField</span>='<span class="value">fraction_changed</span>'&#160;<span class="attribute">toNode</span>='<a title="go to the original DEF node definition"
+                   href="#DoorColorInterpolator"
+                   class="idName">DoorColorInterpolator</a>'&#160;<span class="attribute">toField</span>='<span class="value">set_fraction</span>'/&gt;
+</span><br />
+<a name="ROUTE_12"> </a> 
+<span title="ROUTE connects fields between nodes to enable event passing" style="background-color:#DDEEFF">&lt;<span class="route">ROUTE</span>&#160;<span class="attribute">fromNode</span>='<a title="go to the original DEF node definition"
+                   href="#DoorColorInterpolator"
+                   class="idName">DoorColorInterpolator</a>'&#160;<span class="attribute">fromField</span>='<span class="value">value_changed</span>'&#160;<span class="attribute">toNode</span>='<a title="go to the original DEF node definition"
+                   href="#DoorColor"
+                   class="idName">DoorColor</a>'&#160;<span class="attribute">toField</span>='<span class="value">diffuseColor</span>'/&gt;
+</span><br /><span title="XML comment">&lt;!--  =====  shut  the  door  =====  --&gt;</span>
+<br />
+<a name="ClockNumber3"> </a> 
+<span style="background-color:#EEEEEE;" title="inserted documentation about ROUTE connections">&lt;!-- <i>ROUTE</i> information for <span class="idName">ClockNumber3</span> node:&#160;
+[<a title="go to this ROUTE" href="#ROUTE_13"><i>from</i>&#160;<span class="idName">UserClick</span>.<span class="attribute">touchTime</span>&#160;<i>to</i>&#160;<span class="attribute">startTime</span>
+               </a>]
+[<a title="go to this ROUTE" href="#ROUTE_14"><i>from</i>&#160;<span class="idName">DoorOpenComplete</span>.<span class="attribute">inputFalse</span>&#160;<i>to</i>&#160;<span class="attribute">enabled</span>
+               </a>]
+[<a title="go to this ROUTE" href="#ROUTE_16"><i>from</i>&#160;<span class="attribute">fraction_changed</span>&#160;<i>to</i>&#160;<span class="idName">ClockReversal</span>.<span class="attribute">set_fraction</span>
+               </a>]
+[<a title="go to this ROUTE" href="#ROUTE_19"><i>from</i>&#160;<span class="attribute">stopTime</span>&#160;<i>to</i>&#160;<span class="idName">Clock3CompleteTrigger</span>.<span class="attribute">set_triggerTime</span>
+               </a>]
+[<a href="#ROUTE_15">self-route&#160;<i>from</i>&#160;<span class="attribute">isActive</span>&#160;<i>to</i>&#160;<span class="attribute">enabled</span>
+               </a>]
+ --&gt;<br /></span>
+<span title="TimeSensor continuously generates events as time passes" style="background-color:#DDEEFF">&lt;<span class="element">TimeSensor</span>&#160;<span class="attribute">DEF</span>='<a title="bookmark link to ClockNumber3"
+                   href="#ClockNumber3"
+                   class="idName">ClockNumber3</a>'&#160;<span class="attribute">cycleInterval</span>='<span class="value">2</span>'&#160;<span class="attribute">enabled</span>='<span class="value">false</span>'/&gt;
+</span><br />
+<a name="ROUTE_13"> </a> 
+<span title="ROUTE connects fields between nodes to enable event passing" style="background-color:#DDEEFF">&lt;<span class="route">ROUTE</span>&#160;<span class="attribute">fromNode</span>='<a title="go to the original DEF node definition"
+                   href="#UserClick"
+                   class="idName">UserClick</a>'&#160;<span class="attribute">fromField</span>='<span class="value">touchTime</span>'&#160;<span class="attribute">toNode</span>='<a title="go to the original DEF node definition"
+                   href="#ClockNumber3"
+                   class="idName">ClockNumber3</a>'&#160;<span class="attribute">toField</span>='<span class="value">startTime</span>'/&gt;
+</span><br /><span title="XML comment">&lt;!--  enable  ClockNumber3  once  door  is  fully  open  --&gt;</span>
+<br />
+<a name="ROUTE_14"> </a> 
+<span title="ROUTE connects fields between nodes to enable event passing" style="background-color:#DDEEFF">&lt;<span class="route">ROUTE</span>&#160;<span class="attribute">fromNode</span>='<a title="go to the original DEF node definition"
+                   href="#DoorOpenComplete"
+                   class="idName">DoorOpenComplete</a>'&#160;<span class="attribute">fromField</span>='<span class="value">inputFalse</span>'&#160;<span class="attribute">toNode</span>='<a title="go to the original DEF node definition"
+                   href="#ClockNumber3"
+                   class="idName">ClockNumber3</a>'&#160;<span class="attribute">toField</span>='<span class="value">enabled</span>'/&gt;
+</span><br /><span title="XML comment">&lt;!--  disable  ClockNumber3  by  turning  itself  off  when  complete  --&gt;</span>
+<br />
+<a name="ROUTE_15"> </a> 
+<span title="ROUTE connects fields between nodes to enable event passing" style="background-color:#DDEEFF">&lt;<span class="route">ROUTE</span>&#160;<span class="attribute">fromNode</span>='<a title="go to the original DEF node definition"
+                   href="#ClockNumber3"
+                   class="idName">ClockNumber3</a>'&#160;<span class="attribute">fromField</span>='<span class="value">isActive</span>'&#160;<span class="attribute">toNode</span>='<a title="go to the original DEF node definition"
+                   href="#ClockNumber3"
+                   class="idName">ClockNumber3</a>'&#160;<span class="attribute">toField</span>='<span class="value">enabled</span>'/&gt;
+</span><br />
+<a name="ClockReversal"> </a> 
+<span style="background-color:#EEEEEE;" title="inserted documentation about ROUTE connections">&lt;!-- <i>ROUTE</i> information for <span class="idName">ClockReversal</span> node:&#160;
+[<a title="go to this ROUTE" href="#ROUTE_16"><i>from</i>&#160;<span class="idName">ClockNumber3</span>.<span class="attribute">fraction_changed</span>&#160;<i>to</i>&#160;<span class="attribute">set_fraction</span>
+               </a>]
+[<a title="go to this ROUTE" href="#ROUTE_17"><i>from</i>&#160;<span class="attribute">value_changed</span>&#160;<i>to</i>&#160;<span class="idName">DoorOpener</span>.<span class="attribute">set_fraction</span>
+               </a>]
+[<a title="go to this ROUTE" href="#ROUTE_18"><i>from</i>&#160;<span class="attribute">value_changed</span>&#160;<i>to</i>&#160;<span class="idName">DoorColorInterpolator</span>.<span class="attribute">set_fraction</span>
+               </a>]
+ --&gt;<br /></span>
+<span title="Interpolator nodes output event values using piecewise-linear function definitions" style="background-color:#DDEEFF">&lt;<span class="element">ScalarInterpolator</span>&#160;<span class="attribute">DEF</span>='<a title="bookmark link to ClockReversal"
+                   href="#ClockReversal"
+                   class="idName">ClockReversal</a>'&#160;<span class="attribute">key</span>='<span class="value">0 1</span>'&#160;<span class="attribute">keyValue</span>='<span class="value">1 0</span>'/&gt;
+</span><br />
+<a name="ROUTE_16"> </a> 
+<span title="ROUTE connects fields between nodes to enable event passing" style="background-color:#DDEEFF">&lt;<span class="route">ROUTE</span>&#160;<span class="attribute">fromNode</span>='<a title="go to the original DEF node definition"
+                   href="#ClockNumber3"
+                   class="idName">ClockNumber3</a>'&#160;<span class="attribute">fromField</span>='<span class="value">fraction_changed</span>'&#160;<span class="attribute">toNode</span>='<a title="go to the original DEF node definition"
+                   href="#ClockReversal"
+                   class="idName">ClockReversal</a>'&#160;<span class="attribute">toField</span>='<span class="value">set_fraction</span>'/&gt;
+</span><br />
+<a name="ROUTE_17"> </a> 
+<span title="ROUTE connects fields between nodes to enable event passing" style="background-color:#DDEEFF">&lt;<span class="route">ROUTE</span>&#160;<span class="attribute">fromNode</span>='<a title="go to the original DEF node definition"
+                   href="#ClockReversal"
+                   class="idName">ClockReversal</a>'&#160;<span class="attribute">fromField</span>='<span class="value">value_changed</span>'&#160;<span class="attribute">toNode</span>='<a title="go to the original DEF node definition"
+                   href="#DoorOpener"
+                   class="idName">DoorOpener</a>'&#160;<span class="attribute">toField</span>='<span class="value">set_fraction</span>'/&gt;
+</span><br />
+<a name="ROUTE_18"> </a> 
+<span title="ROUTE connects fields between nodes to enable event passing" style="background-color:#DDEEFF">&lt;<span class="route">ROUTE</span>&#160;<span class="attribute">fromNode</span>='<a title="go to the original DEF node definition"
+                   href="#ClockReversal"
+                   class="idName">ClockReversal</a>'&#160;<span class="attribute">fromField</span>='<span class="value">value_changed</span>'&#160;<span class="attribute">toNode</span>='<a title="go to the original DEF node definition"
+                   href="#DoorColorInterpolator"
+                   class="idName">DoorColorInterpolator</a>'&#160;<span class="attribute">toField</span>='<span class="value">set_fraction</span>'/&gt;
+</span><br /><span title="XML comment">&lt;!--  enable  ClockNumber1  when  door  is  fully  shut  --&gt;</span>
+<br />
+<a name="Clock3CompleteTrigger"> </a> 
+<span style="background-color:#EEEEEE;" title="inserted documentation about ROUTE connections">&lt;!-- <i>ROUTE</i> information for <span class="idName">Clock3CompleteTrigger</span> node:&#160;
+[<a title="go to this ROUTE" href="#ROUTE_19"><i>from</i>&#160;<span class="idName">ClockNumber3</span>.<span class="attribute">stopTime</span>&#160;<i>to</i>&#160;<span class="attribute">set_triggerTime</span>
+               </a>]
+[<a title="go to this ROUTE" href="#ROUTE_20"><i>from</i>&#160;<span class="attribute">triggerTrue</span>&#160;<i>to</i>&#160;<span class="idName">SetTextShut</span>.<span class="attribute">set_boolean</span>
+               </a>]
+ --&gt;<br /></span>
+<span title="BooleanTrigger converts time events to boolean true events" style="background-color:#DDEEFF">&lt;<span class="element">BooleanTrigger</span>&#160;<span class="attribute">DEF</span>='<a title="bookmark link to Clock3CompleteTrigger"
+                   href="#Clock3CompleteTrigger"
+                   class="idName">Clock3CompleteTrigger</a>'&#160;<span class="attribute">containerField</span>='<span class="value">children</span>'/&gt;
+</span><br />
+<a name="ROUTE_19"> </a> 
+<span title="ROUTE connects fields between nodes to enable event passing" style="background-color:#DDEEFF">&lt;<span class="route">ROUTE</span>&#160;<span class="attribute">fromNode</span>='<a title="go to the original DEF node definition"
+                   href="#ClockNumber3"
+                   class="idName">ClockNumber3</a>'&#160;<span class="attribute">fromField</span>='<span class="value">stopTime</span>'&#160;<span class="attribute">toNode</span>='<a title="go to the original DEF node definition"
+                   href="#Clock3CompleteTrigger"
+                   class="idName">Clock3CompleteTrigger</a>'&#160;<span class="attribute">toField</span>='<span class="value">set_triggerTime</span>'/&gt;
+</span><br />
+<a name="SetTextShut"> </a> 
+<span style="background-color:#EEEEEE;" title="inserted documentation about ROUTE connections">&lt;!-- <i>ROUTE</i> information for <span class="idName">SetTextShut</span> node:&#160;
+[<a title="go to this ROUTE" href="#ROUTE_20"><i>from</i>&#160;<span class="idName">Clock3CompleteTrigger</span>.<span class="attribute">triggerTrue</span>&#160;<i>to</i>&#160;<span class="attribute">set_boolean</span>
+               </a>]
+[<a title="go to this ROUTE" href="#ROUTE_21"><i>from</i>&#160;<span class="attribute">triggerValue</span>&#160;<i>to</i>&#160;<span class="idName">TextSwitcher</span>.<span class="attribute">whichChoice</span>
+               </a>]
+ --&gt;<br /></span>
+<span title="IntegerTrigger converts boolean true or time input events to an integer value" style="background-color:#DDEEFF">&lt;<span class="element">IntegerTrigger</span>&#160;<span class="attribute">DEF</span>='<a title="bookmark link to SetTextShut"
+                   href="#SetTextShut"
+                   class="idName">SetTextShut</a>'&#160;<span class="attribute">integerKey</span>='<span class="value">0</span>'&#160;<span class="attribute">containerField</span>='<span class="value">children</span>'/&gt;
+</span><br />
+<a name="ROUTE_20"> </a> 
+<span title="ROUTE connects fields between nodes to enable event passing" style="background-color:#DDEEFF">&lt;<span class="route">ROUTE</span>&#160;<span class="attribute">fromNode</span>='<a title="go to the original DEF node definition"
+                   href="#Clock3CompleteTrigger"
+                   class="idName">Clock3CompleteTrigger</a>'&#160;<span class="attribute">fromField</span>='<span class="value">triggerTrue</span>'&#160;<span class="attribute">toNode</span>='<a title="go to the original DEF node definition"
+                   href="#SetTextShut"
+                   class="idName">SetTextShut</a>'&#160;<span class="attribute">toField</span>='<span class="value">set_boolean</span>'/&gt;
+</span><br />
+<a name="ROUTE_21"> </a> 
+<span title="ROUTE connects fields between nodes to enable event passing" style="background-color:#DDEEFF">&lt;<span class="route">ROUTE</span>&#160;<span class="attribute">fromNode</span>='<a title="go to the original DEF node definition"
+                   href="#SetTextShut"
+                   class="idName">SetTextShut</a>'&#160;<span class="attribute">fromField</span>='<span class="value">triggerValue</span>'&#160;<span class="attribute">toNode</span>='<a title="go to the original DEF node definition"
+                   href="#TextSwitcher"
+                   class="idName">TextSwitcher</a>'&#160;<span class="attribute">toField</span>='<span class="value">whichChoice</span>'/&gt;
+</span></div><span title="Scene is the root node that contains an X3D scene graph">&lt;/<span class="element">Scene</span>&gt;
+</span></div><span title="X3D is the top-most XML element for an Extensible 3D (X3D) Graphics file">&lt;/<span class="element">X3D</span>&gt;
+</span><br /><span style="color:white">
+&lt;!--
+</span>
+         <div class="center">
+            <hr style="width:100%"/>
+            <b>
+               <i>Index for DEF nodes</i>
+            </b>: 
+<a title="go to this BooleanTrigger node"
+                href="#Clock3CompleteTrigger"
+                class="idName">Clock3CompleteTrigger</a>,
+<a title="go to this TimeSensor node"
+                href="#ClockNumber1"
+                class="idName">ClockNumber1</a>,
+<a title="go to this TimeSensor node"
+                href="#ClockNumber2"
+                class="idName">ClockNumber2</a>,
+<a title="go to this TimeSensor node"
+                href="#ClockNumber3"
+                class="idName">ClockNumber3</a>,
+<a title="go to this ScalarInterpolator node"
+                href="#ClockReversal"
+                class="idName">ClockReversal</a>,
+<a title="go to this Material node" href="#DoorColor" class="idName">DoorColor</a>,
+<a title="go to this ColorInterpolator node"
+                href="#DoorColorInterpolator"
+                class="idName">DoorColorInterpolator</a>,
+<a title="go to this Transform node"
+                href="#DoorHingeTransform"
+                class="idName">DoorHingeTransform</a>,
+<a title="go to this BooleanFilter node"
+                href="#DoorOpenComplete"
+                class="idName">DoorOpenComplete</a>,
+<a title="go to this OrientationInterpolator node"
+                href="#DoorOpener"
+                class="idName">DoorOpener</a>,
+<a title="go to this FontStyle node"
+                href="#MiddleJustify"
+                class="idName">MiddleJustify</a>,
+<a title="go to this IntegerTrigger node"
+                href="#SetTextInMotion"
+                class="idName">SetTextInMotion</a>,
+<a title="go to this IntegerTrigger node"
+                href="#SetTextOpen"
+                class="idName">SetTextOpen</a>,
+<a title="go to this IntegerTrigger node"
+                href="#SetTextShut"
+                class="idName">SetTextShut</a>,
+<a title="go to this Appearance node"
+                href="#TextAppearance"
+                class="idName">TextAppearance</a>,
+<a title="go to this Switch node" href="#TextSwitcher" class="idName">TextSwitcher</a>,
+<a title="go to this TimeTrigger node"
+                href="#TriggerOpeningAnimation"
+                class="idName">TriggerOpeningAnimation</a>,
+<a title="go to this TouchSensor node"
+                href="#UserClick"
+                class="idName">UserClick</a>
+<br /><hr width="50%"/>
+            <b>
+               <i>Index for Viewpoint image</i>
+            </b>: 
+<a title="go to this Viewpoint node: TimeSensor chaining example"
+                href="#Viewpoint_1"
+                class="idName">Viewpoint_1</a>
+            <hr style="width:100%"/>
+         </div>
+         <span style="color:white">
+--&gt;
+</span>
+      </div>
+      <p style="text-align:center;">
+         <span style="color:white">&lt;!--</span>
+Color key: <!--(matching X3D and XML terminology) -->
+&lt;<span class="element">X3dNode</span>
+         <span class="idName"> DEF</span>='<span class="idName">idName</span>' <span class="attribute">field</span>='<span class="value">value</span>'/&gt; 
+ matches 
+&lt;<span class="element">XmlElement</span>
+         <span class="idName"> DEF</span>='<span class="idName">idName</span>' <span class="attribute">attribute</span>='<span class="value">value</span>'/&gt; <br/>
+<span title="behavior node" style="background-color:#DDEEFF;">(Light blue background: behavior node)</span> <span title="inserted documentation about ROUTE connections" style="background-color:#EEEEEE;">(Grey background: inserted documentation)</span> <span title="X3D Extensibility" style="background-color:#FFEEFF;">(Magenta background: X3D Extensibility)</span><br/>
+         <span style="color:white"> --&gt;</span>
+      </p>
+      <p style="text-align:center; background-color:white">
+         <span style="color:white">&lt;!--</span>
+For additional help information about X3D scenes, please see <a href="https://www.web3d.org/x3d/content/X3dTooltips.html"
+             title="Summary descriptions and authoring hints for each X3D node (element) and field (attribute)"
+             target="_blank">X3D Tooltips</a>, <a href="https://www.web3d.org/x3d/content/examples/X3dResources.html"
+             title="Numerous resources that support X3D graphics"
+             target="_blank">X3D Resources</a> and <a href="https://www.web3d.org/x3d/content/examples/X3dSceneAuthoringHints.html"
+             title="Style guidelines, authoring tips and best practices"
+             target="_blank">X3D Scene Authoring Hints</a>.
+<span style="color:white">--&gt;</span>
+      </p>
+   </body>
+</html>

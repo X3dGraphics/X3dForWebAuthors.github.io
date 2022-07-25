@@ -1,0 +1,1 @@
+<ProtoDeclare name='ViewFrustrum'> ProtoInterface can only contain field declarations or comments [/X3D/Scene/ProtoDeclare/ProtoInterface, error]

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE X3D PUBLIC "ISO//Web3D//DTD X3D 3.2//EN" "http://www.web3d.org/specifications/x3d-3.2.dtd">
+<X3D profile='Immersive' version='3.2' xmlns:xsd='http://www.w3.org/2001/XMLSchema-instance' xsd:noNamespaceSchemaLocation='http://www.web3d.org/specifications/x3d-3.2.xsd'>
+  <head>
+    <meta content='ViewFrustrumPrototype.x3d' name='title'/>
+    <meta content='Display view frustrum associated with a given pair of Viewpoint, NavigationInfo nodes' name='description'/>
+    <meta content='Don Brutzman' name='creator'/>
+    <meta content='16 August 2008' name='translated'/>
+    <meta content='17 August 2008' name='modified'/>
+    <meta content='ViewFrustrumExample.x3d' name='reference'/>
+    <meta content='ViewFrustrumComputation.png' name='drawing'/>
+    <meta content='ViewFrustrumOverheadView.png' name='image'/>
+    <meta content='ViewFrustrumObliqueView.png' name='image'/>
+    <meta content='view culling frustrum' name='subject'/>
+    <meta content='http://X3dGraphics.com/examples/X3dForWebAuthors/Chapter14-Prototypes/ViewFrustrumPrototype.x3d' name='identifier'/>
+    <meta content='X3D-Edit, https://savage.nps.edu/X3D-Edit' name='generator'/>
+    <meta content='../license.html' name='license'/>
+  </head>
+  <Scene>
+    <ProtoDeclare appinfo='Display view frustrum associated with a given pair of Viewpoint NavigationInfo nodes' name='ViewFrustrum'>
+      <ProtoInterface>
+        <field accessType='initializeOnly' name='ViewpointNode' type='SFNode'>
+          <!-- NULL node -->
+        </field>
+        <field accessType='initializeOnly' name='NavigationInfoNode' type='SFNode'>
+          <!-- NULL node -->
+        </field>
+        <field accessType='inputOutput' name='lineColor' type='SFColor' value='0.9 0.9 0.9'/>
+        <field accessType='inputOutput' name='frustrumColor' type='SFColor' value='0.8 0.8 0.8'/>
+        <field accessType='inputOutput' name='transparency' type='SFFloat' value='0.5'/>
+        <field accessType='inputOutput' appinfo='assumed ratio height/width' name='aspectRatio' type='SFFloat' value='0.75'/>
+        <field accessType='initializeOnly' name='trace' type='SFBool' value='true'/>
+      </ProtoInterface>
+      <ProtoBody>
+        <Transform DEF='PositionTransform' rotation='0 1 0 3.14159'>
+          <Transform DEF='OrientationTransform'>
+            <Shape>
+              <IndexedLineSet DEF='FrustrumLines' coordIndex='0 1 2 3 0 -1 4 5 6 7 4 -1 0 4 -1 1 5 -1 2 6 -1 3 7 -1'>
+                <Coordinate DEF='FrustrumCoordinate' point='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0'/>
+              </IndexedLineSet>
+              <Appearance>
+                <Material>
+                  <IS>
+                    <connect nodeField='emissiveColor' protoField='lineColor'/>
+                  </IS>
+                </Material>
+              </Appearance>
+            </Shape>
+            <Shape>
+              <Extrusion DEF='FrustrumExtrusion'/>
+              <Appearance DEF='FrustrumAppearance'>
+                <Material>
+                  <IS>
+                    <connect nodeField='diffuseColor' protoField='frustrumColor'/>
+                    <connect nodeField='transparency' protoField='transparency'/>
+                  </IS>
+                </Material>
+              </Appearance>
+            </Shape>
+            <Shape>
+              <Sphere radius='0.25'/>
+              <Appearance USE='FrustrumAppearance'/>
+            </Shape>
+          </Transform>
+        </Transform>
+        <Script DEF='GeometryComputationScript' directOutput='true' url='"ViewFrustrumScript.js" "http://X3dGraphics.com/examples/X3dForWebAuthors/Chapter14-Prototypes/ViewFrustrumScript.js"'>
+          <field accessType='initializeOnly' name='ViewpointNode' type='SFNode'/>
+          <field accessType='initializeOnly' name='NavigationInfoNode' type='SFNode'/>
+          <field accessType='initializeOnly' name='FrustrumCoordinate' type='SFNode'>
+            <Coordinate USE='FrustrumCoordinate'/>
+          </field>
+          <field accessType='initializeOnly' name='FrustrumExtrusion' type='SFNode'>
+            <Extrusion USE='FrustrumExtrusion'/>
+          </field>
+          <field accessType='inputOnly' name='recompute' type='SFBool'/>
+          <field accessType='inputOutput' appinfo='assumed ratio height/width' name='aspectRatio' type='SFFloat'/>
+          <field accessType='outputOnly' name='position_changed' type='SFVec3f'/>
+          <field accessType='outputOnly' name='orientation_changed' type='SFRotation'/>
+          <field accessType='outputOnly' name='spine_changed' type='MFVec3f'/>
+          <field accessType='outputOnly' name='scale_changed' type='MFVec2f'/>
+          <field accessType='outputOnly' name='point_changed' type='MFVec3f'/>
+          <field accessType='initializeOnly' name='trace' type='SFBool'/>
+          <IS>
+            <connect nodeField='ViewpointNode' protoField='ViewpointNode'/>
+            <connect nodeField='NavigationInfoNode' protoField='NavigationInfoNode'/>
+            <connect nodeField='aspectRatio' protoField='aspectRatio'/>
+            <connect nodeField='trace' protoField='trace'/>
+          </IS>
+        </Script>
+        <ROUTE fromField='position_changed' fromNode='GeometryComputationScript' toField='translation' toNode='PositionTransform'/>
+        <ROUTE fromField='orientation_changed' fromNode='GeometryComputationScript' toField='rotation' toNode='OrientationTransform'/>
+        <ROUTE fromField='spine_changed' fromNode='GeometryComputationScript' toField='set_spine' toNode='FrustrumExtrusion'/>
+        <ROUTE fromField='scale_changed' fromNode='GeometryComputationScript' toField='set_scale' toNode='FrustrumExtrusion'/>
+        <ROUTE fromField='point_changed' fromNode='GeometryComputationScript' toField='point' toNode='FrustrumCoordinate'/>
+      </ProtoBody>
+    </ProtoDeclare>
+    <!-- Example use is in separate scene -->
+    <Anchor description='ViewFrustrumExample' parameter='target=_blank' url='"ViewFrustrumExample.x3d" "http://X3dGraphics.com/examples/X3dForWebAuthors/Chapter14-Prototypes/ViewFrustrumExamplet.x3d"'>
+      <Shape>
+        <Appearance>
+          <Material diffuseColor='0.8 0.4 0'/>
+        </Appearance>
+        <Text string='"ViewFrustrumExample.x3d" "is a Prototype declaration file." "" "For an example scene using this node," "click this text and view" "ViewFrustrumExample.x3d"'>
+          <FontStyle justify='"MIDDLE" "MIDDLE"' size='0.8'/>
+        </Text>
+      </Shape>
+    </Anchor>
+  </Scene>
+</X3D>

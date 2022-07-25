@@ -1,0 +1,1 @@
+<IndexedLineSet DEF=''/> missing colorIndex array for contained Color node [/X3D/Scene/Transform[1]/Shape/IndexedLineSet, error]

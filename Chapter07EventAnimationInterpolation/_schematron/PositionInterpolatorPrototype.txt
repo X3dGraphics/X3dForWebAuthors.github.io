@@ -1,0 +1,4 @@
+<ProtoDeclare name='CircleFish'> ProtoInterface can only contain field declarations or comments [/X3D/Scene/ProtoDeclare/ProtoInterface, error]
+<TimeSensor DEF='OrbitClock'/> missing description [/X3D/Scene/ProtoDeclare/ProtoBody/Transform/Group/TimeSensor, warning]
+<PositionInterpolator DEF='CirclefishPath'/> missing key array [/X3D/Scene/ProtoDeclare/ProtoBody/Transform/Group/PositionInterpolator, error]
+<PositionInterpolator DEF='CirclefishPath'/> missing keyValue array [/X3D/Scene/ProtoDeclare/ProtoBody/Transform/Group/PositionInterpolator, error]

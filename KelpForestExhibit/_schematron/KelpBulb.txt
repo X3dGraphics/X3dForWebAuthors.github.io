@@ -1,0 +1,1 @@
+<TimeSensor DEF='ANIMATOR'/> missing description [/X3D/Scene/TimeSensor, warning]

@@ -1,0 +1,810 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+   <head>
+      <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+      <link rel="shortcut icon" href="../images/X3DtextIcon16.png" title="X3D"/>
+      <title>Viewpoint Slideshow: X3D4WA, X3D for Web Authors Examples Archive, Chapter 08 User Interactivity</title>
+      <meta http-equiv="X-UA-Compatible" content="chrome=1,IE=edge"/>
+      <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+      <meta name="filename" content="viewpointSlideshow.html"/>
+      <meta name="description"
+             content="Slideshow showing all captured Viewpoint images for this chapter"/>
+      <meta name="author" content="Don Brutzman"/>
+      <meta name="generator"
+             content="https://www.web3d.org/x3d/tools/CreateContentCatalog/CreateContentCatalogPages.xslt"/>
+      <meta name="generator" content="X3D-Edit, https://savage.nps.edu/X3D-Edit"/>
+      <meta name="created" content="21 January 2011"/>
+      <meta name="modified" content="2022-07-03-07:00"/>
+      <meta name="reference" content="https://code.google.com/p/slideshow"/>
+      <!--
+            Slideshow project from Google Code http://code.google.com/p/slideshow
+            license:  Creative Commons         https://creativecommons.org/licenses/by/3.0
+            Copyright (c) 2008 [Aeron Glemann] http://www.electricprism.com/aeron
+        -->
+      <link rel="stylesheet"
+             type="text/css"
+             href="../slideshow/css/slideshow.css"
+             media="screen"/>
+      <script type="text/javascript" src="../slideshow/js/mootools-1.3.2-core.js"> </script>
+      <script type="text/javascript" src="../slideshow/js/mootools-1.3.2.1-more.js"> </script>
+      <script type="text/javascript" src="../slideshow/js/slideshow.js"> </script>
+      <script type="text/javascript" src="../slideshow/js/slideshow.flash.js"> </script>
+      <script type="text/javascript" src="../slideshow/js/slideshow.fold.js"> </script>
+      <script type="text/javascript" src="../slideshow/js/slideshow.kenburns.js"> </script>
+      <script type="text/javascript" src="../slideshow/js/slideshow.push.js"> </script>
+      <script type="text/javascript">
+	//<![CDATA[
+	  window.addEvent('domready', function(){
+	    var data = {
+      'CylinderSensorPumpHouse.x3d._VP_Adjustible_Viewpoint.png': { 'caption': '[1] CylinderSensorPumpHouse.x3d Adjustible Viewpoint' },
+      'CylinderSensorPumpHouse.x3d._VP_Default_viewpoint.png': { 'caption': '[2] CylinderSensorPumpHouse.x3d (default X3D view from 0 0 10)' },
+      'Doors.x3d._VP_Initial_default.png': { 'caption': '[3] Doors.x3d Initial default' },
+      'Doors.x3d._VP_Book_View.png': { 'caption': '[4] Doors.x3d Book View' },
+      'Doors.x3d._VP_Default_viewpoint.png': { 'caption': '[5] Doors.x3d (default X3D view from 0 0 10)' },
+<!--not found:       'KeySensorLefty.x3d._VP_Lefty_from_the_Right.png': { 'caption': '[6] KeySensorLefty.x3d Lefty from the Right' },-->
+      'KeySensorLefty.x3d._VP_Lefty_from_the_Front.png': { 'caption': '[7] KeySensorLefty.x3d Lefty from the Front' },
+      'KeySensorLefty.x3d._VP_Lefty_from_the_Left.png': { 'caption': '[8] KeySensorLefty.x3d Lefty from the Left' },
+      'KeySensorLefty.x3d._VP_Lefty_from_Behind.png': { 'caption': '[9] KeySensorLefty.x3d Lefty from Behind' },
+      'KeySensorLefty.x3d._VP_Lefty_from_the_Top.png': { 'caption': '[10] KeySensorLefty.x3d Lefty from the Top' },
+      'KeySensorLefty.x3d._VP_Lefty_from_the_Bottom.png': { 'caption': '[11] KeySensorLefty.x3d Lefty from the Bottom' },
+      'KeySensorLefty.x3d._VP_Default_viewpoint.png': { 'caption': '[12] KeySensorLefty.x3d (default X3D view from 0 0 10)' },
+<!--not found:       'PlaneSensorPumpHouse.x3d._VP_Book_Viewpoint.png': { 'caption': '[13] PlaneSensorPumpHouse.x3d Book Viewpoint' },-->
+      'PlaneSensorPumpHouse.x3d._VP_Default_viewpoint.png': { 'caption': '[14] PlaneSensorPumpHouse.x3d (default X3D view from 0 0 10)' },
+<!--not found:       'SphereSensorLefty.x3d._VP_Book_View.png': { 'caption': '[15] SphereSensorLefty.x3d Book View' },-->
+      'SphereSensorLefty.x3d._VP_Default_viewpoint.png': { 'caption': '[16] SphereSensorLefty.x3d (default X3D view from 0 0 10)' },
+      'StringSensorExample.x3d._VP_Book_View.png': { 'caption': '[17] StringSensorExample.x3d Book View' },
+      'StringSensorExample.x3d._VP_Default_viewpoint.png': { 'caption': '[18] StringSensorExample.x3d (default X3D view from 0 0 10)' },
+<!--not found:       'TouchSensorPumpHouse.x3d._VP_Book_Viewpoint.png': { 'caption': '[19] TouchSensorPumpHouse.x3d Book Viewpoint' },-->
+      'TouchSensorPumpHouse.x3d._VP_Default_viewpoint.png': { 'caption': '[20] TouchSensorPumpHouse.x3d (default X3D view from 0 0 10)' },
+      'UserInteractivitySensorNodes.x3d._VP_User_interactivity_sensor_nodes.png': { 'caption': '[21] UserInteractivitySensorNodes.x3d User interactivity sensor nodes' },
+      'UserInteractivitySensorNodes.x3d._VP_Default_viewpoint.png': { 'caption': '[22] UserInteractivitySensorNodes.x3d (default X3D view from 0 0 10)' }
+              };
+	    var myShow = new Slideshow('show', data, {captions: true, center: true, controller: true, delay: 2000, height: 465 , width:792, hu: '_viewpoints/', linked: true, preload: true, thumbnails: false});
+	  });
+	//]]>
+</script>
+   </head>
+   <body>
+      <table align="center"
+              summary="navigation"
+              border="1"
+              cellpadding="2"
+              width="95%">
+         <tr>
+            <td align="center" width="17%">
+               <a href="../index.html" target="_top">
+                  <img src="../images/ToC.png"
+                        title="Table of Contents"
+                        alt="Table of Contents"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter07EventAnimationInterpolation/viewpointSlideshow.html"
+                   target="_top">
+                  <img src="../images/PreviousChapter.png"
+                        title="Previous Directory Viewpoint Slideshow"
+                        alt="Previous Directory Viewpoint Slideshow"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">&nbsp;&nbsp; <a href="index.html" target="_top">
+                  <img src="../images/ThisChapter.png"
+                        title="Directory Summary"
+                        alt="Directory Viewpoint Slideshow"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="15%">
+               <a href="../javadoc/index.html?X3dForWebAuthors/Chapter08UserInteractivity/package-summary.html"
+                   title="Javadoc for translated java source"
+                   alt="Javadoc for translated java source"
+                   target="_blank">
+                  <img src="../images/Java-32.png"
+                        title="Javadoc for translated java source"
+                        alt="Javadoc for translated java source"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter09EventUtilitiesScripting/viewpointSlideshow.html"
+                   target="_top">
+                  <img src="../images/NextChapter.png"
+                        title="Next Directory Viewpoint Slideshow"
+                        alt="Next Directory Viewpoint Slideshow"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="15%">
+               <a href="../../X3dResources.html" target="helpPage">
+                  <img src="../images/Help.png"
+                        title="X3D Resources"
+                        alt="X3D Resources"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+         </tr>
+      </table>
+      <h2 align="center">
+         <i> X3D Example Archives: </i>X3D4WA, X3D for Web Authors, Chapter 08 User Interactivity</h2>
+      <div id="show"
+            class="slideshow"
+            style="align: center; text-align: center; width:792;">
+         <div class="slideshow-images"
+               style="align: center; text-align: center; width:792;">
+            <img src="_viewpoints/CylinderSensorPumpHouse.x3d._VP_Adjustible_Viewpoint.png"
+                  alt="[1] CylinderSensorPumpHouse.x3d Adjustible Viewpoint"
+                  title="[1] CylinderSensorPumpHouse.x3d Adjustible Viewpoint"
+                  height="465"
+                  width="792"
+                  align=""
+                  float=""
+                  position=""/>
+         </div>
+      </div>
+      <table align="center"
+              summary=""
+              style="background-color: white; border-width:0px; padding: 2px; width:80%">
+         <tr>
+            <td colspan="5" align="center">
+               <b>Directory Viewpoint Slideshow</b>
+            </td>
+         </tr>
+         <tr>
+            <td colspan="5"><!--ChapterPackageDescription--><!--Contents of file ../../content/examples/X3dForWebAuthors/Chapter08UserInteractivity/package-catalog.html-->
+    
+    <table bgColor="#ffffff" border="0" width="100%">
+        <tbody>
+            <tr>
+                
+                <td align="left" cellpadding="10">
+                    
+                    <a href="index.html"><img alt="User Interactivity Sensor Nodes" title="User Interactivity Sensor Nodes" border="0" hspace="10" src="UserInteractivitySensorNodesModified.png" width="220" height="137" align="left"/></a>
+                </td>
+            
+                <td>
+    <p>
+				A variety of sensors detect user interactivity with a scene, allowing authors to
+				define animation responses in a device-independent, display-independent way.
+    </p>
+    
+
+    <p>
+                 User interactivity is accomplished by sensing user actions, which create events that are sent via 
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#ROUTE" target="X3dTooltips" title="X3D Tooltip">ROUTE</a>
+                 connections.
+    </p>
+    
+
+    <p>
+                 Sensor output values are produced by 
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#CylinderSensor" target="X3dTooltips" title="X3D Tooltip">CylinderSensor</a>,
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#KeySensor" target="X3dTooltips" title="X3D Tooltip">KeySensor</a>,
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#PlaneSensor" target="X3dTooltips" title="X3D Tooltip">PlaneSensor</a></a>,
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#StringSensor" target="X3dTooltips" title="X3D Tooltip">StringSensor</a>
+                 and 
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#TouchSensor" target="X3dTooltips" title="X3D Tooltip">TouchSensor</a>
+                 nodes.
+    </p>
+    
+
+    <p>
+                 The supporting
+                 <a href="http://x3dgraphics.com/slidesets/X3dForWebAuthors/Chapter08UserInteractivity.pdf" target="X3dChapterSlideset">Chapter&nbsp;8 slideset</a>
+                 and course videos
+                (<a href="https://www.movesinstitute.org/Video/Courses/X3dForWebAuthors/X3dForWebAuthorsVideo.html#8" target="X3dChapterVideos">NPS</a>,
+                 <a href="https://www.youtube.com/playlist?list=PLuSIsM-86sinqMN552yQfjaV_DKI53D7i" target="X3dChapterYouTubeVideos">YouTube</a>)
+                 for <i>X3D for Web Authors</i> are available online via
+                 <a href="http://X3dGraphics.com" target="_blank">X3dGraphics.com</a>.
+    </p>
+                </td>
+
+            </tr>
+        </tbody>
+    </table>
+
+    
+
+
+  </td>
+         </tr>
+         <tr>
+            <td colspan="5" align="center">
+               <table align="center"
+                       summary=""
+                       style="background-color: white; border-width:1; width:100%">
+                  <tr>
+                     <th align="center" style="background-color:lightgrey" colspan="2">
+8 X3D Models &nbsp;&nbsp;&nbsp; 
+</th>
+                     <th align="left" style="background-color:lightgrey" colspan="2">
+ &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp; 18 X3D Model Viewpoint Snapshots
+</th>
+                  </tr>
+                  <tr>
+                     <td colspan="4">
+                        <br/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="left" valign="top" rowspan="2">
+                        <a href="CylinderSensorPumpHouseIndex.html">
+                           <img src="_thumbnails/CylinderSensorPumpHouseThumbnail.png"
+                                 width="64"
+                                 height="64"
+                                 align="left"
+                                 alt="CylinderSensorPumpHouse"
+                                 title="X3D model CylinderSensorPumpHouse.x3d"/>
+                        </a>
+                     </td>
+                     <td align="left" valign="top" rowspan="2">
+                        <br/>
+                        <a href="CylinderSensorPumpHouseIndex.html"
+                            title="X3D model CylinderSensorPumpHouse.x3d">Cylinder Sensor Pump House.x3d</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/CylinderSensorPumpHouse.x3d._VP_Adjustible_Viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/CylinderSensorPumpHouse.x3d._VP_Adjustible_Viewpoint.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/CylinderSensorPumpHouse.x3d._VP_Adjustible_Viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[1] CylinderSensorPumpHouse.x3d Adjustible Viewpoint</a>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/CylinderSensorPumpHouse.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/CylinderSensorPumpHouse.x3d._VP_Default_viewpoint.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/CylinderSensorPumpHouse.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[2] CylinderSensorPumpHouse.x3d (default X3D view from 0 0 10)</a>
+                     </td>
+                  </tr>
+                  <tr style="border-spacing:0px; padding:0px;">
+                     <td colspan="4">
+                        <hr/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="left" valign="top" rowspan="3">
+                        <a href="DoorsIndex.html">
+                           <img src="_thumbnails/DoorsThumbnail.png"
+                                 width="64"
+                                 height="64"
+                                 align="left"
+                                 alt="Doors"
+                                 title="X3D model Doors.x3d"/>
+                        </a>
+                     </td>
+                     <td align="left" valign="top" rowspan="3">
+                        <br/>
+                        <a href="DoorsIndex.html" title="X3D model Doors.x3d">Doors.x3d</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Doors.x3d._VP_Initial_default.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Doors.x3d._VP_Initial_default.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Doors.x3d._VP_Initial_default.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[3] Doors.x3d Initial default</a>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Doors.x3d._VP_Book_View.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Doors.x3d._VP_Book_View.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Doors.x3d._VP_Book_View.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[4] Doors.x3d Book View</a>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Doors.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Doors.x3d._VP_Default_viewpoint.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Doors.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[5] Doors.x3d (default X3D view from 0 0 10)</a>
+                     </td>
+                  </tr>
+                  <tr style="border-spacing:0px; padding:0px;">
+                     <td colspan="4">
+                        <hr/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="left" valign="top" rowspan="7">
+                        <a href="KeySensorLeftyIndex.html">
+                           <img src="_thumbnails/KeySensorLeftyThumbnail.png"
+                                 width="64"
+                                 height="64"
+                                 align="left"
+                                 alt="KeySensorLefty"
+                                 title="X3D model KeySensorLefty.x3d"/>
+                        </a>
+                     </td>
+                     <td align="left" valign="top" rowspan="7">
+                        <br/>
+                        <a href="KeySensorLeftyIndex.html" title="X3D model KeySensorLefty.x3d">Key Sensor Lefty.x3d</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="left" valign="middle" width="26"><!--file not found: _viewpoints/KeySensorLefty.x3d._VP_Lefty_from_the_Right.png--></td>
+                     <td>
+                        <span title="viewpoint image file not found">[6] KeySensorLefty.x3d Lefty from the Right</span>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/KeySensorLefty.x3d._VP_Lefty_from_the_Front.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/KeySensorLefty.x3d._VP_Lefty_from_the_Front.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/KeySensorLefty.x3d._VP_Lefty_from_the_Front.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[7] KeySensorLefty.x3d Lefty from the Front</a>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/KeySensorLefty.x3d._VP_Lefty_from_the_Left.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/KeySensorLefty.x3d._VP_Lefty_from_the_Left.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/KeySensorLefty.x3d._VP_Lefty_from_the_Left.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[8] KeySensorLefty.x3d Lefty from the Left</a>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/KeySensorLefty.x3d._VP_Lefty_from_Behind.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/KeySensorLefty.x3d._VP_Lefty_from_Behind.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/KeySensorLefty.x3d._VP_Lefty_from_Behind.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[9] KeySensorLefty.x3d Lefty from Behind</a>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/KeySensorLefty.x3d._VP_Lefty_from_the_Top.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/KeySensorLefty.x3d._VP_Lefty_from_the_Top.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/KeySensorLefty.x3d._VP_Lefty_from_the_Top.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[10] KeySensorLefty.x3d Lefty from the Top</a>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/KeySensorLefty.x3d._VP_Lefty_from_the_Bottom.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/KeySensorLefty.x3d._VP_Lefty_from_the_Bottom.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/KeySensorLefty.x3d._VP_Lefty_from_the_Bottom.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[11] KeySensorLefty.x3d Lefty from the Bottom</a>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/KeySensorLefty.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/KeySensorLefty.x3d._VP_Default_viewpoint.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/KeySensorLefty.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[12] KeySensorLefty.x3d (default X3D view from 0 0 10)</a>
+                     </td>
+                  </tr>
+                  <tr style="border-spacing:0px; padding:0px;">
+                     <td colspan="4">
+                        <hr/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="left" valign="top" rowspan="2">
+                        <a href="PlaneSensorPumpHouseIndex.html">
+                           <img src="_thumbnails/PlaneSensorPumpHouseThumbnail.png"
+                                 width="64"
+                                 height="64"
+                                 align="left"
+                                 alt="PlaneSensorPumpHouse"
+                                 title="X3D model PlaneSensorPumpHouse.x3d"/>
+                        </a>
+                     </td>
+                     <td align="left" valign="top" rowspan="2">
+                        <br/>
+                        <a href="PlaneSensorPumpHouseIndex.html"
+                            title="X3D model PlaneSensorPumpHouse.x3d">Plane Sensor Pump House.x3d</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="left" valign="middle" width="26"><!--file not found: _viewpoints/PlaneSensorPumpHouse.x3d._VP_Book_Viewpoint.png--></td>
+                     <td>
+                        <span title="viewpoint image file not found">[13] PlaneSensorPumpHouse.x3d Book Viewpoint</span>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/PlaneSensorPumpHouse.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/PlaneSensorPumpHouse.x3d._VP_Default_viewpoint.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/PlaneSensorPumpHouse.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[14] PlaneSensorPumpHouse.x3d (default X3D view from 0 0 10)</a>
+                     </td>
+                  </tr>
+                  <tr style="border-spacing:0px; padding:0px;">
+                     <td colspan="4">
+                        <hr/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="left" valign="top" rowspan="2">
+                        <a href="SphereSensorLeftyIndex.html">
+                           <img src="_thumbnails/SphereSensorLeftyThumbnail.png"
+                                 width="64"
+                                 height="64"
+                                 align="left"
+                                 alt="SphereSensorLefty"
+                                 title="X3D model SphereSensorLefty.x3d"/>
+                        </a>
+                     </td>
+                     <td align="left" valign="top" rowspan="2">
+                        <br/>
+                        <a href="SphereSensorLeftyIndex.html"
+                            title="X3D model SphereSensorLefty.x3d">Sphere Sensor Lefty.x3d</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="left" valign="middle" width="26"><!--file not found: _viewpoints/SphereSensorLefty.x3d._VP_Book_View.png--></td>
+                     <td>
+                        <span title="viewpoint image file not found">[15] SphereSensorLefty.x3d Book View</span>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/SphereSensorLefty.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/SphereSensorLefty.x3d._VP_Default_viewpoint.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/SphereSensorLefty.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[16] SphereSensorLefty.x3d (default X3D view from 0 0 10)</a>
+                     </td>
+                  </tr>
+                  <tr style="border-spacing:0px; padding:0px;">
+                     <td colspan="4">
+                        <hr/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="left" valign="top" rowspan="2">
+                        <a href="StringSensorExampleIndex.html">
+                           <img src="_thumbnails/StringSensorExampleThumbnail.png"
+                                 width="64"
+                                 height="64"
+                                 align="left"
+                                 alt="StringSensorExample"
+                                 title="X3D model StringSensorExample.x3d"/>
+                        </a>
+                     </td>
+                     <td align="left" valign="top" rowspan="2">
+                        <br/>
+                        <a href="StringSensorExampleIndex.html"
+                            title="X3D model StringSensorExample.x3d">String Sensor Example.x3d</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/StringSensorExample.x3d._VP_Book_View.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/StringSensorExample.x3d._VP_Book_View.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/StringSensorExample.x3d._VP_Book_View.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[17] StringSensorExample.x3d Book View</a>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/StringSensorExample.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/StringSensorExample.x3d._VP_Default_viewpoint.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/StringSensorExample.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[18] StringSensorExample.x3d (default X3D view from 0 0 10)</a>
+                     </td>
+                  </tr>
+                  <tr style="border-spacing:0px; padding:0px;">
+                     <td colspan="4">
+                        <hr/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="left" valign="top" rowspan="2">
+                        <a href="TouchSensorPumpHouseIndex.html">
+                           <img src="_thumbnails/TouchSensorPumpHouseThumbnail.png"
+                                 width="64"
+                                 height="64"
+                                 align="left"
+                                 alt="TouchSensorPumpHouse"
+                                 title="X3D model TouchSensorPumpHouse.x3d"/>
+                        </a>
+                     </td>
+                     <td align="left" valign="top" rowspan="2">
+                        <br/>
+                        <a href="TouchSensorPumpHouseIndex.html"
+                            title="X3D model TouchSensorPumpHouse.x3d">Touch Sensor Pump House.x3d</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="left" valign="middle" width="26"><!--file not found: _viewpoints/TouchSensorPumpHouse.x3d._VP_Book_Viewpoint.png--></td>
+                     <td>
+                        <span title="viewpoint image file not found">[19] TouchSensorPumpHouse.x3d Book Viewpoint</span>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/TouchSensorPumpHouse.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/TouchSensorPumpHouse.x3d._VP_Default_viewpoint.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/TouchSensorPumpHouse.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[20] TouchSensorPumpHouse.x3d (default X3D view from 0 0 10)</a>
+                     </td>
+                  </tr>
+                  <tr style="border-spacing:0px; padding:0px;">
+                     <td colspan="4">
+                        <hr/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="left" valign="top" rowspan="2">
+                        <a href="UserInteractivitySensorNodesIndex.html">
+                           <img src="_thumbnails/UserInteractivitySensorNodesThumbnail.png"
+                                 width="64"
+                                 height="64"
+                                 align="left"
+                                 alt="UserInteractivitySensorNodes"
+                                 title="X3D model UserInteractivitySensorNodes.x3d"/>
+                        </a>
+                     </td>
+                     <td align="left" valign="top" rowspan="2">
+                        <br/>
+                        <a href="UserInteractivitySensorNodesIndex.html"
+                            title="X3D model UserInteractivitySensorNodes.x3d">User Interactivity Sensor Nodes.x3d</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/UserInteractivitySensorNodes.x3d._VP_User_interactivity_sensor_nodes.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/UserInteractivitySensorNodes.x3d._VP_User_interactivity_sensor_nodes.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/UserInteractivitySensorNodes.x3d._VP_User_interactivity_sensor_nodes.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[21] UserInteractivitySensorNodes.x3d User interactivity sensor nodes</a>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/UserInteractivitySensorNodes.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/UserInteractivitySensorNodes.x3d._VP_Default_viewpoint.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/UserInteractivitySensorNodes.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[22] UserInteractivitySensorNodes.x3d (default X3D view from 0 0 10)</a>
+                     </td>
+                  </tr>
+               </table>
+            </td>
+         </tr>
+         <tr>
+            <td colspan="5" style="background-color:lightgrey">&nbsp;</td>
+         </tr>
+         <tr>
+            <td colspan="5">
+               <p align="center">This viewpoint slideshow is online at <br/>
+                  <a href="https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter08UserInteractivity/viewpointSlideshow.html">https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter08UserInteractivity/viewpointSlideshow.html</a>
+               </p>
+               <p align="center">
+                  <a href="https://validator.w3.org/check?uri=https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter08UserInteractivity/viewpointSlideshow.html"
+                      target="_blank">
+                     <img src="https://www.w3.org/Icons/valid-xhtml10"
+                           title="Validate XHTML 1.1"
+                           alt="Validate XHTML 1.1"
+                           height="31"
+                           width="88"
+                           border="0"
+                           align="right"/>
+                  </a>
+               </p>
+               <p style="text-align:center">Viewpoint image version history at <br/>
+                  <a href="https://sourceforge.net/p/x3d/code/HEAD/tree/www.web3d.org/x3d/content/examples/X3dForWebAuthors/Chapter08UserInteractivity/_viewpoints/"
+                      target="_blank">https://sourceforge.net/p/x3d/code/HEAD/tree/www.web3d.org/x3d/content/examples/X3dForWebAuthors/Chapter08UserInteractivity/_viewpoints</a>
+               </p>
+            </td>
+         </tr>
+      </table>
+      <table align="center"
+              summary="navigation"
+              border="1"
+              cellpadding="2"
+              width="95%">
+         <tr>
+            <td align="center" width="17%">
+               <a href="../index.html" target="_top">
+                  <img src="../images/ToC.png"
+                        title="Table of Contents"
+                        alt="Table of Contents"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter07EventAnimationInterpolation/viewpointSlideshow.html"
+                   target="_top">
+                  <img src="../images/PreviousChapter.png"
+                        title="Previous Directory Viewpoint Slideshow"
+                        alt="Previous Directory Viewpoint Slideshow"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">&nbsp;&nbsp; <a href="index.html" target="_top">
+                  <img src="../images/ThisChapter.png"
+                        title="Directory Summary"
+                        alt="Directory Viewpoint Slideshow"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="15%">
+               <a href="../javadoc/index.html?X3dForWebAuthors/Chapter08UserInteractivity/package-summary.html"
+                   title="Javadoc for translated java source"
+                   alt="Javadoc for translated java source"
+                   target="_blank">
+                  <img src="../images/Java-32.png"
+                        title="Javadoc for translated java source"
+                        alt="Javadoc for translated java source"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter09EventUtilitiesScripting/viewpointSlideshow.html"
+                   target="_top">
+                  <img src="../images/NextChapter.png"
+                        title="Next Directory Viewpoint Slideshow"
+                        alt="Next Directory Viewpoint Slideshow"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="15%">
+               <a href="../../X3dResources.html" target="helpPage">
+                  <img src="../images/Help.png"
+                        title="X3D Resources"
+                        alt="X3D Resources"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+         </tr>
+      </table>
+   </body>
+</html>

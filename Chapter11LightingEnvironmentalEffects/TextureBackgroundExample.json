@@ -1,0 +1,151 @@
+{ "X3D": {
+    "encoding":"UTF-8",
+    "@profile":"Immersive",
+    "@version":"3.3",
+    "@xsd:noNamespaceSchemaLocation":"https://www.web3d.org/specifications/x3d-3.3.xsd",
+    "JSON schema":"https://www.web3d.org/specifications/x3d-3.3-JSONSchema.json",
+    "head": {
+        "component": [
+          {
+            "@name":"EnvironmentalEffects",
+            "@level":3
+          }
+        ],
+        "meta": [
+          {
+            "@name":"title",
+            "@content":"TextureBackgroundExample.x3d"
+          },
+          {
+            "@name":"description",
+            "@content":"Simple TextureBackground node with images only."
+          },
+          {
+            "@name":"creator",
+            "@content":"Don Brutzman"
+          },
+          {
+            "@name":"created",
+            "@content":"20 April 2009"
+          },
+          {
+            "@name":"modified",
+            "@content":"14 June 2020"
+          },
+          {
+            "@name":"reference",
+            "@content":"https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter11LightingEnvironment/BackgroundImagesOnly.x3d"
+          },
+          {
+            "@name":"reference",
+            "@content":"https://www.web3d.org/x3d/content/examples/Basic/DistributedInteractiveSimulation/TestImages.x3d"
+          },
+          {
+            "@name":"subject",
+            "@content":"X3D TextureBackground example"
+          },
+          {
+            "@name":"identifier",
+            "@content":"https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter11LightingEnvironmentalEffects/TextureBackgroundExample.x3d"
+          },
+          {
+            "@name":"generator",
+            "@content":"X3D-Edit 3.3, https://savage.nps.edu/X3D-Edit"
+          },
+          {
+            "@name":"license",
+            "@content":"../license.html"
+          },
+          {
+            "@name":"translated",
+            "@content":"18 January 2022"
+          },
+          {
+            "@name":"generator",
+            "@content":"X3dToJson.xslt, https://www.web3d.org/x3d/stylesheets/X3dToJson.html"
+          },
+          {
+            "@name":"reference",
+            "@content":"X3D JSON encoding: https://www.web3d.org/wiki/index.php/X3D_JSON_Encoding"
+          }
+        ]
+    },
+    "Scene": {
+        "-children":[
+          { "WorldInfo":
+            {
+              "@title":"TextureBackground.x3d"
+            }
+          },
+          { "TextureBackground":
+            {
+              "-leftTexture":
+                { "ImageTexture":
+                  {
+                    "@url":["images/left.png","https://www.web3d.org/x3d/content/examples/Basic/DistributedInteractiveSimulation/images/left.png"]
+                  }
+                },
+              "-rightTexture":
+                { "ImageTexture":
+                  {
+                    "@url":["images/right.png","https://www.web3d.org/x3d/content/examples/Basic/DistributedInteractiveSimulation/images/right.png"]
+                  }
+                },
+              "-frontTexture":
+                { "ImageTexture":
+                  {
+                    "@url":["images/front.png","https://www.web3d.org/x3d/content/examples/Basic/DistributedInteractiveSimulation/images/front.png"]
+                  }
+                },
+              "-backTexture":
+                { "ImageTexture":
+                  {
+                    "@url":["images/back.png","https://www.web3d.org/x3d/content/examples/Basic/DistributedInteractiveSimulation/images/back.png"]
+                  }
+                },
+              "-topTexture":
+                { "ImageTexture":
+                  {
+                    "@url":["images/top.png","https://www.web3d.org/x3d/content/examples/Basic/DistributedInteractiveSimulation/images/top.png"]
+                  }
+                },
+              "-bottomTexture":
+                { "ImageTexture":
+                  {
+                    "@url":["images/bottom.png","https://www.web3d.org/x3d/content/examples/Basic/DistributedInteractiveSimulation/images/bottom.png"]
+                  }
+                }
+            }
+          },
+          { "Shape":
+            {
+              "-geometry":
+                { "Text":
+                  {
+                    "@string":["TextureBackground node using","ImageTexture nodes"],
+                    "-fontStyle":
+                      { "FontStyle":
+                        {
+                          "@justify":["MIDDLE","MIDDLE"],
+                          "@style":"BOLD"
+                        }
+                      }
+                  }
+                },
+              "-appearance":
+                { "Appearance":
+                  {
+                    "-material":
+                      { "Material":
+                        {
+                          "@diffuseColor":[1,1,1]
+                        }
+                      }
+                  }
+                }
+            }
+          }
+        ]
+    }
+  }
+}

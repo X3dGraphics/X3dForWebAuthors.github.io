@@ -1,0 +1,356 @@
+@prefix :        <https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter14Prototypes/ArtDecoExamplesExcerpt.ttl#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema:  <http://schema.org/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix x3d:     <https://www.web3d.org/specifications/x3d-4.0.xsd#> .
+@prefix x3do:    <https://www.web3d.org/specifications/X3dOntology4.0#> .
+
+:X3D a owl:NamedIndividual, x3do:X3D ;
+  x3do:hasHead :head ;
+  x3do:hasScene :Scene ;
+  x3do:profile 'Immersive' ;
+  x3do:version '3.3' ;
+  x3do:noNamespaceSchemaLocation 'https://www.web3d.org/specifications/x3d-3.3.xsd' .
+:head a owl:NamedIndividual, x3do:head ;
+  x3do:hasParent :X3D ;
+  x3do:hasMeta :meta_1_1, :meta_1_2, :meta_1_3, :meta_1_4, :meta_1_5, :meta_1_6, :meta_1_7, :meta_1_8, :meta_1_9, :meta_1_10, :meta_1_11, :meta_1_12, :meta_1_13 .
+:meta_1_1 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'ArtDecoExamplesExcerpt.x3d' ;
+  x3do:name 'title' .
+:meta_1_2 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Example ExternProtoDeclare/ProtoInstance usage of X3D/VRML materials, originally converted from SGI&apos;s Open Inventor material examples. Excerpted from original.' ;
+  x3do:name 'description' .
+:meta_1_3 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'David Roussel' ;
+  x3do:name 'creator' .
+:meta_1_4 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'James Harney, Don Brutzman NPS' ;
+  x3do:name 'translator' .
+:meta_1_5 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '7 April 2002' ;
+  x3do:name 'created' .
+:meta_1_6 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '20 October 2019' ;
+  x3do:name 'modified' .
+:meta_1_7 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Xj3D not displaying materials loaded from ExternProtoDeclare ProtoInstance nodes' ;
+  x3do:name 'TODO' .
+:meta_1_8 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'http://vrmlstuff.free.fr/materials' ;
+  x3do:name 'reference' .
+:meta_1_9 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Universal Media Material Library' ;
+  x3do:name 'subject' .
+:meta_1_10 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://www.web3d.org/x3d/content/examples/Basic/UniversalMediaMaterials/ArtDecoExamples.x3d' ;
+  x3do:name 'reference' .
+:meta_1_11 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter14Prototypes/ArtDecoExamplesExcerpt.x3d' ;
+  x3do:name 'identifier' .
+:meta_1_12 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Vrml97ToX3dNist, http://ovrt.nist.gov/v2_x3d.html' ;
+  x3do:name 'generator' .
+:meta_1_13 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '../license.html' ;
+  x3do:name 'license' .
+:meta dcterms:title "ArtDecoExamplesExcerpt.x3d" .
+:meta dcterms:description "Example ExternProtoDeclare/ProtoInstance usage of X3D/VRML materials, originally converted from SGI's Open Inventor material examples. Excerpted from original." .
+:meta dcterms:creator "David Roussel" .
+:meta dcterms:translator "James Harney, Don Brutzman NPS" .
+:meta dcterms:created "7 April 2002" .
+:meta dcterms:modified "20 October 2019" .
+:meta dcterms:reference "http://vrmlstuff.free.fr/materials" .
+:meta dcterms:subject "Universal Media Material Library" .
+:meta dcterms:reference "https://www.web3d.org/x3d/content/examples/Basic/UniversalMediaMaterials/ArtDecoExamples.x3d" .
+:meta dcterms:identifier "https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter14Prototypes/ArtDecoExamplesExcerpt.x3d" .
+:meta dcterms:generator "Vrml97ToX3dNist, http://ovrt.nist.gov/v2_x3d.html" .
+:meta dcterms:license "../license.html" .
+:Scene a owl:NamedIndividual, x3do:Scene ;
+  x3do:hasParent :X3D ;
+  x3do:hasChildren :WorldInfo_2_1, :Group_2_5 ;
+  x3do:hasExternProtoDeclare :ExternProtoDeclare_2_2, :ExternProtoDeclare_2_3, :ExternProtoDeclare_2_4 ;
+  x3do:hasROUTE :ROUTE_2_6, :ROUTE_2_7 .
+:WorldInfo_2_1 a owl:NamedIndividual, x3do:WorldInfo ;
+  x3do:hasParent :Scene ;
+  x3do:title 'ArtDecoExamplesExcerpt.x3d' .
+:ExternProtoDeclare_2_2 a owl:NamedIndividual, x3do:ExternProtoDeclare ;
+  x3do:hasParent :Scene ;
+  x3do:appinfo 'UniversalMediaMaterials prototype' ;
+  x3do:documentation 'https://www.web3d.org/x3d/content/examples/Basic/UniversalMediaMaterials' ;
+  x3do:name 'ArtDeco00' ;
+  x3do:url '"ArtDecoPrototypesExcerpt.x3d#ArtDeco00" "https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter14Prototypes/ArtDecoPrototypesExcerpt.x3d#ArtDeco00" "ArtDecoPrototypesExcerpt.wrl#ArtDeco00" "https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter14Prototypes/ArtDecoPrototypesExcerpt.wrl#ArtDeco00"' .
+:ExternProtoDeclare_2_3 a owl:NamedIndividual, x3do:ExternProtoDeclare ;
+  x3do:hasParent :Scene ;
+  x3do:appinfo 'UniversalMediaMaterials prototype' ;
+  x3do:documentation 'https://www.web3d.org/x3d/content/examples/Basic/UniversalMediaMaterials' ;
+  x3do:name 'ArtDeco01' ;
+  x3do:url '"ArtDecoPrototypesExcerpt.x3d#ArtDeco01" "https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter14Prototypes/ArtDecoPrototypesExcerpt.x3d#ArtDeco01" "ArtDecoPrototypesExcerpt.wrl#ArtDeco01" "https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter14Prototypes/ArtDecoPrototypesExcerpt.wrl#ArtDeco01"' .
+:ExternProtoDeclare_2_4 a owl:NamedIndividual, x3do:ExternProtoDeclare ;
+  x3do:hasParent :Scene ;
+  x3do:appinfo 'UniversalMediaMaterials prototype' ;
+  x3do:documentation 'https://www.web3d.org/x3d/content/examples/Basic/UniversalMediaMaterials' ;
+  x3do:name 'ArtDeco02' ;
+  x3do:url '"ArtDecoPrototypesExcerpt.x3d#ArtDeco02" "https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter14Prototypes/ArtDecoPrototypesExcerpt.x3d#ArtDeco02" "ArtDecoPrototypesExcerpt.wrl#ArtDeco02" "https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter14Prototypes/ArtDecoPrototypesExcerpt.wrl#ArtDeco02"' .
+:Group_2_5 a owl:NamedIndividual, x3do:Group ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :NavigationInfo_2_5_1, :Front, :PersRight, :PersLeft, :Back, :Close_travel, :DirectionalLight_2_5_7, :DirectionalLight_2_5_8, :Anchor_2_5_9, :View00, :Transform_2_5_11, :View01, :Transform_2_5_13, :View02, :Transform_2_5_15 .
+:NavigationInfo_2_5_1 a owl:NamedIndividual, x3do:NavigationInfo ;
+  x3do:hasParent :Group_2_5 ;
+  x3do:headlight false .
+:Front a owl:NamedIndividual, x3do:Viewpoint ;
+  x3do:hasParent :Group_2_5 ;
+  x3do:DEF 'Front' ;
+  x3do:description 'Front view' ;
+  x3do:position ( 0.0 0.0 12.0 ) .
+:PersRight a owl:NamedIndividual, x3do:Viewpoint ;
+  x3do:hasParent :Group_2_5 ;
+  x3do:DEF 'PersRight' ;
+  x3do:description 'Low Right' ;
+  x3do:orientation ( 0.74291 0.30772 0.59447 1.2171 ) ;
+  x3do:position ( 6.9282 -6.9282 6.9282 ) .
+:PersLeft a owl:NamedIndividual, x3do:Viewpoint ;
+  x3do:hasParent :Group_2_5 ;
+  x3do:DEF 'PersLeft' ;
+  x3do:description 'Low Left' ;
+  x3do:orientation ( 0.74291 -0.30772 -0.59447 1.2171 ) ;
+  x3do:position ( -6.9282 -6.9282 6.9282 ) .
+:Back a owl:NamedIndividual, x3do:Viewpoint ;
+  x3do:hasParent :Group_2_5 ;
+  x3do:DEF 'Back' ;
+  x3do:description 'Back view' ;
+  x3do:orientation ( 0.0 1.0 0.0 3.1416 ) ;
+  x3do:position ( 0.0 0.0 -12.0 ) .
+:Close_travel a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Group_2_5 ;
+  x3do:hasChildren :Close_Mover, :Close_Time, :Close ;
+  x3do:DEF 'Close_travel' .
+:Close_Mover a owl:NamedIndividual, x3do:PositionInterpolator ;
+  x3do:hasParent :Close_travel ;
+  x3do:DEF 'Close_Mover' ;
+  x3do:key ( 0.0 0.25 0.5 0.75 1.0 ) ;
+  x3do:keyValue ( 0.0 2.5 0.0 0.0 0.0 0.0 0.0 -2.5 0.0 0.0 0.0 0.0 0.0 2.5 0.0 ) .
+:Close_Time a owl:NamedIndividual, x3do:TimeSensor ;
+  x3do:hasParent :Close_travel ;
+  x3do:DEF 'Close_Time' ;
+  x3do:cycleInterval '12.0' ;
+  x3do:loop true .
+:Close a owl:NamedIndividual, x3do:Viewpoint ;
+  x3do:hasParent :Close_travel ;
+  x3do:DEF 'Close' ;
+  x3do:description 'Close Front' ;
+  x3do:position ( 0.0 0.0 6.0 ) .
+:DirectionalLight_2_5_7 a owl:NamedIndividual, x3do:DirectionalLight ;
+  x3do:hasParent :Group_2_5 ;
+  x3do:direction ( 1.0 -1.0 -1.0 ) .
+:DirectionalLight_2_5_8 a owl:NamedIndividual, x3do:DirectionalLight ;
+  x3do:hasParent :Group_2_5 ;
+  x3do:direction ( 0.0 1.0 -0.5 ) ;
+  x3do:intensity 0.5 .
+:Anchor_2_5_9 a owl:NamedIndividual, x3do:Anchor ;
+  x3do:hasParent :Group_2_5 ;
+  x3do:hasChildren :Transform_2_5_9_1 ;
+  x3do:description 'Back to front view' ;
+  x3do:url '"#Front"' .
+:Transform_2_5_9_1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Anchor_2_5_9 ;
+  x3do:hasChildren :Inline_2_5_9_1_1 ;
+  x3do:translation ( 0.0 0.0 -0.5 ) .
+:Inline_2_5_9_1_1 a owl:NamedIndividual, x3do:Inline ;
+  x3do:hasParent :Transform_2_5_9_1 ;
+  x3do:url '"../../Basic/UniversalMediaMaterials/gridBack.x3d" "https://www.web3d.org/x3d/content/examples/Basic/UniversalMediaMaterials/gridBack.x3d" "../../Basic/UniversalMediaMaterials/gridBack.wrl" "https://www.web3d.org/x3d/content/examples/Basic/UniversalMediaMaterials/gridBack.wrl"' .
+:View00 a owl:NamedIndividual, x3do:Viewpoint ;
+  x3do:hasParent :Group_2_5 ;
+  x3do:DEF 'View00' ;
+  x3do:description 'ArtDeco00' ;
+  x3do:position ( -3.75 3.75 3.0 ) .
+:Transform_2_5_11 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Group_2_5 ;
+  x3do:hasChildren :Anchor_2_5_11_1, :Transform_2_5_11_2 ;
+  x3do:translation ( -3.75 3.75 0.0 ) .
+:Anchor_2_5_11_1 a owl:NamedIndividual, x3do:Anchor ;
+  x3do:hasParent :Transform_2_5_11 ;
+  x3do:hasChildren :Shape_2_5_11_1_1 ;
+  x3do:description 'ArtDeco00 view' ;
+  x3do:url '"#View00"' .
+:Shape_2_5_11_1_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Anchor_2_5_11_1 ;
+  x3do:hasAppearance :Appearance_2_5_11_1_1_1 ;
+  x3do:hasGeometry :Ball .
+:Appearance_2_5_11_1_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_5_11_1_1 ;
+  x3do:hasMaterial :ProtoInstance_2_5_11_1_1_1_1 .
+:ProtoInstance_2_5_11_1_1_1_1 a owl:NamedIndividual, x3do:ProtoInstance ;
+  x3do:hasParent :Appearance_2_5_11_1_1_1 ;
+  x3do:name 'ArtDeco00' .
+:Ball a owl:NamedIndividual, x3do:Sphere ;
+  x3do:hasParent :Shape_2_5_11_1_1 ;
+  x3do:DEF 'Ball' ;
+  x3do:radius 0.5 .
+:Transform_2_5_11_2 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_5_11 ;
+  x3do:hasChildren :Anchor_2_5_11_2_1 ;
+  x3do:translation ( 0.0 0.3 0.5 ) .
+:Anchor_2_5_11_2_1 a owl:NamedIndividual, x3do:Anchor ;
+  x3do:hasParent :Transform_2_5_11_2 ;
+  x3do:hasChildren :Shape_2_5_11_2_1_1 ;
+  x3do:description 'ArtDeco' ;
+  x3do:parameter '"target=_source"' ;
+  x3do:url '"ArtDecoPrototypesExcerpt.html#ProtoDeclare_ArtDeco00" "https://www.web3d.org/x3d/content/examples/Basic/UniversalMediaMaterials/ArtDecoPrototypesExcerpt.html#ProtoDeclare_ArtDeco"' .
+:Shape_2_5_11_2_1_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Anchor_2_5_11_2_1 ;
+  x3do:hasAppearance :Appearance_2_5_11_2_1_1_1 ;
+  x3do:hasGeometry :Text_2_5_11_2_1_1_2 .
+:Appearance_2_5_11_2_1_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_5_11_2_1_1 ;
+  x3do:hasMaterial :TextMat .
+:TextMat a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_5_11_2_1_1_1 ;
+  x3do:DEF 'TextMat' ;
+  x3do:diffuseColor ( 1.0 1.0 1.0 ) .
+:Text_2_5_11_2_1_1_2 a owl:NamedIndividual, x3do:Text ;
+  x3do:hasParent :Shape_2_5_11_2_1_1 ;
+  x3do:hasFontStyle :Style ;
+  x3do:string '"ArtDeco00"' .
+:Style a owl:NamedIndividual, x3do:FontStyle ;
+  x3do:hasParent :Text_2_5_11_2_1_1_2 ;
+  x3do:DEF 'Style' ;
+  x3do:family '"SANS"' ;
+  x3do:justify '"MIDDLE" "MIDDLE"' ;
+  x3do:size 0.3 ;
+  x3do:cssStyle 'BOLD' .
+:View01 a owl:NamedIndividual, x3do:Viewpoint ;
+  x3do:hasParent :Group_2_5 ;
+  x3do:DEF 'View01' ;
+  x3do:description 'ArtDeco01' ;
+  x3do:position ( -2.25 3.75 3.0 ) .
+:Transform_2_5_13 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Group_2_5 ;
+  x3do:hasChildren :Anchor_2_5_13_1, :Transform_2_5_13_2 ;
+  x3do:translation ( -2.25 3.75 0.0 ) .
+:Anchor_2_5_13_1 a owl:NamedIndividual, x3do:Anchor ;
+  x3do:hasParent :Transform_2_5_13 ;
+  x3do:hasChildren :Shape_2_5_13_1_1 ;
+  x3do:description 'ArtDeco01 view' ;
+  x3do:url '"#View01"' .
+:Shape_2_5_13_1_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Anchor_2_5_13_1 ;
+  x3do:hasAppearance :Appearance_2_5_13_1_1_1 ;
+  x3do:hasGeometry :Ball-USE-1 .
+:Appearance_2_5_13_1_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_5_13_1_1 ;
+  x3do:hasMaterial :ProtoInstance_2_5_13_1_1_1_1 .
+:ProtoInstance_2_5_13_1_1_1_1 a owl:NamedIndividual, x3do:ProtoInstance ;
+  x3do:hasParent :Appearance_2_5_13_1_1_1 ;
+  x3do:name 'ArtDeco01' .
+:Ball-USE-1 a owl:NamedIndividual, x3do:Sphere ;
+  x3do:hasParent :Shape_2_5_13_1_1 ;
+  owl:sameAs :Ball . # DEF matching this USE
+:Transform_2_5_13_2 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_5_13 ;
+  x3do:hasChildren :Anchor_2_5_13_2_1 ;
+  x3do:translation ( 0.0 0.3 0.5 ) .
+:Anchor_2_5_13_2_1 a owl:NamedIndividual, x3do:Anchor ;
+  x3do:hasParent :Transform_2_5_13_2 ;
+  x3do:hasChildren :Shape_2_5_13_2_1_1 ;
+  x3do:description 'ArtDeco01' ;
+  x3do:parameter '"target=_source"' ;
+  x3do:url '"ArtDecoPrototypesExcerpt.html#ProtoDeclare_ArtDeco01" "https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter14Prototypes/ArtDecoPrototypesExcerpt.html#ProtoDeclare_ArtDeco01"' .
+:Shape_2_5_13_2_1_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Anchor_2_5_13_2_1 ;
+  x3do:hasAppearance :Appearance_2_5_13_2_1_1_1 ;
+  x3do:hasGeometry :Text_2_5_13_2_1_1_2 .
+:Appearance_2_5_13_2_1_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_5_13_2_1_1 ;
+  x3do:hasMaterial :TextMat-USE-1 .
+:TextMat-USE-1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_5_13_2_1_1_1 ;
+  owl:sameAs :TextMat . # DEF matching this USE
+:Text_2_5_13_2_1_1_2 a owl:NamedIndividual, x3do:Text ;
+  x3do:hasParent :Shape_2_5_13_2_1_1 ;
+  x3do:hasFontStyle :Style-USE-1 ;
+  x3do:string '"ArtDeco01"' .
+:Style-USE-1 a owl:NamedIndividual, x3do:FontStyle ;
+  x3do:hasParent :Text_2_5_13_2_1_1_2 ;
+  owl:sameAs :Style . # DEF matching this USE
+:View02 a owl:NamedIndividual, x3do:Viewpoint ;
+  x3do:hasParent :Group_2_5 ;
+  x3do:DEF 'View02' ;
+  x3do:description 'ArtDeco02' ;
+  x3do:position ( -0.75 3.75 3.0 ) .
+:Transform_2_5_15 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Group_2_5 ;
+  x3do:hasChildren :Anchor_2_5_15_1, :Transform_2_5_15_2 ;
+  x3do:translation ( -0.75 3.75 0.0 ) .
+:Anchor_2_5_15_1 a owl:NamedIndividual, x3do:Anchor ;
+  x3do:hasParent :Transform_2_5_15 ;
+  x3do:hasChildren :Shape_2_5_15_1_1 ;
+  x3do:description 'ArtDeco02 view' ;
+  x3do:url '"#View02"' .
+:Shape_2_5_15_1_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Anchor_2_5_15_1 ;
+  x3do:hasAppearance :Appearance_2_5_15_1_1_1 ;
+  x3do:hasGeometry :Ball-USE-2 .
+:Appearance_2_5_15_1_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_5_15_1_1 ;
+  x3do:hasMaterial :ProtoInstance_2_5_15_1_1_1_1 .
+:ProtoInstance_2_5_15_1_1_1_1 a owl:NamedIndividual, x3do:ProtoInstance ;
+  x3do:hasParent :Appearance_2_5_15_1_1_1 ;
+  x3do:name 'ArtDeco02' .
+:Ball-USE-2 a owl:NamedIndividual, x3do:Sphere ;
+  x3do:hasParent :Shape_2_5_15_1_1 ;
+  owl:sameAs :Ball . # DEF matching this USE
+:Transform_2_5_15_2 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_5_15 ;
+  x3do:hasChildren :Anchor_2_5_15_2_1 ;
+  x3do:translation ( 0.0 0.3 0.5 ) .
+:Anchor_2_5_15_2_1 a owl:NamedIndividual, x3do:Anchor ;
+  x3do:hasParent :Transform_2_5_15_2 ;
+  x3do:hasChildren :Shape_2_5_15_2_1_1 ;
+  x3do:description 'ArtDeco02' ;
+  x3do:parameter '"target=_source"' ;
+  x3do:url '"ArtDecoPrototypesExcerpt.html#ProtoDeclare_ArtDeco02" "https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter14Prototypes/ArtDecoPrototypesExcerpt.html#ProtoDeclare_ArtDeco02"' .
+:Shape_2_5_15_2_1_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Anchor_2_5_15_2_1 ;
+  x3do:hasAppearance :Appearance_2_5_15_2_1_1_1 ;
+  x3do:hasGeometry :Text_2_5_15_2_1_1_2 .
+:Appearance_2_5_15_2_1_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_5_15_2_1_1 ;
+  x3do:hasMaterial :TextMat-USE-2 .
+:TextMat-USE-2 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_5_15_2_1_1_1 ;
+  owl:sameAs :TextMat . # DEF matching this USE
+:Text_2_5_15_2_1_1_2 a owl:NamedIndividual, x3do:Text ;
+  x3do:hasParent :Shape_2_5_15_2_1_1 ;
+  x3do:hasFontStyle :Style-USE-2 ;
+  x3do:string '"ArtDeco02"' .
+:Style-USE-2 a owl:NamedIndividual, x3do:FontStyle ;
+  x3do:hasParent :Text_2_5_15_2_1_1_2 ;
+  owl:sameAs :Style . # DEF matching this USE
+:ROUTE_2_6 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'fraction_changed' ;
+  x3do:fromNode 'Close_Time' ;
+  x3do:toField 'set_fraction' ;
+  x3do:toNode 'Close_Mover' .
+:ROUTE_2_7 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'value_changed' ;
+  x3do:fromNode 'Close_Mover' ;
+  x3do:toField 'set_translation' ;
+  x3do:toNode 'Close_travel' .

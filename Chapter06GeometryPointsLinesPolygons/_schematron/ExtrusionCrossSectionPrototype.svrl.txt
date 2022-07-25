@@ -1,0 +1,1 @@
+<meta name='hint' content='Utilize ExtrusionCrossSection ProtoInstance as if it is a Shape node (with containerField="children") rather than an Extrusion node (with containerField="geometry") under a Shape.'/>[/X3D/head/meta[9], diagnostic]

@@ -1,0 +1,1 @@
+<ProximitySensor DEF='CameraInsideTankSensor'/> missing description [/X3D/Scene/Group/ProximitySensor, warning]

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE X3D PUBLIC "ISO//Web3D//DTD X3D 3.2//EN" "http://www.web3d.org/specifications/x3d-3.2.dtd">
+<X3D profile='Immersive' version='3.2' xmlns:xsd='http://www.w3.org/2001/XMLSchema-instance' xsd:noNamespaceSchemaLocation='http://www.web3d.org/specifications/x3d-3.2.xsd'>
+  <head>
+    <meta content='ViewFrustrumExample.x3d' name='title'/>
+    <meta content='Display view frustrum associated with a given pair of Viewpoint, NavigationInfo nodes' name='description'/>
+    <meta content='Don Brutzman' name='creator'/>
+    <meta content='16 August 2008' name='translated'/>
+    <meta content='17 August 2008' name='modified'/>
+    <meta content='ViewFrustrumPrototype.x3d' name='reference'/>
+    <meta content='ViewFrustrumComputation.png' name='drawing'/>
+    <meta content='ViewFrustrumOverheadView.png' name='image'/>
+    <meta content='ViewFrustrumObliqueView.png' name='image'/>
+    <meta content='view culling frustrum' name='subject'/>
+    <meta content='http://X3dGraphics.com/examples/X3dForWebAuthors/Chapter14-Prototypes/ViewFrustrumExample.x3d' name='identifier'/>
+    <meta content='X3D-Edit, https://savage.nps.edu/X3D-Edit' name='generator'/>
+    <meta content='../license.html' name='license'/>
+  </head>
+  <Scene>
+    <ExternProtoDeclare appinfo='Display view frustrum associated with a given pair of Viewpoint NavigationInfo nodes' name='ViewFrustrum' url='"ViewFrustrumPrototype.x3d" "http://X3dGraphics.com/examples/X3dForWebAuthors/Chapter14-Prototypes/ViewFrustrumPrototype.x3d"'>
+      <field accessType='initializeOnly' name='ViewpointNode' type='SFNode'/>
+      <field accessType='initializeOnly' name='NavigationInfoNode' type='SFNode'/>
+      <field accessType='inputOutput' name='lineColor' type='SFColor'/>
+      <field accessType='inputOutput' name='frustrumColor' type='SFColor'/>
+      <field accessType='inputOutput' name='transparency' type='SFFloat'/>
+      <field accessType='inputOutput' appinfo='assumed ratio height/width' name='aspectRatio' type='SFFloat'/>
+      <field accessType='initializeOnly' name='trace' type='SFBool'/>
+    </ExternProtoDeclare>
+    <!-- Example use -->
+    <ProtoInstance name='ViewFrustrum'>
+      <fieldValue name='ViewpointNode'>
+        <Viewpoint DEF='TestViewpoint' fieldOfView='0.78'/>
+      </fieldValue>
+      <fieldValue name='NavigationInfoNode'>
+        <NavigationInfo DEF='TestNavigationInfo' avatarSize='1 1.6 0.75' visibilityLimit='15'/>
+      </fieldValue>
+      <fieldValue name='lineColor' value='0.9 0.9 0.9'/>
+      <fieldValue name='frustrumColor' value='0.8 0.8 0.8'/>
+      <fieldValue name='transparency' value='0.75'/>
+    </ProtoInstance>
+    <Viewpoint description='Above view' orientation='1 0 0 -1.57' position='0 40 0'/>
+    <Viewpoint description='Frustrum viewpoint'/>
+    <Viewpoint description='Behind frustrum viewpoint' position='0 0 15'/>
+    <NavigationInfo type='"EXAMINE" "FLY" "ANY"'/>
+    <!-- Visualization assists -->
+    <Inline DEF='GridXZ' url='"../../Savage/Tools/Authoring/GridXZ_20x20Fixed.x3d" "https://savage.nps.edu/Savage/Tools/Authoring/GridXZ_20x20Fixed.x3d"'/>
+    <Transform scale='5 5 5'>
+      <Inline DEF='CoordinateAxes' url='"../Chapter03-Grouping/CoordinateAxes.x3d" "http://X3dGraphics.com/examples/X3dForWebAuthors/Chapter03-Grouping/CoordinateAxes.x3d"'/>
+    </Transform>
+  </Scene>
+</X3D>

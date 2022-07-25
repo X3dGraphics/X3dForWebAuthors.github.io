@@ -1,0 +1,933 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--Generated using XSLT processor: SAXON 8.7 from Saxonica--><html xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
+      xmlns="http://www.w3.org/TR/xhtml1/strict"
+      xmlns:saxon="http://icl.com/saxon">
+   <head>
+      <title>LS-KelpForestMain.x3d (X3dToXhtml)</title>
+      <style type="text/css">
+span.element {color: navy}
+span.attribute {color: green}
+span.value {color: teal}
+span.plain {color: black}
+span.gray  {color: gray}
+span.idName {color: maroon}
+a.idName {color: maroon}
+div.center {text-align: center}
+div.indent {margin-left: 25px}
+
+span.prototype {color: purple}
+a.prototype {color: purple; visited: black}
+span.route {color: red}
+b.warning {color: #CC5500}
+b.error {color: #CC0000}
+                </style>
+      <meta name="generator" content="http://www.web3d.org/x3d/content/X3dToXhtml.xslt"/>
+      <meta name="generator"
+            content="http://x3d.svn.sourceforge.net/viewvc/*checkout*/x3d/www.web3d.org/x3d/stylesheets/X3dToXhtml.xslt"/>
+      <link rel="shortcut icon"
+            href="http://www.web3d.org/x3d/content/icons/X3DtextIcon16.png"
+            title="X3D"/>
+   </head>
+   <body>
+      <pre>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;!DOCTYPE X3D PUBLIC "ISO//Web3D//DTD X3D 3.1//EN" "<a href="http://www.web3d.org/specifications/x3d-3.1.dtd">http://www.web3d.org/specifications/x3d-3.1.dtd</a>"&gt;</pre>
+
+&lt;<span class="element">X3D</span>&#160;<span class="attribute">profile</span>='<span class="value">Immersive</span>'&#160;<span class="attribute">version</span>='<span class="value">3.1</span>'&#160;<span class="attribute">xmlns:xsd</span>='<a href="http://www.w3.org/2001/XMLSchema-instance" target="_blank">http://www.w3.org/2001/XMLSchema-instance</a>'
+<span class="attribute">xsd:noNamespaceSchemaLocation</span>='
+<a href="http://www.web3d.org/specifications/x3d-3.1.xsd">http://www.web3d.org/specifications/x3d-3.1.xsd</a> '&gt;
+<div class="indent">
+&lt;<span class="element">head</span>&gt;
+<div class="indent">
+&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">title</span>'&#160;<span class="attribute">content</span>='<a href="LS-KelpForestMain.x3d" target="_blank">LS-KelpForestMain.x3d</a>'/&gt;
+<br />
+&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">description</span>'&#160;<span class="attribute">content</span>='<span class="plain">An example use of the LoadSensor node in the Kelp Forest world.</span>'/&gt;
+<br />
+&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">creator</span>'&#160;<span class="attribute">content</span>='<span class="value">Don Brutzman</span>'/&gt;
+<br />
+&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">created</span>'&#160;<span class="attribute">content</span>='<span class="value">1 June 1998</span>'/&gt;
+<br />
+&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">modified</span>'&#160;<span class="attribute">content</span>='<span class="value">8 October 2007</span>'/&gt;
+<br />
+&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">reference</span>'&#160;<span class="attribute">content</span>='
+<a href="http://web.nps.navy.mil/~brutzman/kelp">http://web.nps.navy.mil/~brutzman/kelp</a> '/&gt;
+<br />
+&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">reference</span>'&#160;<span class="attribute">content</span>='
+<a href="http://web.nps.navy.mil/~brutzman/kelp/KelpForestDesignPaper.pdf">http://web.nps.navy.mil/~brutzman/kelp/KelpForestDesignPaper.pdf</a> '/&gt;
+<br />
+&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">subject</span>'&#160;<span class="attribute">content</span>='<span class="value">Kelp Forest 3D models</span>'/&gt;
+<br />
+&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">accessRights</span>'&#160;<span class="attribute">content</span>='<span class="value">All content has permissions for free use. Please provide credit to the Naval Postgraduate School (NPS) Modeling Virtual Environments and Simulation (MOVES) Institute.</span>'/&gt;
+<br />
+&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">reference</span>'&#160;<span class="attribute">content</span>='
+<a href="http://x3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/KelpForestMain.x3d">http://x3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/KelpForestMain.x3d</a> '/&gt;
+<br />
+&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">identifier</span>'&#160;<span class="attribute">content</span>='
+<a href="http://x3dGraphics.com/examples/X3dForWebAuthors/Chapter12-EnvironmentSensorSound/LS-KelpForestMain.x3d">http://x3dGraphics.com/examples/X3dForWebAuthors/Chapter12-EnvironmentSensorSound/LS-KelpForestMain.x3d</a> '/&gt;
+<br />
+&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">generator</span>'&#160;<span class="attribute">content</span>='<span class="value">X3D-Edit, </span>
+            <a href="https://savage.nps.edu/X3D-Edit" target="_blank">https://savage.nps.edu/X3D-Edit</a>'/&gt;
+<br />
+&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">license</span>'&#160;<span class="attribute">content</span>='<a href="../license.html" target="_blank">../license.html</a>'/&gt;
+</div>&lt;/<span class="element">head</span>&gt;
+<br />
+&lt;!--
+<div class="center">
+            <hr width="100%"/>
+            <i>Index for ExternProtoDeclare definitions</i>: 
+<a href="#ExternProtoDeclare_ViewPositionOrientation" class="prototype">ViewPositionOrientation</a>,
+<a href="#ExternProtoDeclare_WaypointInterpolator" class="prototype">WaypointInterpolator</a>
+<br />
+<i>Index for DEF nodes</i>: 
+<a href="#CENTER_WAVE" class="idName">CENTER_WAVE</a>,
+<a href="#Display" class="idName">Display</a>,
+<a href="#JEFFSCLOCK" class="idName">JEFFSCLOCK</a>,
+<a href="#K10_DEEP" class="idName">K10_DEEP</a>,
+<a href="#K10_FLOOR" class="idName">K10_FLOOR</a>,
+<a href="#K10_LOCALE" class="idName">K10_LOCALE</a>,
+<a href="#K11_DEEP" class="idName">K11_DEEP</a>,
+<a href="#K11_FLOOR" class="idName">K11_FLOOR</a>,
+<a href="#K11_LOCALE" class="idName">K11_LOCALE</a>,
+<a href="#K11_MIDWATER" class="idName">K11_MIDWATER</a>,
+<a href="#K2_FLOOR" class="idName">K2_FLOOR</a>,
+<a href="#K2_LOCALE" class="idName">K2_LOCALE</a>,
+<a href="#K2_MIDWATER" class="idName">K2_MIDWATER</a>,
+<a href="#K4_FLOOR" class="idName">K4_FLOOR</a>,
+<a href="#K4_LOCALE" class="idName">K4_LOCALE</a>,
+<a href="#K4_MIDWATER" class="idName">K4_MIDWATER</a>,
+<a href="#K7_FLOOR" class="idName">K7_FLOOR</a>,
+<a href="#K7_LOCALE" class="idName">K7_LOCALE</a>,
+<a href="#K7_MIDWATER" class="idName">K7_MIDWATER</a>,
+<a href="#KelpExamplesNoBase" class="idName">KelpExamplesNoBase</a>,
+<a href="#LEFT_DEEP_WAVE" class="idName">LEFT_DEEP_WAVE</a>,
+<a href="#LEFT_SHALLOW_WAVE" class="idName">LEFT_SHALLOW_WAVE</a>,
+<a href="#LoadBass" class="idName">LoadBass</a>,
+<a href="#LoadBlackPerch" class="idName">LoadBlackPerch</a>,
+<a href="#LoadFloor" class="idName">LoadFloor</a>,
+<a href="#LoadGaribaldi" class="idName">LoadGaribaldi</a>,
+<a href="#LoadHalfMoon" class="idName">LoadHalfMoon</a>,
+<a href="#LoadIntro" class="idName">LoadIntro</a>,
+<a href="#LoadLefty" class="idName">LoadLefty</a>,
+<a href="#LoadLucy" class="idName">LoadLucy</a>,
+<a href="#LoadNancy" class="idName">LoadNancy</a>,
+<a href="#LoadPerch" class="idName">LoadPerch</a>,
+<a href="#LoadRockFish" class="idName">LoadRockFish</a>,
+<a href="#LoadRubberLip" class="idName">LoadRubberLip</a>,
+<a href="#LoadSardine" class="idName">LoadSardine</a>,
+<a href="#LoadSeaStar" class="idName">LoadSeaStar</a>,
+<a href="#LoadSeaStar2" class="idName">LoadSeaStar2</a>,
+<a href="#LoadStripedPerch" class="idName">LoadStripedPerch</a>,
+<a href="#LoadTank" class="idName">LoadTank</a>,
+<a href="#LoadTracking" class="idName">LoadTracking</a>,
+<a href="#MasterClock" class="idName">MasterClock</a>,
+<a href="#Nancy" class="idName">Nancy</a>,
+<a href="#NancyInterpolator" class="idName">NancyInterpolator</a>,
+<a href="#NancyTransform" class="idName">NancyTransform</a>,
+<a href="#R2_DEEP" class="idName">R2_DEEP</a>,
+<a href="#R2_LOCALE" class="idName">R2_LOCALE</a>,
+<a href="#R2_MIDWATER" class="idName">R2_MIDWATER</a>,
+<a href="#R3_LOCALE" class="idName">R3_LOCALE</a>,
+<a href="#R3_MIDWATER" class="idName">R3_MIDWATER</a>,
+<a href="#R5_LOCALE" class="idName">R5_LOCALE</a>,
+<a href="#R5_SHALLOW" class="idName">R5_SHALLOW</a>,
+<a href="#RIGHT_DEEP_WAVE" class="idName">RIGHT_DEEP_WAVE</a>,
+<a href="#RIGHT_SHALLOW_WAVE" class="idName">RIGHT_SHALLOW_WAVE</a>,
+<a href="#Root" class="idName">Root</a>,
+<a href="#Viewpoints" class="idName">Viewpoints</a>,
+<a href="#WAVE_CLOCK" class="idName">WAVE_CLOCK</a>
+<br />
+<i>Index for Viewpoint images</i>: 
+<a href="#Viewpoint_1" class="idName">Viewpoint_1</a>,
+<a href="#Viewpoint_2" class="idName">Viewpoint_2</a>,
+<a href="#Viewpoint_3" class="idName">Viewpoint_3</a>,
+<a href="#Viewpoint_4" class="idName">Viewpoint_4</a>,
+<a href="#Viewpoint_5" class="idName">Viewpoint_5</a>,
+<a href="#Viewpoint_6" class="idName">Viewpoint_6</a>,
+<a href="#Viewpoint_7" class="idName">Viewpoint_7</a>
+            <hr width="100%"/>
+         </div>
+--&gt;
+<br />
+&lt;<span class="element">Scene</span>&gt;
+<div class="indent">
+&lt;<span class="element">WorldInfo</span>&#160;<span class="attribute">info</span>='
+"<a href="kelpForestMain3.4.wrl">kelpForestMain3.4.wrl</a>"
+"<a href="Model">Model</a>"
+"<a href="of">of</a>"
+"<a href="the">the</a>"
+"<a href="Monterey">Monterey</a>"
+"<a href="Bay">Bay</a>"
+"<a href="Aquarium">Aquarium</a>"
+"<a href="Kelp">Kelp</a>"
+"<a href="Forest">Forest</a>"
+"<a href="DTG">DTG</a>"
+"<a href="of">of</a>"
+"<a href="last">last</a>"
+"<a href="updated:">updated:</a>"
+"<a href="111500Jun98">111500Jun98</a>"
+"<a href="Added:">Added:</a>"
+"<a href=""/>"
+"<a href="Updated:">Updated:</a>"
+"<a href="kelpTank2.9.wrl;">kelpTank2.9.wrl;</a>"
+"<a href=""/>"
+"<a href="Created">Created</a>"
+"<a href="by">by</a>"
+"<a href="Naval">Naval</a>"
+"<a href="Postgraduate">Postgraduate</a>"
+"<a href="School">School</a>"
+"<a href="students">students</a>"
+"<a href="under">under</a>"
+"<a href="the">the</a>"
+"<a href="supervision">supervision</a>"
+"<a href="of">of</a>"
+"<a href="Don">Don</a>"
+"<a href="Brutzman">Brutzman</a>"
+"<a href="Feel">Feel</a>"
+"<a href="free">free</a>"
+"<a href="to">to</a>"
+"<a href="copy">copy</a>"
+"<a href="anything">anything</a>"
+"<a href="you">you</a>"
+"<a href="wish">wish</a>"
+"<a href="-">-</a>"
+"<a href="just">just</a>"
+"<a href="give">give</a>"
+"<a href="credit">credit</a>"
+"<a href="where">where</a>"
+"<a href="it">it</a>"
+"<a href="is">is</a>"
+"<a href="due">due</a>"
+"<a href="http://www.stl.nps.navy.mil/~brutzman/kelp">http://www.stl.nps.navy.mil/~brutzman/kelp</a>"
+'&#160;<span class="attribute">title</span>='<span class="value">NPS Virtual Kelp Forest Exhibit</span>'/&gt;
+<br />
+&lt;<span class="element">NavigationInfo</span>&#160;<span class="attribute">speed</span>='<span class="value">3.0</span>'&#160;<span class="attribute">type</span>='<span class="value">"EXAMINE" "ANY"</span>'&#160;<span class="attribute">transitionType</span>='<span class="value">"ANIMATE"</span>'&#160;<span class="attribute">transitionTime</span>='<span class="value">1.0</span>'/&gt;
+<br /><a name="ExternProtoDeclare_ViewPositionOrientation"> </a> 
+&lt;<span class="prototype">ExternProtoDeclare</span>&#160;<span class="attribute">name</span>='<span class="prototype">ViewPositionOrientation</span>'
+<br />
+&#160;&#160;<span class="attribute">url</span>='
+"<a href="ViewPositionOrientationPrototype.wrl#ViewPositionOrientation">ViewPositionOrientationPrototype.wrl#ViewPositionOrientation</a>"
+"<a href="/www.web3d.org/x3d/content/examples/Savage/Tools/Authoring/ViewPositionOrientationPrototype.wrl#ViewPositionOrientation">/www.web3d.org/x3d/content/examples/Savage/Tools/Authoring/ViewPositionOrientationPrototype.wrl#ViewPositionOrientation</a>"
+"<a href="https://savage.nps.edu/Savage/Tools/Authoring/ViewPositionOrientationPrototype.wrl#ViewPositionOrientation">https://savage.nps.edu/Savage/Tools/Authoring/ViewPositionOrientationPrototype.wrl#ViewPositionOrientation</a>"
+"<a href="ViewPositionOrientationPrototype.x3d#ViewPositionOrientation">ViewPositionOrientationPrototype.x3d#ViewPositionOrientation</a>"
+"<a href="/www.web3d.org/x3d/content/examples/Savage/Tools/Authoring/ViewPositionOrientationPrototype.x3d#ViewPositionOrientation">/www.web3d.org/x3d/content/examples/Savage/Tools/Authoring/ViewPositionOrientationPrototype.x3d#ViewPositionOrientation</a>"
+"<a href="https://savage.nps.edu/Savage/Tools/Authoring/ViewPositionOrientationPrototype.x3d#ViewPositionOrientation">https://savage.nps.edu/Savage/Tools/Authoring/ViewPositionOrientationPrototype.x3d#ViewPositionOrientation</a>"
+"<a href="file:///c:/www.web3d.org/x3d/content/examples/Savage/Tools/Authoring/ViewPositionOrientationPrototype.wrl#ViewPositionOrientation">file:///c:/www.web3d.org/x3d/content/examples/Savage/Tools/Authoring/ViewPositionOrientationPrototype.wrl#ViewPositionOrientation</a>"
+'&gt;
+<div class="indent">
+&lt;<span class="prototype">field</span>&#160;<span class="attribute">name</span>='<span class="prototype">enabled</span>'&#160;<span class="attribute">type</span>='<span class="value">SFBool</span>'&#160;<span class="attribute">accessType</span>='<span class="value">inputOutput</span>'/&gt;
+<br />
+&lt;<span class="prototype">field</span>&#160;<span class="attribute">name</span>='<span class="prototype">traceEnabled</span>'&#160;<span class="attribute">type</span>='<span class="value">SFBool</span>'&#160;<span class="attribute">accessType</span>='<span class="value">initializeOnly</span>'/&gt;
+<br />
+&lt;<span class="prototype">field</span>&#160;<span class="attribute">name</span>='<span class="prototype">set_traceEnabled</span>'&#160;<span class="attribute">type</span>='<span class="value">SFBool</span>'&#160;<span class="attribute">accessType</span>='<span class="value">inputOnly</span>'/&gt;
+<br />
+&lt;<span class="prototype">field</span>&#160;<span class="attribute">name</span>='<span class="prototype">position_changed</span>'&#160;<span class="attribute">type</span>='<span class="value">SFVec3f</span>'&#160;<span class="attribute">accessType</span>='<span class="value">outputOnly</span>'/&gt;
+<br />
+&lt;<span class="prototype">field</span>&#160;<span class="attribute">name</span>='<span class="prototype">orientation_changed</span>'&#160;<span class="attribute">type</span>='<span class="value">SFRotation</span>'&#160;<span class="attribute">accessType</span>='<span class="value">outputOnly</span>'/&gt;
+<br />
+&lt;<span class="prototype">field</span>&#160;<span class="attribute">name</span>='<span class="prototype">outputViewpointString</span>'&#160;<span class="attribute">type</span>='<span class="value">MFString</span>'&#160;<span class="attribute">accessType</span>='<span class="value">outputOnly</span>'/&gt;
+</div>&lt;/<span class="prototype">ExternProtoDeclare</span>&gt;
+<br />
+&lt;<span class="prototype">ProtoInstance</span>&#160;<span class="attribute">name</span>='<a href="#ExternProtoDeclare_ViewPositionOrientation" class="prototype">ViewPositionOrientation</a>'&#160;<span class="attribute">containerField</span>='<span class="value">children</span>'&gt;
+<div class="indent">
+&lt;<span class="prototype">fieldValue</span>&#160;<span class="attribute">name</span>='<span class="prototype">enabled</span>'&#160;<span class="attribute">value</span>='<span class="value">false</span>'/&gt;
+</div>&lt;/<span class="prototype">ProtoInstance</span>&gt;
+<br /><a name="ExternProtoDeclare_WaypointInterpolator"> </a> 
+&lt;<span class="prototype">ExternProtoDeclare</span>&#160;<span class="attribute">name</span>='<span class="prototype">WaypointInterpolator</span>'
+<br />
+&#160;&#160;<span class="attribute">url</span>='
+"<a href="../Savage/Tools/Animation/WaypointInterpolatorPrototype.wrl#WaypointInterpolator">../Savage/Tools/Animation/WaypointInterpolatorPrototype.wrl#WaypointInterpolator</a>"
+"<a href="https://savage.nps.edu/Savage/Tools/Animation/WaypointInterpolatorPrototype.wrl#WaypointInterpolator">https://savage.nps.edu/Savage/Tools/Animation/WaypointInterpolatorPrototype.wrl#WaypointInterpolator</a>"
+"<a href="../Savage/Tools/Animation/WaypointInterpolatorPrototype.x3d#WaypointInterpolator">../Savage/Tools/Animation/WaypointInterpolatorPrototype.x3d#WaypointInterpolator</a>"
+"<a href="https://savage.nps.edu/Savage/Tools/Animation/WaypointInterpolatorPrototype.x3d#WaypointInterpolator">https://savage.nps.edu/Savage/Tools/Animation/WaypointInterpolatorPrototype.x3d#WaypointInterpolator</a>"
+'&gt;
+<div class="indent">
+&lt;<span class="prototype">field</span>&#160;<span class="attribute">name</span>='<span class="prototype">description</span>'&#160;<span class="attribute">type</span>='<span class="value">SFString</span>'&#160;<span class="attribute">accessType</span>='<span class="value">initializeOnly</span>'/&gt;
+<br />
+&lt;<span class="prototype">field</span>&#160;<span class="attribute">name</span>='<span class="prototype">waypoints</span>'&#160;<span class="attribute">type</span>='<span class="value">MFVec3f</span>'&#160;<span class="attribute">accessType</span>='<span class="value">initializeOnly</span>'/&gt;
+<br />
+&lt;<span class="prototype">field</span>&#160;<span class="attribute">name</span>='<span class="prototype">pitchUpDownForVerticalWaypoints</span>'&#160;<span class="attribute">type</span>='<span class="value">SFBool</span>'&#160;<span class="attribute">accessType</span>='<span class="value">initializeOnly</span>'/&gt;
+<br />&lt;!-- Priority of use: legSpeeds (m/sec), legDurations (seconds), defaultSpeed (m/sec) --&gt;
+<br />
+&lt;<span class="prototype">field</span>&#160;<span class="attribute">name</span>='<span class="prototype">legSpeeds</span>'&#160;<span class="attribute">type</span>='<span class="value">MFFloat</span>'&#160;<span class="attribute">accessType</span>='<span class="value">initializeOnly</span>'
+<br />
+&#160;<span class="gray">appinfo</span>='<span class="gray">Units m/sec. If used array lengths for legSpeeds and legDurations must be one less than number of waypoints.</span>'/&gt;
+<br />
+&lt;<span class="prototype">field</span>&#160;<span class="attribute">name</span>='<span class="prototype">legDurations</span>'&#160;<span class="attribute">type</span>='<span class="value">MFTime</span>'&#160;<span class="attribute">accessType</span>='<span class="value">initializeOnly</span>'
+<br />
+&#160;<span class="gray">appinfo</span>='<span class="gray">Units in seconds. If used array lengths for legSpeeds and legDurations must be one less than number of waypoints.</span>'/&gt;
+<br />
+&lt;<span class="prototype">field</span>&#160;<span class="attribute">name</span>='<span class="prototype">defaultSpeed</span>'&#160;<span class="attribute">type</span>='<span class="value">SFFloat</span>'&#160;<span class="attribute">accessType</span>='<span class="value">initializeOnly</span>'
+<br />
+&#160;<span class="gray">appinfo</span>='<span class="gray">Units m/sec.</span>'/&gt;
+<br />
+&lt;<span class="prototype">field</span>&#160;<span class="attribute">name</span>='<span class="prototype">turningRate</span>'&#160;<span class="attribute">type</span>='<span class="value">SFFloat</span>'&#160;<span class="attribute">accessType</span>='<span class="value">initializeOnly</span>'
+<br />
+&#160;<span class="gray">appinfo</span>='<span class="gray">turningRate (degrees/second) also determines standoff distance prior to waypoint where turn commences. If 0 turns are instantaneous.</span>'/&gt;
+<br />
+&lt;<span class="prototype">field</span>&#160;<span class="attribute">name</span>='<span class="prototype">totalDuration</span>'&#160;<span class="attribute">type</span>='<span class="value">SFTime</span>'&#160;<span class="attribute">accessType</span>='<span class="value">outputOnly</span>'
+<br />
+&#160;<span class="gray">appinfo</span>='<span class="gray">Output calculation combining all leg durations units in seconds.</span>'/&gt;
+<br />&lt;!-- exposed PositionInterpolator and OrientationInterpolator settings: --&gt;
+<br />
+&lt;<span class="prototype">field</span>&#160;<span class="attribute">name</span>='<span class="prototype">set_fraction</span>'&#160;<span class="attribute">type</span>='<span class="value">SFFloat</span>'&#160;<span class="attribute">accessType</span>='<span class="value">inputOnly</span>'/&gt;
+<br />
+&lt;<span class="prototype">field</span>&#160;<span class="attribute">name</span>='<span class="prototype">position_changed</span>'&#160;<span class="attribute">type</span>='<span class="value">SFVec3f</span>'&#160;<span class="attribute">accessType</span>='<span class="value">outputOnly</span>'/&gt;
+<br />
+&lt;<span class="prototype">field</span>&#160;<span class="attribute">name</span>='<span class="prototype">orientation_changed</span>'&#160;<span class="attribute">type</span>='<span class="value">SFRotation</span>'&#160;<span class="attribute">accessType</span>='<span class="value">outputOnly</span>'/&gt;
+<br />
+&lt;<span class="prototype">field</span>&#160;<span class="attribute">name</span>='<span class="prototype">lineColor</span>'&#160;<span class="attribute">type</span>='<span class="value">SFColor</span>'&#160;<span class="attribute">accessType</span>='<span class="value">inputOutput</span>'/&gt;
+<br />
+&lt;<span class="prototype">field</span>&#160;<span class="attribute">name</span>='<span class="prototype">highlightSegmentColor</span>'&#160;<span class="attribute">type</span>='<span class="value">SFColor</span>'&#160;<span class="attribute">accessType</span>='<span class="value">inputOutput</span>'
+<br />
+&#160;<span class="gray">appinfo</span>='<span class="gray">highlightSegmentColors must contain two color values for each endpoint of the highlight segment.</span>'/&gt;
+<br />
+&lt;<span class="prototype">field</span>&#160;<span class="attribute">name</span>='<span class="prototype">transparency</span>'&#160;<span class="attribute">type</span>='<span class="value">SFFloat</span>'&#160;<span class="attribute">accessType</span>='<span class="value">inputOutput</span>'/&gt;
+<br />
+&lt;<span class="prototype">field</span>&#160;<span class="attribute">name</span>='<span class="prototype">labelDisplayMode</span>'&#160;<span class="attribute">type</span>='<span class="value">SFString</span>'&#160;<span class="attribute">accessType</span>='<span class="value">initializeOnly</span>'
+<br />
+&#160;<span class="gray">appinfo</span>='<span class="gray">allowed values: none; waypoints (produce labels at each waypoint); or interpolation (produce single moving label at interpolator time course speed location)</span>'/&gt;
+<br />
+&lt;<span class="prototype">field</span>&#160;<span class="attribute">name</span>='<span class="prototype">heightLabel</span>'&#160;<span class="attribute">type</span>='<span class="value">SFString</span>'&#160;<span class="attribute">accessType</span>='<span class="value">initializeOnly</span>'
+<br />
+&#160;<span class="gray">appinfo</span>='<span class="gray">allowed values: altitude depth (negate Y value) none</span>'/&gt;
+<br />
+&lt;<span class="prototype">field</span>&#160;<span class="attribute">name</span>='<span class="prototype">labelOffset</span>'&#160;<span class="attribute">type</span>='<span class="value">SFVec3f</span>'&#160;<span class="attribute">accessType</span>='<span class="value">initializeOnly</span>'/&gt;
+<br />
+&lt;<span class="prototype">field</span>&#160;<span class="attribute">name</span>='<span class="prototype">labelFontSize</span>'&#160;<span class="attribute">type</span>='<span class="value">SFFloat</span>'&#160;<span class="attribute">accessType</span>='<span class="value">initializeOnly</span>'/&gt;
+<br />
+&lt;<span class="prototype">field</span>&#160;<span class="attribute">name</span>='<span class="prototype">labelColor</span>'&#160;<span class="attribute">type</span>='<span class="value">SFColor</span>'&#160;<span class="attribute">accessType</span>='<span class="value">initializeOnly</span>'/&gt;
+<br />
+&lt;<span class="prototype">field</span>&#160;<span class="attribute">name</span>='<span class="prototype">traceEnabled</span>'&#160;<span class="attribute">type</span>='<span class="value">SFBool</span>'&#160;<span class="attribute">accessType</span>='<span class="value">initializeOnly</span>'/&gt;
+<br />
+&lt;<span class="prototype">field</span>&#160;<span class="attribute">name</span>='<span class="prototype">outputInitializationComputations</span>'&#160;<span class="attribute">type</span>='<span class="value">SFBool</span>'&#160;<span class="attribute">accessType</span>='<span class="value">initializeOnly</span>'
+<br />
+&#160;<span class="gray">appinfo</span>='<span class="gray">Output the number of waypoints totalDistance and totalDuration to console upon initialization</span>'/&gt;
+<br />
+&lt;<span class="prototype">field</span>&#160;<span class="attribute">name</span>='<span class="prototype">verticalDropLineColor</span>'&#160;<span class="attribute">type</span>='<span class="value">SFColor</span>'&#160;<span class="attribute">accessType</span>='<span class="value">inputOutput</span>'
+<br />
+&#160;<span class="gray">appinfo</span>='<span class="gray">default color for vertical drop-line segments</span>'/&gt;
+<br />
+&lt;<span class="prototype">field</span>&#160;<span class="attribute">name</span>='<span class="prototype">verticalDropLineTransparency</span>'&#160;<span class="attribute">type</span>='<span class="value">SFFloat</span>'&#160;<span class="attribute">accessType</span>='<span class="value">inputOutput</span>'
+<br />
+&#160;<span class="gray">appinfo</span>='<span class="gray">1.0 is completely transparent 0.0 is completely opaque.</span>'/&gt;
+</div>&lt;/<span class="prototype">ExternProtoDeclare</span>&gt;
+<br /><a name="Viewpoints"> </a> 
+&lt;<span class="element">Group</span>&#160;<span class="attribute">DEF</span>='<span class="idName">Viewpoints</span>'&gt;
+<div class="indent">
+               <a name="Viewpoint_0"> </a> 
+&lt;<span class="element">Viewpoint</span>&#160;<a href="_viewpoints/LS-KelpForestMain.x3d.Kelp_Forest_Monterey_Bay_Aquarium.png">description</a>='<span class="value">Kelp Forest Monterey Bay Aquarium</span>'&#160;<span class="attribute">position</span>='<span class="value">0.0 -5.0 45.0</span>'/&gt;
+<br /><a name="Viewpoint_1"> </a> 
+&lt;<span class="element">Viewpoint</span>&#160;<a href="_viewpoints/LS-KelpForestMain.x3d.Side_Windows.png">description</a>='<span class="value">Side Windows</span>'&#160;<span class="attribute">fieldOfView</span>='<span class="value">0.5</span>'&#160;<span class="attribute">orientation</span>='<span class="value">0.0 1.0 0.0 0.9</span>'&#160;<span class="attribute">position</span>='<span class="value">25.0 -4.0 15.0</span>'/&gt;
+<br /><a name="Viewpoint_2"> </a> 
+&lt;<span class="element">Viewpoint</span>&#160;<a href="_viewpoints/LS-KelpForestMain.x3d.Star_Fish.png">description</a>='<span class="value">Star Fish</span>'&#160;<span class="attribute">orientation</span>='<span class="value">0.0 1.0 0.0 1.25</span>'&#160;<span class="attribute">position</span>='<span class="value">14.0 -5.75 1.0</span>'/&gt;
+<br /><a name="Viewpoint_3"> </a> 
+&lt;<span class="element">Viewpoint</span>&#160;<a href="_viewpoints/LS-KelpForestMain.x3d.Inside_Tank.png">description</a>='<span class="value">Inside Tank</span>'&#160;<span class="attribute">orientation</span>='<span class="value">0.0 1.0 0.0 3.14</span>'&#160;<span class="attribute">position</span>='<span class="value">0.0 -5.0 -7.0</span>'/&gt;
+<br /><a name="Viewpoint_4"> </a> 
+&lt;<span class="element">Viewpoint</span>&#160;<a href="_viewpoints/LS-KelpForestMain.x3d.Top_floor.png">description</a>='<span class="value">Top floor</span>'&#160;<span class="attribute">fieldOfView</span>='<span class="value">1.04719</span>'&#160;<span class="attribute">orientation</span>='<span class="value">-0.3 1.0 0.3 1.57079</span>'&#160;<span class="attribute">position</span>='<span class="value">12.5 5.0 -2.0</span>'/&gt;
+<br /><a name="Viewpoint_5"> </a> 
+&lt;<span class="element">Viewpoint</span>&#160;<a href="_viewpoints/LS-KelpForestMain.x3d.Bird's_Eye_View.png">description</a>='<span class="value">Bird's Eye View</span>'&#160;<span class="attribute">orientation</span>='<span class="value">1.0 0.0 0.0 -1.57</span>'&#160;<span class="attribute">position</span>='<span class="value">0.0 19.0 -3.5</span>'/&gt;
+<br /><a name="Viewpoint_6"> </a> 
+&lt;<span class="element">Viewpoint</span>&#160;<a href="_viewpoints/LS-KelpForestMain.x3d.Pump_House.png">description</a>='<span class="value">Pump House</span>'&#160;<span class="attribute">fieldOfView</span>='<span class="value">0.6</span>'&#160;<span class="attribute">orientation</span>='<span class="value">0.0 1.0 0.0 1.3</span>'&#160;<span class="attribute">position</span>='<span class="value">-5.0 1.0 0.0</span>'/&gt;
+</div>&lt;/<span class="element">Group</span>&gt;
+<br /><a name="Root"> </a> 
+&lt;<span class="element">Group</span>&#160;<span class="attribute">DEF</span>='<span class="idName">Root</span>'&gt;
+<div class="indent">
+&lt;<span class="element">Background</span>&#160;<span class="attribute">groundAngle</span>='<span class="value">1.309 1.571</span>'&#160;<span class="attribute">groundColor</span>='<span class="value">0.1 0.1 0.0 0.4 0.25 0.2 0.6 0.6 0.6</span>'&#160;<span class="attribute">skyAngle</span>='<span class="value">1.309 1.571</span>'&#160;<span class="attribute">skyColor</span>='<span class="value">0.0 0.5 1.0 0.0 0.0 1.0 0.0 0.0 1.0</span>'/&gt;
+<br /><a name="LoadIntro"> </a> 
+&lt;<span class="element">Inline</span>&#160;<span class="attribute">DEF</span>='<span class="idName">LoadIntro</span>'
+<br />
+&#160;&#160;<span class="attribute">url</span>='
+"<a href="IntroductionMessage.wrl">IntroductionMessage.wrl</a>"
+"<a href="http://x3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/IntroductionMessage.wrl">http://x3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/IntroductionMessage.wrl</a>"
+"<a href="IntroductionMessage.x3d">IntroductionMessage.x3d</a>"
+"<a href="http://x3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/IntroductionMessage.x3d">http://x3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/IntroductionMessage.x3d</a>"
+'/&gt;
+<br />
+&lt;<span class="element">Collision</span>&#160;<span class="attribute">enabled</span>='<span class="value">false</span>'&gt;
+<div class="indent">
+&lt;<span class="element">Transform</span>&gt;
+<div class="indent">
+                     <a name="LoadLefty"> </a> 
+&lt;<span class="element">Inline</span>&#160;<span class="attribute">DEF</span>='<span class="idName">LoadLefty</span>'
+<br />
+&#160;&#160;<span class="attribute">url</span>='
+"<a href="SharkLeftyLocale.wrl">SharkLeftyLocale.wrl</a>"
+"<a href="http://x3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/SharkLeftyLocale.wrl">http://x3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/SharkLeftyLocale.wrl</a>"
+"<a href="SharkLeftyLocale.x3d">SharkLeftyLocale.x3d</a>"
+"<a href="http://x3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/SharkLeftyLocale.x3d">http://x3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/SharkLeftyLocale.x3d</a>"
+'/&gt;
+</div>&lt;/<span class="element">Transform</span>&gt;
+<br />
+&lt;<span class="element">Transform</span>&gt;
+<div class="indent">
+                     <a name="LoadLucy"> </a> 
+&lt;<span class="element">Inline</span>&#160;<span class="attribute">DEF</span>='<span class="idName">LoadLucy</span>'
+<br />
+&#160;&#160;<span class="attribute">url</span>='
+"<a href="SharkLucyLocale.wrl">SharkLucyLocale.wrl</a>"
+"<a href="http://x3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/SharkLucyLocale.wrl">http://x3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/SharkLucyLocale.wrl</a>"
+"<a href="SharkLucyLocale.x3d">SharkLucyLocale.x3d</a>"
+"<a href="http://x3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/SharkLucyLocale.x3d">http://x3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/SharkLucyLocale.x3d</a>"
+'/&gt;
+</div>&lt;/<span class="element">Transform</span>&gt;
+<br />
+&lt;<span class="element">Transform</span>&gt;
+<div class="indent">
+                     <a name="LoadTank"> </a> 
+&lt;<span class="element">Inline</span>&#160;<span class="attribute">DEF</span>='<span class="idName">LoadTank</span>'
+<br />
+&#160;&#160;<span class="attribute">url</span>='
+"<a href="KelpTank.wrl">KelpTank.wrl</a>"
+"<a href="http://x3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/KelpTank.wrl">http://x3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/KelpTank.wrl</a>"
+"<a href="KelpTank.x3d">KelpTank.x3d</a>"
+"<a href="http://x3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/KelpTank.x3d">http://x3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/KelpTank.x3d</a>"
+'/&gt;
+</div>&lt;/<span class="element">Transform</span>&gt;
+<br />
+&lt;<span class="element">Transform</span>&#160;<span class="attribute">scale</span>='<span class="value">0.54 0.75 0.52</span>'&#160;<span class="attribute">translation</span>='<span class="value">0.3 -2.88 7.3</span>'&gt;
+<div class="indent">
+                     <a name="LoadFloor"> </a> 
+&lt;<span class="element">Inline</span>&#160;<span class="attribute">DEF</span>='<span class="idName">LoadFloor</span>'
+<br />
+&#160;&#160;<span class="attribute">url</span>='
+"<a href="RockFloor.wrl">RockFloor.wrl</a>"
+"<a href="http://x3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/RockFloor.wrl">http://x3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/RockFloor.wrl</a>"
+"<a href="RockFloor.x3d">RockFloor.x3d</a>"
+"<a href="http://x3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/RockFloor.x3d">http://x3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/RockFloor.x3d</a>"
+'/&gt;
+</div>&lt;/<span class="element">Transform</span>&gt;
+<br /><a name="K2_LOCALE"> </a> 
+&lt;<span class="element">Transform</span>&#160;<span class="attribute">DEF</span>='<span class="idName">K2_LOCALE</span>'&#160;<span class="attribute">translation</span>='<span class="value">-4.0 0.0 1.0</span>'&gt;
+<div class="indent">
+                     <a name="K2_MIDWATER"> </a> 
+&lt;!-- <span class="idName">K2_MIDWATER</span> <i>ROUTE</i>:&#160;
+[<a href="#ROUTE_2"><i>from</i>&#160;<span class="idName">RIGHT_DEEP_WAVE</span>.<span class="attribute">value_changed</span>&#160;<i>to</i>&#160;<span class="attribute">set_translation</span>
+                     </a>]
+ --&gt;<br />
+&lt;<span class="element">Transform</span>&#160;<span class="attribute">DEF</span>='<span class="idName">K2_MIDWATER</span>'&#160;<span class="attribute">scale</span>='<span class="value">0.2 0.2 0.2</span>'&#160;<span class="attribute">translation</span>='<span class="value">-1.0 -4.0 -4.0</span>'&gt;
+<div class="indent">
+                        <a name="LoadSardine"> </a> 
+&lt;<span class="element">Inline</span>&#160;<span class="attribute">DEF</span>='<span class="idName">LoadSardine</span>'
+<br />
+&#160;&#160;<span class="attribute">url</span>='
+"<a href="SardineSchool.wrz">SardineSchool.wrz</a>"
+"<a href="SardineSchool/SardineSchool.wrz">SardineSchool/SardineSchool.wrz</a>"
+"<a href="SardineSchool.wrl">SardineSchool.wrl</a>"
+"<a href="SardineSchool/SardineSchool.wrl">SardineSchool/SardineSchool.wrl</a>"
+"<a href="http://x3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/SardineSchool.wrl">http://x3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/SardineSchool.wrl</a>"
+"<a href="SardineSchool.x3d">SardineSchool.x3d</a>"
+"<a href="http://x3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/SardineSchool.x3d">http://x3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/SardineSchool.x3d</a>"
+'/&gt;
+</div>&lt;/<span class="element">Transform</span>&gt;
+<br /><a name="K2_FLOOR"> </a> 
+&lt;<span class="element">Transform</span>&#160;<span class="attribute">DEF</span>='<span class="idName">K2_FLOOR</span>'&#160;<span class="attribute">rotation</span>='<span class="value">0.0 1.0 0.0 0.44</span>'&#160;<span class="attribute">scale</span>='<span class="value">0.5 0.9 0.5</span>'&#160;<span class="attribute">translation</span>='<span class="value">-1.9 -8.5 -1.5</span>'&gt;
+<div class="indent">
+                        <a name="KelpExamplesNoBase"> </a> 
+&lt;<span class="element">Inline</span>&#160;<span class="attribute">DEF</span>='<span class="idName">KelpExamplesNoBase</span>'
+<br />
+&#160;&#160;<span class="attribute">url</span>='
+"<a href="KelpExamplesNoBase.wrl">KelpExamplesNoBase.wrl</a>"
+"<a href="http://x3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/KelpExamplesNoBase.wrl">http://x3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/KelpExamplesNoBase.wrl</a>"
+"<a href="KelpExamplesNoBase.x3d">KelpExamplesNoBase.x3d</a>"
+"<a href="http://x3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/KelpExamplesNoBase.x3d">http://x3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/KelpExamplesNoBase.x3d</a>"
+'/&gt;
+</div>&lt;/<span class="element">Transform</span>&gt;
+</div>&lt;/<span class="element">Transform</span>&gt;
+<br /><a name="K4_LOCALE"> </a> 
+&lt;<span class="element">Transform</span>&#160;<span class="attribute">DEF</span>='<span class="idName">K4_LOCALE</span>'&#160;<span class="attribute">translation</span>='<span class="value">-2.5 0.0 -2.5</span>'&gt;
+<div class="indent">
+                     <a name="K4_MIDWATER"> </a> 
+&lt;!-- <span class="idName">K4_MIDWATER</span> <i>ROUTE</i>:&#160;
+[<a href="#ROUTE_3"><i>from</i>&#160;<span class="idName">CENTER_WAVE</span>.<span class="attribute">value_changed</span>&#160;<i>to</i>&#160;<span class="attribute">set_translation</span>
+                     </a>]
+ --&gt;<br />
+&lt;<span class="element">Transform</span>&#160;<span class="attribute">DEF</span>='<span class="idName">K4_MIDWATER</span>'&#160;<span class="attribute">translation</span>='<span class="value">-10.0 -2.0 -2.0</span>'&gt;
+<div class="indent">
+                        <a name="LoadHalfMoon"> </a> 
+&lt;<span class="element">Inline</span>&#160;<span class="attribute">DEF</span>='<span class="idName">LoadHalfMoon</span>'
+<br />
+&#160;&#160;<span class="attribute">url</span>='
+"<a href="HalfMoonGroup.wrl">HalfMoonGroup.wrl</a>"
+"<a href="http://x3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/HalfMoonGroup.wrl">http://x3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/HalfMoonGroup.wrl</a>"
+"<a href="HalfMoonGroup.x3d">HalfMoonGroup.x3d</a>"
+"<a href="http://x3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/HalfMoonGroup.x3d">http://x3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/HalfMoonGroup.x3d</a>"
+'/&gt;
+</div>&lt;/<span class="element">Transform</span>&gt;
+<br /><a name="K4_FLOOR"> </a> 
+&lt;<span class="element">Transform</span>&#160;<span class="attribute">DEF</span>='<span class="idName">K4_FLOOR</span>'&#160;<span class="attribute">rotation</span>='<span class="value">0.0 1.0 0.0 -0.3</span>'&#160;<span class="attribute">scale</span>='<span class="value">0.5 0.8 0.5</span>'&#160;<span class="attribute">translation</span>='<span class="value">-1.5 -7.5 0.5</span>'&gt;
+<div class="indent">
+&lt;<span class="element">Inline</span>&#160;<span class="attribute">USE</span>='<a href="#KelpExamplesNoBase" class="idName">KelpExamplesNoBase</a>'/&gt;
+</div>&lt;/<span class="element">Transform</span>&gt;
+</div>&lt;/<span class="element">Transform</span>&gt;
+<br /><a name="K7_LOCALE"> </a> 
+&lt;<span class="element">Transform</span>&#160;<span class="attribute">DEF</span>='<span class="idName">K7_LOCALE</span>'&#160;<span class="attribute">translation</span>='<span class="value">2.0 0.0 -2.5</span>'&gt;
+<div class="indent">
+                     <a name="K7_MIDWATER"> </a> 
+&lt;!-- <span class="idName">K7_MIDWATER</span> <i>ROUTE</i>:&#160;
+[<a href="#ROUTE_1"><i>from</i>&#160;<span class="idName">CENTER_WAVE</span>.<span class="attribute">value_changed</span>&#160;<i>to</i>&#160;<span class="attribute">set_translation</span>
+                     </a>]
+ --&gt;<br />
+&lt;<span class="element">Transform</span>&#160;<span class="attribute">DEF</span>='<span class="idName">K7_MIDWATER</span>'&#160;<span class="attribute">scale</span>='<span class="value">0.25 0.25 0.25</span>'&#160;<span class="attribute">translation</span>='<span class="value">2.0 -4.0 0.0</span>'&gt;
+<div class="indent">
+                        <a name="LoadRubberLip"> </a> 
+&lt;<span class="element">Inline</span>&#160;<span class="attribute">DEF</span>='<span class="idName">LoadRubberLip</span>'
+<br />
+&#160;&#160;<span class="attribute">url</span>='
+"<a href="RubberLipGroup.wrl">RubberLipGroup.wrl</a>"
+"<a href="http://x3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/RubberLipGroup.wrl">http://x3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/RubberLipGroup.wrl</a>"
+"<a href="RubberLipGroup.x3d">RubberLipGroup.x3d</a>"
+"<a href="http://x3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/RubberLipGroup.x3d">http://x3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/RubberLipGroup.x3d</a>"
+'/&gt;
+</div>&lt;/<span class="element">Transform</span>&gt;
+<br /><a name="K7_FLOOR"> </a> 
+&lt;<span class="element">Transform</span>&#160;<span class="attribute">DEF</span>='<span class="idName">K7_FLOOR</span>'&#160;<span class="attribute">scale</span>='<span class="value">0.5 0.85 0.5</span>'&#160;<span class="attribute">translation</span>='<span class="value">0.0 -7.75 0.0</span>'&gt;
+<div class="indent">
+&lt;<span class="element">Inline</span>&#160;<span class="attribute">USE</span>='<a href="#KelpExamplesNoBase" class="idName">KelpExamplesNoBase</a>'/&gt;
+</div>&lt;/<span class="element">Transform</span>&gt;
+</div>&lt;/<span class="element">Transform</span>&gt;
+<br /><a name="K10_LOCALE"> </a> 
+&lt;<span class="element">Transform</span>&#160;<span class="attribute">DEF</span>='<span class="idName">K10_LOCALE</span>'&#160;<span class="attribute">translation</span>='<span class="value">7.0 0.0 2.0</span>'&gt;
+<div class="indent">
+                     <a name="K10_DEEP"> </a> 
+&lt;!-- <span class="idName">K10_DEEP</span> <i>ROUTE</i>:&#160;
+[<a href="#ROUTE_4"><i>from</i>&#160;<span class="idName">LEFT_DEEP_WAVE</span>.<span class="attribute">value_changed</span>&#160;<i>to</i>&#160;<span class="attribute">set_translation</span>
+                     </a>]
+ --&gt;<br />
+&lt;<span class="element">Transform</span>&#160;<span class="attribute">DEF</span>='<span class="idName">K10_DEEP</span>'&#160;<span class="attribute">translation</span>='<span class="value">0.0 -5.0 0.0</span>'&gt;
+<div class="indent">
+                        <a name="LoadStripedPerch"> </a> 
+&lt;<span class="element">Inline</span>&#160;<span class="attribute">DEF</span>='<span class="idName">LoadStripedPerch</span>'
+<br />
+&#160;&#160;<span class="attribute">url</span>='
+"<a href="StripedSurfPerch.wrl">StripedSurfPerch.wrl</a>"
+"<a href="http://x3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/StripedSurfPerch.wrl">http://x3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/StripedSurfPerch.wrl</a>"
+"<a href="StripedSurfPerch.x3d">StripedSurfPerch.x3d</a>"
+"<a href="http://x3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/StripedSurfPerch.x3d">http://x3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/StripedSurfPerch.x3d</a>"
+'/&gt;
+</div>&lt;/<span class="element">Transform</span>&gt;
+<br /><a name="K10_FLOOR"> </a> 
+&lt;<span class="element">Transform</span>&#160;<span class="attribute">DEF</span>='<span class="idName">K10_FLOOR</span>'&#160;<span class="attribute">rotation</span>='<span class="value">0.0 1.0 0.0 0.16</span>'&#160;<span class="attribute">scale</span>='<span class="value">0.5 0.75 0.5</span>'&#160;<span class="attribute">translation</span>='<span class="value">-1.0 -7.0 -1.0</span>'&gt;
+<div class="indent">
+&lt;<span class="element">Inline</span>&#160;<span class="attribute">USE</span>='<a href="#KelpExamplesNoBase" class="idName">KelpExamplesNoBase</a>'/&gt;
+</div>&lt;/<span class="element">Transform</span>&gt;
+</div>&lt;/<span class="element">Transform</span>&gt;
+<br /><a name="K11_LOCALE"> </a> 
+&lt;<span class="element">Transform</span>&#160;<span class="attribute">DEF</span>='<span class="idName">K11_LOCALE</span>'&#160;<span class="attribute">translation</span>='<span class="value">8.0 0.0 -2.0</span>'&gt;
+<div class="indent">
+                     <a name="K11_MIDWATER"> </a> 
+&lt;<span class="element">Transform</span>&#160;<span class="attribute">DEF</span>='<span class="idName">K11_MIDWATER</span>'&#160;<span class="attribute">rotation</span>='<span class="value">0.0 1.0 0.0 0.3</span>'&#160;<span class="attribute">translation</span>='<span class="value">2.19 -7.0 0.15</span>'&gt;
+<div class="indent">
+                        <a name="LoadSeaStar"> </a> 
+&lt;<span class="element">Inline</span>&#160;<span class="attribute">DEF</span>='<span class="idName">LoadSeaStar</span>'
+<br />
+&#160;&#160;<span class="attribute">url</span>='
+"<a href="SeaStarSimple.wrl">SeaStarSimple.wrl</a>"
+"<a href="http://x3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/SeaStarSimple.wrl">http://x3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/SeaStarSimple.wrl</a>"
+"<a href="SeaStarSimple.x3d">SeaStarSimple.x3d</a>"
+"<a href="http://x3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/SeaStarSimple.x3d">http://x3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/SeaStarSimple.x3d</a>"
+'/&gt;
+</div>&lt;/<span class="element">Transform</span>&gt;
+<br /><a name="K11_DEEP"> </a> 
+&lt;!-- <span class="idName">K11_DEEP</span> <i>ROUTE</i>:&#160;
+[<a href="#ROUTE_5"><i>from</i>&#160;<span class="idName">LEFT_DEEP_WAVE</span>.<span class="attribute">value_changed</span>&#160;<i>to</i>&#160;<span class="attribute">set_translation</span>
+                     </a>]
+ --&gt;<br />
+&lt;<span class="element">Transform</span>&#160;<span class="attribute">DEF</span>='<span class="idName">K11_DEEP</span>'&#160;<span class="attribute">rotation</span>='<span class="value">0.0 1.0 0.0 0.9</span>'&#160;<span class="attribute">translation</span>='<span class="value">1.0 -5.0 0.0</span>'&gt;
+<div class="indent">
+                        <a name="LoadBlackPerch"> </a> 
+&lt;<span class="element">Inline</span>&#160;<span class="attribute">DEF</span>='<span class="idName">LoadBlackPerch</span>'
+<br />
+&#160;&#160;<span class="attribute">url</span>='
+"<a href="BlackSurfPerch.wrl">BlackSurfPerch.wrl</a>"
+"<a href="http://x3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/BlackSurfPerch.wrl">http://x3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/BlackSurfPerch.wrl</a>"
+"<a href="BlackSurfPerch.x3d">BlackSurfPerch.x3d</a>"
+"<a href="http://x3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/BlackSurfPerch.x3d">http://x3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/BlackSurfPerch.x3d</a>"
+'/&gt;
+</div>&lt;/<span class="element">Transform</span>&gt;
+<br /><a name="K11_FLOOR"> </a> 
+&lt;<span class="element">Transform</span>&#160;<span class="attribute">DEF</span>='<span class="idName">K11_FLOOR</span>'&#160;<span class="attribute">rotation</span>='<span class="value">0.0 1.0 0.0 0.3</span>'&#160;<span class="attribute">scale</span>='<span class="value">0.5 0.75 0.5</span>'&#160;<span class="attribute">translation</span>='<span class="value">-0.3 -7.0 0.0</span>'&gt;
+<div class="indent">
+&lt;<span class="element">Inline</span>&#160;<span class="attribute">USE</span>='<a href="#KelpExamplesNoBase" class="idName">KelpExamplesNoBase</a>'/&gt;
+</div>&lt;/<span class="element">Transform</span>&gt;
+<br />
+&lt;<span class="element">Transform</span>&#160;<span class="attribute">translation</span>='<span class="value">1.3 -5.0 3.0</span>'&gt;
+<div class="indent">
+                        <a name="LoadSeaStar2"> </a> 
+&lt;<span class="element">Inline</span>&#160;<span class="attribute">DEF</span>='<span class="idName">LoadSeaStar2</span>'
+<br />
+&#160;&#160;<span class="attribute">url</span>='
+"<a href="SeaStarGroup.wrl">SeaStarGroup.wrl</a>"
+"<a href="http://x3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/SeaStarGroup.wrl">http://x3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/SeaStarGroup.wrl</a>"
+"<a href="SeaStarGroup.x3d">SeaStarGroup.x3d</a>"
+"<a href="http://x3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/SeaStarGroup.x3d">http://x3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/SeaStarGroup.x3d</a>"
+'/&gt;
+</div>&lt;/<span class="element">Transform</span>&gt;
+</div>&lt;/<span class="element">Transform</span>&gt;
+<br /><a name="R2_LOCALE"> </a> 
+&lt;<span class="element">Transform</span>&#160;<span class="attribute">DEF</span>='<span class="idName">R2_LOCALE</span>'&#160;<span class="attribute">translation</span>='<span class="value">-1.0 0.0 -1.0</span>'&gt;
+<div class="indent">
+                     <a name="R2_MIDWATER"> </a> 
+&lt;!-- <span class="idName">R2_MIDWATER</span> <i>ROUTE</i>:&#160;
+[<a href="#ROUTE_6"><i>from</i>&#160;<span class="idName">RIGHT_SHALLOW_WAVE</span>.<span class="attribute">value_changed</span>&#160;<i>to</i>&#160;<span class="attribute">set_translation</span>
+                     </a>]
+ --&gt;<br />
+&lt;<span class="element">Transform</span>&#160;<span class="attribute">DEF</span>='<span class="idName">R2_MIDWATER</span>'&#160;<span class="attribute">translation</span>='<span class="value">-1.0 -6.0 -2.0</span>'&gt;
+<div class="indent">
+                        <a name="LoadRockFish"> </a> 
+&lt;<span class="element">Inline</span>&#160;<span class="attribute">DEF</span>='<span class="idName">LoadRockFish</span>'
+<br />
+&#160;&#160;<span class="attribute">url</span>='
+"<a href="BlueRockFish.wrl">BlueRockFish.wrl</a>"
+"<a href="http://x3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/BlueRockFish.wrl">http://x3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/BlueRockFish.wrl</a>"
+"<a href="BlueRockFish.x3d">BlueRockFish.x3d</a>"
+"<a href="http://x3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/BlueRockFish.x3d">http://x3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/BlueRockFish.x3d</a>"
+'/&gt;
+</div>&lt;/<span class="element">Transform</span>&gt;
+<br /><a name="R2_DEEP"> </a> 
+&lt;!-- <span class="idName">R2_DEEP</span> <i>ROUTE</i>:&#160;
+[<a href="#ROUTE_7"><i>from</i>&#160;<span class="idName">RIGHT_DEEP_WAVE</span>.<span class="attribute">value_changed</span>&#160;<i>to</i>&#160;<span class="attribute">set_translation</span>
+                     </a>]
+ --&gt;<br />
+&lt;<span class="element">Transform</span>&#160;<span class="attribute">DEF</span>='<span class="idName">R2_DEEP</span>'&#160;<span class="attribute">translation</span>='<span class="value">1.0 -6.5 -1.0</span>'&gt;
+<div class="indent">
+                        <a name="LoadPerch"> </a> 
+&lt;<span class="element">Inline</span>&#160;<span class="attribute">DEF</span>='<span class="idName">LoadPerch</span>'
+<br />
+&#160;&#160;<span class="attribute">url</span>='
+"<a href="KelpSurfPerch.wrl">KelpSurfPerch.wrl</a>"
+"<a href="http://x3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/KelpSurfPerch.wrl">http://x3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/KelpSurfPerch.wrl</a>"
+"<a href="KelpSurfPerch.x3d">KelpSurfPerch.x3d</a>"
+"<a href="http://x3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/KelpSurfPerch.x3d">http://x3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/KelpSurfPerch.x3d</a>"
+'/&gt;
+</div>&lt;/<span class="element">Transform</span>&gt;
+</div>&lt;/<span class="element">Transform</span>&gt;
+<br /><a name="R3_LOCALE"> </a> 
+&lt;<span class="element">Transform</span>&#160;<span class="attribute">DEF</span>='<span class="idName">R3_LOCALE</span>'&#160;<span class="attribute">translation</span>='<span class="value">3.0 0.0 -4.0</span>'&gt;
+<div class="indent">
+                     <a name="R3_MIDWATER"> </a> 
+&lt;!-- <span class="idName">R3_MIDWATER</span> <i>ROUTE</i>:&#160;
+[<a href="#ROUTE_8"><i>from</i>&#160;<span class="idName">CENTER_WAVE</span>.<span class="attribute">value_changed</span>&#160;<i>to</i>&#160;<span class="attribute">set_translation</span>
+                     </a>]
+ --&gt;<br />
+&lt;<span class="element">Transform</span>&#160;<span class="attribute">DEF</span>='<span class="idName">R3_MIDWATER</span>'&#160;<span class="attribute">translation</span>='<span class="value">0.0 -6.0 0.0</span>'&gt;
+<div class="indent">
+                        <a name="LoadGaribaldi"> </a> 
+&lt;<span class="element">Inline</span>&#160;<span class="attribute">DEF</span>='<span class="idName">LoadGaribaldi</span>'
+<br />
+&#160;&#160;<span class="attribute">url</span>='
+"<a href="Garibaldi.wrl">Garibaldi.wrl</a>"
+"<a href="http://x3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/Garibaldi.wrl">http://x3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/Garibaldi.wrl</a>"
+"<a href="Garibaldi.x3d">Garibaldi.x3d</a>"
+"<a href="http://x3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/Garibaldi.x3d">http://x3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/Garibaldi.x3d</a>"
+'/&gt;
+</div>&lt;/<span class="element">Transform</span>&gt;
+</div>&lt;/<span class="element">Transform</span>&gt;
+<br /><a name="R5_LOCALE"> </a> 
+&lt;<span class="element">Transform</span>&#160;<span class="attribute">DEF</span>='<span class="idName">R5_LOCALE</span>'&#160;<span class="attribute">translation</span>='<span class="value">8.0 0.0 -2.0</span>'&gt;
+<div class="indent">
+                     <a name="R5_SHALLOW"> </a> 
+&lt;!-- <span class="idName">R5_SHALLOW</span> <i>ROUTE</i>:&#160;
+[<a href="#ROUTE_9"><i>from</i>&#160;<span class="idName">RIGHT_SHALLOW_WAVE</span>.<span class="attribute">value_changed</span>&#160;<i>to</i>&#160;<span class="attribute">set_translation</span>
+                     </a>]
+ --&gt;<br />
+&lt;<span class="element">Transform</span>&#160;<span class="attribute">DEF</span>='<span class="idName">R5_SHALLOW</span>'&#160;<span class="attribute">translation</span>='<span class="value">-2.0 -2.0 0.0</span>'&gt;
+<div class="indent">
+                        <a name="LoadBass"> </a> 
+&lt;<span class="element">Inline</span>&#160;<span class="attribute">DEF</span>='<span class="idName">LoadBass</span>'
+<br />
+&#160;&#160;<span class="attribute">url</span>='
+"<a href="KelpBass.wrl">KelpBass.wrl</a>"
+"<a href="http://x3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/KelpBass.wrl">http://x3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/KelpBass.wrl</a>"
+"<a href="KelpBass.x3d">KelpBass.x3d</a>"
+"<a href="http://x3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/KelpBass.x3d">http://x3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/KelpBass.x3d</a>"
+'/&gt;
+</div>&lt;/<span class="element">Transform</span>&gt;
+</div>&lt;/<span class="element">Transform</span>&gt;
+<br /><a name="WAVE_CLOCK"> </a> 
+&lt;!-- <span class="idName">WAVE_CLOCK</span> <i>ROUTE</i>:&#160;
+[<a href="#ROUTE_0"><i>from</i>&#160;<span class="attribute">fraction_changed</span>&#160;<i>to</i>&#160;<span class="idName">CENTER_WAVE</span>.<span class="attribute">set_fraction</span>
+                  </a>]
+ --&gt;<br />
+&lt;<span class="element">TimeSensor</span>&#160;<span class="attribute">DEF</span>='<span class="idName">WAVE_CLOCK</span>'&#160;<span class="attribute">cycleInterval</span>='<span class="value">5.5</span>'&#160;<span class="attribute">enabled</span>='<span class="value">false</span>'&#160;<span class="attribute">loop</span>='<span class="value">true</span>'/&gt;
+<br /><a name="LEFT_SHALLOW_WAVE"> </a> 
+&lt;<span class="element">PositionInterpolator</span>&#160;<span class="attribute">DEF</span>='<span class="idName">LEFT_SHALLOW_WAVE</span>'&#160;<span class="attribute">key</span>='<span class="value">0.0 0.125 0.25 0.375 0.5 0.625 0.75 0.875 1.0</span>'&#160;<span class="attribute">keyValue</span>='<span class="value">0.0 0.0 0.0 0.056 -0.085 0.0 0.08 -0.12 0.0 0.056 -0.085 0.0 0.0 0.0 0.0 -0.056 0.085 0.0 -0.08 0.12 0.0 -0.056 0.085 0.0 0.0 0.0 0.0</span>'/&gt;
+<br /><a name="LEFT_DEEP_WAVE"> </a> 
+&lt;!-- <span class="idName">LEFT_DEEP_WAVE</span> <i>ROUTEs</i>:&#160;
+[<a href="#ROUTE_4"><i>from</i>&#160;<span class="attribute">value_changed</span>&#160;<i>to</i>&#160;<span class="idName">K10_DEEP</span>.<span class="attribute">set_translation</span>
+                  </a>]
+[<a href="#ROUTE_5"><i>from</i>&#160;<span class="attribute">value_changed</span>&#160;<i>to</i>&#160;<span class="idName">K11_DEEP</span>.<span class="attribute">set_translation</span>
+                  </a>]
+ --&gt;<br />
+&lt;<span class="element">PositionInterpolator</span>&#160;<span class="attribute">DEF</span>='<span class="idName">LEFT_DEEP_WAVE</span>'&#160;<span class="attribute">key</span>='<span class="value">0.0 0.125 0.25 0.375 0.5 0.625 0.75 0.875 1.0</span>'&#160;<span class="attribute">keyValue</span>='<span class="value">0.0 0.0 0.0 0.035 -0.035 0.0 0.05 -0.05 0.0 0.035 -0.035 0.0 0.0 0.0 0.0 -0.035 0.035 0.0 -0.05 0.05 0.0 -0.035 0.035 0.0 0.0 0.0 0.0</span>'/&gt;
+<br /><a name="CENTER_WAVE"> </a> 
+&lt;!-- <span class="idName">CENTER_WAVE</span> <i>ROUTEs</i>:&#160;
+[<a href="#ROUTE_0"><i>from</i>&#160;<span class="idName">WAVE_CLOCK</span>.<span class="attribute">fraction_changed</span>&#160;<i>to</i>&#160;<span class="attribute">set_fraction</span>
+                  </a>]
+[<a href="#ROUTE_1"><i>from</i>&#160;<span class="attribute">value_changed</span>&#160;<i>to</i>&#160;<span class="idName">K7_MIDWATER</span>.<span class="attribute">set_translation</span>
+                  </a>]
+[<a href="#ROUTE_3"><i>from</i>&#160;<span class="attribute">value_changed</span>&#160;<i>to</i>&#160;<span class="idName">K4_MIDWATER</span>.<span class="attribute">set_translation</span>
+                  </a>]
+[<a href="#ROUTE_8"><i>from</i>&#160;<span class="attribute">value_changed</span>&#160;<i>to</i>&#160;<span class="idName">R3_MIDWATER</span>.<span class="attribute">set_translation</span>
+                  </a>]
+ --&gt;<br />
+&lt;<span class="element">PositionInterpolator</span>&#160;<span class="attribute">DEF</span>='<span class="idName">CENTER_WAVE</span>'&#160;<span class="attribute">key</span>='<span class="value">0.0 0.125 0.25 0.375 0.5 0.625 0.75 0.875 1.0</span>'&#160;<span class="attribute">keyValue</span>='<span class="value">0.0 0.0 0.0 0.106 0.0 0.0 0.15 0.0 0.0 0.106 0.0 0.0 0.0 0.0 0.0 -0.106 0.0 0.0 -0.15 0.0 0.0 -0.106 0.0 0.0 0.0 0.0 0.0</span>'/&gt;
+<br /><a name="RIGHT_SHALLOW_WAVE"> </a> 
+&lt;!-- <span class="idName">RIGHT_SHALLOW_WAVE</span> <i>ROUTEs</i>:&#160;
+[<a href="#ROUTE_6"><i>from</i>&#160;<span class="attribute">value_changed</span>&#160;<i>to</i>&#160;<span class="idName">R2_MIDWATER</span>.<span class="attribute">set_translation</span>
+                  </a>]
+[<a href="#ROUTE_9"><i>from</i>&#160;<span class="attribute">value_changed</span>&#160;<i>to</i>&#160;<span class="idName">R5_SHALLOW</span>.<span class="attribute">set_translation</span>
+                  </a>]
+ --&gt;<br />
+&lt;<span class="element">PositionInterpolator</span>&#160;<span class="attribute">DEF</span>='<span class="idName">RIGHT_SHALLOW_WAVE</span>'&#160;<span class="attribute">key</span>='<span class="value">0.0 0.125 0.25 0.375 0.5 0.625 0.75 0.875 1.0</span>'&#160;<span class="attribute">keyValue</span>='<span class="value">0.0 0.0 0.0 0.056 0.085 0.0 0.08 0.12 0.0 0.056 0.085 0.0 0.0 0.0 0.0 -0.056 -0.085 0.0 -0.08 -0.12 0.0 -0.056 -0.085 0.0 0.0 0.0 0.0</span>'/&gt;
+<br /><a name="RIGHT_DEEP_WAVE"> </a> 
+&lt;!-- <span class="idName">RIGHT_DEEP_WAVE</span> <i>ROUTEs</i>:&#160;
+[<a href="#ROUTE_2"><i>from</i>&#160;<span class="attribute">value_changed</span>&#160;<i>to</i>&#160;<span class="idName">K2_MIDWATER</span>.<span class="attribute">set_translation</span>
+                  </a>]
+[<a href="#ROUTE_7"><i>from</i>&#160;<span class="attribute">value_changed</span>&#160;<i>to</i>&#160;<span class="idName">R2_DEEP</span>.<span class="attribute">set_translation</span>
+                  </a>]
+ --&gt;<br />
+&lt;<span class="element">PositionInterpolator</span>&#160;<span class="attribute">DEF</span>='<span class="idName">RIGHT_DEEP_WAVE</span>'&#160;<span class="attribute">key</span>='<span class="value">0.0 0.125 0.25 0.375 0.5 0.625 0.75 0.875 1.0</span>'&#160;<span class="attribute">keyValue</span>='<span class="value">0.0 0.0 0.0 0.035 0.035 0.0 0.05 0.05 0.0 0.035 0.035 0.0 0.0 0.0 0.0 -0.035 -0.035 0.0 -0.05 -0.05 0.0 -0.035 -0.035 0.0 0.0 0.0 0.0</span>'/&gt;
+</div>&lt;/<span class="element">Collision</span>&gt;
+</div>&lt;/<span class="element">Group</span>&gt;
+<br /><a name="ROUTE_0"> </a> 
+&lt;<span class="route">ROUTE</span>&#160;<span class="attribute">fromNode</span>='<a href="#WAVE_CLOCK" class="idName">WAVE_CLOCK</a>'&#160;<span class="attribute">fromField</span>='<span class="value">fraction_changed</span>'&#160;<span class="attribute">toNode</span>='<a href="#CENTER_WAVE" class="idName">CENTER_WAVE</a>'&#160;<span class="attribute">toField</span>='<span class="value">set_fraction</span>'/&gt;
+<br /><a name="ROUTE_1"> </a> 
+&lt;<span class="route">ROUTE</span>&#160;<span class="attribute">fromNode</span>='<a href="#CENTER_WAVE" class="idName">CENTER_WAVE</a>'&#160;<span class="attribute">fromField</span>='<span class="value">value_changed</span>'&#160;<span class="attribute">toNode</span>='<a href="#K7_MIDWATER" class="idName">K7_MIDWATER</a>'&#160;<span class="attribute">toField</span>='<span class="value">set_translation</span>'/&gt;
+<br /><a name="ROUTE_2"> </a> 
+&lt;<span class="route">ROUTE</span>&#160;<span class="attribute">fromNode</span>='<a href="#RIGHT_DEEP_WAVE" class="idName">RIGHT_DEEP_WAVE</a>'&#160;<span class="attribute">fromField</span>='<span class="value">value_changed</span>'&#160;<span class="attribute">toNode</span>='<a href="#K2_MIDWATER" class="idName">K2_MIDWATER</a>'&#160;<span class="attribute">toField</span>='<span class="value">set_translation</span>'/&gt;
+<br /><a name="ROUTE_3"> </a> 
+&lt;<span class="route">ROUTE</span>&#160;<span class="attribute">fromNode</span>='<a href="#CENTER_WAVE" class="idName">CENTER_WAVE</a>'&#160;<span class="attribute">fromField</span>='<span class="value">value_changed</span>'&#160;<span class="attribute">toNode</span>='<a href="#K4_MIDWATER" class="idName">K4_MIDWATER</a>'&#160;<span class="attribute">toField</span>='<span class="value">set_translation</span>'/&gt;
+<br /><a name="ROUTE_4"> </a> 
+&lt;<span class="route">ROUTE</span>&#160;<span class="attribute">fromNode</span>='<a href="#LEFT_DEEP_WAVE" class="idName">LEFT_DEEP_WAVE</a>'&#160;<span class="attribute">fromField</span>='<span class="value">value_changed</span>'&#160;<span class="attribute">toNode</span>='<a href="#K10_DEEP" class="idName">K10_DEEP</a>'&#160;<span class="attribute">toField</span>='<span class="value">set_translation</span>'/&gt;
+<br /><a name="ROUTE_5"> </a> 
+&lt;<span class="route">ROUTE</span>&#160;<span class="attribute">fromNode</span>='<a href="#LEFT_DEEP_WAVE" class="idName">LEFT_DEEP_WAVE</a>'&#160;<span class="attribute">fromField</span>='<span class="value">value_changed</span>'&#160;<span class="attribute">toNode</span>='<a href="#K11_DEEP" class="idName">K11_DEEP</a>'&#160;<span class="attribute">toField</span>='<span class="value">set_translation</span>'/&gt;
+<br /><a name="ROUTE_6"> </a> 
+&lt;<span class="route">ROUTE</span>&#160;<span class="attribute">fromNode</span>='<a href="#RIGHT_SHALLOW_WAVE" class="idName">RIGHT_SHALLOW_WAVE</a>'&#160;<span class="attribute">fromField</span>='<span class="value">value_changed</span>'&#160;<span class="attribute">toNode</span>='<a href="#R2_MIDWATER" class="idName">R2_MIDWATER</a>'&#160;<span class="attribute">toField</span>='<span class="value">set_translation</span>'/&gt;
+<br /><a name="ROUTE_7"> </a> 
+&lt;<span class="route">ROUTE</span>&#160;<span class="attribute">fromNode</span>='<a href="#RIGHT_DEEP_WAVE" class="idName">RIGHT_DEEP_WAVE</a>'&#160;<span class="attribute">fromField</span>='<span class="value">value_changed</span>'&#160;<span class="attribute">toNode</span>='<a href="#R2_DEEP" class="idName">R2_DEEP</a>'&#160;<span class="attribute">toField</span>='<span class="value">set_translation</span>'/&gt;
+<br /><a name="ROUTE_8"> </a> 
+&lt;<span class="route">ROUTE</span>&#160;<span class="attribute">fromNode</span>='<a href="#CENTER_WAVE" class="idName">CENTER_WAVE</a>'&#160;<span class="attribute">fromField</span>='<span class="value">value_changed</span>'&#160;<span class="attribute">toNode</span>='<a href="#R3_MIDWATER" class="idName">R3_MIDWATER</a>'&#160;<span class="attribute">toField</span>='<span class="value">set_translation</span>'/&gt;
+<br /><a name="ROUTE_9"> </a> 
+&lt;<span class="route">ROUTE</span>&#160;<span class="attribute">fromNode</span>='<a href="#RIGHT_SHALLOW_WAVE" class="idName">RIGHT_SHALLOW_WAVE</a>'&#160;<span class="attribute">fromField</span>='<span class="value">value_changed</span>'&#160;<span class="attribute">toNode</span>='<a href="#R5_SHALLOW" class="idName">R5_SHALLOW</a>'&#160;<span class="attribute">toField</span>='<span class="value">set_translation</span>'/&gt;
+<br /><a name="MasterClock"> </a> 
+&lt;<span class="element">TimeSensor</span>&#160;<span class="attribute">DEF</span>='<span class="idName">MasterClock</span>'&#160;<span class="attribute">loop</span>='<span class="value">true</span>'/&gt;
+<br /><a name="Nancy"> </a> 
+&lt;<span class="element">Group</span>&#160;<span class="attribute">DEF</span>='<span class="idName">Nancy</span>'&gt;
+<div class="indent">&lt;!-- Scale used on Nancy underwater to approximate the defraction magnification of the plexiglass window. --&gt;
+<br /><a name="NancyTransform"> </a> 
+&lt;!-- <span class="idName">NancyTransform</span> <i>ROUTEs</i>:&#160;
+[<a href="#ROUTE_11"><i>from</i>&#160;<span class="idName">NancyInterpolator</span>.<span class="attribute">position_changed</span>&#160;<i>to</i>&#160;<span class="attribute">set_translation</span>
+               </a>]
+[<a href="#ROUTE_12"><i>from</i>&#160;<span class="idName">NancyInterpolator</span>.<span class="attribute">orientation_changed</span>&#160;<i>to</i>&#160;<span class="attribute">set_rotation</span>
+               </a>]
+ --&gt;<br />
+&lt;<span class="element">Transform</span>&#160;<span class="attribute">DEF</span>='<span class="idName">NancyTransform</span>'&#160;<span class="attribute">rotation</span>='<span class="value">-0.45 0.77 -0.45 1.82</span>'&#160;<span class="attribute">scale</span>='<span class="value">1.3 1.3 1.3</span>'&#160;<span class="attribute">translation</span>='<span class="value">3 -6.5 -2</span>'&gt;
+<div class="indent">
+                  <a name="LoadNancy"> </a> 
+&lt;<span class="element">Inline</span>&#160;<span class="attribute">DEF</span>='<span class="idName">LoadNancy</span>'
+<br />
+&#160;&#160;<span class="attribute">url</span>='
+"<a href="../HumanoidAnimation/NancyDiving.wrl">../HumanoidAnimation/NancyDiving.wrl</a>"
+"<a href="http://www.web3d.org/x3d/content/examples/Basic/HumanoidAnimation/NancyDiving.wrl">http://www.web3d.org/x3d/content/examples/Basic/HumanoidAnimation/NancyDiving.wrl</a>"
+"<a href="../HumanoidAnimation/NancyDiving.x3d">../HumanoidAnimation/NancyDiving.x3d</a>"
+"<a href="http://www.web3d.org/x3d/content/examples/Basic/HumanoidAnimation/NancyDiving.x3d">http://www.web3d.org/x3d/content/examples/Basic/HumanoidAnimation/NancyDiving.x3d</a>"
+'/&gt;
+</div>&lt;/<span class="element">Transform</span>&gt;
+<br /><a name="JEFFSCLOCK"> </a> 
+&lt;!-- <span class="idName">JEFFSCLOCK</span> <i>ROUTE</i>:&#160;
+[<a href="#ROUTE_10"><i>from</i>&#160;<span class="attribute">fraction_changed</span>&#160;<i>to</i>&#160;<span class="idName">NancyInterpolator</span>.<span class="attribute">set_fraction</span>
+               </a>]
+ --&gt;<br />
+&lt;<span class="element">TimeSensor</span>&#160;<span class="attribute">DEF</span>='<span class="idName">JEFFSCLOCK</span>'&#160;<span class="attribute">cycleInterval</span>='<span class="value">100</span>'&#160;<span class="attribute">loop</span>='<span class="value">true</span>'/&gt;
+<br /><a name="NancyInterpolator"> </a> 
+&lt;!-- <span class="idName">NancyInterpolator</span> <i>ROUTEs</i>:&#160;
+[<a href="#ROUTE_10"><i>from</i>&#160;<span class="idName">JEFFSCLOCK</span>.<span class="attribute">fraction_changed</span>&#160;<i>to</i>&#160;<span class="attribute">set_fraction</span>
+               </a>]
+[<a href="#ROUTE_11"><i>from</i>&#160;<span class="attribute">position_changed</span>&#160;<i>to</i>&#160;<span class="idName">NancyTransform</span>.<span class="attribute">set_translation</span>
+               </a>]
+[<a href="#ROUTE_12"><i>from</i>&#160;<span class="attribute">orientation_changed</span>&#160;<i>to</i>&#160;<span class="idName">NancyTransform</span>.<span class="attribute">set_rotation</span>
+               </a>]
+ --&gt;<br />
+&lt;<span class="prototype">ProtoInstance</span>&#160;<span class="attribute">name</span>='<a href="#ExternProtoDeclare_WaypointInterpolator" class="prototype">WaypointInterpolator</a>'&#160;<span class="attribute">DEF</span>='<span class="idName">NancyInterpolator</span>'&#160;<span class="attribute">containerField</span>='<span class="value">children</span>'&gt;
+<div class="indent">
+&lt;<span class="prototype">fieldValue</span>&#160;<span class="attribute">name</span>='<span class="prototype">description</span>'&#160;<span class="attribute">value</span>='<span class="value">Nancy track</span>'/&gt;
+<br />
+&lt;<span class="prototype">fieldValue</span>&#160;<span class="attribute">name</span>='<span class="prototype">waypoints</span>'&#160;<span class="attribute">value</span>='<span class="value">-5.5 -5.7 -.2 -7.7 -2.7 -1.7 6 -3 -3 2 -2 -2 1 -4 -1 -2 -2 -2 -5.5 -5.7 -.2</span>'/&gt;
+<br />
+&lt;<span class="prototype">fieldValue</span>&#160;<span class="attribute">name</span>='<span class="prototype">defaultSpeed</span>'&#160;<span class="attribute">value</span>='<span class="value">0.5</span>'/&gt;
+<br />
+&lt;<span class="prototype">fieldValue</span>&#160;<span class="attribute">name</span>='<span class="prototype">pitchUpDownForVerticalWaypoints</span>'&#160;<span class="attribute">value</span>='<span class="value">true</span>'/&gt;
+<br />
+&lt;<span class="prototype">fieldValue</span>&#160;<span class="attribute">name</span>='<span class="prototype">labelDisplayMode</span>'&#160;<span class="attribute">value</span>='<span class="value">none</span>'/&gt;
+<br />
+&lt;<span class="prototype">fieldValue</span>&#160;<span class="attribute">name</span>='<span class="prototype">lineColor</span>'&#160;<span class="attribute">value</span>='<span class="value">0 0 0</span>'/&gt;
+<br />
+&lt;<span class="prototype">fieldValue</span>&#160;<span class="attribute">name</span>='<span class="prototype">labelColor</span>'&#160;<span class="attribute">value</span>='<span class="value">0 0.8 0.8</span>'/&gt;
+<br />
+&lt;<span class="prototype">fieldValue</span>&#160;<span class="attribute">name</span>='<span class="prototype">labelOffset</span>'&#160;<span class="attribute">value</span>='<span class="value">0 -1.6 0</span>'/&gt;
+<br />
+&lt;<span class="prototype">fieldValue</span>&#160;<span class="attribute">name</span>='<span class="prototype">labelFontSize</span>'&#160;<span class="attribute">value</span>='<span class="value">6</span>'/&gt;
+<br />
+&lt;<span class="prototype">fieldValue</span>&#160;<span class="attribute">name</span>='<span class="prototype">traceEnabled</span>'&#160;<span class="attribute">value</span>='<span class="value">false</span>'/&gt;
+<br />
+&lt;<span class="prototype">fieldValue</span>&#160;<span class="attribute">name</span>='<span class="prototype">transparency</span>'&#160;<span class="attribute">value</span>='<span class="value">1</span>'/&gt;
+<br />
+&lt;<span class="prototype">fieldValue</span>&#160;<span class="attribute">name</span>='<span class="prototype">turningRate</span>'&#160;<span class="attribute">value</span>='<span class="value">18</span>'/&gt;
+<br />&lt;!-- totalDuration is a computed output --&gt;
+</div>&lt;/<span class="prototype">ProtoInstance</span>&gt;
+</div>&lt;/<span class="element">Group</span>&gt;
+<br /><a name="ROUTE_10"> </a> 
+&lt;<span class="route">ROUTE</span>&#160;<span class="attribute">fromNode</span>='<a href="#JEFFSCLOCK" class="idName">JEFFSCLOCK</a>'&#160;<span class="attribute">fromField</span>='<span class="value">fraction_changed</span>'&#160;<span class="attribute">toNode</span>='<a href="#NancyInterpolator" class="idName">NancyInterpolator</a>'&#160;<span class="attribute">toField</span>='<span class="value">set_fraction</span>'/&gt;
+<br /><a name="ROUTE_11"> </a> 
+&lt;<span class="route">ROUTE</span>&#160;<span class="attribute">fromNode</span>='<a href="#NancyInterpolator" class="idName">NancyInterpolator</a>'&#160;<span class="attribute">fromField</span>='<span class="value">position_changed</span>'&#160;<span class="attribute">toNode</span>='<a href="#NancyTransform" class="idName">NancyTransform</a>'&#160;<span class="attribute">toField</span>='<span class="value">set_translation</span>'/&gt;
+<br /><a name="ROUTE_12"> </a> 
+&lt;<span class="route">ROUTE</span>&#160;<span class="attribute">fromNode</span>='<a href="#NancyInterpolator" class="idName">NancyInterpolator</a>'&#160;<span class="attribute">fromField</span>='<span class="value">orientation_changed</span>'&#160;<span class="attribute">toNode</span>='<a href="#NancyTransform" class="idName">NancyTransform</a>'&#160;<span class="attribute">toField</span>='<span class="value">set_rotation</span>'/&gt;
+<br /><a name="LoadTracking"> </a> 
+&lt;!-- <span class="idName">LoadTracking</span> <i>ROUTE</i>:&#160;
+[<a href="#ROUTE_13"><i>from</i>&#160;<span class="attribute">progress</span>&#160;<i>to</i>&#160;<span class="idName">Display</span>.<span class="attribute">progress</span>
+            </a>]
+ --&gt;<br />
+&lt;<span class="element">LoadSensor</span>&#160;<span class="attribute">DEF</span>='<span class="idName">LoadTracking</span>'&#160;<span class="attribute">timeOut</span>='<span class="value">0</span>'&gt;
+<div class="indent">
+&lt;<span class="element">Inline</span>&#160;<span class="attribute">USE</span>='<a href="#LoadIntro" class="idName">LoadIntro</a>'&#160;<span class="attribute">containerField</span>='<span class="value">watchList</span>'/&gt;
+<br />
+&lt;<span class="element">Inline</span>&#160;<span class="attribute">USE</span>='<a href="#LoadLefty" class="idName">LoadLefty</a>'&#160;<span class="attribute">containerField</span>='<span class="value">watchList</span>'/&gt;
+<br />
+&lt;<span class="element">Inline</span>&#160;<span class="attribute">USE</span>='<a href="#LoadLucy" class="idName">LoadLucy</a>'&#160;<span class="attribute">containerField</span>='<span class="value">watchList</span>'/&gt;
+<br />
+&lt;<span class="element">Inline</span>&#160;<span class="attribute">USE</span>='<a href="#LoadTank" class="idName">LoadTank</a>'&#160;<span class="attribute">containerField</span>='<span class="value">watchList</span>'/&gt;
+<br />
+&lt;<span class="element">Inline</span>&#160;<span class="attribute">USE</span>='<a href="#LoadFloor" class="idName">LoadFloor</a>'&#160;<span class="attribute">containerField</span>='<span class="value">watchList</span>'/&gt;
+<br />
+&lt;<span class="element">Inline</span>&#160;<span class="attribute">USE</span>='<a href="#LoadSardine" class="idName">LoadSardine</a>'&#160;<span class="attribute">containerField</span>='<span class="value">watchList</span>'/&gt;
+<br />
+&lt;<span class="element">Inline</span>&#160;<span class="attribute">USE</span>='<a href="#KelpExamplesNoBase" class="idName">KelpExamplesNoBase</a>'&#160;<span class="attribute">containerField</span>='<span class="value">watchList</span>'/&gt;
+<br />
+&lt;<span class="element">Inline</span>&#160;<span class="attribute">USE</span>='<a href="#LoadHalfMoon" class="idName">LoadHalfMoon</a>'&#160;<span class="attribute">containerField</span>='<span class="value">watchList</span>'/&gt;
+<br />
+&lt;<span class="element">Inline</span>&#160;<span class="attribute">USE</span>='<a href="#LoadRubberLip" class="idName">LoadRubberLip</a>'&#160;<span class="attribute">containerField</span>='<span class="value">watchList</span>'/&gt;
+<br />
+&lt;<span class="element">Inline</span>&#160;<span class="attribute">USE</span>='<a href="#LoadStripedPerch" class="idName">LoadStripedPerch</a>'&#160;<span class="attribute">containerField</span>='<span class="value">watchList</span>'/&gt;
+<br />
+&lt;<span class="element">Inline</span>&#160;<span class="attribute">USE</span>='<a href="#LoadSeaStar" class="idName">LoadSeaStar</a>'&#160;<span class="attribute">containerField</span>='<span class="value">watchList</span>'/&gt;
+<br />
+&lt;<span class="element">Inline</span>&#160;<span class="attribute">USE</span>='<a href="#LoadBlackPerch" class="idName">LoadBlackPerch</a>'&#160;<span class="attribute">containerField</span>='<span class="value">watchList</span>'/&gt;
+<br />
+&lt;<span class="element">Inline</span>&#160;<span class="attribute">USE</span>='<a href="#LoadSeaStar2" class="idName">LoadSeaStar2</a>'&#160;<span class="attribute">containerField</span>='<span class="value">watchList</span>'/&gt;
+<br />
+&lt;<span class="element">Inline</span>&#160;<span class="attribute">USE</span>='<a href="#LoadRockFish" class="idName">LoadRockFish</a>'&#160;<span class="attribute">containerField</span>='<span class="value">watchList</span>'/&gt;
+<br />
+&lt;<span class="element">Inline</span>&#160;<span class="attribute">USE</span>='<a href="#LoadPerch" class="idName">LoadPerch</a>'&#160;<span class="attribute">containerField</span>='<span class="value">watchList</span>'/&gt;
+<br />
+&lt;<span class="element">Inline</span>&#160;<span class="attribute">USE</span>='<a href="#LoadGaribaldi" class="idName">LoadGaribaldi</a>'&#160;<span class="attribute">containerField</span>='<span class="value">watchList</span>'/&gt;
+<br />
+&lt;<span class="element">Inline</span>&#160;<span class="attribute">USE</span>='<a href="#LoadBass" class="idName">LoadBass</a>'&#160;<span class="attribute">containerField</span>='<span class="value">watchList</span>'/&gt;
+<br />
+&lt;<span class="element">Inline</span>&#160;<span class="attribute">USE</span>='<a href="#LoadNancy" class="idName">LoadNancy</a>'&#160;<span class="attribute">containerField</span>='<span class="value">watchList</span>'/&gt;
+</div>&lt;/<span class="element">LoadSensor</span>&gt;
+<br /><a name="Display"> </a> 
+&lt;!-- <span class="idName">Display</span> <i>ROUTE</i>:&#160;
+[<a href="#ROUTE_13"><i>from</i>&#160;<span class="idName">LoadTracking</span>.<span class="attribute">progress</span>&#160;<i>to</i>&#160;<span class="attribute">progress</span>
+            </a>]
+ --&gt;<br />
+&lt;<span class="element">Script</span>&#160;<span class="attribute">DEF</span>='<span class="idName">Display</span>'
+<br />
+&#160;&#160;<span class="attribute">url</span>='
+"<a href="LoadSensor-KelpForest.js">LoadSensor-KelpForest.js</a>"
+"<a href="http://x3dGraphics.com/examples/X3dForWebAuthors/Chapter12-EnvironmentSensorSound/LoadSensor-KelpForest.js">http://x3dGraphics.com/examples/X3dForWebAuthors/Chapter12-EnvironmentSensorSound/LoadSensor-KelpForest.js</a>"
+'&gt;
+<div class="indent">
+&lt;<span class="prototype">field</span>&#160;<span class="attribute">name</span>='<span class="prototype">progress</span>'&#160;<span class="attribute">type</span>='<span class="value">SFFloat</span>'&#160;<span class="attribute">accessType</span>='<span class="value">inputOnly</span>'/&gt;
+</div>&lt;/<span class="element">Script</span>&gt;
+<br /><a name="ROUTE_13"> </a> 
+&lt;<span class="route">ROUTE</span>&#160;<span class="attribute">fromNode</span>='<a href="#LoadTracking" class="idName">LoadTracking</a>'&#160;<span class="attribute">fromField</span>='<span class="value">progress</span>'&#160;<span class="attribute">toNode</span>='<a href="#Display" class="idName">Display</a>'&#160;<span class="attribute">toField</span>='<span class="value">progress</span>'/&gt;
+</div>&lt;/<span class="element">Scene</span>&gt;
+</div>&lt;/<span class="element">X3D</span>&gt;
+<br />
+&lt;!--
+<div class="center">
+         <hr width="100%"/>
+         <i>Index for ExternProtoDeclare definitions</i>: 
+<a href="#ExternProtoDeclare_ViewPositionOrientation" class="prototype">ViewPositionOrientation</a>,
+<a href="#ExternProtoDeclare_WaypointInterpolator" class="prototype">WaypointInterpolator</a>
+<br />
+<i>Index for DEF nodes</i>: 
+<a href="#CENTER_WAVE" class="idName">CENTER_WAVE</a>,
+<a href="#Display" class="idName">Display</a>,
+<a href="#JEFFSCLOCK" class="idName">JEFFSCLOCK</a>,
+<a href="#K10_DEEP" class="idName">K10_DEEP</a>,
+<a href="#K10_FLOOR" class="idName">K10_FLOOR</a>,
+<a href="#K10_LOCALE" class="idName">K10_LOCALE</a>,
+<a href="#K11_DEEP" class="idName">K11_DEEP</a>,
+<a href="#K11_FLOOR" class="idName">K11_FLOOR</a>,
+<a href="#K11_LOCALE" class="idName">K11_LOCALE</a>,
+<a href="#K11_MIDWATER" class="idName">K11_MIDWATER</a>,
+<a href="#K2_FLOOR" class="idName">K2_FLOOR</a>,
+<a href="#K2_LOCALE" class="idName">K2_LOCALE</a>,
+<a href="#K2_MIDWATER" class="idName">K2_MIDWATER</a>,
+<a href="#K4_FLOOR" class="idName">K4_FLOOR</a>,
+<a href="#K4_LOCALE" class="idName">K4_LOCALE</a>,
+<a href="#K4_MIDWATER" class="idName">K4_MIDWATER</a>,
+<a href="#K7_FLOOR" class="idName">K7_FLOOR</a>,
+<a href="#K7_LOCALE" class="idName">K7_LOCALE</a>,
+<a href="#K7_MIDWATER" class="idName">K7_MIDWATER</a>,
+<a href="#KelpExamplesNoBase" class="idName">KelpExamplesNoBase</a>,
+<a href="#LEFT_DEEP_WAVE" class="idName">LEFT_DEEP_WAVE</a>,
+<a href="#LEFT_SHALLOW_WAVE" class="idName">LEFT_SHALLOW_WAVE</a>,
+<a href="#LoadBass" class="idName">LoadBass</a>,
+<a href="#LoadBlackPerch" class="idName">LoadBlackPerch</a>,
+<a href="#LoadFloor" class="idName">LoadFloor</a>,
+<a href="#LoadGaribaldi" class="idName">LoadGaribaldi</a>,
+<a href="#LoadHalfMoon" class="idName">LoadHalfMoon</a>,
+<a href="#LoadIntro" class="idName">LoadIntro</a>,
+<a href="#LoadLefty" class="idName">LoadLefty</a>,
+<a href="#LoadLucy" class="idName">LoadLucy</a>,
+<a href="#LoadNancy" class="idName">LoadNancy</a>,
+<a href="#LoadPerch" class="idName">LoadPerch</a>,
+<a href="#LoadRockFish" class="idName">LoadRockFish</a>,
+<a href="#LoadRubberLip" class="idName">LoadRubberLip</a>,
+<a href="#LoadSardine" class="idName">LoadSardine</a>,
+<a href="#LoadSeaStar" class="idName">LoadSeaStar</a>,
+<a href="#LoadSeaStar2" class="idName">LoadSeaStar2</a>,
+<a href="#LoadStripedPerch" class="idName">LoadStripedPerch</a>,
+<a href="#LoadTank" class="idName">LoadTank</a>,
+<a href="#LoadTracking" class="idName">LoadTracking</a>,
+<a href="#MasterClock" class="idName">MasterClock</a>,
+<a href="#Nancy" class="idName">Nancy</a>,
+<a href="#NancyInterpolator" class="idName">NancyInterpolator</a>,
+<a href="#NancyTransform" class="idName">NancyTransform</a>,
+<a href="#R2_DEEP" class="idName">R2_DEEP</a>,
+<a href="#R2_LOCALE" class="idName">R2_LOCALE</a>,
+<a href="#R2_MIDWATER" class="idName">R2_MIDWATER</a>,
+<a href="#R3_LOCALE" class="idName">R3_LOCALE</a>,
+<a href="#R3_MIDWATER" class="idName">R3_MIDWATER</a>,
+<a href="#R5_LOCALE" class="idName">R5_LOCALE</a>,
+<a href="#R5_SHALLOW" class="idName">R5_SHALLOW</a>,
+<a href="#RIGHT_DEEP_WAVE" class="idName">RIGHT_DEEP_WAVE</a>,
+<a href="#RIGHT_SHALLOW_WAVE" class="idName">RIGHT_SHALLOW_WAVE</a>,
+<a href="#Root" class="idName">Root</a>,
+<a href="#Viewpoints" class="idName">Viewpoints</a>,
+<a href="#WAVE_CLOCK" class="idName">WAVE_CLOCK</a>
+<br />
+<i>Index for Viewpoint images</i>: 
+<a href="#Viewpoint_1" class="idName">Viewpoint_1</a>,
+<a href="#Viewpoint_2" class="idName">Viewpoint_2</a>,
+<a href="#Viewpoint_3" class="idName">Viewpoint_3</a>,
+<a href="#Viewpoint_4" class="idName">Viewpoint_4</a>,
+<a href="#Viewpoint_5" class="idName">Viewpoint_5</a>,
+<a href="#Viewpoint_6" class="idName">Viewpoint_6</a>,
+<a href="#Viewpoint_7" class="idName">Viewpoint_7</a>
+         <hr width="100%"/>
+      </div>
+--&gt;
+<p>
+&lt;!-- Tag color codes (X3D, XML terminology):
+&lt;<span class="element">Node</span>
+         <span class="idName"> DEF</span>='<span class="idName">idName</span>' <span class="attribute">field</span>='<span class="value">value</span>'/&gt; &lt;<span class="element">Element</span>
+         <span class="idName"> DEF</span>='<span class="idName">idName</span>' <span class="attribute">attribute</span>='<span class="value">value</span>'/&gt; 
+&lt;<span class="prototype">Prototype</span> 
+         <span class="attribute">name</span>='<span class="prototype">ProtoName</span>'&gt;
+	&lt;<span class="prototype">field</span>
+         <span class="attribute">name</span>='<span class="prototype">fieldName</span>'/&gt; &lt;/<span class="prototype">Prototype</span>&gt; --&gt;
+</p>
+   </body>
+</html>

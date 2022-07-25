@@ -1,0 +1,597 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/TR/xhtml1/strict"
+       xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
+       xmlns:saxon="http://icl.com/saxon">
+   <head>
+      <title>ArtDecoExamplesExcerpt.x3d (X3dToXhtml listing)</title>
+      <!-- I18N -->
+      <meta http-equiv="X-UA-Compatible" content="chrome=1,IE=edge"/>
+      <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+      <style type="text/css">
+span.element {color: navy}
+span.attribute {color: green}
+span.value {color: teal}
+span.plain {color: black}
+span.gray  {color: gray}
+span.idName {color: maroon}
+span.addedDocumentation {background-color:#EEEEEE} /* slightly darker for html page contrast */
+span.behaviorNode       {background-color:#DDEEFF} /*      light blue for html page contrast */
+span.extensibilityNode  {background-color:#FFEEFF} /*    lighter blue for html page contrast */
+a.idName {color: maroon}
+div.center {text-align: center}
+div.indent {margin-left: 25px}
+
+span.prototype {color: purple}
+a.prototype {color: purple}
+a.prototype:visited {color: black}
+span.route {color: red}
+b.warning {color: #CC5500}
+b.error {color: #CC0000}
+
+                </style>
+      <style type="text/css">
+table.curvedEdges { border:10px solid RoyalBlue;-webkit-border-radius:13px;-moz-border-radius:13px;-ms-border-radius:13px;-o-border-radius:13px;border-radius:13px; }
+table.curvedEdges td, table.curvedEdges th { border-bottom:1px dotted black;padding:5px; }
+</style>
+      <meta name="generator" content="XSLT processor Saxonica"/>
+      <meta name="generator"
+             content="https://www.web3d.org/x3d/stylesheets/X3dToXhtml.xslt"/>
+      <meta name="generator"
+             content="https://sourceforge.net/p/x3d/code/HEAD/tree/www.web3d.org/x3d/stylesheets/X3dToXhtml.xslt"/>
+      <link rel="shortcut icon"
+             href="https://www.web3d.org/x3d/content/icons/X3DtextIcon16.png"
+             title="X3D"/>
+   </head>
+   <body>
+      <code title="XML declaration">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</code>
+      <br/>
+      <code title="Document Type Declaration (DTD) for X3D validation">&lt;!DOCTYPE X3D PUBLIC "ISO//Web3D//DTD X3D 3.3//EN" "<a href="https://www.web3d.org/specifications/x3d-3.3.dtd">https://www.web3d.org/specifications/x3d-3.3.dtd</a>"&gt;</code>
+      <div>
+<span title="X3D is the top-most XML element for an Extensible 3D (X3D) Graphics file">&lt;<span class="element">X3D</span>&#160;<span title="X3D Immersive Profile supports most nodes, similar to VRML97"><span class="attribute">profile</span>='<span class="value">Immersive</span>'</span>&#160;<span class="attribute">version</span>='<span class="value">3.3</span>'&#160;<span title="XML namespace for X3D Graphics schema validation"><span title="XML namespace for XML Schema validation">
+            <span class="attribute">xmlns:xsd</span>='<a href="http://www.w3.org/2001/XMLSchema-instance" target="_blank">http://www.w3.org/2001/XMLSchema-instance</a>'
+</span>
+         <span title="XML namespace for X3D Graphics schema validation">
+            <span class="attribute">xsd:noNamespaceSchemaLocation</span>
+         </span>='
+<a href="https://www.web3d.org/specifications/x3d-3.3.xsd" target="_blank">https://www.web3d.org/specifications/x3d-3.3.xsd</a>
+'</span>&gt;
+</span><div class="indent">
+<span title="head can contain component, unit, and author-defined metadata (meta) tags">&lt;<span class="element">head</span>&gt;
+</span><div class="indent">
+<span title="meta 'title' provides file name for this resource">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">title</span>'&#160;<span class="attribute">content</span>='<a href="ArtDecoExamplesExcerpt.x3d">ArtDecoExamplesExcerpt.x3d</a>'/&gt;
+</span><br />
+
+<span title="meta 'description' provides summary overview describing this resource">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">description</span>'&#160;<span class="attribute">content</span>="<span class="plain">Example ExternProtoDeclare/ProtoInstance usage of X3D/VRML materials, originally converted from SGI&apos;s Open Inventor material examples. Excerpted from original.</span>"/&gt;
+</span><br />
+
+<span title="meta 'creator' provides name of original author">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">creator</span>'&#160;<span class="attribute">content</span>='<span class="value">David Roussel</span>'/&gt;
+</span><br />
+
+<span title="meta 'translator' provides name of person performing translation from another format or language">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">translator</span>'&#160;<span class="attribute">content</span>='<span class="value">James Harney, Don Brutzman NPS</span>'/&gt;
+</span><br />
+
+<span title="meta 'created' provides date of initial version">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">created</span>'&#160;<span class="attribute">content</span>='<span class="value">7 April 2002</span>'/&gt;
+</span><br />
+
+<span title="meta 'modified' provides date of modified version">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">modified</span>'&#160;<span class="attribute">content</span>='<span class="value">20 October 2019</span>'/&gt;
+</span><br />
+
+<span title="meta 'TODO' action item (to do) that still needs to be performed">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<b class="warning"> TODO </b>'&#160;<span class="attribute">content</span>='<b class="warning"> Xj3D  not  displaying  materials  loaded  from  ExternProtoDeclare  ProtoInstance  nodes </b>'/&gt;
+</span><br />
+
+<span title="meta 'reference' provides name or reference link to a supporting resource">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">reference</span>'&#160;<span class="attribute">content</span>='
+<a href="http://vrmlstuff.free.fr/materials" target="_blank">http://vrmlstuff.free.fr/materials</a>
+'/&gt;
+</span><br />
+
+<span title="meta 'subject' provides search-index subject keywords, key phrases, or classification codes">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">subject</span>'&#160;<span class="attribute">content</span>='<span class="value">Universal Media Material Library</span>'/&gt;
+</span><br />
+
+<span title="meta 'reference' provides name or reference link to a supporting resource">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">reference</span>'&#160;<span class="attribute">content</span>='
+<a href="https://www.web3d.org/x3d/content/examples/Basic/UniversalMediaMaterials/ArtDecoExamples.x3d"
+                   target="_blank">https://www.web3d.org/x3d/content/examples/Basic/UniversalMediaMaterials/ArtDecoExamples.x3d</a>
+'/&gt;
+</span><br />
+
+<span title="meta 'identifier' provides the unique Uniform Resource Identifier (URI) or url address for this resource">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">identifier</span>'&#160;<span class="attribute">content</span>='
+<a href="https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter14Prototypes/ArtDecoExamplesExcerpt.x3d"
+                   target="_blank">https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter14Prototypes/ArtDecoExamplesExcerpt.x3d</a>
+'/&gt;
+</span><br />
+
+<span title="meta 'generator' provides name of authoring tool or translation tool producing this scene">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">generator</span>'&#160;<span class="attribute">content</span>='<span class="value">Vrml97ToX3dNist, </span>
+               <a href="http://ovrt.nist.gov/v2_x3d.html" target="_blank">http://ovrt.nist.gov/v2_x3d.html</a>'/&gt;
+</span><br />
+
+<span title="meta 'license' provides software license link or information">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">license</span>'&#160;<span class="attribute">content</span>='
+<a href="../license.html">../license.html</a>'/&gt;
+</span></div><span title="head can contain component, unit, and author-defined metadata (meta) tags">&lt;/<span class="element">head</span>&gt;
+</span><br /><span style="color:white">
+&lt;!--
+</span>
+            <div class="center">
+               <hr style="width:100%"/>
+               <b>
+                  <i>Index for ExternProtoDeclare definitions</i>
+               </b>: 
+<a title="go to this declaration"
+                   href="#ExternProtoDeclare_ArtDeco00"
+                   class="prototype">ArtDeco00</a>,
+<a title="go to this declaration"
+                   href="#ExternProtoDeclare_ArtDeco01"
+                   class="prototype">ArtDeco01</a>,
+<a title="go to this declaration"
+                   href="#ExternProtoDeclare_ArtDeco02"
+                   class="prototype">ArtDeco02</a>
+<br /><hr width="50%"/>
+               <b>
+                  <i>Index for DEF nodes</i>
+               </b>: 
+<a title="go to this Viewpoint node" href="#Back" class="idName">Back</a>,
+<a title="go to this Sphere node" href="#Ball" class="idName">Ball</a>,
+<a title="go to this Viewpoint node" href="#Close" class="idName">Close</a>,
+<a title="go to this PositionInterpolator node"
+                   href="#Close_Mover"
+                   class="idName">Close_Mover</a>,
+<a title="go to this TimeSensor node"
+                   href="#Close_Time"
+                   class="idName">Close_Time</a>,
+<a title="go to this Transform node"
+                   href="#Close_travel"
+                   class="idName">Close_travel</a>,
+<a title="go to this Viewpoint node" href="#Front" class="idName">Front</a>,
+<a title="go to this Viewpoint node" href="#PersLeft" class="idName">PersLeft</a>,
+<a title="go to this Viewpoint node" href="#PersRight" class="idName">PersRight</a>,
+<a title="go to this FontStyle node" href="#Style" class="idName">Style</a>,
+<a title="go to this Material node" href="#TextMat" class="idName">TextMat</a>,
+<a title="go to this Viewpoint node" href="#View00" class="idName">View00</a>,
+<a title="go to this Viewpoint node" href="#View01" class="idName">View01</a>,
+<a title="go to this Viewpoint node" href="#View02" class="idName">View02</a>
+<br /><hr width="50%"/>
+               <b>
+                  <i>Index for Viewpoint images</i>
+               </b>: 
+<a title="go to this Viewpoint node: Back view"
+                   href="#Back"
+                   class="idName">Back</a>,
+<a title="go to this Viewpoint node: Close Front"
+                   href="#Close"
+                   class="idName">Close</a>,
+<a title="go to this Viewpoint node: Front view"
+                   href="#Front"
+                   class="idName">Front</a>,
+<a title="go to this Viewpoint node: Low Left"
+                   href="#PersLeft"
+                   class="idName">PersLeft</a>,
+<a title="go to this Viewpoint node: Low Right"
+                   href="#PersRight"
+                   class="idName">PersRight</a>,
+<a title="go to this Viewpoint node: ArtDeco00"
+                   href="#View00"
+                   class="idName">View00</a>,
+<a title="go to this Viewpoint node: ArtDeco01"
+                   href="#View01"
+                   class="idName">View01</a>,
+<a title="go to this Viewpoint node: ArtDeco02"
+                   href="#View02"
+                   class="idName">View02</a>
+               <hr style="width:100%"/>
+            </div>
+            <span style="color:white">
+--&gt;
+</span><br />
+
+<span title="Scene is the root node that contains an X3D scene graph">&lt;<span class="element">Scene</span>&gt;
+</span><div class="indent">
+               <span title="XML comment">&lt;!--  Note  that  these  url  address  references  were  changed  from  original  collection  in  Basic  X3D  Examples  Archive  and  instead  reference  local  excerpt  --&gt;</span>
+<br />
+
+<span title="WorldInfo contains persistent documentation information about the 3D world">&lt;<span class="element">WorldInfo</span>&#160;<span class="attribute">title</span>='<span class="value">ArtDecoExamplesExcerpt.x3d</span>'/&gt;
+</span><br />
+<a name="ExternProtoDeclare_ArtDeco00"> </a> 
+<span title="ExternProtoDeclare refers to a ProtoDeclare node declaration provided in another file">&lt;<span class="prototype">ExternProtoDeclare</span>&#160;<span class="attribute">name</span>='<span class="prototype">ArtDeco00</span>'&#160;<span title="application information for this ExternProtoDeclare"><span class="gray">appinfo</span>='<span class="value">UniversalMediaMaterials prototype</span>'</span>&#160;<span title="documentation url providing further information for this ExternProtoDeclare"><span class="attribute">documentation</span>='
+<a href="https://www.web3d.org/x3d/content/examples/Basic/UniversalMediaMaterials"
+                   target="_blank">https://www.web3d.org/x3d/content/examples/Basic/UniversalMediaMaterials</a>
+'</span>
+<br />
+&#160;&#160;<span title="uniform resource locator (url) list of relative or absolute file addresses, performed in order until resource retrieval succeeds"><span class="attribute">url</span>='
+ "<a href="ArtDecoPrototypesExcerpt.x3d#ArtDeco00" target="_blank">ArtDecoPrototypesExcerpt.x3d#ArtDeco00</a>" "<a href="https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter14Prototypes/ArtDecoPrototypesExcerpt.x3d#ArtDeco00"
+                   target="_blank">https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter14Prototypes/ArtDecoPrototypesExcerpt.x3d#ArtDeco00</a>"  "<a href="ArtDecoPrototypesExcerpt.wrl#ArtDeco00" target="_blank">ArtDecoPrototypesExcerpt.wrl#ArtDeco00</a>" "<a href="https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter14Prototypes/ArtDecoPrototypesExcerpt.wrl#ArtDeco00"
+                   target="_blank">https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter14Prototypes/ArtDecoPrototypesExcerpt.wrl#ArtDeco00</a>" '</span>/&gt;
+</span><br />
+<a name="ExternProtoDeclare_ArtDeco01"> </a> 
+<span title="ExternProtoDeclare refers to a ProtoDeclare node declaration provided in another file">&lt;<span class="prototype">ExternProtoDeclare</span>&#160;<span class="attribute">name</span>='<span class="prototype">ArtDeco01</span>'&#160;<span title="application information for this ExternProtoDeclare"><span class="gray">appinfo</span>='<span class="value">UniversalMediaMaterials prototype</span>'</span>&#160;<span title="documentation url providing further information for this ExternProtoDeclare"><span class="attribute">documentation</span>='
+<a href="https://www.web3d.org/x3d/content/examples/Basic/UniversalMediaMaterials"
+                   target="_blank">https://www.web3d.org/x3d/content/examples/Basic/UniversalMediaMaterials</a>
+'</span>
+<br />
+&#160;&#160;<span title="uniform resource locator (url) list of relative or absolute file addresses, performed in order until resource retrieval succeeds"><span class="attribute">url</span>='
+ "<a href="ArtDecoPrototypesExcerpt.x3d#ArtDeco01" target="_blank">ArtDecoPrototypesExcerpt.x3d#ArtDeco01</a>" "<a href="https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter14Prototypes/ArtDecoPrototypesExcerpt.x3d#ArtDeco01"
+                   target="_blank">https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter14Prototypes/ArtDecoPrototypesExcerpt.x3d#ArtDeco01</a>"  "<a href="ArtDecoPrototypesExcerpt.wrl#ArtDeco01" target="_blank">ArtDecoPrototypesExcerpt.wrl#ArtDeco01</a>" "<a href="https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter14Prototypes/ArtDecoPrototypesExcerpt.wrl#ArtDeco01"
+                   target="_blank">https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter14Prototypes/ArtDecoPrototypesExcerpt.wrl#ArtDeco01</a>" '</span>/&gt;
+</span><br />
+<a name="ExternProtoDeclare_ArtDeco02"> </a> 
+<span title="ExternProtoDeclare refers to a ProtoDeclare node declaration provided in another file">&lt;<span class="prototype">ExternProtoDeclare</span>&#160;<span class="attribute">name</span>='<span class="prototype">ArtDeco02</span>'&#160;<span title="application information for this ExternProtoDeclare"><span class="gray">appinfo</span>='<span class="value">UniversalMediaMaterials prototype</span>'</span>&#160;<span title="documentation url providing further information for this ExternProtoDeclare"><span class="attribute">documentation</span>='
+<a href="https://www.web3d.org/x3d/content/examples/Basic/UniversalMediaMaterials"
+                   target="_blank">https://www.web3d.org/x3d/content/examples/Basic/UniversalMediaMaterials</a>
+'</span>
+<br />
+&#160;&#160;<span title="uniform resource locator (url) list of relative or absolute file addresses, performed in order until resource retrieval succeeds"><span class="attribute">url</span>='
+ "<a href="ArtDecoPrototypesExcerpt.x3d#ArtDeco02" target="_blank">ArtDecoPrototypesExcerpt.x3d#ArtDeco02</a>" "<a href="https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter14Prototypes/ArtDecoPrototypesExcerpt.x3d#ArtDeco02"
+                   target="_blank">https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter14Prototypes/ArtDecoPrototypesExcerpt.x3d#ArtDeco02</a>"  "<a href="ArtDecoPrototypesExcerpt.wrl#ArtDeco02" target="_blank">ArtDecoPrototypesExcerpt.wrl#ArtDeco02</a>" "<a href="https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter14Prototypes/ArtDecoPrototypesExcerpt.wrl#ArtDeco02"
+                   target="_blank">https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter14Prototypes/ArtDecoPrototypesExcerpt.wrl#ArtDeco02</a>" '</span>/&gt;
+</span><br />
+
+<span title="Group is a Grouping node that can contain most nodes">&lt;<span class="element">Group</span>&gt;
+</span><div class="indent">
+<span title="NavigationInfo describes the viewing model and physical characteristics of the viewer's avatar">&lt;<span class="element">NavigationInfo</span>&#160;<span class="attribute">headlight</span>='<span class="value">false</span>'/&gt;
+</span><br />
+<a name="Front"> </a> 
+<span title="Viewpoint provides a specific location and direction where the user may view the scene">&lt;<span class="element">Viewpoint</span>&#160;<span class="attribute">DEF</span>='<a title="bookmark link to Front" href="#Front" class="idName">Front</a>'&#160;<span class="attribute">description</span>='<a title="viewpoint image (produced using Xj3D)"
+                      href="_viewpoints/ArtDecoExamplesExcerpt.x3d._VP_Front_view.png">Front view</a>'&#160;<span class="attribute">position</span>='<span class="value">0.0 0.0 12.0</span>'/&gt;
+</span><br />
+<a name="PersRight"> </a> 
+<span title="Viewpoint provides a specific location and direction where the user may view the scene">&lt;<span class="element">Viewpoint</span>&#160;<span class="attribute">DEF</span>='<a title="bookmark link to PersRight" href="#PersRight" class="idName">PersRight</a>'&#160;<span class="attribute">description</span>='<a title="viewpoint image (produced using Xj3D)"
+                      href="_viewpoints/ArtDecoExamplesExcerpt.x3d._VP_Low_Right.png">Low Right</a>'&#160;<span class="attribute">orientation</span>='<span class="value">0.74291 0.30772 0.59447 1.2171</span>'&#160;<span class="attribute">position</span>='<span class="value">6.9282 -6.9282 6.9282</span>'/&gt;
+</span><br />
+<a name="PersLeft"> </a> 
+<span title="Viewpoint provides a specific location and direction where the user may view the scene">&lt;<span class="element">Viewpoint</span>&#160;<span class="attribute">DEF</span>='<a title="bookmark link to PersLeft" href="#PersLeft" class="idName">PersLeft</a>'&#160;<span class="attribute">description</span>='<a title="viewpoint image (produced using Xj3D)"
+                      href="_viewpoints/ArtDecoExamplesExcerpt.x3d._VP_Low_Left.png">Low Left</a>'&#160;<span class="attribute">orientation</span>='<span class="value">0.74291 -0.30772 -0.59447 1.2171</span>'&#160;<span class="attribute">position</span>='<span class="value">-6.9282 -6.9282 6.9282</span>'/&gt;
+</span><br />
+<a name="Back"> </a> 
+<span title="Viewpoint provides a specific location and direction where the user may view the scene">&lt;<span class="element">Viewpoint</span>&#160;<span class="attribute">DEF</span>='<a title="bookmark link to Back" href="#Back" class="idName">Back</a>'&#160;<span class="attribute">description</span>='<a title="viewpoint image (produced using Xj3D)"
+                      href="_viewpoints/ArtDecoExamplesExcerpt.x3d._VP_Back_view.png">Back view</a>'&#160;<span class="attribute">orientation</span>='<span class="value">0.0 1.0 0.0 3.1416</span>'&#160;<span class="attribute">position</span>='<span class="value">0.0 0.0 -12.0</span>'/&gt;
+</span><br />
+<a name="Close_travel"> </a> 
+<span style="background-color:#EEEEEE;" title="inserted documentation about ROUTE connections">&lt;!-- <i>ROUTE</i> information for <span class="idName">Close_travel</span> node:&#160;
+[<a title="go to this ROUTE" href="#ROUTE_1"><i>from</i>&#160;<span class="idName">Close_Mover</span>.<span class="attribute">value_changed</span>&#160;<i>to</i>&#160;<span class="attribute">set_translation</span>
+                  </a>]
+ --&gt;<br /></span>
+<span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;<span class="element">Transform</span>&#160;<span class="attribute">DEF</span>='<a title="bookmark link to Close_travel"
+                      href="#Close_travel"
+                      class="idName">Close_travel</a>'&gt;
+</span><div class="indent">
+                     <a name="Close_Mover"> </a> 
+<span style="background-color:#EEEEEE;" title="inserted documentation about ROUTE connections">&lt;!-- <i>ROUTE</i> information for <span class="idName">Close_Mover</span> node:&#160;
+[<a title="go to this ROUTE" href="#ROUTE_0"><i>from</i>&#160;<span class="idName">Close_Time</span>.<span class="attribute">fraction_changed</span>&#160;<i>to</i>&#160;<span class="attribute">set_fraction</span>
+                     </a>]
+[<a title="go to this ROUTE" href="#ROUTE_1"><i>from</i>&#160;<span class="attribute">value_changed</span>&#160;<i>to</i>&#160;<span class="idName">Close_travel</span>.<span class="attribute">set_translation</span>
+                     </a>]
+ --&gt;<br /></span>
+<span title="Interpolator nodes output event values using piecewise-linear function definitions" style="background-color:#DDEEFF">&lt;<span class="element">PositionInterpolator</span>&#160;<span class="attribute">DEF</span>='<a title="bookmark link to Close_Mover"
+                         href="#Close_Mover"
+                         class="idName">Close_Mover</a>'&#160;<span class="attribute">key</span>='<span class="value">0.0 0.25 0.5 0.75 1.0</span>'&#160;<span class="attribute">keyValue</span>='<span class="value">0.0 2.5 0.0 0.0 0.0 0.0 0.0 -2.5 0.0 0.0 0.0 0.0 0.0 2.5 0.0</span>'/&gt;
+</span><br />
+<a name="Close_Time"> </a> 
+<span style="background-color:#EEEEEE;" title="inserted documentation about ROUTE connections">&lt;!-- <i>ROUTE</i> information for <span class="idName">Close_Time</span> node:&#160;
+[<a title="go to this ROUTE" href="#ROUTE_0"><i>from</i>&#160;<span class="attribute">fraction_changed</span>&#160;<i>to</i>&#160;<span class="idName">Close_Mover</span>.<span class="attribute">set_fraction</span>
+                     </a>]
+ --&gt;<br /></span>
+<span title="TimeSensor continuously generates events as time passes" style="background-color:#DDEEFF">&lt;<span class="element">TimeSensor</span>&#160;<span class="attribute">DEF</span>='<a title="bookmark link to Close_Time"
+                         href="#Close_Time"
+                         class="idName">Close_Time</a>'&#160;<span class="attribute">cycleInterval</span>='<span class="value">12.0</span>'&#160;<span class="attribute">loop</span>='<span class="value">true</span>'/&gt;
+</span><br />
+<a name="Close"> </a> 
+<span title="Viewpoint provides a specific location and direction where the user may view the scene">&lt;<span class="element">Viewpoint</span>&#160;<span class="attribute">DEF</span>='<a title="bookmark link to Close" href="#Close" class="idName">Close</a>'&#160;<span class="attribute">description</span>='<a title="viewpoint image (produced using Xj3D)"
+                         href="_viewpoints/ArtDecoExamplesExcerpt.x3d._VP_Close_Front.png">Close Front</a>'&#160;<span class="attribute">position</span>='<span class="value">0.0 0.0 6.0</span>'/&gt;
+</span></div><span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;/<span class="element">Transform</span>&gt;
+</span><br />
+
+<span title="DirectionalLight creates parallel light rays to illuminate geometric shapes">&lt;<span class="element">DirectionalLight</span>&#160;<span class="attribute">direction</span>='<span class="value">1.0 -1.0 -1.0</span>'/&gt;
+</span><br />
+
+<span title="DirectionalLight creates parallel light rays to illuminate geometric shapes">&lt;<span class="element">DirectionalLight</span>&#160;<span class="attribute">direction</span>='<span class="value">0.0 1.0 -0.5</span>'&#160;<span class="attribute">intensity</span>='<span class="value">0.5</span>'/&gt;
+</span><br />
+
+<span title="Selecting Anchored geometry loads content specified by the url field">&lt;<span class="element">Anchor</span>&#160;<span class="attribute">description</span>='<span class="value">Back to front view</span>'
+<br />
+&#160;&#160;<span title="uniform resource locator (url) list of relative or absolute file addresses, performed in order until resource retrieval succeeds"><span class="attribute">url</span>='
+ "<a href="#Front" target="_blank">#Front</a>" '</span>&gt;
+</span><div class="indent">
+<span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;<span class="element">Transform</span>&#160;<span class="attribute">translation</span>='<span class="value">0.0 0.0 -0.5</span>'&gt;
+</span><div class="indent">
+<span title="Inline is a Grouping node that can load nodes from another X3D scene via url">&lt;<span class="element">Inline</span>
+<br />
+&#160;&#160;<span title="uniform resource locator (url) list of relative or absolute file addresses, performed in order until resource retrieval succeeds"><span class="attribute">url</span>='
+"<a href="../../Basic/UniversalMediaMaterials/gridBack.x3d" target="_blank">../../Basic/UniversalMediaMaterials/gridBack.x3d</a>"
+"<a href="https://www.web3d.org/x3d/content/examples/Basic/UniversalMediaMaterials/gridBack.x3d"
+                            target="_blank">https://www.web3d.org/x3d/content/examples/Basic/UniversalMediaMaterials/gridBack.x3d</a>" "<a href="../../Basic/UniversalMediaMaterials/gridBack.wrl" target="_blank">../../Basic/UniversalMediaMaterials/gridBack.wrl</a>"
+"<a href="https://www.web3d.org/x3d/content/examples/Basic/UniversalMediaMaterials/gridBack.wrl"
+                            target="_blank">https://www.web3d.org/x3d/content/examples/Basic/UniversalMediaMaterials/gridBack.wrl</a>" '</span>/&gt;
+</span></div><span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;/<span class="element">Transform</span>&gt;
+</span></div><span title="Selecting Anchored geometry loads content specified by the url field">&lt;/<span class="element">Anchor</span>&gt;
+</span><br />
+<a name="View00"> </a> 
+<span title="Viewpoint provides a specific location and direction where the user may view the scene">&lt;<span class="element">Viewpoint</span>&#160;<span class="attribute">DEF</span>='<a title="bookmark link to View00" href="#View00" class="idName">View00</a>'&#160;<span class="attribute">description</span>='<a title="viewpoint image (produced using Xj3D)"
+                      href="_viewpoints/ArtDecoExamplesExcerpt.x3d._VP_ArtDeco00.png">ArtDeco00</a>'&#160;<span class="attribute">position</span>='<span class="value">-3.75 3.75 3.0</span>'/&gt;
+</span><br />
+
+<span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;<span class="element">Transform</span>&#160;<span class="attribute">translation</span>='<span class="value">-3.75 3.75 0.0</span>'&gt;
+</span><div class="indent">
+<span title="Selecting Anchored geometry loads content specified by the url field">&lt;<span class="element">Anchor</span>&#160;<span class="attribute">description</span>='<span class="value">ArtDeco00 view</span>'
+<br />
+&#160;&#160;<span title="uniform resource locator (url) list of relative or absolute file addresses, performed in order until resource retrieval succeeds"><span class="attribute">url</span>='
+ "<a href="#View00" target="_blank">#View00</a>" '</span>&gt;
+</span><div class="indent">
+<span title="Shape contains geometry and optional corresponding Appearance">&lt;<span class="element">Shape</span>&gt;
+</span><div class="indent">
+<span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;<span class="element">Appearance</span>&gt;
+</span><div class="indent">
+<span title="ProtoInstance creates an instance of a locally or externally declared prototype node" style="background-color:#FFEEFF">&lt;<span class="prototype">ProtoInstance</span>&#160;<span class="attribute">name</span>='<a title="go to the defining ExternProtoDeclare for this prototype instance"
+                                  href="#ExternProtoDeclare_ArtDeco00"
+                                  class="prototype">ArtDeco00</a>'&#160;<span class="attribute">containerField</span>='<span class="value">material</span>'/&gt;
+</span></div><span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;/<span class="element">Appearance</span>&gt;
+</span><br />
+<a name="Ball"> </a> 
+<span title="Sphere is a geometry primitive node">&lt;<span class="element">Sphere</span>&#160;<span class="attribute">DEF</span>='<a title="bookmark link to Ball" href="#Ball" class="idName">Ball</a>'&#160;<span class="attribute">radius</span>='<span class="value">0.5</span>'/&gt;
+</span></div><span title="Shape contains geometry and optional corresponding Appearance">&lt;/<span class="element">Shape</span>&gt;
+</span></div><span title="Selecting Anchored geometry loads content specified by the url field">&lt;/<span class="element">Anchor</span>&gt;
+</span><br />
+
+<span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;<span class="element">Transform</span>&#160;<span class="attribute">translation</span>='<span class="value">0.0 0.3 0.5</span>'&gt;
+</span><div class="indent">
+<span title="Selecting Anchored geometry loads content specified by the url field">&lt;<span class="element">Anchor</span>&#160;<span class="attribute">description</span>='<span class="value">ArtDeco</span>'&#160;<span class="attribute">parameter</span>='<span class="value">"target=_source"</span>'
+<br />
+&#160;&#160;<span title="uniform resource locator (url) list of relative or absolute file addresses, performed in order until resource retrieval succeeds"><span class="attribute">url</span>='
+ "<a href="ArtDecoPrototypesExcerpt.html#ProtoDeclare_ArtDeco00"
+                            target="_blank">ArtDecoPrototypesExcerpt.html#ProtoDeclare_ArtDeco00</a>" "<a href="https://www.web3d.org/x3d/content/examples/Basic/UniversalMediaMaterials/ArtDecoPrototypesExcerpt.html#ProtoDeclare_ArtDeco"
+                            target="_blank">https://www.web3d.org/x3d/content/examples/Basic/UniversalMediaMaterials/ArtDecoPrototypesExcerpt.html#ProtoDeclare_ArtDeco</a>" '</span>&gt;
+</span><div class="indent">
+<span title="Shape contains geometry and optional corresponding Appearance">&lt;<span class="element">Shape</span>&gt;
+</span><div class="indent">
+<span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;<span class="element">Appearance</span>&gt;
+</span><div class="indent">
+                                 <a name="TextMat"> </a> 
+<span title="Material specifies surface rendering properties for associated geometry">&lt;<span class="element">Material</span>&#160;<span class="attribute">DEF</span>='<a title="bookmark link to TextMat" href="#TextMat" class="idName">TextMat</a>'&#160;<span class="attribute">diffuseColor</span>='<span class="value">1.0 1.0 1.0</span>'/&gt;
+</span></div><span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;/<span class="element">Appearance</span>&gt;
+</span><br />
+
+<span title="Text is a geometry primitive node">&lt;<span class="element">Text</span>&#160;<span class="attribute">string</span>='<span class="value">"ArtDeco00"</span>'&gt;
+</span><div class="indent">
+                                 <a name="Style"> </a> 
+<span title="FontStyle defines the size, family, justification, and other styles used by Text nodes">&lt;<span class="element">FontStyle</span>&#160;<span class="attribute">DEF</span>='<a title="bookmark link to Style" href="#Style" class="idName">Style</a>'&#160;<span class="attribute">family</span>='<span class="value">"SANS"</span>'&#160;<span class="attribute">justify</span>='<span class="value">"MIDDLE" "MIDDLE"</span>'&#160;<span class="attribute">size</span>='<span class="value">0.3</span>'&#160;<span class="attribute">style</span>='<span class="value">BOLD</span>'/&gt;
+</span></div><span title="Text is a geometry primitive node">&lt;/<span class="element">Text</span>&gt;
+</span></div><span title="Shape contains geometry and optional corresponding Appearance">&lt;/<span class="element">Shape</span>&gt;
+</span></div><span title="Selecting Anchored geometry loads content specified by the url field">&lt;/<span class="element">Anchor</span>&gt;
+</span></div><span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;/<span class="element">Transform</span>&gt;
+</span></div><span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;/<span class="element">Transform</span>&gt;
+</span><br />
+<a name="View01"> </a> 
+<span title="Viewpoint provides a specific location and direction where the user may view the scene">&lt;<span class="element">Viewpoint</span>&#160;<span class="attribute">DEF</span>='<a title="bookmark link to View01" href="#View01" class="idName">View01</a>'&#160;<span class="attribute">description</span>='<a title="viewpoint image (produced using Xj3D)"
+                      href="_viewpoints/ArtDecoExamplesExcerpt.x3d._VP_ArtDeco01.png">ArtDeco01</a>'&#160;<span class="attribute">position</span>='<span class="value">-2.25 3.75 3.0</span>'/&gt;
+</span><br />
+
+<span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;<span class="element">Transform</span>&#160;<span class="attribute">translation</span>='<span class="value">-2.25 3.75 0.0</span>'&gt;
+</span><div class="indent">
+<span title="Selecting Anchored geometry loads content specified by the url field">&lt;<span class="element">Anchor</span>&#160;<span class="attribute">description</span>='<span class="value">ArtDeco01 view</span>'
+<br />
+&#160;&#160;<span title="uniform resource locator (url) list of relative or absolute file addresses, performed in order until resource retrieval succeeds"><span class="attribute">url</span>='
+ "<a href="#View01" target="_blank">#View01</a>" '</span>&gt;
+</span><div class="indent">
+<span title="Shape contains geometry and optional corresponding Appearance">&lt;<span class="element">Shape</span>&gt;
+</span><div class="indent">
+<span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;<span class="element">Appearance</span>&gt;
+</span><div class="indent">
+<span title="ProtoInstance creates an instance of a locally or externally declared prototype node" style="background-color:#FFEEFF">&lt;<span class="prototype">ProtoInstance</span>&#160;<span class="attribute">name</span>='<a title="go to the defining ExternProtoDeclare for this prototype instance"
+                                  href="#ExternProtoDeclare_ArtDeco01"
+                                  class="prototype">ArtDeco01</a>'&#160;<span class="attribute">containerField</span>='<span class="value">material</span>'/&gt;
+</span></div><span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;/<span class="element">Appearance</span>&gt;
+</span><br />
+
+<span title="Sphere is a geometry primitive node">&lt;<span class="element">Sphere</span>&#160;<span class="attribute">USE</span>='<a title="go to the original DEF node definition"
+                               href="#Ball"
+                               class="idName">Ball</a>'/&gt;
+</span></div><span title="Shape contains geometry and optional corresponding Appearance">&lt;/<span class="element">Shape</span>&gt;
+</span></div><span title="Selecting Anchored geometry loads content specified by the url field">&lt;/<span class="element">Anchor</span>&gt;
+</span><br />
+
+<span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;<span class="element">Transform</span>&#160;<span class="attribute">translation</span>='<span class="value">0.0 0.3 0.5</span>'&gt;
+</span><div class="indent">
+<span title="Selecting Anchored geometry loads content specified by the url field">&lt;<span class="element">Anchor</span>&#160;<span class="attribute">description</span>='<span class="value">ArtDeco01</span>'&#160;<span class="attribute">parameter</span>='<span class="value">"target=_source"</span>'
+<br />
+&#160;&#160;<span title="uniform resource locator (url) list of relative or absolute file addresses, performed in order until resource retrieval succeeds"><span class="attribute">url</span>='
+ "<a href="ArtDecoPrototypesExcerpt.html#ProtoDeclare_ArtDeco01"
+                            target="_blank">ArtDecoPrototypesExcerpt.html#ProtoDeclare_ArtDeco01</a>" "<a href="https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter14Prototypes/ArtDecoPrototypesExcerpt.html#ProtoDeclare_ArtDeco01"
+                            target="_blank">https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter14Prototypes/ArtDecoPrototypesExcerpt.html#ProtoDeclare_ArtDeco01</a>" '</span>&gt;
+</span><div class="indent">
+<span title="Shape contains geometry and optional corresponding Appearance">&lt;<span class="element">Shape</span>&gt;
+</span><div class="indent">
+<span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;<span class="element">Appearance</span>&gt;
+</span><div class="indent">
+<span title="Material specifies surface rendering properties for associated geometry">&lt;<span class="element">Material</span>&#160;<span class="attribute">USE</span>='<a title="go to the original DEF node definition"
+                                     href="#TextMat"
+                                     class="idName">TextMat</a>'/&gt;
+</span></div><span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;/<span class="element">Appearance</span>&gt;
+</span><br />
+
+<span title="Text is a geometry primitive node">&lt;<span class="element">Text</span>&#160;<span class="attribute">string</span>='<span class="value">"ArtDeco01"</span>'&gt;
+</span><div class="indent">
+<span title="FontStyle defines the size, family, justification, and other styles used by Text nodes">&lt;<span class="element">FontStyle</span>&#160;<span class="attribute">USE</span>='<a title="go to the original DEF node definition"
+                                     href="#Style"
+                                     class="idName">Style</a>'/&gt;
+</span></div><span title="Text is a geometry primitive node">&lt;/<span class="element">Text</span>&gt;
+</span></div><span title="Shape contains geometry and optional corresponding Appearance">&lt;/<span class="element">Shape</span>&gt;
+</span></div><span title="Selecting Anchored geometry loads content specified by the url field">&lt;/<span class="element">Anchor</span>&gt;
+</span></div><span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;/<span class="element">Transform</span>&gt;
+</span></div><span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;/<span class="element">Transform</span>&gt;
+</span><br />
+<a name="View02"> </a> 
+<span title="Viewpoint provides a specific location and direction where the user may view the scene">&lt;<span class="element">Viewpoint</span>&#160;<span class="attribute">DEF</span>='<a title="bookmark link to View02" href="#View02" class="idName">View02</a>'&#160;<span class="attribute">description</span>='<a title="viewpoint image (produced using Xj3D)"
+                      href="_viewpoints/ArtDecoExamplesExcerpt.x3d._VP_ArtDeco02.png">ArtDeco02</a>'&#160;<span class="attribute">position</span>='<span class="value">-0.75 3.75 3.0</span>'/&gt;
+</span><br />
+
+<span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;<span class="element">Transform</span>&#160;<span class="attribute">translation</span>='<span class="value">-0.75 3.75 0.0</span>'&gt;
+</span><div class="indent">
+<span title="Selecting Anchored geometry loads content specified by the url field">&lt;<span class="element">Anchor</span>&#160;<span class="attribute">description</span>='<span class="value">ArtDeco02 view</span>'
+<br />
+&#160;&#160;<span title="uniform resource locator (url) list of relative or absolute file addresses, performed in order until resource retrieval succeeds"><span class="attribute">url</span>='
+ "<a href="#View02" target="_blank">#View02</a>" '</span>&gt;
+</span><div class="indent">
+<span title="Shape contains geometry and optional corresponding Appearance">&lt;<span class="element">Shape</span>&gt;
+</span><div class="indent">
+<span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;<span class="element">Appearance</span>&gt;
+</span><div class="indent">
+<span title="ProtoInstance creates an instance of a locally or externally declared prototype node" style="background-color:#FFEEFF">&lt;<span class="prototype">ProtoInstance</span>&#160;<span class="attribute">name</span>='<a title="go to the defining ExternProtoDeclare for this prototype instance"
+                                  href="#ExternProtoDeclare_ArtDeco02"
+                                  class="prototype">ArtDeco02</a>'&#160;<span class="attribute">containerField</span>='<span class="value">material</span>'/&gt;
+</span></div><span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;/<span class="element">Appearance</span>&gt;
+</span><br />
+
+<span title="Sphere is a geometry primitive node">&lt;<span class="element">Sphere</span>&#160;<span class="attribute">USE</span>='<a title="go to the original DEF node definition"
+                               href="#Ball"
+                               class="idName">Ball</a>'/&gt;
+</span></div><span title="Shape contains geometry and optional corresponding Appearance">&lt;/<span class="element">Shape</span>&gt;
+</span></div><span title="Selecting Anchored geometry loads content specified by the url field">&lt;/<span class="element">Anchor</span>&gt;
+</span><br />
+
+<span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;<span class="element">Transform</span>&#160;<span class="attribute">translation</span>='<span class="value">0.0 0.3 0.5</span>'&gt;
+</span><div class="indent">
+<span title="Selecting Anchored geometry loads content specified by the url field">&lt;<span class="element">Anchor</span>&#160;<span class="attribute">description</span>='<span class="value">ArtDeco02</span>'&#160;<span class="attribute">parameter</span>='<span class="value">"target=_source"</span>'
+<br />
+&#160;&#160;<span title="uniform resource locator (url) list of relative or absolute file addresses, performed in order until resource retrieval succeeds"><span class="attribute">url</span>='
+ "<a href="ArtDecoPrototypesExcerpt.html#ProtoDeclare_ArtDeco02"
+                            target="_blank">ArtDecoPrototypesExcerpt.html#ProtoDeclare_ArtDeco02</a>" "<a href="https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter14Prototypes/ArtDecoPrototypesExcerpt.html#ProtoDeclare_ArtDeco02"
+                            target="_blank">https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter14Prototypes/ArtDecoPrototypesExcerpt.html#ProtoDeclare_ArtDeco02</a>" '</span>&gt;
+</span><div class="indent">
+<span title="Shape contains geometry and optional corresponding Appearance">&lt;<span class="element">Shape</span>&gt;
+</span><div class="indent">
+<span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;<span class="element">Appearance</span>&gt;
+</span><div class="indent">
+<span title="Material specifies surface rendering properties for associated geometry">&lt;<span class="element">Material</span>&#160;<span class="attribute">USE</span>='<a title="go to the original DEF node definition"
+                                     href="#TextMat"
+                                     class="idName">TextMat</a>'/&gt;
+</span></div><span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;/<span class="element">Appearance</span>&gt;
+</span><br />
+
+<span title="Text is a geometry primitive node">&lt;<span class="element">Text</span>&#160;<span class="attribute">string</span>='<span class="value">"ArtDeco02"</span>'&gt;
+</span><div class="indent">
+<span title="FontStyle defines the size, family, justification, and other styles used by Text nodes">&lt;<span class="element">FontStyle</span>&#160;<span class="attribute">USE</span>='<a title="go to the original DEF node definition"
+                                     href="#Style"
+                                     class="idName">Style</a>'/&gt;
+</span></div><span title="Text is a geometry primitive node">&lt;/<span class="element">Text</span>&gt;
+</span></div><span title="Shape contains geometry and optional corresponding Appearance">&lt;/<span class="element">Shape</span>&gt;
+</span></div><span title="Selecting Anchored geometry loads content specified by the url field">&lt;/<span class="element">Anchor</span>&gt;
+</span></div><span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;/<span class="element">Transform</span>&gt;
+</span></div><span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;/<span class="element">Transform</span>&gt;
+</span></div><span title="Group is a Grouping node that can contain most nodes">&lt;/<span class="element">Group</span>&gt;
+</span><br />
+<a name="ROUTE_0"> </a> 
+<span title="ROUTE connects fields between nodes to enable event passing" style="background-color:#DDEEFF">&lt;<span class="route">ROUTE</span>&#160;<span class="attribute">fromNode</span>='<a title="go to the original DEF node definition"
+                   href="#Close_Time"
+                   class="idName">Close_Time</a>'&#160;<span class="attribute">fromField</span>='<span class="value">fraction_changed</span>'&#160;<span class="attribute">toNode</span>='<a title="go to the original DEF node definition"
+                   href="#Close_Mover"
+                   class="idName">Close_Mover</a>'&#160;<span class="attribute">toField</span>='<span class="value">set_fraction</span>'/&gt;
+</span><br />
+<a name="ROUTE_1"> </a> 
+<span title="ROUTE connects fields between nodes to enable event passing" style="background-color:#DDEEFF">&lt;<span class="route">ROUTE</span>&#160;<span class="attribute">fromNode</span>='<a title="go to the original DEF node definition"
+                   href="#Close_Mover"
+                   class="idName">Close_Mover</a>'&#160;<span class="attribute">fromField</span>='<span class="value">value_changed</span>'&#160;<span class="attribute">toNode</span>='<a title="go to the original DEF node definition"
+                   href="#Close_travel"
+                   class="idName">Close_travel</a>'&#160;<span class="attribute">toField</span>='<span class="value">set_translation</span>'/&gt;
+</span></div><span title="Scene is the root node that contains an X3D scene graph">&lt;/<span class="element">Scene</span>&gt;
+</span></div><span title="X3D is the top-most XML element for an Extensible 3D (X3D) Graphics file">&lt;/<span class="element">X3D</span>&gt;
+</span><br /><span style="color:white">
+&lt;!--
+</span>
+         <div class="center">
+            <hr style="width:100%"/>
+            <b>
+               <i>Index for ExternProtoDeclare definitions</i>
+            </b>: 
+<a title="go to this declaration"
+                href="#ExternProtoDeclare_ArtDeco00"
+                class="prototype">ArtDeco00</a>,
+<a title="go to this declaration"
+                href="#ExternProtoDeclare_ArtDeco01"
+                class="prototype">ArtDeco01</a>,
+<a title="go to this declaration"
+                href="#ExternProtoDeclare_ArtDeco02"
+                class="prototype">ArtDeco02</a>
+<br /><hr width="50%"/>
+            <b>
+               <i>Index for DEF nodes</i>
+            </b>: 
+<a title="go to this Viewpoint node" href="#Back" class="idName">Back</a>,
+<a title="go to this Sphere node" href="#Ball" class="idName">Ball</a>,
+<a title="go to this Viewpoint node" href="#Close" class="idName">Close</a>,
+<a title="go to this PositionInterpolator node"
+                href="#Close_Mover"
+                class="idName">Close_Mover</a>,
+<a title="go to this TimeSensor node"
+                href="#Close_Time"
+                class="idName">Close_Time</a>,
+<a title="go to this Transform node"
+                href="#Close_travel"
+                class="idName">Close_travel</a>,
+<a title="go to this Viewpoint node" href="#Front" class="idName">Front</a>,
+<a title="go to this Viewpoint node" href="#PersLeft" class="idName">PersLeft</a>,
+<a title="go to this Viewpoint node" href="#PersRight" class="idName">PersRight</a>,
+<a title="go to this FontStyle node" href="#Style" class="idName">Style</a>,
+<a title="go to this Material node" href="#TextMat" class="idName">TextMat</a>,
+<a title="go to this Viewpoint node" href="#View00" class="idName">View00</a>,
+<a title="go to this Viewpoint node" href="#View01" class="idName">View01</a>,
+<a title="go to this Viewpoint node" href="#View02" class="idName">View02</a>
+<br /><hr width="50%"/>
+            <b>
+               <i>Index for Viewpoint images</i>
+            </b>: 
+<a title="go to this Viewpoint node: Back view"
+                href="#Back"
+                class="idName">Back</a>,
+<a title="go to this Viewpoint node: Close Front"
+                href="#Close"
+                class="idName">Close</a>,
+<a title="go to this Viewpoint node: Front view"
+                href="#Front"
+                class="idName">Front</a>,
+<a title="go to this Viewpoint node: Low Left"
+                href="#PersLeft"
+                class="idName">PersLeft</a>,
+<a title="go to this Viewpoint node: Low Right"
+                href="#PersRight"
+                class="idName">PersRight</a>,
+<a title="go to this Viewpoint node: ArtDeco00"
+                href="#View00"
+                class="idName">View00</a>,
+<a title="go to this Viewpoint node: ArtDeco01"
+                href="#View01"
+                class="idName">View01</a>,
+<a title="go to this Viewpoint node: ArtDeco02"
+                href="#View02"
+                class="idName">View02</a>
+            <hr style="width:100%"/>
+         </div>
+         <span style="color:white">
+--&gt;
+</span>
+      </div>
+      <p style="text-align:center;">
+         <span style="color:white">&lt;!--</span>
+Color key: <!--(matching X3D and XML terminology) -->
+&lt;<span class="element">X3dNode</span>
+         <span class="idName"> DEF</span>='<span class="idName">idName</span>' <span class="attribute">field</span>='<span class="value">value</span>'/&gt; 
+ matches 
+&lt;<span class="element">XmlElement</span>
+         <span class="idName"> DEF</span>='<span class="idName">idName</span>' <span class="attribute">attribute</span>='<span class="value">value</span>'/&gt; <br/>
+<span title="behavior node" style="background-color:#DDEEFF;">(Light blue background: behavior node)</span> <span title="inserted documentation about ROUTE connections" style="background-color:#EEEEEE;">(Grey background: inserted documentation)</span> <span title="X3D Extensibility" style="background-color:#FFEEFF;">(Magenta background: X3D Extensibility)</span><br/>
+&#160;&#160;&#160;
+&lt;<span class="prototype">Prototype</span>
+         <span class="attribute">name</span>='<span class="prototype">ProtoName</span>'&gt;
+	&lt;<span class="prototype">field</span>
+         <span class="attribute">name</span>='<span class="prototype">fieldName</span>'/&gt; &lt;/<span class="prototype">Prototype</span>&gt;
+<span style="color:white"> --&gt;</span>
+      </p>
+      <p style="text-align:center; background-color:white">
+         <span style="color:white">&lt;!--</span>
+For additional help information about X3D scenes, please see <a href="https://www.web3d.org/x3d/content/X3dTooltips.html"
+             title="Summary descriptions and authoring hints for each X3D node (element) and field (attribute)"
+             target="_blank">X3D Tooltips</a>, <a href="https://www.web3d.org/x3d/content/examples/X3dResources.html"
+             title="Numerous resources that support X3D graphics"
+             target="_blank">X3D Resources</a> and <a href="https://www.web3d.org/x3d/content/examples/X3dSceneAuthoringHints.html"
+             title="Style guidelines, authoring tips and best practices"
+             target="_blank">X3D Scene Authoring Hints</a>.
+<span style="color:white">--&gt;</span>
+      </p>
+   </body>
+</html>

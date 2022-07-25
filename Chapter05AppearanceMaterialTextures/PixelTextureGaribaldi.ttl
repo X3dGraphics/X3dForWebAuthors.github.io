@@ -1,0 +1,355 @@
+@prefix :        <https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter05AppearanceMaterialTextures/PixelTextureGaribaldi.ttl#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema:  <http://schema.org/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix x3d:     <https://www.web3d.org/specifications/x3d-4.0.xsd#> .
+@prefix x3do:    <https://www.web3d.org/specifications/X3dOntology4.0#> .
+
+:X3D a owl:NamedIndividual, x3do:X3D ;
+  x3do:hasHead :head ;
+  x3do:hasScene :Scene ;
+  x3do:profile 'Immersive' ;
+  x3do:version '3.3' ;
+  x3do:noNamespaceSchemaLocation 'https://www.web3d.org/specifications/x3d-3.3.xsd' .
+:head a owl:NamedIndividual, x3do:head ;
+  x3do:hasParent :X3D ;
+  x3do:hasMeta :meta_1_1, :meta_1_2, :meta_1_3, :meta_1_4, :meta_1_5, :meta_1_6, :meta_1_7, :meta_1_8, :meta_1_9 .
+:meta_1_1 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'PixelTextureGaribaldi.x3d' ;
+  x3do:name 'title' .
+:meta_1_2 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'The Garibaldi with a PixelTexture instead of a file texture.' ;
+  x3do:name 'description' .
+:meta_1_3 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Ildeniz Duman' ;
+  x3do:name 'creator' .
+:meta_1_4 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '1 June 1998' ;
+  x3do:name 'created' .
+:meta_1_5 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '20 October 2019' ;
+  x3do:name 'modified' .
+:meta_1_6 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/Garibaldi.x3d' ;
+  x3do:name 'reference' .
+:meta_1_7 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter05AppearanceMaterialTextures/PixelTextureGaribaldi.x3d' ;
+  x3do:name 'identifier' .
+:meta_1_8 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'X3D-Edit 3.3, https://savage.nps.edu/X3D-Edit' ;
+  x3do:name 'generator' .
+:meta_1_9 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '../license.html' ;
+  x3do:name 'license' .
+:meta dcterms:title "PixelTextureGaribaldi.x3d" .
+:meta dcterms:description "The Garibaldi with a PixelTexture instead of a file texture." .
+:meta dcterms:creator "Ildeniz Duman" .
+:meta dcterms:created "1 June 1998" .
+:meta dcterms:modified "20 October 2019" .
+:meta dcterms:reference "https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/Garibaldi.x3d" .
+:meta dcterms:identifier "https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter05AppearanceMaterialTextures/PixelTextureGaribaldi.x3d" .
+:meta dcterms:generator "X3D-Edit 3.3, https://savage.nps.edu/X3D-Edit" .
+:meta dcterms:license "../license.html" .
+:Scene a owl:NamedIndividual, x3do:Scene ;
+  x3do:hasParent :X3D ;
+  x3do:hasChildren :WorldInfo_2_1, :Background_2_4, :Viewpoint_2_5, :Transform_2_6, :Transform_2_7, :Transform_2_8, :Transform_2_9 ;
+  x3do:hasExternProtoDeclare :ExternProtoDeclare_2_2, :ExternProtoDeclare_2_3 .
+:WorldInfo_2_1 a owl:NamedIndividual, x3do:WorldInfo ;
+  x3do:hasParent :Scene ;
+  x3do:title 'PixelTextureGaribaldi.x3d' .
+:ExternProtoDeclare_2_2 a owl:NamedIndividual, x3do:ExternProtoDeclare ;
+  x3do:hasParent :Scene ;
+  x3do:hasField :field_2_2_1, :field_2_2_2, :field_2_2_3, :field_2_2_4, :field_2_2_5, :field_2_2_6, :field_2_2_7, :field_2_2_8, :field_2_2_9 ;
+  x3do:name 'CircleFishPT' ;
+  x3do:url '"CircleFishPTPrototype.x3d#CircleFishPT" "https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/CircleFishPTPrototype.x3d#CircleFishPT" "CircleFishPTPrototype.wrl#CircleFishPT" "https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/CircleFishPTPrototype.wrl#CircleFishPT"' .
+:field_2_2_1 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :ExternProtoDeclare_2_2 ;
+  x3do:accessType 'inputOutput' ;
+  x3do:name 'skinPixelTexture' ;
+  x3do:type 'SFImage' .
+:field_2_2_2 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :ExternProtoDeclare_2_2 ;
+  x3do:accessType 'inputOutput' ;
+  x3do:name 'fishScale' ;
+  x3do:type 'SFVec3f' .
+:field_2_2_3 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :ExternProtoDeclare_2_2 ;
+  x3do:accessType 'inputOutput' ;
+  x3do:name 'fishColor' ;
+  x3do:type 'SFColor' .
+:field_2_2_4 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :ExternProtoDeclare_2_2 ;
+  x3do:accessType 'inputOutput' ;
+  x3do:name 'finColor' ;
+  x3do:type 'SFColor' .
+:field_2_2_5 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :ExternProtoDeclare_2_2 ;
+  x3do:accessType 'inputOutput' ;
+  x3do:name 'positionKey' ;
+  x3do:type 'MFFloat' .
+:field_2_2_6 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :ExternProtoDeclare_2_2 ;
+  x3do:accessType 'inputOutput' ;
+  x3do:name 'positionKeyValue' ;
+  x3do:type 'MFVec3f' .
+:field_2_2_7 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :ExternProtoDeclare_2_2 ;
+  x3do:accessType 'inputOutput' ;
+  x3do:name 'orientationKey' ;
+  x3do:type 'MFFloat' .
+:field_2_2_8 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :ExternProtoDeclare_2_2 ;
+  x3do:accessType 'inputOutput' ;
+  x3do:name 'orientationKeyValue' ;
+  x3do:type 'MFRotation' .
+:field_2_2_9 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :ExternProtoDeclare_2_2 ;
+  x3do:accessType 'inputOutput' ;
+  x3do:name 'orbitTime' ;
+  x3do:type 'SFTime' .
+:ExternProtoDeclare_2_3 a owl:NamedIndividual, x3do:ExternProtoDeclare ;
+  x3do:hasParent :Scene ;
+  x3do:hasField :field_2_3_1, :field_2_3_2, :field_2_3_3, :field_2_3_4, :field_2_3_5, :field_2_3_6, :field_2_3_7, :field_2_3_8, :field_2_3_9 ;
+  x3do:name 'CircleFish' ;
+  x3do:url '"CircleFishPrototype.x3d#CircleFish" "https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/CircleFishPrototype.x3d#CircleFish" "CircleFishPrototype.wrl#CircleFish" "https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/CircleFishPrototype.wrl#CircleFish"' .
+:field_2_3_1 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :ExternProtoDeclare_2_3 ;
+  x3do:accessType 'inputOutput' ;
+  x3do:name 'skinTextureUrl' ;
+  x3do:type 'MFString' .
+:field_2_3_2 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :ExternProtoDeclare_2_3 ;
+  x3do:accessType 'inputOutput' ;
+  x3do:name 'fishScale' ;
+  x3do:type 'SFVec3f' .
+:field_2_3_3 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :ExternProtoDeclare_2_3 ;
+  x3do:accessType 'inputOutput' ;
+  x3do:name 'fishColor' ;
+  x3do:type 'SFColor' .
+:field_2_3_4 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :ExternProtoDeclare_2_3 ;
+  x3do:accessType 'inputOutput' ;
+  x3do:name 'finColor' ;
+  x3do:type 'SFColor' .
+:field_2_3_5 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :ExternProtoDeclare_2_3 ;
+  x3do:accessType 'inputOutput' ;
+  x3do:name 'positionKey' ;
+  x3do:type 'MFFloat' .
+:field_2_3_6 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :ExternProtoDeclare_2_3 ;
+  x3do:accessType 'inputOutput' ;
+  x3do:name 'positionKeyValue' ;
+  x3do:type 'MFVec3f' .
+:field_2_3_7 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :ExternProtoDeclare_2_3 ;
+  x3do:accessType 'inputOutput' ;
+  x3do:name 'orientationKey' ;
+  x3do:type 'MFFloat' .
+:field_2_3_8 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :ExternProtoDeclare_2_3 ;
+  x3do:accessType 'inputOutput' ;
+  x3do:name 'orientationKeyValue' ;
+  x3do:type 'MFRotation' .
+:field_2_3_9 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :ExternProtoDeclare_2_3 ;
+  x3do:accessType 'inputOutput' ;
+  x3do:name 'orbitTime' ;
+  x3do:type 'SFTime' .
+:Background_2_4 a owl:NamedIndividual, x3do:Background ;
+  x3do:hasParent :Scene ;
+  x3do:skyColor ( 1 1 1 ) .
+:Viewpoint_2_5 a owl:NamedIndividual, x3do:Viewpoint ;
+  x3do:hasParent :Scene ;
+  x3do:description 'Book View' ;
+  x3do:orientation ( 0 1 0 0.229 ) ;
+  x3do:position ( 0.62 0.03 1.28 ) .
+:Transform_2_6 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :ProtoInstance_2_6_1 ;
+  x3do:translation ( -0.3 .3 0 ) .
+:ProtoInstance_2_6_1 a owl:NamedIndividual, x3do:ProtoInstance ;
+  x3do:hasParent :Transform_2_6 ;
+  x3do:hasFieldValue :fieldValue_2_6_1_1, :fieldValue_2_6_1_2, :fieldValue_2_6_1_3, :fieldValue_2_6_1_4, :fieldValue_2_6_1_5, :fieldValue_2_6_1_6, :fieldValue_2_6_1_7, :fieldValue_2_6_1_8, :fieldValue_2_6_1_9 ;
+  x3do:name 'CircleFishPT' .
+:fieldValue_2_6_1_1 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :ProtoInstance_2_6_1 ;
+  x3do:name 'skinPixelTexture' ;
+  x3do:value '12 7 3 0xEFAA55 0xF9BD5B 0xFCC55A 0xFCC75D 0xFCC75A 0xFCC859 0xFBCB5B 0xFCCA5C 0xFDCF5E 0xFCD263 0xFDD76C 0xF2CD77 0xF4B356 0xF9BE58 0xFBC458 0xFBC558 0xFCC75A 0xFCCA5B 0xFCCC60 0xFDCF5C 0xFDCF5E 0xFDD05D 0xFDD15E 0xFDD060 0xF5B655 0xF9C056 0xF8BD53 0xFABE54 0xFABF53 0xFBC254 0xFBC353 0xFBC453 0xFBC555 0xFBC753 0xFBC855 0xFDCC5A 0xF9C659 0xF6BE54 0xF4B954 0xF2B651 0xF2B752 0xF5BC53 0xF6BF50 0xFAC452 0xFBC753 0xFAC551 0xF9C753 0xF5BE53 0xF1B453 0xEFB253 0xEBAB52 0xEBAA53 0xECAD50 0xF0B24F 0xF3B84E 0xF7BF51 0xF8C453 0xF9C955 0xF7C453 0xF5BB54 0xE3A152 0xDE9B53 0xDE9C55 0xE09C52 0xE5A251 0xE9A950 0xF1AD50 0xF2AD51 0xF5BA50 0xF5BF53 0xF9C455 0xF5C557 0xB07950 0xB3784F 0xBB7C4F 0xC4824F 0xD28C4E 0xE18C4E 0xE47C4A 0xE17B4C 0xDC844A 0xE5954D 0xF2B550 0xF4C354' .
+:fieldValue_2_6_1_2 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :ProtoInstance_2_6_1 ;
+  x3do:name 'fishScale' ;
+  x3do:value '1.0 0.39 0.4' .
+:fieldValue_2_6_1_3 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :ProtoInstance_2_6_1 ;
+  x3do:name 'finColor' ;
+  x3do:value '0.9 0.66 0.4' .
+:fieldValue_2_6_1_4 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :ProtoInstance_2_6_1 ;
+  x3do:name 'fishColor' ;
+  x3do:value '.97 .75 .3' .
+:fieldValue_2_6_1_5 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :ProtoInstance_2_6_1 ;
+  x3do:name 'positionKey' ;
+  x3do:value '0.0 0.4 0.7 0.95 1.0' .
+:fieldValue_2_6_1_6 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :ProtoInstance_2_6_1 ;
+  x3do:name 'positionKeyValue' ;
+  x3do:value '0.0 0.0 0.0 0.5 0.0 0.0 0.0 0.0 0.0 0.5 0.0 0.0 0.2 0.0 0.0' .
+:fieldValue_2_6_1_7 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :ProtoInstance_2_6_1 ;
+  x3do:name 'orientationKey' ;
+  x3do:value '0.0 1.0' .
+:fieldValue_2_6_1_8 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :ProtoInstance_2_6_1 ;
+  x3do:name 'orientationKeyValue' ;
+  x3do:value '0.0 1.0 0.0 90.0 0.0 1.0 0.0 90.0' .
+:fieldValue_2_6_1_9 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :ProtoInstance_2_6_1 ;
+  x3do:name 'orbitTime' ;
+  x3do:value '80.0' .
+:Transform_2_7 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :ProtoInstance_2_7_1 ;
+  x3do:translation ( .3 .3 0 ) .
+:ProtoInstance_2_7_1 a owl:NamedIndividual, x3do:ProtoInstance ;
+  x3do:hasParent :Transform_2_7 ;
+  x3do:hasFieldValue :fieldValue_2_7_1_1, :fieldValue_2_7_1_2, :fieldValue_2_7_1_3, :fieldValue_2_7_1_4, :fieldValue_2_7_1_5, :fieldValue_2_7_1_6, :fieldValue_2_7_1_7, :fieldValue_2_7_1_8, :fieldValue_2_7_1_9 ;
+  x3do:name 'CircleFishPT' .
+:fieldValue_2_7_1_1 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :ProtoInstance_2_7_1 ;
+  x3do:name 'skinPixelTexture' ;
+  x3do:value '8 8 1 0xcc 0x00 0xcc 0x00 0xcc 0x00 0xcc 0x00 0x00 0xcc 0x00 0xcc 0x00 0xcc 0x00 0xcc 0xcc 0x00 0xcc 0x00 0xcc 0x00 0xcc 0x00 0x00 0xcc 0x00 0xcc 0x00 0xcc 0x00 0xcc 0xcc 0x00 0xcc 0x00 0xcc 0x00 0xcc 0x00 0x00 0xcc 0x00 0xcc 0x00 0xcc 0x00 0xcc 0xcc 0x00 0xcc 0x00 0xcc 0x00 0xcc 0x00 0x00 0xcc 0x00 0xcc 0x00 0xcc 0x00 0xcc' .
+:fieldValue_2_7_1_2 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :ProtoInstance_2_7_1 ;
+  x3do:name 'fishScale' ;
+  x3do:value '1.0 0.39 0.4' .
+:fieldValue_2_7_1_3 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :ProtoInstance_2_7_1 ;
+  x3do:name 'finColor' ;
+  x3do:value '0.9 0.66 0.4' .
+:fieldValue_2_7_1_4 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :ProtoInstance_2_7_1 ;
+  x3do:name 'fishColor' ;
+  x3do:value '.97 .75 .3' .
+:fieldValue_2_7_1_5 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :ProtoInstance_2_7_1 ;
+  x3do:name 'positionKey' ;
+  x3do:value '0.0 0.4 0.7 0.95 1.0' .
+:fieldValue_2_7_1_6 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :ProtoInstance_2_7_1 ;
+  x3do:name 'positionKeyValue' ;
+  x3do:value '0.0 0.0 0.0 0.5 0.0 0.0 0.0 0.0 0.0 0.5 0.0 0.0 0.2 0.0 0.0' .
+:fieldValue_2_7_1_7 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :ProtoInstance_2_7_1 ;
+  x3do:name 'orientationKey' ;
+  x3do:value '0.0 1.0' .
+:fieldValue_2_7_1_8 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :ProtoInstance_2_7_1 ;
+  x3do:name 'orientationKeyValue' ;
+  x3do:value '0.0 1.0 0.0 90.0 0.0 1.0 0.0 90.0' .
+:fieldValue_2_7_1_9 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :ProtoInstance_2_7_1 ;
+  x3do:name 'orbitTime' ;
+  x3do:value '80.0' .
+:Transform_2_8 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :ProtoInstance_2_8_1 ;
+  x3do:translation ( -0.3 -0.3 0 ) .
+:ProtoInstance_2_8_1 a owl:NamedIndividual, x3do:ProtoInstance ;
+  x3do:hasParent :Transform_2_8 ;
+  x3do:hasFieldValue :fieldValue_2_8_1_1, :fieldValue_2_8_1_2, :fieldValue_2_8_1_3, :fieldValue_2_8_1_4, :fieldValue_2_8_1_5, :fieldValue_2_8_1_6, :fieldValue_2_8_1_7, :fieldValue_2_8_1_8, :fieldValue_2_8_1_9 ;
+  x3do:name 'CircleFishPT' .
+:fieldValue_2_8_1_1 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :ProtoInstance_2_8_1 ;
+  x3do:name 'skinPixelTexture' ;
+  x3do:value '2 4 3 0xff0000 0xffff00 0x007700 0xff0077 0x0000ff 0xff7700 0x00ff77 0x888888' .
+:fieldValue_2_8_1_2 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :ProtoInstance_2_8_1 ;
+  x3do:name 'fishScale' ;
+  x3do:value '1.0 0.39 0.4' .
+:fieldValue_2_8_1_3 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :ProtoInstance_2_8_1 ;
+  x3do:name 'finColor' ;
+  x3do:value '0.9 0.66 0.4' .
+:fieldValue_2_8_1_4 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :ProtoInstance_2_8_1 ;
+  x3do:name 'fishColor' ;
+  x3do:value '.97 .75 .3' .
+:fieldValue_2_8_1_5 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :ProtoInstance_2_8_1 ;
+  x3do:name 'positionKey' ;
+  x3do:value '0.0 0.4 0.7 0.95 1.0' .
+:fieldValue_2_8_1_6 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :ProtoInstance_2_8_1 ;
+  x3do:name 'positionKeyValue' ;
+  x3do:value '0.0 0.0 0.0 0.5 0.0 0.0 0.0 0.0 0.0 0.5 0.0 0.0 0.2 0.0 0.0' .
+:fieldValue_2_8_1_7 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :ProtoInstance_2_8_1 ;
+  x3do:name 'orientationKey' ;
+  x3do:value '0.0 1.0' .
+:fieldValue_2_8_1_8 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :ProtoInstance_2_8_1 ;
+  x3do:name 'orientationKeyValue' ;
+  x3do:value '0.0 1.0 0.0 90.0 0.0 1.0 0.0 90.0' .
+:fieldValue_2_8_1_9 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :ProtoInstance_2_8_1 ;
+  x3do:name 'orbitTime' ;
+  x3do:value '80.0' .
+:Transform_2_9 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :ProtoInstance_2_9_1 ;
+  x3do:translation ( .3 -0.3 0 ) .
+:ProtoInstance_2_9_1 a owl:NamedIndividual, x3do:ProtoInstance ;
+  x3do:hasParent :Transform_2_9 ;
+  x3do:hasFieldValue :fieldValue_2_9_1_1, :fieldValue_2_9_1_2, :fieldValue_2_9_1_3, :fieldValue_2_9_1_4, :fieldValue_2_9_1_5, :fieldValue_2_9_1_6, :fieldValue_2_9_1_7, :fieldValue_2_9_1_8, :fieldValue_2_9_1_9 ;
+  x3do:name 'CircleFish' .
+:fieldValue_2_9_1_1 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :ProtoInstance_2_9_1 ;
+  x3do:name 'skinTextureUrl' ;
+  x3do:value '"GaribaldiPatch.jpg" "https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/GaribaldiPatch.jpg"' .
+:fieldValue_2_9_1_2 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :ProtoInstance_2_9_1 ;
+  x3do:name 'fishScale' ;
+  x3do:value '1.0 0.39 0.4' .
+:fieldValue_2_9_1_3 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :ProtoInstance_2_9_1 ;
+  x3do:name 'finColor' ;
+  x3do:value '0.9 0.66 0.4' .
+:fieldValue_2_9_1_4 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :ProtoInstance_2_9_1 ;
+  x3do:name 'fishColor' ;
+  x3do:value '.97 .75 .3' .
+:fieldValue_2_9_1_5 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :ProtoInstance_2_9_1 ;
+  x3do:name 'positionKey' ;
+  x3do:value '0.0 0.4 0.7 0.95 1.0' .
+:fieldValue_2_9_1_6 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :ProtoInstance_2_9_1 ;
+  x3do:name 'positionKeyValue' ;
+  x3do:value '0.0 0.0 0.0 0.5 0.0 0.0 0.0 0.0 0.0 0.5 0.0 0.0 0.2 0.0 0.0' .
+:fieldValue_2_9_1_7 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :ProtoInstance_2_9_1 ;
+  x3do:name 'orientationKey' ;
+  x3do:value '0.0 1.0' .
+:fieldValue_2_9_1_8 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :ProtoInstance_2_9_1 ;
+  x3do:name 'orientationKeyValue' ;
+  x3do:value '0.0 1.0 0.0 90.0 0.0 1.0 0.0 90.0' .
+:fieldValue_2_9_1_9 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :ProtoInstance_2_9_1 ;
+  x3do:name 'orbitTime' ;
+  x3do:value '80.0' .

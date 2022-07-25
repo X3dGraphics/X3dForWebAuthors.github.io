@@ -1,0 +1,317 @@
+@prefix :        <https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/CopperRockfishPlacardViewer.ttl#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema:  <http://schema.org/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix x3d:     <https://www.web3d.org/specifications/x3d-4.0.xsd#> .
+@prefix x3do:    <https://www.web3d.org/specifications/X3dOntology4.0#> .
+
+:X3D a owl:NamedIndividual, x3do:X3D ;
+  x3do:hasHead :head ;
+  x3do:hasScene :Scene ;
+  x3do:profile 'Interactive' ;
+  x3do:version '3.3' ;
+  x3do:noNamespaceSchemaLocation 'https://www.web3d.org/specifications/x3d-3.3.xsd' .
+:head a owl:NamedIndividual, x3do:head ;
+  x3do:hasParent :X3D ;
+  x3do:hasMeta :meta_1_1, :meta_1_2, :meta_1_3, :meta_1_4, :meta_1_5, :meta_1_6, :meta_1_7, :meta_1_8 .
+:meta_1_1 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'CopperRockfishPlacardViewer.x3d' ;
+  x3do:name 'title' .
+:meta_1_2 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Viewer for tank placards - needs photo on one side, placard on other, and conversion into prototype once ready.' ;
+  x3do:name 'description' .
+:meta_1_3 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '1 April 2002' ;
+  x3do:name 'created' .
+:meta_1_4 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '20 October 2019' ;
+  x3do:name 'modified' .
+:meta_1_5 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Todd Gagnon and Mark A. Boyd' ;
+  x3do:name 'creator' .
+:meta_1_6 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/CopperRockfishPlacardViewer.x3d' ;
+  x3do:name 'identifier' .
+:meta_1_7 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'X3D-Edit 3.3, https://savage.nps.edu/X3D-Edit' ;
+  x3do:name 'generator' .
+:meta_1_8 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '../license.html' ;
+  x3do:name 'license' .
+:meta dcterms:title "CopperRockfishPlacardViewer.x3d" .
+:meta dcterms:description "Viewer for tank placards - needs photo on one side, placard on other, and conversion into prototype once ready." .
+:meta dcterms:created "1 April 2002" .
+:meta dcterms:modified "20 October 2019" .
+:meta dcterms:creator "Todd Gagnon and Mark A. Boyd" .
+:meta dcterms:identifier "https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/CopperRockfishPlacardViewer.x3d" .
+:meta dcterms:generator "X3D-Edit 3.3, https://savage.nps.edu/X3D-Edit" .
+:meta dcterms:license "../license.html" .
+:Scene a owl:NamedIndividual, x3do:Scene ;
+  x3do:hasParent :X3D ;
+  x3do:hasChildren :WorldInfo_2_1, :CopperRockfish, :Group_2_3 ;
+  x3do:hasROUTE :ROUTE_2_4, :ROUTE_2_5, :ROUTE_2_6, :ROUTE_2_7, :ROUTE_2_8, :ROUTE_2_9, :ROUTE_2_10 .
+:WorldInfo_2_1 a owl:NamedIndividual, x3do:WorldInfo ;
+  x3do:hasParent :Scene ;
+  x3do:title 'CopperRockfishPlacardViewer.x3d' .
+:CopperRockfish a owl:NamedIndividual, x3do:Viewpoint ;
+  x3do:hasParent :Scene ;
+  x3do:DEF 'CopperRockfish' ;
+  x3do:description 'Copper Rockfish' ;
+  x3do:position ( 0.0 0.0 4.0 ) .
+:Group_2_3 a owl:NamedIndividual, x3do:Group ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :BlueRockfishTouchSensor, :BLUEROCKFISHCLOCK, :BlueRockfishPathInterpolator, :BLUEROCKFISH_TRANSFORM, :Group_2_3_5, :Group_2_3_6, :Group_2_3_7 .
+:BlueRockfishTouchSensor a owl:NamedIndividual, x3do:TouchSensor ;
+  x3do:hasParent :Group_2_3 ;
+  x3do:DEF 'BlueRockfishTouchSensor' ;
+  x3do:description 'touch to rotate' .
+:BLUEROCKFISHCLOCK a owl:NamedIndividual, x3do:TimeSensor ;
+  x3do:hasParent :Group_2_3 ;
+  x3do:DEF 'BLUEROCKFISHCLOCK' ;
+  x3do:cycleInterval '2.0' .
+:BlueRockfishPathInterpolator a owl:NamedIndividual, x3do:OrientationInterpolator ;
+  x3do:hasParent :Group_2_3 ;
+  x3do:DEF 'BlueRockfishPathInterpolator' ;
+  x3do:key ( 0.0 0.5 1.0 ) ;
+  x3do:keyValue ( 0.0 1.0 0.0 0.0 0.0 1.0 0.0 1.57 0.0 1.0 0.0 3.14 ) .
+:BLUEROCKFISH_TRANSFORM a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Group_2_3 ;
+  x3do:hasChildren :Shape_2_3_4_1 ;
+  x3do:DEF 'BLUEROCKFISH_TRANSFORM' .
+:Shape_2_3_4_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :BLUEROCKFISH_TRANSFORM ;
+  x3do:hasAppearance :Appearance_2_3_4_1_1 ;
+  x3do:hasGeometry :IndexedFaceSet_2_3_4_1_2 .
+:Appearance_2_3_4_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_3_4_1 ;
+  x3do:hasTexture :CopperRockfishImage ;
+  x3do:hasTextureTransform :TextureTransform_2_3_4_1_1_2 .
+:CopperRockfishImage a owl:NamedIndividual, x3do:ImageTexture ;
+  x3do:hasParent :Appearance_2_3_4_1_1 ;
+  x3do:DEF 'CopperRockfishImage' ;
+  x3do:url '"CopperRockfishPlacard.jpg" "https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/CopperRockfishPlacard.jpg"' .
+:TextureTransform_2_3_4_1_1_2 a owl:NamedIndividual, x3do:TextureTransform ;
+  x3do:hasParent :Appearance_2_3_4_1_1 ;
+  x3do:scale ( 1 2 ) .
+:IndexedFaceSet_2_3_4_1_2 a owl:NamedIndividual, x3do:IndexedFaceSet ;
+  x3do:hasParent :Shape_2_3_4_1 ;
+  x3do:hasCoord :Coordinate_2_3_4_1_2_1 ;
+  x3do:coordIndex ( 0 1 2 3 0 -1 ) .
+:Coordinate_2_3_4_1_2_1 a owl:NamedIndividual, x3do:Coordinate ;
+  x3do:hasParent :IndexedFaceSet_2_3_4_1_2 ;
+  x3do:point ( -2 -1 0 2 -1 0 2 1 0 -2 1 0 ) .
+:Group_2_3_5 a owl:NamedIndividual, x3do:Group ;
+  x3do:hasParent :Group_2_3 ;
+  x3do:hasChildren :BUTTON_TRANSFORM, :FrontTouchSensor, :FRONTTOUCHSENSORCLOCK, :PlaqueToPictureInterpolator .
+:BUTTON_TRANSFORM a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Group_2_3_5 ;
+  x3do:hasChildren :Shape_2_3_5_1_1 ;
+  x3do:DEF 'BUTTON_TRANSFORM' ;
+  x3do:translation ( 1.0 2.0 0.0 ) .
+:Shape_2_3_5_1_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :BUTTON_TRANSFORM ;
+  x3do:hasAppearance :Appearance_2_3_5_1_1_1 ;
+  x3do:hasGeometry :Sphere_2_3_5_1_1_2 .
+:Appearance_2_3_5_1_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_3_5_1_1 ;
+  x3do:hasMaterial :Material_2_3_5_1_1_1_1 .
+:Material_2_3_5_1_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_3_5_1_1_1 ;
+  x3do:diffuseColor ( 0.0 1.0 0.0 ) .
+:Sphere_2_3_5_1_1_2 a owl:NamedIndividual, x3do:Sphere ;
+  x3do:hasParent :Shape_2_3_5_1_1 ;
+  x3do:radius 0.5 .
+:FrontTouchSensor a owl:NamedIndividual, x3do:TouchSensor ;
+  x3do:hasParent :Group_2_3_5 ;
+  x3do:DEF 'FrontTouchSensor' ;
+  x3do:description 'touch to rotate' .
+:FRONTTOUCHSENSORCLOCK a owl:NamedIndividual, x3do:TimeSensor ;
+  x3do:hasParent :Group_2_3_5 ;
+  x3do:DEF 'FRONTTOUCHSENSORCLOCK' ;
+  x3do:cycleInterval '2.0' .
+:PlaqueToPictureInterpolator a owl:NamedIndividual, x3do:OrientationInterpolator ;
+  x3do:hasParent :Group_2_3_5 ;
+  x3do:DEF 'PlaqueToPictureInterpolator' ;
+  x3do:key ( 0.0 0.5 1.0 ) ;
+  x3do:keyValue ( 0.0 1.0 0.0 3.14 0.0 1.0 0.0 1.57 0.0 1.0 0.0 0.0 ) .
+:Group_2_3_6 a owl:NamedIndividual, x3do:Group ;
+  x3do:hasParent :Group_2_3 ;
+  x3do:hasChildren :BUTTON_TRANSFORM2, :PictureTouchSensor .
+:BUTTON_TRANSFORM2 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Group_2_3_6 ;
+  x3do:hasChildren :Shape_2_3_6_1_1 ;
+  x3do:DEF 'BUTTON_TRANSFORM2' ;
+  x3do:translation ( -1.0 2.0 0.0 ) .
+:Shape_2_3_6_1_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :BUTTON_TRANSFORM2 ;
+  x3do:hasAppearance :Appearance_2_3_6_1_1_1 ;
+  x3do:hasGeometry :Sphere_2_3_6_1_1_2 .
+:Appearance_2_3_6_1_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_3_6_1_1 ;
+  x3do:hasMaterial :Material_2_3_6_1_1_1_1 .
+:Material_2_3_6_1_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_3_6_1_1_1 ;
+  x3do:diffuseColor ( 1.0 0.0 0.0 ) .
+:Sphere_2_3_6_1_1_2 a owl:NamedIndividual, x3do:Sphere ;
+  x3do:hasParent :Shape_2_3_6_1_1 ;
+  x3do:radius 0.5 .
+:PictureTouchSensor a owl:NamedIndividual, x3do:TouchSensor ;
+  x3do:hasParent :Group_2_3_6 ;
+  x3do:DEF 'PictureTouchSensor' ;
+  x3do:description 'touch to rotate' .
+:Group_2_3_7 a owl:NamedIndividual, x3do:Group ;
+  x3do:hasParent :Group_2_3 ;
+  x3do:hasChildren :BASE_TRANSFORM, :Group_2_3_7_2, :Group_2_3_7_3, :Group_2_3_7_4, :Group_2_3_7_5 .
+:BASE_TRANSFORM a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Group_2_3_7 ;
+  x3do:hasChildren :Shape_2_3_7_1_1 ;
+  x3do:DEF 'BASE_TRANSFORM' ;
+  x3do:translation ( 0.0 0.0 -0.3 ) .
+:Shape_2_3_7_1_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :BASE_TRANSFORM ;
+  x3do:hasAppearance :Appearance_2_3_7_1_1_1 ;
+  x3do:hasGeometry :Box_2_3_7_1_1_2 .
+:Appearance_2_3_7_1_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_3_7_1_1 ;
+  x3do:hasMaterial :Material_2_3_7_1_1_1_1 .
+:Material_2_3_7_1_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_3_7_1_1_1 ;
+  x3do:diffuseColor ( 0.3 0.3 0.6 ) .
+:Box_2_3_7_1_1_2 a owl:NamedIndividual, x3do:Box ;
+  x3do:hasParent :Shape_2_3_7_1_1 ;
+  x3do:size ( 8.0 6.0 0.3 ) .
+:Group_2_3_7_2 a owl:NamedIndividual, x3do:Group ;
+  x3do:hasParent :Group_2_3_7 ;
+  x3do:hasChildren :Transform_2_3_7_2_1 .
+:Transform_2_3_7_2_1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Group_2_3_7_2 ;
+  x3do:hasChildren :Shape_2_3_7_2_1_1 ;
+  x3do:translation ( 0.0 -2.6 0.0 ) .
+:Shape_2_3_7_2_1_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_3_7_2_1 ;
+  x3do:hasAppearance :Appearance_2_3_7_2_1_1_1 ;
+  x3do:hasGeometry :Box_2_3_7_2_1_1_2 .
+:Appearance_2_3_7_2_1_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_3_7_2_1_1 ;
+  x3do:hasMaterial :Material_2_3_7_2_1_1_1_1 .
+:Material_2_3_7_2_1_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_3_7_2_1_1_1 ;
+  x3do:diffuseColor ( 0.8 0.8 0.2 ) .
+:Box_2_3_7_2_1_1_2 a owl:NamedIndividual, x3do:Box ;
+  x3do:hasParent :Shape_2_3_7_2_1_1 ;
+  x3do:size ( 8.0 1.0 1.0 ) .
+:Group_2_3_7_3 a owl:NamedIndividual, x3do:Group ;
+  x3do:hasParent :Group_2_3_7 ;
+  x3do:hasChildren :Transform_2_3_7_3_1 .
+:Transform_2_3_7_3_1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Group_2_3_7_3 ;
+  x3do:hasChildren :Shape_2_3_7_3_1_1 ;
+  x3do:translation ( 0.0 2.6 0.0 ) .
+:Shape_2_3_7_3_1_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_3_7_3_1 ;
+  x3do:hasAppearance :Appearance_2_3_7_3_1_1_1 ;
+  x3do:hasGeometry :Box_2_3_7_3_1_1_2 .
+:Appearance_2_3_7_3_1_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_3_7_3_1_1 ;
+  x3do:hasMaterial :Material_2_3_7_3_1_1_1_1 .
+:Material_2_3_7_3_1_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_3_7_3_1_1_1 ;
+  x3do:diffuseColor ( 0.8 0.8 0.2 ) .
+:Box_2_3_7_3_1_1_2 a owl:NamedIndividual, x3do:Box ;
+  x3do:hasParent :Shape_2_3_7_3_1_1 ;
+  x3do:size ( 8.0 1.0 1.0 ) .
+:Group_2_3_7_4 a owl:NamedIndividual, x3do:Group ;
+  x3do:hasParent :Group_2_3_7 ;
+  x3do:hasChildren :Transform_2_3_7_4_1 .
+:Transform_2_3_7_4_1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Group_2_3_7_4 ;
+  x3do:hasChildren :Shape_2_3_7_4_1_1 ;
+  x3do:rotation ( 0.0 0.0 1.0 1.58 ) ;
+  x3do:translation ( 3.6 0.0 0.0 ) .
+:Shape_2_3_7_4_1_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_3_7_4_1 ;
+  x3do:hasAppearance :Appearance_2_3_7_4_1_1_1 ;
+  x3do:hasGeometry :Box_2_3_7_4_1_1_2 .
+:Appearance_2_3_7_4_1_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_3_7_4_1_1 ;
+  x3do:hasMaterial :Material_2_3_7_4_1_1_1_1 .
+:Material_2_3_7_4_1_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_3_7_4_1_1_1 ;
+  x3do:diffuseColor ( 0.8 0.8 0.2 ) .
+:Box_2_3_7_4_1_1_2 a owl:NamedIndividual, x3do:Box ;
+  x3do:hasParent :Shape_2_3_7_4_1_1 ;
+  x3do:size ( 6.2 1.0 1.0 ) .
+:Group_2_3_7_5 a owl:NamedIndividual, x3do:Group ;
+  x3do:hasParent :Group_2_3_7 ;
+  x3do:hasChildren :Transform_2_3_7_5_1 .
+:Transform_2_3_7_5_1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Group_2_3_7_5 ;
+  x3do:hasChildren :Shape_2_3_7_5_1_1 ;
+  x3do:rotation ( 0.0 0.0 1.0 1.58 ) ;
+  x3do:translation ( -3.6 0.0 0.0 ) .
+:Shape_2_3_7_5_1_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_3_7_5_1 ;
+  x3do:hasAppearance :Appearance_2_3_7_5_1_1_1 ;
+  x3do:hasGeometry :Box_2_3_7_5_1_1_2 .
+:Appearance_2_3_7_5_1_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_3_7_5_1_1 ;
+  x3do:hasMaterial :Material_2_3_7_5_1_1_1_1 .
+:Material_2_3_7_5_1_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_3_7_5_1_1_1 ;
+  x3do:diffuseColor ( 0.8 0.8 0.2 ) .
+:Box_2_3_7_5_1_1_2 a owl:NamedIndividual, x3do:Box ;
+  x3do:hasParent :Shape_2_3_7_5_1_1 ;
+  x3do:size ( 6.2 1.0 1.0 ) .
+:ROUTE_2_4 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'touchTime' ;
+  x3do:fromNode 'BlueRockfishTouchSensor' ;
+  x3do:toField 'set_startTime' ;
+  x3do:toNode 'BLUEROCKFISHCLOCK' .
+:ROUTE_2_5 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'fraction_changed' ;
+  x3do:fromNode 'BLUEROCKFISHCLOCK' ;
+  x3do:toField 'set_fraction' ;
+  x3do:toNode 'BlueRockfishPathInterpolator' .
+:ROUTE_2_6 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'value_changed' ;
+  x3do:fromNode 'BlueRockfishPathInterpolator' ;
+  x3do:toField 'set_rotation' ;
+  x3do:toNode 'BLUEROCKFISH_TRANSFORM' .
+:ROUTE_2_7 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'touchTime' ;
+  x3do:fromNode 'FrontTouchSensor' ;
+  x3do:toField 'set_startTime' ;
+  x3do:toNode 'FRONTTOUCHSENSORCLOCK' .
+:ROUTE_2_8 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'fraction_changed' ;
+  x3do:fromNode 'FRONTTOUCHSENSORCLOCK' ;
+  x3do:toField 'set_fraction' ;
+  x3do:toNode 'PlaqueToPictureInterpolator' .
+:ROUTE_2_9 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'value_changed' ;
+  x3do:fromNode 'PlaqueToPictureInterpolator' ;
+  x3do:toField 'set_rotation' ;
+  x3do:toNode 'BLUEROCKFISH_TRANSFORM' .
+:ROUTE_2_10 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'touchTime' ;
+  x3do:fromNode 'PictureTouchSensor' ;
+  x3do:toField 'set_startTime' ;
+  x3do:toNode 'BLUEROCKFISHCLOCK' .

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<svrl:schematron-output xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                        xmlns:schold="http://www.ascc.net/xml/schematron"
+                        xmlns:iso="http://purl.oclc.org/dsdl/schematron"
+                        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+                        xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
+                        title="X3D Graphics Validity Checks using Schematron"
+                        schemaVersion=""><!--   
+		   
+		   
+		 --><svrl:active-pattern document="file:/C:/x3d-code/www.web3d.org/x3d/content/examples/X3dForWebAuthors/Chapter07EventAnimationInterpolation/ScalarInterpolatorFishExample.x3d"/>
+   <svrl:fired-rule context="X3D | *[(upper-case(local-name()) = 'X3D')]"/>
+   <svrl:fired-rule context="head | *[(lower-case(local-name()) = 'head')]"/>
+   <svrl:fired-rule context="meta | *[(lower-case(local-name()) = 'meta')]"/>
+   <svrl:fired-rule context="meta | *[(lower-case(local-name()) = 'meta')]"/>
+   <svrl:fired-rule context="meta | *[(lower-case(local-name()) = 'meta')]"/>
+   <svrl:fired-rule context="meta | *[(lower-case(local-name()) = 'meta')]"/>
+   <svrl:fired-rule context="meta | *[(lower-case(local-name()) = 'meta')]"/>
+   <svrl:fired-rule context="meta | *[(lower-case(local-name()) = 'meta')]"/>
+   <svrl:fired-rule context="meta | *[(lower-case(local-name()) = 'meta')]"/>
+   <svrl:fired-rule context="meta | *[(lower-case(local-name()) = 'meta')]"/>
+   <svrl:fired-rule context="meta | *[(lower-case(local-name()) = 'meta')]"/>
+   <svrl:fired-rule context="Scene | *[(lower-case(local-name()) = 'scene')]"/>
+   <svrl:fired-rule context="WorldInfo"/>
+   <svrl:fired-rule context="ExternProtoDeclare"/>
+   <svrl:fired-rule context="field | *[(lower-case(local-name()) = 'field')]"/>
+   <svrl:fired-rule context="field | *[(lower-case(local-name()) = 'field')]"/>
+   <svrl:fired-rule context="field | *[(lower-case(local-name()) = 'field')]"/>
+   <svrl:fired-rule context="field | *[(lower-case(local-name()) = 'field')]"/>
+   <svrl:fired-rule context="field | *[(lower-case(local-name()) = 'field')]"/>
+   <svrl:fired-rule context="field | *[(lower-case(local-name()) = 'field')]"/>
+   <svrl:fired-rule context="field | *[(lower-case(local-name()) = 'field')]"/>
+   <svrl:fired-rule context="field | *[(lower-case(local-name()) = 'field')]"/>
+   <svrl:fired-rule context="field | *[(lower-case(local-name()) = 'field')]"/>
+   <svrl:fired-rule context="Background"/>
+   <svrl:fired-rule context="Viewpoint | OrthoViewpoint"/>
+   <svrl:successful-report test="not((local-name(..)='HAnimSite') and (local-name(../..)='HAnimHumanoid')) and not($defaultHeights) and not(string-length(@orientation) = 0) and not((normalize-space(@orientation) = '0 1 0 0') or (normalize-space(@orientation) = '0.0 1.0 0.0 0.0') or (normalize-space(@orientation) = '0 0 1 0') or (normalize-space(@orientation) = '0.0 0.0 1.0 0.0')) and (starts-with(normalize-space(@orientation),'0 1 0 ') or starts-with(normalize-space(@orientation),'0.0 1.0 0.0 ')) and (number($centerOfRotationY) != number($positionY))"
+                           role="warning"
+                           location="/X3D/Scene/Viewpoint">
+      <svrl:text>&lt;Viewpoint DEF=''/&gt; centerOfRotation='0 0 0' has mismatched Y-value height of 0 compared to position='0.43 0.04 0.53' which has Y-value height of 0.04</svrl:text>
+   </svrl:successful-report>
+   <svrl:fired-rule context="ProtoInstance"/>
+   <svrl:fired-rule context="fieldValue | *[(lower-case(local-name()) = 'fieldValue')]"/>
+   <svrl:fired-rule context="fieldValue | *[(lower-case(local-name()) = 'fieldValue')]"/>
+   <svrl:fired-rule context="fieldValue | *[(lower-case(local-name()) = 'fieldValue')]"/>
+   <svrl:fired-rule context="fieldValue | *[(lower-case(local-name()) = 'fieldValue')]"/>
+   <svrl:fired-rule context="fieldValue | *[(lower-case(local-name()) = 'fieldValue')]"/>
+   <svrl:fired-rule context="fieldValue | *[(lower-case(local-name()) = 'fieldValue')]"/>
+   <svrl:fired-rule context="fieldValue | *[(lower-case(local-name()) = 'fieldValue')]"/>
+   <svrl:fired-rule context="fieldValue | *[(lower-case(local-name()) = 'fieldValue')]"/>
+   <svrl:fired-rule context="fieldValue | *[(lower-case(local-name()) = 'fieldValue')]"/>
+</svrl:schematron-output>

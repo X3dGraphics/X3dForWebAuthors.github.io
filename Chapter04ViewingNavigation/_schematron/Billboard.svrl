@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<svrl:schematron-output xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                        xmlns:schold="http://www.ascc.net/xml/schematron"
+                        xmlns:iso="http://purl.oclc.org/dsdl/schematron"
+                        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+                        xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
+                        title="X3D Graphics Validity Checks using Schematron"
+                        schemaVersion=""><!--   
+		   
+		   
+		 --><svrl:active-pattern document="file:/C:/x3d-code/www.web3d.org/x3d/content/examples/X3dForWebAuthors/Chapter04ViewingNavigation/Billboard.x3d"/>
+   <svrl:fired-rule context="X3D | *[(upper-case(local-name()) = 'X3D')]"/>
+   <svrl:successful-report test="$profileLegal and (//Inline[not(MetadataString)][not(@USE)]) and not($fullProfile)"
+                           role="info"
+                           location="/X3D">
+      <svrl:text>&lt;X3D profile='Immersive'&gt; is defined satisfactorily for this scene, but ensure that child Inline scenes do not exceed this profile/component combination since a parent scene must have an equal or higher profile/component combination </svrl:text>
+   </svrl:successful-report>
+   <svrl:fired-rule context="head | *[(lower-case(local-name()) = 'head')]"/>
+   <svrl:fired-rule context="meta | *[(lower-case(local-name()) = 'meta')]"/>
+   <svrl:fired-rule context="meta | *[(lower-case(local-name()) = 'meta')]"/>
+   <svrl:fired-rule context="meta | *[(lower-case(local-name()) = 'meta')]"/>
+   <svrl:fired-rule context="meta | *[(lower-case(local-name()) = 'meta')]"/>
+   <svrl:fired-rule context="meta | *[(lower-case(local-name()) = 'meta')]"/>
+   <svrl:fired-rule context="meta[(@name='error') or (@name='warning') or (@name='hint') or (@name='info') or starts-with(@name,'TODO')]"/>
+   <svrl:successful-report test="true()" role="diagnostic" location="/X3D/head/meta[6]">
+      <svrl:text>&lt;meta name='info' content='Contained Inline scenes each have profile Immersive'/&gt;</svrl:text>
+   </svrl:successful-report>
+   <svrl:fired-rule context="meta | *[(lower-case(local-name()) = 'meta')]"/>
+   <svrl:fired-rule context="meta | *[(lower-case(local-name()) = 'meta')]"/>
+   <svrl:fired-rule context="meta | *[(lower-case(local-name()) = 'meta')]"/>
+   <svrl:fired-rule context="meta | *[(lower-case(local-name()) = 'meta')]"/>
+   <svrl:fired-rule context="meta | *[(lower-case(local-name()) = 'meta')]"/>
+   <svrl:fired-rule context="meta | *[(lower-case(local-name()) = 'meta')]"/>
+   <svrl:fired-rule context="meta | *[(lower-case(local-name()) = 'meta')]"/>
+   <svrl:fired-rule context="Scene | *[(lower-case(local-name()) = 'scene')]"/>
+   <svrl:fired-rule context="WorldInfo"/>
+   <svrl:fired-rule context="Background"/>
+   <svrl:fired-rule context="Viewpoint | OrthoViewpoint"/>
+   <svrl:fired-rule context="Viewpoint | OrthoViewpoint"/>
+   <svrl:successful-report test="not((local-name(..)='HAnimSite') and (local-name(../..)='HAnimHumanoid')) and not($defaultHeights) and not(string-length(@orientation) = 0) and not((normalize-space(@orientation) = '0 1 0 0') or (normalize-space(@orientation) = '0.0 1.0 0.0 0.0') or (normalize-space(@orientation) = '0 0 1 0') or (normalize-space(@orientation) = '0.0 0.0 1.0 0.0')) and (starts-with(normalize-space(@orientation),'0 1 0 ') or starts-with(normalize-space(@orientation),'0.0 1.0 0.0 ')) and (number($centerOfRotationY) != number($positionY))"
+                           role="warning"
+                           location="/X3D/Scene/Viewpoint[2]">
+      <svrl:text>&lt;Viewpoint DEF=''/&gt; centerOfRotation='0 0 0' has mismatched Y-value height of 0 compared to position='37.01 -5 29.59' which has Y-value height of -5</svrl:text>
+   </svrl:successful-report>
+   <svrl:fired-rule context="Billboard"/>
+   <svrl:fired-rule context="Inline"/>
+   <svrl:successful-report test="contains(substring-after(@url,'.wrl&#34;'),'.x3d&#34;') or contains(substring-after(@url,'.wrl#'),'.x3d#')"
+                           role="warning"
+                           location="/X3D/Scene/Billboard/Inline">
+      <svrl:text>&lt;Inline DEF=''/&gt; url array has .wrl scene reference before .x3d scene reference (url='"../KelpForestExhibit/IntroductionMessage.x3d" "http://X3dGraphics.com/examples/X3dForWebAuthors/Chapter04ViewingNavigation/../KelpForestExhibit/IntroductionMessage.x3d" "../KelpForestExhibit/IntroductionMessage.wrl" "http://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/IntroductionMessage.x3d"')</svrl:text>
+   </svrl:successful-report>
+   <svrl:fired-rule context="Inline"/>
+   <svrl:successful-report test="contains(substring-after(@url,'.wrl&#34;'),'.x3d&#34;') or contains(substring-after(@url,'.wrl#'),'.x3d#')"
+                           role="warning"
+                           location="/X3D/Scene/Inline">
+      <svrl:text>&lt;Inline DEF=''/&gt; url array has .wrl scene reference before .x3d scene reference (url='"../KelpForestExhibit/KelpTank.x3d" "http://X3dGraphics.com/examples/X3dForWebAuthors/Chapter04ViewingNavigation/../KelpForestExhibit/KelpTank.x3d" "../KelpForestExhibit/KelpTank.wrl" "http://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/KelpTank.x3d"')</svrl:text>
+   </svrl:successful-report>
+</svrl:schematron-output>

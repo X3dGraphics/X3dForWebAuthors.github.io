@@ -1,0 +1,1726 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE HTML><html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <link rel="icon" href="images/X3DtextIcon16.png" title="X3D" type="image/png">
+      <title>X3dForWebAuthors Examples Archive  - Table of Contents </title>
+      <meta http-equiv="X-UA-Compatible" content="chrome=1,IE=edge">
+      <meta name="author" content="Don Brutzman">
+      <meta name="generator" content="https://www.web3d.org/x3d/tools/CreateContentCatalog/CreateContentCatalogPages.xslt">
+      <meta name="modified" content="2022-07-03-07:00">
+   </head>
+   <body><a name="top"></a><table align="center" border="0" cellspacing="0" cellpadding="0" summary="">
+         <tr align="center">
+            <td><a href="../X3dResources.html" target="_blank"><img src="images/x3d2-s.gif" width="154" height="97" border="0" title="X3D Resources" alt="X3D Resources"></a></td>
+            <td>
+               <pre>&nbsp;&nbsp;</pre>
+            </td>
+            <td>
+               <h3 align="center">X3D for Web Authors (X3D4WA) Examples Archive</h3>
+            </td>
+            <td>
+               <pre>&nbsp;&nbsp;</pre>
+            </td>
+            <td><a href="https://www.web3d.org"><img src="images/web3d_logo2.png" width="120" height="60" border="0" title="Web3D Consortium home page" alt="Web3D Consortium home page"></a></td>
+         </tr>
+      </table>
+      <p style="text-align:center;margin-left:auto;margin-right:auto;width:80%;font-size:medium"><i><a href="https://X3dGraphics.com" target="_blank">X3D for Web Authors</a></i> is an introductory reference textbook for learning Extensible 3D (X3D) Graphics.</p>
+      <p style="text-align:center;margin-left:auto;margin-right:auto;width:80%;font-size:medium">Author support includes the <a href="https://savage.nps.edu/X3D-Edit" target="_blank">X3D-Edit authoring tool</a>, <a href="https://www.web3d.org/x3d/content/examples/X3dResources.html#Tooltips" target="_blank">X3D Tooltips</a>, <a href="https://savage.nps.edu/X3dValidator" target="_blank">X3D Validator</a>, complete <a href="https://x3dgraphics.com/slidesets/index.php" target="_blank">course slidesets</a> and <a href="https://www.movesinstitute.org/Video/Courses/X3dForWebAuthors/X3dForWebAuthorsVideo.html" target="_blank">course video lessons</a> for learning X3D (also&nbsp;<a href="https://www.youtube.com/channel/UCSOnGlgAFxkWg8ilg-JEbAQ/playlists?view=1&amp;flow=grid&amp;sort=da" target="_blank">YouTube course video archive</a>), plus this open-source&nbsp;scene&nbsp;archive. <a href="https://dl.acm.org/citation.cfm?id=1214715" target="_blank">Supporting textbook</a> in listed ACM&nbsp;Digital&nbsp;Library. Also available: companion examples archive <a href="../X3dForAdvancedModeling/index.html" target="_blank">X3D&nbsp;for&nbsp;Advanced&nbsp;Modeling (X3D4AM)</a>.</p>
+      <hr width="90%">
+      <table align="center" width="90%" summary="" border="0" cellpadding="1">
+         <tr>
+            <td align="left" width="35%" valign="middle"><a href="../X3dResources.html" target="_blank"><img src="images/x3d2-s.gif" width="51" height="32" border="0" title="X3D Resources" alt="X3D Resources"></a> &nbsp;&nbsp;&nbsp; <a href="javadoc/index.html" target="_blank"><img src="images/Java-32.png" width="32" height="32" border="0" title="Javadoc for translated java source" alt="Javadoc for translated java source"></a></td>
+            <td align="center" width="30%">16 Directories, 270 X3D Models</td>
+            <td align="right" width="35%"><a href="https://X3dGraphics.com/X3dExamplesX3dForWebAuthors.zip"><img src="images/698717-icon-124-document-file-zip-32.png" width="32" height="32" border="0" title=".zip archive" alt=".zip archive"></a> &nbsp;&nbsp;&nbsp; <a href="#information"><img src="images/200px-Question_book-new.svg.png" width="40" height="31" border="0" title="Archive Information" alt="Archive Information"></a></td>
+         </tr>
+      </table>
+      <hr width="90%">
+      <table align="center" width="90%" summary="" border="0" cellpadding="1"><!--chapterCountModulo3=1-->
+         <tr align="left" valign="middle">
+            <td><a href="#Chapter01TechnicalOverview">Chapter 01 Technical Overview</a></td>
+            <td><a href="#Chapter02GeometryPrimitives">Chapter 02 Geometry Primitives</a></td>
+            <td><a href="#Chapter03Grouping">Chapter 03 Grouping</a></td>
+         </tr>
+         <tr align="left" valign="middle">
+            <td><a href="#Chapter04ViewingNavigation">Chapter 04 Viewing Navigation</a></td>
+            <td><a href="#Chapter05AppearanceMaterialTextures">Chapter 05 Appearance Material Textures</a></td>
+            <td><a href="#Chapter06GeometryPointsLinesPolygons">Chapter 06 Geometry Points Lines Polygons</a></td>
+         </tr>
+         <tr align="left" valign="middle">
+            <td><a href="#Chapter07EventAnimationInterpolation">Chapter 07 Event Animation Interpolation</a></td>
+            <td><a href="#Chapter08UserInteractivity">Chapter 08 User Interactivity</a></td>
+            <td><a href="#Chapter09EventUtilitiesScripting">Chapter 09 Event Utilities Scripting</a></td>
+         </tr>
+         <tr align="left" valign="middle">
+            <td><a href="#Chapter10Geometry2D">Chapter 10 Geometry 2D</a></td>
+            <td><a href="#Chapter11LightingEnvironmentalEffects">Chapter 11 Lighting Environmental Effects</a></td>
+            <td><a href="#Chapter12EnvironmentSensorSound">Chapter 12 Environment Sensor Sound</a></td>
+         </tr>
+         <tr align="left" valign="middle">
+            <td><a href="#Chapter13GeometryTrianglesQuadrilaterals">Chapter 13 Geometry Triangles Quadrilaterals</a></td>
+            <td><a href="#Chapter14Prototypes">Chapter 14 Prototypes</a></td>
+            <td><a href="#Chapter15Metadata">Chapter 15 Metadata</a></td>
+         </tr>
+         <tr align="left" valign="middle">
+            <td><a href="#KelpForestExhibit">Kelp Forest Exhibit</a></td>
+            <td width="32%">&nbsp;</td>
+            <td width="32%">&nbsp;</td>
+         </tr>
+      </table><br><table align="center" width="95%" summary="" border="1" cellpadding="6">
+         <tr align="left">
+            <th width="67%">&nbsp;&nbsp;16 Directory Summaries </th>
+            <th width="33%" colspan="2">&nbsp;&nbsp;270 X3D Models</th>
+         </tr>
+         <tr align="left" valign="top">
+            <td align="left" valign="top" width="67%"><a name="Chapter01TechnicalOverview">&nbsp;</a><a title="Directory Summary" href="Chapter01TechnicalOverview/index.html"><img src="images/ThisChapter.png" title="Directory Summary" alt="Directory Summary" height="32" width="32" style="border-width:0px" valign="bottom" align="left"><b valign="bottom"><font size="+2">Chapter 01 Technical Overview</font></b></a>
+
+    <table bgColor="#ffffff" border="0" width="100%">
+        <tbody>
+            <tr>
+                <td align="left" rowspan="1">
+                    
+                    <a href="Chapter01TechnicalOverview/index.html"><img alt="X3D for Web Authors book" title="X3D for Web Authors book" border="0" hspace="10" src="Chapter01TechnicalOverview/X3dForWebAuthorsBookCoverScan.400x498.jpg" width="90" height="112" align="middle"/></a>
+                    
+                    <br/>
+                    
+                    <a href="Chapter01TechnicalOverview/index.html"><img alt="X3d for Web Authors video course is online" title="X3d for Web Authors video course is online" border="0" hspace="10" src="Chapter01TechnicalOverview/X3dForWebAuthorsVideo.jpg" width="90" height="57" align="left"/></a>
+                </td>
+                
+                <td align="left">
+    <p>
+                     Introductory slidesets for
+                     <a href="http://x3dgraphics.com/slidesets/X3dForWebAuthors/Chapter00GettingStarted.pdf">Getting Started</a>
+                     and
+                     <a href="http://x3dgraphics.com/slidesets/X3dForWebAuthors/Chapter00GettingStarted.pdf">X3D-Edit Update</a>
+                     describe good ways to begin learning and authoring X3D.
+                     The supporting
+                     <a href="http://x3dgraphics.com/slidesets/X3dForWebAuthors/Chapter01TechnicalOverview.pdf">Chapter&nbsp;1 slideset</a>,
+					 course videos
+                    (<a href="https://www.movesinstitute.org/Video/Courses/X3dForWebAuthors/X3dForWebAuthorsVideo.html" target="X3dChapterVideos">NPS</a>,
+                     <a href="https://www.youtube.com/playlist?list=PLuSIsM-86sikI5ut0Seh0JQ2S_yZMI3xp" target="X3dChapterYouTubeVideos">YouTube</a>)
+                     and the complete
+                     <a href="Chapter01TechnicalOverview/Chapter01Technical_Overview.pdf">Chapter&nbsp;1 Technical Overview</a>
+                     for <i>X3D for Web Authors</i> are available online via
+                     <a href="http://X3dGraphics.com" target="_blank">X3dGraphics.com</a>.
+    
+
+                 All of these examples were created using the
+                 <a href="https://savage.nps.edu/X3D-Edit">X3D-Edit authoring tool</a>.  
+    </p>
+    
+
+    <p>
+                 
+                 A published paper
+                 "<a href="Chapter01TechnicalOverview/CGEMS_X3dGraphicsForWebAuthorsModule_Brutzman2008October16.pdf">Computer Graphics Teaching Support using X3D</a>"
+                 describes how X3D is used to teach introductory 3D in university courses.
+                 Together these assets can be used to learn X3D.
+    </p>
+    
+
+				Also available: 
+                     <a href="https://www.web3d.org/x3d/content/examples/X3dSceneAuthoringHints.html" target="_blank">X3D Scene Authoring Hints</a>
+                     for
+                     <a href="https://www.web3d.org/x3d/content/examples/X3dSceneAuthoringHints.html#Authoring" target="_blank">Authoring Practices</a>,
+                     <a href="https://www.web3d.org/x3d/content/examples/X3dSceneAuthoringHints.html#Credits" target="_blank">Credits</a>,
+                     <a href="https://www.web3d.org/x3d/content/examples/X3dSceneAuthoringHints.html#Dates" target="_blank">Dates</a>,
+                     <a href="https://www.web3d.org/x3d/content/examples/X3dSceneAuthoringHints.html#license" target="_blank">License</a>,
+                     <a href="https://www.web3d.org/x3d/content/examples/X3dSceneAuthoringHints.html#metaTags" target="_blank">meta Tags</a> and
+                     <a href="https://www.web3d.org/x3d/content/examples/X3dSceneAuthoringHints.html#NamingConventions" target="_blank">Naming Conventions</a>.
+    </p>
+                </td>
+                
+                <td align="left" rowspan="1">
+                    
+                    <a href="Chapter01TechnicalOverview/index.html"><img alt="X3D for Web Authors book" title="X3D for Web Authors book" border="0" hspace="10" src="Chapter01TechnicalOverview/X3dSpecificationsHoneycombDiagram.png" width="100" height="85" align="middle"/></a>
+                    
+                    <br/>
+                    
+                    <a href="Chapter01TechnicalOverview/index.html"><img alt="X3D Profiles define levels of common functionality" title="X3D Profiles define levels of common functionality" border="0" hspace="10" src="Chapter01TechnicalOverview/X3dProfilesOnionDiagramBook.png" width="100" height="100" align="left"/></a>
+                </td>
+            </tr>
+    
+        </tbody>
+    </table>
+
+    
+
+
+  </td>
+            <td valign="top" width="33%">
+               <table width="100%">
+                  <tr valign="top">
+                     <td>
+                        <ul style="margin-top:0; margin-bottom:0;">
+                           <li><a href="Chapter01TechnicalOverview/EmptySceneIndex.html">Empty Scene</a></li>
+                           <li><a href="Chapter01TechnicalOverview/EmptySceneCoreProfileIndex.html">Empty Scene Core Profile</a></li>
+                           <li><a href="Chapter01TechnicalOverview/HeaderProfileComponentUnitMetaExampleIndex.html">Header Profile Component Unit Meta Example</a></li>
+                           <li><a href="Chapter01TechnicalOverview/HelloTriangleIndex.html">Hello Triangle</a></li>
+                           <li><a href="Chapter01TechnicalOverview/HelloWorldIndex.html">Hello World</a></li>
+                           <li><a href="Chapter01TechnicalOverview/newSceneIndex.html">new Scene</a></li>
+                        </ul>
+                     </td>
+                     <td align="right"><a href="#"><img src="images/ToC.png" width="32" height="32" border="0" title="top" alt="top"></a><p><a href="Chapter01TechnicalOverview/viewpointSlideshow.html"><img src="../images/MootoolsSlideshowLogo.jpg" title="Directory Viewpoint Slideshow" alt="Directory Viewpoint Slideshow" height="32" width="32" style="border-width:0px"></a></p>
+                        <p><a href="javadoc/index.html?X3dForWebAuthors/Chapter01TechnicalOverview/package-summary.html" title="Javadoc for translated java source" alt="Javadoc for translated java source" target="_blank"><img src="../images/Java-32.png" title="Javadoc for translated java source" alt="Javadoc for translated java source" height="32" width="32" style="border-width:0px" align="right"></a></p>
+                     </td>
+                  </tr>
+               </table>
+            </td>
+         </tr>
+         <tr align="left" valign="top">
+            <td align="left" valign="top" width="67%"><a name="Chapter02GeometryPrimitives">&nbsp;</a><a title="Directory Summary" href="Chapter02GeometryPrimitives/index.html"><img src="images/ThisChapter.png" title="Directory Summary" alt="Directory Summary" height="32" width="32" style="border-width:0px" valign="bottom" align="left"><b valign="bottom"><font size="+2">Chapter 02 Geometry Primitives</font></b></a>
+    
+    <table bgColor="#ffffff" border="0" width="100%">
+        <tbody>
+            <tr>
+                <td width="100%" align="center">
+                    <br />
+                    
+                    <a href="Chapter02GeometryPrimitives/index.html"><img alt="Geometry Primitives" title="Geometry Primitives" border="0" hspace="0" src="Chapter02GeometryPrimitives/GeometryPrimitiveNodesWhiteBackground.png" width="412" height="81" align="middle"/></a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <p>
+                 Shape nodes can contain one geometry node and one Appearance node.
+                 Geometry primitives include the 
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#Box" target="X3dTooltips" title="X3D Tooltip">Box</a>,
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#Cone" target="X3dTooltips" title="X3D Tooltip">Cone</a>,
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#Cylinder" target="X3dTooltips" title="X3D Tooltip">Cylinder</a>,
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#Sphere" target="X3dTooltips" title="X3D Tooltip">Sphere</a> 
+                 and
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#Text" target="X3dTooltips" title="X3D Tooltip">Text</a> nodes.
+                 Each is placed individually inside a
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#Shape" target="X3dTooltips" title="X3D Tooltip">Shape</a>
+                 node.
+				 Text nodes are further configured by
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#FontStyle" target="X3dTooltips" title="X3D Tooltip">FontStyle</a> nodes.
+    </p>
+    
+
+    <p>
+                 The supporting
+                 <a href="http://x3dgraphics.com/slidesets/X3dForWebAuthors/Chapter02GeometryPrimitives.pdf" target="X3dChapterSlideset">Chapter&nbsp;2 slideset</a>
+                 and course videos
+                (<a href="https://www.movesinstitute.org/Video/Courses/X3dForWebAuthors/X3dForWebAuthorsVideo.html#2" target="X3dChapterVideos">NPS</a>,
+                 <a href="https://www.youtube.com/playlist?list=PLuSIsM-86sik5uZNJ5sl5z5RxB2qvb1ji" target="X3dChapterYouTubeVideos">YouTube</a>)
+                 for <i>X3D for Web Authors</i> are available online via
+                 <a href="http://X3dGraphics.com" target="_blank">X3dGraphics.com</a>.
+    </p>
+    
+
+
+  </td>
+            <td valign="top" width="33%">
+               <table width="100%">
+                  <tr valign="top">
+                     <td>
+                        <ul style="margin-top:0; margin-bottom:0;">
+                           <li><a href="Chapter02GeometryPrimitives/BoxExampleIndex.html">Box Example</a></li>
+                           <li><a href="Chapter02GeometryPrimitives/ConeExampleIndex.html">Cone Example</a></li>
+                           <li><a href="Chapter02GeometryPrimitives/CylinderExampleIndex.html">Cylinder Example</a></li>
+                           <li><a href="Chapter02GeometryPrimitives/GeometryPrimitiveNodesIndex.html">Geometry Primitive Nodes</a></li>
+                           <li><a href="Chapter02GeometryPrimitives/GeometryPrimitiveNodesWhiteBackgroundIndex.html">Geometry Primitive Nodes White Background</a></li>
+                           <li><a href="Chapter02GeometryPrimitives/GeometryPrimitiveSubstituteMeshesIndex.html">Geometry Primitive Substitute Meshes</a></li>
+                           <li><a href="Chapter02GeometryPrimitives/SphereExampleIndex.html">Sphere Example</a></li>
+                           <li><a href="Chapter02GeometryPrimitives/TextHaveFunWithX3DIndex.html">Text Have Fun With X3D</a></li>
+                           <li><a href="Chapter02GeometryPrimitives/TextLengthMaxExtentIndex.html">Text Length Max Extent</a></li>
+                           <li><a href="Chapter02GeometryPrimitives/TextSpecialCharactersIndex.html">Text Special Characters</a></li>
+                        </ul>
+                     </td>
+                     <td align="right"><a href="#"><img src="images/ToC.png" width="32" height="32" border="0" title="top" alt="top"></a><p><a href="Chapter02GeometryPrimitives/viewpointSlideshow.html"><img src="../images/MootoolsSlideshowLogo.jpg" title="Directory Viewpoint Slideshow" alt="Directory Viewpoint Slideshow" height="32" width="32" style="border-width:0px"></a></p>
+                        <p><a href="javadoc/index.html?X3dForWebAuthors/Chapter02GeometryPrimitives/package-summary.html" title="Javadoc for translated java source" alt="Javadoc for translated java source" target="_blank"><img src="../images/Java-32.png" title="Javadoc for translated java source" alt="Javadoc for translated java source" height="32" width="32" style="border-width:0px" align="right"></a></p>
+                     </td>
+                  </tr>
+               </table>
+            </td>
+         </tr>
+         <tr align="left" valign="top">
+            <td align="left" valign="top" width="67%"><a name="Chapter03Grouping">&nbsp;</a><a title="Directory Summary" href="Chapter03Grouping/index.html"><img src="images/ThisChapter.png" title="Directory Summary" alt="Directory Summary" height="32" width="32" style="border-width:0px" valign="bottom" align="left"><b valign="bottom"><font size="+2">Chapter 03 Grouping</font></b></a>
+    
+    <table bgColor="#ffffff" border="0" width="100%">
+        <tbody>
+            <tr>
+                <td align="left" cellpadding="10">
+                    
+                    <a href="Chapter03Grouping/index.html"><img alt="Coordinate Axes (North South East West)" title="Coordinate Axes (North South East West)" border="0" hspace="10" src="Chapter03Grouping/CoordinateAxesNSEW.WhiteBackground.png" width="163" height="177" align="left"/></a>
+                </td>
+
+                <td>
+    <p>
+                    Grouping nodes help to organize the scene graph, can establish relative coordinate systems,
+                    and can contain most other kinds of X3D nodes.
+    </p>
+    
+
+    <p>
+                 Grouping nodes include the 
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#Anchor" target="X3dTooltips" title="X3D Tooltip">Anchor</a>,
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#Billboard" target="X3dTooltips" title="X3D Tooltip">Billboard</a>,
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#Collision" target="X3dTooltips" title="X3D Tooltip">Collision</a>,
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#Group" target="X3dTooltips" title="X3D Tooltip">Group</a>,
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#StaticGroup" target="X3dTooltips" title="X3D Tooltip">StaticGroup</a>,
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#Switch" target="X3dTooltips" title="X3D Tooltip">Switch</a>
+                 and
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#Transform" target="X3dTooltips" title="X3D Tooltip">Transform</a>
+                 nodes.
+                 The 
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#Inline" target="X3dTooltips" title="X3D Tooltip">Inline</a>
+                 node is also similar since it adds nodes into the current scene that loaded from another X3D scene, retrieved
+                 via a local or online url address.
+    </p>
+    
+
+    <p>
+                 The supporting
+                 <a href="http://x3dgraphics.com/slidesets/X3dForWebAuthors/Chapter03Grouping.pdf" target="X3dChapterSlideset">Chapter&nbsp;3 slideset</a>
+                 and course videos
+                (<a href="https://www.movesinstitute.org/Video/Courses/X3dForWebAuthors/X3dForWebAuthorsVideo.html#3" target="X3dChapterVideos">NPS</a>,
+                 <a href="https://www.youtube.com/playlist?list=PLuSIsM-86sim7B4ScA35FzmA8DxYXElEq" target="X3dChapterYouTubeVideos">YouTube</a>)
+                 for <i>X3D for Web Authors</i> are available online via
+                 <a href="http://X3dGraphics.com" target="_blank">X3dGraphics.com</a>.
+    </p>
+    
+
+    <p>
+                 Also available:
+                 <a href="https://www.web3d.org/x3d/content/examples/X3dSceneAuthoringHints.html" target="_blank">X3D Scene Authoring Hints</a>
+                 for
+                 <a href="https://www.web3d.org/x3d/content/examples/X3dSceneAuthoringHints.html#CoordinateSystems" target="_blank">Coordinate Systems</a>,
+                 <a href="https://www.web3d.org/x3d/content/examples/X3dSceneAuthoringHints.html#InlinesPrototypes" target="_blank">Inline Scenes</a>,
+                 <a href="https://www.web3d.org/x3d/content/examples/X3dSceneAuthoringHints.html#Scale" target="_blank">Scale Factors</a>
+                 and
+                 <a href="https://www.web3d.org/x3d/content/examples/X3dSceneAuthoringHints.html#urls" target="_blank">URL&nbsp;Links</a>.
+    </p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+  </td>
+            <td valign="top" width="33%">
+               <table width="100%">
+                  <tr valign="top">
+                     <td>
+                        <ul style="margin-top:0; margin-bottom:0;">
+                           <li><a href="Chapter03Grouping/BoundingBoxIllustrationIndex.html">Bounding Box Illustration</a></li>
+                           <li><a href="Chapter03Grouping/CoordinateAxesIndex.html">Coordinate Axes</a></li>
+                           <li><a href="Chapter03Grouping/CoordinateAxesInlineExampleIndex.html">Coordinate Axes Inline Example</a></li>
+                           <li><a href="Chapter03Grouping/CoordinateAxesLinesIndex.html">Coordinate Axes Lines</a></li>
+                           <li><a href="Chapter03Grouping/CoordinateAxesNSEWIndex.html">Coordinate Axes NSEW</a></li>
+                           <li><a href="Chapter03Grouping/GroupAnimatedIndex.html">Group Animated</a></li>
+                           <li><a href="Chapter03Grouping/GroupExampleIndex.html">Group Example</a></li>
+                           <li><a href="Chapter03Grouping/InlineKelpForestIndex.html">Inline Kelp Forest</a></li>
+                           <li><a href="Chapter03Grouping/LODExampleIndex.html">LODExample</a></li>
+                           <li><a href="Chapter03Grouping/LodWithDifferentShapesIndex.html">Lod With Different Shapes</a></li>
+                           <li><a href="Chapter03Grouping/OrderOfOperations1Index.html">Order Of Operations 1</a></li>
+                           <li><a href="Chapter03Grouping/OrderOfOperations2Index.html">Order Of Operations 2</a></li>
+                           <li><a href="Chapter03Grouping/StaticGroupExampleIndex.html">Static Group Example</a></li>
+                           <li><a href="Chapter03Grouping/SwitchExampleIndex.html">Switch Example</a></li>
+                           <li><a href="Chapter03Grouping/TransformCenterOffsetForRotationIndex.html">Transform Center Offset For Rotation</a></li>
+                           <li><a href="Chapter03Grouping/TransformExampleIndex.html">Transform Example</a></li>
+                        </ul>
+                     </td>
+                     <td align="right"><a href="#"><img src="images/ToC.png" width="32" height="32" border="0" title="top" alt="top"></a><p><a href="Chapter03Grouping/viewpointSlideshow.html"><img src="../images/MootoolsSlideshowLogo.jpg" title="Directory Viewpoint Slideshow" alt="Directory Viewpoint Slideshow" height="32" width="32" style="border-width:0px"></a></p>
+                        <p><a href="javadoc/index.html?X3dForWebAuthors/Chapter03Grouping/package-summary.html" title="Javadoc for translated java source" alt="Javadoc for translated java source" target="_blank"><img src="../images/Java-32.png" title="Javadoc for translated java source" alt="Javadoc for translated java source" height="32" width="32" style="border-width:0px" align="right"></a></p>
+                     </td>
+                  </tr>
+               </table>
+            </td>
+         </tr>
+         <tr align="left" valign="top">
+            <td align="left" valign="top" width="67%"><a name="Chapter04ViewingNavigation">&nbsp;</a><a title="Directory Summary" href="Chapter04ViewingNavigation/index.html"><img src="images/ThisChapter.png" title="Directory Summary" alt="Directory Summary" height="32" width="32" style="border-width:0px" valign="bottom" align="left"><b valign="bottom"><font size="+2">Chapter 04 Viewing Navigation</font></b></a>
+
+    <table bgColor="#ffffff" border="0" width="100%">
+        <tbody>
+            <tr>
+                <td align="left" rowspan="2">
+                    
+                    <a href="Chapter04ViewingNavigation/index.html"><img alt="Anchor bookmarked-Viewpoint comparison, view from front" title="Anchor bookmarked-Viewpoint comparison, view from front" border="0" hspace="10" src="Chapter04ViewingNavigation/AnchorComparisonFrontViewpoint.png" width="142" height="121" align="middle"/></a>
+                </td>
+                
+                <td align="left">
+    <p>
+					Authors can design scenes to help users navigate to Viewpoints of interest,
+					and also create user-selectable geometry links using an Anchor (just like HTML).
+    </p>
+    
+
+    <p>
+                    <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#Viewpoint" target="X3dTooltips" title="X3D Tooltip">Viewpoint</a>
+                    nodes are the primary means for users to explore a scene.
+                    <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#NavigationInfo" target="X3dTooltips" title="X3D Tooltip">NavigationInfo</a>
+                    nodes enable different user-interaction styles (FLY, WALK, EXAMINE etc.) as appropriate.
+                    Only one Viewpoint and one NavigationInfo node can each be active a time,
+                    with order of selection controlled via a binding stack.
+    </p>
+    
+
+    <p>
+                     The supporting
+                     <a href="http://x3dgraphics.com/slidesets/X3dForWebAuthors/Chapter04ViewingNavigation.pdf" target="X3dChapterSlideset">Chapter&nbsp;4 slideset</a>
+                     and course videos
+                    (<a href="https://www.movesinstitute.org/Video/Courses/X3dForWebAuthors/X3dForWebAuthorsVideo.html#4" target="X3dChapterVideos">NPS</a>,
+                     <a href="https://www.youtube.com/playlist?list=PLuSIsM-86siktIQeGO8EEJmNork1OIEbu" target="X3dChapterYouTubeVideos">YouTube</a>)
+					 for <i>X3D for Web Authors</i> are available online via
+                     <a href="http://X3dGraphics.com" target="_blank">X3dGraphics.com</a>.
+    </p>
+    
+
+    <p>
+                     Also available:
+                     <a href="https://www.web3d.org/x3d/content/examples/X3dSceneAuthoringHints.html#Viewpoints" target="_blank">X3D Scene Authoring Hints: Viewpoints and Navigation</a>.
+    </p>
+    
+
+                </td>
+                
+                <td align="left" rowspan="2">
+                    
+                    <a href="Chapter04ViewingNavigation/index.html"><img alt="Anchor bookmarked-Viewpoint comparison, oblique view from right side" title="Anchor bookmarked-Viewpoint comparison, oblique view from right side" border="0" hspace="10" src="Chapter04ViewingNavigation/AnchorComparisonObliqueViewpoint.png" width="101" height="143" align="left"/></a>
+                </td>
+            </tr>
+            
+        </tbody>
+    </table>
+    
+    
+
+
+  </td>
+            <td valign="top" width="33%">
+               <table width="100%">
+                  <tr valign="top">
+                     <td>
+                        <ul style="margin-top:0; margin-bottom:0;">
+                           <li><a href="Chapter04ViewingNavigation/AliasingExampleIndex.html">Aliasing Example</a></li>
+                           <li><a href="Chapter04ViewingNavigation/AnchorComparisonIndex.html">Anchor Comparison</a></li>
+                           <li><a href="Chapter04ViewingNavigation/AnchorExampleIndex.html">Anchor Example</a></li>
+                           <li><a href="Chapter04ViewingNavigation/BillboardExampleIndex.html">Billboard Example</a></li>
+                           <li><a href="Chapter04ViewingNavigation/BindingOperationsIndex.html">Binding Operations</a></li>
+                           <li><a href="Chapter04ViewingNavigation/CollisionExampleIndex.html">Collision Example</a></li>
+                           <li><a href="Chapter04ViewingNavigation/NavigationInfoExampleIndex.html">Navigation Info Example</a></li>
+                           <li><a href="Chapter04ViewingNavigation/ViewpointExampleIndex.html">Viewpoint Example</a></li>
+                        </ul>
+                     </td>
+                     <td align="right"><a href="#"><img src="images/ToC.png" width="32" height="32" border="0" title="top" alt="top"></a><p><a href="Chapter04ViewingNavigation/viewpointSlideshow.html"><img src="../images/MootoolsSlideshowLogo.jpg" title="Directory Viewpoint Slideshow" alt="Directory Viewpoint Slideshow" height="32" width="32" style="border-width:0px"></a></p>
+                        <p><a href="javadoc/index.html?X3dForWebAuthors/Chapter04ViewingNavigation/package-summary.html" title="Javadoc for translated java source" alt="Javadoc for translated java source" target="_blank"><img src="../images/Java-32.png" title="Javadoc for translated java source" alt="Javadoc for translated java source" height="32" width="32" style="border-width:0px" align="right"></a></p>
+                     </td>
+                  </tr>
+               </table>
+            </td>
+         </tr>
+         <tr align="left" valign="top">
+            <td align="left" valign="top" width="67%"><a name="Chapter05AppearanceMaterialTextures">&nbsp;</a><a title="Directory Summary" href="Chapter05AppearanceMaterialTextures/index.html"><img src="images/ThisChapter.png" title="Directory Summary" alt="Directory Summary" height="32" width="32" style="border-width:0px" valign="bottom" align="left"><b valign="bottom"><font size="+2">Chapter 05 Appearance Material Textures</font></b></a>
+
+    <table bgColor="#ffffff" border="0" width="100%">
+        <tbody>
+            <tr>
+                <td align="center" valign="top">
+                    
+                    <a href="Chapter05AppearanceMaterialTextures/index.html"><img alt="FillProperties Hatch Style" title="FillProperties Hatch Style" border="0" hspace="10" src="Chapter05AppearanceMaterialTextures/FillPropertiesHatchStyle.png" width="166" height="115" align="middle"/></a>
+                </td>
+                <td align="center" valign="top">
+                    
+                    <a href="Chapter05AppearanceMaterialTextures/index.html"><img alt="LineProperties Linetype Options" title="LineProperties Linetype Options" title="LineProperties Linetype Options" border="0" hspace="10" src="Chapter05AppearanceMaterialTextures/LinePropertiesLinetypeExample.png" height="115" align="left"/></a>
+                </td>
+                <td align="center" valign="top">
+                    
+                    <a href="Chapter05AppearanceMaterialTextures/index.html"><img alt="MovieTexture Authoring Options" title="MovieTexture Authoring Options" border="0" hspace="10" src="Chapter05AppearanceMaterialTextures/MovieTextureAuthoringOptions.png" height="115" align="left"/></a>
+                </td>
+                <td align="center" valign="top">
+                    
+                    <a href="Chapter05AppearanceMaterialTextures/index.html"><img alt="ImageTexture Example" title="ImageTexture Example" border="0" hspace="10" src="Chapter05AppearanceMaterialTextures/ImageTextureFigure18.1X3dSpecification.gif" height="115" align="left"/></a>
+                </td>
+                <td align="center" valign="top">
+                    
+                    <a href="Chapter05AppearanceMaterialTextures/index.html"><img alt="PixelTexture Snowman" title="PixelTexture Snowman" border="0" hspace="10" src="Chapter05AppearanceMaterialTextures/PixelTextureSnowmanSnapshot.png" height="115" align="left"/></a>
+                </td>
+            </tr>
+                
+            <tr>
+                
+                <td align="left" colspan="5">
+    <p>
+				Appearance defines how color, material and texture images are applied as the visual characteristics of a shape.
+    </p>
+    
+
+
+    <p>
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#Appearance" target="X3dTooltips" title="X3D Tooltip">Appearance</a>
+                 is individually associated with specific geometry within a shared 
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#Shape" target="X3dTooltips" title="X3D Tooltip">Shape</a>
+                 node.
+                 
+                 Each Appearance is a container node that can include 
+                 
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#Material" target="X3dTooltips" title="X3D Tooltip">Material</a>,
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#TwoSidedMaterial" target="X3dTooltips" title="X3D Tooltip">TwoSidedMaterial</a>,
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#ImageTexture" target="X3dTooltips" title="X3D Tooltip">ImageTexture</a>,
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#MovieTexture" target="X3dTooltips" title="X3D Tooltip">MovieTexture</a>,
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#PixelTexture" target="X3dTooltips" title="X3D Tooltip">PixelTexture</a>
+                 and 
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#MultiTexture" target="X3dTooltips" title="X3D Tooltip">MultiTexture</a>
+                 nodes.
+    </p>
+    
+
+
+    <p>
+                 Appearance can also contain property nodes for controlling rendering and texture:
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#FillProperties" target="X3dTooltips" title="X3D Tooltip">FillProperties</a>,
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#LineProperties" target="X3dTooltips" title="X3D Tooltip">LineProperties</a>,
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#TextureProperties" target="X3dTooltips" title="X3D Tooltip">TextureProperties</a>,
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#TextureTransform" target="X3dTooltips" title="X3D Tooltip">TextureTransform</a>
+                 and
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#MultiTextureTransform" target="X3dTooltips" title="X3D Tooltip">MultiTextureTransform</a>
+                 nodes.
+    </p>
+    
+
+    <p>
+                 The supporting
+                 <a href="http://x3dgraphics.com/slidesets/X3dForWebAuthors/Chapter05AppearanceMaterialTextures.pdf" target="X3dChapterSlideset">Chapter&nbsp;5 slideset</a>
+                 and course videos
+                (<a href="https://www.movesinstitute.org/Video/Courses/X3dForWebAuthors/X3dForWebAuthorsVideo.html#5" target="X3dChapterVideos">NPS</a>,
+                 <a href="https://www.youtube.com/playlist?list=PLuSIsM-86simimJiemZgl1GRxY-5yOzcB" target="X3dChapterYouTubeVideos">YouTube</a>)
+                 for <i>X3D for Web Authors</i> are available online via
+                 <a href="http://X3dGraphics.com" target="_blank">X3dGraphics.com</a>.
+    </p>
+    
+
+    <p>
+                     Also available:
+                     <a href="https://www.web3d.org/x3d/content/examples/X3dSceneAuthoringHints.html#Images" target="_blank">X3D Scene Authoring Hints</a>
+                     for
+                     <a href="https://www.web3d.org/x3d/content/examples/X3dSceneAuthoringHints.html#Images" target="_blank">Images and Videos</a>
+                      and
+                      <a href="https://www.web3d.org/x3d/content/examples/X3dSceneAuthoringHints.html#urls" target="_blank">URL&nbsp;Links</a>.
+    </p>
+    
+
+                </td>
+            </tr>
+            
+        </tbody>
+    </table>
+
+  </td>
+            <td valign="top" width="33%">
+               <table width="100%">
+                  <tr valign="top">
+                     <td>
+                        <ul style="margin-top:0; margin-bottom:0;">
+                           <li><a href="Chapter05AppearanceMaterialTextures/AmbientIntensityIndex.html">Ambient Intensity</a></li>
+                           <li><a href="Chapter05AppearanceMaterialTextures/CircleFishPrototypeIndex.html">Circle Fish Prototype</a></li>
+                           <li><a href="Chapter05AppearanceMaterialTextures/CircleFishPTPrototypeIndex.html">Circle Fish PTPrototype</a></li>
+                           <li><a href="Chapter05AppearanceMaterialTextures/DiffuseColorIndex.html">Diffuse Color</a></li>
+                           <li><a href="Chapter05AppearanceMaterialTextures/EmissiveColorIndex.html">Emissive Color</a></li>
+                           <li><a href="Chapter05AppearanceMaterialTextures/FillPropertiesExampleIndex.html">Fill Properties Example</a></li>
+                           <li><a href="Chapter05AppearanceMaterialTextures/GaribaldiIndex.html">Garibaldi</a></li>
+                           <li><a href="Chapter05AppearanceMaterialTextures/GaribaldiLocalTextureIndex.html">Garibaldi Local Texture</a></li>
+                           <li><a href="Chapter05AppearanceMaterialTextures/GaribaldiRemoteIndex.html">Garibaldi Remote</a></li>
+                           <li><a href="Chapter05AppearanceMaterialTextures/GaribaldiRemoteNoTextureIndex.html">Garibaldi Remote No Texture</a></li>
+                           <li><a href="Chapter05AppearanceMaterialTextures/GeometryPrimitiveNodesImageTextureIndex.html">Geometry Primitive Nodes Image Texture</a></li>
+                           <li><a href="Chapter05AppearanceMaterialTextures/LinePropertiesExampleIndex.html">Line Properties Example</a></li>
+                           <li><a href="Chapter05AppearanceMaterialTextures/MovieTextureAuthoringOptionsIndex.html">Movie Texture Authoring Options</a></li>
+                           <li><a href="Chapter05AppearanceMaterialTextures/PixelTextureBWIndex.html">Pixel Texture BW</a></li>
+                           <li><a href="Chapter05AppearanceMaterialTextures/PixelTextureComponentExamplesIndex.html">Pixel Texture Component Examples</a></li>
+                           <li><a href="Chapter05AppearanceMaterialTextures/PixelTextureExampleIndex.html">Pixel Texture Example</a></li>
+                           <li><a href="Chapter05AppearanceMaterialTextures/PixelTextureGaribaldiIndex.html">Pixel Texture Garibaldi</a></li>
+                           <li><a href="Chapter05AppearanceMaterialTextures/PixelTextureSnowmanIndex.html">Pixel Texture Snowman</a></li>
+                           <li><a href="Chapter05AppearanceMaterialTextures/PixelTextureTransformScaleIndex.html">Pixel Texture Transform Scale</a></li>
+                           <li><a href="Chapter05AppearanceMaterialTextures/SpecularColorIndex.html">Specular Color</a></li>
+                           <li><a href="Chapter05AppearanceMaterialTextures/Table5_18PixelTextureIndex.html">Table 5 18 Pixel Texture</a></li>
+                           <li><a href="Chapter05AppearanceMaterialTextures/TextureLocalGaribaldiIndex.html">Texture Local Garibaldi</a></li>
+                           <li><a href="Chapter05AppearanceMaterialTextures/TextureRemoteGaribaldiIndex.html">Texture Remote Garibaldi</a></li>
+                           <li><a href="Chapter05AppearanceMaterialTextures/TextureTransformExampleIndex.html">Texture Transform Example</a></li>
+                           <li><a href="Chapter05AppearanceMaterialTextures/TextureTransformFullIndex.html">Texture Transform Full</a></li>
+                           <li><a href="Chapter05AppearanceMaterialTextures/TextureTransformScaleIndex.html">Texture Transform Scale</a></li>
+                           <li><a href="Chapter05AppearanceMaterialTextures/TextureTransformTranslationIndex.html">Texture Transform Translation</a></li>
+                           <li><a href="Chapter05AppearanceMaterialTextures/TransparencyIndex.html">Transparency</a></li>
+                           <li><a href="Chapter05AppearanceMaterialTextures/TwoSidedMaterialExampleIndex.html">Two Sided Material Example</a></li>
+                        </ul>
+                     </td>
+                     <td align="right"><a href="#"><img src="images/ToC.png" width="32" height="32" border="0" title="top" alt="top"></a><p><a href="Chapter05AppearanceMaterialTextures/viewpointSlideshow.html"><img src="../images/MootoolsSlideshowLogo.jpg" title="Directory Viewpoint Slideshow" alt="Directory Viewpoint Slideshow" height="32" width="32" style="border-width:0px"></a></p>
+                        <p><a href="javadoc/index.html?X3dForWebAuthors/Chapter05AppearanceMaterialTextures/package-summary.html" title="Javadoc for translated java source" alt="Javadoc for translated java source" target="_blank"><img src="../images/Java-32.png" title="Javadoc for translated java source" alt="Javadoc for translated java source" height="32" width="32" style="border-width:0px" align="right"></a></p>
+                     </td>
+                  </tr>
+               </table>
+            </td>
+         </tr>
+         <tr align="left" valign="top">
+            <td align="left" valign="top" width="67%"><a name="Chapter06GeometryPointsLinesPolygons">&nbsp;</a><a title="Directory Summary" href="Chapter06GeometryPointsLinesPolygons/index.html"><img src="images/ThisChapter.png" title="Directory Summary" alt="Directory Summary" height="32" width="32" style="border-width:0px" valign="bottom" align="left"><b valign="bottom"><font size="+2">Chapter 06 Geometry Points Lines Polygons</font></b></a>
+    
+    <table bgColor="#ffffff" border="0" width="100%">
+        <tbody>
+            <tr>
+                <td width="100%" align="center">
+                    <br />
+                    
+                    <a href="Chapter06GeometryPointsLinesPolygons/index.html"><img alt="Color Per Vertex Examples" title="Color Per Vertex Examples" border="0" hspace="0" src="Chapter06GeometryPointsLinesPolygons/ColorPerVertexExamples.png" width="600" height="100" align="middle"/></a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <p>
+				Numerous X3D nodes are available for presenting points, lines, and a variety of polygonal meshes.
+    </p>
+    
+
+    
+    <p>
+                 Many kinds of geometry can be created using 
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#PointSet" target="X3dTooltips" title="X3D Tooltip">PointSet</a>,
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#LineSet" target="X3dTooltips" title="X3D Tooltip">LineSet</a>,
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#IndexedLineSet" target="X3dTooltips" title="X3D Tooltip">IndexedLineSet</a>,
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#IndexedFaceSet" target="X3dTooltips" title="X3D Tooltip">IndexedFaceSet</a>,
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#ElevationGrid" target="X3dTooltips" title="X3D Tooltip">ElevationGrid</a>
+                 and 
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#Extrusion" target="X3dTooltips" title="X3D Tooltip">Extrusion</a> 
+                 nodes.
+                 Each is placed individually inside a
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#Shape" target="X3dTooltips" title="X3D Tooltip">Shape</a>
+                 node.
+    </p>
+    
+
+    
+    <p>
+                 Geometric properties are controlled by 
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#Color" target="X3dTooltips" title="X3D Tooltip">Color</a>,
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#ColorRGBA" target="X3dTooltips" title="X3D Tooltip">ColorRGBA</a>,
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#Coordinate" target="X3dTooltips" title="X3D Tooltip">Coordinate</a>,
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#CoordinateDouble" target="X3dTooltips" title="X3D Tooltip">CoordinateDouble</a>,
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#Normal" target="X3dTooltips" title="X3D Tooltip">Normal</a>,
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#TextureCoordinate" target="X3dTooltips" title="X3D Tooltip">TextureCoordinate</a>,
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#TextureCoordinateGenerator" target="X3dTooltips" title="X3D Tooltip">TextureCoordinateGenerator</a>
+                 and 
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#MultiTextureCoordinate" target="X3dTooltips" title="X3D Tooltip">MultiTextureCoordinate</a> 
+                 nodes.
+    </p>
+    
+
+    
+    <p>
+                 The supporting
+                 <a href="http://x3dgraphics.com/slidesets/X3dForWebAuthors/Chapter06GeometryPointsLinesPolygons.pdf" target="X3dChapterSlideset">Chapter&nbsp;6 slideset</a>
+                 and course videos
+                (<a href="https://www.movesinstitute.org/Video/Courses/X3dForWebAuthors/X3dForWebAuthorsVideo.html#6" target="X3dChapterVideos">NPS</a>,
+                 <a href="https://www.youtube.com/playlist?list=PLuSIsM-86silXbPFOJ43Qgn47Pw6RufeB" target="X3dChapterYouTubeVideos">YouTube</a>)
+                 for <i>X3D for Web Authors</i> are available online via
+                 <a href="http://X3dGraphics.com" target="_blank">X3dGraphics.com</a>.
+    </p>
+    
+
+    
+    <p>
+                     Also available:
+                     <a href="https://www.web3d.org/x3d/content/examples/X3dSceneAuthoringHints.html#Meshes" target="_blank">X3D Scene Authoring Hints: Meshes</a>.
+    </p>
+    
+
+
+  </td>
+            <td valign="top" width="33%">
+               <table width="100%">
+                  <tr valign="top">
+                     <td>
+                        <ul style="margin-top:0; margin-bottom:0;">
+                           <li><a href="Chapter06GeometryPointsLinesPolygons/ColorExampleIndex.html">Color Example</a></li>
+                           <li><a href="Chapter06GeometryPointsLinesPolygons/ColorPerVertexExamplesIndex.html">Color Per Vertex Examples</a></li>
+                           <li><a href="Chapter06GeometryPointsLinesPolygons/ElevationGridNonPlanarQuadrilateralsIndex.html">Elevation Grid Non Planar Quadrilaterals</a></li>
+                           <li><a href="Chapter06GeometryPointsLinesPolygons/ExtrusionCrossSectionITSSPrototypeIndex.html">Extrusion Cross Section ITSSPrototype</a></li>
+                           <li><a href="Chapter06GeometryPointsLinesPolygons/ExtrusionCrossSectionPrototypeIndex.html">Extrusion Cross Section Prototype</a></li>
+                           <li><a href="Chapter06GeometryPointsLinesPolygons/ExtrusionPentagonIndex.html">Extrusion Pentagon</a></li>
+                           <li><a href="Chapter06GeometryPointsLinesPolygons/ExtrusionPentagonCrossSectionItssIndex.html">Extrusion Pentagon Cross Section Itss</a></li>
+                           <li><a href="Chapter06GeometryPointsLinesPolygons/ExtrusionPentagonCrossSectionItssTextureIndex.html">Extrusion Pentagon Cross Section Itss Texture</a></li>
+                           <li><a href="Chapter06GeometryPointsLinesPolygons/ExtrusionRoomWallsIndex.html">Extrusion Room Walls</a></li>
+                           <li><a href="Chapter06GeometryPointsLinesPolygons/IndexedFaceSetExampleIndex.html">Indexed Face Set Example</a></li>
+                           <li><a href="Chapter06GeometryPointsLinesPolygons/IndexedLineSetExampleIndex.html">Indexed Line Set Example</a></li>
+                           <li><a href="Chapter06GeometryPointsLinesPolygons/LineSetComparisonIndex.html">Line Set Comparison</a></li>
+                           <li><a href="Chapter06GeometryPointsLinesPolygons/LineSetExampleIndex.html">Line Set Example</a></li>
+                           <li><a href="Chapter06GeometryPointsLinesPolygons/PointSetExampleIndex.html">Point Set Example</a></li>
+                           <li><a href="Chapter06GeometryPointsLinesPolygons/X3dBookWebsiteLogoIndex.html"> X3D Book Website Logo</a></li>
+                        </ul>
+                     </td>
+                     <td align="right"><a href="#"><img src="images/ToC.png" width="32" height="32" border="0" title="top" alt="top"></a><p><a href="Chapter06GeometryPointsLinesPolygons/viewpointSlideshow.html"><img src="../images/MootoolsSlideshowLogo.jpg" title="Directory Viewpoint Slideshow" alt="Directory Viewpoint Slideshow" height="32" width="32" style="border-width:0px"></a></p>
+                        <p><a href="javadoc/index.html?X3dForWebAuthors/Chapter06GeometryPointsLinesPolygons/package-summary.html" title="Javadoc for translated java source" alt="Javadoc for translated java source" target="_blank"><img src="../images/Java-32.png" title="Javadoc for translated java source" alt="Javadoc for translated java source" height="32" width="32" style="border-width:0px" align="right"></a></p>
+                     </td>
+                  </tr>
+               </table>
+            </td>
+         </tr>
+         <tr align="left" valign="top">
+            <td align="left" valign="top" width="67%"><a name="Chapter07EventAnimationInterpolation">&nbsp;</a><a title="Directory Summary" href="Chapter07EventAnimationInterpolation/index.html"><img src="images/ThisChapter.png" title="Directory Summary" alt="Directory Summary" height="32" width="32" style="border-width:0px" valign="bottom" align="left"><b valign="bottom"><font size="+2">Chapter 07 Event Animation Interpolation</font></b></a>
+    
+    <table bgColor="#ffffff" border="0" width="100%">
+        <tbody>
+            <tr>
+                <td width="100%" align="center">
+                    <br />
+                    
+                    <a href="Chapter07EventAnimationInterpolation/index.html"><img alt="Dolphin Wireframe: Coordinate Interpolator Morphing" title="Dolphin Wireframe: Coordinate Interpolator Morphing" border="0" hspace="0" src="Chapter07EventAnimationInterpolation/DolphinWireframe.png" width="350" height="105" align="middle"/></a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <p>
+		 Event values can be generated through TimeSensor, ROUTE and interpolator chains to create animation effects in a scene graph.
+                 Strong typing requirements ensure that only valid values are allowed to modify the scene graph.
+    </p>
+    
+
+
+    <p>
+                 The
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#TimeSensor" target="X3dTooltips" title="X3D Tooltip">TimeSensor</a>
+                 node produces output stimulus events that track the passage of time intervals using the computer clock.
+                 Event animation and interpolation is accomplished by 
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#ROUTE" target="X3dTooltips" title="X3D Tooltip">ROUTE</a>
+                 connections that pass events between nodes.
+    </p>
+    
+
+
+    <p>
+                 Strictly typed interpolation values are produced by 
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#ScalarInterpolator" target="X3dTooltips" title="X3D Tooltip">ScalarInterpolator</a>,
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#ColorInterpolator" target="X3dTooltips" title="X3D Tooltip">ColorInterpolator</a>,
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#PositionInterpolator" target="X3dTooltips" title="X3D Tooltip">PositionInterpolator</a>,
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#PositionInterpolator2D" target="X3dTooltips" title="X3D Tooltip">PositionInterpolator2D</a>,
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#OrientationInterpolator" target="X3dTooltips" title="X3D Tooltip">OrientationInterpolator</a>,
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#NormalInterpolator" target="X3dTooltips" title="X3D Tooltip">NormalInterpolator</a>, 
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#CoordinateInterpolator" target="X3dTooltips" title="X3D Tooltip">CoordinateInterpolator</a>,
+                 and 
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#CoordinateInterpolator2D" target="X3dTooltips" title="X3D Tooltip">CoordinateInterpolator2D</a> nodes.
+    </p>
+    
+
+
+    <p>
+		 Authors can use a
+                 <a href="Chapter07EventAnimationInterpolation/Chapter07-EventAnimationInterpolation.10StepAnimationDesignProcess.pdf">10-step algorithm checklist</a>
+                (with <a href="Chapter07EventAnimationInterpolation/TimeSensorScalarInterpolatorFilterDiagram.png">example diagram</a>)
+                        as an event-animation design pattern that helps build consistent event-routing chains.
+                 The supporting
+                 <a href="http://x3dgraphics.com/slidesets/X3dForWebAuthors/Chapter07EventAnimationInterpolation.pdf" target="X3dChapterSlideset">Chapter&nbsp;7 slideset</a>
+                 and course videos
+                (<a href="https://www.movesinstitute.org/Video/Courses/X3dForWebAuthors/X3dForWebAuthorsVideo.html#7" target="X3dChapterVideos">NPS</a>,
+                 <a href="https://www.youtube.com/playlist?list=PLuSIsM-86simo9kv21MLgaNKw7LGg8HjL" target="X3dChapterYouTubeVideos">YouTube</a>)
+                 for <i>X3D for Web Authors</i> are available online via
+                 <a href="http://X3dGraphics.com" target="_blank">X3dGraphics.com</a>.
+    </p>
+    
+
+
+  </td>
+            <td valign="top" width="33%">
+               <table width="100%">
+                  <tr valign="top">
+                     <td>
+                        <ul style="margin-top:0; margin-bottom:0;">
+                           <li><a href="Chapter07EventAnimationInterpolation/CircleFishPositionInterpolatorIndex.html">Circle Fish Position Interpolator</a></li>
+                           <li><a href="Chapter07EventAnimationInterpolation/CircleFishPrototypeIndex.html">Circle Fish Prototype</a></li>
+                           <li><a href="Chapter07EventAnimationInterpolation/CircleFishPTPrototypeIndex.html">Circle Fish PTPrototype</a></li>
+                           <li><a href="Chapter07EventAnimationInterpolation/ColorInterpolatorExampleIndex.html">Color Interpolator Example</a></li>
+                           <li><a href="Chapter07EventAnimationInterpolation/ColorInterpolatorFishPrototypeIndex.html">Color Interpolator Fish Prototype</a></li>
+                           <li><a href="Chapter07EventAnimationInterpolation/CoordinateInterpolator2dExampleIndex.html">Coordinate Interpolator 2D Example</a></li>
+                           <li><a href="Chapter07EventAnimationInterpolation/DolphinMorpherIndex.html">Dolphin Morpher</a></li>
+                           <li><a href="Chapter07EventAnimationInterpolation/DolphinPose01Index.html">Dolphin Pose 01</a></li>
+                           <li><a href="Chapter07EventAnimationInterpolation/DolphinPose02Index.html">Dolphin Pose 02</a></li>
+                           <li><a href="Chapter07EventAnimationInterpolation/DolphinPose03Index.html">Dolphin Pose 03</a></li>
+                           <li><a href="Chapter07EventAnimationInterpolation/DolphinSwitcherIndex.html">Dolphin Switcher</a></li>
+                           <li><a href="Chapter07EventAnimationInterpolation/GaribaldiIndex.html">Garibaldi</a></li>
+                           <li><a href="Chapter07EventAnimationInterpolation/HelloX3dAuthorsAnimationChainIndex.html">Hello X3D Authors Animation Chain</a></li>
+                           <li><a href="Chapter07EventAnimationInterpolation/MotionInterpolatorFishPrototypeIndex.html">Motion Interpolator Fish Prototype</a></li>
+                           <li><a href="Chapter07EventAnimationInterpolation/NormalInterpolatorExampleIndex.html">Normal Interpolator Example</a></li>
+                           <li><a href="Chapter07EventAnimationInterpolation/OrientationInterpolatorFishExampleIndex.html">Orientation Interpolator Fish Example</a></li>
+                           <li><a href="Chapter07EventAnimationInterpolation/OrientationInterpolatorFishPrototypeIndex.html">Orientation Interpolator Fish Prototype</a></li>
+                           <li><a href="Chapter07EventAnimationInterpolation/PositionInterpolator2dExampleIndex.html">Position Interpolator 2D Example</a></li>
+                           <li><a href="Chapter07EventAnimationInterpolation/PositionInterpolatorPrototypeIndex.html">Position Interpolator Prototype</a></li>
+                           <li><a href="Chapter07EventAnimationInterpolation/PositionOrientationInterpolatorsExampleIndex.html">Position Orientation Interpolators Example</a></li>
+                           <li><a href="Chapter07EventAnimationInterpolation/PositionOrientationInterpolatorsExampleTracedIndex.html">Position Orientation Interpolators Example Traced</a></li>
+                           <li><a href="Chapter07EventAnimationInterpolation/ScalarInterpolatorExampleIndex.html">Scalar Interpolator Example</a></li>
+                           <li><a href="Chapter07EventAnimationInterpolation/ScalarInterpolatorFishExampleIndex.html">Scalar Interpolator Fish Example</a></li>
+                           <li><a href="Chapter07EventAnimationInterpolation/ScalarInterpolatorFishPrototypeIndex.html">Scalar Interpolator Fish Prototype</a></li>
+                           <li><a href="Chapter07EventAnimationInterpolation/TimeSensorChainingIndex.html">Time Sensor Chaining</a></li>
+                        </ul>
+                     </td>
+                     <td align="right"><a href="#"><img src="images/ToC.png" width="32" height="32" border="0" title="top" alt="top"></a><p><a href="Chapter07EventAnimationInterpolation/viewpointSlideshow.html"><img src="../images/MootoolsSlideshowLogo.jpg" title="Directory Viewpoint Slideshow" alt="Directory Viewpoint Slideshow" height="32" width="32" style="border-width:0px"></a></p>
+                        <p><a href="javadoc/index.html?X3dForWebAuthors/Chapter07EventAnimationInterpolation/package-summary.html" title="Javadoc for translated java source" alt="Javadoc for translated java source" target="_blank"><img src="../images/Java-32.png" title="Javadoc for translated java source" alt="Javadoc for translated java source" height="32" width="32" style="border-width:0px" align="right"></a></p>
+                     </td>
+                  </tr>
+               </table>
+            </td>
+         </tr>
+         <tr align="left" valign="top">
+            <td align="left" valign="top" width="67%"><a name="Chapter08UserInteractivity">&nbsp;</a><a title="Directory Summary" href="Chapter08UserInteractivity/index.html"><img src="images/ThisChapter.png" title="Directory Summary" alt="Directory Summary" height="32" width="32" style="border-width:0px" valign="bottom" align="left"><b valign="bottom"><font size="+2">Chapter 08 User Interactivity</font></b></a>
+    
+    <table bgColor="#ffffff" border="0" width="100%">
+        <tbody>
+            <tr>
+                
+                <td align="left" cellpadding="10">
+                    
+                    <a href="Chapter08UserInteractivity/index.html"><img alt="User Interactivity Sensor Nodes" title="User Interactivity Sensor Nodes" border="0" hspace="10" src="Chapter08UserInteractivity/UserInteractivitySensorNodesModified.png" width="220" height="137" align="left"/></a>
+                </td>
+            
+                <td>
+    <p>
+				A variety of sensors detect user interactivity with a scene, allowing authors to
+				define animation responses in a device-independent, display-independent way.
+    </p>
+    
+
+    <p>
+                 User interactivity is accomplished by sensing user actions, which create events that are sent via 
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#ROUTE" target="X3dTooltips" title="X3D Tooltip">ROUTE</a>
+                 connections.
+    </p>
+    
+
+    <p>
+                 Sensor output values are produced by 
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#CylinderSensor" target="X3dTooltips" title="X3D Tooltip">CylinderSensor</a>,
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#KeySensor" target="X3dTooltips" title="X3D Tooltip">KeySensor</a>,
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#PlaneSensor" target="X3dTooltips" title="X3D Tooltip">PlaneSensor</a></a>,
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#StringSensor" target="X3dTooltips" title="X3D Tooltip">StringSensor</a>
+                 and 
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#TouchSensor" target="X3dTooltips" title="X3D Tooltip">TouchSensor</a>
+                 nodes.
+    </p>
+    
+
+    <p>
+                 The supporting
+                 <a href="http://x3dgraphics.com/slidesets/X3dForWebAuthors/Chapter08UserInteractivity.pdf" target="X3dChapterSlideset">Chapter&nbsp;8 slideset</a>
+                 and course videos
+                (<a href="https://www.movesinstitute.org/Video/Courses/X3dForWebAuthors/X3dForWebAuthorsVideo.html#8" target="X3dChapterVideos">NPS</a>,
+                 <a href="https://www.youtube.com/playlist?list=PLuSIsM-86sinqMN552yQfjaV_DKI53D7i" target="X3dChapterYouTubeVideos">YouTube</a>)
+                 for <i>X3D for Web Authors</i> are available online via
+                 <a href="http://X3dGraphics.com" target="_blank">X3dGraphics.com</a>.
+    </p>
+                </td>
+
+            </tr>
+        </tbody>
+    </table>
+
+    
+
+
+  </td>
+            <td valign="top" width="33%">
+               <table width="100%">
+                  <tr valign="top">
+                     <td>
+                        <ul style="margin-top:0; margin-bottom:0;">
+                           <li><a href="Chapter08UserInteractivity/CylinderSensorPumpHouseIndex.html">Cylinder Sensor Pump House</a></li>
+                           <li><a href="Chapter08UserInteractivity/DoorsIndex.html">Doors</a></li>
+                           <li><a href="Chapter08UserInteractivity/KeySensorLeftyIndex.html">Key Sensor Lefty</a></li>
+                           <li><a href="Chapter08UserInteractivity/PlaneSensorPumpHouseIndex.html">Plane Sensor Pump House</a></li>
+                           <li><a href="Chapter08UserInteractivity/SphereSensorLeftyIndex.html">Sphere Sensor Lefty</a></li>
+                           <li><a href="Chapter08UserInteractivity/StringSensorExampleIndex.html">String Sensor Example</a></li>
+                           <li><a href="Chapter08UserInteractivity/TouchSensorPumpHouseIndex.html">Touch Sensor Pump House</a></li>
+                           <li><a href="Chapter08UserInteractivity/UserInteractivitySensorNodesIndex.html">User Interactivity Sensor Nodes</a></li>
+                        </ul>
+                     </td>
+                     <td align="right"><a href="#"><img src="images/ToC.png" width="32" height="32" border="0" title="top" alt="top"></a><p><a href="Chapter08UserInteractivity/viewpointSlideshow.html"><img src="../images/MootoolsSlideshowLogo.jpg" title="Directory Viewpoint Slideshow" alt="Directory Viewpoint Slideshow" height="32" width="32" style="border-width:0px"></a></p>
+                        <p><a href="javadoc/index.html?X3dForWebAuthors/Chapter08UserInteractivity/package-summary.html" title="Javadoc for translated java source" alt="Javadoc for translated java source" target="_blank"><img src="../images/Java-32.png" title="Javadoc for translated java source" alt="Javadoc for translated java source" height="32" width="32" style="border-width:0px" align="right"></a></p>
+                     </td>
+                  </tr>
+               </table>
+            </td>
+         </tr>
+         <tr align="left" valign="top">
+            <td align="left" valign="top" width="67%"><a name="Chapter09EventUtilitiesScripting">&nbsp;</a><a title="Directory Summary" href="Chapter09EventUtilitiesScripting/index.html"><img src="images/ThisChapter.png" title="Directory Summary" alt="Directory Summary" height="32" width="32" style="border-width:0px" valign="bottom" align="left"><b valign="bottom"><font size="+2">Chapter 09 Event Utilities Scripting</font></b></a>
+    
+    <table bgColor="#ffffff" border="0" width="100%">
+        <tbody>
+            <tr>
+                <td align="left" cellpadding="10">
+                    
+                    <a href="Chapter09EventUtilitiesScripting/index.html"><img alt="IntegerSequencer example:  Road Work Ahead!" title="IntegerSequencer example:  Road Work Ahead!" border="0" hspace="10" src="Chapter09EventUtilitiesScripting/RoadSignRoadWorkAhead.jpg" width="205" height="153" align="left"/></a>
+                </td>
+
+                <td>
+    <p>
+				Event-utility nodes allow conversion and connection of different data types via ROUTEs, while
+				Script nodes allow authors to write their own event-handling code for special scene capabilities.
+    </p>
+    
+
+    <p>
+                 Event utility nodes simplify data-type conversion of events when producing animation chains between nodes.
+                 These include
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#BooleanFilter" target="X3dTooltips" title="X3D Tooltip">BooleanFilter</a>,
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#BooleanSequencer" target="X3dTooltips" title="X3D Tooltip">BooleanSequencer</a>,
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#BooleanToggle" target="X3dTooltips" title="X3D Tooltip">BooleanToggle</a>,
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#IntegerSequencer" target="X3dTooltips" title="X3D Tooltip">IntegerSequencer</a>,
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#IntegerTrigger" target="X3dTooltips" title="X3D Tooltip">IntegerTrigger</a>, 
+                 and 
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#TimeTrigger" target="X3dTooltips" title="X3D Tooltip">TimeTrigger</a>
+                 nodes.
+    </p>
+    
+
+    <p>
+                 The quick-reference sheet
+                 <a href="Chapter09EventUtilitiesScripting/X3dEventUtilityNodeEventDiagrams.pdf" target="_blank">X3D&nbsp;Event&nbsp;Utility&nbsp;Nodes: Field&nbsp;Event&nbsp;Diagrams</a>
+                 illustrates the functionality of the event utility nodes.
+                 These nodes receive and pass values that are sent via 
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#ROUTE" target="X3dTooltips" title="X3D Tooltip">ROUTE</a>
+                 connections.
+    </p>
+    
+
+    <p>
+                 The
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#Script" target="X3dTooltips" title="X3D Tooltip">Script</a>
+                 node allows authors to define new functionality produced by JavaScript (ECMAscript) or Java code.
+                 Authors can add
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#field" target="X3dTooltips" title="X3D Tooltip">field</a>
+                 declarations that define 
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#accessType" target="X3dTooltips" title="X3D Tooltip">accessType</a>
+                 (inputOnly, outputOnly, initializeOnly and inputOutput)
+                 and  
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#type" target="X3dTooltips" title="X3D Tooltip">type</a>
+                 for each field.
+    </p>
+    
+
+    <p>
+                 The supporting
+                 <a href="http://x3dgraphics.com/slidesets/X3dForWebAuthors/Chapter09EventUtilitiesScripting.pdf" target="X3dChapterSlideset">Chapter&nbsp;9 slideset</a>
+                 and course videos
+                (<a href="https://www.movesinstitute.org/Video/Courses/X3dForWebAuthors/X3dForWebAuthorsVideo.html#9" target="X3dChapterVideos">NPS</a>,
+                 <a href="https://www.youtube.com/playlist?list=PLuSIsM-86sik26mcDz0w_wdFXOUp56FTr" target="X3dChapterYouTubeVideos">YouTube</a>)
+                 for <i>X3D for Web Authors</i> are available online via
+                 <a href="http://X3dGraphics.com" target="_blank">X3dGraphics.com</a>.
+    </p>
+    
+
+    <p>
+                     Also available:
+                     <a href="https://www.web3d.org/x3d/content/examples/X3dSceneAuthoringHints.html#Scripts" target="_blank">X3D Scene Authoring Hints</a>
+                     for
+                     <a href="https://www.web3d.org/x3d/content/examples/X3dSceneAuthoringHints.html#Scripts" target="_blank">Scripts</a>
+                     and
+                     <a href="https://www.web3d.org/x3d/content/examples/X3dSceneAuthoringHints.html#urls" target="_blank">URL&nbsp;Links</a>.
+    </p>
+    
+
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    
+
+
+  </td>
+            <td valign="top" width="33%">
+               <table width="100%">
+                  <tr valign="top">
+                     <td>
+                        <ul style="margin-top:0; margin-bottom:0;">
+                           <li><a href="Chapter09EventUtilitiesScripting/BackgroundColorArrayAnimationIndex.html">Background Color Array Animation</a></li>
+                           <li><a href="Chapter09EventUtilitiesScripting/BooleanFilterPumpHouseIndex.html">Boolean Filter Pump House</a></li>
+                           <li><a href="Chapter09EventUtilitiesScripting/BooleanSequencerIntegerSequencerIndex.html">Boolean Sequencer Integer Sequencer</a></li>
+                           <li><a href="Chapter09EventUtilitiesScripting/BooleanSequencerPumpHouseIndex.html">Boolean Sequencer Pump House</a></li>
+                           <li><a href="Chapter09EventUtilitiesScripting/BooleanToggleExampleIndex.html">Boolean Toggle Example</a></li>
+                           <li><a href="Chapter09EventUtilitiesScripting/BooleanTogglePumpHouseIndex.html">Boolean Toggle Pump House</a></li>
+                           <li><a href="Chapter09EventUtilitiesScripting/BooleanTriggerPumpHouseIndex.html">Boolean Trigger Pump House</a></li>
+                           <li><a href="Chapter09EventUtilitiesScripting/CircleLinesExampleIndex.html">Circle Lines Example</a></li>
+                           <li><a href="Chapter09EventUtilitiesScripting/CircleLinesExample60Index.html">Circle Lines Example 60</a></li>
+                           <li><a href="Chapter09EventUtilitiesScripting/CircleLinesSphereLatitudeIndex.html">Circle Lines Sphere Latitude</a></li>
+                           <li><a href="Chapter09EventUtilitiesScripting/CircleLinesSphereLongitudeIndex.html">Circle Lines Sphere Longitude</a></li>
+                           <li><a href="Chapter09EventUtilitiesScripting/ElevationGridSimpleWaveAnimationIndex.html">Elevation Grid Simple Wave Animation</a></li>
+                           <li><a href="Chapter09EventUtilitiesScripting/IntegerSequencerPumpHouseIndex.html">Integer Sequencer Pump House</a></li>
+                           <li><a href="Chapter09EventUtilitiesScripting/IntegerSequencerRoadSignSwitcherIndex.html">Integer Sequencer Road Sign Switcher</a></li>
+                           <li><a href="Chapter09EventUtilitiesScripting/IntegerTriggerExampleIndex.html">Integer Trigger Example</a></li>
+                           <li><a href="Chapter09EventUtilitiesScripting/IntegerTriggerPumpHouseIndex.html">Integer Trigger Pump House</a></li>
+                           <li><a href="Chapter09EventUtilitiesScripting/MoodSelectorIndex.html">Mood Selector</a></li>
+                           <li><a href="Chapter09EventUtilitiesScripting/newECMAscriptTestIndex.html">new ECMAscript Test</a></li>
+                           <li><a href="Chapter09EventUtilitiesScripting/ScriptComplexStateEventsIndex.html">Script Complex State Events</a></li>
+                           <li><a href="Chapter09EventUtilitiesScripting/ScriptControlEventsIndex.html">Script Control Events</a></li>
+                           <li><a href="Chapter09EventUtilitiesScripting/ScriptEventsIndex.html">Script Events</a></li>
+                           <li><a href="Chapter09EventUtilitiesScripting/ScriptEventsPumpHouseIndex.html">Script Events Pump House</a></li>
+                           <li><a href="Chapter09EventUtilitiesScripting/ScriptNodeEventOutControlEcmaScriptIndex.html">Script Node Event Out Control Ecma Script</a></li>
+                           <li><a href="Chapter09EventUtilitiesScripting/ScriptNodeFieldControlEcmaScriptIndex.html">Script Node Field Control Ecma Script</a></li>
+                           <li><a href="Chapter09EventUtilitiesScripting/ScriptSimpleStateEventsIndex.html">Script Simple State Events</a></li>
+                           <li><a href="Chapter09EventUtilitiesScripting/TestScriptInitializationIndex.html">Test Script Initialization</a></li>
+                           <li><a href="Chapter09EventUtilitiesScripting/TimeTriggerPumpHouseIndex.html">Time Trigger Pump House</a></li>
+                           <li><a href="Chapter09EventUtilitiesScripting/TimeTriggerTestIndex.html">Time Trigger Test</a></li>
+                        </ul>
+                     </td>
+                     <td align="right"><a href="#"><img src="images/ToC.png" width="32" height="32" border="0" title="top" alt="top"></a><p><a href="Chapter09EventUtilitiesScripting/viewpointSlideshow.html"><img src="../images/MootoolsSlideshowLogo.jpg" title="Directory Viewpoint Slideshow" alt="Directory Viewpoint Slideshow" height="32" width="32" style="border-width:0px"></a></p>
+                        <p><a href="javadoc/index.html?X3dForWebAuthors/Chapter09EventUtilitiesScripting/package-summary.html" title="Javadoc for translated java source" alt="Javadoc for translated java source" target="_blank"><img src="../images/Java-32.png" title="Javadoc for translated java source" alt="Javadoc for translated java source" height="32" width="32" style="border-width:0px" align="right"></a></p>
+                     </td>
+                  </tr>
+               </table>
+            </td>
+         </tr>
+         <tr align="left" valign="top">
+            <td align="left" valign="top" width="67%"><a name="Chapter10Geometry2D">&nbsp;</a><a title="Directory Summary" href="Chapter10Geometry2D/index.html"><img src="images/ThisChapter.png" title="Directory Summary" alt="Directory Summary" height="32" width="32" style="border-width:0px" valign="bottom" align="left"><b valign="bottom"><font size="+2">Chapter 10 Geometry 2D</font></b></a>
+    
+    <table bgColor="#ffffff" border="0" width="100%">
+        <tbody>
+            <tr>
+                <td>
+    <p>
+				Geometry2D nodes simplify creation of simple planar shapes, which can be helpful for billboards and user interfaces.
+    </p>
+    
+
+    <p>
+                 Geometry2D nodes simplify creation of simple planar shapes.
+                 Planar geometry includes the
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#Arc2D" target="X3dTooltips" title="X3D Tooltip">Arc2D</a>,
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#ArcClose2D" target="X3dTooltips" title="X3D Tooltip">ArcClose2D</a>,
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#Circle2D" target="X3dTooltips" title="X3D Tooltip">Circle2D</a>,
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#Disk2D" target="X3dTooltips" title="X3D Tooltip">Disk2D</a>,
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#Polyline2D" target="X3dTooltips" title="X3D Tooltip">Polyline2D</a>,
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#Polypoint2D" target="X3dTooltips" title="X3D Tooltip">Polypoint2D</a>,
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#Rectangle2D" target="X3dTooltips" title="X3D Tooltip">Rectangle2D</a> 
+                 and 
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#TriangleSet2D" target="X3dTooltips" title="X3D Tooltip">TriangleSet2D</a>
+                 nodes.
+                 Each Geometry2D node is placed individually inside a
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#Shape" target="X3dTooltips" title="X3D Tooltip">Shape</a>
+                 node.
+    </p>
+    
+
+    <p>
+                 The supporting
+                 <a href="http://x3dgraphics.com/slidesets/X3dForWebAuthors/Chapter10Geometry2D.pdf" target="X3dChapterSlideset">Chapter&nbsp;10 slideset</a>
+                 and course videos
+                (<a href="https://www.movesinstitute.org/Video/Courses/X3dForWebAuthors/X3dForWebAuthorsVideo.html#10" target="X3dChapterVideos">NPS</a>,
+                 <a href="https://www.youtube.com/playlist?list=PLuSIsM-86simpd5kk-Iftauhpz5GDGgz0" target="X3dChapterYouTubeVideos">YouTube</a>)
+                 for <i>X3D for Web Authors</i> are available online via
+                 <a href="http://X3dGraphics.com" target="_blank">X3dGraphics.com</a>.
+    </p>
+    
+
+                </td>
+                
+                <td align="left" cellpadding="10">
+                    
+                    <a href="Chapter10Geometry2D/index.html"><img alt="X3D Geometry2D nodes are planar" title="X3D Geometry2D nodes are planar" border="0" hspace="10" src="Chapter10Geometry2D/Summary2D.png" width="138" height="119" align="left"/></a>
+                </td>
+
+            </tr>
+        </tbody>
+    </table>
+
+    
+
+
+  </td>
+            <td valign="top" width="33%">
+               <table width="100%">
+                  <tr valign="top">
+                     <td>
+                        <ul style="margin-top:0; margin-bottom:0;">
+                           <li><a href="Chapter10Geometry2D/Arc2dExampleIndex.html">Arc 2D Example</a></li>
+                           <li><a href="Chapter10Geometry2D/ArcClose2dExampleIndex.html">Arc Close 2D Example</a></li>
+                           <li><a href="Chapter10Geometry2D/Circle2dExampleIndex.html">Circle 2D Example</a></li>
+                           <li><a href="Chapter10Geometry2D/Disk2dExampleIndex.html">Disk 2D Example</a></li>
+                           <li><a href="Chapter10Geometry2D/Polyline2dExampleIndex.html">Polyline 2D Example</a></li>
+                           <li><a href="Chapter10Geometry2D/Polypoint2dExampleIndex.html">Polypoint 2D Example</a></li>
+                           <li><a href="Chapter10Geometry2D/Rectangle2dExampleIndex.html">Rectangle 2D Example</a></li>
+                           <li><a href="Chapter10Geometry2D/Summary2DIndex.html">Summary 2D</a></li>
+                           <li><a href="Chapter10Geometry2D/TriangleSet2dExampleIndex.html">Triangle Set 2D Example</a></li>
+                        </ul>
+                     </td>
+                     <td align="right"><a href="#"><img src="images/ToC.png" width="32" height="32" border="0" title="top" alt="top"></a><p><a href="Chapter10Geometry2D/viewpointSlideshow.html"><img src="../images/MootoolsSlideshowLogo.jpg" title="Directory Viewpoint Slideshow" alt="Directory Viewpoint Slideshow" height="32" width="32" style="border-width:0px"></a></p>
+                        <p><a href="javadoc/index.html?X3dForWebAuthors/Chapter10Geometry2D/package-summary.html" title="Javadoc for translated java source" alt="Javadoc for translated java source" target="_blank"><img src="../images/Java-32.png" title="Javadoc for translated java source" alt="Javadoc for translated java source" height="32" width="32" style="border-width:0px" align="right"></a></p>
+                     </td>
+                  </tr>
+               </table>
+            </td>
+         </tr>
+         <tr align="left" valign="top">
+            <td align="left" valign="top" width="67%"><a name="Chapter11LightingEnvironmentalEffects">&nbsp;</a><a title="Directory Summary" href="Chapter11LightingEnvironmentalEffects/index.html"><img src="images/ThisChapter.png" title="Directory Summary" alt="Directory Summary" height="32" width="32" style="border-width:0px" valign="bottom" align="left"><b valign="bottom"><font size="+2">Chapter 11 Lighting Environmental Effects</font></b></a>
+    
+    <table bgColor="#ffffff" border="0" width="100%">
+        <tbody>
+            <tr>
+                <td align="left" cellpadding="10">
+                    
+                    <a href="Chapter11LightingEnvironmentalEffects/index.html"><img alt="DirectionalLight Diagram" title="DirectionalLight Diagram" border="0" hspace="10" src="Chapter11LightingEnvironmentalEffects/DirectionalLightFigure.png" width="303" height="156" align="left"/></a>
+                </td>
+
+                <td>
+                    &nbsp;&nbsp;&nbsp;
+                </td>
+
+                <td>               
+    <p>
+				Light nodes make the appearance of geometry visible and viewable in a scene.
+    </p>
+    
+
+    <p>
+                 Lights illuminate geometry in a scene relative to the user's view.
+                 Lighting nodes include 
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#DirectionalLight" target="X3dTooltips" title="X3D Tooltip">DirectionalLight</a>,
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#PointLight" target="X3dTooltips" title="X3D Tooltip">PointLight</a>,
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#SpotLight" target="X3dTooltips" title="X3D Tooltip">SpotLight</a>,
+                 and the active 
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#NavigationInfo" target="X3dTooltips" title="X3D Tooltip">NavigationInfo</a>
+                 headlight (which points along the user's viewing direction).
+    </p>
+    
+
+    <p>
+                 Environmental effects include 
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#Background" target="X3dTooltips" title="X3D Tooltip">Background</a>,
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#TextureBackground" target="X3dTooltips" title="X3D Tooltip">TextureBackground</a>,
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#Fog" target="X3dTooltips" title="X3D Tooltip">Fog</a>
+                 and 
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#LocalFog" target="X3dTooltips" title="X3D Tooltip">LocalFog</a>.
+                 Each set of light nodes, NavigationInfo nodes, background nodes and fog nodes are bound on a separate binding stack,
+                 meaning that only one of each can be active at a time.
+    </p>
+    
+
+    <p>
+                 The supporting
+                 <a href="http://x3dgraphics.com/slidesets/X3dForWebAuthors/Chapter11LightingEnvironment.pdf" target="X3dChapterSlideset">Chapter&nbsp;11 slideset</a>
+                 and course videos
+                (<a href="https://www.movesinstitute.org/Video/Courses/X3dForWebAuthors/X3dForWebAuthorsVideo.html#11" target="X3dChapterVideos">NPS</a>,
+                 <a href="https://www.youtube.com/playlist?list=PLuSIsM-86sinCdhttlFIr5ZLBXRjzazWU" target="X3dChapterYouTubeVideos">YouTube</a>)
+                 for <i>X3D for Web Authors</i> are available online via
+                 <a href="http://X3dGraphics.com" target="_blank">X3dGraphics.com</a>.
+    </p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    
+
+
+  </td>
+            <td valign="top" width="33%">
+               <table width="100%">
+                  <tr valign="top">
+                     <td>
+                        <ul style="margin-top:0; margin-bottom:0;">
+                           <li><a href="Chapter11LightingEnvironmentalEffects/BackgroundColorsOnlyIndex.html">Background Colors Only</a></li>
+                           <li><a href="Chapter11LightingEnvironmentalEffects/BackgroundImagesOnlyIndex.html">Background Images Only</a></li>
+                           <li><a href="Chapter11LightingEnvironmentalEffects/BackgroundKelpForestMainIndex.html">Background Kelp Forest Main</a></li>
+                           <li><a href="Chapter11LightingEnvironmentalEffects/BackgroundSelectorIndex.html">Background Selector</a></li>
+                           <li><a href="Chapter11LightingEnvironmentalEffects/BackgroundSequencerIndex.html">Background Sequencer</a></li>
+                           <li><a href="Chapter11LightingEnvironmentalEffects/BackgroundTimeOfDayIndex.html">Background Time Of Day</a></li>
+                           <li><a href="Chapter11LightingEnvironmentalEffects/DirectionalLightExampleIndex.html">Directional Light Example</a></li>
+                           <li><a href="Chapter11LightingEnvironmentalEffects/FogKelpForestMainIndex.html">Fog Kelp Forest Main</a></li>
+                           <li><a href="Chapter11LightingEnvironmentalEffects/PointLightColorIndex.html">Point Light Color</a></li>
+                           <li><a href="Chapter11LightingEnvironmentalEffects/PointLightExampleIndex.html">Point Light Example</a></li>
+                           <li><a href="Chapter11LightingEnvironmentalEffects/SpotLightColorIndex.html">Spot Light Color</a></li>
+                           <li><a href="Chapter11LightingEnvironmentalEffects/SpotLightExampleIndex.html">Spot Light Example</a></li>
+                           <li><a href="Chapter11LightingEnvironmentalEffects/SpotLightVisualizationIndex.html">Spot Light Visualization</a></li>
+                           <li><a href="Chapter11LightingEnvironmentalEffects/TextureBackgroundExampleIndex.html">Texture Background Example</a></li>
+                           <li><a href="Chapter11LightingEnvironmentalEffects/TextureBackgroundKelpForestMainIndex.html">Texture Background Kelp Forest Main</a></li>
+                        </ul>
+                     </td>
+                     <td align="right"><a href="#"><img src="images/ToC.png" width="32" height="32" border="0" title="top" alt="top"></a><p><a href="Chapter11LightingEnvironmentalEffects/viewpointSlideshow.html"><img src="../images/MootoolsSlideshowLogo.jpg" title="Directory Viewpoint Slideshow" alt="Directory Viewpoint Slideshow" height="32" width="32" style="border-width:0px"></a></p>
+                        <p><a href="javadoc/index.html?X3dForWebAuthors/Chapter11LightingEnvironmentalEffects/package-summary.html" title="Javadoc for translated java source" alt="Javadoc for translated java source" target="_blank"><img src="../images/Java-32.png" title="Javadoc for translated java source" alt="Javadoc for translated java source" height="32" width="32" style="border-width:0px" align="right"></a></p>
+                     </td>
+                  </tr>
+               </table>
+            </td>
+         </tr>
+         <tr align="left" valign="top">
+            <td align="left" valign="top" width="67%"><a name="Chapter12EnvironmentSensorSound">&nbsp;</a><a title="Directory Summary" href="Chapter12EnvironmentSensorSound/index.html"><img src="images/ThisChapter.png" title="Directory Summary" alt="Directory Summary" height="32" width="32" style="border-width:0px" valign="bottom" align="left"><b valign="bottom"><font size="+2">Chapter 12 Environment Sensor Sound</font></b></a>
+
+    <table bgColor="#ffffff" border="0" width="100%">
+        <tbody>
+            <tr>
+                <td align="left" rowspan="3">
+                    
+                    <a href="Chapter12EnvironmentSensorSound/index.html"><img alt="ProximitySensor Visualization" title="ProximitySensor coverage visualization" border="0" hspace="10" src="Chapter12EnvironmentSensorSound/ProximitySensorVisualization.png" height="132" align="left"/></a>
+                </td>
+                
+                <td align="left">
+    <p>
+					Environmental sensors detect user visibility proximity and collision, while
+					3D spatial sound sources can greatly improve user engagement in a scene.
+    </p>
+    
+
+    <p>
+                     Event-producing environmental sensor nodes include
+                     <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#LoadSensor" target="X3dTooltips" title="X3D Tooltip">LoadSensor</a>,
+                     <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#ProximitySensor" target="X3dTooltips" title="X3D Tooltip">ProximitySensor</a>,
+                     and 
+                     <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#VisibilitySensor" target="X3dTooltips" title="X3D Tooltip">VisibilitySensor</a>.
+                     Audio nodes include 
+                     <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#Sound" target="X3dTooltips" title="X3D Tooltip">Sound</a>
+                     for aural spatialization and 
+                     <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#AudioClip" target="X3dTooltips" title="X3D Tooltip">AudioClip</a>
+                     for identifying sound files.
+                     <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#MovieTexture" target="X3dTooltips" title="X3D Tooltip">MovieTexture</a>
+                     nodes can also be used as an audio soundtrack source.    </p>
+    
+
+    <p>
+                    Relevant
+                    <a href="https://www.web3d.org/files/specifications/19775-1/V3.3/Part01/Architecture.html" target="X3dSpecification">X3D Specification</a>
+                    resources include the
+                    <a href="https://www.web3d.org/files/specifications/19775-1/V3.3/Part01/components/envsensor.html" target="X3dSpecification">Environmental sensor component</a>,
+                    <a href="https://www.web3d.org/files/specifications/19775-1/V3.3/Part01/components/sound.html" target="X3dSpecification">Sound component</a>
+                    and
+                    <a href="https://www.web3d.org/files/specifications/19775-1/V3.3/Part01/components/texturing.html" target="X3dSpecification">Texturing component</a>.
+    </p>
+    
+
+    <p>
+                     The supporting
+                     <a href="http://x3dgraphics.com/slidesets/X3dForWebAuthors/Chapter12EnvironmentSensorSound.pdf" target="X3dChapterSlideset">Chapter&nbsp;12 slideset</a>
+                     and course videos
+                    (<a href="https://www.movesinstitute.org/Video/Courses/X3dForWebAuthors/X3dForWebAuthorsVideo.html#12" target="X3dChapterVideos">NPS</a>,
+                     <a href="https://www.youtube.com/playlist?list=PLuSIsM-86sinCRRshWpzgr335AiO1Whp2" target="X3dChapterYouTubeVideos">YouTube</a>)
+					 for <i>X3D for Web Authors</i> are available online via
+                     <a href="http://X3dGraphics.com" target="_blank">X3dGraphics.com</a>.
+    </p>
+    
+
+    <p>
+                      Also available:
+                      <a href="https://www.web3d.org/x3d/content/examples/X3dSceneAuthoringHints.html#Images" target="_blank">X3D Scene Authoring Hints</a>
+                      for
+                      <a href="https://www.web3d.org/x3d/content/examples/X3dSceneAuthoringHints.html#Audio" target="_blank">Audio</a>
+                      and
+                      <a href="https://www.web3d.org/x3d/content/examples/X3dSceneAuthoringHints.html#urls" target="_blank">URL&nbsp;Links</a>.
+    </p>
+    
+
+                </td>
+                
+                <td align="left" rowspan="3">
+                    
+                    <a href="Chapter12EnvironmentSensorSound/index.html"><img alt="Sound node coverage visualization" title="Sound node coverage visualization" border="0" hspace="10" src="Chapter12EnvironmentSensorSound/SoundVisualization.png" width="170" height="132" align="middle"/></a>
+                </td>
+            </tr>
+            
+        </tbody>
+    </table>
+    
+    
+
+
+    <p>
+                 
+    </p>
+    
+
+
+    <p>
+                 
+    </p>
+    
+
+
+  </td>
+            <td valign="top" width="33%">
+               <table width="100%">
+                  <tr valign="top">
+                     <td>
+                        <ul style="margin-top:0; margin-bottom:0;">
+                           <li><a href="Chapter12EnvironmentSensorSound/CollisionKelpForestMainIndex.html">Collision Kelp Forest Main</a></li>
+                           <li><a href="Chapter12EnvironmentSensorSound/LoadSensorExampleIndex.html">Load Sensor Example</a></li>
+                           <li><a href="Chapter12EnvironmentSensorSound/LoadSensorKelpForestMainIndex.html">Load Sensor Kelp Forest Main</a></li>
+                           <li><a href="Chapter12EnvironmentSensorSound/LoadSensorKelpForestMain_timeOutIndex.html">Load Sensor Kelp Forest Main time Out</a></li>
+                           <li><a href="Chapter12EnvironmentSensorSound/ProximitySensorExampleIndex.html">Proximity Sensor Example</a></li>
+                           <li><a href="Chapter12EnvironmentSensorSound/ProximitySensorKelpForestMainIndex.html">Proximity Sensor Kelp Forest Main</a></li>
+                           <li><a href="Chapter12EnvironmentSensorSound/ProximitySensorMultipleIndex.html">Proximity Sensor Multiple</a></li>
+                           <li><a href="Chapter12EnvironmentSensorSound/ProximitySensorNoOverlapIndex.html">Proximity Sensor No Overlap</a></li>
+                           <li><a href="Chapter12EnvironmentSensorSound/ProximitySensorOverlapIndex.html">Proximity Sensor Overlap</a></li>
+                           <li><a href="Chapter12EnvironmentSensorSound/ProximitySensorSingleIndex.html">Proximity Sensor Single</a></li>
+                           <li><a href="Chapter12EnvironmentSensorSound/SoundAudioClipIndex.html">Sound Audio Clip</a></li>
+                           <li><a href="Chapter12EnvironmentSensorSound/SoundFileFormatsIndex.html">Sound File Formats</a></li>
+                           <li><a href="Chapter12EnvironmentSensorSound/SoundLoadSensorTestIndex.html">Sound Load Sensor Test</a></li>
+                           <li><a href="Chapter12EnvironmentSensorSound/SoundVisualizationIndex.html">Sound Visualization</a></li>
+                           <li><a href="Chapter12EnvironmentSensorSound/VisibilitySensorKelpForestMainIndex.html">Visibility Sensor Kelp Forest Main</a></li>
+                        </ul>
+                     </td>
+                     <td align="right"><a href="#"><img src="images/ToC.png" width="32" height="32" border="0" title="top" alt="top"></a><p><a href="Chapter12EnvironmentSensorSound/viewpointSlideshow.html"><img src="../images/MootoolsSlideshowLogo.jpg" title="Directory Viewpoint Slideshow" alt="Directory Viewpoint Slideshow" height="32" width="32" style="border-width:0px"></a></p>
+                        <p><a href="javadoc/index.html?X3dForWebAuthors/Chapter12EnvironmentSensorSound/package-summary.html" title="Javadoc for translated java source" alt="Javadoc for translated java source" target="_blank"><img src="../images/Java-32.png" title="Javadoc for translated java source" alt="Javadoc for translated java source" height="32" width="32" style="border-width:0px" align="right"></a></p>
+                     </td>
+                  </tr>
+               </table>
+            </td>
+         </tr>
+         <tr align="left" valign="top">
+            <td align="left" valign="top" width="67%"><a name="Chapter13GeometryTrianglesQuadrilaterals">&nbsp;</a><a title="Directory Summary" href="Chapter13GeometryTrianglesQuadrilaterals/index.html"><img src="images/ThisChapter.png" title="Directory Summary" alt="Directory Summary" height="32" width="32" style="border-width:0px" valign="bottom" align="left"><b valign="bottom"><font size="+2">Chapter 13 Geometry Triangles Quadrilaterals</font></b></a>
+    
+    <table bgColor="#ffffff" border="0" width="100%">
+        <tbody>
+            <tr>
+                <td>
+    <p>
+				Triangles and quadrilaterals are fundamental geometry representations that are
+				typically created by authoring tools to build complex polygonal meshes and shapes.
+    </p>
+    
+
+    <p>
+                 Low-level high-performance nodes for geometry definition and fast rendering include
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#TriangleSet" target="X3dTooltips" title="X3D Tooltip">TriangleSet</a>,
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#TriangleFanSet" target="X3dTooltips" title="X3D Tooltip">TriangleFanSet</a>,
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#TriangleStripSet" target="X3dTooltips" title="X3D Tooltip">TriangleStripSet</a>,
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#IndexedTriangleSet" target="X3dTooltips" title="X3D Tooltip">IndexedTriangleSet</a>,
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#IndexedTriangleFanSet" target="X3dTooltips" title="X3D Tooltip">IndexedTriangleFanSet</a>,
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#IndexedTriangleStripSet" target="X3dTooltips" title="X3D Tooltip">IndexedTriangleStripSet</a>,
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#QuadSet" target="X3dTooltips" title="X3D Tooltip">QuadSet</a>
+                 and
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#IndexedQuadSet" target="X3dTooltips" title="X3D Tooltip">IndexedQuadSet</a>.
+                Special definition rules apply to each node in order to best match underlying graphics hardware requirements.
+                 Each is placed individually inside a
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#Shape" target="X3dTooltips" title="X3D Tooltip">Shape</a>
+                 node.
+    </p>
+    
+
+    <p>
+                 The supporting
+                 <a href="http://x3dgraphics.com/slidesets/X3dForWebAuthors/Chapter13GeometryTrianglesQuadrilaterals.pdf" target="X3dChapterSlideset">Chapter&nbsp;13 slideset</a>
+                 and course videos
+                (<a href="https://www.movesinstitute.org/Video/Courses/X3dForWebAuthors/X3dForWebAuthorsVideo.html#13" target="X3dChapterVideos">NPS</a>,
+                 <a href="https://www.youtube.com/playlist?list=PLuSIsM-86simfHMmPs_98xGwJ8es90TYy" target="X3dChapterYouTubeVideos">YouTube</a>)
+                 for <i>X3D for Web Authors</i> are available online via
+                 <a href="http://X3dGraphics.com" target="_blank">X3dGraphics.com</a>.
+    </p>
+    
+
+    <p>
+                     Also available:
+                     <a href="https://www.web3d.org/x3d/content/examples/X3dSceneAuthoringHints.html#Meshes" target="_blank">X3D Scene Authoring Hints: Meshes</a>.
+    </p>
+    
+
+                </td>
+                
+                <td align="left" cellpadding="10">
+                    
+                    <a href="Chapter13GeometryTrianglesQuadrilaterals/index.html"><img alt="Nonplanar Polygons" title="Nonplanar Polygons" border="0" hspace="10" src="Chapter13GeometryTrianglesQuadrilaterals/NonplanarPolygons.png" width="190" height="102" align="left"/></a>
+                </td>
+
+            </tr>
+        </tbody>
+    </table>
+
+    
+
+  </td>
+            <td valign="top" width="33%">
+               <table width="100%">
+                  <tr valign="top">
+                     <td>
+                        <ul style="margin-top:0; margin-bottom:0;">
+                           <li><a href="Chapter13GeometryTrianglesQuadrilaterals/IndexedQuadSetExampleIndex.html">Indexed Quad Set Example</a></li>
+                           <li><a href="Chapter13GeometryTrianglesQuadrilaterals/IndexedTriangleFanSetExampleIndex.html">Indexed Triangle Fan Set Example</a></li>
+                           <li><a href="Chapter13GeometryTrianglesQuadrilaterals/IndexedTriangleSetExampleIndex.html">Indexed Triangle Set Example</a></li>
+                           <li><a href="Chapter13GeometryTrianglesQuadrilaterals/IndexedTriangleStripSetExampleIndex.html">Indexed Triangle Strip Set Example</a></li>
+                           <li><a href="Chapter13GeometryTrianglesQuadrilaterals/MorphingTriangleSetIndex.html">Morphing Triangle Set</a></li>
+                           <li><a href="Chapter13GeometryTrianglesQuadrilaterals/NonplanarPolygonsIndex.html">Nonplanar Polygons</a></li>
+                           <li><a href="Chapter13GeometryTrianglesQuadrilaterals/NormalExampleIndex.html">Normal Example</a></li>
+                           <li><a href="Chapter13GeometryTrianglesQuadrilaterals/QuadSetExampleIndex.html">Quad Set Example</a></li>
+                           <li><a href="Chapter13GeometryTrianglesQuadrilaterals/SummaryIndexedTriangleSetsIndex.html">Summary Indexed Triangle Sets</a></li>
+                           <li><a href="Chapter13GeometryTrianglesQuadrilaterals/TriangleFanSetExampleIndex.html">Triangle Fan Set Example</a></li>
+                           <li><a href="Chapter13GeometryTrianglesQuadrilaterals/TriangleSetExampleIndex.html">Triangle Set Example</a></li>
+                           <li><a href="Chapter13GeometryTrianglesQuadrilaterals/TriangleStripSetExampleIndex.html">Triangle Strip Set Example</a></li>
+                        </ul>
+                     </td>
+                     <td align="right"><a href="#"><img src="images/ToC.png" width="32" height="32" border="0" title="top" alt="top"></a><p><a href="Chapter13GeometryTrianglesQuadrilaterals/viewpointSlideshow.html"><img src="../images/MootoolsSlideshowLogo.jpg" title="Directory Viewpoint Slideshow" alt="Directory Viewpoint Slideshow" height="32" width="32" style="border-width:0px"></a></p>
+                        <p><a href="javadoc/index.html?X3dForWebAuthors/Chapter13GeometryTrianglesQuadrilaterals/package-summary.html" title="Javadoc for translated java source" alt="Javadoc for translated java source" target="_blank"><img src="../images/Java-32.png" title="Javadoc for translated java source" alt="Javadoc for translated java source" height="32" width="32" style="border-width:0px" align="right"></a></p>
+                     </td>
+                  </tr>
+               </table>
+            </td>
+         </tr>
+         <tr align="left" valign="top">
+            <td align="left" valign="top" width="67%"><a name="Chapter14Prototypes">&nbsp;</a><a title="Directory Summary" href="Chapter14Prototypes/index.html"><img src="images/ThisChapter.png" title="Directory Summary" alt="Directory Summary" height="32" width="32" style="border-width:0px" valign="bottom" align="left"><b valign="bottom"><font size="+2">Chapter 14 Prototypes</font></b></a>
+    
+    <table bgColor="#ffffff" border="0" width="100%">
+        <tbody>
+            <tr>
+                <td align="right">
+                    
+                    <a href="Chapter14Prototypes/index.html"><img title="MaterialModulator prototype demonstration" alt="MaterialModulator prototype demonstration" border="0" hspace="0" src="Chapter14Prototypes/MaterialModulator.png" height="112" align="middle"/></a>
+                </td>
+                
+                <td  align="left">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </td>
+                
+                <td  align="left">
+                    
+                    <a href="Chapter14Prototypes/index.html"><img title="ViewFrustum prototype demonstration" alt="ViewFrustum prototype demonstration" border="0" hspace="0" src="Chapter14Prototypes/ViewFrustumObliqueView.png" width="253" height="112" align="middle"/></a>
+                </td>
+                    
+            </tr>
+        </tbody>
+    </table>
+
+    <p>
+				Prototypes let authors define a new X3D node made up of other X3D nodes,
+				extending the language for any scenes in new and interesting ways.
+    </p>
+    
+
+
+    <p>
+                 X3D extensibility includes a tremendous capability: 
+                 authors can create prototype declarations and instances to define new X3D nodes.
+				 This is a powerful feature that puts the full power of this graphics language in the hands of Web authors.
+	
+	
+
+
+                 Prototype templates are themselves built using 
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#ProtoDeclare" target="X3dTooltips" title="X3D Tooltip">ProtoDeclare</a> 
+                 definitions or corresponding
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#ExternProtoDeclare" target="X3dTooltips" title="X3D Tooltip">ExternProtoDeclare</a>
+                 references.
+                 
+                 ProtoDeclare field definitions are found in the
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#ProtoInterface" target="X3dTooltips" title="X3D Tooltip">ProtoInterface</a>
+                 tag, which can include multiple
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#field" target="X3dTooltips" title="X3D Tooltip">field</a>
+                 declarations that define a name, initial value (if appropriate),
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#accessType" target="X3dTooltips" title="X3D Tooltip">accessType</a>
+                 (inputOnly, outputOnly, initializeOnly and inputOutput)
+                 and  
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#type" target="X3dTooltips" title="X3D Tooltip">type</a>
+                 for each field.
+                 The
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#IS" target="X3dTooltips" title="X3D Tooltip">IS</a>
+                 and
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#connect" target="X3dTooltips" title="X3D Tooltip">connect</a>
+                 statements allow an internal field inside the ProtoBody to directly relay values and events via the exposed ProtoInterface field.
+    </p>
+    
+
+
+    <p>
+                 The node type of each ProtoDeclare is defined by the first node inside the
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#ProtoBody" target="X3dTooltips" title="X3D Tooltip">ProtoBody</a>
+                 declaration.
+                 Copies of a new node are created by name with 
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#ProtoInstance" target="X3dTooltips" title="X3D Tooltip">ProtoInstance</a>
+                 nodes.
+                 Default values for ProtoInstance fields can be overridden with
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#fieldValue" target="X3dTooltips" title="X3D Tooltip">fieldValue</a>
+                 initializations.
+                 A ProtoInstance node can replace any other node in the scene graph having the same node type.
+    </p>
+    
+
+
+    <p>
+                 The supporting
+                 <a href="http://x3dgraphics.com/slidesets/X3dForWebAuthors/Chapter14Prototypes.pdf" target="X3dChapterSlideset">Chapter&nbsp;14 slideset</a>
+                 and course videos
+                (<a href="https://www.movesinstitute.org/Video/Courses/X3dForWebAuthors/X3dForWebAuthorsVideo.html#14" target="X3dChapterVideos">NPS</a>,
+                 <a href="https://www.youtube.com/playlist?list=PLuSIsM-86simQ4u2XxKZS7PU381BfFjIk" target="X3dChapterYouTubeVideos">YouTube</a>)
+                 for <i>X3D for Web Authors</i> are available online via
+                 <a href="http://X3dGraphics.com" target="_blank">X3dGraphics.com</a>.
+    </p>
+    
+
+
+    <p>
+                     Also available:
+                     <a href="https://www.web3d.org/x3d/content/examples/X3dSceneAuthoringHints.html" target="_blank">X3D Scene Authoring Hints</a>
+                     for
+                     <a href="https://www.web3d.org/x3d/content/examples/X3dSceneAuthoringHints.html#InlinesPrototypes" target="_blank">Inline Scenes and Prototype Templates</a>
+                      and
+                      <a href="https://www.web3d.org/x3d/content/examples/X3dSceneAuthoringHints.html#urls" target="_blank">URL&nbsp;Links</a>.
+    </p>
+    
+
+
+  </td>
+            <td valign="top" width="33%">
+               <table width="100%">
+                  <tr valign="top">
+                     <td>
+                        <ul style="margin-top:0; margin-bottom:0;">
+                           <li><a href="Chapter14Prototypes/ArtDecoExamplesExcerptIndex.html">Art Deco Examples Excerpt</a></li>
+                           <li><a href="Chapter14Prototypes/ArtDecoPrototypesExcerptIndex.html">Art Deco Prototypes Excerpt</a></li>
+                           <li><a href="Chapter14Prototypes/HeadsUpDisplayExampleIndex.html">Heads Up Display Example</a></li>
+                           <li><a href="Chapter14Prototypes/HeadsUpDisplayPrototypeIndex.html">Heads Up Display Prototype</a></li>
+                           <li><a href="Chapter14Prototypes/HudKelpForestIndex.html">Hud Kelp Forest</a></li>
+                           <li><a href="Chapter14Prototypes/MaterialModulatorIndex.html">Material Modulator</a></li>
+                           <li><a href="Chapter14Prototypes/MaterialModulatorExamplesIndex.html">Material Modulator Examples</a></li>
+                           <li><a href="Chapter14Prototypes/MaterialModulatorPrototypeExpandedIndex.html">Material Modulator Prototype Expanded</a></li>
+                           <li><a href="Chapter14Prototypes/TextStringPrototypeIndex.html">Text String Prototype</a></li>
+                           <li><a href="Chapter14Prototypes/ViewFrustumExampleIndex.html">View Frustum Example</a></li>
+                           <li><a href="Chapter14Prototypes/ViewFrustumPrototypeIndex.html">View Frustum Prototype</a></li>
+                           <li><a href="Chapter14Prototypes/WhereAmIExampleIndex.html">Where Am IExample</a></li>
+                           <li><a href="Chapter14Prototypes/WhereAmIPrototypeIndex.html">Where Am IPrototype</a></li>
+                           <li><a href="Chapter14Prototypes/X3dArchitectureConceptsPrototypeBodyValidationExampleIndex.html"> X3D Architecture Concepts Prototype Body Validation Example</a></li>
+                        </ul>
+                     </td>
+                     <td align="right"><a href="#"><img src="images/ToC.png" width="32" height="32" border="0" title="top" alt="top"></a><p><a href="Chapter14Prototypes/viewpointSlideshow.html"><img src="../images/MootoolsSlideshowLogo.jpg" title="Directory Viewpoint Slideshow" alt="Directory Viewpoint Slideshow" height="32" width="32" style="border-width:0px"></a></p>
+                        <p><a href="javadoc/index.html?X3dForWebAuthors/Chapter14Prototypes/package-summary.html" title="Javadoc for translated java source" alt="Javadoc for translated java source" target="_blank"><img src="../images/Java-32.png" title="Javadoc for translated java source" alt="Javadoc for translated java source" height="32" width="32" style="border-width:0px" align="right"></a></p>
+                     </td>
+                  </tr>
+               </table>
+            </td>
+         </tr>
+         <tr align="left" valign="top">
+            <td align="left" valign="top" width="67%"><a name="Chapter15Metadata">&nbsp;</a><a title="Directory Summary" href="Chapter15Metadata/index.html"><img src="images/ThisChapter.png" title="Directory Summary" alt="Directory Summary" height="32" width="32" style="border-width:0px" valign="bottom" align="left"><b valign="bottom"><font size="+2">Chapter 15 Metadata</font></b></a>
+
+    <table border="0" width="100%">
+        <tbody>
+            <tr>
+                <td align="center">
+                    
+                    <a href="Chapter15Metadata/index.html"><img border="0" alt="Metadata (book with question mark)" title="Metadata (book with question mark)" hspace="10" src="Chapter15Metadata/200px-Question_book-new.svg.png" width="133" height="104" align="middle"/></a>
+                </td>
+                <td align="left">
+
+    <p>
+				Metadata is used to identify the data relevant to X3D scenes and shapes, enabling the possibility of
+				further correlation, discovery and Web-based mashups to occur.
+    </p>
+    
+
+
+    <p>
+                 <a href="http://en.wikipedia.org/wiki/Metadata" target="_blank">Metadata</a> 
+                 is about forms of data relating to other data.
+                 For example, metadata can provide a variety of information regarding a document such as author, date revised, relevant key words, etc.
+                 As another example, metadata might annotate X3D CAD geometry to provide key references such as part numbers, documentation references, inventory links, etc.
+    </p>
+    
+
+
+    <p>
+                 Simple name=value paired information can be provided in document
+                 <code>&lt;<a href="https://www.web3d.org/x3d/content/X3dTooltips.html#head" target="X3dTooltips">head</a>&gt;</code>
+                 and
+                 <code>&lt;<a href="https://www.web3d.org/x3d/content/X3dTooltips.html#meta" target="X3dTooltips">meta</a>&gt;</code>
+                 tags, just like in HTML.
+                 Furthermore, typed metadata information can annotate any X3D node, either for use offline or for queries within an active scene graph at run time.
+                 X3D metadata nodes include 
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#MetadataBoolean" target="X3dTooltips" title="X3D Tooltip">MetadataBoolean</a>,
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#MetadataDouble" target="X3dTooltips" title="X3D Tooltip">MetadataDouble</a>,
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#MetadataFloat" target="X3dTooltips" title="X3D Tooltip">MetadataFloat</a>,
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#MetadataInteger" target="X3dTooltips" title="X3D Tooltip">MetadataInteger</a>,
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#MetadataString" target="X3dTooltips" title="X3D Tooltip">MetadataString</a>,
+                 and 
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#MetadataSet" target="X3dTooltips" title="X3D Tooltip">MetadataSet</a>
+                 (a&nbsp;set holder which contains a collection of other X3D Metadata nodes).
+    </p>
+    
+
+
+    <p>
+                 The supporting
+                 <a href="Chapter15Metadata/Chapter15MetadataInformation.html" target="_blank">Chapter&nbsp;15 Metadata Information</a>
+
+                 from <i>X3D for Web Authors</i> is
+                 available online via
+                 <a href="http://X3dGraphics.com/">X3dGraphics.com</a>.
+                 
+                Also available:
+
+                <ul>
+                   <li>
+                       <a href="https://www.web3d.org/x3d/content/examples/X3dSceneAuthoringHints.html#metaTags" target="_blank">X3D Scene Authoring Hints: meta Tags</a>
+                   </li>
+
+                   <li>
+                       <a href="https://savage.nps.edu/Savage/Tools/SMAL/SMAL.html" target="_blank">Savage Modeling and Analysis Language (SMAL) Resources</a> reference website,
+                       plus
+                       <a href="https://savage.nps.edu/Savage/Tools/SMAL/index.html" target="_blank">Savage/Tools/SMAL</a>
+                       example-archive template scenes showing matching X3D/XML metadata.
+                   </li>
+
+                   <li>
+                       Rauch, Travis M.,
+                       <a href="http://calhoun.nps.edu/public/handle/10945/2971" target="_blank">Savage Modeling and Analysis Language (SMAL) metadata for tactical simulations and X3D visualizations</a>,
+                       Masters Thesis, Naval Postgraduate School, Monterey, California, 2006.
+                   </li>
+                </ul>
+
+                </td>
+				
+                <td align="center">
+					
+                    <a href="Chapter15Metadata/index.html"><img border="0" alt="Library card catalogs provide metadata" title="Library card catalogs provide metadata" hspace="10" src="Chapter15Metadata/Schlagwortkatalog.jpg" width="142" height="120" align="middle"/></a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    
+
+    
+  </td>
+            <td valign="top" width="33%">
+               <table width="100%">
+                  <tr valign="top">
+                     <td>
+                        <ul style="margin-top:0; margin-bottom:0;">
+                           <li><a href="Chapter15Metadata/MetadataNodeExamplesX3D3Index.html">Metadata Node Examples X3D 3</a></li>
+                           <li><a href="Chapter15Metadata/MetadataNodeExamplesX3D4Index.html">Metadata Node Examples X3D 4</a></li>
+                           <li><a href="Chapter15Metadata/WorldInfoExampleIndex.html">World Info Example</a></li>
+                           <li><a href="Chapter15Metadata/WorldInfoExampleMetadataSetX3D3Index.html">World Info Example Metadata Set X3D 3</a></li>
+                           <li><a href="Chapter15Metadata/WorldInfoExampleMetadataSetX3D4Index.html">World Info Example Metadata Set X3D 4</a></li>
+                           <li><a href="Chapter15Metadata/XmpMetadataEmbeddedIndex.html">Xmp Metadata Embedded</a></li>
+                        </ul>
+                     </td>
+                     <td align="right"><a href="#"><img src="images/ToC.png" width="32" height="32" border="0" title="top" alt="top"></a><p><a href="Chapter15Metadata/viewpointSlideshow.html"><img src="../images/MootoolsSlideshowLogo.jpg" title="Directory Viewpoint Slideshow" alt="Directory Viewpoint Slideshow" height="32" width="32" style="border-width:0px"></a></p>
+                        <p><a href="javadoc/index.html?X3dForWebAuthors/Chapter15Metadata/package-summary.html" title="Javadoc for translated java source" alt="Javadoc for translated java source" target="_blank"><img src="../images/Java-32.png" title="Javadoc for translated java source" alt="Javadoc for translated java source" height="32" width="32" style="border-width:0px" align="right"></a></p>
+                     </td>
+                  </tr>
+               </table>
+            </td>
+         </tr>
+         <tr align="left" valign="top">
+            <td align="left" valign="top" width="67%"><a name="KelpForestExhibit">&nbsp;</a><a title="Directory Summary" href="KelpForestExhibit/index.html"><img src="images/ThisChapter.png" title="Directory Summary" alt="Directory Summary" height="32" width="32" style="border-width:0px" valign="bottom" align="left"><b valign="bottom"><font size="+2">Kelp Forest Exhibit</font></b></a>
+    
+    <table bgColor="#ffffff" border="0" width="100%">
+        <tbody>
+            <tr>
+                <td align="center" cellpadding="10">
+                    
+                    <a href="KelpForestExhibit/index.html"><img alt="Kelp Forest Exhibit" border="0" title="Kelp Forest Exhibit" border="0" hspace="10" src="KelpForestExhibit/KelpForestTank.jpg" height="179" width="300" align="middle"/></a>
+                </td>
+            
+                <td align="left" cellpadding="10">
+    <p>
+				The Kelp Forest Exhibit from the Monterey Bay Aquarium demonstrates what students can accomplish together using VRML and X3D.
+    </p>
+    <p>
+                The 
+                <a href="KelpForestExhibit/KelpForestMain.x3d" target="kelpScene">Kelp Forest Exhibit</a>
+                is a large
+                <a href="http://faculty.nps.edu/brutzman/kelp" target="kelpPaper">student-produced project</a>
+                that illustrates how X3D can build and integrate a large collection of individual Web-based models.
+                The overall scene that integrates all these individual X3D models is
+                <a href="KelpForestExhibit/KelpForestMain.x3d" target="kelpScene">Kelp Forest Main</a>.
+    </p>
+    <p>
+                The paper
+                <a href="http://faculty.nps.edu/brutzman/kelp/KelpForestDesignPaper.pdf" target="kelpPaper">Teaching 3D Modeling and Simulation: Virtual Kelp Forest Case Study</a>
+                describes how this group effort was accomplished.
+                Comprehensive modeling efforts such as the Kelp Forest Exhibit provide an excellent way to organize course work and student projects.
+    </p>
+    
+
+                 </td>
+           </tr>
+        </tbody>
+    </table>
+
+    
+
+
+
+  </td>
+            <td valign="top" width="33%">
+               <table width="100%">
+                  <tr valign="top">
+                     <td>
+                        <ul style="margin-top:0; margin-bottom:0;">
+                           <li><a href="KelpForestExhibit/BlackSurfPerchIndex.html">Black Surf Perch</a></li>
+                           <li><a href="KelpForestExhibit/BlueRockFishIndex.html">Blue Rock Fish</a></li>
+                           <li><a href="KelpForestExhibit/ChangingFogIndex.html">Changing Fog</a></li>
+                           <li><a href="KelpForestExhibit/CircleFishExampleIndex.html">Circle Fish Example</a></li>
+                           <li><a href="KelpForestExhibit/CircleFishLodExampleIndex.html">Circle Fish Lod Example</a></li>
+                           <li><a href="KelpForestExhibit/CircleFishLodPrototypeIndex.html">Circle Fish Lod Prototype</a></li>
+                           <li><a href="KelpForestExhibit/CircleFishPrototypeIndex.html">Circle Fish Prototype</a></li>
+                           <li><a href="KelpForestExhibit/CopperRockFishPlacardViewerIndex.html">Copper Rock Fish Placard Viewer</a></li>
+                           <li><a href="KelpForestExhibit/FishIndex.html">Fish</a></li>
+                           <li><a href="KelpForestExhibit/FishExamplesIndex.html">Fish Examples</a></li>
+                           <li><a href="KelpForestExhibit/FishModelComparisonIndex.html">Fish Model Comparison</a></li>
+                           <li><a href="KelpForestExhibit/FishPrototypeIndex.html">Fish Prototype</a></li>
+                           <li><a href="KelpForestExhibit/FishSchoolIndex.html">Fish School</a></li>
+                           <li><a href="KelpForestExhibit/GaribaldiIndex.html">Garibaldi</a></li>
+                           <li><a href="KelpForestExhibit/HalfMoonGroupIndex.html">Half Moon Group</a></li>
+                           <li><a href="KelpForestExhibit/HalfMoonPrototypeIndex.html">Half Moon Prototype</a></li>
+                           <li><a href="KelpForestExhibit/IntroductionMessageIndex.html">Introduction Message</a></li>
+                           <li><a href="KelpForestExhibit/KelpBassIndex.html">Kelp Bass</a></li>
+                           <li><a href="KelpForestExhibit/KelpBulbIndex.html">Kelp Bulb</a></li>
+                           <li><a href="KelpForestExhibit/KelpExamplesNoBaseIndex.html">Kelp Examples No Base</a></li>
+                           <li><a href="KelpForestExhibit/KelpFlexibleStipeIndex.html">Kelp Flexible Stipe</a></li>
+                           <li><a href="KelpForestExhibit/KelpForestMainIndex.html">Kelp Forest Main</a></li>
+                           <li><a href="KelpForestExhibit/KelpForestNoNancyIndex.html">Kelp Forest No Nancy</a></li>
+                           <li><a href="KelpForestExhibit/KelpPrototypeIndex.html">Kelp Prototype</a></li>
+                           <li><a href="KelpForestExhibit/KelpSurfPerchIndex.html">Kelp Surf Perch</a></li>
+                           <li><a href="KelpForestExhibit/KelpTankIndex.html">Kelp Tank</a></li>
+                           <li><a href="KelpForestExhibit/KelpTankExternalLightIndex.html">Kelp Tank External Light</a></li>
+                           <li><a href="KelpForestExhibit/KelpTankExternalLightsIndex.html">Kelp Tank External Lights</a></li>
+                           <li><a href="KelpForestExhibit/KelpTankWaterSurfaceIndex.html">Kelp Tank Water Surface</a></li>
+                           <li><a href="KelpForestExhibit/PumpHouseIndex.html">Pump House</a></li>
+                           <li><a href="KelpForestExhibit/RockFloorIndex.html">Rock Floor</a></li>
+                           <li><a href="KelpForestExhibit/RubberLipGroupIndex.html">Rubber Lip Group</a></li>
+                           <li><a href="KelpForestExhibit/SardineIndex.html">Sardine</a></li>
+                           <li><a href="KelpForestExhibit/SardineSchoolIndex.html">Sardine School</a></li>
+                           <li><a href="KelpForestExhibit/SardineSchoolDoubleIndex.html">Sardine School Double</a></li>
+                           <li><a href="KelpForestExhibit/SardineSchoolFinalIndex.html">Sardine School Final</a></li>
+                           <li><a href="KelpForestExhibit/SardineSchoolMidtermIndex.html">Sardine School Midterm</a></li>
+                           <li><a href="KelpForestExhibit/SardineSchoolOriginalIndex.html">Sardine School Original</a></li>
+                           <li><a href="KelpForestExhibit/SardineSchoolTripleIndex.html">Sardine School Triple</a></li>
+                           <li><a href="KelpForestExhibit/SardineShapeIndex.html">Sardine Shape</a></li>
+                           <li><a href="KelpForestExhibit/SardineWaggingIndex.html">Sardine Wagging</a></li>
+                           <li><a href="KelpForestExhibit/SardineXIndex.html">Sardine X</a></li>
+                           <li><a href="KelpForestExhibit/SeaStarGroupIndex.html">Sea Star Group</a></li>
+                           <li><a href="KelpForestExhibit/SeaStarHighResolutionExampleIndex.html">Sea Star High Resolution Example</a></li>
+                           <li><a href="KelpForestExhibit/SeaStarHighResolutionPrototypeIndex.html">Sea Star High Resolution Prototype</a></li>
+                           <li><a href="KelpForestExhibit/SeaStarPrototypeIndex.html">Sea Star Prototype</a></li>
+                           <li><a href="KelpForestExhibit/SeaStarSimpleIndex.html">Sea Star Simple</a></li>
+                           <li><a href="KelpForestExhibit/SharkLeftyIndex.html">Shark Lefty</a></li>
+                           <li><a href="KelpForestExhibit/SharkLeftyLocaleIndex.html">Shark Lefty Locale</a></li>
+                           <li><a href="KelpForestExhibit/SharkLucyIndex.html">Shark Lucy</a></li>
+                           <li><a href="KelpForestExhibit/SharkLucyLocaleIndex.html">Shark Lucy Locale</a></li>
+                           <li><a href="KelpForestExhibit/StripedSurfPerchIndex.html">Striped Surf Perch</a></li>
+                           <li><a href="KelpForestExhibit/StripedSurfPerchPlaqueIndex.html">Striped Surf Perch Plaque</a></li>
+                           <li><a href="KelpForestExhibit/TreeFishPlaqueIndex.html">Tree Fish Plaque</a></li>
+                        </ul>
+                     </td>
+                     <td align="right"><a href="#"><img src="images/ToC.png" width="32" height="32" border="0" title="top" alt="top"></a><p><a href="KelpForestExhibit/viewpointSlideshow.html"><img src="../images/MootoolsSlideshowLogo.jpg" title="Directory Viewpoint Slideshow" alt="Directory Viewpoint Slideshow" height="32" width="32" style="border-width:0px"></a></p>
+                        <p><a href="javadoc/index.html?X3dForWebAuthors/KelpForestExhibit/package-summary.html" title="Javadoc for translated java source" alt="Javadoc for translated java source" target="_blank"><img src="../images/Java-32.png" title="Javadoc for translated java source" alt="Javadoc for translated java source" height="32" width="32" style="border-width:0px" align="right"></a></p>
+                     </td>
+                  </tr>
+               </table>
+            </td>
+         </tr>
+      </table>
+      <table align="center" width="95%" summary="" border="0" cellpadding="6">
+         <tr>
+            <td><a name="information"></a><p style="text-align:center"><a href="#information"><img src="images/200px-Question_book-new.svg.png" width="40" height="31" border="0" title="Archive Information" alt="Archive Information" align="left"></a><a href="#"><img src="images/ToC.png" width="32" height="32" border="0" title="top" alt="top" align="right"></a>Online at <br><a href="https://X3dGraphics.com/examples/X3dForWebAuthors/index.html">https://X3dGraphics.com/examples/X3dForWebAuthors</a></p>
+               <p style="text-align:center">Master source-code model archive is under subversion control at <br><a href="https://sourceforge.net/p/x3d/code/HEAD/tree/www.web3d.org/x3d/content/examples/X3dForWebAuthors" target="_blank">https://sourceforge.net/p/x3d/code/HEAD/tree/www.web3d.org/x3d/content/examples/X3dForWebAuthors</a></p>
+            </td>
+         </tr>
+      </table>
+      <p align="center">
+         The 
+         <a href="X3dResources.html#X3dForWebAuthors">X3D Resources: Examples</a> page
+         and
+         <a href="https://savage.nps.edu/Savage/developers.html">Savage Developers Guide</a>
+         provide more information about the production of this archive.</p>
+      <table align="center" width="95%" summary="" border="1" cellpadding="6">
+         <tr>
+            <td align="left" width="25%">Point of contact:  <br>Don Brutzman (<a href="mailto:brutzman@nps.edu%20(Don%20Brutzman)?subject=feedback%20on%20X3D%20X3dForWebAuthors%20examples%20archive">brutzman&nbsp;at&nbsp;nps.edu</a>)
+               </td>
+            <td align="center" width="25%"><a href="README.txt">README.txt</a><br><a href="license.html">Open-Source License</a></td>
+            <td align="center" width="25%"><a href="https://validator.w3.org/check?uri=https://X3dGraphics.com/examples/X3dForWebAuthors/index.html" target="_blank"><img src="https://www.w3.org/Icons/valid-xhtml10" title="Validate XHTML 1.1" alt="Validate XHTML 1.1" height="31" width="88" border="0"></a></td>
+            <td align="right" width="25%"><a href="ContentCatalogX3dForWebAuthors.xml" target="_blank">Content Catalog XML</a><br>Autogenerated 2022-07-03-07:00<!--Catalog creation date 7/3/2022--></td>
+         </tr>
+      </table>
+   </body>
+</html>

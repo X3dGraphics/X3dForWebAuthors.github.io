@@ -1,0 +1,369 @@
+{ "X3D": {
+    "encoding":"UTF-8",
+    "@profile":"Immersive",
+    "@version":"3.3",
+    "@xsd:noNamespaceSchemaLocation":"https://www.web3d.org/specifications/x3d-3.3.xsd",
+    "JSON schema":"https://www.web3d.org/specifications/x3d-3.3-JSONSchema.json",
+    "head": {
+        "meta": [
+          {
+            "@name":"title",
+            "@content":"MaterialModulatorExamples.x3d"
+          },
+          {
+            "@name":"description",
+            "@content":"Demonstrate multiple instances of an external prototype."
+          },
+          {
+            "@name":"hint",
+            "@content":"Learning suggestion for authors: try changing the modulation script so that it goes from [0 ... 1] and then [1 ... 0] alternating, rather than abruptly shifting from 1 immediately back to 0."
+          },
+          {
+            "@name":"creator",
+            "@content":"Don Brutzman"
+          },
+          {
+            "@name":"created",
+            "@content":"7 September 2017"
+          },
+          {
+            "@name":"modified",
+            "@content":"20 October 2019"
+          },
+          {
+            "@name":"subject",
+            "@content":"X3D prototype instances DEF USE"
+          },
+          {
+            "@name":"Image",
+            "@content":"MaterialModulator.png"
+          },
+          {
+            "@name":"Image",
+            "@content":"MaterialModulatorExamples.png"
+          },
+          {
+            "@name":"identifier",
+            "@content":"https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter14Prototypes/MaterialModulatorExamples.x3d"
+          },
+          {
+            "@name":"generator",
+            "@content":"X3D-Edit 3.3, https://savage.nps.edu/X3D-Edit"
+          },
+          {
+            "@name":"license",
+            "@content":"../license.html"
+          },
+          {
+            "@name":"translated",
+            "@content":"18 January 2022"
+          },
+          {
+            "@name":"generator",
+            "@content":"X3dToJson.xslt, https://www.web3d.org/x3d/stylesheets/X3dToJson.html"
+          },
+          {
+            "@name":"reference",
+            "@content":"X3D JSON encoding: https://www.web3d.org/wiki/index.php/X3D_JSON_Encoding"
+          }
+        ]
+    },
+    "Scene": {
+        "-children":[
+          { "WorldInfo":
+            {
+              "@title":"MaterialModulatorExamples.x3d"
+            }
+          },
+          { "ExternProtoDeclare":
+            {
+              "@name":"MaterialModulator",
+              "@appinfo":"mimic a Material node and modulate the diffuseColor field as an animation effect",
+              "@documentation":"https://x3dgraphics.com/examples/X3dForWebAuthors/Chapter14Prototypes/MaterialModulatorIndex.html",
+              "@url":["MaterialModulator.x3d#MaterialModulator","https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter14Prototypes/MaterialModulator.x3d#MaterialModulator"],
+              "field": [
+                {
+                  "@name":"enabled",
+                  "@accessType":"inputOutput",
+                  "@appinfo":"default value true",
+                  "@type":"SFBool"
+                },
+                {
+                  "@name":"diffuseColor",
+                  "@accessType":"inputOutput",
+                  "@appinfo":"default value 0.8 0.8 0.8",
+                  "@type":"SFColor"
+                },
+                {
+                  "@name":"emissiveColor",
+                  "@accessType":"inputOutput",
+                  "@appinfo":"default value 0 0 0",
+                  "@type":"SFColor"
+                },
+                {
+                  "@name":"specularColor",
+                  "@accessType":"inputOutput",
+                  "@appinfo":"default value 0 0 0",
+                  "@type":"SFColor"
+                },
+                {
+                  "@name":"transparency",
+                  "@accessType":"inputOutput",
+                  "@appinfo":"default value 0.0",
+                  "@type":"SFFloat"
+                },
+                {
+                  "@name":"shininess",
+                  "@accessType":"inputOutput",
+                  "@appinfo":"default value 0.2",
+                  "@type":"SFFloat"
+                },
+                {
+                  "@name":"ambientIntensity",
+                  "@accessType":"inputOutput",
+                  "@appinfo":"default value 0.2",
+                  "@type":"SFFloat"
+                }
+              ]
+            }
+          },
+          {
+            "#comment":"Rendered geometry for the ProtoInstance now follows external prototype declaration"
+          },
+          { "Transform":
+            {
+              "@rotation":[-0.8,0.93923,0.18785,5.759586],
+              "@translation":[-2,1,0],
+              "-children":[
+                { "Shape":
+                  {
+                    "@DEF":"ModulatingBoxShape",
+                    "-geometry":
+                      { "Box":
+                        {
+                        }
+                      },
+                    "-appearance":
+                      { "Appearance":
+                        {
+                          "-material":
+                            { "ProtoInstance":
+                              {
+                                "@name":"MaterialModulator",
+                                "@DEF":"MaterialModulatorInstance",
+                                "fieldValue": [
+                                  {
+                                    "@name":"enabled",
+                                    "@value":true
+                                  },
+                                  {
+                                    "@name":"diffuseColor",
+                                    "@value":[0.5,0.1,0.1]
+                                  }
+                                ],
+                                "-children":[
+                                  {
+                                    "#comment":"fieldValue declarations for other Material attributes can appear here"
+                                  }
+                                ]
+                              }
+                            }
+                        }
+                      }
+                  }
+                }
+              ]
+            }
+          },
+          { "Transform":
+            {
+              "@rotation":[1,0,0,0.523599],
+              "@translation":[2,1,0],
+              "-children":[
+                { "Shape":
+                  {
+                    "-geometry":
+                      { "Cylinder":
+                        {
+                        }
+                      },
+                    "-appearance":
+                      { "Appearance":
+                        {
+                          "-children":[
+                            {
+                              "#comment":"note that ProtoInstance USE does not require name='MaterialModulator'"
+                            }
+                          ],
+                          "-material":
+                            { "ProtoInstance":
+                              {
+                                "@USE":"MaterialModulatorInstance"
+                              }
+                            }
+                        }
+                      }
+                  }
+                }
+              ]
+            }
+          },
+          { "Transform":
+            {
+              "@translation":[-2,3.5,0],
+              "-children":[
+                { "Shape":
+                  {
+                    "-geometry":
+                      { "Text":
+                        {
+                          "@string":["DEF original"],
+                          "-fontStyle":
+                            { "FontStyle":
+                              {
+                                "@family":["SANS"],
+                                "@justify":["MIDDLE","MIDDLE"],
+                                "@size":0.5,
+                                "@style":"BOLD"
+                              }
+                            }
+                        }
+                      },
+                    "-appearance":
+                      { "Appearance":
+                        {
+                          "@DEF":"TextAppearance",
+                          "-material":
+                            { "Material":
+                              {
+                                "@diffuseColor":[0.9,0.9,0.9]
+                              }
+                            }
+                        }
+                      }
+                  }
+                }
+              ]
+            }
+          },
+          { "Transform":
+            {
+              "@translation":[2,3.5,0],
+              "-children":[
+                { "Shape":
+                  {
+                    "-geometry":
+                      { "Text":
+                        {
+                          "@string":["USE copy"],
+                          "-fontStyle":
+                            { "FontStyle":
+                              {
+                                "@family":["SANS"],
+                                "@justify":["MIDDLE","MIDDLE"],
+                                "@size":0.5,
+                                "@style":"BOLD"
+                              }
+                            }
+                        }
+                      },
+                    "-appearance":
+                      { "Appearance":
+                        {
+                          "@USE":"TextAppearance"
+                        }
+                      }
+                  }
+                }
+              ]
+            }
+          },
+          { "Transform":
+            {
+              "@translation":[0,-2,0],
+              "-children":[
+                { "Shape":
+                  {
+                    "-geometry":
+                      { "Text":
+                        {
+                          "@string":["enable/disable","MaterialModulator"],
+                          "-fontStyle":
+                            { "FontStyle":
+                              {
+                                "@family":["SANS"],
+                                "@justify":["MIDDLE","MIDDLE"],
+                                "@style":"BOLD"
+                              }
+                            }
+                        }
+                      },
+                    "-appearance":
+                      { "Appearance":
+                        {
+                          "@USE":"TextAppearance"
+                        }
+                      }
+                  }
+                },
+                {
+                  "#comment":"Selectable Text design pattern has transparent Box and TouchSensor description as a tooltip"
+                },
+                { "Shape":
+                  {
+                    "-geometry":
+                      { "Box":
+                        {
+                          "@size":[8,2,0.001]
+                        }
+                      },
+                    "-appearance":
+                      { "Appearance":
+                        {
+                          "-material":
+                            { "Material":
+                              {
+                                "@transparency":1
+                              }
+                            }
+                        }
+                      }
+                  }
+                },
+                {
+                  "#comment":"Toggle text to enable/disable MaterialModulator"
+                },
+                { "TouchSensor":
+                  {
+                    "@DEF":"TouchTextInterface",
+                    "@description":"Select text to enable/disable MaterialModulator"
+                  }
+                },
+                { "BooleanToggle":
+                  {
+                    "@DEF":"EventToggler"
+                  }
+                },
+                { "ROUTE":
+                  {
+                    "@fromField":"isActive",
+                    "@fromNode":"TouchTextInterface",
+                    "@toField":"set_boolean",
+                    "@toNode":"EventToggler"
+                  }
+                },
+                { "ROUTE":
+                  {
+                    "@fromField":"toggle",
+                    "@fromNode":"EventToggler",
+                    "@toField":"enabled",
+                    "@toNode":"MaterialModulatorInstance"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+    }
+  }
+}

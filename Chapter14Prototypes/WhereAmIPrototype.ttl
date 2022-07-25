@@ -1,0 +1,173 @@
+@prefix :        <https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter14Prototypes/WhereAmIPrototype.ttl#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema:  <http://schema.org/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix x3d:     <https://www.web3d.org/specifications/x3d-4.0.xsd#> .
+@prefix x3do:    <https://www.web3d.org/specifications/X3dOntology4.0#> .
+
+:X3D a owl:NamedIndividual, x3do:X3D ;
+  x3do:hasHead :head ;
+  x3do:hasScene :Scene ;
+  x3do:profile 'Immersive' ;
+  x3do:version '3.3' ;
+  x3do:noNamespaceSchemaLocation 'https://www.web3d.org/specifications/x3d-3.3.xsd' .
+:head a owl:NamedIndividual, x3do:head ;
+  x3do:hasParent :X3D ;
+  x3do:hasMeta :meta_1_1, :meta_1_2, :meta_1_3, :meta_1_4, :meta_1_5, :meta_1_6, :meta_1_7, :meta_1_8, :meta_1_9, :meta_1_10, :meta_1_11, :meta_1_12, :meta_1_13, :meta_1_14, :meta_1_15, :meta_1_16 .
+:meta_1_1 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'WhereAmIPrototype.x3d' ;
+  x3do:name 'title' .
+:meta_1_2 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Prototype node declaration for displaying current viewpoint location and orientation in the player console.' ;
+  x3do:name 'description' .
+:meta_1_3 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Leonard Daly and Don Brutzman' ;
+  x3do:name 'creator' .
+:meta_1_4 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '1 January 1999' ;
+  x3do:name 'created' .
+:meta_1_5 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '5 May 2006' ;
+  x3do:name 'translated' .
+:meta_1_6 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '20 October 2019' ;
+  x3do:name 'modified' .
+:meta_1_7 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'WhereAmIExample.x3d' ;
+  x3do:name 'reference' .
+:meta_1_8 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://savage.nps.edu/Savage/Tools/Authoring/ViewPositionOrientationExample.x3d' ;
+  x3do:name 'reference' .
+:meta_1_9 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://savage.nps.edu/Savage/Tools/Authoring/ViewPositionOrientationPrototype.x3d' ;
+  x3do:name 'reference' .
+:meta_1_10 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://X3dGraphics.com' ;
+  x3do:name 'reference' .
+:meta_1_11 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://www.web3d.org/x3d/content/examples/X3dResources.html' ;
+  x3do:name 'reference' .
+:meta_1_12 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'X3D book, X3D graphics, X3D-Edit, http://www.x3dGraphics.com' ;
+  x3do:name 'subject' .
+:meta_1_13 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Copyright 1999, 2006, Daly Realism, Inc.' ;
+  x3do:name 'rights' .
+:meta_1_14 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter14Prototypes/WhereAmIPrototype.x3d' ;
+  x3do:name 'identifier' .
+:meta_1_15 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'X3D-Edit 3.3, https://savage.nps.edu/X3D-Edit' ;
+  x3do:name 'generator' .
+:meta_1_16 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '../license.html' ;
+  x3do:name 'license' .
+:meta dcterms:title "WhereAmIPrototype.x3d" .
+:meta dcterms:description "Prototype node declaration for displaying current viewpoint location and orientation in the player console." .
+:meta dcterms:creator "Leonard Daly and Don Brutzman" .
+:meta dcterms:created "1 January 1999" .
+:meta dcterms:translated "5 May 2006" .
+:meta dcterms:modified "20 October 2019" .
+:meta dcterms:reference "WhereAmIExample.x3d" .
+:meta dcterms:reference "https://savage.nps.edu/Savage/Tools/Authoring/ViewPositionOrientationExample.x3d" .
+:meta dcterms:reference "https://savage.nps.edu/Savage/Tools/Authoring/ViewPositionOrientationPrototype.x3d" .
+:meta dcterms:reference "https://X3dGraphics.com" .
+:meta dcterms:reference "https://www.web3d.org/x3d/content/examples/X3dResources.html" .
+:meta dcterms:subject "X3D book, X3D graphics, X3D-Edit, http://www.x3dGraphics.com" .
+:meta dcterms:rights "Copyright 1999, 2006, Daly Realism, Inc." .
+:meta dcterms:identifier "https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter14Prototypes/WhereAmIPrototype.x3d" .
+:meta dcterms:generator "X3D-Edit 3.3, https://savage.nps.edu/X3D-Edit" .
+:meta dcterms:license "../license.html" .
+:Scene a owl:NamedIndividual, x3do:Scene ;
+  x3do:hasParent :X3D ;
+  x3do:hasChildren :WorldInfo_2_1, :ProtoInstance_2_3, :Viewpoint_2_4, :Shape_2_5 ;
+  x3do:hasProtoDeclare :ProtoDeclare_2_2 .
+:WorldInfo_2_1 a owl:NamedIndividual, x3do:WorldInfo ;
+  x3do:hasParent :Scene ;
+  x3do:title 'WhereAmIPrototype.x3d' .
+:ProtoDeclare_2_2 a owl:NamedIndividual, x3do:ProtoDeclare ;
+  x3do:hasParent :Scene ;
+  x3do:hasProtoBody :ProtoBody_2_2_1 ;
+  x3do:appinfo 'Prototype node for displaying current viewpoint location and orientation' ;
+  x3do:name 'WhereAmI' .
+:ProtoBody_2_2_1 a owl:NamedIndividual, x3do:ProtoBody ;
+  x3do:hasParent :ProtoDeclare_2_2 ;
+  x3do:hasChildren :WhereSensor, :WhereDump ;
+  x3do:hasROUTE :ROUTE_2_2_1_3, :ROUTE_2_2_1_4 .
+:WhereSensor a owl:NamedIndividual, x3do:ProximitySensor ;
+  x3do:hasParent :ProtoBody_2_2_1 ;
+  x3do:DEF 'WhereSensor' ;
+  x3do:size ( 100000 100000 100000 ) .
+:WhereDump a owl:NamedIndividual, x3do:Script ;
+  x3do:hasParent :ProtoBody_2_2_1 ;
+  x3do:hasField :field_2_2_1_2_1, :field_2_2_1_2_2 ;
+  x3do:DEF 'WhereDump' ;
+  x3do:url '"WhereAmIPrototypeScript.js" "../Chapter14Prototypes/WhereAmIPrototypeScript.js" "https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter14Prototypes/WhereAmIPrototypeScript.js"' .
+:field_2_2_1_2_1 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :WhereDump ;
+  x3do:accessType 'inputOnly' ;
+  x3do:name 'position' ;
+  x3do:type 'SFVec3f' .
+:field_2_2_1_2_2 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :WhereDump ;
+  x3do:accessType 'inputOnly' ;
+  x3do:name 'orientation' ;
+  x3do:type 'SFRotation' .
+:ROUTE_2_2_1_3 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :ProtoBody_2_2_1 ;
+  x3do:fromField 'orientation_changed' ;
+  x3do:fromNode 'WhereSensor' ;
+  x3do:toField 'orientation' ;
+  x3do:toNode 'WhereDump' .
+:ROUTE_2_2_1_4 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :ProtoBody_2_2_1 ;
+  x3do:fromField 'position_changed' ;
+  x3do:fromNode 'WhereSensor' ;
+  x3do:toField 'position' ;
+  x3do:toNode 'WhereDump' .
+:ProtoInstance_2_3 a owl:NamedIndividual, x3do:ProtoInstance ;
+  x3do:hasParent :Scene ;
+  x3do:name 'WhereAmI' .
+:Viewpoint_2_4 a owl:NamedIndividual, x3do:Viewpoint ;
+  x3do:hasParent :Scene ;
+  x3do:description 'WhereAmI prototype test' .
+:Shape_2_5 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Scene ;
+  x3do:hasGeometry :Text_2_5_1 ;
+  x3do:hasAppearance :Appearance_2_5_2 .
+:Text_2_5_1 a owl:NamedIndividual, x3do:Text ;
+  x3do:hasParent :Shape_2_5 ;
+  x3do:hasFontStyle :FontStyle_2_5_1_1 ;
+  x3do:string '"Check X3D console" "while navigating for" "current viewpoint" "position, orientation"' .
+:FontStyle_2_5_1_1 a owl:NamedIndividual, x3do:FontStyle ;
+  x3do:hasParent :Text_2_5_1 ;
+  x3do:justify '"MIDDLE" "MIDDLE"' .
+:Appearance_2_5_2 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_5 ;
+  x3do:hasMaterial :Material_2_5_2_1 .
+:Material_2_5_2_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_5_2 ;
+  x3do:ambientIntensity 0.23 ;
+  x3do:diffuseColor ( 0.5 0.243312 0.127417 ) ;
+  x3do:emissiveColor ( 0.015957 0.015957 0.015957 ) ;
+  x3do:shininess 0.03 ;
+  x3do:specularColor ( 0.276596 0.055086 0.01524 ) .

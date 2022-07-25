@@ -1,0 +1,15 @@
+
+      
+ecmascript:
+
+function initialize ()
+{
+    scriptName = 'TestScriptInitialization.x3d';
+    Browser.print ('[' + scriptName + ' initialize() commmenced...]');
+
+    initializeResult = new MFString ("Script initialize() OK");
+
+    Browser.print ('[...' + scriptName + ' initialize() complete]');
+}
+
+    

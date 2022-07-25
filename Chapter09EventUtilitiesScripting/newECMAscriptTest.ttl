@@ -1,0 +1,129 @@
+@prefix :        <https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter09EventUtilitiesScripting/newECMAscriptTest.ttl#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema:  <http://schema.org/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix x3d:     <https://www.web3d.org/specifications/x3d-4.0.xsd#> .
+@prefix x3do:    <https://www.web3d.org/specifications/X3dOntology4.0#> .
+
+:X3D a owl:NamedIndividual, x3do:X3D ;
+  x3do:hasHead :head ;
+  x3do:hasScene :Scene ;
+  x3do:profile 'Immersive' ;
+  x3do:version '3.3' ;
+  x3do:noNamespaceSchemaLocation 'https://www.web3d.org/specifications/x3d-3.3.xsd' .
+:head a owl:NamedIndividual, x3do:head ;
+  x3do:hasParent :X3D ;
+  x3do:hasMeta :meta_1_1, :meta_1_2, :meta_1_3, :meta_1_4, :meta_1_5, :meta_1_6, :meta_1_7, :meta_1_8, :meta_1_9, :meta_1_10, :meta_1_11, :meta_1_12, :meta_1_13, :meta_1_14 .
+:meta_1_1 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'newECMAscriptTest.x3d' ;
+  x3do:name 'title' .
+:meta_1_2 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Example scene providing a unit test for newECMAscript template javascript source code, first load this scene and then see console for test output.' ;
+  x3do:name 'description' .
+:meta_1_3 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Don Brutzman' ;
+  x3do:name 'creator' .
+:meta_1_4 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '3 November 2013' ;
+  x3do:name 'created' .
+:meta_1_5 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '20 October 2019' ;
+  x3do:name 'modified' .
+:meta_1_6 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'newECMAscriptTestConsole.txt' ;
+  x3do:name 'reference' .
+:meta_1_7 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'newECMAscript.js' ;
+  x3do:name 'reference' .
+:meta_1_8 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '../newECMAscript.js' ;
+  x3do:name 'reference' .
+:meta_1_9 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://www.web3d.org/x3d/content/examples/newECMAscript.js' ;
+  x3do:name 'reference' .
+:meta_1_10 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '../../build.xml#commonSetup' ;
+  x3do:name 'reference' .
+:meta_1_11 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'X3D javascript ECMAscript' ;
+  x3do:name 'subject' .
+:meta_1_12 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter09EventUtilitiesScripting/newECMAscriptTest.x3d' ;
+  x3do:name 'identifier' .
+:meta_1_13 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'X3D-Edit 3.3, https://savage.nps.edu/X3D-Edit' ;
+  x3do:name 'generator' .
+:meta_1_14 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '../license.html' ;
+  x3do:name 'license' .
+:meta dcterms:title "newECMAscriptTest.x3d" .
+:meta dcterms:description "Example scene providing a unit test for newECMAscript template javascript source code, first load this scene and then see console for test output." .
+:meta dcterms:creator "Don Brutzman" .
+:meta dcterms:created "3 November 2013" .
+:meta dcterms:modified "20 October 2019" .
+:meta dcterms:reference "newECMAscriptTestConsole.txt" .
+:meta dcterms:reference "newECMAscript.js" .
+:meta dcterms:reference "../newECMAscript.js" .
+:meta dcterms:reference "https://www.web3d.org/x3d/content/examples/newECMAscript.js" .
+:meta dcterms:reference "../../build.xml#commonSetup" .
+:meta dcterms:subject "X3D javascript ECMAscript" .
+:meta dcterms:identifier "https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter09EventUtilitiesScripting/newECMAscriptTest.x3d" .
+:meta dcterms:generator "X3D-Edit 3.3, https://savage.nps.edu/X3D-Edit" .
+:meta dcterms:license "../license.html" .
+:Scene a owl:NamedIndividual, x3do:Scene ;
+  x3do:hasParent :X3D ;
+  x3do:hasChildren :WorldInfo_2_1, :Background_2_2, :Viewpoint_2_3, :Transform_2_4, :TestScript .
+:WorldInfo_2_1 a owl:NamedIndividual, x3do:WorldInfo ;
+  x3do:hasParent :Scene ;
+  x3do:title 'newECMAscriptTest.x3d' .
+:Background_2_2 a owl:NamedIndividual, x3do:Background ;
+  x3do:hasParent :Scene ;
+  x3do:skyColor ( 1 0.5 0 ) .
+:Viewpoint_2_3 a owl:NamedIndividual, x3do:Viewpoint ;
+  x3do:hasParent :Scene ;
+  x3do:description 'Check X3D console to see output' ;
+  x3do:position ( 0 0 8 ) .
+:Transform_2_4 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :Shape_2_4_1 ;
+  x3do:scale ( 0.4 0.4 0.4 ) .
+:Shape_2_4_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_4 ;
+  x3do:hasGeometry :Text_2_4_1_1 ;
+  x3do:hasAppearance :Appearance_2_4_1_2 .
+:Text_2_4_1_1 a owl:NamedIndividual, x3do:Text ;
+  x3do:hasParent :Shape_2_4_1 ;
+  x3do:hasFontStyle :FontStyle_2_4_1_1_1 ;
+  x3do:string '"newECMAscriptTest.x3d" "" "to check newECMAscript.js" "" "(see browser console for output)"' .
+:FontStyle_2_4_1_1_1 a owl:NamedIndividual, x3do:FontStyle ;
+  x3do:hasParent :Text_2_4_1_1 ;
+  x3do:family '"SANS"' ;
+  x3do:justify '"MIDDLE" "MIDDLE"' ;
+  x3do:cssStyle 'BOLD' .
+:Appearance_2_4_1_2 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_4_1 ;
+  x3do:hasMaterial :Material_2_4_1_2_1 .
+:Material_2_4_1_2_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_4_1_2 ;
+  x3do:diffuseColor ( 1 1 1 ) .
+:TestScript a owl:NamedIndividual, x3do:Script ;
+  x3do:hasParent :Scene ;
+  x3do:DEF 'TestScript' ;
+  x3do:url '"newECMAscript.js" "../newECMAscript.js" "https://www.web3d.org/x3d/content/examples/newECMAscript.js"' .

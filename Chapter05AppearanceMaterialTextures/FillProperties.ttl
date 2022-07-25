@@ -1,0 +1,829 @@
+@prefix :       <http://X3dGraphics.com/examples/X3dForWebAuthors/Chapter05AppearanceMaterialTextures/FillProperties.ttl#> .
+@prefix dc:     <http://purl.org/dc/terms/> .
+@prefix owl:    <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix x3d:    <http://www.web3d.org/specifications/x3d-4.0.xsd#> .
+@prefix x3do:   <http://www.web3d.org/specifications/X3dOntology4.0#> .
+
+:X3D a owl:NamedIndividual, x3do:X3D ;
+  x3do:hasHead :head ;
+  x3do:hasScene :Scene ;
+  x3do:profile 'Immersive' ;
+  x3do:version '3.3' ;
+  x3do:noNamespaceSchemaLocation 'http://www.web3d.org/specifications/x3d-3.3.xsd' .
+:head a owl:NamedIndividual, x3do:head ;
+  x3do:hasParent :X3D ;
+  x3do:hasComponent :component_1_1 ;
+  x3do:hasMeta :meta_1_2, :meta_1_3, :meta_1_4, :meta_1_5, :meta_1_6, :meta_1_7, :meta_1_8, :meta_1_9, :meta_1_10, :meta_1_11, :meta_1_12, :meta_1_13, :meta_1_14 .
+:component_1_1 a owl:NamedIndividual, x3do:component ;
+  x3do:hasParent :head ;
+  x3do:level 3 ;
+  x3do:name 'Shape' .
+:meta_1_2 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'FillProperties.x3d' ;
+  x3do:name 'title' .
+:meta_1_3 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Demonstrate various FillProperties values.' ;
+  x3do:name 'description' .
+:meta_1_4 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Don Brutzman' ;
+  x3do:name 'creator' .
+:meta_1_5 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '20 August 2008' ;
+  x3do:name 'created' .
+:meta_1_6 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '20 October 2019' ;
+  x3do:name 'modified' .
+:meta_1_7 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'FillPropertiesHatchStyle.png' ;
+  x3do:name 'Image' .
+:meta_1_8 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'FillPropertiesHatchStyleOctaga.png' ;
+  x3do:name 'Image' .
+:meta_1_9 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'http://X3dGraphics.com' ;
+  x3do:name 'reference' .
+:meta_1_10 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://www.web3d.org/x3d/content/examples/X3dResources.html' ;
+  x3do:name 'reference' .
+:meta_1_11 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'X3D book, X3D graphics, X3D-Edit, http://www.x3dGraphics.com' ;
+  x3do:name 'subject' .
+:meta_1_12 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'http://X3dGraphics.com/examples/X3dForWebAuthors/Chapter05AppearanceMaterialTextures/FillProperties.x3d' ;
+  x3do:name 'identifier' .
+:meta_1_13 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'X3D-Edit 3.3, https://savage.nps.edu/X3D-Edit' ;
+  x3do:name 'generator' .
+:meta_1_14 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '../license.html' ;
+  x3do:name 'license' .
+:Scene a owl:NamedIndividual, x3do:Scene ;
+  x3do:hasParent :X3D ;
+  x3do:hasChildren :WorldInfo_2_1, :Viewpoint_2_2, :OverallAdjustment .
+:WorldInfo_2_1 a owl:NamedIndividual, x3do:WorldInfo ;
+  x3do:hasParent :Scene ;
+  x3do:title 'FillProperties.x3d' .
+:Viewpoint_2_2 a owl:NamedIndividual, x3do:Viewpoint ;
+  x3do:hasParent :Scene ;
+  x3do:description 'FillProperties hatchStyle examples' ;
+  x3do:position ( 0 0 24 ) .
+:OverallAdjustment a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :FirstRowBoxes, :SecondRowText, :ThirdRowBoxes, :FourthRowText, :FifthRowBoxes, :SixthRowText .
+:FirstRowBoxes a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :OverallAdjustment ;
+  x3do:hasChildren :Transform_2_3_1_1, :Transform_2_3_1_2, :Transform_2_3_1_3, :Transform_2_3_1_4, :Transform_2_3_1_5, :Transform_2_3_1_6 ;
+  x3do:translation ( 0 7 0 ) .
+:Transform_2_3_1_1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :FirstRowBoxes ;
+  x3do:hasChildren :Shape_2_3_1_1_1 ;
+  x3do:translation ( -9 0 0 ) .
+:Shape_2_3_1_1_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_3_1_1 ;
+  x3do:hasGeometry :Box_2_3_1_1_1_1 ;
+  x3do:hasAppearance :FillAppearance1 .
+:Box_2_3_1_1_1_1 a owl:NamedIndividual, x3do:Box ;
+  x3do:hasParent :Shape_2_3_1_1_1 .
+:FillAppearance1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_3_1_1_1 ;
+  x3do:hasMaterial :Material_2_3_1_1_1_2_1 ;
+  x3do:hasFillProperties :FillProperties_2_3_1_1_1_2_2 .
+:Material_2_3_1_1_1_2_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :FillAppearance1 ;
+  x3do:diffuseColor ( 1 0 0 ) .
+:FillProperties_2_3_1_1_1_2_2 a owl:NamedIndividual, x3do:FillProperties ;
+  x3do:hasParent :FillAppearance1 .
+:Transform_2_3_1_2 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :FirstRowBoxes ;
+  x3do:hasChildren :Shape_2_3_1_2_1 ;
+  x3do:translation ( -6 0 0 ) .
+:Shape_2_3_1_2_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_3_1_2 ;
+  x3do:hasGeometry :Box_2_3_1_2_1_1 ;
+  x3do:hasAppearance :FillAppearance2 .
+:Box_2_3_1_2_1_1 a owl:NamedIndividual, x3do:Box ;
+  x3do:hasParent :Shape_2_3_1_2_1 .
+:FillAppearance2 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_3_1_2_1 ;
+  x3do:hasMaterial :Material_2_3_1_2_1_2_1 ;
+  x3do:hasFillProperties :FillProperties_2_3_1_2_1_2_2 .
+:Material_2_3_1_2_1_2_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :FillAppearance2 ;
+  x3do:diffuseColor ( 1 0.5 0 ) .
+:FillProperties_2_3_1_2_1_2_2 a owl:NamedIndividual, x3do:FillProperties ;
+  x3do:hasParent :FillAppearance2 ;
+  x3do:hatchStyle 2 .
+:Transform_2_3_1_3 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :FirstRowBoxes ;
+  x3do:hasChildren :Shape_2_3_1_3_1 ;
+  x3do:translation ( -3 0 0 ) .
+:Shape_2_3_1_3_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_3_1_3 ;
+  x3do:hasGeometry :Box_2_3_1_3_1_1 ;
+  x3do:hasAppearance :FillAppearance3 .
+:Box_2_3_1_3_1_1 a owl:NamedIndividual, x3do:Box ;
+  x3do:hasParent :Shape_2_3_1_3_1 .
+:FillAppearance3 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_3_1_3_1 ;
+  x3do:hasMaterial :Material_2_3_1_3_1_2_1 ;
+  x3do:hasFillProperties :FillProperties_2_3_1_3_1_2_2 .
+:Material_2_3_1_3_1_2_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :FillAppearance3 ;
+  x3do:diffuseColor ( 1 1 0 ) .
+:FillProperties_2_3_1_3_1_2_2 a owl:NamedIndividual, x3do:FillProperties ;
+  x3do:hasParent :FillAppearance3 ;
+  x3do:hatchStyle 3 .
+:Transform_2_3_1_4 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :FirstRowBoxes ;
+  x3do:hasChildren :Shape_2_3_1_4_1 .
+:Shape_2_3_1_4_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_3_1_4 ;
+  x3do:hasGeometry :Box_2_3_1_4_1_1 ;
+  x3do:hasAppearance :FillAppearance4 .
+:Box_2_3_1_4_1_1 a owl:NamedIndividual, x3do:Box ;
+  x3do:hasParent :Shape_2_3_1_4_1 .
+:FillAppearance4 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_3_1_4_1 ;
+  x3do:hasMaterial :Material_2_3_1_4_1_2_1 ;
+  x3do:hasFillProperties :FillProperties_2_3_1_4_1_2_2 .
+:Material_2_3_1_4_1_2_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :FillAppearance4 ;
+  x3do:diffuseColor ( 0 1 0 ) .
+:FillProperties_2_3_1_4_1_2_2 a owl:NamedIndividual, x3do:FillProperties ;
+  x3do:hasParent :FillAppearance4 ;
+  x3do:hatchStyle 4 .
+:Transform_2_3_1_5 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :FirstRowBoxes ;
+  x3do:hasChildren :Shape_2_3_1_5_1 ;
+  x3do:translation ( 3 0 0 ) .
+:Shape_2_3_1_5_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_3_1_5 ;
+  x3do:hasGeometry :Box_2_3_1_5_1_1 ;
+  x3do:hasAppearance :FillAppearance5 .
+:Box_2_3_1_5_1_1 a owl:NamedIndividual, x3do:Box ;
+  x3do:hasParent :Shape_2_3_1_5_1 .
+:FillAppearance5 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_3_1_5_1 ;
+  x3do:hasMaterial :Material_2_3_1_5_1_2_1 ;
+  x3do:hasFillProperties :FillProperties_2_3_1_5_1_2_2 .
+:Material_2_3_1_5_1_2_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :FillAppearance5 ;
+  x3do:diffuseColor ( 0 0 1 ) .
+:FillProperties_2_3_1_5_1_2_2 a owl:NamedIndividual, x3do:FillProperties ;
+  x3do:hasParent :FillAppearance5 ;
+  x3do:hatchStyle 5 .
+:Transform_2_3_1_6 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :FirstRowBoxes ;
+  x3do:hasChildren :Shape_2_3_1_6_1 ;
+  x3do:translation ( 6 0 0 ) .
+:Shape_2_3_1_6_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_3_1_6 ;
+  x3do:hasGeometry :Box_2_3_1_6_1_1 ;
+  x3do:hasAppearance :FillAppearance6 .
+:Box_2_3_1_6_1_1 a owl:NamedIndividual, x3do:Box ;
+  x3do:hasParent :Shape_2_3_1_6_1 .
+:FillAppearance6 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_3_1_6_1 ;
+  x3do:hasMaterial :Material_2_3_1_6_1_2_1 ;
+  x3do:hasFillProperties :FillProperties_2_3_1_6_1_2_2 .
+:Material_2_3_1_6_1_2_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :FillAppearance6 ;
+  x3do:diffuseColor ( 0 1 1 ) .
+:FillProperties_2_3_1_6_1_2_2 a owl:NamedIndividual, x3do:FillProperties ;
+  x3do:hasParent :FillAppearance6 ;
+  x3do:hatchStyle 6 .
+:SecondRowText a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :OverallAdjustment ;
+  x3do:hasChildren :Transform_2_3_2_1, :Transform_2_3_2_2, :Transform_2_3_2_3, :Transform_2_3_2_4, :Transform_2_3_2_5, :Transform_2_3_2_6 ;
+  x3do:translation ( 0 5 0 ) .
+:Transform_2_3_2_1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :SecondRowText ;
+  x3do:hasChildren :Shape_2_3_2_1_1 ;
+  x3do:translation ( -9 0 0 ) .
+:Shape_2_3_2_1_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_3_2_1 ;
+  x3do:hasGeometry :Text_2_3_2_1_1_1 ;
+  x3do:hasAppearance :FillAppearance1-USE-1 .
+:Text_2_3_2_1_1_1 a owl:NamedIndividual, x3do:Text ;
+  x3do:hasParent :Shape_2_3_2_1_1 ;
+  x3do:hasFontStyle :Middle ;
+  x3do:string '"1"' .
+:Middle a owl:NamedIndividual, x3do:FontStyle ;
+  x3do:hasParent :Text_2_3_2_1_1_1 ;
+  x3do:justify '"MIDDLE" "MIDDLE"' ;
+  x3do:size 2 ;
+  x3do:style 'BOLD' .
+:FillAppearance1-USE-1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_3_2_1_1 ;
+  owl:sameAs :FillAppearance1 . # DEF matching this USE
+:Transform_2_3_2_2 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :SecondRowText ;
+  x3do:hasChildren :Shape_2_3_2_2_1 ;
+  x3do:translation ( -6 0 0 ) .
+:Shape_2_3_2_2_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_3_2_2 ;
+  x3do:hasGeometry :Text_2_3_2_2_1_1 ;
+  x3do:hasAppearance :FillAppearance2-USE-1 .
+:Text_2_3_2_2_1_1 a owl:NamedIndividual, x3do:Text ;
+  x3do:hasParent :Shape_2_3_2_2_1 ;
+  x3do:hasFontStyle :Middle-USE-1 ;
+  x3do:string '"2"' .
+:Middle-USE-1 a owl:NamedIndividual, x3do:FontStyle ;
+  x3do:hasParent :Text_2_3_2_2_1_1 ;
+  owl:sameAs :Middle . # DEF matching this USE
+:FillAppearance2-USE-1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_3_2_2_1 ;
+  owl:sameAs :FillAppearance2 . # DEF matching this USE
+:Transform_2_3_2_3 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :SecondRowText ;
+  x3do:hasChildren :Shape_2_3_2_3_1 ;
+  x3do:translation ( -3 0 0 ) .
+:Shape_2_3_2_3_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_3_2_3 ;
+  x3do:hasGeometry :Text_2_3_2_3_1_1 ;
+  x3do:hasAppearance :FillAppearance3-USE-1 .
+:Text_2_3_2_3_1_1 a owl:NamedIndividual, x3do:Text ;
+  x3do:hasParent :Shape_2_3_2_3_1 ;
+  x3do:hasFontStyle :Middle-USE-2 ;
+  x3do:string '"3"' .
+:Middle-USE-2 a owl:NamedIndividual, x3do:FontStyle ;
+  x3do:hasParent :Text_2_3_2_3_1_1 ;
+  owl:sameAs :Middle . # DEF matching this USE
+:FillAppearance3-USE-1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_3_2_3_1 ;
+  owl:sameAs :FillAppearance3 . # DEF matching this USE
+:Transform_2_3_2_4 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :SecondRowText ;
+  x3do:hasChildren :Shape_2_3_2_4_1 .
+:Shape_2_3_2_4_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_3_2_4 ;
+  x3do:hasGeometry :Text_2_3_2_4_1_1 ;
+  x3do:hasAppearance :FillAppearance4-USE-1 .
+:Text_2_3_2_4_1_1 a owl:NamedIndividual, x3do:Text ;
+  x3do:hasParent :Shape_2_3_2_4_1 ;
+  x3do:hasFontStyle :Middle-USE-3 ;
+  x3do:string '"4"' .
+:Middle-USE-3 a owl:NamedIndividual, x3do:FontStyle ;
+  x3do:hasParent :Text_2_3_2_4_1_1 ;
+  owl:sameAs :Middle . # DEF matching this USE
+:FillAppearance4-USE-1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_3_2_4_1 ;
+  owl:sameAs :FillAppearance4 . # DEF matching this USE
+:Transform_2_3_2_5 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :SecondRowText ;
+  x3do:hasChildren :Shape_2_3_2_5_1 ;
+  x3do:translation ( 3 0 0 ) .
+:Shape_2_3_2_5_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_3_2_5 ;
+  x3do:hasGeometry :Text_2_3_2_5_1_1 ;
+  x3do:hasAppearance :FillAppearance5-USE-1 .
+:Text_2_3_2_5_1_1 a owl:NamedIndividual, x3do:Text ;
+  x3do:hasParent :Shape_2_3_2_5_1 ;
+  x3do:hasFontStyle :Middle-USE-4 ;
+  x3do:string '"5"' .
+:Middle-USE-4 a owl:NamedIndividual, x3do:FontStyle ;
+  x3do:hasParent :Text_2_3_2_5_1_1 ;
+  owl:sameAs :Middle . # DEF matching this USE
+:FillAppearance5-USE-1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_3_2_5_1 ;
+  owl:sameAs :FillAppearance5 . # DEF matching this USE
+:Transform_2_3_2_6 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :SecondRowText ;
+  x3do:hasChildren :Shape_2_3_2_6_1 ;
+  x3do:translation ( 6 0 0 ) .
+:Shape_2_3_2_6_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_3_2_6 ;
+  x3do:hasGeometry :Text_2_3_2_6_1_1 ;
+  x3do:hasAppearance :FillAppearance6-USE-1 .
+:Text_2_3_2_6_1_1 a owl:NamedIndividual, x3do:Text ;
+  x3do:hasParent :Shape_2_3_2_6_1 ;
+  x3do:hasFontStyle :Middle-USE-5 ;
+  x3do:string '"6"' .
+:Middle-USE-5 a owl:NamedIndividual, x3do:FontStyle ;
+  x3do:hasParent :Text_2_3_2_6_1_1 ;
+  owl:sameAs :Middle . # DEF matching this USE
+:FillAppearance6-USE-1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_3_2_6_1 ;
+  owl:sameAs :FillAppearance6 . # DEF matching this USE
+:ThirdRowBoxes a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :OverallAdjustment ;
+  x3do:hasChildren :Transform_2_3_3_1, :Transform_2_3_3_2, :Transform_2_3_3_3, :Transform_2_3_3_4, :Transform_2_3_3_5, :Transform_2_3_3_6 ;
+  x3do:translation ( 0 2 0 ) .
+:Transform_2_3_3_1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :ThirdRowBoxes ;
+  x3do:hasChildren :Shape_2_3_3_1_1 ;
+  x3do:translation ( -9 0 0 ) .
+:Shape_2_3_3_1_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_3_3_1 ;
+  x3do:hasGeometry :Box_2_3_3_1_1_1 ;
+  x3do:hasAppearance :FillAppearance7 .
+:Box_2_3_3_1_1_1 a owl:NamedIndividual, x3do:Box ;
+  x3do:hasParent :Shape_2_3_3_1_1 .
+:FillAppearance7 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_3_3_1_1 ;
+  x3do:hasMaterial :Material_2_3_3_1_1_2_1 ;
+  x3do:hasFillProperties :FillProperties_2_3_3_1_1_2_2 .
+:Material_2_3_3_1_1_2_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :FillAppearance7 ;
+  x3do:diffuseColor ( 1 0 0 ) .
+:FillProperties_2_3_3_1_1_2_2 a owl:NamedIndividual, x3do:FillProperties ;
+  x3do:hasParent :FillAppearance7 ;
+  x3do:hatchStyle 7 .
+:Transform_2_3_3_2 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :ThirdRowBoxes ;
+  x3do:hasChildren :Shape_2_3_3_2_1 ;
+  x3do:translation ( -6 0 0 ) .
+:Shape_2_3_3_2_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_3_3_2 ;
+  x3do:hasGeometry :Box_2_3_3_2_1_1 ;
+  x3do:hasAppearance :FillAppearance8 .
+:Box_2_3_3_2_1_1 a owl:NamedIndividual, x3do:Box ;
+  x3do:hasParent :Shape_2_3_3_2_1 .
+:FillAppearance8 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_3_3_2_1 ;
+  x3do:hasMaterial :Material_2_3_3_2_1_2_1 ;
+  x3do:hasFillProperties :FillProperties_2_3_3_2_1_2_2 .
+:Material_2_3_3_2_1_2_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :FillAppearance8 ;
+  x3do:diffuseColor ( 1 0.5 0 ) .
+:FillProperties_2_3_3_2_1_2_2 a owl:NamedIndividual, x3do:FillProperties ;
+  x3do:hasParent :FillAppearance8 ;
+  x3do:hatchStyle 8 .
+:Transform_2_3_3_3 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :ThirdRowBoxes ;
+  x3do:hasChildren :Shape_2_3_3_3_1 ;
+  x3do:translation ( -3 0 0 ) .
+:Shape_2_3_3_3_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_3_3_3 ;
+  x3do:hasGeometry :Box_2_3_3_3_1_1 ;
+  x3do:hasAppearance :FillAppearance9 .
+:Box_2_3_3_3_1_1 a owl:NamedIndividual, x3do:Box ;
+  x3do:hasParent :Shape_2_3_3_3_1 .
+:FillAppearance9 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_3_3_3_1 ;
+  x3do:hasMaterial :Material_2_3_3_3_1_2_1 ;
+  x3do:hasFillProperties :FillProperties_2_3_3_3_1_2_2 .
+:Material_2_3_3_3_1_2_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :FillAppearance9 ;
+  x3do:diffuseColor ( 1 1 0 ) .
+:FillProperties_2_3_3_3_1_2_2 a owl:NamedIndividual, x3do:FillProperties ;
+  x3do:hasParent :FillAppearance9 ;
+  x3do:hatchStyle 9 .
+:Transform_2_3_3_4 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :ThirdRowBoxes ;
+  x3do:hasChildren :Shape_2_3_3_4_1 .
+:Shape_2_3_3_4_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_3_3_4 ;
+  x3do:hasGeometry :Box_2_3_3_4_1_1 ;
+  x3do:hasAppearance :FillAppearance10 .
+:Box_2_3_3_4_1_1 a owl:NamedIndividual, x3do:Box ;
+  x3do:hasParent :Shape_2_3_3_4_1 .
+:FillAppearance10 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_3_3_4_1 ;
+  x3do:hasMaterial :Material_2_3_3_4_1_2_1 ;
+  x3do:hasFillProperties :FillProperties_2_3_3_4_1_2_2 .
+:Material_2_3_3_4_1_2_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :FillAppearance10 ;
+  x3do:diffuseColor ( 0 1 0 ) .
+:FillProperties_2_3_3_4_1_2_2 a owl:NamedIndividual, x3do:FillProperties ;
+  x3do:hasParent :FillAppearance10 ;
+  x3do:hatchStyle 10 .
+:Transform_2_3_3_5 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :ThirdRowBoxes ;
+  x3do:hasChildren :Shape_2_3_3_5_1 ;
+  x3do:translation ( 3 0 0 ) .
+:Shape_2_3_3_5_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_3_3_5 ;
+  x3do:hasGeometry :Box_2_3_3_5_1_1 ;
+  x3do:hasAppearance :FillAppearance11 .
+:Box_2_3_3_5_1_1 a owl:NamedIndividual, x3do:Box ;
+  x3do:hasParent :Shape_2_3_3_5_1 .
+:FillAppearance11 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_3_3_5_1 ;
+  x3do:hasMaterial :Material_2_3_3_5_1_2_1 ;
+  x3do:hasFillProperties :FillProperties_2_3_3_5_1_2_2 .
+:Material_2_3_3_5_1_2_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :FillAppearance11 ;
+  x3do:diffuseColor ( 0 0 1 ) .
+:FillProperties_2_3_3_5_1_2_2 a owl:NamedIndividual, x3do:FillProperties ;
+  x3do:hasParent :FillAppearance11 ;
+  x3do:hatchStyle 11 .
+:Transform_2_3_3_6 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :ThirdRowBoxes ;
+  x3do:hasChildren :Shape_2_3_3_6_1 ;
+  x3do:translation ( 6 0 0 ) .
+:Shape_2_3_3_6_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_3_3_6 ;
+  x3do:hasGeometry :Box_2_3_3_6_1_1 ;
+  x3do:hasAppearance :FillAppearance12 .
+:Box_2_3_3_6_1_1 a owl:NamedIndividual, x3do:Box ;
+  x3do:hasParent :Shape_2_3_3_6_1 .
+:FillAppearance12 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_3_3_6_1 ;
+  x3do:hasMaterial :Material_2_3_3_6_1_2_1 ;
+  x3do:hasFillProperties :FillProperties_2_3_3_6_1_2_2 .
+:Material_2_3_3_6_1_2_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :FillAppearance12 ;
+  x3do:diffuseColor ( 0 1 1 ) .
+:FillProperties_2_3_3_6_1_2_2 a owl:NamedIndividual, x3do:FillProperties ;
+  x3do:hasParent :FillAppearance12 ;
+  x3do:hatchStyle 12 .
+:FourthRowText a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :OverallAdjustment ;
+  x3do:hasChildren :Transform_2_3_4_1, :Transform_2_3_4_2, :Transform_2_3_4_3, :Transform_2_3_4_4, :Transform_2_3_4_5, :Transform_2_3_4_6 .
+:Transform_2_3_4_1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :FourthRowText ;
+  x3do:hasChildren :Shape_2_3_4_1_1 ;
+  x3do:translation ( -9 0 0 ) .
+:Shape_2_3_4_1_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_3_4_1 ;
+  x3do:hasGeometry :Text_2_3_4_1_1_1 ;
+  x3do:hasAppearance :FillAppearance7-USE-1 .
+:Text_2_3_4_1_1_1 a owl:NamedIndividual, x3do:Text ;
+  x3do:hasParent :Shape_2_3_4_1_1 ;
+  x3do:hasFontStyle :Middle-USE-6 ;
+  x3do:string '"7"' .
+:Middle-USE-6 a owl:NamedIndividual, x3do:FontStyle ;
+  x3do:hasParent :Text_2_3_4_1_1_1 ;
+  owl:sameAs :Middle . # DEF matching this USE
+:FillAppearance7-USE-1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_3_4_1_1 ;
+  owl:sameAs :FillAppearance7 . # DEF matching this USE
+:Transform_2_3_4_2 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :FourthRowText ;
+  x3do:hasChildren :Shape_2_3_4_2_1 ;
+  x3do:translation ( -6 0 0 ) .
+:Shape_2_3_4_2_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_3_4_2 ;
+  x3do:hasGeometry :Text_2_3_4_2_1_1 ;
+  x3do:hasAppearance :FillAppearance8-USE-1 .
+:Text_2_3_4_2_1_1 a owl:NamedIndividual, x3do:Text ;
+  x3do:hasParent :Shape_2_3_4_2_1 ;
+  x3do:hasFontStyle :Middle-USE-7 ;
+  x3do:string '"8"' .
+:Middle-USE-7 a owl:NamedIndividual, x3do:FontStyle ;
+  x3do:hasParent :Text_2_3_4_2_1_1 ;
+  owl:sameAs :Middle . # DEF matching this USE
+:FillAppearance8-USE-1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_3_4_2_1 ;
+  owl:sameAs :FillAppearance8 . # DEF matching this USE
+:Transform_2_3_4_3 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :FourthRowText ;
+  x3do:hasChildren :Shape_2_3_4_3_1 ;
+  x3do:translation ( -3 0 0 ) .
+:Shape_2_3_4_3_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_3_4_3 ;
+  x3do:hasGeometry :Text_2_3_4_3_1_1 ;
+  x3do:hasAppearance :FillAppearance9-USE-1 .
+:Text_2_3_4_3_1_1 a owl:NamedIndividual, x3do:Text ;
+  x3do:hasParent :Shape_2_3_4_3_1 ;
+  x3do:hasFontStyle :Middle-USE-8 ;
+  x3do:string '"9"' .
+:Middle-USE-8 a owl:NamedIndividual, x3do:FontStyle ;
+  x3do:hasParent :Text_2_3_4_3_1_1 ;
+  owl:sameAs :Middle . # DEF matching this USE
+:FillAppearance9-USE-1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_3_4_3_1 ;
+  owl:sameAs :FillAppearance9 . # DEF matching this USE
+:Transform_2_3_4_4 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :FourthRowText ;
+  x3do:hasChildren :Shape_2_3_4_4_1 .
+:Shape_2_3_4_4_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_3_4_4 ;
+  x3do:hasGeometry :Text_2_3_4_4_1_1 ;
+  x3do:hasAppearance :FillAppearance10-USE-1 .
+:Text_2_3_4_4_1_1 a owl:NamedIndividual, x3do:Text ;
+  x3do:hasParent :Shape_2_3_4_4_1 ;
+  x3do:hasFontStyle :Middle-USE-9 ;
+  x3do:string '"10"' .
+:Middle-USE-9 a owl:NamedIndividual, x3do:FontStyle ;
+  x3do:hasParent :Text_2_3_4_4_1_1 ;
+  owl:sameAs :Middle . # DEF matching this USE
+:FillAppearance10-USE-1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_3_4_4_1 ;
+  owl:sameAs :FillAppearance10 . # DEF matching this USE
+:Transform_2_3_4_5 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :FourthRowText ;
+  x3do:hasChildren :Shape_2_3_4_5_1 ;
+  x3do:translation ( 3 0 0 ) .
+:Shape_2_3_4_5_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_3_4_5 ;
+  x3do:hasGeometry :Text_2_3_4_5_1_1 ;
+  x3do:hasAppearance :FillAppearance11-USE-1 .
+:Text_2_3_4_5_1_1 a owl:NamedIndividual, x3do:Text ;
+  x3do:hasParent :Shape_2_3_4_5_1 ;
+  x3do:hasFontStyle :Middle-USE-10 ;
+  x3do:string '"11"' .
+:Middle-USE-10 a owl:NamedIndividual, x3do:FontStyle ;
+  x3do:hasParent :Text_2_3_4_5_1_1 ;
+  owl:sameAs :Middle . # DEF matching this USE
+:FillAppearance11-USE-1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_3_4_5_1 ;
+  owl:sameAs :FillAppearance11 . # DEF matching this USE
+:Transform_2_3_4_6 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :FourthRowText ;
+  x3do:hasChildren :Shape_2_3_4_6_1 ;
+  x3do:translation ( 6 0 0 ) .
+:Shape_2_3_4_6_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_3_4_6 ;
+  x3do:hasGeometry :Text_2_3_4_6_1_1 ;
+  x3do:hasAppearance :FillAppearance12-USE-1 .
+:Text_2_3_4_6_1_1 a owl:NamedIndividual, x3do:Text ;
+  x3do:hasParent :Shape_2_3_4_6_1 ;
+  x3do:hasFontStyle :Middle-USE-11 ;
+  x3do:string '"12"' .
+:Middle-USE-11 a owl:NamedIndividual, x3do:FontStyle ;
+  x3do:hasParent :Text_2_3_4_6_1_1 ;
+  owl:sameAs :Middle . # DEF matching this USE
+:FillAppearance12-USE-1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_3_4_6_1 ;
+  owl:sameAs :FillAppearance12 . # DEF matching this USE
+:FifthRowBoxes a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :OverallAdjustment ;
+  x3do:hasChildren :Transform_2_3_5_1, :Transform_2_3_5_2, :Transform_2_3_5_3, :Transform_2_3_5_4, :Transform_2_3_5_5, :Transform_2_3_5_6, :Transform_2_3_5_7 ;
+  x3do:translation ( 0 -3 0 ) .
+:Transform_2_3_5_1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :FifthRowBoxes ;
+  x3do:hasChildren :Shape_2_3_5_1_1 ;
+  x3do:translation ( -9 0 0 ) .
+:Shape_2_3_5_1_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_3_5_1 ;
+  x3do:hasGeometry :Box_2_3_5_1_1_1 ;
+  x3do:hasAppearance :FillAppearance13 .
+:Box_2_3_5_1_1_1 a owl:NamedIndividual, x3do:Box ;
+  x3do:hasParent :Shape_2_3_5_1_1 .
+:FillAppearance13 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_3_5_1_1 ;
+  x3do:hasMaterial :Material_2_3_5_1_1_2_1 ;
+  x3do:hasFillProperties :FillProperties_2_3_5_1_1_2_2 .
+:Material_2_3_5_1_1_2_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :FillAppearance13 ;
+  x3do:diffuseColor ( 1 0 0 ) .
+:FillProperties_2_3_5_1_1_2_2 a owl:NamedIndividual, x3do:FillProperties ;
+  x3do:hasParent :FillAppearance13 ;
+  x3do:hatchStyle 13 .
+:Transform_2_3_5_2 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :FifthRowBoxes ;
+  x3do:hasChildren :Shape_2_3_5_2_1 ;
+  x3do:translation ( -6 0 0 ) .
+:Shape_2_3_5_2_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_3_5_2 ;
+  x3do:hasGeometry :Box_2_3_5_2_1_1 ;
+  x3do:hasAppearance :FillAppearance14 .
+:Box_2_3_5_2_1_1 a owl:NamedIndividual, x3do:Box ;
+  x3do:hasParent :Shape_2_3_5_2_1 .
+:FillAppearance14 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_3_5_2_1 ;
+  x3do:hasMaterial :Material_2_3_5_2_1_2_1 ;
+  x3do:hasFillProperties :FillProperties_2_3_5_2_1_2_2 .
+:Material_2_3_5_2_1_2_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :FillAppearance14 ;
+  x3do:diffuseColor ( 1 0.5 0 ) .
+:FillProperties_2_3_5_2_1_2_2 a owl:NamedIndividual, x3do:FillProperties ;
+  x3do:hasParent :FillAppearance14 ;
+  x3do:hatchStyle 14 .
+:Transform_2_3_5_3 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :FifthRowBoxes ;
+  x3do:hasChildren :Shape_2_3_5_3_1 ;
+  x3do:translation ( -3 0 0 ) .
+:Shape_2_3_5_3_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_3_5_3 ;
+  x3do:hasGeometry :Box_2_3_5_3_1_1 ;
+  x3do:hasAppearance :FillAppearance15 .
+:Box_2_3_5_3_1_1 a owl:NamedIndividual, x3do:Box ;
+  x3do:hasParent :Shape_2_3_5_3_1 .
+:FillAppearance15 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_3_5_3_1 ;
+  x3do:hasMaterial :Material_2_3_5_3_1_2_1 ;
+  x3do:hasFillProperties :FillProperties_2_3_5_3_1_2_2 .
+:Material_2_3_5_3_1_2_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :FillAppearance15 ;
+  x3do:diffuseColor ( 1 1 0 ) .
+:FillProperties_2_3_5_3_1_2_2 a owl:NamedIndividual, x3do:FillProperties ;
+  x3do:hasParent :FillAppearance15 ;
+  x3do:hatchStyle 15 .
+:Transform_2_3_5_4 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :FifthRowBoxes ;
+  x3do:hasChildren :Shape_2_3_5_4_1 .
+:Shape_2_3_5_4_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_3_5_4 ;
+  x3do:hasGeometry :Box_2_3_5_4_1_1 ;
+  x3do:hasAppearance :FillAppearance16 .
+:Box_2_3_5_4_1_1 a owl:NamedIndividual, x3do:Box ;
+  x3do:hasParent :Shape_2_3_5_4_1 .
+:FillAppearance16 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_3_5_4_1 ;
+  x3do:hasMaterial :Material_2_3_5_4_1_2_1 ;
+  x3do:hasFillProperties :FillProperties_2_3_5_4_1_2_2 .
+:Material_2_3_5_4_1_2_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :FillAppearance16 ;
+  x3do:diffuseColor ( 0 1 0 ) .
+:FillProperties_2_3_5_4_1_2_2 a owl:NamedIndividual, x3do:FillProperties ;
+  x3do:hasParent :FillAppearance16 ;
+  x3do:hatchStyle 16 .
+:Transform_2_3_5_5 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :FifthRowBoxes ;
+  x3do:hasChildren :Shape_2_3_5_5_1 ;
+  x3do:translation ( 3 0 0 ) .
+:Shape_2_3_5_5_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_3_5_5 ;
+  x3do:hasGeometry :Box_2_3_5_5_1_1 ;
+  x3do:hasAppearance :FillAppearance17 .
+:Box_2_3_5_5_1_1 a owl:NamedIndividual, x3do:Box ;
+  x3do:hasParent :Shape_2_3_5_5_1 .
+:FillAppearance17 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_3_5_5_1 ;
+  x3do:hasMaterial :Material_2_3_5_5_1_2_1 ;
+  x3do:hasFillProperties :FillProperties_2_3_5_5_1_2_2 .
+:Material_2_3_5_5_1_2_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :FillAppearance17 ;
+  x3do:diffuseColor ( 0 0 1 ) .
+:FillProperties_2_3_5_5_1_2_2 a owl:NamedIndividual, x3do:FillProperties ;
+  x3do:hasParent :FillAppearance17 ;
+  x3do:hatchStyle 17 .
+:Transform_2_3_5_6 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :FifthRowBoxes ;
+  x3do:hasChildren :Shape_2_3_5_6_1 ;
+  x3do:translation ( 6 0 0 ) .
+:Shape_2_3_5_6_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_3_5_6 ;
+  x3do:hasGeometry :Box_2_3_5_6_1_1 ;
+  x3do:hasAppearance :FillAppearance18 .
+:Box_2_3_5_6_1_1 a owl:NamedIndividual, x3do:Box ;
+  x3do:hasParent :Shape_2_3_5_6_1 .
+:FillAppearance18 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_3_5_6_1 ;
+  x3do:hasMaterial :Material_2_3_5_6_1_2_1 ;
+  x3do:hasFillProperties :FillProperties_2_3_5_6_1_2_2 .
+:Material_2_3_5_6_1_2_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :FillAppearance18 ;
+  x3do:diffuseColor ( 0 1 1 ) .
+:FillProperties_2_3_5_6_1_2_2 a owl:NamedIndividual, x3do:FillProperties ;
+  x3do:hasParent :FillAppearance18 ;
+  x3do:hatchStyle 18 .
+:Transform_2_3_5_7 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :FifthRowBoxes ;
+  x3do:hasChildren :Shape_2_3_5_7_1 ;
+  x3do:translation ( 9 0 0 ) .
+:Shape_2_3_5_7_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_3_5_7 ;
+  x3do:hasGeometry :Box_2_3_5_7_1_1 ;
+  x3do:hasAppearance :FillAppearance19 .
+:Box_2_3_5_7_1_1 a owl:NamedIndividual, x3do:Box ;
+  x3do:hasParent :Shape_2_3_5_7_1 .
+:FillAppearance19 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_3_5_7_1 ;
+  x3do:hasMaterial :Material_2_3_5_7_1_2_1 ;
+  x3do:hasFillProperties :FillProperties_2_3_5_7_1_2_2 .
+:Material_2_3_5_7_1_2_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :FillAppearance19 ;
+  x3do:diffuseColor ( 0.3 0.3 0.3 ) .
+:FillProperties_2_3_5_7_1_2_2 a owl:NamedIndividual, x3do:FillProperties ;
+  x3do:hasParent :FillAppearance19 ;
+  x3do:hatchStyle 19 .
+:SixthRowText a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :OverallAdjustment ;
+  x3do:hasChildren :Transform_2_3_6_1, :Transform_2_3_6_2, :Transform_2_3_6_3, :Transform_2_3_6_4, :Transform_2_3_6_5, :Transform_2_3_6_6, :Transform_2_3_6_7 ;
+  x3do:translation ( 0 -5 0 ) .
+:Transform_2_3_6_1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :SixthRowText ;
+  x3do:hasChildren :Shape_2_3_6_1_1 ;
+  x3do:translation ( -9 0 0 ) .
+:Shape_2_3_6_1_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_3_6_1 ;
+  x3do:hasGeometry :Text_2_3_6_1_1_1 ;
+  x3do:hasAppearance :FillAppearance13-USE-1 .
+:Text_2_3_6_1_1_1 a owl:NamedIndividual, x3do:Text ;
+  x3do:hasParent :Shape_2_3_6_1_1 ;
+  x3do:hasFontStyle :Middle-USE-12 ;
+  x3do:string '"13"' .
+:Middle-USE-12 a owl:NamedIndividual, x3do:FontStyle ;
+  x3do:hasParent :Text_2_3_6_1_1_1 ;
+  owl:sameAs :Middle . # DEF matching this USE
+:FillAppearance13-USE-1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_3_6_1_1 ;
+  owl:sameAs :FillAppearance13 . # DEF matching this USE
+:Transform_2_3_6_2 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :SixthRowText ;
+  x3do:hasChildren :Shape_2_3_6_2_1 ;
+  x3do:translation ( -6 0 0 ) .
+:Shape_2_3_6_2_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_3_6_2 ;
+  x3do:hasGeometry :Text_2_3_6_2_1_1 ;
+  x3do:hasAppearance :FillAppearance14-USE-1 .
+:Text_2_3_6_2_1_1 a owl:NamedIndividual, x3do:Text ;
+  x3do:hasParent :Shape_2_3_6_2_1 ;
+  x3do:hasFontStyle :Middle-USE-13 ;
+  x3do:string '"14"' .
+:Middle-USE-13 a owl:NamedIndividual, x3do:FontStyle ;
+  x3do:hasParent :Text_2_3_6_2_1_1 ;
+  owl:sameAs :Middle . # DEF matching this USE
+:FillAppearance14-USE-1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_3_6_2_1 ;
+  owl:sameAs :FillAppearance14 . # DEF matching this USE
+:Transform_2_3_6_3 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :SixthRowText ;
+  x3do:hasChildren :Shape_2_3_6_3_1 ;
+  x3do:translation ( -3 0 0 ) .
+:Shape_2_3_6_3_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_3_6_3 ;
+  x3do:hasGeometry :Text_2_3_6_3_1_1 ;
+  x3do:hasAppearance :FillAppearance15-USE-1 .
+:Text_2_3_6_3_1_1 a owl:NamedIndividual, x3do:Text ;
+  x3do:hasParent :Shape_2_3_6_3_1 ;
+  x3do:hasFontStyle :Middle-USE-14 ;
+  x3do:string '"15"' .
+:Middle-USE-14 a owl:NamedIndividual, x3do:FontStyle ;
+  x3do:hasParent :Text_2_3_6_3_1_1 ;
+  owl:sameAs :Middle . # DEF matching this USE
+:FillAppearance15-USE-1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_3_6_3_1 ;
+  owl:sameAs :FillAppearance15 . # DEF matching this USE
+:Transform_2_3_6_4 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :SixthRowText ;
+  x3do:hasChildren :Shape_2_3_6_4_1 .
+:Shape_2_3_6_4_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_3_6_4 ;
+  x3do:hasGeometry :Text_2_3_6_4_1_1 ;
+  x3do:hasAppearance :FillAppearance16-USE-1 .
+:Text_2_3_6_4_1_1 a owl:NamedIndividual, x3do:Text ;
+  x3do:hasParent :Shape_2_3_6_4_1 ;
+  x3do:hasFontStyle :Middle-USE-15 ;
+  x3do:string '"16"' .
+:Middle-USE-15 a owl:NamedIndividual, x3do:FontStyle ;
+  x3do:hasParent :Text_2_3_6_4_1_1 ;
+  owl:sameAs :Middle . # DEF matching this USE
+:FillAppearance16-USE-1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_3_6_4_1 ;
+  owl:sameAs :FillAppearance16 . # DEF matching this USE
+:Transform_2_3_6_5 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :SixthRowText ;
+  x3do:hasChildren :Shape_2_3_6_5_1 ;
+  x3do:translation ( 3 0 0 ) .
+:Shape_2_3_6_5_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_3_6_5 ;
+  x3do:hasGeometry :Text_2_3_6_5_1_1 ;
+  x3do:hasAppearance :FillAppearance17-USE-1 .
+:Text_2_3_6_5_1_1 a owl:NamedIndividual, x3do:Text ;
+  x3do:hasParent :Shape_2_3_6_5_1 ;
+  x3do:hasFontStyle :Middle-USE-16 ;
+  x3do:string '"17"' .
+:Middle-USE-16 a owl:NamedIndividual, x3do:FontStyle ;
+  x3do:hasParent :Text_2_3_6_5_1_1 ;
+  owl:sameAs :Middle . # DEF matching this USE
+:FillAppearance17-USE-1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_3_6_5_1 ;
+  owl:sameAs :FillAppearance17 . # DEF matching this USE
+:Transform_2_3_6_6 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :SixthRowText ;
+  x3do:hasChildren :Shape_2_3_6_6_1 ;
+  x3do:translation ( 6 0 0 ) .
+:Shape_2_3_6_6_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_3_6_6 ;
+  x3do:hasGeometry :Text_2_3_6_6_1_1 ;
+  x3do:hasAppearance :FillAppearance18-USE-1 .
+:Text_2_3_6_6_1_1 a owl:NamedIndividual, x3do:Text ;
+  x3do:hasParent :Shape_2_3_6_6_1 ;
+  x3do:hasFontStyle :Middle-USE-17 ;
+  x3do:string '"18"' .
+:Middle-USE-17 a owl:NamedIndividual, x3do:FontStyle ;
+  x3do:hasParent :Text_2_3_6_6_1_1 ;
+  owl:sameAs :Middle . # DEF matching this USE
+:FillAppearance18-USE-1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_3_6_6_1 ;
+  owl:sameAs :FillAppearance18 . # DEF matching this USE
+:Transform_2_3_6_7 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :SixthRowText ;
+  x3do:hasChildren :Shape_2_3_6_7_1 ;
+  x3do:translation ( 9 0 0 ) .
+:Shape_2_3_6_7_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_3_6_7 ;
+  x3do:hasGeometry :Text_2_3_6_7_1_1 ;
+  x3do:hasAppearance :FillAppearance19-USE-1 .
+:Text_2_3_6_7_1_1 a owl:NamedIndividual, x3do:Text ;
+  x3do:hasParent :Shape_2_3_6_7_1 ;
+  x3do:hasFontStyle :Middle-USE-18 ;
+  x3do:string '"19"' .
+:Middle-USE-18 a owl:NamedIndividual, x3do:FontStyle ;
+  x3do:hasParent :Text_2_3_6_7_1_1 ;
+  owl:sameAs :Middle . # DEF matching this USE
+:FillAppearance19-USE-1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_3_6_7_1 ;
+  owl:sameAs :FillAppearance19 . # DEF matching this USE

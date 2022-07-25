@@ -1,0 +1,6 @@
+<TouchSensor DEF='BlueRockfishTouchSensor'/> missing ROUTE to send output events [/X3D/Scene/Group/TouchSensor, warning]
+<TimeSensor DEF='BLUEROCKFISHCLOCK'/> missing description [/X3D/Scene/Group/TimeSensor, warning]
+<TimeSensor DEF='BLUEROCKFISHCLOCK'/> missing ROUTE to send output events [/X3D/Scene/Group/TimeSensor, warning]
+<OrientationInterpolator DEF='BlueRockfishPathInterpolator'/> missing ROUTE to receive input events [/X3D/Scene/Group/OrientationInterpolator, error]
+<OrientationInterpolator DEF='BlueRockfishPathInterpolator'/> missing ROUTE to send output events [/X3D/Scene/Group/OrientationInterpolator, error]
+<TouchSensor DEF='BaseTouchSensor'/> missing ROUTE to send output events [/X3D/Scene/Group/Group/TouchSensor, warning]

@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--Generated using XSLT processor: SAXON 9.1.0.6 from Saxonica--><html xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:saxon="http://icl.com/saxon"
+      xmlns="http://www.w3.org/TR/xhtml1/strict">
+   <head>
+      <title>ScalarInterpolatorPrototype.x3d (X3dToXhtml)</title>
+      <style type="text/css">
+span.element {color: navy}
+span.attribute {color: green}
+span.value {color: teal}
+span.plain {color: black}
+span.gray  {color: gray}
+span.idName {color: maroon}
+a.idName {color: maroon}
+div.center {text-align: center}
+div.indent {margin-left: 25px}
+
+span.prototype {color: purple}
+a.prototype {color: purple; visited: black}
+span.route {color: red}
+b.warning {color: #CC5500}
+b.error {color: #CC0000}
+                </style>
+      <meta name="generator" content="http://www.web3d.org/x3d/stylesheets/X3dToXhtml.xslt"/>
+      <meta name="generator"
+            content="http://x3d.svn.sourceforge.net/viewvc/*checkout*/x3d/www.web3d.org/x3d/stylesheets/X3dToXhtml.xslt"/>
+      <link rel="shortcut icon"
+            href="http://www.web3d.org/x3d/content/icons/X3DtextIcon16.png"
+            title="X3D"/>
+   </head>
+   <body>
+      <pre>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;!DOCTYPE X3D PUBLIC "ISO//Web3D//DTD X3D 3.1//EN" "<a href="http://www.web3d.org/specifications/x3d-3.1.dtd">http://www.web3d.org/specifications/x3d-3.1.dtd</a>"&gt;</pre>
+
+&lt;<span class="element">X3D</span>&#160;<span class="attribute">profile</span>='<span class="value">Immersive</span>'&#160;<span class="attribute">version</span>='<span class="value">3.1</span>'&#160;<span class="attribute">xmlns:xsd</span>='<a href="http://www.w3.org/2001/XMLSchema-instance" target="_blank">http://www.w3.org/2001/XMLSchema-instance</a>'
+<span class="attribute">xsd:noNamespaceSchemaLocation</span>='
+<a href="http://www.web3d.org/specifications/x3d-3.1.xsd">http://www.web3d.org/specifications/x3d-3.1.xsd</a> '&gt;
+<div class="indent">
+&lt;<span class="element">head</span>&gt;
+<div class="indent">
+&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">title</span>'&#160;<span class="attribute">content</span>='<a href="ScalarInterpolatorPrototype.x3d" target="_blank">ScalarInterpolatorPrototype.x3d</a>'/&gt;
+<br />
+&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">description</span>'&#160;<span class="attribute">content</span>='<span class="plain">This is a prototype for a CircleFish, which is also used by CircleFishLod. Default fish size: length is 1 m (Y-axis), max Height is 1 m (Z-axis), max Width is 10 cm (X-axis).</span>'/&gt;
+<br />
+&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">creator</span>'&#160;<span class="attribute">content</span>='<span class="value">Ildeniz Duman</span>'/&gt;
+<br />
+&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">translator</span>'&#160;<span class="attribute">content</span>='<span class="value">Scott Tufts</span>'/&gt;
+<br />
+&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">created</span>'&#160;<span class="attribute">content</span>='<span class="value">May 1998</span>'/&gt;
+<br />
+&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">translated</span>'&#160;<span class="attribute">content</span>='<span class="value">11 December 2001</span>'/&gt;
+<br />
+&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">modified</span>'&#160;<span class="attribute">content</span>='<span class="value">4 May 2004, 7 March 2006</span>'/&gt;
+<br />
+&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">reference</span>'&#160;<span class="attribute">content</span>='
+<a href="http://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/CircleFishPrototype.x3d">http://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/CircleFishPrototype.x3d</a> '/&gt;
+<br />
+&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">identifier</span>'&#160;<span class="attribute">content</span>='
+<a href="http://X3dGraphics.com/examples/X3dForWebAuthors/Chapter07-EventAnimationInterpolation/ScalarInterpolatorPrototype.x3d">http://X3dGraphics.com/examples/X3dForWebAuthors/Chapter07-EventAnimationInterpolation/ScalarInterpolatorPrototype.x3d</a> '/&gt;
+<br />
+&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">generator</span>'&#160;<span class="attribute">content</span>='<span class="value">X3D-Edit, </span>
+            <a href="https://savage.nps.edu/X3D-Edit" target="_blank">https://savage.nps.edu/X3D-Edit</a>'/&gt;
+<br />
+&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">license</span>'&#160;<span class="attribute">content</span>='<a href="../license.html" target="_blank">../license.html</a>'/&gt;
+</div>&lt;/<span class="element">head</span>&gt;
+<br />
+&lt;!--
+<div class="center">
+            <hr width="100%"/>
+            <i>Index for ProtoDeclare definition</i>: 
+<a href="#ProtoDeclare_CircleFish" class="prototype">CircleFish</a>
+<br />
+<i>Index for DEF nodes</i>: 
+<a href="#Eye" class="idName">Eye</a>,
+<a href="#FinColor" class="idName">FinColor</a>,
+<a href="#FinSkin" class="idName">FinSkin</a>,
+<a href="#FishBodyExtrusion" class="idName">FishBodyExtrusion</a>,
+<a href="#FishColor" class="idName">FishColor</a>,
+<a href="#FishTexture" class="idName">FishTexture</a>,
+<a href="#FishTransform" class="idName">FishTransform</a>,
+<a href="#LeftPectoral" class="idName">LeftPectoral</a>,
+<a href="#RightPectoral" class="idName">RightPectoral</a>,
+<a href="#TransparencyTimer" class="idName">TransparencyTimer</a>,
+<a href="#TransparencyValue" class="idName">TransparencyValue</a>,
+<a href="#Way" class="idName">Way</a>
+            <hr width="100%"/>
+         </div>
+--&gt;
+<br />
+&lt;<span class="element">Scene</span>&gt;
+<div class="indent">
+            <a name="ProtoDeclare_CircleFish"> </a> 
+&lt;<span class="prototype">ProtoDeclare</span>&#160;<span class="attribute">name</span>='<span class="prototype">CircleFish</span>'&gt;
+<div class="indent">
+&lt;<span class="prototype">ProtoInterface</span>&gt;
+<div class="indent">
+                  <a name="CircleFishProtoField_skinTextureUrl"> </a> 
+&lt;<span class="prototype">field</span>&#160;<span class="attribute">name</span>='<span class="prototype">skinTextureUrl</span>'&#160;<span class="attribute">type</span>='<span class="value">MFString</span>'&#160;<span class="attribute">accessType</span>='<span class="value">inputOutput</span>'/&gt;
+<br /><a name="CircleFishProtoField_fishScale"> </a> 
+&lt;<span class="prototype">field</span>&#160;<span class="attribute">name</span>='<span class="prototype">fishScale</span>'&#160;<span class="attribute">type</span>='<span class="value">SFVec3f</span>'&#160;<span class="attribute">value</span>='<span class="value">1 1 1</span>'&#160;<span class="attribute">accessType</span>='<span class="value">inputOutput</span>'/&gt;
+<br /><a name="CircleFishProtoField_fishColor"> </a> 
+&lt;<span class="prototype">field</span>&#160;<span class="attribute">name</span>='<span class="prototype">fishColor</span>'&#160;<span class="attribute">type</span>='<span class="value">SFColor</span>'&#160;<span class="attribute">value</span>='<span class="value">0.5 0.5 0.5</span>'&#160;<span class="attribute">accessType</span>='<span class="value">inputOutput</span>'/&gt;
+<br /><a name="CircleFishProtoField_finColor"> </a> 
+&lt;<span class="prototype">field</span>&#160;<span class="attribute">name</span>='<span class="prototype">finColor</span>'&#160;<span class="attribute">type</span>='<span class="value">SFColor</span>'&#160;<span class="attribute">value</span>='<span class="value">0.5 0.5 0.5</span>'&#160;<span class="attribute">accessType</span>='<span class="value">inputOutput</span>'/&gt;
+<br /><a name="CircleFishProtoField_positionKey"> </a> 
+&lt;<span class="prototype">field</span>&#160;<span class="attribute">name</span>='<span class="prototype">positionKey</span>'&#160;<span class="attribute">type</span>='<span class="value">MFFloat</span>'&#160;<span class="attribute">value</span>='<span class="value">0.0 0.125 0.25 0.375 0.5 0.625 0.750 0.8751</span>'&#160;<span class="attribute">accessType</span>='<span class="value">inputOutput</span>'/&gt;
+<br /><a name="CircleFishProtoField_positionKeyValue"> </a> 
+&lt;<span class="prototype">field</span>&#160;<span class="attribute">name</span>='<span class="prototype">positionKeyValue</span>'&#160;<span class="attribute">type</span>='<span class="value">MFVec3f</span>'&#160;<span class="attribute">value</span>='<span class="value">1.5 2 0 1.5 0 -1.0 0 -1 -1.0 -1.5 0 -1.0 -1.5 2 0 -1.5 0 1.0 0 -2 1.0 1.5 0 1.0 1.5 2 0</span>'&#160;<span class="attribute">accessType</span>='<span class="value">inputOutput</span>'/&gt;
+<br /><a name="CircleFishProtoField_orientationKey"> </a> 
+&lt;<span class="prototype">field</span>&#160;<span class="attribute">name</span>='<span class="prototype">orientationKey</span>'&#160;<span class="attribute">type</span>='<span class="value">MFFloat</span>'&#160;<span class="attribute">value</span>='<span class="value">0.0 0.25 0.5 0.750 1</span>'&#160;<span class="attribute">accessType</span>='<span class="value">inputOutput</span>'/&gt;
+<br /><a name="CircleFishProtoField_orientationKeyValue"> </a> 
+&lt;<span class="prototype">field</span>&#160;<span class="attribute">name</span>='<span class="prototype">orientationKeyValue</span>'&#160;<span class="attribute">type</span>='<span class="value">MFRotation</span>'&#160;<span class="attribute">value</span>='<span class="value">0 1 0 0 0 1 0 -1.57 0 1 0 -3.14 0 1 0 -4.71 0 1 0 -6.28</span>'&#160;<span class="attribute">accessType</span>='<span class="value">inputOutput</span>'/&gt;
+<br /><a name="CircleFishProtoField_orbitTime"> </a> 
+&lt;<span class="prototype">field</span>&#160;<span class="attribute">name</span>='<span class="prototype">orbitTime</span>'&#160;<span class="attribute">type</span>='<span class="value">SFTime</span>'&#160;<span class="attribute">value</span>='<span class="value">90</span>'&#160;<span class="attribute">accessType</span>='<span class="value">inputOutput</span>'/&gt;
+</div>&lt;/<span class="prototype">ProtoInterface</span>&gt;
+<br />
+&lt;<span class="prototype">ProtoBody</span>&gt;
+<div class="indent">
+                  <a name="Way"> </a> 
+&lt;<span class="element">Transform</span>&#160;<span class="attribute">DEF</span>='<span class="idName">Way</span>'&gt;
+<div class="indent">
+&lt;<span class="element">Transform</span>&#160;<span class="attribute">rotation</span>='<span class="value">1 0 0 1.395</span>'&gt;
+<div class="indent">
+                        <a name="FishTransform"> </a> 
+&lt;<span class="element">Transform</span>&#160;<span class="attribute">DEF</span>='<span class="idName">FishTransform</span>'&gt;
+<div class="indent">
+&lt;<span class="element">IS</span>&gt;
+<div class="indent">
+&lt;<span class="element">connect</span>&#160;<span class="attribute">nodeField</span>='<span class="prototype">scale</span>'&#160;<span class="attribute">protoField</span>='<span class="prototype"><a href="#CircleFishProtoField_fishScale" class="prototype">fishScale</a></span>'/&gt;
+</div>&lt;/<span class="element">IS</span>&gt;
+<br />
+&lt;<span class="element">Shape</span>&gt;
+<div class="indent">
+&lt;<span class="element">Appearance</span>&gt;
+<div class="indent">
+                                 <a name="FishColor"> </a> 
+&lt;!-- <span class="idName">FishColor</span> <i>ROUTE</i>:&#160;
+[<a href="#ROUTE_1"><i>from</i>&#160;<span class="idName">TransparencyValue</span>.<span class="attribute">value_changed</span>&#160;<i>to</i>&#160;<span class="attribute">transparency</span>
+                                 </a>]
+ --&gt;<br />
+&lt;<span class="element">Material</span>&#160;<span class="attribute">DEF</span>='<span class="idName">FishColor</span>'&gt;
+<div class="indent">
+&lt;<span class="element">IS</span>&gt;
+<div class="indent">
+&lt;<span class="element">connect</span>&#160;<span class="attribute">nodeField</span>='<span class="prototype">diffuseColor</span>'&#160;<span class="attribute">protoField</span>='<span class="prototype"><a href="#CircleFishProtoField_fishColor" class="prototype">fishColor</a></span>'/&gt;
+</div>&lt;/<span class="element">IS</span>&gt;
+</div>&lt;/<span class="element">Material</span>&gt;
+<br /><a name="FishTexture"> </a> 
+&lt;<span class="element">ImageTexture</span>&#160;<span class="attribute">DEF</span>='<span class="idName">FishTexture</span>'&gt;
+<div class="indent">
+&lt;<span class="element">IS</span>&gt;
+<div class="indent">
+&lt;<span class="element">connect</span>&#160;<span class="attribute">nodeField</span>='<span class="prototype">url</span>'&#160;<span class="attribute">protoField</span>='<span class="prototype"><a href="#CircleFishProtoField_skinTextureUrl" class="prototype">skinTextureUrl</a></span>'/&gt;
+</div>&lt;/<span class="element">IS</span>&gt;
+</div>&lt;/<span class="element">ImageTexture</span>&gt;
+</div>&lt;/<span class="element">Appearance</span>&gt;
+<br /><a name="FishBodyExtrusion"> </a> 
+&lt;<span class="element">Extrusion</span>&#160;<span class="attribute">DEF</span>='<span class="idName">FishBodyExtrusion</span>'&#160;<span class="attribute">creaseAngle</span>='<span class="value">0.57</span>'&#160;<a href="_svg/ScalarInterpolatorPrototype.Extrusion1.svg">crossSection</a>='<span class="value">-0.1 1.0 0.1 1 0.5 0.5 0.5 -0.5 0.1 -1 -0.1 -1 -0.5 -0.5 -0.5 0.5 -0.1 1</span>'&#160;<span class="attribute">scale</span>='<span class="value">0.03 0.03 0.05 0.3 0.05 0.45 0.1 0.5 0.05 0.45 0.05 0.2 0.03 0.4</span>'&#160;<span class="attribute">spine</span>='<span class="value">0 1 0 0 0.8 0 0 0.6 0 0 0.5 0 0 0.3 0 0 0.2 0 0 0 0</span>'/&gt;
+</div>&lt;/<span class="element">Shape</span>&gt;
+<br /><a name="TransparencyTimer"> </a> 
+&lt;!-- <span class="idName">TransparencyTimer</span> <i>ROUTE</i>:&#160;
+[<a href="#ROUTE_0"><i>from</i>&#160;<span class="attribute">fraction_changed</span>&#160;<i>to</i>&#160;<span class="idName">TransparencyValue</span>.<span class="attribute">set_fraction</span>
+                           </a>]
+ --&gt;<br />
+&lt;<span class="element">TimeSensor</span>&#160;<span class="attribute">DEF</span>='<span class="idName">TransparencyTimer</span>'&#160;<span class="attribute">cycleInterval</span>='<span class="value">3</span>'&#160;<span class="attribute">loop</span>='<span class="value">true</span>'&#160;<span class="attribute">startTime</span>='<span class="value">1</span>'/&gt;
+<br /><a name="TransparencyValue"> </a> 
+&lt;!-- <span class="idName">TransparencyValue</span> <i>ROUTEs</i>:&#160;
+[<a href="#ROUTE_0"><i>from</i>&#160;<span class="idName">TransparencyTimer</span>.<span class="attribute">fraction_changed</span>&#160;<i>to</i>&#160;<span class="attribute">set_fraction</span>
+                           </a>]
+[<a href="#ROUTE_1"><i>from</i>&#160;<span class="attribute">value_changed</span>&#160;<i>to</i>&#160;<span class="idName">FishColor</span>.<span class="attribute">transparency</span>
+                           </a>]
+ --&gt;<br />
+&lt;<span class="element">ScalarInterpolator</span>&#160;<span class="attribute">DEF</span>='<span class="idName">TransparencyValue</span>'&#160;<span class="attribute">key</span>='<span class="value">0 .5 1</span>'&#160;<span class="attribute">keyValue</span>='<span class="value">0 1 0</span>'/&gt;
+<br /><a name="ROUTE_0"> </a> 
+&lt;<span class="route">ROUTE</span>&#160;<span class="attribute">fromNode</span>='<a href="#TransparencyTimer" class="idName">TransparencyTimer</a>'&#160;<span class="attribute">fromField</span>='<span class="value">fraction_changed</span>'&#160;<span class="attribute">toNode</span>='<a href="#TransparencyValue" class="idName">TransparencyValue</a>'&#160;<span class="attribute">toField</span>='<span class="value">set_fraction</span>'/&gt;
+<br /><a name="ROUTE_1"> </a> 
+&lt;<span class="route">ROUTE</span>&#160;<span class="attribute">fromNode</span>='<a href="#TransparencyValue" class="idName">TransparencyValue</a>'&#160;<span class="attribute">fromField</span>='<span class="value">value_changed</span>'&#160;<span class="attribute">toNode</span>='<a href="#FishColor" class="idName">FishColor</a>'&#160;<span class="attribute">toField</span>='<span class="value">transparency</span>'/&gt;
+<br />
+&lt;<span class="element">Shape</span>&gt;
+<div class="indent">
+                              <a name="FinSkin"> </a> 
+&lt;<span class="element">Appearance</span>&#160;<span class="attribute">DEF</span>='<span class="idName">FinSkin</span>'&gt;
+<div class="indent">
+                                 <a name="FinColor"> </a> 
+&lt;<span class="element">Material</span>&#160;<span class="attribute">DEF</span>='<span class="idName">FinColor</span>'&#160;<span class="attribute">transparency</span>='<span class="value">0.2</span>'&gt;
+<div class="indent">
+&lt;<span class="element">IS</span>&gt;
+<div class="indent">
+&lt;<span class="element">connect</span>&#160;<span class="attribute">nodeField</span>='<span class="prototype">diffuseColor</span>'&#160;<span class="attribute">protoField</span>='<span class="prototype"><a href="#CircleFishProtoField_finColor" class="prototype">finColor</a></span>'/&gt;
+</div>&lt;/<span class="element">IS</span>&gt;
+</div>&lt;/<span class="element">Material</span>&gt;
+</div>&lt;/<span class="element">Appearance</span>&gt;
+</div>&lt;/<span class="element">Shape</span>&gt;
+<br />
+&lt;<span class="element">Transform</span>&#160;<span class="attribute">translation</span>='<span class="value">0.015 0.8 -0.2</span>'&gt;
+<div class="indent">
+                              <a name="Eye"> </a> 
+&lt;<span class="element">Shape</span>&#160;<span class="attribute">DEF</span>='<span class="idName">Eye</span>'&gt;
+<div class="indent">
+&lt;<span class="element">Appearance</span>&gt;
+<div class="indent">
+&lt;<span class="element">Material</span>&#160;<span class="attribute">diffuseColor</span>='<span class="value">0.5 0.5 0.5</span>'&#160;<span class="attribute">shininess</span>='<span class="value">1</span>'&#160;<span class="attribute">specularColor</span>='<span class="value">0.3 0.3 0.3</span>'/&gt;
+</div>&lt;/<span class="element">Appearance</span>&gt;
+<br />
+&lt;<span class="element">Sphere</span>&#160;<span class="attribute">radius</span>='<span class="value">0.03</span>'/&gt;
+</div>&lt;/<span class="element">Shape</span>&gt;
+</div>&lt;/<span class="element">Transform</span>&gt;
+<br />
+&lt;<span class="element">Transform</span>&#160;<span class="attribute">translation</span>='<span class="value">-0.015 0.8 -0.2</span>'&gt;
+<div class="indent">
+&lt;<span class="element">Shape</span>&#160;<span class="attribute">USE</span>='<a href="#Eye" class="idName">Eye</a>'/&gt;
+</div>&lt;/<span class="element">Transform</span>&gt;
+<br />
+&lt;<span class="element">Transform</span>&#160;<span class="attribute">scale</span>='<span class="value">1 1 0.7</span>'&#160;<span class="attribute">translation</span>='<span class="value">0 0.98 0</span>'&gt;
+<div class="indent">
+&lt;<span class="element">Shape</span>&#160;<span class="attribute">USE</span>='<a href="#Eye" class="idName">Eye</a>'/&gt;
+</div>&lt;/<span class="element">Transform</span>&gt;
+<br /><a name="LeftPectoral"> </a> 
+&lt;<span class="element">Transform</span>&#160;<span class="attribute">DEF</span>='<span class="idName">LeftPectoral</span>'&#160;<span class="attribute">translation</span>='<span class="value">0.04 0.4 0.3</span>'&gt;
+<div class="indent">
+&lt;<span class="element">Shape</span>&gt;
+<div class="indent">
+&lt;<span class="element">Appearance</span>&#160;<span class="attribute">USE</span>='<a href="#FinSkin" class="idName">FinSkin</a>'/&gt;
+<br />
+&lt;<span class="element">IndexedFaceSet</span>&#160;<span class="attribute">solid</span>='<span class="value">false</span>'&#160;<span class="attribute">coordIndex</span>='<span class="value">0 1 2 -1</span>'&gt;
+<div class="indent">
+&lt;<span class="element">Coordinate</span>&#160;<span class="attribute">point</span>='<span class="value">0 0 0 0 0.2 0 0.2 0.1 0</span>'/&gt;
+</div>&lt;/<span class="element">IndexedFaceSet</span>&gt;
+</div>&lt;/<span class="element">Shape</span>&gt;
+</div>&lt;/<span class="element">Transform</span>&gt;
+<br /><a name="RightPectoral"> </a> 
+&lt;<span class="element">Transform</span>&#160;<span class="attribute">DEF</span>='<span class="idName">RightPectoral</span>'&#160;<span class="attribute">translation</span>='<span class="value">-0.04 0.4 0.3</span>'&gt;
+<div class="indent">
+&lt;<span class="element">Shape</span>&gt;
+<div class="indent">
+&lt;<span class="element">Appearance</span>&#160;<span class="attribute">USE</span>='<a href="#FinSkin" class="idName">FinSkin</a>'/&gt;
+<br />
+&lt;<span class="element">IndexedFaceSet</span>&#160;<span class="attribute">solid</span>='<span class="value">false</span>'&#160;<span class="attribute">coordIndex</span>='<span class="value">0 1 2 -1</span>'&gt;
+<div class="indent">
+&lt;<span class="element">Coordinate</span>&#160;<span class="attribute">point</span>='<span class="value">0 0 0 0 0.2 0 -0.2 0.1 0</span>'/&gt;
+</div>&lt;/<span class="element">IndexedFaceSet</span>&gt;
+</div>&lt;/<span class="element">Shape</span>&gt;
+</div>&lt;/<span class="element">Transform</span>&gt;
+</div>&lt;/<span class="element">Transform</span>&gt;
+</div>&lt;/<span class="element">Transform</span>&gt;
+</div>&lt;/<span class="element">Transform</span>&gt;
+</div>&lt;/<span class="prototype">ProtoBody</span>&gt;
+</div>&lt;/<span class="prototype">ProtoDeclare</span>&gt;
+<br />&lt;!-- ==================== --&gt;
+<br />
+&lt;<span class="prototype">ProtoInstance</span>&#160;<span class="attribute">name</span>='<a href="#ProtoDeclare_CircleFish" class="prototype">CircleFish</a>'/&gt;
+</div>&lt;/<span class="element">Scene</span>&gt;
+</div>&lt;/<span class="element">X3D</span>&gt;
+<br />
+&lt;!--
+<div class="center">
+         <hr width="100%"/>
+         <i>Index for ProtoDeclare definition</i>: 
+<a href="#ProtoDeclare_CircleFish" class="prototype">CircleFish</a>
+<br />
+<i>Index for DEF nodes</i>: 
+<a href="#Eye" class="idName">Eye</a>,
+<a href="#FinColor" class="idName">FinColor</a>,
+<a href="#FinSkin" class="idName">FinSkin</a>,
+<a href="#FishBodyExtrusion" class="idName">FishBodyExtrusion</a>,
+<a href="#FishColor" class="idName">FishColor</a>,
+<a href="#FishTexture" class="idName">FishTexture</a>,
+<a href="#FishTransform" class="idName">FishTransform</a>,
+<a href="#LeftPectoral" class="idName">LeftPectoral</a>,
+<a href="#RightPectoral" class="idName">RightPectoral</a>,
+<a href="#TransparencyTimer" class="idName">TransparencyTimer</a>,
+<a href="#TransparencyValue" class="idName">TransparencyValue</a>,
+<a href="#Way" class="idName">Way</a>
+         <hr width="100%"/>
+      </div>
+--&gt;
+<p>
+&lt;!-- Tag color codes (X3D, XML terminology):
+&lt;<span class="element">Node</span>
+         <span class="idName"> DEF</span>='<span class="idName">idName</span>' <span class="attribute">field</span>='<span class="value">value</span>'/&gt; &lt;<span class="element">Element</span>
+         <span class="idName"> DEF</span>='<span class="idName">idName</span>' <span class="attribute">attribute</span>='<span class="value">value</span>'/&gt; 
+&lt;<span class="prototype">Prototype</span> 
+         <span class="attribute">name</span>='<span class="prototype">ProtoName</span>'&gt;
+	&lt;<span class="prototype">field</span>
+         <span class="attribute">name</span>='<span class="prototype">fieldName</span>'/&gt; &lt;/<span class="prototype">Prototype</span>&gt; --&gt;
+</p>
+   </body>
+</html>

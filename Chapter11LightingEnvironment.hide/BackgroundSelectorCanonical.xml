@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE X3D PUBLIC "ISO//Web3D//DTD X3D 3.2//EN" "http://www.web3d.org/specifications/x3d-3.2.dtd">
+<X3D profile='Immersive' version='3.2' xmlns:xsd='http://www.w3.org/2001/XMLSchema-instance' xsd:noNamespaceSchemaLocation='http://www.web3d.org/specifications/x3d-3.2.xsd'>
+  <head>
+    <meta content='BackgroundSelector.x3d' name='title'/>
+    <meta content='Choose and bind a Background node.' name='description'/>
+    <meta content='Don Brutzman' name='creator'/>
+    <meta content='20 April 2009' name='created'/>
+    <meta content='22 April 2009' name='modified'/>
+    <meta content='under development' name='warning'/>
+    <meta content='http://x3dGraphics.com/examples/X3dForWebAuthors/Chapter11-LightingEnvironment/BackgroundColorsOnly.x3d' name='reference'/>
+    <meta content='X3D Background example' name='subject'/>
+    <meta content='http://x3dGraphics.com/examples/X3dForWebAuthors/Chapter11-LightingEnvironment/BackgroundSelector.x3d' name='identifier'/>
+    <meta content='X3D-Edit, https://savage.nps.edu/X3D-Edit' name='generator'/>
+    <meta content='X3D-Edit, https://savage.nps.edu/X3D-Edit' name='generator'/>
+    <meta content='../../license.html' name='license'/>
+  </head>
+  <Scene>
+    <!-- Scene graph nodes are added here -->
+  </Scene>
+</X3D>

@@ -1,0 +1,12 @@
+
+      
+ecmascript:
+function whichBackground (inputValue)
+{
+    if      (whichBackground == 0) bind0 = true;
+    else if (whichBackground == 1) bind1 = true;
+    else if (whichBackground == 2) bind2 = true;
+    else if (whichBackground == 3) bind3 = true;
+}
+
+    

@@ -1,0 +1,5 @@
+<ProtoDeclare name='Kelp'> ProtoInterface can only contain field declarations or comments [/X3D/Scene/ProtoDeclare/ProtoInterface, error]
+<TimeSensor DEF='Clock'/> missing description [/X3D/Scene/ProtoDeclare/ProtoBody/Group/TimeSensor, warning]
+<OrientationInterpolator DEF='verticalStipeMover'/> missing ROUTE to send output events [/X3D/Scene/ProtoDeclare/ProtoBody/Group/OrientationInterpolator[2], error]
+<OrientationInterpolator DEF='bladePath1'/> missing ROUTE to receive input events [/X3D/Scene/ProtoDeclare/ProtoBody/Group/OrientationInterpolator[3], error]
+<OrientationInterpolator DEF='bladePath1'/> missing ROUTE to send output events [/X3D/Scene/ProtoDeclare/ProtoBody/Group/OrientationInterpolator[3], error]

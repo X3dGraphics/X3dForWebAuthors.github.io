@@ -1,0 +1,63 @@
+
+        
+ecmascript:
+    function value_changed (eventValue, timeStamp) {
+      if (timeStamp - timeStampPreviousReport &gt;= reportInterval) {
+        Browser.print ('Trace_PositionInterpolator_PositionAnimator type=SFVec3f value_changed=' + eventValue.toString() + '\n');
+        timeStampPreviousReport = timeStamp;
+      }
+    }
+    function key (eventValue) {
+      Browser.print ('Trace_PositionInterpolator_PositionAnimator type=MFFloat key=' + eventValue.toString() + '\n');
+    }
+    function keyValue (eventValue) {
+      Browser.print ('Trace_PositionInterpolator_PositionAnimator type=MFVec3f keyValue=' + eventValue.toString() + '\n');
+    }
+
+      
+        
+ecmascript:
+    function traceValue (eventValue, timeStamp) {
+      // input eventValue received for trace field
+      if (timeStamp - timeStampPreviousReport &gt;= reportInterval) {
+        Browser.print ('Trace_ROUTE_PositionAnimator.value_changed_TO_Pointer.translation type=SFVec3f value=' + eventValue.toString() + '\n');
+        timeStampPreviousReport = timeStamp;
+      }
+    }
+    function timeOfDay (someTime) {
+      hh = Math.floor (someTime /(60*60)) % 24;
+      mm = Math.floor (someTime / 60)     % 60;
+      ss = Math.floor (someTime)          % 60;
+      if (hh &lt; 9) hour   = '0' + hh;
+      else        hour   =       hh;
+      if (mm &lt; 9) minute = '0' + mm;
+      else        minute =       mm;
+      if (ss &lt; 9) second = '0' + ss;
+      else        second =       ss;
+      return '(' + hour + ':' + minute + ':' + second + ' GMT)';
+    }
+
+      
+        
+ecmascript:
+    function traceValue (eventValue, timeStamp) {
+      // input eventValue received for trace field
+      if (timeStamp - timeStampPreviousReport &gt;= reportInterval) {
+        Browser.print ('Trace_ROUTE_AnimationClock.fraction_changed_TO_PositionAnimator.set_fraction type=SFFloat value=' + eventValue + '\n');
+        timeStampPreviousReport = timeStamp;
+      }
+    }
+    function timeOfDay (someTime) {
+      hh = Math.floor (someTime /(60*60)) % 24;
+      mm = Math.floor (someTime / 60)     % 60;
+      ss = Math.floor (someTime)          % 60;
+      if (hh &lt; 9) hour   = '0' + hh;
+      else        hour   =       hh;
+      if (mm &lt; 9) minute = '0' + mm;
+      else        minute =       mm;
+      if (ss &lt; 9) second = '0' + ss;
+      else        second =       ss;
+      return '(' + hour + ':' + minute + ':' + second + ' GMT)';
+    }
+
+      

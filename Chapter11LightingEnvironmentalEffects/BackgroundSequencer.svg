@@ -1,0 +1,16 @@
+
+      
+ecmascript:
+function whichBackground (inputValue)
+{
+    if (currentBackground == inputValue)
+        return; // avoid rapid Background binding (probably overcautious)
+    currentBackground = inputValue; // remember state
+    Browser.println ("currentBackground=" + currentBackground);
+    if      (inputValue == 0) bind0 = true; // send event
+    else if (inputValue == 1) bind1 = true; // send event
+    else if (inputValue == 2) bind2 = true; // send event
+    else if (inputValue == 3) bind3 = true; // send event
+}
+
+    

@@ -1,0 +1,3 @@
+Missing X3D filename in meta tag, should appear as <meta name='title' content='FileName.x3d'/> [/X3D/head, warning]
+<Shape DEF=''/> found without child Appearance [/X3D/Scene/Group/Transform[1]/Shape, warning]
+<TimeSensor DEF='AnimationClock'/> missing description [/X3D/Scene/Group/TimeSensor, warning]

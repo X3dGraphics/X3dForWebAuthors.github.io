@@ -1,0 +1,6 @@
+<X3D profile='Immersive'> is defined, but nodes in scene have actual profile='Core' [/X3D, info]
+Update all meta tag(s) containing content='*enter new value...*'[/X3D/head, warning]
+X3D/head/meta title (i.e. filename '*enter FileNameWithNoAbbreviations.x3d here*') is expected at end of identifier (url) value [/X3D/head, warning]
+X3D/head/meta identifier (url) content should start with http:// or 'https:// [/X3D/head, warning]
+<meta name='warning' content='*insert any known warnings, bugs or errors here*'/>[/X3D/head/meta[19], diagnostic]
+<Scene DEF=''/> Root nodes of Scene can only be legal children of Grouping nodes, or LayerSet [/X3D/Scene, error]

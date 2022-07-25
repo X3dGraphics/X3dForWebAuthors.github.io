@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<svrl:schematron-output xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                        xmlns:schold="http://www.ascc.net/xml/schematron"
+                        xmlns:iso="http://purl.oclc.org/dsdl/schematron"
+                        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+                        xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
+                        title="X3D Graphics Validity Checks using Schematron"
+                        schemaVersion=""><!--   
+		   
+		   
+		 --><svrl:active-pattern document="file:/C:/x3d-code/www.web3d.org/x3d/content/examples/X3dForWebAuthors/Chapter13GeometryTrianglesQuadrilaterals/IndexedQuadSet.x3d"/>
+   <svrl:fired-rule context="X3D | *[(upper-case(local-name()) = 'X3D')]"/>
+   <svrl:fired-rule context="head | *[(lower-case(local-name()) = 'head')]"/>
+   <svrl:fired-rule context="meta | *[(lower-case(local-name()) = 'meta')]"/>
+   <svrl:fired-rule context="meta | *[(lower-case(local-name()) = 'meta')]"/>
+   <svrl:fired-rule context="meta | *[(lower-case(local-name()) = 'meta')]"/>
+   <svrl:fired-rule context="meta | *[(lower-case(local-name()) = 'meta')]"/>
+   <svrl:fired-rule context="meta | *[(lower-case(local-name()) = 'meta')]"/>
+   <svrl:fired-rule context="meta | *[(lower-case(local-name()) = 'meta')]"/>
+   <svrl:fired-rule context="meta | *[(lower-case(local-name()) = 'meta')]"/>
+   <svrl:fired-rule context="meta | *[(lower-case(local-name()) = 'meta')]"/>
+   <svrl:fired-rule context="meta | *[(lower-case(local-name()) = 'meta')]"/>
+   <svrl:fired-rule context="meta | *[(lower-case(local-name()) = 'meta')]"/>
+   <svrl:fired-rule context="meta | *[(lower-case(local-name()) = 'meta')]"/>
+   <svrl:fired-rule context="meta | *[(lower-case(local-name()) = 'meta')]"/>
+   <svrl:fired-rule context="Scene | *[(lower-case(local-name()) = 'scene')]"/>
+   <svrl:fired-rule context="WorldInfo"/>
+   <svrl:fired-rule context="Viewpoint | OrthoViewpoint"/>
+   <svrl:successful-report test="(local-name()='Viewpoint') and not(/X3D[(@profile='Interchange') or (@profile='Interactive') or (@profile='Immersive') or (@profile='Full')] or /X3D/head/component[@name='Navigation'][number(@level) ge 1] or (count(preceding::*[local-name()=$nodeName]) &gt; 0))"
+                           role="error"
+                           location="/X3D/Scene/Viewpoint">
+      <svrl:text>&lt;Viewpoint DEF=''/&gt; requires at least &lt;component name='Navigation' level='1'/&gt; or &lt;X3D profile='Interchange'/&gt; </svrl:text>
+   </svrl:successful-report>
+   <svrl:fired-rule context="Background"/>
+   <svrl:fired-rule context="Transform"/>
+   <svrl:fired-rule context="Shape"/>
+   <svrl:fired-rule context="IndexedQuadSet"/>
+   <svrl:successful-report test="$coordIndexMissing and (Coordinate/@point) and not(IS/connect[@nodeField='coordIndex']) and not(starts-with(local-name(),'IndexedTriangle'))"
+                           role="error"
+                           location="/X3D/Scene/Transform/Shape/IndexedQuadSet">
+      <svrl:text>&lt;IndexedQuadSet DEF=''/&gt; missing coordIndex array for contained Coordinate node </svrl:text>
+   </svrl:successful-report>
+   <svrl:fired-rule context="Coordinate"/>
+   <svrl:fired-rule context="Color"/>
+</svrl:schematron-output>

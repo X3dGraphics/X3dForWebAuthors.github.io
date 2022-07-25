@@ -1,0 +1,71 @@
+
+        
+ecmascript:
+
+function initialize ()
+{
+	DEBUG = true;
+	mode  = 1;
+	if (DEBUG) Browser.print ('initialize ():');
+
+	changedText = new MFString (
+	'EcmaScript initialize () with eventOut control',
+ 	'has reinitialized the changedText node.',
+ 	'',
+ 	'Please click text for additional results.');
+	changedPosition = new SFVec3f ( 0, 3, 0 );
+	changedColor    = new SFColor ( 0.8, 0.8, 0.2 );
+	if (DEBUG) Browser.print ('changedText =' + changedText);
+	if (DEBUG) Browser.print ('changedPosition =' + changedPosition);
+	if (DEBUG) Browser.print ('changedColor =' + changedColor);
+}
+function startTime (value, timestamp)
+{
+	if (DEBUG) Browser.print ('==============================');
+	if (DEBUG) Browser.print ('touchEvent startTime =' + value);
+
+	mode = (mode + 1) % 3;
+	if (DEBUG) Browser.print ('mode =' + mode);
+	switch (mode)
+	{
+	  case 0:	// pre-initialize error messsage
+		changedText = new MFString (
+		'Default text in X3D scene will be replaced by',
+ 		'EcmaScript initialize() in Script using EventOut control.',
+ 		'This text appears first, if EcmaScript initialization fails.',
+ 		'');
+ 		changedPosition = new SFVec3f ( 0, 1, 0 );
+		changedColor    = new SFColor ( 0.8, 0.2, 0.2 ); 
+	  	break;
+
+	  case 1:	// post-initialize ready-to-click message
+		initialize ();
+		break;
+
+	  case 2:	// post-click all-done message
+		changedText = new MFString (
+		'User click on text seen by EcmaScript',
+ 		'function via Script node eventIn.',
+ 		'Text &amp; position successfully changed',
+ 		'via EventOut control.  Test passed.');
+	 	changedPosition = new SFVec3f ( 0, -1, 0 );
+	 	changedColor    = new SFColor ( 0.2, 0.8, 0.2 );
+		break;
+	}
+		
+	if (mode != 1)
+	{
+	 	if (DEBUG) Browser.print ('changedText     =' + changedText);
+	 	if (DEBUG) Browser.print ('changedPosition =' + changedPosition);
+	 	if (DEBUG) Browser.print ('changedColor    =' + changedColor);
+	 	if (DEBUG) Browser.print ();
+ 	}
+}
+function shutdown()
+{
+	if (DEBUG) Browser.print ('==============================');
+  	if (DEBUG) Browser.print ('script shutdown.');
+	if (DEBUG) Browser.print ('==============================');
+}
+
+      

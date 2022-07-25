@@ -1,0 +1,6 @@
+<X3D profile='Core'> doesn't match contained nodes, increase profile or add needed <X3D><head><component> statements [/X3D, error]
+<X3D profile='Core'> is defined, but nodes in scene have actual profile='Interchange' [/X3D, info]
+<X3D profile='Core'> is defined, but nodes in scene have actual profile='Interchange', ensure <X3D><head><component> statements are sufficient to provide coverage [/X3D, info]
+<meta name='TODO' content='should Metadata nodes inherit from X3DNode or X3DChildNode?'/>[/X3D/head/meta[7], diagnostic]
+<meta name='info' content='Increase X3D profile (or add component statements) to match if any other X3D nodes are added to this scene.'/>[/X3D/head/meta[9], diagnostic]
+<WorldInfo DEF='' title='EmptySceneCoreProfile.x3d'/> and <WorldInfo DEF='' title='EmptySceneCoreProfile.x3d'/> have both defined window title[/X3D/Scene/WorldInfo[2], warning]

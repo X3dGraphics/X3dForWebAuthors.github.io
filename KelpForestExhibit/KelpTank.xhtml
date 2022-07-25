@@ -1,0 +1,482 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<!-- =================================================================== -->
+<!-- embedded X3D scene appears after html/head/script and style entries -->
+<!-- =================================================================== -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <title>KelpTank.x3d (X3dToDom)</title>
+      <meta http-equiv="X-UA-Compatible" content="chrome=1,IE=edge"/>
+      <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+      <meta name="generator" content="http://www.web3d.org/x3d/stylesheets/X3dToX3dom.xslt"/>
+      <!-- Numbered X3DOM release versions: http://www.x3dom.org/download -->
+<!-- Developer X3DOM release version: http://www.x3dom.org/download/dev -->
+<link rel="stylesheet" type="text/css"
+            href="http://www.x3dom.org/download/dev/x3dom.css"/>
+      <script type="text/javascript" src="http://www.x3dom.org/download/dev/x3dom-full.js"/>
+      <meta name="warning"
+            content="Webfonts must be loaded prior to using Text node in X3D scene... see http://x3dom.org/x3dom/example/x3dom_text.html"/>
+      <!-- X3DOM needs Web Fonts when an X3D Text node is included --><!-- adapted from http://x3dom.org/x3dom/example/x3dom_text.html and http://web.mit.edu/jmorzins/www/fonts.html -->
+<style type="text/css">
+/* ============================================================================= */
+@font-face {
+  font-family: 'SERIF'; /* default original */
+  font-style: normal;
+  font-weight: 700;
+  src: local('Roman'), url('Roman.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'SERIF'; /* default alternate */
+  font-style: normal;
+  font-weight: 700;
+  src: local('Times New Roman'), local('TimesNewRoman'), url('Times New Roman.ttf') format('truetype');
+}
+/* ============================================================================= */
+@font-face {
+  font-family: 'SANS'; /* default original */
+  font-style: normal;
+  font-weight: 400;
+  src: local('Arial'), url('Arial.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'SANS'; /* default alternate */
+  font-style: normal;
+  font-weight: 400;
+  src: local('Helvetica'), url('Helvetica.ttf') format('truetype');
+}
+/* ============================================================================= */
+@font-face {
+  font-family: 'TYPEWRITER'; /* default original */
+  font-style: normal;
+  font-weight: 900;
+  src: local('Courier'), url('Courier.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'TYPEWRITER'; /* default alternate */
+  font-style: normal;
+  font-weight: 900;
+  src: local('Courier New'), url('Courier New.ttf') format('truetype');
+}
+/* ============================================================================= */
+</style>
+      <style type="text/css" media="screen, print">
+.webfont { font-size:200%; font-family:'TYPEWRITER'; color:green;} /* Conversion TODO font families: SANS SERIF TYPEWRITER */
+</style>
+      <!-- Button zoom adapted from http://x3dom.org/docs/dev/tutorial/styling.html -->
+<style type="text/css">
+
+html {width:100%;height:100%;margin:0;padding:0;}
+body {margin:0;padding:10px;width:100%;height:100%;}
+
+#rootX3dElement {
+    height: 450px;
+    width:  800px;
+    border: none;
+    display: block;
+    position:relative;
+    background:#000;
+}
+
+#toggleZoomButton {
+    position: absolute;
+    float: left;
+    z-index: 1;
+    top: 0px;
+    left: 0px;
+    width: 10em;
+    height: 2em;
+    border: none;
+    background-color: #202021;
+    color: #ccc;
+}
+
+#toggleZoomButton:hover {
+    background-color:blue;
+}
+</style>
+      <!-- http://x3dom.org/docs/dev/api.html and http://x3dom.org/docs/dev/configuration.html -->
+<script type="text/javascript">
+var zoomed = false;
+var showStatistics = false;
+var showDebugLog   = true;
+
+function toggleZoom(button) {
+
+        var new_height;
+        var new_width;
+        var x3d_element;
+        
+        htmlBody       = document.getElementById('htmlBody');
+        htmlPageHeader = document.getElementById('htmlPageHeader');
+        htmlPageFooter = document.getElementById('htmlPageFooter');
+        x3d_element    = document.getElementById('rootX3dElement');
+
+        if (zoomed) // previous value
+        {
+                // unzoom
+                new_height = "450px";
+                new_width  = "800px";
+                button.innerHTML = "Zoom";
+                htmlPageHeader.style.display = "table-row";
+                htmlPageFooter.style.display = "table-row";
+                document.getElementById('checkBoxCell').style="text-align:right";
+                htmlBody.style.padding = "10px";
+                x3d_element.showStat   = showStatistics;
+                x3d_element.showLog    = showDebugLog;
+                x3d_element.runtime.debug(showDebugLog);
+                document.getElementById("details").hidden = (!showDebugLog);
+        } else {
+                // zoom
+                new_height = "100%";
+                new_width  = "100%";
+                button.innerHTML = "Unzoom";
+                htmlPageHeader.style.display = "none";
+                htmlPageFooter.style.display = "none";
+                htmlBody.style.padding = "0px";
+                x3d_element.showStat   = false;
+                x3d_element.showLog    = false;
+                x3d_element.runtime.debug(false);
+                document.getElementById("details").hidden = true;
+                // TODO how to hide browser interface?
+        }
+        zoomed = !zoomed; // toggle
+
+        x3d_element.style.height = new_height;
+        x3d_element.style.width  = new_width;
+}
+                    
+    // Browser information table adapted from http://www.w3schools.com/js/js_window_navigator.asp
+    
+    document.addEventListener("DOMContentLoaded", function()
+    {
+        document.getElementById("browserCodeName"      ).innerHTML = navigator.appCodeName;
+        document.getElementById("browserAppName"       ).innerHTML = navigator.appName;
+        document.getElementById("browserAppVersion"    ).innerHTML = navigator.appVersion;
+        document.getElementById("browserCookieEnabled" ).innerHTML = navigator.cookieEnabled;
+        document.getElementById("browserPlatform"      ).innerHTML = navigator.platform;
+        document.getElementById("browserUserAgent"     ).innerHTML = navigator.userAgent;
+    if (navigator.systemLanguage)
+        document.getElementById("browserSystemLanguage").innerHTML = navigator.systemLanguage;
+    else
+        document.getElementById("browserSystemLanguage").innerHTML = navigator.language;
+    }, false);
+
+function toggleOverlayStatistics()
+{
+        showStatistics = !showStatistics; // toggle
+        x3d_element = document.getElementById('rootX3dElement');
+        x3d_element.runtime.statistics(showStatistics);
+}
+function toggleShowDebugLogs()
+{
+        showDebugLog  = !showDebugLog; // toggle
+        x3d_element = document.getElementById('rootX3dElement');
+        x3d_element.runtime.debug(showDebugLog);
+        document.getElementById("details").hidden = (!showDebugLog);
+}
+</script>
+   </head>
+   <body id="htmlBody">
+      <table style="width:96%" id="htmlPageHeader">
+         <tr>
+            <td style="text-align:left;">
+               <h2>KelpTank.x3d</h2>
+            </td>
+            <td id="checkBoxCell" style="text-align:right"> (<a href="http://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/KelpTank.x3d"
+                  title="View .x3d scene">.x3d scene</a>, 
+<a href="http://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/KelpTank.html"
+                  title="View .html pretty-print source">pretty-print source</a>, 
+<input id="checkBoxOverlayStatistics" type="checkbox" value="Overlay scene statistics"
+                      onclick="toggleOverlayStatistics();"/>
+               <span title="Overlay scene performance statistics">statistics</span>, 
+<input id="checkBoxShowDebugLogs" type="checkbox" value="Display debugger logs"
+                      checked="checked"
+                      onclick="toggleShowDebugLogs();"/>
+               <span title="Show meta information and debug logs">info &amp; logs</span>)</td>
+         </tr>
+         <tr>
+            <td colspan="2">
+               <p>
+                  <span class="webfont">Kelp Forest Tank at the Monterey Bay Aquarium.</span>
+               </p>
+            </td>
+         </tr>
+      </table>
+      <div>
+<!-- ================================ -->
+<!-- embedded X3D scene appears here: -->
+<X3D id='rootX3dElement' showStat='false' showLog='true' showProgress='bar'
+ profile='Immersive' version='3.3' noNamespaceSchemaLocation='http://www.web3d.org/specifications/x3d-3.3.xsd'>
+<head>
+<meta content='KelpTank.x3d' name='title'/>
+<meta content='Kelp Forest Tank at the Monterey Bay Aquarium.' name='description'/>
+<meta content='Mark Boyd' name='creator'/>
+<meta content='11 June 1998' name='created'/>
+<meta content='Jeffrey Weekley, using NIST VRML to X3D Translator, with review and editing in Xeena.' name='translator'/>
+<meta content='22 December 2002' name='translated'/>
+<meta content='11 January 2014' name='modified'/>
+<meta content='http://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/KelpTank.x3d' name='identifier'/>
+<meta content='Vrml97ToX3dNist, http://ovrt.nist.gov/v2_x3d.html' name='generator'/>
+<meta content='X3D-Edit 3.3, https://savage.nps.edu/X3D-Edit' name='generator'/>
+<meta content='../license.html' name='license'/>
+</head>
+<!-- Conversion note: the following HTML button is overlaid on top of the X3D scene -->
+<button id="toggleZoomButton" onclick="toggleZoom(this); return false;">Zoom</button>
+<Scene>
+<Group DEF='FogSwitching'>
+<Fog DEF='FogOffVisibilityRange0'/>
+<Fog DEF='InsideTankFog' color='0.1 0.4 0.4' visibilityRange='25.0'/>
+<ProximitySensor DEF='CameraInsideTankSensor' center='0.0 -4.0 -5.0' size='25.0 10.0 20.0'/>
+<ROUTE fromField='isActive' fromNode='CameraInsideTankSensor' toField='set_bind' toNode='InsideTankFog'/>
+</Group>
+<Collision enabled='false'>
+<Transform>
+<Inline url='&quot;KelpTankWaterSurface.x3d&quot; &quot;http://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/KelpTankWaterSurface.x3d&quot; &quot;KelpTankWaterSurface.wrl&quot; &quot;http://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/KelpTankWaterSurface.wrl&quot;'/>
+</Transform>
+<Transform>
+<Inline url='&quot;KelpTankExternalLights.x3d&quot; &quot;http://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/KelpTankExternalLights.x3d&quot; &quot;KelpTankExternalLights.wrl&quot; &quot;http://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/KelpTankExternalLights.wrl&quot;'/>
+</Transform>
+<Transform rotation='0.0 1.0 0.0 1.5785398' translation='-10.35 1.0 -0.5'>
+<Inline url='&quot;PumpHouse.x3d&quot; &quot;http://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/PumpHouse.x3d&quot; &quot;PumpHouse.wrl&quot; &quot;http://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/PumpHouse.wrl&quot;'/>
+</Transform>
+<Shape>
+<Appearance DEF='WallAppearance'>
+<Material diffuseColor='0.251 0.239 0.212'/>
+</Appearance>
+<IndexedFaceSet coordIndex='0 1 2 3 -1 4 5 6 7 -1 8 9 10 11 -1 16 17 18 19 -1 11 10 3 2 -1 5 4 17 16 -1 20 0 3 21 -1 22 4 7 23 -1 9 24 25 10 -1 17 28 29 18 -1 10 25 21 3 -1 4 22 28 17 -1 30 20 21 31 -1 32 22 23 33 -1 24 34 35 25 -1 28 38 39 29 -1 25 35 31 21 -1 22 32 38 28 -1 40 30 31 41 -1 42 32 33 43 -1 34 44 45 35 -1 38 48 49 39 -1 35 45 41 31 -1 32 42 48 38 -1'>
+<Coordinate DEF='WindowCoordinates' point='-2.5 -8.5344 0.7 -4.5 -8.5344 2.7 -4.5 -7.21 2.7 -2.5 -7.21 0.7 -2.5 -0.5 0.7 -4.5 -0.5 2.7 -4.5 0.9144 2.7 -2.5 0.9144 0.7 -4.5 -8.5344 3.0 -2.5 -8.5344 1.0 -2.5 -7.21 1.0 -4.5 -7.21 3.0 -4.5 -7.21 2.8 -2.5 -7.21 0.8 -2.5 -0.5 0.8 -4.5 -0.5 2.8 -4.5 -0.5 3.0 -2.5 -0.5 1.0 -2.5 0.9144 1.0 -4.5 0.9144 3.0 0.0 -8.5344 -0.3 0.0 -7.21 -0.3 0.0 -0.5 -0.3 0.0 0.9144 -0.3 0.0 -8.5344 0.0 0.0 -7.21 0.0 0.0 -7.21 -0.2 0.0 -0.5 -0.2 0.0 -0.5 0.0 0.0 0.9144 0.0 2.5 -8.5344 0.7 2.5 -7.21 0.7 2.5 -0.5 0.7 2.5 0.9144 0.7 2.5 -8.5344 1.0 2.5 -7.21 1.0 2.5 -7.21 0.8 2.5 -0.5 0.8 2.5 -0.5 1.0 2.5 0.9144 1.0 4.5 -8.5344 2.7 4.5 -7.21 2.7 4.5 -0.5 2.7 4.5 0.9144 2.7 4.5 -8.5344 3.0 4.5 -7.21 3.0 4.5 -7.21 2.8 4.5 -0.5 2.8 4.5 -0.5 3.0 4.5 0.9144 3.0'/>
+</IndexedFaceSet>
+</Shape>
+<Transform>
+<Shape>
+<Appearance DEF='Glass'>
+<Material diffuseColor='0.275 0.655 0.62' transparency='0.63'/>
+</Appearance>
+<IndexedFaceSet coordIndex='3 2 5 4 -1 12 13 14 15 -1 21 3 4 22 -1 13 26 27 14 -1 31 21 22 32 -1 26 36 37 27 -1 41 31 32 42 -1 36 46 47 37 -1'>
+<Coordinate USE='WindowCoordinates'/>
+</IndexedFaceSet>
+</Shape>
+</Transform>
+<Shape>
+<Appearance USE='WallAppearance'/>
+<IndexedFaceSet coordIndex='0 88 114 115 99 -1 88 89 113 114 -1 89 1 90 112 113 -1 90 91 111 112 -1 91 92 104 105 110 111 -1 92 93 103 104 -1 93 2 94 102 103 -1 94 95 101 102 -1 95 3 96 100 101 -1 96 97 107 100 -1 97 98 108 109 106 107 -1 98 99 115 108 -1 106 109 110 105 -1 118 37 117 141 140 -1 117 116 142 141 -1 116 36 127 143 142 -1 127 126 136 143 -1 126 125 135 134 137 136 -1 125 124 128 135 -1 124 39 123 129 128 -1 123 122 130 129 -1 122 38 121 131 130 -1 121 120 132 131 -1 120 119 139 138 133 132 -1 119 118 140 139 -1 133 138 137 134 -1 0 3 39 36 -1 106 105 133 134 -1 105 104 132 133 -1 104 103 131 132 -1 103 102 130 131 -1 102 101 129 130 -1 101 100 128 129 -1 100 107 135 128 -1 107 106 134 135 -1 115 114 142 143 -1 114 113 141 142 -1 113 112 140 141 -1 112 111 139 140 -1 111 110 138 139 -1 110 109 137 138 -1 109 108 136 137 -1 108 115 143 136 -1 1 4 12 13 -1 4 5 7 12 -1 5 2 6 7 -1 1 13 6 2 -1 8 9 10 11 -1 40 37 49 48 -1 37 38 42 49 -1 38 41 43 42 -1 40 48 43 41 -1 47 46 45 44 -1 9 8 44 45 -1 8 7 43 44 -1 7 6 42 43 -1 6 9 45 42 -1 13 12 48 49 -1 12 11 47 48 -1 11 10 46 47 -1 10 13 49 46 -1 4 14 22 23 -1 14 15 17 22 -1 15 5 16 17 -1 4 23 16 5 -1 18 19 20 21 -1 50 40 59 58 -1 40 41 52 59 -1 51 53 52 41 -1 50 58 53 51 -1 54 57 56 55 -1 19 18 54 55 -1 18 17 53 54 -1 17 16 52 53 -1 16 19 55 52 -1 23 22 58 59 -1 22 21 57 58 -1 21 20 56 57 -1 20 23 59 56 -1 14 24 25 15 -1 60 50 51 61 -1 24 26 27 25 -1 62 60 61 63 -1 26 28 29 27 -1 64 62 63 65 -1 28 30 31 29 -1 66 64 65 67 -1 30 32 33 31 -1 68 66 67 69 -1 32 34 35 33 -1 70 68 69 71 -1 35 34 70 71 -1'>
+<Coordinate DEF='WallCoordinates' point='4.5 -8.5344 3.0 7.625 -8.5344 3.0 7.625 0.9144 3.0 4.5 0.9144 3.0 10.25 -8.5344 0.375 10.25 0.9144 0.375 7.9834 -0.1024 2.6421 9.8989 -0.1024 0.7328 9.8989 -3.0484 0.7328 7.9834 -3.0484 2.6421 7.9834 -4.3684 2.6421 9.8989 -4.3684 0.7328 9.8989 -6.7054 0.7328 7.9834 -6.7054 2.6421 10.25 -8.5344 -4.375 10.25 0.9144 -4.375 10.25 0.0 -0.425 10.25 0.0 -3.575 10.25 -2.7432 -3.575 10.25 -2.7432 -0.425 10.25 -4.5752 -0.425 10.25 -4.5752 -3.575 10.25 -7.3152 -3.575 10.25 -7.3152 -0.425 6.375 -8.5344 -8.0 6.375 0.9144 -8.0 -5.5 -8.5344 -8.0 -5.5 0.9144 -8.0 -10.5 -8.5344 -2.875 -10.5 0.9144 -2.875 -10.5 -8.5344 0.25 -10.5 0.9144 0.25 -7.625 -8.5344 3.0 -7.625 0.9144 3.0 -4.5 -8.5344 3.0 -4.5 0.9144 3.0 4.5 -8.5344 2.7 7.625 -8.5344 2.7 7.625 0.9144 2.7 4.5 0.9144 2.7 9.95 -8.5344 0.375 9.95 0.9144 0.375 7.942 -0.1024 2.383 9.633 -0.1024 0.692 9.633 -3.0484 0.692 7.942 -3.0484 2.383 7.942 -4.3684 2.383 9.633 -4.3684 0.692 9.633 -6.7054 0.692 7.942 -6.7054 2.383 9.95 -8.5344 -4.375 9.95 0.9144 -4.375 9.95 0.0 -0.425 9.95 0.0 -3.575 9.95 -2.7432 -3.575 9.95 -2.7432 -0.425 9.95 -4.5752 -0.425 9.95 -4.5752 -3.575 9.95 -7.3152 -3.575 9.95 -7.3152 -0.425 6.375 -8.5344 -7.7 6.375 0.9144 -7.7 -5.5 -8.5344 -7.7 -5.5 0.9144 -7.7 -10.2 -8.5344 -2.875 -10.2 0.9144 -2.875 -10.2 -8.5344 0.25 -10.2 0.9144 0.25 -7.625 -8.5344 2.7 -7.625 0.9144 2.7 -4.5 -8.5344 2.7 -4.5 0.9144 2.7 7.9556 -0.1024 2.4694 9.7194 -0.1024 0.70562 9.7194 -3.0484 0.70562 7.9556 -3.048 2.4694 7.9556 -4.3684 2.4694 9.7194 -4.3684 0.70562 9.7194 -6.7054 0.70562 7.9556 -6.7054 2.4694 10.05 0.0 -0.425 10.05 0.0 -3.575 10.05 -2.7432 -3.575 10.05 -2.7432 -0.425 10.05 -4.5752 -0.425 10.05 -4.5752 -3.575 10.05 -7.3152 -3.575 10.05 -7.3152 -0.425 5.3025 -8.5344 3.0 6.8225 -8.5344 3.0 7.625 -6.5939 3.0 7.625 -5.9639 3.0 7.625 -2.2977 3.0 7.625 -1.6677 3.0 6.8225 0.9144 3.0 5.3025 0.9144 3.0 4.5 -1.6677 3.0 4.5 -2.2977 3.0 4.5 -5.9639 3.0 4.5 -6.5939 3.0 5.3025 -1.6677 3.0 5.7484 -1.2222 3.0 6.378 -1.2222 3.0 6.8225 -1.6677 3.0 6.8225 -2.2977 3.0 6.378 -2.7432 3.0 5.7484 -2.7432 3.0 5.3025 -2.2977 3.0 5.3025 -5.9639 3.0 5.748 -5.5184 3.0 6.378 -5.5184 3.0 6.8225 -5.9639 3.0 6.8225 -6.5939 3.0 6.378 -7.0394 3.0 5.748 -7.0394 3.0 5.3025 -6.5939 3.0 5.3025 -8.5344 2.7 6.8225 -8.5344 2.7 7.625 -6.5939 2.7 7.625 -5.9639 2.7 7.625 -2.2977 2.7 7.625 -1.6677 2.7 6.8225 0.9144 2.7 5.3025 0.9144 2.7 4.5 -1.6677 2.7 4.5 -2.2977 2.7 4.5 -5.9639 2.7 4.5 -6.5939 2.7 5.3025 -1.6677 2.7 5.7484 -1.2222 2.7 6.378 -1.2222 2.7 6.8225 -1.6677 2.7 6.8225 -2.2977 2.7 6.378 -2.7432 2.7 5.7484 -2.7432 2.7 5.3025 -2.2977 2.7 5.3025 -5.9639 2.7 5.748 -5.5184 2.7 6.378 -5.5184 2.7 6.8225 -5.9639 2.7 6.8225 -6.5939 2.7 6.378 -7.0394 2.7 5.748 -7.0394 2.7 5.3025 -6.5939 2.7 5.3025 -1.6677 2.9 5.7484 -1.2222 2.9 6.378 -1.2222 2.9 6.8225 -1.6677 2.9 6.8225 -2.2977 2.9 6.378 -2.7432 2.9 5.7484 -2.7432 2.9 5.3025 -2.2977 2.9 5.3025 -5.9639 2.9 5.748 -5.5184 2.9 6.378 -5.5184 2.9 6.8225 -5.9639 2.9 6.8225 -6.5939 2.9 6.378 -7.0394 2.9 5.748 -7.0394 2.9 5.3025 -6.5939 2.9'/>
+</IndexedFaceSet>
+</Shape>
+<Transform>
+<Shape>
+<Appearance>
+<Material diffuseColor='1.0 0.0 0.0'/>
+</Appearance>
+<IndexedFaceSet>
+<Coordinate USE='WallCoordinates'/>
+</IndexedFaceSet>
+</Shape>
+</Transform>
+<Transform>
+<Shape>
+<Appearance USE='Glass'/>
+<IndexedFaceSet coordIndex='151 150 149 148 147 146 145 144 -1 159 158 157 156 155 154 153 152 -1 128 129 130 131 132 133 134 135 -1 136 137 138 139 140 141 142 143 -1 75 74 73 72 -1 79 78 77 76 -1 42 43 44 45 -1 46 47 48 49 -1 83 82 81 80 -1 87 86 85 84 -1 52 53 54 55 -1 56 57 58 59 -1'>
+<Coordinate USE='WallCoordinates'/>
+</IndexedFaceSet>
+</Shape>
+</Transform>
+<Shape DEF='Beam'>
+<Appearance DEF='BeamAppearance'>
+<Material ambientIntensity='0.0' diffuseColor='0.0 0.0 0.0' shininess='0.19'/>
+</Appearance>
+<IndexedFaceSet coordIndex='0 1 2 3 -1 7 6 5 4 -1 4 5 1 0 -1 5 6 2 1 -1 6 7 3 2 -1 0 3 7 4 -1'>
+<Coordinate point='-0.1 0.91 0.1 0.1 0.91 0.1 0.1 0.91 -0.1 -0.1 0.91 -0.1 -0.1 -7.21 0.1 0.1 -7.21 0.1 0.1 -7.21 -0.1 -0.1 -7.21 -0.1'/>
+</IndexedFaceSet>
+</Shape>
+<Transform DEF='RightBeam' rotation='0.0 1.0 0.0 -0.4' translation='2.5 0.0 1.0'>
+<Shape USE='Beam'/>
+</Transform>
+<Transform DEF='LeftBeam' rotation='0.0 1.0 0.0 0.4' translation='-2.5 0.0 1.0'>
+<Shape USE='Beam'/>
+</Transform>
+<Shape>
+<Appearance USE='BeamAppearance'/>
+<IndexedFaceSet coordIndex='0 5 6 1 -1 1 6 7 2 -1 2 7 8 3 -1 3 8 9 4 -1 10 0 1 11 -1 11 1 2 12 -1 12 2 3 13 -1 13 3 4 14 -1 14 19 18 13 -1 13 18 17 12 -1 12 17 16 11 -1 11 16 15 10 -1 9 8 18 19 -1 8 7 17 18 -1 7 6 16 17 -1 6 5 15 16 -1'>
+<Coordinate point='-4.5 -2.8 3.0 -2.5 -2.8 1.0 0.0 -2.8 0.0 2.5 -2.8 1.0 4.5 -2.8 3.0 -4.5 -3.0 3.0 -2.5 -3.0 1.0 0.0 -3.0 0.0 2.5 -3.0 1.0 4.5 -3.0 3.0 -4.4 -2.8 2.875 -2.5 -2.8 0.75 0.0 -2.8 -0.25 2.5 -2.8 0.75 4.5 -2.8 2.875 -4.5 -3.0 2.875 -2.5 -3.0 0.75 0.0 -3.0 -0.25 2.5 -3.0 0.75 4.5 -3.0 2.875'/>
+</IndexedFaceSet>
+</Shape>
+<Transform translation='0.0 -8.5344 0.0'>
+<Shape>
+<Appearance>
+<Material diffuseColor='0.4 0.2 0.1'/>
+</Appearance>
+<Box size='40.0 0.1 40.0'/>
+</Shape>
+</Transform>
+<Transform translation='0 0.015 0'>
+<Shape>
+<Appearance>
+<Material diffuseColor='0.6 0.545 0.502'/>
+</Appearance>
+<IndexedFaceSet coordIndex='0 13 1 -1 1 13 2 -1 2 13 3 -1 3 13 14 -1 3 14 4 -1 4 14 15 -1 4 15 5 -1 5 15 16 -1 5 16 6 -1 6 16 17 -1 6 17 7 -1 7 17 18 -1 7 18 8 -1 8 18 19 -1 8 19 9 -1 9 19 20 -1 9 20 10 -1 10 20 11 -1 11 20 13 -1 11 13 12 -1 12 13 0 -1' solid='false'>
+<Coordinate point='0.0 0.915 -0.3 2.5 0.915 0.7 4.5 0.915 2.7 7.625 0.915 2.7 9.95 0.915 0.375 9.95 0.915 -4.375 6.375 0.915 -7.7 -5.5 0.915 -7.7 -10.2 0.915 -2.875 -10.2 0.915 0.25 -7.625 0.915 2.7 -4.5 0.915 2.7 -2.5 0.915 0.7 0.0 1.01 10.0 15.0 1.01 10.0 15.0 1.01 0.0 15.0 1.01 -15.0 0.0 1.01 -15.0 -15.0 1.01 -15.0 -15.0 1.01 0.0 -15.0 1.01 10.0'/>
+</IndexedFaceSet>
+</Shape>
+</Transform>
+<Transform translation='-5.125 0.5 -6.875'>
+<Shape>
+<Appearance>
+<Material diffuseColor='0.5451 0.5333 0.4745' shininess='0.0'/>
+</Appearance>
+<Cylinder height='3.0'/>
+</Shape>
+</Transform>
+</Collision>
+</Scene>
+</X3D>
+
+<!-- ================================ -->
+</div>
+      <div id="details">
+         <p style="clear:both;">&nbsp;</p>
+         <table style="border:0px solid; border-spacing:0px; margin:auto; margin-top:20px;margin-left:5%;">
+            <tr style="background-color:silver; border-color:silver;">
+               <th style="text-align:right;">X3D&nbsp;Scene </th>
+               <th style="text-align:left;"> Metadata </th>
+            </tr>
+            <tr style="background-color:silver; border-color:silver;">
+               <td style="text-align:right;color:green;">
+                  <i> archive </i>
+               </td>
+               <td>
+                  <i>
+                     <a href="http://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit">http://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit</a>
+                  </i>
+               </td>
+            </tr>
+            <tr>
+               <td style="text-align:right;color:green">title</td>
+               <td>
+                  <a href="KelpTank.x3d">KelpTank.x3d</a>
+               </td>
+            </tr>
+            <tr>
+               <td style="text-align:right;color:green">description</td>
+               <td>Kelp Forest Tank at the Monterey Bay Aquarium.</td>
+            </tr>
+            <tr>
+               <td style="text-align:right;color:green">creator</td>
+               <td>Mark Boyd</td>
+            </tr>
+            <tr>
+               <td style="text-align:right;color:green">created</td>
+               <td>11 June 1998</td>
+            </tr>
+            <tr>
+               <td style="text-align:right;color:green">translator</td>
+               <td>Jeffrey Weekley, using NIST VRML to X3D Translator, with review and editing in Xeena.</td>
+            </tr>
+            <tr>
+               <td style="text-align:right;color:green">translated</td>
+               <td>22 December 2002</td>
+            </tr>
+            <tr>
+               <td style="text-align:right;color:green">modified</td>
+               <td>11 January 2014</td>
+            </tr>
+            <tr>
+               <td style="text-align:right;color:green">identifier</td>
+               <td>
+                  <a href="http://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/KelpTank.x3d">http://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/KelpTank.x3d</a>
+               </td>
+            </tr>
+            <tr>
+               <td style="text-align:right;color:green">generator</td>
+               <td>
+                  <a href="Vrml97ToX3dNist, http://ovrt.nist.gov/v2_x3d.html">Vrml97ToX3dNist, http://ovrt.nist.gov/v2_x3d.html</a>
+               </td>
+            </tr>
+            <tr>
+               <td style="text-align:right;color:green">generator</td>
+               <td>X3D-Edit 3.3, <a href="https://savage.nps.edu/X3D-Edit">https://savage.nps.edu/X3D-Edit</a>
+               </td>
+            </tr>
+            <tr>
+               <td style="text-align:right;color:green">license</td>
+               <td>
+                  <a href="../license.html">../license.html</a>
+               </td>
+            </tr>
+            <tr>
+               <td colspan="2">&nbsp;</td>
+            </tr>
+            <tr style="background-color:silver;border-color:silver;">
+               <th style="text-align:right;"> HTML&nbsp;Browser </th>
+               <th style="text-align:left;"> Information </th>
+            </tr>
+            <tr>
+               <td style="text-align:right;"> Browser code name: </td>
+               <td id="browserCodeName"/>
+            </tr>
+            <tr>
+               <td style="text-align:right;"> Browser application name: </td>
+               <td id="browserAppName"/>
+            </tr>
+            <tr>
+               <td style="text-align:right;"> Browser version: </td>
+               <td id="browserAppVersion"/>
+            </tr>
+            <tr>
+               <td style="text-align:right;"> Cookies enabled: </td>
+               <td id="browserCookieEnabled"/>
+            </tr>
+            <tr>
+               <td style="text-align:right;"> Platform: </td>
+               <td id="browserPlatform"/>
+            </tr>
+            <tr>
+               <td style="text-align:right;"> User Agent: </td>
+               <td id="browserUserAgent"/>
+            </tr>
+            <tr>
+               <td style="text-align:right;"> System language: </td>
+               <td id="browserSystemLanguage"/>
+            </tr>
+            <tr>
+               <td colspan="2">
+                  <div id="htmlPageFooter">
+                     <table border="1"
+                            style="float:left; margin:auto; margin-top:20px; border:1px solid black;">
+                        <caption style="text-align:center;background-color:silver;border-color:silver; padding:4px;">
+                           <b>X3DOM node coverage</b>
+                        </caption>
+                        <tr style="text-align:center; padding:4px; border:1px solid black;">
+                           <th> Supported nodes found </th>
+                           <th> Unsupported nodes found </th>
+                           <th> Partial support</th>
+                        </tr>
+                        <tr style="border:1px solid black;">
+                           <td style="text-align:left;vertical-align:text-top;padding:4px;">
+                              <span style="color:green;">Appearance<br/>Collision<br/>Coordinate<br/>Cylinder<br/>Fog<br/>Group<br/>IndexedFaceSet<br/>Inline<br/>Material<br/>ROUTE<br/>Shape<br/>Transform<br/>
+                              </span> 
+                           </td>
+                           <td style="text-align:left;vertical-align:text-top;padding:4px;">
+                              <span style="color:red;">Box<br/>ProximitySensor<br/>
+                              </span> 
+                           </td>
+                           <td style="text-align:left;vertical-align:text-top;padding:4px;"> </td>
+                        </tr>
+                        <tr style="text-align:center; background-color:silver;border-color:silver; padding:6px;">
+                           <td colspan="3" style="cellpadding:3px"> &nbsp;&nbsp;&nbsp; References: <a href="http://www.x3dom.org/check" onclick="target='_blank';">X3DOM browser check</a>,
+                                <a href="http://www.x3dom.org" onclick="target='_blank';">X3DOM home</a>,
+                                <a href="http://doc.x3dom.org" onclick="target='_blank';">X3DOM documentation</a>,
+                                <a href="http://x3dom.org/x3dom/test/functional/dumpNodeTypeTree.html"
+                                 onclick="target='_blank';">X3DOM list of supported nodes</a>,
+                                and
+                                <a href="http://www.web3d.org/x3d/content/examples/X3dResources.html"
+                                 onclick="target='_blank';">X3D Resources</a> &nbsp;&nbsp;&nbsp; </td>
+                        </tr>
+                     </table>
+                  </div>
+               </td>
+            </tr>
+         </table>
+      </div>
+   </body>
+</html>

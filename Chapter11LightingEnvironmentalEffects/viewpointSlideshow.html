@@ -1,0 +1,1379 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+   <head>
+      <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+      <link rel="shortcut icon" href="../images/X3DtextIcon16.png" title="X3D"/>
+      <title>Viewpoint Slideshow: X3D4WA, X3D for Web Authors Examples Archive, Chapter 11 Lighting Environmental Effects</title>
+      <meta http-equiv="X-UA-Compatible" content="chrome=1,IE=edge"/>
+      <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+      <meta name="filename" content="viewpointSlideshow.html"/>
+      <meta name="description"
+             content="Slideshow showing all captured Viewpoint images for this chapter"/>
+      <meta name="author" content="Don Brutzman"/>
+      <meta name="generator"
+             content="https://www.web3d.org/x3d/tools/CreateContentCatalog/CreateContentCatalogPages.xslt"/>
+      <meta name="generator" content="X3D-Edit, https://savage.nps.edu/X3D-Edit"/>
+      <meta name="created" content="21 January 2011"/>
+      <meta name="modified" content="2022-07-03-07:00"/>
+      <meta name="reference" content="https://code.google.com/p/slideshow"/>
+      <!--
+            Slideshow project from Google Code http://code.google.com/p/slideshow
+            license:  Creative Commons         https://creativecommons.org/licenses/by/3.0
+            Copyright (c) 2008 [Aeron Glemann] http://www.electricprism.com/aeron
+        -->
+      <link rel="stylesheet"
+             type="text/css"
+             href="../slideshow/css/slideshow.css"
+             media="screen"/>
+      <script type="text/javascript" src="../slideshow/js/mootools-1.3.2-core.js"> </script>
+      <script type="text/javascript" src="../slideshow/js/mootools-1.3.2.1-more.js"> </script>
+      <script type="text/javascript" src="../slideshow/js/slideshow.js"> </script>
+      <script type="text/javascript" src="../slideshow/js/slideshow.flash.js"> </script>
+      <script type="text/javascript" src="../slideshow/js/slideshow.fold.js"> </script>
+      <script type="text/javascript" src="../slideshow/js/slideshow.kenburns.js"> </script>
+      <script type="text/javascript" src="../slideshow/js/slideshow.push.js"> </script>
+      <script type="text/javascript">
+	//<![CDATA[
+	  window.addEvent('domready', function(){
+	    var data = {
+      'BackgroundColorsOnly.x3d._VP_Background_colors_view.png': { 'caption': '[1] BackgroundColorsOnly.x3d Background colors view' },
+      'BackgroundColorsOnly.x3d._VP_Default_viewpoint.png': { 'caption': '[2] BackgroundColorsOnly.x3d (default X3D view from 0 0 10)' },
+      'BackgroundImagesOnly.x3d._VP_Background_images_view.png': { 'caption': '[3] BackgroundImagesOnly.x3d Background images view' },
+      'BackgroundImagesOnly.x3d._VP_Default_viewpoint.png': { 'caption': '[4] BackgroundImagesOnly.x3d (default X3D view from 0 0 10)' },
+<!--not found:       'BackgroundKelpForestMain.x3d._VP_Kelp_Forest_Monterey_Bay_Aquarium.png': { 'caption': '[5] BackgroundKelpForestMain.x3d Kelp Forest Monterey Bay Aquarium' },-->
+      'BackgroundKelpForestMain.x3d._VP_Side_Windows.png': { 'caption': '[6] BackgroundKelpForestMain.x3d Side Windows' },
+      'BackgroundKelpForestMain.x3d._VP_Star_Fish.png': { 'caption': '[7] BackgroundKelpForestMain.x3d Star Fish' },
+      'BackgroundKelpForestMain.x3d._VP_Inside_Tank.png': { 'caption': '[8] BackgroundKelpForestMain.x3d Inside Tank' },
+      'BackgroundKelpForestMain.x3d._VP_Top_floor.png': { 'caption': '[9] BackgroundKelpForestMain.x3d Top floor' },
+<!--not found:       'BackgroundKelpForestMain.x3d._VP_Bird&amp;apos;s_Eye_View.png': { 'caption': '[10] BackgroundKelpForestMain.x3d Bird&amp;apos;s Eye View' },-->
+      'BackgroundKelpForestMain.x3d._VP_Pump_House.png': { 'caption': '[11] BackgroundKelpForestMain.x3d Pump House' },
+      'BackgroundKelpForestMain.x3d._VP_Default_viewpoint.png': { 'caption': '[12] BackgroundKelpForestMain.x3d (default X3D view from 0 0 10)' },
+      'BackgroundSelector.x3d._VP_Default_viewpoint.png': { 'caption': '[13] BackgroundSelector.x3d (default X3D view from 0 0 10)' },
+      'BackgroundSequencer.x3d._VP_Default_viewpoint.png': { 'caption': '[14] BackgroundSequencer.x3d (default X3D view from 0 0 10)' },
+<!--not found:       'BackgroundTimeOfDay.x3d._VP_Default_viewpoint.png': { 'caption': '[15] BackgroundTimeOfDay.x3d (default X3D view from 0 0 10)' },-->
+      'DirectionalLightExample.x3d._VP_Book_Viewpoint.png': { 'caption': '[16] DirectionalLightExample.x3d Book Viewpoint' },
+      'DirectionalLightExample.x3d._VP_Default_viewpoint.png': { 'caption': '[17] DirectionalLightExample.x3d (default X3D view from 0 0 10)' },
+<!--not found:       'FogKelpForestMain.x3d._VP_Kelp_Forest_Monterey_Bay_Aquarium.png': { 'caption': '[18] FogKelpForestMain.x3d Kelp Forest Monterey Bay Aquarium' },-->
+      'FogKelpForestMain.x3d._VP_Side_Windows.png': { 'caption': '[19] FogKelpForestMain.x3d Side Windows' },
+      'FogKelpForestMain.x3d._VP_Star_Fish.png': { 'caption': '[20] FogKelpForestMain.x3d Star Fish' },
+      'FogKelpForestMain.x3d._VP_Inside_Tank.png': { 'caption': '[21] FogKelpForestMain.x3d Inside Tank' },
+      'FogKelpForestMain.x3d._VP_Top_floor.png': { 'caption': '[22] FogKelpForestMain.x3d Top floor' },
+<!--not found:       'FogKelpForestMain.x3d._VP_Bird&amp;apos;s_Eye_View.png': { 'caption': '[23] FogKelpForestMain.x3d Bird&amp;apos;s Eye View' },-->
+      'FogKelpForestMain.x3d._VP_Pump_House.png': { 'caption': '[24] FogKelpForestMain.x3d Pump House' },
+      'FogKelpForestMain.x3d._VP_Default_viewpoint.png': { 'caption': '[25] FogKelpForestMain.x3d (default X3D view from 0 0 10)' },
+<!--not found:       'PointLightColor.x3d._VP_Book_Viewpoint.png': { 'caption': '[26] PointLightColor.x3d Book Viewpoint' },-->
+<!--not found:       'PointLightColor.x3d._VP_Default_viewpoint.png': { 'caption': '[27] PointLightColor.x3d (default X3D view from 0 0 10)' },-->
+      'PointLightExample.x3d._VP_Common_viewpoint.png': { 'caption': '[28] PointLightExample.x3d Common viewpoint' },
+      'PointLightExample.x3d._VP_Faceted_box,_smooth_shading.png': { 'caption': '[29] PointLightExample.x3d Faceted box, smooth shading' },
+      'PointLightExample.x3d._VP_Simple_box,_constant_shading.png': { 'caption': '[30] PointLightExample.x3d Simple box, constant shading' },
+      'PointLightExample.x3d._VP_Default_viewpoint.png': { 'caption': '[31] PointLightExample.x3d (default X3D view from 0 0 10)' },
+      'SpotLightColor.x3d._VP_Book_Viewpoint.png': { 'caption': '[32] SpotLightColor.x3d Book Viewpoint' },
+      'SpotLightColor.x3d._VP_Complete_scene.png': { 'caption': '[33] SpotLightColor.x3d Complete scene' },
+      'SpotLightColor.x3d._VP_Default_viewpoint.png': { 'caption': '[34] SpotLightColor.x3d (default X3D view from 0 0 10)' },
+      'SpotLightExample.x3d._VP_Book_Viewpoint.png': { 'caption': '[35] SpotLightExample.x3d Book Viewpoint' },
+      'SpotLightExample.x3d._VP_Default_viewpoint.png': { 'caption': '[36] SpotLightExample.x3d (default X3D view from 0 0 10)' },
+      'SpotLightVisualization.x3d._VP_Two_examples_of_a_single_SpotLight.png': { 'caption': '[37] SpotLightVisualization.x3d Two examples of a single SpotLight' },
+      'SpotLightVisualization.x3d._VP_View_from_above.png': { 'caption': '[38] SpotLightVisualization.x3d View from above' },
+      'SpotLightVisualization.x3d._VP_View_from_behind_DirectionalLight.png': { 'caption': '[39] SpotLightVisualization.x3d View from behind DirectionalLight' },
+      'SpotLightVisualization.x3d._VP_View_from_behind_SpotLight.png': { 'caption': '[40] SpotLightVisualization.x3d View from behind SpotLight' },
+      'SpotLightVisualization.x3d._VP_Side_view_of_SpotLight_outline.png': { 'caption': '[41] SpotLightVisualization.x3d Side view of SpotLight outline' },
+      'SpotLightVisualization.x3d._VP_Default_viewpoint.png': { 'caption': '[42] SpotLightVisualization.x3d (default X3D view from 0 0 10)' },
+<!--not found:       'TextureBackgroundExample.x3d._VP_Default_viewpoint.png': { 'caption': '[43] TextureBackgroundExample.x3d (default X3D view from 0 0 10)' },-->
+<!--not found:       'TextureBackgroundKelpForestMain.x3d._VP_Kelp_Forest_Monterey_Bay_Aquarium.png': { 'caption': '[44] TextureBackgroundKelpForestMain.x3d Kelp Forest Monterey Bay Aquarium' },-->
+      'TextureBackgroundKelpForestMain.x3d._VP_Side_Windows.png': { 'caption': '[45] TextureBackgroundKelpForestMain.x3d Side Windows' },
+      'TextureBackgroundKelpForestMain.x3d._VP_Star_Fish.png': { 'caption': '[46] TextureBackgroundKelpForestMain.x3d Star Fish' },
+      'TextureBackgroundKelpForestMain.x3d._VP_Inside_Tank.png': { 'caption': '[47] TextureBackgroundKelpForestMain.x3d Inside Tank' },
+      'TextureBackgroundKelpForestMain.x3d._VP_Top_floor.png': { 'caption': '[48] TextureBackgroundKelpForestMain.x3d Top floor' },
+<!--not found:       'TextureBackgroundKelpForestMain.x3d._VP_Bird&amp;apos;s_Eye_View.png': { 'caption': '[49] TextureBackgroundKelpForestMain.x3d Bird&amp;apos;s Eye View' },-->
+      'TextureBackgroundKelpForestMain.x3d._VP_Pump_House.png': { 'caption': '[50] TextureBackgroundKelpForestMain.x3d Pump House' },
+      'TextureBackgroundKelpForestMain.x3d._VP_Default_viewpoint.png': { 'caption': '[51] TextureBackgroundKelpForestMain.x3d (default X3D view from 0 0 10)' }
+              };
+	    var myShow = new Slideshow('show', data, {captions: true, center: true, controller: true, delay: 2000, height: 465 , width:792, hu: '_viewpoints/', linked: true, preload: true, thumbnails: false});
+	  });
+	//]]>
+</script>
+   </head>
+   <body>
+      <table align="center"
+              summary="navigation"
+              border="1"
+              cellpadding="2"
+              width="95%">
+         <tr>
+            <td align="center" width="17%">
+               <a href="../index.html" target="_top">
+                  <img src="../images/ToC.png"
+                        title="Table of Contents"
+                        alt="Table of Contents"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter10Geometry2D/viewpointSlideshow.html" target="_top">
+                  <img src="../images/PreviousChapter.png"
+                        title="Previous Directory Viewpoint Slideshow"
+                        alt="Previous Directory Viewpoint Slideshow"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">&nbsp;&nbsp; <a href="index.html" target="_top">
+                  <img src="../images/ThisChapter.png"
+                        title="Directory Summary"
+                        alt="Directory Viewpoint Slideshow"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="15%">
+               <a href="../javadoc/index.html?X3dForWebAuthors/Chapter11LightingEnvironmentalEffects/package-summary.html"
+                   title="Javadoc for translated java source"
+                   alt="Javadoc for translated java source"
+                   target="_blank">
+                  <img src="../images/Java-32.png"
+                        title="Javadoc for translated java source"
+                        alt="Javadoc for translated java source"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter12EnvironmentSensorSound/viewpointSlideshow.html"
+                   target="_top">
+                  <img src="../images/NextChapter.png"
+                        title="Next Directory Viewpoint Slideshow"
+                        alt="Next Directory Viewpoint Slideshow"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="15%">
+               <a href="../../X3dResources.html" target="helpPage">
+                  <img src="../images/Help.png"
+                        title="X3D Resources"
+                        alt="X3D Resources"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+         </tr>
+      </table>
+      <h2 align="center">
+         <i> X3D Example Archives: </i>X3D4WA, X3D for Web Authors, Chapter 11 Lighting Environmental Effects</h2>
+      <div id="show"
+            class="slideshow"
+            style="align: center; text-align: center; width:792;">
+         <div class="slideshow-images"
+               style="align: center; text-align: center; width:792;">
+            <img src="_viewpoints/BackgroundColorsOnly.x3d._VP_Background_colors_view.png"
+                  alt="[1] BackgroundColorsOnly.x3d Background colors view"
+                  title="[1] BackgroundColorsOnly.x3d Background colors view"
+                  height="465"
+                  width="792"
+                  align=""
+                  float=""
+                  position=""/>
+         </div>
+      </div>
+      <table align="center"
+              summary=""
+              style="background-color: white; border-width:0px; padding: 2px; width:80%">
+         <tr>
+            <td colspan="5" align="center">
+               <b>Directory Viewpoint Slideshow</b>
+            </td>
+         </tr>
+         <tr>
+            <td colspan="5"><!--ChapterPackageDescription--><!--Contents of file ../../content/examples/X3dForWebAuthors/Chapter11LightingEnvironmentalEffects/package-catalog.html-->
+    
+    <table bgColor="#ffffff" border="0" width="100%">
+        <tbody>
+            <tr>
+                <td align="left" cellpadding="10">
+                    
+                    <a href="index.html"><img alt="DirectionalLight Diagram" title="DirectionalLight Diagram" border="0" hspace="10" src="DirectionalLightFigure.png" width="303" height="156" align="left"/></a>
+                </td>
+
+                <td>
+                    &nbsp;&nbsp;&nbsp;
+                </td>
+
+                <td>               
+    <p>
+				Light nodes make the appearance of geometry visible and viewable in a scene.
+    </p>
+    
+
+    <p>
+                 Lights illuminate geometry in a scene relative to the user's view.
+                 Lighting nodes include 
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#DirectionalLight" target="X3dTooltips" title="X3D Tooltip">DirectionalLight</a>,
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#PointLight" target="X3dTooltips" title="X3D Tooltip">PointLight</a>,
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#SpotLight" target="X3dTooltips" title="X3D Tooltip">SpotLight</a>,
+                 and the active 
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#NavigationInfo" target="X3dTooltips" title="X3D Tooltip">NavigationInfo</a>
+                 headlight (which points along the user's viewing direction).
+    </p>
+    
+
+    <p>
+                 Environmental effects include 
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#Background" target="X3dTooltips" title="X3D Tooltip">Background</a>,
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#TextureBackground" target="X3dTooltips" title="X3D Tooltip">TextureBackground</a>,
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#Fog" target="X3dTooltips" title="X3D Tooltip">Fog</a>
+                 and 
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#LocalFog" target="X3dTooltips" title="X3D Tooltip">LocalFog</a>.
+                 Each set of light nodes, NavigationInfo nodes, background nodes and fog nodes are bound on a separate binding stack,
+                 meaning that only one of each can be active at a time.
+    </p>
+    
+
+    <p>
+                 The supporting
+                 <a href="http://x3dgraphics.com/slidesets/X3dForWebAuthors/Chapter11LightingEnvironment.pdf" target="X3dChapterSlideset">Chapter&nbsp;11 slideset</a>
+                 and course videos
+                (<a href="https://www.movesinstitute.org/Video/Courses/X3dForWebAuthors/X3dForWebAuthorsVideo.html#11" target="X3dChapterVideos">NPS</a>,
+                 <a href="https://www.youtube.com/playlist?list=PLuSIsM-86sinCdhttlFIr5ZLBXRjzazWU" target="X3dChapterYouTubeVideos">YouTube</a>)
+                 for <i>X3D for Web Authors</i> are available online via
+                 <a href="http://X3dGraphics.com" target="_blank">X3dGraphics.com</a>.
+    </p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    
+
+
+  </td>
+         </tr>
+         <tr>
+            <td colspan="5" align="center">
+               <table align="center"
+                       summary=""
+                       style="background-color: white; border-width:1; width:100%">
+                  <tr>
+                     <th align="center" style="background-color:lightgrey" colspan="2">
+15 X3D Models &nbsp;&nbsp;&nbsp; 
+</th>
+                     <th align="left" style="background-color:lightgrey" colspan="2">
+ &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp; 41 X3D Model Viewpoint Snapshots
+</th>
+                  </tr>
+                  <tr>
+                     <td colspan="4">
+                        <br/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="left" valign="top" rowspan="2">
+                        <a href="BackgroundColorsOnlyIndex.html">
+                           <img src="_thumbnails/BackgroundColorsOnlyThumbnail.png"
+                                 width="64"
+                                 height="64"
+                                 align="left"
+                                 alt="BackgroundColorsOnly"
+                                 title="X3D model BackgroundColorsOnly.x3d"/>
+                        </a>
+                     </td>
+                     <td align="left" valign="top" rowspan="2">
+                        <br/>
+                        <a href="BackgroundColorsOnlyIndex.html"
+                            title="X3D model BackgroundColorsOnly.x3d">Background Colors Only.x3d</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/BackgroundColorsOnly.x3d._VP_Background_colors_view.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/BackgroundColorsOnly.x3d._VP_Background_colors_view.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/BackgroundColorsOnly.x3d._VP_Background_colors_view.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[1] BackgroundColorsOnly.x3d Background colors view</a>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/BackgroundColorsOnly.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/BackgroundColorsOnly.x3d._VP_Default_viewpoint.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/BackgroundColorsOnly.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[2] BackgroundColorsOnly.x3d (default X3D view from 0 0 10)</a>
+                     </td>
+                  </tr>
+                  <tr style="border-spacing:0px; padding:0px;">
+                     <td colspan="4">
+                        <hr/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="left" valign="top" rowspan="2">
+                        <a href="BackgroundImagesOnlyIndex.html">
+                           <img src="_thumbnails/BackgroundImagesOnlyThumbnail.png"
+                                 width="64"
+                                 height="64"
+                                 align="left"
+                                 alt="BackgroundImagesOnly"
+                                 title="X3D model BackgroundImagesOnly.x3d"/>
+                        </a>
+                     </td>
+                     <td align="left" valign="top" rowspan="2">
+                        <br/>
+                        <a href="BackgroundImagesOnlyIndex.html"
+                            title="X3D model BackgroundImagesOnly.x3d">Background Images Only.x3d</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/BackgroundImagesOnly.x3d._VP_Background_images_view.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/BackgroundImagesOnly.x3d._VP_Background_images_view.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/BackgroundImagesOnly.x3d._VP_Background_images_view.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[3] BackgroundImagesOnly.x3d Background images view</a>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/BackgroundImagesOnly.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/BackgroundImagesOnly.x3d._VP_Default_viewpoint.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/BackgroundImagesOnly.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[4] BackgroundImagesOnly.x3d (default X3D view from 0 0 10)</a>
+                     </td>
+                  </tr>
+                  <tr style="border-spacing:0px; padding:0px;">
+                     <td colspan="4">
+                        <hr/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="left" valign="top" rowspan="8">
+                        <a href="BackgroundKelpForestMainIndex.html">
+                           <img src="_thumbnails/BackgroundKelpForestMainThumbnail.png"
+                                 width="64"
+                                 height="64"
+                                 align="left"
+                                 alt="BackgroundKelpForestMain"
+                                 title="X3D model BackgroundKelpForestMain.x3d"/>
+                        </a>
+                     </td>
+                     <td align="left" valign="top" rowspan="8">
+                        <br/>
+                        <a href="BackgroundKelpForestMainIndex.html"
+                            title="X3D model BackgroundKelpForestMain.x3d">Background Kelp Forest Main.x3d</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="left" valign="middle" width="26"><!--file not found: _viewpoints/BackgroundKelpForestMain.x3d._VP_Kelp_Forest_Monterey_Bay_Aquarium.png--></td>
+                     <td>
+                        <span title="viewpoint image file not found">[5] BackgroundKelpForestMain.x3d Kelp Forest Monterey Bay Aquarium</span>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/BackgroundKelpForestMain.x3d._VP_Side_Windows.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/BackgroundKelpForestMain.x3d._VP_Side_Windows.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/BackgroundKelpForestMain.x3d._VP_Side_Windows.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[6] BackgroundKelpForestMain.x3d Side Windows</a>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/BackgroundKelpForestMain.x3d._VP_Star_Fish.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/BackgroundKelpForestMain.x3d._VP_Star_Fish.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/BackgroundKelpForestMain.x3d._VP_Star_Fish.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[7] BackgroundKelpForestMain.x3d Star Fish</a>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/BackgroundKelpForestMain.x3d._VP_Inside_Tank.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/BackgroundKelpForestMain.x3d._VP_Inside_Tank.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/BackgroundKelpForestMain.x3d._VP_Inside_Tank.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[8] BackgroundKelpForestMain.x3d Inside Tank</a>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/BackgroundKelpForestMain.x3d._VP_Top_floor.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/BackgroundKelpForestMain.x3d._VP_Top_floor.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/BackgroundKelpForestMain.x3d._VP_Top_floor.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[9] BackgroundKelpForestMain.x3d Top floor</a>
+                     </td>
+ </tr>
+ <tr>
+<td align="left" valign="middle" width="26"><!--file not found: _viewpoints/BackgroundKelpForestMain.x3d._VP_Bird&amp;apos;s_Eye_View.png--></td>
+                     <td>
+                        <span title="viewpoint image file not found">[10] BackgroundKelpForestMain.x3d Bird&amp;apos;s Eye View</span>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/BackgroundKelpForestMain.x3d._VP_Pump_House.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/BackgroundKelpForestMain.x3d._VP_Pump_House.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/BackgroundKelpForestMain.x3d._VP_Pump_House.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[11] BackgroundKelpForestMain.x3d Pump House</a>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/BackgroundKelpForestMain.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/BackgroundKelpForestMain.x3d._VP_Default_viewpoint.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/BackgroundKelpForestMain.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[12] BackgroundKelpForestMain.x3d (default X3D view from 0 0 10)</a>
+                     </td>
+                  </tr>
+                  <tr style="border-spacing:0px; padding:0px;">
+                     <td colspan="4">
+                        <hr/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="left" valign="top" rowspan="1">
+                        <a href="BackgroundSelectorIndex.html">
+                           <img src="_thumbnails/BackgroundSelectorThumbnail.png"
+                                 width="64"
+                                 height="64"
+                                 align="left"
+                                 alt="BackgroundSelector"
+                                 title="X3D model BackgroundSelector.x3d"/>
+                        </a>
+                     </td>
+                     <td align="left" valign="top" rowspan="1">
+                        <br/>
+                        <a href="BackgroundSelectorIndex.html"
+                            title="X3D model BackgroundSelector.x3d">Background Selector.x3d</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/BackgroundSelector.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/BackgroundSelector.x3d._VP_Default_viewpoint.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/BackgroundSelector.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[13] BackgroundSelector.x3d (default X3D view from 0 0 10)</a>
+                     </td>
+                  </tr>
+                  <tr style="border-spacing:0px; padding:0px;">
+                     <td colspan="4">
+                        <hr/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="left" valign="top" rowspan="1">
+                        <a href="BackgroundSequencerIndex.html">
+                           <img src="_thumbnails/BackgroundSequencerThumbnail.png"
+                                 width="64"
+                                 height="64"
+                                 align="left"
+                                 alt="BackgroundSequencer"
+                                 title="X3D model BackgroundSequencer.x3d"/>
+                        </a>
+                     </td>
+                     <td align="left" valign="top" rowspan="1">
+                        <br/>
+                        <a href="BackgroundSequencerIndex.html"
+                            title="X3D model BackgroundSequencer.x3d">Background Sequencer.x3d</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/BackgroundSequencer.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/BackgroundSequencer.x3d._VP_Default_viewpoint.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/BackgroundSequencer.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[14] BackgroundSequencer.x3d (default X3D view from 0 0 10)</a>
+                     </td>
+                  </tr>
+                  <tr style="border-spacing:0px; padding:0px;">
+                     <td colspan="4">
+                        <hr/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="left" valign="top" rowspan="1">
+                        <a href="BackgroundTimeOfDayIndex.html">
+                           <img src="_thumbnails/BackgroundTimeOfDayThumbnail.png"
+                                 width="64"
+                                 height="64"
+                                 align="left"
+                                 alt="BackgroundTimeOfDay"
+                                 title="X3D model BackgroundTimeOfDay.x3d"/>
+                        </a>
+                     </td>
+                     <td align="left" valign="top" rowspan="1">
+                        <br/>
+                        <a href="BackgroundTimeOfDayIndex.html"
+                            title="X3D model BackgroundTimeOfDay.x3d">Background Time Of Day.x3d</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="left" valign="middle" width="26"><!--file not found: _viewpoints/BackgroundTimeOfDay.x3d._VP_Default_viewpoint.png--></td>
+                     <td>
+                        <span title="viewpoint image file not found">[15] BackgroundTimeOfDay.x3d (default X3D view from 0 0 10)</span>
+                     </td>
+                  </tr>
+                  <tr style="border-spacing:0px; padding:0px;">
+                     <td colspan="4">
+                        <hr/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="left" valign="top" rowspan="2">
+                        <a href="DirectionalLightExampleIndex.html">
+                           <img src="_thumbnails/DirectionalLightExampleThumbnail.png"
+                                 width="64"
+                                 height="64"
+                                 align="left"
+                                 alt="DirectionalLightExample"
+                                 title="X3D model DirectionalLightExample.x3d"/>
+                        </a>
+                     </td>
+                     <td align="left" valign="top" rowspan="2">
+                        <br/>
+                        <a href="DirectionalLightExampleIndex.html"
+                            title="X3D model DirectionalLightExample.x3d">Directional Light Example.x3d</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/DirectionalLightExample.x3d._VP_Book_Viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/DirectionalLightExample.x3d._VP_Book_Viewpoint.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/DirectionalLightExample.x3d._VP_Book_Viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[16] DirectionalLightExample.x3d Book Viewpoint</a>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/DirectionalLightExample.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/DirectionalLightExample.x3d._VP_Default_viewpoint.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/DirectionalLightExample.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[17] DirectionalLightExample.x3d (default X3D view from 0 0 10)</a>
+                     </td>
+                  </tr>
+                  <tr style="border-spacing:0px; padding:0px;">
+                     <td colspan="4">
+                        <hr/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="left" valign="top" rowspan="8">
+                        <a href="FogKelpForestMainIndex.html">
+                           <img src="_thumbnails/FogKelpForestMainThumbnail.png"
+                                 width="64"
+                                 height="64"
+                                 align="left"
+                                 alt="FogKelpForestMain"
+                                 title="X3D model FogKelpForestMain.x3d"/>
+                        </a>
+                     </td>
+                     <td align="left" valign="top" rowspan="8">
+                        <br/>
+                        <a href="FogKelpForestMainIndex.html"
+                            title="X3D model FogKelpForestMain.x3d">Fog Kelp Forest Main.x3d</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="left" valign="middle" width="26"><!--file not found: _viewpoints/FogKelpForestMain.x3d._VP_Kelp_Forest_Monterey_Bay_Aquarium.png--></td>
+                     <td>
+                        <span title="viewpoint image file not found">[18] FogKelpForestMain.x3d Kelp Forest Monterey Bay Aquarium</span>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/FogKelpForestMain.x3d._VP_Side_Windows.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/FogKelpForestMain.x3d._VP_Side_Windows.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/FogKelpForestMain.x3d._VP_Side_Windows.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[19] FogKelpForestMain.x3d Side Windows</a>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/FogKelpForestMain.x3d._VP_Star_Fish.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/FogKelpForestMain.x3d._VP_Star_Fish.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/FogKelpForestMain.x3d._VP_Star_Fish.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[20] FogKelpForestMain.x3d Star Fish</a>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/FogKelpForestMain.x3d._VP_Inside_Tank.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/FogKelpForestMain.x3d._VP_Inside_Tank.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/FogKelpForestMain.x3d._VP_Inside_Tank.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[21] FogKelpForestMain.x3d Inside Tank</a>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/FogKelpForestMain.x3d._VP_Top_floor.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/FogKelpForestMain.x3d._VP_Top_floor.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/FogKelpForestMain.x3d._VP_Top_floor.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[22] FogKelpForestMain.x3d Top floor</a>
+                     </td>
+ </tr>
+ <tr>
+<td align="left" valign="middle" width="26"><!--file not found: _viewpoints/FogKelpForestMain.x3d._VP_Bird&amp;apos;s_Eye_View.png--></td>
+                     <td>
+                        <span title="viewpoint image file not found">[23] FogKelpForestMain.x3d Bird&amp;apos;s Eye View</span>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/FogKelpForestMain.x3d._VP_Pump_House.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/FogKelpForestMain.x3d._VP_Pump_House.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/FogKelpForestMain.x3d._VP_Pump_House.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[24] FogKelpForestMain.x3d Pump House</a>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/FogKelpForestMain.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/FogKelpForestMain.x3d._VP_Default_viewpoint.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/FogKelpForestMain.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[25] FogKelpForestMain.x3d (default X3D view from 0 0 10)</a>
+                     </td>
+                  </tr>
+                  <tr style="border-spacing:0px; padding:0px;">
+                     <td colspan="4">
+                        <hr/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="left" valign="top" rowspan="2">
+                        <a href="PointLightColorIndex.html">
+                           <img src="_thumbnails/PointLightColorThumbnail.png"
+                                 width="64"
+                                 height="64"
+                                 align="left"
+                                 alt="PointLightColor"
+                                 title="X3D model PointLightColor.x3d"/>
+                        </a>
+                     </td>
+                     <td align="left" valign="top" rowspan="2">
+                        <br/>
+                        <a href="PointLightColorIndex.html" title="X3D model PointLightColor.x3d">Point Light Color.x3d</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="left" valign="middle" width="26"><!--file not found: _viewpoints/PointLightColor.x3d._VP_Book_Viewpoint.png--></td>
+                     <td>
+                        <span title="viewpoint image file not found">[26] PointLightColor.x3d Book Viewpoint</span>
+                     </td>
+ </tr>
+ <tr>
+<td align="left" valign="middle" width="26"><!--file not found: _viewpoints/PointLightColor.x3d._VP_Default_viewpoint.png--></td>
+                     <td>
+                        <span title="viewpoint image file not found">[27] PointLightColor.x3d (default X3D view from 0 0 10)</span>
+                     </td>
+                  </tr>
+                  <tr style="border-spacing:0px; padding:0px;">
+                     <td colspan="4">
+                        <hr/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="left" valign="top" rowspan="4">
+                        <a href="PointLightExampleIndex.html">
+                           <img src="_thumbnails/PointLightExampleThumbnail.png"
+                                 width="64"
+                                 height="64"
+                                 align="left"
+                                 alt="PointLightExample"
+                                 title="X3D model PointLightExample.x3d"/>
+                        </a>
+                     </td>
+                     <td align="left" valign="top" rowspan="4">
+                        <br/>
+                        <a href="PointLightExampleIndex.html"
+                            title="X3D model PointLightExample.x3d">Point Light Example.x3d</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/PointLightExample.x3d._VP_Common_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/PointLightExample.x3d._VP_Common_viewpoint.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/PointLightExample.x3d._VP_Common_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[28] PointLightExample.x3d Common viewpoint</a>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/PointLightExample.x3d._VP_Faceted_box,_smooth_shading.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/PointLightExample.x3d._VP_Faceted_box,_smooth_shading.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/PointLightExample.x3d._VP_Faceted_box,_smooth_shading.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[29] PointLightExample.x3d Faceted box, smooth shading</a>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/PointLightExample.x3d._VP_Simple_box,_constant_shading.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/PointLightExample.x3d._VP_Simple_box,_constant_shading.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/PointLightExample.x3d._VP_Simple_box,_constant_shading.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[30] PointLightExample.x3d Simple box, constant shading</a>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/PointLightExample.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/PointLightExample.x3d._VP_Default_viewpoint.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/PointLightExample.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[31] PointLightExample.x3d (default X3D view from 0 0 10)</a>
+                     </td>
+                  </tr>
+                  <tr style="border-spacing:0px; padding:0px;">
+                     <td colspan="4">
+                        <hr/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="left" valign="top" rowspan="3">
+                        <a href="SpotLightColorIndex.html">
+                           <img src="_thumbnails/SpotLightColorThumbnail.png"
+                                 width="64"
+                                 height="64"
+                                 align="left"
+                                 alt="SpotLightColor"
+                                 title="X3D model SpotLightColor.x3d"/>
+                        </a>
+                     </td>
+                     <td align="left" valign="top" rowspan="3">
+                        <br/>
+                        <a href="SpotLightColorIndex.html" title="X3D model SpotLightColor.x3d">Spot Light Color.x3d</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/SpotLightColor.x3d._VP_Book_Viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/SpotLightColor.x3d._VP_Book_Viewpoint.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/SpotLightColor.x3d._VP_Book_Viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[32] SpotLightColor.x3d Book Viewpoint</a>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/SpotLightColor.x3d._VP_Complete_scene.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/SpotLightColor.x3d._VP_Complete_scene.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/SpotLightColor.x3d._VP_Complete_scene.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[33] SpotLightColor.x3d Complete scene</a>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/SpotLightColor.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/SpotLightColor.x3d._VP_Default_viewpoint.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/SpotLightColor.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[34] SpotLightColor.x3d (default X3D view from 0 0 10)</a>
+                     </td>
+                  </tr>
+                  <tr style="border-spacing:0px; padding:0px;">
+                     <td colspan="4">
+                        <hr/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="left" valign="top" rowspan="2">
+                        <a href="SpotLightExampleIndex.html">
+                           <img src="_thumbnails/SpotLightExampleThumbnail.png"
+                                 width="64"
+                                 height="64"
+                                 align="left"
+                                 alt="SpotLightExample"
+                                 title="X3D model SpotLightExample.x3d"/>
+                        </a>
+                     </td>
+                     <td align="left" valign="top" rowspan="2">
+                        <br/>
+                        <a href="SpotLightExampleIndex.html"
+                            title="X3D model SpotLightExample.x3d">Spot Light Example.x3d</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/SpotLightExample.x3d._VP_Book_Viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/SpotLightExample.x3d._VP_Book_Viewpoint.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/SpotLightExample.x3d._VP_Book_Viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[35] SpotLightExample.x3d Book Viewpoint</a>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/SpotLightExample.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/SpotLightExample.x3d._VP_Default_viewpoint.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/SpotLightExample.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[36] SpotLightExample.x3d (default X3D view from 0 0 10)</a>
+                     </td>
+                  </tr>
+                  <tr style="border-spacing:0px; padding:0px;">
+                     <td colspan="4">
+                        <hr/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="left" valign="top" rowspan="6">
+                        <a href="SpotLightVisualizationIndex.html">
+                           <img src="_thumbnails/SpotLightVisualizationThumbnail.png"
+                                 width="64"
+                                 height="64"
+                                 align="left"
+                                 alt="SpotLightVisualization"
+                                 title="X3D model SpotLightVisualization.x3d"/>
+                        </a>
+                     </td>
+                     <td align="left" valign="top" rowspan="6">
+                        <br/>
+                        <a href="SpotLightVisualizationIndex.html"
+                            title="X3D model SpotLightVisualization.x3d">Spot Light Visualization.x3d</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/SpotLightVisualization.x3d._VP_Two_examples_of_a_single_SpotLight.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/SpotLightVisualization.x3d._VP_Two_examples_of_a_single_SpotLight.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/SpotLightVisualization.x3d._VP_Two_examples_of_a_single_SpotLight.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[37] SpotLightVisualization.x3d Two examples of a single SpotLight</a>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/SpotLightVisualization.x3d._VP_View_from_above.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/SpotLightVisualization.x3d._VP_View_from_above.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/SpotLightVisualization.x3d._VP_View_from_above.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[38] SpotLightVisualization.x3d View from above</a>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/SpotLightVisualization.x3d._VP_View_from_behind_DirectionalLight.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/SpotLightVisualization.x3d._VP_View_from_behind_DirectionalLight.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/SpotLightVisualization.x3d._VP_View_from_behind_DirectionalLight.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[39] SpotLightVisualization.x3d View from behind DirectionalLight</a>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/SpotLightVisualization.x3d._VP_View_from_behind_SpotLight.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/SpotLightVisualization.x3d._VP_View_from_behind_SpotLight.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/SpotLightVisualization.x3d._VP_View_from_behind_SpotLight.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[40] SpotLightVisualization.x3d View from behind SpotLight</a>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/SpotLightVisualization.x3d._VP_Side_view_of_SpotLight_outline.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/SpotLightVisualization.x3d._VP_Side_view_of_SpotLight_outline.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/SpotLightVisualization.x3d._VP_Side_view_of_SpotLight_outline.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[41] SpotLightVisualization.x3d Side view of SpotLight outline</a>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/SpotLightVisualization.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/SpotLightVisualization.x3d._VP_Default_viewpoint.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/SpotLightVisualization.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[42] SpotLightVisualization.x3d (default X3D view from 0 0 10)</a>
+                     </td>
+                  </tr>
+                  <tr style="border-spacing:0px; padding:0px;">
+                     <td colspan="4">
+                        <hr/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="left" valign="top" rowspan="1">
+</td>
+                     <td align="left" valign="top" rowspan="1">
+                        <br/>
+                        <a href="TextureBackgroundExampleIndex.html"
+                            title="X3D model TextureBackgroundExample.x3d">Texture Background Example.x3d</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="left" valign="middle" width="26"><!--file not found: _viewpoints/TextureBackgroundExample.x3d._VP_Default_viewpoint.png--></td>
+                     <td>
+                        <span title="viewpoint image file not found">[43] TextureBackgroundExample.x3d (default X3D view from 0 0 10)</span>
+                     </td>
+                  </tr>
+                  <tr style="border-spacing:0px; padding:0px;">
+                     <td colspan="4">
+                        <hr/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="left" valign="top" rowspan="8">
+                        <a href="TextureBackgroundKelpForestMainIndex.html">
+                           <img src="_thumbnails/TextureBackgroundKelpForestMainThumbnail.png"
+                                 width="64"
+                                 height="64"
+                                 align="left"
+                                 alt="TextureBackgroundKelpForestMain"
+                                 title="X3D model TextureBackgroundKelpForestMain.x3d"/>
+                        </a>
+                     </td>
+                     <td align="left" valign="top" rowspan="8">
+                        <br/>
+                        <a href="TextureBackgroundKelpForestMainIndex.html"
+                            title="X3D model TextureBackgroundKelpForestMain.x3d">Texture Background Kelp Forest Main.x3d</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="left" valign="middle" width="26"><!--file not found: _viewpoints/TextureBackgroundKelpForestMain.x3d._VP_Kelp_Forest_Monterey_Bay_Aquarium.png--></td>
+                     <td>
+                        <span title="viewpoint image file not found">[44] TextureBackgroundKelpForestMain.x3d Kelp Forest Monterey Bay Aquarium</span>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/TextureBackgroundKelpForestMain.x3d._VP_Side_Windows.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/TextureBackgroundKelpForestMain.x3d._VP_Side_Windows.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/TextureBackgroundKelpForestMain.x3d._VP_Side_Windows.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[45] TextureBackgroundKelpForestMain.x3d Side Windows</a>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/TextureBackgroundKelpForestMain.x3d._VP_Star_Fish.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/TextureBackgroundKelpForestMain.x3d._VP_Star_Fish.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/TextureBackgroundKelpForestMain.x3d._VP_Star_Fish.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[46] TextureBackgroundKelpForestMain.x3d Star Fish</a>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/TextureBackgroundKelpForestMain.x3d._VP_Inside_Tank.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/TextureBackgroundKelpForestMain.x3d._VP_Inside_Tank.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/TextureBackgroundKelpForestMain.x3d._VP_Inside_Tank.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[47] TextureBackgroundKelpForestMain.x3d Inside Tank</a>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/TextureBackgroundKelpForestMain.x3d._VP_Top_floor.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/TextureBackgroundKelpForestMain.x3d._VP_Top_floor.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/TextureBackgroundKelpForestMain.x3d._VP_Top_floor.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[48] TextureBackgroundKelpForestMain.x3d Top floor</a>
+                     </td>
+ </tr>
+ <tr>
+<td align="left" valign="middle" width="26"><!--file not found: _viewpoints/TextureBackgroundKelpForestMain.x3d._VP_Bird&amp;apos;s_Eye_View.png--></td>
+                     <td>
+                        <span title="viewpoint image file not found">[49] TextureBackgroundKelpForestMain.x3d Bird&amp;apos;s Eye View</span>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/TextureBackgroundKelpForestMain.x3d._VP_Pump_House.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/TextureBackgroundKelpForestMain.x3d._VP_Pump_House.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/TextureBackgroundKelpForestMain.x3d._VP_Pump_House.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[50] TextureBackgroundKelpForestMain.x3d Pump House</a>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/TextureBackgroundKelpForestMain.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/TextureBackgroundKelpForestMain.x3d._VP_Default_viewpoint.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/TextureBackgroundKelpForestMain.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[51] TextureBackgroundKelpForestMain.x3d (default X3D view from 0 0 10)</a>
+                     </td>
+                  </tr>
+               </table>
+            </td>
+         </tr>
+         <tr>
+            <td colspan="5" style="background-color:lightgrey">&nbsp;</td>
+         </tr>
+         <tr>
+            <td colspan="5">
+               <p align="center">This viewpoint slideshow is online at <br/>
+                  <a href="https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter11LightingEnvironmentalEffects/viewpointSlideshow.html">https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter11LightingEnvironmentalEffects/viewpointSlideshow.html</a>
+               </p>
+               <p align="center">
+                  <a href="https://validator.w3.org/check?uri=https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter11LightingEnvironmentalEffects/viewpointSlideshow.html"
+                      target="_blank">
+                     <img src="https://www.w3.org/Icons/valid-xhtml10"
+                           title="Validate XHTML 1.1"
+                           alt="Validate XHTML 1.1"
+                           height="31"
+                           width="88"
+                           border="0"
+                           align="right"/>
+                  </a>
+               </p>
+               <p style="text-align:center">Viewpoint image version history at <br/>
+                  <a href="https://sourceforge.net/p/x3d/code/HEAD/tree/www.web3d.org/x3d/content/examples/X3dForWebAuthors/Chapter11LightingEnvironmentalEffects/_viewpoints/"
+                      target="_blank">https://sourceforge.net/p/x3d/code/HEAD/tree/www.web3d.org/x3d/content/examples/X3dForWebAuthors/Chapter11LightingEnvironmentalEffects/_viewpoints</a>
+               </p>
+            </td>
+         </tr>
+      </table>
+      <table align="center"
+              summary="navigation"
+              border="1"
+              cellpadding="2"
+              width="95%">
+         <tr>
+            <td align="center" width="17%">
+               <a href="../index.html" target="_top">
+                  <img src="../images/ToC.png"
+                        title="Table of Contents"
+                        alt="Table of Contents"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter10Geometry2D/viewpointSlideshow.html" target="_top">
+                  <img src="../images/PreviousChapter.png"
+                        title="Previous Directory Viewpoint Slideshow"
+                        alt="Previous Directory Viewpoint Slideshow"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">&nbsp;&nbsp; <a href="index.html" target="_top">
+                  <img src="../images/ThisChapter.png"
+                        title="Directory Summary"
+                        alt="Directory Viewpoint Slideshow"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="15%">
+               <a href="../javadoc/index.html?X3dForWebAuthors/Chapter11LightingEnvironmentalEffects/package-summary.html"
+                   title="Javadoc for translated java source"
+                   alt="Javadoc for translated java source"
+                   target="_blank">
+                  <img src="../images/Java-32.png"
+                        title="Javadoc for translated java source"
+                        alt="Javadoc for translated java source"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter12EnvironmentSensorSound/viewpointSlideshow.html"
+                   target="_top">
+                  <img src="../images/NextChapter.png"
+                        title="Next Directory Viewpoint Slideshow"
+                        alt="Next Directory Viewpoint Slideshow"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="15%">
+               <a href="../../X3dResources.html" target="helpPage">
+                  <img src="../images/Help.png"
+                        title="X3D Resources"
+                        alt="X3D Resources"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+         </tr>
+      </table>
+   </body>
+</html>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<svrl:schematron-output xmlns:iso="http://purl.oclc.org/dsdl/schematron"
+                        xmlns:schold="http://www.ascc.net/xml/schematron"
+                        xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
+                        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+                        xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                        title="X3D Graphics Validity Checks using Schematron"
+                        schemaVersion=""><!--   
+		   
+		   
+		 -->
+   <svrl:active-pattern document="file:/C:/x3d-code/www.web3d.org/x3d/content/examples/X3dForWebAuthors/Chapter15Metadata/XmpMetadataEmbedded.x3d"/>
+   <svrl:fired-rule context="X3D | *[(upper-case(local-name()) = 'X3D')]"/>
+   <svrl:successful-report test="(@version='4.0')" role="diagnostic" location="/X3D">
+      <svrl:text>X3D version 4.0 is approved by Web3D Consortium and focused on interoperabiliity with HTML, glTF Physically Based Rendering (PBR) and Web Audio API, undergoing review by ISO national bodies in 2021. </svrl:text>
+   </svrl:successful-report>
+   <svrl:fired-rule context="head | *[(lower-case(local-name()) = 'head')]"/>
+   <svrl:fired-rule context="meta | *[(lower-case(local-name()) = 'meta')]"/>
+   <svrl:fired-rule context="meta | *[(lower-case(local-name()) = 'meta')]"/>
+   <svrl:fired-rule context="meta | *[(lower-case(local-name()) = 'meta')]"/>
+   <svrl:fired-rule context="meta | *[(lower-case(local-name()) = 'meta')]"/>
+   <svrl:fired-rule context="meta | *[(lower-case(local-name()) = 'meta')]"/>
+   <svrl:fired-rule context="meta[(@name='error') or (@name='warning') or (@name='hint') or (@name='info') or starts-with(@name,'TODO')]"/>
+   <svrl:successful-report test="not(@USE) and true()"
+                           role="diagnostic"
+                           location="/X3D/head/meta[6]">
+      <svrl:text>&lt;meta name='warning' content='Source model assumes default containerField=value for X3D4 Metadata nodes, specification resolution needed'/&gt; </svrl:text>
+   </svrl:successful-report>
+   <svrl:fired-rule context="meta | *[(lower-case(local-name()) = 'meta')]"/>
+   <svrl:fired-rule context="meta | *[(lower-case(local-name()) = 'meta')]"/>
+   <svrl:fired-rule context="meta | *[(lower-case(local-name()) = 'meta')]"/>
+   <svrl:fired-rule context="meta | *[(lower-case(local-name()) = 'meta')]"/>
+   <svrl:fired-rule context="meta | *[(lower-case(local-name()) = 'meta')]"/>
+   <svrl:fired-rule context="meta | *[(lower-case(local-name()) = 'meta')]"/>
+   <svrl:fired-rule context="meta | *[(lower-case(local-name()) = 'meta')]"/>
+   <svrl:fired-rule context="meta | *[(lower-case(local-name()) = 'meta')]"/>
+   <svrl:fired-rule context="meta | *[(lower-case(local-name()) = 'meta')]"/>
+   <svrl:fired-rule context="meta | *[(lower-case(local-name()) = 'meta')]"/>
+   <svrl:fired-rule context="meta[(@name='error') or (@name='warning') or (@name='hint') or (@name='info') or starts-with(@name,'TODO')]"/>
+   <svrl:successful-report test="not(@USE) and true()"
+                           role="diagnostic"
+                           location="/X3D/head/meta[17]">
+      <svrl:text>&lt;meta name='TODO' content='Once pattern OK, write conversion stylesheets XmpToX3dMetadata.xslt and X3dMetadataToXmp.xslt'/&gt; </svrl:text>
+   </svrl:successful-report>
+   <svrl:fired-rule context="meta[(@name='error') or (@name='warning') or (@name='hint') or (@name='info') or starts-with(@name,'TODO')]"/>
+   <svrl:successful-report test="not(@USE) and true()"
+                           role="diagnostic"
+                           location="/X3D/head/meta[18]">
+      <svrl:text>&lt;meta name='info' content='X3D support for xml:lang attribute not provided in X3D XML Schema, instead use MetadataString as best practice.'/&gt; </svrl:text>
+   </svrl:successful-report>
+   <svrl:fired-rule context="meta | *[(lower-case(local-name()) = 'meta')]"/>
+   <svrl:fired-rule context="meta | *[(lower-case(local-name()) = 'meta')]"/>
+   <svrl:fired-rule context="meta | *[(lower-case(local-name()) = 'meta')]"/>
+   <svrl:fired-rule context="meta | *[(lower-case(local-name()) = 'meta')]"/>
+   <svrl:fired-rule context="meta | *[(lower-case(local-name()) = 'meta')]"/>
+   <svrl:fired-rule context="meta | *[(lower-case(local-name()) = 'meta')]"/>
+   <svrl:fired-rule context="meta | *[(lower-case(local-name()) = 'meta')]"/>
+   <svrl:fired-rule context="meta | *[(lower-case(local-name()) = 'meta')]"/>
+   <svrl:fired-rule context="meta | *[(lower-case(local-name()) = 'meta')]"/>
+   <svrl:fired-rule context="meta | *[(lower-case(local-name()) = 'meta')]"/>
+   <svrl:fired-rule context="meta | *[(lower-case(local-name()) = 'meta')]"/>
+   <svrl:fired-rule context="meta | *[(lower-case(local-name()) = 'meta')]"/>
+   <svrl:fired-rule context="meta | *[(lower-case(local-name()) = 'meta')]"/>
+   <svrl:fired-rule context="meta | *[(lower-case(local-name()) = 'meta')]"/>
+   <svrl:fired-rule context="meta | *[(lower-case(local-name()) = 'meta')]"/>
+   <svrl:fired-rule context="Scene | *[(lower-case(local-name()) = 'scene')]"/>
+   <svrl:fired-rule context="WorldInfo"/>
+   <svrl:fired-rule context="Background"/>
+   <svrl:fired-rule context="MetadataSet"/>
+   <svrl:successful-report test="not(parent::MetadataSet) and (@containerField='value')"
+                           role="error"
+                           location="/X3D/Scene/MetadataSet">
+      <svrl:text>&lt;MetadataSet DEF='' name='rdf:RDF'/&gt; containerField='value' is only allowed when parent node is MetadataSet </svrl:text>
+   </svrl:successful-report>
+   <svrl:fired-rule context="MetadataSet"/>
+   <svrl:fired-rule context="MetadataString"/>
+   <svrl:fired-rule context="MetadataString"/>
+   <svrl:fired-rule context="MetadataString"/>
+   <svrl:fired-rule context="MetadataSet"/>
+   <svrl:fired-rule context="MetadataString"/>
+   <svrl:fired-rule context="MetadataSet"/>
+   <svrl:fired-rule context="MetadataSet"/>
+   <svrl:fired-rule context="MetadataString"/>
+   <svrl:fired-rule context="MetadataString"/>
+   <svrl:successful-report test="not(parent::MetadataSet) and (@containerField='value')"
+                           role="error"
+                           location="/X3D/Scene/MetadataSet/MetadataSet[2]/MetadataSet[1]/MetadataSet/MetadataString/MetadataString">
+      <svrl:text>&lt;MetadataString DEF='' name='xml:lang'/&gt; containerField='value' is only allowed when parent node is MetadataSet </svrl:text>
+   </svrl:successful-report>
+   <svrl:fired-rule context="MetadataString"/>
+   <svrl:fired-rule context="MetadataString"/>
+   <svrl:successful-report test="not(@USE) and contains($normalizedString,'&#34;&#34;') and not(contains($normalizedString,'\&#34;&#34;') or contains($normalizedString,'&#34;\&#34;') or contains($normalizedString,'&#34;&#34; &#34;') or contains($normalizedString,'&#34; &#34;&#34;'))"
+                           role="error"
+                           location="/X3D/Scene/MetadataSet/MetadataSet[2]/MetadataString[3]">
+      <svrl:text>&lt;MetadataString DEF='' name='dc:rights'/&gt; array value='""' has questionable line-break "" quote marks </svrl:text>
+   </svrl:successful-report>
+   <svrl:fired-rule context="MetadataSet"/>
+   <svrl:fired-rule context="MetadataSet"/>
+   <svrl:fired-rule context="MetadataString"/>
+   <svrl:successful-report test="(starts-with(local-name(),'Metadata')) and (following-sibling::*[local-name() = $nodeName][@name = $name])"
+                           role="warning"
+                           location="/X3D/Scene/MetadataSet/MetadataSet[2]/MetadataSet[2]/MetadataSet[1]/MetadataString[1]">
+      <svrl:text>&lt;MetadataString DEF=''/&gt; has the same name='rdf:li' as a following-sibling MetadataString node </svrl:text>
+   </svrl:successful-report>
+   <svrl:fired-rule context="MetadataString"/>
+   <svrl:successful-report test="not(parent::MetadataSet) and (@containerField='value')"
+                           role="error"
+                           location="/X3D/Scene/MetadataSet/MetadataSet[2]/MetadataSet[2]/MetadataSet[1]/MetadataString[1]/MetadataString">
+      <svrl:text>&lt;MetadataString DEF='' name='xml:lang'/&gt; containerField='value' is only allowed when parent node is MetadataSet </svrl:text>
+   </svrl:successful-report>
+   <svrl:fired-rule context="MetadataString"/>
+   <svrl:successful-report test="(starts-with(local-name(),'Metadata')) and (preceding-sibling::*[local-name() = $nodeName][@name = $name])"
+                           role="warning"
+                           location="/X3D/Scene/MetadataSet/MetadataSet[2]/MetadataSet[2]/MetadataSet[1]/MetadataString[2]">
+      <svrl:text>&lt;MetadataString DEF=''/&gt; has the same name='rdf:li' as a preceding-sibling MetadataString node </svrl:text>
+   </svrl:successful-report>
+   <svrl:fired-rule context="MetadataString"/>
+   <svrl:successful-report test="not(parent::MetadataSet) and (@containerField='value')"
+                           role="error"
+                           location="/X3D/Scene/MetadataSet/MetadataSet[2]/MetadataSet[2]/MetadataSet[1]/MetadataString[2]/MetadataString">
+      <svrl:text>&lt;MetadataString DEF='' name='xml:lang'/&gt; containerField='value' is only allowed when parent node is MetadataSet </svrl:text>
+   </svrl:successful-report>
+   <svrl:fired-rule context="MetadataSet"/>
+   <svrl:fired-rule context="MetadataSet"/>
+   <svrl:fired-rule context="MetadataString"/>
+   <svrl:fired-rule context="MetadataString"/>
+   <svrl:fired-rule context="Viewpoint | OrthoViewpoint"/>
+   <svrl:fired-rule context="Anchor"/>
+   <svrl:fired-rule context="Shape"/>
+   <svrl:fired-rule context="Text"/>
+   <svrl:fired-rule context="FontStyle"/>
+   <svrl:fired-rule context="Appearance"/>
+   <svrl:fired-rule context="Material"/>
+</svrl:schematron-output>

@@ -1,0 +1,121 @@
+@prefix :        <https://X3dGraphics.com/examples/X3dForWebAuthors/EmptySceneCoreProfile.ttl#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema:  <http://schema.org/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix x3d:     <https://www.web3d.org/specifications/x3d-4.0.xsd#> .
+@prefix x3do:    <https://www.web3d.org/specifications/X3dOntology4.0#> .
+
+:X3D a owl:NamedIndividual, x3do:X3D ;
+  x3do:hasHead :head ;
+  x3do:hasScene :Scene ;
+  x3do:profile 'Core' ;
+  x3do:version '3.3' ;
+  x3do:noNamespaceSchemaLocation 'https://www.web3d.org/specifications/x3d-3.3.xsd' .
+:head a owl:NamedIndividual, x3do:head ;
+  x3do:hasParent :X3D ;
+  x3do:hasMeta :meta_1_1, :meta_1_2, :meta_1_3, :meta_1_4, :meta_1_5, :meta_1_6, :meta_1_7, :meta_1_8, :meta_1_9, :meta_1_10, :meta_1_11, :meta_1_12, :meta_1_13, :meta_1_14 .
+:meta_1_1 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'EmptySceneCoreProfile.x3d' ;
+  x3do:name 'title' .
+:meta_1_2 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Illustrate a minimalist scene using only Core profile nodes. Root nodes must either be allowed children nodes of a Grouping node, or a LayerSet node. Note that DOCTYPE, head/meta and Group/Metadata* elements can be deleted without losing scene validity.' ;
+  x3do:name 'description' .
+:meta_1_3 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Leonard Daly, Don Brutzman' ;
+  x3do:name 'creator' .
+:meta_1_4 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '24 February 2014' ;
+  x3do:name 'created' .
+:meta_1_5 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '20 October 2019' ;
+  x3do:name 'modified' .
+:meta_1_6 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'EmptyScene.x3d' ;
+  x3do:name 'reference' .
+:meta_1_7 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'should Metadata nodes inherit from X3DNode or X3DChildNode?' ;
+  x3do:name 'TODO' .
+:meta_1_8 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://www.web3d.org/documents/specifications/19775-1/V3.3/Part01/concepts.html#Rootnodes' ;
+  x3do:name 'reference' .
+:meta_1_9 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Increase X3D profile (or add component statements) to match if any other X3D nodes are added to this scene.' ;
+  x3do:name 'info' .
+:meta_1_10 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://X3dGraphics.com/examples/X3dForWebAuthors/EmptySceneCoreProfile.x3d' ;
+  x3do:name 'identifier' .
+:meta_1_11 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://x3dgraphics.com/chapters/Chapter15MetadataInformation.html' ;
+  x3do:name 'reference' .
+:meta_1_12 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://X3dGraphics.com' ;
+  x3do:name 'reference' .
+:meta_1_13 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'X3D-Edit 3.3, https://savage.nps.edu/X3D-Edit' ;
+  x3do:name 'generator' .
+:meta_1_14 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '../license.html' ;
+  x3do:name 'license' .
+:meta dcterms:title "EmptySceneCoreProfile.x3d" .
+:meta dcterms:description "Illustrate a minimalist scene using only Core profile nodes. Root nodes must either be allowed children nodes of a Grouping node, or a LayerSet node. Note that DOCTYPE, head/meta and Group/Metadata* elements can be deleted without losing scene validity." .
+:meta dcterms:creator "Leonard Daly, Don Brutzman" .
+:meta dcterms:created "24 February 2014" .
+:meta dcterms:modified "20 October 2019" .
+:meta dcterms:reference "EmptyScene.x3d" .
+:meta dcterms:reference "https://www.web3d.org/documents/specifications/19775-1/V3.3/Part01/concepts.html#Rootnodes" .
+:meta dcterms:identifier "https://X3dGraphics.com/examples/X3dForWebAuthors/EmptySceneCoreProfile.x3d" .
+:meta dcterms:reference "https://x3dgraphics.com/chapters/Chapter15MetadataInformation.html" .
+:meta dcterms:reference "https://X3dGraphics.com" .
+:meta dcterms:generator "X3D-Edit 3.3, https://savage.nps.edu/X3D-Edit" .
+:meta dcterms:license "../license.html" .
+:Scene a owl:NamedIndividual, x3do:Scene ;
+  x3do:hasParent :X3D ;
+  x3do:hasChildren :WorldInfo_2_1, :WorldInfo_2_2 .
+:WorldInfo_2_1 a owl:NamedIndividual, x3do:WorldInfo ;
+  x3do:hasParent :Scene ;
+  x3do:title 'EmptySceneCoreProfile.x3d' .
+:WorldInfo_2_2 a owl:NamedIndividual, x3do:WorldInfo ;
+  x3do:hasParent :Scene ;
+  x3do:hasMetadata :MetadataSet_2_2_1 ;
+  x3do:title 'EmptySceneCoreProfile.x3d' .
+:MetadataSet_2_2_1 a owl:NamedIndividual, x3do:MetadataSet ;
+  x3do:hasParent :WorldInfo_2_2 ;
+  x3do:hasValue :MetadataBoolean_2_2_1_1, :MetadataDouble_2_2_1_2, :MetadataFloat_2_2_1_3, :MetadataInteger_2_2_1_4, :MetadataString_2_2_1_5 ;
+  x3do:name 'NodeSet' .
+:MetadataBoolean_2_2_1_1 a owl:NamedIndividual, x3do:MetadataBoolean ;
+  x3do:hasParent :MetadataSet_2_2_1 ;
+  x3do:name 'BooleanData' ;
+  x3do:value ( true false ) .
+:MetadataDouble_2_2_1_2 a owl:NamedIndividual, x3do:MetadataDouble ;
+  x3do:hasParent :MetadataSet_2_2_1 ;
+  x3do:name 'DoubleData' ;
+  x3do:value ( 1 2 3 ) .
+:MetadataFloat_2_2_1_3 a owl:NamedIndividual, x3do:MetadataFloat ;
+  x3do:hasParent :MetadataSet_2_2_1 ;
+  x3do:name 'FloatData' ;
+  x3do:value ( 4 5 6 ) .
+:MetadataInteger_2_2_1_4 a owl:NamedIndividual, x3do:MetadataInteger ;
+  x3do:hasParent :MetadataSet_2_2_1 ;
+  x3do:name 'IntegerData' ;
+  x3do:value ( 7 8 9 ) .
+:MetadataString_2_2_1_5 a owl:NamedIndividual, x3do:MetadataString ;
+  x3do:hasParent :MetadataSet_2_2_1 ;
+  x3do:name 'StringData' ;
+  x3do:value '"Empty Scene" "Core Profile"' .

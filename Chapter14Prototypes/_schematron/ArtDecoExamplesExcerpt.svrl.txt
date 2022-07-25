@@ -1,0 +1,5 @@
+<X3D profile='Immersive'> is defined satisfactorily for this scene, but ensure that child Inline scenes do not exceed this profile/component combination since a parent scene must have an equal or higher profile/component combination [/X3D, info]
+<meta name='TODO' content='Xj3D not displaying materials loaded from ExternProtoDeclare ProtoInstance nodes'/>[/X3D/head/meta[7], diagnostic]
+<Anchor DEF=''/> url array contains an address link with too many # characters - only one # is allowed for each bookmark, viewpoint or prototype reference [/X3D/Scene/Group/Transform[2]/Transform/Anchor, error]
+<Anchor DEF=''/> url array contains an address link with too many # characters - only one # is allowed for each bookmark, viewpoint or prototype reference [/X3D/Scene/Group/Transform[3]/Transform/Anchor, error]
+<Anchor DEF=''/> url array contains an address link with too many # characters - only one # is allowed for each bookmark, viewpoint or prototype reference [/X3D/Scene/Group/Transform[4]/Transform/Anchor, error]

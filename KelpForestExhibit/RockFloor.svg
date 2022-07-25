@@ -1,0 +1,13 @@
+
+        
+ecmascript:
+
+function hitPoint_changed (value, timestamp)
+{
+	xBlock = Math.floor(value[0] / xSpacing);
+	zBlock = Math.floor(value[2] / zSpacing);
+	Browser.print ('hitPoint=' + value + ', Index(x,z)=(' +
+		xBlock + ',' + zBlock + ')');
+}
+
+      

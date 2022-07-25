@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/TR/xhtml1/strict"
+       xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
+       xmlns:saxon="http://icl.com/saxon">
+   <head>
+      <title>XmpMetadataEmbedded.x3d (X3dToXhtml listing)</title>
+      <!-- I18N -->
+      <meta http-equiv="X-UA-Compatible" content="chrome=1,IE=edge"/>
+      <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+      <style type="text/css">
+span.element {color: navy}
+span.attribute {color: green}
+span.value {color: teal}
+span.plain {color: black}
+span.gray  {color: gray}
+span.idName {color: maroon}
+span.addedDocumentation {background-color:#EEEEEE} /* slightly darker for html page contrast */
+span.behaviorNode       {background-color:#DDEEFF} /*      light blue for html page contrast */
+span.extensibilityNode  {background-color:#FFEEFF} /*    lighter blue for html page contrast */
+a.idName {color: maroon}
+div.center {text-align: center}
+div.indent {margin-left: 25px}
+
+span.prototype {color: purple}
+a.prototype {color: purple}
+a.prototype:visited {color: black}
+span.route {color: red}
+b.warning {color: #CC5500}
+b.error {color: #CC0000}
+
+                </style>
+      <style type="text/css">
+table.curvedEdges { border:10px solid RoyalBlue;-webkit-border-radius:13px;-moz-border-radius:13px;-ms-border-radius:13px;-o-border-radius:13px;border-radius:13px; }
+table.curvedEdges td, table.curvedEdges th { border-bottom:1px dotted black;padding:5px; }
+</style>
+      <meta name="generator" content="XSLT processor Saxonica"/>
+      <meta name="generator"
+             content="https://www.web3d.org/x3d/stylesheets/X3dToXhtml.xslt"/>
+      <meta name="generator"
+             content="https://sourceforge.net/p/x3d/code/HEAD/tree/www.web3d.org/x3d/stylesheets/X3dToXhtml.xslt"/>
+      <link rel="shortcut icon"
+             href="https://www.web3d.org/x3d/content/icons/X3DtextIcon16.png"
+             title="X3D"/>
+   </head>
+   <body>
+      <code title="XML declaration">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</code>
+      <br/>
+      <code title="Document Type Declaration (DTD) for X3D validation">&lt;!DOCTYPE X3D PUBLIC "ISO//Web3D//DTD X3D 4.0//EN" "<a href="https://www.web3d.org/specifications/x3d-3.3.dtd">https://www.web3d.org/specifications/x3d-4.0.dtd</a>"&gt;</code>
+      <div>
+<span title="X3D is the top-most XML element for an Extensible 3D (X3D) Graphics file">&lt;<span class="element">X3D</span>&#160;<span title="X3D Immersive Profile supports most nodes, similar to VRML97"><span class="attribute">profile</span>='<span class="value">Immersive</span>'</span>&#160;<span class="attribute">version</span>='<span class="value">4.0</span>'&#160;<span title="XML namespace for X3D Graphics schema validation"><span title="XML namespace for XML Schema validation">
+            <span class="attribute">xmlns:xsd</span>='<a href="http://www.w3.org/2001/XMLSchema-instance" target="_blank">http://www.w3.org/2001/XMLSchema-instance</a>'
+</span>
+         <span title="XML namespace for X3D Graphics schema validation">
+            <span class="attribute">xsd:noNamespaceSchemaLocation</span>
+         </span>='
+<a href="https://www.web3d.org/specifications/x3d-4.0.xsd" target="_blank">https://www.web3d.org/specifications/x3d-4.0.xsd</a>
+'</span>&gt;
+</span><div class="indent">
+<span title="head can contain component, unit, and author-defined metadata (meta) tags">&lt;<span class="element">head</span>&gt;
+</span><div class="indent">
+               <span title="XML comment">&lt;!--  of  note  is  that  name  values  for  these  document  meta  terms  are  defined  by  Dublin  Core  --&gt;</span>
+<br />
+
+<span title="meta 'title' provides file name for this resource">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">title</span>'&#160;<span class="attribute">content</span>='<a href="XmpMetadataEmbedded.x3d">XmpMetadataEmbedded.x3d</a>'/&gt;
+</span><br />
+
+<span title="meta 'description' provides summary overview describing this resource">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">description</span>'&#160;<span class="attribute">content</span>='<span class="plain">Simple XMP sidecar example: Hello XMP metadata!</span>'/&gt;
+</span><br />
+
+<span title="meta 'created' provides date of initial version">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">created</span>'&#160;<span class="attribute">content</span>='<span class="value">29 April 2021</span>'/&gt;
+</span><br />
+
+<span title="author-defined metadata">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">revised</span>'&#160;<span class="attribute">content</span>='<span class="value">21 February 2022</span>'/&gt;
+</span><br />
+
+<span title="meta 'creator' provides name of original author">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">creator</span>'&#160;<span class="attribute">content</span>='<span class="value">Don Brutzman, Vince Marchetti, Jakub Flotynski, Dick Puk</span>'/&gt;
+</span><br />
+
+<span title="meta 'warning' provides warning information about a known problem that impedes proper operation">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<b class="warning"> warning </b>'&#160;<span class="attribute">content</span>='<b class="warning"> Source  model  assumes  default  containerField=value  for  X3D4  Metadata  nodes,  specification  resolution  needed </b>'/&gt;
+</span><br />
+
+<span title="meta 'reference' provides name or reference link to a supporting resource">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">reference</span>'&#160;<span class="attribute">content</span>='<span class="value">Summary presentation XmpMetadataSupportX3D.pptx</span>'/&gt;
+</span><br />
+
+<span title="meta 'reference' provides name or reference link to a supporting resource">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">reference</span>'&#160;<span class="attribute">content</span>='<a href="XmpMetadataSidecar.xml">XmpMetadataSidecar.xml</a>'/&gt;
+</span><br />
+
+<span title="meta 'reference' provides name or reference link to a supporting resource">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">reference</span>'&#160;<span class="attribute">content</span>='<a href="XmpMetadataSidecar.rdf">XmpMetadataSidecar.rdf</a>'/&gt;
+</span><br />
+
+<span title="meta 'reference' provides name or reference link to a supporting resource">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">reference</span>'&#160;<span class="attribute">content</span>='<a href="XmpMetadataSidecar.ttl">XmpMetadataSidecar.ttl</a>'/&gt;
+</span><br />
+
+<span title="meta 'generator' provides name of authoring tool or translation tool producing this scene">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">generator</span>'&#160;<span class="attribute">content</span>='<span class="value">Protege </span>
+               <a href="https://protege.stanford.edu" target="_blank">https://protege.stanford.edu</a>'/&gt;
+</span><br />
+
+<span title="meta 'image' provides name or reference link to a supporting image file">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">Image</span>'&#160;<span class="attribute">content</span>='<a href="XmpMetadataEmbeddedX3dComparison.png">XmpMetadataEmbeddedX3dComparison.png</a>'/&gt;
+</span><br />
+
+<span title="meta 'reference' provides name or reference link to a supporting resource">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">reference</span>'&#160;<span class="attribute">content</span>='
+<a href="https://www.web3d.org/specifications/X3Dv4Draft/ISO-IEC19775-1v4-CD1/Part01/components/core.html#MetadataSet"
+                   target="_blank">https://www.web3d.org/specifications/X3Dv4Draft/ISO-IEC19775-1v4-CD1/Part01/components/core.html#MetadataSet</a>
+'/&gt;
+</span><br /><span title="XML comment">&lt;!--  Wikipedia  example  RDF  XML  plus  Protege  conversion  to  Turtle  .ttl  --&gt;</span>
+<br />
+
+<span title="meta 'reference' provides name or reference link to a supporting resource">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">reference</span>'&#160;<span class="attribute">content</span>='<a href="XmpMetadataExampleWikipedia.xml">XmpMetadataExampleWikipedia.xml</a>'/&gt;
+</span><br />
+
+<span title="meta 'reference' provides name or reference link to a supporting resource">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">reference</span>'&#160;<span class="attribute">content</span>='<a href="XmpMetadataExampleWikipedia.ttl">XmpMetadataExampleWikipedia.ttl</a>'/&gt;
+</span><br />
+
+<span title="meta 'reference' provides name or reference link to a supporting resource">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">reference</span>'&#160;<span class="attribute">content</span>='
+<a href="https://wwwimages2.adobe.com/content/dam/acom/en/devnet/xmp/pdfs/XMP%20SDK%20Release%20cc-2016-08/XMPSpecificationPart1.pdf"
+                   target="_blank">https://wwwimages2.adobe.com/content/dam/acom/en/devnet/xmp/pdfs/XMP%20SDK%20Release%20cc-2016-08/XMPSpecificationPart1.pdf</a>
+'/&gt;
+</span><br />
+
+<span title="meta 'TODO' action item (to do) that still needs to be performed">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<b class="warning"> TODO </b>'&#160;<span class="attribute">content</span>='<b class="warning"> Once  pattern  OK,  write  conversion  stylesheets  XmpToX3dMetadata.xslt  and  X3dMetadataToXmp.xslt </b>'/&gt;
+</span><br />
+
+<span title="meta 'info' provides additional information of interest">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">info</span>'&#160;<span class="attribute">content</span>='<span class="plain">X3D support for xml:lang attribute not provided in X3D XML Schema, instead use MetadataString as best practice.</span>'/&gt;
+</span><br />
+
+<span title="meta 'reference' provides name or reference link to a supporting resource">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">reference</span>'&#160;<span class="attribute">content</span>='
+Wikipedia XMP <a href="https://en.wikipedia.org/wiki/Extensible_Metadata_Platform"
+                   target="_blank">https://en.wikipedia.org/wiki/Extensible_Metadata_Platform</a>
+'/&gt;
+</span><br />
+
+<span title="meta 'reference' provides name or reference link to a supporting resource">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">reference</span>'&#160;<span class="attribute">content</span>='
+Wikipedia Metadata <a href="https://en.wikipedia.org/wiki/Metadata" target="_blank">https://en.wikipedia.org/wiki/Metadata</a>
+'/&gt;
+</span><br />
+
+<span title="meta 'reference' provides name or reference link to a supporting resource">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">reference</span>'&#160;<span class="attribute">content</span>='
+<a href="https://en.wikipedia.org/wiki/Sidecar" target="_blank">https://en.wikipedia.org/wiki/Sidecar</a>
+'/&gt;
+</span><br />
+
+<span title="meta 'reference' provides name or reference link to a supporting resource">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">reference</span>'&#160;<span class="attribute">content</span>='
+<a href="https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/xmp.html"
+                   target="_blank">https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/xmp.html</a>
+'/&gt;
+</span><br />
+
+<span title="meta 'reference' provides name or reference link to a supporting resource">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">reference</span>'&#160;<span class="attribute">content</span>='
+<a href="https://en.wikipedia.org/wiki/Ontology_for_Media_Resources"
+                   target="_blank">https://en.wikipedia.org/wiki/Ontology_for_Media_Resources</a>
+'/&gt;
+</span><br />
+
+<span title="meta 'reference' provides name or reference link to a supporting resource">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">reference</span>'&#160;<span class="attribute">content</span>='
+<a href="https://en.wikipedia.org/wiki/Multimedia_Web_Ontology_Language"
+                   target="_blank">https://en.wikipedia.org/wiki/Multimedia_Web_Ontology_Language</a>
+'/&gt;
+</span><br />
+
+<span title="meta 'reference' provides name or reference link to a supporting resource">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">reference</span>'&#160;<span class="attribute">content</span>='
+W3C Ontology for Media Resources 1.0 <a href="https://www.w3.org/TR/mediaont-10" target="_blank">https://www.w3.org/TR/mediaont-10</a>
+'/&gt;
+</span><br />
+
+<span title="meta 'reference' provides name or reference link to a supporting resource">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">reference</span>'&#160;<span class="attribute">content</span>='
+ISO XMP ISO 16684-1:2019Part 1: Data model, serialization and core properties <a href="https://www.iso.org/standard/75163.html" target="_blank">https://www.iso.org/standard/75163.html</a>
+'/&gt;
+</span><br />
+
+<span title="meta 'reference' provides name or reference link to a supporting resource">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">reference</span>'&#160;<span class="attribute">content</span>='
+ISO XMP 16684-2:2014 Part 2: Description of XMP schemas using RELAX NG <a href="https://www.iso.org/standard/57422.html" target="_blank">https://www.iso.org/standard/57422.html</a>
+'/&gt;
+</span><br />
+
+<span title="meta 'reference' provides name or reference link to a supporting resource">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">reference</span>'&#160;<span class="attribute">content</span>='
+Adobe XMP <a href="https://www.adobe.com/devnet/xmp.html" target="_blank">https://www.adobe.com/devnet/xmp.html</a>
+'/&gt;
+</span><br />
+
+<span title="meta 'reference' provides name or reference link to a supporting resource">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">reference</span>'&#160;<span class="attribute">content</span>='
+Adobe XMP <a href="https://www.adobe.com/products/xmp.html" target="_blank">https://www.adobe.com/products/xmp.html</a>
+'/&gt;
+</span><br />
+
+<span title="meta 'reference' provides name or reference link to a supporting resource">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">reference</span>'&#160;<span class="attribute">content</span>='
+ExifTool XMP Tags <a href="https://exiftool.org/TagNames/XMP.html" target="_blank">https://exiftool.org/TagNames/XMP.html</a>
+'/&gt;
+</span><br />
+
+<span title="meta 'identifier' provides the unique Uniform Resource Identifier (URI) or url address for this resource">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">identifier</span>'&#160;<span class="attribute">content</span>='
+<a href="https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter15Metadata/XmpMetadataEmbedded.x3d"
+                   target="_blank">https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter15Metadata/XmpMetadataEmbedded.x3d</a>
+'/&gt;
+</span><br />
+
+<span title="meta 'license' provides software license link or information">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">license</span>'&#160;<span class="attribute">content</span>='
+<a href="https://www.web3d.org/x3d/content/examples/license.html"
+                   target="_blank">https://www.web3d.org/x3d/content/examples/license.html</a>
+'/&gt;
+</span><br />
+
+<span title="meta 'generator' provides name of authoring tool or translation tool producing this scene">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">generator</span>'&#160;<span class="attribute">content</span>='<span class="value">X3D-Edit 4.0, </span>
+               <a href="https://savage.nps.edu/X3D-Edit" target="_blank">https://savage.nps.edu/X3D-Edit</a>'/&gt;
+</span></div><span title="head can contain component, unit, and author-defined metadata (meta) tags">&lt;/<span class="element">head</span>&gt;
+</span><br /><span style="color:white">
+&lt;!--
+</span>
+            <div class="center">
+               <hr style="width:100%"/>
+               <b>
+                  <i>Index for Viewpoint image</i>
+               </b>: 
+<a title="go to this Viewpoint node: View scene source to see metadata examples"
+                   href="#Viewpoint_1"
+                   class="idName">Viewpoint_1</a>
+               <hr style="width:100%"/>
+            </div>
+            <span style="color:white">
+--&gt;
+</span><br />
+
+<span title="Scene is the root node that contains an X3D scene graph">&lt;<span class="element">Scene</span>&gt;
+</span><div class="indent">
+               <span title="XML comment">&lt;!--  Design  considerations:  --&gt;</span>
+<br /><span title="XML comment">&lt;!--  a.  avoid  containerField='metadata'  and  containerField='value'  wherever  possible,  note  X3D4  XML  schema  revision  is  needed  --&gt;</span>
+<br /><span title="XML comment">&lt;!--  b.  literal  XMP  values  wherever  possible,  lossless  --&gt;</span>
+<br /><span title="XML comment">&lt;!--  c.  avoid  nested  quotes/apostrophes  by  using  MetadataString  name/value  pairs  --&gt;</span>
+<br /><span title="XML comment">&lt;!--  d.  map  XMP  parent  elements  to  MetadataSet,  otherwise  have  typed  Metadata*  values  wherever  possible  --&gt;</span>
+<br /><span title="XML comment">&lt;!--  e.  push  shared  properties  as  high  as  possible  in  MetadataSet  hierarchy,  since  they  apply  to  all  children  --&gt;</span>
+<br /><span title="XML comment">&lt;!--  f.  assumptions:  unquoted  MFString  values  equal  a  single  SFString  array  element,  default  Metadata*  node  containerField='value'  --&gt;</span>
+<br /><span title="XML comment">&lt;!--  g.  MetadataSet  nodes  contain  other  Metadata*  nodes  as  the  /value/  field,  thus  producing  tree-like  structured  metadata  information  --&gt;</span>
+<br />
+
+<span title="WorldInfo contains persistent documentation information about the 3D world">&lt;<span class="element">WorldInfo</span>&#160;<span class="attribute">title</span>='<span class="value">XmpMetadataEmbedded.x3d</span>'/&gt;
+</span><br />
+
+<span title="Background simulates ground and sky, using vertical arrays of wraparound color values or backdrop textures on all six sides">&lt;<span class="element">Background</span>&#160;<span class="attribute">skyColor</span>='<span class="value">0 0.439216 0.760784</span>'/&gt;
+</span><br /><span title="XML comment">&lt;!--  Sample  (partial)  XMP  sidecar  file  XmpMetadataSidecar.xml  generated  manually  by  Vince  Marchetti  as  part  of  the  STEP  Geometry  Services  Pilot  Project  --&gt;</span>
+<br />
+
+&lt;<span class="element">MetadataSet</span>&#160;<span class="attribute">name</span>='<span class="value">rdf:RDF</span>'&#160;<span class="attribute">reference</span>='<span class="value">TODO refer to XMP ISO specification document</span>'&gt;
+<div class="indent">
+&lt;<span class="element">MetadataSet</span>&#160;<span class="attribute">name</span>='<span class="value">namespaces</span>'&gt;
+<div class="indent">
+&lt;<span class="element">MetadataString</span>&#160;<span class="attribute">name</span>='<span class="value">xmlns:rdf</span>'&#160;<span class="attribute">value</span>='
+<a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#" target="_blank">http://www.w3.org/1999/02/22-rdf-syntax-ns#</a>
+'/&gt;
+<br />
+
+&lt;<span class="element">MetadataString</span>&#160;<span class="attribute">name</span>='<span class="value">xmlns:dc</span>'&#160;<span class="attribute">value</span>='
+<a href="http://purl.org/dc/elements/1.1/" target="_blank">http://purl.org/dc/elements/1.1/</a>
+'/&gt;
+<br />
+
+&lt;<span class="element">MetadataString</span>&#160;<span class="attribute">name</span>='<span class="value">xmlns:xmp</span>'&#160;<span class="attribute">value</span>='
+<a href="http://ns.adobe.com/xap/1.0/" target="_blank">http://ns.adobe.com/xap/1.0/</a>
+'/&gt;
+</div>&lt;/<span class="element">MetadataSet</span>&gt;
+<br />
+
+&lt;<span class="element">MetadataSet</span>&#160;<span class="attribute">name</span>='<span class="value">rdf:Description</span>'&gt;
+<div class="indent">
+&lt;<span class="element">MetadataString</span>&#160;<span class="attribute">name</span>='<span class="value">rdf:about</span>'&#160;<span class="attribute">value</span>='
+<a href="https://kshell.com/sgs/example_uri_0001/" target="_blank">https://kshell.com/sgs/example_uri_0001/</a>
+'/&gt;
+<br />
+
+&lt;<span class="element">MetadataSet</span>&#160;<span class="attribute">name</span>='<span class="value">dc:description</span>'&gt;
+<div class="indent">
+&lt;<span class="element">MetadataSet</span>&#160;<span class="attribute">name</span>='<span class="value">rdf:Alt</span>'&gt;
+<div class="indent">
+&lt;<span class="element">MetadataString</span>&#160;<span class="attribute">name</span>='<span class="value">rdf:li</span>'&#160;<span class="attribute">value</span>='<span class="value">VRML visualization</span>'&gt;
+<div class="indent">
+                              <span title="XML comment">&lt;!--  discouraging  direct  use  of  xml:lang='en'  as  an  attribute,  since  that  is  legal  XML  but  invalid  X3D  --&gt;</span>
+<br />
+
+&lt;<span class="element">MetadataString</span>&#160;<span class="attribute">containerField</span>='<span class="value">metadata</span>'&#160;<span class="attribute">name</span>='<span class="value">xml:lang</span>'&#160;<span class="attribute">reference</span>='<span class="value">prefer using MetadataString to indicate xml:lang values</span>'&#160;<span class="attribute">value</span>='<span class="value">en</span>'/&gt;
+</div>&lt;/<span class="element">MetadataString</span>&gt;
+</div>&lt;/<span class="element">MetadataSet</span>&gt;
+</div>&lt;/<span class="element">MetadataSet</span>&gt;
+<br />
+
+&lt;<span class="element">MetadataString</span>&#160;<span class="attribute">name</span>='<span class="value">dc:format</span>'&#160;<span class="attribute">value</span>='<a href="model/x3d-vrml">model/x3d-vrml</a>'/&gt;
+<br />
+
+&lt;<span class="element">MetadataString</span>&#160;<span class="attribute">name</span>='<span class="value">dc:rights</span>'&#160;<span class="attribute">value</span>='<span class="value">""</span>'/&gt;
+<br />
+
+&lt;<span class="element">MetadataSet</span>&#160;<span class="attribute">name</span>='<span class="value">dc:title</span>'&gt;
+<div class="indent">
+&lt;<span class="element">MetadataSet</span>&#160;<span class="attribute">name</span>='<span class="value">rdf:Alt</span>'&gt;
+<div class="indent">
+&lt;<span class="element">MetadataString</span>&#160;<span class="attribute">name</span>='<span class="value">rdf:li</span>'&#160;<span class="attribute">reference</span>="<span class="value">xml:lang='en'</span>"&#160;<span class="attribute">value</span>='<span class="value">l-bracket_20120725.134815</span>'&gt;
+<div class="indent">
+&lt;<span class="element">MetadataString</span>&#160;<span class="attribute">containerField</span>='<span class="value">metadata</span>'&#160;<span class="attribute">name</span>='<span class="value">xml:lang</span>'&#160;<span class="attribute">value</span>='<span class="value">en</span>'/&gt;
+</div>&lt;/<span class="element">MetadataString</span>&gt;
+<br />
+
+&lt;<span class="element">MetadataString</span>&#160;<span class="attribute">name</span>='<span class="value">rdf:li</span>'&#160;<span class="attribute">reference</span>="<span class="value">xml:lang='gr'</span>"&#160;<span class="attribute">value</span>='<span class="value">aristsirra-bracket_20120725.134815</span>'&gt;
+<div class="indent">
+&lt;<span class="element">MetadataString</span>&#160;<span class="attribute">containerField</span>='<span class="value">metadata</span>'&#160;<span class="attribute">name</span>='<span class="value">xml:lang</span>'&#160;<span class="attribute">reference</span>='<span class="value">prefer using MetadataString to indicate xml:lang values</span>'&#160;<span class="attribute">value</span>='<span class="value">en</span>'/&gt;
+</div>&lt;/<span class="element">MetadataString</span>&gt;
+</div>&lt;/<span class="element">MetadataSet</span>&gt;
+<br />
+
+&lt;<span class="element">MetadataSet</span>&#160;<span class="attribute">name</span>='<span class="value">dc:creator</span>'&gt;
+<div class="indent">
+&lt;<span class="element">MetadataSet</span>&#160;<span class="attribute">name</span>='<span class="value">rdf:Seq</span>'&gt;
+<div class="indent">
+&lt;<span class="element">MetadataString</span>&#160;<span class="attribute">name</span>='<span class="value">rdf:li</span>'&#160;<span class="attribute">value</span>='<span class="value">vmarchetti@kshell.com</span>'/&gt;
+</div>&lt;/<span class="element">MetadataSet</span>&gt;
+</div>&lt;/<span class="element">MetadataSet</span>&gt;
+<br />
+
+&lt;<span class="element">MetadataString</span>&#160;<span class="attribute">name</span>='<span class="value">xmp:CreateDate</span>'&#160;<span class="attribute">value</span>='<span class="value">2021-2-10</span>'/&gt;
+</div>&lt;/<span class="element">MetadataSet</span>&gt;
+</div>&lt;/<span class="element">MetadataSet</span>&gt;
+</div>&lt;/<span class="element">MetadataSet</span>&gt;
+<br />
+<a name="Viewpoint_1"> </a> 
+<span title="Viewpoint provides a specific location and direction where the user may view the scene">&lt;<span class="element">Viewpoint</span>&#160;<span class="attribute">description</span>='<a title="viewpoint image (produced using Xj3D)"
+                   href="_viewpoints/XmpMetadataEmbedded.x3d._VP_View_scene_source_to_see_metadata_examples.png">View scene source to see metadata examples</a>'&#160;<span class="attribute">position</span>='<span class="value">0 0 9</span>'/&gt;
+</span><br />
+
+<span title="Selecting Anchored geometry loads content specified by the url field">&lt;<span class="element">Anchor</span>&#160;<span class="attribute">description</span>='<span class="value">Load scene index page</span>'&#160;<span class="attribute">parameter</span>='<span class="value">"target=_blank"</span>'
+<br />
+&#160;&#160;<span title="uniform resource locator (url) list of relative or absolute file addresses, performed in order until resource retrieval succeeds"><span class="attribute">url</span>='
+ "<a href="XmpMetadataEmbeddedIndex.html" target="_blank">XmpMetadataEmbeddedIndex.html</a>" "<a href="https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter15Metadata/XmpMetadataEmbeddedIndex.html"
+                   target="_blank">https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter15Metadata/XmpMetadataEmbeddedIndex.html</a>" '</span>&gt;
+</span><div class="indent">
+<span title="Shape contains geometry and optional corresponding Appearance">&lt;<span class="element">Shape</span>&gt;
+</span><div class="indent">
+<span title="Text is a geometry primitive node">&lt;<span class="element">Text</span>&#160;<span class="attribute">string</span>='<span class="value">"View scene source" "to see" "XmpMetadataEmbedded" "example"</span>'&gt;
+</span><div class="indent">
+<span title="FontStyle defines the size, family, justification, and other styles used by Text nodes">&lt;<span class="element">FontStyle</span>&#160;<span class="attribute">justify</span>='<span class="value">"MIDDLE" "MIDDLE"</span>'/&gt;
+</span></div><span title="Text is a geometry primitive node">&lt;/<span class="element">Text</span>&gt;
+</span><br />
+
+<span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;<span class="element">Appearance</span>&gt;
+</span><div class="indent">
+<span title="Material specifies surface rendering properties for associated geometry">&lt;<span class="element">Material</span>&#160;<span class="attribute">diffuseColor</span>='<span class="value">1 0.992157 0.039216</span>'/&gt;
+</span></div><span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;/<span class="element">Appearance</span>&gt;
+</span></div><span title="Shape contains geometry and optional corresponding Appearance">&lt;/<span class="element">Shape</span>&gt;
+</span></div><span title="Selecting Anchored geometry loads content specified by the url field">&lt;/<span class="element">Anchor</span>&gt;
+</span></div><span title="Scene is the root node that contains an X3D scene graph">&lt;/<span class="element">Scene</span>&gt;
+</span></div><span title="X3D is the top-most XML element for an Extensible 3D (X3D) Graphics file">&lt;/<span class="element">X3D</span>&gt;
+</span><br /><span style="color:white">
+&lt;!--
+</span>
+         <div class="center">
+            <hr style="width:100%"/>
+            <b>
+               <i>Index for Viewpoint image</i>
+            </b>: 
+<a title="go to this Viewpoint node: View scene source to see metadata examples"
+                href="#Viewpoint_1"
+                class="idName">Viewpoint_1</a>
+            <hr style="width:100%"/>
+         </div>
+         <span style="color:white">
+--&gt;
+</span>
+      </div>
+      <p style="text-align:center;">
+         <span style="color:white">&lt;!--</span>
+Color key: <!--(matching X3D and XML terminology) -->
+&lt;<span class="element">X3dNode</span>
+         <span class="attribute">field</span>='<span class="value">value</span>'/&gt; 
+ matches 
+&lt;<span class="element">XmlElement</span>
+         <span class="attribute">attribute</span>='<span class="value">value</span>'/&gt; <br/>
+<span title="behavior node" style="background-color:#DDEEFF;">(Light blue background: behavior node)</span> <span title="inserted documentation about ROUTE connections" style="background-color:#EEEEEE;">(Grey background: inserted documentation)</span> <span title="X3D Extensibility" style="background-color:#FFEEFF;">(Magenta background: X3D Extensibility)</span><br/>
+         <span style="color:white"> --&gt;</span>
+      </p>
+      <p style="text-align:center; background-color:white">
+         <span style="color:white">&lt;!--</span>
+For additional help information about X3D scenes, please see <a href="https://www.web3d.org/x3d/content/X3dTooltips.html"
+             title="Summary descriptions and authoring hints for each X3D node (element) and field (attribute)"
+             target="_blank">X3D Tooltips</a>, <a href="https://www.web3d.org/x3d/content/examples/X3dResources.html"
+             title="Numerous resources that support X3D graphics"
+             target="_blank">X3D Resources</a> and <a href="https://www.web3d.org/x3d/content/examples/X3dSceneAuthoringHints.html"
+             title="Style guidelines, authoring tips and best practices"
+             target="_blank">X3D Scene Authoring Hints</a>.
+<span style="color:white">--&gt;</span>
+      </p>
+   </body>
+</html>

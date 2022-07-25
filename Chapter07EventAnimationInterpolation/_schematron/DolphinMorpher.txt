@@ -1,0 +1,2 @@
+<X3D profile='Immersive'> but actual profile='Interchange' [/X3D, info]
+<TimeSensor DEF='Clock'/> missing description [/X3D/Scene/TimeSensor, warning]

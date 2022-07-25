@@ -1,0 +1,17 @@
+
+      
+ecmascript:
+function initialize ()
+{
+	Browser.println ('Script initialize() complete');
+}
+function loadComplete (value)
+{
+	Browser.println ('LoadSensor AudioClip isLoaded=' + value);
+}
+function loadTime (value)
+{
+	Browser.println ('LoadSensor AudioClip loadTime=' + value);
+}
+
+    

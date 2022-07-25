@@ -1,0 +1,466 @@
+@prefix :        <https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter06GeometryPointsLinesPolygons/ElevationGridNonPlanarQuadrilaterals.ttl#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema:  <http://schema.org/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix x3d:     <https://www.web3d.org/specifications/x3d-4.0.xsd#> .
+@prefix x3do:    <https://www.web3d.org/specifications/X3dOntology4.0#> .
+
+:X3D a owl:NamedIndividual, x3do:X3D ;
+  x3do:hasHead :head ;
+  x3do:hasScene :Scene ;
+  x3do:profile 'Immersive' ;
+  x3do:version '3.3' ;
+  x3do:noNamespaceSchemaLocation 'https://www.web3d.org/specifications/x3d-3.3.xsd' .
+:head a owl:NamedIndividual, x3do:head ;
+  x3do:hasParent :X3D ;
+  x3do:hasMeta :meta_1_1, :meta_1_2, :meta_1_3, :meta_1_4, :meta_1_5, :meta_1_6, :meta_1_7, :meta_1_8, :meta_1_9 .
+:meta_1_1 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'ElevationGridNonPlanarQuadrilaterals.x3d' ;
+  x3do:name 'title' .
+:meta_1_2 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Show how a single nonplanar quadrilateral can be tesselated in 2 different ways.' ;
+  x3do:name 'description' .
+:meta_1_3 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Don Brutzman' ;
+  x3do:name 'creator' .
+:meta_1_4 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'U.S. Naval Postgraduate School (NPS)' ;
+  x3do:name 'contributor' .
+:meta_1_5 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '28 August 2005' ;
+  x3do:name 'created' .
+:meta_1_6 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '20 October 2019' ;
+  x3do:name 'modified' .
+:meta_1_7 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter06GeometryPointsLinesPolygons/ElevationGridNonPlanarQuadrilaterals.x3d' ;
+  x3do:name 'identifier' .
+:meta_1_8 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'X3D-Edit 3.3, https://savage.nps.edu/X3D-Edit' ;
+  x3do:name 'generator' .
+:meta_1_9 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '../license.html' ;
+  x3do:name 'license' .
+:meta dcterms:title "ElevationGridNonPlanarQuadrilaterals.x3d" .
+:meta dcterms:description "Show how a single nonplanar quadrilateral can be tesselated in 2 different ways." .
+:meta dcterms:creator "Don Brutzman" .
+:meta dcterms:created "28 August 2005" .
+:meta dcterms:modified "20 October 2019" .
+:meta dcterms:identifier "https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter06GeometryPointsLinesPolygons/ElevationGridNonPlanarQuadrilaterals.x3d" .
+:meta dcterms:generator "X3D-Edit 3.3, https://savage.nps.edu/X3D-Edit" .
+:meta dcterms:license "../license.html" .
+:Scene a owl:NamedIndividual, x3do:Scene ;
+  x3do:hasParent :X3D ;
+  x3do:hasChildren :WorldInfo_2_1, :ExamineMode, :FlyPanNavigation, :Background_2_4, :Viewpoint_2_5, :DefaultView, :Transform_2_8 ;
+  x3do:hasROUTE :ROUTE_2_7 .
+:WorldInfo_2_1 a owl:NamedIndividual, x3do:WorldInfo ;
+  x3do:hasParent :Scene ;
+  x3do:title 'ElevationGridNonPlanarQuadrilaterals.x3d' .
+:ExamineMode a owl:NamedIndividual, x3do:NavigationInfo ;
+  x3do:hasParent :Scene ;
+  x3do:DEF 'ExamineMode' .
+:FlyPanNavigation a owl:NamedIndividual, x3do:NavigationInfo ;
+  x3do:hasParent :Scene ;
+  x3do:DEF 'FlyPanNavigation' ;
+  x3do:type '"FLY" "ANY"' .
+:Background_2_4 a owl:NamedIndividual, x3do:Background ;
+  x3do:hasParent :Scene ;
+  x3do:skyColor ( 1 1 1 ) .
+:Viewpoint_2_5 a owl:NamedIndividual, x3do:Viewpoint ;
+  x3do:hasParent :Scene ;
+  x3do:description 'Book View' ;
+  x3do:orientation ( 0 1 0 0.01 ) ;
+  x3do:position ( 0.13 0.2 7.71 ) .
+:DefaultView a owl:NamedIndividual, x3do:Viewpoint ;
+  x3do:hasParent :Scene ;
+  x3do:DEF 'DefaultView' ;
+  x3do:description 'ElevationGrid tessellation examples' ;
+  x3do:position ( 0 0.2 10 ) .
+:ROUTE_2_7 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'isBound' ;
+  x3do:fromNode 'DefaultView' ;
+  x3do:toField 'set_bind' ;
+  x3do:toNode 'FlyPanNavigation' .
+:Transform_2_8 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :FigureElevationGridBack, :FigureElevationGridFront, :FigureIfsCenterDiagonal, :FigureIfsCrossDiagonal ;
+  x3do:translation ( 0 -0.75 0 ) .
+:FigureElevationGridBack a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_8 ;
+  x3do:hasChildren :Viewpoint_2_8_1_1, :Transform_2_8_1_2 ;
+  x3do:DEF 'FigureElevationGridBack' ;
+  x3do:translation ( -4 0 0 ) .
+:Viewpoint_2_8_1_1 a owl:NamedIndividual, x3do:Viewpoint ;
+  x3do:hasParent :FigureElevationGridBack ;
+  x3do:description 'Default brower ElevationGrid tessellation, front view' ;
+  x3do:position ( 1.5 0.4 4 ) .
+:Transform_2_8_1_2 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :FigureElevationGridBack ;
+  x3do:hasChildren :DefaultElevationGrid ;
+  x3do:center ( 1 0 1 ) ;
+  x3do:rotation ( 0 1 0 3.2 ) .
+:DefaultElevationGrid a owl:NamedIndividual, x3do:Group ;
+  x3do:hasParent :Transform_2_8_1_2 ;
+  x3do:hasChildren :ExampleElevationGridShape, :FigureLabelBrowserElevationGrid, :CommonFigureElements, :QuadCrossDiagonalLineShape, :QuadCenterDiagonalLineShape ;
+  x3do:DEF 'DefaultElevationGrid' .
+:ExampleElevationGridShape a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :DefaultElevationGrid ;
+  x3do:hasGeometry :ElevationGrid_2_8_1_2_1_1_1 ;
+  x3do:hasAppearance :DiffuseRedAppearance ;
+  x3do:DEF 'ExampleElevationGridShape' .
+:ElevationGrid_2_8_1_2_1_1_1 a owl:NamedIndividual, x3do:ElevationGrid ;
+  x3do:hasParent :ExampleElevationGridShape ;
+  x3do:height ( 0 0.5 0 0 ) ;
+  x3do:solid false .
+:DiffuseRedAppearance a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :ExampleElevationGridShape ;
+  x3do:hasMaterial :Material_2_8_1_2_1_1_2_1 ;
+  x3do:DEF 'DiffuseRedAppearance' .
+:Material_2_8_1_2_1_1_2_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :DiffuseRedAppearance ;
+  x3do:diffuseColor ( 0.9 0.1 0.1 ) ;
+  x3do:transparency 0.1 .
+:FigureLabelBrowserElevationGrid a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :DefaultElevationGrid ;
+  x3do:hasChildren :Billboard_2_8_1_2_1_2_1 ;
+  x3do:DEF 'FigureLabelBrowserElevationGrid' ;
+  x3do:translation ( 0.5 1 0.5 ) .
+:Billboard_2_8_1_2_1_2_1 a owl:NamedIndividual, x3do:Billboard ;
+  x3do:hasParent :FigureLabelBrowserElevationGrid ;
+  x3do:hasChildren :Shape_2_8_1_2_1_2_1_1 .
+:Shape_2_8_1_2_1_2_1_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Billboard_2_8_1_2_1_2_1 ;
+  x3do:hasGeometry :Text_2_8_1_2_1_2_1_1_1 ;
+  x3do:hasAppearance :LabelAppearance .
+:Text_2_8_1_2_1_2_1_1_1 a owl:NamedIndividual, x3do:Text ;
+  x3do:hasParent :Shape_2_8_1_2_1_2_1_1 ;
+  x3do:hasFontStyle :CenterFS ;
+  x3do:string '"Browser" "ElevationGrid"' .
+:CenterFS a owl:NamedIndividual, x3do:FontStyle ;
+  x3do:hasParent :Text_2_8_1_2_1_2_1_1_1 ;
+  x3do:DEF 'CenterFS' ;
+  x3do:justify '"MIDDLE" "MIDDLE"' ;
+  x3do:size 0.25 .
+:LabelAppearance a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_8_1_2_1_2_1_1 ;
+  x3do:hasMaterial :Material_2_8_1_2_1_2_1_1_2_1 ;
+  x3do:DEF 'LabelAppearance' .
+:Material_2_8_1_2_1_2_1_1_2_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :LabelAppearance ;
+  x3do:diffuseColor ( 0.2 0.1 0.8 ) .
+:CommonFigureElements a owl:NamedIndividual, x3do:Group ;
+  x3do:hasParent :DefaultElevationGrid ;
+  x3do:hasChildren :QuadOutlineShape, :FloorShape, :PointLabels, :QuadVerticalLineShape ;
+  x3do:DEF 'CommonFigureElements' .
+:QuadOutlineShape a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :CommonFigureElements ;
+  x3do:hasGeometry :IndexedLineSet_2_8_1_2_1_3_1_1 ;
+  x3do:DEF 'QuadOutlineShape' .
+:IndexedLineSet_2_8_1_2_1_3_1_1 a owl:NamedIndividual, x3do:IndexedLineSet ;
+  x3do:hasParent :QuadOutlineShape ;
+  x3do:hasCoord :QuadrilateralPoints ;
+  x3do:hasColor :White ;
+  x3do:colorIndex ( 0 0 0 0 ) ;
+  x3do:colorPerVertex false ;
+  x3do:coordIndex ( 0 1 3 2 0 -1 ) .
+:QuadrilateralPoints a owl:NamedIndividual, x3do:Coordinate ;
+  x3do:hasParent :IndexedLineSet_2_8_1_2_1_3_1_1 ;
+  x3do:DEF 'QuadrilateralPoints' ;
+  x3do:point ( 0 0 0 1 0.5 0 0 0 1 1 0 1 1 0 0 ) .
+:White a owl:NamedIndividual, x3do:Color ;
+  x3do:hasParent :IndexedLineSet_2_8_1_2_1_3_1_1 ;
+  x3do:DEF 'White' ;
+  x3do:color ( 1 1 1 ) .
+:FloorShape a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :CommonFigureElements ;
+  x3do:hasGeometry :ElevationGrid_2_8_1_2_1_3_2_1 ;
+  x3do:hasAppearance :TransparentGreyAppearance ;
+  x3do:DEF 'FloorShape' .
+:ElevationGrid_2_8_1_2_1_3_2_1 a owl:NamedIndividual, x3do:ElevationGrid ;
+  x3do:hasParent :FloorShape ;
+  x3do:solid false .
+:TransparentGreyAppearance a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :FloorShape ;
+  x3do:hasMaterial :Material_2_8_1_2_1_3_2_2_1 ;
+  x3do:DEF 'TransparentGreyAppearance' .
+:Material_2_8_1_2_1_3_2_2_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :TransparentGreyAppearance ;
+  x3do:diffuseColor ( 0 0 0 ) ;
+  x3do:transparency 0.8 .
+:PointLabels a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :CommonFigureElements ;
+  x3do:hasChildren :Billboard_2_8_1_2_1_3_3_1, :Transform_2_8_1_2_1_3_3_2, :Transform_2_8_1_2_1_3_3_3, :Transform_2_8_1_2_1_3_3_4 ;
+  x3do:DEF 'PointLabels' ;
+  x3do:translation ( 0 -0.2 0 ) .
+:Billboard_2_8_1_2_1_3_3_1 a owl:NamedIndividual, x3do:Billboard ;
+  x3do:hasParent :PointLabels ;
+  x3do:hasChildren :Shape_2_8_1_2_1_3_3_1_1 .
+:Shape_2_8_1_2_1_3_3_1_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Billboard_2_8_1_2_1_3_3_1 ;
+  x3do:hasGeometry :Text_2_8_1_2_1_3_3_1_1_1 ;
+  x3do:hasAppearance :LabelAppearance-USE-1 .
+:Text_2_8_1_2_1_3_3_1_1_1 a owl:NamedIndividual, x3do:Text ;
+  x3do:hasParent :Shape_2_8_1_2_1_3_3_1_1 ;
+  x3do:hasFontStyle :CenterFS-USE-1 ;
+  x3do:string '"h0"' .
+:CenterFS-USE-1 a owl:NamedIndividual, x3do:FontStyle ;
+  x3do:hasParent :Text_2_8_1_2_1_3_3_1_1_1 ;
+  owl:sameAs :CenterFS . # DEF matching this USE
+:LabelAppearance-USE-1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_8_1_2_1_3_3_1_1 ;
+  owl:sameAs :LabelAppearance . # DEF matching this USE
+:Transform_2_8_1_2_1_3_3_2 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :PointLabels ;
+  x3do:hasChildren :Billboard_2_8_1_2_1_3_3_2_1 ;
+  x3do:translation ( 1 0 0 ) .
+:Billboard_2_8_1_2_1_3_3_2_1 a owl:NamedIndividual, x3do:Billboard ;
+  x3do:hasParent :Transform_2_8_1_2_1_3_3_2 ;
+  x3do:hasChildren :Shape_2_8_1_2_1_3_3_2_1_1 .
+:Shape_2_8_1_2_1_3_3_2_1_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Billboard_2_8_1_2_1_3_3_2_1 ;
+  x3do:hasGeometry :Text_2_8_1_2_1_3_3_2_1_1_1 ;
+  x3do:hasAppearance :LabelAppearance-USE-2 .
+:Text_2_8_1_2_1_3_3_2_1_1_1 a owl:NamedIndividual, x3do:Text ;
+  x3do:hasParent :Shape_2_8_1_2_1_3_3_2_1_1 ;
+  x3do:hasFontStyle :CenterFS-USE-2 ;
+  x3do:string '"h1"' .
+:CenterFS-USE-2 a owl:NamedIndividual, x3do:FontStyle ;
+  x3do:hasParent :Text_2_8_1_2_1_3_3_2_1_1_1 ;
+  owl:sameAs :CenterFS . # DEF matching this USE
+:LabelAppearance-USE-2 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_8_1_2_1_3_3_2_1_1 ;
+  owl:sameAs :LabelAppearance . # DEF matching this USE
+:Transform_2_8_1_2_1_3_3_3 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :PointLabels ;
+  x3do:hasChildren :Billboard_2_8_1_2_1_3_3_3_1 ;
+  x3do:translation ( 0 0 1 ) .
+:Billboard_2_8_1_2_1_3_3_3_1 a owl:NamedIndividual, x3do:Billboard ;
+  x3do:hasParent :Transform_2_8_1_2_1_3_3_3 ;
+  x3do:hasChildren :Shape_2_8_1_2_1_3_3_3_1_1 .
+:Shape_2_8_1_2_1_3_3_3_1_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Billboard_2_8_1_2_1_3_3_3_1 ;
+  x3do:hasGeometry :Text_2_8_1_2_1_3_3_3_1_1_1 ;
+  x3do:hasAppearance :LabelAppearance-USE-3 .
+:Text_2_8_1_2_1_3_3_3_1_1_1 a owl:NamedIndividual, x3do:Text ;
+  x3do:hasParent :Shape_2_8_1_2_1_3_3_3_1_1 ;
+  x3do:hasFontStyle :CenterFS-USE-3 ;
+  x3do:string '"h2"' .
+:CenterFS-USE-3 a owl:NamedIndividual, x3do:FontStyle ;
+  x3do:hasParent :Text_2_8_1_2_1_3_3_3_1_1_1 ;
+  owl:sameAs :CenterFS . # DEF matching this USE
+:LabelAppearance-USE-3 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_8_1_2_1_3_3_3_1_1 ;
+  owl:sameAs :LabelAppearance . # DEF matching this USE
+:Transform_2_8_1_2_1_3_3_4 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :PointLabels ;
+  x3do:hasChildren :Billboard_2_8_1_2_1_3_3_4_1 ;
+  x3do:translation ( 1 0 1 ) .
+:Billboard_2_8_1_2_1_3_3_4_1 a owl:NamedIndividual, x3do:Billboard ;
+  x3do:hasParent :Transform_2_8_1_2_1_3_3_4 ;
+  x3do:hasChildren :Shape_2_8_1_2_1_3_3_4_1_1 .
+:Shape_2_8_1_2_1_3_3_4_1_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Billboard_2_8_1_2_1_3_3_4_1 ;
+  x3do:hasGeometry :Text_2_8_1_2_1_3_3_4_1_1_1 ;
+  x3do:hasAppearance :LabelAppearance-USE-4 .
+:Text_2_8_1_2_1_3_3_4_1_1_1 a owl:NamedIndividual, x3do:Text ;
+  x3do:hasParent :Shape_2_8_1_2_1_3_3_4_1_1 ;
+  x3do:hasFontStyle :CenterFS-USE-4 ;
+  x3do:string '"h3"' .
+:CenterFS-USE-4 a owl:NamedIndividual, x3do:FontStyle ;
+  x3do:hasParent :Text_2_8_1_2_1_3_3_4_1_1_1 ;
+  owl:sameAs :CenterFS . # DEF matching this USE
+:LabelAppearance-USE-4 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_8_1_2_1_3_3_4_1_1 ;
+  owl:sameAs :LabelAppearance . # DEF matching this USE
+:QuadVerticalLineShape a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :CommonFigureElements ;
+  x3do:hasGeometry :IndexedLineSet_2_8_1_2_1_3_4_1 ;
+  x3do:DEF 'QuadVerticalLineShape' .
+:IndexedLineSet_2_8_1_2_1_3_4_1 a owl:NamedIndividual, x3do:IndexedLineSet ;
+  x3do:hasParent :QuadVerticalLineShape ;
+  x3do:hasCoord :QuadrilateralPoints-USE-1 ;
+  x3do:hasColor :White-USE-1 ;
+  x3do:colorIndex ( 0 0 0 0 ) ;
+  x3do:colorPerVertex false ;
+  x3do:coordIndex ( 1 4 -1 ) .
+:QuadrilateralPoints-USE-1 a owl:NamedIndividual, x3do:Coordinate ;
+  x3do:hasParent :IndexedLineSet_2_8_1_2_1_3_4_1 ;
+  owl:sameAs :QuadrilateralPoints . # DEF matching this USE
+:White-USE-1 a owl:NamedIndividual, x3do:Color ;
+  x3do:hasParent :IndexedLineSet_2_8_1_2_1_3_4_1 ;
+  owl:sameAs :White . # DEF matching this USE
+:QuadCrossDiagonalLineShape a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :DefaultElevationGrid ;
+  x3do:hasGeometry :IndexedLineSet_2_8_1_2_1_4_1 ;
+  x3do:DEF 'QuadCrossDiagonalLineShape' .
+:IndexedLineSet_2_8_1_2_1_4_1 a owl:NamedIndividual, x3do:IndexedLineSet ;
+  x3do:hasParent :QuadCrossDiagonalLineShape ;
+  x3do:hasCoord :QuadrilateralPoints-USE-2 ;
+  x3do:hasColor :White-USE-2 ;
+  x3do:colorIndex ( 0 0 0 0 ) ;
+  x3do:colorPerVertex false ;
+  x3do:coordIndex ( 2 1 -1 ) .
+:QuadrilateralPoints-USE-2 a owl:NamedIndividual, x3do:Coordinate ;
+  x3do:hasParent :IndexedLineSet_2_8_1_2_1_4_1 ;
+  owl:sameAs :QuadrilateralPoints . # DEF matching this USE
+:White-USE-2 a owl:NamedIndividual, x3do:Color ;
+  x3do:hasParent :IndexedLineSet_2_8_1_2_1_4_1 ;
+  owl:sameAs :White . # DEF matching this USE
+:QuadCenterDiagonalLineShape a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :DefaultElevationGrid ;
+  x3do:hasGeometry :IndexedLineSet_2_8_1_2_1_5_1 ;
+  x3do:DEF 'QuadCenterDiagonalLineShape' .
+:IndexedLineSet_2_8_1_2_1_5_1 a owl:NamedIndividual, x3do:IndexedLineSet ;
+  x3do:hasParent :QuadCenterDiagonalLineShape ;
+  x3do:hasCoord :QuadrilateralPoints-USE-3 ;
+  x3do:hasColor :White-USE-3 ;
+  x3do:colorIndex ( 0 0 0 0 ) ;
+  x3do:colorPerVertex false ;
+  x3do:coordIndex ( 0 3 -1 ) .
+:QuadrilateralPoints-USE-3 a owl:NamedIndividual, x3do:Coordinate ;
+  x3do:hasParent :IndexedLineSet_2_8_1_2_1_5_1 ;
+  owl:sameAs :QuadrilateralPoints . # DEF matching this USE
+:White-USE-3 a owl:NamedIndividual, x3do:Color ;
+  x3do:hasParent :IndexedLineSet_2_8_1_2_1_5_1 ;
+  owl:sameAs :White . # DEF matching this USE
+:FigureElevationGridFront a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_8 ;
+  x3do:hasChildren :Viewpoint_2_8_2_1, :Transform_2_8_2_2 ;
+  x3do:DEF 'FigureElevationGridFront' ;
+  x3do:translation ( -1 0 0 ) .
+:Viewpoint_2_8_2_1 a owl:NamedIndividual, x3do:Viewpoint ;
+  x3do:hasParent :FigureElevationGridFront ;
+  x3do:description 'Default brower ElevationGrid tessellation, back view' ;
+  x3do:position ( 0.5 0.4 4 ) .
+:Transform_2_8_2_2 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :FigureElevationGridFront ;
+  x3do:hasChildren :DefaultElevationGrid-USE-1 ;
+  x3do:center ( 1 0 1 ) ;
+  x3do:rotation ( 0 1 0 0.8 ) .
+:DefaultElevationGrid-USE-1 a owl:NamedIndividual, x3do:Group ;
+  x3do:hasParent :Transform_2_8_2_2 ;
+  owl:sameAs :DefaultElevationGrid . # DEF matching this USE
+:FigureIfsCenterDiagonal a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_8 ;
+  x3do:hasChildren :Viewpoint_2_8_3_1, :Transform_2_8_3_2 ;
+  x3do:DEF 'FigureIfsCenterDiagonal' ;
+  x3do:translation ( 1 0 0 ) .
+:Viewpoint_2_8_3_1 a owl:NamedIndividual, x3do:Viewpoint ;
+  x3do:hasParent :FigureIfsCenterDiagonal ;
+  x3do:description 'Center-diagonal tessellation' ;
+  x3do:position ( 0.5 0.4 4 ) .
+:Transform_2_8_3_2 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :FigureIfsCenterDiagonal ;
+  x3do:hasChildren :Shape_2_8_3_2_1, :FigureLabelCenterDiagonalTessellation, :CommonFigureElements-USE-1, :QuadCenterDiagonalLineShape-USE-1 ;
+  x3do:center ( 1 0 1 ) ;
+  x3do:rotation ( 0 1 0 0.4 ) .
+:Shape_2_8_3_2_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_8_3_2 ;
+  x3do:hasGeometry :IndexedFaceSet_2_8_3_2_1_1 ;
+  x3do:hasAppearance :DiffuseRedAppearance-USE-1 .
+:IndexedFaceSet_2_8_3_2_1_1 a owl:NamedIndividual, x3do:IndexedFaceSet ;
+  x3do:hasParent :Shape_2_8_3_2_1 ;
+  x3do:hasCoord :QuadrilateralPoints-USE-4 ;
+  x3do:coordIndex ( 0 3 1 -1 0 2 3 -1 ) .
+:QuadrilateralPoints-USE-4 a owl:NamedIndividual, x3do:Coordinate ;
+  x3do:hasParent :IndexedFaceSet_2_8_3_2_1_1 ;
+  owl:sameAs :QuadrilateralPoints . # DEF matching this USE
+:DiffuseRedAppearance-USE-1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_8_3_2_1 ;
+  owl:sameAs :DiffuseRedAppearance . # DEF matching this USE
+:FigureLabelCenterDiagonalTessellation a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_8_3_2 ;
+  x3do:hasChildren :Billboard_2_8_3_2_2_1 ;
+  x3do:DEF 'FigureLabelCenterDiagonalTessellation' ;
+  x3do:translation ( 0.5 1 0.5 ) .
+:Billboard_2_8_3_2_2_1 a owl:NamedIndividual, x3do:Billboard ;
+  x3do:hasParent :FigureLabelCenterDiagonalTessellation ;
+  x3do:hasChildren :Shape_2_8_3_2_2_1_1 .
+:Shape_2_8_3_2_2_1_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Billboard_2_8_3_2_2_1 ;
+  x3do:hasGeometry :Text_2_8_3_2_2_1_1_1 ;
+  x3do:hasAppearance :LabelAppearance-USE-5 .
+:Text_2_8_3_2_2_1_1_1 a owl:NamedIndividual, x3do:Text ;
+  x3do:hasParent :Shape_2_8_3_2_2_1_1 ;
+  x3do:hasFontStyle :CenterFS-USE-5 ;
+  x3do:string '"Center Diagonal" "Tessellation"' .
+:CenterFS-USE-5 a owl:NamedIndividual, x3do:FontStyle ;
+  x3do:hasParent :Text_2_8_3_2_2_1_1_1 ;
+  owl:sameAs :CenterFS . # DEF matching this USE
+:LabelAppearance-USE-5 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_8_3_2_2_1_1 ;
+  owl:sameAs :LabelAppearance . # DEF matching this USE
+:CommonFigureElements-USE-1 a owl:NamedIndividual, x3do:Group ;
+  x3do:hasParent :Transform_2_8_3_2 ;
+  owl:sameAs :CommonFigureElements . # DEF matching this USE
+:QuadCenterDiagonalLineShape-USE-1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_8_3_2 ;
+  owl:sameAs :QuadCenterDiagonalLineShape . # DEF matching this USE
+:FigureIfsCrossDiagonal a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_8 ;
+  x3do:hasChildren :Viewpoint_2_8_4_1, :Transform_2_8_4_2 ;
+  x3do:DEF 'FigureIfsCrossDiagonal' ;
+  x3do:translation ( 3 0 0 ) .
+:Viewpoint_2_8_4_1 a owl:NamedIndividual, x3do:Viewpoint ;
+  x3do:hasParent :FigureIfsCrossDiagonal ;
+  x3do:description 'Cross-diagonal tessellation' ;
+  x3do:position ( 0.5 0.4 4 ) .
+:Transform_2_8_4_2 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :FigureIfsCrossDiagonal ;
+  x3do:hasChildren :Shape_2_8_4_2_1, :FigureLabelCrossDiagonalTessellation, :CommonFigureElements-USE-2, :QuadCrossDiagonalLineShape-USE-1 ;
+  x3do:center ( 1 0 1 ) .
+:Shape_2_8_4_2_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_8_4_2 ;
+  x3do:hasGeometry :IndexedFaceSet_2_8_4_2_1_1 ;
+  x3do:hasAppearance :DiffuseRedAppearance-USE-2 .
+:IndexedFaceSet_2_8_4_2_1_1 a owl:NamedIndividual, x3do:IndexedFaceSet ;
+  x3do:hasParent :Shape_2_8_4_2_1 ;
+  x3do:hasCoord :QuadrilateralPoints-USE-5 ;
+  x3do:coordIndex ( 0 2 1 -1 2 3 1 -1 ) .
+:QuadrilateralPoints-USE-5 a owl:NamedIndividual, x3do:Coordinate ;
+  x3do:hasParent :IndexedFaceSet_2_8_4_2_1_1 ;
+  owl:sameAs :QuadrilateralPoints . # DEF matching this USE
+:DiffuseRedAppearance-USE-2 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_8_4_2_1 ;
+  owl:sameAs :DiffuseRedAppearance . # DEF matching this USE
+:FigureLabelCrossDiagonalTessellation a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_8_4_2 ;
+  x3do:hasChildren :Billboard_2_8_4_2_2_1 ;
+  x3do:DEF 'FigureLabelCrossDiagonalTessellation' ;
+  x3do:translation ( 0.5 1 0.5 ) .
+:Billboard_2_8_4_2_2_1 a owl:NamedIndividual, x3do:Billboard ;
+  x3do:hasParent :FigureLabelCrossDiagonalTessellation ;
+  x3do:hasChildren :Shape_2_8_4_2_2_1_1 .
+:Shape_2_8_4_2_2_1_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Billboard_2_8_4_2_2_1 ;
+  x3do:hasGeometry :Text_2_8_4_2_2_1_1_1 ;
+  x3do:hasAppearance :LabelAppearance-USE-6 .
+:Text_2_8_4_2_2_1_1_1 a owl:NamedIndividual, x3do:Text ;
+  x3do:hasParent :Shape_2_8_4_2_2_1_1 ;
+  x3do:hasFontStyle :CenterFS-USE-6 ;
+  x3do:string '"Cross Diagonal" "Tessellation"' .
+:CenterFS-USE-6 a owl:NamedIndividual, x3do:FontStyle ;
+  x3do:hasParent :Text_2_8_4_2_2_1_1_1 ;
+  owl:sameAs :CenterFS . # DEF matching this USE
+:LabelAppearance-USE-6 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_8_4_2_2_1_1 ;
+  owl:sameAs :LabelAppearance . # DEF matching this USE
+:CommonFigureElements-USE-2 a owl:NamedIndividual, x3do:Group ;
+  x3do:hasParent :Transform_2_8_4_2 ;
+  owl:sameAs :CommonFigureElements . # DEF matching this USE
+:QuadCrossDiagonalLineShape-USE-1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_8_4_2 ;
+  owl:sameAs :QuadCrossDiagonalLineShape . # DEF matching this USE

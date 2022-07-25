@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE X3D PUBLIC "ISO//Web3D//DTD X3D 3.1//EN" "http://www.web3d.org/specifications/x3d-3.1.dtd">
+<X3D profile='Immersive' version='3.1' xmlns:xsd='http://www.w3.org/2001/XMLSchema-instance' xsd:noNamespaceSchemaLocation='http://www.web3d.org/specifications/x3d-3.1.xsd'>
+  <head>
+    <meta content='GeometryPrimitiveNodes-White.x3d' name='title'/>
+    <meta content='Geometry Primitive Nodes: Shape, Box, Cone, Cylinder, Sphere, Text, FontStyle' name='description'/>
+    <meta content='Don Brutzman' name='creator'/>
+    <meta content='25 March 2005' name='created'/>
+    <meta content='25 March 2005' name='modified'/>
+    <meta content='Copyright (c) Don Brutzman and Len Daly, 2005' name='rights'/>
+    <meta content='http://X3dGraphics.com/examples/X3dForWebAuthors/Chapter02-GeometryPrimitives/GeometryPrimitiveNodes-White.x3d' name='identifier'/>
+    <meta content='X3D-Edit, http://www.web3d.org/x3d/content/README.X3D-Edit.html' name='generator'/>
+    <meta content='../license.html' name='license'/>
+  </head>
+  <Scene>
+    <Background skyColor='1 1 1'/>
+    <Transform translation='-5 0 0'>
+      <Shape DEF='DefaultShape' bboxCenter='0 0 0' bboxSize='-1 -1 -1' containerField='children'>
+        <Box DEF='DefaultBox' containerField='geometry' size='2 2 2'/>
+        <Appearance DEF='DefaultAppearance' containerField='appearance'>
+          <Material diffuseColor='1 0.2 0.2'/>
+        </Appearance>
+      </Shape>
+    </Transform>
+    <Transform translation='-2.5 0 0'>
+      <Shape>
+        <Cone DEF='DefaultCone' bottom='true' bottomRadius='1' containerField='geometry' height='2' side='true'/>
+        <Appearance>
+          <Material diffuseColor='0.2 1 0.2'/>
+        </Appearance>
+      </Shape>
+    </Transform>
+    <Transform translation='0 0 0'>
+      <Shape>
+        <Cylinder DEF='DefaultCylinder' bottom='true' containerField='geometry' height='2' radius='1' side='true' top='true'/>
+        <Appearance>
+          <Material diffuseColor='0.2 0.2 1'/>
+        </Appearance>
+      </Shape>
+    </Transform>
+    <Transform translation='2.5 0 0'>
+      <Shape>
+        <Sphere DEF='DefaultSphere' containerField='geometry' radius='1'/>
+        <Appearance>
+          <Material diffuseColor='1 1 0.2'/>
+        </Appearance>
+      </Shape>
+    </Transform>
+    <Transform translation='4 0 0'>
+      <Shape>
+        <Text DEF='DefaultText' containerField='geometry' maxExtent='0.0' string='"hello" "X3D!"'>
+          <FontStyle DEF='DefaultFontStyle' containerField='fontStyle' family='"SERIF"' horizontal='true' justify='"BEGIN"' leftToRight='true' size='1.0' spacing='1.0' style='PLAIN' topToBottom='true'/>
+        </Text>
+        <Appearance>
+          <Material DEF='DefaultMaterial' ambientIntensity='0.2' containerField='material' diffuseColor='.2 .2 .2' emissiveColor='0 0 0' shininess='0.2' specularColor='0 0 0' transparency='0'/>
+        </Appearance>
+      </Shape>
+    </Transform>
+  </Scene>
+</X3D>

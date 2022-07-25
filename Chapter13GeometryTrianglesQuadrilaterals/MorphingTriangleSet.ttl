@@ -1,0 +1,144 @@
+@prefix :        <https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter13GeometryTrianglesQuadrilaterals/MorphingTriangleSetExample.ttl#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema:  <http://schema.org/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix x3d:     <https://www.web3d.org/specifications/x3d-4.0.xsd#> .
+@prefix x3do:    <https://www.web3d.org/specifications/X3dOntology4.0#> .
+
+:X3D a owl:NamedIndividual, x3do:X3D ;
+  x3do:hasHead :head ;
+  x3do:hasScene :Scene ;
+  x3do:profile 'Interchange' ;
+  x3do:version '3.3' ;
+  x3do:noNamespaceSchemaLocation 'https://www.web3d.org/specifications/x3d-3.3.xsd' .
+:head a owl:NamedIndividual, x3do:head ;
+  x3do:hasParent :X3D ;
+  x3do:hasMeta :meta_1_1, :meta_1_2, :meta_1_3, :meta_1_4, :meta_1_5, :meta_1_6, :meta_1_7, :meta_1_8, :meta_1_9, :meta_1_10, :meta_1_11, :meta_1_12 .
+:meta_1_1 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'MorphingTriangleSetExample.x3d' ;
+  x3do:name 'title' .
+:meta_1_2 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Animated example of a morphing TriangleSet' ;
+  x3do:name 'description' .
+:meta_1_3 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '1 January 2007' ;
+  x3do:name 'created' .
+:meta_1_4 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '14 June 2020' ;
+  x3do:name 'modified' .
+:meta_1_5 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Leonard Daly and Don Brutzman' ;
+  x3do:name 'creator' .
+:meta_1_6 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://X3dGraphics.com' ;
+  x3do:name 'reference' .
+:meta_1_7 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://www.web3d.org/x3d/content/examples/X3dResources.html' ;
+  x3do:name 'reference' .
+:meta_1_8 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Copyright Don Brutzman and Leonard Daly 2007' ;
+  x3do:name 'rights' .
+:meta_1_9 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'X3D book, X3D graphics, X3D-Edit, http://www.x3dGraphics.com' ;
+  x3do:name 'subject' .
+:meta_1_10 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter13GeometryTrianglesQuadrilaterals/MorphingTriangleSetExample.x3d' ;
+  x3do:name 'identifier' .
+:meta_1_11 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'X3D-Edit 3.3, https://savage.nps.edu/X3D-Edit' ;
+  x3do:name 'generator' .
+:meta_1_12 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '../license.html' ;
+  x3do:name 'license' .
+:meta dcterms:title "MorphingTriangleSetExample.x3d" .
+:meta dcterms:description "Animated example of a morphing TriangleSet" .
+:meta dcterms:created "1 January 2007" .
+:meta dcterms:modified "14 June 2020" .
+:meta dcterms:creator "Leonard Daly and Don Brutzman" .
+:meta dcterms:reference "https://X3dGraphics.com" .
+:meta dcterms:reference "https://www.web3d.org/x3d/content/examples/X3dResources.html" .
+:meta dcterms:rights "Copyright Don Brutzman and Leonard Daly 2007" .
+:meta dcterms:subject "X3D book, X3D graphics, X3D-Edit, http://www.x3dGraphics.com" .
+:meta dcterms:identifier "https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter13GeometryTrianglesQuadrilaterals/MorphingTriangleSetExample.x3d" .
+:meta dcterms:generator "X3D-Edit 3.3, https://savage.nps.edu/X3D-Edit" .
+:meta dcterms:license "../license.html" .
+:Scene a owl:NamedIndividual, x3do:Scene ;
+  x3do:hasParent :X3D ;
+  x3do:hasChildren :WorldInfo_2_1, :Viewpoint_2_2, :Viewpoint_2_3, :Background_2_4, :Transform_2_5, :Timer, :Mover ;
+  x3do:hasROUTE :ROUTE_2_8, :ROUTE_2_9 .
+:WorldInfo_2_1 a owl:NamedIndividual, x3do:WorldInfo ;
+  x3do:hasParent :Scene ;
+  x3do:title 'MorphingTriangleSet.x3d' .
+:Viewpoint_2_2 a owl:NamedIndividual, x3do:Viewpoint ;
+  x3do:hasParent :Scene ;
+  x3do:description 'Book View - Cube' ;
+  x3do:orientation ( -0.742 0.635 0.215 0.81 ) ;
+  x3do:position ( 5.71 6.54 7.99 ) .
+:Viewpoint_2_3 a owl:NamedIndividual, x3do:Viewpoint ;
+  x3do:hasParent :Scene ;
+  x3do:description 'Book View - Pyramid' ;
+  x3do:orientation ( -0.044 0.998 0.037 0.72 ) ;
+  x3do:position ( 5.5 1.68 4.41 ) .
+:Background_2_4 a owl:NamedIndividual, x3do:Background ;
+  x3do:hasParent :Scene ;
+  x3do:skyColor ( 1 1 1 ) .
+:Transform_2_5 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :Shape_2_5_1 ;
+  x3do:rotation ( 1 0 0 0 ) .
+:Shape_2_5_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_5 ;
+  x3do:hasGeometry :TriangleSet_2_5_1_1 .
+:TriangleSet_2_5_1_1 a owl:NamedIndividual, x3do:TriangleSet ;
+  x3do:hasParent :Shape_2_5_1 ;
+  x3do:hasCoord :Points ;
+  x3do:hasColor :Color_2_5_1_1_2 ;
+  x3do:ccw true ;
+  x3do:colorPerVertex true ;
+  x3do:normalPerVertex true ;
+  x3do:solid false .
+:Points a owl:NamedIndividual, x3do:Coordinate ;
+  x3do:hasParent :TriangleSet_2_5_1_1 ;
+  x3do:DEF 'Points' ;
+  x3do:point ( 0 0 0 4 0 0 2 1.15 0 4 0 0 2 3.46 0 2 1.15 0 2 3.46 0 0 0 0 2 1.15 0 0 0 0 4 0 0 2 1.15 1.15 4 0 0 2 1.73 3 2 1.15 1.15 2 1.73 3 0 0 0 2 1.15 1.15 4 0 0 2 3.46 0 3 2.31 1.15 2 3.46 0 2 1.73 3 3 2.31 1.15 2 1.73 3 4 0 0 3 2.31 1.15 2 3.46 0 0 0 0 1 2.31 1.15 0 0 0 2 1.73 3 1 2.31 1.15 2 1.73 3 2 3.46 0 1 2.31 1.15 ) .
+:Color_2_5_1_1_2 a owl:NamedIndividual, x3do:Color ;
+  x3do:hasParent :TriangleSet_2_5_1_1 ;
+  x3do:color ( 1 0 0 0 .8 0 1 .5 0 0 .8 0 0 0 1 1 .5 0 0 0 1 1 0 0 1 .5 0 1 0 0 0 .8 0 1 0 1 0 .8 0 .7 .3 .4 1 0 1 .7 .3 .4 1 0 0 1 0 1 0 .8 0 0 0 1 0 1 1 0 0 1 .7 .3 .4 0 1 1 .7 .3 .4 0 .8 0 0 1 1 0 0 1 1 0 0 1 1 0 1 0 0 .7 .3 .4 1 1 0 .7 .3 .4 0 0 1 1 1 0 ) .
+:Timer a owl:NamedIndividual, x3do:TimeSensor ;
+  x3do:hasParent :Scene ;
+  x3do:DEF 'Timer' ;
+  x3do:cycleInterval '30' ;
+  x3do:loop true ;
+  x3do:startTime '1' .
+:Mover a owl:NamedIndividual, x3do:CoordinateInterpolator ;
+  x3do:hasParent :Scene ;
+  x3do:DEF 'Mover' ;
+  x3do:key ( 0 .2 .5 .7 ) ;
+  x3do:keyValue ( 0 0 0 4 0 0 2 1.15 0 4 0 0 2 3.46 0 2 1.15 0 2 3.46 0 0 0 0 2 1.15 0 0 0 0 4 0 0 2 0.58 0.58 4 0 0 2 1.73 3 2 0.58 0.58 2 1.73 3 0 0 0 2 0.58 0.58 4 0 0 2 3.46 0 3 2.31 0.58 2 3.46 0 2 1.73 3 3 2.31 0.58 2 1.73 3 4 0 0 3 2.31 0.58 2 3.46 0 0 0 0 1 2.31 0.58 0 0 0 2 1.73 3 1 2.31 0.58 2 1.73 3 2 3.46 0 1 2.31 0.58 0 0 0 4 0 0 0 4 0 4 0 0 4 4 0 0 4 0 0 0 4 0 0 0 0 4 0 0 0 0 4 0 0 0 0 4 4 0 0 4 0 4 0 0 4 4 0 4 0 0 4 4 4 4 4 0 0 4 4 0 4 4 4 4 4 0 0 4 4 4 4 4 4 0 4 4 0 0 4 4 4 0 4 4 0 0 4 4 4 4 0 0 4 0 4 4 0 4 0 0 4 4 4 4 0 0 4 0 0 0 0 4 0 0 0 4 0 4 0 0 4 4 0 0 4 0 0 0 4 0 0 0 0 4 0 0 0 0 4 0 0 0 0 4 4 0 0 4 0 4 0 0 4 4 0 4 0 0 4 4 4 4 4 0 0 4 4 0 4 4 4 4 4 0 0 4 4 4 4 4 4 0 4 4 0 0 4 4 4 0 4 4 0 0 4 4 4 4 0 0 4 0 4 4 0 4 0 0 4 4 4 4 0 0 4 0 0 0 0 4 0 0 2 1.15 0 4 0 0 2 3.46 0 2 1.15 0 2 3.46 0 0 0 0 2 1.15 0 0 0 0 4 0 0 2 0.58 0.58 4 0 0 2 1.73 3 2 0.58 0.58 2 1.73 3 0 0 0 2 0.58 0.58 4 0 0 2 3.46 0 3 2.31 0.58 2 3.46 0 2 1.73 3 3 2.31 0.58 2 1.73 3 4 0 0 3 2.31 0.58 2 3.46 0 0 0 0 1 2.31 0.58 0 0 0 2 1.73 3 1 2.31 0.58 2 1.73 3 2 3.46 0 1 2.31 0.58 ) .
+:ROUTE_2_8 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'fraction_changed' ;
+  x3do:fromNode 'Timer' ;
+  x3do:toField 'set_fraction' ;
+  x3do:toNode 'Mover' .
+:ROUTE_2_9 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'value_changed' ;
+  x3do:fromNode 'Mover' ;
+  x3do:toField 'point' ;
+  x3do:toNode 'Points' .

@@ -1,0 +1,108 @@
+{ "X3D": {
+    "encoding":"UTF-8",
+    "@profile":"Immersive",
+    "@version":"3.3",
+    "@xsd:noNamespaceSchemaLocation":"http://www.web3d.org/specifications/x3d-3.3.xsd",
+    "JSON schema":"http://www.web3d.org/specifications/x3d-3.3-JSONSchema.json",
+    "head": {
+        "meta": [
+          {
+            "@name":"title",
+            "@content":"TextReverse.x3d"
+          },
+          {
+            "@name":"description",
+            "@content":"FontStyle lefttoright test: reversed X3D!"
+          },
+          {
+            "@name":"creator",
+            "@content":"Don Brutzman"
+          },
+          {
+            "@name":"created",
+            "@content":"8 December 2018"
+          },
+          {
+            "@name":"modified",
+            "@content":"8 December 2018"
+          },
+          {
+            "@name":"identifier",
+            "@content":"http://X3dGraphics.com/examples/X3dForWebAuthors/Chapter02GeometryPrimitives/TextReverse.x3d"
+          },
+          {
+            "@name":"generator",
+            "@content":"X3D-Edit 3.3, https://savage.nps.edu/X3D-Edit"
+          },
+          {
+            "@name":"license",
+            "@content":"../license.html"
+          },
+          {
+            "@name":"translated",
+            "@content":"08 April 2019"
+          },
+          {
+            "@name":"generator",
+            "@content":"X3dToJson.xslt, http://www.web3d.org/x3d/stylesheets/X3dToJson.html"
+          },
+          {
+            "@name":"reference",
+            "@content":"X3D JSON encoding: http://www.web3d.org/wiki/index.php/X3D_JSON_Encoding"
+          }
+        ]
+    },
+    "Scene": {
+        "-children":[
+          { "Background":
+            {
+              "@skyColor":[1,1,1]
+            }
+          },
+          { "Viewpoint":
+            {
+              "@description":"Text reversed",
+              "@position":[0,0,3]
+            }
+          },
+          { "Viewpoint":
+            {
+              "@description":"Book view",
+              "@position":[0.89,-1.11,2.33]
+            }
+          },
+          { "Shape":
+            {
+              "-geometry":
+                { "Text":
+                  {
+                    "@DEF":"HelloText",
+                    "@string":["reversed","X3D!"],
+                    "-fontStyle":
+                      { "FontStyle":
+                        {
+                          "@DEF":"CenteredFontStyle",
+                          "@justify":["MIDDLE","MIDDLE"],
+                          "@leftToRight":false
+                        }
+                      }
+                  }
+                },
+              "-appearance":
+                { "Appearance":
+                  {
+                    "-material":
+                      { "Material":
+                        {
+                          "@DEF":"DefaultMaterial",
+                          "@diffuseColor":[0.2,0.2,0.2]
+                        }
+                      }
+                  }
+                }
+            }
+          }
+        ]
+    }
+  }
+}

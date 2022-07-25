@@ -1,0 +1,2 @@
+<ProtoDeclare name='CircleFish'> ProtoInterface can only contain field declarations or comments [/X3D/Scene/ProtoDeclare/ProtoInterface, error]
+<TimeSensor DEF='ColorTimer'/> missing description [/X3D/Scene/ProtoDeclare/ProtoBody/Transform/Transform/Transform/TimeSensor, warning]

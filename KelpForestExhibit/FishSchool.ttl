@@ -1,0 +1,399 @@
+@prefix :        <https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/FishSchool.ttl#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema:  <http://schema.org/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix x3d:     <https://www.web3d.org/specifications/x3d-4.0.xsd#> .
+@prefix x3do:    <https://www.web3d.org/specifications/X3dOntology4.0#> .
+
+:X3D a owl:NamedIndividual, x3do:X3D ;
+  x3do:hasHead :head ;
+  x3do:hasScene :Scene ;
+  x3do:profile 'Immersive' ;
+  x3do:version '3.3' ;
+  x3do:noNamespaceSchemaLocation 'https://www.web3d.org/specifications/x3d-3.3.xsd' .
+:head a owl:NamedIndividual, x3do:head ;
+  x3do:hasParent :X3D ;
+  x3do:hasMeta :meta_1_1, :meta_1_2, :meta_1_3, :meta_1_4, :meta_1_5, :meta_1_6, :meta_1_7, :meta_1_8, :meta_1_9, :meta_1_10, :meta_1_11 .
+:meta_1_1 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'FishSchool.x3d' ;
+  x3do:name 'title' .
+:meta_1_2 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Fish Schooling Demo' ;
+  x3do:name 'description' .
+:meta_1_3 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Stewart Liles, Sean Hynes' ;
+  x3do:name 'creator' .
+:meta_1_4 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '25 September 1998' ;
+  x3do:name 'created' .
+:meta_1_5 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '20 October 2019' ;
+  x3do:name 'modified' .
+:meta_1_6 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/KelpForestDesignPaperWeb3dSymposiumFebruary2002.pdf' ;
+  x3do:name 'reference' .
+:meta_1_7 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/Teaching3d-KelpForestCaseStudy.pdf' ;
+  x3do:name 'reference' .
+:meta_1_8 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'All content has permissions for free use. Please provide credit to the Naval Postgraduate School (NPS) Modeling Virtual Environments and Simulation (MOVES) Institute.' ;
+  x3do:name 'accessRights' .
+:meta_1_9 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/FishSchool.x3d' ;
+  x3do:name 'identifier' .
+:meta_1_10 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'X3D-Edit 3.3, https://savage.nps.edu/X3D-Edit' ;
+  x3do:name 'generator' .
+:meta_1_11 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '../license.html' ;
+  x3do:name 'license' .
+:meta dcterms:title "FishSchool.x3d" .
+:meta dcterms:description "Fish Schooling Demo" .
+:meta dcterms:creator "Stewart Liles, Sean Hynes" .
+:meta dcterms:created "25 September 1998" .
+:meta dcterms:modified "20 October 2019" .
+:meta dcterms:reference "https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/KelpForestDesignPaperWeb3dSymposiumFebruary2002.pdf" .
+:meta dcterms:reference "https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/Teaching3d-KelpForestCaseStudy.pdf" .
+:meta dcterms:accessRights "All content has permissions for free use. Please provide credit to the Naval Postgraduate School (NPS) Modeling Virtual Environments and Simulation (MOVES) Institute." .
+:meta dcterms:identifier "https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/FishSchool.x3d" .
+:meta dcterms:generator "X3D-Edit 3.3, https://savage.nps.edu/X3D-Edit" .
+:meta dcterms:license "../license.html" .
+:Scene a owl:NamedIndividual, x3do:Scene ;
+  x3do:hasParent :X3D ;
+  x3do:hasChildren :WorldInfo_2_1, :NavigationInfo_2_2, :Viewpoint_2_3, :Viewpoint_2_4, :Viewpoint_2_5, :Viewpoint_2_6, :Viewpoint_2_7, :Viewpoint_2_8, :SpotLight_2_9, :Sound_2_10, :GlobalClock, :Shape_2_12, :Fog_2_13, :Fish0, :Fish1, :Fish2, :Fish3, :Fish4, :Fish5, :Fish6, :Fish7, :Fish8, :Fish9, :BoidScript ;
+  x3do:hasROUTE :ROUTE_2_25 .
+:WorldInfo_2_1 a owl:NamedIndividual, x3do:WorldInfo ;
+  x3do:hasParent :Scene ;
+  x3do:title 'FishSchool.x3d' .
+:NavigationInfo_2_2 a owl:NamedIndividual, x3do:NavigationInfo ;
+  x3do:hasParent :Scene ;
+  x3do:speed 5.0 ;
+  x3do:type '"EXAMINE"' ;
+  x3do:visibilityLimit 250.0 .
+:Viewpoint_2_3 a owl:NamedIndividual, x3do:Viewpoint ;
+  x3do:hasParent :Scene ;
+  x3do:description 'Close to School - FS' ;
+  x3do:position ( 0.0 1.0 75.0 ) .
+:Viewpoint_2_4 a owl:NamedIndividual, x3do:Viewpoint ;
+  x3do:hasParent :Scene ;
+  x3do:description 'Nose on Glass - FS' ;
+  x3do:fieldOfView 1.0 ;
+  x3do:position ( 0.0 1.0 30.0 ) .
+:Viewpoint_2_5 a owl:NamedIndividual, x3do:Viewpoint ;
+  x3do:hasParent :Scene ;
+  x3do:description 'Fish Feeding - FS' ;
+  x3do:fieldOfView 1.0 ;
+  x3do:orientation ( 1.0 0.0 0.0 -1.57 ) ;
+  x3do:position ( 0.0 40.0 0.0 ) .
+:Viewpoint_2_6 a owl:NamedIndividual, x3do:Viewpoint ;
+  x3do:hasParent :Scene ;
+  x3do:description 'Left Side - FS' ;
+  x3do:fieldOfView 1.0 ;
+  x3do:orientation ( 0.0 1.0 0.0 -1.57 ) ;
+  x3do:position ( -40.0 0.0 0.0 ) .
+:Viewpoint_2_7 a owl:NamedIndividual, x3do:Viewpoint ;
+  x3do:hasParent :Scene ;
+  x3do:description 'Right Side - FS' ;
+  x3do:fieldOfView 1.0 ;
+  x3do:orientation ( 0.0 1.0 0.0 1.57 ) ;
+  x3do:position ( 40.0 0.0 0.0 ) .
+:Viewpoint_2_8 a owl:NamedIndividual, x3do:Viewpoint ;
+  x3do:hasParent :Scene ;
+  x3do:description 'Middle Looking Out - FS' ;
+  x3do:jump false ;
+  x3do:orientation ( 0.0 1.0 0.0 2.2 ) ;
+  x3do:position ( 0.0 0.0 0.0 ) .
+:SpotLight_2_9 a owl:NamedIndividual, x3do:SpotLight ;
+  x3do:hasParent :Scene ;
+  x3do:ambientIntensity 1.0 ;
+  x3do:direction ( 0.0 -1.0 0.0 ) ;
+  x3do:location ( 0.0 50.0 0.0 ) .
+:Sound_2_10 a owl:NamedIndividual, x3do:Sound ;
+  x3do:hasParent :Scene ;
+  x3do:hasSource :AudioClip_2_10_1 ;
+  x3do:location ( 0 0.1 0 ) ;
+  x3do:maxBack 50 ;
+  x3do:maxFront 50 ;
+  x3do:minBack 50 ;
+  x3do:minFront 50 .
+:AudioClip_2_10_1 a owl:NamedIndividual, x3do:AudioClip ;
+  x3do:hasParent :Sound_2_10 ;
+  x3do:description 'Sound for Fish' ;
+  x3do:loop true ;
+  x3do:url '"Sound2.wav" "https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/Sound2.wav"' .
+:GlobalClock a owl:NamedIndividual, x3do:TimeSensor ;
+  x3do:hasParent :Scene ;
+  x3do:DEF 'GlobalClock' ;
+  x3do:loop true .
+:Shape_2_12 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Scene ;
+  x3do:hasAppearance :Appearance_2_12_1 ;
+  x3do:hasGeometry :IndexedLineSet_2_12_2 .
+:Appearance_2_12_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_12 ;
+  x3do:hasMaterial :Material_2_12_1_1 .
+:Material_2_12_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_12_1 .
+:IndexedLineSet_2_12_2 a owl:NamedIndividual, x3do:IndexedLineSet ;
+  x3do:hasParent :Shape_2_12 ;
+  x3do:hasCoord :Coordinate_2_12_2_1 ;
+  x3do:coordIndex ( 0 1 2 3 0 -1 4 5 6 7 4 -1 0 4 -1 1 5 -1 2 6 -1 3 7 ) .
+:Coordinate_2_12_2_1 a owl:NamedIndividual, x3do:Coordinate ;
+  x3do:hasParent :IndexedLineSet_2_12_2 ;
+  x3do:point ( -30.0 30.0 30.0 30.0 30.0 30.0 30.0 30.0 -30.0 -30.0 30.0 -30.0 -30.0 -30.0 30.0 30.0 -30.0 30.0 30.0 -30.0 -30.0 -30.0 -30.0 -30.0 ) .
+:Fog_2_13 a owl:NamedIndividual, x3do:Fog ;
+  x3do:hasParent :Scene ;
+  x3do:color ( 0.1 0.3 0.1 ) ;
+  x3do:visibilityRange 70.0 .
+:Fish0 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :Viewpoint_2_14_1, :FishIN ;
+  x3do:DEF 'Fish0' ;
+  x3do:translation ( -5.0 0.0 0.0 ) .
+:Viewpoint_2_14_1 a owl:NamedIndividual, x3do:Viewpoint ;
+  x3do:hasParent :Fish0 ;
+  x3do:description 'Fish 0 view' ;
+  x3do:fieldOfView 1.8 ;
+  x3do:position ( 0.0 1.0 -0.5 ) .
+:FishIN a owl:NamedIndividual, x3do:Inline ;
+  x3do:hasParent :Fish0 ;
+  x3do:DEF 'FishIN' ;
+  x3do:url '"Fish.x3d" "https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/Fish.x3d" "Fish.wrl" "https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/Fish.wrl"' .
+:Fish1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :Viewpoint_2_15_1, :FishIN-USE-1 ;
+  x3do:DEF 'Fish1' ;
+  x3do:translation ( -4.0 0.0 0.0 ) .
+:Viewpoint_2_15_1 a owl:NamedIndividual, x3do:Viewpoint ;
+  x3do:hasParent :Fish1 ;
+  x3do:description 'Fish 1 view' ;
+  x3do:fieldOfView 1.8 ;
+  x3do:position ( 0.0 1.0 -0.5 ) .
+:FishIN-USE-1 a owl:NamedIndividual, x3do:Inline ;
+  x3do:hasParent :Fish1 ;
+  owl:sameAs :FishIN . # DEF matching this USE
+:Fish2 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :Viewpoint_2_16_1, :FishIN-USE-2 ;
+  x3do:DEF 'Fish2' ;
+  x3do:translation ( -3.0 0.0 0.0 ) .
+:Viewpoint_2_16_1 a owl:NamedIndividual, x3do:Viewpoint ;
+  x3do:hasParent :Fish2 ;
+  x3do:description 'Fish 2 view' ;
+  x3do:fieldOfView 1.8 ;
+  x3do:position ( 0.0 1.0 -0.5 ) .
+:FishIN-USE-2 a owl:NamedIndividual, x3do:Inline ;
+  x3do:hasParent :Fish2 ;
+  owl:sameAs :FishIN . # DEF matching this USE
+:Fish3 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :Viewpoint_2_17_1, :FishIN-USE-3 ;
+  x3do:DEF 'Fish3' ;
+  x3do:translation ( -2.0 0.0 0.0 ) .
+:Viewpoint_2_17_1 a owl:NamedIndividual, x3do:Viewpoint ;
+  x3do:hasParent :Fish3 ;
+  x3do:description 'Fish 3 view' ;
+  x3do:fieldOfView 1.8 ;
+  x3do:position ( 0.0 1.0 -0.5 ) .
+:FishIN-USE-3 a owl:NamedIndividual, x3do:Inline ;
+  x3do:hasParent :Fish3 ;
+  owl:sameAs :FishIN . # DEF matching this USE
+:Fish4 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :Viewpoint_2_18_1, :FishIN-USE-4 ;
+  x3do:DEF 'Fish4' ;
+  x3do:translation ( -1.0 0.0 0.0 ) .
+:Viewpoint_2_18_1 a owl:NamedIndividual, x3do:Viewpoint ;
+  x3do:hasParent :Fish4 ;
+  x3do:description 'Fish 4 view' ;
+  x3do:fieldOfView 1.8 ;
+  x3do:position ( 0.0 1.0 -0.5 ) .
+:FishIN-USE-4 a owl:NamedIndividual, x3do:Inline ;
+  x3do:hasParent :Fish4 ;
+  owl:sameAs :FishIN . # DEF matching this USE
+:Fish5 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :Viewpoint_2_19_1, :FishIN-USE-5 ;
+  x3do:DEF 'Fish5' .
+:Viewpoint_2_19_1 a owl:NamedIndividual, x3do:Viewpoint ;
+  x3do:hasParent :Fish5 ;
+  x3do:description 'Fish 5 view' ;
+  x3do:fieldOfView 1.8 ;
+  x3do:position ( 0.0 1.0 -0.5 ) .
+:FishIN-USE-5 a owl:NamedIndividual, x3do:Inline ;
+  x3do:hasParent :Fish5 ;
+  owl:sameAs :FishIN . # DEF matching this USE
+:Fish6 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :Viewpoint_2_20_1, :FishIN-USE-6 ;
+  x3do:DEF 'Fish6' ;
+  x3do:translation ( 1.0 0.0 0.0 ) .
+:Viewpoint_2_20_1 a owl:NamedIndividual, x3do:Viewpoint ;
+  x3do:hasParent :Fish6 ;
+  x3do:description 'Fish 6 view' ;
+  x3do:fieldOfView 1.8 ;
+  x3do:position ( 0.0 1.0 -0.5 ) .
+:FishIN-USE-6 a owl:NamedIndividual, x3do:Inline ;
+  x3do:hasParent :Fish6 ;
+  owl:sameAs :FishIN . # DEF matching this USE
+:Fish7 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :Viewpoint_2_21_1, :FishIN-USE-7 ;
+  x3do:DEF 'Fish7' ;
+  x3do:translation ( 2.0 0.0 0.0 ) .
+:Viewpoint_2_21_1 a owl:NamedIndividual, x3do:Viewpoint ;
+  x3do:hasParent :Fish7 ;
+  x3do:description 'Fish 7 view' ;
+  x3do:fieldOfView 1.8 ;
+  x3do:position ( 0.0 1.0 -0.5 ) .
+:FishIN-USE-7 a owl:NamedIndividual, x3do:Inline ;
+  x3do:hasParent :Fish7 ;
+  owl:sameAs :FishIN . # DEF matching this USE
+:Fish8 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :Viewpoint_2_22_1, :FishIN-USE-8 ;
+  x3do:DEF 'Fish8' ;
+  x3do:translation ( 3.0 0.0 0.0 ) .
+:Viewpoint_2_22_1 a owl:NamedIndividual, x3do:Viewpoint ;
+  x3do:hasParent :Fish8 ;
+  x3do:description 'Fish 8 view' ;
+  x3do:fieldOfView 1.8 ;
+  x3do:position ( 0.0 1.0 -0.5 ) .
+:FishIN-USE-8 a owl:NamedIndividual, x3do:Inline ;
+  x3do:hasParent :Fish8 ;
+  owl:sameAs :FishIN . # DEF matching this USE
+:Fish9 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :Viewpoint_2_23_1, :FishIN-USE-9 ;
+  x3do:DEF 'Fish9' ;
+  x3do:translation ( 4.0 0.0 0.0 ) .
+:Viewpoint_2_23_1 a owl:NamedIndividual, x3do:Viewpoint ;
+  x3do:hasParent :Fish9 ;
+  x3do:description 'Fish 9 view' ;
+  x3do:fieldOfView 1.8 ;
+  x3do:position ( 0.0 1.0 -0.5 ) .
+:FishIN-USE-9 a owl:NamedIndividual, x3do:Inline ;
+  x3do:hasParent :Fish9 ;
+  owl:sameAs :FishIN . # DEF matching this USE
+:BoidScript a owl:NamedIndividual, x3do:Script ;
+  x3do:hasParent :Scene ;
+  x3do:hasField :field_2_24_1, :field_2_24_2, :field_2_24_3, :field_2_24_4, :field_2_24_5, :field_2_24_6, :field_2_24_7, :field_2_24_8, :field_2_24_9, :field_2_24_10, :field_2_24_11 ;
+  x3do:DEF 'BoidScript' ;
+  x3do:directOutput true ;
+  x3do:mustEvaluate true ;
+  x3do:url '"FishSchoolCode/Demo.class" "https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/FishSchoolCode/Demo.class"' .
+:field_2_24_1 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :BoidScript ;
+  x3do:accessType 'inputOnly' ;
+  x3do:name 'GlobalTick' ;
+  x3do:type 'SFFloat' .
+:field_2_24_2 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :BoidScript ;
+  x3do:hasChildren :Fish9-USE-1 ;
+  x3do:accessType 'initializeOnly' ;
+  x3do:name 'B9' ;
+  x3do:type 'SFNode' .
+:Fish9-USE-1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :field_2_24_2 ;
+  owl:sameAs :Fish9 . # DEF matching this USE
+:field_2_24_3 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :BoidScript ;
+  x3do:hasChildren :Fish8-USE-1 ;
+  x3do:accessType 'initializeOnly' ;
+  x3do:name 'B8' ;
+  x3do:type 'SFNode' .
+:Fish8-USE-1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :field_2_24_3 ;
+  owl:sameAs :Fish8 . # DEF matching this USE
+:field_2_24_4 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :BoidScript ;
+  x3do:hasChildren :Fish7-USE-1 ;
+  x3do:accessType 'initializeOnly' ;
+  x3do:name 'B7' ;
+  x3do:type 'SFNode' .
+:Fish7-USE-1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :field_2_24_4 ;
+  owl:sameAs :Fish7 . # DEF matching this USE
+:field_2_24_5 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :BoidScript ;
+  x3do:hasChildren :Fish6-USE-1 ;
+  x3do:accessType 'initializeOnly' ;
+  x3do:name 'B6' ;
+  x3do:type 'SFNode' .
+:Fish6-USE-1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :field_2_24_5 ;
+  owl:sameAs :Fish6 . # DEF matching this USE
+:field_2_24_6 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :BoidScript ;
+  x3do:hasChildren :Fish5-USE-1 ;
+  x3do:accessType 'initializeOnly' ;
+  x3do:name 'B5' ;
+  x3do:type 'SFNode' .
+:Fish5-USE-1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :field_2_24_6 ;
+  owl:sameAs :Fish5 . # DEF matching this USE
+:field_2_24_7 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :BoidScript ;
+  x3do:hasChildren :Fish4-USE-1 ;
+  x3do:accessType 'initializeOnly' ;
+  x3do:name 'B4' ;
+  x3do:type 'SFNode' .
+:Fish4-USE-1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :field_2_24_7 ;
+  owl:sameAs :Fish4 . # DEF matching this USE
+:field_2_24_8 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :BoidScript ;
+  x3do:hasChildren :Fish3-USE-1 ;
+  x3do:accessType 'initializeOnly' ;
+  x3do:name 'B3' ;
+  x3do:type 'SFNode' .
+:Fish3-USE-1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :field_2_24_8 ;
+  owl:sameAs :Fish3 . # DEF matching this USE
+:field_2_24_9 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :BoidScript ;
+  x3do:hasChildren :Fish2-USE-1 ;
+  x3do:accessType 'initializeOnly' ;
+  x3do:name 'B2' ;
+  x3do:type 'SFNode' .
+:Fish2-USE-1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :field_2_24_9 ;
+  owl:sameAs :Fish2 . # DEF matching this USE
+:field_2_24_10 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :BoidScript ;
+  x3do:hasChildren :Fish1-USE-1 ;
+  x3do:accessType 'initializeOnly' ;
+  x3do:name 'B1' ;
+  x3do:type 'SFNode' .
+:Fish1-USE-1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :field_2_24_10 ;
+  owl:sameAs :Fish1 . # DEF matching this USE
+:field_2_24_11 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :BoidScript ;
+  x3do:hasChildren :Fish0-USE-1 ;
+  x3do:accessType 'initializeOnly' ;
+  x3do:name 'B0' ;
+  x3do:type 'SFNode' .
+:Fish0-USE-1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :field_2_24_11 ;
+  owl:sameAs :Fish0 . # DEF matching this USE
+:ROUTE_2_25 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'fraction_changed' ;
+  x3do:fromNode 'GlobalClock' ;
+  x3do:toField 'GlobalTick' ;
+  x3do:toNode 'BoidScript' .

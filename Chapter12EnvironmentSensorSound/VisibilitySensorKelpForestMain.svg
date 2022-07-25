@@ -1,0 +1,28 @@
+
+      
+ecmascript:
+
+// Functions for ProximitySensor
+
+function position (value) {
+  var x = Math.floor (value[0] * precision + 0.5) / precision;
+  var y = Math.floor (value[1] * precision + 0.5) / precision;
+  var z = Math.floor (value[2] * precision + 0.5) / precision;
+  Browser.print ('position: ' + x + ' ' + y + ' ' + z);
+}
+
+function orientation (value) {
+  var x = Math.floor (value[0] * precision + 0.5) / precision;
+  var y = Math.floor (value[1] * precision + 0.5) / precision;
+  var z = Math.floor (value[2] * precision + 0.5) / precision;
+  var a = Math.floor (value[3] * precision + 0.5) / precision;
+  Browser.print ('orientation: ' + x + ' ' + y + ' ' + z + ' ' + a);
+}
+
+// Functions for VisibilitySensor
+
+function isVisible (value) {
+  Browser.print ('The region is visible: ' + value);
+}
+
+    

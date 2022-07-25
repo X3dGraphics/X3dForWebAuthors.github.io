@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<svrl:schematron-output title="X3D Validity Checks using Schematron" schemaVersion="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:schold="http://www.ascc.net/xml/schematron" xmlns:iso="http://purl.oclc.org/dsdl/schematron" xmlns:svrl="http://purl.oclc.org/dsdl/svrl" xmlns:sch="http://www.ascc.net/xml/schematron">
+<!--   
+		   
+		   
+		 -->
+<svrl:active-pattern/>
+<svrl:fired-rule context="/"/>
+<svrl:fired-rule context="X3D"/>
+<svrl:successful-report test="$profileLegal and not($profileMatch) and $coreProfile" role="info" location="/X3D">
+<svrl:text>&lt;X3D profile='Immersive'&gt; but actual profile='Core' </svrl:text>
+</svrl:successful-report>
+<svrl:fired-rule context="head"/>
+<svrl:successful-report test="meta/@content[starts-with(.,'*enter')]" role="warning" location="/X3D/head">
+<svrl:text>Update all meta tag(s) with content='*enter new value...'</svrl:text>
+</svrl:successful-report>
+<svrl:failed-assert test="contains($identifier, $title)" role="warning" location="/X3D/head">
+<svrl:text>X3D/head/meta title (filename) should appear at end of identifier (url) value </svrl:text>
+</svrl:failed-assert>
+<svrl:failed-assert test="(string-length($identifier)=0) or starts-with($identifier, 'http://') or starts-with($identifier, 'https://')" role="warning" location="/X3D/head">
+<svrl:text>X3D/head/meta identifier (url) content should start with http:// or 'https:// </svrl:text>
+</svrl:failed-assert>
+<svrl:fired-rule context="Scene"/>
+</svrl:schematron-output>

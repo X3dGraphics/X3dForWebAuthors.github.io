@@ -1,0 +1,206 @@
+{
+  "X3D":
+    # TODO JSON Schema header
+  { "head":
+          { "meta":
+      {
+        "@content":"GaribaldiLocalTexture.x3d", 
+        "@name":"title"
+      }  # after adding attributeResult 
+    }, # meta element singleton complete
+    { "meta":
+      {
+        "@content":"Instantiate the Garibaldi fish prototype using a local skin texture file.", 
+        "@name":"description"
+      }  # after adding attributeResult 
+    }, # meta element singleton complete
+    { "meta":
+      {
+        "@content":"Ildeniz Duman", 
+        "@name":"creator"
+      }  # after adding attributeResult 
+    }, # meta element singleton complete
+    { "meta":
+      {
+        "@content":"1 June 1998", 
+        "@name":"created"
+      }  # after adding attributeResult 
+    }, # meta element singleton complete
+    { "meta":
+      {
+        "@content":"20 October 2019", 
+        "@name":"modified"
+      }  # after adding attributeResult 
+    }, # meta element singleton complete
+    { "meta":
+      {
+        "@content":"https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/Garibaldi.x3d", 
+        "@name":"reference"
+      }  # after adding attributeResult 
+    }, # meta element singleton complete
+    { "meta":
+      {
+        "@content":"https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter05AppearanceMaterialTextures/GaribaldiLocalTexture.x3d", 
+        "@name":"identifier"
+      }  # after adding attributeResult 
+    }, # meta element singleton complete
+    { "meta":
+      {
+        "@content":"X3D-Edit 3.3, https://savage.nps.edu/X3D-Edit", 
+        "@name":"generator"
+      }  # after adding attributeResult 
+    }, # meta element singleton complete
+    { "meta":
+      {
+        "@content":"../license.html", 
+        "@name":"license"
+      }  # after adding attributeResult 
+    }, # meta element singleton complete
+  } # head element with children complete 
+
+  { "Scene":
+          { "WorldInfo":
+      {
+        "@title":"GaribaldiLocalTexture.x3d
+      }  # after adding attributeResult 
+    } # WorldInfo element singleton complete
+    { "ExternProtoDeclare":
+      {
+        "@name":"CircleFish", 
+        "@url":""CircleFishPrototype.x3d#CircleFish" "https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter05AppearanceMaterialTextures/CircleFishPrototype.x3d#CircleFish" "https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/CircleFishPrototype.x3d#CircleFish" "CircleFishPrototype.wrl#CircleFish" "https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter05AppearanceMaterialTextures/CircleFishPrototype.wrl#CircleFish" "https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/CircleFishPrototype.wrl#CircleFish"
+      }  # after adding attributeResult 
+            { "field":
+      {
+        "@accessType":"inputOutput", 
+        "@name":"skinTextureUrl", 
+        "@type":"MFString"
+      }  # after adding attributeResult 
+    }, # field element singleton complete
+      { "field":
+      {
+        "@accessType":"inputOutput", 
+        "@name":"fishScale", 
+        "@type":"SFVec3f"
+      }  # after adding attributeResult 
+    }, # field element singleton complete
+      { "field":
+      {
+        "@accessType":"inputOutput", 
+        "@name":"fishColor", 
+        "@type":"SFColor"
+      }  # after adding attributeResult 
+    }, # field element singleton complete
+      { "field":
+      {
+        "@accessType":"inputOutput", 
+        "@name":"finColor", 
+        "@type":"SFColor"
+      }  # after adding attributeResult 
+    }, # field element singleton complete
+      { "field":
+      {
+        "@accessType":"inputOutput", 
+        "@name":"positionKey", 
+        "@type":"MFFloat"
+      }  # after adding attributeResult 
+    }, # field element singleton complete
+      { "field":
+      {
+        "@accessType":"inputOutput", 
+        "@name":"positionKeyValue", 
+        "@type":"MFVec3f"
+      }  # after adding attributeResult 
+    }, # field element singleton complete
+      { "field":
+      {
+        "@accessType":"inputOutput", 
+        "@name":"orientationKey", 
+        "@type":"MFFloat"
+      }  # after adding attributeResult 
+    }, # field element singleton complete
+      { "field":
+      {
+        "@accessType":"inputOutput", 
+        "@name":"orientationKeyValue", 
+        "@type":"MFRotation"
+      }  # after adding attributeResult 
+    }, # field element singleton complete
+      { "field":
+      {
+        "@accessType":"inputOutput", 
+        "@name":"orbitTime", 
+        "@type":"SFTime"
+      }  # after adding attributeResult 
+    }, # field element singleton complete
+    } # ExternProtoDeclare element with children complete 
+
+    { "Viewpoint":
+      {
+        "@description":"Garibaldi", 
+        "@orientation":"0 1 0 0.42", 
+        "@position":"0.66 0 0.42"
+      }  # after adding attributeResult 
+    }, # Viewpoint element singleton complete
+    { "ProtoInstance":
+      {
+        "@name":"CircleFish"
+      }  # after adding attributeResult 
+            { "fieldValue":
+      {
+        "@name":"skinTextureUrl", 
+        "@value":"['GaribaldiPatch.jpg', 'https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/GaribaldiPatch.jpg']
+      }  # after adding attributeResult 
+    }, # fieldValue element singleton complete
+      { "fieldValue":
+      {
+        "@name":"fishScale", 
+        "@value":"(1.0, 0.39, 0.4)
+      }  # after adding attributeResult 
+    }, # fieldValue element singleton complete
+      { "fieldValue":
+      {
+        "@name":"finColor", 
+        "@value":"(0.9, 0.66, 0.4)
+      }  # after adding attributeResult 
+    }, # fieldValue element singleton complete
+      { "fieldValue":
+      {
+        "@name":"fishColor", 
+        "@value":"(0.97, 0.75, 0.3)
+      }  # after adding attributeResult 
+    }, # fieldValue element singleton complete
+      { "fieldValue":
+      {
+        "@name":"positionKey", 
+        "@value":"[0.0, 0.4, 0.7, 0.95, 1.0]
+      }  # after adding attributeResult 
+    }, # fieldValue element singleton complete
+      { "fieldValue":
+      {
+        "@name":"positionKeyValue", 
+        "@value":"[(0.0, 0.0, 0.0), (0.5, 0.0, 0.0), (0.0, 0.0, 0.0), (0.5, 0.0, 0.0), (0.2, 0.0, 0.0)]
+      }  # after adding attributeResult 
+    }, # fieldValue element singleton complete
+      { "fieldValue":
+      {
+        "@name":"orientationKey", 
+        "@value":"[0.0, 1.0]
+      }  # after adding attributeResult 
+    }, # fieldValue element singleton complete
+      { "fieldValue":
+      {
+        "@name":"orientationKeyValue", 
+        "@value":"[(0.0, 1.0, 0.0, 90.0), (0.0, 1.0, 0.0, 90.0)]
+      }  # after adding attributeResult 
+    }, # fieldValue element singleton complete
+      { "fieldValue":
+      {
+        "@name":"orbitTime", 
+        "@value":"80.0
+      }  # after adding attributeResult 
+    }, # fieldValue element singleton complete
+    } # ProtoInstance element with children complete 
+
+  } # Scene element with children complete 
+
+}

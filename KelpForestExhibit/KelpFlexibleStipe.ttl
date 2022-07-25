@@ -1,0 +1,172 @@
+@prefix :        <https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/KelpFlexibleStipe.ttl#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema:  <http://schema.org/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix x3d:     <https://www.web3d.org/specifications/x3d-4.0.xsd#> .
+@prefix x3do:    <https://www.web3d.org/specifications/X3dOntology4.0#> .
+
+:X3D a owl:NamedIndividual, x3do:X3D ;
+  x3do:hasHead :head ;
+  x3do:hasScene :Scene ;
+  x3do:profile 'Immersive' ;
+  x3do:version '3.3' ;
+  x3do:noNamespaceSchemaLocation 'https://www.web3d.org/specifications/x3d-3.3.xsd' .
+:head a owl:NamedIndividual, x3do:head ;
+  x3do:hasParent :X3D ;
+  x3do:hasMeta :meta_1_1, :meta_1_2, :meta_1_3, :meta_1_4, :meta_1_5, :meta_1_6, :meta_1_7, :meta_1_8 .
+:meta_1_1 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'KelpFlexibleStipe.x3d' ;
+  x3do:name 'title' .
+:meta_1_2 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Matthew Braun' ;
+  x3do:name 'creator' .
+:meta_1_3 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '2 October 2001' ;
+  x3do:name 'created' .
+:meta_1_4 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '20 October 2019' ;
+  x3do:name 'modified' .
+:meta_1_5 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'An extruded piece of kelp for the Kelp Forest project. Bulb is separate.' ;
+  x3do:name 'description' .
+:meta_1_6 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/KelpFlexibleStipe.x3d' ;
+  x3do:name 'identifier' .
+:meta_1_7 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'X3D-Edit 3.3, https://savage.nps.edu/X3D-Edit' ;
+  x3do:name 'generator' .
+:meta_1_8 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '../license.html' ;
+  x3do:name 'license' .
+:meta dcterms:title "KelpFlexibleStipe.x3d" .
+:meta dcterms:creator "Matthew Braun" .
+:meta dcterms:created "2 October 2001" .
+:meta dcterms:modified "20 October 2019" .
+:meta dcterms:description "An extruded piece of kelp for the Kelp Forest project. Bulb is separate." .
+:meta dcterms:identifier "https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/KelpFlexibleStipe.x3d" .
+:meta dcterms:generator "X3D-Edit 3.3, https://savage.nps.edu/X3D-Edit" .
+:meta dcterms:license "../license.html" .
+:Scene a owl:NamedIndividual, x3do:Scene ;
+  x3do:hasParent :X3D ;
+  x3do:hasChildren :WorldInfo_2_1, :Viewpoint_2_2, :CLOCK, :KELP_BEND, :Transform_2_5, :Transform_2_6, :Transform_2_7 ;
+  x3do:hasROUTE :ROUTE_2_8, :ROUTE_2_9, :ROUTE_2_10 .
+:WorldInfo_2_1 a owl:NamedIndividual, x3do:WorldInfo ;
+  x3do:hasParent :Scene ;
+  x3do:title 'KelpFlexibleStipe.x3d' .
+:Viewpoint_2_2 a owl:NamedIndividual, x3do:Viewpoint ;
+  x3do:hasParent :Scene ;
+  x3do:description 'Kelp stipe and holdfast' ;
+  x3do:position ( 0 5 13 ) .
+:CLOCK a owl:NamedIndividual, x3do:TimeSensor ;
+  x3do:hasParent :Scene ;
+  x3do:DEF 'CLOCK' ;
+  x3do:cycleInterval '4' ;
+  x3do:loop true .
+:KELP_BEND a owl:NamedIndividual, x3do:CoordinateInterpolator ;
+  x3do:hasParent :Scene ;
+  x3do:DEF 'KELP_BEND' ;
+  x3do:key ( 0.0 0.22 0.50 0.72 1.0 ) ;
+  x3do:keyValue ( 0.00 0.00 0.00 0.00 2.00 0.00 0.00 4.00 0.00 0.00 6.00 0.00 0.00 8.00 0.00 0.00 10.00 0.00 0.00 12.00 0.00 0.00 14.00 0.00 0.00 16.00 0.00 0.00 18.00 0.00 0.26 19.00 0.00 1.00 19.74 0.00 2.00 20.00 0.00 7.00 20.00 0.00 0.00 0.00 0.00 0.02 2.00 0.00 0.06 4.00 0.00 0.14 6.00 0.00 0.24 8.00 0.00 0.36 10.00 0.00 0.50 12.00 0.00 0.66 14.00 0.00 0.83 16.00 0.00 1.02 18.00 0.00 1.24 19.00 0.00 1.75 19.74 0.00 3.25 20.00 0.00 8.25 20.00 0.00 0.00 0.00 0.00 0.00 2.00 0.00 0.00 4.00 0.00 0.00 6.00 0.00 0.00 8.00 0.00 0.00 10.00 0.00 0.00 12.00 0.00 0.00 14.00 0.00 0.00 16.00 0.00 0.00 18.00 0.00 0.26 19.00 0.00 1.00 19.74 0.00 2.00 20.00 0.00 7.00 20.00 0.00 0.00 0.00 0.00 -0.03 2.00 0.00 -0.12 4.00 0.00 -0.25 6.00 0.00 -0.41 8.00 0.00 -0.59 10.00 0.00 -0.75 12.00 0.00 -0.88 14.00 0.00 -0.97 16.00 0.00 -1.00 18.00 0.00 -0.74 19.00 0.00 0.00 19.74 0.00 1.00 20.00 0.00 6.00 20.00 0.00 0.00 0.00 0.00 0.00 2.00 0.00 0.00 4.00 0.00 0.00 6.00 0.00 0.00 8.00 0.00 0.00 10.00 0.00 0.00 12.00 0.00 0.00 14.00 0.00 0.00 16.00 0.00 0.00 18.00 0.00 0.26 19.00 0.00 1.00 19.74 0.00 2.00 20.00 0.00 7.00 20.00 0.00 ) .
+:Transform_2_5 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :Shape_2_5_1 ;
+  x3do:scale ( 0.5 0.5 0.5 ) .
+:Shape_2_5_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_5 ;
+  x3do:hasAppearance :Appearance_2_5_1_1 ;
+  x3do:hasGeometry :KELP .
+:Appearance_2_5_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_5_1 ;
+  x3do:hasMaterial :Material_2_5_1_1_1 .
+:Material_2_5_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_5_1_1 ;
+  x3do:ambientIntensity .25 ;
+  x3do:diffuseColor ( 0.57 0.40 0.10 ) ;
+  x3do:shininess 0.92 ;
+  x3do:transparency 0.50 .
+:KELP a owl:NamedIndividual, x3do:Extrusion ;
+  x3do:hasParent :Shape_2_5_1 ;
+  x3do:DEF 'KELP' ;
+  x3do:ccw false ;
+  x3do:convex false ;
+  x3do:creaseAngle .78 ;
+  x3do:crossSection ( 1.00 0.00 0.87 0.50 0.50 0.87 0.00 1.00 -0.50 0.87 -0.87 0.50 -1.00 0.00 -0.87 -0.50 -0.50 -0.87 0.00 -1.00 0.50 -0.87 0.87 -0.50 1.00 0.00 ) ;
+  x3do:endCap false ;
+  x3do:scale ( 0.30 0.30 0.29 0.29 0.28 0.28 0.27 0.27 0.26 0.26 0.25 0.25 0.24 0.24 0.23 0.23 0.22 0.22 0.21 0.21 0.19 0.19 0.16 0.16 0.11 0.11 0.05 0.05 0.00 0.00 ) ;
+  x3do:spine ( 0.00 1.00 0.00 0.00 0.00 0.00 0.00 1.00 0.00 0.00 2.00 0.00 0.00 3.00 0.00 0.00 4.00 0.00 0.00 5.00 0.00 0.00 6.00 0.00 0.00 7.00 0.00 0.00 8.00 0.00 0.00 9.00 0.00 0.13 9.50 0.00 0.50 9.87 0.00 1.00 10.00 0.00 5.00 10.00 0.00 ) .
+:Transform_2_6 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :Shape_2_6_1 ;
+  x3do:scale ( 0.5 0.5 0.5 ) .
+:Shape_2_6_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_6 ;
+  x3do:hasAppearance :Appearance_2_6_1_1 ;
+  x3do:hasGeometry :INNER_KELP .
+:Appearance_2_6_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_6_1 ;
+  x3do:hasMaterial :Material_2_6_1_1_1 .
+:Material_2_6_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_6_1_1 ;
+  x3do:ambientIntensity .25 ;
+  x3do:diffuseColor ( 0.57 0.30 0.10 ) ;
+  x3do:emissiveColor ( 0.52 0.30 0.10 ) ;
+  x3do:shininess 0.92 ;
+  x3do:transparency 0.70 .
+:INNER_KELP a owl:NamedIndividual, x3do:Extrusion ;
+  x3do:hasParent :Shape_2_6_1 ;
+  x3do:DEF 'INNER_KELP' ;
+  x3do:ccw false ;
+  x3do:convex false ;
+  x3do:creaseAngle .78 ;
+  x3do:crossSection ( 0.80 0.00 0.69 0.40 0.40 0.69 0.00 0.80 -0.40 0.69 -0.69 0.40 -0.80 0.00 -0.69 -0.40 -0.40 -0.69 0.00 -0.80 0.40 -0.69 0.69 -0.40 0.80 0.00 ) ;
+  x3do:endCap false ;
+  x3do:scale ( 0.30 0.30 0.29 0.29 0.28 0.28 0.27 0.27 0.26 0.26 0.25 0.25 0.24 0.24 0.23 0.23 0.22 0.22 0.21 0.21 0.19 0.19 0.16 0.16 0.11 0.11 0.00 0.00 ) ;
+  x3do:spine ( 0.00 0.00 0.00 0.00 1.00 0.00 0.00 2.00 0.00 0.00 3.00 0.00 0.00 4.00 0.00 0.00 5.00 0.00 0.00 6.00 0.00 0.00 7.00 0.00 0.00 8.00 0.00 0.00 9.00 0.00 0.13 9.50 0.00 0.50 9.87 0.00 1.00 10.00 0.00 5.00 10.00 0.00 ) .
+:Transform_2_7 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :Shape_2_7_1 .
+:Shape_2_7_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_7 ;
+  x3do:hasAppearance :Appearance_2_7_1_1 ;
+  x3do:hasGeometry :Cone_2_7_1_2 .
+:Appearance_2_7_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_7_1 ;
+  x3do:hasMaterial :Material_2_7_1_1_1 .
+:Material_2_7_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_7_1_1 ;
+  x3do:ambientIntensity .25 ;
+  x3do:diffuseColor ( 0.57 0.30 0.10 ) ;
+  x3do:shininess 0.92 .
+:Cone_2_7_1_2 a owl:NamedIndividual, x3do:Cone ;
+  x3do:hasParent :Shape_2_7_1 ;
+  x3do:bottomRadius 0.5 ;
+  x3do:height 0.5 .
+:ROUTE_2_8 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'fraction_changed' ;
+  x3do:fromNode 'CLOCK' ;
+  x3do:toField 'set_fraction' ;
+  x3do:toNode 'KELP_BEND' .
+:ROUTE_2_9 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'value_changed' ;
+  x3do:fromNode 'KELP_BEND' ;
+  x3do:toField 'set_spine' ;
+  x3do:toNode 'KELP' .
+:ROUTE_2_10 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'value_changed' ;
+  x3do:fromNode 'KELP_BEND' ;
+  x3do:toField 'set_spine' ;
+  x3do:toNode 'INNER_KELP' .

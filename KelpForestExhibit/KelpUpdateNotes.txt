@@ -1,0 +1,56 @@
+
+The VRML file header not found or unsupported encoding type
+File: http://www.web3d.org/TaskGroups/x3d/translation/examples/KelpForestExhibit/KelpNoBase.wrlThe VRML file header not found or unsupported encoding type
+File: http://www.web3d.org/TaskGroups/x3d/translation/examples/KelpForestExhibit/KelpNoBase.wrlThe VRML file header not found or unsupported encoding type
+File: http://www.web3d.org/TaskGroups/x3d/translation/examples/KelpForestExhibit/KelpNoBase.wrlThe VRML file header not found or unsupported encoding type
+File: http://www.web3d.org/TaskGroups/x3d/translation/examples/KelpForestExhibit/KelpNoBase.wrlThe VRML file header not found or unsupported encoding type
+File: http://www.web3d.org/TaskGroups/x3d/translation/examples/KelpForestExhibit/KelpNoBase.wrlThe VRML file header not found or unsupported encoding type
+File: http://www.web3d.org/TaskGroups/x3d/translation/examples/KelpForestExhibit/SeaStar1.8.wrlThe VRML file header not found or unsupported encoding type
+File: http://www.web3d.org/TaskGroups/x3d/translation/examples/KelpForestExhibit/SeaStarPatch.wrlThe VRML file header not found or unsupported encoding type
+File: http://www.web3d.org/TaskGroups/x3d/translation/examples/KelpForestExhibit/NancyDivingExamplePrototypes.wrl
+
+These are the changes I've made to Kelp:
+08 Oct 02
+  - KelpForestMain.x3d calls KelpNoBase.x3d
+  - KelpNoBase calls kelp_proto.wrl#Kelp
+
+09 Oct 02
+  - translated kelp_proto.wrl to KelpPrototype.x3d run from command line Vrml97ToX3dNist.bat
+  - IS's moved
+  - duplicated inlines removed by defining inlines.
+  - translated bulb.wrl to Bulb.x3d run from command line Vrml97ToX3dNist.bat
+  - translated bulb_lowres.wrl to BulbLowResolution.x3d run from command line Vrml97ToX3dNist.bat
+  - refrences to Bulb and BulbLowResolution updated in KelpPrototype
+  - updated reference in KelpNoBase
+
+Updated Files:
+Bulb.x3d
+BulbLowResolution.x3d
+KelpPrototype.x3d
+KelpNoBase.x3d
+
+Old:
+bulb.wrl
+bulb_lowres.wrl
+kelp_proto.wrl
+
+Remaining issues:
+Updata Meta in all files
+value of zero in scale of BLADE_MOTION in Bulb.x3d
+field values need for Kelp1
+protoInstance naming not right in KelpNoBase
+
+Other Files:
+KelpClump2.x3d - Not used
+FlexiKelp - updated in 2001, works fine, might have value
+
+
+
+Gallery - not working * can't find any reference to origional author *
+need to include image folder
+GiantKelp.x3d updated missing header, transform names make no sense
+CopperRockFish changed to CopperRockFishPlacardViewer
+need to make one proto!
+
+
+

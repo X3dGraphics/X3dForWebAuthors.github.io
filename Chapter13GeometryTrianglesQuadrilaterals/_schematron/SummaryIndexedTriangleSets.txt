@@ -1,0 +1,4 @@
+<X3D profile='Immersive'> but actual profile='Interchange' [/X3D, info]
+Missing name of X3D scene author in meta tag, add <meta name='creator' content='Author Name'/> [/X3D/head, warning]
+<Shape DEF=''/> found without child Appearance [/X3D/Scene/Transform/Shape[2], warning]
+<Shape DEF=''/> found without child Appearance [/X3D/Scene/Transform/Shape[3], warning]

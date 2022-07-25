@@ -1,0 +1,243 @@
+@prefix :        <https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter12EnvironmentSensorSound/SoundVisualization.ttl#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema:  <http://schema.org/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix x3d:     <https://www.web3d.org/specifications/x3d-4.0.xsd#> .
+@prefix x3do:    <https://www.web3d.org/specifications/X3dOntology4.0#> .
+
+:X3D a owl:NamedIndividual, x3do:X3D ;
+  x3do:hasHead :head ;
+  x3do:hasScene :Scene ;
+  x3do:profile 'Immersive' ;
+  x3do:version '3.3' ;
+  x3do:noNamespaceSchemaLocation 'https://www.web3d.org/specifications/x3d-3.3.xsd' .
+:head a owl:NamedIndividual, x3do:head ;
+  x3do:hasParent :X3D ;
+  x3do:hasMeta :meta_1_1, :meta_1_2, :meta_1_3, :meta_1_4, :meta_1_5, :meta_1_6, :meta_1_7, :meta_1_8, :meta_1_9, :meta_1_10, :meta_1_11, :meta_1_12, :meta_1_13 .
+:meta_1_1 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'SoundVisualization.x3d' ;
+  x3do:name 'title' .
+:meta_1_2 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'An example of the Sound node for testing X3D-Edit author-assist visualization' ;
+  x3do:name 'description' .
+:meta_1_3 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '15 November 2009' ;
+  x3do:name 'created' .
+:meta_1_4 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '20 October 2019' ;
+  x3do:name 'modified' .
+:meta_1_5 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'SoundVisualization.png' ;
+  x3do:name 'Image' .
+:meta_1_6 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://X3dGraphics.com' ;
+  x3do:name 'reference' .
+:meta_1_7 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://www.web3d.org/x3d/content/examples/X3dResources.html' ;
+  x3do:name 'reference' .
+:meta_1_8 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Don Brutzman' ;
+  x3do:name 'creator' .
+:meta_1_9 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Copyright 2009, Daly Realism and Don Brutzman' ;
+  x3do:name 'rights' .
+:meta_1_10 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'X3D book, X3D graphics, X3D-Edit, http://www.x3dGraphics.com' ;
+  x3do:name 'subject' .
+:meta_1_11 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter12EnvironmentSensorSound/SoundVisualization.x3d' ;
+  x3do:name 'identifier' .
+:meta_1_12 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'X3D-Edit 3.3, https://savage.nps.edu/X3D-Edit' ;
+  x3do:name 'generator' .
+:meta_1_13 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '../license.html' ;
+  x3do:name 'license' .
+:meta dcterms:title "SoundVisualization.x3d" .
+:meta dcterms:description "An example of the Sound node for testing X3D-Edit author-assist visualization" .
+:meta dcterms:created "15 November 2009" .
+:meta dcterms:modified "20 October 2019" .
+:meta dcterms:Image "SoundVisualization.png" .
+:meta dcterms:reference "https://X3dGraphics.com" .
+:meta dcterms:reference "https://www.web3d.org/x3d/content/examples/X3dResources.html" .
+:meta dcterms:creator "Don Brutzman" .
+:meta dcterms:rights "Copyright 2009, Daly Realism and Don Brutzman" .
+:meta dcterms:subject "X3D book, X3D graphics, X3D-Edit, http://www.x3dGraphics.com" .
+:meta dcterms:identifier "https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter12EnvironmentSensorSound/SoundVisualization.x3d" .
+:meta dcterms:generator "X3D-Edit 3.3, https://savage.nps.edu/X3D-Edit" .
+:meta dcterms:license "../license.html" .
+:Scene a owl:NamedIndividual, x3do:Scene ;
+  x3do:hasParent :X3D ;
+  x3do:hasChildren :WorldInfo_2_1, :ViewOutside, :NavOutside, :ViewInside, :NavInside, :ViewAbove, :GridXZ_20x20Fixed, :Sound_2_11, :Transform_2_12 ;
+  x3do:hasROUTE :ROUTE_2_4, :ROUTE_2_7, :ROUTE_2_10 .
+:WorldInfo_2_1 a owl:NamedIndividual, x3do:WorldInfo ;
+  x3do:hasParent :Scene ;
+  x3do:title 'SoundVisualization.x3d' .
+:ViewOutside a owl:NamedIndividual, x3do:Viewpoint ;
+  x3do:hasParent :Scene ;
+  x3do:DEF 'ViewOutside' ;
+  x3do:description 'outside' ;
+  x3do:position ( 0 8 40 ) .
+:NavOutside a owl:NamedIndividual, x3do:NavigationInfo ;
+  x3do:hasParent :Scene ;
+  x3do:DEF 'NavOutside' .
+:ROUTE_2_4 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'isBound' ;
+  x3do:fromNode 'ViewOutside' ;
+  x3do:toField 'set_bind' ;
+  x3do:toNode 'NavOutside' .
+:ViewInside a owl:NamedIndividual, x3do:Viewpoint ;
+  x3do:hasParent :Scene ;
+  x3do:DEF 'ViewInside' ;
+  x3do:description 'inside' ;
+  x3do:position ( 0 1.6 6 ) .
+:NavInside a owl:NamedIndividual, x3do:NavigationInfo ;
+  x3do:hasParent :Scene ;
+  x3do:DEF 'NavInside' ;
+  x3do:type '"WALK" "ANY"' .
+:ROUTE_2_7 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'isBound' ;
+  x3do:fromNode 'ViewInside' ;
+  x3do:toField 'set_bind' ;
+  x3do:toNode 'NavInside' .
+:ViewAbove a owl:NamedIndividual, x3do:Viewpoint ;
+  x3do:hasParent :Scene ;
+  x3do:DEF 'ViewAbove' ;
+  x3do:description 'above' ;
+  x3do:orientation ( 1 0 0 -1.57079 ) ;
+  x3do:position ( 0 40 0 ) .
+:GridXZ_20x20Fixed a owl:NamedIndividual, x3do:Inline ;
+  x3do:hasParent :Scene ;
+  x3do:DEF 'GridXZ_20x20Fixed' ;
+  x3do:url '"GridXZ_20x20Fixed.x3d" "../../../Savage/Tools/Authoring/GridXZ_20x20Fixed.x3d" "https://savage.nps.edu/Savage/Tools/Authoring/GridXZ_20x20Fixed.x3d" "GridXZ_20x20Fixed.wrl" "../../../Savage/Tools/Authoring/GridXZ_20x20Fixed.wrl" "https://savage.nps.edu/Savage/Tools/Authoring/GridXZ_20x20Fixed.wrl"' .
+:ROUTE_2_10 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'isBound' ;
+  x3do:fromNode 'ViewAbove' ;
+  x3do:toField 'set_bind' ;
+  x3do:toNode 'NavOutside' .
+:Sound_2_11 a owl:NamedIndividual, x3do:Sound ;
+  x3do:hasParent :Scene ;
+  x3do:hasSource :WaterSounds ;
+  x3do:direction ( 1 0 1 ) ;
+  x3do:location ( -3 1.6 -3 ) ;
+  x3do:maxBack 6 ;
+  x3do:minBack 5 .
+:WaterSounds a owl:NamedIndividual, x3do:AudioClip ;
+  x3do:hasParent :Sound_2_11 ;
+  x3do:DEF 'WaterSounds' ;
+  x3do:description 'Running Water' ;
+  x3do:url '"aqua.wav" "https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter12EnvironmentSensorSound/aqua.wav"' .
+:Transform_2_12 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :Transform_2_12_1 ;
+  x3do:rotation ( 0 1 0 -2.356194490192345 ) ;
+  x3do:translation ( -3 1.6 -3 ) .
+:Transform_2_12_1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_12 ;
+  x3do:hasChildren :CoordinateAxes, :Transform_2_12_1_2, :Transform_2_12_1_3 ;
+  x3do:rotation ( 1 0 0 0.0 ) .
+:CoordinateAxes a owl:NamedIndividual, x3do:Inline ;
+  x3do:hasParent :Transform_2_12_1 ;
+  x3do:DEF 'CoordinateAxes' ;
+  x3do:url '"../Chapter03Grouping/CoordinateAxes.x3d" "../../Savage/Tools/Authoring/CoordinateAxes.x3d" "https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter03Grouping/CoordinateAxes.x3d" "https://savage.nps.edu/Savage/Tools/Authoring/CoordinateAxes.x3d" "../Chapter03Grouping/CoordinateAxes.wrl" "../../Savage/Tools/Authoring/CoordinateAxes.wrl" "https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter03Grouping/CoordinateAxes.wrl" "https://savage.nps.edu/Savage/Tools/Authoring/CoordinateAxes.wrl"' .
+:Transform_2_12_1_2 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_12_1 ;
+  x3do:hasChildren :Collision_2_12_1_2_1 ;
+  x3do:scale ( 6.0 2.23606797749979 2.23606797749979 ) ;
+  x3do:translation ( -2 0 0 ) .
+:Collision_2_12_1_2_1 a owl:NamedIndividual, x3do:Collision ;
+  x3do:hasParent :Transform_2_12_1_2 ;
+  x3do:hasChildren :Shape_2_12_1_2_1_1, :Shape_2_12_1_2_1_2 ;
+  x3do:enabled false .
+:Shape_2_12_1_2_1_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Collision_2_12_1_2_1 ;
+  x3do:hasGeometry :Cylinder_2_12_1_2_1_1_1 ;
+  x3do:hasAppearance :Appearance_2_12_1_2_1_1_2 .
+:Cylinder_2_12_1_2_1_1_1 a owl:NamedIndividual, x3do:Cylinder ;
+  x3do:hasParent :Shape_2_12_1_2_1_1 ;
+  x3do:height 0.04 ;
+  x3do:radius 0.5 ;
+  x3do:side false .
+:Appearance_2_12_1_2_1_1_2 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_12_1_2_1_1 ;
+  x3do:hasMaterial :Material_2_12_1_2_1_1_2_1 .
+:Material_2_12_1_2_1_1_2_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_12_1_2_1_1_2 ;
+  x3do:diffuseColor ( 0.8 0.6 0.4 ) ;
+  x3do:emissiveColor ( 0.8 0.6 0.4 ) ;
+  x3do:transparency 0.7 .
+:Shape_2_12_1_2_1_2 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Collision_2_12_1_2_1 ;
+  x3do:hasGeometry :Sphere_2_12_1_2_1_2_1 ;
+  x3do:hasAppearance :Appearance_2_12_1_2_1_2_2 .
+:Sphere_2_12_1_2_1_2_1 a owl:NamedIndividual, x3do:Sphere ;
+  x3do:hasParent :Shape_2_12_1_2_1_2 ;
+  x3do:radius 0.5 .
+:Appearance_2_12_1_2_1_2_2 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_12_1_2_1_2 ;
+  x3do:hasMaterial :Material_2_12_1_2_1_2_2_1 .
+:Material_2_12_1_2_1_2_2_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_12_1_2_1_2_2 ;
+  x3do:diffuseColor ( 0.8 0.6 0.4 ) ;
+  x3do:emissiveColor ( 0.8 0.6 0.4 ) ;
+  x3do:transparency 0.7 .
+:Transform_2_12_1_3 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_12_1 ;
+  x3do:hasChildren :Collision_2_12_1_3_1 ;
+  x3do:scale ( 16.0 7.745966692414834 7.745966692414834 ) ;
+  x3do:translation ( 2 0 0 ) .
+:Collision_2_12_1_3_1 a owl:NamedIndividual, x3do:Collision ;
+  x3do:hasParent :Transform_2_12_1_3 ;
+  x3do:hasChildren :Shape_2_12_1_3_1_1, :Shape_2_12_1_3_1_2 ;
+  x3do:enabled false .
+:Shape_2_12_1_3_1_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Collision_2_12_1_3_1 ;
+  x3do:hasGeometry :Cylinder_2_12_1_3_1_1_1 ;
+  x3do:hasAppearance :Appearance_2_12_1_3_1_1_2 .
+:Cylinder_2_12_1_3_1_1_1 a owl:NamedIndividual, x3do:Cylinder ;
+  x3do:hasParent :Shape_2_12_1_3_1_1 ;
+  x3do:height 0.02 ;
+  x3do:radius 0.5 ;
+  x3do:side false .
+:Appearance_2_12_1_3_1_1_2 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_12_1_3_1_1 ;
+  x3do:hasMaterial :Material_2_12_1_3_1_1_2_1 .
+:Material_2_12_1_3_1_1_2_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_12_1_3_1_1_2 ;
+  x3do:diffuseColor ( 0.4 0.3 0.2 ) ;
+  x3do:emissiveColor ( 0.4 0.3 0.2 ) ;
+  x3do:transparency 0.85 .
+:Shape_2_12_1_3_1_2 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Collision_2_12_1_3_1 ;
+  x3do:hasGeometry :Sphere_2_12_1_3_1_2_1 ;
+  x3do:hasAppearance :Appearance_2_12_1_3_1_2_2 .
+:Sphere_2_12_1_3_1_2_1 a owl:NamedIndividual, x3do:Sphere ;
+  x3do:hasParent :Shape_2_12_1_3_1_2 ;
+  x3do:radius 0.5 .
+:Appearance_2_12_1_3_1_2_2 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_12_1_3_1_2 ;
+  x3do:hasMaterial :Material_2_12_1_3_1_2_2_1 .
+:Material_2_12_1_3_1_2_2_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_12_1_3_1_2_2 ;
+  x3do:diffuseColor ( 0.4 0.3 0.2 ) ;
+  x3do:emissiveColor ( 0.4 0.3 0.2 ) ;
+  x3do:transparency 0.85 .

@@ -1,0 +1,4 @@
+<Shape DEF=''/> found without child Appearance [/X3D/Scene/Transform/Transform[1]/Shape, warning]
+<Shape DEF=''/> found without child Appearance [/X3D/Scene/Transform/Transform[2]/Shape, warning]
+<Shape DEF=''/> found without child Appearance [/X3D/Scene/Transform/Transform[3]/Shape, warning]
+<Shape DEF=''/> found without child Appearance [/X3D/Scene/Transform/Transform[4]/Shape, warning]

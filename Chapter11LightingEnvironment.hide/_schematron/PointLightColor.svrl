@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<svrl:schematron-output title="X3D Validity Checks using Schematron" schemaVersion="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:schold="http://www.ascc.net/xml/schematron" xmlns:iso="http://purl.oclc.org/dsdl/schematron" xmlns:svrl="http://purl.oclc.org/dsdl/svrl" xmlns:sch="http://www.ascc.net/xml/schematron">
+<!--   
+		   
+		   
+		 -->
+<svrl:active-pattern/>
+<svrl:fired-rule context="/"/>
+<svrl:fired-rule context="X3D"/>
+<svrl:fired-rule context="head"/>
+<svrl:fired-rule context="Scene"/>
+<svrl:fired-rule context="Viewpoint"/>
+<svrl:fired-rule context="Shape[not(@USE)]"/>
+<svrl:fired-rule context="Appearance[not(@USE)]"/>
+<svrl:fired-rule context="Shape[not(@USE)]"/>
+<svrl:fired-rule context="Appearance[not(@USE)]"/>
+<svrl:fired-rule context="Shape[not(@USE)]"/>
+<svrl:fired-rule context="Appearance[not(@USE)]"/>
+<svrl:fired-rule context="*[contains(local-name(),'Sensor')][not(@USE) and string-length(@DEF)&gt;1]" id="DefaultSensorNode"/>
+<svrl:fired-rule context="*[contains(local-name(),'Interpolator')][not(@USE) and not(IS) and not(parent::field)]"/>
+</svrl:schematron-output>

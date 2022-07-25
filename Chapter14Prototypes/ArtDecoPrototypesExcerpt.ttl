@@ -1,0 +1,155 @@
+@prefix :        <https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter14Prototypes/ArtDecoPrototypesExcerpt.ttl#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema:  <http://schema.org/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix x3d:     <https://www.web3d.org/specifications/x3d-4.0.xsd#> .
+@prefix x3do:    <https://www.web3d.org/specifications/X3dOntology4.0#> .
+
+:X3D a owl:NamedIndividual, x3do:X3D ;
+  x3do:hasHead :head ;
+  x3do:hasScene :Scene ;
+  x3do:profile 'Immersive' ;
+  x3do:version '3.3' ;
+  x3do:noNamespaceSchemaLocation 'https://www.web3d.org/specifications/x3d-3.3.xsd' .
+:head a owl:NamedIndividual, x3do:head ;
+  x3do:hasParent :X3D ;
+  x3do:hasMeta :meta_1_1, :meta_1_2, :meta_1_3, :meta_1_4, :meta_1_5, :meta_1_6, :meta_1_7, :meta_1_8, :meta_1_9, :meta_1_10, :meta_1_11, :meta_1_12 .
+:meta_1_1 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'ArtDecoPrototypesExcerpt.x3d' ;
+  x3do:name 'title' .
+:meta_1_2 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Prototype declarations defining values for X3D/VRML materials, originally converted from SGI&apos;s Open Inventor material examples. Excerpted from original.' ;
+  x3do:name 'description' .
+:meta_1_3 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'David Roussel' ;
+  x3do:name 'creator' .
+:meta_1_4 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'James Harney, Don Brutzman NPS' ;
+  x3do:name 'translator' .
+:meta_1_5 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '7 April 2002' ;
+  x3do:name 'created' .
+:meta_1_6 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '20 October 2019' ;
+  x3do:name 'modified' .
+:meta_1_7 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'http://vrmlstuff.free.fr/materials' ;
+  x3do:name 'reference' .
+:meta_1_8 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Universal Media Material Library' ;
+  x3do:name 'subject' .
+:meta_1_9 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://www.web3d.org/x3d/content/examples/Basic/UniversalMediaMaterials/ArtDecoPrototypes.x3d' ;
+  x3do:name 'reference' .
+:meta_1_10 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter14Prototypes/ArtDecoPrototypesExcerpt.x3d' ;
+  x3do:name 'identifier' .
+:meta_1_11 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Vrml97ToX3dNist, http://ovrt.nist.gov/v2_x3d.html' ;
+  x3do:name 'generator' .
+:meta_1_12 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '../license.html' ;
+  x3do:name 'license' .
+:meta dcterms:title "ArtDecoPrototypesExcerpt.x3d" .
+:meta dcterms:description "Prototype declarations defining values for X3D/VRML materials, originally converted from SGI's Open Inventor material examples. Excerpted from original." .
+:meta dcterms:creator "David Roussel" .
+:meta dcterms:translator "James Harney, Don Brutzman NPS" .
+:meta dcterms:created "7 April 2002" .
+:meta dcterms:modified "20 October 2019" .
+:meta dcterms:reference "http://vrmlstuff.free.fr/materials" .
+:meta dcterms:subject "Universal Media Material Library" .
+:meta dcterms:reference "https://www.web3d.org/x3d/content/examples/Basic/UniversalMediaMaterials/ArtDecoPrototypes.x3d" .
+:meta dcterms:identifier "https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter14Prototypes/ArtDecoPrototypesExcerpt.x3d" .
+:meta dcterms:generator "Vrml97ToX3dNist, http://ovrt.nist.gov/v2_x3d.html" .
+:meta dcterms:license "../license.html" .
+:Scene a owl:NamedIndividual, x3do:Scene ;
+  x3do:hasParent :X3D ;
+  x3do:hasChildren :WorldInfo_2_1, :Anchor_2_5 ;
+  x3do:hasProtoDeclare :ProtoDeclare_2_2, :ProtoDeclare_2_3, :ProtoDeclare_2_4 .
+:WorldInfo_2_1 a owl:NamedIndividual, x3do:WorldInfo ;
+  x3do:hasParent :Scene ;
+  x3do:title 'ArtDecoPrototypesExcerpt.x3d' .
+:ProtoDeclare_2_2 a owl:NamedIndividual, x3do:ProtoDeclare ;
+  x3do:hasParent :Scene ;
+  x3do:hasProtoBody :ProtoBody_2_2_1 ;
+  x3do:appinfo 'UniversalMediaMaterials prototype' ;
+  x3do:documentation 'https://www.web3d.org/x3d/content/examples/Basic/UniversalMediaMaterials' ;
+  x3do:name 'ArtDeco00' .
+:ProtoBody_2_2_1 a owl:NamedIndividual, x3do:ProtoBody ;
+  x3do:hasParent :ProtoDeclare_2_2 ;
+  x3do:hasMaterial :Material_2_2_1_1 .
+:Material_2_2_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :ProtoBody_2_2_1 ;
+  x3do:ambientIntensity 0.25 ;
+  x3do:diffuseColor ( 0.282435 0.085159 0.134462 ) ;
+  x3do:shininess 0.127273 ;
+  x3do:specularColor ( 0.276305 0.11431 0.139857 ) .
+:ProtoDeclare_2_3 a owl:NamedIndividual, x3do:ProtoDeclare ;
+  x3do:hasParent :Scene ;
+  x3do:hasProtoBody :ProtoBody_2_3_1 ;
+  x3do:appinfo 'UniversalMediaMaterials prototype' ;
+  x3do:documentation 'https://www.web3d.org/x3d/content/examples/Basic/UniversalMediaMaterials' ;
+  x3do:name 'ArtDeco01' .
+:ProtoBody_2_3_1 a owl:NamedIndividual, x3do:ProtoBody ;
+  x3do:hasParent :ProtoDeclare_2_3 ;
+  x3do:hasMaterial :Material_2_3_1_1 .
+:Material_2_3_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :ProtoBody_2_3_1 ;
+  x3do:ambientIntensity 0.254777 ;
+  x3do:diffuseColor ( 0.685208 0.134679 0.332385 ) ;
+  x3do:shininess 0.071429 ;
+  x3do:specularColor ( 0.122449 0.050035 0.050035 ) .
+:ProtoDeclare_2_4 a owl:NamedIndividual, x3do:ProtoDeclare ;
+  x3do:hasParent :Scene ;
+  x3do:hasProtoBody :ProtoBody_2_4_1 ;
+  x3do:appinfo 'UniversalMediaMaterials prototype' ;
+  x3do:documentation 'https://www.web3d.org/x3d/content/examples/Basic/UniversalMediaMaterials' ;
+  x3do:name 'ArtDeco02' .
+:ProtoBody_2_4_1 a owl:NamedIndividual, x3do:ProtoBody ;
+  x3do:hasParent :ProtoDeclare_2_4 ;
+  x3do:hasMaterial :Material_2_4_1_1 .
+:Material_2_4_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :ProtoBody_2_4_1 ;
+  x3do:ambientIntensity 1.0 ;
+  x3do:diffuseColor ( 0.536861 0.0529 0.245479 ) ;
+  x3do:shininess 0.832432 ;
+  x3do:specularColor ( 0.805292 0.765198 0.747416 ) .
+:Anchor_2_5 a owl:NamedIndividual, x3do:Anchor ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :Shape_2_5_1 ;
+  x3do:description 'ArtDecoPrototypeExample' ;
+  x3do:parameter '"target=_blank"' ;
+  x3do:url '"ArtDecoExamplesExcerpt.x3d" "https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter14Prototypes/ArtDecoPrototypesExcerpt.x3d"' .
+:Shape_2_5_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Anchor_2_5 ;
+  x3do:hasAppearance :Appearance_2_5_1_1 ;
+  x3do:hasGeometry :Text_2_5_1_2 .
+:Appearance_2_5_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_5_1 ;
+  x3do:hasMaterial :ProtoInstance_2_5_1_1_1 .
+:ProtoInstance_2_5_1_1_1 a owl:NamedIndividual, x3do:ProtoInstance ;
+  x3do:hasParent :Appearance_2_5_1_1 ;
+  x3do:name 'ArtDeco00' .
+:Text_2_5_1_2 a owl:NamedIndividual, x3do:Text ;
+  x3do:hasParent :Shape_2_5_1 ;
+  x3do:hasFontStyle :FontStyle_2_5_1_2_1 ;
+  x3do:string '"ArtDecoPrototypesExcerpt.x3d" "is a Materials Prototype declaration file." "" "For an example scene using these nodes," "click this text and view" "ArtDecoExamplesExcerpt.x3d"' .
+:FontStyle_2_5_1_2_1 a owl:NamedIndividual, x3do:FontStyle ;
+  x3do:hasParent :Text_2_5_1_2 ;
+  x3do:justify '"MIDDLE" "MIDDLE"' ;
+  x3do:size 0.8 .

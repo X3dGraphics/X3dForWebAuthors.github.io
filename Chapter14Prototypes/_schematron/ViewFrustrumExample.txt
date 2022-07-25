@@ -1,0 +1,2 @@
+<Viewpoint DEF='TestViewpoint'/> missing description [/X3D/Scene/ProtoInstance/fieldValue[1]/Viewpoint, warning]
+<Viewpoint DEF='TestViewpoint'/> description should be different than DEF [/X3D/Scene/ProtoInstance/fieldValue[1]/Viewpoint, warning]

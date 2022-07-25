@@ -1,0 +1,350 @@
+@prefix :        <https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/HalfMoonPrototype.ttl#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema:  <http://schema.org/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix x3d:     <https://www.web3d.org/specifications/x3d-4.0.xsd#> .
+@prefix x3do:    <https://www.web3d.org/specifications/X3dOntology4.0#> .
+
+:X3D a owl:NamedIndividual, x3do:X3D ;
+  x3do:hasHead :head ;
+  x3do:hasScene :Scene ;
+  x3do:profile 'Immersive' ;
+  x3do:version '3.3' ;
+  x3do:noNamespaceSchemaLocation 'https://www.web3d.org/specifications/x3d-3.3.xsd' .
+:head a owl:NamedIndividual, x3do:head ;
+  x3do:hasParent :X3D ;
+  x3do:hasMeta :meta_1_1, :meta_1_2, :meta_1_3, :meta_1_4, :meta_1_5, :meta_1_6, :meta_1_7, :meta_1_8, :meta_1_9, :meta_1_10, :meta_1_11 .
+:meta_1_1 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'HalfMoonPrototype.x3d' ;
+  x3do:name 'title' .
+:meta_1_2 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Prototype for a group of HalfMoon fish in the Kelp forest.' ;
+  x3do:name 'description' .
+:meta_1_3 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Ildeniz Duman' ;
+  x3do:name 'creator' .
+:meta_1_4 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Scott Tufts' ;
+  x3do:name 'translator' .
+:meta_1_5 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '1 June 1998' ;
+  x3do:name 'created' .
+:meta_1_6 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '22 February 2022' ;
+  x3do:name 'modified' .
+:meta_1_7 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Additional PositionInterpolator present but disabled.' ;
+  x3do:name 'warning' .
+:meta_1_8 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Wiggle causes texture flashing. TODO: move animation to example file.' ;
+  x3do:name 'warning' .
+:meta_1_9 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/HalfMoonPrototype.x3d' ;
+  x3do:name 'identifier' .
+:meta_1_10 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'X3D-Edit 3.3, https://savage.nps.edu/X3D-Edit' ;
+  x3do:name 'generator' .
+:meta_1_11 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '../license.html' ;
+  x3do:name 'license' .
+:meta dcterms:title "HalfMoonPrototype.x3d" .
+:meta dcterms:description "Prototype for a group of HalfMoon fish in the Kelp forest." .
+:meta dcterms:creator "Ildeniz Duman" .
+:meta dcterms:translator "Scott Tufts" .
+:meta dcterms:created "1 June 1998" .
+:meta dcterms:modified "22 February 2022" .
+:meta dcterms:warning "Additional PositionInterpolator present but disabled." .
+:meta dcterms:warning "Wiggle causes texture flashing. TODO: move animation to example file." .
+:meta dcterms:identifier "https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/HalfMoonPrototype.x3d" .
+:meta dcterms:generator "X3D-Edit 3.3, https://savage.nps.edu/X3D-Edit" .
+:meta dcterms:license "../license.html" .
+:Scene a owl:NamedIndividual, x3do:Scene ;
+  x3do:hasParent :X3D ;
+  x3do:hasChildren :WorldInfo_2_1, :ProtoInstance_2_3 ;
+  x3do:hasProtoDeclare :ProtoDeclare_2_2 .
+:WorldInfo_2_1 a owl:NamedIndividual, x3do:WorldInfo ;
+  x3do:hasParent :Scene ;
+  x3do:title 'HalfMoonPrototype.x3d' .
+:ProtoDeclare_2_2 a owl:NamedIndividual, x3do:ProtoDeclare ;
+  x3do:hasParent :Scene ;
+  x3do:hasProtoInterface :ProtoInterface_2_2_1 ;
+  x3do:hasProtoBody :ProtoBody_2_2_2 ;
+  x3do:appinfo 'HalfMoon fish' ;
+  x3do:name 'HalfMoon' .
+:ProtoInterface_2_2_1 a owl:NamedIndividual, x3do:ProtoInterface ;
+  x3do:hasParent :ProtoDeclare_2_2 ;
+  x3do:hasField :field_2_2_1_1, :field_2_2_1_2, :field_2_2_1_3 .
+:field_2_2_1_1 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :ProtoInterface_2_2_1 ;
+  x3do:accessType 'inputOutput' ;
+  x3do:name 'skinTextureUrl' ;
+  x3do:type 'MFString' ;
+  x3do:value '"HalfMoonScalesPatch.jpg" "https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/HalfMoonScalesPatch.jpg"' .
+:field_2_2_1_2 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :ProtoInterface_2_2_1 ;
+  x3do:accessType 'inputOutput' ;
+  x3do:name 'fishScale' ;
+  x3do:type 'SFVec3f' ;
+  x3do:value ( 0.3 0.25 0.25 ) .
+:field_2_2_1_3 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :ProtoInterface_2_2_1 ;
+  x3do:accessType 'inputOutput' ;
+  x3do:name 'fishColor' ;
+  x3do:type 'SFColor' ;
+  x3do:value ( 0.7 0.7 0.7 ) .
+:ProtoBody_2_2_2 a owl:NamedIndividual, x3do:ProtoBody ;
+  x3do:hasParent :ProtoDeclare_2_2 ;
+  x3do:hasChildren :MyHalfMoon .
+:MyHalfMoon a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :ProtoBody_2_2_2 ;
+  x3do:hasIS :IS_2_2_2_1_1 ;
+  x3do:hasChildren :Shape_2_2_2_1_2, :Shape_2_2_2_1_3, :Transform_2_2_2_1_4, :Transform_2_2_2_1_5, :Transform_2_2_2_1_6, :Left_Pectoral, :Right_Pectoral, :AnimationGroup ;
+  x3do:DEF 'MyHalfMoon' .
+:IS_2_2_2_1_1 a owl:NamedIndividual, x3do:IS ;
+  x3do:hasParent :MyHalfMoon ;
+  x3do:hasConnect :connect_2_2_2_1_1_1 .
+:connect_2_2_2_1_1_1 a owl:NamedIndividual, x3do:connect ;
+  x3do:hasParent :IS_2_2_2_1_1 ;
+  x3do:nodeField 'scale' ;
+  x3do:protoField 'fishScale' .
+:Shape_2_2_2_1_2 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :MyHalfMoon ;
+  x3do:hasAppearance :Appearance_2_2_2_1_2_1 ;
+  x3do:hasGeometry :Fish_Shape .
+:Appearance_2_2_2_1_2_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_2_2_1_2 ;
+  x3do:hasMaterial :FishColor ;
+  x3do:hasTexture :FishTexture .
+:FishColor a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_2_2_1_2_1 ;
+  x3do:hasIS :IS_2_2_2_1_2_1_1_1 ;
+  x3do:DEF 'FishColor' .
+:IS_2_2_2_1_2_1_1_1 a owl:NamedIndividual, x3do:IS ;
+  x3do:hasParent :FishColor ;
+  x3do:hasConnect :connect_2_2_2_1_2_1_1_1_1 .
+:connect_2_2_2_1_2_1_1_1_1 a owl:NamedIndividual, x3do:connect ;
+  x3do:hasParent :IS_2_2_2_1_2_1_1_1 ;
+  x3do:nodeField 'diffuseColor' ;
+  x3do:protoField 'fishColor' .
+:FishTexture a owl:NamedIndividual, x3do:ImageTexture ;
+  x3do:hasParent :Appearance_2_2_2_1_2_1 ;
+  x3do:hasIS :IS_2_2_2_1_2_1_2_1 ;
+  x3do:DEF 'FishTexture' .
+:IS_2_2_2_1_2_1_2_1 a owl:NamedIndividual, x3do:IS ;
+  x3do:hasParent :FishTexture ;
+  x3do:hasConnect :connect_2_2_2_1_2_1_2_1_1 .
+:connect_2_2_2_1_2_1_2_1_1 a owl:NamedIndividual, x3do:connect ;
+  x3do:hasParent :IS_2_2_2_1_2_1_2_1 ;
+  x3do:nodeField 'url' ;
+  x3do:protoField 'skinTextureUrl' .
+:Fish_Shape a owl:NamedIndividual, x3do:Extrusion ;
+  x3do:hasParent :Shape_2_2_2_1_2 ;
+  x3do:DEF 'Fish_Shape' ;
+  x3do:creaseAngle 1.57 ;
+  x3do:crossSection ( -0.1 1.0 0.1 1 0.5 0.5 0.5 -0.5 0.1 -1 -0.1 -1 -0.5 -0.5 -0.5 0.5 -0.1 1 ) ;
+  x3do:scale ( 0.03 0.03 0.3 0.3 0.2 0.4 0.1 0.5 0.1 0.15 0.03 0.4 ) ;
+  x3do:spine ( 0 1.5 0 0 1.2 0 0 0.5 0 0 0.3 0 0 0 0 0 -0.3 0 ) .
+:Shape_2_2_2_1_3 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :MyHalfMoon ;
+  x3do:hasAppearance :Fin_Skin .
+:Fin_Skin a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_2_2_1_3 ;
+  x3do:hasMaterial :Material_2_2_2_1_3_1_1 ;
+  x3do:DEF 'Fin_Skin' .
+:Material_2_2_2_1_3_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Fin_Skin ;
+  x3do:diffuseColor ( 0.5 0.5 0.5 ) ;
+  x3do:transparency 0.2 .
+:Transform_2_2_2_1_4 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :MyHalfMoon ;
+  x3do:hasChildren :Eye ;
+  x3do:translation ( 1.37 0.1 0.1 ) .
+:Eye a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_2_2_1_4 ;
+  x3do:hasAppearance :Appearance_2_2_2_1_4_1_1 ;
+  x3do:hasGeometry :Sphere_2_2_2_1_4_1_2 ;
+  x3do:DEF 'Eye' .
+:Appearance_2_2_2_1_4_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Eye ;
+  x3do:hasMaterial :Material_2_2_2_1_4_1_1_1 .
+:Material_2_2_2_1_4_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_2_2_1_4_1_1 ;
+  x3do:diffuseColor ( 0.5 0.5 0.5 ) ;
+  x3do:shininess 1 ;
+  x3do:specularColor ( 0.3 0.3 0.3 ) .
+:Sphere_2_2_2_1_4_1_2 a owl:NamedIndividual, x3do:Sphere ;
+  x3do:hasParent :Eye ;
+  x3do:radius 0.04 .
+:Transform_2_2_2_1_5 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :MyHalfMoon ;
+  x3do:hasChildren :Eye-USE-1 ;
+  x3do:translation ( 1.37 0.1 -0.1 ) .
+:Eye-USE-1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_2_2_1_5 ;
+  owl:sameAs :Eye . # DEF matching this USE
+:Transform_2_2_2_1_6 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :MyHalfMoon ;
+  x3do:hasChildren :Eye-USE-2 ;
+  x3do:scale ( 2.6 1 0.7 ) ;
+  x3do:translation ( 1.46 0 0 ) .
+:Eye-USE-2 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_2_2_1_6 ;
+  owl:sameAs :Eye . # DEF matching this USE
+:Left_Pectoral a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :MyHalfMoon ;
+  x3do:hasChildren :Shape_2_2_2_1_7_1 ;
+  x3do:DEF 'Left_Pectoral' ;
+  x3do:translation ( 1.1 -0.15 -0.1 ) .
+:Shape_2_2_2_1_7_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Left_Pectoral ;
+  x3do:hasAppearance :Fin_Skin-USE-1 ;
+  x3do:hasGeometry :IndexedFaceSet_2_2_2_1_7_1_2 .
+:Fin_Skin-USE-1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_2_2_1_7_1 ;
+  owl:sameAs :Fin_Skin . # DEF matching this USE
+:IndexedFaceSet_2_2_2_1_7_1_2 a owl:NamedIndividual, x3do:IndexedFaceSet ;
+  x3do:hasParent :Shape_2_2_2_1_7_1 ;
+  x3do:hasCoord :Coordinate_2_2_2_1_7_1_2_1 ;
+  x3do:coordIndex ( 0 1 2 -1 ) ;
+  x3do:solid false .
+:Coordinate_2_2_2_1_7_1_2_1 a owl:NamedIndividual, x3do:Coordinate ;
+  x3do:hasParent :IndexedFaceSet_2_2_2_1_7_1_2 ;
+  x3do:point ( 0 0 0 0.2 0 0 -0.2 0 -0.2 ) .
+:Right_Pectoral a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :MyHalfMoon ;
+  x3do:hasChildren :Shape_2_2_2_1_8_1 ;
+  x3do:DEF 'Right_Pectoral' ;
+  x3do:translation ( 1.1 -0.15 0.1 ) .
+:Shape_2_2_2_1_8_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Right_Pectoral ;
+  x3do:hasAppearance :Fin_Skin-USE-2 ;
+  x3do:hasGeometry :IndexedFaceSet_2_2_2_1_8_1_2 .
+:Fin_Skin-USE-2 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_2_2_1_8_1 ;
+  owl:sameAs :Fin_Skin . # DEF matching this USE
+:IndexedFaceSet_2_2_2_1_8_1_2 a owl:NamedIndividual, x3do:IndexedFaceSet ;
+  x3do:hasParent :Shape_2_2_2_1_8_1 ;
+  x3do:hasCoord :Coordinate_2_2_2_1_8_1_2_1 ;
+  x3do:coordIndex ( 0 1 2 -1 ) ;
+  x3do:solid false .
+:Coordinate_2_2_2_1_8_1_2_1 a owl:NamedIndividual, x3do:Coordinate ;
+  x3do:hasParent :IndexedFaceSet_2_2_2_1_8_1_2 ;
+  x3do:point ( 0 0 0 0.2 0 0 -0.2 0 0.2 ) .
+:AnimationGroup a owl:NamedIndividual, x3do:Group ;
+  x3do:hasParent :MyHalfMoon ;
+  x3do:hasChildren :Timer, :Waggler, :Left_Pectoral_Rotation, :Right_Pectoral_Rotation, :OrbitClock, :Orbit, :HalfMoonPath ;
+  x3do:hasROUTE :ROUTE_2_2_2_1_9_8, :ROUTE_2_2_2_1_9_9, :ROUTE_2_2_2_1_9_10, :ROUTE_2_2_2_1_9_11, :ROUTE_2_2_2_1_9_12, :ROUTE_2_2_2_1_9_13, :ROUTE_2_2_2_1_9_14, :ROUTE_2_2_2_1_9_15, :ROUTE_2_2_2_1_9_16, :ROUTE_2_2_2_1_9_17 ;
+  x3do:DEF 'AnimationGroup' .
+:Timer a owl:NamedIndividual, x3do:TimeSensor ;
+  x3do:hasParent :AnimationGroup ;
+  x3do:DEF 'Timer' ;
+  x3do:cycleInterval '5' ;
+  x3do:loop true .
+:Waggler a owl:NamedIndividual, x3do:CoordinateInterpolator ;
+  x3do:hasParent :AnimationGroup ;
+  x3do:DEF 'Waggler' ;
+  x3do:key ( 0.0 0.15 0.28 0.4 0.55 0.7 0.85 1 ) ;
+  x3do:keyValue ( 1.5 0 0 1.2 0 0 0.5 0 0 0.3 0 0 0 0 0 -0.3 0 0 1.5 0 0 1.20 0 0 0.5 0 .1 0.3 0 .2 0 0 0.25 -0.3 0 0.3 1.5 0 0 1.20 0 0 0.5 0 0 0.3 0 0 0 0 0 -0.3 0 0 1.5 0 0 1.2 0 0 0.5 0 -0.1 0.3 0 -0.2 0 0 -0.25 -0.3 0 -0.3 1.5 0 0 1.2 0 0 0.5 0 0 0.3 0 0 0 0 0 -0.3 0 0 1.5 0 0 1.2 0 0 0.5 0 0.1 0.3 0 0.2 0 0 0.25 -0.3 0 0.3 1.5 0 0 1.2 0 0 0.5 0 0 0.3 0 0 0 0 0 -0.3 0 0 1.5 0 0 1.2 0 0 0.5 0 -0.1 0.3 0 -0.2 0 0 -0.25 -0.3 0 -0.3 ) .
+:Left_Pectoral_Rotation a owl:NamedIndividual, x3do:OrientationInterpolator ;
+  x3do:hasParent :AnimationGroup ;
+  x3do:DEF 'Left_Pectoral_Rotation' ;
+  x3do:key ( 0 0.3 0.7 1 ) ;
+  x3do:keyValue ( 1 0 0 -0.52 1 0 0 0 1 0 0 0 1 0 0 -0.52 ) .
+:Right_Pectoral_Rotation a owl:NamedIndividual, x3do:OrientationInterpolator ;
+  x3do:hasParent :AnimationGroup ;
+  x3do:DEF 'Right_Pectoral_Rotation' ;
+  x3do:key ( 0 0.3 0.7 1 ) ;
+  x3do:keyValue ( 1 0 0 -0.52 1 0 0 0 1 0 0 0 1 0 0 -0.52 ) .
+:OrbitClock a owl:NamedIndividual, x3do:TimeSensor ;
+  x3do:hasParent :AnimationGroup ;
+  x3do:DEF 'OrbitClock' ;
+  x3do:cycleInterval '90' ;
+  x3do:enabled false ;
+  x3do:loop true .
+:Orbit a owl:NamedIndividual, x3do:OrientationInterpolator ;
+  x3do:hasParent :AnimationGroup ;
+  x3do:DEF 'Orbit' ;
+  x3do:key ( 0.0 0.25 0.5 0.750 1 ) ;
+  x3do:keyValue ( 0 1 0 6.28 0 1 0 1.57 0 1 0 3.14 0 1 0 4.71 0 1 0 6.28 ) .
+:HalfMoonPath a owl:NamedIndividual, x3do:PositionInterpolator ;
+  x3do:hasParent :AnimationGroup ;
+  x3do:DEF 'HalfMoonPath' ;
+  x3do:key ( 0 0.125 0.25 0.375 0.5 0.625 0.75 0.875 1 ) ;
+  x3do:keyValue ( 15 2 0 15 0 -10 0 -1 -10 -15 0 -10 -15 2 0 -15 0 10 0 -2 10 15 0 10 15 2 0 ) .
+:ROUTE_2_2_2_1_9_8 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :AnimationGroup ;
+  x3do:fromField 'fraction_changed' ;
+  x3do:fromNode 'Timer' ;
+  x3do:toField 'set_fraction' ;
+  x3do:toNode 'Waggler' .
+:ROUTE_2_2_2_1_9_9 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :AnimationGroup ;
+  x3do:fromField 'value_changed' ;
+  x3do:fromNode 'Waggler' ;
+  x3do:toField 'set_spine' ;
+  x3do:toNode 'Fish_Shape' .
+:ROUTE_2_2_2_1_9_10 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :AnimationGroup ;
+  x3do:fromField 'fraction_changed' ;
+  x3do:fromNode 'Timer' ;
+  x3do:toField 'set_fraction' ;
+  x3do:toNode 'Left_Pectoral_Rotation' .
+:ROUTE_2_2_2_1_9_11 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :AnimationGroup ;
+  x3do:fromField 'value_changed' ;
+  x3do:fromNode 'Left_Pectoral_Rotation' ;
+  x3do:toField 'set_rotation' ;
+  x3do:toNode 'Left_Pectoral' .
+:ROUTE_2_2_2_1_9_12 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :AnimationGroup ;
+  x3do:fromField 'fraction_changed' ;
+  x3do:fromNode 'Timer' ;
+  x3do:toField 'set_fraction' ;
+  x3do:toNode 'Right_Pectoral_Rotation' .
+:ROUTE_2_2_2_1_9_13 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :AnimationGroup ;
+  x3do:fromField 'value_changed' ;
+  x3do:fromNode 'Right_Pectoral_Rotation' ;
+  x3do:toField 'set_rotation' ;
+  x3do:toNode 'Right_Pectoral' .
+:ROUTE_2_2_2_1_9_14 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :AnimationGroup ;
+  x3do:fromField 'fraction_changed' ;
+  x3do:fromNode 'OrbitClock' ;
+  x3do:toField 'set_fraction' ;
+  x3do:toNode 'Orbit' .
+:ROUTE_2_2_2_1_9_15 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :AnimationGroup ;
+  x3do:fromField 'fraction_changed' ;
+  x3do:fromNode 'OrbitClock' ;
+  x3do:toField 'set_fraction' ;
+  x3do:toNode 'HalfMoonPath' .
+:ROUTE_2_2_2_1_9_16 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :AnimationGroup ;
+  x3do:fromField 'value_changed' ;
+  x3do:fromNode 'Orbit' ;
+  x3do:toField 'set_rotation' ;
+  x3do:toNode 'MyHalfMoon' .
+:ROUTE_2_2_2_1_9_17 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :AnimationGroup ;
+  x3do:fromField 'value_changed' ;
+  x3do:fromNode 'HalfMoonPath' ;
+  x3do:toField 'set_translation' ;
+  x3do:toNode 'MyHalfMoon' .
+:ProtoInstance_2_3 a owl:NamedIndividual, x3do:ProtoInstance ;
+  x3do:hasParent :Scene ;
+  x3do:name 'HalfMoon' .

@@ -1,0 +1,3 @@
+<X3D profile='Immersive'> doesn't match contained nodes, increase profile or add <component/> definition(s) [/X3D, error]
+<X3D profile='Immersive'> but actual profile='Full' [/X3D, info]
+<TimeSensor DEF='Clock'/> missing description [/X3D/Scene/TimeSensor, warning]

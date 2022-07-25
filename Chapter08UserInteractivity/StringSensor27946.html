@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--Generated using XSLT processor: SAXON 8.7 from Saxonica--><html xmlns="http://www.w3.org/TR/xhtml1/strict" xmlns:saxon="http://icl.com/saxon">
+   <head>
+      <title>StringSensor.x3d (X3dToXhtml)</title>
+      <style type="text/css">
+span.element {color: navy}
+span.attribute {color: green}
+span.value {color: teal}
+span.plain {color: black}
+span.gray  {color: gray}
+span.idName {color: maroon}
+a.idName {color: maroon}
+div.center {text-align: center}
+div.indent {margin-left: 25px}
+
+span.prototype {color: purple}
+a.prototype {color: purple, visited: black}
+span.route {color: red}
+b.warning {color: #CC5500}
+b.error {color: #CC0000}
+                </style>
+      <meta name="generator" content="http://www.web3d.org/x3d/content/X3dToXhtml.xslt"/>
+      <link rel="shortcut icon"
+            href="http://www.web3d.org/x3d/content/icons/X3DtextIcon16.png"
+            title="X3D"/>
+   </head>
+   <body>
+      <pre>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;!DOCTYPE X3D PUBLIC "ISO//Web3D//DTD X3D 3.1//EN"   "http://www.web3d.org/specifications/x3d-3.1.dtd"&gt;</pre>
+
+&lt;<span class="element">X3D</span>&#160;<span class="attribute">profile</span>='<span class="value">Immersive</span>'&#160;<span class="attribute">version</span>='<span class="value">3.1</span>'&#160;<span class="attribute">xmlns:xsd</span>='<a href="http://www.w3.org/2001/XMLSchema-instance" target="_blank">http://www.w3.org/2001/XMLSchema-instance</a>' <span class="attribute">xsd:noNamespaceSchemaLocation</span>='
+<a href="http://www.web3d.org/specifications/x3d-3.1.xsd">http://www.web3d.org/specifications/x3d-3.1.xsd</a> '&gt;
+<div class="indent">
+&lt;<span class="element">head</span>&gt;
+<div class="indent">
+&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">title</span>'&#160;<span class="attribute">content</span>='<a href="StringSensor.x3d" target="_blank">StringSensor.x3d</a>'/&gt;
+<br />
+&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">description</span>'&#160;<span class="attribute">content</span>='<span class="plain">A StringSensor example that displays typed text in the world.</span>'/&gt;
+<br />
+&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">creator</span>'&#160;<span class="attribute">content</span>='<span class="value">Leonard Daly and Don Brutzman</span>'/&gt;
+<br />
+&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">created</span>'&#160;<span class="attribute">content</span>='<span class="value">7 June 2006</span>'/&gt;
+<br />
+&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">modified</span>'&#160;<span class="attribute">content</span>='<span class="value">8 October 2007</span>'/&gt;
+<br />
+&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">reference</span>'&#160;<span class="attribute">content</span>='
+<a href="http://X3dGraphics.com">http://X3dGraphics.com</a> '/&gt;
+<br />
+&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">reference</span>'&#160;<span class="attribute">content</span>='
+<a href="http://www.web3d.org/x3d/content/examples/help.html">http://www.web3d.org/x3d/content/examples/help.html</a> '/&gt;
+<br />
+&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">rights</span>'&#160;<span class="attribute">content</span>='<span class="value">Copyright (c) 2006, Daly Realism and Don Brutzman</span>'/&gt;
+<br />
+&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">subject</span>'&#160;<span class="attribute">content</span>='
+X3D book, X3D graphics, X3D-Edit, <a href="http://www.x3dGraphics.com">http://www.x3dGraphics.com</a> '/&gt;
+<br />
+&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">identifier</span>'&#160;<span class="attribute">content</span>='
+<a href="http://X3dGraphics.com/examples/X3dForWebAuthors/Chapter08-UserInteractivity/StringSensor.x3d">http://X3dGraphics.com/examples/X3dForWebAuthors/Chapter08-UserInteractivity/StringSensor.x3d</a> '/&gt;
+<br />
+&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">generator</span>'&#160;<span class="attribute">content</span>='<span class="value">X3D-Edit, </span>
+            <a href="https://savage.nps.edu/X3D-Edit" target="_blank">https://savage.nps.edu/X3D-Edit</a>'/&gt;
+<br />
+&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">license</span>'&#160;<span class="attribute">content</span>='<a href="../license.html" target="_blank">../license.html</a>'/&gt;
+</div>&lt;/<span class="element">head</span>&gt;
+<br />
+&lt;!--
+<div class="center">
+            <hr width="100%"/>
+            <i>Index for DEF nodes</i>: 
+<a href="#Converter" class="idName">Converter</a>,
+<a href="#DisplayText" class="idName">DisplayText</a>,
+<a href="#GenText" class="idName">GenText</a>
+<br />
+<i>Index for Viewpoint image</i>: 
+<a href="#Viewpoint_1" class="idName">Viewpoint_1</a>
+            <hr width="100%"/>
+         </div>
+--&gt;
+<br />
+&lt;<span class="element">Scene</span>&gt;
+<div class="indent">
+&lt;<span class="element">Background</span>&#160;<span class="attribute">skyColor</span>='<span class="value">1 1 1</span>'/&gt;
+<br /><a name="Viewpoint_0"> </a> 
+&lt;<span class="element">Viewpoint</span>&#160;<a href="_viewpoints/StringSensor.x3d.Book_View.png">description</a>='<span class="value">Book View</span>'&#160;<span class="attribute">position</span>='<span class="value">-0.02 0.01 6.85</span>'/&gt;
+<br /><a name="GenText"> </a> 
+&lt;!-- <span class="idName">GenText</span> <i>ROUTE</i>:&#160;
+[<a href="#ROUTE_0"><i>from</i>&#160;<span class="attribute">enteredText</span>&#160;<i>to</i>&#160;<span class="idName">Converter</span>.<span class="attribute">SFString2MFString</span>
+            </a>]
+ --&gt;<br />
+&lt;<span class="element">StringSensor</span>&#160;<span class="attribute">DEF</span>='<span class="idName">GenText</span>'&#160;<span class="attribute">deletionAllowed</span>='<span class="value">true</span>'&#160;<span class="attribute">enabled</span>='<span class="value">true</span>'/&gt;
+<br />
+&lt;<span class="element">Transform</span>&gt;
+<div class="indent">
+&lt;<span class="element">Transform</span>&#160;<span class="attribute">translation</span>='<span class="value">0 0 -.1</span>'&gt;
+<div class="indent">
+&lt;<span class="element">Shape</span>&gt;
+<div class="indent">
+&lt;<span class="element">Appearance</span>&gt;
+<div class="indent">
+&lt;<span class="element">Material</span>&#160;<span class="attribute">diffuseColor</span>='<span class="value">1 1 .6</span>'/&gt;
+</div>&lt;/<span class="element">Appearance</span>&gt;
+<br />
+&lt;<span class="element">Box</span>&#160;<span class="attribute">size</span>='<span class="value">8 1.5 .01</span>'/&gt;
+</div>&lt;/<span class="element">Shape</span>&gt;
+</div>&lt;/<span class="element">Transform</span>&gt;
+<br />
+&lt;<span class="element">Transform</span>&#160;<span class="attribute">translation</span>='<span class="value">-3.9 .7 0</span>'&gt;
+<div class="indent">
+&lt;<span class="element">Shape</span>&gt;
+<div class="indent">
+&lt;<span class="element">Appearance</span>&gt;
+<div class="indent">
+&lt;<span class="element">Material</span>&#160;<span class="attribute">diffuseColor</span>='<span class="value">0 0 1</span>'/&gt;
+</div>&lt;/<span class="element">Appearance</span>&gt;
+<br /><a name="DisplayText"> </a> 
+&lt;!-- <span class="idName">DisplayText</span> <i>ROUTE</i>:&#160;
+[<a href="#ROUTE_1"><i>from</i>&#160;<span class="idName">Converter</span>.<span class="attribute">MFString_out</span>&#160;<i>to</i>&#160;<span class="attribute">string</span>
+                     </a>]
+ --&gt;<br />
+&lt;<span class="element">Text</span>&#160;<span class="attribute">DEF</span>='<span class="idName">DisplayText</span>'&#160;<span class="attribute">solid</span>='<span class="value">true</span>'&gt;
+<div class="indent">
+&lt;<span class="element">FontStyle</span>&#160;<span class="attribute">size</span>='<span class="value">.75</span>'/&gt;
+</div>&lt;/<span class="element">Text</span>&gt;
+</div>&lt;/<span class="element">Shape</span>&gt;
+</div>&lt;/<span class="element">Transform</span>&gt;
+<br /><a name="Converter"> </a> 
+&lt;!-- <span class="idName">Converter</span> <i>ROUTEs</i>:&#160;
+[<a href="#ROUTE_0"><i>from</i>&#160;<span class="idName">GenText</span>.<span class="attribute">enteredText</span>&#160;<i>to</i>&#160;<span class="attribute">SFString2MFString</span>
+               </a>]
+[<a href="#ROUTE_1"><i>from</i>&#160;<span class="attribute">MFString_out</span>&#160;<i>to</i>&#160;<span class="idName">DisplayText</span>.<span class="attribute">string</span>
+               </a>]
+ --&gt;<br />
+&lt;<span class="element">Script</span>&#160;<span class="attribute">DEF</span>='<span class="idName">Converter</span>'
+<br />
+&#160;&#160;<span class="attribute">url</span>='
+"<a href="converter.js">converter.js</a>"
+"<a href="http://X3dGraphics.com/examples/X3dForWebAuthors/Chapter08-UserInteractivity/converter.js">http://X3dGraphics.com/examples/X3dForWebAuthors/Chapter08-UserInteractivity/converter.js</a>"
+'&gt;
+<div class="indent">
+&lt;<span class="prototype">field</span>&#160;<span class="attribute">name</span>='<span class="prototype">SFString2MFString</span>'&#160;<span class="attribute">type</span>='<span class="value">SFString</span>'&#160;<span class="attribute">accessType</span>='<span class="value">inputOnly</span>'/&gt;
+<br />
+&lt;<span class="prototype">field</span>&#160;<span class="attribute">name</span>='<span class="prototype">MFString_out</span>'&#160;<span class="attribute">type</span>='<span class="value">MFString</span>'&#160;<span class="attribute">accessType</span>='<span class="value">outputOnly</span>'/&gt;
+</div>&lt;/<span class="element">Script</span>&gt;
+<br /><a name="ROUTE_0"> </a> 
+&lt;<span class="route">ROUTE</span>&#160;<span class="attribute">fromNode</span>='<a href="#GenText" class="idName">GenText</a>'&#160;<span class="attribute">fromField</span>='<span class="value">enteredText</span>'&#160;<span class="attribute">toNode</span>='<a href="#Converter" class="idName">Converter</a>'&#160;<span class="attribute">toField</span>='<span class="value">SFString2MFString</span>'/&gt;
+<br /><a name="ROUTE_1"> </a> 
+&lt;<span class="route">ROUTE</span>&#160;<span class="attribute">fromNode</span>='<a href="#Converter" class="idName">Converter</a>'&#160;<span class="attribute">fromField</span>='<span class="value">MFString_out</span>'&#160;<span class="attribute">toNode</span>='<a href="#DisplayText" class="idName">DisplayText</a>'&#160;<span class="attribute">toField</span>='<span class="value">string</span>'/&gt;
+</div>&lt;/<span class="element">Transform</span>&gt;
+</div>&lt;/<span class="element">Scene</span>&gt;
+</div>&lt;/<span class="element">X3D</span>&gt;
+<br />
+&lt;!--
+<div class="center">
+         <hr width="100%"/>
+         <i>Index for DEF nodes</i>: 
+<a href="#Converter" class="idName">Converter</a>,
+<a href="#DisplayText" class="idName">DisplayText</a>,
+<a href="#GenText" class="idName">GenText</a>
+<br />
+<i>Index for Viewpoint image</i>: 
+<a href="#Viewpoint_1" class="idName">Viewpoint_1</a>
+         <hr width="100%"/>
+      </div>
+--&gt;
+<p>
+&lt;!-- Tag color codes:
+&lt;<span class="element">Node</span>
+         <span class="idName"> DEF</span>='<span class="idName">idName</span>' <span class="attribute">attribute</span>='<span class="value">value</span>'/&gt; --&gt;
+</p>
+   </body>
+</html>

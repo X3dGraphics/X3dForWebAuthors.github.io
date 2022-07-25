@@ -1,0 +1,4 @@
+<meta name='warning' content='Additional PositionInterpolator present but disabled.'/>[/X3D/head/meta[7], diagnostic]
+<meta name='warning' content='Wiggle causes texture flashing. TODO: move animation to example file.'/>[/X3D/head/meta[8], diagnostic]
+<Shape DEF=''/> found without child geometry node [/X3D/Scene/ProtoDeclare/ProtoBody/Transform/Shape[2], warning]
+<TimeSensor DEF='OrbitClock'/> is inactive since enabled='false' (and no ROUTE is provided to change this value) [/X3D/Scene/ProtoDeclare/ProtoBody/Transform/Group/TimeSensor[2], warning]

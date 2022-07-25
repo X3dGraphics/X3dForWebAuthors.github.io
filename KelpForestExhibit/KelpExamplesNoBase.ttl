@@ -1,0 +1,359 @@
+@prefix :        <https://x3dgraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/KelpExamplesNoBase.ttl#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema:  <http://schema.org/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix x3d:     <https://www.web3d.org/specifications/x3d-4.0.xsd#> .
+@prefix x3do:    <https://www.web3d.org/specifications/X3dOntology4.0#> .
+
+:X3D a owl:NamedIndividual, x3do:X3D ;
+  x3do:hasHead :head ;
+  x3do:hasScene :Scene ;
+  x3do:profile 'Immersive' ;
+  x3do:version '3.3' ;
+  x3do:noNamespaceSchemaLocation 'https://www.web3d.org/specifications/x3d-3.3.xsd' .
+:head a owl:NamedIndividual, x3do:head ;
+  x3do:hasParent :X3D ;
+  x3do:hasMeta :meta_1_1, :meta_1_2, :meta_1_3, :meta_1_4, :meta_1_5, :meta_1_6, :meta_1_7, :meta_1_8, :meta_1_9, :meta_1_10, :meta_1_11, :meta_1_12, :meta_1_13 .
+:meta_1_1 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'KelpExamplesNoBase.x3d' ;
+  x3do:name 'title' .
+:meta_1_2 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Creates 3 instances of Kelp that sway.' ;
+  x3do:name 'description' .
+:meta_1_3 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Joseph Cannon, Dan DeVos, Don Brutzman' ;
+  x3do:name 'creator' .
+:meta_1_4 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '25 September 1998' ;
+  x3do:name 'created' .
+:meta_1_5 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '20 October 2019' ;
+  x3do:name 'modified' .
+:meta_1_6 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'http://faculty.nps.edu/brutzman/kelp' ;
+  x3do:name 'reference' .
+:meta_1_7 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'KelpForestDesignPaperWeb3dSymposiumFebruary2002.pdf' ;
+  x3do:name 'reference' .
+:meta_1_8 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://x3dgraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/KelpForestDesignPaperWeb3dSymposiumFebruary2002.pdf' ;
+  x3do:name 'reference' .
+:meta_1_9 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://x3dgraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/Teaching3d-KelpForestCaseStudy.pdf' ;
+  x3do:name 'reference' .
+:meta_1_10 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'All content has permissions for free use. Please provide credit to the Naval Postgraduate School (NPS) Modeling Virtual Environments and Simulation (MOVES) Institute.' ;
+  x3do:name 'accessRights' .
+:meta_1_11 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://x3dgraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/KelpExamplesNoBase.x3d' ;
+  x3do:name 'identifier' .
+:meta_1_12 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Vrml97ToX3dNist, http://ovrt.nist.gov/v2_x3d.html' ;
+  x3do:name 'generator' .
+:meta_1_13 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '../license.html' ;
+  x3do:name 'license' .
+:meta dcterms:title "KelpExamplesNoBase.x3d" .
+:meta dcterms:description "Creates 3 instances of Kelp that sway." .
+:meta dcterms:creator "Joseph Cannon, Dan DeVos, Don Brutzman" .
+:meta dcterms:created "25 September 1998" .
+:meta dcterms:modified "20 October 2019" .
+:meta dcterms:reference "http://faculty.nps.edu/brutzman/kelp" .
+:meta dcterms:reference "KelpForestDesignPaperWeb3dSymposiumFebruary2002.pdf" .
+:meta dcterms:reference "https://x3dgraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/KelpForestDesignPaperWeb3dSymposiumFebruary2002.pdf" .
+:meta dcterms:reference "https://x3dgraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/Teaching3d-KelpForestCaseStudy.pdf" .
+:meta dcterms:accessRights "All content has permissions for free use. Please provide credit to the Naval Postgraduate School (NPS) Modeling Virtual Environments and Simulation (MOVES) Institute." .
+:meta dcterms:identifier "https://x3dgraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/KelpExamplesNoBase.x3d" .
+:meta dcterms:generator "Vrml97ToX3dNist, http://ovrt.nist.gov/v2_x3d.html" .
+:meta dcterms:license "../license.html" .
+:Scene a owl:NamedIndividual, x3do:Scene ;
+  x3do:hasParent :X3D ;
+  x3do:hasChildren :WorldInfo_2_1, :Group_2_3, :Group_2_4 ;
+  x3do:hasExternProtoDeclare :ExternProtoDeclare_2_2 .
+:WorldInfo_2_1 a owl:NamedIndividual, x3do:WorldInfo ;
+  x3do:hasParent :Scene ;
+  x3do:title 'KelpExamplesNoBase.x3d' .
+:ExternProtoDeclare_2_2 a owl:NamedIndividual, x3do:ExternProtoDeclare ;
+  x3do:hasParent :Scene ;
+  x3do:hasField :field_2_2_1, :field_2_2_2, :field_2_2_3, :field_2_2_4, :field_2_2_5, :field_2_2_6, :field_2_2_7, :field_2_2_8 ;
+  x3do:appinfo 'Kelp strands and bulbs with no base' ;
+  x3do:name 'Kelp' ;
+  x3do:url '"KelpPrototype.x3d#Kelp" "https://x3dgraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/KelpPrototype.x3d#Kelp" "KelpPrototype.wrl#Kelp" "https://x3dgraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/KelpPrototype.wrl#Kelp"' .
+:field_2_2_1 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :ExternProtoDeclare_2_2 ;
+  x3do:accessType 'inputOutput' ;
+  x3do:name 'frontBladeSize' ;
+  x3do:type 'SFVec3f' .
+:field_2_2_2 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :ExternProtoDeclare_2_2 ;
+  x3do:accessType 'inputOutput' ;
+  x3do:name 'rearSideBladeHeight' ;
+  x3do:type 'SFVec3f' .
+:field_2_2_3 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :ExternProtoDeclare_2_2 ;
+  x3do:accessType 'inputOutput' ;
+  x3do:name 'frontSideBladeHeight' ;
+  x3do:type 'SFVec3f' .
+:field_2_2_4 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :ExternProtoDeclare_2_2 ;
+  x3do:accessType 'inputOutput' ;
+  x3do:name 'rightBladeSize' ;
+  x3do:type 'SFVec3f' .
+:field_2_2_5 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :ExternProtoDeclare_2_2 ;
+  x3do:accessType 'inputOutput' ;
+  x3do:name 'rightSideBladeHeight' ;
+  x3do:type 'SFVec3f' .
+:field_2_2_6 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :ExternProtoDeclare_2_2 ;
+  x3do:accessType 'inputOutput' ;
+  x3do:name 'leftBladeSize' ;
+  x3do:type 'SFVec3f' .
+:field_2_2_7 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :ExternProtoDeclare_2_2 ;
+  x3do:accessType 'inputOutput' ;
+  x3do:name 'rearBladeSize' ;
+  x3do:type 'SFVec3f' .
+:field_2_2_8 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :ExternProtoDeclare_2_2 ;
+  x3do:accessType 'inputOutput' ;
+  x3do:name 'leftSideBladeHeight' ;
+  x3do:type 'SFVec3f' .
+:Group_2_3 a owl:NamedIndividual, x3do:Group ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :KelpTransform0, :KelpTransform1, :KelpTransform2 .
+:KelpTransform0 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Group_2_3 ;
+  x3do:hasChildren :ProtoInstance_2_3_1_1 ;
+  x3do:DEF 'KelpTransform0' ;
+  x3do:scale ( 0.3 0.3 0.3 ) .
+:ProtoInstance_2_3_1_1 a owl:NamedIndividual, x3do:ProtoInstance ;
+  x3do:hasParent :KelpTransform0 ;
+  x3do:name 'Kelp' .
+:KelpTransform1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Group_2_3 ;
+  x3do:hasChildren :ProtoInstance_2_3_2_1 ;
+  x3do:DEF 'KelpTransform1' ;
+  x3do:rotation ( 0.0 1.0 0.0 5.5 ) ;
+  x3do:scale ( 0.29 0.29 0.29 ) ;
+  x3do:translation ( -0.5 0.0 0.0 ) .
+:ProtoInstance_2_3_2_1 a owl:NamedIndividual, x3do:ProtoInstance ;
+  x3do:hasParent :KelpTransform1 ;
+  x3do:hasFieldValue :fieldValue_2_3_2_1_1, :fieldValue_2_3_2_1_2, :fieldValue_2_3_2_1_3, :fieldValue_2_3_2_1_4, :fieldValue_2_3_2_1_5, :fieldValue_2_3_2_1_6, :fieldValue_2_3_2_1_7, :fieldValue_2_3_2_1_8 ;
+  x3do:name 'Kelp' .
+:fieldValue_2_3_2_1_1 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :ProtoInstance_2_3_2_1 ;
+  x3do:name 'rearSideBladeHeight' ;
+  x3do:value '0.0 15.0 0.0' .
+:fieldValue_2_3_2_1_2 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :ProtoInstance_2_3_2_1 ;
+  x3do:name 'frontBladeSize' ;
+  x3do:value '0.4 0.4 0.4' .
+:fieldValue_2_3_2_1_3 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :ProtoInstance_2_3_2_1 ;
+  x3do:name 'frontSideBladeHeight' ;
+  x3do:value '0.0 23.0 0.0' .
+:fieldValue_2_3_2_1_4 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :ProtoInstance_2_3_2_1 ;
+  x3do:name 'rightBladeSize' ;
+  x3do:value '0.4 0.4 0.4' .
+:fieldValue_2_3_2_1_5 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :ProtoInstance_2_3_2_1 ;
+  x3do:name 'rightSideBladeHeight' ;
+  x3do:value '0.0 20.0 0.0' .
+:fieldValue_2_3_2_1_6 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :ProtoInstance_2_3_2_1 ;
+  x3do:name 'leftBladeSize' ;
+  x3do:value '0.7 0.7 0.7' .
+:fieldValue_2_3_2_1_7 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :ProtoInstance_2_3_2_1 ;
+  x3do:name 'rearBladeSize' ;
+  x3do:value '0.7 0.7 0.7' .
+:fieldValue_2_3_2_1_8 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :ProtoInstance_2_3_2_1 ;
+  x3do:name 'leftSideBladeHeight' ;
+  x3do:value '0.0 6.0 0.0' .
+:KelpTransform2 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Group_2_3 ;
+  x3do:hasChildren :ProtoInstance_2_3_3_1 ;
+  x3do:DEF 'KelpTransform2' ;
+  x3do:scale ( 0.3 0.3 0.3 ) ;
+  x3do:translation ( 0.5 0.0 0.5 ) .
+:ProtoInstance_2_3_3_1 a owl:NamedIndividual, x3do:ProtoInstance ;
+  x3do:hasParent :KelpTransform2 ;
+  x3do:hasFieldValue :fieldValue_2_3_3_1_1, :fieldValue_2_3_3_1_2, :fieldValue_2_3_3_1_3, :fieldValue_2_3_3_1_4, :fieldValue_2_3_3_1_5, :fieldValue_2_3_3_1_6, :fieldValue_2_3_3_1_7, :fieldValue_2_3_3_1_8 ;
+  x3do:name 'Kelp' .
+:fieldValue_2_3_3_1_1 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :ProtoInstance_2_3_3_1 ;
+  x3do:name 'rearSideBladeHeight' ;
+  x3do:value '0.0 18.0 0.0' .
+:fieldValue_2_3_3_1_2 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :ProtoInstance_2_3_3_1 ;
+  x3do:name 'frontBladeSize' ;
+  x3do:value '0.7 0.7 0.7' .
+:fieldValue_2_3_3_1_3 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :ProtoInstance_2_3_3_1 ;
+  x3do:name 'frontSideBladeHeight' ;
+  x3do:value '0.0 8.0 0.0' .
+:fieldValue_2_3_3_1_4 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :ProtoInstance_2_3_3_1 ;
+  x3do:name 'rightBladeSize' ;
+  x3do:value '0.7 0.7 0.7' .
+:fieldValue_2_3_3_1_5 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :ProtoInstance_2_3_3_1 ;
+  x3do:name 'rightSideBladeHeight' ;
+  x3do:value '0.0 16.0 0.0' .
+:fieldValue_2_3_3_1_6 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :ProtoInstance_2_3_3_1 ;
+  x3do:name 'leftBladeSize' ;
+  x3do:value '0.7 0.7 0.7' .
+:fieldValue_2_3_3_1_7 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :ProtoInstance_2_3_3_1 ;
+  x3do:name 'rearBladeSize' ;
+  x3do:value '0.4 0.4 0.4' .
+:fieldValue_2_3_3_1_8 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :ProtoInstance_2_3_3_1 ;
+  x3do:name 'leftSideBladeHeight' ;
+  x3do:value '0.0 13.0 0.0' .
+:Group_2_4 a owl:NamedIndividual, x3do:Group ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :Clock0, :KelpPath0, :TimeDelay1, :KelpPath1, :TimeDelay2, :KelpPath2 ;
+  x3do:hasROUTE :ROUTE_2_4_3, :ROUTE_2_4_4, :ROUTE_2_4_7, :ROUTE_2_4_8, :ROUTE_2_4_9, :ROUTE_2_4_12, :ROUTE_2_4_13, :ROUTE_2_4_14 .
+:Clock0 a owl:NamedIndividual, x3do:TimeSensor ;
+  x3do:hasParent :Group_2_4 ;
+  x3do:DEF 'Clock0' ;
+  x3do:cycleInterval '5.5' ;
+  x3do:loop true .
+:KelpPath0 a owl:NamedIndividual, x3do:OrientationInterpolator ;
+  x3do:hasParent :Group_2_4 ;
+  x3do:DEF 'KelpPath0' ;
+  x3do:key ( 0.0 0.05 0.25 0.45 0.5 0.55 0.75 0.95 1.0 ) ;
+  x3do:keyValue ( 0 0 1 0.1 0 0 1 0.095 0 0 1 0 0 0 1 -0.095 0 0 1 -0.1 0 0 1 -0.095 0 0 1 0 0 0 1 0.095 0 0 1 0.1 ) .
+:ROUTE_2_4_3 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Group_2_4 ;
+  x3do:fromField 'fraction_changed' ;
+  x3do:fromNode 'Clock0' ;
+  x3do:toField 'set_fraction' ;
+  x3do:toNode 'KelpPath0' .
+:ROUTE_2_4_4 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Group_2_4 ;
+  x3do:fromField 'value_changed' ;
+  x3do:fromNode 'KelpPath0' ;
+  x3do:toField 'set_rotation' ;
+  x3do:toNode 'KelpTransform0' .
+:TimeDelay1 a owl:NamedIndividual, x3do:Script ;
+  x3do:hasParent :Group_2_4 ;
+  x3do:hasField :field_2_4_5_1, :field_2_4_5_2 ;
+  x3do:DEF 'TimeDelay1' ;
+  x3do:sourceCode """
+ecmascript:
+
+function set_fraction (value, timestamp)
+{
+	delay = 0.25;
+	delayedValue = value + (delay/5.5); // delay/interval, seconds
+	if (delayedValue > 1) delayedValue--;
+	value_changed = delayedValue;
+
+//	Browser.print ('TimeDelay1 value=' + value + ', value_changed=' + value_changed);
+}
+""" .
+:field_2_4_5_1 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :TimeDelay1 ;
+  x3do:accessType 'inputOnly' ;
+  x3do:name 'set_fraction' ;
+  x3do:type 'SFFloat' .
+:field_2_4_5_2 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :TimeDelay1 ;
+  x3do:accessType 'outputOnly' ;
+  x3do:name 'value_changed' ;
+  x3do:type 'SFFloat' .
+:KelpPath1 a owl:NamedIndividual, x3do:OrientationInterpolator ;
+  x3do:hasParent :Group_2_4 ;
+  x3do:DEF 'KelpPath1' ;
+  x3do:key ( 0.0 0.05 0.25 0.45 0.5 0.55 0.75 0.95 1.0 ) ;
+  x3do:keyValue ( 0 0 1 0.1 0 0 1 0.095 0 0 1 0 0 0 1 -0.095 0 0 1 -0.1 0 0 1 -0.095 0 0 1 0 0 0 1 0.095 0 0 1 0.1 ) .
+:ROUTE_2_4_7 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Group_2_4 ;
+  x3do:fromField 'fraction_changed' ;
+  x3do:fromNode 'Clock0' ;
+  x3do:toField 'set_fraction' ;
+  x3do:toNode 'TimeDelay1' .
+:ROUTE_2_4_8 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Group_2_4 ;
+  x3do:fromField 'value_changed' ;
+  x3do:fromNode 'TimeDelay1' ;
+  x3do:toField 'set_fraction' ;
+  x3do:toNode 'KelpPath1' .
+:ROUTE_2_4_9 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Group_2_4 ;
+  x3do:fromField 'value_changed' ;
+  x3do:fromNode 'KelpPath1' ;
+  x3do:toField 'set_rotation' ;
+  x3do:toNode 'KelpTransform1' .
+:TimeDelay2 a owl:NamedIndividual, x3do:Script ;
+  x3do:hasParent :Group_2_4 ;
+  x3do:hasField :field_2_4_10_1, :field_2_4_10_2 ;
+  x3do:DEF 'TimeDelay2' ;
+  x3do:sourceCode """
+ecmascript:
+
+function set_fraction (value, timestamp)
+{
+	delay = 0.5;
+	delayedValue = value + (delay/5.5); // delay/interval, seconds
+	if (delayedValue > 1) delayedValue--;
+	value_changed = delayedValue;
+
+//	Browser.print ('TimeDelay2 value=' + value + ', value_changed=' + value_changed);
+}
+""" .
+:field_2_4_10_1 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :TimeDelay2 ;
+  x3do:accessType 'inputOnly' ;
+  x3do:name 'set_fraction' ;
+  x3do:type 'SFFloat' .
+:field_2_4_10_2 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :TimeDelay2 ;
+  x3do:accessType 'outputOnly' ;
+  x3do:name 'value_changed' ;
+  x3do:type 'SFFloat' .
+:KelpPath2 a owl:NamedIndividual, x3do:OrientationInterpolator ;
+  x3do:hasParent :Group_2_4 ;
+  x3do:DEF 'KelpPath2' ;
+  x3do:key ( 0.0 0.05 0.25 0.45 0.5 0.55 0.75 0.95 1.0 ) ;
+  x3do:keyValue ( 0 0 1 0.1 0 0 1 0.095 0 0 1 0 0 0 1 -0.095 0 0 1 -0.1 0 0 1 -0.095 0 0 1 0 0 0 1 0.095 0 0 1 0.1 ) .
+:ROUTE_2_4_12 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Group_2_4 ;
+  x3do:fromField 'fraction_changed' ;
+  x3do:fromNode 'Clock0' ;
+  x3do:toField 'set_fraction' ;
+  x3do:toNode 'TimeDelay2' .
+:ROUTE_2_4_13 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Group_2_4 ;
+  x3do:fromField 'value_changed' ;
+  x3do:fromNode 'TimeDelay2' ;
+  x3do:toField 'set_fraction' ;
+  x3do:toNode 'KelpPath2' .
+:ROUTE_2_4_14 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Group_2_4 ;
+  x3do:fromField 'value_changed' ;
+  x3do:fromNode 'KelpPath2' ;
+  x3do:toField 'set_rotation' ;
+  x3do:toNode 'KelpTransform2' .

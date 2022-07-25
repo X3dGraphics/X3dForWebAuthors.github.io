@@ -1,0 +1,305 @@
+@prefix :        <https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/BlueRockFish.ttl#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema:  <http://schema.org/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix x3d:     <https://www.web3d.org/specifications/x3d-4.0.xsd#> .
+@prefix x3do:    <https://www.web3d.org/specifications/X3dOntology4.0#> .
+
+:X3D a owl:NamedIndividual, x3do:X3D ;
+  x3do:hasHead :head ;
+  x3do:hasScene :Scene ;
+  x3do:profile 'Immersive' ;
+  x3do:version '3.3' ;
+  x3do:noNamespaceSchemaLocation 'https://www.web3d.org/specifications/x3d-3.3.xsd' .
+:head a owl:NamedIndividual, x3do:head ;
+  x3do:hasParent :X3D ;
+  x3do:hasMeta :meta_1_1, :meta_1_2, :meta_1_3, :meta_1_4, :meta_1_5, :meta_1_6, :meta_1_7, :meta_1_8, :meta_1_9, :meta_1_10 .
+:meta_1_1 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'BlueRockFish.x3d' ;
+  x3do:name 'title' .
+:meta_1_2 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Create a new fish type through configuration of the CircleFishLod prototype.' ;
+  x3do:name 'description' .
+:meta_1_3 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Ildeniz Duman' ;
+  x3do:name 'creator' .
+:meta_1_4 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Jeff Weekley' ;
+  x3do:name 'translator' .
+:meta_1_5 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '1 May 1998' ;
+  x3do:name 'created' .
+:meta_1_6 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '25 February 2001' ;
+  x3do:name 'translated' .
+:meta_1_7 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '20 October 2019' ;
+  x3do:name 'modified' .
+:meta_1_8 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/BlueRockFish.x3d' ;
+  x3do:name 'identifier' .
+:meta_1_9 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'X3D-Edit 3.3, https://savage.nps.edu/X3D-Edit' ;
+  x3do:name 'generator' .
+:meta_1_10 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '../license.html' ;
+  x3do:name 'license' .
+:meta dcterms:title "BlueRockFish.x3d" .
+:meta dcterms:description "Create a new fish type through configuration of the CircleFishLod prototype." .
+:meta dcterms:creator "Ildeniz Duman" .
+:meta dcterms:translator "Jeff Weekley" .
+:meta dcterms:created "1 May 1998" .
+:meta dcterms:translated "25 February 2001" .
+:meta dcterms:modified "20 October 2019" .
+:meta dcterms:identifier "https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/BlueRockFish.x3d" .
+:meta dcterms:generator "X3D-Edit 3.3, https://savage.nps.edu/X3D-Edit" .
+:meta dcterms:license "../license.html" .
+:Scene a owl:NamedIndividual, x3do:Scene ;
+  x3do:hasParent :X3D ;
+  x3do:hasChildren :WorldInfo_2_1, :Viewpoint_2_3, :Transform_2_4, :Transform_2_5, :Transform_2_6, :Transform_2_7, :Transform_2_8 ;
+  x3do:hasExternProtoDeclare :ExternProtoDeclare_2_2 .
+:WorldInfo_2_1 a owl:NamedIndividual, x3do:WorldInfo ;
+  x3do:hasParent :Scene ;
+  x3do:title 'BlueRockFish.x3d' .
+:ExternProtoDeclare_2_2 a owl:NamedIndividual, x3do:ExternProtoDeclare ;
+  x3do:hasParent :Scene ;
+  x3do:hasField :field_2_2_1, :field_2_2_2, :field_2_2_3, :field_2_2_4, :field_2_2_5, :field_2_2_6, :field_2_2_7, :field_2_2_8, :field_2_2_9 ;
+  x3do:appinfo 'CircleFish prototype with LOD added' ;
+  x3do:name 'CircleFishLod' ;
+  x3do:url '"CircleFishLodPrototype.x3d#CircleFishLod" "https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/CircleFishLodPrototype.x3d#CircleFishLod" "CircleFishLodPrototype.wrl#CircleFishLod" "https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/CircleFishLodPrototype.wrl#CircleFishLod"' .
+:field_2_2_1 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :ExternProtoDeclare_2_2 ;
+  x3do:accessType 'inputOutput' ;
+  x3do:name 'skinTextureUrl' ;
+  x3do:type 'MFString' .
+:field_2_2_2 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :ExternProtoDeclare_2_2 ;
+  x3do:accessType 'inputOutput' ;
+  x3do:name 'fishScale' ;
+  x3do:type 'SFVec3f' .
+:field_2_2_3 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :ExternProtoDeclare_2_2 ;
+  x3do:accessType 'inputOutput' ;
+  x3do:name 'fishColor' ;
+  x3do:type 'SFColor' .
+:field_2_2_4 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :ExternProtoDeclare_2_2 ;
+  x3do:accessType 'inputOutput' ;
+  x3do:name 'finColor' ;
+  x3do:type 'SFColor' .
+:field_2_2_5 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :ExternProtoDeclare_2_2 ;
+  x3do:accessType 'inputOutput' ;
+  x3do:name 'positionKey' ;
+  x3do:type 'MFFloat' .
+:field_2_2_6 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :ExternProtoDeclare_2_2 ;
+  x3do:accessType 'inputOutput' ;
+  x3do:name 'positionKeyValue' ;
+  x3do:type 'MFVec3f' .
+:field_2_2_7 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :ExternProtoDeclare_2_2 ;
+  x3do:accessType 'inputOutput' ;
+  x3do:name 'orientationKey' ;
+  x3do:type 'MFFloat' .
+:field_2_2_8 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :ExternProtoDeclare_2_2 ;
+  x3do:accessType 'inputOutput' ;
+  x3do:name 'orientationKeyValue' ;
+  x3do:type 'MFRotation' .
+:field_2_2_9 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :ExternProtoDeclare_2_2 ;
+  x3do:accessType 'inputOutput' ;
+  x3do:name 'orbitTime' ;
+  x3do:type 'SFTime' .
+:Viewpoint_2_3 a owl:NamedIndividual, x3do:Viewpoint ;
+  x3do:hasParent :Scene ;
+  x3do:description 'Blue Rockfish' ;
+  x3do:position ( -1 1 8 ) .
+:Transform_2_4 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :BlueRockfish .
+:BlueRockfish a owl:NamedIndividual, x3do:ProtoInstance ;
+  x3do:hasParent :Transform_2_4 ;
+  x3do:hasFieldValue :fieldValue_2_4_1_1, :fieldValue_2_4_1_2, :fieldValue_2_4_1_3, :fieldValue_2_4_1_4, :fieldValue_2_4_1_5, :fieldValue_2_4_1_6 ;
+  x3do:DEF 'BlueRockfish' ;
+  x3do:name 'CircleFishLod' .
+:fieldValue_2_4_1_1 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :BlueRockfish ;
+  x3do:name 'skinTextureUrl' ;
+  x3do:value '"blueRockfishPatch.jpg" "https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/blueRockfishPatch.jpg"' .
+:fieldValue_2_4_1_2 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :BlueRockfish ;
+  x3do:name 'fishScale' ;
+  x3do:value '0.5 0.53 0.2' .
+:fieldValue_2_4_1_3 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :BlueRockfish ;
+  x3do:name 'fishColor' ;
+  x3do:value '0.2 0.6 0.8' .
+:fieldValue_2_4_1_4 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :BlueRockfish ;
+  x3do:name 'positionKey' ;
+  x3do:value '0 0.3 0.6 1' .
+:fieldValue_2_4_1_5 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :BlueRockfish ;
+  x3do:name 'positionKeyValue' ;
+  x3do:value '0 0 1 1 0 0 0 0 -1 0 0 1' .
+:fieldValue_2_4_1_6 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :BlueRockfish ;
+  x3do:name 'orbitTime' ;
+  x3do:value '60' .
+:Transform_2_5 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :BlueRockfish1 ;
+  x3do:rotation ( 0 1 0 1.05 ) ;
+  x3do:translation ( 0 0.5 0 ) .
+:BlueRockfish1 a owl:NamedIndividual, x3do:ProtoInstance ;
+  x3do:hasParent :Transform_2_5 ;
+  x3do:hasFieldValue :fieldValue_2_5_1_1, :fieldValue_2_5_1_2, :fieldValue_2_5_1_3, :fieldValue_2_5_1_4, :fieldValue_2_5_1_5, :fieldValue_2_5_1_6 ;
+  x3do:DEF 'BlueRockfish1' ;
+  x3do:name 'CircleFishLod' .
+:fieldValue_2_5_1_1 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :BlueRockfish1 ;
+  x3do:name 'skinTextureUrl' ;
+  x3do:value '"blueRockfishPatch.jpg" "https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/blueRockfishPatch.jpg"' .
+:fieldValue_2_5_1_2 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :BlueRockfish1 ;
+  x3do:name 'fishScale' ;
+  x3do:value '0.5 0.53 0.2' .
+:fieldValue_2_5_1_3 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :BlueRockfish1 ;
+  x3do:name 'fishColor' ;
+  x3do:value '0.2 0.6 0.8' .
+:fieldValue_2_5_1_4 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :BlueRockfish1 ;
+  x3do:name 'positionKey' ;
+  x3do:value '0 0.3 0.6 1' .
+:fieldValue_2_5_1_5 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :BlueRockfish1 ;
+  x3do:name 'positionKeyValue' ;
+  x3do:value '0 0 1 1 0 0 0 0 -1 0 0 1' .
+:fieldValue_2_5_1_6 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :BlueRockfish1 ;
+  x3do:name 'orbitTime' ;
+  x3do:value '60' .
+:Transform_2_6 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :BlueRockfish2 ;
+  x3do:translation ( 0 1.5 1 ) .
+:BlueRockfish2 a owl:NamedIndividual, x3do:ProtoInstance ;
+  x3do:hasParent :Transform_2_6 ;
+  x3do:hasFieldValue :fieldValue_2_6_1_1, :fieldValue_2_6_1_2, :fieldValue_2_6_1_3, :fieldValue_2_6_1_4, :fieldValue_2_6_1_5, :fieldValue_2_6_1_6 ;
+  x3do:DEF 'BlueRockfish2' ;
+  x3do:name 'CircleFishLod' .
+:fieldValue_2_6_1_1 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :BlueRockfish2 ;
+  x3do:name 'skinTextureUrl' ;
+  x3do:value '"blueRockfishPatch.jpg" "https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/blueRockfishPatch.jpg"' .
+:fieldValue_2_6_1_2 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :BlueRockfish2 ;
+  x3do:name 'fishScale' ;
+  x3do:value '0.5 0.53 0.2' .
+:fieldValue_2_6_1_3 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :BlueRockfish2 ;
+  x3do:name 'fishColor' ;
+  x3do:value '0.2 0.6 0.8' .
+:fieldValue_2_6_1_4 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :BlueRockfish2 ;
+  x3do:name 'positionKey' ;
+  x3do:value '0 0.3 0.6 1' .
+:fieldValue_2_6_1_5 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :BlueRockfish2 ;
+  x3do:name 'positionKeyValue' ;
+  x3do:value '0 0 1 1 0 0 0 0 -1 0 0 1' .
+:fieldValue_2_6_1_6 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :BlueRockfish2 ;
+  x3do:name 'orbitTime' ;
+  x3do:value '40' .
+:Transform_2_7 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :BlueRockfish3 ;
+  x3do:rotation ( 0 1 0 0.78 ) ;
+  x3do:translation ( -0.5 1 0 ) .
+:BlueRockfish3 a owl:NamedIndividual, x3do:ProtoInstance ;
+  x3do:hasParent :Transform_2_7 ;
+  x3do:hasFieldValue :fieldValue_2_7_1_1, :fieldValue_2_7_1_2, :fieldValue_2_7_1_3, :fieldValue_2_7_1_4, :fieldValue_2_7_1_5, :fieldValue_2_7_1_6, :fieldValue_2_7_1_7, :fieldValue_2_7_1_8 ;
+  x3do:DEF 'BlueRockfish3' ;
+  x3do:name 'CircleFishLod' .
+:fieldValue_2_7_1_1 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :BlueRockfish3 ;
+  x3do:name 'skinTextureUrl' ;
+  x3do:value '"blueRockfishPatch.jpg" "https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/blueRockfishPatch.jpg"' .
+:fieldValue_2_7_1_2 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :BlueRockfish3 ;
+  x3do:name 'fishScale' ;
+  x3do:value '0.5 0.53 0.2' .
+:fieldValue_2_7_1_3 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :BlueRockfish3 ;
+  x3do:name 'fishColor' ;
+  x3do:value '0.2 0.6 0.8' .
+:fieldValue_2_7_1_4 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :BlueRockfish3 ;
+  x3do:name 'positionKey' ;
+  x3do:value '0 0.4 0.7 0.95 1' .
+:fieldValue_2_7_1_5 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :BlueRockfish3 ;
+  x3do:name 'positionKeyValue' ;
+  x3do:value '0 0 0 1 0 0 0 0 0 1 0 0 0.3 0 0' .
+:fieldValue_2_7_1_6 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :BlueRockfish3 ;
+  x3do:name 'orientationKey' ;
+  x3do:value '0 0.5 1' .
+:fieldValue_2_7_1_7 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :BlueRockfish3 ;
+  x3do:name 'orientationKeyValue' ;
+  x3do:value '0 1 0 0 0 1 0 1.57 0 1 0 0' .
+:fieldValue_2_7_1_8 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :BlueRockfish3 ;
+  x3do:name 'orbitTime' ;
+  x3do:value '80' .
+:Transform_2_8 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :BlueRockfish4 ;
+  x3do:translation ( 0 1.8 2 ) .
+:BlueRockfish4 a owl:NamedIndividual, x3do:ProtoInstance ;
+  x3do:hasParent :Transform_2_8 ;
+  x3do:hasFieldValue :fieldValue_2_8_1_1, :fieldValue_2_8_1_2, :fieldValue_2_8_1_3, :fieldValue_2_8_1_4, :fieldValue_2_8_1_5, :fieldValue_2_8_1_6 ;
+  x3do:DEF 'BlueRockfish4' ;
+  x3do:name 'CircleFishLod' .
+:fieldValue_2_8_1_1 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :BlueRockfish4 ;
+  x3do:name 'skinTextureUrl' ;
+  x3do:value '"blueRockfishPatch.jpg" "https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/blueRockfishPatch.jpg"' .
+:fieldValue_2_8_1_2 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :BlueRockfish4 ;
+  x3do:name 'fishScale' ;
+  x3do:value '0.5 0.53 0.2' .
+:fieldValue_2_8_1_3 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :BlueRockfish4 ;
+  x3do:name 'fishColor' ;
+  x3do:value '0.2 0.6 0.8' .
+:fieldValue_2_8_1_4 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :BlueRockfish4 ;
+  x3do:name 'positionKey' ;
+  x3do:value '0 0.3 0.6 1' .
+:fieldValue_2_8_1_5 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :BlueRockfish4 ;
+  x3do:name 'positionKeyValue' ;
+  x3do:value '0 0 1 1 0 0 0 0 -3 0 0 1' .
+:fieldValue_2_8_1_6 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :BlueRockfish4 ;
+  x3do:name 'orbitTime' ;
+  x3do:value '40' .

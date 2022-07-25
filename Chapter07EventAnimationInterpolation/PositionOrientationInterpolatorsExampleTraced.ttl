@@ -1,0 +1,404 @@
+@prefix :        <https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter07EventAnimationInterpolation/PositionOrientationInterpolatorsExampleTraced.ttl#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema:  <http://schema.org/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix x3d:     <https://www.web3d.org/specifications/x3d-4.0.xsd#> .
+@prefix x3do:    <https://www.web3d.org/specifications/X3dOntology4.0#> .
+
+:X3D a owl:NamedIndividual, x3do:X3D ;
+  x3do:hasHead :head ;
+  x3do:hasScene :Scene ;
+  x3do:profile 'Immersive' ;
+  x3do:version '3.3' ;
+  x3do:noNamespaceSchemaLocation 'https://www.web3d.org/specifications/x3d-3.3.xsd' .
+:head a owl:NamedIndividual, x3do:head ;
+  x3do:hasParent :X3D ;
+  x3do:hasMeta :meta_1_1, :meta_1_2, :meta_1_3, :meta_1_4, :meta_1_5, :meta_1_6, :meta_1_7, :meta_1_8, :meta_1_9, :meta_1_10, :meta_1_11, :meta_1_12, :meta_1_13, :meta_1_14, :meta_1_15, :meta_1_16, :meta_1_17 .
+:meta_1_1 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'PositionOrientationInterpolatorsExampleTraced.x3d' ;
+  x3do:name 'title' .
+:meta_1_2 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Demonstrate use of PositionInterpolator and OrientationInterpolator to animate object motion, with console output tracing added for PositionInterpolator and ROUTE events.' ;
+  x3do:name 'description' .
+:meta_1_3 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Don Brutzman' ;
+  x3do:name 'creator' .
+:meta_1_4 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '5 August 2011' ;
+  x3do:name 'created' .
+:meta_1_5 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '20 October 2019' ;
+  x3do:name 'modified' .
+:meta_1_6 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Chapter07EventAnimationInterpolation-EventTracing.pdf' ;
+  x3do:name 'reference' .
+:meta_1_7 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'PositionOrientationInterpolatorsExampleTracedConsole.txt' ;
+  x3do:name 'reference' .
+:meta_1_8 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'PositionOrientationInterpolatorsExample.mp4' ;
+  x3do:name 'MovingImage' .
+:meta_1_9 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'PositionOrientationInterpolatorsExample.x3d' ;
+  x3do:name 'reference' .
+:meta_1_10 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://X3dGraphics.com' ;
+  x3do:name 'reference' .
+:meta_1_11 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://www.web3d.org/x3d/content/examples/X3dResources.html' ;
+  x3do:name 'reference' .
+:meta_1_12 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Copyright Don Brutzman and Leonard Daly 2007' ;
+  x3do:name 'rights' .
+:meta_1_13 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'X3D book, X3D graphics, X3D-Edit, http://www.x3dGraphics.com' ;
+  x3do:name 'subject' .
+:meta_1_14 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://savage.nps.edu/Savage/Tools/Animation/WaypointInterpolatorExample.x3d' ;
+  x3do:name 'reference' .
+:meta_1_15 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter07EventAnimationInterpolation/PositionOrientationInterpolatorsExampleTraced.x3d' ;
+  x3do:name 'identifier' .
+:meta_1_16 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'X3D-Edit 3.3, https://savage.nps.edu/X3D-Edit' ;
+  x3do:name 'generator' .
+:meta_1_17 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '../license.html' ;
+  x3do:name 'license' .
+:meta dcterms:title "PositionOrientationInterpolatorsExampleTraced.x3d" .
+:meta dcterms:description "Demonstrate use of PositionInterpolator and OrientationInterpolator to animate object motion, with console output tracing added for PositionInterpolator and ROUTE events." .
+:meta dcterms:creator "Don Brutzman" .
+:meta dcterms:created "5 August 2011" .
+:meta dcterms:modified "20 October 2019" .
+:meta dcterms:reference "Chapter07EventAnimationInterpolation-EventTracing.pdf" .
+:meta dcterms:reference "PositionOrientationInterpolatorsExampleTracedConsole.txt" .
+:meta dcterms:MovingImage "PositionOrientationInterpolatorsExample.mp4" .
+:meta dcterms:reference "PositionOrientationInterpolatorsExample.x3d" .
+:meta dcterms:reference "https://X3dGraphics.com" .
+:meta dcterms:reference "https://www.web3d.org/x3d/content/examples/X3dResources.html" .
+:meta dcterms:rights "Copyright Don Brutzman and Leonard Daly 2007" .
+:meta dcterms:subject "X3D book, X3D graphics, X3D-Edit, http://www.x3dGraphics.com" .
+:meta dcterms:reference "https://savage.nps.edu/Savage/Tools/Animation/WaypointInterpolatorExample.x3d" .
+:meta dcterms:identifier "https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter07EventAnimationInterpolation/PositionOrientationInterpolatorsExampleTraced.x3d" .
+:meta dcterms:generator "X3D-Edit 3.3, https://savage.nps.edu/X3D-Edit" .
+:meta dcterms:license "../license.html" .
+:Scene a owl:NamedIndividual, x3do:Scene ;
+  x3do:hasParent :X3D ;
+  x3do:hasChildren :WorldInfo_2_1, :Viewpoint_2_2, :Viewpoint_2_3, :Pointer, :Floor, :PositionAnimator, :Group_2_7, :Group_2_9, :OrientationAnimator, :AnimationClock, :Group_2_14, :Transform_2_16 ;
+  x3do:hasROUTE :ROUTE_2_8, :ROUTE_2_11, :ROUTE_2_13, :ROUTE_2_15 .
+:WorldInfo_2_1 a owl:NamedIndividual, x3do:WorldInfo ;
+  x3do:hasParent :Scene ;
+  x3do:title 'PositionOrientationInterpolatorsExampleTraced.x3d' .
+:Viewpoint_2_2 a owl:NamedIndividual, x3do:Viewpoint ;
+  x3do:hasParent :Scene ;
+  x3do:description 'Animation demo' ;
+  x3do:orientation ( 1 0 0 -0.588003 ) ;
+  x3do:position ( 0 8 12 ) .
+:Viewpoint_2_3 a owl:NamedIndividual, x3do:Viewpoint ;
+  x3do:hasParent :Scene ;
+  x3do:centerOfRotation ( 5 0.1 5 ) ;
+  x3do:description 'View from above' ;
+  x3do:orientation ( 1 0 0 -1.570796 ) ;
+  x3do:position ( 0 15 0 ) .
+:Pointer a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :Transform_2_4_1 ;
+  x3do:DEF 'Pointer' ;
+  x3do:translation ( 1 0 1 ) .
+:Transform_2_4_1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Pointer ;
+  x3do:hasChildren :Shape_2_4_1_1 ;
+  x3do:rotation ( 1 0 0 1.57 ) .
+:Shape_2_4_1_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_4_1 ;
+  x3do:hasGeometry :Cone_2_4_1_1_1 ;
+  x3do:hasAppearance :Appearance_2_4_1_1_2 .
+:Cone_2_4_1_1_1 a owl:NamedIndividual, x3do:Cone ;
+  x3do:hasParent :Shape_2_4_1_1 ;
+  x3do:bottomRadius 0.5 ;
+  x3do:height 1.5 .
+:Appearance_2_4_1_1_2 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_4_1_1 ;
+  x3do:hasMaterial :ConeMaterial .
+:ConeMaterial a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_4_1_1_2 ;
+  x3do:DEF 'ConeMaterial' ;
+  x3do:diffuseColor ( 0.427451 1 0.160784 ) .
+:Floor a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Scene ;
+  x3do:hasGeometry :Box_2_5_1 ;
+  x3do:hasAppearance :Appearance_2_5_2 ;
+  x3do:DEF 'Floor' .
+:Box_2_5_1 a owl:NamedIndividual, x3do:Box ;
+  x3do:hasParent :Floor ;
+  x3do:size ( 12 0.05 12 ) .
+:Appearance_2_5_2 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Floor ;
+  x3do:hasMaterial :Material_2_5_2_1 .
+:Material_2_5_2_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_5_2 ;
+  x3do:diffuseColor ( 0 0.262745 0.941176 ) .
+:PositionAnimator a owl:NamedIndividual, x3do:PositionInterpolator ;
+  x3do:hasParent :Scene ;
+  x3do:DEF 'PositionAnimator' ;
+  x3do:key ( 0 0.2 0.25 0.45 0.5 0.7 0.75 0.95 1 ) ;
+  x3do:keyValue ( -4 0 -4 -4 0 4 -4 0 4 4 0 4 4 0 4 4 0 -4 4 0 -4 -4 0 -4 -4 0 -4 ) .
+:Group_2_7 a owl:NamedIndividual, x3do:Group ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :Trace_PositionInterpolator_PositionAnimator ;
+  x3do:hasROUTE :ROUTE_2_7_2, :ROUTE_2_7_3, :ROUTE_2_7_4 .
+:Trace_PositionInterpolator_PositionAnimator a owl:NamedIndividual, x3do:Script ;
+  x3do:hasParent :Group_2_7 ;
+  x3do:hasField :field_2_7_1_1, :field_2_7_1_2, :field_2_7_1_3, :field_2_7_1_4, :field_2_7_1_5 ;
+  x3do:DEF 'Trace_PositionInterpolator_PositionAnimator' ;
+  x3do:mustEvaluate true ;
+  x3do:sourceCode """
+ecmascript:
+    function value_changed (eventValue, timeStamp) {
+      if (timeStamp - timeStampPreviousReport >= reportInterval) {
+        Browser.print ('Trace_PositionInterpolator_PositionAnimator type=SFVec3f value_changed=' + eventValue.toString() + '\n');
+        timeStampPreviousReport = timeStamp;
+      }
+    }
+    function key (eventValue) {
+      Browser.print ('Trace_PositionInterpolator_PositionAnimator type=MFFloat key=' + eventValue.toString() + '\n');
+    }
+    function keyValue (eventValue) {
+      Browser.print ('Trace_PositionInterpolator_PositionAnimator type=MFVec3f keyValue=' + eventValue.toString() + '\n');
+    }
+""" .
+:field_2_7_1_1 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :Trace_PositionInterpolator_PositionAnimator ;
+  x3do:accessType 'initializeOnly' ;
+  x3do:appinfo 'Sampling frequency in seconds (0 means all values)' ;
+  x3do:name 'reportInterval' ;
+  x3do:type 'SFTime' ;
+  x3do:value '1.0' .
+:field_2_7_1_2 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :Trace_PositionInterpolator_PositionAnimator ;
+  x3do:accessType 'inputOnly' ;
+  x3do:name 'value_changed' ;
+  x3do:type 'SFVec3f' .
+:field_2_7_1_3 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :Trace_PositionInterpolator_PositionAnimator ;
+  x3do:accessType 'inputOnly' ;
+  x3do:name 'key' ;
+  x3do:type 'MFFloat' .
+:field_2_7_1_4 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :Trace_PositionInterpolator_PositionAnimator ;
+  x3do:accessType 'inputOnly' ;
+  x3do:name 'keyValue' ;
+  x3do:type 'MFVec3f' .
+:field_2_7_1_5 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :Trace_PositionInterpolator_PositionAnimator ;
+  x3do:accessType 'initializeOnly' ;
+  x3do:name 'timeStampPreviousReport' ;
+  x3do:type 'SFTime' ;
+  x3do:value '-1' .
+:ROUTE_2_7_2 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Group_2_7 ;
+  x3do:fromField 'value_changed' ;
+  x3do:fromNode 'PositionAnimator' ;
+  x3do:toField 'value_changed' ;
+  x3do:toNode 'Trace_PositionInterpolator_PositionAnimator' .
+:ROUTE_2_7_3 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Group_2_7 ;
+  x3do:fromField 'key' ;
+  x3do:fromNode 'PositionAnimator' ;
+  x3do:toField 'key' ;
+  x3do:toNode 'Trace_PositionInterpolator_PositionAnimator' .
+:ROUTE_2_7_4 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Group_2_7 ;
+  x3do:fromField 'keyValue' ;
+  x3do:fromNode 'PositionAnimator' ;
+  x3do:toField 'keyValue' ;
+  x3do:toNode 'Trace_PositionInterpolator_PositionAnimator' .
+:ROUTE_2_8 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'value_changed' ;
+  x3do:fromNode 'PositionAnimator' ;
+  x3do:toField 'translation' ;
+  x3do:toNode 'Pointer' .
+:Group_2_9 a owl:NamedIndividual, x3do:Group ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :Trace_ROUTE_PositionAnimator.value_changed_TO_Pointer.translation ;
+  x3do:hasROUTE :ROUTE_2_9_2 .
+:Trace_ROUTE_PositionAnimator.value_changed_TO_Pointer.translation a owl:NamedIndividual, x3do:Script ;
+  x3do:hasParent :Group_2_9 ;
+  x3do:hasField :field_2_9_1_1, :field_2_9_1_2, :field_2_9_1_3 ;
+  x3do:DEF 'Trace_ROUTE_PositionAnimator.value_changed_TO_Pointer.translation' ;
+  x3do:mustEvaluate true ;
+  x3do:sourceCode """
+ecmascript:
+    function traceValue (eventValue, timeStamp) {
+      // input eventValue received for trace field
+      if (timeStamp - timeStampPreviousReport >= reportInterval) {
+        Browser.print ('Trace_ROUTE_PositionAnimator.value_changed_TO_Pointer.translation type=SFVec3f value=' + eventValue.toString() + '\n');
+        timeStampPreviousReport = timeStamp;
+      }
+    }
+    function timeOfDay (someTime) {
+      hh = Math.floor (someTime /(60*60)) % 24;
+      mm = Math.floor (someTime / 60)     % 60;
+      ss = Math.floor (someTime)          % 60;
+      if (hh < 9) hour   = '0' + hh;
+      else        hour   =       hh;
+      if (mm < 9) minute = '0' + mm;
+      else        minute =       mm;
+      if (ss < 9) second = '0' + ss;
+      else        second =       ss;
+      return '(' + hour + ':' + minute + ':' + second + ' GMT)';
+    }
+""" .
+:field_2_9_1_1 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :Trace_ROUTE_PositionAnimator.value_changed_TO_Pointer.translation ;
+  x3do:accessType 'initializeOnly' ;
+  x3do:appinfo 'Sampling frequency in seconds (0 means all values)' ;
+  x3do:name 'reportInterval' ;
+  x3do:type 'SFTime' ;
+  x3do:value '1.0' .
+:field_2_9_1_2 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :Trace_ROUTE_PositionAnimator.value_changed_TO_Pointer.translation ;
+  x3do:accessType 'inputOnly' ;
+  x3do:name 'traceValue' ;
+  x3do:type 'SFVec3f' .
+:field_2_9_1_3 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :Trace_ROUTE_PositionAnimator.value_changed_TO_Pointer.translation ;
+  x3do:accessType 'initializeOnly' ;
+  x3do:name 'timeStampPreviousReport' ;
+  x3do:type 'SFTime' ;
+  x3do:value '-1' .
+:ROUTE_2_9_2 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Group_2_9 ;
+  x3do:fromField 'value_changed' ;
+  x3do:fromNode 'PositionAnimator' ;
+  x3do:toField 'traceValue' ;
+  x3do:toNode 'Trace_ROUTE_PositionAnimator.value_changed_TO_Pointer.translation' .
+:OrientationAnimator a owl:NamedIndividual, x3do:OrientationInterpolator ;
+  x3do:hasParent :Scene ;
+  x3do:DEF 'OrientationAnimator' ;
+  x3do:key ( 0 0.2 0.25 0.45 0.5 0.7 0.75 0.95 1 ) ;
+  x3do:keyValue ( 0 1 0 0 0 1 0 0 0 1 0 1.57 0 1 0 1.57 0 1 0 3.14 0 1 0 3.14 0 1 0 4.71 0 1 0 4.71 0 1 0 6.283 ) .
+:ROUTE_2_11 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'value_changed' ;
+  x3do:fromNode 'OrientationAnimator' ;
+  x3do:toField 'set_rotation' ;
+  x3do:toNode 'Pointer' .
+:AnimationClock a owl:NamedIndividual, x3do:TimeSensor ;
+  x3do:hasParent :Scene ;
+  x3do:DEF 'AnimationClock' ;
+  x3do:cycleInterval '10' ;
+  x3do:loop true .
+:ROUTE_2_13 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'fraction_changed' ;
+  x3do:fromNode 'AnimationClock' ;
+  x3do:toField 'set_fraction' ;
+  x3do:toNode 'PositionAnimator' .
+:Group_2_14 a owl:NamedIndividual, x3do:Group ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :Trace_ROUTE_AnimationClock.fraction_changed_TO_PositionAnimator.set_fraction ;
+  x3do:hasROUTE :ROUTE_2_14_2 .
+:Trace_ROUTE_AnimationClock.fraction_changed_TO_PositionAnimator.set_fraction a owl:NamedIndividual, x3do:Script ;
+  x3do:hasParent :Group_2_14 ;
+  x3do:hasField :field_2_14_1_1, :field_2_14_1_2, :field_2_14_1_3 ;
+  x3do:DEF 'Trace_ROUTE_AnimationClock.fraction_changed_TO_PositionAnimator.set_fraction' ;
+  x3do:mustEvaluate true ;
+  x3do:sourceCode """
+ecmascript:
+    function traceValue (eventValue, timeStamp) {
+      // input eventValue received for trace field
+      if (timeStamp - timeStampPreviousReport >= reportInterval) {
+        Browser.print ('Trace_ROUTE_AnimationClock.fraction_changed_TO_PositionAnimator.set_fraction type=SFFloat value=' + eventValue + '\n');
+        timeStampPreviousReport = timeStamp;
+      }
+    }
+    function timeOfDay (someTime) {
+      hh = Math.floor (someTime /(60*60)) % 24;
+      mm = Math.floor (someTime / 60)     % 60;
+      ss = Math.floor (someTime)          % 60;
+      if (hh < 9) hour   = '0' + hh;
+      else        hour   =       hh;
+      if (mm < 9) minute = '0' + mm;
+      else        minute =       mm;
+      if (ss < 9) second = '0' + ss;
+      else        second =       ss;
+      return '(' + hour + ':' + minute + ':' + second + ' GMT)';
+    }
+""" .
+:field_2_14_1_1 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :Trace_ROUTE_AnimationClock.fraction_changed_TO_PositionAnimator.set_fraction ;
+  x3do:accessType 'initializeOnly' ;
+  x3do:appinfo 'Sampling frequency in seconds (0 means all values)' ;
+  x3do:name 'reportInterval' ;
+  x3do:type 'SFTime' ;
+  x3do:value '1.0' .
+:field_2_14_1_2 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :Trace_ROUTE_AnimationClock.fraction_changed_TO_PositionAnimator.set_fraction ;
+  x3do:accessType 'inputOnly' ;
+  x3do:name 'traceValue' ;
+  x3do:type 'SFFloat' .
+:field_2_14_1_3 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :Trace_ROUTE_AnimationClock.fraction_changed_TO_PositionAnimator.set_fraction ;
+  x3do:accessType 'initializeOnly' ;
+  x3do:name 'timeStampPreviousReport' ;
+  x3do:type 'SFTime' ;
+  x3do:value '-1' .
+:ROUTE_2_14_2 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Group_2_14 ;
+  x3do:fromField 'fraction_changed' ;
+  x3do:fromNode 'AnimationClock' ;
+  x3do:toField 'traceValue' ;
+  x3do:toNode 'Trace_ROUTE_AnimationClock.fraction_changed_TO_PositionAnimator.set_fraction' .
+:ROUTE_2_15 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'fraction_changed' ;
+  x3do:fromNode 'AnimationClock' ;
+  x3do:toField 'set_fraction' ;
+  x3do:toNode 'OrientationAnimator' .
+:Transform_2_16 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :Billboard_2_16_1 ;
+  x3do:translation ( 0 4 0 ) .
+:Billboard_2_16_1 a owl:NamedIndividual, x3do:Billboard ;
+  x3do:hasParent :Transform_2_16 ;
+  x3do:hasChildren :Shape_2_16_1_1 ;
+  x3do:axisOfRotation ( 0 0 0 ) .
+:Shape_2_16_1_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Billboard_2_16_1 ;
+  x3do:hasGeometry :Text_2_16_1_1_1 ;
+  x3do:hasAppearance :Appearance_2_16_1_1_2 .
+:Text_2_16_1_1_1 a owl:NamedIndividual, x3do:Text ;
+  x3do:hasParent :Shape_2_16_1_1 ;
+  x3do:hasFontStyle :FontStyle_2_16_1_1_1_1 ;
+  x3do:string '"Animation using PositionInterpolator" "and OrientationInterpolator"' .
+:FontStyle_2_16_1_1_1_1 a owl:NamedIndividual, x3do:FontStyle ;
+  x3do:hasParent :Text_2_16_1_1_1 ;
+  x3do:justify '"MIDDLE" "MIDDLE"' ;
+  x3do:size 0.6 .
+:Appearance_2_16_1_1_2 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_16_1_1 ;
+  x3do:hasMaterial :Material_2_16_1_1_2_1 .
+:Material_2_16_1_1_2_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_16_1_1_2 .

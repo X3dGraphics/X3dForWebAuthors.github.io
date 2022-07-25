@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/TR/xhtml1/strict"
+       xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
+       xmlns:saxon="http://icl.com/saxon">
+   <head>
+      <title>WhereAmIPrototype.x3d (X3dToXhtml listing)</title>
+      <!-- I18N -->
+      <meta http-equiv="X-UA-Compatible" content="chrome=1,IE=edge"/>
+      <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+      <style type="text/css">
+span.element {color: navy}
+span.attribute {color: green}
+span.value {color: teal}
+span.plain {color: black}
+span.gray  {color: gray}
+span.idName {color: maroon}
+span.addedDocumentation {background-color:#EEEEEE} /* slightly darker for html page contrast */
+span.behaviorNode       {background-color:#DDEEFF} /*      light blue for html page contrast */
+span.extensibilityNode  {background-color:#FFEEFF} /*    lighter blue for html page contrast */
+a.idName {color: maroon}
+div.center {text-align: center}
+div.indent {margin-left: 25px}
+
+span.prototype {color: purple}
+a.prototype {color: purple}
+a.prototype:visited {color: black}
+span.route {color: red}
+b.warning {color: #CC5500}
+b.error {color: #CC0000}
+
+                </style>
+      <style type="text/css">
+table.curvedEdges { border:10px solid RoyalBlue;-webkit-border-radius:13px;-moz-border-radius:13px;-ms-border-radius:13px;-o-border-radius:13px;border-radius:13px; }
+table.curvedEdges td, table.curvedEdges th { border-bottom:1px dotted black;padding:5px; }
+</style>
+      <meta name="generator" content="XSLT processor Saxonica"/>
+      <meta name="generator"
+             content="https://www.web3d.org/x3d/stylesheets/X3dToXhtml.xslt"/>
+      <meta name="generator"
+             content="https://sourceforge.net/p/x3d/code/HEAD/tree/www.web3d.org/x3d/stylesheets/X3dToXhtml.xslt"/>
+      <link rel="shortcut icon"
+             href="https://www.web3d.org/x3d/content/icons/X3DtextIcon16.png"
+             title="X3D"/>
+   </head>
+   <body>
+      <code title="XML declaration">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</code>
+      <br/>
+      <code title="Document Type Declaration (DTD) for X3D validation">&lt;!DOCTYPE X3D PUBLIC "ISO//Web3D//DTD X3D 3.3//EN" "<a href="https://www.web3d.org/specifications/x3d-3.3.dtd">https://www.web3d.org/specifications/x3d-3.3.dtd</a>"&gt;</code>
+      <div>
+<span title="X3D is the top-most XML element for an Extensible 3D (X3D) Graphics file">&lt;<span class="element">X3D</span>&#160;<span title="X3D Immersive Profile supports most nodes, similar to VRML97"><span class="attribute">profile</span>='<span class="value">Immersive</span>'</span>&#160;<span class="attribute">version</span>='<span class="value">3.3</span>'&#160;<span title="XML namespace for X3D Graphics schema validation"><span title="XML namespace for XML Schema validation">
+            <span class="attribute">xmlns:xsd</span>='<a href="http://www.w3.org/2001/XMLSchema-instance" target="_blank">http://www.w3.org/2001/XMLSchema-instance</a>'
+</span>
+         <span title="XML namespace for X3D Graphics schema validation">
+            <span class="attribute">xsd:noNamespaceSchemaLocation</span>
+         </span>='
+<a href="https://www.web3d.org/specifications/x3d-3.3.xsd" target="_blank">https://www.web3d.org/specifications/x3d-3.3.xsd</a>
+'</span>&gt;
+</span><div class="indent">
+<span title="head can contain component, unit, and author-defined metadata (meta) tags">&lt;<span class="element">head</span>&gt;
+</span><div class="indent">
+<span title="meta 'title' provides file name for this resource">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">title</span>'&#160;<span class="attribute">content</span>='<a href="WhereAmIPrototype.x3d">WhereAmIPrototype.x3d</a>'/&gt;
+</span><br />
+
+<span title="meta 'description' provides summary overview describing this resource">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">description</span>'&#160;<span class="attribute">content</span>='<span class="plain">Prototype node declaration for displaying current viewpoint location and orientation in the player console.</span>'/&gt;
+</span><br />
+
+<span title="meta 'creator' provides name of original author">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">creator</span>'&#160;<span class="attribute">content</span>='<span class="value">Leonard Daly and Don Brutzman</span>'/&gt;
+</span><br />
+
+<span title="meta 'created' provides date of initial version">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">created</span>'&#160;<span class="attribute">content</span>='<span class="value">1 January 1999</span>'/&gt;
+</span><br />
+
+<span title="meta 'translated' provides date of translation from another format or language">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">translated</span>'&#160;<span class="attribute">content</span>='<span class="value">5 May 2006</span>'/&gt;
+</span><br />
+
+<span title="meta 'modified' provides date of modified version">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">modified</span>'&#160;<span class="attribute">content</span>='<span class="value">20 October 2019</span>'/&gt;
+</span><br />
+
+<span title="meta 'reference' provides name or reference link to a supporting resource">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">reference</span>'&#160;<span class="attribute">content</span>='<a href="WhereAmIExample.x3d">WhereAmIExample.x3d</a>'/&gt;
+</span><br />
+
+<span title="meta 'reference' provides name or reference link to a supporting resource">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">reference</span>'&#160;<span class="attribute">content</span>='
+<a href="https://savage.nps.edu/Savage/Tools/Authoring/ViewPositionOrientationExample.x3d"
+                   target="_blank">https://savage.nps.edu/Savage/Tools/Authoring/ViewPositionOrientationExample.x3d</a>
+'/&gt;
+</span><br />
+
+<span title="meta 'reference' provides name or reference link to a supporting resource">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">reference</span>'&#160;<span class="attribute">content</span>='
+<a href="https://savage.nps.edu/Savage/Tools/Authoring/ViewPositionOrientationPrototype.x3d"
+                   target="_blank">https://savage.nps.edu/Savage/Tools/Authoring/ViewPositionOrientationPrototype.x3d</a>
+'/&gt;
+</span><br />
+
+<span title="meta 'reference' provides name or reference link to a supporting resource">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">reference</span>'&#160;<span class="attribute">content</span>='
+<a href="https://X3dGraphics.com" target="_blank">https://X3dGraphics.com</a>
+'/&gt;
+</span><br />
+
+<span title="meta 'reference' provides name or reference link to a supporting resource">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">reference</span>'&#160;<span class="attribute">content</span>='
+<a href="https://www.web3d.org/x3d/content/examples/X3dResources.html"
+                   target="_blank">https://www.web3d.org/x3d/content/examples/X3dResources.html</a>
+'/&gt;
+</span><br />
+
+<span title="meta 'subject' provides search-index subject keywords, key phrases, or classification codes">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">subject</span>'&#160;<span class="attribute">content</span>='
+X3D book, X3D graphics, X3D-Edit, <a href="http://www.x3dGraphics.com" target="_blank">http://www.x3dGraphics.com</a>
+'/&gt;
+</span><br />
+
+<span title="meta 'rights' defines intellectual property rights (IPR) for this scene">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">rights</span>'&#160;<span class="attribute">content</span>='<span class="value">Copyright 1999, 2006, Daly Realism, Inc.</span>'/&gt;
+</span><br />
+
+<span title="meta 'identifier' provides the unique Uniform Resource Identifier (URI) or url address for this resource">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">identifier</span>'&#160;<span class="attribute">content</span>='
+<a href="https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter14Prototypes/WhereAmIPrototype.x3d"
+                   target="_blank">https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter14Prototypes/WhereAmIPrototype.x3d</a>
+'/&gt;
+</span><br />
+
+<span title="meta 'generator' provides name of authoring tool or translation tool producing this scene">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">generator</span>'&#160;<span class="attribute">content</span>='<span class="value">X3D-Edit 3.3, </span>
+               <a href="https://savage.nps.edu/X3D-Edit" target="_blank">https://savage.nps.edu/X3D-Edit</a>'/&gt;
+</span><br />
+
+<span title="meta 'license' provides software license link or information">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">license</span>'&#160;<span class="attribute">content</span>='
+<a href="../license.html">../license.html</a>'/&gt;
+</span></div><span title="head can contain component, unit, and author-defined metadata (meta) tags">&lt;/<span class="element">head</span>&gt;
+</span><br /><span style="color:white">
+&lt;!--
+</span>
+            <div class="center">
+               <hr style="width:100%"/>
+               <b>
+                  <i>Index for ProtoDeclare definition</i>
+               </b>: 
+<a title="go to this declaration"
+                   href="#ProtoDeclare_WhereAmI"
+                   class="prototype">WhereAmI</a>
+<br /><hr width="50%"/>
+               <b>
+                  <i>Index for DEF nodes</i>
+               </b>: 
+<a title="go to this Script node" href="#WhereDump" class="idName">WhereDump</a>,
+<a title="go to this ProximitySensor node"
+                   href="#WhereSensor"
+                   class="idName">WhereSensor</a>
+<br /><hr width="50%"/>
+               <b>
+                  <i>Index for Viewpoint image</i>
+               </b>: 
+<a title="go to this Viewpoint node: WhereAmI prototype test"
+                   href="#Viewpoint_1"
+                   class="idName">Viewpoint_1</a>
+               <hr style="width:100%"/>
+            </div>
+            <span style="color:white">
+--&gt;
+</span><br />
+
+<span title="Scene is the root node that contains an X3D scene graph">&lt;<span class="element">Scene</span>&gt;
+</span><div class="indent">
+<span title="WorldInfo contains persistent documentation information about the 3D world">&lt;<span class="element">WorldInfo</span>&#160;<span class="attribute">title</span>='<span class="value">WhereAmIPrototype.x3d</span>'/&gt;
+</span><br />
+<a name="ProtoDeclare_WhereAmI"> </a> 
+<span title="ProtoDeclare is a Prototype declaration, defining a new node made up of other node(s)" style="background-color:#FFEEFF">&lt;<span class="prototype">ProtoDeclare</span>&#160;<span class="attribute">name</span>='<span class="prototype">WhereAmI</span>'&#160;<span title="application information for this ProtoDeclare"><span class="gray">appinfo</span>='<span class="value">Prototype node for displaying current viewpoint location and orientation</span>'</span>&gt;
+</span><div class="indent">
+                  <span title="XML comment">&lt;!--  No  ProtoInterface  fields  are  needed  for  this  prototype  --&gt;</span>
+<br />
+
+<span title="Initial scene node in ProtoDeclare/ProtoBody statement determines this prototype's node type" style="background-color:#FFEEFF">&lt;<span class="prototype">ProtoBody</span>&gt;
+</span><div class="indent">
+                     <a name="WhereSensor"> </a> 
+<span style="background-color:#EEEEEE;" title="inserted documentation about ROUTE connections">&lt;!-- <i>ROUTE</i> information for <span class="idName">WhereSensor</span> node:&#160;
+[<a title="go to this ROUTE" href="#ROUTE_0"><i>from</i>&#160;<span class="attribute">orientation_changed</span>&#160;<i>to</i>&#160;<span class="idName">WhereDump</span>.<span class="attribute">orientation</span>
+                     </a>]
+[<a title="go to this ROUTE" href="#ROUTE_1"><i>from</i>&#160;<span class="attribute">position_changed</span>&#160;<i>to</i>&#160;<span class="idName">WhereDump</span>.<span class="attribute">position</span>
+                     </a>]
+ --&gt;<br /></span>
+<span title="Sensor nodes convert user interaction into events" style="background-color:#DDEEFF">&lt;<span class="element">ProximitySensor</span>&#160;<span class="attribute">DEF</span>='<a title="bookmark link to WhereSensor"
+                         href="#WhereSensor"
+                         class="idName">WhereSensor</a>'&#160;<span class="attribute">size</span>='<span class="value">100000 100000 100000</span>'/&gt;
+</span><br /><span title="XML comment">&lt;!--  no  geometry  is  rendered  in  the  current  scene  by  the  prototype  --&gt;</span>
+<br />
+<a name="WhereDump"> </a> 
+<span style="background-color:#EEEEEE;" title="inserted documentation about ROUTE connections">&lt;!-- <i>ROUTE</i> information for <span class="idName">WhereDump</span> node:&#160;
+[<a title="go to this ROUTE" href="#ROUTE_0"><i>from</i>&#160;<span class="idName">WhereSensor</span>.<span class="attribute">orientation_changed</span>&#160;<i>to</i>&#160;<span class="attribute">orientation</span>
+                     </a>]
+[<a title="go to this ROUTE" href="#ROUTE_1"><i>from</i>&#160;<span class="idName">WhereSensor</span>.<span class="attribute">position_changed</span>&#160;<i>to</i>&#160;<span class="attribute">position</span>
+                     </a>]
+ --&gt;<br /></span>
+<span title="Script contains author-programmed event behaviors for a scene" style="background-color:#DDEEFF">&lt;<span class="element">Script</span>&#160;<span class="attribute">DEF</span>='<a title="bookmark link to WhereDump" href="#WhereDump" class="idName">WhereDump</a>'
+<br />
+&#160;&#160;<span title="uniform resource locator (url) list of relative or absolute file addresses, performed in order until resource retrieval succeeds"><span class="attribute">url</span>='
+ "<a href="WhereAmIPrototypeScript.js" target="_blank">WhereAmIPrototypeScript.js</a>" "<a href="../Chapter14Prototypes/WhereAmIPrototypeScript.js"
+                         target="_blank">../Chapter14Prototypes/WhereAmIPrototypeScript.js</a>"
+"<a href="https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter14Prototypes/WhereAmIPrototypeScript.js"
+                         target="_blank">https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter14Prototypes/WhereAmIPrototypeScript.js</a>" '</span>&gt;
+</span><div class="indent">
+<span title="A field element defines an interface attribute or node for a parent Script" style="background-color:#DDEEFF">&lt;<span class="prototype">field</span>&#160;<span class="attribute">name</span>='<span class="prototype">position</span>'&#160;<span class="attribute">type</span>='<span class="value">SFVec3f</span>'&#160;<span class="attribute">accessType</span>='<span class="value">inputOnly</span>'/&gt;
+</span><br />
+
+<span title="A field element defines an interface attribute or node for a parent Script" style="background-color:#DDEEFF">&lt;<span class="prototype">field</span>&#160;<span class="attribute">name</span>='<span class="prototype">orientation</span>'&#160;<span class="attribute">type</span>='<span class="value">SFRotation</span>'&#160;<span class="attribute">accessType</span>='<span class="value">inputOnly</span>'/&gt;
+</span></div><span title="Script contains author-programmed event behaviors for a scene" style="background-color:#DDEEFF">&lt;/<span class="element">Script</span>&gt;
+</span><br />
+<a name="ROUTE_0"> </a> 
+<span title="ROUTE connects fields between nodes to enable event passing" style="background-color:#DDEEFF">&lt;<span class="route">ROUTE</span>&#160;<span class="attribute">fromNode</span>='<a title="go to the original DEF node definition"
+                         href="#WhereSensor"
+                         class="idName">WhereSensor</a>'&#160;<span class="attribute">fromField</span>='<span class="value">orientation_changed</span>'&#160;<span class="attribute">toNode</span>='<a title="go to the original DEF node definition"
+                         href="#WhereDump"
+                         class="idName">WhereDump</a>'&#160;<span class="attribute">toField</span>='<span class="value">orientation</span>'/&gt;
+</span><br />
+<a name="ROUTE_1"> </a> 
+<span title="ROUTE connects fields between nodes to enable event passing" style="background-color:#DDEEFF">&lt;<span class="route">ROUTE</span>&#160;<span class="attribute">fromNode</span>='<a title="go to the original DEF node definition"
+                         href="#WhereSensor"
+                         class="idName">WhereSensor</a>'&#160;<span class="attribute">fromField</span>='<span class="value">position_changed</span>'&#160;<span class="attribute">toNode</span>='<a title="go to the original DEF node definition"
+                         href="#WhereDump"
+                         class="idName">WhereDump</a>'&#160;<span class="attribute">toField</span>='<span class="value">position</span>'/&gt;
+</span></div><span title="Initial scene node in ProtoDeclare/ProtoBody statement determines this prototype's node type" style="background-color:#FFEEFF">&lt;/<span class="prototype">ProtoBody</span>&gt;
+</span></div><span title="ProtoDeclare is a Prototype declaration, defining a new node made up of other node(s)" style="background-color:#FFEEFF">&lt;/<span class="prototype">ProtoDeclare</span>&gt;
+</span><br /><span title="XML comment">&lt;!--  ProtoInstance  instantiates  (creates)  a  new  node  using  the  ProtoDeclare  prototype  definition  --&gt;</span>
+<br />
+
+<span title="ProtoInstance creates an instance of a locally or externally declared prototype node" style="background-color:#FFEEFF">&lt;<span class="prototype">ProtoInstance</span>&#160;<span class="attribute">name</span>='<a title="go to the defining ProtoDeclare for this prototype instance"
+                   href="#ProtoDeclare_WhereAmI"
+                   class="prototype">WhereAmI</a>'/&gt;
+</span><br />
+<a name="Viewpoint_1"> </a> 
+<span title="Viewpoint provides a specific location and direction where the user may view the scene">&lt;<span class="element">Viewpoint</span>&#160;<span class="attribute">description</span>='<a title="viewpoint image (produced using Xj3D)"
+                   href="_viewpoints/WhereAmIPrototype.x3d._VP_WhereAmI_prototype_test.png">WhereAmI prototype test</a>'/&gt;
+</span><br />
+
+<span title="Shape contains geometry and optional corresponding Appearance">&lt;<span class="element">Shape</span>&gt;
+</span><div class="indent">
+<span title="Text is a geometry primitive node">&lt;<span class="element">Text</span>&#160;<span class="attribute">string</span>='<span class="value">"Check X3D console" "while navigating for" "current viewpoint" "position, orientation"</span>'&gt;
+</span><div class="indent">
+<span title="FontStyle defines the size, family, justification, and other styles used by Text nodes">&lt;<span class="element">FontStyle</span>&#160;<span class="attribute">justify</span>='<span class="value">"MIDDLE" "MIDDLE"</span>'/&gt;
+</span></div><span title="Text is a geometry primitive node">&lt;/<span class="element">Text</span>&gt;
+</span><br />
+
+<span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;<span class="element">Appearance</span>&gt;
+</span><div class="indent">
+<span title="Material specifies surface rendering properties for associated geometry">&lt;<span class="element">Material</span>&#160;<span class="attribute">ambientIntensity</span>='<span class="value">0.23</span>'&#160;<span class="attribute">diffuseColor</span>='<span class="value">0.5 0.243312 0.127417</span>'&#160;<span class="attribute">emissiveColor</span>='<span class="value">0.015957 0.015957 0.015957</span>'&#160;<span class="attribute">shininess</span>='<span class="value">0.03</span>'&#160;<span class="attribute">specularColor</span>='<span class="value">0.276596 0.055086 0.01524</span>'/&gt;
+</span></div><span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;/<span class="element">Appearance</span>&gt;
+</span></div><span title="Shape contains geometry and optional corresponding Appearance">&lt;/<span class="element">Shape</span>&gt;
+</span></div><span title="Scene is the root node that contains an X3D scene graph">&lt;/<span class="element">Scene</span>&gt;
+</span></div><span title="X3D is the top-most XML element for an Extensible 3D (X3D) Graphics file">&lt;/<span class="element">X3D</span>&gt;
+</span><br /><span style="color:white">
+&lt;!--
+</span>
+         <div class="center">
+            <hr style="width:100%"/>
+            <b>
+               <i>Index for ProtoDeclare definition</i>
+            </b>: 
+<a title="go to this declaration"
+                href="#ProtoDeclare_WhereAmI"
+                class="prototype">WhereAmI</a>
+<br /><hr width="50%"/>
+            <b>
+               <i>Index for DEF nodes</i>
+            </b>: 
+<a title="go to this Script node" href="#WhereDump" class="idName">WhereDump</a>,
+<a title="go to this ProximitySensor node"
+                href="#WhereSensor"
+                class="idName">WhereSensor</a>
+<br /><hr width="50%"/>
+            <b>
+               <i>Index for Viewpoint image</i>
+            </b>: 
+<a title="go to this Viewpoint node: WhereAmI prototype test"
+                href="#Viewpoint_1"
+                class="idName">Viewpoint_1</a>
+            <hr style="width:100%"/>
+         </div>
+         <span style="color:white">
+--&gt;
+</span>
+      </div>
+      <p style="text-align:center;">
+         <span style="color:white">&lt;!--</span>
+Color key: <!--(matching X3D and XML terminology) -->
+&lt;<span class="element">X3dNode</span>
+         <span class="idName"> DEF</span>='<span class="idName">idName</span>' <span class="attribute">field</span>='<span class="value">value</span>'/&gt; 
+ matches 
+&lt;<span class="element">XmlElement</span>
+         <span class="idName"> DEF</span>='<span class="idName">idName</span>' <span class="attribute">attribute</span>='<span class="value">value</span>'/&gt; <br/>
+<span title="behavior node" style="background-color:#DDEEFF;">(Light blue background: behavior node)</span> <span title="inserted documentation about ROUTE connections" style="background-color:#EEEEEE;">(Grey background: inserted documentation)</span> <span title="X3D Extensibility" style="background-color:#FFEEFF;">(Magenta background: X3D Extensibility)</span><br/>
+&#160;&#160;&#160;
+&lt;<span class="prototype">Prototype</span>
+         <span class="attribute">name</span>='<span class="prototype">ProtoName</span>'&gt;
+	&lt;<span class="prototype">field</span>
+         <span class="attribute">name</span>='<span class="prototype">fieldName</span>'/&gt; &lt;/<span class="prototype">Prototype</span>&gt;
+<span style="color:white"> --&gt;</span>
+      </p>
+      <p style="text-align:center; background-color:white">
+         <span style="color:white">&lt;!--</span>
+For additional help information about X3D scenes, please see <a href="https://www.web3d.org/x3d/content/X3dTooltips.html"
+             title="Summary descriptions and authoring hints for each X3D node (element) and field (attribute)"
+             target="_blank">X3D Tooltips</a>, <a href="https://www.web3d.org/x3d/content/examples/X3dResources.html"
+             title="Numerous resources that support X3D graphics"
+             target="_blank">X3D Resources</a> and <a href="https://www.web3d.org/x3d/content/examples/X3dSceneAuthoringHints.html"
+             title="Style guidelines, authoring tips and best practices"
+             target="_blank">X3D Scene Authoring Hints</a>.
+<span style="color:white">--&gt;</span>
+      </p>
+   </body>
+</html>

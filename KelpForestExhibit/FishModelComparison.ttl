@@ -1,0 +1,158 @@
+@prefix :        <https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/FishModelComparison.ttl#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema:  <http://schema.org/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix x3d:     <https://www.web3d.org/specifications/x3d-4.0.xsd#> .
+@prefix x3do:    <https://www.web3d.org/specifications/X3dOntology4.0#> .
+
+:X3D a owl:NamedIndividual, x3do:X3D ;
+  x3do:hasHead :head ;
+  x3do:hasScene :Scene ;
+  x3do:profile 'Immersive' ;
+  x3do:version '3.3' ;
+  x3do:noNamespaceSchemaLocation 'https://www.web3d.org/specifications/x3d-3.3.xsd' .
+:head a owl:NamedIndividual, x3do:head ;
+  x3do:hasParent :X3D ;
+  x3do:hasMeta :meta_1_1, :meta_1_2, :meta_1_3, :meta_1_4, :meta_1_5, :meta_1_6, :meta_1_7, :meta_1_8 .
+:meta_1_1 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'FishModelComparison.x3d' ;
+  x3do:name 'title' .
+:meta_1_2 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'This file compares all of the fish prototypes.' ;
+  x3do:name 'description' .
+:meta_1_3 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Scott Tufts' ;
+  x3do:name 'creator' .
+:meta_1_4 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '17 December 2001' ;
+  x3do:name 'created' .
+:meta_1_5 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '20 October 2019' ;
+  x3do:name 'modified' .
+:meta_1_6 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/FishModelComparison.x3d' ;
+  x3do:name 'identifier' .
+:meta_1_7 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'X3D-Edit 3.3, https://savage.nps.edu/X3D-Edit' ;
+  x3do:name 'generator' .
+:meta_1_8 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '../license.html' ;
+  x3do:name 'license' .
+:meta dcterms:title "FishModelComparison.x3d" .
+:meta dcterms:description "This file compares all of the fish prototypes." .
+:meta dcterms:creator "Scott Tufts" .
+:meta dcterms:created "17 December 2001" .
+:meta dcterms:modified "20 October 2019" .
+:meta dcterms:identifier "https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/FishModelComparison.x3d" .
+:meta dcterms:generator "X3D-Edit 3.3, https://savage.nps.edu/X3D-Edit" .
+:meta dcterms:license "../license.html" .
+:Scene a owl:NamedIndividual, x3do:Scene ;
+  x3do:hasParent :X3D ;
+  x3do:hasChildren :WorldInfo_2_1, :Transform_2_4 ;
+  x3do:hasExternProtoDeclare :ExternProtoDeclare_2_2, :ExternProtoDeclare_2_3 .
+:WorldInfo_2_1 a owl:NamedIndividual, x3do:WorldInfo ;
+  x3do:hasParent :Scene ;
+  x3do:title 'FishModelComparison.x3d' .
+:ExternProtoDeclare_2_2 a owl:NamedIndividual, x3do:ExternProtoDeclare ;
+  x3do:hasParent :Scene ;
+  x3do:hasField :field_2_2_1 ;
+  x3do:name 'SeaStar' ;
+  x3do:url '"SeaStarPrototype.x3d#SeaStar" "https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/SeaStarPrototype.x3d#SeaStar" "SeaStarPrototype.wrl#SeaStar" "https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/SeaStarPrototype.wrl#SeaStar"' .
+:field_2_2_1 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :ExternProtoDeclare_2_2 ;
+  x3do:accessType 'inputOutput' ;
+  x3do:name 'skinDifColor' ;
+  x3do:type 'SFColor' .
+:ExternProtoDeclare_2_3 a owl:NamedIndividual, x3do:ExternProtoDeclare ;
+  x3do:hasParent :Scene ;
+  x3do:hasField :field_2_3_1, :field_2_3_2, :field_2_3_3 ;
+  x3do:appinfo 'HalfMoon fish' ;
+  x3do:name 'HalfMoon' ;
+  x3do:url '"HalfMoonPrototype.x3d#HalfMoon" "https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/HalfMoonPrototype.x3d#HalfMoon" "HalfMoonPrototype.wrl#HalfMoon" "https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/HalfMoonPrototype.wrl#HalfMoon"' .
+:field_2_3_1 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :ExternProtoDeclare_2_3 ;
+  x3do:accessType 'inputOutput' ;
+  x3do:name 'skinTextureUrl' ;
+  x3do:type 'MFString' .
+:field_2_3_2 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :ExternProtoDeclare_2_3 ;
+  x3do:accessType 'inputOutput' ;
+  x3do:name 'fishScale' ;
+  x3do:type 'SFVec3f' .
+:field_2_3_3 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :ExternProtoDeclare_2_3 ;
+  x3do:accessType 'inputOutput' ;
+  x3do:name 'fishColor' ;
+  x3do:type 'SFColor' .
+:Transform_2_4 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :Transform_2_4_1, :Transform_2_4_2, :Transform_2_4_3, :Transform_2_4_4, :Transform_2_4_5, :Transform_2_4_6, :Transform_2_4_7, :Transform_2_4_8 ;
+  x3do:rotation ( 1 0 0 3.14 ) .
+:Transform_2_4_1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_4 ;
+  x3do:hasChildren :ProtoInstance_2_4_1_1 ;
+  x3do:translation ( 2 0 0 ) .
+:ProtoInstance_2_4_1_1 a owl:NamedIndividual, x3do:ProtoInstance ;
+  x3do:hasParent :Transform_2_4_1 ;
+  x3do:name 'SeaStar' .
+:Transform_2_4_2 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_4 ;
+  x3do:hasChildren :Inline_2_4_2_1 ;
+  x3do:translation ( 1 0 0 ) .
+:Inline_2_4_2_1 a owl:NamedIndividual, x3do:Inline ;
+  x3do:hasParent :Transform_2_4_2 ;
+  x3do:url '"BlackSurfPerch.x3d" "https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/BlackSurfPerch.x3d" "BlackSurfPerch.wrl" "https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/BlackSurfPerch.wrl"' .
+:Transform_2_4_3 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_4 ;
+  x3do:hasChildren :ProtoInstance_2_4_3_1 .
+:ProtoInstance_2_4_3_1 a owl:NamedIndividual, x3do:ProtoInstance ;
+  x3do:hasParent :Transform_2_4_3 ;
+  x3do:name 'HalfMoon' .
+:Transform_2_4_4 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_4 ;
+  x3do:hasChildren :Inline_2_4_4_1 ;
+  x3do:rotation ( 1 0 0 3.14 ) ;
+  x3do:translation ( -1 0 0 ) .
+:Inline_2_4_4_1 a owl:NamedIndividual, x3do:Inline ;
+  x3do:hasParent :Transform_2_4_4 ;
+  x3do:url '"CircleFish.x3d" "https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/CircleFish.x3d" "CircleFish.wrl" "https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/CircleFish.wrl"' .
+:Transform_2_4_5 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_4 ;
+  x3do:hasChildren :Inline_2_4_5_1 ;
+  x3do:translation ( -2 0 0 ) .
+:Inline_2_4_5_1 a owl:NamedIndividual, x3do:Inline ;
+  x3do:hasParent :Transform_2_4_5 ;
+  x3do:url '"Garibaldi.x3d" "https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/Garibaldi.x3d" "Garibaldi.wrl" "https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/Garibaldi.wrl"' .
+:Transform_2_4_6 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_4 ;
+  x3do:hasChildren :Inline_2_4_6_1 ;
+  x3do:rotation ( 1 0 0 3.14 ) ;
+  x3do:translation ( 0 1 0 ) .
+:Inline_2_4_6_1 a owl:NamedIndividual, x3do:Inline ;
+  x3do:hasParent :Transform_2_4_6 ;
+  x3do:url '"HalfMoonGroup.x3d" "https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/HalfMoonGroup.x3d" "HalfMoonGroup.wrl" "https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/HalfMoonGroup.wrl"' .
+:Transform_2_4_7 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_4 ;
+  x3do:hasChildren :Inline_2_4_7_1 ;
+  x3do:translation ( 0 -1 0 ) .
+:Inline_2_4_7_1 a owl:NamedIndividual, x3do:Inline ;
+  x3do:hasParent :Transform_2_4_7 ;
+  x3do:url '"KelpBass.x3d" "https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/KelpBass.x3d" "KelpBass.wrl" "https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/KelpBass.wrl"' .
+:Transform_2_4_8 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_4 ;
+  x3do:hasChildren :Inline_2_4_8_1 ;
+  x3do:translation ( 0 0 1 ) .
+:Inline_2_4_8_1 a owl:NamedIndividual, x3do:Inline ;
+  x3do:hasParent :Transform_2_4_8 ;
+  x3do:url '"KelpSurfPerch.x3d" "https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/KelpSurfPerch.x3d" "KelpSurfPerch.wrl" "https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/KelpSurfPerch.wrl"' .

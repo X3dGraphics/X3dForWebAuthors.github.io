@@ -1,0 +1,139 @@
+@prefix :        <https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/KelpTankWaterSurface.ttl#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema:  <http://schema.org/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix x3d:     <https://www.web3d.org/specifications/x3d-4.0.xsd#> .
+@prefix x3do:    <https://www.web3d.org/specifications/X3dOntology4.0#> .
+
+:X3D a owl:NamedIndividual, x3do:X3D ;
+  x3do:hasHead :head ;
+  x3do:hasScene :Scene ;
+  x3do:profile 'Interchange' ;
+  x3do:version '3.3' ;
+  x3do:noNamespaceSchemaLocation 'https://www.web3d.org/specifications/x3d-3.3.xsd' .
+:head a owl:NamedIndividual, x3do:head ;
+  x3do:hasParent :X3D ;
+  x3do:hasMeta :meta_1_1, :meta_1_2, :meta_1_3, :meta_1_4, :meta_1_5, :meta_1_6, :meta_1_7, :meta_1_8, :meta_1_9, :meta_1_10, :meta_1_11, :meta_1_12 .
+:meta_1_1 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'KelpTankWaterSurface.x3d' ;
+  x3do:name 'title' .
+:meta_1_2 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Moving water surface for KelpTank - initial view is perpendicular, rotate viewpoint up to see motion. Cycle time is 5.5 seconds to match pump, with slight time lag to indicate inertia of quasi-steady-state equilibrium..' ;
+  x3do:name 'description' .
+:meta_1_3 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Todd Gagnon' ;
+  x3do:name 'creator' .
+:meta_1_4 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Xeena VRML importer, X3D-Edit 3.1, https://www.web3d.org/x3d/content/README.X3D-Edit.html' ;
+  x3do:name 'translator' .
+:meta_1_5 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '9 June 1998' ;
+  x3do:name 'created' .
+:meta_1_6 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '20 December 2002' ;
+  x3do:name 'translated' .
+:meta_1_7 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '20 October 2019' ;
+  x3do:name 'modified' .
+:meta_1_8 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'KelpTank.x3d' ;
+  x3do:name 'reference' .
+:meta_1_9 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/KelpTankWaterSurface.x3d' ;
+  x3do:name 'identifier' .
+:meta_1_10 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'X3D-Edit 3.3, https://savage.nps.edu/X3D-Edit' ;
+  x3do:name 'generator' .
+:meta_1_11 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Vrml97ToX3dNist, http://ovrt.nist.gov/v2_x3d.html' ;
+  x3do:name 'generator' .
+:meta_1_12 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '../license.html' ;
+  x3do:name 'license' .
+:meta dcterms:title "KelpTankWaterSurface.x3d" .
+:meta dcterms:description "Moving water surface for KelpTank - initial view is perpendicular, rotate viewpoint up to see motion. Cycle time is 5.5 seconds to match pump, with slight time lag to indicate inertia of quasi-steady-state equilibrium.." .
+:meta dcterms:creator "Todd Gagnon" .
+:meta dcterms:translator "Xeena VRML importer, X3D-Edit 3.1, https://www.web3d.org/x3d/content/README.X3D-Edit.html" .
+:meta dcterms:created "9 June 1998" .
+:meta dcterms:translated "20 December 2002" .
+:meta dcterms:modified "20 October 2019" .
+:meta dcterms:reference "KelpTank.x3d" .
+:meta dcterms:identifier "https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/KelpTankWaterSurface.x3d" .
+:meta dcterms:generator "X3D-Edit 3.3, https://savage.nps.edu/X3D-Edit" .
+:meta dcterms:generator "Vrml97ToX3dNist, http://ovrt.nist.gov/v2_x3d.html" .
+:meta dcterms:license "../license.html" .
+:Scene a owl:NamedIndividual, x3do:Scene ;
+  x3do:hasParent :X3D ;
+  x3do:hasChildren :WorldInfo_2_1, :Group_2_2, :SURFACEClock, :SURFACEHeight ;
+  x3do:hasROUTE :ROUTE_2_5, :ROUTE_2_6 .
+:WorldInfo_2_1 a owl:NamedIndividual, x3do:WorldInfo ;
+  x3do:hasParent :Scene ;
+  x3do:info '"DTG of last update: 091030Jun98 Added: Updated: comment out PointLight Modeled by: Todd Gagnon"' ;
+  x3do:title 'surface1.4.wrl' .
+:Group_2_2 a owl:NamedIndividual, x3do:Group ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :Transform_2_2_1 .
+:Transform_2_2_1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Group_2_2 ;
+  x3do:hasChildren :Shape_2_2_1_1 .
+:Shape_2_2_1_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_2_1 ;
+  x3do:hasAppearance :Appearance_2_2_1_1_1 ;
+  x3do:hasGeometry :IndexedFaceSet_2_2_1_1_2 .
+:Appearance_2_2_1_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_2_1_1 ;
+  x3do:hasMaterial :Material_2_2_1_1_1_1 .
+:Material_2_2_1_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_2_1_1_1 ;
+  x3do:ambientIntensity 1.0 ;
+  x3do:diffuseColor ( 0.03 0.12 0.24 ) ;
+  x3do:emissiveColor ( 0.0 0.16 0.36 ) ;
+  x3do:shininess 0.35 ;
+  x3do:specularColor ( 0.2 0.5 0.8 ) ;
+  x3do:transparency 0.15 .
+:IndexedFaceSet_2_2_1_1_2 a owl:NamedIndividual, x3do:IndexedFaceSet ;
+  x3do:hasParent :Shape_2_2_1_1 ;
+  x3do:hasCoord :SURFACE ;
+  x3do:coordIndex ( 0 1 6 7 -1 1 2 5 6 -1 2 3 4 5 -1 11 12 9 10 -1 12 13 8 9 -1 13 0 7 8 -1 ) ;
+  x3do:solid false .
+:SURFACE a owl:NamedIndividual, x3do:Coordinate ;
+  x3do:hasParent :IndexedFaceSet_2_2_1_1_2 ;
+  x3do:DEF 'SURFACE' ;
+  x3do:point ( 0.0 0.0 0.0 2.5 0.0 1.0 4.5 0.0 3.0 7.625 0.0 3.0 10.25 0.0 0.375 10.25 0.0 -4.375 6.375 0.0 -8.0 0.0 0.0 -8.0 -5.5 0.0 -8.0 -10.5 0.0 -2.875 -10.5 0.0 0.25 -7.625 0.0 3.0 -4.5 0.0 3.0 -2.5 0.0 1.0 ) .
+:SURFACEClock a owl:NamedIndividual, x3do:TimeSensor ;
+  x3do:hasParent :Scene ;
+  x3do:DEF 'SURFACEClock' ;
+  x3do:cycleInterval '5.5' ;
+  x3do:loop true .
+:SURFACEHeight a owl:NamedIndividual, x3do:CoordinateInterpolator ;
+  x3do:hasParent :Scene ;
+  x3do:DEF 'SURFACEHeight' ;
+  x3do:key ( 0.0 0.2 0.45 0.7 0.95 ) ;
+  x3do:keyValue ( 0.0 0.0 0.0 2.5 0.05 1.0 4.5 0.1 3.0 7.625 0.15 3.0 10.25 0.15 0.375 10.25 0.15 -4.375 6.375 0.1 -8.0 0.0 0.0 -8.0 -5.5 -0.1 -8.0 -10.5 -0.15 -2.875 -10.5 -0.15 0.25 -7.625 -0.15 3.0 -4.5 -0.1 3.0 -2.5 -0.05 1.0 0.0 0.0 0.0 2.5 0.0 1.0 4.5 0.0 3.0 7.625 0.0 3.0 10.25 0.0 0.375 10.25 0.0 -4.375 6.375 0.0 -8.0 0.0 0.0 -8.0 -5.5 0.0 -8.0 -10.5 0.0 -2.875 -10.5 0.0 0.25 -7.625 0.0 3.0 -4.5 0.0 3.0 -2.5 0.0 1.0 0.0 -0.0 0.0 2.5 -0.05 1.0 4.5 -0.1 3.0 7.625 -0.15 3.0 10.25 -0.15 0.375 10.25 -0.15 -4.375 6.375 -0.1 -8.0 0.0 -0.0 -8.0 -5.5 0.1 -8.0 -10.5 0.15 -2.875 -10.5 0.15 0.25 -7.625 0.15 3.0 -4.5 0.1 3.0 -2.5 0.05 1.0 0.0 0.0 0.0 2.5 0.0 1.0 4.5 0.0 3.0 7.625 0.0 3.0 10.25 0.0 0.375 10.25 0.0 -4.375 6.375 0.0 -8.0 0.0 0.0 -8.0 -5.5 0.0 -8.0 -10.5 0.0 -2.875 -10.5 0.0 0.25 -7.625 0.0 3.0 -4.5 0.0 3.0 -2.5 0.0 1.0 0.0 0.0 0.0 2.5 0.05 1.0 4.5 0.1 3.0 7.625 0.15 3.0 10.25 0.15 0.375 10.25 0.15 -4.375 6.375 0.1 -8.0 0.0 0.0 -8.0 -5.5 -0.1 -8.0 -10.5 -0.15 -2.875 -10.5 -0.15 0.25 -7.625 -0.15 3.0 -4.5 -0.1 3.0 -2.5 -0.05 1.0 ) .
+:ROUTE_2_5 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'fraction_changed' ;
+  x3do:fromNode 'SURFACEClock' ;
+  x3do:toField 'set_fraction' ;
+  x3do:toNode 'SURFACEHeight' .
+:ROUTE_2_6 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'value_changed' ;
+  x3do:fromNode 'SURFACEHeight' ;
+  x3do:toField 'set_point' ;
+  x3do:toNode 'SURFACE' .

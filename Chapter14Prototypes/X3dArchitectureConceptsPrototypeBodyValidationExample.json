@@ -1,0 +1,217 @@
+{ "X3D": {
+    "encoding":"UTF-8",
+    "@profile":"Immersive",
+    "@version":"4.0",
+    "@xsd:noNamespaceSchemaLocation":"https://www.web3d.org/specifications/x3d-4.0.xsd",
+    "JSON schema":"https://www.web3d.org/specifications/x3d-3.3-JSONSchema.json",
+    "head": {
+        "meta": [
+          {
+            "@name":"title",
+            "@content":"X3dArchitectureConceptsPrototypeBodyValidationExample.x3d"
+          },
+          {
+            "@name":"description",
+            "@content":"Prototype example to illustrate why additional non-rendering nodes might be needed after first node in ProtoBody"
+          },
+          {
+            "@name":"creator",
+            "@content":"*Don Brutzman"
+          },
+          {
+            "@name":"created",
+            "@content":"10 September 2021"
+          },
+          {
+            "@name":"version",
+            "@content":"19 September 2021"
+          },
+          {
+            "@name":"drawing",
+            "@content":"X3dArchitectureConceptsPrototypeBodyValidationDiagram.png"
+          },
+          {
+            "@name":"drawing",
+            "@content":"X3dArchitectureConceptsPrototypeBodyValidationDiagram.vsdx"
+          },
+          {
+            "@name":"Image",
+            "@content":"X3dArchitectureConceptsPrototypeBodyValidationExampleX_ITE.png"
+          },
+          {
+            "@name":"reference",
+            "@content":"https://www.web3d.org/member-only/mantis/view.php?id=1372"
+          },
+          {
+            "@name":"specificationSection",
+            "@content":"X3D Architecture, ISO/IEC 19775-1: 202x, Clause 4 Concepts, 4.4.4.3 PROTO definition semantics"
+          },
+          {
+            "@name":"specificationUrl",
+            "@content":"https://www.web3d.org/specifications/X3Dv4Draft/ISO-IEC19775-1v4-CD1/Part01/concepts.html#PROTOdefinitionsemantics"
+          },
+          {
+            "@name":"rights",
+            "@content":"(c) Web3D Consortium Inc. 2021"
+          },
+          {
+            "@name":"subject",
+            "@content":"X3D prototype specification"
+          },
+          {
+            "@name":"identifier",
+            "@content":"https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter14Prototypes/X3dArchitectureConceptsPrototypeBodyValidationExample.x3d"
+          },
+          {
+            "@name":"generator",
+            "@content":"X3D-Edit 4.0, https://savage.nps.edu/X3D-Edit"
+          },
+          {
+            "@name":"license",
+            "@content":"../license.html"
+          },
+          {
+            "@name":"translated",
+            "@content":"18 January 2022"
+          },
+          {
+            "@name":"generator",
+            "@content":"X3dToJson.xslt, https://www.web3d.org/x3d/stylesheets/X3dToJson.html"
+          },
+          {
+            "@name":"reference",
+            "@content":"X3D JSON encoding: https://www.web3d.org/wiki/index.php/X3D_JSON_Encoding"
+          }
+        ]
+    },
+    "Scene": {
+        "-children":[
+          { "Background":
+            {
+              "@skyColor":[0.058824,0.886275,1]
+            }
+          },
+          { "NavigationInfo":
+            {
+            }
+          },
+          { "ProtoDeclare":
+            {
+              "@name":"PulsingBoxShape",
+              "ProtoInterface": {
+                  "field": [
+                    {
+                      "@name":"boxColor",
+                      "@accessType":"inputOutput",
+                      "@type":"SFColor",
+                      "@value":[1,0,0]
+                    }
+                  ]
+              },
+              "ProtoBody": {
+                  "-children":[
+                    {
+                      "#comment":"First node in ProtoBody determines node type of this Prototype"
+                    },
+                    { "Shape":
+                      {
+                        "@DEF":"PrototypeRootNode",
+                        "-appearance":
+                          { "Appearance":
+                            {
+                              "-material":
+                                { "Material":
+                                  {
+                                    "@DEF":"BoxMaterial",
+                                    "@diffuseColor":[0.980392,0,0],
+                                    "IS": {
+                                        "connect": [
+                                          {
+                                            "@nodeField":"diffuseColor",
+                                            "@protoField":"boxColor"
+                                          }
+                                        ]
+                                    }
+                                  }
+                                }
+                            }
+                          },
+                        "-geometry":
+                          { "Box":
+                            {
+                              "@DEF":"PulsingBox",
+                              "@size":[4,4,4]
+                            }
+                          }
+                      }
+                    },
+                    {
+                      "#comment":"======================================================================"
+                    },
+                    {
+                      "#comment":"Subsequent nodes do not render, but still must be a valid X3D subgraph"
+                    },
+                    {
+                      "#comment":"Note if these move into the Shape node, scene graph is no longer valid"
+                    },
+                    { "ScalarInterpolator":
+                      {
+                        "@DEF":"TransparencyInterpolator",
+                        "@key":[0,0.5,1],
+                        "@keyValue":[1,0,1]
+                      }
+                    },
+                    { "TimeSensor":
+                      {
+                        "@DEF":"Timer",
+                        "@cycleInterval":10,
+                        "@loop":true
+                      }
+                    },
+                    {
+                      "#comment":"ROUTEs"
+                    },
+                    { "ROUTE":
+                      {
+                        "@fromField":"fraction_changed",
+                        "@fromNode":"Timer",
+                        "@toField":"set_fraction",
+                        "@toNode":"TransparencyInterpolator"
+                      }
+                    },
+                    { "ROUTE":
+                      {
+                        "@fromField":"value_changed",
+                        "@fromNode":"TransparencyInterpolator",
+                        "@toField":"transparency",
+                        "@toNode":"BoxMaterial"
+                      }
+                    },
+                    {
+                      "#comment":"======================================================================"
+                    }
+                  ]
+              }
+            }
+          },
+          { "ProtoInstance":
+            {
+              "@name":"PulsingBoxShape",
+              "@DEF":"MyBox",
+              "-children":[
+                {
+                  "#comment":"NavyBlue TODO need appinfo/documentation fields on fieldValue to match field expressivity"
+                }
+              ],
+              "fieldValue": [
+                {
+                  "@name":"boxColor",
+                  "@value":[0,0,0.5]
+                }
+              ]
+            }
+          }
+        ]
+    }
+  }
+}

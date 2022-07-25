@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--Generated using XSLT processor: SAXON 8.7 from Saxonica--><html xmlns="http://www.w3.org/TR/xhtml1/strict" xmlns:saxon="http://icl.com/saxon">
+   <head>
+      <title>ViewFrustrumPrototype.x3d (X3dToXhtml)</title>
+      <style type="text/css">
+span.element {color: navy}
+span.attribute {color: green}
+span.value {color: teal}
+span.plain {color: black}
+span.gray  {color: gray}
+span.idName {color: maroon}
+a.idName {color: maroon}
+div.center {text-align: center}
+div.indent {margin-left: 25px}
+
+span.prototype {color: purple}
+a.prototype {color: purple; visited: black}
+span.route {color: red}
+b.warning {color: #CC5500}
+b.error {color: #CC0000}
+                </style>
+      <meta name="generator" content="http://www.web3d.org/x3d/content/X3dToXhtml.xslt"/>
+      <meta name="generator"
+            content="http://x3d.svn.sourceforge.net/viewvc/*checkout*/x3d/www.web3d.org/x3d/stylesheets/X3dToXhtml.xslt"/>
+      <link rel="shortcut icon"
+            href="http://www.web3d.org/x3d/content/icons/X3DtextIcon16.png"
+            title="X3D"/>
+   </head>
+   <body>
+      <pre>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;!DOCTYPE X3D PUBLIC "ISO//Web3D//DTD X3D 3.2//EN"   "http://www.web3d.org/specifications/x3d-3.2.dtd"&gt;</pre>
+
+&lt;<span class="element">X3D</span>&#160;<span class="attribute">profile</span>='<span class="value">Immersive</span>'&#160;<span class="attribute">version</span>='<span class="value">3.2</span>'&#160;<span class="attribute">xmlns:xsd</span>='<a href="http://www.w3.org/2001/XMLSchema-instance" target="_blank">http://www.w3.org/2001/XMLSchema-instance</a>' <span class="attribute">xsd:noNamespaceSchemaLocation</span>='
+<a href="http://www.web3d.org/specifications/x3d-3.2.xsd">http://www.web3d.org/specifications/x3d-3.2.xsd</a> '&gt;
+<div class="indent">
+&lt;<span class="element">head</span>&gt;
+<div class="indent">
+&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">title</span>'&#160;<span class="attribute">content</span>='<a href="ViewFrustrumPrototype.x3d" target="_blank">ViewFrustrumPrototype.x3d</a>'/&gt;
+<br />
+&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">description</span>'&#160;<span class="attribute">content</span>='<span class="plain">Display view frustrum associated with a given pair of Viewpoint, NavigationInfo nodes</span>'/&gt;
+<br />
+&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">creator</span>'&#160;<span class="attribute">content</span>='<span class="value">Don Brutzman</span>'/&gt;
+<br />
+&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">translated</span>'&#160;<span class="attribute">content</span>='<span class="value">16 August 2008</span>'/&gt;
+<br />
+&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">modified</span>'&#160;<span class="attribute">content</span>='<span class="value">17 August 2008</span>'/&gt;
+<br />
+&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">reference</span>'&#160;<span class="attribute">content</span>='<a href="ViewFrustrumExample.x3d" target="_blank">ViewFrustrumExample.x3d</a>'/&gt;
+<br />
+&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">drawing</span>'&#160;<span class="attribute">content</span>='<a href="ViewFrustrumComputation.png" target="_blank">ViewFrustrumComputation.png</a>'/&gt;
+<br />
+&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">image</span>'&#160;<span class="attribute">content</span>='<a href="ViewFrustrumOverheadView.png" target="_blank">ViewFrustrumOverheadView.png</a>'/&gt;
+<br />
+&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">image</span>'&#160;<span class="attribute">content</span>='<a href="ViewFrustrumObliqueView.png" target="_blank">ViewFrustrumObliqueView.png</a>'/&gt;
+<br />
+&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">subject</span>'&#160;<span class="attribute">content</span>='<span class="value">view culling frustrum</span>'/&gt;
+<br />
+&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">identifier</span>'&#160;<span class="attribute">content</span>='
+<a href="http://X3dGraphics.com/examples/X3dForWebAuthors/Chapter14-Prototypes/ViewFrustrumPrototype.x3d">http://X3dGraphics.com/examples/X3dForWebAuthors/Chapter14-Prototypes/ViewFrustrumPrototype.x3d</a> '/&gt;
+<br />
+&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">generator</span>'&#160;<span class="attribute">content</span>='<span class="value">X3D-Edit, </span>
+            <a href="https://savage.nps.edu/X3D-Edit" target="_blank">https://savage.nps.edu/X3D-Edit</a>'/&gt;
+<br />
+&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">license</span>'&#160;<span class="attribute">content</span>='<a href="../license.html" target="_blank">../license.html</a>'/&gt;
+</div>&lt;/<span class="element">head</span>&gt;
+<br />
+&lt;!--
+<div class="center">
+            <hr width="100%"/>
+            <i>Index for ProtoDeclare definition</i>: 
+<a href="#ProtoDeclare_ViewFrustrum" class="prototype">ViewFrustrum</a>
+<br />
+<i>Index for DEF nodes</i>: 
+<a href="#FrustrumAppearance" class="idName">FrustrumAppearance</a>,
+<a href="#FrustrumCoordinate" class="idName">FrustrumCoordinate</a>,
+<a href="#FrustrumExtrusion" class="idName">FrustrumExtrusion</a>,
+<a href="#FrustrumLines" class="idName">FrustrumLines</a>,
+<a href="#GeometryComputationScript" class="idName">GeometryComputationScript</a>,
+<a href="#OrientationTransform" class="idName">OrientationTransform</a>,
+<a href="#PositionTransform" class="idName">PositionTransform</a>
+            <hr width="100%"/>
+         </div>
+--&gt;
+<br />
+&lt;<span class="element">Scene</span>&gt;
+<div class="indent">
+            <a name="ProtoDeclare_ViewFrustrum"> </a> 
+&lt;<span class="prototype">ProtoDeclare</span>&#160;<span class="attribute">name</span>='<span class="prototype">ViewFrustrum</span>'&#160;<span class="attribute">appinfo</span>='<span class="value">Display view frustrum associated with a given pair of Viewpoint NavigationInfo nodes</span>'&gt;
+<div class="indent">
+&lt;<span class="prototype">ProtoInterface</span>&gt;
+<div class="indent">
+                  <a name="ViewFrustrumProtoField_ViewpointNode"> </a> 
+&lt;<span class="prototype">field</span>&#160;<span class="attribute">name</span>='<span class="prototype">ViewpointNode</span>'&#160;<span class="attribute">type</span>='<span class="value">SFNode</span>'&#160;<span class="attribute">accessType</span>='<span class="value">initializeOnly</span>'&gt;
+<div class="indent">&lt;!-- NULL node --&gt;
+</div>&lt;/<span class="prototype">field</span>&gt;
+<br /><a name="ViewFrustrumProtoField_NavigationInfoNode"> </a> 
+&lt;<span class="prototype">field</span>&#160;<span class="attribute">name</span>='<span class="prototype">NavigationInfoNode</span>'&#160;<span class="attribute">type</span>='<span class="value">SFNode</span>'&#160;<span class="attribute">accessType</span>='<span class="value">initializeOnly</span>'&gt;
+<div class="indent">&lt;!-- NULL node --&gt;
+</div>&lt;/<span class="prototype">field</span>&gt;
+<br /><a name="ViewFrustrumProtoField_lineColor"> </a> 
+&lt;<span class="prototype">field</span>&#160;<span class="attribute">name</span>='<span class="prototype">lineColor</span>'&#160;<span class="attribute">type</span>='<span class="value">SFColor</span>'&#160;<span class="attribute">value</span>='<span class="value">0.9 0.9 0.9</span>'&#160;<span class="attribute">accessType</span>='<span class="value">inputOutput</span>'/&gt;
+<br /><a name="ViewFrustrumProtoField_frustrumColor"> </a> 
+&lt;<span class="prototype">field</span>&#160;<span class="attribute">name</span>='<span class="prototype">frustrumColor</span>'&#160;<span class="attribute">type</span>='<span class="value">SFColor</span>'&#160;<span class="attribute">value</span>='<span class="value">0.8 0.8 0.8</span>'&#160;<span class="attribute">accessType</span>='<span class="value">inputOutput</span>'/&gt;
+<br /><a name="ViewFrustrumProtoField_transparency"> </a> 
+&lt;<span class="prototype">field</span>&#160;<span class="attribute">name</span>='<span class="prototype">transparency</span>'&#160;<span class="attribute">type</span>='<span class="value">SFFloat</span>'&#160;<span class="attribute">value</span>='<span class="value">0.5</span>'&#160;<span class="attribute">accessType</span>='<span class="value">inputOutput</span>'/&gt;
+<br /><a name="ViewFrustrumProtoField_aspectRatio"> </a> 
+&lt;<span class="prototype">field</span>&#160;<span class="attribute">name</span>='<span class="prototype">aspectRatio</span>'&#160;<span class="attribute">type</span>='<span class="value">SFFloat</span>'&#160;<span class="attribute">value</span>='<span class="value">0.75</span>'&#160;<span class="attribute">accessType</span>='<span class="value">inputOutput</span>'
+<br />
+&#160;<span class="gray">appinfo</span>='<span class="gray">assumed ratio height/width</span>'/&gt;
+<br /><a name="ViewFrustrumProtoField_trace"> </a> 
+&lt;<span class="prototype">field</span>&#160;<span class="attribute">name</span>='<span class="prototype">trace</span>'&#160;<span class="attribute">type</span>='<span class="value">SFBool</span>'&#160;<span class="attribute">value</span>='<span class="value">true</span>'&#160;<span class="attribute">accessType</span>='<span class="value">initializeOnly</span>'/&gt;
+</div>&lt;/<span class="prototype">ProtoInterface</span>&gt;
+<br />
+&lt;<span class="prototype">ProtoBody</span>&gt;
+<div class="indent">
+                  <a name="PositionTransform"> </a> 
+&lt;!-- <span class="idName">PositionTransform</span> <i>ROUTE</i>:&#160;
+[<a href="#ROUTE_0"><i>from</i>&#160;<span class="idName">GeometryComputationScript</span>.<span class="attribute">position_changed</span>&#160;<i>to</i>&#160;<span class="attribute">translation</span>
+                  </a>]
+ --&gt;<br />
+&lt;<span class="element">Transform</span>&#160;<span class="attribute">DEF</span>='<span class="idName">PositionTransform</span>'&#160;<span class="attribute">rotation</span>='<span class="value">0 1 0 3.14159</span>'&gt;
+<div class="indent">
+                     <a name="OrientationTransform"> </a> 
+&lt;!-- <span class="idName">OrientationTransform</span> <i>ROUTE</i>:&#160;
+[<a href="#ROUTE_1"><i>from</i>&#160;<span class="idName">GeometryComputationScript</span>.<span class="attribute">orientation_changed</span>&#160;<i>to</i>&#160;<span class="attribute">rotation</span>
+                     </a>]
+ --&gt;<br />
+&lt;<span class="element">Transform</span>&#160;<span class="attribute">DEF</span>='<span class="idName">OrientationTransform</span>'&gt;
+<div class="indent">
+&lt;<span class="element">Shape</span>&gt;
+<div class="indent">
+                           <a name="FrustrumLines"> </a> 
+&lt;<span class="element">IndexedLineSet</span>&#160;<span class="attribute">DEF</span>='<span class="idName">FrustrumLines</span>'&#160;<span class="attribute">coordIndex</span>='<span class="value">0 1 2 3 0 -1 4 5 6 7 4 -1 0 4 -1 1 5 -1 2 6 -1 3 7 -1</span>'&gt;
+<div class="indent">
+                              <a name="FrustrumCoordinate"> </a> 
+&lt;!-- <span class="idName">FrustrumCoordinate</span> <i>ROUTE</i>:&#160;
+[<a href="#ROUTE_4"><i>from</i>&#160;<span class="idName">GeometryComputationScript</span>.<span class="attribute">point_changed</span>&#160;<i>to</i>&#160;<span class="attribute">point</span>
+                              </a>]
+ --&gt;<br />
+&lt;<span class="element">Coordinate</span>&#160;<span class="attribute">DEF</span>='<span class="idName">FrustrumCoordinate</span>'&#160;<span class="attribute">point</span>='<span class="value">0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</span>'/&gt;
+</div>&lt;/<span class="element">IndexedLineSet</span>&gt;
+<br />
+&lt;<span class="element">Appearance</span>&gt;
+<div class="indent">
+&lt;<span class="element">Material</span>&gt;
+<div class="indent">
+&lt;<span class="element">IS</span>&gt;
+<div class="indent">
+&lt;<span class="element">connect</span>&#160;<span class="attribute">nodeField</span>='<span class="prototype">emissiveColor</span>'&#160;<span class="attribute">protoField</span>='<span class="prototype"><a href="#ViewFrustrumProtoField_lineColor" class="prototype">lineColor</a></span>'/&gt;
+</div>&lt;/<span class="element">IS</span>&gt;
+</div>&lt;/<span class="element">Material</span>&gt;
+</div>&lt;/<span class="element">Appearance</span>&gt;
+</div>&lt;/<span class="element">Shape</span>&gt;
+<br />
+&lt;<span class="element">Shape</span>&gt;
+<div class="indent">
+                           <a name="FrustrumExtrusion"> </a> 
+&lt;!-- <span class="idName">FrustrumExtrusion</span> <i>ROUTEs</i>:&#160;
+[<a href="#ROUTE_2"><i>from</i>&#160;<span class="idName">GeometryComputationScript</span>.<span class="attribute">spine_changed</span>&#160;<i>to</i>&#160;<span class="attribute">set_spine</span>
+                           </a>]
+[<a href="#ROUTE_3"><i>from</i>&#160;<span class="idName">GeometryComputationScript</span>.<span class="attribute">scale_changed</span>&#160;<i>to</i>&#160;<span class="attribute">set_scale</span>
+                           </a>]
+ --&gt;<br />
+&lt;<span class="element">Extrusion</span>&#160;<span class="attribute">DEF</span>='<span class="idName">FrustrumExtrusion</span>'/&gt;
+<br /><a name="FrustrumAppearance"> </a> 
+&lt;<span class="element">Appearance</span>&#160;<span class="attribute">DEF</span>='<span class="idName">FrustrumAppearance</span>'&gt;
+<div class="indent">
+&lt;<span class="element">Material</span>&gt;
+<div class="indent">
+&lt;<span class="element">IS</span>&gt;
+<div class="indent">
+&lt;<span class="element">connect</span>&#160;<span class="attribute">nodeField</span>='<span class="prototype">diffuseColor</span>'&#160;<span class="attribute">protoField</span>='<span class="prototype"><a href="#ViewFrustrumProtoField_frustrumColor" class="prototype">frustrumColor</a></span>'/&gt;
+<br />
+&lt;<span class="element">connect</span>&#160;<span class="attribute">nodeField</span>='<span class="prototype">transparency</span>'&#160;<span class="attribute">protoField</span>='<span class="prototype"><a href="#ViewFrustrumProtoField_transparency" class="prototype">transparency</a></span>'/&gt;
+</div>&lt;/<span class="element">IS</span>&gt;
+</div>&lt;/<span class="element">Material</span>&gt;
+</div>&lt;/<span class="element">Appearance</span>&gt;
+</div>&lt;/<span class="element">Shape</span>&gt;
+<br />
+&lt;<span class="element">Shape</span>&gt;
+<div class="indent">
+&lt;<span class="element">Sphere</span>&#160;<span class="attribute">radius</span>='<span class="value">0.25</span>'/&gt;
+<br />
+&lt;<span class="element">Appearance</span>&#160;<span class="attribute">USE</span>='<a href="#FrustrumAppearance" class="idName">FrustrumAppearance</a>'/&gt;
+</div>&lt;/<span class="element">Shape</span>&gt;
+</div>&lt;/<span class="element">Transform</span>&gt;
+</div>&lt;/<span class="element">Transform</span>&gt;
+<br /><a name="GeometryComputationScript"> </a> 
+&lt;!-- <span class="idName">GeometryComputationScript</span> <i>ROUTEs</i>:&#160;
+[<a href="#ROUTE_0"><i>from</i>&#160;<span class="attribute">position_changed</span>&#160;<i>to</i>&#160;<span class="idName">PositionTransform</span>.<span class="attribute">translation</span>
+                  </a>]
+[<a href="#ROUTE_1"><i>from</i>&#160;<span class="attribute">orientation_changed</span>&#160;<i>to</i>&#160;<span class="idName">OrientationTransform</span>.<span class="attribute">rotation</span>
+                  </a>]
+[<a href="#ROUTE_2"><i>from</i>&#160;<span class="attribute">spine_changed</span>&#160;<i>to</i>&#160;<span class="idName">FrustrumExtrusion</span>.<span class="attribute">set_spine</span>
+                  </a>]
+[<a href="#ROUTE_3"><i>from</i>&#160;<span class="attribute">scale_changed</span>&#160;<i>to</i>&#160;<span class="idName">FrustrumExtrusion</span>.<span class="attribute">set_scale</span>
+                  </a>]
+[<a href="#ROUTE_4"><i>from</i>&#160;<span class="attribute">point_changed</span>&#160;<i>to</i>&#160;<span class="idName">FrustrumCoordinate</span>.<span class="attribute">point</span>
+                  </a>]
+ --&gt;<br />
+&lt;<span class="element">Script</span>&#160;<span class="attribute">DEF</span>='<span class="idName">GeometryComputationScript</span>'&#160;<span class="attribute">directOutput</span>='<span class="value">true</span>'
+<br />
+&#160;&#160;<span class="attribute">url</span>='
+"<a href="ViewFrustrumScript.js">ViewFrustrumScript.js</a>"
+"<a href="http://X3dGraphics.com/examples/X3dForWebAuthors/Chapter14-Prototypes/ViewFrustrumScript.js">http://X3dGraphics.com/examples/X3dForWebAuthors/Chapter14-Prototypes/ViewFrustrumScript.js</a>"
+'&gt;
+<div class="indent">
+&lt;<span class="prototype">field</span>&#160;<span class="attribute">name</span>='<span class="prototype">ViewpointNode</span>'&#160;<span class="attribute">type</span>='<span class="value">SFNode</span>'&#160;<span class="attribute">accessType</span>='<span class="value">initializeOnly</span>'/&gt;
+<br />
+&lt;<span class="prototype">field</span>&#160;<span class="attribute">name</span>='<span class="prototype">NavigationInfoNode</span>'&#160;<span class="attribute">type</span>='<span class="value">SFNode</span>'&#160;<span class="attribute">accessType</span>='<span class="value">initializeOnly</span>'/&gt;
+<br />
+&lt;<span class="prototype">field</span>&#160;<span class="attribute">name</span>='<span class="prototype">FrustrumCoordinate</span>'&#160;<span class="attribute">type</span>='<span class="value">SFNode</span>'&#160;<span class="attribute">accessType</span>='<span class="value">initializeOnly</span>'&gt;
+<div class="indent">
+&lt;<span class="element">Coordinate</span>&#160;<span class="attribute">USE</span>='<a href="#FrustrumCoordinate" class="idName">FrustrumCoordinate</a>'/&gt;
+</div>&lt;/<span class="prototype">field</span>&gt;
+<br />
+&lt;<span class="prototype">field</span>&#160;<span class="attribute">name</span>='<span class="prototype">FrustrumExtrusion</span>'&#160;<span class="attribute">type</span>='<span class="value">SFNode</span>'&#160;<span class="attribute">accessType</span>='<span class="value">initializeOnly</span>'&gt;
+<div class="indent">
+&lt;<span class="element">Extrusion</span>&#160;<span class="attribute">USE</span>='<a href="#FrustrumExtrusion" class="idName">FrustrumExtrusion</a>'/&gt;
+</div>&lt;/<span class="prototype">field</span>&gt;
+<br />
+&lt;<span class="prototype">field</span>&#160;<span class="attribute">name</span>='<span class="prototype">recompute</span>'&#160;<span class="attribute">type</span>='<span class="value">SFBool</span>'&#160;<span class="attribute">accessType</span>='<span class="value">inputOnly</span>'/&gt;
+<br />
+&lt;<span class="prototype">field</span>&#160;<span class="attribute">name</span>='<span class="prototype">aspectRatio</span>'&#160;<span class="attribute">type</span>='<span class="value">SFFloat</span>'&#160;<span class="attribute">accessType</span>='<span class="value">inputOutput</span>'
+<br />
+&#160;<span class="gray">appinfo</span>='<span class="gray">assumed ratio height/width</span>'/&gt;
+<br />
+&lt;<span class="prototype">field</span>&#160;<span class="attribute">name</span>='<span class="prototype">position_changed</span>'&#160;<span class="attribute">type</span>='<span class="value">SFVec3f</span>'&#160;<span class="attribute">accessType</span>='<span class="value">outputOnly</span>'/&gt;
+<br />
+&lt;<span class="prototype">field</span>&#160;<span class="attribute">name</span>='<span class="prototype">orientation_changed</span>'&#160;<span class="attribute">type</span>='<span class="value">SFRotation</span>'&#160;<span class="attribute">accessType</span>='<span class="value">outputOnly</span>'/&gt;
+<br />
+&lt;<span class="prototype">field</span>&#160;<span class="attribute">name</span>='<span class="prototype">spine_changed</span>'&#160;<span class="attribute">type</span>='<span class="value">MFVec3f</span>'&#160;<span class="attribute">accessType</span>='<span class="value">outputOnly</span>'/&gt;
+<br />
+&lt;<span class="prototype">field</span>&#160;<span class="attribute">name</span>='<span class="prototype">scale_changed</span>'&#160;<span class="attribute">type</span>='<span class="value">MFVec2f</span>'&#160;<span class="attribute">accessType</span>='<span class="value">outputOnly</span>'/&gt;
+<br />
+&lt;<span class="prototype">field</span>&#160;<span class="attribute">name</span>='<span class="prototype">point_changed</span>'&#160;<span class="attribute">type</span>='<span class="value">MFVec3f</span>'&#160;<span class="attribute">accessType</span>='<span class="value">outputOnly</span>'/&gt;
+<br />
+&lt;<span class="prototype">field</span>&#160;<span class="attribute">name</span>='<span class="prototype">trace</span>'&#160;<span class="attribute">type</span>='<span class="value">SFBool</span>'&#160;<span class="attribute">accessType</span>='<span class="value">initializeOnly</span>'/&gt;
+<br />
+&lt;<span class="element">IS</span>&gt;
+<div class="indent">
+&lt;<span class="element">connect</span>&#160;<span class="attribute">nodeField</span>='<span class="prototype">ViewpointNode</span>'&#160;<span class="attribute">protoField</span>='<span class="prototype"><a href="#ViewFrustrumProtoField_ViewpointNode" class="prototype">ViewpointNode</a></span>'/&gt;
+<br />
+&lt;<span class="element">connect</span>&#160;<span class="attribute">nodeField</span>='<span class="prototype">NavigationInfoNode</span>'&#160;<span class="attribute">protoField</span>='<span class="prototype"><a href="#ViewFrustrumProtoField_NavigationInfoNode" class="prototype">NavigationInfoNode</a></span>'/&gt;
+<br />
+&lt;<span class="element">connect</span>&#160;<span class="attribute">nodeField</span>='<span class="prototype">aspectRatio</span>'&#160;<span class="attribute">protoField</span>='<span class="prototype"><a href="#ViewFrustrumProtoField_aspectRatio" class="prototype">aspectRatio</a></span>'/&gt;
+<br />
+&lt;<span class="element">connect</span>&#160;<span class="attribute">nodeField</span>='<span class="prototype">trace</span>'&#160;<span class="attribute">protoField</span>='<span class="prototype"><a href="#ViewFrustrumProtoField_trace" class="prototype">trace</a></span>'/&gt;
+</div>&lt;/<span class="element">IS</span>&gt;
+</div>&lt;/<span class="element">Script</span>&gt;
+<br /><a name="ROUTE_0"> </a> 
+&lt;<span class="route">ROUTE</span>&#160;<span class="attribute">fromNode</span>='<a href="#GeometryComputationScript" class="idName">GeometryComputationScript</a>'&#160;<span class="attribute">fromField</span>='<span class="value">position_changed</span>'&#160;<span class="attribute">toNode</span>='<a href="#PositionTransform" class="idName">PositionTransform</a>'&#160;<span class="attribute">toField</span>='<span class="value">translation</span>'/&gt;
+<br /><a name="ROUTE_1"> </a> 
+&lt;<span class="route">ROUTE</span>&#160;<span class="attribute">fromNode</span>='<a href="#GeometryComputationScript" class="idName">GeometryComputationScript</a>'&#160;<span class="attribute">fromField</span>='<span class="value">orientation_changed</span>'&#160;<span class="attribute">toNode</span>='<a href="#OrientationTransform" class="idName">OrientationTransform</a>'&#160;<span class="attribute">toField</span>='<span class="value">rotation</span>'/&gt;
+<br /><a name="ROUTE_2"> </a> 
+&lt;<span class="route">ROUTE</span>&#160;<span class="attribute">fromNode</span>='<a href="#GeometryComputationScript" class="idName">GeometryComputationScript</a>'&#160;<span class="attribute">fromField</span>='<span class="value">spine_changed</span>'&#160;<span class="attribute">toNode</span>='<a href="#FrustrumExtrusion" class="idName">FrustrumExtrusion</a>'&#160;<span class="attribute">toField</span>='<span class="value">set_spine</span>'/&gt;
+<br /><a name="ROUTE_3"> </a> 
+&lt;<span class="route">ROUTE</span>&#160;<span class="attribute">fromNode</span>='<a href="#GeometryComputationScript" class="idName">GeometryComputationScript</a>'&#160;<span class="attribute">fromField</span>='<span class="value">scale_changed</span>'&#160;<span class="attribute">toNode</span>='<a href="#FrustrumExtrusion" class="idName">FrustrumExtrusion</a>'&#160;<span class="attribute">toField</span>='<span class="value">set_scale</span>'/&gt;
+<br /><a name="ROUTE_4"> </a> 
+&lt;<span class="route">ROUTE</span>&#160;<span class="attribute">fromNode</span>='<a href="#GeometryComputationScript" class="idName">GeometryComputationScript</a>'&#160;<span class="attribute">fromField</span>='<span class="value">point_changed</span>'&#160;<span class="attribute">toNode</span>='<a href="#FrustrumCoordinate" class="idName">FrustrumCoordinate</a>'&#160;<span class="attribute">toField</span>='<span class="value">point</span>'/&gt;
+</div>&lt;/<span class="prototype">ProtoBody</span>&gt;
+</div>&lt;/<span class="prototype">ProtoDeclare</span>&gt;
+<br />&lt;!-- Example use is in separate scene --&gt;
+<br />
+&lt;<span class="element">Anchor</span>&#160;<span class="attribute">description</span>='<span class="value">ViewFrustrumExample</span>'&#160;<span class="attribute">parameter</span>='<span class="value">target=_blank</span>'
+<br />
+&#160;&#160;<span class="attribute">url</span>='
+"<a href="ViewFrustrumExample.x3d">ViewFrustrumExample.x3d</a>"
+"<a href="http://X3dGraphics.com/examples/X3dForWebAuthors/Chapter14-Prototypes/ViewFrustrumExamplet.x3d">http://X3dGraphics.com/examples/X3dForWebAuthors/Chapter14-Prototypes/ViewFrustrumExamplet.x3d</a>"
+'&gt;
+<div class="indent">
+&lt;<span class="element">Shape</span>&gt;
+<div class="indent">
+&lt;<span class="element">Appearance</span>&gt;
+<div class="indent">
+&lt;<span class="element">Material</span>&#160;<span class="attribute">diffuseColor</span>='<span class="value">0.8 0.4 0</span>'/&gt;
+</div>&lt;/<span class="element">Appearance</span>&gt;
+<br />
+&lt;<span class="element">Text</span>&#160;<span class="attribute">string</span>='<span class="value">"ViewFrustrumExample.x3d" "is a Prototype declaration file." "" "For an example scene using this node," "click this text and view" "ViewFrustrumExample.x3d"</span>'&#160;<span class="attribute">solid</span>='<span class="value">true</span>'&gt;
+<div class="indent">
+&lt;<span class="element">FontStyle</span>&#160;<span class="attribute">justify</span>='<span class="value">"MIDDLE" "MIDDLE"</span>'&#160;<span class="attribute">size</span>='<span class="value">0.8</span>'/&gt;
+</div>&lt;/<span class="element">Text</span>&gt;
+</div>&lt;/<span class="element">Shape</span>&gt;
+</div>&lt;/<span class="element">Anchor</span>&gt;
+</div>&lt;/<span class="element">Scene</span>&gt;
+</div>&lt;/<span class="element">X3D</span>&gt;
+<br />
+&lt;!--
+<div class="center">
+         <hr width="100%"/>
+         <i>Index for ProtoDeclare definition</i>: 
+<a href="#ProtoDeclare_ViewFrustrum" class="prototype">ViewFrustrum</a>
+<br />
+<i>Index for DEF nodes</i>: 
+<a href="#FrustrumAppearance" class="idName">FrustrumAppearance</a>,
+<a href="#FrustrumCoordinate" class="idName">FrustrumCoordinate</a>,
+<a href="#FrustrumExtrusion" class="idName">FrustrumExtrusion</a>,
+<a href="#FrustrumLines" class="idName">FrustrumLines</a>,
+<a href="#GeometryComputationScript" class="idName">GeometryComputationScript</a>,
+<a href="#OrientationTransform" class="idName">OrientationTransform</a>,
+<a href="#PositionTransform" class="idName">PositionTransform</a>
+         <hr width="100%"/>
+      </div>
+--&gt;
+<p>
+&lt;!-- Tag color codes (X3D, XML terminology):
+&lt;<span class="element">Node</span>
+         <span class="idName"> DEF</span>='<span class="idName">idName</span>' <span class="attribute">field</span>='<span class="value">value</span>'/&gt; &lt;<span class="element">Element</span>
+         <span class="idName"> DEF</span>='<span class="idName">idName</span>' <span class="attribute">attribute</span>='<span class="value">value</span>'/&gt; 
+&lt;<span class="prototype">Prototype</span> 
+         <span class="attribute">name</span>='<span class="prototype">ProtoName</span>'&gt;
+	&lt;<span class="prototype">field</span>
+         <span class="attribute">name</span>='<span class="prototype">fieldName</span>'/&gt; &lt;/<span class="prototype">Prototype</span>&gt; --&gt;
+</p>
+   </body>
+</html>

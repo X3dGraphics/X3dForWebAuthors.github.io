@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE X3D PUBLIC "ISO//Web3D//DTD X3D 3.1//EN" "http://www.web3d.org/specifications/x3d-3.1.dtd">
+<X3D profile='Immersive' version='3.1' xmlns:xsd='http://www.w3.org/2001/XMLSchema-instance' xsd:noNamespaceSchemaLocation='http://www.web3d.org/specifications/x3d-3.1.xsd'>
+  <head>
+    <meta content='BooleanSequencerIntegerSequencer.x3d' name='title'/>
+    <meta content='Show synchronized use of BooleanSequencer and IntegerSequencer nodes' name='description'/>
+    <meta content='Don Brutzman' name='creator'/>
+    <meta content='6 September 2006' name='created'/>
+    <meta content='24 February 2008' name='modified'/>
+    <meta content='http://x3dGraphics.com/examples/X3dForWebAuthors/Chapter09-EventUtilitiesScripting/BooleanSequencerIntegerSequencer.x3d' name='identifier'/>
+    <meta content='X3D-Edit, https://savage.nps.edu/X3D-Edit' name='generator'/>
+    <meta content='../../license.html' name='license'/>
+  </head>
+  <Scene>
+    <TimeSensor DEF='Clock' cycleInterval='5' loop='true'/>
+    <BooleanSequencer DEF='OnOffSequencer' key='0 0.2 0.4 0.6 0.8 1' keyValue='true false true false true true'/>
+    <SpotLight DEF='SpecialSpotLight' color='1 0.0 0.0' location='0 0 10'/>
+    <ROUTE fromField='fraction_changed' fromNode='Clock' toField='set_fraction' toNode='OnOffSequencer'/>
+    <ROUTE fromField='value_changed' fromNode='OnOffSequencer' toField='on' toNode='SpecialSpotLight'/>
+    <IntegerSequencer DEF='ChildSequencer' key='0 0.2 0.4 0.6 0.8 1' keyValue='0 1 2 3 -1 0'/>
+    <Transform translation='-1.75 0.5 0'>
+      <Switch DEF='ShapeSwitcher'>
+        <ROUTE fromField='fraction_changed' fromNode='Clock' toField='set_fraction' toNode='ChildSequencer'/>
+        <ROUTE fromField='value_changed' fromNode='ChildSequencer' toField='whichChoice' toNode='ShapeSwitcher'/>
+        <Shape DEF='Child0'>
+          <Text string='Child 0 lit'/>
+          <Appearance DEF='GreyAppearance'>
+            <Material diffuseColor='0.7 0.7 0.7'/>
+          </Appearance>
+        </Shape>
+        <Shape DEF='Child1'>
+          <Text string='Child 1 unlit'/>
+          <Appearance USE='GreyAppearance'/>
+        </Shape>
+        <Shape DEF='Child2'>
+          <Text string='Child 2 lit'/>
+          <Appearance USE='GreyAppearance'/>
+        </Shape>
+        <Shape DEF='Child3'>
+          <Text string='Child 3 unlit'/>
+          <Appearance USE='GreyAppearance'/>
+        </Shape>
+      </Switch>
+    </Transform>
+  </Scene>
+</X3D>

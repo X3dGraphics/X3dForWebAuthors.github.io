@@ -1,0 +1,1 @@
+<PixelTexture DEF='ZeroComponents' image='0 0 0'/> has empty or default image array values [/X3D/Scene/Transform[1]/Shape/Appearance/PixelTexture, warning]

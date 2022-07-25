@@ -1,0 +1,207 @@
+{ "X3D": {
+    "encoding":"UTF-8",
+    "@profile":"Immersive",
+    "@version":"3.3",
+    "@xsd:noNamespaceSchemaLocation":"https://www.web3d.org/specifications/x3d-3.3.xsd",
+    "JSON schema":"https://www.web3d.org/specifications/x3d-3.3-JSONSchema.json",
+    "head": {
+        "meta": [
+          {
+            "@name":"title",
+            "@content":"HalfMoonGroup.x3d"
+          },
+          {
+            "@name":"description",
+            "@content":"This is a group of HalfMoon fish implemented as ProtoInstances."
+          },
+          {
+            "@name":"creator",
+            "@content":"Ildeniz Duman"
+          },
+          {
+            "@name":"translator",
+            "@content":"Scott Tufts"
+          },
+          {
+            "@name":"created",
+            "@content":"1 June 1998"
+          },
+          {
+            "@name":"modified",
+            "@content":"20 October 2019"
+          },
+          {
+            "@name":"identifier",
+            "@content":"https://x3dgraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/HalfMoonGroup.x3d"
+          },
+          {
+            "@name":"generator",
+            "@content":"X3D-Edit 3.3, https://savage.nps.edu/X3D-Edit"
+          },
+          {
+            "@name":"license",
+            "@content":"../license.html"
+          },
+          {
+            "@name":"translated",
+            "@content":"18 January 2022"
+          },
+          {
+            "@name":"generator",
+            "@content":"X3dToJson.xslt, https://www.web3d.org/x3d/stylesheets/X3dToJson.html"
+          },
+          {
+            "@name":"reference",
+            "@content":"X3D JSON encoding: https://www.web3d.org/wiki/index.php/X3D_JSON_Encoding"
+          }
+        ]
+    },
+    "Scene": {
+        "-children":[
+          { "WorldInfo":
+            {
+              "@title":"HalfMoonGroup.x3d"
+            }
+          },
+          { "ExternProtoDeclare":
+            {
+              "@name":"HalfMoon",
+              "@url":["HalfMoonPrototype.x3d#HalfMoon","https://x3dgraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/HalfMoonPrototype.x3d#HalfMoon","HalfMoonPrototype.wrl#HalfMoon","https://x3dgraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/HalfMoonPrototype.wrl#HalfMoon"],
+              "field": [
+                {
+                  "@name":"skinTextureUrl",
+                  "@accessType":"inputOutput",
+                  "@type":"MFString"
+                },
+                {
+                  "@name":"fishScale",
+                  "@accessType":"inputOutput",
+                  "@type":"SFVec3f"
+                },
+                {
+                  "@name":"fishColor",
+                  "@accessType":"inputOutput",
+                  "@type":"SFColor"
+                }
+              ]
+            }
+          },
+          { "Viewpoint":
+            {
+              "@description":"HalfMoon Group",
+              "@orientation":[0,1,0,1.57],
+              "@position":[20,0,0]
+            }
+          },
+          { "Transform":
+            {
+              "@translation":[14,1,0],
+              "-children":[
+                { "ProtoInstance":
+                  {
+                    "@name":"HalfMoon",
+                    "fieldValue": [
+                      {
+                        "@name":"fishColor",
+                        "@value":[1,0,0]
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          { "Transform":
+            {
+              "@translation":[14.5,0,0],
+              "-children":[
+                { "ProtoInstance":
+                  {
+                    "@name":"HalfMoon",
+                    "fieldValue": [
+                      {
+                        "@name":"fishColor",
+                        "@value":[1,1,0]
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          { "Transform":
+            {
+              "@translation":[14,-1,0],
+              "-children":[
+                { "ProtoInstance":
+                  {
+                    "@name":"HalfMoon",
+                    "fieldValue": [
+                      {
+                        "@name":"fishColor",
+                        "@value":[1,1,0]
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          { "Transform":
+            {
+              "@translation":[13.5,0,0],
+              "-children":[
+                { "ProtoInstance":
+                  {
+                    "@name":"HalfMoon",
+                    "fieldValue": [
+                      {
+                        "@name":"fishColor",
+                        "@value":[1,1,0]
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          { "Transform":
+            {
+              "@translation":[15.5,0,0],
+              "-children":[
+                { "ProtoInstance":
+                  {
+                    "@name":"HalfMoon",
+                    "fieldValue": [
+                      {
+                        "@name":"fishColor",
+                        "@value":[1,1,0]
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          { "Transform":
+            {
+              "@translation":[12.5,0,0],
+              "-children":[
+                { "ProtoInstance":
+                  {
+                    "@name":"HalfMoon",
+                    "fieldValue": [
+                      {
+                        "@name":"fishColor",
+                        "@value":[1,1,0]
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+    }
+  }
+}

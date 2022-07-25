@@ -1,0 +1,1 @@
+<Anchor DEF=''/> is missing description which is important for accessibility and usability.  Example: description='Anchor link loads another scene...' or 'Anchor link goes to Viewpoint DEFname...' or 'Anchor link loads a Web page...'[/X3D/Scene/Transform[3]/Anchor, warning]

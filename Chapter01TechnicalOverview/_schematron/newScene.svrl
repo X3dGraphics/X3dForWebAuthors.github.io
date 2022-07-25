@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<svrl:schematron-output xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                        xmlns:schold="http://www.ascc.net/xml/schematron"
+                        xmlns:iso="http://purl.oclc.org/dsdl/schematron"
+                        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+                        xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
+                        title="X3D Graphics Validity Checks using Schematron"
+                        schemaVersion=""><!--   
+		   
+		   
+		 --><svrl:active-pattern document="file:/C:/x3d-code/www.web3d.org/x3d/content/examples/X3dForWebAuthors/Chapter01TechnicalOverview/newScene.x3d"/>
+   <svrl:fired-rule context="X3D | *[(upper-case(local-name()) = 'X3D')]"/>
+   <svrl:successful-report test="$profileLegal and not($profileMatch) and not(/X3D/head/component) and $coreProfile"
+                           role="info"
+                           location="/X3D">
+      <svrl:text>&lt;X3D profile='Immersive'&gt; is defined, but nodes in scene have actual profile='Core' </svrl:text>
+   </svrl:successful-report>
+   <svrl:fired-rule context="head | *[(lower-case(local-name()) = 'head')]"/>
+   <svrl:successful-report test="meta/@content[starts-with(.,'*enter')]" role="warning"
+                           location="/X3D/head">
+      <svrl:text>Update all meta tag(s) containing content='*enter new value...*'</svrl:text>
+   </svrl:successful-report>
+   <svrl:successful-report test="(meta/@name='identifier') and (string-length($title) &gt; 0) and not(contains($identifier, $title))"
+                           role="warning"
+                           location="/X3D/head">
+      <svrl:text>X3D/head/meta title (i.e. filename '*enter FileNameWithNoAbbreviations.x3d here*') is expected at end of identifier (url) value </svrl:text>
+   </svrl:successful-report>
+   <svrl:failed-assert test="(string-length($identifier)=0) or starts-with($identifier, 'http://') or starts-with($identifier, 'https://')"
+                       role="warning"
+                       location="/X3D/head">
+      <svrl:text>X3D/head/meta identifier (url) content should start with http:// or 'https:// </svrl:text>
+   </svrl:failed-assert>
+   <svrl:fired-rule context="meta | *[(lower-case(local-name()) = 'meta')]"/>
+   <svrl:fired-rule context="meta | *[(lower-case(local-name()) = 'meta')]"/>
+   <svrl:fired-rule context="meta | *[(lower-case(local-name()) = 'meta')]"/>
+   <svrl:fired-rule context="meta | *[(lower-case(local-name()) = 'meta')]"/>
+   <svrl:fired-rule context="meta | *[(lower-case(local-name()) = 'meta')]"/>
+   <svrl:fired-rule context="meta | *[(lower-case(local-name()) = 'meta')]"/>
+   <svrl:fired-rule context="meta | *[(lower-case(local-name()) = 'meta')]"/>
+   <svrl:fired-rule context="meta | *[(lower-case(local-name()) = 'meta')]"/>
+   <svrl:fired-rule context="meta | *[(lower-case(local-name()) = 'meta')]"/>
+   <svrl:fired-rule context="meta | *[(lower-case(local-name()) = 'meta')]"/>
+   <svrl:fired-rule context="meta | *[(lower-case(local-name()) = 'meta')]"/>
+   <svrl:fired-rule context="meta | *[(lower-case(local-name()) = 'meta')]"/>
+   <svrl:fired-rule context="meta | *[(lower-case(local-name()) = 'meta')]"/>
+   <svrl:fired-rule context="meta | *[(lower-case(local-name()) = 'meta')]"/>
+   <svrl:fired-rule context="meta | *[(lower-case(local-name()) = 'meta')]"/>
+   <svrl:fired-rule context="meta | *[(lower-case(local-name()) = 'meta')]"/>
+   <svrl:fired-rule context="meta | *[(lower-case(local-name()) = 'meta')]"/>
+   <svrl:fired-rule context="meta | *[(lower-case(local-name()) = 'meta')]"/>
+   <svrl:fired-rule context="meta[(@name='error') or (@name='warning') or (@name='hint') or (@name='info') or starts-with(@name,'TODO')]"/>
+   <svrl:successful-report test="true()" role="diagnostic" location="/X3D/head/meta[19]">
+      <svrl:text>&lt;meta name='warning' content='*insert any known warnings, bugs or errors here*'/&gt;</svrl:text>
+   </svrl:successful-report>
+   <svrl:fired-rule context="meta | *[(lower-case(local-name()) = 'meta')]"/>
+   <svrl:fired-rule context="meta | *[(lower-case(local-name()) = 'meta')]"/>
+   <svrl:fired-rule context="meta | *[(lower-case(local-name()) = 'meta')]"/>
+   <svrl:fired-rule context="Scene | *[(lower-case(local-name()) = 'scene')]"/>
+   <svrl:failed-assert test="boolean($legalNodeTest1) or boolean($legalNodeTest2) or boolean($legalNodeTest3) or boolean($legalNodeTest4)"
+                       role="error"
+                       location="/X3D/Scene">
+      <svrl:text>&lt;Scene DEF=''/&gt; Root nodes of Scene can only be legal children of Grouping nodes, or LayerSet </svrl:text>
+   </svrl:failed-assert>
+</svrl:schematron-output>

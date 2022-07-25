@@ -1,0 +1,132 @@
+@prefix :        <https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter15Metadata/WorldInfoExampleMetadataSetX3D4.ttl#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema:  <http://schema.org/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix x3d:     <https://www.web3d.org/specifications/x3d-4.0.xsd#> .
+@prefix x3do:    <https://www.web3d.org/specifications/X3dOntology4.0#> .
+
+:X3D a owl:NamedIndividual, x3do:X3D ;
+  x3do:hasHead :head ;
+  x3do:hasScene :Scene ;
+  x3do:profile 'Interchange' ;
+  x3do:version '4.0' ;
+  x3do:noNamespaceSchemaLocation 'https://www.web3d.org/specifications/x3d-4.0.xsd' .
+:head a owl:NamedIndividual, x3do:head ;
+  x3do:hasParent :X3D ;
+  x3do:hasMeta :meta_1_1, :meta_1_2, :meta_1_3, :meta_1_4, :meta_1_5, :meta_1_6, :meta_1_7, :meta_1_8, :meta_1_9, :meta_1_10, :meta_1_11 .
+:meta_1_1 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'WorldInfoExampleMetadataSetX3D4.x3d' ;
+  x3do:name 'title' .
+:meta_1_2 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Test target for python x3d package development. Can x3d.py package generate this valid X3D file? This scene contains MetadataSet with a non-null metadata field.' ;
+  x3do:name 'description' .
+:meta_1_3 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Metadata nodes are not allowed at top level of scene in X3D3, but one is allowed as field within WorldInfo' ;
+  x3do:name 'warning' .
+:meta_1_4 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'WorldInfoExampleMetadataSetX3D3.x3d' ;
+  x3do:name 'reference' .
+:meta_1_5 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Original name MetadataSetWithMetadata.x3d' ;
+  x3do:name 'info' .
+:meta_1_6 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Vincent Marchetti' ;
+  x3do:name 'creator' .
+:meta_1_7 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Don Brutzman' ;
+  x3do:name 'creator' .
+:meta_1_8 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '16 November 2021' ;
+  x3do:name 'created' .
+:meta_1_9 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '2 February 2022' ;
+  x3do:name 'revised' .
+:meta_1_10 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter15Metadata/WorldInfoExampleMetadataSetX3D4.x3d' ;
+  x3do:name 'identifier' .
+:meta_1_11 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://creativecommons.org/licenses/by/4.0' ;
+  x3do:name 'license' .
+:meta dcterms:title "WorldInfoExampleMetadataSetX3D4.x3d" .
+:meta dcterms:description "Test target for python x3d package development. Can x3d.py package generate this valid X3D file? This scene contains MetadataSet with a non-null metadata field." .
+:meta dcterms:warning "Metadata nodes are not allowed at top level of scene in X3D3, but one is allowed as field within WorldInfo" .
+:meta dcterms:reference "WorldInfoExampleMetadataSetX3D3.x3d" .
+:meta dcterms:creator "Vincent Marchetti" .
+:meta dcterms:creator "Don Brutzman" .
+:meta dcterms:created "16 November 2021" .
+:meta dcterms:identifier "https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter15Metadata/WorldInfoExampleMetadataSetX3D4.x3d" .
+:meta dcterms:license "https://creativecommons.org/licenses/by/4.0" .
+:Scene a owl:NamedIndividual, x3do:Scene ;
+  x3do:hasParent :X3D ;
+  x3do:hasChildren :WorldInfo_2_1, :Background_2_2, :Viewpoint_2_3, :Anchor_2_4 .
+:WorldInfo_2_1 a owl:NamedIndividual, x3do:WorldInfo ;
+  x3do:hasParent :Scene ;
+  x3do:hasMetadata :MetadataSet_2_1_1 ;
+  x3do:title 'WorldInfoExampleMetadataSetX3D4.x3d Example Scene' .
+:MetadataSet_2_1_1 a owl:NamedIndividual, x3do:MetadataSet ;
+  x3do:hasParent :WorldInfo_2_1 ;
+  x3do:hasMetadata :MetadataString_2_1_1_1 ;
+  x3do:hasValue :MetadataInteger_2_1_1_2, :MetadataInteger_2_1_1_3, :MetadataInteger_2_1_1_4 ;
+  x3do:name 'birthday' ;
+  x3do:reference 'http://www.americaslibrary.gov/jb/colonial/jb_colonial_washingtn_2.html' .
+:MetadataString_2_1_1_1 a owl:NamedIndividual, x3do:MetadataString ;
+  x3do:hasParent :MetadataSet_2_1_1 ;
+  x3do:name 'calendar' ;
+  x3do:reference 'this node describes nature of parent node, and is not intended as a data value' ;
+  x3do:value '"Julian"' .
+:MetadataInteger_2_1_1_2 a owl:NamedIndividual, x3do:MetadataInteger ;
+  x3do:hasParent :MetadataSet_2_1_1 ;
+  x3do:name 'day' ;
+  x3do:value ( 11 ) .
+:MetadataInteger_2_1_1_3 a owl:NamedIndividual, x3do:MetadataInteger ;
+  x3do:hasParent :MetadataSet_2_1_1 ;
+  x3do:name 'month' ;
+  x3do:value ( 2 ) .
+:MetadataInteger_2_1_1_4 a owl:NamedIndividual, x3do:MetadataInteger ;
+  x3do:hasParent :MetadataSet_2_1_1 ;
+  x3do:name 'year' ;
+  x3do:value ( 1731 ) .
+:Background_2_2 a owl:NamedIndividual, x3do:Background ;
+  x3do:hasParent :Scene ;
+  x3do:skyColor ( 0 0.439216 0.760784 ) .
+:Viewpoint_2_3 a owl:NamedIndividual, x3do:Viewpoint ;
+  x3do:hasParent :Scene ;
+  x3do:description 'View scene source to see metadata examples' ;
+  x3do:position ( 0 0 12 ) .
+:Anchor_2_4 a owl:NamedIndividual, x3do:Anchor ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :Shape_2_4_1 ;
+  x3do:description 'Load scene index page' ;
+  x3do:parameter '"target=_blank"' ;
+  x3do:url '"WorldInfoExampleMetadataSetX3D4.html" "https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter15Metadata/WorldInfoExampleMetadataSetX3D4.html"' .
+:Shape_2_4_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Anchor_2_4 ;
+  x3do:hasGeometry :Text_2_4_1_1 ;
+  x3do:hasAppearance :Appearance_2_4_1_2 .
+:Text_2_4_1_1 a owl:NamedIndividual, x3do:Text ;
+  x3do:hasParent :Shape_2_4_1 ;
+  x3do:hasFontStyle :FontStyle_2_4_1_1_1 ;
+  x3do:string '"View scene source" "to see" "WorldInfoExampleMetadataSetX3D4"' .
+:FontStyle_2_4_1_1_1 a owl:NamedIndividual, x3do:FontStyle ;
+  x3do:hasParent :Text_2_4_1_1 ;
+  x3do:justify '"MIDDLE" "MIDDLE"' .
+:Appearance_2_4_1_2 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_4_1 ;
+  x3do:hasMaterial :Material_2_4_1_2_1 .
+:Material_2_4_1_2_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_4_1_2 ;
+  x3do:diffuseColor ( 1 0.039216 0.992157 ) .

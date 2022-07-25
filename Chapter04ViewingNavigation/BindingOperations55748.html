@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--Generated using XSLT processor: SAXON 8.7 from Saxonica--><html xmlns="http://www.w3.org/TR/xhtml1/strict" xmlns:saxon="http://icl.com/saxon">
+   <head>
+      <title>BindingOperations.x3d (X3dToXhtml)</title>
+      <style type="text/css">
+span.element {color: navy}
+span.attribute {color: green}
+span.value {color: teal}
+span.plain {color: black}
+span.gray  {color: gray}
+span.idName {color: maroon}
+a.idName {color: maroon}
+div.center {text-align: center}
+div.indent {margin-left: 25px}
+
+span.prototype {color: purple}
+a.prototype {color: purple, visited: black}
+span.route {color: red}
+b.warning {color: #CC5500}
+b.error {color: #CC0000}
+                </style>
+      <meta name="generator" content="http://www.web3d.org/x3d/content/X3dToXhtml.xslt"/>
+      <link rel="shortcut icon"
+            href="http://www.web3d.org/x3d/content/icons/X3DtextIcon16.png"
+            title="X3D"/>
+   </head>
+   <body>
+      <pre>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;!DOCTYPE X3D PUBLIC "ISO//Web3D//DTD X3D 3.1//EN"   "http://www.web3d.org/specifications/x3d-3.1.dtd"&gt;</pre>
+
+&lt;<span class="element">X3D</span>&#160;<span class="attribute">profile</span>='<span class="value">Immersive</span>'&#160;<span class="attribute">version</span>='<span class="value">3.1</span>'&#160;<span class="attribute">xmlns:xsd</span>='<a href="http://www.w3.org/2001/XMLSchema-instance" target="_blank">http://www.w3.org/2001/XMLSchema-instance</a>' <span class="attribute">xsd:noNamespaceSchemaLocation</span>='
+<a href="http://www.web3d.org/specifications/x3d-3.1.xsd">http://www.web3d.org/specifications/x3d-3.1.xsd</a> '&gt;
+<div class="indent">
+&lt;<span class="element">head</span>&gt;
+<div class="indent">
+&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">title</span>'&#160;<span class="attribute">content</span>='<a href="BindingOperations.x3d" target="_blank">BindingOperations.x3d</a>'/&gt;
+<br />
+&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">description</span>'&#160;<span class="attribute">content</span>='<span class="plain">Illustrate Viewpoint binding operations as described in Chapter 4 concepts. Display the browser console to see an event</span>'/&gt;
+<br />
+&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">creator</span>'&#160;<span class="attribute">content</span>='<span class="value">Don Brutzman</span>'/&gt;
+<br />
+&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">created</span>'&#160;<span class="attribute">content</span>='<span class="value">5 January 2008</span>'/&gt;
+<br />
+&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">modified</span>'&#160;<span class="attribute">content</span>='<span class="value">5 January 2008</span>'/&gt;
+<br />
+&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">reference</span>'&#160;<span class="attribute">content</span>='
+<a href="http://X3dGraphics.com">http://X3dGraphics.com</a> '/&gt;
+<br />
+&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">reference</span>'&#160;<span class="attribute">content</span>='
+<a href="http://www.web3d.org/x3d/content/examples/help.html">http://www.web3d.org/x3d/content/examples/help.html</a> '/&gt;
+<br />
+&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">rights</span>'&#160;<span class="attribute">content</span>='<span class="value">Copyright Don Brutzman and Leonard Daly 2007</span>'/&gt;
+<br />
+&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">subject</span>'&#160;<span class="attribute">content</span>='
+X3D book, X3D graphics, X3D-Edit, <a href="http://www.x3dGraphics.com">http://www.x3dGraphics.com</a> '/&gt;
+<br />
+&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">reference</span>'&#160;<span class="attribute">content</span>='<a href="BindingOperations.console.txt" target="_blank">BindingOperations.console.txt</a>'/&gt;
+<br />
+&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">identifier</span>'&#160;<span class="attribute">content</span>='
+<a href="http://X3dGraphics.com/examples/X3dForWebAuthors/Chapter04-ViewingNavigation/BindingOperations.x3d">http://X3dGraphics.com/examples/X3dForWebAuthors/Chapter04-ViewingNavigation/BindingOperations.x3d</a> '/&gt;
+<br />
+&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">generator</span>'&#160;<span class="attribute">content</span>='<span class="value">X3D-Edit, </span>
+            <a href="http://www.web3d.org/x3d/content/README.X3D-Edit.html" target="_blank">http://www.web3d.org/x3d/content/README.X3D-Edit.html</a>'/&gt;
+<br />
+&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">license</span>'&#160;<span class="attribute">content</span>='<a href="../../license.html" target="_blank">../../license.html</a>'/&gt;
+</div>&lt;/<span class="element">head</span>&gt;
+<br />
+&lt;!--
+<div class="center">
+            <hr width="100%"/>
+            <i>Index for DEF nodes</i>: 
+<a href="#BindingSequencerEngine" class="idName">BindingSequencerEngine</a>,
+<a href="#CenterJustify" class="idName">CenterJustify</a>,
+<a href="#ClickToAnimateView" class="idName">ClickToAnimateView</a>,
+<a href="#Clock" class="idName">Clock</a>,
+<a href="#Text1" class="idName">Text1</a>,
+<a href="#Text2" class="idName">Text2</a>,
+<a href="#Text3" class="idName">Text3</a>,
+<a href="#Text4" class="idName">Text4</a>,
+<a href="#TextTouchSensor" class="idName">TextTouchSensor</a>,
+<a href="#TimingSequencer" class="idName">TimingSequencer</a>,
+<a href="#View1" class="idName">View1</a>,
+<a href="#View2" class="idName">View2</a>,
+<a href="#View3" class="idName">View3</a>,
+<a href="#View4" class="idName">View4</a>
+<br />
+<i>Index for Viewpoint images</i>: 
+<a href="#View1" class="idName">View1</a>,
+<a href="#View2" class="idName">View2</a>,
+<a href="#View3" class="idName">View3</a>,
+<a href="#View4" class="idName">View4</a>,
+<a href="#ClickToAnimateView" class="idName">ClickToAnimateView</a>
+            <hr width="100%"/>
+         </div>
+--&gt;
+<br />
+&lt;<span class="element">Scene</span>&gt;
+<div class="indent">
+            <a name="View1"> </a> 
+&lt;!-- <span class="idName">View1</span> <i>ROUTEs</i>:&#160;
+[<a href="#ROUTE_3"><i>from</i>&#160;<span class="idName">BindingSequencerEngine</span>.<span class="attribute">bindView1</span>&#160;<i>to</i>&#160;<span class="attribute">set_bind</span>
+            </a>]
+[<a href="#ROUTE_8"><i>from</i>&#160;<span class="attribute">isBound</span>&#160;<i>to</i>&#160;<span class="idName">BindingSequencerEngine</span>.<span class="attribute">view1Bound</span>
+            </a>]
+ --&gt;<br />
+&lt;<span class="element">Viewpoint</span>&#160;<span class="attribute">DEF</span>='<span class="idName">View1</span>'&#160;<span class="attribute">centerOfRotation</span>='<span class="value">-5 0 0</span>'&#160;<a href="_viewpoints/BindingOperations.x3d.Viewpoint_1.png">description</a>='<span class="value">Viewpoint 1</span>'&#160;<span class="attribute">position</span>='<span class="value">-5 0 5</span>'/&gt;
+<br /><a name="View2"> </a> 
+&lt;!-- <span class="idName">View2</span> <i>ROUTEs</i>:&#160;
+[<a href="#ROUTE_4"><i>from</i>&#160;<span class="idName">BindingSequencerEngine</span>.<span class="attribute">bindView2</span>&#160;<i>to</i>&#160;<span class="attribute">set_bind</span>
+            </a>]
+[<a href="#ROUTE_9"><i>from</i>&#160;<span class="attribute">isBound</span>&#160;<i>to</i>&#160;<span class="idName">BindingSequencerEngine</span>.<span class="attribute">view2Bound</span>
+            </a>]
+ --&gt;<br />
+&lt;<span class="element">Viewpoint</span>&#160;<span class="attribute">DEF</span>='<span class="idName">View2</span>'&#160;<span class="attribute">centerOfRotation</span>='<span class="value">-2.5 0 0</span>'&#160;<a href="_viewpoints/BindingOperations.x3d.Viewpoint_2.png">description</a>='<span class="value">Viewpoint 2</span>'&#160;<span class="attribute">position</span>='<span class="value">-2.5 0 5</span>'/&gt;
+<br /><a name="View3"> </a> 
+&lt;!-- <span class="idName">View3</span> <i>ROUTEs</i>:&#160;
+[<a href="#ROUTE_5"><i>from</i>&#160;<span class="idName">BindingSequencerEngine</span>.<span class="attribute">bindView3</span>&#160;<i>to</i>&#160;<span class="attribute">set_bind</span>
+            </a>]
+[<a href="#ROUTE_10"><i>from</i>&#160;<span class="attribute">isBound</span>&#160;<i>to</i>&#160;<span class="idName">BindingSequencerEngine</span>.<span class="attribute">view3Bound</span>
+            </a>]
+ --&gt;<br />
+&lt;<span class="element">Viewpoint</span>&#160;<span class="attribute">DEF</span>='<span class="idName">View3</span>'&#160;<a href="_viewpoints/BindingOperations.x3d.Viewpoint_3.png">description</a>='<span class="value">Viewpoint 3</span>'&#160;<span class="attribute">position</span>='<span class="value">0 0 5</span>'/&gt;
+<br /><a name="View4"> </a> 
+&lt;!-- <span class="idName">View4</span> <i>ROUTEs</i>:&#160;
+[<a href="#ROUTE_6"><i>from</i>&#160;<span class="idName">BindingSequencerEngine</span>.<span class="attribute">bindView4</span>&#160;<i>to</i>&#160;<span class="attribute">set_bind</span>
+            </a>]
+[<a href="#ROUTE_11"><i>from</i>&#160;<span class="attribute">isBound</span>&#160;<i>to</i>&#160;<span class="idName">BindingSequencerEngine</span>.<span class="attribute">view4Bound</span>
+            </a>]
+ --&gt;<br />
+&lt;<span class="element">Viewpoint</span>&#160;<span class="attribute">DEF</span>='<span class="idName">View4</span>'&#160;<span class="attribute">centerOfRotation</span>='<span class="value">2.5 0 0</span>'&#160;<a href="_viewpoints/BindingOperations.x3d.Viewpoint_4.png">description</a>='<span class="value">Viewpoint 4</span>'&#160;<span class="attribute">position</span>='<span class="value">2.5 0 5</span>'/&gt;
+<br />
+&lt;<span class="element">Group</span>&gt;
+<div class="indent">
+               <a name="Text1"> </a> 
+&lt;<span class="element">Transform</span>&#160;<span class="attribute">DEF</span>='<span class="idName">Text1</span>'&#160;<span class="attribute">translation</span>='<span class="value">-5 0 0</span>'&gt;
+<div class="indent">
+&lt;<span class="element">Shape</span>&gt;
+<div class="indent">
+&lt;<span class="element">Text</span>&#160;<span class="attribute">string</span>='<span class="value">"View" "# 1"</span>'&#160;<span class="attribute">solid</span>='<span class="value">true</span>'&gt;
+<div class="indent">
+                        <a name="CenterJustify"> </a> 
+&lt;<span class="element">FontStyle</span>&#160;<span class="attribute">DEF</span>='<span class="idName">CenterJustify</span>'&#160;<span class="attribute">justify</span>='<span class="value">"MIDDLE" "MIDDLE"</span>'/&gt;
+</div>&lt;/<span class="element">Text</span>&gt;
+<br />
+&lt;<span class="element">Appearance</span>&gt;
+<div class="indent">
+&lt;<span class="element">Material</span>&#160;<span class="attribute">diffuseColor</span>='<span class="value">1 0 0</span>'/&gt;
+</div>&lt;/<span class="element">Appearance</span>&gt;
+</div>&lt;/<span class="element">Shape</span>&gt;
+</div>&lt;/<span class="element">Transform</span>&gt;
+<br /><a name="Text2"> </a> 
+&lt;<span class="element">Transform</span>&#160;<span class="attribute">DEF</span>='<span class="idName">Text2</span>'&#160;<span class="attribute">translation</span>='<span class="value">-2.5 0 0</span>'&gt;
+<div class="indent">
+&lt;<span class="element">Shape</span>&gt;
+<div class="indent">
+&lt;<span class="element">Text</span>&#160;<span class="attribute">string</span>='<span class="value">"View" "# 2"</span>'&#160;<span class="attribute">solid</span>='<span class="value">true</span>'&gt;
+<div class="indent">
+&lt;<span class="element">FontStyle</span>&#160;<span class="attribute">USE</span>='<a href="#CenterJustify" class="idName">CenterJustify</a>'/&gt;
+</div>&lt;/<span class="element">Text</span>&gt;
+<br />
+&lt;<span class="element">Appearance</span>&gt;
+<div class="indent">
+&lt;<span class="element">Material</span>&#160;<span class="attribute">diffuseColor</span>='<span class="value">0 1 0</span>'/&gt;
+</div>&lt;/<span class="element">Appearance</span>&gt;
+</div>&lt;/<span class="element">Shape</span>&gt;
+</div>&lt;/<span class="element">Transform</span>&gt;
+<br /><a name="Text3"> </a> 
+&lt;<span class="element">Transform</span>&#160;<span class="attribute">DEF</span>='<span class="idName">Text3</span>'&gt;
+<div class="indent">
+&lt;<span class="element">Shape</span>&gt;
+<div class="indent">
+&lt;<span class="element">Text</span>&#160;<span class="attribute">string</span>='<span class="value">"View" "# 3"</span>'&#160;<span class="attribute">solid</span>='<span class="value">true</span>'&gt;
+<div class="indent">
+&lt;<span class="element">FontStyle</span>&#160;<span class="attribute">USE</span>='<a href="#CenterJustify" class="idName">CenterJustify</a>'/&gt;
+</div>&lt;/<span class="element">Text</span>&gt;
+<br />
+&lt;<span class="element">Appearance</span>&gt;
+<div class="indent">
+&lt;<span class="element">Material</span>&#160;<span class="attribute">diffuseColor</span>='<span class="value">0 0 1</span>'/&gt;
+</div>&lt;/<span class="element">Appearance</span>&gt;
+</div>&lt;/<span class="element">Shape</span>&gt;
+</div>&lt;/<span class="element">Transform</span>&gt;
+<br /><a name="Text4"> </a> 
+&lt;<span class="element">Transform</span>&#160;<span class="attribute">DEF</span>='<span class="idName">Text4</span>'&#160;<span class="attribute">translation</span>='<span class="value">2.5 0 0</span>'&gt;
+<div class="indent">
+&lt;<span class="element">Shape</span>&gt;
+<div class="indent">
+&lt;<span class="element">Text</span>&#160;<span class="attribute">string</span>='<span class="value">"View" "# 4"</span>'&#160;<span class="attribute">solid</span>='<span class="value">true</span>'&gt;
+<div class="indent">
+&lt;<span class="element">FontStyle</span>&#160;<span class="attribute">USE</span>='<a href="#CenterJustify" class="idName">CenterJustify</a>'/&gt;
+</div>&lt;/<span class="element">Text</span>&gt;
+</div>&lt;/<span class="element">Shape</span>&gt;
+</div>&lt;/<span class="element">Transform</span>&gt;
+</div>&lt;/<span class="element">Group</span>&gt;
+<br />&lt;!-- The following advanced animation sequence uses nodes covered in Chapters 7, 8 and 9. --&gt;
+<br />&lt;!-- It does not need to be studied in this chapter. --&gt;
+<br />
+&lt;<span class="element">Transform</span>&#160;<span class="attribute">translation</span>='<span class="value">0 -2 8</span>'&gt;
+<div class="indent">&lt;!-- notice this next Viewpoint has been transformed with the text, so it's position is relative --&gt;
+<br /><a name="ClickToAnimateView"> </a> 
+&lt;!-- <span class="idName">ClickToAnimateView</span> <i>ROUTE</i>:&#160;
+[<a href="#ROUTE_7"><i>from</i>&#160;<span class="idName">BindingSequencerEngine</span>.<span class="attribute">bindView5</span>&#160;<i>to</i>&#160;<span class="attribute">set_bind</span>
+               </a>]
+ --&gt;<br />
+&lt;<span class="element">Viewpoint</span>&#160;<span class="attribute">DEF</span>='<span class="idName">ClickToAnimateView</span>'&#160;<a href="_viewpoints/BindingOperations.x3d.Select_animation_sequence.png">description</a>='<span class="value">Select animation sequence</span>'&#160;<span class="attribute">fieldOfView</span>='<span class="value">0.785</span>'&#160;<span class="attribute">position</span>='<span class="value">0 0 4</span>'/&gt;
+<br />
+&lt;<span class="element">Shape</span>&gt;
+<div class="indent">
+&lt;<span class="element">Text</span>&#160;<span class="attribute">string</span>='<span class="value">"Click here to animate"</span>'&#160;<span class="attribute">solid</span>='<span class="value">true</span>'&gt;
+<div class="indent">
+&lt;<span class="element">FontStyle</span>&#160;<span class="attribute">justify</span>='<span class="value">"MIDDLE" "END"</span>'/&gt;
+</div>&lt;/<span class="element">Text</span>&gt;
+<br />
+&lt;<span class="element">Appearance</span>&gt;
+<div class="indent">
+&lt;<span class="element">Material</span>&#160;<span class="attribute">diffuseColor</span>='<span class="value">0.8 0.4 0</span>'/&gt;
+</div>&lt;/<span class="element">Appearance</span>&gt;
+</div>&lt;/<span class="element">Shape</span>&gt;
+<br /><a name="TextTouchSensor"> </a> 
+&lt;!-- <span class="idName">TextTouchSensor</span> <i>ROUTE</i>:&#160;
+[<a href="#ROUTE_0"><i>from</i>&#160;<span class="attribute">touchTime</span>&#160;<i>to</i>&#160;<span class="idName">Clock</span>.<span class="attribute">set_startTime</span>
+               </a>]
+ --&gt;<br />
+&lt;<span class="element">TouchSensor</span>&#160;<span class="attribute">DEF</span>='<span class="idName">TextTouchSensor</span>'&#160;<span class="attribute">description</span>='<span class="value">Click to begin animating viewpoint selections</span>'/&gt;
+<br /><a name="Clock"> </a> 
+&lt;!-- <span class="idName">Clock</span> <i>ROUTEs</i>:&#160;
+[<a href="#ROUTE_0"><i>from</i>&#160;<span class="idName">TextTouchSensor</span>.<span class="attribute">touchTime</span>&#160;<i>to</i>&#160;<span class="attribute">set_startTime</span>
+               </a>]
+[<a href="#ROUTE_1"><i>from</i>&#160;<span class="attribute">fraction_changed</span>&#160;<i>to</i>&#160;<span class="idName">TimingSequencer</span>.<span class="attribute">set_fraction</span>
+               </a>]
+ --&gt;<br />
+&lt;<span class="element">TimeSensor</span>&#160;<span class="attribute">DEF</span>='<span class="idName">Clock</span>'&#160;<span class="attribute">cycleInterval</span>='<span class="value">10</span>'/&gt;
+<br /><a name="ROUTE_0"> </a> 
+&lt;<span class="route">ROUTE</span>&#160;<span class="attribute">fromNode</span>='<a href="#TextTouchSensor" class="idName">TextTouchSensor</a>'&#160;<span class="attribute">fromField</span>='<span class="value">touchTime</span>'&#160;<span class="attribute">toNode</span>='<a href="#Clock" class="idName">Clock</a>'&#160;<span class="attribute">toField</span>='<span class="value">set_startTime</span>'/&gt;
+<br /><a name="TimingSequencer"> </a> 
+&lt;!-- <span class="idName">TimingSequencer</span> <i>ROUTEs</i>:&#160;
+[<a href="#ROUTE_1"><i>from</i>&#160;<span class="idName">Clock</span>.<span class="attribute">fraction_changed</span>&#160;<i>to</i>&#160;<span class="attribute">set_fraction</span>
+               </a>]
+[<a href="#ROUTE_2"><i>from</i>&#160;<span class="attribute">value_changed</span>&#160;<i>to</i>&#160;<span class="idName">BindingSequencerEngine</span>.<span class="attribute">set_timeEvent</span>
+               </a>]
+ --&gt;<br />
+&lt;<span class="element">IntegerSequencer</span>&#160;<span class="attribute">DEF</span>='<span class="idName">TimingSequencer</span>'&#160;<span class="attribute">key</span>='<span class="value">0 0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 1.0</span>'&#160;<span class="attribute">keyValue</span>='<span class="value">0 1 2 3 4 5 6 7 8 10</span>'&#160;<span class="attribute">containerField</span>='<span class="value">children</span>'/&gt;
+<br /><a name="ROUTE_1"> </a> 
+&lt;<span class="route">ROUTE</span>&#160;<span class="attribute">fromNode</span>='<a href="#Clock" class="idName">Clock</a>'&#160;<span class="attribute">fromField</span>='<span class="value">fraction_changed</span>'&#160;<span class="attribute">toNode</span>='<a href="#TimingSequencer" class="idName">TimingSequencer</a>'&#160;<span class="attribute">toField</span>='<span class="value">set_fraction</span>'/&gt;
+<br /><a name="BindingSequencerEngine"> </a> 
+&lt;!-- <span class="idName">BindingSequencerEngine</span> <i>ROUTEs</i>:&#160;
+[<a href="#ROUTE_2"><i>from</i>&#160;<span class="idName">TimingSequencer</span>.<span class="attribute">value_changed</span>&#160;<i>to</i>&#160;<span class="attribute">set_timeEvent</span>
+               </a>]
+[<a href="#ROUTE_8"><i>from</i>&#160;<span class="idName">View1</span>.<span class="attribute">isBound</span>&#160;<i>to</i>&#160;<span class="attribute">view1Bound</span>
+               </a>]
+[<a href="#ROUTE_9"><i>from</i>&#160;<span class="idName">View2</span>.<span class="attribute">isBound</span>&#160;<i>to</i>&#160;<span class="attribute">view2Bound</span>
+               </a>]
+[<a href="#ROUTE_10"><i>from</i>&#160;<span class="idName">View3</span>.<span class="attribute">isBound</span>&#160;<i>to</i>&#160;<span class="attribute">view3Bound</span>
+               </a>]
+[<a href="#ROUTE_11"><i>from</i>&#160;<span class="idName">View4</span>.<span class="attribute">isBound</span>&#160;<i>to</i>&#160;<span class="attribute">view4Bound</span>
+               </a>]
+[<a href="#ROUTE_3"><i>from</i>&#160;<span class="attribute">bindView1</span>&#160;<i>to</i>&#160;<span class="idName">View1</span>.<span class="attribute">set_bind</span>
+               </a>]
+[<a href="#ROUTE_4"><i>from</i>&#160;<span class="attribute">bindView2</span>&#160;<i>to</i>&#160;<span class="idName">View2</span>.<span class="attribute">set_bind</span>
+               </a>]
+[<a href="#ROUTE_5"><i>from</i>&#160;<span class="attribute">bindView3</span>&#160;<i>to</i>&#160;<span class="idName">View3</span>.<span class="attribute">set_bind</span>
+               </a>]
+[<a href="#ROUTE_6"><i>from</i>&#160;<span class="attribute">bindView4</span>&#160;<i>to</i>&#160;<span class="idName">View4</span>.<span class="attribute">set_bind</span>
+               </a>]
+[<a href="#ROUTE_7"><i>from</i>&#160;<span class="attribute">bindView5</span>&#160;<i>to</i>&#160;<span class="idName">ClickToAnimateView</span>.<span class="attribute">set_bind</span>
+               </a>]
+ --&gt;<br />
+&lt;<span class="element">Script</span>&#160;<span class="attribute">DEF</span>='<span class="idName">BindingSequencerEngine</span>'&gt;
+<div class="indent">
+&lt;<span class="prototype">field</span>&#160;<span class="attribute">name</span>='<span class="prototype">set_timeEvent</span>'&#160;<span class="attribute">type</span>='<span class="value">SFInt32</span>'&#160;<span class="attribute">accessType</span>='<span class="value">inputOnly</span>'/&gt;
+<br />
+&lt;<span class="prototype">field</span>&#160;<span class="attribute">name</span>='<span class="prototype">bindView1</span>'&#160;<span class="attribute">type</span>='<span class="value">SFBool</span>'&#160;<span class="attribute">accessType</span>='<span class="value">outputOnly</span>'/&gt;
+<br />
+&lt;<span class="prototype">field</span>&#160;<span class="attribute">name</span>='<span class="prototype">bindView2</span>'&#160;<span class="attribute">type</span>='<span class="value">SFBool</span>'&#160;<span class="attribute">accessType</span>='<span class="value">outputOnly</span>'/&gt;
+<br />
+&lt;<span class="prototype">field</span>&#160;<span class="attribute">name</span>='<span class="prototype">bindView3</span>'&#160;<span class="attribute">type</span>='<span class="value">SFBool</span>'&#160;<span class="attribute">accessType</span>='<span class="value">outputOnly</span>'/&gt;
+<br />
+&lt;<span class="prototype">field</span>&#160;<span class="attribute">name</span>='<span class="prototype">bindView4</span>'&#160;<span class="attribute">type</span>='<span class="value">SFBool</span>'&#160;<span class="attribute">accessType</span>='<span class="value">outputOnly</span>'/&gt;
+<br />
+&lt;<span class="prototype">field</span>&#160;<span class="attribute">name</span>='<span class="prototype">bindView5</span>'&#160;<span class="attribute">type</span>='<span class="value">SFBool</span>'&#160;<span class="attribute">accessType</span>='<span class="value">outputOnly</span>'/&gt;
+<br />
+&lt;<span class="prototype">field</span>&#160;<span class="attribute">name</span>='<span class="prototype">view1Bound</span>'&#160;<span class="attribute">type</span>='<span class="value">SFBool</span>'&#160;<span class="attribute">accessType</span>='<span class="value">inputOnly</span>'/&gt;
+<br />
+&lt;<span class="prototype">field</span>&#160;<span class="attribute">name</span>='<span class="prototype">view2Bound</span>'&#160;<span class="attribute">type</span>='<span class="value">SFBool</span>'&#160;<span class="attribute">accessType</span>='<span class="value">inputOnly</span>'/&gt;
+<br />
+&lt;<span class="prototype">field</span>&#160;<span class="attribute">name</span>='<span class="prototype">view3Bound</span>'&#160;<span class="attribute">type</span>='<span class="value">SFBool</span>'&#160;<span class="attribute">accessType</span>='<span class="value">inputOnly</span>'/&gt;
+<br />
+&lt;<span class="prototype">field</span>&#160;<span class="attribute">name</span>='<span class="prototype">view4Bound</span>'&#160;<span class="attribute">type</span>='<span class="value">SFBool</span>'&#160;<span class="attribute">accessType</span>='<span class="value">inputOnly</span>'/&gt;
+<br />
+&lt;<span class="prototype">field</span>&#160;<span class="attribute">name</span>='<span class="prototype">priorInputvalue</span>'&#160;<span class="attribute">type</span>='<span class="value">SFInt32</span>'&#160;<span class="attribute">value</span>='<span class="value">-1</span>'&#160;<span class="attribute">accessType</span>='<span class="value">initializeOnly</span>'/&gt;
+<br />
+</div class="indent">
+</div class="indent">
+</div class="indent">
+<code>
+                     <b>&lt;![CDATA[</b>
+                  </code>
+                  <pre>
+        
+ecmascript:
+
+function initialize ()
+{
+    bindView5 = true;
+    Browser.print ('initialized and ready for activation');
+}
+function set_timeEvent (inputValue)
+{
+    if (inputValue == priorInputvalue)
+    {
+        return; // ignore repeated inputs
+    }
+    // new value provided
+    priorInputvalue = inputValue;
+    // Browser.print ('\ntimeEvent inputValue=' + inputValue);
+        
+    switch (inputValue)
+    {
+        case 0:
+        {
+            Browser.print ('\n===========\n time t0');
+            bindView1 = true;
+            break;
+        }
+        case 1:
+        {
+            Browser.print ('\n===========\n time t1');
+            bindView2 = true;
+            break;
+        }
+        case 2:
+        {
+            Browser.print ('\n===========\n time t2');
+            bindView3 = true;
+            break;
+        }
+        case 3:
+        {
+            Browser.print ('\n===========\n time t3');
+            bindView3 = false;
+            break;
+        }
+        case 4:
+        {
+            Browser.print ('\n===========\n time t4');
+            bindView1 = true;
+            break;
+        }
+        case 5:
+        {
+            Browser.print ('\n===========\n time t5');
+            bindView2 = false;
+            break;
+        }
+        case 6:
+        {
+            Browser.print ('\n===========\n time t6');
+            bindView1 = false;
+            break;
+        }
+        case 7:
+        {
+            Browser.print ('\n===========\n time t7');
+            bindView4 = true;
+            break;
+
+        }
+        case 8:
+        {
+            Browser.print ('\n===========\n time t8');
+            // no action, all done
+            break;
+        }
+    }
+}
+
+function view1Bound (inputValue)
+{
+    Browser.print (', view1Bound ' + (inputValue));
+    if (priorInputvalue == -1) Browser.print ('\n');
+}
+function view2Bound (inputValue)
+{
+    Browser.print (', view2Bound ' + (inputValue));
+}
+function view3Bound (inputValue)
+{
+    Browser.print (', view3Bound ' + (inputValue));
+}
+function view4Bound (inputValue)
+{
+    Browser.print (', view4Bound ' + (inputValue));
+}
+
+      </pre>
+                  <code>
+                     <b>]]&gt;</b>
+                  </code>
+<div class="indent">
+<div class="indent">
+<div class="indent">
+</div>&lt;/<span class="element">Script</span>&gt;
+<br />&lt;!-- drive Script with TimeSensor clock --&gt;
+<br /><a name="ROUTE_2"> </a> 
+&lt;<span class="route">ROUTE</span>&#160;<span class="attribute">fromNode</span>='<a href="#TimingSequencer" class="idName">TimingSequencer</a>'&#160;<span class="attribute">fromField</span>='<span class="value">value_changed</span>'&#160;<span class="attribute">toNode</span>='<a href="#BindingSequencerEngine" class="idName">BindingSequencerEngine</a>'&#160;<span class="attribute">toField</span>='<span class="value">set_timeEvent</span>'/&gt;
+<br />&lt;!-- Script will bind and unbind Viewpoint nodes --&gt;
+<br /><a name="ROUTE_3"> </a> 
+&lt;<span class="route">ROUTE</span>&#160;<span class="attribute">fromNode</span>='<a href="#BindingSequencerEngine" class="idName">BindingSequencerEngine</a>'&#160;<span class="attribute">fromField</span>='<span class="value">bindView1</span>'&#160;<span class="attribute">toNode</span>='<a href="#View1" class="idName">View1</a>'&#160;<span class="attribute">toField</span>='<span class="value">set_bind</span>'/&gt;
+<br /><a name="ROUTE_4"> </a> 
+&lt;<span class="route">ROUTE</span>&#160;<span class="attribute">fromNode</span>='<a href="#BindingSequencerEngine" class="idName">BindingSequencerEngine</a>'&#160;<span class="attribute">fromField</span>='<span class="value">bindView2</span>'&#160;<span class="attribute">toNode</span>='<a href="#View2" class="idName">View2</a>'&#160;<span class="attribute">toField</span>='<span class="value">set_bind</span>'/&gt;
+<br /><a name="ROUTE_5"> </a> 
+&lt;<span class="route">ROUTE</span>&#160;<span class="attribute">fromNode</span>='<a href="#BindingSequencerEngine" class="idName">BindingSequencerEngine</a>'&#160;<span class="attribute">fromField</span>='<span class="value">bindView3</span>'&#160;<span class="attribute">toNode</span>='<a href="#View3" class="idName">View3</a>'&#160;<span class="attribute">toField</span>='<span class="value">set_bind</span>'/&gt;
+<br /><a name="ROUTE_6"> </a> 
+&lt;<span class="route">ROUTE</span>&#160;<span class="attribute">fromNode</span>='<a href="#BindingSequencerEngine" class="idName">BindingSequencerEngine</a>'&#160;<span class="attribute">fromField</span>='<span class="value">bindView4</span>'&#160;<span class="attribute">toNode</span>='<a href="#View4" class="idName">View4</a>'&#160;<span class="attribute">toField</span>='<span class="value">set_bind</span>'/&gt;
+<br /><a name="ROUTE_7"> </a> 
+&lt;<span class="route">ROUTE</span>&#160;<span class="attribute">fromNode</span>='<a href="#BindingSequencerEngine" class="idName">BindingSequencerEngine</a>'&#160;<span class="attribute">fromField</span>='<span class="value">bindView5</span>'&#160;<span class="attribute">toNode</span>='<a href="#ClickToAnimateView" class="idName">ClickToAnimateView</a>'&#160;<span class="attribute">toField</span>='<span class="value">set_bind</span>'/&gt;
+<br />&lt;!-- Viewpoint nodes report bind and unbind events --&gt;
+<br /><a name="ROUTE_8"> </a> 
+&lt;<span class="route">ROUTE</span>&#160;<span class="attribute">fromNode</span>='<a href="#View1" class="idName">View1</a>'&#160;<span class="attribute">fromField</span>='<span class="value">isBound</span>'&#160;<span class="attribute">toNode</span>='<a href="#BindingSequencerEngine" class="idName">BindingSequencerEngine</a>'&#160;<span class="attribute">toField</span>='<span class="value">view1Bound</span>'/&gt;
+<br /><a name="ROUTE_9"> </a> 
+&lt;<span class="route">ROUTE</span>&#160;<span class="attribute">fromNode</span>='<a href="#View2" class="idName">View2</a>'&#160;<span class="attribute">fromField</span>='<span class="value">isBound</span>'&#160;<span class="attribute">toNode</span>='<a href="#BindingSequencerEngine" class="idName">BindingSequencerEngine</a>'&#160;<span class="attribute">toField</span>='<span class="value">view2Bound</span>'/&gt;
+<br /><a name="ROUTE_10"> </a> 
+&lt;<span class="route">ROUTE</span>&#160;<span class="attribute">fromNode</span>='<a href="#View3" class="idName">View3</a>'&#160;<span class="attribute">fromField</span>='<span class="value">isBound</span>'&#160;<span class="attribute">toNode</span>='<a href="#BindingSequencerEngine" class="idName">BindingSequencerEngine</a>'&#160;<span class="attribute">toField</span>='<span class="value">view3Bound</span>'/&gt;
+<br /><a name="ROUTE_11"> </a> 
+&lt;<span class="route">ROUTE</span>&#160;<span class="attribute">fromNode</span>='<a href="#View4" class="idName">View4</a>'&#160;<span class="attribute">fromField</span>='<span class="value">isBound</span>'&#160;<span class="attribute">toNode</span>='<a href="#BindingSequencerEngine" class="idName">BindingSequencerEngine</a>'&#160;<span class="attribute">toField</span>='<span class="value">view4Bound</span>'/&gt;
+</div>&lt;/<span class="element">Transform</span>&gt;
+</div>&lt;/<span class="element">Scene</span>&gt;
+</div>&lt;/<span class="element">X3D</span>&gt;
+<br />
+&lt;!--
+<div class="center">
+         <hr width="100%"/>
+         <i>Index for DEF nodes</i>: 
+<a href="#BindingSequencerEngine" class="idName">BindingSequencerEngine</a>,
+<a href="#CenterJustify" class="idName">CenterJustify</a>,
+<a href="#ClickToAnimateView" class="idName">ClickToAnimateView</a>,
+<a href="#Clock" class="idName">Clock</a>,
+<a href="#Text1" class="idName">Text1</a>,
+<a href="#Text2" class="idName">Text2</a>,
+<a href="#Text3" class="idName">Text3</a>,
+<a href="#Text4" class="idName">Text4</a>,
+<a href="#TextTouchSensor" class="idName">TextTouchSensor</a>,
+<a href="#TimingSequencer" class="idName">TimingSequencer</a>,
+<a href="#View1" class="idName">View1</a>,
+<a href="#View2" class="idName">View2</a>,
+<a href="#View3" class="idName">View3</a>,
+<a href="#View4" class="idName">View4</a>
+<br />
+<i>Index for Viewpoint images</i>: 
+<a href="#View1" class="idName">View1</a>,
+<a href="#View2" class="idName">View2</a>,
+<a href="#View3" class="idName">View3</a>,
+<a href="#View4" class="idName">View4</a>,
+<a href="#ClickToAnimateView" class="idName">ClickToAnimateView</a>
+         <hr width="100%"/>
+      </div>
+--&gt;
+<p>
+&lt;!-- Tag color codes:
+&lt;<span class="element">Node</span>
+         <span class="idName"> DEF</span>='<span class="idName">idName</span>' <span class="attribute">attribute</span>='<span class="value">value</span>'/&gt; --&gt;
+</p>
+   </body>
+</html>

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--Generated using XSLT processor: SAXON 8.7 from Saxonica--><html xmlns="http://www.w3.org/TR/xhtml1/strict" xmlns:saxon="http://icl.com/saxon">
+   <head>
+      <title>(X3dToXhtml)</title>
+      <style type="text/css">
+span.element {color: navy}
+span.attribute {color: green}
+span.value {color: teal}
+span.plain {color: black}
+span.gray  {color: gray}
+span.idName {color: maroon}
+a.idName {color: maroon}
+div.center {text-align: center}
+div.indent {margin-left: 25px}
+
+span.prototype {color: purple}
+a.prototype {color: purple; visited: black}
+span.route {color: red}
+b.warning {color: #CC5500}
+b.error {color: #CC0000}
+                </style>
+      <meta name="generator" content="http://www.web3d.org/x3d/content/X3dToXhtml.xslt"/>
+      <meta name="generator"
+            content="http://x3d.svn.sourceforge.net/viewvc/*checkout*/x3d/www.web3d.org/x3d/stylesheets/X3dToXhtml.xslt"/>
+      <link rel="shortcut icon"
+            href="http://www.web3d.org/x3d/content/icons/X3DtextIcon16.png"
+            title="X3D"/>
+   </head>
+   <body>
+      <pre>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;!DOCTYPE X3D PUBLIC "ISO//Web3D//DTD X3D 3.0//EN"   "http://www.web3d.org/specifications/x3d-3.0.dtd"&gt;</pre>
+
+&lt;<span class="element">X3D</span>&#160;<span class="attribute">profile</span>='<span class="value">Immersive</span>'&#160;<span class="attribute">version</span>='<span class="value">3.0</span>'&#160;<span class="attribute">xmlns:xsd</span>='<a href="http://www.w3.org/2001/XMLSchema-instance" target="_blank">http://www.w3.org/2001/XMLSchema-instance</a>' <span class="attribute">xsd:noNamespaceSchemaLocation</span>='
+<a href="http://www.web3d.org/specifications/x3d-3.0.xsd">http://www.web3d.org/specifications/x3d-3.0.xsd</a> '&gt;
+<div class="indent">
+&lt;<span class="element">head</span>&gt;
+<div class="indent">
+&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">filename</span>'&#160;<span class="attribute">content</span>='<span class="value">ColorInterpolatorExample.x3d</span>'/&gt;
+<br />
+&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">description</span>'&#160;<span class="attribute">content</span>='<span class="plain">Demonstrate basic design pattern for animating a node.</span>'/&gt;
+<br />
+&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">creator</span>'&#160;<span class="attribute">content</span>='<span class="value">Don Brutzman</span>'/&gt;
+<br />
+&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">created</span>'&#160;<span class="attribute">content</span>='<span class="value">17 April 2005</span>'/&gt;
+<br />
+&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">modified</span>'&#160;<span class="attribute">content</span>='<span class="value">28 January 2008</span>'/&gt;
+<br />
+&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">drawing</span>'&#160;<span class="attribute">content</span>='<a href="ColorInterpolatorExampleSceneGraphWithRoutes.png" target="_blank">ColorInterpolatorExampleSceneGraphWithRoutes.png</a>'/&gt;
+<br />
+&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">image</span>'&#160;<span class="attribute">content</span>='<a href="ColorInterpolatorExample4Colors.png" target="_blank">ColorInterpolatorExample4Colors.png</a>'/&gt;
+<br />
+&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">keywords</span>'&#160;<span class="attribute">content</span>='<span class="value">Animation ColorInterpolator</span>'/&gt;
+<br />
+&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">identifier</span>'&#160;<span class="attribute">content</span>='
+<a href="http://X3dGraphics.com/examples/X3dForWebAuthors/Chapter07-EventAnimationInterpolation/ColorInterpolatorExample.x3d">http://X3dGraphics.com/examples/X3dForWebAuthors/Chapter07-EventAnimationInterpolation/ColorInterpolatorExample.x3d</a> '/&gt;
+<br />
+&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">generator</span>'&#160;<span class="attribute">content</span>='<span class="value">X3D-Edit 3.2, </span>
+            <a href="https://savage.nps.edu/X3D-Edit" target="_blank">https://savage.nps.edu/X3D-Edit</a>'/&gt;
+<br />
+&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">license</span>'&#160;<span class="attribute">content</span>='<a href="../../license.html" target="_blank">../../license.html</a>'/&gt;
+</div>&lt;/<span class="element">head</span>&gt;
+<br />
+&lt;!--
+<div class="center">
+            <hr width="100%"/>
+            <i>Index for DEF nodes</i>: 
+<a href="#AnimationClock" class="idName">AnimationClock</a>,
+<a href="#ColorChanger" class="idName">ColorChanger</a>,
+<a href="#SphereMaterial" class="idName">SphereMaterial</a>,
+<a href="#TextTriggerTouchSensor" class="idName">TextTriggerTouchSensor</a>
+            <hr width="100%"/>
+         </div>
+--&gt;
+<br />
+&lt;<span class="element">Scene</span>&gt;
+<div class="indent">
+&lt;<span class="element">Group</span>&gt;
+<div class="indent">&lt;!-- Place triggering text above sphere of interest --&gt;
+<br />
+&lt;<span class="element">Transform</span>&#160;<span class="attribute">translation</span>='<span class="value">0 2 0</span>'&gt;
+<div class="indent">
+&lt;<span class="element">Shape</span>&gt;
+<div class="indent">
+&lt;<span class="element">Text</span>&#160;<span class="attribute">string</span>='<span class="value">"Touch text to" "start animation..."</span>'&#160;<span class="attribute">solid</span>='<span class="value">true</span>'&gt;
+<div class="indent">
+&lt;<span class="element">FontStyle</span>&#160;<span class="attribute">justify</span>='<span class="value">"MIDDLE" "MIDDLE"</span>'/&gt;
+</div>&lt;/<span class="element">Text</span>&gt;
+</div>&lt;/<span class="element">Shape</span>&gt;
+<br />&lt;!-- This TouchSensor only reacts to user clicking on the sibling Shape and Text, because it is under a parent Transform grouping node --&gt;
+<br /><a name="TextTriggerTouchSensor"> </a> 
+&lt;!-- <span class="idName">TextTriggerTouchSensor</span> <i>ROUTE</i>:&#160;
+[<a href="#ROUTE_0"><i>from</i>&#160;<span class="attribute">touchTime</span>&#160;<i>to</i>&#160;<span class="idName">AnimationClock</span>.<span class="attribute">startTime</span>
+                  </a>]
+ --&gt;<br />
+&lt;<span class="element">TouchSensor</span>&#160;<span class="attribute">DEF</span>='<span class="idName">TextTriggerTouchSensor</span>'&#160;<span class="attribute">description</span>='<span class="value">Touch text to start...</span>'/&gt;
+</div>&lt;/<span class="element">Transform</span>&gt;
+<br />&lt;!-- Here is Sphere with accompanying Material that will get animated --&gt;
+<br />
+&lt;<span class="element">Transform</span>&#160;<span class="attribute">translation</span>='<span class="value">0 -1 0</span>'&gt;
+<div class="indent">
+&lt;<span class="element">Shape</span>&gt;
+<div class="indent">
+&lt;<span class="element">Sphere</span>/&gt;
+<br />
+&lt;<span class="element">Appearance</span>&gt;
+<div class="indent">&lt;!-- SphereMaterial diffuseColor gets overridden by interpolator output --&gt;
+<br /><a name="SphereMaterial"> </a> 
+&lt;!-- <span class="idName">SphereMaterial</span> <i>ROUTE</i>:&#160;
+[<a href="#ROUTE_2"><i>from</i>&#160;<span class="idName">ColorChanger</span>.<span class="attribute">value_changed</span>&#160;<i>to</i>&#160;<span class="attribute">diffuseColor</span>
+                        </a>]
+ --&gt;<br />
+&lt;<span class="element">Material</span>&#160;<span class="attribute">DEF</span>='<span class="idName">SphereMaterial</span>'&#160;<span class="attribute">diffuseColor</span>='<span class="value">0.5 0.5 0.5</span>'/&gt;
+</div>&lt;/<span class="element">Appearance</span>&gt;
+</div>&lt;/<span class="element">Shape</span>&gt;
+</div>&lt;/<span class="element">Transform</span>&gt;
+<br />&lt;!-- TimeSensor is triggered to start by TouchSensor, then sends animating values to Interpolator --&gt;
+<br /><a name="AnimationClock"> </a> 
+&lt;!-- <span class="idName">AnimationClock</span> <i>ROUTEs</i>:&#160;
+[<a href="#ROUTE_0"><i>from</i>&#160;<span class="idName">TextTriggerTouchSensor</span>.<span class="attribute">touchTime</span>&#160;<i>to</i>&#160;<span class="attribute">startTime</span>
+               </a>]
+[<a href="#ROUTE_1"><i>from</i>&#160;<span class="attribute">fraction_changed</span>&#160;<i>to</i>&#160;<span class="idName">ColorChanger</span>.<span class="attribute">set_fraction</span>
+               </a>]
+ --&gt;<br />
+&lt;<span class="element">TimeSensor</span>&#160;<span class="attribute">DEF</span>='<span class="idName">AnimationClock</span>'&#160;<span class="attribute">cycleInterval</span>='<span class="value">6</span>'/&gt;
+<br />&lt;!-- ROUTE 1: TouchSensor trigger to TimeSensor clock --&gt;
+<br /><a name="ROUTE_0"> </a> 
+&lt;<span class="route">ROUTE</span>&#160;<span class="attribute">fromNode</span>='<a href="#TextTriggerTouchSensor" class="idName">TextTriggerTouchSensor</a>'&#160;<span class="attribute">fromField</span>='<span class="value">touchTime</span>'&#160;<span class="attribute">toNode</span>='<a href="#AnimationClock" class="idName">AnimationClock</a>'&#160;<span class="attribute">toField</span>='<span class="value">startTime</span>'/&gt;
+<br />&lt;!-- Interpolator: ColorChanger interpolates evenly between red, green, blue and then back to red --&gt;
+<br /><a name="ColorChanger"> </a> 
+&lt;!-- <span class="idName">ColorChanger</span> <i>ROUTEs</i>:&#160;
+[<a href="#ROUTE_1"><i>from</i>&#160;<span class="idName">AnimationClock</span>.<span class="attribute">fraction_changed</span>&#160;<i>to</i>&#160;<span class="attribute">set_fraction</span>
+               </a>]
+[<a href="#ROUTE_2"><i>from</i>&#160;<span class="attribute">value_changed</span>&#160;<i>to</i>&#160;<span class="idName">SphereMaterial</span>.<span class="attribute">diffuseColor</span>
+               </a>]
+ --&gt;<br />
+&lt;<span class="element">ColorInterpolator</span>&#160;<span class="attribute">DEF</span>='<span class="idName">ColorChanger</span>'&#160;<span class="attribute">key</span>='<span class="value">0 0.3333 0.6666 1</span>'&#160;<span class="attribute">keyValue</span>='<span class="value">1 0 0 0 1 0 0 0 1 1 0 0</span>'/&gt;
+<br />&lt;!-- ROUTE 2: the ColorChanger interpolator gets stimulated by AnimationClock TimeSensor fraction to compute a color value --&gt;
+<br /><a name="ROUTE_1"> </a> 
+&lt;<span class="route">ROUTE</span>&#160;<span class="attribute">fromNode</span>='<a href="#AnimationClock" class="idName">AnimationClock</a>'&#160;<span class="attribute">fromField</span>='<span class="value">fraction_changed</span>'&#160;<span class="attribute">toNode</span>='<a href="#ColorChanger" class="idName">ColorChanger</a>'&#160;<span class="attribute">toField</span>='<span class="value">set_fraction</span>'/&gt;
+<br />&lt;!-- ROUTE 3: Interpolator output is sent to target node of interest. Changed color value is routed to SphereMaterial color. --&gt;
+<br /><a name="ROUTE_2"> </a> 
+&lt;<span class="route">ROUTE</span>&#160;<span class="attribute">fromNode</span>='<a href="#ColorChanger" class="idName">ColorChanger</a>'&#160;<span class="attribute">fromField</span>='<span class="value">value_changed</span>'&#160;<span class="attribute">toNode</span>='<a href="#SphereMaterial" class="idName">SphereMaterial</a>'&#160;<span class="attribute">toField</span>='<span class="value">diffuseColor</span>'/&gt;
+</div>&lt;/<span class="element">Group</span>&gt;
+</div>&lt;/<span class="element">Scene</span>&gt;
+</div>&lt;/<span class="element">X3D</span>&gt;
+<br />
+&lt;!--
+<div class="center">
+         <hr width="100%"/>
+         <i>Index for DEF nodes</i>: 
+<a href="#AnimationClock" class="idName">AnimationClock</a>,
+<a href="#ColorChanger" class="idName">ColorChanger</a>,
+<a href="#SphereMaterial" class="idName">SphereMaterial</a>,
+<a href="#TextTriggerTouchSensor" class="idName">TextTriggerTouchSensor</a>
+         <hr width="100%"/>
+      </div>
+--&gt;
+<p>
+&lt;!-- Tag color codes (X3D, XML terminology):
+&lt;<span class="element">Node</span>
+         <span class="idName"> DEF</span>='<span class="idName">idName</span>' <span class="attribute">field</span>='<span class="value">value</span>'/&gt; &lt;<span class="element">Element</span>
+         <span class="idName"> DEF</span>='<span class="idName">idName</span>' <span class="attribute">attribute</span>='<span class="value">value</span>'/&gt;  --&gt;
+</p>
+   </body>
+</html>

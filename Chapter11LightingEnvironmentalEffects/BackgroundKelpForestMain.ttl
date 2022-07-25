@@ -1,0 +1,758 @@
+@prefix :        <https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter11LightingEnvironmentalEffects/BackgroundKelpForestMain.ttl#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema:  <http://schema.org/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix x3d:     <https://www.web3d.org/specifications/x3d-4.0.xsd#> .
+@prefix x3do:    <https://www.web3d.org/specifications/X3dOntology4.0#> .
+
+:X3D a owl:NamedIndividual, x3do:X3D ;
+  x3do:hasHead :head ;
+  x3do:hasScene :Scene ;
+  x3do:profile 'Immersive' ;
+  x3do:version '3.3' ;
+  x3do:noNamespaceSchemaLocation 'https://www.web3d.org/specifications/x3d-3.3.xsd' .
+:head a owl:NamedIndividual, x3do:head ;
+  x3do:hasParent :X3D ;
+  x3do:hasMeta :meta_1_1, :meta_1_2, :meta_1_3, :meta_1_4, :meta_1_5, :meta_1_6, :meta_1_7, :meta_1_8, :meta_1_9, :meta_1_10, :meta_1_11, :meta_1_12, :meta_1_13 .
+:meta_1_1 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'BackgroundKelpForestMain.x3d' ;
+  x3do:name 'title' .
+:meta_1_2 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Added a Background node to the KelpForest world.' ;
+  x3do:name 'description' .
+:meta_1_3 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Don Brutzman Revised: Leonard Daly for X3D Book' ;
+  x3do:name 'creator' .
+:meta_1_4 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '1 June 1998' ;
+  x3do:name 'created' .
+:meta_1_5 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '20 October 2019' ;
+  x3do:name 'modified' .
+:meta_1_6 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'http://faculty.nps.edu/brutzman/kelp' ;
+  x3do:name 'reference' .
+:meta_1_7 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'http://faculty.nps.edu/brutzman/kelp/KelpForestDesignPaper.pdf' ;
+  x3do:name 'reference' .
+:meta_1_8 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Kelp Forest 3D models' ;
+  x3do:name 'subject' .
+:meta_1_9 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'All content has permissions for free use. Please provide credit to the Naval Postgraduate School (NPS) Modeling Virtual Environments and Simulation (MOVES) Institute.' ;
+  x3do:name 'accessRights' .
+:meta_1_10 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/KelpForestMain.x3d' ;
+  x3do:name 'reference' .
+:meta_1_11 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter11LightingEnvironmentalEffects/BackgroundKelpForestMain.x3d' ;
+  x3do:name 'identifier' .
+:meta_1_12 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'X3D-Edit 3.3, https://savage.nps.edu/X3D-Edit' ;
+  x3do:name 'generator' .
+:meta_1_13 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '../license.html' ;
+  x3do:name 'license' .
+:meta dcterms:title "BackgroundKelpForestMain.x3d" .
+:meta dcterms:description "Added a Background node to the KelpForest world." .
+:meta dcterms:creator "Don Brutzman Revised: Leonard Daly for X3D Book" .
+:meta dcterms:created "1 June 1998" .
+:meta dcterms:modified "20 October 2019" .
+:meta dcterms:reference "http://faculty.nps.edu/brutzman/kelp" .
+:meta dcterms:reference "http://faculty.nps.edu/brutzman/kelp/KelpForestDesignPaper.pdf" .
+:meta dcterms:subject "Kelp Forest 3D models" .
+:meta dcterms:accessRights "All content has permissions for free use. Please provide credit to the Naval Postgraduate School (NPS) Modeling Virtual Environments and Simulation (MOVES) Institute." .
+:meta dcterms:reference "https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/KelpForestMain.x3d" .
+:meta dcterms:identifier "https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter11LightingEnvironmentalEffects/BackgroundKelpForestMain.x3d" .
+:meta dcterms:generator "X3D-Edit 3.3, https://savage.nps.edu/X3D-Edit" .
+:meta dcterms:license "../license.html" .
+:Scene a owl:NamedIndividual, x3do:Scene ;
+  x3do:hasParent :X3D ;
+  x3do:hasChildren :Background_2_1, :WorldInfo_2_2, :NavigationInfo_2_3, :ProtoInstance_2_5, :Viewpoints, :Root, :MasterClock, :Nancy ;
+  x3do:hasExternProtoDeclare :ExternProtoDeclare_2_4, :ExternProtoDeclare_2_6 ;
+  x3do:hasROUTE :ROUTE_2_9, :ROUTE_2_10, :ROUTE_2_11, :ROUTE_2_12, :ROUTE_2_13, :ROUTE_2_14, :ROUTE_2_15, :ROUTE_2_16, :ROUTE_2_17, :ROUTE_2_18, :ROUTE_2_21, :ROUTE_2_22, :ROUTE_2_23 .
+:Background_2_1 a owl:NamedIndividual, x3do:Background ;
+  x3do:hasParent :Scene ;
+  x3do:backUrl '"urn:web3d:media:textures/panoramas/horizon_3_back.jpg" "../../Basic/UniversalMediaPanoramas/horizon_3_back.jpg" "https://www.web3d.org/WorkingGroups/media/textures/panoramas/horizon_3_back.jpg" "https://www.web3d.org/x3d/content/examples/UniversalMediaPanoramas/horizon_3_back.jpg" "http://www.web3dmedia.com/UniversalMedia/textures/panoramas/horizon_3_back.jpg" "http://www.officetowers.com/UniversalMedia/textures/panoramas/horizon_3_back.jpg" "http://geometrek.com/UniversalMedia/textures/panoramas/horizon_3_back.jpg" "http://www.sc.ehu.es/ccwgamoa/UniversalMedia/textures/panoramas/horizon_3_back.jpg"' ;
+  x3do:bottomUrl '"urn:web3d:media:textures/panoramas/horizon_3_bottom.jpg" "horizon_3_bottom.jpg" "../../../Basic/UniversalMediaPanoramas/horizon_3_bottom.jpg" "https://www.web3d.org/WorkingGroups/media/textures/panoramas/horizon_3_bottom.jpg" "https://www.web3d.org/x3d/content/examples/UniversalMediaPanoramas/horizon_3_bottom.jpg" "http://www.web3dmedia.com/UniversalMedia/textures/panoramas/horizon_3_bottom.jpg" "http://www.officetowers.com/UniversalMedia/textures/panoramas/horizon_3_bottom.jpg" "http://geometrek.com/UniversalMedia/textures/panoramas/horizon_3_bottom.jpg" "http://www.sc.ehu.es/ccwgamoa/UniversalMedia/textures/panoramas/horizon_3_bottom.jpg"' ;
+  x3do:frontUrl '"urn:web3d:media:textures/panoramas/horizon_3_front.jpg" "../../Basic/UniversalMediaPanoramas/horizon_3_front.jpg" "https://www.web3d.org/WorkingGroups/media/textures/panoramas/horizon_3_front.jpg" "https://www.web3d.org/x3d/content/examples/UniversalMediaPanoramas/horizon_3_front.jpg" "http://www.web3dmedia.com/UniversalMedia/textures/panoramas/horizon_3_front.jpg" "http://www.officetowers.com/UniversalMedia/textures/panoramas/horizon_3_front.jpg" "http://geometrek.com/UniversalMedia/textures/panoramas/horizon_3_front.jpg" "http://www.sc.ehu.es/ccwgamoa/UniversalMedia/textures/panoramas/horizon_3_front.jpg"' ;
+  x3do:groundAngle ( 1.309 1.5707 ) ;
+  x3do:groundColor ( 0.1 0.1 0 0.4 0.25 0.2 0.6 0.6 0.6 ) ;
+  x3do:leftUrl '"urn:web3d:media:textures/panoramas/horizon_3_left.jpg" "../../Basic/UniversalMediaPanoramas/horizon_3_left.jpg" "https://www.web3d.org/WorkingGroups/media/textures/panoramas/horizon_3_left.jpg" "https://www.web3d.org/x3d/content/examples/UniversalMediaPanoramas/horizon_3_left.jpg" "http://www.web3dmedia.com/UniversalMedia/textures/panoramas/horizon_3_left.jpg" "http://www.officetowers.com/UniversalMedia/textures/panoramas/horizon_3_left.jpg" "http://geometrek.com/UniversalMedia/textures/panoramas/horizon_3_left.jpg" "http://www.sc.ehu.es/ccwgamoa/UniversalMedia/textures/panoramas/horizon_3_left.jpg"' ;
+  x3do:rightUrl '"urn:web3d:media:textures/panoramas/horizon_3_right.jpg" "../../Basic/UniversalMediaPanoramas/horizon_3_right.jpg" "https://www.web3d.org/WorkingGroups/media/textures/panoramas/horizon_3_right.jpg" "https://www.web3d.org/x3d/content/examples/UniversalMediaPanoramas/horizon_3_right.jpg" "http://www.web3dmedia.com/UniversalMedia/textures/panoramas/horizon_3_right.jpg" "http://www.officetowers.com/UniversalMedia/textures/panoramas/horizon_3_right.jpg" "http://geometrek.com/UniversalMedia/textures/panoramas/horizon_3_right.jpg" "http://www.sc.ehu.es/ccwgamoa/UniversalMedia/textures/panoramas/horizon_3_right.jpg"' ;
+  x3do:skyAngle ( 1.309 1.5707 ) ;
+  x3do:skyColor ( 0 0.5 1 0 0 1 0 0 1 ) ;
+  x3do:topUrl '"urn:web3d:media:textures/panoramas/horizon_3_top.jpg" "../../Basic/UniversalMediaPanoramas/horizon_3_top.jpg" "https://www.web3d.org/WorkingGroups/media/textures/panoramas/horizon_3_top.jpg" "https://www.web3d.org/x3d/content/examples/UniversalMediaPanoramas/horizon_3_top.jpg" "http://www.web3dmedia.com/UniversalMedia/textures/panoramas/horizon_3_top.jpg" "http://www.officetowers.com/UniversalMedia/textures/panoramas/horizon_3_top.jpg" "http://geometrek.com/UniversalMedia/textures/panoramas/horizon_3_top.jpg" "http://www.sc.ehu.es/ccwgamoa/UniversalMedia/textures/panoramas/horizon_3_top.jpg"' .
+:WorldInfo_2_2 a owl:NamedIndividual, x3do:WorldInfo ;
+  x3do:hasParent :Scene ;
+  x3do:info '"kelpForestMain3.4.wrl" "Model of the Monterey Bay Aquarium Kelp Forest" "DTG of last updated: 111500Jun98" "Updated: kelpTank2.9.wrl; " "Created by Naval Postgraduate School students under the supervision of Don Brutzman" "Feel free to copy anything you wish - just give credit where it is due" "http://faculty.nps.edu/brutzman/kelp"' ;
+  x3do:title 'NPS Virtual Kelp Forest Exhibit' .
+:NavigationInfo_2_3 a owl:NamedIndividual, x3do:NavigationInfo ;
+  x3do:hasParent :Scene ;
+  x3do:speed 3.0 .
+:ExternProtoDeclare_2_4 a owl:NamedIndividual, x3do:ExternProtoDeclare ;
+  x3do:hasParent :Scene ;
+  x3do:hasField :field_2_4_1, :field_2_4_2, :field_2_4_3, :field_2_4_4, :field_2_4_5, :field_2_4_6 ;
+  x3do:appinfo 'ViewPositionOrientation prototype provides local position and orientation as user navigates with optional console output' ;
+  x3do:name 'ViewPositionOrientation' ;
+  x3do:url '"../../Savage/Tools/Authoring/ViewPositionOrientationPrototype.x3d#ViewPositionOrientation" "https://savage.nps.edu/Savage/Tools/Authoring/ViewPositionOrientationPrototype.x3d#ViewPositionOrientation" "../../Savage/Tools/Authoring/ViewPositionOrientationPrototype.wrl#ViewPositionOrientation" "https://savage.nps.edu/Savage/Tools/Authoring/ViewPositionOrientationPrototype.wrl#ViewPositionOrientation"' .
+:field_2_4_1 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :ExternProtoDeclare_2_4 ;
+  x3do:accessType 'inputOutput' ;
+  x3do:appinfo 'Whether or not ViewPositionOrientation sends output to console.' ;
+  x3do:name 'enabled' ;
+  x3do:type 'SFBool' .
+:field_2_4_2 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :ExternProtoDeclare_2_4 ;
+  x3do:accessType 'initializeOnly' ;
+  x3do:appinfo 'Output internal trace messages for debugging this node - developer use only can be ignored.' ;
+  x3do:name 'traceEnabled' ;
+  x3do:type 'SFBool' .
+:field_2_4_3 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :ExternProtoDeclare_2_4 ;
+  x3do:accessType 'inputOnly' ;
+  x3do:appinfo 'Ability to turn output tracing on/off at runtime.' ;
+  x3do:name 'set_traceEnabled' ;
+  x3do:type 'SFBool' .
+:field_2_4_4 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :ExternProtoDeclare_2_4 ;
+  x3do:accessType 'outputOnly' ;
+  x3do:appinfo 'Output local position.' ;
+  x3do:name 'position_changed' ;
+  x3do:type 'SFVec3f' .
+:field_2_4_5 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :ExternProtoDeclare_2_4 ;
+  x3do:accessType 'outputOnly' ;
+  x3do:appinfo 'Output local orientation.' ;
+  x3do:name 'orientation_changed' ;
+  x3do:type 'SFRotation' .
+:field_2_4_6 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :ExternProtoDeclare_2_4 ;
+  x3do:accessType 'outputOnly' ;
+  x3do:appinfo 'MFString value of new Viewpoint for example: <Viewpoint position="20 15 20" orientation="-0.516 0.83 0.212 0.9195"/>' ;
+  x3do:name 'outputViewpointString' ;
+  x3do:type 'MFString' .
+:ProtoInstance_2_5 a owl:NamedIndividual, x3do:ProtoInstance ;
+  x3do:hasParent :Scene ;
+  x3do:hasFieldValue :fieldValue_2_5_1 ;
+  x3do:name 'ViewPositionOrientation' .
+:fieldValue_2_5_1 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :ProtoInstance_2_5 ;
+  x3do:name 'enabled' ;
+  x3do:value 'false' .
+:ExternProtoDeclare_2_6 a owl:NamedIndividual, x3do:ExternProtoDeclare ;
+  x3do:hasParent :Scene ;
+  x3do:hasField :field_2_6_1, :field_2_6_2, :field_2_6_3, :field_2_6_4, :field_2_6_5, :field_2_6_6, :field_2_6_7, :field_2_6_8, :field_2_6_9, :field_2_6_10, :field_2_6_11, :field_2_6_12, :field_2_6_13, :field_2_6_14, :field_2_6_15, :field_2_6_16, :field_2_6_17, :field_2_6_18, :field_2_6_19, :field_2_6_20, :field_2_6_21, :field_2_6_22, :field_2_6_23, :field_2_6_24, :field_2_6_25 ;
+  x3do:appinfo 'Reads waypoints and legSpeeds/legDurations/defaultSpeed to provide a customizable position/orientation interpolator.' ;
+  x3do:name 'WaypointInterpolator' ;
+  x3do:url '"../../../Savage/Tools/Animation/WaypointInterpolatorPrototype.x3d#WaypointInterpolator" "https://savage.nps.edu/Savage/Tools/Animation/WaypointInterpolatorPrototype.x3d#WaypointInterpolator" "../../../Savage/Tools/Animation/WaypointInterpolatorPrototype.wrl#WaypointInterpolator" "https://savage.nps.edu/Savage/Tools/Animation/WaypointInterpolatorPrototype.wrl#WaypointInterpolator"' .
+:field_2_6_1 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :ExternProtoDeclare_2_6 ;
+  x3do:accessType 'initializeOnly' ;
+  x3do:appinfo 'Short description of what is animated by this WaypointInterpolator.' ;
+  x3do:name 'description' ;
+  x3do:type 'SFString' .
+:field_2_6_2 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :ExternProtoDeclare_2_6 ;
+  x3do:accessType 'initializeOnly' ;
+  x3do:appinfo 'Waypoints being traversed with interpolation of intermediate positions and orientations.' ;
+  x3do:name 'waypoints' ;
+  x3do:type 'MFVec3f' .
+:field_2_6_3 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :ExternProtoDeclare_2_6 ;
+  x3do:accessType 'inputOnly' ;
+  x3do:appinfo 'Add another single waypoint to array of waypoints recalculate interpolator values.' ;
+  x3do:name 'add_waypoint' ;
+  x3do:type 'SFVec3f' .
+:field_2_6_4 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :ExternProtoDeclare_2_6 ;
+  x3do:accessType 'inputOnly' ;
+  x3do:appinfo 'Replace all waypoints recalculate interpolator values.' ;
+  x3do:name 'set_waypoints' ;
+  x3do:type 'MFVec3f' .
+:field_2_6_5 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :ExternProtoDeclare_2_6 ;
+  x3do:accessType 'initializeOnly' ;
+  x3do:appinfo 'Whether to pitch child geometry (such as a vehicle) up or down to match vertical slope' ;
+  x3do:name 'pitchUpDownForVerticalWaypoints' ;
+  x3do:type 'SFBool' .
+:field_2_6_6 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :ExternProtoDeclare_2_6 ;
+  x3do:accessType 'initializeOnly' ;
+  x3do:appinfo 'Units m/sec. If used array lengths for legSpeeds and legDurations must be one less than number of waypoints.' ;
+  x3do:name 'legSpeeds' ;
+  x3do:type 'MFFloat' .
+:field_2_6_7 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :ExternProtoDeclare_2_6 ;
+  x3do:accessType 'initializeOnly' ;
+  x3do:appinfo 'Units in seconds. If used array lengths for legSpeeds and legDurations must be one less than number of waypoints.' ;
+  x3do:name 'legDurations' ;
+  x3do:type 'MFTime' .
+:field_2_6_8 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :ExternProtoDeclare_2_6 ;
+  x3do:accessType 'initializeOnly' ;
+  x3do:appinfo 'Units m/sec.' ;
+  x3do:name 'defaultSpeed' ;
+  x3do:type 'SFFloat' .
+:field_2_6_9 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :ExternProtoDeclare_2_6 ;
+  x3do:accessType 'initializeOnly' ;
+  x3do:appinfo 'turningRate (degrees/second) also determines standoff distance prior to waypoint where turn commences. If 0 turns are instantaneous.' ;
+  x3do:name 'turningRate' ;
+  x3do:type 'SFFloat' .
+:field_2_6_10 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :ExternProtoDeclare_2_6 ;
+  x3do:accessType 'outputOnly' ;
+  x3do:appinfo 'Output calculation summing all leg durations, useful for setting TimeSensor cycleInterval. Units in seconds.' ;
+  x3do:name 'totalDuration' ;
+  x3do:type 'SFTime' .
+:field_2_6_11 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :ExternProtoDeclare_2_6 ;
+  x3do:accessType 'inputOnly' ;
+  x3do:appinfo 'exposed PositionInterpolator and OrientationInterpolator setting' ;
+  x3do:name 'set_fraction' ;
+  x3do:type 'SFFloat' .
+:field_2_6_12 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :ExternProtoDeclare_2_6 ;
+  x3do:accessType 'outputOnly' ;
+  x3do:appinfo 'exposed PositionInterpolator setting' ;
+  x3do:name 'position_changed' ;
+  x3do:type 'SFVec3f' .
+:field_2_6_13 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :ExternProtoDeclare_2_6 ;
+  x3do:accessType 'outputOnly' ;
+  x3do:appinfo 'exposed OrientationInterpolator setting' ;
+  x3do:name 'orientation_changed' ;
+  x3do:type 'SFRotation' .
+:field_2_6_14 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :ExternProtoDeclare_2_6 ;
+  x3do:accessType 'inputOutput' ;
+  x3do:appinfo 'default color for non-active line segments' ;
+  x3do:name 'lineColor' ;
+  x3do:type 'SFColor' .
+:field_2_6_15 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :ExternProtoDeclare_2_6 ;
+  x3do:accessType 'inputOutput' ;
+  x3do:appinfo 'highlightSegmentColors must contain two color values for each endpoint of the highlight segment.' ;
+  x3do:name 'highlightSegmentColor' ;
+  x3do:type 'SFColor' .
+:field_2_6_16 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :ExternProtoDeclare_2_6 ;
+  x3do:accessType 'inputOutput' ;
+  x3do:appinfo '1.0 is completely transparent, 0.0 is completely opaque.' ;
+  x3do:name 'transparency' ;
+  x3do:type 'SFFloat' .
+:field_2_6_17 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :ExternProtoDeclare_2_6 ;
+  x3do:accessType 'initializeOnly' ;
+  x3do:appinfo 'allowed values: none; waypoints (produce labels at each waypoint); or interpolation (produce single moving label at interpolator time course speed location)' ;
+  x3do:name 'labelDisplayMode' ;
+  x3do:type 'SFString' .
+:field_2_6_18 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :ExternProtoDeclare_2_6 ;
+  x3do:accessType 'initializeOnly' ;
+  x3do:appinfo 'allowed values: altitude depth (negate Y value) none' ;
+  x3do:name 'heightLabel' ;
+  x3do:type 'SFString' .
+:field_2_6_19 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :ExternProtoDeclare_2_6 ;
+  x3do:accessType 'initializeOnly' ;
+  x3do:appinfo 'heightLabel relative location' ;
+  x3do:name 'labelOffset' ;
+  x3do:type 'SFVec3f' .
+:field_2_6_20 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :ExternProtoDeclare_2_6 ;
+  x3do:accessType 'initializeOnly' ;
+  x3do:appinfo 'heightLabel text size' ;
+  x3do:name 'labelFontSize' ;
+  x3do:type 'SFFloat' .
+:field_2_6_21 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :ExternProtoDeclare_2_6 ;
+  x3do:accessType 'initializeOnly' ;
+  x3do:appinfo 'heightLabel text color' ;
+  x3do:name 'labelColor' ;
+  x3do:type 'SFColor' .
+:field_2_6_22 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :ExternProtoDeclare_2_6 ;
+  x3do:accessType 'initializeOnly' ;
+  x3do:appinfo 'enable console output to trace script computations and prototype progress' ;
+  x3do:name 'traceEnabled' ;
+  x3do:type 'SFBool' .
+:field_2_6_23 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :ExternProtoDeclare_2_6 ;
+  x3do:accessType 'initializeOnly' ;
+  x3do:appinfo 'Output the number of waypoints totalDistance and totalDuration to console upon initialization' ;
+  x3do:name 'outputInitializationComputations' ;
+  x3do:type 'SFBool' .
+:field_2_6_24 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :ExternProtoDeclare_2_6 ;
+  x3do:accessType 'inputOutput' ;
+  x3do:appinfo 'default color for vertical drop-line segments' ;
+  x3do:name 'verticalDropLineColor' ;
+  x3do:type 'SFColor' .
+:field_2_6_25 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :ExternProtoDeclare_2_6 ;
+  x3do:accessType 'inputOutput' ;
+  x3do:appinfo '1.0 is completely transparent, 0.0 is completely opaque.' ;
+  x3do:name 'verticalDropLineTransparency' ;
+  x3do:type 'SFFloat' .
+:Viewpoints a owl:NamedIndividual, x3do:Group ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :Viewpoint_2_7_1, :Viewpoint_2_7_2, :Viewpoint_2_7_3, :Viewpoint_2_7_4, :Viewpoint_2_7_5, :Viewpoint_2_7_6, :Viewpoint_2_7_7 ;
+  x3do:DEF 'Viewpoints' .
+:Viewpoint_2_7_1 a owl:NamedIndividual, x3do:Viewpoint ;
+  x3do:hasParent :Viewpoints ;
+  x3do:description 'Kelp Forest Monterey Bay Aquarium' ;
+  x3do:position ( 0.0 -5.0 45.0 ) .
+:Viewpoint_2_7_2 a owl:NamedIndividual, x3do:Viewpoint ;
+  x3do:hasParent :Viewpoints ;
+  x3do:description 'Side Windows' ;
+  x3do:fieldOfView 0.5 ;
+  x3do:orientation ( 0.0 1.0 0.0 0.9 ) ;
+  x3do:position ( 25.0 -4.0 15.0 ) .
+:Viewpoint_2_7_3 a owl:NamedIndividual, x3do:Viewpoint ;
+  x3do:hasParent :Viewpoints ;
+  x3do:description 'Star Fish' ;
+  x3do:orientation ( 0.0 1.0 0.0 1.25 ) ;
+  x3do:position ( 14.0 -5.75 1.0 ) .
+:Viewpoint_2_7_4 a owl:NamedIndividual, x3do:Viewpoint ;
+  x3do:hasParent :Viewpoints ;
+  x3do:description 'Inside Tank' ;
+  x3do:orientation ( 0.0 1.0 0.0 3.14 ) ;
+  x3do:position ( 0.0 -5.0 -7.0 ) .
+:Viewpoint_2_7_5 a owl:NamedIndividual, x3do:Viewpoint ;
+  x3do:hasParent :Viewpoints ;
+  x3do:description 'Top floor' ;
+  x3do:fieldOfView 1.04719 ;
+  x3do:orientation ( -0.3 1.0 0.3 1.57079 ) ;
+  x3do:position ( 12.5 5.0 -2.0 ) .
+:Viewpoint_2_7_6 a owl:NamedIndividual, x3do:Viewpoint ;
+  x3do:hasParent :Viewpoints ;
+  x3do:description 'Bird&apos;s Eye View' ;
+  x3do:orientation ( 1.0 0.0 0.0 -1.57 ) ;
+  x3do:position ( 0.0 19.0 -3.5 ) .
+:Viewpoint_2_7_7 a owl:NamedIndividual, x3do:Viewpoint ;
+  x3do:hasParent :Viewpoints ;
+  x3do:description 'Pump House' ;
+  x3do:fieldOfView 0.6 ;
+  x3do:orientation ( 0.0 1.0 0.0 1.3 ) ;
+  x3do:position ( -5.0 1.0 0.0 ) .
+:Root a owl:NamedIndividual, x3do:Group ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :Inline_2_8_1, :Collision_2_8_2 ;
+  x3do:DEF 'Root' .
+:Inline_2_8_1 a owl:NamedIndividual, x3do:Inline ;
+  x3do:hasParent :Root ;
+  x3do:url '"../KelpForestExhibit/IntroductionMessage.x3d" "https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/IntroductionMessage.x3d" "../KelpForestExhibit/IntroductionMessage.wrl" "https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/IntroductionMessage.wrl"' .
+:Collision_2_8_2 a owl:NamedIndividual, x3do:Collision ;
+  x3do:hasParent :Root ;
+  x3do:hasChildren :Transform_2_8_2_1, :Transform_2_8_2_2, :Transform_2_8_2_3, :Transform_2_8_2_4, :K2_LOCALE, :K4_LOCALE, :K7_LOCALE, :K10_LOCALE, :K11_LOCALE, :R2_LOCALE, :R3_LOCALE, :R5_LOCALE, :WAVE_CLOCK, :LEFT_SHALLOW_WAVE, :LEFT_DEEP_WAVE, :CENTER_WAVE, :RIGHT_SHALLOW_WAVE, :RIGHT_DEEP_WAVE ;
+  x3do:enabled false .
+:Transform_2_8_2_1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Collision_2_8_2 ;
+  x3do:hasChildren :Inline_2_8_2_1_1 .
+:Inline_2_8_2_1_1 a owl:NamedIndividual, x3do:Inline ;
+  x3do:hasParent :Transform_2_8_2_1 ;
+  x3do:url '"../KelpForestExhibit/SharkLeftyLocale.x3d" "https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/SharkLeftyLocale.x3d" "../KelpForestExhibit/SharkLeftyLocale.wrl" "https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/SharkLeftyLocale.wrl"' .
+:Transform_2_8_2_2 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Collision_2_8_2 ;
+  x3do:hasChildren :Inline_2_8_2_2_1 .
+:Inline_2_8_2_2_1 a owl:NamedIndividual, x3do:Inline ;
+  x3do:hasParent :Transform_2_8_2_2 ;
+  x3do:url '"../KelpForestExhibit/SharkLucyLocale.x3d" "https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/SharkLucyLocale.x3d" "../KelpForestExhibit/SharkLucyLocale.wrl" "https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/SharkLucyLocale.wrl"' .
+:Transform_2_8_2_3 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Collision_2_8_2 ;
+  x3do:hasChildren :Inline_2_8_2_3_1 .
+:Inline_2_8_2_3_1 a owl:NamedIndividual, x3do:Inline ;
+  x3do:hasParent :Transform_2_8_2_3 ;
+  x3do:url '"../KelpForestExhibit/KelpTank.x3d" "https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/KelpTank.x3d" "../KelpForestExhibit/KelpTank.wrl" "https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/KelpTank.wrl"' .
+:Transform_2_8_2_4 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Collision_2_8_2 ;
+  x3do:hasChildren :Inline_2_8_2_4_1 ;
+  x3do:scale ( 0.54 0.75 0.52 ) ;
+  x3do:translation ( 0.3 -2.88 7.3 ) .
+:Inline_2_8_2_4_1 a owl:NamedIndividual, x3do:Inline ;
+  x3do:hasParent :Transform_2_8_2_4 ;
+  x3do:url '"../KelpForestExhibit/RockFloor.x3d" "https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/RockFloor.x3d" "../KelpForestExhibit/RockFloor.wrl" "https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/RockFloor.wrl"' .
+:K2_LOCALE a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Collision_2_8_2 ;
+  x3do:hasChildren :K2_MIDWATER, :K2_FLOOR ;
+  x3do:DEF 'K2_LOCALE' ;
+  x3do:translation ( -4.0 0.0 1.0 ) .
+:K2_MIDWATER a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :K2_LOCALE ;
+  x3do:hasChildren :Inline_2_8_2_5_1_1 ;
+  x3do:DEF 'K2_MIDWATER' ;
+  x3do:scale ( 0.2 0.2 0.2 ) ;
+  x3do:translation ( -1.0 -4.0 -4.0 ) .
+:Inline_2_8_2_5_1_1 a owl:NamedIndividual, x3do:Inline ;
+  x3do:hasParent :K2_MIDWATER ;
+  x3do:url '"../KelpForestExhibit/SardineSchool.x3d" "SardineSchool/SardineSchool.x3d" "https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/SardineSchool.x3d" "../KelpForestExhibit/SardineSchool.wrl" "https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/SardineSchool.wrl"' .
+:K2_FLOOR a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :K2_LOCALE ;
+  x3do:hasChildren :KelpExamplesNoBase ;
+  x3do:DEF 'K2_FLOOR' ;
+  x3do:rotation ( 0.0 1.0 0.0 0.44 ) ;
+  x3do:scale ( 0.5 0.9 0.5 ) ;
+  x3do:translation ( -1.9 -8.5 -1.5 ) .
+:KelpExamplesNoBase a owl:NamedIndividual, x3do:Inline ;
+  x3do:hasParent :K2_FLOOR ;
+  x3do:DEF 'KelpExamplesNoBase' ;
+  x3do:url '"../KelpForestExhibit/KelpExamplesNoBase.x3d" "https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/KelpExamplesNoBase.x3d" "../KelpForestExhibit/KelpExamplesNoBase.wrl" "https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/KelpExamplesNoBase.wrl"' .
+:K4_LOCALE a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Collision_2_8_2 ;
+  x3do:hasChildren :K4_MIDWATER, :K4_FLOOR ;
+  x3do:DEF 'K4_LOCALE' ;
+  x3do:translation ( -2.5 0.0 -2.5 ) .
+:K4_MIDWATER a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :K4_LOCALE ;
+  x3do:hasChildren :Inline_2_8_2_6_1_1 ;
+  x3do:DEF 'K4_MIDWATER' ;
+  x3do:translation ( -10.0 -2.0 -2.0 ) .
+:Inline_2_8_2_6_1_1 a owl:NamedIndividual, x3do:Inline ;
+  x3do:hasParent :K4_MIDWATER ;
+  x3do:url '"../KelpForestExhibit/HalfMoonGroup.x3d" "https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/HalfMoonGroup.x3d" "../KelpForestExhibit/HalfMoonGroup.wrl" "https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/HalfMoonGroup.wrl"' .
+:K4_FLOOR a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :K4_LOCALE ;
+  x3do:hasChildren :KelpExamplesNoBase-USE-1 ;
+  x3do:DEF 'K4_FLOOR' ;
+  x3do:rotation ( 0.0 1.0 0.0 -0.3 ) ;
+  x3do:scale ( 0.5 0.8 0.5 ) ;
+  x3do:translation ( -1.5 -7.5 0.5 ) .
+:KelpExamplesNoBase-USE-1 a owl:NamedIndividual, x3do:Inline ;
+  x3do:hasParent :K4_FLOOR ;
+  owl:sameAs :KelpExamplesNoBase . # DEF matching this USE
+:K7_LOCALE a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Collision_2_8_2 ;
+  x3do:hasChildren :K7_MIDWATER, :K7_FLOOR ;
+  x3do:DEF 'K7_LOCALE' ;
+  x3do:translation ( 2.0 0.0 -2.5 ) .
+:K7_MIDWATER a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :K7_LOCALE ;
+  x3do:hasChildren :Inline_2_8_2_7_1_1 ;
+  x3do:DEF 'K7_MIDWATER' ;
+  x3do:scale ( 0.25 0.25 0.25 ) ;
+  x3do:translation ( 2.0 -4.0 0.0 ) .
+:Inline_2_8_2_7_1_1 a owl:NamedIndividual, x3do:Inline ;
+  x3do:hasParent :K7_MIDWATER ;
+  x3do:url '"../KelpForestExhibit/RubberLipGroup.x3d" "https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/RubberLipGroup.x3d" "../KelpForestExhibit/RubberLipGroup.wrl" "https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/RubberLipGroup.wrl"' .
+:K7_FLOOR a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :K7_LOCALE ;
+  x3do:hasChildren :KelpExamplesNoBase-USE-2 ;
+  x3do:DEF 'K7_FLOOR' ;
+  x3do:scale ( 0.5 0.85 0.5 ) ;
+  x3do:translation ( 0.0 -7.75 0.0 ) .
+:KelpExamplesNoBase-USE-2 a owl:NamedIndividual, x3do:Inline ;
+  x3do:hasParent :K7_FLOOR ;
+  owl:sameAs :KelpExamplesNoBase . # DEF matching this USE
+:K10_LOCALE a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Collision_2_8_2 ;
+  x3do:hasChildren :K10_DEEP, :K10_FLOOR ;
+  x3do:DEF 'K10_LOCALE' ;
+  x3do:translation ( 7.0 0.0 2.0 ) .
+:K10_DEEP a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :K10_LOCALE ;
+  x3do:hasChildren :Inline_2_8_2_8_1_1 ;
+  x3do:DEF 'K10_DEEP' ;
+  x3do:translation ( 0.0 -5.0 0.0 ) .
+:Inline_2_8_2_8_1_1 a owl:NamedIndividual, x3do:Inline ;
+  x3do:hasParent :K10_DEEP ;
+  x3do:url '"../KelpForestExhibit/StripedSurfPerch.x3d" "https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/StripedSurfPerch.x3d" "../KelpForestExhibit/StripedSurfPerch.wrl" "https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/StripedSurfPerch.wrl"' .
+:K10_FLOOR a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :K10_LOCALE ;
+  x3do:hasChildren :KelpExamplesNoBase-USE-3 ;
+  x3do:DEF 'K10_FLOOR' ;
+  x3do:rotation ( 0.0 1.0 0.0 0.16 ) ;
+  x3do:scale ( 0.5 0.75 0.5 ) ;
+  x3do:translation ( -1.0 -7.0 -1.0 ) .
+:KelpExamplesNoBase-USE-3 a owl:NamedIndividual, x3do:Inline ;
+  x3do:hasParent :K10_FLOOR ;
+  owl:sameAs :KelpExamplesNoBase . # DEF matching this USE
+:K11_LOCALE a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Collision_2_8_2 ;
+  x3do:hasChildren :K11_MIDWATER, :K11_DEEP, :K11_FLOOR, :Transform_2_8_2_9_4 ;
+  x3do:DEF 'K11_LOCALE' ;
+  x3do:translation ( 8.0 0.0 -2.0 ) .
+:K11_MIDWATER a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :K11_LOCALE ;
+  x3do:hasChildren :Inline_2_8_2_9_1_1 ;
+  x3do:DEF 'K11_MIDWATER' ;
+  x3do:rotation ( 0.0 1.0 0.0 0.3 ) ;
+  x3do:translation ( 2.19 -7.0 0.15 ) .
+:Inline_2_8_2_9_1_1 a owl:NamedIndividual, x3do:Inline ;
+  x3do:hasParent :K11_MIDWATER ;
+  x3do:url '"../KelpForestExhibit/SeaStarSimple.x3d" "https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/SeaStarSimple.x3d" "../KelpForestExhibit/SeaStarSimple.wrl" "https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/SeaStarSimple.wrl"' .
+:K11_DEEP a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :K11_LOCALE ;
+  x3do:hasChildren :Inline_2_8_2_9_2_1 ;
+  x3do:DEF 'K11_DEEP' ;
+  x3do:rotation ( 0.0 1.0 0.0 0.9 ) ;
+  x3do:translation ( 1.0 -5.0 0.0 ) .
+:Inline_2_8_2_9_2_1 a owl:NamedIndividual, x3do:Inline ;
+  x3do:hasParent :K11_DEEP ;
+  x3do:url '"../KelpForestExhibit/BlackSurfPerch.x3d" "https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/BlackSurfPerch.x3d" "../KelpForestExhibit/BlackSurfPerch.wrl" "https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/BlackSurfPerch.wrl"' .
+:K11_FLOOR a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :K11_LOCALE ;
+  x3do:hasChildren :KelpExamplesNoBase-USE-4 ;
+  x3do:DEF 'K11_FLOOR' ;
+  x3do:rotation ( 0.0 1.0 0.0 0.3 ) ;
+  x3do:scale ( 0.5 0.75 0.5 ) ;
+  x3do:translation ( -0.3 -7.0 0.0 ) .
+:KelpExamplesNoBase-USE-4 a owl:NamedIndividual, x3do:Inline ;
+  x3do:hasParent :K11_FLOOR ;
+  owl:sameAs :KelpExamplesNoBase . # DEF matching this USE
+:Transform_2_8_2_9_4 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :K11_LOCALE ;
+  x3do:hasChildren :Inline_2_8_2_9_4_1 ;
+  x3do:translation ( 1.3 -5.0 3.0 ) .
+:Inline_2_8_2_9_4_1 a owl:NamedIndividual, x3do:Inline ;
+  x3do:hasParent :Transform_2_8_2_9_4 ;
+  x3do:url '"../KelpForestExhibit/SeaStarGroup.x3d" "https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/SeaStarGroup.x3d" "../KelpForestExhibit/SeaStarGroup.wrl" "https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/SeaStarGroup.wrl"' .
+:R2_LOCALE a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Collision_2_8_2 ;
+  x3do:hasChildren :R2_MIDWATER, :R2_DEEP ;
+  x3do:DEF 'R2_LOCALE' ;
+  x3do:translation ( -1.0 0.0 -1.0 ) .
+:R2_MIDWATER a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :R2_LOCALE ;
+  x3do:hasChildren :Inline_2_8_2_10_1_1 ;
+  x3do:DEF 'R2_MIDWATER' ;
+  x3do:translation ( -1.0 -6.0 -2.0 ) .
+:Inline_2_8_2_10_1_1 a owl:NamedIndividual, x3do:Inline ;
+  x3do:hasParent :R2_MIDWATER ;
+  x3do:url '"../KelpForestExhibit/BlueRockFish.x3d" "https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/BlueRockFish.x3d" "../KelpForestExhibit/BlueRockFish.wrl" "https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/BlueRockFish.wrl"' .
+:R2_DEEP a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :R2_LOCALE ;
+  x3do:hasChildren :Inline_2_8_2_10_2_1 ;
+  x3do:DEF 'R2_DEEP' ;
+  x3do:translation ( 1.0 -6.5 -1.0 ) .
+:Inline_2_8_2_10_2_1 a owl:NamedIndividual, x3do:Inline ;
+  x3do:hasParent :R2_DEEP ;
+  x3do:url '"../KelpForestExhibit/KelpSurfPerch.x3d" "https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/KelpSurfPerch.x3d" "../KelpForestExhibit/KelpSurfPerch.wrl" "https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/KelpSurfPerch.wrl"' .
+:R3_LOCALE a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Collision_2_8_2 ;
+  x3do:hasChildren :R3_MIDWATER ;
+  x3do:DEF 'R3_LOCALE' ;
+  x3do:translation ( 3.0 0.0 -4.0 ) .
+:R3_MIDWATER a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :R3_LOCALE ;
+  x3do:hasChildren :Inline_2_8_2_11_1_1 ;
+  x3do:DEF 'R3_MIDWATER' ;
+  x3do:translation ( 0.0 -6.0 0.0 ) .
+:Inline_2_8_2_11_1_1 a owl:NamedIndividual, x3do:Inline ;
+  x3do:hasParent :R3_MIDWATER ;
+  x3do:url '"../KelpForestExhibit/Garibaldi.x3d" "https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/Garibaldi.x3d" "../KelpForestExhibit/Garibaldi.wrl" "https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/Garibaldi.wrl"' .
+:R5_LOCALE a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Collision_2_8_2 ;
+  x3do:hasChildren :R5_SHALLOW ;
+  x3do:DEF 'R5_LOCALE' ;
+  x3do:translation ( 8.0 0.0 -2.0 ) .
+:R5_SHALLOW a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :R5_LOCALE ;
+  x3do:hasChildren :Inline_2_8_2_12_1_1 ;
+  x3do:DEF 'R5_SHALLOW' ;
+  x3do:translation ( -2.0 -2.0 0.0 ) .
+:Inline_2_8_2_12_1_1 a owl:NamedIndividual, x3do:Inline ;
+  x3do:hasParent :R5_SHALLOW ;
+  x3do:url '"../KelpForestExhibit/KelpBass.x3d" "https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/KelpBass.x3d" "../KelpForestExhibit/KelpBass.wrl" "https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/KelpBass.wrl"' .
+:WAVE_CLOCK a owl:NamedIndividual, x3do:TimeSensor ;
+  x3do:hasParent :Collision_2_8_2 ;
+  x3do:DEF 'WAVE_CLOCK' ;
+  x3do:cycleInterval '5.5' ;
+  x3do:enabled false ;
+  x3do:loop true .
+:LEFT_SHALLOW_WAVE a owl:NamedIndividual, x3do:PositionInterpolator ;
+  x3do:hasParent :Collision_2_8_2 ;
+  x3do:DEF 'LEFT_SHALLOW_WAVE' ;
+  x3do:key ( 0.0 0.125 0.25 0.375 0.5 0.625 0.75 0.875 1.0 ) ;
+  x3do:keyValue ( 0.0 0.0 0.0 0.056 -0.085 0.0 0.08 -0.12 0.0 0.056 -0.085 0.0 0.0 0.0 0.0 -0.056 0.085 0.0 -0.08 0.12 0.0 -0.056 0.085 0.0 0.0 0.0 0.0 ) .
+:LEFT_DEEP_WAVE a owl:NamedIndividual, x3do:PositionInterpolator ;
+  x3do:hasParent :Collision_2_8_2 ;
+  x3do:DEF 'LEFT_DEEP_WAVE' ;
+  x3do:key ( 0.0 0.125 0.25 0.375 0.5 0.625 0.75 0.875 1.0 ) ;
+  x3do:keyValue ( 0.0 0.0 0.0 0.035 -0.035 0.0 0.05 -0.05 0.0 0.035 -0.035 0.0 0.0 0.0 0.0 -0.035 0.035 0.0 -0.05 0.05 0.0 -0.035 0.035 0.0 0.0 0.0 0.0 ) .
+:CENTER_WAVE a owl:NamedIndividual, x3do:PositionInterpolator ;
+  x3do:hasParent :Collision_2_8_2 ;
+  x3do:DEF 'CENTER_WAVE' ;
+  x3do:key ( 0.0 0.125 0.25 0.375 0.5 0.625 0.75 0.875 1.0 ) ;
+  x3do:keyValue ( 0.0 0.0 0.0 0.106 0.0 0.0 0.15 0.0 0.0 0.106 0.0 0.0 0.0 0.0 0.0 -0.106 0.0 0.0 -0.15 0.0 0.0 -0.106 0.0 0.0 0.0 0.0 0.0 ) .
+:RIGHT_SHALLOW_WAVE a owl:NamedIndividual, x3do:PositionInterpolator ;
+  x3do:hasParent :Collision_2_8_2 ;
+  x3do:DEF 'RIGHT_SHALLOW_WAVE' ;
+  x3do:key ( 0.0 0.125 0.25 0.375 0.5 0.625 0.75 0.875 1.0 ) ;
+  x3do:keyValue ( 0.0 0.0 0.0 0.056 0.085 0.0 0.08 0.12 0.0 0.056 0.085 0.0 0.0 0.0 0.0 -0.056 -0.085 0.0 -0.08 -0.12 0.0 -0.056 -0.085 0.0 0.0 0.0 0.0 ) .
+:RIGHT_DEEP_WAVE a owl:NamedIndividual, x3do:PositionInterpolator ;
+  x3do:hasParent :Collision_2_8_2 ;
+  x3do:DEF 'RIGHT_DEEP_WAVE' ;
+  x3do:key ( 0.0 0.125 0.25 0.375 0.5 0.625 0.75 0.875 1.0 ) ;
+  x3do:keyValue ( 0.0 0.0 0.0 0.035 0.035 0.0 0.05 0.05 0.0 0.035 0.035 0.0 0.0 0.0 0.0 -0.035 -0.035 0.0 -0.05 -0.05 0.0 -0.035 -0.035 0.0 0.0 0.0 0.0 ) .
+:ROUTE_2_9 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'fraction_changed' ;
+  x3do:fromNode 'WAVE_CLOCK' ;
+  x3do:toField 'set_fraction' ;
+  x3do:toNode 'CENTER_WAVE' .
+:ROUTE_2_10 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'value_changed' ;
+  x3do:fromNode 'CENTER_WAVE' ;
+  x3do:toField 'set_translation' ;
+  x3do:toNode 'K7_MIDWATER' .
+:ROUTE_2_11 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'value_changed' ;
+  x3do:fromNode 'RIGHT_DEEP_WAVE' ;
+  x3do:toField 'set_translation' ;
+  x3do:toNode 'K2_MIDWATER' .
+:ROUTE_2_12 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'value_changed' ;
+  x3do:fromNode 'CENTER_WAVE' ;
+  x3do:toField 'set_translation' ;
+  x3do:toNode 'K4_MIDWATER' .
+:ROUTE_2_13 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'value_changed' ;
+  x3do:fromNode 'LEFT_DEEP_WAVE' ;
+  x3do:toField 'set_translation' ;
+  x3do:toNode 'K10_DEEP' .
+:ROUTE_2_14 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'value_changed' ;
+  x3do:fromNode 'LEFT_DEEP_WAVE' ;
+  x3do:toField 'set_translation' ;
+  x3do:toNode 'K11_DEEP' .
+:ROUTE_2_15 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'value_changed' ;
+  x3do:fromNode 'RIGHT_SHALLOW_WAVE' ;
+  x3do:toField 'set_translation' ;
+  x3do:toNode 'R2_MIDWATER' .
+:ROUTE_2_16 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'value_changed' ;
+  x3do:fromNode 'RIGHT_DEEP_WAVE' ;
+  x3do:toField 'set_translation' ;
+  x3do:toNode 'R2_DEEP' .
+:ROUTE_2_17 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'value_changed' ;
+  x3do:fromNode 'CENTER_WAVE' ;
+  x3do:toField 'set_translation' ;
+  x3do:toNode 'R3_MIDWATER' .
+:ROUTE_2_18 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'value_changed' ;
+  x3do:fromNode 'RIGHT_SHALLOW_WAVE' ;
+  x3do:toField 'set_translation' ;
+  x3do:toNode 'R5_SHALLOW' .
+:MasterClock a owl:NamedIndividual, x3do:TimeSensor ;
+  x3do:hasParent :Scene ;
+  x3do:DEF 'MasterClock' ;
+  x3do:loop true .
+:Nancy a owl:NamedIndividual, x3do:Group ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :NancyTransform, :JEFFSCLOCK, :NancyInterpolator ;
+  x3do:DEF 'Nancy' .
+:NancyTransform a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Nancy ;
+  x3do:hasChildren :Inline_2_20_1_1 ;
+  x3do:DEF 'NancyTransform' ;
+  x3do:rotation ( -0.45 0.77 -0.45 1.82 ) ;
+  x3do:scale ( 1.3 1.3 1.3 ) ;
+  x3do:translation ( 3 -6.5 -2 ) .
+:Inline_2_20_1_1 a owl:NamedIndividual, x3do:Inline ;
+  x3do:hasParent :NancyTransform ;
+  x3do:url '"../HumanoidAnimation/NancyDiving.x3d" "https://www.web3d.org/x3d/content/examples/HumanoidAnimation/NancyDiving.x3d" "../HumanoidAnimation/NancyDiving.wrl" "https://www.web3d.org/x3d/content/examples/HumanoidAnimation/NancyDiving.wrl"' .
+:JEFFSCLOCK a owl:NamedIndividual, x3do:TimeSensor ;
+  x3do:hasParent :Nancy ;
+  x3do:DEF 'JEFFSCLOCK' ;
+  x3do:cycleInterval '100' ;
+  x3do:loop true .
+:NancyInterpolator a owl:NamedIndividual, x3do:ProtoInstance ;
+  x3do:hasParent :Nancy ;
+  x3do:hasFieldValue :fieldValue_2_20_3_1, :fieldValue_2_20_3_2, :fieldValue_2_20_3_3, :fieldValue_2_20_3_4, :fieldValue_2_20_3_5, :fieldValue_2_20_3_6, :fieldValue_2_20_3_7, :fieldValue_2_20_3_8, :fieldValue_2_20_3_9, :fieldValue_2_20_3_10, :fieldValue_2_20_3_11, :fieldValue_2_20_3_12 ;
+  x3do:DEF 'NancyInterpolator' ;
+  x3do:name 'WaypointInterpolator' .
+:fieldValue_2_20_3_1 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :NancyInterpolator ;
+  x3do:name 'description' ;
+  x3do:value 'Nancy track' .
+:fieldValue_2_20_3_2 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :NancyInterpolator ;
+  x3do:name 'waypoints' ;
+  x3do:value '-5.5 -5.7 -.2 -7.7 -2.7 -1.7 6 -3 -3 2 -2 -2 1 -4 -1 -2 -2 -2 -5.5 -5.7 -.2' .
+:fieldValue_2_20_3_3 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :NancyInterpolator ;
+  x3do:name 'defaultSpeed' ;
+  x3do:value '0.5' .
+:fieldValue_2_20_3_4 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :NancyInterpolator ;
+  x3do:name 'pitchUpDownForVerticalWaypoints' ;
+  x3do:value 'true' .
+:fieldValue_2_20_3_5 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :NancyInterpolator ;
+  x3do:name 'labelDisplayMode' ;
+  x3do:value 'none' .
+:fieldValue_2_20_3_6 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :NancyInterpolator ;
+  x3do:name 'lineColor' ;
+  x3do:value '0 0 0' .
+:fieldValue_2_20_3_7 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :NancyInterpolator ;
+  x3do:name 'labelColor' ;
+  x3do:value '0 0.8 0.8' .
+:fieldValue_2_20_3_8 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :NancyInterpolator ;
+  x3do:name 'labelOffset' ;
+  x3do:value '0 -1.6 0' .
+:fieldValue_2_20_3_9 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :NancyInterpolator ;
+  x3do:name 'labelFontSize' ;
+  x3do:value '6' .
+:fieldValue_2_20_3_10 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :NancyInterpolator ;
+  x3do:name 'traceEnabled' ;
+  x3do:value 'false' .
+:fieldValue_2_20_3_11 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :NancyInterpolator ;
+  x3do:name 'transparency' ;
+  x3do:value '1' .
+:fieldValue_2_20_3_12 a owl:NamedIndividual, x3do:fieldValue ;
+  x3do:hasParent :NancyInterpolator ;
+  x3do:name 'turningRate' ;
+  x3do:value '18' .
+:ROUTE_2_21 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'fraction_changed' ;
+  x3do:fromNode 'JEFFSCLOCK' ;
+  x3do:toField 'set_fraction' ;
+  x3do:toNode 'NancyInterpolator' .
+:ROUTE_2_22 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'position_changed' ;
+  x3do:fromNode 'NancyInterpolator' ;
+  x3do:toField 'set_translation' ;
+  x3do:toNode 'NancyTransform' .
+:ROUTE_2_23 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'orientation_changed' ;
+  x3do:fromNode 'NancyInterpolator' ;
+  x3do:toField 'set_rotation' ;
+  x3do:toNode 'NancyTransform' .

@@ -1,0 +1,147 @@
+@prefix :        <https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter07EventAnimationInterpolation/PositionInterpolator2dExample.ttl#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema:  <http://schema.org/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix x3d:     <https://www.web3d.org/specifications/x3d-4.0.xsd#> .
+@prefix x3do:    <https://www.web3d.org/specifications/X3dOntology4.0#> .
+
+:X3D a owl:NamedIndividual, x3do:X3D ;
+  x3do:hasHead :head ;
+  x3do:hasScene :Scene ;
+  x3do:profile 'Immersive' ;
+  x3do:version '3.3' ;
+  x3do:noNamespaceSchemaLocation 'https://www.web3d.org/specifications/x3d-3.3.xsd' .
+:head a owl:NamedIndividual, x3do:head ;
+  x3do:hasParent :X3D ;
+  x3do:hasComponent :component_1_1 ;
+  x3do:hasMeta :meta_1_2, :meta_1_3, :meta_1_4, :meta_1_5, :meta_1_6, :meta_1_7, :meta_1_8, :meta_1_9, :meta_1_10, :meta_1_11 .
+:component_1_1 a owl:NamedIndividual, x3do:component ;
+  x3do:hasParent :head ;
+  x3do:level 3 ;
+  x3do:name 'Interpolation' .
+:meta_1_2 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'PositionInterpolator2dExample.x3d' ;
+  x3do:name 'title' .
+:meta_1_3 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Interpolation example using PositionInterpolator2D, user can touch (select) the geometry to activate an animation loop that rescales the image texture superimposed on the geometry.' ;
+  x3do:name 'description' .
+:meta_1_4 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Don Brutzman' ;
+  x3do:name 'creator' .
+:meta_1_5 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '16 October 2001' ;
+  x3do:name 'created' .
+:meta_1_6 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '14 June 2020' ;
+  x3do:name 'modified' .
+:meta_1_7 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'PositionInterpolator2D' ;
+  x3do:name 'subject' .
+:meta_1_8 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter07EventAnimationInterpolation/PositionInterpolator2dExample.x3d' ;
+  x3do:name 'identifier' .
+:meta_1_9 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://www.web3d.org/x3d/content/examples/Basic/development/PositionInterpolator2dExample.x3d' ;
+  x3do:name 'reference' .
+:meta_1_10 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'X3D-Edit 3.3, https://savage.nps.edu/X3D-Edit' ;
+  x3do:name 'generator' .
+:meta_1_11 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '../license.html' ;
+  x3do:name 'license' .
+:meta dcterms:title "PositionInterpolator2dExample.x3d" .
+:meta dcterms:description "Interpolation example using PositionInterpolator2D, user can touch (select) the geometry to activate an animation loop that rescales the image texture superimposed on the geometry." .
+:meta dcterms:creator "Don Brutzman" .
+:meta dcterms:created "16 October 2001" .
+:meta dcterms:modified "14 June 2020" .
+:meta dcterms:subject "PositionInterpolator2D" .
+:meta dcterms:identifier "https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter07EventAnimationInterpolation/PositionInterpolator2dExample.x3d" .
+:meta dcterms:reference "https://www.web3d.org/x3d/content/examples/Basic/development/PositionInterpolator2dExample.x3d" .
+:meta dcterms:generator "X3D-Edit 3.3, https://savage.nps.edu/X3D-Edit" .
+:meta dcterms:license "../license.html" .
+:Scene a owl:NamedIndividual, x3do:Scene ;
+  x3do:hasParent :X3D ;
+  x3do:hasChildren :WorldInfo_2_1, :Viewpoint_2_2, :Clock, :InterpolateTTscale, :ImageAspectRatio ;
+  x3do:hasROUTE :ROUTE_2_5 .
+:WorldInfo_2_1 a owl:NamedIndividual, x3do:WorldInfo ;
+  x3do:hasParent :Scene ;
+  x3do:title 'PositionInterpolator2dExample.x3d' .
+:Viewpoint_2_2 a owl:NamedIndividual, x3do:Viewpoint ;
+  x3do:hasParent :Scene ;
+  x3do:description 'Click to activate animation' ;
+  x3do:position ( 0 0 3 ) .
+:Clock a owl:NamedIndividual, x3do:TimeSensor ;
+  x3do:hasParent :Scene ;
+  x3do:DEF 'Clock' ;
+  x3do:cycleInterval '10' ;
+  x3do:enabled false ;
+  x3do:loop true .
+:InterpolateTTscale a owl:NamedIndividual, x3do:PositionInterpolator2D ;
+  x3do:hasParent :Scene ;
+  x3do:DEF 'InterpolateTTscale' ;
+  x3do:key ( 0 0.35 0.45 0.8 0.9 1 ) ;
+  x3do:keyValue ( 1 1 3 3 3 3 0.8 0.8 1 1 1 1 ) .
+:ROUTE_2_5 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'fraction_changed' ;
+  x3do:fromNode 'Clock' ;
+  x3do:toField 'set_fraction' ;
+  x3do:toNode 'InterpolateTTscale' .
+:ImageAspectRatio a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :Toucher, :Shape_2_6_3 ;
+  x3do:hasROUTE :ROUTE_2_6_2, :ROUTE_2_6_4 ;
+  x3do:DEF 'ImageAspectRatio' ;
+  x3do:scale ( 1.5 1 1 ) .
+:Toucher a owl:NamedIndividual, x3do:TouchSensor ;
+  x3do:hasParent :ImageAspectRatio ;
+  x3do:DEF 'Toucher' ;
+  x3do:description 'click and hold to animate TextureTransform' .
+:ROUTE_2_6_2 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :ImageAspectRatio ;
+  x3do:fromField 'isActive' ;
+  x3do:fromNode 'Toucher' ;
+  x3do:toField 'enabled' ;
+  x3do:toNode 'Clock' .
+:Shape_2_6_3 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :ImageAspectRatio ;
+  x3do:hasGeometry :IndexedFaceSet_2_6_3_1 ;
+  x3do:hasAppearance :Appearance_2_6_3_2 .
+:IndexedFaceSet_2_6_3_1 a owl:NamedIndividual, x3do:IndexedFaceSet ;
+  x3do:hasParent :Shape_2_6_3 ;
+  x3do:hasCoord :TwoByTwoSquare ;
+  x3do:coordIndex ( 0 1 2 3 0 -1 ) .
+:TwoByTwoSquare a owl:NamedIndividual, x3do:Coordinate ;
+  x3do:hasParent :IndexedFaceSet_2_6_3_1 ;
+  x3do:DEF 'TwoByTwoSquare' ;
+  x3do:point ( -1 -1 0 1 -1 0 1 1 0 -1 1 0 ) .
+:Appearance_2_6_3_2 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_6_3 ;
+  x3do:hasTexture :ContactImage ;
+  x3do:hasTextureTransform :TextureTransformNode .
+:ContactImage a owl:NamedIndividual, x3do:ImageTexture ;
+  x3do:hasParent :Appearance_2_6_3_2 ;
+  x3do:DEF 'ContactImage' ;
+  x3do:url '"JavaBoardSmileForTheCamera.jpg" "https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter07EventAnimationInterpolation/JavaBoardSmileForTheCamera.jpg"' .
+:TextureTransformNode a owl:NamedIndividual, x3do:TextureTransform ;
+  x3do:hasParent :Appearance_2_6_3_2 ;
+  x3do:DEF 'TextureTransformNode' .
+:ROUTE_2_6_4 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :ImageAspectRatio ;
+  x3do:fromField 'value_changed' ;
+  x3do:fromNode 'InterpolateTTscale' ;
+  x3do:toField 'set_scale' ;
+  x3do:toNode 'TextureTransformNode' .

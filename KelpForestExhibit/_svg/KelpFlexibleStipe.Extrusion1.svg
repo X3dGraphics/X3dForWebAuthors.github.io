@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC  "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11-flat-20030114.dtd">
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     id="KelpFlexibleStipe.Extrusion1.svg"
+     width="900"
+     height="750">
+   <rect width="900" height="750" fill="cyan" stroke="black"/>
+   <!--<x3d:Extrusion crossSection='
+1.00 0.00 0.87 0.50 0.50 0.87 0.00 1.00 -0.50 0.87 -0.87 0.50 -1.00 0.00 -0.87 -0.50 -0.50 -0.87 0.00 -1.00 0.50 -0.87 0.87 -0.50 1.00 0.00'/>
+-->
+   <!--
+			Min xPos = -1.00
+			Max xPos = 1.00			
+			Min yPos = -1.00
+			Max yPos = 1.00-->
+   <g transform="translate(450 375) scale(100 -100)">
+      <g style="fill:none;stroke:blue;stroke-width:0.04">
+         <line id="line1" x1="1.00" y1="0.00" x2="0.87" y2="0.50"/>
+         <line id="line2" x1="0.87" y1="0.50" x2="0.50" y2="0.87"/>
+         <line id="line3" x1="0.50" y1="0.87" x2="0.00" y2="1.00"/>
+         <line
+               id="line4"
+               x1="0.00"
+               y1="1.00"
+               x2="-0.50"
+               y2="0.87"/>
+         <line
+               id="line5"
+               x1="-0.50"
+               y1="0.87"
+               x2="-0.87"
+               y2="0.50"/>
+         <line
+               id="line6"
+               x1="-0.87"
+               y1="0.50"
+               x2="-1.00"
+               y2="0.00"/>
+         <line
+               id="line7"
+               x1="-1.00"
+               y1="0.00"
+               x2="-0.87"
+               y2="-0.50"/>
+         <line
+               id="line8"
+               x1="-0.87"
+               y1="-0.50"
+               x2="-0.50"
+               y2="-0.87"/>
+         <line
+               id="line9"
+               x1="-0.50"
+               y1="-0.87"
+               x2="0.00"
+               y2="-1.00"/>
+         <line
+               id="line10"
+               x1="0.00"
+               y1="-1.00"
+               x2="0.50"
+               y2="-0.87"/>
+         <line
+               id="line11"
+               x1="0.50"
+               y1="-0.87"
+               x2="0.87"
+               y2="-0.50"/>
+         <line
+               id="line12"
+               x1="0.87"
+               y1="-0.50"
+               x2="1.00"
+               y2="0.00"/>
+      </g>
+      <g style="fill:red;stroke:red;stroke-width:0.001">
+         <circle id="marker1" cx="1.00" cy="0.00" r="0.05"/>
+         <set
+              xlink:href="#markerText1"
+              attributeType="CSS"
+              attributeName="visibility"
+              to="visible"
+              begin="marker1.mouseover"
+              end="marker1.mouseout"/>
+         <circle id="marker2" cx="0.87" cy="0.50" r="0.05"/>
+         <set
+              xlink:href="#markerText2"
+              attributeType="CSS"
+              attributeName="visibility"
+              to="visible"
+              begin="marker2.mouseover"
+              end="marker2.mouseout"/>
+         <circle id="marker3" cx="0.50" cy="0.87" r="0.05"/>
+         <set
+              xlink:href="#markerText3"
+              attributeType="CSS"
+              attributeName="visibility"
+              to="visible"
+              begin="marker3.mouseover"
+              end="marker3.mouseout"/>
+         <circle id="marker4" cx="0.00" cy="1.00" r="0.05"/>
+         <set
+              xlink:href="#markerText4"
+              attributeType="CSS"
+              attributeName="visibility"
+              to="visible"
+              begin="marker4.mouseover"
+              end="marker4.mouseout"/>
+         <circle id="marker5" cx="-0.50" cy="0.87" r="0.05"/>
+         <set
+              xlink:href="#markerText5"
+              attributeType="CSS"
+              attributeName="visibility"
+              to="visible"
+              begin="marker5.mouseover"
+              end="marker5.mouseout"/>
+         <circle id="marker6" cx="-0.87" cy="0.50" r="0.05"/>
+         <set
+              xlink:href="#markerText6"
+              attributeType="CSS"
+              attributeName="visibility"
+              to="visible"
+              begin="marker6.mouseover"
+              end="marker6.mouseout"/>
+         <circle id="marker7" cx="-1.00" cy="0.00" r="0.05"/>
+         <set
+              xlink:href="#markerText7"
+              attributeType="CSS"
+              attributeName="visibility"
+              to="visible"
+              begin="marker7.mouseover"
+              end="marker7.mouseout"/>
+         <circle id="marker8" cx="-0.87" cy="-0.50" r="0.05"/>
+         <set
+              xlink:href="#markerText8"
+              attributeType="CSS"
+              attributeName="visibility"
+              to="visible"
+              begin="marker8.mouseover"
+              end="marker8.mouseout"/>
+         <circle id="marker9" cx="-0.50" cy="-0.87" r="0.05"/>
+         <set
+              xlink:href="#markerText9"
+              attributeType="CSS"
+              attributeName="visibility"
+              to="visible"
+              begin="marker9.mouseover"
+              end="marker9.mouseout"/>
+         <circle id="marker10" cx="0.00" cy="-1.00" r="0.05"/>
+         <set
+              xlink:href="#markerText10"
+              attributeType="CSS"
+              attributeName="visibility"
+              to="visible"
+              begin="marker10.mouseover"
+              end="marker10.mouseout"/>
+         <circle id="marker11" cx="0.50" cy="-0.87" r="0.05"/>
+         <set
+              xlink:href="#markerText11"
+              attributeType="CSS"
+              attributeName="visibility"
+              to="visible"
+              begin="marker11.mouseover"
+              end="marker11.mouseout"/>
+         <circle id="marker12" cx="0.87" cy="-0.50" r="0.05"/>
+         <set
+              xlink:href="#markerText12"
+              attributeType="CSS"
+              attributeName="visibility"
+              to="visible"
+              begin="marker12.mouseover"
+              end="marker12.mouseout"/>
+         <circle id="marker13" cx="1.00" cy="0.00" r="0.05"/>
+         <set
+              xlink:href="#markerText13"
+              attributeType="CSS"
+              attributeName="visibility"
+              to="visible"
+              begin="marker13.mouseover"
+              end="marker13.mouseout"/>
+      </g>
+   </g>
+   <g id="markerTexts"
+      transform="translate(450 375)"
+      style="visibility:hidden;font-size:14;font-weight:bold; fill:green; stroke:none">
+      <text id="markerText1" x="105" y="-5">(1.00,0.00)</text>
+      <text id="markerText2" x="92" y="-55">(0.87,0.50)</text>
+      <text id="markerText3" x="55" y="-92">(0.50,0.87)</text>
+      <text id="markerText4" x="5" y="-105">(0.00,1.00)</text>
+      <text id="markerText5" x="-45" y="-92">(-0.50,0.87)</text>
+      <text id="markerText6" x="-82" y="-55">(-0.87,0.50)</text>
+      <text id="markerText7" x="-95" y="-5">(-1.00,0.00)</text>
+      <text id="markerText8" x="-82" y="45">(-0.87,-0.50)</text>
+      <text id="markerText9" x="-45" y="82">(-0.50,-0.87)</text>
+      <text id="markerText10" x="5" y="95">(0.00,-1.00)</text>
+      <text id="markerText11" x="55" y="82">(0.50,-0.87)</text>
+      <text id="markerText12" x="92" y="45">(0.87,-0.50)</text>
+      <text id="markerText13" x="105" y="-5">(1.00,0.00)</text>
+   </g>
+   <g transform="translate(450 375) scale(100 -100)"
+      style="fill:none;stroke:rgb(0,0,0);stroke-width:0.03">
+      <line x1="0" y1="-1.1" x2="0" y2="1.1"/>
+      <line x1="-1.1" y1="0" x2="1.1" y2="0"/>
+      <g style="fill:none;stroke:rgb(0,0,0);stroke-width:0.03">
+         <line x1="-1" y1="-0.03" x2="-1" y2="0.03"/>
+         <line x1="-0.8" y1="-0.03" x2="-0.8" y2="0.03"/>
+         <line
+               x1="-0.6000000000000001"
+               y1="-0.03"
+               x2="-0.6000000000000001"
+               y2="0.03"/>
+         <line
+               x1="-0.4000000000000001"
+               y1="-0.03"
+               x2="-0.4000000000000001"
+               y2="0.03"/>
+         <line
+               x1="-0.20000000000000007"
+               y1="-0.03"
+               x2="-0.20000000000000007"
+               y2="0.03"/>
+         <line
+               x1="-5.551115123125783E-17"
+               y1="-0.03"
+               x2="-5.551115123125783E-17"
+               y2="0.03"/>
+         <line
+               x1="0.19999999999999996"
+               y1="-0.03"
+               x2="0.19999999999999996"
+               y2="0.03"/>
+         <line
+               x1="0.39999999999999997"
+               y1="-0.03"
+               x2="0.39999999999999997"
+               y2="0.03"/>
+         <line x1="0.6" y1="-0.03" x2="0.6" y2="0.03"/>
+         <line x1="0.8" y1="-0.03" x2="0.8" y2="0.03"/>
+         <line x1="1" y1="-0.03" x2="1" y2="0.03"/>
+         <line y1="-1" x1="-0.03" y2="-1" x2="0.03"/>
+         <line y1="-0.8" x1="-0.03" y2="-0.8" x2="0.03"/>
+         <line
+               y1="-0.6000000000000001"
+               x1="-0.03"
+               y2="-0.6000000000000001"
+               x2="0.03"/>
+         <line
+               y1="-0.4000000000000001"
+               x1="-0.03"
+               y2="-0.4000000000000001"
+               x2="0.03"/>
+         <line
+               y1="-0.20000000000000007"
+               x1="-0.03"
+               y2="-0.20000000000000007"
+               x2="0.03"/>
+         <line
+               y1="-5.551115123125783E-17"
+               x1="-0.03"
+               y2="-5.551115123125783E-17"
+               x2="0.03"/>
+         <line
+               y1="0.19999999999999996"
+               x1="-0.03"
+               y2="0.19999999999999996"
+               x2="0.03"/>
+         <line
+               y1="0.39999999999999997"
+               x1="-0.03"
+               y2="0.39999999999999997"
+               x2="0.03"/>
+         <line y1="0.6" x1="-0.03" y2="0.6" x2="0.03"/>
+         <line y1="0.8" x1="-0.03" y2="0.8" x2="0.03"/>
+         <line y1="1" x1="-0.03" y2="1" x2="0.03"/>
+      </g>
+   </g>
+</svg>

@@ -1,0 +1,705 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<!-- =================================================================== -->
+<!-- embedded X3D scene appears after html/head/script and style entries -->
+<!-- =================================================================== -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <title>XmpMetadataEmbedded.x3d (X3dToX3dom.xslt X3DOM)</title>
+      <meta http-equiv="X-UA-Compatible" content="chrome=1,IE=edge"/>
+      <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+      <meta name="generator"
+            content="https://www.web3d.org/x3d/stylesheets/X3dToX3dom.xslt"/>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- Numbered X3DOM release versions: https://www.x3dom.org/download -->
+<!-- Developer X3DOM release version: https://www.x3dom.org/download/dev -->
+<link rel="stylesheet"
+            type="text/css"
+            href="https://x3dom.org/download/dev/x3dom.css"/>
+      <script type="text/javascript"
+              src="https://x3dom.org/download/dev/x3dom-full.js"/>
+      <meta name="warning"
+            content="Webfonts must be loaded prior to using Text node in X3D scene... see https://x3dom.org/x3dom/example/x3dom_text.html"/>
+      <!-- X3DOM needs Web Fonts when an X3D Text node is included -->
+      <!-- adapted from https://x3dom.org/x3dom/example/x3dom_text.html and http://web.mit.edu/jmorzins/www/fonts.html -->
+      <style type="text/css">
+/* ============================================================================= */
+@font-face {
+  font-family: 'SERIF'; /* default original */
+  font-style: normal;
+  font-weight: 700;
+  src: local('Roman'), url('Roman.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'SERIF'; /* default alternate */
+  font-style: normal;
+  font-weight: 700;
+  src: local('Times New Roman'), local('TimesNewRoman'), url('Times New Roman.ttf') format('truetype');
+}
+/* ============================================================================= */
+@font-face {
+  font-family: 'SANS'; /* default original */
+  font-style: normal;
+  font-weight: 400;
+  src: local('Arial'), url('Arial.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'SANS'; /* default alternate */
+  font-style: normal;
+  font-weight: 400;
+  src: local('Helvetica'), url('Helvetica.ttf') format('truetype');
+}
+/* ============================================================================= */
+@font-face {
+  font-family: 'TYPEWRITER'; /* default original */
+  font-style: normal;
+  font-weight: 900;
+  src: local('Courier'), url('Courier.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'TYPEWRITER'; /* default alternate */
+  font-style: normal;
+  font-weight: 900;
+  src: local('Courier New'), url('Courier New.ttf') format('truetype');
+}
+/* ============================================================================= */
+</style>
+      <style type="text/css" media="screen, print">
+.webfont { font-size:200%; font-family:'TYPEWRITER'; color:green;} /* Conversion TODO font families: SANS SERIF TYPEWRITER */
+</style>
+      <!-- Button zoom adapted from https://x3dom.org/docs/dev/tutorial/styling.html -->
+      <style type="text/css">
+
+html {width:100%;height:100%;margin:0;padding:0;}
+body {margin:0;padding:10px;width:100%;height:100%;}
+
+#rootX3dElement {
+    height: 450px;
+    width:  800px;
+    border: none;
+    display: block;
+    position:relative;
+    background:#000;
+}
+
+#toggleZoomButton {
+    position: absolute;
+    float: left;
+    z-index: 1;
+    top: 0px;
+    left: 0px;
+    width: 10em;
+    height: 2em;
+    border: none;
+    background-color: #202021;
+    color: #ccc;
+}
+
+#toggleZoomButton:hover {
+    background-color:blue;
+}
+</style>
+      <!-- https://x3dom.org/docs/dev/api.html and https://x3dom.org/docs/dev/configuration.html -->
+      <script type="text/javascript">
+var zoomed = false;
+var showStatistics = false;
+var showDebugLog   = false;
+
+function toggleZoom(button) {
+
+        var new_height;
+        var new_width;
+        var x3d_element;
+        
+        htmlBody       = document.getElementById('htmlBody');
+        htmlPageHeader = document.getElementById('htmlPageHeader');
+        htmlPageFooter = document.getElementById('htmlPageFooter');
+        x3d_element    = document.getElementById('rootX3dElement');
+
+        if (zoomed) // previous value
+        {
+                // unzoom
+                new_height = "450px";
+                new_width  = "800px";
+                button.innerHTML = "Zoom";
+                htmlPageHeader.style.display = "table-row";
+                htmlPageFooter.style.display = "table-row";
+                document.getElementById('checkBoxCell').style="text-align:right";
+                htmlBody.style.padding = "10px";
+                x3d_element.showStat   = showStatistics;
+                x3d_element.showLog    = showDebugLog;
+                x3d_element.runtime.debug(showDebugLog);
+                document.getElementById("details").hidden = (!showDebugLog);
+        } else {
+                // zoom
+                new_height = "100%";
+                new_width  = "100%";
+                button.innerHTML = "Unzoom";
+                htmlPageHeader.style.display = "none";
+                htmlPageFooter.style.display = "none";
+                htmlBody.style.padding = "0px";
+                x3d_element.showStat   = false;
+                x3d_element.showLog    = false;
+                x3d_element.runtime.debug(false);
+                document.getElementById("details").hidden = true;
+                // TODO how to hide browser interface?
+        }
+        zoomed = !zoomed; // toggle
+
+        x3d_element.style.height = new_height;
+        x3d_element.style.width  = new_width;
+}
+                    
+    // Browser information table adapted from http://www.w3schools.com/js/js_window_navigator.asp
+    
+    document.addEventListener("DOMContentLoaded", function()
+    {
+        document.getElementById("browserCodeName"      ).innerHTML = navigator.appCodeName;
+        document.getElementById("browserAppName"       ).innerHTML = navigator.appName;
+        document.getElementById("browserAppVersion"    ).innerHTML = navigator.appVersion;
+        document.getElementById("browserCookieEnabled" ).innerHTML = navigator.cookieEnabled;
+        document.getElementById("browserPlatform"      ).innerHTML = navigator.platform;
+        document.getElementById("browserUserAgent"     ).innerHTML = navigator.userAgent;
+    if (navigator.systemLanguage)
+        document.getElementById("browserSystemLanguage").innerHTML = navigator.systemLanguage;
+    else
+        document.getElementById("browserSystemLanguage").innerHTML = navigator.language;
+    }, false);
+
+function toggleOverlayStatistics()
+{
+        showStatistics = !showStatistics; // toggle
+        x3d_element = document.getElementById('rootX3dElement');
+        x3d_element.runtime.statistics(showStatistics);
+}
+function toggleShowDebugLogs()
+{
+        showDebugLog  = !showDebugLog; // toggle
+        x3d_element = document.getElementById('rootX3dElement');
+        x3d_element.runtime.debug(showDebugLog);
+        document.getElementById("details").hidden = (!showDebugLog);
+}
+</script>
+      <script type="text/javascript">
+         var fullscreen = false;
+         
+         function toggleFullscreen ()
+         {
+           fullscreen = !fullscreen;
+           
+           if (fullscreen)
+           {
+             jQuery (".frame")
+               .css ("position", "fixed")
+               .css ("top", "0px")
+               .css ("left", "0px")
+               .css ("bottom", "0px")
+               .css ("right", "0px")
+               .css ("background", "#313131");
+                
+             jQuery (".maximize") .attr ("title", "Reduce frame, show console");
+         
+             jQuery (".browser") .css ("height", "100%");
+             jQuery ("X3DCanvas") .css ("height", "90%");
+           }
+           else
+           {
+             jQuery (".frame")
+               .css ("position", "inherit")
+               .css ("background", "none");
+               
+             jQuery (".maximize") .attr ("title", "Full Frame");
+         
+             jQuery (".browser") .css ("height", "initial");
+             jQuery ("X3DCanvas") .css ("height", "432px");
+           }
+         }
+</script>
+   </head>
+   <body id="htmlBody" onload="toggleFullscreen ();">
+      <table style="width:96%" id="htmlPageHeader">
+         <tr>
+            <td style="text-align:left;">
+               <h2>XmpMetadataEmbedded.x3d</h2>
+            </td>
+            <td id="checkBoxCell" style="text-align:right"> (<a href="https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter15Metadata/XmpMetadataEmbedded.x3d"
+                  title="View .x3d scene">.x3d scene</a>, 
+<a href="https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter15Metadata/XmpMetadataEmbedded.html"
+                  title="View .html pretty-print source">pretty-print source</a>, 
+<input id="checkBoxOverlayStatistics"
+                      type="checkbox"
+                      value="Overlay scene statistics"
+                      onclick="toggleOverlayStatistics();"/>
+               <span title="Overlay scene performance statistics">statistics</span>, 
+<input id="checkBoxShowDebugLogs"
+                      type="checkbox"
+                      value="Display debugger logs"
+                      onclick="toggleShowDebugLogs();"/>
+               <span title="Show meta information and debug logs">info &amp; logs</span>, <a href="https://www.x3dom.org" onclick="target='_blank';">X3DOM Player</a>)</td>
+         </tr>
+         <tr>
+            <td colspan="2">
+               <p>
+                  <span class="webfont">Simple XMP sidecar example: Hello XMP metadata!</span>
+               </p>
+            </td>
+         </tr>
+      </table>
+      <div>
+<!-- ================================ -->
+<!-- embedded X3D scene appears here: -->
+<!-- Conversion note: the following HTML button is overlaid on top of the page -->
+         <button id="toggleZoomButton" onclick="toggleZoom(this); return false;">Zoom</button>
+<X3D id='rootX3dElement' showStat='false' showLog='false' showProgress='bar'
+ profile='Immersive' version='4.0' noNamespaceSchemaLocation='https://www.web3d.org/specifications/x3d-4.0.xsd'>
+<head>
+<meta content='XmpMetadataEmbedded.x3d' name='title'/>
+<meta content='Simple XMP sidecar example: Hello XMP metadata!' name='description'/>
+<meta content='29 April 2021' name='created'/>
+<meta content='31 January 2022' name='revised'/>
+<meta content='Don Brutzman, Vince Marchetti, Jakub Flotynski, Dick Puk' name='creator'/>
+<meta content='Source model assumes default containerField=value for X3D4 Metadata nodes, specification resolution needed' name='warning'/>
+<meta content='Summary presentation XmpMetadataSupportX3D.pptx' name='reference'/>
+<meta content='XmpMetadataSidecar.xml' name='reference'/>
+<meta content='XmpMetadataSidecar.rdf' name='reference'/>
+<meta content='XmpMetadataSidecar.ttl' name='reference'/>
+<meta content='Protege https://protege.stanford.edu' name='generator'/>
+<meta content='XmpMetadataEmbeddedX3dComparison.png' name='Image'/>
+<meta content='https://www.web3d.org/specifications/X3Dv4Draft/ISO-IEC19775-1v4-CD1/Part01/components/core.html#MetadataSet' name='reference'/>
+<meta content='XmpMetadataExampleWikipedia.xml' name='reference'/>
+<meta content='XmpMetadataExampleWikipedia.ttl' name='reference'/>
+<meta content='https://wwwimages2.adobe.com/content/dam/acom/en/devnet/xmp/pdfs/XMP%20SDK%20Release%20cc-2016-08/XMPSpecificationPart1.pdf' name='reference'/>
+<meta content='Once pattern OK, write conversion stylesheets XmpToX3dMetadata.xslt and X3dMetadataToXmp.xslt' name='TODO'/>
+<meta content='X3D support for xml:lang attribute not provided in X3D XML Schema, instead use MetadataString as best practice.' name='info'/>
+<meta content='Wikipedia XMP https://en.wikipedia.org/wiki/Extensible_Metadata_Platform' name='reference'/>
+<meta content='Wikipedia Metadata https://en.wikipedia.org/wiki/Metadata' name='reference'/>
+<meta content='https://en.wikipedia.org/wiki/Sidecar' name='reference'/>
+<meta content='https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/xmp.html' name='reference'/>
+<meta content='https://en.wikipedia.org/wiki/Ontology_for_Media_Resources' name='reference'/>
+<meta content='https://en.wikipedia.org/wiki/Multimedia_Web_Ontology_Language' name='reference'/>
+<meta content='W3C Ontology for Media Resources 1.0 https://www.w3.org/TR/mediaont-10' name='reference'/>
+<meta content='ISO XMP ISO 16684-1:2019Part 1: Data model, serialization and core properties https://www.iso.org/standard/75163.html' name='reference'/>
+<meta content='ISO XMP 16684-2:2014 Part 2: Description of XMP schemas using RELAX NG https://www.iso.org/standard/57422.html' name='reference'/>
+<meta content='Adobe XMP https://www.adobe.com/devnet/xmp.html' name='reference'/>
+<meta content='Adobe XMP https://www.adobe.com/products/xmp.html' name='reference'/>
+<meta content='ExifTool XMP Tags https://exiftool.org/TagNames/XMP.html' name='reference'/>
+<meta content='https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter15Metadata/XmpMetadataEmbedded.x3d' name='identifier'/>
+<meta content='https://www.web3d.org/x3d/content/examples/license.html' name='license'/>
+<meta content='X3D-Edit 4.0, https://savage.nps.edu/X3D-Edit' name='generator'/>
+</head>
+<Scene>
+<WorldInfo title='XmpMetadataEmbedded.x3d'/>
+<Background skyColor='0 0.439216 0.760784'/>
+<MetadataSet name='rdf:RDF' reference='TODO refer to XMP ISO specification document' containerField='value'>
+<MetadataSet name='namespaces' containerField='value'>
+<MetadataString name='xmlns:rdf' value='http://www.w3.org/1999/02/22-rdf-syntax-ns#' containerField='value'/>
+<MetadataString name='xmlns:dc' value='http://purl.org/dc/elements/1.1/' containerField='value'/>
+<MetadataString name='xmlns:xmp' value='http://ns.adobe.com/xap/1.0/' containerField='value'/>
+</MetadataSet>
+<MetadataSet name='rdf:Description' containerField='value'>
+<MetadataString name='rdf:about' value='https://kshell.com/sgs/example_uri_0001/' containerField='value'/>
+<MetadataSet name='dc:description' containerField='value'>
+<MetadataSet name='rdf:Alt' containerField='value'>
+<MetadataString name='rdf:li' value='VRML visualization' containerField='value'>
+<MetadataString name='xml:lang' value='en' containerField='value'/>
+</MetadataString>
+</MetadataSet>
+</MetadataSet>
+<MetadataString name='dc:format' value='model/x3d-vrml' containerField='value'/>
+<MetadataString name='dc:rights' value='&quot;&quot;' containerField='value'/>
+<MetadataSet name='dc:title' containerField='value'>
+<MetadataSet name='rdf:Alt' containerField='value'>
+<MetadataString name='rdf:li' reference="xml:lang=&apos;en&apos;" value='l-bracket_20120725.134815' containerField='value'>
+<MetadataString name='xml:lang' value='en' containerField='value'/>
+</MetadataString>
+<MetadataString name='rdf:li' reference="xml:lang=&apos;gr&apos;" value='aristsirra-bracket_20120725.134815' containerField='value'>
+<MetadataString name='xml:lang' value='en' containerField='value'/>
+</MetadataString>
+</MetadataSet>
+<MetadataSet name='dc:creator' containerField='value'>
+<MetadataSet name='rdf:Seq' containerField='value'>
+<MetadataString name='rdf:li' value='vmarchetti@kshell.com' containerField='value'/>
+</MetadataSet>
+</MetadataSet>
+<MetadataString name='xmp:CreateDate' value='2021-2-10' containerField='value'/>
+</MetadataSet>
+</MetadataSet>
+</MetadataSet>
+<Viewpoint description='View scene source to see metadata examples' position='0 0 9'/>
+<Anchor description='Load scene index page' parameter='&quot;target=_blank&quot;' url='&quot;XmpMetadataEmbeddedIndex.html&quot; &quot;https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter15Metadata/XmpMetadataEmbeddedIndex.html&quot;'>
+<Shape>
+<Text string='&quot;View scene source&quot; &quot;to see&quot; &quot;XmpMetadataEmbedded&quot; &quot;example&quot;'>
+<FontStyle justify='&quot;MIDDLE&quot; &quot;MIDDLE&quot;'/>
+</Text>
+<Appearance>
+<Material diffuseColor='1 0.992157 0.039216'/>
+</Appearance>
+</Shape>
+</Anchor>
+</Scene>
+</X3D>
+
+<!-- ================================ -->
+</div>
+      <div id="details">
+         <p style="clear:both;">&nbsp;</p>
+         <table style="border:0px solid; border-spacing:0px; margin:auto; margin-top:20px;margin-left:5%;">
+            <tr style="background-color:silver; border-color:silver;">
+               <th style="text-align:right;">X3D&nbsp;Scene </th>
+               <th style="text-align:left;"> &nbsp; </th>
+               <th style="text-align:left;"> Metadata </th>
+            </tr>
+            <tr>
+               <td style="text-align:right;color:green">title</td>
+               <td> &nbsp; </td>
+               <td>
+                  <a href="XmpMetadataEmbedded.x3d">XmpMetadataEmbedded.x3d</a>
+               </td>
+            </tr>
+            <tr>
+               <td style="text-align:right;color:green">description</td>
+               <td> &nbsp; </td>
+               <td>Simple XMP sidecar example: Hello XMP metadata!</td>
+            </tr>
+            <tr>
+               <td style="text-align:right;color:green">created</td>
+               <td> &nbsp; </td>
+               <td>29 April 2021</td>
+            </tr>
+            <tr>
+               <td style="text-align:right;color:green">revised</td>
+               <td> &nbsp; </td>
+               <td>31 January 2022</td>
+            </tr>
+            <tr>
+               <td style="text-align:right;color:green">creator</td>
+               <td> &nbsp; </td>
+               <td>Don Brutzman, Vince Marchetti, Jakub Flotynski, Dick Puk</td>
+            </tr>
+            <tr>
+               <td style="text-align:right;color:green">warning</td>
+               <td> &nbsp; </td>
+               <td>Source model assumes default containerField=value for X3D4 Metadata nodes, specification resolution needed</td>
+            </tr>
+            <tr>
+               <td style="text-align:right;color:green">reference</td>
+               <td> &nbsp; </td>
+               <td>Summary presentation XmpMetadataSupportX3D.pptx</td>
+            </tr>
+            <tr>
+               <td style="text-align:right;color:green">reference</td>
+               <td> &nbsp; </td>
+               <td>XmpMetadataSidecar.xml</td>
+            </tr>
+            <tr>
+               <td style="text-align:right;color:green">reference</td>
+               <td> &nbsp; </td>
+               <td>XmpMetadataSidecar.rdf</td>
+            </tr>
+            <tr>
+               <td style="text-align:right;color:green">reference</td>
+               <td> &nbsp; </td>
+               <td>XmpMetadataSidecar.ttl</td>
+            </tr>
+            <tr>
+               <td style="text-align:right;color:green">generator</td>
+               <td> &nbsp; </td>
+               <td>Protege <a href="https://protege.stanford.edu">https://protege.stanford.edu</a>
+               </td>
+            </tr>
+            <tr>
+               <td style="text-align:right;color:green">Image</td>
+               <td> &nbsp; </td>
+               <td>
+                  <a href="XmpMetadataEmbeddedX3dComparison.png">XmpMetadataEmbeddedX3dComparison.png</a>
+               </td>
+            </tr>
+            <tr>
+               <td style="text-align:right;color:green">reference</td>
+               <td> &nbsp; </td>
+               <td>
+                  <a href="https://www.web3d.org/specifications/X3Dv4Draft/ISO-IEC19775-1v4-CD1/Part01/components/core.html#MetadataSet">https://www.web3d.org/specifications/X3Dv4Draft/ISO-IEC19775-1v4-CD1/Part01/components/core.html#MetadataSet</a>
+               </td>
+            </tr>
+            <tr>
+               <td style="text-align:right;color:green">reference</td>
+               <td> &nbsp; </td>
+               <td>XmpMetadataExampleWikipedia.xml</td>
+            </tr>
+            <tr>
+               <td style="text-align:right;color:green">reference</td>
+               <td> &nbsp; </td>
+               <td>XmpMetadataExampleWikipedia.ttl</td>
+            </tr>
+            <tr>
+               <td style="text-align:right;color:green">reference</td>
+               <td> &nbsp; </td>
+               <td>
+                  <a href="https://wwwimages2.adobe.com/content/dam/acom/en/devnet/xmp/pdfs/XMP%20SDK%20Release%20cc-2016-08/XMPSpecificationPart1.pdf">https://wwwimages2.adobe.com/content/dam/acom/en/devnet/xmp/pdfs/XMP%20SDK%20Release%20cc-2016-08/XMPSpecificationPart1.pdf</a>
+               </td>
+            </tr>
+            <tr>
+               <td style="text-align:right;color:green">TODO</td>
+               <td> &nbsp; </td>
+               <td>Once pattern OK, write conversion stylesheets XmpToX3dMetadata.xslt and X3dMetadataToXmp.xslt</td>
+            </tr>
+            <tr>
+               <td style="text-align:right;color:green">info</td>
+               <td> &nbsp; </td>
+               <td>X3D support for xml:lang attribute not provided in X3D XML Schema, instead use MetadataString as best practice.</td>
+            </tr>
+            <tr>
+               <td style="text-align:right;color:green">reference</td>
+               <td> &nbsp; </td>
+               <td>Wikipedia XMP <a href="https://en.wikipedia.org/wiki/Extensible_Metadata_Platform">https://en.wikipedia.org/wiki/Extensible_Metadata_Platform</a>
+               </td>
+            </tr>
+            <tr>
+               <td style="text-align:right;color:green">reference</td>
+               <td> &nbsp; </td>
+               <td>Wikipedia Metadata <a href="https://en.wikipedia.org/wiki/Metadata">https://en.wikipedia.org/wiki/Metadata</a>
+               </td>
+            </tr>
+            <tr>
+               <td style="text-align:right;color:green">reference</td>
+               <td> &nbsp; </td>
+               <td>
+                  <a href="https://en.wikipedia.org/wiki/Sidecar">https://en.wikipedia.org/wiki/Sidecar</a>
+               </td>
+            </tr>
+            <tr>
+               <td style="text-align:right;color:green">reference</td>
+               <td> &nbsp; </td>
+               <td>
+                  <a href="https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/xmp.html">https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/xmp.html</a>
+               </td>
+            </tr>
+            <tr>
+               <td style="text-align:right;color:green">reference</td>
+               <td> &nbsp; </td>
+               <td>
+                  <a href="https://en.wikipedia.org/wiki/Ontology_for_Media_Resources">https://en.wikipedia.org/wiki/Ontology_for_Media_Resources</a>
+               </td>
+            </tr>
+            <tr>
+               <td style="text-align:right;color:green">reference</td>
+               <td> &nbsp; </td>
+               <td>
+                  <a href="https://en.wikipedia.org/wiki/Multimedia_Web_Ontology_Language">https://en.wikipedia.org/wiki/Multimedia_Web_Ontology_Language</a>
+               </td>
+            </tr>
+            <tr>
+               <td style="text-align:right;color:green">reference</td>
+               <td> &nbsp; </td>
+               <td>W3C Ontology for Media Resources 1.0 <a href="https://www.w3.org/TR/mediaont-10">https://www.w3.org/TR/mediaont-10</a>
+               </td>
+            </tr>
+            <tr>
+               <td style="text-align:right;color:green">reference</td>
+               <td> &nbsp; </td>
+               <td>
+                  <a href="ISO XMP ISO 16684-1:2019Part 1: Data model, serialization and core properties https://www.iso.org/standard/75163.html">ISO XMP ISO 16684-1:2019Part 1: Data model, serialization and core properties https://www.iso.org/standard/75163.html</a>
+               </td>
+            </tr>
+            <tr>
+               <td style="text-align:right;color:green">reference</td>
+               <td> &nbsp; </td>
+               <td>
+                  <a href="ISO XMP 16684-2:2014 Part 2: Description of XMP schemas using RELAX NG https://www.iso.org/standard/57422.html">ISO XMP 16684-2:2014 Part 2: Description of XMP schemas using RELAX NG https://www.iso.org/standard/57422.html</a>
+               </td>
+            </tr>
+            <tr>
+               <td style="text-align:right;color:green">reference</td>
+               <td> &nbsp; </td>
+               <td>
+                  <a href="Adobe XMP https://www.adobe.com/devnet/xmp.html">Adobe XMP https://www.adobe.com/devnet/xmp.html</a>
+               </td>
+            </tr>
+            <tr>
+               <td style="text-align:right;color:green">reference</td>
+               <td> &nbsp; </td>
+               <td>
+                  <a href="Adobe XMP https://www.adobe.com/products/xmp.html">Adobe XMP https://www.adobe.com/products/xmp.html</a>
+               </td>
+            </tr>
+            <tr>
+               <td style="text-align:right;color:green">reference</td>
+               <td> &nbsp; </td>
+               <td>
+                  <a href="ExifTool XMP Tags https://exiftool.org/TagNames/XMP.html">ExifTool XMP Tags https://exiftool.org/TagNames/XMP.html</a>
+               </td>
+            </tr>
+            <tr>
+               <td style="text-align:right;color:green">identifier</td>
+               <td> &nbsp; </td>
+               <td>
+                  <a href="https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter15Metadata/XmpMetadataEmbedded.x3d">https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter15Metadata/XmpMetadataEmbedded.x3d</a>
+               </td>
+            </tr>
+            <tr>
+               <td style="text-align:right;color:green">license</td>
+               <td> &nbsp; </td>
+               <td>
+                  <a href="https://www.web3d.org/x3d/content/examples/license.html">https://www.web3d.org/x3d/content/examples/license.html</a>
+               </td>
+            </tr>
+            <tr>
+               <td style="text-align:right;color:green">generator</td>
+               <td> &nbsp; </td>
+               <td>X3D-Edit 4.0, <a href="https://savage.nps.edu/X3D-Edit">https://savage.nps.edu/X3D-Edit</a>
+               </td>
+            </tr>
+            <tr>
+               <td colspan="3">&nbsp;</td>
+            </tr>
+            <tr style="background-color:silver;border-color:silver;">
+               <th style="text-align:right;"> HTML&nbsp;Browser </th>
+               <th/>
+               <th style="text-align:left;"> Information </th>
+            </tr>
+            <tr>
+               <td style="text-align:right;"> Browser code name: </td>
+               <td/>
+               <td id="browserCodeName"/>
+            </tr>
+            <tr>
+               <td style="text-align:right;"> Browser application name: </td>
+               <td/>
+               <td id="browserAppName"/>
+            </tr>
+            <tr>
+               <td style="text-align:right;"> Browser version: </td>
+               <td/>
+               <td id="browserAppVersion"/>
+            </tr>
+            <tr>
+               <td style="text-align:right;"> Cookies enabled: </td>
+               <td/>
+               <td id="browserCookieEnabled"/>
+            </tr>
+            <tr>
+               <td style="text-align:right;"> Platform: </td>
+               <td/>
+               <td id="browserPlatform"/>
+            </tr>
+            <tr>
+               <td style="text-align:right;"> User Agent: </td>
+               <td/>
+               <td id="browserUserAgent"/>
+            </tr>
+            <tr>
+               <td style="text-align:right;"> System language: </td>
+               <td/>
+               <td id="browserSystemLanguage"/>
+            </tr>
+            <tr>
+               <td colspan="3">
+                  <div id="htmlPageFooter">
+                     <table border="1"
+                            style="float:left; margin:auto; margin-top:20px; border:1px solid black;">
+                        <caption style="text-align:center;background-color:silver;border-color:silver; padding:4px;">
+                           <b>X3DOM node coverage</b>
+                        </caption>
+                        <tr style="text-align:center; padding:4px; border:1px solid black;">
+                           <th> Supported nodes found </th>
+                           <th> Unsupported nodes found </th>
+                           <th> Partial support</th>
+                        </tr>
+                        <tr style="border:1px solid black;">
+                           <td style="text-align:left;vertical-align:text-top;padding:4px;">
+                              <a href="https://www.web3d.org/x3d/tooltips/X3dTooltips.html#Anchor"
+                                 target="_blank">
+                                 <span style="color:green; text-decoration-color:green; moz-text-decoration-color:green;">Anchor</span>
+                              </a>
+                              <br/>
+                              <a href="https://www.web3d.org/x3d/tooltips/X3dTooltips.html#Appearance"
+                                 target="_blank">
+                                 <span style="color:green; text-decoration-color:green; moz-text-decoration-color:green;">Appearance</span>
+                              </a>
+                              <br/>
+                              <a href="https://www.web3d.org/x3d/tooltips/X3dTooltips.html#Background"
+                                 target="_blank">
+                                 <span style="color:green; text-decoration-color:green; moz-text-decoration-color:green;">Background</span>
+                              </a>
+                              <br/>
+                              <a href="https://www.web3d.org/x3d/tooltips/X3dTooltips.html#FontStyle"
+                                 target="_blank">
+                                 <span style="color:green; text-decoration-color:green; moz-text-decoration-color:green;">FontStyle</span>
+                              </a>
+                              <br/>
+                              <a href="https://www.web3d.org/x3d/tooltips/X3dTooltips.html#head"
+                                 target="_blank">
+                                 <span style="color:green; text-decoration-color:green; moz-text-decoration-color:green;">head</span>
+                              </a>
+                              <br/>
+                              <a href="https://www.web3d.org/x3d/tooltips/X3dTooltips.html#Material"
+                                 target="_blank">
+                                 <span style="color:green; text-decoration-color:green; moz-text-decoration-color:green;">Material</span>
+                              </a>
+                              <br/>
+                              <a href="https://www.web3d.org/x3d/tooltips/X3dTooltips.html#meta"
+                                 target="_blank">
+                                 <span style="color:green; text-decoration-color:green; moz-text-decoration-color:green;">meta</span>
+                              </a>
+                              <br/>
+                              <a href="https://www.web3d.org/x3d/tooltips/X3dTooltips.html#MetadataSet"
+                                 target="_blank">
+                                 <span style="color:green; text-decoration-color:green; moz-text-decoration-color:green;">MetadataSet</span>
+                              </a>
+                              <br/>
+                              <a href="https://www.web3d.org/x3d/tooltips/X3dTooltips.html#MetadataString"
+                                 target="_blank">
+                                 <span style="color:green; text-decoration-color:green; moz-text-decoration-color:green;">MetadataString</span>
+                              </a>
+                              <br/>
+                              <a href="https://www.web3d.org/x3d/tooltips/X3dTooltips.html#Scene"
+                                 target="_blank">
+                                 <span style="color:green; text-decoration-color:green; moz-text-decoration-color:green;">Scene</span>
+                              </a>
+                              <br/>
+                              <a href="https://www.web3d.org/x3d/tooltips/X3dTooltips.html#Shape"
+                                 target="_blank">
+                                 <span style="color:green; text-decoration-color:green; moz-text-decoration-color:green;">Shape</span>
+                              </a>
+                              <br/>
+                              <a href="https://www.web3d.org/x3d/tooltips/X3dTooltips.html#Viewpoint"
+                                 target="_blank">
+                                 <span style="color:green; text-decoration-color:green; moz-text-decoration-color:green;">Viewpoint</span>
+                              </a>
+                              <br/>
+                              <a href="https://www.web3d.org/x3d/tooltips/X3dTooltips.html#WorldInfo"
+                                 target="_blank">
+                                 <span style="color:green; text-decoration-color:green; moz-text-decoration-color:green;">WorldInfo</span>
+                              </a>
+                              <br/>
+                           </td>
+                           <td style="text-align:left;vertical-align:text-top;padding:4px;"> </td>
+                           <td style="text-align:left;vertical-align:text-top;padding:4px;">
+                              <a href="https://www.web3d.org/x3d/tooltips/X3dTooltips.html#Text"
+                                 target="_blank">
+                                 <span style="color:orange; text-decoration-color:orange; moz-text-decoration-color:orange;">
+                                    <b>Text</b>
+                                 </span>
+                              </a>
+                              <br/>: for example use, see <a href="https://x3dom.org/x3dom/example/x3dom_text.html"
+                                 onclick="target='x3dom';">X3DOM Text and FontStyle Example</a>
+                           </td>
+                        </tr>
+                        <tr style="text-align:center; background-color:silver;border-color:silver; padding:6px;">
+                           <td colspan="3" style="cellpadding:3px"> &nbsp;&nbsp;&nbsp; References: <a href="https://www.x3dom.org/check" onclick="target='_blank';">X3DOM browser check</a>,
+                                <a href="https://www.x3dom.org" onclick="target='_blank';">X3DOM home</a>,
+                                <a href="https://doc.x3dom.org" onclick="target='_blank';">X3DOM documentation</a>,
+                                <a href="https://x3dom.org/x3dom/test/functional/dumpNodeTypeTree.html"
+                                 onclick="target='_blank';">X3DOM list of supported nodes</a>,
+                                and
+                                <a href="https://www.web3d.org/x3d/content/examples/X3dResources.html"
+                                 onclick="target='_blank';">X3D Resources</a> &nbsp;&nbsp;&nbsp; </td>
+                        </tr>
+                     </table>
+                  </div>
+               </td>
+            </tr>
+         </table>
+      </div>
+   </body>
+</html>

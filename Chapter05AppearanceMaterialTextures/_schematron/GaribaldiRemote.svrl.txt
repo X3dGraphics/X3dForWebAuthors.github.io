@@ -1,0 +1,2 @@
+<meta name='description' content='Instancing a prototype to match a specific fish.'/> has redundant prior element [/X3D/head/meta[3], error]
+<meta DEF=''/> has 2 meta nodes with name='description' which can confuse archive and catalog tools [/X3D/head/meta[3], warning]

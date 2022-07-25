@@ -1,0 +1,4 @@
+<ProximitySensor DEF='HereIAm1'/> missing description [/X3D/Scene/Collision[1]/Transform/ProximitySensor, warning]
+<ProximitySensor DEF='HereIAm2'/> missing description [/X3D/Scene/Collision[2]/Transform/ProximitySensor, warning]
+<ProximitySensor DEF='HereIAm3'/> missing description [/X3D/Scene/Collision[3]/Transform/ProximitySensor, warning]
+<ProximitySensor DEF='HereIAm4'/> missing description [/X3D/Scene/Collision[4]/Transform/ProximitySensor, warning]

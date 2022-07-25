@@ -1,0 +1,143 @@
+@prefix :        <https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter03Grouping/OrderOfOperations1.ttl#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema:  <http://schema.org/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix x3d:     <https://www.web3d.org/specifications/x3d-4.0.xsd#> .
+@prefix x3do:    <https://www.web3d.org/specifications/X3dOntology4.0#> .
+
+:X3D a owl:NamedIndividual, x3do:X3D ;
+  x3do:hasHead :head ;
+  x3do:hasScene :Scene ;
+  x3do:profile 'Immersive' ;
+  x3do:version '3.3' ;
+  x3do:noNamespaceSchemaLocation 'https://www.web3d.org/specifications/x3d-3.3.xsd' .
+:head a owl:NamedIndividual, x3do:head ;
+  x3do:hasParent :X3D ;
+  x3do:hasMeta :meta_1_1, :meta_1_2, :meta_1_3, :meta_1_4, :meta_1_5, :meta_1_6, :meta_1_7, :meta_1_8, :meta_1_9, :meta_1_10, :meta_1_11, :meta_1_12 .
+:meta_1_1 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'OrderOfOperations1.x3d' ;
+  x3do:name 'title' .
+:meta_1_2 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Illustration of Order of Operations: initial and final results from translation, rotation, and scale operations.' ;
+  x3do:name 'description' .
+:meta_1_3 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Leonard Daly' ;
+  x3do:name 'creator' .
+:meta_1_4 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '22 May 2006' ;
+  x3do:name 'created' .
+:meta_1_5 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '20 October 2019' ;
+  x3do:name 'modified' .
+:meta_1_6 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://X3dGraphics.com' ;
+  x3do:name 'reference' .
+:meta_1_7 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://www.web3d.org/x3d/content/examples/X3dResources.html' ;
+  x3do:name 'reference' .
+:meta_1_8 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Copyright (c) 2006, Daly Realism and Don Brutzman' ;
+  x3do:name 'rights' .
+:meta_1_9 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'X3D book, X3D graphics, X3D-Edit, http://www.x3dGraphics.com' ;
+  x3do:name 'subject' .
+:meta_1_10 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter03Grouping/OrderOfOperations1.x3d' ;
+  x3do:name 'identifier' .
+:meta_1_11 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'X3D-Edit 3.3, https://savage.nps.edu/X3D-Edit' ;
+  x3do:name 'generator' .
+:meta_1_12 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '../license.html' ;
+  x3do:name 'license' .
+:meta dcterms:title "OrderOfOperations1.x3d" .
+:meta dcterms:description "Illustration of Order of Operations: initial and final results from translation, rotation, and scale operations." .
+:meta dcterms:creator "Leonard Daly" .
+:meta dcterms:created "22 May 2006" .
+:meta dcterms:modified "20 October 2019" .
+:meta dcterms:reference "https://X3dGraphics.com" .
+:meta dcterms:reference "https://www.web3d.org/x3d/content/examples/X3dResources.html" .
+:meta dcterms:rights "Copyright (c) 2006, Daly Realism and Don Brutzman" .
+:meta dcterms:subject "X3D book, X3D graphics, X3D-Edit, http://www.x3dGraphics.com" .
+:meta dcterms:identifier "https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter03Grouping/OrderOfOperations1.x3d" .
+:meta dcterms:generator "X3D-Edit 3.3, https://savage.nps.edu/X3D-Edit" .
+:meta dcterms:license "../license.html" .
+:Scene a owl:NamedIndividual, x3do:Scene ;
+  x3do:hasParent :X3D ;
+  x3do:hasChildren :WorldInfo_2_1, :Background_2_2, :NavigationInfo_2_3, :Viewpoint_2_4, :OriginSphere, :InitialBox, :Transform_2_7 .
+:WorldInfo_2_1 a owl:NamedIndividual, x3do:WorldInfo ;
+  x3do:hasParent :Scene ;
+  x3do:title 'OrderOfOperations1.x3d' .
+:Background_2_2 a owl:NamedIndividual, x3do:Background ;
+  x3do:hasParent :Scene ;
+  x3do:skyColor ( 1 1 1 ) .
+:NavigationInfo_2_3 a owl:NamedIndividual, x3do:NavigationInfo ;
+  x3do:hasParent :Scene .
+:Viewpoint_2_4 a owl:NamedIndividual, x3do:Viewpoint ;
+  x3do:hasParent :Scene ;
+  x3do:description 'Order of operations 1' ;
+  x3do:orientation ( 0.66238 -0.73267 0.15637 0.623402 ) ;
+  x3do:position ( -2 -2 4 ) .
+:OriginSphere a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Scene ;
+  x3do:hasAppearance :Appearance_2_5_1 ;
+  x3do:hasGeometry :Sphere_2_5_2 ;
+  x3do:DEF 'OriginSphere' .
+:Appearance_2_5_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :OriginSphere ;
+  x3do:hasMaterial :Material_2_5_1_1 .
+:Material_2_5_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_5_1 ;
+  x3do:diffuseColor ( 1 0.2 0.2 ) .
+:Sphere_2_5_2 a owl:NamedIndividual, x3do:Sphere ;
+  x3do:hasParent :OriginSphere ;
+  x3do:radius 0.25 .
+:InitialBox a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Scene ;
+  x3do:hasAppearance :Appearance_2_6_1 ;
+  x3do:hasGeometry :Box.3.6.9 ;
+  x3do:DEF 'InitialBox' .
+:Appearance_2_6_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :InitialBox ;
+  x3do:hasMaterial :Material_2_6_1_1 .
+:Material_2_6_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_6_1 .
+:Box.3.6.9 a owl:NamedIndividual, x3do:Box ;
+  x3do:hasParent :InitialBox ;
+  x3do:DEF 'Box.3.6.9' ;
+  x3do:size ( .3 .6 .9 ) .
+:Transform_2_7 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :TransformedBox ;
+  x3do:rotation ( 0.3 0.3 0.3 1 ) ;
+  x3do:scale ( 3 2 1.5 ) ;
+  x3do:translation ( 1 1 0 ) .
+:TransformedBox a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_7 ;
+  x3do:hasAppearance :Appearance_2_7_1_1 ;
+  x3do:hasGeometry :Box.3.6.9-USE-1 ;
+  x3do:DEF 'TransformedBox' .
+:Appearance_2_7_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :TransformedBox ;
+  x3do:hasMaterial :Material_2_7_1_1_1 .
+:Material_2_7_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_7_1_1 ;
+  x3do:diffuseColor ( 1 0.5 0 ) .
+:Box.3.6.9-USE-1 a owl:NamedIndividual, x3do:Box ;
+  x3do:hasParent :TransformedBox ;
+  owl:sameAs :Box.3.6.9 . # DEF matching this USE

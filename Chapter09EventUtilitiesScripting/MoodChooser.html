@@ -1,0 +1,500 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--Generated using XSLT processor: SAXON 8.7 from Saxonica--><html xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
+      xmlns="http://www.w3.org/TR/xhtml1/strict"
+      xmlns:saxon="http://icl.com/saxon">
+   <head>
+      <title>MoodChooser.x3d (X3dToXhtml)</title>
+      <style type="text/css">
+span.element {color: navy}
+span.attribute {color: green}
+span.value {color: teal}
+span.plain {color: black}
+span.gray  {color: gray}
+span.idName {color: maroon}
+a.idName {color: maroon}
+div.center {text-align: center}
+div.indent {margin-left: 25px}
+
+span.prototype {color: purple}
+a.prototype {color: purple; visited: black}
+span.route {color: red}
+b.warning {color: #CC5500}
+b.error {color: #CC0000}
+                </style>
+      <meta name="generator" content="http://www.web3d.org/x3d/content/X3dToXhtml.xslt"/>
+      <meta name="generator"
+            content="http://x3d.svn.sourceforge.net/viewvc/*checkout*/x3d/www.web3d.org/x3d/stylesheets/X3dToXhtml.xslt"/>
+      <link rel="shortcut icon"
+            href="http://www.web3d.org/x3d/content/icons/X3DtextIcon16.png"
+            title="X3D"/>
+   </head>
+   <body>
+      <pre>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;!DOCTYPE X3D PUBLIC "ISO//Web3D//DTD X3D 3.2//EN" "<a href="http://www.web3d.org/specifications/x3d-3.2.dtd">http://www.web3d.org/specifications/x3d-3.2.dtd</a>"&gt;</pre>
+
+&lt;<span class="element">X3D</span>&#160;<span class="attribute">profile</span>='<span class="value">Immersive</span>'&#160;<span class="attribute">version</span>='<span class="value">3.2</span>'&#160;<span class="attribute">xmlns:xsd</span>='<a href="http://www.w3.org/2001/XMLSchema-instance" target="_blank">http://www.w3.org/2001/XMLSchema-instance</a>'
+<span class="attribute">xsd:noNamespaceSchemaLocation</span>='
+<a href="http://www.web3d.org/specifications/x3d-3.2.xsd">http://www.web3d.org/specifications/x3d-3.2.xsd</a> '&gt;
+<div class="indent">
+&lt;<span class="element">head</span>&gt;
+<div class="indent">
+&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">title</span>'&#160;<span class="attribute">content</span>='<a href="MoodChooser.x3d" target="_blank">MoodChooser.x3d</a>'/&gt;
+<br />
+&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">description</span>'&#160;<span class="attribute">content</span>='<span class="plain">Design pattern demonstrating multiple TouchSensor, IntegerTrigger, Shape and ROUTE combinations for selecting a Switch</span>'/&gt;
+<br />
+&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">creator</span>'&#160;<span class="attribute">content</span>='<span class="value">Jason Nelson and MV4205 class</span>'/&gt;
+<br />
+&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">created</span>'&#160;<span class="attribute">content</span>='<span class="value">6 April 2009</span>'/&gt;
+<br />
+&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">modified</span>'&#160;<span class="attribute">content</span>='<span class="value">8 April 2009</span>'/&gt;
+<br />
+&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">license</span>'&#160;<span class="attribute">content</span>='<span class="value">smiley images are open source</span>'/&gt;
+<br />
+&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">reference</span>'&#160;<span class="attribute">content</span>='
+<a href="http://openclipart.org/media/tags/smiley">http://openclipart.org/media/tags/smiley</a> '/&gt;
+<br />
+&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">identifier</span>'&#160;<span class="attribute">content</span>='
+<a href="http://x3dGraphics.com/examples/X3dForWebAuthors/Chapter09-EventUtilitiesScripting/MoodChooser.x3d">http://x3dGraphics.com/examples/X3dForWebAuthors/Chapter09-EventUtilitiesScripting/MoodChooser.x3d</a> '/&gt;
+<br />
+&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">generator</span>'&#160;<span class="attribute">content</span>='<span class="value">X3D-Edit, </span>
+            <a href="https://savage.nps.edu/X3D-Edit" target="_blank">https://savage.nps.edu/X3D-Edit</a>'/&gt;
+<br />
+&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">license</span>'&#160;<span class="attribute">content</span>='<a href="../../license.html" target="_blank">../../license.html</a>'/&gt;
+</div>&lt;/<span class="element">head</span>&gt;
+<br />
+&lt;!--
+<div class="center">
+            <hr width="100%"/>
+            <i>Index for DEF nodes</i>: 
+<a href="#bull" class="idName">bull</a>,
+<a href="#bulldisplay" class="idName">bulldisplay</a>,
+<a href="#bullimg" class="idName">bullimg</a>,
+<a href="#bullText" class="idName">bullText</a>,
+<a href="#display" class="idName">display</a>,
+<a href="#happy" class="idName">happy</a>,
+<a href="#happydisplay" class="idName">happydisplay</a>,
+<a href="#happyimg" class="idName">happyimg</a>,
+<a href="#happyText" class="idName">happyText</a>,
+<a href="#howFeelText" class="idName">howFeelText</a>,
+<a href="#nbdisplay" class="idName">nbdisplay</a>,
+<a href="#nbimg" class="idName">nbimg</a>,
+<a href="#nodisplay" class="idName">nodisplay</a>,
+<a href="#notBad" class="idName">notBad</a>,
+<a href="#notBadText" class="idName">notBadText</a>,
+<a href="#sad" class="idName">sad</a>,
+<a href="#saddisplay" class="idName">saddisplay</a>,
+<a href="#sadimg" class="idName">sadimg</a>,
+<a href="#sadText" class="idName">sadText</a>
+<br />
+<i>Index for Viewpoint image</i>: 
+<a href="#Viewpoint_1" class="idName">Viewpoint_1</a>
+            <hr width="100%"/>
+         </div>
+--&gt;
+<br />
+&lt;<span class="element">Scene</span>&gt;
+<div class="indent">
+            <a name="Viewpoint_0"> </a> 
+&lt;<span class="element">Viewpoint</span>&#160;<span class="attribute">position</span>='<span class="value">0 0 15</span>'&#160;<span class="attribute">retainUserOffsets</span>='<span class="value">false</span>'/&gt;
+<br />
+&lt;<span class="element">Transform</span>&#160;<span class="attribute">translation</span>='<span class="value">0 3 0</span>'&gt;
+<div class="indent">
+&lt;<span class="element">Shape</span>&gt;
+<div class="indent">
+&lt;<span class="element">Text</span>&#160;<span class="attribute">string</span>='<span class="value">"How do you feel today?"</span>'&#160;<span class="attribute">solid</span>='<span class="value">true</span>'&gt;
+<div class="indent">
+&lt;<span class="element">FontStyle</span>&#160;<span class="attribute">justify</span>='<span class="value">"MIDDLE" "MIDDLE"</span>'/&gt;
+</div>&lt;/<span class="element">Text</span>&gt;
+<br />
+&lt;<span class="element">Appearance</span>&gt;
+<div class="indent">
+&lt;<span class="element">Material</span>/&gt;
+</div>&lt;/<span class="element">Appearance</span>&gt;
+</div>&lt;/<span class="element">Shape</span>&gt;
+<br /><a name="howFeelText"> </a> 
+&lt;!-- <span class="idName">howFeelText</span> <i>ROUTE</i>:&#160;
+[<a href="#ROUTE_4"><i>from</i>&#160;<span class="attribute">isActive</span>&#160;<i>to</i>&#160;<span class="idName">nodisplay</span>.<span class="attribute">set_boolean</span>
+               </a>]
+ --&gt;<br />
+&lt;<span class="element">TouchSensor</span>&#160;<span class="attribute">DEF</span>='<span class="idName">howFeelText</span>'/&gt;
+</div>&lt;/<span class="element">Transform</span>&gt;
+<br />
+&lt;<span class="element">Transform</span>&#160;<span class="attribute">translation</span>='<span class="value">-5 0 0</span>'&gt;
+<div class="indent">
+&lt;<span class="element">Shape</span>&gt;
+<div class="indent">
+&lt;<span class="element">Text</span>&#160;<span class="attribute">string</span>='<span class="value">"Happy"</span>'&#160;<span class="attribute">solid</span>='<span class="value">true</span>'&gt;
+<div class="indent">
+&lt;<span class="element">FontStyle</span>&#160;<span class="attribute">justify</span>='<span class="value">"MIDDLE" "MIDDLE"</span>'/&gt;
+</div>&lt;/<span class="element">Text</span>&gt;
+<br />
+&lt;<span class="element">Appearance</span>&gt;
+<div class="indent">
+&lt;<span class="element">Material</span>&#160;<span class="attribute">diffuseColor</span>='<span class="value">0.129412 1 0.019608</span>'/&gt;
+</div>&lt;/<span class="element">Appearance</span>&gt;
+</div>&lt;/<span class="element">Shape</span>&gt;
+<br /><a name="happyText"> </a> 
+&lt;!-- <span class="idName">happyText</span> <i>ROUTE</i>:&#160;
+[<a href="#ROUTE_5"><i>from</i>&#160;<span class="attribute">isActive</span>&#160;<i>to</i>&#160;<span class="idName">happydisplay</span>.<span class="attribute">set_boolean</span>
+               </a>]
+ --&gt;<br />
+&lt;<span class="element">TouchSensor</span>&#160;<span class="attribute">DEF</span>='<span class="idName">happyText</span>'/&gt;
+</div>&lt;/<span class="element">Transform</span>&gt;
+<br />
+&lt;<span class="element">Transform</span>&#160;<span class="attribute">translation</span>='<span class="value">-1.5 0 0</span>'&gt;
+<div class="indent">
+&lt;<span class="element">Shape</span>&gt;
+<div class="indent">
+&lt;<span class="element">Text</span>&#160;<span class="attribute">string</span>='<span class="value">"Not Bad"</span>'&#160;<span class="attribute">solid</span>='<span class="value">true</span>'&gt;
+<div class="indent">
+&lt;<span class="element">FontStyle</span>&#160;<span class="attribute">justify</span>='<span class="value">"MIDDLE" "MIDDLE"</span>'/&gt;
+</div>&lt;/<span class="element">Text</span>&gt;
+<br />
+&lt;<span class="element">Appearance</span>&gt;
+<div class="indent">
+&lt;<span class="element">Material</span>&#160;<span class="attribute">diffuseColor</span>='<span class="value">1 0.960784 0.019608</span>'/&gt;
+</div>&lt;/<span class="element">Appearance</span>&gt;
+</div>&lt;/<span class="element">Shape</span>&gt;
+<br /><a name="notBadText"> </a> 
+&lt;!-- <span class="idName">notBadText</span> <i>ROUTE</i>:&#160;
+[<a href="#ROUTE_6"><i>from</i>&#160;<span class="attribute">isActive</span>&#160;<i>to</i>&#160;<span class="idName">nbdisplay</span>.<span class="attribute">set_boolean</span>
+               </a>]
+ --&gt;<br />
+&lt;<span class="element">TouchSensor</span>&#160;<span class="attribute">DEF</span>='<span class="idName">notBadText</span>'/&gt;
+</div>&lt;/<span class="element">Transform</span>&gt;
+<br />
+&lt;<span class="element">Transform</span>&#160;<span class="attribute">translation</span>='<span class="value">2.2 0 0</span>'&gt;
+<div class="indent">
+&lt;<span class="element">Shape</span>&gt;
+<div class="indent">
+&lt;<span class="element">Text</span>&#160;<span class="attribute">string</span>='<span class="value">"Sad"</span>'&#160;<span class="attribute">solid</span>='<span class="value">true</span>'&gt;
+<div class="indent">
+&lt;<span class="element">FontStyle</span>&#160;<span class="attribute">justify</span>='<span class="value">"MIDDLE" "MIDDLE"</span>'/&gt;
+</div>&lt;/<span class="element">Text</span>&gt;
+<br />
+&lt;<span class="element">Appearance</span>&gt;
+<div class="indent">
+&lt;<span class="element">Material</span>&#160;<span class="attribute">diffuseColor</span>='<span class="value">0.180392 0.705882 1</span>'/&gt;
+</div>&lt;/<span class="element">Appearance</span>&gt;
+</div>&lt;/<span class="element">Shape</span>&gt;
+<br /><a name="sadText"> </a> 
+&lt;!-- <span class="idName">sadText</span> <i>ROUTE</i>:&#160;
+[<a href="#ROUTE_7"><i>from</i>&#160;<span class="attribute">isActive</span>&#160;<i>to</i>&#160;<span class="idName">saddisplay</span>.<span class="attribute">set_boolean</span>
+               </a>]
+ --&gt;<br />
+&lt;<span class="element">TouchSensor</span>&#160;<span class="attribute">DEF</span>='<span class="idName">sadText</span>'/&gt;
+</div>&lt;/<span class="element">Transform</span>&gt;
+<br />
+&lt;<span class="element">Transform</span>&#160;<span class="attribute">translation</span>='<span class="value">5 0 0</span>'&gt;
+<div class="indent">
+&lt;<span class="element">Shape</span>&gt;
+<div class="indent">
+&lt;<span class="element">Text</span>&#160;<span class="attribute">string</span>='<span class="value">"Bad"</span>'&#160;<span class="attribute">solid</span>='<span class="value">true</span>'&gt;
+<div class="indent">
+&lt;<span class="element">FontStyle</span>&#160;<span class="attribute">justify</span>='<span class="value">"MIDDLE" "MIDDLE"</span>'/&gt;
+</div>&lt;/<span class="element">Text</span>&gt;
+<br />
+&lt;<span class="element">Appearance</span>&gt;
+<div class="indent">
+&lt;<span class="element">Material</span>&#160;<span class="attribute">diffuseColor</span>='<span class="value">1 0.019608 0.05098</span>'/&gt;
+</div>&lt;/<span class="element">Appearance</span>&gt;
+</div>&lt;/<span class="element">Shape</span>&gt;
+<br /><a name="bullText"> </a> 
+&lt;!-- <span class="idName">bullText</span> <i>ROUTE</i>:&#160;
+[<a href="#ROUTE_8"><i>from</i>&#160;<span class="attribute">isActive</span>&#160;<i>to</i>&#160;<span class="idName">bulldisplay</span>.<span class="attribute">set_boolean</span>
+               </a>]
+ --&gt;<br />
+&lt;<span class="element">TouchSensor</span>&#160;<span class="attribute">DEF</span>='<span class="idName">bullText</span>'/&gt;
+</div>&lt;/<span class="element">Transform</span>&gt;
+<br />
+&lt;<span class="element">Transform</span>&#160;<span class="attribute">translation</span>='<span class="value">-5 0 -.1</span>'&gt;
+<div class="indent">
+&lt;<span class="element">Shape</span>&gt;
+<div class="indent">
+&lt;<span class="element">Box</span>&#160;<span class="attribute">size</span>='<span class="value">2.5 1 0.1</span>'/&gt;
+<br />
+&lt;<span class="element">Appearance</span>&gt;
+<div class="indent">
+&lt;<span class="element">Material</span>&#160;<span class="attribute">transparency</span>='<span class="value">1</span>'/&gt;
+</div>&lt;/<span class="element">Appearance</span>&gt;
+</div>&lt;/<span class="element">Shape</span>&gt;
+<br /><a name="happy"> </a> 
+&lt;!-- <span class="idName">happy</span> <i>ROUTE</i>:&#160;
+[<a href="#ROUTE_0"><i>from</i>&#160;<span class="attribute">isActive</span>&#160;<i>to</i>&#160;<span class="idName">happydisplay</span>.<span class="attribute">set_boolean</span>
+               </a>]
+ --&gt;<br />
+&lt;<span class="element">TouchSensor</span>&#160;<span class="attribute">DEF</span>='<span class="idName">happy</span>'/&gt;
+</div>&lt;/<span class="element">Transform</span>&gt;
+<br />
+&lt;<span class="element">Transform</span>&#160;<span class="attribute">translation</span>='<span class="value">-1.5 0 -.1</span>'&gt;
+<div class="indent">
+&lt;<span class="element">Shape</span>&gt;
+<div class="indent">
+&lt;<span class="element">Box</span>&#160;<span class="attribute">size</span>='<span class="value">3 1 0.1</span>'/&gt;
+<br />
+&lt;<span class="element">Appearance</span>&gt;
+<div class="indent">
+&lt;<span class="element">Material</span>&#160;<span class="attribute">transparency</span>='<span class="value">1</span>'/&gt;
+</div>&lt;/<span class="element">Appearance</span>&gt;
+</div>&lt;/<span class="element">Shape</span>&gt;
+<br /><a name="notBad"> </a> 
+&lt;!-- <span class="idName">notBad</span> <i>ROUTE</i>:&#160;
+[<a href="#ROUTE_1"><i>from</i>&#160;<span class="attribute">isActive</span>&#160;<i>to</i>&#160;<span class="idName">nbdisplay</span>.<span class="attribute">set_boolean</span>
+               </a>]
+ --&gt;<br />
+&lt;<span class="element">TouchSensor</span>&#160;<span class="attribute">DEF</span>='<span class="idName">notBad</span>'/&gt;
+</div>&lt;/<span class="element">Transform</span>&gt;
+<br />
+&lt;<span class="element">Transform</span>&#160;<span class="attribute">translation</span>='<span class="value">2.2 0 -.1</span>'&gt;
+<div class="indent">
+&lt;<span class="element">Shape</span>&gt;
+<div class="indent">
+&lt;<span class="element">Box</span>&#160;<span class="attribute">size</span>='<span class="value">2 1 0.1</span>'/&gt;
+<br />
+&lt;<span class="element">Appearance</span>&gt;
+<div class="indent">
+&lt;<span class="element">Material</span>&#160;<span class="attribute">transparency</span>='<span class="value">1</span>'/&gt;
+</div>&lt;/<span class="element">Appearance</span>&gt;
+</div>&lt;/<span class="element">Shape</span>&gt;
+<br /><a name="sad"> </a> 
+&lt;!-- <span class="idName">sad</span> <i>ROUTE</i>:&#160;
+[<a href="#ROUTE_2"><i>from</i>&#160;<span class="attribute">isActive</span>&#160;<i>to</i>&#160;<span class="idName">saddisplay</span>.<span class="attribute">set_boolean</span>
+               </a>]
+ --&gt;<br />
+&lt;<span class="element">TouchSensor</span>&#160;<span class="attribute">DEF</span>='<span class="idName">sad</span>'/&gt;
+</div>&lt;/<span class="element">Transform</span>&gt;
+<br />
+&lt;<span class="element">Transform</span>&#160;<span class="attribute">translation</span>='<span class="value">5 0 -.1</span>'&gt;
+<div class="indent">
+&lt;<span class="element">Shape</span>&gt;
+<div class="indent">
+&lt;<span class="element">Box</span>&#160;<span class="attribute">size</span>='<span class="value">4.5 1 0.1</span>'/&gt;
+<br />
+&lt;<span class="element">Appearance</span>&gt;
+<div class="indent">
+&lt;<span class="element">Material</span>&#160;<span class="attribute">transparency</span>='<span class="value">1</span>'/&gt;
+</div>&lt;/<span class="element">Appearance</span>&gt;
+</div>&lt;/<span class="element">Shape</span>&gt;
+<br /><a name="bull"> </a> 
+&lt;!-- <span class="idName">bull</span> <i>ROUTE</i>:&#160;
+[<a href="#ROUTE_3"><i>from</i>&#160;<span class="attribute">isActive</span>&#160;<i>to</i>&#160;<span class="idName">bulldisplay</span>.<span class="attribute">set_boolean</span>
+               </a>]
+ --&gt;<br />
+&lt;<span class="element">TouchSensor</span>&#160;<span class="attribute">DEF</span>='<span class="idName">bull</span>'/&gt;
+</div>&lt;/<span class="element">Transform</span>&gt;
+<br /><a name="display"> </a> 
+&lt;!-- <span class="idName">display</span> <i>ROUTEs</i>:&#160;
+[<a href="#ROUTE_9"><i>from</i>&#160;<span class="idName">nodisplay</span>.<span class="attribute">triggerValue</span>&#160;<i>to</i>&#160;<span class="attribute">whichChoice</span>
+            </a>]
+[<a href="#ROUTE_10"><i>from</i>&#160;<span class="idName">happydisplay</span>.<span class="attribute">triggerValue</span>&#160;<i>to</i>&#160;<span class="attribute">whichChoice</span>
+            </a>]
+[<a href="#ROUTE_11"><i>from</i>&#160;<span class="idName">nbdisplay</span>.<span class="attribute">triggerValue</span>&#160;<i>to</i>&#160;<span class="attribute">whichChoice</span>
+            </a>]
+[<a href="#ROUTE_12"><i>from</i>&#160;<span class="idName">saddisplay</span>.<span class="attribute">triggerValue</span>&#160;<i>to</i>&#160;<span class="attribute">whichChoice</span>
+            </a>]
+[<a href="#ROUTE_13"><i>from</i>&#160;<span class="idName">bulldisplay</span>.<span class="attribute">triggerValue</span>&#160;<i>to</i>&#160;<span class="attribute">whichChoice</span>
+            </a>]
+ --&gt;<br />
+&lt;<span class="element">Switch</span>&#160;<span class="attribute">DEF</span>='<span class="idName">display</span>'&#160;<span class="attribute">whichChoice</span>='<span class="value">-1</span>'&gt;
+<div class="indent">
+&lt;<span class="element">Transform</span>&#160;<span class="attribute">translation</span>='<span class="value">-5 -3 0</span>'&gt;
+<div class="indent">
+                  <a name="happyimg"> </a> 
+&lt;<span class="element">Shape</span>&#160;<span class="attribute">DEF</span>='<span class="idName">happyimg</span>'&gt;
+<div class="indent">
+&lt;<span class="element">Box</span>/&gt;
+<br />
+&lt;<span class="element">Appearance</span>&gt;
+<div class="indent">
+&lt;<span class="element">Material</span>&#160;<span class="attribute">diffuseColor</span>='<span class="value">0 0.819608 0.156863</span>'/&gt;
+<br />
+&lt;<span class="element">ImageTexture</span>
+<br />
+&#160;&#160;<span class="attribute">url</span>='
+"<a href="images/nicubunu_Emoticons_Laughing_face.png">images/nicubunu_Emoticons_Laughing_face.png</a>"
+"<a href="http://x3dGraphics.com/examples/X3dForWebAuthors/Chapter09-EventUtilitiesScripting/images/nicubunu_Emoticons_Laughing_face.png">http://x3dGraphics.com/examples/X3dForWebAuthors/Chapter09-EventUtilitiesScripting/images/nicubunu_Emoticons_Laughing_face.png</a>"
+'/&gt;
+</div>&lt;/<span class="element">Appearance</span>&gt;
+</div>&lt;/<span class="element">Shape</span>&gt;
+</div>&lt;/<span class="element">Transform</span>&gt;
+<br />
+&lt;<span class="element">Transform</span>&#160;<span class="attribute">translation</span>='<span class="value">-1.5 -3 0</span>'&gt;
+<div class="indent">
+                  <a name="nbimg"> </a> 
+&lt;<span class="element">Shape</span>&#160;<span class="attribute">DEF</span>='<span class="idName">nbimg</span>'&gt;
+<div class="indent">
+&lt;<span class="element">Box</span>/&gt;
+<br />
+&lt;<span class="element">Appearance</span>&gt;
+<div class="indent">
+&lt;<span class="element">Material</span>&#160;<span class="attribute">diffuseColor</span>='<span class="value">0 0.066667 0.941176</span>'/&gt;
+<br />
+&lt;<span class="element">ImageTexture</span>
+<br />
+&#160;&#160;<span class="attribute">url</span>='
+"<a href="images/nicubunu_Emoticons_Worried_face.png">images/nicubunu_Emoticons_Worried_face.png</a>"
+"<a href="http://x3dGraphics.com/examples/X3dForWebAuthors/Chapter09-EventUtilitiesScripting/images/nicubunu_Emoticons_Worried_face.png">http://x3dGraphics.com/examples/X3dForWebAuthors/Chapter09-EventUtilitiesScripting/images/nicubunu_Emoticons_Worried_face.png</a>"
+'/&gt;
+</div>&lt;/<span class="element">Appearance</span>&gt;
+</div>&lt;/<span class="element">Shape</span>&gt;
+</div>&lt;/<span class="element">Transform</span>&gt;
+<br />
+&lt;<span class="element">Transform</span>&#160;<span class="attribute">translation</span>='<span class="value">2.2 -3 0</span>'&gt;
+<div class="indent">
+                  <a name="sadimg"> </a> 
+&lt;<span class="element">Shape</span>&#160;<span class="attribute">DEF</span>='<span class="idName">sadimg</span>'&gt;
+<div class="indent">
+&lt;<span class="element">Box</span>/&gt;
+<br />
+&lt;<span class="element">Appearance</span>&gt;
+<div class="indent">
+&lt;<span class="element">Material</span>&#160;<span class="attribute">diffuseColor</span>='<span class="value">0.980392 0.968627 0</span>'/&gt;
+<br />
+&lt;<span class="element">ImageTexture</span>
+<br />
+&#160;&#160;<span class="attribute">url</span>='
+"<a href="images/nicubunu_Emoticons_Crying_face.png">images/nicubunu_Emoticons_Crying_face.png</a>"
+"<a href="http://x3dGraphics.com/examples/X3dForWebAuthors/Chapter09-EventUtilitiesScripting/images/nicubunu_Emoticons_Crying_face.png">http://x3dGraphics.com/examples/X3dForWebAuthors/Chapter09-EventUtilitiesScripting/images/nicubunu_Emoticons_Crying_face.png</a>"
+'/&gt;
+</div>&lt;/<span class="element">Appearance</span>&gt;
+</div>&lt;/<span class="element">Shape</span>&gt;
+</div>&lt;/<span class="element">Transform</span>&gt;
+<br />
+&lt;<span class="element">Transform</span>&#160;<span class="attribute">translation</span>='<span class="value">4.7 -3 0</span>'&gt;
+<div class="indent">
+                  <a name="bullimg"> </a> 
+&lt;<span class="element">Shape</span>&#160;<span class="attribute">DEF</span>='<span class="idName">bullimg</span>'&gt;
+<div class="indent">
+&lt;<span class="element">Box</span>/&gt;
+<br />
+&lt;<span class="element">Appearance</span>&gt;
+<div class="indent">
+&lt;<span class="element">Material</span>&#160;<span class="attribute">diffuseColor</span>='<span class="value">1 0.101961 0.180392</span>'/&gt;
+<br />
+&lt;<span class="element">ImageTexture</span>
+<br />
+&#160;&#160;<span class="attribute">url</span>='
+"<a href="images/nicubunu_Emoticons_Devil_face.png">images/nicubunu_Emoticons_Devil_face.png</a>"
+"<a href="http://x3dGraphics.com/examples/X3dForWebAuthors/Chapter09-EventUtilitiesScripting/images/nicubunu_Emoticons_Devil_face.png">http://x3dGraphics.com/examples/X3dForWebAuthors/Chapter09-EventUtilitiesScripting/images/nicubunu_Emoticons_Devil_face.png</a>"
+'/&gt;
+</div>&lt;/<span class="element">Appearance</span>&gt;
+</div>&lt;/<span class="element">Shape</span>&gt;
+</div>&lt;/<span class="element">Transform</span>&gt;
+</div>&lt;/<span class="element">Switch</span>&gt;
+<br /><a name="nodisplay"> </a> 
+&lt;!-- <span class="idName">nodisplay</span> <i>ROUTEs</i>:&#160;
+[<a href="#ROUTE_4"><i>from</i>&#160;<span class="idName">howFeelText</span>.<span class="attribute">isActive</span>&#160;<i>to</i>&#160;<span class="attribute">set_boolean</span>
+            </a>]
+[<a href="#ROUTE_9"><i>from</i>&#160;<span class="attribute">triggerValue</span>&#160;<i>to</i>&#160;<span class="idName">display</span>.<span class="attribute">whichChoice</span>
+            </a>]
+ --&gt;<br />
+&lt;<span class="element">IntegerTrigger</span>&#160;<span class="attribute">DEF</span>='<span class="idName">nodisplay</span>'&#160;<span class="attribute">integerKey</span>='<span class="value">-1</span>'&#160;<span class="attribute">containerField</span>='<span class="value">children</span>'/&gt;
+<br /><a name="happydisplay"> </a> 
+&lt;!-- <span class="idName">happydisplay</span> <i>ROUTEs</i>:&#160;
+[<a href="#ROUTE_0"><i>from</i>&#160;<span class="idName">happy</span>.<span class="attribute">isActive</span>&#160;<i>to</i>&#160;<span class="attribute">set_boolean</span>
+            </a>]
+[<a href="#ROUTE_5"><i>from</i>&#160;<span class="idName">happyText</span>.<span class="attribute">isActive</span>&#160;<i>to</i>&#160;<span class="attribute">set_boolean</span>
+            </a>]
+[<a href="#ROUTE_10"><i>from</i>&#160;<span class="attribute">triggerValue</span>&#160;<i>to</i>&#160;<span class="idName">display</span>.<span class="attribute">whichChoice</span>
+            </a>]
+ --&gt;<br />
+&lt;<span class="element">IntegerTrigger</span>&#160;<span class="attribute">DEF</span>='<span class="idName">happydisplay</span>'&#160;<span class="attribute">integerKey</span>='<span class="value">0</span>'&#160;<span class="attribute">containerField</span>='<span class="value">children</span>'/&gt;
+<br /><a name="nbdisplay"> </a> 
+&lt;!-- <span class="idName">nbdisplay</span> <i>ROUTEs</i>:&#160;
+[<a href="#ROUTE_1"><i>from</i>&#160;<span class="idName">notBad</span>.<span class="attribute">isActive</span>&#160;<i>to</i>&#160;<span class="attribute">set_boolean</span>
+            </a>]
+[<a href="#ROUTE_6"><i>from</i>&#160;<span class="idName">notBadText</span>.<span class="attribute">isActive</span>&#160;<i>to</i>&#160;<span class="attribute">set_boolean</span>
+            </a>]
+[<a href="#ROUTE_11"><i>from</i>&#160;<span class="attribute">triggerValue</span>&#160;<i>to</i>&#160;<span class="idName">display</span>.<span class="attribute">whichChoice</span>
+            </a>]
+ --&gt;<br />
+&lt;<span class="element">IntegerTrigger</span>&#160;<span class="attribute">DEF</span>='<span class="idName">nbdisplay</span>'&#160;<span class="attribute">integerKey</span>='<span class="value">1</span>'&#160;<span class="attribute">containerField</span>='<span class="value">children</span>'/&gt;
+<br /><a name="saddisplay"> </a> 
+&lt;!-- <span class="idName">saddisplay</span> <i>ROUTEs</i>:&#160;
+[<a href="#ROUTE_2"><i>from</i>&#160;<span class="idName">sad</span>.<span class="attribute">isActive</span>&#160;<i>to</i>&#160;<span class="attribute">set_boolean</span>
+            </a>]
+[<a href="#ROUTE_7"><i>from</i>&#160;<span class="idName">sadText</span>.<span class="attribute">isActive</span>&#160;<i>to</i>&#160;<span class="attribute">set_boolean</span>
+            </a>]
+[<a href="#ROUTE_12"><i>from</i>&#160;<span class="attribute">triggerValue</span>&#160;<i>to</i>&#160;<span class="idName">display</span>.<span class="attribute">whichChoice</span>
+            </a>]
+ --&gt;<br />
+&lt;<span class="element">IntegerTrigger</span>&#160;<span class="attribute">DEF</span>='<span class="idName">saddisplay</span>'&#160;<span class="attribute">integerKey</span>='<span class="value">2</span>'&#160;<span class="attribute">containerField</span>='<span class="value">children</span>'/&gt;
+<br /><a name="bulldisplay"> </a> 
+&lt;!-- <span class="idName">bulldisplay</span> <i>ROUTEs</i>:&#160;
+[<a href="#ROUTE_3"><i>from</i>&#160;<span class="idName">bull</span>.<span class="attribute">isActive</span>&#160;<i>to</i>&#160;<span class="attribute">set_boolean</span>
+            </a>]
+[<a href="#ROUTE_8"><i>from</i>&#160;<span class="idName">bullText</span>.<span class="attribute">isActive</span>&#160;<i>to</i>&#160;<span class="attribute">set_boolean</span>
+            </a>]
+[<a href="#ROUTE_13"><i>from</i>&#160;<span class="attribute">triggerValue</span>&#160;<i>to</i>&#160;<span class="idName">display</span>.<span class="attribute">whichChoice</span>
+            </a>]
+ --&gt;<br />
+&lt;<span class="element">IntegerTrigger</span>&#160;<span class="attribute">DEF</span>='<span class="idName">bulldisplay</span>'&#160;<span class="attribute">integerKey</span>='<span class="value">3</span>'&#160;<span class="attribute">containerField</span>='<span class="value">children</span>'/&gt;
+<br /><a name="ROUTE_0"> </a> 
+&lt;<span class="route">ROUTE</span>&#160;<span class="attribute">fromNode</span>='<a href="#happy" class="idName">happy</a>'&#160;<span class="attribute">fromField</span>='<span class="value">isActive</span>'&#160;<span class="attribute">toNode</span>='<a href="#happydisplay" class="idName">happydisplay</a>'&#160;<span class="attribute">toField</span>='<span class="value">set_boolean</span>'/&gt;
+<br /><a name="ROUTE_1"> </a> 
+&lt;<span class="route">ROUTE</span>&#160;<span class="attribute">fromNode</span>='<a href="#notBad" class="idName">notBad</a>'&#160;<span class="attribute">fromField</span>='<span class="value">isActive</span>'&#160;<span class="attribute">toNode</span>='<a href="#nbdisplay" class="idName">nbdisplay</a>'&#160;<span class="attribute">toField</span>='<span class="value">set_boolean</span>'/&gt;
+<br /><a name="ROUTE_2"> </a> 
+&lt;<span class="route">ROUTE</span>&#160;<span class="attribute">fromNode</span>='<a href="#sad" class="idName">sad</a>'&#160;<span class="attribute">fromField</span>='<span class="value">isActive</span>'&#160;<span class="attribute">toNode</span>='<a href="#saddisplay" class="idName">saddisplay</a>'&#160;<span class="attribute">toField</span>='<span class="value">set_boolean</span>'/&gt;
+<br /><a name="ROUTE_3"> </a> 
+&lt;<span class="route">ROUTE</span>&#160;<span class="attribute">fromNode</span>='<a href="#bull" class="idName">bull</a>'&#160;<span class="attribute">fromField</span>='<span class="value">isActive</span>'&#160;<span class="attribute">toNode</span>='<a href="#bulldisplay" class="idName">bulldisplay</a>'&#160;<span class="attribute">toField</span>='<span class="value">set_boolean</span>'/&gt;
+<br /><a name="ROUTE_4"> </a> 
+&lt;<span class="route">ROUTE</span>&#160;<span class="attribute">fromNode</span>='<a href="#howFeelText" class="idName">howFeelText</a>'&#160;<span class="attribute">fromField</span>='<span class="value">isActive</span>'&#160;<span class="attribute">toNode</span>='<a href="#nodisplay" class="idName">nodisplay</a>'&#160;<span class="attribute">toField</span>='<span class="value">set_boolean</span>'/&gt;
+<br /><a name="ROUTE_5"> </a> 
+&lt;<span class="route">ROUTE</span>&#160;<span class="attribute">fromNode</span>='<a href="#happyText" class="idName">happyText</a>'&#160;<span class="attribute">fromField</span>='<span class="value">isActive</span>'&#160;<span class="attribute">toNode</span>='<a href="#happydisplay" class="idName">happydisplay</a>'&#160;<span class="attribute">toField</span>='<span class="value">set_boolean</span>'/&gt;
+<br /><a name="ROUTE_6"> </a> 
+&lt;<span class="route">ROUTE</span>&#160;<span class="attribute">fromNode</span>='<a href="#notBadText" class="idName">notBadText</a>'&#160;<span class="attribute">fromField</span>='<span class="value">isActive</span>'&#160;<span class="attribute">toNode</span>='<a href="#nbdisplay" class="idName">nbdisplay</a>'&#160;<span class="attribute">toField</span>='<span class="value">set_boolean</span>'/&gt;
+<br /><a name="ROUTE_7"> </a> 
+&lt;<span class="route">ROUTE</span>&#160;<span class="attribute">fromNode</span>='<a href="#sadText" class="idName">sadText</a>'&#160;<span class="attribute">fromField</span>='<span class="value">isActive</span>'&#160;<span class="attribute">toNode</span>='<a href="#saddisplay" class="idName">saddisplay</a>'&#160;<span class="attribute">toField</span>='<span class="value">set_boolean</span>'/&gt;
+<br /><a name="ROUTE_8"> </a> 
+&lt;<span class="route">ROUTE</span>&#160;<span class="attribute">fromNode</span>='<a href="#bullText" class="idName">bullText</a>'&#160;<span class="attribute">fromField</span>='<span class="value">isActive</span>'&#160;<span class="attribute">toNode</span>='<a href="#bulldisplay" class="idName">bulldisplay</a>'&#160;<span class="attribute">toField</span>='<span class="value">set_boolean</span>'/&gt;
+<br />&lt;!-- Note that Switch "which choice" has FAN IN --&gt;
+<br /><a name="ROUTE_9"> </a> 
+&lt;<span class="route">ROUTE</span>&#160;<span class="attribute">fromNode</span>='<a href="#nodisplay" class="idName">nodisplay</a>'&#160;<span class="attribute">fromField</span>='<span class="value">triggerValue</span>'&#160;<span class="attribute">toNode</span>='<a href="#display" class="idName">display</a>'&#160;<span class="attribute">toField</span>='<span class="value">whichChoice</span>'/&gt;
+<br /><a name="ROUTE_10"> </a> 
+&lt;<span class="route">ROUTE</span>&#160;<span class="attribute">fromNode</span>='<a href="#happydisplay" class="idName">happydisplay</a>'&#160;<span class="attribute">fromField</span>='<span class="value">triggerValue</span>'&#160;<span class="attribute">toNode</span>='<a href="#display" class="idName">display</a>'&#160;<span class="attribute">toField</span>='<span class="value">whichChoice</span>'/&gt;
+<br /><a name="ROUTE_11"> </a> 
+&lt;<span class="route">ROUTE</span>&#160;<span class="attribute">fromNode</span>='<a href="#nbdisplay" class="idName">nbdisplay</a>'&#160;<span class="attribute">fromField</span>='<span class="value">triggerValue</span>'&#160;<span class="attribute">toNode</span>='<a href="#display" class="idName">display</a>'&#160;<span class="attribute">toField</span>='<span class="value">whichChoice</span>'/&gt;
+<br /><a name="ROUTE_12"> </a> 
+&lt;<span class="route">ROUTE</span>&#160;<span class="attribute">fromNode</span>='<a href="#saddisplay" class="idName">saddisplay</a>'&#160;<span class="attribute">fromField</span>='<span class="value">triggerValue</span>'&#160;<span class="attribute">toNode</span>='<a href="#display" class="idName">display</a>'&#160;<span class="attribute">toField</span>='<span class="value">whichChoice</span>'/&gt;
+<br /><a name="ROUTE_13"> </a> 
+&lt;<span class="route">ROUTE</span>&#160;<span class="attribute">fromNode</span>='<a href="#bulldisplay" class="idName">bulldisplay</a>'&#160;<span class="attribute">fromField</span>='<span class="value">triggerValue</span>'&#160;<span class="attribute">toNode</span>='<a href="#display" class="idName">display</a>'&#160;<span class="attribute">toField</span>='<span class="value">whichChoice</span>'/&gt;
+</div>&lt;/<span class="element">Scene</span>&gt;
+</div>&lt;/<span class="element">X3D</span>&gt;
+<br />
+&lt;!--
+<div class="center">
+         <hr width="100%"/>
+         <i>Index for DEF nodes</i>: 
+<a href="#bull" class="idName">bull</a>,
+<a href="#bulldisplay" class="idName">bulldisplay</a>,
+<a href="#bullimg" class="idName">bullimg</a>,
+<a href="#bullText" class="idName">bullText</a>,
+<a href="#display" class="idName">display</a>,
+<a href="#happy" class="idName">happy</a>,
+<a href="#happydisplay" class="idName">happydisplay</a>,
+<a href="#happyimg" class="idName">happyimg</a>,
+<a href="#happyText" class="idName">happyText</a>,
+<a href="#howFeelText" class="idName">howFeelText</a>,
+<a href="#nbdisplay" class="idName">nbdisplay</a>,
+<a href="#nbimg" class="idName">nbimg</a>,
+<a href="#nodisplay" class="idName">nodisplay</a>,
+<a href="#notBad" class="idName">notBad</a>,
+<a href="#notBadText" class="idName">notBadText</a>,
+<a href="#sad" class="idName">sad</a>,
+<a href="#saddisplay" class="idName">saddisplay</a>,
+<a href="#sadimg" class="idName">sadimg</a>,
+<a href="#sadText" class="idName">sadText</a>
+<br />
+<i>Index for Viewpoint image</i>: 
+<a href="#Viewpoint_1" class="idName">Viewpoint_1</a>
+         <hr width="100%"/>
+      </div>
+--&gt;
+<p>
+&lt;!-- Tag color codes (X3D, XML terminology):
+&lt;<span class="element">Node</span>
+         <span class="idName"> DEF</span>='<span class="idName">idName</span>' <span class="attribute">field</span>='<span class="value">value</span>'/&gt; &lt;<span class="element">Element</span>
+         <span class="idName"> DEF</span>='<span class="idName">idName</span>' <span class="attribute">attribute</span>='<span class="value">value</span>'/&gt;  --&gt;
+</p>
+   </body>
+</html>

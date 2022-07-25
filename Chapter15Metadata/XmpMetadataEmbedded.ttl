@@ -1,0 +1,352 @@
+@prefix :        <https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter15Metadata/XmpMetadataEmbedded.ttl#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema:  <http://schema.org/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix x3d:     <https://www.web3d.org/specifications/x3d-4.0.xsd#> .
+@prefix x3do:    <https://www.web3d.org/specifications/X3dOntology4.0#> .
+
+:X3D a owl:NamedIndividual, x3do:X3D ;
+  x3do:hasHead :head ;
+  x3do:hasScene :Scene ;
+  x3do:profile 'Immersive' ;
+  x3do:version '4.0' ;
+  x3do:noNamespaceSchemaLocation 'https://www.web3d.org/specifications/x3d-4.0.xsd' .
+:head a owl:NamedIndividual, x3do:head ;
+  x3do:hasParent :X3D ;
+  x3do:hasMeta :meta_1_1, :meta_1_2, :meta_1_3, :meta_1_4, :meta_1_5, :meta_1_6, :meta_1_7, :meta_1_8, :meta_1_9, :meta_1_10, :meta_1_11, :meta_1_12, :meta_1_13, :meta_1_14, :meta_1_15, :meta_1_16, :meta_1_17, :meta_1_18, :meta_1_19, :meta_1_20, :meta_1_21, :meta_1_22, :meta_1_23, :meta_1_24, :meta_1_25, :meta_1_26, :meta_1_27, :meta_1_28, :meta_1_29, :meta_1_30, :meta_1_31, :meta_1_32, :meta_1_33 .
+:meta_1_1 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'XmpMetadataEmbedded.x3d' ;
+  x3do:name 'title' .
+:meta_1_2 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Simple XMP sidecar example: Hello XMP metadata!' ;
+  x3do:name 'description' .
+:meta_1_3 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '29 April 2021' ;
+  x3do:name 'created' .
+:meta_1_4 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '21 February 2022' ;
+  x3do:name 'revised' .
+:meta_1_5 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Don Brutzman, Vince Marchetti, Jakub Flotynski, Dick Puk' ;
+  x3do:name 'creator' .
+:meta_1_6 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Source model assumes default containerField=value for X3D4 Metadata nodes, specification resolution needed' ;
+  x3do:name 'warning' .
+:meta_1_7 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Summary presentation XmpMetadataSupportX3D.pptx' ;
+  x3do:name 'reference' .
+:meta_1_8 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'XmpMetadataSidecar.xml' ;
+  x3do:name 'reference' .
+:meta_1_9 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'XmpMetadataSidecar.rdf' ;
+  x3do:name 'reference' .
+:meta_1_10 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'XmpMetadataSidecar.ttl' ;
+  x3do:name 'reference' .
+:meta_1_11 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Protege https://protege.stanford.edu' ;
+  x3do:name 'generator' .
+:meta_1_12 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'XmpMetadataEmbeddedX3dComparison.png' ;
+  x3do:name 'Image' .
+:meta_1_13 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://www.web3d.org/specifications/X3Dv4Draft/ISO-IEC19775-1v4-CD1/Part01/components/core.html#MetadataSet' ;
+  x3do:name 'reference' .
+:meta_1_14 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'XmpMetadataExampleWikipedia.xml' ;
+  x3do:name 'reference' .
+:meta_1_15 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'XmpMetadataExampleWikipedia.ttl' ;
+  x3do:name 'reference' .
+:meta_1_16 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://wwwimages2.adobe.com/content/dam/acom/en/devnet/xmp/pdfs/XMP%20SDK%20Release%20cc-2016-08/XMPSpecificationPart1.pdf' ;
+  x3do:name 'reference' .
+:meta_1_17 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Once pattern OK, write conversion stylesheets XmpToX3dMetadata.xslt and X3dMetadataToXmp.xslt' ;
+  x3do:name 'TODO' .
+:meta_1_18 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'X3D support for xml:lang attribute not provided in X3D XML Schema, instead use MetadataString as best practice.' ;
+  x3do:name 'info' .
+:meta_1_19 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Wikipedia XMP https://en.wikipedia.org/wiki/Extensible_Metadata_Platform' ;
+  x3do:name 'reference' .
+:meta_1_20 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Wikipedia Metadata https://en.wikipedia.org/wiki/Metadata' ;
+  x3do:name 'reference' .
+:meta_1_21 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://en.wikipedia.org/wiki/Sidecar' ;
+  x3do:name 'reference' .
+:meta_1_22 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/xmp.html' ;
+  x3do:name 'reference' .
+:meta_1_23 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://en.wikipedia.org/wiki/Ontology_for_Media_Resources' ;
+  x3do:name 'reference' .
+:meta_1_24 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://en.wikipedia.org/wiki/Multimedia_Web_Ontology_Language' ;
+  x3do:name 'reference' .
+:meta_1_25 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'W3C Ontology for Media Resources 1.0 https://www.w3.org/TR/mediaont-10' ;
+  x3do:name 'reference' .
+:meta_1_26 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'ISO XMP ISO 16684-1:2019Part 1: Data model, serialization and core properties https://www.iso.org/standard/75163.html' ;
+  x3do:name 'reference' .
+:meta_1_27 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'ISO XMP 16684-2:2014 Part 2: Description of XMP schemas using RELAX NG https://www.iso.org/standard/57422.html' ;
+  x3do:name 'reference' .
+:meta_1_28 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Adobe XMP https://www.adobe.com/devnet/xmp.html' ;
+  x3do:name 'reference' .
+:meta_1_29 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Adobe XMP https://www.adobe.com/products/xmp.html' ;
+  x3do:name 'reference' .
+:meta_1_30 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'ExifTool XMP Tags https://exiftool.org/TagNames/XMP.html' ;
+  x3do:name 'reference' .
+:meta_1_31 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter15Metadata/XmpMetadataEmbedded.x3d' ;
+  x3do:name 'identifier' .
+:meta_1_32 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://www.web3d.org/x3d/content/examples/license.html' ;
+  x3do:name 'license' .
+:meta_1_33 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'X3D-Edit 4.0, https://savage.nps.edu/X3D-Edit' ;
+  x3do:name 'generator' .
+:meta dcterms:title "XmpMetadataEmbedded.x3d" .
+:meta dcterms:description "Simple XMP sidecar example: Hello XMP metadata!" .
+:meta dcterms:created "29 April 2021" .
+:meta dcterms:creator "Don Brutzman, Vince Marchetti, Jakub Flotynski, Dick Puk" .
+:meta dcterms:warning "Source model assumes default containerField=value for X3D4 Metadata nodes, specification resolution needed" .
+:meta dcterms:reference "Summary presentation XmpMetadataSupportX3D.pptx" .
+:meta dcterms:reference "XmpMetadataSidecar.xml" .
+:meta dcterms:reference "XmpMetadataSidecar.rdf" .
+:meta dcterms:reference "XmpMetadataSidecar.ttl" .
+:meta dcterms:generator "Protege https://protege.stanford.edu" .
+:meta dcterms:Image "XmpMetadataEmbeddedX3dComparison.png" .
+:meta dcterms:reference "https://www.web3d.org/specifications/X3Dv4Draft/ISO-IEC19775-1v4-CD1/Part01/components/core.html#MetadataSet" .
+:meta dcterms:reference "XmpMetadataExampleWikipedia.xml" .
+:meta dcterms:reference "XmpMetadataExampleWikipedia.ttl" .
+:meta dcterms:reference "https://wwwimages2.adobe.com/content/dam/acom/en/devnet/xmp/pdfs/XMP%20SDK%20Release%20cc-2016-08/XMPSpecificationPart1.pdf" .
+:meta dcterms:reference "Wikipedia XMP https://en.wikipedia.org/wiki/Extensible_Metadata_Platform" .
+:meta dcterms:reference "Wikipedia Metadata https://en.wikipedia.org/wiki/Metadata" .
+:meta dcterms:reference "https://en.wikipedia.org/wiki/Sidecar" .
+:meta dcterms:reference "https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/xmp.html" .
+:meta dcterms:reference "https://en.wikipedia.org/wiki/Ontology_for_Media_Resources" .
+:meta dcterms:reference "https://en.wikipedia.org/wiki/Multimedia_Web_Ontology_Language" .
+:meta dcterms:reference "W3C Ontology for Media Resources 1.0 https://www.w3.org/TR/mediaont-10" .
+:meta dcterms:reference "ISO XMP ISO 16684-1:2019Part 1: Data model, serialization and core properties https://www.iso.org/standard/75163.html" .
+:meta dcterms:reference "ISO XMP 16684-2:2014 Part 2: Description of XMP schemas using RELAX NG https://www.iso.org/standard/57422.html" .
+:meta dcterms:reference "Adobe XMP https://www.adobe.com/devnet/xmp.html" .
+:meta dcterms:reference "Adobe XMP https://www.adobe.com/products/xmp.html" .
+:meta dcterms:reference "ExifTool XMP Tags https://exiftool.org/TagNames/XMP.html" .
+:meta dcterms:identifier "https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter15Metadata/XmpMetadataEmbedded.x3d" .
+:meta dcterms:license "https://www.web3d.org/x3d/content/examples/license.html" .
+:meta dcterms:generator "X3D-Edit 4.0, https://savage.nps.edu/X3D-Edit" .
+:Scene a owl:NamedIndividual, x3do:Scene ;
+  x3do:hasParent :X3D ;
+  x3do:hasChildren :WorldInfo_2_1, :Background_2_2, :Viewpoint_2_4, :Anchor_2_5 ;
+  x3do:hasValue :MetadataSet_2_3 .
+:WorldInfo_2_1 a owl:NamedIndividual, x3do:WorldInfo ;
+  x3do:hasParent :Scene ;
+  x3do:title 'XmpMetadataEmbedded.x3d' .
+:Background_2_2 a owl:NamedIndividual, x3do:Background ;
+  x3do:hasParent :Scene ;
+  x3do:skyColor ( 0 0.439216 0.760784 ) .
+:MetadataSet_2_3 a owl:NamedIndividual, x3do:MetadataSet ;
+  x3do:hasParent :Scene ;
+  x3do:hasValue :MetadataSet_2_3_1, :MetadataSet_2_3_2 ;
+  x3do:name 'rdf:RDF' ;
+  x3do:reference 'TODO refer to XMP ISO specification document' .
+:MetadataSet_2_3_1 a owl:NamedIndividual, x3do:MetadataSet ;
+  x3do:hasParent :MetadataSet_2_3 ;
+  x3do:hasValue :MetadataString_2_3_1_1, :MetadataString_2_3_1_2, :MetadataString_2_3_1_3 ;
+  x3do:name 'namespaces' .
+:MetadataString_2_3_1_1 a owl:NamedIndividual, x3do:MetadataString ;
+  x3do:hasParent :MetadataSet_2_3_1 ;
+  x3do:name 'xmlns:rdf' ;
+  x3do:value 'http://www.w3.org/1999/02/22-rdf-syntax-ns#' .
+:MetadataString_2_3_1_2 a owl:NamedIndividual, x3do:MetadataString ;
+  x3do:hasParent :MetadataSet_2_3_1 ;
+  x3do:name 'xmlns:dc' ;
+  x3do:value 'http://purl.org/dc/elements/1.1/' .
+:MetadataString_2_3_1_3 a owl:NamedIndividual, x3do:MetadataString ;
+  x3do:hasParent :MetadataSet_2_3_1 ;
+  x3do:name 'xmlns:xmp' ;
+  x3do:value 'http://ns.adobe.com/xap/1.0/' .
+:MetadataSet_2_3_2 a owl:NamedIndividual, x3do:MetadataSet ;
+  x3do:hasParent :MetadataSet_2_3 ;
+  x3do:hasValue :MetadataString_2_3_2_1, :MetadataSet_2_3_2_2, :MetadataString_2_3_2_3, :MetadataString_2_3_2_4, :MetadataSet_2_3_2_5 ;
+  x3do:name 'rdf:Description' .
+:MetadataString_2_3_2_1 a owl:NamedIndividual, x3do:MetadataString ;
+  x3do:hasParent :MetadataSet_2_3_2 ;
+  x3do:name 'rdf:about' ;
+  x3do:value 'https://kshell.com/sgs/example_uri_0001/' .
+:MetadataSet_2_3_2_2 a owl:NamedIndividual, x3do:MetadataSet ;
+  x3do:hasParent :MetadataSet_2_3_2 ;
+  x3do:hasValue :MetadataSet_2_3_2_2_1 ;
+  x3do:name 'dc:description' .
+:MetadataSet_2_3_2_2_1 a owl:NamedIndividual, x3do:MetadataSet ;
+  x3do:hasParent :MetadataSet_2_3_2_2 ;
+  x3do:hasValue :MetadataString_2_3_2_2_1_1 ;
+  x3do:name 'rdf:Alt' .
+:MetadataString_2_3_2_2_1_1 a owl:NamedIndividual, x3do:MetadataString ;
+  x3do:hasParent :MetadataSet_2_3_2_2_1 ;
+  x3do:hasMetadata :MetadataString_2_3_2_2_1_1_1 ;
+  x3do:name 'rdf:li' ;
+  x3do:value 'VRML visualization' .
+:MetadataString_2_3_2_2_1_1_1 a owl:NamedIndividual, x3do:MetadataString ;
+  x3do:hasParent :MetadataString_2_3_2_2_1_1 ;
+  x3do:name 'xml:lang' ;
+  x3do:reference 'prefer using MetadataString to indicate xml:lang values' ;
+  x3do:value 'en' .
+:MetadataString_2_3_2_3 a owl:NamedIndividual, x3do:MetadataString ;
+  x3do:hasParent :MetadataSet_2_3_2 ;
+  x3do:name 'dc:format' ;
+  x3do:value 'model/x3d-vrml' .
+:MetadataString_2_3_2_4 a owl:NamedIndividual, x3do:MetadataString ;
+  x3do:hasParent :MetadataSet_2_3_2 ;
+  x3do:name 'dc:rights' ;
+  x3do:value '""' .
+:MetadataSet_2_3_2_5 a owl:NamedIndividual, x3do:MetadataSet ;
+  x3do:hasParent :MetadataSet_2_3_2 ;
+  x3do:hasValue :MetadataSet_2_3_2_5_1, :MetadataSet_2_3_2_5_2, :MetadataString_2_3_2_5_3 ;
+  x3do:name 'dc:title' .
+:MetadataSet_2_3_2_5_1 a owl:NamedIndividual, x3do:MetadataSet ;
+  x3do:hasParent :MetadataSet_2_3_2_5 ;
+  x3do:hasValue :MetadataString_2_3_2_5_1_1, :MetadataString_2_3_2_5_1_2 ;
+  x3do:name 'rdf:Alt' .
+:MetadataString_2_3_2_5_1_1 a owl:NamedIndividual, x3do:MetadataString ;
+  x3do:hasParent :MetadataSet_2_3_2_5_1 ;
+  x3do:hasMetadata :MetadataString_2_3_2_5_1_1_1 ;
+  x3do:name 'rdf:li' ;
+  x3do:reference 'xml:lang=&apos;en&apos;' ;
+  x3do:value 'l-bracket_20120725.134815' .
+:MetadataString_2_3_2_5_1_1_1 a owl:NamedIndividual, x3do:MetadataString ;
+  x3do:hasParent :MetadataString_2_3_2_5_1_1 ;
+  x3do:name 'xml:lang' ;
+  x3do:value 'en' .
+:MetadataString_2_3_2_5_1_2 a owl:NamedIndividual, x3do:MetadataString ;
+  x3do:hasParent :MetadataSet_2_3_2_5_1 ;
+  x3do:hasMetadata :MetadataString_2_3_2_5_1_2_1 ;
+  x3do:name 'rdf:li' ;
+  x3do:reference 'xml:lang=&apos;gr&apos;' ;
+  x3do:value 'aristsirra-bracket_20120725.134815' .
+:MetadataString_2_3_2_5_1_2_1 a owl:NamedIndividual, x3do:MetadataString ;
+  x3do:hasParent :MetadataString_2_3_2_5_1_2 ;
+  x3do:name 'xml:lang' ;
+  x3do:reference 'prefer using MetadataString to indicate xml:lang values' ;
+  x3do:value 'en' .
+:MetadataSet_2_3_2_5_2 a owl:NamedIndividual, x3do:MetadataSet ;
+  x3do:hasParent :MetadataSet_2_3_2_5 ;
+  x3do:hasValue :MetadataSet_2_3_2_5_2_1 ;
+  x3do:name 'dc:creator' .
+:MetadataSet_2_3_2_5_2_1 a owl:NamedIndividual, x3do:MetadataSet ;
+  x3do:hasParent :MetadataSet_2_3_2_5_2 ;
+  x3do:hasValue :MetadataString_2_3_2_5_2_1_1 ;
+  x3do:name 'rdf:Seq' .
+:MetadataString_2_3_2_5_2_1_1 a owl:NamedIndividual, x3do:MetadataString ;
+  x3do:hasParent :MetadataSet_2_3_2_5_2_1 ;
+  x3do:name 'rdf:li' ;
+  x3do:value 'vmarchetti@kshell.com' .
+:MetadataString_2_3_2_5_3 a owl:NamedIndividual, x3do:MetadataString ;
+  x3do:hasParent :MetadataSet_2_3_2_5 ;
+  x3do:name 'xmp:CreateDate' ;
+  x3do:value '2021-2-10' .
+
+# Found MetadataSet rdf:RDF and so adding native RDF triples
+# TODO: reconcile namespaces for Dublin Core and other ontologies
+# TODO: finish triples
+# rdf:RDF [
+#       namespaces [
+#         xmlns:rdf [ "http://www.w3.org/1999/02/22-rdf-syntax-ns#" ] ;
+#         xmlns:dc [ "http://purl.org/dc/elements/1.1/" ] ;
+#         xmlns:xmp [ "http://ns.adobe.com/xap/1.0/" ]
+#       ] ;
+#       rdf:Description [
+#         rdf:about [ "https://kshell.com/sgs/example_uri_0001/" ] ;
+#         dc:description [
+#           rdf:Alt [
+#             rdf:li [ "VRML visualization" ]
+#           ]
+#         ] ;
+#         dc:format [ "model/x3d-vrml" ] ;
+#         dc:rights [ "" ] ;
+#         dc:title [
+#           rdf:Alt [
+#             rdf:li [ "l-bracket_20120725.134815" ] ;
+#             rdf:li [ "aristsirra-bracket_20120725.134815" ]
+#           ] ;
+#           dc:creator [
+#             rdf:Seq [
+#               rdf:li [ "vmarchetti@kshell.com" ]
+#             ]
+#           ] ;
+#           xmp:CreateDate [ "2021-2-10" ]
+#         ]
+#       ]
+#     ]
+
+:Viewpoint_2_4 a owl:NamedIndividual, x3do:Viewpoint ;
+  x3do:hasParent :Scene ;
+  x3do:description 'View scene source to see metadata examples' ;
+  x3do:position ( 0 0 9 ) .
+:Anchor_2_5 a owl:NamedIndividual, x3do:Anchor ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :Shape_2_5_1 ;
+  x3do:description 'Load scene index page' ;
+  x3do:parameter '"target=_blank"' ;
+  x3do:url '"XmpMetadataEmbeddedIndex.html" "https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter15Metadata/XmpMetadataEmbeddedIndex.html"' .
+:Shape_2_5_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Anchor_2_5 ;
+  x3do:hasGeometry :Text_2_5_1_1 ;
+  x3do:hasAppearance :Appearance_2_5_1_2 .
+:Text_2_5_1_1 a owl:NamedIndividual, x3do:Text ;
+  x3do:hasParent :Shape_2_5_1 ;
+  x3do:hasFontStyle :FontStyle_2_5_1_1_1 ;
+  x3do:string '"View scene source" "to see" "XmpMetadataEmbedded" "example"' .
+:FontStyle_2_5_1_1_1 a owl:NamedIndividual, x3do:FontStyle ;
+  x3do:hasParent :Text_2_5_1_1 ;
+  x3do:justify '"MIDDLE" "MIDDLE"' .
+:Appearance_2_5_1_2 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_5_1 ;
+  x3do:hasMaterial :Material_2_5_1_2_1 .
+:Material_2_5_1_2_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_5_1_2 ;
+  x3do:diffuseColor ( 1 0.992157 0.039216 ) .

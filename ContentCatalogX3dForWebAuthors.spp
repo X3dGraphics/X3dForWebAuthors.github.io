@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	<meta name="author" content="Don Brutzman"/>
+	<meta name="generator" content="ContentCatalogToXmlSpyProject.xslt"/>
+	<meta name="url" content="https://www.web3d.org/x3d/content/ContentCatalogToXmlSpyProject.xslt"/>
+	<meta name="description" content="XSLT stylesheet to convert X3D example-archive catalogs into XML Spy project files."/>
+        -->
+<Project xmlns:xdt="http://www.w3.org/2005/02/xpath-datatypes" xmlns:fn="http://www.w3.org/2005/02/xpath-functions" xmlns:xs="http://www.w3.org/2001/XMLSchema" XSL_XMLUseFile=".\X3dToXhtml.xslt" ValidFile="..\..\..\tools\CreateContentCatalog\ContentCatalog.dtd" ValidFileSet="Yes">
+<Folder FolderName="HTML pages">
+<File HomeFolder="Yes" FilePath=".\index.html"/>
+<File HomeFolder="Yes" FilePath=".\X3dResources.html"/>
+<File HomeFolder="Yes" FilePath=".\license.html"/>
+<File HomeFolder="Yes" FilePath=".\X3dSceneAuthoringHints.html"/>
+</Folder>
+<Folder FolderName="X3D4WA, X3D for Web Authors X3D Examples .x3d encoding" ExtStr=".x3d" ValidFileSet="Yes" ValidFile="C:/x3d-code/www.web3d.org/specifications//x3d-4.0.xsd" XSL_XMLUseSet="Yes" XSL_XMLUseFile="C:/x3d-code/www.web3d.org/x3d/stylesheets/X3dToXhtml.xslt" XSL_DestFileExtSet="Yes" XSL_DestFolderSet="Yes" XSL_DestFolder=".">
+<Folder FolderName="Chapter 01 Technical Overview"/>
+<Folder FolderName="Chapter 02 Geometry Primitives"/>
+<Folder FolderName="Chapter 03 Grouping"/>
+<Folder FolderName="Chapter 04 Viewing Navigation"/>
+<Folder FolderName="Chapter 05 Appearance Material Textures"/>
+<Folder FolderName="Chapter 06 Geometry Points Lines Polygons"/>
+<Folder FolderName="Chapter 07 Event Animation Interpolation"/>
+<Folder FolderName="Chapter 08 User Interactivity"/>
+<Folder FolderName="Chapter 09 Event Utilities Scripting"/>
+<Folder FolderName="Chapter 10 Geometry 2D"/>
+<Folder FolderName="Chapter 11 Lighting Environmental Effects"/>
+<Folder FolderName="Chapter 12 Environment Sensor Sound"/>
+<Folder FolderName="Chapter 13 Geometry Triangles Quadrilaterals"/>
+<Folder FolderName="Chapter 14 Prototypes"/>
+<Folder FolderName="Chapter 15 Metadata"/>
+<Folder FolderName="Kelp Forest Exhibit"/>
+<File FilePath="HelloWorld.x3d"/>
+</Folder>
+<Folder FolderName="X3D4WA, X3D for Web Authors X3D Examples Canonical.xml encoding" ExtStr=".xml" ValidFileSet="Yes" ValidFile="C:/x3d-code/www.web3d.org/specifications//x3d-4.0.xsd" XSL_XMLUseSet="Yes" XSL_XMLUseFile="C:/x3d-code/www.web3d.org/x3d/stylesheets/X3dToXhtml.xslt" XSL_DestFileExtSet="Yes" XSL_DestFolderSet="Yes" XSL_DestFolder=".">
+<Folder FolderName="Chapter 01 Technical Overview">
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+</Folder>
+<Folder FolderName="Chapter 02 Geometry Primitives">
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+</Folder>
+<Folder FolderName="Chapter 03 Grouping">
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+</Folder>
+<Folder FolderName="Chapter 04 Viewing Navigation">
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+</Folder>
+<Folder FolderName="Chapter 05 Appearance Material Textures">
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+</Folder>
+<Folder FolderName="Chapter 06 Geometry Points Lines Polygons">
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+</Folder>
+<Folder FolderName="Chapter 07 Event Animation Interpolation">
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+</Folder>
+<Folder FolderName="Chapter 08 User Interactivity">
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+</Folder>
+<Folder FolderName="Chapter 09 Event Utilities Scripting">
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+</Folder>
+<Folder FolderName="Chapter 10 Geometry 2D">
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+</Folder>
+<Folder FolderName="Chapter 11 Lighting Environmental Effects">
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+</Folder>
+<Folder FolderName="Chapter 12 Environment Sensor Sound">
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+</Folder>
+<Folder FolderName="Chapter 13 Geometry Triangles Quadrilaterals">
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+</Folder>
+<Folder FolderName="Chapter 14 Prototypes">
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+</Folder>
+<Folder FolderName="Chapter 15 Metadata">
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+</Folder>
+<Folder FolderName="Kelp Forest Exhibit">
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+<File FilePath=".\Canonical.xml"/>
+</Folder>
+<File FilePath="HelloWorldCanonical.xml"/>
+</Folder>
+<File HomeFolder="Yes" FilePath=".\ContentCatalogX3dForWebAuthors.xml"/>
+</Project>

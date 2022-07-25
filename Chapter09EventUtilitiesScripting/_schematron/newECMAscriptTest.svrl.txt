@@ -1,0 +1,1 @@
+newECMAscriptTest.x3d is considered a test model supporting X3D Quality Assurance (QA). [/X3D/head, diagnostic]

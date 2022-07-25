@@ -1,0 +1,169 @@
+@prefix :        <https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter09EventUtilitiesScripting/BooleanSequencerIntegerSequencer.ttl#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema:  <http://schema.org/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix x3d:     <https://www.web3d.org/specifications/x3d-4.0.xsd#> .
+@prefix x3do:    <https://www.web3d.org/specifications/X3dOntology4.0#> .
+
+:X3D a owl:NamedIndividual, x3do:X3D ;
+  x3do:hasHead :head ;
+  x3do:hasScene :Scene ;
+  x3do:profile 'Immersive' ;
+  x3do:version '3.3' ;
+  x3do:noNamespaceSchemaLocation 'https://www.web3d.org/specifications/x3d-3.3.xsd' .
+:head a owl:NamedIndividual, x3do:head ;
+  x3do:hasParent :X3D ;
+  x3do:hasMeta :meta_1_1, :meta_1_2, :meta_1_3, :meta_1_4, :meta_1_5, :meta_1_6, :meta_1_7, :meta_1_8 .
+:meta_1_1 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'BooleanSequencerIntegerSequencer.x3d' ;
+  x3do:name 'title' .
+:meta_1_2 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Show synchronized use of BooleanSequencer and IntegerSequencer nodes for SpotLight enabled and Switch whichChoice control, respectively' ;
+  x3do:name 'description' .
+:meta_1_3 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Don Brutzman' ;
+  x3do:name 'creator' .
+:meta_1_4 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '6 September 2006' ;
+  x3do:name 'created' .
+:meta_1_5 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '20 October 2019' ;
+  x3do:name 'modified' .
+:meta_1_6 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter09EventUtilitiesScripting/BooleanSequencerIntegerSequencer.x3d' ;
+  x3do:name 'identifier' .
+:meta_1_7 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'X3D-Edit 3.3, https://savage.nps.edu/X3D-Edit' ;
+  x3do:name 'generator' .
+:meta_1_8 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '../license.html' ;
+  x3do:name 'license' .
+:meta dcterms:title "BooleanSequencerIntegerSequencer.x3d" .
+:meta dcterms:description "Show synchronized use of BooleanSequencer and IntegerSequencer nodes for SpotLight enabled and Switch whichChoice control, respectively" .
+:meta dcterms:creator "Don Brutzman" .
+:meta dcterms:created "6 September 2006" .
+:meta dcterms:modified "20 October 2019" .
+:meta dcterms:identifier "https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter09EventUtilitiesScripting/BooleanSequencerIntegerSequencer.x3d" .
+:meta dcterms:generator "X3D-Edit 3.3, https://savage.nps.edu/X3D-Edit" .
+:meta dcterms:license "../license.html" .
+:Scene a owl:NamedIndividual, x3do:Scene ;
+  x3do:hasParent :X3D ;
+  x3do:hasChildren :WorldInfo_2_1, :NavigationInfo_2_2, :Clock, :OnOffSequencer, :RedSpotLight, :ChildSequencer, :Transform_2_9 ;
+  x3do:hasROUTE :ROUTE_2_6, :ROUTE_2_7, :ROUTE_2_10, :ROUTE_2_11 .
+:WorldInfo_2_1 a owl:NamedIndividual, x3do:WorldInfo ;
+  x3do:hasParent :Scene ;
+  x3do:title 'BooleanSequencerIntegerSequencer.x3d' .
+:NavigationInfo_2_2 a owl:NamedIndividual, x3do:NavigationInfo ;
+  x3do:hasParent :Scene .
+:Clock a owl:NamedIndividual, x3do:TimeSensor ;
+  x3do:hasParent :Scene ;
+  x3do:DEF 'Clock' ;
+  x3do:cycleInterval '10' ;
+  x3do:loop true .
+:OnOffSequencer a owl:NamedIndividual, x3do:BooleanSequencer ;
+  x3do:hasParent :Scene ;
+  x3do:DEF 'OnOffSequencer' ;
+  x3do:key ( 0 0.2 0.4 0.6 0.8 1 ) ;
+  x3do:keyValue ( true false true false true true ) .
+:RedSpotLight a owl:NamedIndividual, x3do:SpotLight ;
+  x3do:hasParent :Scene ;
+  x3do:DEF 'RedSpotLight' ;
+  x3do:color ( 1 0.0 0.0 ) ;
+  x3do:location ( 0 0 10 ) .
+:ROUTE_2_6 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'fraction_changed' ;
+  x3do:fromNode 'Clock' ;
+  x3do:toField 'set_fraction' ;
+  x3do:toNode 'OnOffSequencer' .
+:ROUTE_2_7 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'value_changed' ;
+  x3do:fromNode 'OnOffSequencer' ;
+  x3do:toField 'on' ;
+  x3do:toNode 'RedSpotLight' .
+:ChildSequencer a owl:NamedIndividual, x3do:IntegerSequencer ;
+  x3do:hasParent :Scene ;
+  x3do:DEF 'ChildSequencer' ;
+  x3do:key ( 0 0.2 0.4 0.6 0.8 1 ) ;
+  x3do:keyValue ( 0 1 2 3 -1 0 ) .
+:Transform_2_9 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :ShapeSwitcher ;
+  x3do:translation ( -3.5 1 0 ) .
+:ShapeSwitcher a owl:NamedIndividual, x3do:Switch ;
+  x3do:hasParent :Transform_2_9 ;
+  x3do:hasChildren :Child0, :Child1, :Child2, :Child3 ;
+  x3do:DEF 'ShapeSwitcher' ;
+  x3do:whichChoice -1 .
+:Child0 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :ShapeSwitcher ;
+  x3do:hasGeometry :Text_2_9_1_1_1 ;
+  x3do:hasAppearance :GreyAppearance ;
+  x3do:DEF 'Child0' .
+:Text_2_9_1_1_1 a owl:NamedIndividual, x3do:Text ;
+  x3do:hasParent :Child0 ;
+  x3do:string '"Grey child 0" "headlight plus red light"' .
+:GreyAppearance a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Child0 ;
+  x3do:hasMaterial :Material_2_9_1_1_2_1 ;
+  x3do:DEF 'GreyAppearance' .
+:Material_2_9_1_1_2_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :GreyAppearance ;
+  x3do:diffuseColor ( 0.7 0.7 0.7 ) .
+:Child1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :ShapeSwitcher ;
+  x3do:hasGeometry :Text_2_9_1_2_1 ;
+  x3do:hasAppearance :GreyAppearance-USE-1 ;
+  x3do:DEF 'Child1' .
+:Text_2_9_1_2_1 a owl:NamedIndividual, x3do:Text ;
+  x3do:hasParent :Child1 ;
+  x3do:string '"Grey child 1" "headlight only"' .
+:GreyAppearance-USE-1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Child1 ;
+  owl:sameAs :GreyAppearance . # DEF matching this USE
+:Child2 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :ShapeSwitcher ;
+  x3do:hasGeometry :Text_2_9_1_3_1 ;
+  x3do:hasAppearance :GreyAppearance-USE-2 ;
+  x3do:DEF 'Child2' .
+:Text_2_9_1_3_1 a owl:NamedIndividual, x3do:Text ;
+  x3do:hasParent :Child2 ;
+  x3do:string '"Grey child 2" "headlight plus red light"' .
+:GreyAppearance-USE-2 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Child2 ;
+  owl:sameAs :GreyAppearance . # DEF matching this USE
+:Child3 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :ShapeSwitcher ;
+  x3do:hasGeometry :Text_2_9_1_4_1 ;
+  x3do:hasAppearance :GreyAppearance-USE-3 ;
+  x3do:DEF 'Child3' .
+:Text_2_9_1_4_1 a owl:NamedIndividual, x3do:Text ;
+  x3do:hasParent :Child3 ;
+  x3do:string '"Grey child 3" "headlight only"' .
+:GreyAppearance-USE-3 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Child3 ;
+  owl:sameAs :GreyAppearance . # DEF matching this USE
+:ROUTE_2_10 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'fraction_changed' ;
+  x3do:fromNode 'Clock' ;
+  x3do:toField 'set_fraction' ;
+  x3do:toNode 'ChildSequencer' .
+:ROUTE_2_11 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'value_changed' ;
+  x3do:fromNode 'ChildSequencer' ;
+  x3do:toField 'whichChoice' ;
+  x3do:toNode 'ShapeSwitcher' .

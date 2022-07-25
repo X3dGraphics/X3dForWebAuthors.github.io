@@ -1,0 +1,4 @@
+<Shape DEF=''/> found without child Appearance [/X3D/Scene/Transform[2]/Transform[4]/Transform/Shape, warning]
+<KeySensor DEF='DefaultKeySensor'/> missing description [/X3D/Scene/Group/KeySensor, warning]
+<StringSensor DEF='DefaultStringSensor'/> missing description [/X3D/Scene/Group/StringSensor, warning]
+<Script DEF='KeyboardProcessor'/> must have url or contained CDATA source [/X3D/Scene/Group/Script, error]

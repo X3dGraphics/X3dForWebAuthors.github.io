@@ -1,0 +1,3 @@
+<TimeSensor DEF='UnnamedAnimation0Time_2'/> missing description [/X3D/Scene/LOD/Transform[1]/Group/TimeSensor, warning]
+<TimeSensor DEF='_5'/> missing description [/X3D/Scene/TimeSensor, warning]
+<Script DEF='UnnamedAnimation0Trigger_6'/> must have url or contained CDATA source [/X3D/Scene/Script, error]

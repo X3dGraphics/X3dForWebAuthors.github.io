@@ -1,0 +1,172 @@
+@prefix :        <https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter09EventUtilitiesScripting/IntegerSequencerRoadSignSwitcher.ttl#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema:  <http://schema.org/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix x3d:     <https://www.web3d.org/specifications/x3d-4.0.xsd#> .
+@prefix x3do:    <https://www.web3d.org/specifications/X3dOntology4.0#> .
+
+:X3D a owl:NamedIndividual, x3do:X3D ;
+  x3do:hasHead :head ;
+  x3do:hasScene :Scene ;
+  x3do:profile 'Interactive' ;
+  x3do:version '3.3' ;
+  x3do:noNamespaceSchemaLocation 'https://www.web3d.org/specifications/x3d-3.3.xsd' .
+:head a owl:NamedIndividual, x3do:head ;
+  x3do:hasParent :X3D ;
+  x3do:hasMeta :meta_1_1, :meta_1_2, :meta_1_3, :meta_1_4, :meta_1_5, :meta_1_6, :meta_1_7, :meta_1_8 .
+:meta_1_1 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'IntegerSequencerRoadSignSwitcher.x3d' ;
+  x3do:name 'title' .
+:meta_1_2 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Switch among different road signs using IntegerSequencer' ;
+  x3do:name 'description' .
+:meta_1_3 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Don Brutzman' ;
+  x3do:name 'creator' .
+:meta_1_4 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '2 January 2009' ;
+  x3do:name 'created' .
+:meta_1_5 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '20 October 2019' ;
+  x3do:name 'modified' .
+:meta_1_6 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter09EventUtilitiesScripting/IntegerSequencerRoadSignSwitcher.x3d' ;
+  x3do:name 'identifier' .
+:meta_1_7 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'X3D-Edit 3.3, https://savage.nps.edu/X3D-Edit' ;
+  x3do:name 'generator' .
+:meta_1_8 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '../license.html' ;
+  x3do:name 'license' .
+:meta dcterms:title "IntegerSequencerRoadSignSwitcher.x3d" .
+:meta dcterms:description "Switch among different road signs using IntegerSequencer" .
+:meta dcterms:creator "Don Brutzman" .
+:meta dcterms:created "2 January 2009" .
+:meta dcterms:modified "20 October 2019" .
+:meta dcterms:identifier "https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter09EventUtilitiesScripting/IntegerSequencerRoadSignSwitcher.x3d" .
+:meta dcterms:generator "X3D-Edit 3.3, https://savage.nps.edu/X3D-Edit" .
+:meta dcterms:license "../license.html" .
+:Scene a owl:NamedIndividual, x3do:Scene ;
+  x3do:hasParent :X3D ;
+  x3do:hasChildren :WorldInfo_2_1, :Background_2_2, :Viewpoint_2_3, :Frame, :Switch, :Sequencer, :Time ;
+  x3do:hasROUTE :ROUTE_2_8, :ROUTE_2_9 .
+:WorldInfo_2_1 a owl:NamedIndividual, x3do:WorldInfo ;
+  x3do:hasParent :Scene ;
+  x3do:title 'IntegerSequencerRoadSignSwitcher.x3d' .
+:Background_2_2 a owl:NamedIndividual, x3do:Background ;
+  x3do:hasParent :Scene ;
+  x3do:groundColor ( 0.2 0.2 0.2 ) ;
+  x3do:skyColor ( 0.2 0.2 0.2 ) .
+:Viewpoint_2_3 a owl:NamedIndividual, x3do:Viewpoint ;
+  x3do:hasParent :Scene ;
+  x3do:description 'Road sign switcher, 6m away' ;
+  x3do:position ( 0 0 6 ) .
+:Frame a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Scene ;
+  x3do:hasGeometry :Box_2_4_1 ;
+  x3do:hasAppearance :Appearance_2_4_2 ;
+  x3do:DEF 'Frame' .
+:Box_2_4_1 a owl:NamedIndividual, x3do:Box ;
+  x3do:hasParent :Frame ;
+  x3do:size ( 3.5 2.7 0.05 ) .
+:Appearance_2_4_2 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Frame ;
+  x3do:hasMaterial :Material_2_4_2_1 .
+:Material_2_4_2_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_4_2 ;
+  x3do:ambientIntensity 0 ;
+  x3do:diffuseColor ( 0 0 0 ) ;
+  x3do:emissiveColor ( 1 0.442751 0 ) ;
+  x3do:shininess 0.05102 ;
+  x3do:specularColor ( 0.475676 0.475676 0.475676 ) .
+:Switch a owl:NamedIndividual, x3do:Switch ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :Shape_2_5_1, :Shape_2_5_2, :Shape_2_5_3, :Shape_2_5_4 ;
+  x3do:DEF 'Switch' ;
+  x3do:whichChoice 0 .
+:Shape_2_5_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Switch ;
+  x3do:hasGeometry :SignHolder ;
+  x3do:hasAppearance :Appearance_2_5_1_2 .
+:SignHolder a owl:NamedIndividual, x3do:Box ;
+  x3do:hasParent :Shape_2_5_1 ;
+  x3do:DEF 'SignHolder' ;
+  x3do:size ( 3.072 2.304 0.1 ) .
+:Appearance_2_5_1_2 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_5_1 ;
+  x3do:hasTexture :ImageTexture_2_5_1_2_1 .
+:ImageTexture_2_5_1_2_1 a owl:NamedIndividual, x3do:ImageTexture ;
+  x3do:hasParent :Appearance_2_5_1_2 ;
+  x3do:url '"RoadSignRoadWorkAhead.jpg" "https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter07EventAnimationInterpolation/RoadSignRoadWorkAhead.jpg"' .
+:Shape_2_5_2 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Switch ;
+  x3do:hasGeometry :SignHolder-USE-1 ;
+  x3do:hasAppearance :Appearance_2_5_2_2 .
+:SignHolder-USE-1 a owl:NamedIndividual, x3do:Box ;
+  x3do:hasParent :Shape_2_5_2 ;
+  owl:sameAs :SignHolder . # DEF matching this USE
+:Appearance_2_5_2_2 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_5_2 ;
+  x3do:hasTexture :ImageTexture_2_5_2_2_1 .
+:ImageTexture_2_5_2_2_1 a owl:NamedIndividual, x3do:ImageTexture ;
+  x3do:hasParent :Appearance_2_5_2_2 ;
+  x3do:url '"RoadSignExpectDelays.jpg" "https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter07EventAnimationInterpolation/RoadSignExpectDelays.jpg"' .
+:Shape_2_5_3 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Switch ;
+  x3do:hasGeometry :SignHolder-USE-2 ;
+  x3do:hasAppearance :Appearance_2_5_3_2 .
+:SignHolder-USE-2 a owl:NamedIndividual, x3do:Box ;
+  x3do:hasParent :Shape_2_5_3 ;
+  owl:sameAs :SignHolder . # DEF matching this USE
+:Appearance_2_5_3_2 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_5_3 ;
+  x3do:hasTexture :ImageTexture_2_5_3_2_1 .
+:ImageTexture_2_5_3_2_1 a owl:NamedIndividual, x3do:ImageTexture ;
+  x3do:hasParent :Appearance_2_5_3_2 ;
+  x3do:url '"RoadSignMondayThruFriday.jpg" "https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter07EventAnimationInterpolation/RoadSignMondayThruFriday.jpg"' .
+:Shape_2_5_4 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Switch ;
+  x3do:hasGeometry :SignHolder-USE-3 ;
+  x3do:hasAppearance :Appearance_2_5_4_2 .
+:SignHolder-USE-3 a owl:NamedIndividual, x3do:Box ;
+  x3do:hasParent :Shape_2_5_4 ;
+  owl:sameAs :SignHolder . # DEF matching this USE
+:Appearance_2_5_4_2 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_5_4 ;
+  x3do:hasTexture :ImageTexture_2_5_4_2_1 .
+:ImageTexture_2_5_4_2_1 a owl:NamedIndividual, x3do:ImageTexture ;
+  x3do:hasParent :Appearance_2_5_4_2 ;
+  x3do:url '"RoadSign7amTo5pm.jpg" "https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter07EventAnimationInterpolation/RoadSign7amTo5pm.jpg"' .
+:Sequencer a owl:NamedIndividual, x3do:IntegerSequencer ;
+  x3do:hasParent :Scene ;
+  x3do:DEF 'Sequencer' ;
+  x3do:key ( 0 0.25 0.5 0.75 1 ) ;
+  x3do:keyValue ( 0 1 2 3 0 ) .
+:Time a owl:NamedIndividual, x3do:TimeSensor ;
+  x3do:hasParent :Scene ;
+  x3do:DEF 'Time' ;
+  x3do:cycleInterval '8' ;
+  x3do:loop true .
+:ROUTE_2_8 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'value_changed' ;
+  x3do:fromNode 'Sequencer' ;
+  x3do:toField 'whichChoice' ;
+  x3do:toNode 'Switch' .
+:ROUTE_2_9 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'fraction_changed' ;
+  x3do:fromNode 'Time' ;
+  x3do:toField 'set_fraction' ;
+  x3do:toNode 'Sequencer' .

@@ -1,0 +1,797 @@
+{ "X3D": {
+    "encoding":"UTF-8",
+    "@profile":"Immersive",
+    "@version":"3.3",
+    "@xsd:noNamespaceSchemaLocation":"https://www.web3d.org/specifications/x3d-3.3.xsd",
+    "JSON schema":"https://www.web3d.org/specifications/x3d-3.3-JSONSchema.json",
+    "head": {
+        "meta": [
+          {
+            "@name":"title",
+            "@content":"ExtrusionCrossSectionITSSPrototype.x3d"
+          },
+          {
+            "@name":"creator",
+            "@content":"Don Brutzman and Sungmin Kwon"
+          },
+          {
+            "@name":"created",
+            "@content":"23 October 2017"
+          },
+          {
+            "@name":"modified",
+            "@content":"20 October 2019"
+          },
+          {
+            "@name":"description",
+            "@content":"Shape prototype for Enclosing IndexedTriangleStripSet that also draws spine line plus oriented, scaled cross sections at each spine point."
+          },
+          {
+            "@name":"hint",
+            "@content":"Utilize ExtrusionCrossSectionITSS ProtoInstance as if it is a Shape node (with containerField=\"children\") rather than an Extrusion node (with containerField=\"geometry\") under a Shape."
+          },
+          {
+            "@name":"reference",
+            "@content":"VRML 97 Specification, 6.18 Extrusion"
+          },
+          {
+            "@name":"reference",
+            "@content":"https://www.web3d.org/technicalinfo/specifications/vrml97/part1/nodesRef.html#Extrusion"
+          },
+          {
+            "@name":"Image",
+            "@content":"VRML 97 Specification, Figure 6.6"
+          },
+          {
+            "@name":"Image",
+            "@content":"https://www.web3d.org/technicalinfo/specifications/vrml97/Images/Extrusion.gif"
+          },
+          {
+            "@name":"reference",
+            "@content":"http://realism.com/x3d/examples/Extrusion/_frame.html"
+          },
+          {
+            "@name":"reference",
+            "@content":"http://www.cs.brown.edu/~gss/vrml/drawpoly.html"
+          },
+          {
+            "@name":"reference",
+            "@content":"ExtrusionXj3dGoldberg1999.java"
+          },
+          {
+            "@name":"reference",
+            "@content":"http://web3d.metrolink.com/cgi-bin/cvsweb.cgi/x3d/src/com/sun/j3d/loaders/vrml97/impl/Attic/Extrusion.java"
+          },
+          {
+            "@name":"identifier",
+            "@content":"https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter06GeometryPointsLinesPolygons/ExtrusionCrossSectionPrototype.x3d"
+          },
+          {
+            "@name":"generator",
+            "@content":"X3D-Edit 3.3, https://savage.nps.edu/X3D-Edit"
+          },
+          {
+            "@name":"license",
+            "@content":"../license.html"
+          },
+          {
+            "@name":"translated",
+            "@content":"18 January 2022"
+          },
+          {
+            "@name":"generator",
+            "@content":"X3dToJson.xslt, https://www.web3d.org/x3d/stylesheets/X3dToJson.html"
+          },
+          {
+            "@name":"reference",
+            "@content":"X3D JSON encoding: https://www.web3d.org/wiki/index.php/X3D_JSON_Encoding"
+          }
+        ]
+    },
+    "Scene": {
+        "-children":[
+          { "WorldInfo":
+            {
+              "@title":"ExtrusionCrossSectionITSSPrototype.x3d"
+            }
+          },
+          { "ProtoDeclare":
+            {
+              "@name":"ExtrusionCrossSectionITSS",
+              "@appinfo":"Shape prototype for Extrusion node that also draws spine line plus oriented scaled cross sections at each spine point",
+              "@documentation":"https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter06GeometryPointsLinesPolygons/ExtrusionCrossSectionPrototype.x3d",
+              "ProtoInterface": {
+                  "field": [
+                    {
+                      "@name":"name",
+                      "@accessType":"initializeOnly",
+                      "@appinfo":"Extrusion name",
+                      "@type":"SFString"
+                    },
+                    {
+                      "@name":"crossSection",
+                      "@accessType":"initializeOnly",
+                      "@appinfo":"Extrusion field",
+                      "@type":"MFVec2f",
+                      "@value":[1,1,1,-1,-1,-1,-1,1,1,1]
+                    },
+                    {
+                      "@name":"spine",
+                      "@accessType":"initializeOnly",
+                      "@appinfo":"Extrusion field",
+                      "@type":"MFVec3f",
+                      "@value":[0,0,0,0,1,0]
+                    },
+                    {
+                      "@name":"scale",
+                      "@accessType":"initializeOnly",
+                      "@appinfo":"Extrusion field",
+                      "@type":"MFVec2f",
+                      "@value":[1,1]
+                    },
+                    {
+                      "@name":"orientation",
+                      "@accessType":"initializeOnly",
+                      "@appinfo":"Extrusion field",
+                      "@type":"MFRotation",
+                      "@value":[0,0,1,0]
+                    },
+                    {
+                      "@name":"beginCap",
+                      "@accessType":"initializeOnly",
+                      "@appinfo":"Extrusion field",
+                      "@type":"SFBool",
+                      "@value":false
+                    },
+                    {
+                      "@name":"endCap",
+                      "@accessType":"initializeOnly",
+                      "@appinfo":"Extrusion field",
+                      "@type":"SFBool",
+                      "@value":false
+                    },
+                    {
+                      "@name":"ccw",
+                      "@accessType":"initializeOnly",
+                      "@appinfo":"Extrusion field",
+                      "@type":"SFBool",
+                      "@value":true
+                    },
+                    {
+                      "@name":"convex",
+                      "@accessType":"initializeOnly",
+                      "@appinfo":"Extrusion field",
+                      "@type":"SFBool",
+                      "@value":true
+                    },
+                    {
+                      "@name":"creaseAngle",
+                      "@accessType":"initializeOnly",
+                      "@appinfo":"Extrusion field",
+                      "@type":"SFFloat",
+                      "@value":0
+                    },
+                    {
+                      "@name":"solid",
+                      "@accessType":"initializeOnly",
+                      "@appinfo":"Extrusion field",
+                      "@type":"SFBool",
+                      "@value":true
+                    },
+                    {
+                      "@name":"spineColor",
+                      "@accessType":"inputOutput",
+                      "@appinfo":"emissiveColor of spine",
+                      "@type":"SFColor",
+                      "@value":[0,0.9,0.8]
+                    },
+                    {
+                      "@name":"crossSectionColor",
+                      "@accessType":"inputOutput",
+                      "@appinfo":"diffuseColor of crossSection",
+                      "@type":"SFColor",
+                      "@value":[0.2,0.8,0.3]
+                    },
+                    {
+                      "@name":"crossSectionTransparency",
+                      "@accessType":"inputOutput",
+                      "@appinfo":"transparency of crossSection",
+                      "@type":"SFFloat",
+                      "@value":0.2
+                    },
+                    {
+                      "@name":"extrusionColor",
+                      "@accessType":"inputOutput",
+                      "@appinfo":"diffuseColor of extrusion hull",
+                      "@type":"SFColor",
+                      "@value":[0.3,0.3,0.3]
+                    },
+                    {
+                      "@name":"extrusionTransparency",
+                      "@accessType":"inputOutput",
+                      "@appinfo":"transparency of extrusion hull",
+                      "@type":"SFFloat",
+                      "@value":0.7
+                    },
+                    {
+                      "@name":"extrusionImageTexture",
+                      "@accessType":"initializeOnly",
+                      "@appinfo":"Image to apply to Extrusion",
+                      "@type":"SFNode",
+                      "-children":[
+                        {
+                          "#comment":"initialization node (if any) goes here"
+                        }
+                      ]
+                    },
+                    {
+                      "@name":"extrusionTextureTransform",
+                      "@accessType":"initializeOnly",
+                      "@appinfo":"TextureTransform coordinates of image applied to Extrusion",
+                      "@type":"SFNode",
+                      "-children":[
+                        {
+                          "#comment":"initialization node (if any) goes here"
+                        }
+                      ]
+                    },
+                    {
+                      "@name":"set_crossSection",
+                      "@accessType":"inputOnly",
+                      "@appinfo":"Extrusion field",
+                      "@type":"MFVec2f"
+                    },
+                    {
+                      "@name":"set_spine",
+                      "@accessType":"inputOnly",
+                      "@appinfo":"Extrusion field",
+                      "@type":"MFVec3f"
+                    },
+                    {
+                      "@name":"set_scale",
+                      "@accessType":"inputOnly",
+                      "@appinfo":"Extrusion field",
+                      "@type":"MFVec2f"
+                    },
+                    {
+                      "@name":"set_orientation",
+                      "@accessType":"inputOnly",
+                      "@appinfo":"Extrusion field",
+                      "@type":"MFRotation"
+                    },
+                    {
+                      "@name":"traceEnabled",
+                      "@accessType":"initializeOnly",
+                      "@appinfo":"Whether to provide initialization trace statements showing node construction",
+                      "@type":"SFBool",
+                      "@value":false
+                    }
+                  ]
+              },
+              "ProtoBody": {
+                  "-children":[
+                    { "Group":
+                      {
+                        "-children":[
+                          { "Shape":
+                            {
+                              "@DEF":"Spine",
+                              "-geometry":
+                                { "IndexedLineSet":
+                                  {
+                                    "@DEF":"SpineLine",
+                                    "@colorPerVertex":false,
+                                    "-coord":
+                                      { "Coordinate":
+                                        {
+                                          "@DEF":"SpineCoordinates",
+                                          "IS": {
+                                              "connect": [
+                                                {
+                                                  "@nodeField":"point",
+                                                  "@protoField":"spine"
+                                                },
+                                                {
+                                                  "@nodeField":"point",
+                                                  "@protoField":"set_spine"
+                                                }
+                                              ]
+                                          }
+                                        }
+                                      }
+                                  }
+                                },
+                              "-appearance":
+                                { "Appearance":
+                                  {
+                                    "-material":
+                                      { "Material":
+                                        {
+                                          "@DEF":"SpineMaterial",
+                                          "IS": {
+                                              "connect": [
+                                                {
+                                                  "@nodeField":"emissiveColor",
+                                                  "@protoField":"spineColor"
+                                                }
+                                              ]
+                                          }
+                                        }
+                                      }
+                                  }
+                                }
+                            }
+                          },
+                          { "Shape":
+                            {
+                              "@DEF":"InternalCrossSections",
+                              "-geometry":
+                                { "IndexedTriangleFanSet":
+                                  {
+                                    "@DEF":"CrossSectionFaces",
+                                    "@solid":false,
+                                    "-coord":
+                                      { "Coordinate":
+                                        {
+                                          "@DEF":"CrossSectionFacesCoordinates"
+                                        }
+                                      }
+                                  }
+                                },
+                              "-appearance":
+                                { "Appearance":
+                                  {
+                                    "-material":
+                                      { "Material":
+                                        {
+                                          "@DEF":"CrossSectionMaterial",
+                                          "IS": {
+                                              "connect": [
+                                                {
+                                                  "@nodeField":"diffuseColor",
+                                                  "@protoField":"crossSectionColor"
+                                                },
+                                                {
+                                                  "@nodeField":"transparency",
+                                                  "@protoField":"crossSectionTransparency"
+                                                }
+                                              ]
+                                          }
+                                        }
+                                      }
+                                  }
+                                }
+                            }
+                          },
+                          { "Shape":
+                            {
+                              "@DEF":"ExternalExtrusion2",
+                              "-appearance":
+                                { "Appearance":
+                                  {
+                                    "@DEF":"ExtrusionAppearance2",
+                                    "IS": {
+                                        "connect": [
+                                          {
+                                            "@nodeField":"texture",
+                                            "@protoField":"extrusionImageTexture"
+                                          },
+                                          {
+                                            "@nodeField":"textureTransform",
+                                            "@protoField":"extrusionTextureTransform"
+                                          }
+                                        ]
+                                    },
+                                    "-material":
+                                      { "Material":
+                                        {
+                                          "@DEF":"ExtrusionMaterial2",
+                                          "IS": {
+                                              "connect": [
+                                                {
+                                                  "@nodeField":"diffuseColor",
+                                                  "@protoField":"extrusionColor"
+                                                },
+                                                {
+                                                  "@nodeField":"transparency",
+                                                  "@protoField":"extrusionTransparency"
+                                                }
+                                              ]
+                                          }
+                                        }
+                                      }
+                                  }
+                                },
+                              "-geometry":
+                                { "IndexedTriangleStripSet":
+                                  {
+                                    "@DEF":"EnclosingExtrusion2",
+                                    "@index":[0,1,2],
+                                    "-coord":
+                                      { "Coordinate":
+                                        {
+                                          "@DEF":"ExtrusionCoordinates2"
+                                        }
+                                      }
+                                  }
+                                }
+                            }
+                          },
+                          {
+                            "#comment":"<Shape DEF='ExternalExtrusion'> <Extrusion DEF='EnclosingExtrusion' convex='false' solid='false'> <IS> <connect nodeField='crossSection' protoField='crossSection'/> <connect nodeField='spine' protoField='spine'/> <connect nodeField='scale' protoField='scale'/> <connect nodeField='orientation' protoField='orientation'/> <connect nodeField='set_crossSection' protoField='set_crossSection'/> <connect nodeField='set_spine' protoField='set_spine'/> <connect nodeField='set_scale' protoField='set_scale'/> <connect nodeField='set_orientation' protoField='set_orientation'/> <connect nodeField='beginCap' protoField='beginCap'/> <connect nodeField='endCap' protoField='endCap'/> <connect nodeField='ccw' protoField='ccw'/> <connect nodeField='convex' protoField='convex'/> <connect nodeField='creaseAngle' protoField='creaseAngle'/> <connect nodeField='solid' protoField='solid'/> </IS> </Extrusion> <Appearance DEF='ExtrusionAppearance'> <IS> <connect nodeField='texture' protoField='extrusionImageTexture'/> <connect nodeField='textureTransform' protoField='extrusionTextureTransform'/> </IS> <Material DEF='ExtrusionMaterial'> <IS> <connect nodeField='diffuseColor' protoField='extrusionColor'/> <connect nodeField='transparency' protoField='extrusionTransparency'/> </IS> </Material> </Appearance> </Shape>"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "#comment":"TODO hardwired local Script path to workaround BS Contact bug"
+                    },
+                    { "Script":
+                      {
+                        "@DEF":"CrossSectionScript",
+                        "@url":["ExtrusionCrossSectionITSSPrototype.js","https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter06GeometryPointsLinesPolygons/ExtrusionCrossSectionITSSPrototype.js"],
+                        "field": [
+                          {
+                            "@name":"name",
+                            "@accessType":"initializeOnly",
+                            "@type":"SFString"
+                          },
+                          {
+                            "@name":"crossSection",
+                            "@accessType":"initializeOnly",
+                            "@type":"MFVec2f"
+                          },
+                          {
+                            "@name":"spine",
+                            "@accessType":"initializeOnly",
+                            "@type":"MFVec3f"
+                          },
+                          {
+                            "@name":"scale",
+                            "@accessType":"initializeOnly",
+                            "@type":"MFVec2f"
+                          },
+                          {
+                            "@name":"orientation",
+                            "@accessType":"initializeOnly",
+                            "@type":"MFRotation"
+                          },
+                          {
+                            "@name":"spineColor",
+                            "@accessType":"inputOutput",
+                            "@type":"SFColor"
+                          },
+                          {
+                            "@name":"crossSectionColor",
+                            "@accessType":"inputOutput",
+                            "@type":"SFColor"
+                          },
+                          {
+                            "@name":"crossSectionTransparency",
+                            "@accessType":"inputOutput",
+                            "@type":"SFFloat"
+                          },
+                          {
+                            "@name":"extrusionColor",
+                            "@accessType":"inputOutput",
+                            "@type":"SFColor"
+                          },
+                          {
+                            "@name":"extrusionTransparency",
+                            "@accessType":"inputOutput",
+                            "@type":"SFFloat"
+                          },
+                          {
+                            "@name":"set_crossSection",
+                            "@accessType":"inputOnly",
+                            "@type":"MFVec2f"
+                          },
+                          {
+                            "@name":"set_spine",
+                            "@accessType":"inputOnly",
+                            "@type":"MFVec3f"
+                          },
+                          {
+                            "@name":"set_scale",
+                            "@accessType":"inputOnly",
+                            "@type":"MFVec2f"
+                          },
+                          {
+                            "@name":"set_orientation",
+                            "@accessType":"inputOnly",
+                            "@type":"MFRotation"
+                          },
+                          {
+                            "@name":"spineIndex",
+                            "@accessType":"outputOnly",
+                            "@type":"MFInt32"
+                          },
+                          {
+                            "@name":"facesIndex",
+                            "@accessType":"outputOnly",
+                            "@type":"MFInt32"
+                          },
+                          {
+                            "@name":"facePoints",
+                            "@accessType":"outputOnly",
+                            "@type":"MFVec3f"
+                          },
+                          {
+                            "@name":"triStripIndex",
+                            "@accessType":"outputOnly",
+                            "@type":"MFInt32"
+                          },
+                          {
+                            "@name":"traceEnabled",
+                            "@accessType":"initializeOnly",
+                            "@type":"SFBool"
+                          },
+                          {
+                            "@name":"computedFacesIndex",
+                            "@accessType":"initializeOnly",
+                            "@type":"MFInt32"
+                          },
+                          {
+                            "@name":"computedFacePoints",
+                            "@accessType":"initializeOnly",
+                            "@type":"MFVec3f"
+                          },
+                          {
+                            "@name":"computedTriStripIndex",
+                            "@accessType":"initializeOnly",
+                            "@type":"MFInt32"
+                          }
+                        ],
+                        "-children":[
+                          {
+                            "#comment":"local variables"
+                          }
+                        ],
+                        "IS": {
+                            "connect": [
+                              {
+                                "@nodeField":"name",
+                                "@protoField":"name"
+                              },
+                              {
+                                "@nodeField":"crossSection",
+                                "@protoField":"crossSection"
+                              },
+                              {
+                                "@nodeField":"spine",
+                                "@protoField":"spine"
+                              },
+                              {
+                                "@nodeField":"scale",
+                                "@protoField":"scale"
+                              },
+                              {
+                                "@nodeField":"spineColor",
+                                "@protoField":"spineColor"
+                              },
+                              {
+                                "@nodeField":"crossSectionColor",
+                                "@protoField":"crossSectionColor"
+                              },
+                              {
+                                "@nodeField":"crossSectionTransparency",
+                                "@protoField":"crossSectionTransparency"
+                              },
+                              {
+                                "@nodeField":"extrusionColor",
+                                "@protoField":"extrusionColor"
+                              },
+                              {
+                                "@nodeField":"extrusionTransparency",
+                                "@protoField":"extrusionTransparency"
+                              },
+                              {
+                                "@nodeField":"orientation",
+                                "@protoField":"orientation"
+                              },
+                              {
+                                "@nodeField":"set_crossSection",
+                                "@protoField":"set_crossSection"
+                              },
+                              {
+                                "@nodeField":"set_spine",
+                                "@protoField":"set_spine"
+                              },
+                              {
+                                "@nodeField":"set_scale",
+                                "@protoField":"set_scale"
+                              },
+                              {
+                                "@nodeField":"set_orientation",
+                                "@protoField":"set_orientation"
+                              },
+                              {
+                                "@nodeField":"traceEnabled",
+                                "@protoField":"traceEnabled"
+                              }
+                            ]
+                        }
+                      }
+                    },
+                    { "ROUTE":
+                      {
+                        "@fromField":"spineIndex",
+                        "@fromNode":"CrossSectionScript",
+                        "@toField":"set_coordIndex",
+                        "@toNode":"SpineLine"
+                      }
+                    },
+                    { "ROUTE":
+                      {
+                        "@fromField":"facesIndex",
+                        "@fromNode":"CrossSectionScript",
+                        "@toField":"set_index",
+                        "@toNode":"CrossSectionFaces"
+                      }
+                    },
+                    { "ROUTE":
+                      {
+                        "@fromField":"facePoints",
+                        "@fromNode":"CrossSectionScript",
+                        "@toField":"point",
+                        "@toNode":"CrossSectionFacesCoordinates"
+                      }
+                    },
+                    { "ROUTE":
+                      {
+                        "@fromField":"triStripIndex",
+                        "@fromNode":"CrossSectionScript",
+                        "@toField":"set_index",
+                        "@toNode":"EnclosingExtrusion2"
+                      }
+                    },
+                    { "Group":
+                      {
+                        "-children":[
+                          {
+                            "#comment":"======= ROUTE Trace =============================================="
+                          },
+                          { "Script":
+                            {
+                              "@DEF":"Trace_ROUTE_CrossSectionScript.triStripIndex_TO_EnclosingExtrusion2.set_index",
+                              "@mustEvaluate":true,
+                              "-children":[
+                                {
+                                  "#comment":"Trace ROUTEd event values on X3D browser console"
+                                }
+                              ],
+                              "field": [
+                                {
+                                  "@name":"reportInterval",
+                                  "@accessType":"initializeOnly",
+                                  "@appinfo":"Sampling frequency in seconds (0 means all values)",
+                                  "@type":"SFTime",
+                                  "@value":1.0
+                                },
+                                {
+                                  "@name":"traceValue",
+                                  "@accessType":"inputOnly",
+                                  "@type":"MFInt32"
+                                },
+                                {
+                                  "@name":"timeStampPreviousReport",
+                                  "@accessType":"initializeOnly",
+                                  "@type":"SFTime",
+                                  "@value":-1
+                                }
+                              ],
+                              "#sourceCode":[
+"",
+"",
+"ecmascript:",
+"    function traceValue (eventValue, timeStamp) {",
+"      // input eventValue received for trace field",
+"      if (timeStamp - timeStampPreviousReport >= reportInterval) {",
+"        Browser.print ('Trace_ROUTE_CrossSectionScript.triStripIndex_TO_EnclosingExtrusion2.set_index type=MFInt32 value=' + eventValue.toString() + '\n');",
+"        timeStampPreviousReport = timeStamp;",
+"      }",
+"    }",
+"    function timeOfDay (someTime) {",
+"      hh = Math.floor (someTime /(60*60)) % 24;",
+"      mm = Math.floor (someTime / 60)     % 60;",
+"      ss = Math.floor (someTime)          % 60;",
+"      if (hh < 9) hour   = '0' + hh;",
+"      else        hour   =       hh;",
+"      if (mm < 9) minute = '0' + mm;",
+"      else        minute =       mm;",
+"      if (ss < 9) second = '0' + ss;",
+"      else        second =       ss;",
+"      return '(' + hour + ':' + minute + ':' + second + ' GMT)';",
+"    }",
+"",
+""
+]
+                            }
+                          },
+                          { "ROUTE":
+                            {
+                              "@fromField":"triStripIndex",
+                              "@fromNode":"CrossSectionScript",
+                              "@toField":"traceValue",
+                              "@toNode":"Trace_ROUTE_CrossSectionScript.triStripIndex_TO_EnclosingExtrusion2.set_index"
+                            }
+                          },
+                          {
+                            "#comment":"======= ROUTE Trace block complete ====================================================="
+                          }
+                        ]
+                      }
+                    },
+                    { "ROUTE":
+                      {
+                        "@fromField":"facePoints",
+                        "@fromNode":"CrossSectionScript",
+                        "@toField":"point",
+                        "@toNode":"ExtrusionCoordinates2"
+                      }
+                    },
+                    {
+                      "#comment":""
+                    }
+                  ]
+              }
+            }
+          },
+          {
+            "#comment":"===================="
+          },
+          {
+            "#comment":"Example instance adapted from Figure15.12Torus.x3d"
+          },
+          {
+            "#comment":"https://www.web3d.org/x3d/content/examples/Basic/Vrml2Sourcebook/Chapter15-Extrusion/Figure15.12Torus.x3d"
+          },
+          {
+            "#comment":"Redirection text in case a user examines this PROTO file via a 3D browser:"
+          },
+          { "Group":
+            {
+              "-children":[
+                { "Transform":
+                  {
+                    "@translation":[0,0.5,0],
+                    "-children":[
+                      { "Shape":
+                        {
+                          "-appearance":
+                            { "Appearance":
+                              {
+                                "-material":
+                                  { "Material":
+                                    {
+                                      "@diffuseColor":[0,1,1],
+                                      "@emissiveColor":[0,1,1]
+                                    }
+                                  }
+                              }
+                            },
+                          "-geometry":
+                            { "Text":
+                              {
+                                "@string":["ExtrusionCrossSectionITSS","is a Prototype definition scene"],
+                                "-fontStyle":
+                                  { "FontStyle":
+                                    {
+                                      "@justify":["MIDDLE","MIDDLE"],
+                                      "@size":0.7
+                                    }
+                                  }
+                              }
+                            }
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+    }
+  }
+}

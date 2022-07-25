@@ -1,0 +1,1495 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+   <head>
+      <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+      <link rel="shortcut icon" href="../images/X3DtextIcon16.png" title="X3D"/>
+      <title>Viewpoint Slideshow: X3D4WA, X3D for Web Authors Examples Archive, Chapter 07 Event Animation Interpolation</title>
+      <meta http-equiv="X-UA-Compatible" content="chrome=1,IE=edge"/>
+      <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+      <meta name="filename" content="viewpointSlideshow.html"/>
+      <meta name="description"
+             content="Slideshow showing all captured Viewpoint images for this chapter"/>
+      <meta name="author" content="Don Brutzman"/>
+      <meta name="generator"
+             content="https://www.web3d.org/x3d/tools/CreateContentCatalog/CreateContentCatalogPages.xslt"/>
+      <meta name="generator" content="X3D-Edit, https://savage.nps.edu/X3D-Edit"/>
+      <meta name="created" content="21 January 2011"/>
+      <meta name="modified" content="2022-07-03-07:00"/>
+      <meta name="reference" content="https://code.google.com/p/slideshow"/>
+      <!--
+            Slideshow project from Google Code http://code.google.com/p/slideshow
+            license:  Creative Commons         https://creativecommons.org/licenses/by/3.0
+            Copyright (c) 2008 [Aeron Glemann] http://www.electricprism.com/aeron
+        -->
+      <link rel="stylesheet"
+             type="text/css"
+             href="../slideshow/css/slideshow.css"
+             media="screen"/>
+      <script type="text/javascript" src="../slideshow/js/mootools-1.3.2-core.js"> </script>
+      <script type="text/javascript" src="../slideshow/js/mootools-1.3.2.1-more.js"> </script>
+      <script type="text/javascript" src="../slideshow/js/slideshow.js"> </script>
+      <script type="text/javascript" src="../slideshow/js/slideshow.flash.js"> </script>
+      <script type="text/javascript" src="../slideshow/js/slideshow.fold.js"> </script>
+      <script type="text/javascript" src="../slideshow/js/slideshow.kenburns.js"> </script>
+      <script type="text/javascript" src="../slideshow/js/slideshow.push.js"> </script>
+      <script type="text/javascript">
+	//<![CDATA[
+	  window.addEvent('domready', function(){
+	    var data = {
+<!--not found:       'CircleFishPositionInterpolator.x3d._VP_Book_View.png': { 'caption': '[1] CircleFishPositionInterpolator.x3d Book View' },-->
+      'CircleFishPositionInterpolator.x3d._VP_Default_viewpoint.png': { 'caption': '[2] CircleFishPositionInterpolator.x3d (default X3D view from 0 0 10)' },
+      'CircleFishPrototype.x3d._VP_Default_viewpoint.png': { 'caption': '[3] CircleFishPrototype.x3d (default X3D view from 0 0 10)' },
+      'CircleFishPTPrototype.x3d._VP_Default_viewpoint.png': { 'caption': '[4] CircleFishPTPrototype.x3d (default X3D view from 0 0 10)' },
+      'ColorInterpolatorExample.x3d._VP_Default_viewpoint.png': { 'caption': '[5] ColorInterpolatorExample.x3d (default X3D view from 0 0 10)' },
+      'ColorInterpolatorFishPrototype.x3d._VP_CircleFish_with_ColorInterpolator.png': { 'caption': '[6] ColorInterpolatorFishPrototype.x3d CircleFish with ColorInterpolator' },
+      'ColorInterpolatorFishPrototype.x3d._VP_Default_viewpoint.png': { 'caption': '[7] ColorInterpolatorFishPrototype.x3d (default X3D view from 0 0 10)' },
+      'CoordinateInterpolator2dExample.x3d._VP_Click_to_activate_animation.png': { 'caption': '[8] CoordinateInterpolator2dExample.x3d Click to activate animation' },
+      'CoordinateInterpolator2dExample.x3d._VP_Default_viewpoint.png': { 'caption': '[9] CoordinateInterpolator2dExample.x3d (default X3D view from 0 0 10)' },
+<!--not found:       'DolphinMorpher.x3d._VP_Dolphin_morpher,_2m_away.png': { 'caption': '[10] DolphinMorpher.x3d Dolphin morpher, 2m away' },-->
+      'DolphinMorpher.x3d._VP_Default_viewpoint.png': { 'caption': '[11] DolphinMorpher.x3d (default X3D view from 0 0 10)' },
+      'DolphinPose01.x3d._VP_Dolphin_at_2m.png': { 'caption': '[12] DolphinPose01.x3d Dolphin at 2m' },
+      'DolphinPose01.x3d._VP_Default_viewpoint.png': { 'caption': '[13] DolphinPose01.x3d (default X3D view from 0 0 10)' },
+      'DolphinPose02.x3d._VP_Dolphin_at_2m.png': { 'caption': '[14] DolphinPose02.x3d Dolphin at 2m' },
+      'DolphinPose02.x3d._VP_Default_viewpoint.png': { 'caption': '[15] DolphinPose02.x3d (default X3D view from 0 0 10)' },
+      'DolphinPose03.x3d._VP_Dolphin_at_2m.png': { 'caption': '[16] DolphinPose03.x3d Dolphin at 2m' },
+      'DolphinPose03.x3d._VP_Default_viewpoint.png': { 'caption': '[17] DolphinPose03.x3d (default X3D view from 0 0 10)' },
+      'DolphinSwitcher.x3d._VP_Dolphin_switcher,_2m_away.png': { 'caption': '[18] DolphinSwitcher.x3d Dolphin switcher, 2m away' },
+      'DolphinSwitcher.x3d._VP_Default_viewpoint.png': { 'caption': '[19] DolphinSwitcher.x3d (default X3D view from 0 0 10)' },
+      'Garibaldi.x3d._VP_Garibaldi.png': { 'caption': '[20] Garibaldi.x3d Garibaldi' },
+      'Garibaldi.x3d._VP_Default_viewpoint.png': { 'caption': '[21] Garibaldi.x3d (default X3D view from 0 0 10)' },
+      'HelloX3dAuthorsAnimationChain.x3d._VP_Hello,_world.png': { 'caption': '[22] HelloX3dAuthorsAnimationChain.x3d Hello, world' },
+      'HelloX3dAuthorsAnimationChain.x3d._VP_Default_viewpoint.png': { 'caption': '[23] HelloX3dAuthorsAnimationChain.x3d (default X3D view from 0 0 10)' },
+      'MotionInterpolatorFishPrototype.x3d._VP_Default_viewpoint.png': { 'caption': '[24] MotionInterpolatorFishPrototype.x3d (default X3D view from 0 0 10)' },
+      'NormalInterpolatorExample.x3d._VP_Animating_normals_on_right_vertices_of_a_quadrilateral.png': { 'caption': '[25] NormalInterpolatorExample.x3d Animating normals on right vertices of a quadrilateral' },
+      'NormalInterpolatorExample.x3d._VP_Other_side_-_note_difference_in_animated_shading.png': { 'caption': '[26] NormalInterpolatorExample.x3d Other side - note difference in animated shading' },
+      'NormalInterpolatorExample.x3d._VP_Default_viewpoint.png': { 'caption': '[27] NormalInterpolatorExample.x3d (default X3D view from 0 0 10)' },
+<!--not found:       'OrientationInterpolatorFishExample.x3d._VP_Book_View.png': { 'caption': '[28] OrientationInterpolatorFishExample.x3d Book View' },-->
+      'OrientationInterpolatorFishExample.x3d._VP_Default_viewpoint.png': { 'caption': '[29] OrientationInterpolatorFishExample.x3d (default X3D view from 0 0 10)' },
+<!--not found:       'OrientationInterpolatorFishPrototype.x3d._VP_Default_viewpoint.png': { 'caption': '[30] OrientationInterpolatorFishPrototype.x3d (default X3D view)' },-->
+      'PositionInterpolator2dExample.x3d._VP_Click_to_activate_animation.png': { 'caption': '[31] PositionInterpolator2dExample.x3d Click to activate animation' },
+      'PositionInterpolator2dExample.x3d._VP_Default_viewpoint.png': { 'caption': '[32] PositionInterpolator2dExample.x3d (default X3D view from 0 0 10)' },
+<!--not found:       'PositionInterpolatorPrototype.x3d._VP_Default_viewpoint.png': { 'caption': '[33] PositionInterpolatorPrototype.x3d (default X3D view from 0 0 10)' },-->
+<!--not found:       'PositionOrientationInterpolatorsExample.x3d._VP_Animation_demo.png': { 'caption': '[34] PositionOrientationInterpolatorsExample.x3d Animation demo' },-->
+      'PositionOrientationInterpolatorsExample.x3d._VP_View_from_above.png': { 'caption': '[35] PositionOrientationInterpolatorsExample.x3d View from above' },
+      'PositionOrientationInterpolatorsExample.x3d._VP_Default_viewpoint.png': { 'caption': '[36] PositionOrientationInterpolatorsExample.x3d (default X3D view)' },
+<!--not found:       'PositionOrientationInterpolatorsExampleTraced.x3d._VP_Animation_demo.png': { 'caption': '[37] PositionOrientationInterpolatorsExampleTraced.x3d Animation demo' },-->
+      'PositionOrientationInterpolatorsExampleTraced.x3d._VP_View_from_above.png': { 'caption': '[38] PositionOrientationInterpolatorsExampleTraced.x3d View from above' },
+      'PositionOrientationInterpolatorsExampleTraced.x3d._VP_Default_viewpoint.png': { 'caption': '[39] PositionOrientationInterpolatorsExampleTraced.x3d (default X3D view)' },
+      'ScalarInterpolatorExample.x3d._VP_Default_viewpoint.png': { 'caption': '[40] ScalarInterpolatorExample.x3d (default X3D view from 0 0 10)' },
+<!--not found:       'ScalarInterpolatorFishExample.x3d._VP_Book_View.png': { 'caption': '[41] ScalarInterpolatorFishExample.x3d Book View' },-->
+      'ScalarInterpolatorFishExample.x3d._VP_Default_viewpoint.png': { 'caption': '[42] ScalarInterpolatorFishExample.x3d (default X3D view from 0 0 10)' },
+<!--not found:       'ScalarInterpolatorFishPrototype.x3d._VP_Default_viewpoint.png': { 'caption': '[43] ScalarInterpolatorFishPrototype.x3d (default X3D view from 0 0 10)' },-->
+      'TimeSensorChaining.x3d._VP_TimeSensor_chaining_example.png': { 'caption': '[44] TimeSensorChaining.x3d TimeSensor chaining example' },
+      'TimeSensorChaining.x3d._VP_Default_viewpoint.png': { 'caption': '[45] TimeSensorChaining.x3d (default X3D view from 0 0 10)' }
+              };
+	    var myShow = new Slideshow('show', data, {captions: true, center: true, controller: true, delay: 2000, height: 465 , width:792, hu: '_viewpoints/', linked: true, preload: true, thumbnails: false});
+	  });
+	//]]>
+</script>
+   </head>
+   <body>
+      <table align="center"
+              summary="navigation"
+              border="1"
+              cellpadding="2"
+              width="95%">
+         <tr>
+            <td align="center" width="17%">
+               <a href="../index.html" target="_top">
+                  <img src="../images/ToC.png"
+                        title="Table of Contents"
+                        alt="Table of Contents"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter06GeometryPointsLinesPolygons/viewpointSlideshow.html"
+                   target="_top">
+                  <img src="../images/PreviousChapter.png"
+                        title="Previous Directory Viewpoint Slideshow"
+                        alt="Previous Directory Viewpoint Slideshow"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">&nbsp;&nbsp; <a href="index.html" target="_top">
+                  <img src="../images/ThisChapter.png"
+                        title="Directory Summary"
+                        alt="Directory Viewpoint Slideshow"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="15%">
+               <a href="../javadoc/index.html?X3dForWebAuthors/Chapter07EventAnimationInterpolation/package-summary.html"
+                   title="Javadoc for translated java source"
+                   alt="Javadoc for translated java source"
+                   target="_blank">
+                  <img src="../images/Java-32.png"
+                        title="Javadoc for translated java source"
+                        alt="Javadoc for translated java source"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter08UserInteractivity/viewpointSlideshow.html"
+                   target="_top">
+                  <img src="../images/NextChapter.png"
+                        title="Next Directory Viewpoint Slideshow"
+                        alt="Next Directory Viewpoint Slideshow"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="15%">
+               <a href="../../X3dResources.html" target="helpPage">
+                  <img src="../images/Help.png"
+                        title="X3D Resources"
+                        alt="X3D Resources"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+         </tr>
+      </table>
+      <h2 align="center">
+         <i> X3D Example Archives: </i>X3D4WA, X3D for Web Authors, Chapter 07 Event Animation Interpolation</h2>
+      <div id="show"
+            class="slideshow"
+            style="align: center; text-align: center; width:792;">
+         <div class="slideshow-images"
+               style="align: center; text-align: center; width:792;">
+            <img src="_viewpoints/CircleFishPositionInterpolator.x3d._VP_Book_View.png"
+                  alt="[1] CircleFishPositionInterpolator.x3d Book View"
+                  title="[1] CircleFishPositionInterpolator.x3d Book View"
+                  height="465"
+                  width="792"
+                  align=""
+                  float=""
+                  position=""/>
+         </div>
+      </div>
+      <table align="center"
+              summary=""
+              style="background-color: white; border-width:0px; padding: 2px; width:80%">
+         <tr>
+            <td colspan="5" align="center">
+               <b>Directory Viewpoint Slideshow</b>
+            </td>
+         </tr>
+         <tr>
+            <td colspan="5"><!--ChapterPackageDescription--><!--Contents of file ../../content/examples/X3dForWebAuthors/Chapter07EventAnimationInterpolation/package-catalog.html-->
+    
+    <table bgColor="#ffffff" border="0" width="100%">
+        <tbody>
+            <tr>
+                <td width="100%" align="center">
+                    <br />
+                    
+                    <a href="index.html"><img alt="Dolphin Wireframe: Coordinate Interpolator Morphing" title="Dolphin Wireframe: Coordinate Interpolator Morphing" border="0" hspace="0" src="DolphinWireframe.png" width="350" height="105" align="middle"/></a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <p>
+		 Event values can be generated through TimeSensor, ROUTE and interpolator chains to create animation effects in a scene graph.
+                 Strong typing requirements ensure that only valid values are allowed to modify the scene graph.
+    </p>
+    
+
+
+    <p>
+                 The
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#TimeSensor" target="X3dTooltips" title="X3D Tooltip">TimeSensor</a>
+                 node produces output stimulus events that track the passage of time intervals using the computer clock.
+                 Event animation and interpolation is accomplished by 
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#ROUTE" target="X3dTooltips" title="X3D Tooltip">ROUTE</a>
+                 connections that pass events between nodes.
+    </p>
+    
+
+
+    <p>
+                 Strictly typed interpolation values are produced by 
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#ScalarInterpolator" target="X3dTooltips" title="X3D Tooltip">ScalarInterpolator</a>,
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#ColorInterpolator" target="X3dTooltips" title="X3D Tooltip">ColorInterpolator</a>,
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#PositionInterpolator" target="X3dTooltips" title="X3D Tooltip">PositionInterpolator</a>,
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#PositionInterpolator2D" target="X3dTooltips" title="X3D Tooltip">PositionInterpolator2D</a>,
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#OrientationInterpolator" target="X3dTooltips" title="X3D Tooltip">OrientationInterpolator</a>,
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#NormalInterpolator" target="X3dTooltips" title="X3D Tooltip">NormalInterpolator</a>, 
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#CoordinateInterpolator" target="X3dTooltips" title="X3D Tooltip">CoordinateInterpolator</a>,
+                 and 
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#CoordinateInterpolator2D" target="X3dTooltips" title="X3D Tooltip">CoordinateInterpolator2D</a> nodes.
+    </p>
+    
+
+
+    <p>
+		 Authors can use a
+                 <a href="Chapter07-EventAnimationInterpolation.10StepAnimationDesignProcess.pdf">10-step algorithm checklist</a>
+                (with <a href="TimeSensorScalarInterpolatorFilterDiagram.png">example diagram</a>)
+                        as an event-animation design pattern that helps build consistent event-routing chains.
+                 The supporting
+                 <a href="http://x3dgraphics.com/slidesets/X3dForWebAuthors/Chapter07EventAnimationInterpolation.pdf" target="X3dChapterSlideset">Chapter&nbsp;7 slideset</a>
+                 and course videos
+                (<a href="https://www.movesinstitute.org/Video/Courses/X3dForWebAuthors/X3dForWebAuthorsVideo.html#7" target="X3dChapterVideos">NPS</a>,
+                 <a href="https://www.youtube.com/playlist?list=PLuSIsM-86simo9kv21MLgaNKw7LGg8HjL" target="X3dChapterYouTubeVideos">YouTube</a>)
+                 for <i>X3D for Web Authors</i> are available online via
+                 <a href="http://X3dGraphics.com" target="_blank">X3dGraphics.com</a>.
+    </p>
+    
+
+
+  </td>
+         </tr>
+         <tr>
+            <td colspan="5" align="center">
+               <table align="center"
+                       summary=""
+                       style="background-color: white; border-width:1; width:100%">
+                  <tr>
+                     <th align="center" style="background-color:lightgrey" colspan="2">
+25 X3D Models &nbsp;&nbsp;&nbsp; 
+</th>
+                     <th align="left" style="background-color:lightgrey" colspan="2">
+ &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp; 36 X3D Model Viewpoint Snapshots
+</th>
+                  </tr>
+                  <tr>
+                     <td colspan="4">
+                        <br/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="left" valign="top" rowspan="2">
+                        <a href="CircleFishPositionInterpolatorIndex.html">
+                           <img src="_thumbnails/CircleFishPositionInterpolatorThumbnail.png"
+                                 width="64"
+                                 height="64"
+                                 align="left"
+                                 alt="CircleFishPositionInterpolator"
+                                 title="X3D model CircleFishPositionInterpolator.x3d"/>
+                        </a>
+                     </td>
+                     <td align="left" valign="top" rowspan="2">
+                        <br/>
+                        <a href="CircleFishPositionInterpolatorIndex.html"
+                            title="X3D model CircleFishPositionInterpolator.x3d">Circle Fish Position Interpolator.x3d</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="left" valign="middle" width="26"><!--file not found: _viewpoints/CircleFishPositionInterpolator.x3d._VP_Book_View.png--></td>
+                     <td>
+                        <span title="viewpoint image file not found">[1] CircleFishPositionInterpolator.x3d Book View</span>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/CircleFishPositionInterpolator.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/CircleFishPositionInterpolator.x3d._VP_Default_viewpoint.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/CircleFishPositionInterpolator.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[2] CircleFishPositionInterpolator.x3d (default X3D view from 0 0 10)</a>
+                     </td>
+                  </tr>
+                  <tr style="border-spacing:0px; padding:0px;">
+                     <td colspan="4">
+                        <hr/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="left" valign="top" rowspan="1">
+                        <a href="CircleFishPrototypeIndex.html">
+                           <img src="_thumbnails/CircleFishPrototypeThumbnail.png"
+                                 width="64"
+                                 height="64"
+                                 align="left"
+                                 alt="CircleFishPrototype"
+                                 title="X3D model CircleFishPrototype.x3d"/>
+                        </a>
+                     </td>
+                     <td align="left" valign="top" rowspan="1">
+                        <br/>
+                        <a href="CircleFishPrototypeIndex.html"
+                            title="X3D model CircleFishPrototype.x3d">Circle Fish Prototype.x3d</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/CircleFishPrototype.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/CircleFishPrototype.x3d._VP_Default_viewpoint.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/CircleFishPrototype.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[3] CircleFishPrototype.x3d (default X3D view from 0 0 10)</a>
+                     </td>
+                  </tr>
+                  <tr style="border-spacing:0px; padding:0px;">
+                     <td colspan="4">
+                        <hr/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="left" valign="top" rowspan="1">
+                        <a href="CircleFishPTPrototypeIndex.html">
+                           <img src="_thumbnails/CircleFishPTPrototypeThumbnail.png"
+                                 width="64"
+                                 height="64"
+                                 align="left"
+                                 alt="CircleFishPTPrototype"
+                                 title="X3D model CircleFishPTPrototype.x3d"/>
+                        </a>
+                     </td>
+                     <td align="left" valign="top" rowspan="1">
+                        <br/>
+                        <a href="CircleFishPTPrototypeIndex.html"
+                            title="X3D model CircleFishPTPrototype.x3d">Circle Fish PTPrototype.x3d</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/CircleFishPTPrototype.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/CircleFishPTPrototype.x3d._VP_Default_viewpoint.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/CircleFishPTPrototype.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[4] CircleFishPTPrototype.x3d (default X3D view from 0 0 10)</a>
+                     </td>
+                  </tr>
+                  <tr style="border-spacing:0px; padding:0px;">
+                     <td colspan="4">
+                        <hr/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="left" valign="top" rowspan="1">
+                        <a href="ColorInterpolatorExampleIndex.html">
+                           <img src="_thumbnails/ColorInterpolatorExampleThumbnail.png"
+                                 width="64"
+                                 height="64"
+                                 align="left"
+                                 alt="ColorInterpolatorExample"
+                                 title="X3D model ColorInterpolatorExample.x3d"/>
+                        </a>
+                     </td>
+                     <td align="left" valign="top" rowspan="1">
+                        <br/>
+                        <a href="ColorInterpolatorExampleIndex.html"
+                            title="X3D model ColorInterpolatorExample.x3d">Color Interpolator Example.x3d</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/ColorInterpolatorExample.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/ColorInterpolatorExample.x3d._VP_Default_viewpoint.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/ColorInterpolatorExample.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[5] ColorInterpolatorExample.x3d (default X3D view from 0 0 10)</a>
+                     </td>
+                  </tr>
+                  <tr style="border-spacing:0px; padding:0px;">
+                     <td colspan="4">
+                        <hr/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="left" valign="top" rowspan="2">
+                        <a href="ColorInterpolatorFishPrototypeIndex.html">
+                           <img src="_thumbnails/ColorInterpolatorFishPrototypeThumbnail.png"
+                                 width="64"
+                                 height="64"
+                                 align="left"
+                                 alt="ColorInterpolatorFishPrototype"
+                                 title="X3D model ColorInterpolatorFishPrototype.x3d"/>
+                        </a>
+                     </td>
+                     <td align="left" valign="top" rowspan="2">
+                        <br/>
+                        <a href="ColorInterpolatorFishPrototypeIndex.html"
+                            title="X3D model ColorInterpolatorFishPrototype.x3d">Color Interpolator Fish Prototype.x3d</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/ColorInterpolatorFishPrototype.x3d._VP_CircleFish_with_ColorInterpolator.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/ColorInterpolatorFishPrototype.x3d._VP_CircleFish_with_ColorInterpolator.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/ColorInterpolatorFishPrototype.x3d._VP_CircleFish_with_ColorInterpolator.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[6] ColorInterpolatorFishPrototype.x3d CircleFish with ColorInterpolator</a>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/ColorInterpolatorFishPrototype.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/ColorInterpolatorFishPrototype.x3d._VP_Default_viewpoint.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/ColorInterpolatorFishPrototype.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[7] ColorInterpolatorFishPrototype.x3d (default X3D view from 0 0 10)</a>
+                     </td>
+                  </tr>
+                  <tr style="border-spacing:0px; padding:0px;">
+                     <td colspan="4">
+                        <hr/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="left" valign="top" rowspan="2">
+                        <a href="CoordinateInterpolator2dExampleIndex.html">
+                           <img src="_thumbnails/CoordinateInterpolator2dExampleThumbnail.png"
+                                 width="64"
+                                 height="64"
+                                 align="left"
+                                 alt="CoordinateInterpolator2dExample"
+                                 title="X3D model CoordinateInterpolator2dExample.x3d"/>
+                        </a>
+                     </td>
+                     <td align="left" valign="top" rowspan="2">
+                        <br/>
+                        <a href="CoordinateInterpolator2dExampleIndex.html"
+                            title="X3D model CoordinateInterpolator2dExample.x3d">Coordinate Interpolator 2D Example.x3d</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/CoordinateInterpolator2dExample.x3d._VP_Click_to_activate_animation.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/CoordinateInterpolator2dExample.x3d._VP_Click_to_activate_animation.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/CoordinateInterpolator2dExample.x3d._VP_Click_to_activate_animation.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[8] CoordinateInterpolator2dExample.x3d Click to activate animation</a>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/CoordinateInterpolator2dExample.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/CoordinateInterpolator2dExample.x3d._VP_Default_viewpoint.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/CoordinateInterpolator2dExample.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[9] CoordinateInterpolator2dExample.x3d (default X3D view from 0 0 10)</a>
+                     </td>
+                  </tr>
+                  <tr style="border-spacing:0px; padding:0px;">
+                     <td colspan="4">
+                        <hr/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="left" valign="top" rowspan="2">
+                        <a href="DolphinMorpherIndex.html">
+                           <img src="_thumbnails/DolphinMorpherThumbnail.png"
+                                 width="64"
+                                 height="64"
+                                 align="left"
+                                 alt="DolphinMorpher"
+                                 title="X3D model DolphinMorpher.x3d"/>
+                        </a>
+                     </td>
+                     <td align="left" valign="top" rowspan="2">
+                        <br/>
+                        <a href="DolphinMorpherIndex.html" title="X3D model DolphinMorpher.x3d">Dolphin Morpher.x3d</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="left" valign="middle" width="26"><!--file not found: _viewpoints/DolphinMorpher.x3d._VP_Dolphin_morpher,_2m_away.png--></td>
+                     <td>
+                        <span title="viewpoint image file not found">[10] DolphinMorpher.x3d Dolphin morpher, 2m away</span>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/DolphinMorpher.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/DolphinMorpher.x3d._VP_Default_viewpoint.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/DolphinMorpher.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[11] DolphinMorpher.x3d (default X3D view from 0 0 10)</a>
+                     </td>
+                  </tr>
+                  <tr style="border-spacing:0px; padding:0px;">
+                     <td colspan="4">
+                        <hr/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="left" valign="top" rowspan="2">
+                        <a href="DolphinPose01Index.html">
+                           <img src="_thumbnails/DolphinPose01Thumbnail.png"
+                                 width="64"
+                                 height="64"
+                                 align="left"
+                                 alt="DolphinPose01"
+                                 title="X3D model DolphinPose01.x3d"/>
+                        </a>
+                     </td>
+                     <td align="left" valign="top" rowspan="2">
+                        <br/>
+                        <a href="DolphinPose01Index.html" title="X3D model DolphinPose01.x3d">Dolphin Pose 01.x3d</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/DolphinPose01.x3d._VP_Dolphin_at_2m.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/DolphinPose01.x3d._VP_Dolphin_at_2m.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/DolphinPose01.x3d._VP_Dolphin_at_2m.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[12] DolphinPose01.x3d Dolphin at 2m</a>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/DolphinPose01.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/DolphinPose01.x3d._VP_Default_viewpoint.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/DolphinPose01.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[13] DolphinPose01.x3d (default X3D view from 0 0 10)</a>
+                     </td>
+                  </tr>
+                  <tr style="border-spacing:0px; padding:0px;">
+                     <td colspan="4">
+                        <hr/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="left" valign="top" rowspan="2">
+                        <a href="DolphinPose02Index.html">
+                           <img src="_thumbnails/DolphinPose02Thumbnail.png"
+                                 width="64"
+                                 height="64"
+                                 align="left"
+                                 alt="DolphinPose02"
+                                 title="X3D model DolphinPose02.x3d"/>
+                        </a>
+                     </td>
+                     <td align="left" valign="top" rowspan="2">
+                        <br/>
+                        <a href="DolphinPose02Index.html" title="X3D model DolphinPose02.x3d">Dolphin Pose 02.x3d</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/DolphinPose02.x3d._VP_Dolphin_at_2m.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/DolphinPose02.x3d._VP_Dolphin_at_2m.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/DolphinPose02.x3d._VP_Dolphin_at_2m.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[14] DolphinPose02.x3d Dolphin at 2m</a>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/DolphinPose02.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/DolphinPose02.x3d._VP_Default_viewpoint.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/DolphinPose02.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[15] DolphinPose02.x3d (default X3D view from 0 0 10)</a>
+                     </td>
+                  </tr>
+                  <tr style="border-spacing:0px; padding:0px;">
+                     <td colspan="4">
+                        <hr/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="left" valign="top" rowspan="2">
+                        <a href="DolphinPose03Index.html">
+                           <img src="_thumbnails/DolphinPose03Thumbnail.png"
+                                 width="64"
+                                 height="64"
+                                 align="left"
+                                 alt="DolphinPose03"
+                                 title="X3D model DolphinPose03.x3d"/>
+                        </a>
+                     </td>
+                     <td align="left" valign="top" rowspan="2">
+                        <br/>
+                        <a href="DolphinPose03Index.html" title="X3D model DolphinPose03.x3d">Dolphin Pose 03.x3d</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/DolphinPose03.x3d._VP_Dolphin_at_2m.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/DolphinPose03.x3d._VP_Dolphin_at_2m.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/DolphinPose03.x3d._VP_Dolphin_at_2m.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[16] DolphinPose03.x3d Dolphin at 2m</a>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/DolphinPose03.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/DolphinPose03.x3d._VP_Default_viewpoint.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/DolphinPose03.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[17] DolphinPose03.x3d (default X3D view from 0 0 10)</a>
+                     </td>
+                  </tr>
+                  <tr style="border-spacing:0px; padding:0px;">
+                     <td colspan="4">
+                        <hr/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="left" valign="top" rowspan="2">
+                        <a href="DolphinSwitcherIndex.html">
+                           <img src="_thumbnails/DolphinSwitcherThumbnail.png"
+                                 width="64"
+                                 height="64"
+                                 align="left"
+                                 alt="DolphinSwitcher"
+                                 title="X3D model DolphinSwitcher.x3d"/>
+                        </a>
+                     </td>
+                     <td align="left" valign="top" rowspan="2">
+                        <br/>
+                        <a href="DolphinSwitcherIndex.html" title="X3D model DolphinSwitcher.x3d">Dolphin Switcher.x3d</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/DolphinSwitcher.x3d._VP_Dolphin_switcher,_2m_away.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/DolphinSwitcher.x3d._VP_Dolphin_switcher,_2m_away.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/DolphinSwitcher.x3d._VP_Dolphin_switcher,_2m_away.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[18] DolphinSwitcher.x3d Dolphin switcher, 2m away</a>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/DolphinSwitcher.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/DolphinSwitcher.x3d._VP_Default_viewpoint.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/DolphinSwitcher.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[19] DolphinSwitcher.x3d (default X3D view from 0 0 10)</a>
+                     </td>
+                  </tr>
+                  <tr style="border-spacing:0px; padding:0px;">
+                     <td colspan="4">
+                        <hr/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="left" valign="top" rowspan="2">
+                        <a href="GaribaldiIndex.html">
+                           <img src="_thumbnails/GaribaldiThumbnail.png"
+                                 width="64"
+                                 height="64"
+                                 align="left"
+                                 alt="Garibaldi"
+                                 title="X3D model Garibaldi.x3d"/>
+                        </a>
+                     </td>
+                     <td align="left" valign="top" rowspan="2">
+                        <br/>
+                        <a href="GaribaldiIndex.html" title="X3D model Garibaldi.x3d">Garibaldi.x3d</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Garibaldi.x3d._VP_Garibaldi.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Garibaldi.x3d._VP_Garibaldi.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Garibaldi.x3d._VP_Garibaldi.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[20] Garibaldi.x3d Garibaldi</a>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/Garibaldi.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/Garibaldi.x3d._VP_Default_viewpoint.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/Garibaldi.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[21] Garibaldi.x3d (default X3D view from 0 0 10)</a>
+                     </td>
+                  </tr>
+                  <tr style="border-spacing:0px; padding:0px;">
+                     <td colspan="4">
+                        <hr/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="left" valign="top" rowspan="2">
+                        <a href="HelloX3dAuthorsAnimationChainIndex.html">
+                           <img src="_thumbnails/HelloX3dAuthorsAnimationChainThumbnail.png"
+                                 width="64"
+                                 height="64"
+                                 align="left"
+                                 alt="HelloX3dAuthorsAnimationChain"
+                                 title="X3D model HelloX3dAuthorsAnimationChain.x3d"/>
+                        </a>
+                     </td>
+                     <td align="left" valign="top" rowspan="2">
+                        <br/>
+                        <a href="HelloX3dAuthorsAnimationChainIndex.html"
+                            title="X3D model HelloX3dAuthorsAnimationChain.x3d">Hello X3D Authors Animation Chain.x3d</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/HelloX3dAuthorsAnimationChain.x3d._VP_Hello,_world.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/HelloX3dAuthorsAnimationChain.x3d._VP_Hello,_world.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/HelloX3dAuthorsAnimationChain.x3d._VP_Hello,_world.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[22] HelloX3dAuthorsAnimationChain.x3d Hello, world</a>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/HelloX3dAuthorsAnimationChain.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/HelloX3dAuthorsAnimationChain.x3d._VP_Default_viewpoint.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/HelloX3dAuthorsAnimationChain.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[23] HelloX3dAuthorsAnimationChain.x3d (default X3D view from 0 0 10)</a>
+                     </td>
+                  </tr>
+                  <tr style="border-spacing:0px; padding:0px;">
+                     <td colspan="4">
+                        <hr/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="left" valign="top" rowspan="1">
+                        <a href="MotionInterpolatorFishPrototypeIndex.html">
+                           <img src="_thumbnails/MotionInterpolatorFishPrototypeThumbnail.png"
+                                 width="64"
+                                 height="64"
+                                 align="left"
+                                 alt="MotionInterpolatorFishPrototype"
+                                 title="X3D model MotionInterpolatorFishPrototype.x3d"/>
+                        </a>
+                     </td>
+                     <td align="left" valign="top" rowspan="1">
+                        <br/>
+                        <a href="MotionInterpolatorFishPrototypeIndex.html"
+                            title="X3D model MotionInterpolatorFishPrototype.x3d">Motion Interpolator Fish Prototype.x3d</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/MotionInterpolatorFishPrototype.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/MotionInterpolatorFishPrototype.x3d._VP_Default_viewpoint.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/MotionInterpolatorFishPrototype.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[24] MotionInterpolatorFishPrototype.x3d (default X3D view from 0 0 10)</a>
+                     </td>
+                  </tr>
+                  <tr style="border-spacing:0px; padding:0px;">
+                     <td colspan="4">
+                        <hr/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="left" valign="top" rowspan="3">
+                        <a href="NormalInterpolatorExampleIndex.html">
+                           <img src="_thumbnails/NormalInterpolatorExampleThumbnail.png"
+                                 width="64"
+                                 height="64"
+                                 align="left"
+                                 alt="NormalInterpolatorExample"
+                                 title="X3D model NormalInterpolatorExample.x3d"/>
+                        </a>
+                     </td>
+                     <td align="left" valign="top" rowspan="3">
+                        <br/>
+                        <a href="NormalInterpolatorExampleIndex.html"
+                            title="X3D model NormalInterpolatorExample.x3d">Normal Interpolator Example.x3d</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/NormalInterpolatorExample.x3d._VP_Animating_normals_on_right_vertices_of_a_quadrilateral.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/NormalInterpolatorExample.x3d._VP_Animating_normals_on_right_vertices_of_a_quadrilateral.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/NormalInterpolatorExample.x3d._VP_Animating_normals_on_right_vertices_of_a_quadrilateral.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[25] NormalInterpolatorExample.x3d Animating normals on right vertices of a quadrilateral</a>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/NormalInterpolatorExample.x3d._VP_Other_side_-_note_difference_in_animated_shading.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/NormalInterpolatorExample.x3d._VP_Other_side_-_note_difference_in_animated_shading.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/NormalInterpolatorExample.x3d._VP_Other_side_-_note_difference_in_animated_shading.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[26] NormalInterpolatorExample.x3d Other side - note difference in animated shading</a>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/NormalInterpolatorExample.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/NormalInterpolatorExample.x3d._VP_Default_viewpoint.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/NormalInterpolatorExample.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[27] NormalInterpolatorExample.x3d (default X3D view from 0 0 10)</a>
+                     </td>
+                  </tr>
+                  <tr style="border-spacing:0px; padding:0px;">
+                     <td colspan="4">
+                        <hr/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="left" valign="top" rowspan="2">
+                        <a href="OrientationInterpolatorFishExampleIndex.html">
+                           <img src="_thumbnails/OrientationInterpolatorFishExampleThumbnail.png"
+                                 width="64"
+                                 height="64"
+                                 align="left"
+                                 alt="OrientationInterpolatorFishExample"
+                                 title="X3D model OrientationInterpolatorFishExample.x3d"/>
+                        </a>
+                     </td>
+                     <td align="left" valign="top" rowspan="2">
+                        <br/>
+                        <a href="OrientationInterpolatorFishExampleIndex.html"
+                            title="X3D model OrientationInterpolatorFishExample.x3d">Orientation Interpolator Fish Example.x3d</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="left" valign="middle" width="26"><!--file not found: _viewpoints/OrientationInterpolatorFishExample.x3d._VP_Book_View.png--></td>
+                     <td>
+                        <span title="viewpoint image file not found">[28] OrientationInterpolatorFishExample.x3d Book View</span>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/OrientationInterpolatorFishExample.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/OrientationInterpolatorFishExample.x3d._VP_Default_viewpoint.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/OrientationInterpolatorFishExample.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[29] OrientationInterpolatorFishExample.x3d (default X3D view from 0 0 10)</a>
+                     </td>
+                  </tr>
+                  <tr style="border-spacing:0px; padding:0px;">
+                     <td colspan="4">
+                        <hr/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="left" valign="top" rowspan="1">
+                        <a href="OrientationInterpolatorFishPrototypeIndex.html">
+                           <img src="_thumbnails/OrientationInterpolatorFishPrototypeThumbnail.png"
+                                 width="64"
+                                 height="64"
+                                 align="left"
+                                 alt="OrientationInterpolatorFishPrototype"
+                                 title="X3D model OrientationInterpolatorFishPrototype.x3d"/>
+                        </a>
+                     </td>
+                     <td align="left" valign="top" rowspan="1">
+                        <br/>
+                        <a href="OrientationInterpolatorFishPrototypeIndex.html"
+                            title="X3D model OrientationInterpolatorFishPrototype.x3d">Orientation Interpolator Fish Prototype.x3d</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="left" valign="middle" width="26"><!--file not found: _viewpoints/OrientationInterpolatorFishPrototype.x3d._VP_Default_viewpoint.png--></td>
+                     <td>
+                        <span title="viewpoint image file not found">[30] OrientationInterpolatorFishPrototype.x3d (default X3D view)</span>
+                     </td>
+                  </tr>
+                  <tr style="border-spacing:0px; padding:0px;">
+                     <td colspan="4">
+                        <hr/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="left" valign="top" rowspan="2">
+                        <a href="PositionInterpolator2dExampleIndex.html">
+                           <img src="_thumbnails/PositionInterpolator2dExampleThumbnail.png"
+                                 width="64"
+                                 height="64"
+                                 align="left"
+                                 alt="PositionInterpolator2dExample"
+                                 title="X3D model PositionInterpolator2dExample.x3d"/>
+                        </a>
+                     </td>
+                     <td align="left" valign="top" rowspan="2">
+                        <br/>
+                        <a href="PositionInterpolator2dExampleIndex.html"
+                            title="X3D model PositionInterpolator2dExample.x3d">Position Interpolator 2D Example.x3d</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/PositionInterpolator2dExample.x3d._VP_Click_to_activate_animation.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/PositionInterpolator2dExample.x3d._VP_Click_to_activate_animation.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/PositionInterpolator2dExample.x3d._VP_Click_to_activate_animation.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[31] PositionInterpolator2dExample.x3d Click to activate animation</a>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/PositionInterpolator2dExample.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/PositionInterpolator2dExample.x3d._VP_Default_viewpoint.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/PositionInterpolator2dExample.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[32] PositionInterpolator2dExample.x3d (default X3D view from 0 0 10)</a>
+                     </td>
+                  </tr>
+                  <tr style="border-spacing:0px; padding:0px;">
+                     <td colspan="4">
+                        <hr/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="left" valign="top" rowspan="1">
+                        <a href="PositionInterpolatorPrototypeIndex.html">
+                           <img src="_thumbnails/PositionInterpolatorPrototypeThumbnail.png"
+                                 width="64"
+                                 height="64"
+                                 align="left"
+                                 alt="PositionInterpolatorPrototype"
+                                 title="X3D model PositionInterpolatorPrototype.x3d"/>
+                        </a>
+                     </td>
+                     <td align="left" valign="top" rowspan="1">
+                        <br/>
+                        <a href="PositionInterpolatorPrototypeIndex.html"
+                            title="X3D model PositionInterpolatorPrototype.x3d">Position Interpolator Prototype.x3d</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="left" valign="middle" width="26"><!--file not found: _viewpoints/PositionInterpolatorPrototype.x3d._VP_Default_viewpoint.png--></td>
+                     <td>
+                        <span title="viewpoint image file not found">[33] PositionInterpolatorPrototype.x3d (default X3D view from 0 0 10)</span>
+                     </td>
+                  </tr>
+                  <tr style="border-spacing:0px; padding:0px;">
+                     <td colspan="4">
+                        <hr/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="left" valign="top" rowspan="3">
+                        <a href="PositionOrientationInterpolatorsExampleIndex.html">
+                           <img src="_thumbnails/PositionOrientationInterpolatorsExampleThumbnail.png"
+                                 width="64"
+                                 height="64"
+                                 align="left"
+                                 alt="PositionOrientationInterpolatorsExample"
+                                 title="X3D model PositionOrientationInterpolatorsExample.x3d"/>
+                        </a>
+                     </td>
+                     <td align="left" valign="top" rowspan="3">
+                        <br/>
+                        <a href="PositionOrientationInterpolatorsExampleIndex.html"
+                            title="X3D model PositionOrientationInterpolatorsExample.x3d">Position Orientation Interpolators Example.x3d</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="left" valign="middle" width="26"><!--file not found: _viewpoints/PositionOrientationInterpolatorsExample.x3d._VP_Animation_demo.png--></td>
+                     <td>
+                        <span title="viewpoint image file not found">[34] PositionOrientationInterpolatorsExample.x3d Animation demo</span>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/PositionOrientationInterpolatorsExample.x3d._VP_View_from_above.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/PositionOrientationInterpolatorsExample.x3d._VP_View_from_above.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/PositionOrientationInterpolatorsExample.x3d._VP_View_from_above.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[35] PositionOrientationInterpolatorsExample.x3d View from above</a>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/PositionOrientationInterpolatorsExample.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/PositionOrientationInterpolatorsExample.x3d._VP_Default_viewpoint.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/PositionOrientationInterpolatorsExample.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[36] PositionOrientationInterpolatorsExample.x3d (default X3D view)</a>
+                     </td>
+                  </tr>
+                  <tr style="border-spacing:0px; padding:0px;">
+                     <td colspan="4">
+                        <hr/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="left" valign="top" rowspan="3">
+                        <a href="PositionOrientationInterpolatorsExampleTracedIndex.html">
+                           <img src="_thumbnails/PositionOrientationInterpolatorsExampleTracedThumbnail.png"
+                                 width="64"
+                                 height="64"
+                                 align="left"
+                                 alt="PositionOrientationInterpolatorsExampleTraced"
+                                 title="X3D model PositionOrientationInterpolatorsExampleTraced.x3d"/>
+                        </a>
+                     </td>
+                     <td align="left" valign="top" rowspan="3">
+                        <br/>
+                        <a href="PositionOrientationInterpolatorsExampleTracedIndex.html"
+                            title="X3D model PositionOrientationInterpolatorsExampleTraced.x3d">Position Orientation Interpolators Example Traced.x3d</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="left" valign="middle" width="26"><!--file not found: _viewpoints/PositionOrientationInterpolatorsExampleTraced.x3d._VP_Animation_demo.png--></td>
+                     <td>
+                        <span title="viewpoint image file not found">[37] PositionOrientationInterpolatorsExampleTraced.x3d Animation demo</span>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/PositionOrientationInterpolatorsExampleTraced.x3d._VP_View_from_above.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/PositionOrientationInterpolatorsExampleTraced.x3d._VP_View_from_above.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/PositionOrientationInterpolatorsExampleTraced.x3d._VP_View_from_above.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[38] PositionOrientationInterpolatorsExampleTraced.x3d View from above</a>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/PositionOrientationInterpolatorsExampleTraced.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/PositionOrientationInterpolatorsExampleTraced.x3d._VP_Default_viewpoint.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/PositionOrientationInterpolatorsExampleTraced.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[39] PositionOrientationInterpolatorsExampleTraced.x3d (default X3D view)</a>
+                     </td>
+                  </tr>
+                  <tr style="border-spacing:0px; padding:0px;">
+                     <td colspan="4">
+                        <hr/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="left" valign="top" rowspan="1">
+                        <a href="ScalarInterpolatorExampleIndex.html">
+                           <img src="_thumbnails/ScalarInterpolatorExampleThumbnail.png"
+                                 width="64"
+                                 height="64"
+                                 align="left"
+                                 alt="ScalarInterpolatorExample"
+                                 title="X3D model ScalarInterpolatorExample.x3d"/>
+                        </a>
+                     </td>
+                     <td align="left" valign="top" rowspan="1">
+                        <br/>
+                        <a href="ScalarInterpolatorExampleIndex.html"
+                            title="X3D model ScalarInterpolatorExample.x3d">Scalar Interpolator Example.x3d</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/ScalarInterpolatorExample.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/ScalarInterpolatorExample.x3d._VP_Default_viewpoint.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/ScalarInterpolatorExample.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[40] ScalarInterpolatorExample.x3d (default X3D view from 0 0 10)</a>
+                     </td>
+                  </tr>
+                  <tr style="border-spacing:0px; padding:0px;">
+                     <td colspan="4">
+                        <hr/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="left" valign="top" rowspan="2">
+                        <a href="ScalarInterpolatorFishExampleIndex.html">
+                           <img src="_thumbnails/ScalarInterpolatorFishExampleThumbnail.png"
+                                 width="64"
+                                 height="64"
+                                 align="left"
+                                 alt="ScalarInterpolatorFishExample"
+                                 title="X3D model ScalarInterpolatorFishExample.x3d"/>
+                        </a>
+                     </td>
+                     <td align="left" valign="top" rowspan="2">
+                        <br/>
+                        <a href="ScalarInterpolatorFishExampleIndex.html"
+                            title="X3D model ScalarInterpolatorFishExample.x3d">Scalar Interpolator Fish Example.x3d</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="left" valign="middle" width="26"><!--file not found: _viewpoints/ScalarInterpolatorFishExample.x3d._VP_Book_View.png--></td>
+                     <td>
+                        <span title="viewpoint image file not found">[41] ScalarInterpolatorFishExample.x3d Book View</span>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/ScalarInterpolatorFishExample.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/ScalarInterpolatorFishExample.x3d._VP_Default_viewpoint.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/ScalarInterpolatorFishExample.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[42] ScalarInterpolatorFishExample.x3d (default X3D view from 0 0 10)</a>
+                     </td>
+                  </tr>
+                  <tr style="border-spacing:0px; padding:0px;">
+                     <td colspan="4">
+                        <hr/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="left" valign="top" rowspan="1">
+                        <a href="ScalarInterpolatorFishPrototypeIndex.html">
+                           <img src="_thumbnails/ScalarInterpolatorFishPrototypeThumbnail.png"
+                                 width="64"
+                                 height="64"
+                                 align="left"
+                                 alt="ScalarInterpolatorFishPrototype"
+                                 title="X3D model ScalarInterpolatorFishPrototype.x3d"/>
+                        </a>
+                     </td>
+                     <td align="left" valign="top" rowspan="1">
+                        <br/>
+                        <a href="ScalarInterpolatorFishPrototypeIndex.html"
+                            title="X3D model ScalarInterpolatorFishPrototype.x3d">Scalar Interpolator Fish Prototype.x3d</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="left" valign="middle" width="26"><!--file not found: _viewpoints/ScalarInterpolatorFishPrototype.x3d._VP_Default_viewpoint.png--></td>
+                     <td>
+                        <span title="viewpoint image file not found">[43] ScalarInterpolatorFishPrototype.x3d (default X3D view from 0 0 10)</span>
+                     </td>
+                  </tr>
+                  <tr style="border-spacing:0px; padding:0px;">
+                     <td colspan="4">
+                        <hr/>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="left" valign="top" rowspan="2">
+                        <a href="TimeSensorChainingIndex.html">
+                           <img src="_thumbnails/TimeSensorChainingThumbnail.png"
+                                 width="64"
+                                 height="64"
+                                 align="left"
+                                 alt="TimeSensorChaining"
+                                 title="X3D model TimeSensorChaining.x3d"/>
+                        </a>
+                     </td>
+                     <td align="left" valign="top" rowspan="2">
+                        <br/>
+                        <a href="TimeSensorChainingIndex.html"
+                            title="X3D model TimeSensorChaining.x3d">Time Sensor Chaining.x3d</a> &nbsp;&nbsp;&nbsp; 
+</td>
+                     <td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/TimeSensorChaining.x3d._VP_TimeSensor_chaining_example.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/TimeSensorChaining.x3d._VP_TimeSensor_chaining_example.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/TimeSensorChaining.x3d._VP_TimeSensor_chaining_example.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[44] TimeSensorChaining.x3d TimeSensor chaining example</a>
+                     </td>
+ </tr>
+ <tr>
+<td align="center" valign="middle" width="26">
+                        <a href="_viewpoints/TimeSensorChaining.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">
+                           <img src="_viewpoints/TimeSensorChaining.x3d._VP_Default_viewpoint.png"
+                                 align="left"
+                                 height="24"/>
+                        </a>
+                     </td>
+                     <td>
+                        <a href="_viewpoints/TimeSensorChaining.x3d._VP_Default_viewpoint.png"
+                            title="Viewpoint image from X3D model"
+                            alt="Viewpoint image from X3D model">[45] TimeSensorChaining.x3d (default X3D view from 0 0 10)</a>
+                     </td>
+                  </tr>
+               </table>
+            </td>
+         </tr>
+         <tr>
+            <td colspan="5" style="background-color:lightgrey">&nbsp;</td>
+         </tr>
+         <tr>
+            <td colspan="5">
+               <p align="center">This viewpoint slideshow is online at <br/>
+                  <a href="https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter07EventAnimationInterpolation/viewpointSlideshow.html">https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter07EventAnimationInterpolation/viewpointSlideshow.html</a>
+               </p>
+               <p align="center">
+                  <a href="https://validator.w3.org/check?uri=https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter07EventAnimationInterpolation/viewpointSlideshow.html"
+                      target="_blank">
+                     <img src="https://www.w3.org/Icons/valid-xhtml10"
+                           title="Validate XHTML 1.1"
+                           alt="Validate XHTML 1.1"
+                           height="31"
+                           width="88"
+                           border="0"
+                           align="right"/>
+                  </a>
+               </p>
+               <p style="text-align:center">Viewpoint image version history at <br/>
+                  <a href="https://sourceforge.net/p/x3d/code/HEAD/tree/www.web3d.org/x3d/content/examples/X3dForWebAuthors/Chapter07EventAnimationInterpolation/_viewpoints/"
+                      target="_blank">https://sourceforge.net/p/x3d/code/HEAD/tree/www.web3d.org/x3d/content/examples/X3dForWebAuthors/Chapter07EventAnimationInterpolation/_viewpoints</a>
+               </p>
+            </td>
+         </tr>
+      </table>
+      <table align="center"
+              summary="navigation"
+              border="1"
+              cellpadding="2"
+              width="95%">
+         <tr>
+            <td align="center" width="17%">
+               <a href="../index.html" target="_top">
+                  <img src="../images/ToC.png"
+                        title="Table of Contents"
+                        alt="Table of Contents"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter06GeometryPointsLinesPolygons/viewpointSlideshow.html"
+                   target="_top">
+                  <img src="../images/PreviousChapter.png"
+                        title="Previous Directory Viewpoint Slideshow"
+                        alt="Previous Directory Viewpoint Slideshow"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">&nbsp;&nbsp; <a href="index.html" target="_top">
+                  <img src="../images/ThisChapter.png"
+                        title="Directory Summary"
+                        alt="Directory Viewpoint Slideshow"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="15%">
+               <a href="../javadoc/index.html?X3dForWebAuthors/Chapter07EventAnimationInterpolation/package-summary.html"
+                   title="Javadoc for translated java source"
+                   alt="Javadoc for translated java source"
+                   target="_blank">
+                  <img src="../images/Java-32.png"
+                        title="Javadoc for translated java source"
+                        alt="Javadoc for translated java source"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter08UserInteractivity/viewpointSlideshow.html"
+                   target="_top">
+                  <img src="../images/NextChapter.png"
+                        title="Next Directory Viewpoint Slideshow"
+                        alt="Next Directory Viewpoint Slideshow"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="15%">
+               <a href="../../X3dResources.html" target="helpPage">
+                  <img src="../images/Help.png"
+                        title="X3D Resources"
+                        alt="X3D Resources"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+         </tr>
+      </table>
+   </body>
+</html>

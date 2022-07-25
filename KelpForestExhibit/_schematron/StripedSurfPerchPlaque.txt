@@ -1,0 +1,3 @@
+<TimeSensor DEF='BLUEROCKFISHCLOCK'/> missing description [/X3D/Scene/Group/TimeSensor, warning]
+<TimeSensor DEF='FRONTTOUCHSENSORCLOCK'/> missing description [/X3D/Scene/Group/Group[1]/TimeSensor, warning]
+<TouchSensor DEF='BaseTouchSensor'/> missing ROUTE to send output events [/X3D/Scene/Group/Group[3]/TouchSensor, warning]

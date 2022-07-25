@@ -1,0 +1,4 @@
+<Collision DEF=''/> is inactive since enabled='false' (and no ROUTE is provided to change this value) [/X3D/Scene/Collision[1], warning]
+<Collision DEF=''/> is inactive since enabled='false' (and no ROUTE is provided to change this value) [/X3D/Scene/Collision[2], warning]
+<Collision DEF=''/> is inactive since enabled='false' (and no ROUTE is provided to change this value) [/X3D/Scene/Collision[3], warning]
+<Collision DEF=''/> is inactive since enabled='false' (and no ROUTE is provided to change this value) [/X3D/Scene/Collision[4], warning]

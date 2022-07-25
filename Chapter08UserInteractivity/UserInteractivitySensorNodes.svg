@@ -1,0 +1,20 @@
+
+        
+ecmascript:
+
+function keyInput (inputValue)
+{
+//  Browser.print ('keyInput=' + inputValue + '\n'); // console output
+    keyOutput = new MFString (inputValue); // type conversion
+}
+function finalTextInput (inputValue)
+{
+//  Browser.print ('finalText=' + inputValue + '\n'); // console output
+    stringOutput = new MFString (inputValue); // type conversion
+}
+function enteredTextInput (inputValue)
+{
+    Browser.print ('enteredText=' + inputValue + '\n'); // console output
+}
+
+      

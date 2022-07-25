@@ -1,0 +1,131 @@
+@prefix :       <http://X3dGraphics.com/examples/X3dForWebAuthors/Chapter04ViewingNavigation/Collision.ttl#> .
+@prefix dc:     <http://purl.org/dc/terms/> .
+@prefix owl:    <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix x3d:    <http://www.web3d.org/specifications/x3d-4.0.xsd#> .
+@prefix x3do:   <http://www.web3d.org/specifications/X3dOntology4.0#> .
+
+:X3D a owl:NamedIndividual, x3do:X3D ;
+  x3do:hasHead :head ;
+  x3do:hasScene :Scene ;
+  x3do:profile 'Immersive' ;
+  x3do:version '3.3' ;
+  x3do:noNamespaceSchemaLocation 'http://www.web3d.org/specifications/x3d-3.3.xsd' .
+:head a owl:NamedIndividual, x3do:head ;
+  x3do:hasParent :X3D ;
+  x3do:hasMeta :meta_1_1, :meta_1_2, :meta_1_3, :meta_1_4, :meta_1_5, :meta_1_6, :meta_1_7, :meta_1_8, :meta_1_9, :meta_1_10, :meta_1_11, :meta_1_12, :meta_1_13, :meta_1_14, :meta_1_15 .
+:meta_1_1 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Collision.x3d' ;
+  x3do:name 'title' .
+:meta_1_2 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Illustrate Collision node operation: set Collision enabled="true" to block user navigation through the Kelp Forest tank glass.' ;
+  x3do:name 'description' .
+:meta_1_3 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Don Brutzman and Leonard Daly' ;
+  x3do:name 'creator' .
+:meta_1_4 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '1 June 1998' ;
+  x3do:name 'created' .
+:meta_1_5 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '13 June 2004' ;
+  x3do:name 'translated' .
+:meta_1_6 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '20 October 2019' ;
+  x3do:name 'modified' .
+:meta_1_7 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Contained Inline scene has profile Immersive' ;
+  x3do:name 'info' .
+:meta_1_8 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'http://faculty.nps.edu/brutzman/kelp' ;
+  x3do:name 'reference' .
+:meta_1_9 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'http://faculty.nps.edu/brutzman/kelp/KelpForestDesignPaper.pdf' ;
+  x3do:name 'reference' .
+:meta_1_10 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Kelp Forest 3D models' ;
+  x3do:name 'subject' .
+:meta_1_11 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Revisions Copyright (c) 2006, Daly Realism and Don Brutzman. Original content has permissions for free use. Please provide credit to the Naval Postgraduate School (NPS) Modeling Virtual Environments and Simulation (MOVES) Institute.' ;
+  x3do:name 'accessRights' .
+:meta_1_12 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'http://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/KelpForestMain.x3d' ;
+  x3do:name 'reference' .
+:meta_1_13 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'http://X3dGraphics.com/examples/X3dForWebAuthors/Chapter04ViewingNavigation/Collision.x3d' ;
+  x3do:name 'identifier' .
+:meta_1_14 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'X3D-Edit 3.3, https://savage.nps.edu/X3D-Edit' ;
+  x3do:name 'generator' .
+:meta_1_15 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '../license.html' ;
+  x3do:name 'license' .
+:Scene a owl:NamedIndividual, x3do:Scene ;
+  x3do:hasParent :X3D ;
+  x3do:hasChildren :WorldInfo_2_1, :NavigationInfo_2_2, :Viewpoint_2_3, :Viewpoint_2_4, :Viewpoint_2_5, :Collision_2_6 .
+:WorldInfo_2_1 a owl:NamedIndividual, x3do:WorldInfo ;
+  x3do:hasParent :Scene ;
+  x3do:title 'Collision.x3d' .
+:NavigationInfo_2_2 a owl:NamedIndividual, x3do:NavigationInfo ;
+  x3do:hasParent :Scene ;
+  x3do:speed 3 ;
+  x3do:type '"FLY" "WALK" "ANY"' .
+:Viewpoint_2_3 a owl:NamedIndividual, x3do:Viewpoint ;
+  x3do:hasParent :Scene ;
+  x3do:description 'Outside Tank, Outside Collision Geometry, Blocked' ;
+  x3do:position ( 0 2 40 ) .
+:Viewpoint_2_4 a owl:NamedIndividual, x3do:Viewpoint ;
+  x3do:hasParent :Scene ;
+  x3do:description 'Outside Tank, Below Collision Geometry, Can Fly In' ;
+  x3do:position ( 0 -4 15 ) .
+:Viewpoint_2_5 a owl:NamedIndividual, x3do:Viewpoint ;
+  x3do:hasParent :Scene ;
+  x3do:description 'Inside Tank' ;
+  x3do:orientation ( 0.21 0.97 -0.14 1.202 ) ;
+  x3do:position ( -1.37 -6.94 0.22 ) .
+:Collision_2_6 a owl:NamedIndividual, x3do:Collision ;
+  x3do:hasParent :Scene ;
+  x3do:hasProxy :Shape_2_6_1 ;
+  x3do:hasChildren :CollisionProxyVisualization, :Inline_2_6_3 .
+:Shape_2_6_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Collision_2_6 ;
+  x3do:hasGeometry :CollisionProxy .
+:CollisionProxy a owl:NamedIndividual, x3do:Cylinder ;
+  x3do:hasParent :Shape_2_6_1 ;
+  x3do:bottom false ;
+  x3do:height 6 ;
+  x3do:radius 12 ;
+  x3do:top false .
+:CollisionProxyVisualization a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Collision_2_6 ;
+  x3do:hasGeometry :CollisionProxy-USE-1 ;
+  x3do:hasAppearance :Appearance_2_6_2_2 .
+:CollisionProxy-USE-1 a owl:NamedIndividual, x3do:Cylinder ;
+  x3do:hasParent :CollisionProxyVisualization ;
+  owl:sameAs :CollisionProxy . # DEF matching this USE
+:Appearance_2_6_2_2 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :CollisionProxyVisualization ;
+  x3do:hasMaterial :Material_2_6_2_2_1 .
+:Material_2_6_2_2_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_6_2_2 ;
+  x3do:transparency 0.5 .
+:Inline_2_6_3 a owl:NamedIndividual, x3do:Inline ;
+  x3do:hasParent :Collision_2_6 ;
+  x3do:url '"../KelpForestExhibit/KelpTank.x3d" "http://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/KelpTank.x3d" "../KelpForestExhibit/KelpTank.wrl" "http://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/KelpTank.wrl"' .

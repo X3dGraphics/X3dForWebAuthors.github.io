@@ -1,0 +1,102 @@
+@prefix :       <http://X3dGraphics.com/examples/X3dForWebAuthors/Chapter04ViewingNavigation/Billboard.ttl#> .
+@prefix dc:     <http://purl.org/dc/terms/> .
+@prefix owl:    <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix x3d:    <http://www.web3d.org/specifications/x3d-4.0.xsd#> .
+@prefix x3do:   <http://www.web3d.org/specifications/X3dOntology4.0#> .
+
+:X3D a owl:NamedIndividual, x3do:X3D ;
+  x3do:hasHead :head ;
+  x3do:hasScene :Scene ;
+  x3do:profile 'Immersive' ;
+  x3do:version '3.3' ;
+  x3do:noNamespaceSchemaLocation 'http://www.web3d.org/specifications/x3d-3.3.xsd' .
+:head a owl:NamedIndividual, x3do:head ;
+  x3do:hasParent :X3D ;
+  x3do:hasMeta :meta_1_1, :meta_1_2, :meta_1_3, :meta_1_4, :meta_1_5, :meta_1_6, :meta_1_7, :meta_1_8, :meta_1_9, :meta_1_10, :meta_1_11, :meta_1_12, :meta_1_13 .
+:meta_1_1 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Billboard.x3d' ;
+  x3do:name 'title' .
+:meta_1_2 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Illustrates Billboard operation using Kelp Forest example scenes for Figure 4.4, X3D for Web Authors.' ;
+  x3do:name 'description' .
+:meta_1_3 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Don Brutzman and Leonard Daly' ;
+  x3do:name 'creator' .
+:meta_1_4 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '13 June 2004' ;
+  x3do:name 'created' .
+:meta_1_5 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '20 October 2019' ;
+  x3do:name 'modified' .
+:meta_1_6 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Contained Inline scenes each have profile Immersive' ;
+  x3do:name 'info' .
+:meta_1_7 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'http://faculty.nps.edu/brutzman/kelp' ;
+  x3do:name 'reference' .
+:meta_1_8 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'http://faculty.nps.edu/brutzman/kelp/KelpForestDesignPaper.pdf' ;
+  x3do:name 'reference' .
+:meta_1_9 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Kelp Forest 3D models' ;
+  x3do:name 'subject' .
+:meta_1_10 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Revisions Copyright (c) 2006, Daly Realism and Don Brutzman. Original content has permissions for free use. Please provide credit to the Naval Postgraduate School (NPS) Modeling Virtual Environments and Simulation (MOVES) Institute.' ;
+  x3do:name 'accessRights' .
+:meta_1_11 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'http://X3dGraphics.com/examples/X3dForWebAuthors/Chapter04ViewingNavigation/Billboard.x3d' ;
+  x3do:name 'identifier' .
+:meta_1_12 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'X3D-Edit 3.3, https://savage.nps.edu/X3D-Edit' ;
+  x3do:name 'generator' .
+:meta_1_13 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '../license.html' ;
+  x3do:name 'license' .
+:Scene a owl:NamedIndividual, x3do:Scene ;
+  x3do:hasParent :X3D ;
+  x3do:hasChildren :WorldInfo_2_1, :Background_2_2, :Viewpoint_2_3, :Viewpoint_2_4, :Billboard_2_5, :Inline_2_6 .
+:WorldInfo_2_1 a owl:NamedIndividual, x3do:WorldInfo ;
+  x3do:hasParent :Scene ;
+  x3do:title 'Billboard.x3d' .
+:Background_2_2 a owl:NamedIndividual, x3do:Background ;
+  x3do:hasParent :Scene ;
+  x3do:groundAngle ( 1.309 1.5707 ) ;
+  x3do:groundColor ( 0.1 0.1 0.0 0.4 0.25 0.2 0.6 0.6 0.6 ) ;
+  x3do:skyAngle ( 1.309 1.5707 ) ;
+  x3do:skyColor ( 0.0 0.5 1.0 0.0 0.0 1.0 0.0 0.0 1.0 ) .
+:Viewpoint_2_3 a owl:NamedIndividual, x3do:Viewpoint ;
+  x3do:hasParent :Scene ;
+  x3do:description 'Entry view from ahead, no rotations' ;
+  x3do:position ( 0 -5 45 ) .
+:Viewpoint_2_4 a owl:NamedIndividual, x3do:Viewpoint ;
+  x3do:hasParent :Scene ;
+  x3do:description 'Observe Billboard effect: text remains visible while navigating around' ;
+  x3do:orientation ( 0 1 0 0.86 ) ;
+  x3do:position ( 37.01 -5 29.59 ) .
+:Billboard_2_5 a owl:NamedIndividual, x3do:Billboard ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :Inline_2_5_1 ;
+  x3do:axisOfRotation ( 0 1.0 0 ) .
+:Inline_2_5_1 a owl:NamedIndividual, x3do:Inline ;
+  x3do:hasParent :Billboard_2_5 ;
+  x3do:url '"../KelpForestExhibit/IntroductionMessage.x3d" "http://X3dGraphics.com/examples/X3dForWebAuthors/Chapter04ViewingNavigation/../KelpForestExhibit/IntroductionMessage.x3d" "../KelpForestExhibit/IntroductionMessage.wrl" "http://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/IntroductionMessage.x3d"' .
+:Inline_2_6 a owl:NamedIndividual, x3do:Inline ;
+  x3do:hasParent :Scene ;
+  x3do:url '"../KelpForestExhibit/KelpTank.x3d" "http://X3dGraphics.com/examples/X3dForWebAuthors/Chapter04ViewingNavigation/../KelpForestExhibit/KelpTank.x3d" "../KelpForestExhibit/KelpTank.wrl" "http://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/KelpTank.x3d"' .

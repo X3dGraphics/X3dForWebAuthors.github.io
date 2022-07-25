@@ -1,0 +1,527 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/TR/xhtml1/strict"
+       xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
+       xmlns:saxon="http://icl.com/saxon">
+   <head>
+      <title>Sardine.x3d (X3dToXhtml listing)</title>
+      <!-- I18N -->
+      <meta http-equiv="X-UA-Compatible" content="chrome=1,IE=edge"/>
+      <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+      <style type="text/css">
+span.element {color: navy}
+span.attribute {color: green}
+span.value {color: teal}
+span.plain {color: black}
+span.gray  {color: gray}
+span.idName {color: maroon}
+span.addedDocumentation {background-color:#EEEEEE} /* slightly darker for html page contrast */
+span.behaviorNode       {background-color:#DDEEFF} /*      light blue for html page contrast */
+span.extensibilityNode  {background-color:#FFEEFF} /*    lighter blue for html page contrast */
+a.idName {color: maroon}
+div.center {text-align: center}
+div.indent {margin-left: 25px}
+
+span.prototype {color: purple}
+a.prototype {color: purple}
+a.prototype:visited {color: black}
+span.route {color: red}
+b.warning {color: #CC5500}
+b.error {color: #CC0000}
+
+                </style>
+      <style type="text/css">
+table.curvedEdges { border:10px solid RoyalBlue;-webkit-border-radius:13px;-moz-border-radius:13px;-ms-border-radius:13px;-o-border-radius:13px;border-radius:13px; }
+table.curvedEdges td, table.curvedEdges th { border-bottom:1px dotted black;padding:5px; }
+</style>
+      <meta name="generator" content="XSLT processor Saxonica"/>
+      <meta name="generator"
+             content="https://www.web3d.org/x3d/stylesheets/X3dToXhtml.xslt"/>
+      <meta name="generator"
+             content="https://sourceforge.net/p/x3d/code/HEAD/tree/www.web3d.org/x3d/stylesheets/X3dToXhtml.xslt"/>
+      <link rel="shortcut icon"
+             href="https://www.web3d.org/x3d/content/icons/X3DtextIcon16.png"
+             title="X3D"/>
+   </head>
+   <body>
+      <code title="XML declaration">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</code>
+      <br/>
+      <code title="Document Type Declaration (DTD) for X3D validation">&lt;!DOCTYPE X3D PUBLIC "ISO//Web3D//DTD X3D 3.3//EN" "<a href="https://www.web3d.org/specifications/x3d-3.3.dtd">https://www.web3d.org/specifications/x3d-3.3.dtd</a>"&gt;</code>
+      <div>
+<span title="X3D is the top-most XML element for an Extensible 3D (X3D) Graphics file">&lt;<span class="element">X3D</span>&#160;<span title="X3D Immersive Profile supports most nodes, similar to VRML97"><span class="attribute">profile</span>='<span class="value">Immersive</span>'</span>&#160;<span class="attribute">version</span>='<span class="value">3.3</span>'&#160;<span title="XML namespace for X3D Graphics schema validation"><span title="XML namespace for XML Schema validation">
+            <span class="attribute">xmlns:xsd</span>='<a href="http://www.w3.org/2001/XMLSchema-instance" target="_blank">http://www.w3.org/2001/XMLSchema-instance</a>'
+</span>
+         <span title="XML namespace for X3D Graphics schema validation">
+            <span class="attribute">xsd:noNamespaceSchemaLocation</span>
+         </span>='
+<a href="https://www.web3d.org/specifications/x3d-3.3.xsd" target="_blank">https://www.web3d.org/specifications/x3d-3.3.xsd</a>
+'</span>&gt;
+</span><div class="indent">
+<span title="head can contain component, unit, and author-defined metadata (meta) tags">&lt;<span class="element">head</span>&gt;
+</span><div class="indent">
+<span title="X3D component name and level indicate any additional scene functionality needed above the given X3D profile">&lt;<span class="element">component</span>&#160;<span class="attribute">level</span>='<span class="value">3</span>'&#160;<span class="attribute">name</span>='<span class="value">Navigation</span>'/&gt;
+</span><br />
+
+<span title="meta 'title' provides file name for this resource">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">title</span>'&#160;<span class="attribute">content</span>='<a href="Sardine.x3d">Sardine.x3d</a>'/&gt;
+</span><br />
+
+<span title="meta 'description' provides summary overview describing this resource">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">description</span>'&#160;<span class="attribute">content</span>='<span class="plain">One Sardine, three levels of detail.</span>'/&gt;
+</span><br />
+
+<span title="meta 'creator' provides name of original author">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">creator</span>'&#160;<span class="attribute">content</span>='<span class="value">Stewart Liles, Sean Hynes</span>'/&gt;
+</span><br />
+
+<span title="meta 'created' provides date of initial version">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">created</span>'&#160;<span class="attribute">content</span>='<span class="value">25 September 1998</span>'/&gt;
+</span><br />
+
+<span title="meta 'modified' provides date of modified version">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">modified</span>'&#160;<span class="attribute">content</span>='<span class="value">20 October 2019</span>'/&gt;
+</span><br />
+
+<span title="meta 'reference' provides name or reference link to a supporting resource">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">reference</span>'&#160;<span class="attribute">content</span>='
+<a href="https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/KelpForestDesignPaperWeb3dSymposiumFebruary2002.pdf"
+                   target="_blank">https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/KelpForestDesignPaperWeb3dSymposiumFebruary2002.pdf</a>
+'/&gt;
+</span><br />
+
+<span title="meta 'reference' provides name or reference link to a supporting resource">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">reference</span>'&#160;<span class="attribute">content</span>='
+<a href="https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/Teaching3d-KelpForestCaseStudy.pdf"
+                   target="_blank">https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/Teaching3d-KelpForestCaseStudy.pdf</a>
+'/&gt;
+</span><br />
+
+<span title="meta 'accessRights' defines permission required to access resource or security status">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">accessRights</span>'&#160;<span class="attribute">content</span>='<span class="value">All content has permissions for free use. Please provide credit to the Naval Postgraduate School (NPS) Modeling Virtual Environments and Simulation (MOVES) Institute.</span>'/&gt;
+</span><br />
+
+<span title="meta 'identifier' provides the unique Uniform Resource Identifier (URI) or url address for this resource">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">identifier</span>'&#160;<span class="attribute">content</span>='
+<a href="https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/Sardine.x3d"
+                   target="_blank">https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/Sardine.x3d</a>
+'/&gt;
+</span><br />
+
+<span title="meta 'generator' provides name of authoring tool or translation tool producing this scene">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">generator</span>'&#160;<span class="attribute">content</span>='<span class="value">X3D-Edit 3.3, </span>
+               <a href="https://savage.nps.edu/X3D-Edit" target="_blank">https://savage.nps.edu/X3D-Edit</a>'/&gt;
+</span><br />
+
+<span title="meta 'license' provides software license link or information">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">license</span>'&#160;<span class="attribute">content</span>='
+<a href="../license.html">../license.html</a>'/&gt;
+</span></div><span title="head can contain component, unit, and author-defined metadata (meta) tags">&lt;/<span class="element">head</span>&gt;
+</span><br /><span style="color:white">
+&lt;!--
+</span>
+            <div class="center">
+               <hr style="width:100%"/>
+               <b>
+                  <i>Index for DEF nodes</i>
+               </b>: 
+<a title="go to this TimeSensor node" href="#Clock" class="idName">Clock</a>,
+<a title="go to this Transform node" href="#DorsalFin" class="idName">DorsalFin</a>,
+<a title="go to this Shape node" href="#Eye" class="idName">Eye</a>,
+<a title="go to this Group node" href="#Far" class="idName">Far</a>,
+<a title="go to this CoordinateInterpolator node"
+                   href="#FishWiggle"
+                   class="idName">FishWiggle</a>,
+<a title="go to this ViewpointGroup node"
+                   href="#HideViewpointsWhenDistant"
+                   class="idName">HideViewpointsWhenDistant</a>,
+<a title="go to this Transform node" href="#LeftEye" class="idName">LeftEye</a>,
+<a title="go to this Group node" href="#Medium" class="idName">Medium</a>,
+<a title="go to this Group node" href="#Near" class="idName">Near</a>,
+<a title="go to this Transform node" href="#RightEye" class="idName">RightEye</a>,
+<a title="go to this Coordinate node" href="#Sardine" class="idName">Sardine</a>,
+<a title="go to this IndexedFaceSet node"
+                   href="#SardineIndex"
+                   class="idName">SardineIndex</a>,
+<a title="go to this LOD node" href="#Sardines" class="idName">Sardines</a>
+<br /><hr width="50%"/>
+               <b>
+                  <i>Index for Viewpoint images</i>
+               </b>: 
+<a title="go to this Viewpoint node: Closeup view right"
+                   href="#Viewpoint_1"
+                   class="idName">Viewpoint_1</a>,
+<a title="go to this Viewpoint node: Closeup view right face"
+                   href="#Viewpoint_2"
+                   class="idName">Viewpoint_2</a>,
+<a title="go to this Viewpoint node: Closeup view face to face"
+                   href="#Viewpoint_3"
+                   class="idName">Viewpoint_3</a>,
+<a title="go to this Viewpoint node: Closeup view left face"
+                   href="#Viewpoint_4"
+                   class="idName">Viewpoint_4</a>,
+<a title="go to this Viewpoint node: Closeup view left"
+                   href="#Viewpoint_5"
+                   class="idName">Viewpoint_5</a>,
+<a title="go to this Viewpoint node: Closeup view left tail"
+                   href="#Viewpoint_6"
+                   class="idName">Viewpoint_6</a>,
+<a title="go to this Viewpoint node: Closeup view tail"
+                   href="#Viewpoint_7"
+                   class="idName">Viewpoint_7</a>,
+<a title="go to this Viewpoint node: Closeup view right tail"
+                   href="#Viewpoint_8"
+                   class="idName">Viewpoint_8</a>,
+<a title="go to this Viewpoint node: Closeup view top looking down"
+                   href="#Viewpoint_9"
+                   class="idName">Viewpoint_9</a>,
+<a title="go to this Viewpoint node: Closeup view bottom looking up"
+                   href="#Viewpoint_10"
+                   class="idName">Viewpoint_10</a>,
+<a title="go to this Viewpoint node: Single viewpoint when fairly close to sardine"
+                   href="#Viewpoint_11"
+                   class="idName">Viewpoint_11</a>
+               <hr style="width:100%"/>
+            </div>
+            <span style="color:white">
+--&gt;
+</span><br />
+
+<span title="Scene is the root node that contains an X3D scene graph">&lt;<span class="element">Scene</span>&gt;
+</span><div class="indent">
+               <a name="Sardines"> </a> 
+<span title="LOD (Level Of Detail) uses camera-to-object distance to switch among contained child levels">&lt;<span class="element">LOD</span>&#160;<span class="attribute">DEF</span>='<a title="bookmark link to Sardines" href="#Sardines" class="idName">Sardines</a>'&#160;<span class="attribute">range</span>='<span class="value">15 30 60</span>'&gt;
+</span><div class="indent">
+                  <span title="XML comment">&lt;!--  Three  levels  of  detail,  then  disappears.  --&gt;</span>
+<br />
+<a name="Near"> </a> 
+<span title="Group is a Grouping node that can contain most nodes">&lt;<span class="element">Group</span>&#160;<span class="attribute">DEF</span>='<a title="bookmark link to Near" href="#Near" class="idName">Near</a>'&gt;
+</span><div class="indent">
+                     <span title="XML comment">&lt;!--  High  resolution  sardine.  --&gt;</span>
+<br />
+
+<span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;<span class="element">Transform</span>&#160;<span class="attribute">scale</span>='<span class="value">.25 .1 .25</span>'&gt;
+</span><div class="indent">
+<span title="Shape contains geometry and optional corresponding Appearance">&lt;<span class="element">Shape</span>&gt;
+</span><div class="indent">
+<span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;<span class="element">Appearance</span>&gt;
+</span><div class="indent">
+<span title="Material specifies surface rendering properties for associated geometry">&lt;<span class="element">Material</span>&#160;<span class="attribute">diffuseColor</span>='<span class="value">.61 .61 .61</span>'&#160;<span class="attribute">emissiveColor</span>='<span class="value">.5 .5 .5</span>'&#160;<span class="attribute">shininess</span>='<span class="value">.8</span>'&#160;<span class="attribute">specularColor</span>='<span class="value">.76 .76 .76</span>'/&gt;
+</span></div><span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;/<span class="element">Appearance</span>&gt;
+</span><br />
+<a name="SardineIndex"> </a> 
+<span title="IndexedFaceSet is a geometry node">&lt;<span class="element">IndexedFaceSet</span>&#160;<span class="attribute">DEF</span>='<a title="bookmark link to SardineIndex"
+                               href="#SardineIndex"
+                               class="idName">SardineIndex</a>'&#160;<span class="attribute">ccw</span>='<span class="value">false</span>'&#160;<span class="attribute">creaseAngle</span>='<span class="value">3.14</span>'&#160;<span class="attribute">solid</span>='<span class="value">false</span>'&#160;<span class="attribute">coordIndex</span>='<span class="value">0 2 1 -1 0 3 2 -1 0 4 3 -1 0 5 4 -1 0 1 8 -1 0 8 7 -1 0 7 6 -1 0 6 5 -1 1 2 10 9 -1 2 3 11 10 -1 3 4 12 11 -1 4 5 13 12 -1 1 9 16 8 -1 8 16 15 7 -1 7 15 14 6 -1 6 14 13 5 -1 9 10 18 17 -1 10 11 19 18 -1 11 12 20 19 -1 12 13 21 20 -1 9 17 24 16 -1 16 24 23 15 -1 15 23 22 14 -1 14 22 21 13 -1 17 18 26 25 -1 18 19 27 26 -1 19 20 28 27 -1 20 21 29 28 -1 17 25 32 24 -1 24 32 31 23 -1 23 31 30 22 -1 22 30 29 21 -1 25 26 34 33 -1 26 27 35 34 -1 27 28 36 35 -1 28 29 37 36 -1 25 33 40 32 -1 32 40 39 31 -1 31 39 38 30 -1 30 38 37 29 -1 33 34 41 -1 34 35 41 -1 35 42 41 -1 35 43 42 -1 36 43 35 -1 36 37 43 -1 33 41 40 -1 40 41 39 -1 39 41 42 -1 39 42 43 -1 39 43 37 -1 38 43 37 -1 50 49 48 47 46 45 44 -1 57 56 55 54 53 52 51 -1 44 45 52 51 -1 45 46 53 52 -1 46 47 54 53 -1 47 48 55 54 -1 48 49 56 55 -1 49 50 57 56 -1</span>'&gt;
+</span><div class="indent">
+                              <a name="Sardine"> </a> 
+<span style="background-color:#EEEEEE;" title="inserted documentation about ROUTE connections">&lt;!-- <i>ROUTE</i> information for <span class="idName">Sardine</span> node:&#160;
+[<a title="go to this ROUTE" href="#ROUTE_1"><i>from</i>&#160;<span class="idName">FishWiggle</span>.<span class="attribute">value_changed</span>&#160;<i>to</i>&#160;<span class="attribute">set_point</span>
+                              </a>]
+ --&gt;<br /></span>
+<span title="Coordinate defines a set of 3D coordinate triplet values">&lt;<span class="element">Coordinate</span>&#160;<span class="attribute">DEF</span>='<a title="bookmark link to Sardine" href="#Sardine" class="idName">Sardine</a>'&#160;<span class="attribute">point</span>='<span class="value">0 0 -1.5 0 .5 -1 -.12 .25 -1 -.25 0 -1 -.12 -.25 -1 0 -.5 -1 .12 -.25 -1 .25 0 -1 .12 .25 -1 0 1 0 -.25 .5 0 -.5 0 0 -.25 -.5 0 0 -1 0 .25 -.5 0 .5 0 0 .25 .5 0 0 .88 .9 -.19 .44 .9 -.37 0 .9 -.19 -.44 .9 0 -.88 .9 .19 -.44 .9 .37 0 .9 .19 .44 .9 0 .75 1.75 -.12 .35 1.75 -.25 0 1.75 -.12 -.35 1.75 0 -.75 1.75 .12 -.35 1.75 .25 0 1.75 .12 .35 1.75 0 .5 2.5 -.05 .25 2.5 -.1 0 2.5 -.05 -.25 2.5 0 -.5 2.5 .05 -.25 2.5 .1 0 2.5 .05 .25 2.5 1 1.25 3.25 0 0 3 0 -1.25 3.25 .01 -.7 -1.7 .01 -.75 -2.3 .01 -.74 -2.325 .01 -.72 -2.35 .01 -.7 -2.36 .01 -.67 -2.35 .01 -.54 -2.29 -.01 -.7 -1.7 -.01 -.75 -2.3 -.01 -.74 -2.325 -.01 -.72 -2.35 -.01 -.7 -2.36 -.01 -.67 -2.35 -.01 -.54 -2.29</span>'/&gt;
+</span></div><span title="IndexedFaceSet is a geometry node">&lt;/<span class="element">IndexedFaceSet</span>&gt;
+</span></div><span title="Shape contains geometry and optional corresponding Appearance">&lt;/<span class="element">Shape</span>&gt;
+</span><br />
+<a name="LeftEye"> </a> 
+<span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;<span class="element">Transform</span>&#160;<span class="attribute">DEF</span>='<a title="bookmark link to LeftEye" href="#LeftEye" class="idName">LeftEye</a>'&#160;<span class="attribute">translation</span>='<span class="value">-.25 .2 -.55</span>'&gt;
+</span><div class="indent">
+                           <a name="Eye"> </a> 
+<span title="Shape contains geometry and optional corresponding Appearance">&lt;<span class="element">Shape</span>&#160;<span class="attribute">DEF</span>='<a title="bookmark link to Eye" href="#Eye" class="idName">Eye</a>'&gt;
+</span><div class="indent">
+<span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;<span class="element">Appearance</span>&gt;
+</span><div class="indent">
+<span title="Material specifies surface rendering properties for associated geometry">&lt;<span class="element">Material</span>&#160;<span class="attribute">diffuseColor</span>='<span class="value">.1 .1 .1</span>'&#160;<span class="attribute">shininess</span>='<span class="value">.5</span>'/&gt;
+</span></div><span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;/<span class="element">Appearance</span>&gt;
+</span><br />
+
+<span title="Sphere is a geometry primitive node">&lt;<span class="element">Sphere</span>&#160;<span class="attribute">radius</span>='<span class="value">.1</span>'/&gt;
+</span></div><span title="Shape contains geometry and optional corresponding Appearance">&lt;/<span class="element">Shape</span>&gt;
+</span></div><span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;/<span class="element">Transform</span>&gt;
+</span><br />
+<a name="RightEye"> </a> 
+<span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;<span class="element">Transform</span>&#160;<span class="attribute">DEF</span>='<a title="bookmark link to RightEye" href="#RightEye" class="idName">RightEye</a>'&#160;<span class="attribute">translation</span>='<span class="value">.25 .2 -.55</span>'&gt;
+</span><div class="indent">
+<span title="Shape contains geometry and optional corresponding Appearance">&lt;<span class="element">Shape</span>&#160;<span class="attribute">USE</span>='<a title="go to the original DEF node definition"
+                               href="#Eye"
+                               class="idName">Eye</a>'/&gt;
+</span></div><span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;/<span class="element">Transform</span>&gt;
+</span><br />
+<a name="DorsalFin"> </a> 
+<span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;<span class="element">Transform</span>&#160;<span class="attribute">DEF</span>='<a title="bookmark link to DorsalFin" href="#DorsalFin" class="idName">DorsalFin</a>'&gt;
+</span><div class="indent">
+<span title="Shape contains geometry and optional corresponding Appearance">&lt;<span class="element">Shape</span>&gt;
+</span><div class="indent">
+<span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;<span class="element">Appearance</span>&gt;
+</span><div class="indent">
+<span title="Material specifies surface rendering properties for associated geometry">&lt;<span class="element">Material</span>&#160;<span class="attribute">diffuseColor</span>='<span class="value">.61 .61 .61</span>'&#160;<span class="attribute">emissiveColor</span>='<span class="value">.4 .4 .4</span>'&#160;<span class="attribute">shininess</span>='<span class="value">.7</span>'&#160;<span class="attribute">specularColor</span>='<span class="value">.75 .75 .75</span>'/&gt;
+</span></div><span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;/<span class="element">Appearance</span>&gt;
+</span><br />
+
+<span title="Extrusion is a geometry node">&lt;<span class="element">Extrusion</span>&#160;<span class="attribute">convex</span>='<span class="value">false</span>'&#160;<span class="attribute">crossSection</span>='<a title="Extrusion crossSection shown as Scalable Vector Graphics (SVG) plot"
+                                  href="_svg/Sardine.Extrusion1.svg">0 .9 .25 0 1.3 .5 0 1.6 .6 0 1.3 .7 0 1.1 .8 0 1 .9 0 .95 1 0 .7 1</a>'&#160;<span class="attribute">orientation</span>='<span class="value">0 1 0 0 0 1 0 0</span>'&#160;<span class="attribute">scale</span>='<span class="value">1 1 1 1</span>'&#160;<span class="attribute">solid</span>='<span class="value">false</span>'&#160;<span class="attribute">spine</span>='<span class="value">.02 0 0 -.02 0 0</span>'/&gt;
+</span></div><span title="Shape contains geometry and optional corresponding Appearance">&lt;/<span class="element">Shape</span>&gt;
+</span></div><span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;/<span class="element">Transform</span>&gt;
+</span><br />
+
+<span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;<span class="element">Transform</span>&gt;
+</span><div class="indent">
+<span title="Shape contains geometry and optional corresponding Appearance">&lt;<span class="element">Shape</span>&gt;
+</span><div class="indent">
+<span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;<span class="element">Appearance</span>&gt;
+</span><div class="indent">
+<span title="Material specifies surface rendering properties for associated geometry">&lt;<span class="element">Material</span>&#160;<span class="attribute">diffuseColor</span>='<span class="value">.61 .61 .61</span>'&#160;<span class="attribute">emissiveColor</span>='<span class="value">.4 .4 .4</span>'&#160;<span class="attribute">shininess</span>='<span class="value">.4</span>'&#160;<span class="attribute">specularColor</span>='<span class="value">.75 .75 .75</span>'/&gt;
+</span></div><span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;/<span class="element">Appearance</span>&gt;
+</span><br />
+
+<span title="IndexedFaceSet is a geometry node">&lt;<span class="element">IndexedFaceSet</span>&#160;<span class="attribute">coordIndex</span>='<span class="value">0 3 2 -1 1 3 0 -1 1 0 2 -1 3 1 2 -1</span>'&gt;
+</span><div class="indent">
+<span title="Coordinate defines a set of 3D coordinate triplet values">&lt;<span class="element">Coordinate</span>&#160;<span class="attribute">point</span>='<span class="value">.1 -.65 .5 .1 -.7 .5 .1 -.7 .8 .15 -1.1 1.2</span>'/&gt;
+</span></div><span title="IndexedFaceSet is a geometry node">&lt;/<span class="element">IndexedFaceSet</span>&gt;
+</span></div><span title="Shape contains geometry and optional corresponding Appearance">&lt;/<span class="element">Shape</span>&gt;
+</span><br />
+
+<span title="Shape contains geometry and optional corresponding Appearance">&lt;<span class="element">Shape</span>&gt;
+</span><div class="indent">
+<span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;<span class="element">Appearance</span>&gt;
+</span><div class="indent">
+<span title="Material specifies surface rendering properties for associated geometry">&lt;<span class="element">Material</span>&#160;<span class="attribute">diffuseColor</span>='<span class="value">.61 .61 .61</span>'&#160;<span class="attribute">emissiveColor</span>='<span class="value">.4 .4 .4</span>'&#160;<span class="attribute">shininess</span>='<span class="value">.4</span>'&#160;<span class="attribute">specularColor</span>='<span class="value">.75 .75 .75</span>'/&gt;
+</span></div><span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;/<span class="element">Appearance</span>&gt;
+</span><br />
+
+<span title="IndexedFaceSet is a geometry node">&lt;<span class="element">IndexedFaceSet</span>&#160;<span class="attribute">coordIndex</span>='<span class="value">0 3 2 -1 1 3 0 -1 1 0 2 -1 3 1 2 -1</span>'&gt;
+</span><div class="indent">
+<span title="Coordinate defines a set of 3D coordinate triplet values">&lt;<span class="element">Coordinate</span>&#160;<span class="attribute">point</span>='<span class="value">-.1 -.65 .5 -.1 -.7 .5 -.1 -.7 .8 -.15 -1.1 1.2</span>'/&gt;
+</span></div><span title="IndexedFaceSet is a geometry node">&lt;/<span class="element">IndexedFaceSet</span>&gt;
+</span></div><span title="Shape contains geometry and optional corresponding Appearance">&lt;/<span class="element">Shape</span>&gt;
+</span></div><span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;/<span class="element">Transform</span>&gt;
+</span></div><span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;/<span class="element">Transform</span>&gt;
+</span></div><span title="Group is a Grouping node that can contain most nodes">&lt;/<span class="element">Group</span>&gt;
+</span><br />
+<a name="Medium"> </a> 
+<span title="Group is a Grouping node that can contain most nodes">&lt;<span class="element">Group</span>&#160;<span class="attribute">DEF</span>='<a title="bookmark link to Medium" href="#Medium" class="idName">Medium</a>'&gt;
+</span><div class="indent">
+                     <span title="XML comment">&lt;!--  Medium  resolution  sardine.  --&gt;</span>
+<br />
+
+<span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;<span class="element">Transform</span>&#160;<span class="attribute">scale</span>='<span class="value">.25 .1 .25</span>'&gt;
+</span><div class="indent">
+<span title="Shape contains geometry and optional corresponding Appearance">&lt;<span class="element">Shape</span>&gt;
+</span><div class="indent">
+<span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;<span class="element">Appearance</span>&gt;
+</span><div class="indent">
+<span title="Material specifies surface rendering properties for associated geometry">&lt;<span class="element">Material</span>&#160;<span class="attribute">diffuseColor</span>='<span class="value">.61 .61 .61</span>'&#160;<span class="attribute">shininess</span>='<span class="value">.9</span>'&#160;<span class="attribute">specularColor</span>='<span class="value">.76 .76 .76</span>'/&gt;
+</span></div><span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;/<span class="element">Appearance</span>&gt;
+</span><br />
+
+<span title="IndexedFaceSet is a geometry node">&lt;<span class="element">IndexedFaceSet</span>&#160;<span class="attribute">USE</span>='<a title="go to the original DEF node definition"
+                               href="#SardineIndex"
+                               class="idName">SardineIndex</a>'/&gt;
+</span></div><span title="Shape contains geometry and optional corresponding Appearance">&lt;/<span class="element">Shape</span>&gt;
+</span></div><span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;/<span class="element">Transform</span>&gt;
+</span></div><span title="Group is a Grouping node that can contain most nodes">&lt;/<span class="element">Group</span>&gt;
+</span><br />
+<a name="Far"> </a> 
+<span title="Group is a Grouping node that can contain most nodes">&lt;<span class="element">Group</span>&#160;<span class="attribute">DEF</span>='<a title="bookmark link to Far" href="#Far" class="idName">Far</a>'&gt;
+</span><div class="indent">
+                     <span title="XML comment">&lt;!--  Low  resolution  sardine.  --&gt;</span>
+<br />
+
+<span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;<span class="element">Transform</span>&#160;<span class="attribute">rotation</span>='<span class="value">1 0 0 -1.57</span>'&#160;<span class="attribute">scale</span>='<span class="value">.3 .25 .25</span>'&gt;
+</span><div class="indent">
+<span title="Shape contains geometry and optional corresponding Appearance">&lt;<span class="element">Shape</span>&gt;
+</span><div class="indent">
+<span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;<span class="element">Appearance</span>&gt;
+</span><div class="indent">
+<span title="Material specifies surface rendering properties for associated geometry">&lt;<span class="element">Material</span>&#160;<span class="attribute">diffuseColor</span>='<span class="value">.7 .7 .7</span>'/&gt;
+</span><br />
+
+<span title="ImageTexture maps a 2D-image file onto a geometric shape">&lt;<span class="element">ImageTexture</span>
+<br />
+&#160;&#160;<span title="uniform resource locator (url) list of relative or absolute file addresses, performed in order until resource retrieval succeeds"><span class="attribute">url</span>='
+ "<a href="SardineScalesPatch.jpg" target="_blank">SardineScalesPatch.jpg</a>" "<a href="https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/SardineScalesPatch.jpg"
+                                  target="_blank">https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/SardineScalesPatch.jpg</a>" '</span>/&gt;
+</span></div><span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;/<span class="element">Appearance</span>&gt;
+</span><br />
+
+<span title="Extrusion is a geometry node">&lt;<span class="element">Extrusion</span>&#160;<span class="attribute">creaseAngle</span>='<span class="value">1.57</span>'&#160;<span class="attribute">crossSection</span>='<a title="Extrusion crossSection shown as Scalable Vector Graphics (SVG) plot"
+                               href="_svg/Sardine.Extrusion2.svg">-0.1 1.0 0.1 1 0.5 0.5 0.5 -0.5 0.1 -1 -0.1 -1 -0.5 -0.5 -0.5 0.5 -0.1 1</a>'&#160;<span class="attribute">scale</span>='<span class="value">0.03 0.03 0.3 0.4 0.1 0.2 0.1 0.15 0.03 0.4</span>'&#160;<span class="attribute">spine</span>='<span class="value">0 2.51 0 0 1.80 0 0 0.5 0 0 0 0 0 -0.6 0</span>'/&gt;
+</span></div><span title="Shape contains geometry and optional corresponding Appearance">&lt;/<span class="element">Shape</span>&gt;
+</span></div><span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;/<span class="element">Transform</span>&gt;
+</span></div><span title="Group is a Grouping node that can contain most nodes">&lt;/<span class="element">Group</span>&gt;
+</span><br />
+
+<span title="WorldInfo contains persistent documentation information about the 3D world">&lt;<span class="element">WorldInfo</span>&#160;<span class="attribute">info</span>='<span class="value">"null"</span>'&gt;
+</span><div class="indent">
+                     <span title="XML comment">&lt;!--  Lowest  resolution  node  is  nothing.  --&gt;</span>
+                  </div><span title="WorldInfo contains persistent documentation information about the 3D world">&lt;/<span class="element">WorldInfo</span>&gt;
+</span></div><span title="LOD (Level Of Detail) uses camera-to-object distance to switch among contained child levels">&lt;/<span class="element">LOD</span>&gt;
+</span><br /><span title="XML comment">&lt;!--  &lt;Group  DEF='TestViewpoints'&gt;  &lt;Viewpoint  description='Hi  Res'  orientation='0  1  0  1.57'  position='2  0  0'/&gt;  &lt;Viewpoint  description='Med  Res'  orientation='0  1  0  1.57'  position='15  0  0'/&gt;  &lt;Viewpoint  description='Low  Res'  orientation='0  1  0  1.57'  position='30  0  0'/&gt;  &lt;/Group&gt;  --&gt;</span>
+<br />
+<a name="HideViewpointsWhenDistant"> </a> 
+&lt;<span class="element">ViewpointGroup</span>&#160;<span class="attribute">DEF</span>='<a title="bookmark link to HideViewpointsWhenDistant"
+                   href="#HideViewpointsWhenDistant"
+                   class="idName">HideViewpointsWhenDistant</a>'&#160;<span class="attribute">description</span>='<span class="value">Sardine views up close</span>'&#160;<span class="attribute">size</span>='<span class="value">20 20 20</span>'&#160;<span class="attribute">containerField</span>='<span class="value">children</span>'&gt;
+<div class="indent">
+                  <span title="XML comment">&lt;!--  Viewpoints  around  sardine  at  very  close  range,  one  good  viewpoint  fairly  close  to  sardine,  and  no  viewpoints  further  away.  --&gt;</span>
+<br />
+<a name="Viewpoint_1"> </a> 
+<span title="Viewpoint provides a specific location and direction where the user may view the scene">&lt;<span class="element">Viewpoint</span>&#160;<span class="attribute">description</span>='<a title="viewpoint image (produced using Xj3D)"
+                      href="_viewpoints/Sardine.x3d._VP_Closeup_view_right.png">Closeup view right</a>'&#160;<span class="attribute">orientation</span>='<span class="value">0 1 0 1.57</span>'&#160;<span class="attribute">position</span>='<span class="value">2 0 0</span>'/&gt;
+</span><br />
+<a name="Viewpoint_2"> </a> 
+<span title="Viewpoint provides a specific location and direction where the user may view the scene">&lt;<span class="element">Viewpoint</span>&#160;<span class="attribute">description</span>='<a title="viewpoint image (produced using Xj3D)"
+                      href="_viewpoints/Sardine.x3d._VP_Closeup_view_right_face.png">Closeup view right face</a>'&#160;<span class="attribute">orientation</span>='<span class="value">0 1 0 2.355</span>'&#160;<span class="attribute">position</span>='<span class="value">2 0 -2</span>'/&gt;
+</span><br />
+<a name="Viewpoint_3"> </a> 
+<span title="Viewpoint provides a specific location and direction where the user may view the scene">&lt;<span class="element">Viewpoint</span>&#160;<span class="attribute">description</span>='<a title="viewpoint image (produced using Xj3D)"
+                      href="_viewpoints/Sardine.x3d._VP_Closeup_view_face_to_face.png">Closeup view face to face</a>'&#160;<span class="attribute">orientation</span>='<span class="value">0 1 0 3.14</span>'&#160;<span class="attribute">position</span>='<span class="value">0 0 -2</span>'/&gt;
+</span><br />
+<a name="Viewpoint_4"> </a> 
+<span title="Viewpoint provides a specific location and direction where the user may view the scene">&lt;<span class="element">Viewpoint</span>&#160;<span class="attribute">description</span>='<a title="viewpoint image (produced using Xj3D)"
+                      href="_viewpoints/Sardine.x3d._VP_Closeup_view_left_face.png">Closeup view left face</a>'&#160;<span class="attribute">orientation</span>='<span class="value">0 1 0 3.825</span>'&#160;<span class="attribute">position</span>='<span class="value">-2 0 -2</span>'/&gt;
+</span><br />
+<a name="Viewpoint_5"> </a> 
+<span title="Viewpoint provides a specific location and direction where the user may view the scene">&lt;<span class="element">Viewpoint</span>&#160;<span class="attribute">description</span>='<a title="viewpoint image (produced using Xj3D)"
+                      href="_viewpoints/Sardine.x3d._VP_Closeup_view_left.png">Closeup view left</a>'&#160;<span class="attribute">orientation</span>='<span class="value">0 1 0 -1.57</span>'&#160;<span class="attribute">position</span>='<span class="value">-2 0 0</span>'/&gt;
+</span><br />
+<a name="Viewpoint_6"> </a> 
+<span title="Viewpoint provides a specific location and direction where the user may view the scene">&lt;<span class="element">Viewpoint</span>&#160;<span class="attribute">description</span>='<a title="viewpoint image (produced using Xj3D)"
+                      href="_viewpoints/Sardine.x3d._VP_Closeup_view_left_tail.png">Closeup view left tail</a>'&#160;<span class="attribute">orientation</span>='<span class="value">0 1 0 -0.785</span>'&#160;<span class="attribute">position</span>='<span class="value">-2 0 2</span>'/&gt;
+</span><br />
+<a name="Viewpoint_7"> </a> 
+<span title="Viewpoint provides a specific location and direction where the user may view the scene">&lt;<span class="element">Viewpoint</span>&#160;<span class="attribute">description</span>='<a title="viewpoint image (produced using Xj3D)"
+                      href="_viewpoints/Sardine.x3d._VP_Closeup_view_tail.png">Closeup view tail</a>'&#160;<span class="attribute">position</span>='<span class="value">0 0 2</span>'/&gt;
+</span><br />
+<a name="Viewpoint_8"> </a> 
+<span title="Viewpoint provides a specific location and direction where the user may view the scene">&lt;<span class="element">Viewpoint</span>&#160;<span class="attribute">description</span>='<a title="viewpoint image (produced using Xj3D)"
+                      href="_viewpoints/Sardine.x3d._VP_Closeup_view_right_tail.png">Closeup view right tail</a>'&#160;<span class="attribute">orientation</span>='<span class="value">0 1 0 0.785</span>'&#160;<span class="attribute">position</span>='<span class="value">2 0 2</span>'/&gt;
+</span><br />
+<a name="Viewpoint_9"> </a> 
+<span title="Viewpoint provides a specific location and direction where the user may view the scene">&lt;<span class="element">Viewpoint</span>&#160;<span class="attribute">description</span>='<a title="viewpoint image (produced using Xj3D)"
+                      href="_viewpoints/Sardine.x3d._VP_Closeup_view_top_looking_down.png">Closeup view top looking down</a>'&#160;<span class="attribute">orientation</span>='<span class="value">1 0 0 -1.57</span>'&#160;<span class="attribute">position</span>='<span class="value">0 2 0</span>'/&gt;
+</span><br />
+<a name="Viewpoint_10"> </a> 
+<span title="Viewpoint provides a specific location and direction where the user may view the scene">&lt;<span class="element">Viewpoint</span>&#160;<span class="attribute">description</span>='<a title="viewpoint image (produced using Xj3D)"
+                      href="_viewpoints/Sardine.x3d._VP_Closeup_view_bottom_looking_up.png">Closeup view bottom looking up</a>'&#160;<span class="attribute">orientation</span>='<span class="value">1 0 0 1.57</span>'&#160;<span class="attribute">position</span>='<span class="value">0 -2 0</span>'/&gt;
+</span></div>&lt;/<span class="element">ViewpointGroup</span>&gt;
+<br />
+<a name="Viewpoint_11"> </a> 
+<span title="Viewpoint provides a specific location and direction where the user may view the scene">&lt;<span class="element">Viewpoint</span>&#160;<span class="attribute">description</span>='<a title="viewpoint image (produced using Xj3D)"
+                   href="_viewpoints/Sardine.x3d._VP_Single_viewpoint_when_fairly_close_to_sardine.png">Single viewpoint when fairly close to sardine</a>'&#160;<span class="attribute">orientation</span>='<span class="value">0 1 0 1.57</span>'&#160;<span class="attribute">position</span>='<span class="value">10 0 0</span>'/&gt;
+</span><br />
+<a name="Clock"> </a> 
+<span style="background-color:#EEEEEE;" title="inserted documentation about ROUTE connections">&lt;!-- <i>ROUTE</i> information for <span class="idName">Clock</span> node:&#160;
+[<a title="go to this ROUTE" href="#ROUTE_0"><i>from</i>&#160;<span class="attribute">fraction_changed</span>&#160;<i>to</i>&#160;<span class="idName">FishWiggle</span>.<span class="attribute">set_fraction</span>
+               </a>]
+ --&gt;<br /></span>
+<span title="TimeSensor continuously generates events as time passes" style="background-color:#DDEEFF">&lt;<span class="element">TimeSensor</span>&#160;<span class="attribute">DEF</span>='<a title="bookmark link to Clock" href="#Clock" class="idName">Clock</a>'&#160;<span class="attribute">cycleInterval</span>='<span class="value">0.5</span>'&#160;<span class="attribute">loop</span>='<span class="value">true</span>'/&gt;
+</span><br />
+<a name="FishWiggle"> </a> 
+<span style="background-color:#EEEEEE;" title="inserted documentation about ROUTE connections">&lt;!-- <i>ROUTE</i> information for <span class="idName">FishWiggle</span> node:&#160;
+[<a title="go to this ROUTE" href="#ROUTE_0"><i>from</i>&#160;<span class="idName">Clock</span>.<span class="attribute">fraction_changed</span>&#160;<i>to</i>&#160;<span class="attribute">set_fraction</span>
+               </a>]
+[<a title="go to this ROUTE" href="#ROUTE_1"><i>from</i>&#160;<span class="attribute">value_changed</span>&#160;<i>to</i>&#160;<span class="idName">Sardine</span>.<span class="attribute">set_point</span>
+               </a>]
+ --&gt;<br /></span>
+<span title="Interpolator nodes output event values using piecewise-linear function definitions" style="background-color:#DDEEFF">&lt;<span class="element">CoordinateInterpolator</span>&#160;<span class="attribute">DEF</span>='<a title="bookmark link to FishWiggle"
+                   href="#FishWiggle"
+                   class="idName">FishWiggle</a>'&#160;<span class="attribute">key</span>='<span class="value">0.0 0.25 0.50 0.75 1.0</span>'&#160;<span class="attribute">keyValue</span>='<span class="value">0 0 -1.5 0 .5 -1 -.12 .25 -1 -.25 0 -1 -.12 -.25 -1 0 -.5 -1 .12 -.25 -1 .25 0 -1 .12 .25 -1 0 1 0 -.25 .5 0 -.5 0 0 -.25 -.5 0 0 -1 0 .25 -.5 0 .5 0 0 .25 0.5 0 0 .88 .9 -.19 .44 .9 -.37 0 .9 -.19 -.44 .9 0 -.88 .9 .19 -.44 .9 .37 0 .9 .19 .44 .9 0 .75 1.75 -.12 .35 1.75 -.25 0 1.75 -.12 -.35 1.75 0 -.75 1.75 .12 -.35 1.75 .25 0 1.75 .12 .35 1.75 0 .5 2.5 -.05 .25 2.5 -.1 0 2.5 -.05 -.25 2.5 0 -.5 2.5 .05 -.25 2.5 .1 0 2.5 .05 .25 2.5 0 1.25 3.25 0 0 3 0 -1.25 3.25 0 -.5 2.5 0 -.5 2.5 0 -.5 2.5 0 -.5 2.5 0 -.5 2.5 0 -.5 2.5 0 -.5 2.5 0 -.5 2.5 0 -.5 2.5 0 -.5 2.5 0 -.5 2.5 0 -.5 2.5 0 -.5 2.5 0 -.5 2.5 0 0 -1.5 0 .5 -1 -.12 .25 -1 -.25 0 -1 -.12 -.25 -1 0 -.5 -1 .12 -.25 -1 .25 0 -1 .12 .25 -1 0 1 0 -.25 .5 0 -.5 0 0 -.25 -.5 0 0 -1 0 .25 -.5 0 .5 0 0 .25 0.5 0 0 .88 .9 -.19 .44 .9 -.37 0 .9 -.19 -.44 .9 0 -.88 .9 .19 -.44 .9 .37 0 .9 .19 .44 .9 .2 .75 1.75 .08 .35 1.75 -.05 0 1.75 .08 -.35 1.75 .2 -.75 1.75 .32 -.35 1.75 .45 0 1.75 .32 .35 1.75 .3 .5 2.5 .25 .25 2.5 .15 0 2.5 .25 -.25 2.5 .30 -.5 2.5 .35 -.25 2.5 .4 0 2.5 .35 .25 2.5 .50 1.25 3.25 .50 0 3 .50 -1.25 3.25 .3 -.5 2.5 .3 -.5 2.5 .3 -.5 2.5 .3 -.5 2.5 .3 -.5 2.5 .3 -.5 2.5 .3 -.5 2.5 .3 -.5 2.5 .3 -.5 2.5 .3 -.5 2.5 .3 -.5 2.5 .3 -.5 2.5 .3 -.5 2.5 .3 -.5 2.5 0 0 -1.5 0 .5 -1 -.12 .25 -1 -.25 0 -1 -.12 -.25 -1 0 -.5 -1 .12 -.25 -1 .25 0 -1 .12 .25 -1 0 1 0 -.25 .5 0 -.5 0 0 -.25 -.5 0 0 -1 0 .25 -.5 0 .5 0 0 .25 0.5 0 0 .88 .9 -.19 .44 .9 -.37 0 .9 -.19 -.44 .9 0 -.88 .9 .19 -.44 .9 .37 0 .9 .19 .44 .9 0 .75 1.75 -.12 .35 1.75 -.25 0 1.75 -.12 -.35 1.75 0 -.75 1.75 .12 -.35 1.75 .25 0 1.75 .12 .35 1.75 0 .5 2.5 -.05 .25 2.5 -.1 0 2.5 -.05 -.25 2.5 0 -.5 2.5 .05 -.25 2.5 .1 0 2.5 .05 .25 2.5 0 1.25 3.25 0 0 3 0 -1.25 3.25 0 -.5 2.5 0 -.5 2.5 0 -.5 2.5 0 -.5 2.5 0 -.5 2.5 0 -.5 2.5 0 -.5 2.5 0 -.5 2.5 0 -.5 2.5 0 -.5 2.5 0 -.5 2.5 0 -.5 2.5 0 -.5 2.5 0 -.5 2.5 0 0 -1.5 0 .5 -1 -.12 .25 -1 -.25 0 -1 -.12 -.25 -1 0 -.5 -1 .12 -.25 -1 .25 0 -1 .12 .25 -1 0 1 0 -.25 .5 0 -.5 0 0 -.25 -.5 0 0 -1 0 .25 -.5 0 .5 0 0 .25 0.5 0 0 .88 .9 -.19 .44 .9 -.37 0 .9 -.19 -.44 .9 0 -.88 .9 .19 -.44 .9 .37 0 .9 .19 .44 .9 -.20 .75 1.75 -.32 .35 1.75 -.45 0 1.75 -.32 -.35 1.75 -.20 -.75 1.75 -.08 -.35 1.75 .05 0 1.75 -.08 .35 1.75 -.30 .5 2.5 -.35 .25 2.5 -.4 0 2.5 -.35 -.25 2.5 -.30 -.5 2.5 -.25 -.25 2.5 -.2 0 2.5 -.25 .25 2.5 -.50 1.25 3.25 -.50 0 3 -.50 -1.25 3.25 -.3 -.5 2.5 -.3 -.5 2.5 -.3 -.5 2.5 -.3 -.5 2.5 -.3 -.5 2.5 -.3 -.5 2.5 -.3 -.5 2.5 -.3 -.5 2.5 -.3 -.5 2.5 -.3 -.5 2.5 -.3 -.5 2.5 -.3 -.5 2.5 -.3 -.5 2.5 -.3 -.5 2.5 0 0 -1.5 0 .5 -1 -.12 .25 -1 -.25 0 -1 -.12 -.25 -1 0 -.5 -1 .12 -.25 -1 .25 0 -1 .12 .25 -1 0 1 0 -.25 .5 0 -.5 0 0 -.25 -.5 0 0 -1 0 .25 -.5 0 .5 0 0 .25 0.5 0 0 .88 .9 -.19 .44 .9 -.37 0 .9 -.19 -.44 .9 0 -.88 .9 .19 -.44 .9 .37 0 .9 .19 .44 .9 0 .75 1.75 -.12 .35 1.75 -.25 0 1.75 -.12 -.35 1.75 0 -.75 1.75 .12 -.35 1.75 .25 0 1.75 .12 .35 1.75 0 .5 2.5 -.05 .25 2.5 -.1 0 2.5 -.05 -.25 2.5 0 -.5 2.5 .05 -.25 2.5 .1 0 2.5 .05 .25 2.5 0 1.25 3.25 0 0 3 0 -1.25 3.25 0 -.5 2.5 0 -.5 2.5 0 -.5 2.5 0 -.5 2.5 0 -.5 2.5 0 -.5 2.5 0 -.5 2.5 0 -.5 2.5 0 -.5 2.5 0 -.5 2.5 0 -.5 2.5 0 -.5 2.5 0 -.5 2.5 0 -.5 2.5</span>'/&gt;
+</span><br />
+<a name="ROUTE_0"> </a> 
+<span title="ROUTE connects fields between nodes to enable event passing" style="background-color:#DDEEFF">&lt;<span class="route">ROUTE</span>&#160;<span class="attribute">fromNode</span>='<a title="go to the original DEF node definition"
+                   href="#Clock"
+                   class="idName">Clock</a>'&#160;<span class="attribute">fromField</span>='<span class="value">fraction_changed</span>'&#160;<span class="attribute">toNode</span>='<a title="go to the original DEF node definition"
+                   href="#FishWiggle"
+                   class="idName">FishWiggle</a>'&#160;<span class="attribute">toField</span>='<span class="value">set_fraction</span>'/&gt;
+</span><br />
+<a name="ROUTE_1"> </a> 
+<span title="ROUTE connects fields between nodes to enable event passing" style="background-color:#DDEEFF">&lt;<span class="route">ROUTE</span>&#160;<span class="attribute">fromNode</span>='<a title="go to the original DEF node definition"
+                   href="#FishWiggle"
+                   class="idName">FishWiggle</a>'&#160;<span class="attribute">fromField</span>='<span class="value">value_changed</span>'&#160;<span class="attribute">toNode</span>='<a title="go to the original DEF node definition"
+                   href="#Sardine"
+                   class="idName">Sardine</a>'&#160;<span class="attribute">toField</span>='<span class="value">set_point</span>'/&gt;
+</span></div><span title="Scene is the root node that contains an X3D scene graph">&lt;/<span class="element">Scene</span>&gt;
+</span></div><span title="X3D is the top-most XML element for an Extensible 3D (X3D) Graphics file">&lt;/<span class="element">X3D</span>&gt;
+</span><br /><span style="color:white">
+&lt;!--
+</span>
+         <div class="center">
+            <hr style="width:100%"/>
+            <b>
+               <i>Index for DEF nodes</i>
+            </b>: 
+<a title="go to this TimeSensor node" href="#Clock" class="idName">Clock</a>,
+<a title="go to this Transform node" href="#DorsalFin" class="idName">DorsalFin</a>,
+<a title="go to this Shape node" href="#Eye" class="idName">Eye</a>,
+<a title="go to this Group node" href="#Far" class="idName">Far</a>,
+<a title="go to this CoordinateInterpolator node"
+                href="#FishWiggle"
+                class="idName">FishWiggle</a>,
+<a title="go to this ViewpointGroup node"
+                href="#HideViewpointsWhenDistant"
+                class="idName">HideViewpointsWhenDistant</a>,
+<a title="go to this Transform node" href="#LeftEye" class="idName">LeftEye</a>,
+<a title="go to this Group node" href="#Medium" class="idName">Medium</a>,
+<a title="go to this Group node" href="#Near" class="idName">Near</a>,
+<a title="go to this Transform node" href="#RightEye" class="idName">RightEye</a>,
+<a title="go to this Coordinate node" href="#Sardine" class="idName">Sardine</a>,
+<a title="go to this IndexedFaceSet node"
+                href="#SardineIndex"
+                class="idName">SardineIndex</a>,
+<a title="go to this LOD node" href="#Sardines" class="idName">Sardines</a>
+<br /><hr width="50%"/>
+            <b>
+               <i>Index for Viewpoint images</i>
+            </b>: 
+<a title="go to this Viewpoint node: Closeup view right"
+                href="#Viewpoint_1"
+                class="idName">Viewpoint_1</a>,
+<a title="go to this Viewpoint node: Closeup view right face"
+                href="#Viewpoint_2"
+                class="idName">Viewpoint_2</a>,
+<a title="go to this Viewpoint node: Closeup view face to face"
+                href="#Viewpoint_3"
+                class="idName">Viewpoint_3</a>,
+<a title="go to this Viewpoint node: Closeup view left face"
+                href="#Viewpoint_4"
+                class="idName">Viewpoint_4</a>,
+<a title="go to this Viewpoint node: Closeup view left"
+                href="#Viewpoint_5"
+                class="idName">Viewpoint_5</a>,
+<a title="go to this Viewpoint node: Closeup view left tail"
+                href="#Viewpoint_6"
+                class="idName">Viewpoint_6</a>,
+<a title="go to this Viewpoint node: Closeup view tail"
+                href="#Viewpoint_7"
+                class="idName">Viewpoint_7</a>,
+<a title="go to this Viewpoint node: Closeup view right tail"
+                href="#Viewpoint_8"
+                class="idName">Viewpoint_8</a>,
+<a title="go to this Viewpoint node: Closeup view top looking down"
+                href="#Viewpoint_9"
+                class="idName">Viewpoint_9</a>,
+<a title="go to this Viewpoint node: Closeup view bottom looking up"
+                href="#Viewpoint_10"
+                class="idName">Viewpoint_10</a>,
+<a title="go to this Viewpoint node: Single viewpoint when fairly close to sardine"
+                href="#Viewpoint_11"
+                class="idName">Viewpoint_11</a>
+            <hr style="width:100%"/>
+         </div>
+         <span style="color:white">
+--&gt;
+</span>
+      </div>
+      <p style="text-align:center;">
+         <span style="color:white">&lt;!--</span>
+Color key: <!--(matching X3D and XML terminology) -->
+&lt;<span class="element">X3dNode</span>
+         <span class="idName"> DEF</span>='<span class="idName">idName</span>' <span class="attribute">field</span>='<span class="value">value</span>'/&gt; 
+ matches 
+&lt;<span class="element">XmlElement</span>
+         <span class="idName"> DEF</span>='<span class="idName">idName</span>' <span class="attribute">attribute</span>='<span class="value">value</span>'/&gt; <br/>
+<span title="behavior node" style="background-color:#DDEEFF;">(Light blue background: behavior node)</span> <span title="inserted documentation about ROUTE connections" style="background-color:#EEEEEE;">(Grey background: inserted documentation)</span> <span title="X3D Extensibility" style="background-color:#FFEEFF;">(Magenta background: X3D Extensibility)</span><br/>
+         <span style="color:white"> --&gt;</span>
+      </p>
+      <p style="text-align:center; background-color:white">
+         <span style="color:white">&lt;!--</span>
+For additional help information about X3D scenes, please see <a href="https://www.web3d.org/x3d/content/X3dTooltips.html"
+             title="Summary descriptions and authoring hints for each X3D node (element) and field (attribute)"
+             target="_blank">X3D Tooltips</a>, <a href="https://www.web3d.org/x3d/content/examples/X3dResources.html"
+             title="Numerous resources that support X3D graphics"
+             target="_blank">X3D Resources</a> and <a href="https://www.web3d.org/x3d/content/examples/X3dSceneAuthoringHints.html"
+             title="Style guidelines, authoring tips and best practices"
+             target="_blank">X3D Scene Authoring Hints</a>.
+<span style="color:white">--&gt;</span>
+      </p>
+   </body>
+</html>

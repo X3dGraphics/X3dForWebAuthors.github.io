@@ -1,0 +1,1 @@
+<IndexedFaceSet DEF='DoorGeometry'/> missing texCoordIndex array for contained TextureCoordinate node [/X3D/Scene/Transform[2]/Group/Shape/IndexedFaceSet, error]

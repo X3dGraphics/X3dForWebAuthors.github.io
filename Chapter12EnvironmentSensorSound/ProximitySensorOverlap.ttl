@@ -1,0 +1,227 @@
+@prefix :        <https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter12EnvironmentSensorSound/ProximitySensorOverlap.ttl#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema:  <http://schema.org/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix x3d:     <https://www.web3d.org/specifications/x3d-4.0.xsd#> .
+@prefix x3do:    <https://www.web3d.org/specifications/X3dOntology4.0#> .
+
+:X3D a owl:NamedIndividual, x3do:X3D ;
+  x3do:hasHead :head ;
+  x3do:hasScene :Scene ;
+  x3do:profile 'Immersive' ;
+  x3do:version '3.3' ;
+  x3do:noNamespaceSchemaLocation 'https://www.web3d.org/specifications/x3d-3.3.xsd' .
+:head a owl:NamedIndividual, x3do:head ;
+  x3do:hasParent :X3D ;
+  x3do:hasMeta :meta_1_1, :meta_1_2, :meta_1_3, :meta_1_4, :meta_1_5, :meta_1_6, :meta_1_7, :meta_1_8, :meta_1_9, :meta_1_10, :meta_1_11, :meta_1_12, :meta_1_13, :meta_1_14, :meta_1_15 .
+:meta_1_1 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'ProximitySensorOverlap.x3d' ;
+  x3do:name 'title' .
+:meta_1_2 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Example multiply-instanced ProximitySensor with overlapping regions' ;
+  x3do:name 'description' .
+:meta_1_3 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Leonard Daly and Don Brutzman' ;
+  x3do:name 'creator' .
+:meta_1_4 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '15 July 2006' ;
+  x3do:name 'created' .
+:meta_1_5 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '20 October 2019' ;
+  x3do:name 'modified' .
+:meta_1_6 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'ProximitySensorMultiple.x3d' ;
+  x3do:name 'reference' .
+:meta_1_7 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'ProximitySensorNoOverlap.x3d' ;
+  x3do:name 'reference' .
+:meta_1_8 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'ProximitySensorSingle.x3d' ;
+  x3do:name 'reference' .
+:meta_1_9 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://X3dGraphics.com' ;
+  x3do:name 'reference' .
+:meta_1_10 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://www.web3d.org/x3d/content/examples/X3dResources.html' ;
+  x3do:name 'reference' .
+:meta_1_11 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Copyright Don Brutzman and Leonard Daly 2007' ;
+  x3do:name 'rights' .
+:meta_1_12 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'X3D book, X3D graphics, X3D-Edit, http://www.x3dGraphics.com' ;
+  x3do:name 'subject' .
+:meta_1_13 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter12EnvironmentSensorSound/ProximitySensorOverlap.x3d' ;
+  x3do:name 'identifier' .
+:meta_1_14 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'X3D-Edit 3.3, https://savage.nps.edu/X3D-Edit' ;
+  x3do:name 'generator' .
+:meta_1_15 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '../license.html' ;
+  x3do:name 'license' .
+:meta dcterms:title "ProximitySensorOverlap.x3d" .
+:meta dcterms:description "Example multiply-instanced ProximitySensor with overlapping regions" .
+:meta dcterms:creator "Leonard Daly and Don Brutzman" .
+:meta dcterms:created "15 July 2006" .
+:meta dcterms:modified "20 October 2019" .
+:meta dcterms:reference "ProximitySensorMultiple.x3d" .
+:meta dcterms:reference "ProximitySensorNoOverlap.x3d" .
+:meta dcterms:reference "ProximitySensorSingle.x3d" .
+:meta dcterms:reference "https://X3dGraphics.com" .
+:meta dcterms:reference "https://www.web3d.org/x3d/content/examples/X3dResources.html" .
+:meta dcterms:rights "Copyright Don Brutzman and Leonard Daly 2007" .
+:meta dcterms:subject "X3D book, X3D graphics, X3D-Edit, http://www.x3dGraphics.com" .
+:meta dcterms:identifier "https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter12EnvironmentSensorSound/ProximitySensorOverlap.x3d" .
+:meta dcterms:generator "X3D-Edit 3.3, https://savage.nps.edu/X3D-Edit" .
+:meta dcterms:license "../license.html" .
+:Scene a owl:NamedIndividual, x3do:Scene ;
+  x3do:hasParent :X3D ;
+  x3do:hasChildren :WorldInfo_2_1, :Viewpoint_2_2, :Background_2_3, :Collision_2_4, :Collision_2_5, :Collision_2_6, :Collision_2_7, :LocationReport ;
+  x3do:hasROUTE :ROUTE_2_9, :ROUTE_2_10 .
+:WorldInfo_2_1 a owl:NamedIndividual, x3do:WorldInfo ;
+  x3do:hasParent :Scene ;
+  x3do:title 'ProximitySensorOverlap.x3d' .
+:Viewpoint_2_2 a owl:NamedIndividual, x3do:Viewpoint ;
+  x3do:hasParent :Scene ;
+  x3do:description 'Book Viewpoint' ;
+  x3do:orientation ( 0 1 0 -0.06 ) ;
+  x3do:position ( 0.05 0 8.71 ) .
+:Background_2_3 a owl:NamedIndividual, x3do:Background ;
+  x3do:hasParent :Scene ;
+  x3do:skyColor ( 1 1 1 ) .
+:Collision_2_4 a owl:NamedIndividual, x3do:Collision ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :SensorGroup ;
+  x3do:enabled false .
+:SensorGroup a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Collision_2_4 ;
+  x3do:hasChildren :HereIAm1, :SensorSize ;
+  x3do:DEF 'SensorGroup' .
+:HereIAm1 a owl:NamedIndividual, x3do:ProximitySensor ;
+  x3do:hasParent :SensorGroup ;
+  x3do:DEF 'HereIAm1' ;
+  x3do:size ( 2 2 2 ) .
+:SensorSize a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :SensorGroup ;
+  x3do:hasChildren :BoxOutline, :BoxSurface ;
+  x3do:DEF 'SensorSize' .
+:BoxOutline a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :SensorSize ;
+  x3do:hasAppearance :Appearance_2_4_1_2_1_1 ;
+  x3do:hasGeometry :IndexedLineSet_2_4_1_2_1_2 ;
+  x3do:DEF 'BoxOutline' .
+:Appearance_2_4_1_2_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :BoxOutline ;
+  x3do:hasMaterial :Material_2_4_1_2_1_1_1 .
+:Material_2_4_1_2_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_4_1_2_1_1 ;
+  x3do:emissiveColor ( 0.8 0.8 0.8 ) .
+:IndexedLineSet_2_4_1_2_1_2 a owl:NamedIndividual, x3do:IndexedLineSet ;
+  x3do:hasParent :BoxOutline ;
+  x3do:hasCoord :Coordinate_2_4_1_2_1_2_1 ;
+  x3do:coordIndex ( 0 1 2 3 0 -1 4 5 6 7 4 -1 0 4 -1 1 5 -1 2 6 -1 3 7 -1 ) .
+:Coordinate_2_4_1_2_1_2_1 a owl:NamedIndividual, x3do:Coordinate ;
+  x3do:hasParent :IndexedLineSet_2_4_1_2_1_2 ;
+  x3do:point ( 1 1 1 1 1 -1 1 -1 -1 1 -1 1 -1 1 1 -1 1 -1 -1 -1 -1 -1 -1 1 ) .
+:BoxSurface a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :SensorSize ;
+  x3do:hasAppearance :Appearance_2_4_1_2_2_1 ;
+  x3do:hasGeometry :Box_2_4_1_2_2_2 ;
+  x3do:DEF 'BoxSurface' .
+:Appearance_2_4_1_2_2_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :BoxSurface ;
+  x3do:hasMaterial :Material_2_4_1_2_2_1_1 .
+:Material_2_4_1_2_2_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_4_1_2_2_1 ;
+  x3do:diffuseColor ( 1 .5 0 ) ;
+  x3do:transparency .8 .
+:Box_2_4_1_2_2_2 a owl:NamedIndividual, x3do:Box ;
+  x3do:hasParent :BoxSurface .
+:Collision_2_5 a owl:NamedIndividual, x3do:Collision ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :Transform_2_5_1 ;
+  x3do:enabled false .
+:Transform_2_5_1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Collision_2_5 ;
+  x3do:hasChildren :HereIAm1-USE-1, :SensorSize-USE-1 ;
+  x3do:rotation ( .707 .707 0 1 ) ;
+  x3do:translation ( 3 1 2 ) .
+:HereIAm1-USE-1 a owl:NamedIndividual, x3do:ProximitySensor ;
+  x3do:hasParent :Transform_2_5_1 ;
+  owl:sameAs :HereIAm1 . # DEF matching this USE
+:SensorSize-USE-1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_5_1 ;
+  owl:sameAs :SensorSize . # DEF matching this USE
+:Collision_2_6 a owl:NamedIndividual, x3do:Collision ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :Transform_2_6_1 ;
+  x3do:enabled false .
+:Transform_2_6_1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Collision_2_6 ;
+  x3do:hasChildren :HereIAm1-USE-2, :SensorSize-USE-2 ;
+  x3do:translation ( -1 .5 -0.5 ) .
+:HereIAm1-USE-2 a owl:NamedIndividual, x3do:ProximitySensor ;
+  x3do:hasParent :Transform_2_6_1 ;
+  owl:sameAs :HereIAm1 . # DEF matching this USE
+:SensorSize-USE-2 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_6_1 ;
+  owl:sameAs :SensorSize . # DEF matching this USE
+:Collision_2_7 a owl:NamedIndividual, x3do:Collision ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :Transform_2_7_1 ;
+  x3do:enabled false .
+:Transform_2_7_1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Collision_2_7 ;
+  x3do:hasChildren :HereIAm1-USE-3, :SensorSize-USE-3 ;
+  x3do:translation ( -2 -1 .5 ) .
+:HereIAm1-USE-3 a owl:NamedIndividual, x3do:ProximitySensor ;
+  x3do:hasParent :Transform_2_7_1 ;
+  owl:sameAs :HereIAm1 . # DEF matching this USE
+:SensorSize-USE-3 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_7_1 ;
+  owl:sameAs :SensorSize . # DEF matching this USE
+:LocationReport a owl:NamedIndividual, x3do:Script ;
+  x3do:hasParent :Scene ;
+  x3do:hasField :field_2_8_1, :field_2_8_2 ;
+  x3do:DEF 'LocationReport' ;
+  x3do:url '"ProximitySensorSingleScriptLocationReport.js" "https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter12EnvironmentSensorSound/ProximitySensorSingleScriptLocationReport.js"' .
+:field_2_8_1 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :LocationReport ;
+  x3do:accessType 'inputOnly' ;
+  x3do:name 'position' ;
+  x3do:type 'SFVec3f' .
+:field_2_8_2 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :LocationReport ;
+  x3do:accessType 'inputOnly' ;
+  x3do:name 'orientation' ;
+  x3do:type 'SFRotation' .
+:ROUTE_2_9 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'position_changed' ;
+  x3do:fromNode 'HereIAm1' ;
+  x3do:toField 'position' ;
+  x3do:toNode 'LocationReport' .
+:ROUTE_2_10 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'orientation_changed' ;
+  x3do:fromNode 'HereIAm1' ;
+  x3do:toField 'orientation' ;
+  x3do:toNode 'LocationReport' .

@@ -1,0 +1,206 @@
+{ "X3D": {
+    "encoding":"UTF-8",
+    "@profile":"Immersive",
+    "@version":"3.3",
+    "@xsd:noNamespaceSchemaLocation":"https://www.web3d.org/specifications/x3d-3.3.xsd",
+    "JSON schema":"https://www.web3d.org/specifications/x3d-3.3-JSONSchema.json",
+    "head": {
+        "meta": [
+          {
+            "@name":"title",
+            "@content":"FishModelComparison.x3d"
+          },
+          {
+            "@name":"description",
+            "@content":"This file compares all of the fish prototypes."
+          },
+          {
+            "@name":"creator",
+            "@content":"Scott Tufts"
+          },
+          {
+            "@name":"created",
+            "@content":"17 December 2001"
+          },
+          {
+            "@name":"modified",
+            "@content":"20 October 2019"
+          },
+          {
+            "@name":"identifier",
+            "@content":"https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/FishModelComparison.x3d"
+          },
+          {
+            "@name":"generator",
+            "@content":"X3D-Edit 3.3, https://savage.nps.edu/X3D-Edit"
+          },
+          {
+            "@name":"license",
+            "@content":"../license.html"
+          },
+          {
+            "@name":"translated",
+            "@content":"18 January 2022"
+          },
+          {
+            "@name":"generator",
+            "@content":"X3dToJson.xslt, https://www.web3d.org/x3d/stylesheets/X3dToJson.html"
+          },
+          {
+            "@name":"reference",
+            "@content":"X3D JSON encoding: https://www.web3d.org/wiki/index.php/X3D_JSON_Encoding"
+          }
+        ]
+    },
+    "Scene": {
+        "-children":[
+          { "WorldInfo":
+            {
+              "@title":"FishModelComparison.x3d"
+            }
+          },
+          { "ExternProtoDeclare":
+            {
+              "@name":"SeaStar",
+              "@url":["SeaStarPrototype.x3d#SeaStar","https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/SeaStarPrototype.x3d#SeaStar","SeaStarPrototype.wrl#SeaStar","https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/SeaStarPrototype.wrl#SeaStar"],
+              "field": [
+                {
+                  "@name":"skinDifColor",
+                  "@accessType":"inputOutput",
+                  "@type":"SFColor"
+                }
+              ]
+            }
+          },
+          { "ExternProtoDeclare":
+            {
+              "@name":"HalfMoon",
+              "@appinfo":"HalfMoon fish",
+              "@url":["HalfMoonPrototype.x3d#HalfMoon","https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/HalfMoonPrototype.x3d#HalfMoon","HalfMoonPrototype.wrl#HalfMoon","https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/HalfMoonPrototype.wrl#HalfMoon"],
+              "field": [
+                {
+                  "@name":"skinTextureUrl",
+                  "@accessType":"inputOutput",
+                  "@type":"MFString"
+                },
+                {
+                  "@name":"fishScale",
+                  "@accessType":"inputOutput",
+                  "@type":"SFVec3f"
+                },
+                {
+                  "@name":"fishColor",
+                  "@accessType":"inputOutput",
+                  "@type":"SFColor"
+                }
+              ]
+            }
+          },
+          { "Transform":
+            {
+              "@rotation":[1,0,0,3.14],
+              "-children":[
+                { "Transform":
+                  {
+                    "@translation":[2,0,0],
+                    "-children":[
+                      { "ProtoInstance":
+                        {
+                          "@name":"SeaStar"
+                        }
+                      }
+                    ]
+                  }
+                },
+                { "Transform":
+                  {
+                    "@translation":[1,0,0],
+                    "-children":[
+                      { "Inline":
+                        {
+                          "@url":["BlackSurfPerch.x3d","https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/BlackSurfPerch.x3d","BlackSurfPerch.wrl","https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/BlackSurfPerch.wrl"]
+                        }
+                      }
+                    ]
+                  }
+                },
+                { "Transform":
+                  {
+                    "-children":[
+                      { "ProtoInstance":
+                        {
+                          "@name":"HalfMoon"
+                        }
+                      }
+                    ]
+                  }
+                },
+                { "Transform":
+                  {
+                    "@rotation":[1,0,0,3.14],
+                    "@translation":[-1,0,0],
+                    "-children":[
+                      { "Inline":
+                        {
+                          "@url":["CircleFish.x3d","https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/CircleFish.x3d","CircleFish.wrl","https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/CircleFish.wrl"]
+                        }
+                      }
+                    ]
+                  }
+                },
+                { "Transform":
+                  {
+                    "@translation":[-2,0,0],
+                    "-children":[
+                      { "Inline":
+                        {
+                          "@url":["Garibaldi.x3d","https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/Garibaldi.x3d","Garibaldi.wrl","https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/Garibaldi.wrl"]
+                        }
+                      }
+                    ]
+                  }
+                },
+                { "Transform":
+                  {
+                    "@rotation":[1,0,0,3.14],
+                    "@translation":[0,1,0],
+                    "-children":[
+                      { "Inline":
+                        {
+                          "@url":["HalfMoonGroup.x3d","https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/HalfMoonGroup.x3d","HalfMoonGroup.wrl","https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/HalfMoonGroup.wrl"]
+                        }
+                      }
+                    ]
+                  }
+                },
+                { "Transform":
+                  {
+                    "@translation":[0,-1,0],
+                    "-children":[
+                      { "Inline":
+                        {
+                          "@url":["KelpBass.x3d","https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/KelpBass.x3d","KelpBass.wrl","https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/KelpBass.wrl"]
+                        }
+                      }
+                    ]
+                  }
+                },
+                { "Transform":
+                  {
+                    "@translation":[0,0,1],
+                    "-children":[
+                      { "Inline":
+                        {
+                          "@url":["KelpSurfPerch.x3d","https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/KelpSurfPerch.x3d","KelpSurfPerch.wrl","https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/KelpSurfPerch.wrl"]
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ]
+    }
+  }
+}

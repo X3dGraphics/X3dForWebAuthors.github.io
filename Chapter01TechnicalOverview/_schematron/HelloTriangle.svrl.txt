@@ -1,0 +1,2 @@
+<meta name='TODO' content='create corresponding shader-based example'/>[/X3D/head/meta[9], diagnostic]
+<WorldInfo DEF='' title='HelloTriangle.x3d'/> and <WorldInfo DEF='' title='HelloTriangle.x3d'/> have both defined window title[/X3D/Scene/WorldInfo[2], warning]

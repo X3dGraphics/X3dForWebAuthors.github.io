@@ -1,0 +1,12 @@
+
+      
+ecmascript:
+    function printBoolean (value) {
+      Browser.print ('TouchSensor isActive="' + value + '"\n');
+    }
+    function printTimestamp (value) {
+      Browser.print ('====================================' +  '\n');
+      Browser.print ('Trigger triggerTime="' + value + '"\n');
+    }
+
+    

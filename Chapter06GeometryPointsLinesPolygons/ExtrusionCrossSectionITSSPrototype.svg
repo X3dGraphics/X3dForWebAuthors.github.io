@@ -1,0 +1,24 @@
+
+            
+ecmascript:
+    function traceValue (eventValue, timeStamp) {
+      // input eventValue received for trace field
+      if (timeStamp - timeStampPreviousReport &gt;= reportInterval) {
+        Browser.print ('Trace_ROUTE_CrossSectionScript.triStripIndex_TO_EnclosingExtrusion2.set_index type=MFInt32 value=' + eventValue.toString() + '\n');
+        timeStampPreviousReport = timeStamp;
+      }
+    }
+    function timeOfDay (someTime) {
+      hh = Math.floor (someTime /(60*60)) % 24;
+      mm = Math.floor (someTime / 60)     % 60;
+      ss = Math.floor (someTime)          % 60;
+      if (hh &lt; 9) hour   = '0' + hh;
+      else        hour   =       hh;
+      if (mm &lt; 9) minute = '0' + mm;
+      else        minute =       mm;
+      if (ss &lt; 9) second = '0' + ss;
+      else        second =       ss;
+      return '(' + hour + ':' + minute + ':' + second + ' GMT)';
+    }
+
+          

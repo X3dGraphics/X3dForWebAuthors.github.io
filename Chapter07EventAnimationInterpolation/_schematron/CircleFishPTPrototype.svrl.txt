@@ -1,0 +1,2 @@
+<PixelTexture DEF='FishTexture' image='0 0 0'/> has empty or default image array values [/X3D/Scene/ProtoDeclare/ProtoBody/Transform/Transform/Transform/Shape[1]/Appearance/PixelTexture, warning]
+<Shape DEF=''/> found without child geometry node [/X3D/Scene/ProtoDeclare/ProtoBody/Transform/Transform/Transform/Shape[2], warning]

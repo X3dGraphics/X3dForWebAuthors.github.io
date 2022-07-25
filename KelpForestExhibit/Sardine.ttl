@@ -1,0 +1,354 @@
+@prefix :        <https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/Sardine.ttl#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema:  <http://schema.org/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix x3d:     <https://www.web3d.org/specifications/x3d-4.0.xsd#> .
+@prefix x3do:    <https://www.web3d.org/specifications/X3dOntology4.0#> .
+
+:X3D a owl:NamedIndividual, x3do:X3D ;
+  x3do:hasHead :head ;
+  x3do:hasScene :Scene ;
+  x3do:profile 'Immersive' ;
+  x3do:version '3.3' ;
+  x3do:noNamespaceSchemaLocation 'https://www.web3d.org/specifications/x3d-3.3.xsd' .
+:head a owl:NamedIndividual, x3do:head ;
+  x3do:hasParent :X3D ;
+  x3do:hasComponent :component_1_1 ;
+  x3do:hasMeta :meta_1_2, :meta_1_3, :meta_1_4, :meta_1_5, :meta_1_6, :meta_1_7, :meta_1_8, :meta_1_9, :meta_1_10, :meta_1_11, :meta_1_12 .
+:component_1_1 a owl:NamedIndividual, x3do:component ;
+  x3do:hasParent :head ;
+  x3do:level 3 ;
+  x3do:name 'Navigation' .
+:meta_1_2 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Sardine.x3d' ;
+  x3do:name 'title' .
+:meta_1_3 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'One Sardine, three levels of detail.' ;
+  x3do:name 'description' .
+:meta_1_4 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Stewart Liles, Sean Hynes' ;
+  x3do:name 'creator' .
+:meta_1_5 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '25 September 1998' ;
+  x3do:name 'created' .
+:meta_1_6 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '20 October 2019' ;
+  x3do:name 'modified' .
+:meta_1_7 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/KelpForestDesignPaperWeb3dSymposiumFebruary2002.pdf' ;
+  x3do:name 'reference' .
+:meta_1_8 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/Teaching3d-KelpForestCaseStudy.pdf' ;
+  x3do:name 'reference' .
+:meta_1_9 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'All content has permissions for free use. Please provide credit to the Naval Postgraduate School (NPS) Modeling Virtual Environments and Simulation (MOVES) Institute.' ;
+  x3do:name 'accessRights' .
+:meta_1_10 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/Sardine.x3d' ;
+  x3do:name 'identifier' .
+:meta_1_11 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'X3D-Edit 3.3, https://savage.nps.edu/X3D-Edit' ;
+  x3do:name 'generator' .
+:meta_1_12 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '../license.html' ;
+  x3do:name 'license' .
+:meta dcterms:title "Sardine.x3d" .
+:meta dcterms:description "One Sardine, three levels of detail." .
+:meta dcterms:creator "Stewart Liles, Sean Hynes" .
+:meta dcterms:created "25 September 1998" .
+:meta dcterms:modified "20 October 2019" .
+:meta dcterms:reference "https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/KelpForestDesignPaperWeb3dSymposiumFebruary2002.pdf" .
+:meta dcterms:reference "https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/Teaching3d-KelpForestCaseStudy.pdf" .
+:meta dcterms:accessRights "All content has permissions for free use. Please provide credit to the Naval Postgraduate School (NPS) Modeling Virtual Environments and Simulation (MOVES) Institute." .
+:meta dcterms:identifier "https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/Sardine.x3d" .
+:meta dcterms:generator "X3D-Edit 3.3, https://savage.nps.edu/X3D-Edit" .
+:meta dcterms:license "../license.html" .
+:Scene a owl:NamedIndividual, x3do:Scene ;
+  x3do:hasParent :X3D ;
+  x3do:hasChildren :Sardines, :HideViewpointsWhenDistant, :Viewpoint_2_3, :Clock, :FishWiggle ;
+  x3do:hasROUTE :ROUTE_2_6, :ROUTE_2_7 .
+:Sardines a owl:NamedIndividual, x3do:LOD ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :Near, :Medium, :Far, :WorldInfo_2_1_4 ;
+  x3do:DEF 'Sardines' ;
+  x3do:range ( 15 30 60 ) .
+:Near a owl:NamedIndividual, x3do:Group ;
+  x3do:hasParent :Sardines ;
+  x3do:hasChildren :Transform_2_1_1_1 ;
+  x3do:DEF 'Near' .
+:Transform_2_1_1_1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Near ;
+  x3do:hasChildren :Shape_2_1_1_1_1, :LeftEye, :RightEye, :DorsalFin, :Transform_2_1_1_1_5 ;
+  x3do:scale ( .25 .1 .25 ) .
+:Shape_2_1_1_1_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_1_1_1 ;
+  x3do:hasAppearance :Appearance_2_1_1_1_1_1 ;
+  x3do:hasGeometry :SardineIndex .
+:Appearance_2_1_1_1_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_1_1_1_1 ;
+  x3do:hasMaterial :Material_2_1_1_1_1_1_1 .
+:Material_2_1_1_1_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_1_1_1_1_1 ;
+  x3do:diffuseColor ( .61 .61 .61 ) ;
+  x3do:emissiveColor ( .5 .5 .5 ) ;
+  x3do:shininess .8 ;
+  x3do:specularColor ( .76 .76 .76 ) .
+:SardineIndex a owl:NamedIndividual, x3do:IndexedFaceSet ;
+  x3do:hasParent :Shape_2_1_1_1_1 ;
+  x3do:hasCoord :Sardine ;
+  x3do:DEF 'SardineIndex' ;
+  x3do:ccw false ;
+  x3do:coordIndex ( 0 2 1 -1 0 3 2 -1 0 4 3 -1 0 5 4 -1 0 1 8 -1 0 8 7 -1 0 7 6 -1 0 6 5 -1 1 2 10 9 -1 2 3 11 10 -1 3 4 12 11 -1 4 5 13 12 -1 1 9 16 8 -1 8 16 15 7 -1 7 15 14 6 -1 6 14 13 5 -1 9 10 18 17 -1 10 11 19 18 -1 11 12 20 19 -1 12 13 21 20 -1 9 17 24 16 -1 16 24 23 15 -1 15 23 22 14 -1 14 22 21 13 -1 17 18 26 25 -1 18 19 27 26 -1 19 20 28 27 -1 20 21 29 28 -1 17 25 32 24 -1 24 32 31 23 -1 23 31 30 22 -1 22 30 29 21 -1 25 26 34 33 -1 26 27 35 34 -1 27 28 36 35 -1 28 29 37 36 -1 25 33 40 32 -1 32 40 39 31 -1 31 39 38 30 -1 30 38 37 29 -1 33 34 41 -1 34 35 41 -1 35 42 41 -1 35 43 42 -1 36 43 35 -1 36 37 43 -1 33 41 40 -1 40 41 39 -1 39 41 42 -1 39 42 43 -1 39 43 37 -1 38 43 37 -1 50 49 48 47 46 45 44 -1 57 56 55 54 53 52 51 -1 44 45 52 51 -1 45 46 53 52 -1 46 47 54 53 -1 47 48 55 54 -1 48 49 56 55 -1 49 50 57 56 -1 ) ;
+  x3do:creaseAngle 3.14 ;
+  x3do:solid false .
+:Sardine a owl:NamedIndividual, x3do:Coordinate ;
+  x3do:hasParent :SardineIndex ;
+  x3do:DEF 'Sardine' ;
+  x3do:point ( 0 0 -1.5 0 .5 -1 -0.12 .25 -1 -0.25 0 -1 -0.12 -0.25 -1 0 -0.5 -1 .12 -0.25 -1 .25 0 -1 .12 .25 -1 0 1 0 -0.25 .5 0 -0.5 0 0 -0.25 -0.5 0 0 -1 0 .25 -0.5 0 .5 0 0 .25 .5 0 0 .88 .9 -0.19 .44 .9 -0.37 0 .9 -0.19 -0.44 .9 0 -0.88 .9 .19 -0.44 .9 .37 0 .9 .19 .44 .9 0 .75 1.75 -0.12 .35 1.75 -0.25 0 1.75 -0.12 -0.35 1.75 0 -0.75 1.75 .12 -0.35 1.75 .25 0 1.75 .12 .35 1.75 0 .5 2.5 -0.05 .25 2.5 -0.1 0 2.5 -0.05 -0.25 2.5 0 -0.5 2.5 .05 -0.25 2.5 .1 0 2.5 .05 .25 2.5 1 1.25 3.25 0 0 3 0 -1.25 3.25 .01 -0.7 -1.7 .01 -0.75 -2.3 .01 -0.74 -2.325 .01 -0.72 -2.35 .01 -0.7 -2.36 .01 -0.67 -2.35 .01 -0.54 -2.29 -0.01 -0.7 -1.7 -0.01 -0.75 -2.3 -0.01 -0.74 -2.325 -0.01 -0.72 -2.35 -0.01 -0.7 -2.36 -0.01 -0.67 -2.35 -0.01 -0.54 -2.29 ) .
+:LeftEye a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_1_1_1 ;
+  x3do:hasChildren :Eye ;
+  x3do:DEF 'LeftEye' ;
+  x3do:translation ( -0.25 .2 -0.55 ) .
+:Eye a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :LeftEye ;
+  x3do:hasAppearance :Appearance_2_1_1_1_2_1_1 ;
+  x3do:hasGeometry :Sphere_2_1_1_1_2_1_2 ;
+  x3do:DEF 'Eye' .
+:Appearance_2_1_1_1_2_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Eye ;
+  x3do:hasMaterial :Material_2_1_1_1_2_1_1_1 .
+:Material_2_1_1_1_2_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_1_1_1_2_1_1 ;
+  x3do:diffuseColor ( .1 .1 .1 ) ;
+  x3do:shininess .5 .
+:Sphere_2_1_1_1_2_1_2 a owl:NamedIndividual, x3do:Sphere ;
+  x3do:hasParent :Eye ;
+  x3do:radius .1 .
+:RightEye a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_1_1_1 ;
+  x3do:hasChildren :Eye-USE-1 ;
+  x3do:DEF 'RightEye' ;
+  x3do:translation ( .25 .2 -0.55 ) .
+:Eye-USE-1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :RightEye ;
+  owl:sameAs :Eye . # DEF matching this USE
+:DorsalFin a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_1_1_1 ;
+  x3do:hasChildren :Shape_2_1_1_1_4_1 ;
+  x3do:DEF 'DorsalFin' .
+:Shape_2_1_1_1_4_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :DorsalFin ;
+  x3do:hasAppearance :Appearance_2_1_1_1_4_1_1 ;
+  x3do:hasGeometry :Extrusion_2_1_1_1_4_1_2 .
+:Appearance_2_1_1_1_4_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_1_1_1_4_1 ;
+  x3do:hasMaterial :Material_2_1_1_1_4_1_1_1 .
+:Material_2_1_1_1_4_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_1_1_1_4_1_1 ;
+  x3do:diffuseColor ( .61 .61 .61 ) ;
+  x3do:emissiveColor ( .4 .4 .4 ) ;
+  x3do:shininess .7 ;
+  x3do:specularColor ( .75 .75 .75 ) .
+:Extrusion_2_1_1_1_4_1_2 a owl:NamedIndividual, x3do:Extrusion ;
+  x3do:hasParent :Shape_2_1_1_1_4_1 ;
+  x3do:convex false ;
+  x3do:crossSection ( 0 .9 .25 0 1.3 .5 0 1.6 .6 0 1.3 .7 0 1.1 .8 0 1 .9 0 .95 1 0 .7 1 ) ;
+  x3do:orientation ( 0 1 0 0 0 1 0 0 ) ;
+  x3do:scale ( 1 1 1 1 ) ;
+  x3do:solid false ;
+  x3do:spine ( .02 0 0 -0.02 0 0 ) .
+:Transform_2_1_1_1_5 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Transform_2_1_1_1 ;
+  x3do:hasChildren :Shape_2_1_1_1_5_1, :Shape_2_1_1_1_5_2 .
+:Shape_2_1_1_1_5_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_1_1_1_5 ;
+  x3do:hasAppearance :Appearance_2_1_1_1_5_1_1 ;
+  x3do:hasGeometry :IndexedFaceSet_2_1_1_1_5_1_2 .
+:Appearance_2_1_1_1_5_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_1_1_1_5_1 ;
+  x3do:hasMaterial :Material_2_1_1_1_5_1_1_1 .
+:Material_2_1_1_1_5_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_1_1_1_5_1_1 ;
+  x3do:diffuseColor ( .61 .61 .61 ) ;
+  x3do:emissiveColor ( .4 .4 .4 ) ;
+  x3do:shininess .4 ;
+  x3do:specularColor ( .75 .75 .75 ) .
+:IndexedFaceSet_2_1_1_1_5_1_2 a owl:NamedIndividual, x3do:IndexedFaceSet ;
+  x3do:hasParent :Shape_2_1_1_1_5_1 ;
+  x3do:hasCoord :Coordinate_2_1_1_1_5_1_2_1 ;
+  x3do:coordIndex ( 0 3 2 -1 1 3 0 -1 1 0 2 -1 3 1 2 -1 ) .
+:Coordinate_2_1_1_1_5_1_2_1 a owl:NamedIndividual, x3do:Coordinate ;
+  x3do:hasParent :IndexedFaceSet_2_1_1_1_5_1_2 ;
+  x3do:point ( .1 -0.65 .5 .1 -0.7 .5 .1 -0.7 .8 .15 -1.1 1.2 ) .
+:Shape_2_1_1_1_5_2 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_1_1_1_5 ;
+  x3do:hasAppearance :Appearance_2_1_1_1_5_2_1 ;
+  x3do:hasGeometry :IndexedFaceSet_2_1_1_1_5_2_2 .
+:Appearance_2_1_1_1_5_2_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_1_1_1_5_2 ;
+  x3do:hasMaterial :Material_2_1_1_1_5_2_1_1 .
+:Material_2_1_1_1_5_2_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_1_1_1_5_2_1 ;
+  x3do:diffuseColor ( .61 .61 .61 ) ;
+  x3do:emissiveColor ( .4 .4 .4 ) ;
+  x3do:shininess .4 ;
+  x3do:specularColor ( .75 .75 .75 ) .
+:IndexedFaceSet_2_1_1_1_5_2_2 a owl:NamedIndividual, x3do:IndexedFaceSet ;
+  x3do:hasParent :Shape_2_1_1_1_5_2 ;
+  x3do:hasCoord :Coordinate_2_1_1_1_5_2_2_1 ;
+  x3do:coordIndex ( 0 3 2 -1 1 3 0 -1 1 0 2 -1 3 1 2 -1 ) .
+:Coordinate_2_1_1_1_5_2_2_1 a owl:NamedIndividual, x3do:Coordinate ;
+  x3do:hasParent :IndexedFaceSet_2_1_1_1_5_2_2 ;
+  x3do:point ( -0.1 -0.65 .5 -0.1 -0.7 .5 -0.1 -0.7 .8 -0.15 -1.1 1.2 ) .
+:Medium a owl:NamedIndividual, x3do:Group ;
+  x3do:hasParent :Sardines ;
+  x3do:hasChildren :Transform_2_1_2_1 ;
+  x3do:DEF 'Medium' .
+:Transform_2_1_2_1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Medium ;
+  x3do:hasChildren :Shape_2_1_2_1_1 ;
+  x3do:scale ( .25 .1 .25 ) .
+:Shape_2_1_2_1_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_1_2_1 ;
+  x3do:hasAppearance :Appearance_2_1_2_1_1_1 ;
+  x3do:hasGeometry :SardineIndex-USE-1 .
+:Appearance_2_1_2_1_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_1_2_1_1 ;
+  x3do:hasMaterial :Material_2_1_2_1_1_1_1 .
+:Material_2_1_2_1_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_1_2_1_1_1 ;
+  x3do:diffuseColor ( .61 .61 .61 ) ;
+  x3do:shininess .9 ;
+  x3do:specularColor ( .76 .76 .76 ) .
+:SardineIndex-USE-1 a owl:NamedIndividual, x3do:IndexedFaceSet ;
+  x3do:hasParent :Shape_2_1_2_1_1 ;
+  owl:sameAs :SardineIndex . # DEF matching this USE
+:Far a owl:NamedIndividual, x3do:Group ;
+  x3do:hasParent :Sardines ;
+  x3do:hasChildren :Transform_2_1_3_1 ;
+  x3do:DEF 'Far' .
+:Transform_2_1_3_1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Far ;
+  x3do:hasChildren :Shape_2_1_3_1_1 ;
+  x3do:rotation ( 1 0 0 -1.57 ) ;
+  x3do:scale ( .3 .25 .25 ) .
+:Shape_2_1_3_1_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_1_3_1 ;
+  x3do:hasAppearance :Appearance_2_1_3_1_1_1 ;
+  x3do:hasGeometry :Extrusion_2_1_3_1_1_2 .
+:Appearance_2_1_3_1_1_1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_1_3_1_1 ;
+  x3do:hasMaterial :Material_2_1_3_1_1_1_1 ;
+  x3do:hasTexture :ImageTexture_2_1_3_1_1_1_2 .
+:Material_2_1_3_1_1_1_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_1_3_1_1_1 ;
+  x3do:diffuseColor ( .7 .7 .7 ) .
+:ImageTexture_2_1_3_1_1_1_2 a owl:NamedIndividual, x3do:ImageTexture ;
+  x3do:hasParent :Appearance_2_1_3_1_1_1 ;
+  x3do:url '"SardineScalesPatch.jpg" "https://X3dGraphics.com/examples/X3dForWebAuthors/KelpForestExhibit/SardineScalesPatch.jpg"' .
+:Extrusion_2_1_3_1_1_2 a owl:NamedIndividual, x3do:Extrusion ;
+  x3do:hasParent :Shape_2_1_3_1_1 ;
+  x3do:creaseAngle 1.57 ;
+  x3do:crossSection ( -0.1 1.0 0.1 1 0.5 0.5 0.5 -0.5 0.1 -1 -0.1 -1 -0.5 -0.5 -0.5 0.5 -0.1 1 ) ;
+  x3do:scale ( 0.03 0.03 0.3 0.4 0.1 0.2 0.1 0.15 0.03 0.4 ) ;
+  x3do:spine ( 0 2.51 0 0 1.80 0 0 0.5 0 0 0 0 0 -0.6 0 ) .
+:WorldInfo_2_1_4 a owl:NamedIndividual, x3do:WorldInfo ;
+  x3do:hasParent :Sardines ;
+  x3do:info '"null"' .
+:HideViewpointsWhenDistant a owl:NamedIndividual, x3do:ViewpointGroup ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :Viewpoint_2_2_1, :Viewpoint_2_2_2, :Viewpoint_2_2_3, :Viewpoint_2_2_4, :Viewpoint_2_2_5, :Viewpoint_2_2_6, :Viewpoint_2_2_7, :Viewpoint_2_2_8, :Viewpoint_2_2_9, :Viewpoint_2_2_10 ;
+  x3do:DEF 'HideViewpointsWhenDistant' ;
+  x3do:description 'Sardine views up close' ;
+  x3do:size ( 20 20 20 ) .
+:Viewpoint_2_2_1 a owl:NamedIndividual, x3do:Viewpoint ;
+  x3do:hasParent :HideViewpointsWhenDistant ;
+  x3do:description 'Closeup view right' ;
+  x3do:orientation ( 0 1 0 1.57 ) ;
+  x3do:position ( 2 0 0 ) .
+:Viewpoint_2_2_2 a owl:NamedIndividual, x3do:Viewpoint ;
+  x3do:hasParent :HideViewpointsWhenDistant ;
+  x3do:description 'Closeup view right face' ;
+  x3do:orientation ( 0 1 0 2.355 ) ;
+  x3do:position ( 2 0 -2 ) .
+:Viewpoint_2_2_3 a owl:NamedIndividual, x3do:Viewpoint ;
+  x3do:hasParent :HideViewpointsWhenDistant ;
+  x3do:description 'Closeup view face to face' ;
+  x3do:orientation ( 0 1 0 3.14 ) ;
+  x3do:position ( 0 0 -2 ) .
+:Viewpoint_2_2_4 a owl:NamedIndividual, x3do:Viewpoint ;
+  x3do:hasParent :HideViewpointsWhenDistant ;
+  x3do:description 'Closeup view left face' ;
+  x3do:orientation ( 0 1 0 3.825 ) ;
+  x3do:position ( -2 0 -2 ) .
+:Viewpoint_2_2_5 a owl:NamedIndividual, x3do:Viewpoint ;
+  x3do:hasParent :HideViewpointsWhenDistant ;
+  x3do:description 'Closeup view left' ;
+  x3do:orientation ( 0 1 0 -1.57 ) ;
+  x3do:position ( -2 0 0 ) .
+:Viewpoint_2_2_6 a owl:NamedIndividual, x3do:Viewpoint ;
+  x3do:hasParent :HideViewpointsWhenDistant ;
+  x3do:description 'Closeup view left tail' ;
+  x3do:orientation ( 0 1 0 -0.785 ) ;
+  x3do:position ( -2 0 2 ) .
+:Viewpoint_2_2_7 a owl:NamedIndividual, x3do:Viewpoint ;
+  x3do:hasParent :HideViewpointsWhenDistant ;
+  x3do:description 'Closeup view tail' ;
+  x3do:position ( 0 0 2 ) .
+:Viewpoint_2_2_8 a owl:NamedIndividual, x3do:Viewpoint ;
+  x3do:hasParent :HideViewpointsWhenDistant ;
+  x3do:description 'Closeup view right tail' ;
+  x3do:orientation ( 0 1 0 0.785 ) ;
+  x3do:position ( 2 0 2 ) .
+:Viewpoint_2_2_9 a owl:NamedIndividual, x3do:Viewpoint ;
+  x3do:hasParent :HideViewpointsWhenDistant ;
+  x3do:description 'Closeup view top looking down' ;
+  x3do:orientation ( 1 0 0 -1.57 ) ;
+  x3do:position ( 0 2 0 ) .
+:Viewpoint_2_2_10 a owl:NamedIndividual, x3do:Viewpoint ;
+  x3do:hasParent :HideViewpointsWhenDistant ;
+  x3do:description 'Closeup view bottom looking up' ;
+  x3do:orientation ( 1 0 0 1.57 ) ;
+  x3do:position ( 0 -2 0 ) .
+:Viewpoint_2_3 a owl:NamedIndividual, x3do:Viewpoint ;
+  x3do:hasParent :Scene ;
+  x3do:description 'Single viewpoint when fairly close to sardine' ;
+  x3do:orientation ( 0 1 0 1.57 ) ;
+  x3do:position ( 10 0 0 ) .
+:Clock a owl:NamedIndividual, x3do:TimeSensor ;
+  x3do:hasParent :Scene ;
+  x3do:DEF 'Clock' ;
+  x3do:cycleInterval '0.5' ;
+  x3do:loop true .
+:FishWiggle a owl:NamedIndividual, x3do:CoordinateInterpolator ;
+  x3do:hasParent :Scene ;
+  x3do:DEF 'FishWiggle' ;
+  x3do:key ( 0.0 0.25 0.50 0.75 1.0 ) ;
+  x3do:keyValue ( 0 0 -1.5 0 .5 -1 -0.12 .25 -1 -0.25 0 -1 -0.12 -0.25 -1 0 -0.5 -1 .12 -0.25 -1 .25 0 -1 .12 .25 -1 0 1 0 -0.25 .5 0 -0.5 0 0 -0.25 -0.5 0 0 -1 0 .25 -0.5 0 .5 0 0 .25 0.5 0 0 .88 .9 -0.19 .44 .9 -0.37 0 .9 -0.19 -0.44 .9 0 -0.88 .9 .19 -0.44 .9 .37 0 .9 .19 .44 .9 0 .75 1.75 -0.12 .35 1.75 -0.25 0 1.75 -0.12 -0.35 1.75 0 -0.75 1.75 .12 -0.35 1.75 .25 0 1.75 .12 .35 1.75 0 .5 2.5 -0.05 .25 2.5 -0.1 0 2.5 -0.05 -0.25 2.5 0 -0.5 2.5 .05 -0.25 2.5 .1 0 2.5 .05 .25 2.5 0 1.25 3.25 0 0 3 0 -1.25 3.25 0 -0.5 2.5 0 -0.5 2.5 0 -0.5 2.5 0 -0.5 2.5 0 -0.5 2.5 0 -0.5 2.5 0 -0.5 2.5 0 -0.5 2.5 0 -0.5 2.5 0 -0.5 2.5 0 -0.5 2.5 0 -0.5 2.5 0 -0.5 2.5 0 -0.5 2.5 0 0 -1.5 0 .5 -1 -0.12 .25 -1 -0.25 0 -1 -0.12 -0.25 -1 0 -0.5 -1 .12 -0.25 -1 .25 0 -1 .12 .25 -1 0 1 0 -0.25 .5 0 -0.5 0 0 -0.25 -0.5 0 0 -1 0 .25 -0.5 0 .5 0 0 .25 0.5 0 0 .88 .9 -0.19 .44 .9 -0.37 0 .9 -0.19 -0.44 .9 0 -0.88 .9 .19 -0.44 .9 .37 0 .9 .19 .44 .9 .2 .75 1.75 .08 .35 1.75 -0.05 0 1.75 .08 -0.35 1.75 .2 -0.75 1.75 .32 -0.35 1.75 .45 0 1.75 .32 .35 1.75 .3 .5 2.5 .25 .25 2.5 .15 0 2.5 .25 -0.25 2.5 .30 -0.5 2.5 .35 -0.25 2.5 .4 0 2.5 .35 .25 2.5 .50 1.25 3.25 .50 0 3 .50 -1.25 3.25 .3 -0.5 2.5 .3 -0.5 2.5 .3 -0.5 2.5 .3 -0.5 2.5 .3 -0.5 2.5 .3 -0.5 2.5 .3 -0.5 2.5 .3 -0.5 2.5 .3 -0.5 2.5 .3 -0.5 2.5 .3 -0.5 2.5 .3 -0.5 2.5 .3 -0.5 2.5 .3 -0.5 2.5 0 0 -1.5 0 .5 -1 -0.12 .25 -1 -0.25 0 -1 -0.12 -0.25 -1 0 -0.5 -1 .12 -0.25 -1 .25 0 -1 .12 .25 -1 0 1 0 -0.25 .5 0 -0.5 0 0 -0.25 -0.5 0 0 -1 0 .25 -0.5 0 .5 0 0 .25 0.5 0 0 .88 .9 -0.19 .44 .9 -0.37 0 .9 -0.19 -0.44 .9 0 -0.88 .9 .19 -0.44 .9 .37 0 .9 .19 .44 .9 0 .75 1.75 -0.12 .35 1.75 -0.25 0 1.75 -0.12 -0.35 1.75 0 -0.75 1.75 .12 -0.35 1.75 .25 0 1.75 .12 .35 1.75 0 .5 2.5 -0.05 .25 2.5 -0.1 0 2.5 -0.05 -0.25 2.5 0 -0.5 2.5 .05 -0.25 2.5 .1 0 2.5 .05 .25 2.5 0 1.25 3.25 0 0 3 0 -1.25 3.25 0 -0.5 2.5 0 -0.5 2.5 0 -0.5 2.5 0 -0.5 2.5 0 -0.5 2.5 0 -0.5 2.5 0 -0.5 2.5 0 -0.5 2.5 0 -0.5 2.5 0 -0.5 2.5 0 -0.5 2.5 0 -0.5 2.5 0 -0.5 2.5 0 -0.5 2.5 0 0 -1.5 0 .5 -1 -0.12 .25 -1 -0.25 0 -1 -0.12 -0.25 -1 0 -0.5 -1 .12 -0.25 -1 .25 0 -1 .12 .25 -1 0 1 0 -0.25 .5 0 -0.5 0 0 -0.25 -0.5 0 0 -1 0 .25 -0.5 0 .5 0 0 .25 0.5 0 0 .88 .9 -0.19 .44 .9 -0.37 0 .9 -0.19 -0.44 .9 0 -0.88 .9 .19 -0.44 .9 .37 0 .9 .19 .44 .9 -0.20 .75 1.75 -0.32 .35 1.75 -0.45 0 1.75 -0.32 -0.35 1.75 -0.20 -0.75 1.75 -0.08 -0.35 1.75 .05 0 1.75 -0.08 .35 1.75 -0.30 .5 2.5 -0.35 .25 2.5 -0.4 0 2.5 -0.35 -0.25 2.5 -0.30 -0.5 2.5 -0.25 -0.25 2.5 -0.2 0 2.5 -0.25 .25 2.5 -0.50 1.25 3.25 -0.50 0 3 -0.50 -1.25 3.25 -0.3 -0.5 2.5 -0.3 -0.5 2.5 -0.3 -0.5 2.5 -0.3 -0.5 2.5 -0.3 -0.5 2.5 -0.3 -0.5 2.5 -0.3 -0.5 2.5 -0.3 -0.5 2.5 -0.3 -0.5 2.5 -0.3 -0.5 2.5 -0.3 -0.5 2.5 -0.3 -0.5 2.5 -0.3 -0.5 2.5 -0.3 -0.5 2.5 0 0 -1.5 0 .5 -1 -0.12 .25 -1 -0.25 0 -1 -0.12 -0.25 -1 0 -0.5 -1 .12 -0.25 -1 .25 0 -1 .12 .25 -1 0 1 0 -0.25 .5 0 -0.5 0 0 -0.25 -0.5 0 0 -1 0 .25 -0.5 0 .5 0 0 .25 0.5 0 0 .88 .9 -0.19 .44 .9 -0.37 0 .9 -0.19 -0.44 .9 0 -0.88 .9 .19 -0.44 .9 .37 0 .9 .19 .44 .9 0 .75 1.75 -0.12 .35 1.75 -0.25 0 1.75 -0.12 -0.35 1.75 0 -0.75 1.75 .12 -0.35 1.75 .25 0 1.75 .12 .35 1.75 0 .5 2.5 -0.05 .25 2.5 -0.1 0 2.5 -0.05 -0.25 2.5 0 -0.5 2.5 .05 -0.25 2.5 .1 0 2.5 .05 .25 2.5 0 1.25 3.25 0 0 3 0 -1.25 3.25 0 -0.5 2.5 0 -0.5 2.5 0 -0.5 2.5 0 -0.5 2.5 0 -0.5 2.5 0 -0.5 2.5 0 -0.5 2.5 0 -0.5 2.5 0 -0.5 2.5 0 -0.5 2.5 0 -0.5 2.5 0 -0.5 2.5 0 -0.5 2.5 0 -0.5 2.5 ) .
+:ROUTE_2_6 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'fraction_changed' ;
+  x3do:fromNode 'Clock' ;
+  x3do:toField 'set_fraction' ;
+  x3do:toNode 'FishWiggle' .
+:ROUTE_2_7 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'value_changed' ;
+  x3do:fromNode 'FishWiggle' ;
+  x3do:toField 'set_point' ;
+  x3do:toNode 'Sardine' .

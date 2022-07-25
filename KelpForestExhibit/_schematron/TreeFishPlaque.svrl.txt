@@ -1,0 +1,4 @@
+<meta name='warning' content='unfinished'/>[/X3D/head/meta[5], diagnostic]
+<TimeSensor DEF='BLUEROCKFISHCLOCK'/> is missing ROUTE to send output events, for example <ROUTE fromNode='BLUEROCKFISHCLOCK' fromField='fraction_changed' toNode='SomeInterpolatorDEFname' toField='set_fraction'/> [/X3D/Scene/Group/TimeSensor, warning]
+<OrientationInterpolator DEF='BlueRockfishPathInterpolator'/> is missing ROUTE to receive input events, for example <ROUTE fromNode='SomeTimeSensorDEFname' fromField='fraction_changed' toNode='BlueRockfishPathInterpolator' toField='set_fraction'/> [/X3D/Scene/Group/OrientationInterpolator, warning]
+<OrientationInterpolator DEF='BlueRockfishPathInterpolator'/> is missing ROUTE to send output events, for example <ROUTE fromNode='BlueRockfishPathInterpolator' fromField='value_changed' toNode='SomeTargetDEFname' toField='set_something'/> [/X3D/Scene/Group/OrientationInterpolator, warning]

@@ -1,0 +1,489 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/TR/xhtml1/strict"
+       xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
+       xmlns:saxon="http://icl.com/saxon">
+   <head>
+      <title>Doors.x3d (X3dToXhtml listing)</title>
+      <!-- I18N -->
+      <meta http-equiv="X-UA-Compatible" content="chrome=1,IE=edge"/>
+      <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+      <style type="text/css">
+span.element {color: navy}
+span.attribute {color: green}
+span.value {color: teal}
+span.plain {color: black}
+span.gray  {color: gray}
+span.idName {color: maroon}
+span.addedDocumentation {background-color:#EEEEEE} /* slightly darker for html page contrast */
+span.behaviorNode       {background-color:#DDEEFF} /*      light blue for html page contrast */
+span.extensibilityNode  {background-color:#FFEEFF} /*    lighter blue for html page contrast */
+a.idName {color: maroon}
+div.center {text-align: center}
+div.indent {margin-left: 25px}
+
+span.prototype {color: purple}
+a.prototype {color: purple}
+a.prototype:visited {color: black}
+span.route {color: red}
+b.warning {color: #CC5500}
+b.error {color: #CC0000}
+
+                </style>
+      <style type="text/css">
+table.curvedEdges { border:10px solid RoyalBlue;-webkit-border-radius:13px;-moz-border-radius:13px;-ms-border-radius:13px;-o-border-radius:13px;border-radius:13px; }
+table.curvedEdges td, table.curvedEdges th { border-bottom:1px dotted black;padding:5px; }
+</style>
+      <meta name="generator" content="XSLT processor Saxonica"/>
+      <meta name="generator"
+             content="https://www.web3d.org/x3d/stylesheets/X3dToXhtml.xslt"/>
+      <meta name="generator"
+             content="https://sourceforge.net/p/x3d/code/HEAD/tree/www.web3d.org/x3d/stylesheets/X3dToXhtml.xslt"/>
+      <link rel="shortcut icon"
+             href="https://www.web3d.org/x3d/content/icons/X3DtextIcon16.png"
+             title="X3D"/>
+   </head>
+   <body>
+      <code title="XML declaration">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</code>
+      <br/>
+      <code title="Document Type Declaration (DTD) for X3D validation">&lt;!DOCTYPE X3D PUBLIC "ISO//Web3D//DTD X3D 3.3//EN" "<a href="https://www.web3d.org/specifications/x3d-3.3.dtd">https://www.web3d.org/specifications/x3d-3.3.dtd</a>"&gt;</code>
+      <div>
+<span title="X3D is the top-most XML element for an Extensible 3D (X3D) Graphics file">&lt;<span class="element">X3D</span>&#160;<span title="X3D Interactive Profile supports Interchange geometry and animation, plus basic user interaction"><span class="attribute">profile</span>='<span class="value">Interactive</span>'</span>&#160;<span class="attribute">version</span>='<span class="value">3.3</span>'&#160;<span title="XML namespace for X3D Graphics schema validation"><span title="XML namespace for XML Schema validation">
+            <span class="attribute">xmlns:xsd</span>='<a href="http://www.w3.org/2001/XMLSchema-instance" target="_blank">http://www.w3.org/2001/XMLSchema-instance</a>'
+</span>
+         <span title="XML namespace for X3D Graphics schema validation">
+            <span class="attribute">xsd:noNamespaceSchemaLocation</span>
+         </span>='
+<a href="https://www.web3d.org/specifications/x3d-3.3.xsd" target="_blank">https://www.web3d.org/specifications/x3d-3.3.xsd</a>
+'</span>&gt;
+</span><div class="indent">
+<span title="head can contain component, unit, and author-defined metadata (meta) tags">&lt;<span class="element">head</span>&gt;
+</span><div class="indent">
+<span title="meta 'title' provides file name for this resource">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">title</span>'&#160;<span class="attribute">content</span>='<a href="Doors.x3d">Doors.x3d</a>'/&gt;
+</span><br />
+
+<span title="meta 'description' provides summary overview describing this resource">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">description</span>'&#160;<span class="attribute">content</span>='<span class="plain">Two doors activated by different fields from a TouchSensor node.</span>'/&gt;
+</span><br />
+
+<span title="meta 'creator' provides name of original author">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">creator</span>'&#160;<span class="attribute">content</span>='<span class="value">Leonard Daly and Don Brutzman</span>'/&gt;
+</span><br />
+
+<span title="meta 'created' provides date of initial version">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">created</span>'&#160;<span class="attribute">content</span>='<span class="value">6 June 2006</span>'/&gt;
+</span><br />
+
+<span title="meta 'modified' provides date of modified version">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">modified</span>'&#160;<span class="attribute">content</span>='<span class="value">20 October 2019</span>'/&gt;
+</span><br />
+
+<span title="meta 'reference' provides name or reference link to a supporting resource">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">reference</span>'&#160;<span class="attribute">content</span>='
+<a href="https://X3dGraphics.com" target="_blank">https://X3dGraphics.com</a>
+'/&gt;
+</span><br />
+
+<span title="meta 'reference' provides name or reference link to a supporting resource">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">reference</span>'&#160;<span class="attribute">content</span>='
+<a href="https://www.web3d.org/x3d/content/examples/X3dResources.html"
+                   target="_blank">https://www.web3d.org/x3d/content/examples/X3dResources.html</a>
+'/&gt;
+</span><br />
+
+<span title="meta 'rights' defines intellectual property rights (IPR) for this scene">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">rights</span>'&#160;<span class="attribute">content</span>='<span class="value">Copyright 2006, Daly Realism and Don Brutzman</span>'/&gt;
+</span><br />
+
+<span title="meta 'subject' provides search-index subject keywords, key phrases, or classification codes">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">subject</span>'&#160;<span class="attribute">content</span>='
+X3D book, X3D graphics, X3D-Edit, <a href="http://www.x3dGraphics.com" target="_blank">http://www.x3dGraphics.com</a>
+'/&gt;
+</span><br />
+
+<span title="meta 'identifier' provides the unique Uniform Resource Identifier (URI) or url address for this resource">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">identifier</span>'&#160;<span class="attribute">content</span>='
+<a href="https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter08UserInteractivity/Doors.x3d"
+                   target="_blank">https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter08UserInteractivity/Doors.x3d</a>
+'/&gt;
+</span><br />
+
+<span title="meta 'generator' provides name of authoring tool or translation tool producing this scene">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">generator</span>'&#160;<span class="attribute">content</span>='<span class="value">X3D-Edit 3.3, </span>
+               <a href="https://savage.nps.edu/X3D-Edit" target="_blank">https://savage.nps.edu/X3D-Edit</a>'/&gt;
+</span><br />
+
+<span title="meta 'license' provides software license link or information">&lt;<span class="element">meta</span>&#160;<span class="attribute">name</span>='<span class="value">license</span>'&#160;<span class="attribute">content</span>='
+<a href="../license.html">../license.html</a>'/&gt;
+</span></div><span title="head can contain component, unit, and author-defined metadata (meta) tags">&lt;/<span class="element">head</span>&gt;
+</span><br /><span style="color:white">
+&lt;!--
+</span>
+            <div class="center">
+               <hr style="width:100%"/>
+               <b>
+                  <i>Index for DEF nodes</i>
+               </b>: 
+<a title="go to this Group node" href="#Door" class="idName">Door</a>,
+<a title="go to this Appearance node" href="#DoorApp" class="idName">DoorApp</a>,
+<a title="go to this IndexedFaceSet node"
+                   href="#DoorGeometry"
+                   class="idName">DoorGeometry</a>,
+<a title="go to this ImageTexture node"
+                   href="#DoorImage"
+                   class="idName">DoorImage</a>,
+<a title="go to this Transform node"
+                   href="#DoorLeftTransform"
+                   class="idName">DoorLeftTransform</a>,
+<a title="go to this Material node" href="#DoorMat" class="idName">DoorMat</a>,
+<a title="go to this Transform node" href="#DoorRight" class="idName">DoorRight</a>,
+<a title="go to this Shape node" href="#DoorShape" class="idName">DoorShape</a>,
+<a title="go to this BooleanFilter node"
+                   href="#FilterLeft"
+                   class="idName">FilterLeft</a>,
+<a title="go to this OrientationInterpolator node"
+                   href="#MoverLeft"
+                   class="idName">MoverLeft</a>,
+<a title="go to this OrientationInterpolator node"
+                   href="#MoverRight"
+                   class="idName">MoverRight</a>,
+<a title="go to this TimeSensor node" href="#TimerLeft" class="idName">TimerLeft</a>,
+<a title="go to this TimeSensor node"
+                   href="#TimerRight"
+                   class="idName">TimerRight</a>,
+<a title="go to this TouchSensor node"
+                   href="#TouchLeft"
+                   class="idName">TouchLeft</a>,
+<a title="go to this TouchSensor node"
+                   href="#TouchRight"
+                   class="idName">TouchRight</a>,
+<a title="go to this TimeTrigger node"
+                   href="#TriggerLeft"
+                   class="idName">TriggerLeft</a>,
+<a title="go to this IndexedFaceSet node" href="#Wall" class="idName">Wall</a>
+<br /><hr width="50%"/>
+               <b>
+                  <i>Index for Viewpoint images</i>
+               </b>: 
+<a title="go to this Viewpoint node: Initial default"
+                   href="#Viewpoint_1"
+                   class="idName">Viewpoint_1</a>,
+<a title="go to this Viewpoint node: Book View"
+                   href="#Viewpoint_2"
+                   class="idName">Viewpoint_2</a>
+               <hr style="width:100%"/>
+            </div>
+            <span style="color:white">
+--&gt;
+</span><br />
+
+<span title="Scene is the root node that contains an X3D scene graph">&lt;<span class="element">Scene</span>&gt;
+</span><div class="indent">
+<span title="WorldInfo contains persistent documentation information about the 3D world">&lt;<span class="element">WorldInfo</span>&#160;<span class="attribute">title</span>='<span class="value">Doors.x3d</span>'/&gt;
+</span><br />
+
+<span title="Background simulates ground and sky, using vertical arrays of wraparound color values or backdrop textures on all six sides">&lt;<span class="element">Background</span>&#160;<span class="attribute">skyColor</span>='<span class="value">1 1 1</span>'/&gt;
+</span><br />
+
+<span title="NavigationInfo describes the viewing model and physical characteristics of the viewer's avatar">&lt;<span class="element">NavigationInfo</span>&#160;<span class="attribute">type</span>='<span class="value">"WALK" "ANY"</span>'/&gt;
+</span><br />
+<a name="Viewpoint_1"> </a> 
+<span title="Viewpoint provides a specific location and direction where the user may view the scene">&lt;<span class="element">Viewpoint</span>&#160;<span class="attribute">description</span>='<a title="viewpoint image (produced using Xj3D)"
+                   href="_viewpoints/Doors.x3d._VP_Initial_default.png">Initial default</a>'&#160;<span class="attribute">position</span>='<span class="value">0 1.4 10</span>'/&gt;
+</span><br />
+<a name="Viewpoint_2"> </a> 
+<span title="Viewpoint provides a specific location and direction where the user may view the scene">&lt;<span class="element">Viewpoint</span>&#160;<span class="attribute">description</span>='<a title="viewpoint image (produced using Xj3D)"
+                   href="_viewpoints/Doors.x3d._VP_Book_View.png">Book View</a>'&#160;<span class="attribute">position</span>='<span class="value">0 1.4 4.5</span>'/&gt;
+</span><br />
+
+<span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;<span class="element">Transform</span>&gt;
+</span><div class="indent">
+<span title="Shape contains geometry and optional corresponding Appearance">&lt;<span class="element">Shape</span>&gt;
+</span><div class="indent">
+<span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;<span class="element">Appearance</span>&gt;
+</span><div class="indent">
+<span title="Material specifies surface rendering properties for associated geometry">&lt;<span class="element">Material</span>&#160;<span class="attribute">diffuseColor</span>='<span class="value">.6 .2 0</span>'&#160;<span class="attribute">shininess</span>='<span class="value">0</span>'/&gt;
+</span><br />
+
+<span title="ImageTexture maps a 2D-image file onto a geometric shape">&lt;<span class="element">ImageTexture</span>
+<br />
+&#160;&#160;<span title="uniform resource locator (url) list of relative or absolute file addresses, performed in order until resource retrieval succeeds"><span class="attribute">url</span>='
+ "<a href="brick_3.jpg" target="_blank">brick_3.jpg</a>" "<a href="https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter08UserInteractivity/brick_3.jpg"
+                            target="_blank">https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter08UserInteractivity/brick_3.jpg</a>" "<a href="http://www.dei.isep.ipp.pt/~losa/public/cg/UniversalMedia/textures/urban/brick_3.jpg"
+                            target="_blank">http://www.dei.isep.ipp.pt/~losa/public/cg/UniversalMedia/textures/urban/brick_3.jpg</a>" '</span>/&gt;
+</span></div><span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;/<span class="element">Appearance</span>&gt;
+</span><br />
+<a name="Wall"> </a> 
+<span title="IndexedFaceSet is a geometry node">&lt;<span class="element">IndexedFaceSet</span>&#160;<span class="attribute">DEF</span>='<a title="bookmark link to Wall" href="#Wall" class="idName">Wall</a>'&#160;<span class="attribute">coordIndex</span>='<span class="value">0 1 2 3 -1 0 3 8 11 -1 4 5 6 7 -1 8 9 10 11 -1 12 15 14 13 -1 12 23 20 15 -1 16 19 18 17 -1 20 23 22 21 -1 0 1 13 12 -1 2 14 15 3 -1 4 16 17 5 -1 7 6 18 19 -1 8 20 21 9 -1 11 10 22 23 -1 0 11 23 12 -1 1 13 14 2 -1 3 15 16 4 -1 7 19 20 8 -1 5 17 18 6 -1 9 21 22 10 -1</span>'&gt;
+</span><div class="indent">
+<span title="Coordinate defines a set of 3D coordinate triplet values">&lt;<span class="element">Coordinate</span>&#160;<span class="attribute">point</span>='<span class="value">-2 3 0 -2 0 0 -1.5 0 0 -1.5 2.25 0 -.5 2.25 0 -.5 0 0 .5 0 0 .5 2.25 0 1.5 2.25 0 1.5 0 0 2 0 0 2 3 0 -2 3 -.1 -2 0 -.1 -1.5 0 -.1 -1.5 2.25 -.1 -.5 2.25 -.1 -.5 0 -.1 .5 0 -.1 .5 2.25 -.1 1.5 2.25 -.1 1.5 0 -.1 2 0 -.1 2 3 -.1</span>'/&gt;
+</span></div><span title="IndexedFaceSet is a geometry node">&lt;/<span class="element">IndexedFaceSet</span>&gt;
+</span></div><span title="Shape contains geometry and optional corresponding Appearance">&lt;/<span class="element">Shape</span>&gt;
+</span></div><span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;/<span class="element">Transform</span>&gt;
+</span><br />
+<a name="DoorLeftTransform"> </a> 
+<span style="background-color:#EEEEEE;" title="inserted documentation about ROUTE connections">&lt;!-- <i>ROUTE</i> information for <span class="idName">DoorLeftTransform</span> node:&#160;
+[<a title="go to this ROUTE" href="#ROUTE_4"><i>from</i>&#160;<span class="idName">MoverLeft</span>.<span class="attribute">value_changed</span>&#160;<i>to</i>&#160;<span class="attribute">rotation</span>
+               </a>]
+ --&gt;<br /></span>
+<span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;<span class="element">Transform</span>&#160;<span class="attribute">DEF</span>='<a title="bookmark link to DoorLeftTransform"
+                   href="#DoorLeftTransform"
+                   class="idName">DoorLeftTransform</a>'&#160;<span class="attribute">center</span>='<span class="value">-.5 0 0</span>'&#160;<span class="attribute">translation</span>='<span class="value">-1 1.125 -.05</span>'&gt;
+</span><div class="indent">
+                  <a name="Door"> </a> 
+<span title="Group is a Grouping node that can contain most nodes">&lt;<span class="element">Group</span>&#160;<span class="attribute">DEF</span>='<a title="bookmark link to Door" href="#Door" class="idName">Door</a>'&gt;
+</span><div class="indent">
+                     <a name="DoorShape"> </a> 
+<span title="Shape contains geometry and optional corresponding Appearance">&lt;<span class="element">Shape</span>&#160;<span class="attribute">DEF</span>='<a title="bookmark link to DoorShape" href="#DoorShape" class="idName">DoorShape</a>'&gt;
+</span><div class="indent">
+                        <a name="DoorApp"> </a> 
+<span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;<span class="element">Appearance</span>&#160;<span class="attribute">DEF</span>='<a title="bookmark link to DoorApp" href="#DoorApp" class="idName">DoorApp</a>'&gt;
+</span><div class="indent">
+                           <a name="DoorMat"> </a> 
+<span title="Material specifies surface rendering properties for associated geometry">&lt;<span class="element">Material</span>&#160;<span class="attribute">DEF</span>='<a title="bookmark link to DoorMat" href="#DoorMat" class="idName">DoorMat</a>'&#160;<span class="attribute">diffuseColor</span>='<span class="value">0 .7 0</span>'/&gt;
+</span><br />
+<a name="DoorImage"> </a> 
+<span title="ImageTexture maps a 2D-image file onto a geometric shape">&lt;<span class="element">ImageTexture</span>&#160;<span class="attribute">DEF</span>='<a title="bookmark link to DoorImage" href="#DoorImage" class="idName">DoorImage</a>'
+<br />
+&#160;&#160;<span title="uniform resource locator (url) list of relative or absolute file addresses, performed in order until resource retrieval succeeds"><span class="attribute">url</span>='
+ "<a href="door_1.jpg" target="_blank">door_1.jpg</a>" "<a href="https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter08UserInteractivity/door_1.jpg"
+                               target="_blank">https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter08UserInteractivity/door_1.jpg</a>" "<a href="http://www.dei.isep.ipp.pt/~losa/public/cg/UniversalMedia/textures/urban/door_1.jpg"
+                               target="_blank">http://www.dei.isep.ipp.pt/~losa/public/cg/UniversalMedia/textures/urban/door_1.jpg</a>" '</span>/&gt;
+</span></div><span title="Appearance specifies visual properties of geometry by containing Material, texture and TextureTransform nodes">&lt;/<span class="element">Appearance</span>&gt;
+</span><br />
+<a name="DoorGeometry"> </a> 
+<span title="IndexedFaceSet is a geometry node">&lt;<span class="element">IndexedFaceSet</span>&#160;<span class="attribute">DEF</span>='<a title="bookmark link to DoorGeometry"
+                            href="#DoorGeometry"
+                            class="idName">DoorGeometry</a>'&#160;<span class="attribute">coordIndex</span>='<span class="value">0 1 2 3 -1 4 7 6 5 -1 0 1 5 4 -1 1 5 6 2 -1 2 6 7 3 -1 3 7 6 4 -1</span>'&gt;
+</span><div class="indent">
+<span title="Coordinate defines a set of 3D coordinate triplet values">&lt;<span class="element">Coordinate</span>&#160;<span class="attribute">point</span>='<span class="value">-.5 -1.125 .05 .5 -1.125 .05 .5 1.125 .05 -.5 1.125 .05 -.5 -1.125 -.05 .5 -1.125 -.05 .5 1.125 -.05 -.5 1.125 -.05</span>'/&gt;
+</span><br />
+
+&lt;<span class="element">TextureCoordinate</span>&#160;<span class="attribute">point</span>='<span class="value">0 0 1 0 1 1 0 1 0 0 1 0 1 1 0 1 1 0 .95 0 1 .95 .95 .95 1 0 .95 0 1 .95 .95 .95 1 0 .95 0 1 .95 .95 .95 1 0 .95 0 1 .95 .95 .95</span>'/&gt;
+</div><span title="IndexedFaceSet is a geometry node">&lt;/<span class="element">IndexedFaceSet</span>&gt;
+</span></div><span title="Shape contains geometry and optional corresponding Appearance">&lt;/<span class="element">Shape</span>&gt;
+</span></div><span title="Group is a Grouping node that can contain most nodes">&lt;/<span class="element">Group</span>&gt;
+</span><br />
+<a name="MoverLeft"> </a> 
+<span style="background-color:#EEEEEE;" title="inserted documentation about ROUTE connections">&lt;!-- <i>ROUTE</i> information for <span class="idName">MoverLeft</span> node:&#160;
+[<a title="go to this ROUTE" href="#ROUTE_3"><i>from</i>&#160;<span class="idName">TimerLeft</span>.<span class="attribute">fraction_changed</span>&#160;<i>to</i>&#160;<span class="attribute">set_fraction</span>
+                  </a>]
+[<a title="go to this ROUTE" href="#ROUTE_4"><i>from</i>&#160;<span class="attribute">value_changed</span>&#160;<i>to</i>&#160;<span class="idName">DoorLeftTransform</span>.<span class="attribute">rotation</span>
+                  </a>]
+ --&gt;<br /></span>
+<span title="Interpolator nodes output event values using piecewise-linear function definitions" style="background-color:#DDEEFF">&lt;<span class="element">OrientationInterpolator</span>&#160;<span class="attribute">DEF</span>='<a title="bookmark link to MoverLeft" href="#MoverLeft" class="idName">MoverLeft</a>'&#160;<span class="attribute">key</span>='<span class="value">0 1</span>'&#160;<span class="attribute">keyValue</span>='<span class="value">0 1 0 0 0 1 0 -1</span>'/&gt;
+</span><br />
+<a name="TimerLeft"> </a> 
+<span style="background-color:#EEEEEE;" title="inserted documentation about ROUTE connections">&lt;!-- <i>ROUTE</i> information for <span class="idName">TimerLeft</span> node:&#160;
+[<a title="go to this ROUTE" href="#ROUTE_2"><i>from</i>&#160;<span class="idName">TriggerLeft</span>.<span class="attribute">triggerTime</span>&#160;<i>to</i>&#160;<span class="attribute">startTime</span>
+                  </a>]
+[<a title="go to this ROUTE" href="#ROUTE_3"><i>from</i>&#160;<span class="attribute">fraction_changed</span>&#160;<i>to</i>&#160;<span class="idName">MoverLeft</span>.<span class="attribute">set_fraction</span>
+                  </a>]
+ --&gt;<br /></span>
+<span title="TimeSensor continuously generates events as time passes" style="background-color:#DDEEFF">&lt;<span class="element">TimeSensor</span>&#160;<span class="attribute">DEF</span>='<a title="bookmark link to TimerLeft" href="#TimerLeft" class="idName">TimerLeft</a>'&#160;<span class="attribute">cycleInterval</span>='<span class="value">3</span>'/&gt;
+</span><br />
+<a name="TriggerLeft"> </a> 
+<span style="background-color:#EEEEEE;" title="inserted documentation about ROUTE connections">&lt;!-- <i>ROUTE</i> information for <span class="idName">TriggerLeft</span> node:&#160;
+[<a title="go to this ROUTE" href="#ROUTE_1"><i>from</i>&#160;<span class="idName">FilterLeft</span>.<span class="attribute">inputTrue</span>&#160;<i>to</i>&#160;<span class="attribute">set_boolean</span>
+                  </a>]
+[<a title="go to this ROUTE" href="#ROUTE_2"><i>from</i>&#160;<span class="attribute">triggerTime</span>&#160;<i>to</i>&#160;<span class="idName">TimerLeft</span>.<span class="attribute">startTime</span>
+                  </a>]
+ --&gt;<br /></span>
+<span title="TimeTrigger converts boolean true events to time events" style="background-color:#DDEEFF">&lt;<span class="element">TimeTrigger</span>&#160;<span class="attribute">DEF</span>='<a title="bookmark link to TriggerLeft"
+                      href="#TriggerLeft"
+                      class="idName">TriggerLeft</a>'&#160;<span class="attribute">containerField</span>='<span class="value">children</span>'/&gt;
+</span><br />
+<a name="FilterLeft"> </a> 
+<span style="background-color:#EEEEEE;" title="inserted documentation about ROUTE connections">&lt;!-- <i>ROUTE</i> information for <span class="idName">FilterLeft</span> node:&#160;
+[<a title="go to this ROUTE" href="#ROUTE_0"><i>from</i>&#160;<span class="idName">TouchLeft</span>.<span class="attribute">isActive</span>&#160;<i>to</i>&#160;<span class="attribute">set_boolean</span>
+                  </a>]
+[<a title="go to this ROUTE" href="#ROUTE_1"><i>from</i>&#160;<span class="attribute">inputTrue</span>&#160;<i>to</i>&#160;<span class="idName">TriggerLeft</span>.<span class="attribute">set_boolean</span>
+                  </a>]
+ --&gt;<br /></span>
+<span title="BooleanFilter selectively passes true, false or negated events" style="background-color:#DDEEFF">&lt;<span class="element">BooleanFilter</span>&#160;<span class="attribute">DEF</span>='<a title="bookmark link to FilterLeft"
+                      href="#FilterLeft"
+                      class="idName">FilterLeft</a>'&#160;<span class="attribute">containerField</span>='<span class="value">children</span>'/&gt;
+</span><br />
+<a name="TouchLeft"> </a> 
+<span style="background-color:#EEEEEE;" title="inserted documentation about ROUTE connections">&lt;!-- <i>ROUTE</i> information for <span class="idName">TouchLeft</span> node:&#160;
+[<a title="go to this ROUTE" href="#ROUTE_0"><i>from</i>&#160;<span class="attribute">isActive</span>&#160;<i>to</i>&#160;<span class="idName">FilterLeft</span>.<span class="attribute">set_boolean</span>
+                  </a>]
+ --&gt;<br /></span>
+<span title="TouchSensor tracks location &amp; state of the pointing device, and detects when user points at geometry" style="background-color:#DDEEFF">&lt;<span class="element">TouchSensor</span>&#160;<span class="attribute">DEF</span>='<a title="bookmark link to TouchLeft" href="#TouchLeft" class="idName">TouchLeft</a>'&#160;<span class="attribute">description</span>='<span class="value">touch to activate</span>'/&gt;
+</span><br />
+<a name="ROUTE_0"> </a> 
+<span title="ROUTE connects fields between nodes to enable event passing" style="background-color:#DDEEFF">&lt;<span class="route">ROUTE</span>&#160;<span class="attribute">fromNode</span>='<a title="go to the original DEF node definition"
+                      href="#TouchLeft"
+                      class="idName">TouchLeft</a>'&#160;<span class="attribute">fromField</span>='<span class="value">isActive</span>'&#160;<span class="attribute">toNode</span>='<a title="go to the original DEF node definition"
+                      href="#FilterLeft"
+                      class="idName">FilterLeft</a>'&#160;<span class="attribute">toField</span>='<span class="value">set_boolean</span>'/&gt;
+</span><br />
+<a name="ROUTE_1"> </a> 
+<span title="ROUTE connects fields between nodes to enable event passing" style="background-color:#DDEEFF">&lt;<span class="route">ROUTE</span>&#160;<span class="attribute">fromNode</span>='<a title="go to the original DEF node definition"
+                      href="#FilterLeft"
+                      class="idName">FilterLeft</a>'&#160;<span class="attribute">fromField</span>='<span class="value">inputTrue</span>'&#160;<span class="attribute">toNode</span>='<a title="go to the original DEF node definition"
+                      href="#TriggerLeft"
+                      class="idName">TriggerLeft</a>'&#160;<span class="attribute">toField</span>='<span class="value">set_boolean</span>'/&gt;
+</span><br />
+<a name="ROUTE_2"> </a> 
+<span title="ROUTE connects fields between nodes to enable event passing" style="background-color:#DDEEFF">&lt;<span class="route">ROUTE</span>&#160;<span class="attribute">fromNode</span>='<a title="go to the original DEF node definition"
+                      href="#TriggerLeft"
+                      class="idName">TriggerLeft</a>'&#160;<span class="attribute">fromField</span>='<span class="value">triggerTime</span>'&#160;<span class="attribute">toNode</span>='<a title="go to the original DEF node definition"
+                      href="#TimerLeft"
+                      class="idName">TimerLeft</a>'&#160;<span class="attribute">toField</span>='<span class="value">startTime</span>'/&gt;
+</span><br />
+<a name="ROUTE_3"> </a> 
+<span title="ROUTE connects fields between nodes to enable event passing" style="background-color:#DDEEFF">&lt;<span class="route">ROUTE</span>&#160;<span class="attribute">fromNode</span>='<a title="go to the original DEF node definition"
+                      href="#TimerLeft"
+                      class="idName">TimerLeft</a>'&#160;<span class="attribute">fromField</span>='<span class="value">fraction_changed</span>'&#160;<span class="attribute">toNode</span>='<a title="go to the original DEF node definition"
+                      href="#MoverLeft"
+                      class="idName">MoverLeft</a>'&#160;<span class="attribute">toField</span>='<span class="value">set_fraction</span>'/&gt;
+</span><br />
+<a name="ROUTE_4"> </a> 
+<span title="ROUTE connects fields between nodes to enable event passing" style="background-color:#DDEEFF">&lt;<span class="route">ROUTE</span>&#160;<span class="attribute">fromNode</span>='<a title="go to the original DEF node definition"
+                      href="#MoverLeft"
+                      class="idName">MoverLeft</a>'&#160;<span class="attribute">fromField</span>='<span class="value">value_changed</span>'&#160;<span class="attribute">toNode</span>='<a title="go to the original DEF node definition"
+                      href="#DoorLeftTransform"
+                      class="idName">DoorLeftTransform</a>'&#160;<span class="attribute">toField</span>='<span class="value">rotation</span>'/&gt;
+</span></div><span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;/<span class="element">Transform</span>&gt;
+</span><br />
+<a name="DoorRight"> </a> 
+<span style="background-color:#EEEEEE;" title="inserted documentation about ROUTE connections">&lt;!-- <i>ROUTE</i> information for <span class="idName">DoorRight</span> node:&#160;
+[<a title="go to this ROUTE" href="#ROUTE_7"><i>from</i>&#160;<span class="idName">MoverRight</span>.<span class="attribute">value_changed</span>&#160;<i>to</i>&#160;<span class="attribute">rotation</span>
+               </a>]
+ --&gt;<br /></span>
+<span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;<span class="element">Transform</span>&#160;<span class="attribute">DEF</span>='<a title="bookmark link to DoorRight" href="#DoorRight" class="idName">DoorRight</a>'&#160;<span class="attribute">center</span>='<span class="value">-.5 0 0</span>'&#160;<span class="attribute">translation</span>='<span class="value">1 1.125 -.05</span>'&gt;
+</span><div class="indent">
+<span title="Group is a Grouping node that can contain most nodes">&lt;<span class="element">Group</span>&#160;<span class="attribute">USE</span>='<a title="go to the original DEF node definition"
+                      href="#Door"
+                      class="idName">Door</a>'/&gt;
+</span><br />
+<a name="MoverRight"> </a> 
+<span style="background-color:#EEEEEE;" title="inserted documentation about ROUTE connections">&lt;!-- <i>ROUTE</i> information for <span class="idName">MoverRight</span> node:&#160;
+[<a title="go to this ROUTE" href="#ROUTE_6"><i>from</i>&#160;<span class="idName">TimerRight</span>.<span class="attribute">fraction_changed</span>&#160;<i>to</i>&#160;<span class="attribute">set_fraction</span>
+                  </a>]
+[<a title="go to this ROUTE" href="#ROUTE_7"><i>from</i>&#160;<span class="attribute">value_changed</span>&#160;<i>to</i>&#160;<span class="idName">DoorRight</span>.<span class="attribute">rotation</span>
+                  </a>]
+ --&gt;<br /></span>
+<span title="Interpolator nodes output event values using piecewise-linear function definitions" style="background-color:#DDEEFF">&lt;<span class="element">OrientationInterpolator</span>&#160;<span class="attribute">DEF</span>='<a title="bookmark link to MoverRight"
+                      href="#MoverRight"
+                      class="idName">MoverRight</a>'&#160;<span class="attribute">key</span>='<span class="value">0 1</span>'&#160;<span class="attribute">keyValue</span>='<span class="value">0 1 0 0 0 1 0 -1</span>'/&gt;
+</span><br />
+<a name="TimerRight"> </a> 
+<span style="background-color:#EEEEEE;" title="inserted documentation about ROUTE connections">&lt;!-- <i>ROUTE</i> information for <span class="idName">TimerRight</span> node:&#160;
+[<a title="go to this ROUTE" href="#ROUTE_5"><i>from</i>&#160;<span class="idName">TouchRight</span>.<span class="attribute">touchTime</span>&#160;<i>to</i>&#160;<span class="attribute">startTime</span>
+                  </a>]
+[<a title="go to this ROUTE" href="#ROUTE_6"><i>from</i>&#160;<span class="attribute">fraction_changed</span>&#160;<i>to</i>&#160;<span class="idName">MoverRight</span>.<span class="attribute">set_fraction</span>
+                  </a>]
+ --&gt;<br /></span>
+<span title="TimeSensor continuously generates events as time passes" style="background-color:#DDEEFF">&lt;<span class="element">TimeSensor</span>&#160;<span class="attribute">DEF</span>='<a title="bookmark link to TimerRight"
+                      href="#TimerRight"
+                      class="idName">TimerRight</a>'&#160;<span class="attribute">cycleInterval</span>='<span class="value">3</span>'/&gt;
+</span><br />
+<a name="TouchRight"> </a> 
+<span style="background-color:#EEEEEE;" title="inserted documentation about ROUTE connections">&lt;!-- <i>ROUTE</i> information for <span class="idName">TouchRight</span> node:&#160;
+[<a title="go to this ROUTE" href="#ROUTE_5"><i>from</i>&#160;<span class="attribute">touchTime</span>&#160;<i>to</i>&#160;<span class="idName">TimerRight</span>.<span class="attribute">startTime</span>
+                  </a>]
+ --&gt;<br /></span>
+<span title="TouchSensor tracks location &amp; state of the pointing device, and detects when user points at geometry" style="background-color:#DDEEFF">&lt;<span class="element">TouchSensor</span>&#160;<span class="attribute">DEF</span>='<a title="bookmark link to TouchRight"
+                      href="#TouchRight"
+                      class="idName">TouchRight</a>'&#160;<span class="attribute">description</span>='<span class="value">touch to activate</span>'/&gt;
+</span><br />
+<a name="ROUTE_5"> </a> 
+<span title="ROUTE connects fields between nodes to enable event passing" style="background-color:#DDEEFF">&lt;<span class="route">ROUTE</span>&#160;<span class="attribute">fromNode</span>='<a title="go to the original DEF node definition"
+                      href="#TouchRight"
+                      class="idName">TouchRight</a>'&#160;<span class="attribute">fromField</span>='<span class="value">touchTime</span>'&#160;<span class="attribute">toNode</span>='<a title="go to the original DEF node definition"
+                      href="#TimerRight"
+                      class="idName">TimerRight</a>'&#160;<span class="attribute">toField</span>='<span class="value">startTime</span>'/&gt;
+</span><br />
+<a name="ROUTE_6"> </a> 
+<span title="ROUTE connects fields between nodes to enable event passing" style="background-color:#DDEEFF">&lt;<span class="route">ROUTE</span>&#160;<span class="attribute">fromNode</span>='<a title="go to the original DEF node definition"
+                      href="#TimerRight"
+                      class="idName">TimerRight</a>'&#160;<span class="attribute">fromField</span>='<span class="value">fraction_changed</span>'&#160;<span class="attribute">toNode</span>='<a title="go to the original DEF node definition"
+                      href="#MoverRight"
+                      class="idName">MoverRight</a>'&#160;<span class="attribute">toField</span>='<span class="value">set_fraction</span>'/&gt;
+</span><br />
+<a name="ROUTE_7"> </a> 
+<span title="ROUTE connects fields between nodes to enable event passing" style="background-color:#DDEEFF">&lt;<span class="route">ROUTE</span>&#160;<span class="attribute">fromNode</span>='<a title="go to the original DEF node definition"
+                      href="#MoverRight"
+                      class="idName">MoverRight</a>'&#160;<span class="attribute">fromField</span>='<span class="value">value_changed</span>'&#160;<span class="attribute">toNode</span>='<a title="go to the original DEF node definition"
+                      href="#DoorRight"
+                      class="idName">DoorRight</a>'&#160;<span class="attribute">toField</span>='<span class="value">rotation</span>'/&gt;
+</span></div><span title="Transform translates, orients and scales child geometry within the local world coordinate system">&lt;/<span class="element">Transform</span>&gt;
+</span></div><span title="Scene is the root node that contains an X3D scene graph">&lt;/<span class="element">Scene</span>&gt;
+</span></div><span title="X3D is the top-most XML element for an Extensible 3D (X3D) Graphics file">&lt;/<span class="element">X3D</span>&gt;
+</span><br /><span style="color:white">
+&lt;!--
+</span>
+         <div class="center">
+            <hr style="width:100%"/>
+            <b>
+               <i>Index for DEF nodes</i>
+            </b>: 
+<a title="go to this Group node" href="#Door" class="idName">Door</a>,
+<a title="go to this Appearance node" href="#DoorApp" class="idName">DoorApp</a>,
+<a title="go to this IndexedFaceSet node"
+                href="#DoorGeometry"
+                class="idName">DoorGeometry</a>,
+<a title="go to this ImageTexture node"
+                href="#DoorImage"
+                class="idName">DoorImage</a>,
+<a title="go to this Transform node"
+                href="#DoorLeftTransform"
+                class="idName">DoorLeftTransform</a>,
+<a title="go to this Material node" href="#DoorMat" class="idName">DoorMat</a>,
+<a title="go to this Transform node" href="#DoorRight" class="idName">DoorRight</a>,
+<a title="go to this Shape node" href="#DoorShape" class="idName">DoorShape</a>,
+<a title="go to this BooleanFilter node"
+                href="#FilterLeft"
+                class="idName">FilterLeft</a>,
+<a title="go to this OrientationInterpolator node"
+                href="#MoverLeft"
+                class="idName">MoverLeft</a>,
+<a title="go to this OrientationInterpolator node"
+                href="#MoverRight"
+                class="idName">MoverRight</a>,
+<a title="go to this TimeSensor node" href="#TimerLeft" class="idName">TimerLeft</a>,
+<a title="go to this TimeSensor node"
+                href="#TimerRight"
+                class="idName">TimerRight</a>,
+<a title="go to this TouchSensor node"
+                href="#TouchLeft"
+                class="idName">TouchLeft</a>,
+<a title="go to this TouchSensor node"
+                href="#TouchRight"
+                class="idName">TouchRight</a>,
+<a title="go to this TimeTrigger node"
+                href="#TriggerLeft"
+                class="idName">TriggerLeft</a>,
+<a title="go to this IndexedFaceSet node" href="#Wall" class="idName">Wall</a>
+<br /><hr width="50%"/>
+            <b>
+               <i>Index for Viewpoint images</i>
+            </b>: 
+<a title="go to this Viewpoint node: Initial default"
+                href="#Viewpoint_1"
+                class="idName">Viewpoint_1</a>,
+<a title="go to this Viewpoint node: Book View"
+                href="#Viewpoint_2"
+                class="idName">Viewpoint_2</a>
+            <hr style="width:100%"/>
+         </div>
+         <span style="color:white">
+--&gt;
+</span>
+      </div>
+      <p style="text-align:center;">
+         <span style="color:white">&lt;!--</span>
+Color key: <!--(matching X3D and XML terminology) -->
+&lt;<span class="element">X3dNode</span>
+         <span class="idName"> DEF</span>='<span class="idName">idName</span>' <span class="attribute">field</span>='<span class="value">value</span>'/&gt; 
+ matches 
+&lt;<span class="element">XmlElement</span>
+         <span class="idName"> DEF</span>='<span class="idName">idName</span>' <span class="attribute">attribute</span>='<span class="value">value</span>'/&gt; <br/>
+<span title="behavior node" style="background-color:#DDEEFF;">(Light blue background: behavior node)</span> <span title="inserted documentation about ROUTE connections" style="background-color:#EEEEEE;">(Grey background: inserted documentation)</span> <span title="X3D Extensibility" style="background-color:#FFEEFF;">(Magenta background: X3D Extensibility)</span><br/>
+         <span style="color:white"> --&gt;</span>
+      </p>
+      <p style="text-align:center; background-color:white">
+         <span style="color:white">&lt;!--</span>
+For additional help information about X3D scenes, please see <a href="https://www.web3d.org/x3d/content/X3dTooltips.html"
+             title="Summary descriptions and authoring hints for each X3D node (element) and field (attribute)"
+             target="_blank">X3D Tooltips</a>, <a href="https://www.web3d.org/x3d/content/examples/X3dResources.html"
+             title="Numerous resources that support X3D graphics"
+             target="_blank">X3D Resources</a> and <a href="https://www.web3d.org/x3d/content/examples/X3dSceneAuthoringHints.html"
+             title="Style guidelines, authoring tips and best practices"
+             target="_blank">X3D Scene Authoring Hints</a>.
+<span style="color:white">--&gt;</span>
+      </p>
+   </body>
+</html>

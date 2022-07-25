@@ -1,0 +1,101 @@
+@prefix :        <https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter02GeometryPrimitives/TextExample.ttl#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema:  <http://schema.org/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix x3d:     <https://www.web3d.org/specifications/x3d-4.0.xsd#> .
+@prefix x3do:    <https://www.web3d.org/specifications/X3dOntology4.0#> .
+
+:X3D a owl:NamedIndividual, x3do:X3D ;
+  x3do:hasHead :head ;
+  x3do:hasScene :Scene ;
+  x3do:profile 'Immersive' ;
+  x3do:version '3.3' ;
+  x3do:noNamespaceSchemaLocation 'https://www.web3d.org/specifications/x3d-3.3.xsd' .
+:head a owl:NamedIndividual, x3do:head ;
+  x3do:hasParent :X3D ;
+  x3do:hasMeta :meta_1_1, :meta_1_2, :meta_1_3, :meta_1_4, :meta_1_5, :meta_1_6, :meta_1_7, :meta_1_8, :meta_1_9 .
+:meta_1_1 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'TextExample.x3d' ;
+  x3do:name 'title' .
+:meta_1_2 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Simple Text node: hello X3D!' ;
+  x3do:name 'description' .
+:meta_1_3 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Don Brutzman' ;
+  x3do:name 'creator' .
+:meta_1_4 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '25 March 2005' ;
+  x3do:name 'created' .
+:meta_1_5 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '14 June 2020' ;
+  x3do:name 'modified' .
+:meta_1_6 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Copyright (c) Don Brutzman and Leonard Daly, 2005' ;
+  x3do:name 'rights' .
+:meta_1_7 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter02GeometryPrimitives/TextExample.x3d' ;
+  x3do:name 'identifier' .
+:meta_1_8 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'X3D-Edit 3.3, https://savage.nps.edu/X3D-Edit' ;
+  x3do:name 'generator' .
+:meta_1_9 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '../license.html' ;
+  x3do:name 'license' .
+:meta dcterms:title "TextExample.x3d" .
+:meta dcterms:description "Simple Text node: hello X3D!" .
+:meta dcterms:creator "Don Brutzman" .
+:meta dcterms:created "25 March 2005" .
+:meta dcterms:modified "14 June 2020" .
+:meta dcterms:rights "Copyright (c) Don Brutzman and Leonard Daly, 2005" .
+:meta dcterms:identifier "https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter02GeometryPrimitives/TextExample.x3d" .
+:meta dcterms:generator "X3D-Edit 3.3, https://savage.nps.edu/X3D-Edit" .
+:meta dcterms:license "../license.html" .
+:Scene a owl:NamedIndividual, x3do:Scene ;
+  x3do:hasParent :X3D ;
+  x3do:hasChildren :WorldInfo_2_1, :Background_2_2, :Viewpoint_2_3, :Viewpoint_2_4, :Shape_2_5 .
+:WorldInfo_2_1 a owl:NamedIndividual, x3do:WorldInfo ;
+  x3do:hasParent :Scene ;
+  x3do:title 'Text.x3d' .
+:Background_2_2 a owl:NamedIndividual, x3do:Background ;
+  x3do:hasParent :Scene ;
+  x3do:skyColor ( 1 1 1 ) .
+:Viewpoint_2_3 a owl:NamedIndividual, x3do:Viewpoint ;
+  x3do:hasParent :Scene ;
+  x3do:description 'Text example' ;
+  x3do:position ( 0 0 3 ) .
+:Viewpoint_2_4 a owl:NamedIndividual, x3do:Viewpoint ;
+  x3do:hasParent :Scene ;
+  x3do:description 'Book view' ;
+  x3do:position ( 0.89 -1.11 2.33 ) .
+:Shape_2_5 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Scene ;
+  x3do:hasGeometry :HelloText ;
+  x3do:hasAppearance :Appearance_2_5_2 .
+:HelloText a owl:NamedIndividual, x3do:Text ;
+  x3do:hasParent :Shape_2_5 ;
+  x3do:hasFontStyle :CenteredFontStyle ;
+  x3do:DEF 'HelloText' ;
+  x3do:string '"hello" "X3D!"' .
+:CenteredFontStyle a owl:NamedIndividual, x3do:FontStyle ;
+  x3do:hasParent :HelloText ;
+  x3do:DEF 'CenteredFontStyle' ;
+  x3do:justify '"MIDDLE" "MIDDLE"' .
+:Appearance_2_5_2 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_5 ;
+  x3do:hasMaterial :DefaultMaterial .
+:DefaultMaterial a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_5_2 ;
+  x3do:DEF 'DefaultMaterial' ;
+  x3do:diffuseColor ( .2 .2 .2 ) .

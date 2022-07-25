@@ -1,0 +1,1 @@
+<TimeSensor DEF='SURFACEClock'/> missing description [/X3D/Scene/TimeSensor, warning]

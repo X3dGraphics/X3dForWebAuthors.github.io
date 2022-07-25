@@ -1,0 +1,109 @@
+@prefix :        <https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter11LightingEnvironmentalEffects/BackgroundImagesOnly.ttl#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema:  <http://schema.org/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix x3d:     <https://www.web3d.org/specifications/x3d-4.0.xsd#> .
+@prefix x3do:    <https://www.web3d.org/specifications/X3dOntology4.0#> .
+
+:X3D a owl:NamedIndividual, x3do:X3D ;
+  x3do:hasHead :head ;
+  x3do:hasScene :Scene ;
+  x3do:profile 'Immersive' ;
+  x3do:version '3.3' ;
+  x3do:noNamespaceSchemaLocation 'https://www.web3d.org/specifications/x3d-3.3.xsd' .
+:head a owl:NamedIndividual, x3do:head ;
+  x3do:hasParent :X3D ;
+  x3do:hasMeta :meta_1_1, :meta_1_2, :meta_1_3, :meta_1_4, :meta_1_5, :meta_1_6, :meta_1_7, :meta_1_8, :meta_1_9, :meta_1_10, :meta_1_11 .
+:meta_1_1 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'BackgroundImagesOnly.x3d' ;
+  x3do:name 'title' .
+:meta_1_2 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Simple Background node with images only.' ;
+  x3do:name 'description' .
+:meta_1_3 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Don Brutzman' ;
+  x3do:name 'creator' .
+:meta_1_4 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '20 April 2009' ;
+  x3do:name 'created' .
+:meta_1_5 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '20 October 2019' ;
+  x3do:name 'modified' .
+:meta_1_6 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://www.web3d.org/x3d/content/examples/Basic/UniversalMediaPanoramas' ;
+  x3do:name 'reference' .
+:meta_1_7 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://www.web3d.org/x3d/content/examples/Basic/UniversalMediaPanoramas/horizon3.x3d' ;
+  x3do:name 'reference' .
+:meta_1_8 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'X3D Background example' ;
+  x3do:name 'subject' .
+:meta_1_9 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter11LightingEnvironmentalEffects/BackgroundImagesOnly.x3d' ;
+  x3do:name 'identifier' .
+:meta_1_10 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'X3D-Edit 3.3, https://savage.nps.edu/X3D-Edit' ;
+  x3do:name 'generator' .
+:meta_1_11 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '../license.html' ;
+  x3do:name 'license' .
+:meta dcterms:title "BackgroundImagesOnly.x3d" .
+:meta dcterms:description "Simple Background node with images only." .
+:meta dcterms:creator "Don Brutzman" .
+:meta dcterms:created "20 April 2009" .
+:meta dcterms:modified "20 October 2019" .
+:meta dcterms:reference "https://www.web3d.org/x3d/content/examples/Basic/UniversalMediaPanoramas" .
+:meta dcterms:reference "https://www.web3d.org/x3d/content/examples/Basic/UniversalMediaPanoramas/horizon3.x3d" .
+:meta dcterms:subject "X3D Background example" .
+:meta dcterms:identifier "https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter11LightingEnvironmentalEffects/BackgroundImagesOnly.x3d" .
+:meta dcterms:generator "X3D-Edit 3.3, https://savage.nps.edu/X3D-Edit" .
+:meta dcterms:license "../license.html" .
+:Scene a owl:NamedIndividual, x3do:Scene ;
+  x3do:hasParent :X3D ;
+  x3do:hasChildren :WorldInfo_2_1, :Background_2_2, :Viewpoint_2_3, :Shape_2_4 .
+:WorldInfo_2_1 a owl:NamedIndividual, x3do:WorldInfo ;
+  x3do:hasParent :Scene ;
+  x3do:title 'BackgroundImagesOnly.x3d' .
+:Background_2_2 a owl:NamedIndividual, x3do:Background ;
+  x3do:hasParent :Scene ;
+  x3do:backUrl '"urn:web3d:media:textures/panoramas/horizon_3_back.jpg" "../../Basic/UniversalMediaPanoramas/horizon_3_back.jpg" "https://www.web3d.org/WorkingGroups/media/textures/panoramas/horizon_3_back.jpg" "https://www.web3d.org/x3d/content/examples/UniversalMediaPanoramas/horizon_3_back.jpg" "http://www.web3dmedia.com/UniversalMedia/textures/panoramas/horizon_3_back.jpg" "http://www.officetowers.com/UniversalMedia/textures/panoramas/horizon_3_back.jpg" "http://geometrek.com/UniversalMedia/textures/panoramas/horizon_3_back.jpg" "http://www.sc.ehu.es/ccwgamoa/UniversalMedia/textures/panoramas/horizon_3_back.jpg"' ;
+  x3do:bottomUrl '"urn:web3d:media:textures/panoramas/horizon_3_bottom.jpg" "../../Basic/UniversalMediaPanoramas/horizon_3_bottom.jpg" "https://www.web3d.org/WorkingGroups/media/textures/panoramas/horizon_3_bottom.jpg" "https://www.web3d.org/x3d/content/examples/UniversalMediaPanoramas/horizon_3_bottom.jpg" "http://www.web3dmedia.com/UniversalMedia/textures/panoramas/horizon_3_bottom.jpg" "http://www.officetowers.com/UniversalMedia/textures/panoramas/horizon_3_bottom.jpg" "http://geometrek.com/UniversalMedia/textures/panoramas/horizon_3_bottom.jpg" "http://www.sc.ehu.es/ccwgamoa/UniversalMedia/textures/panoramas/horizon_3_bottom.jpg"' ;
+  x3do:frontUrl '"urn:web3d:media:textures/panoramas/horizon_3_front.jpg" "../../Basic/UniversalMediaPanoramas/horizon_3_front.jpg" "https://www.web3d.org/WorkingGroups/media/textures/panoramas/horizon_3_front.jpg" "https://www.web3d.org/x3d/content/examples/UniversalMediaPanoramas/horizon_3_front.jpg" "http://www.web3dmedia.com/UniversalMedia/textures/panoramas/horizon_3_front.jpg" "http://www.officetowers.com/UniversalMedia/textures/panoramas/horizon_3_front.jpg" "http://geometrek.com/UniversalMedia/textures/panoramas/horizon_3_front.jpg" "http://www.sc.ehu.es/ccwgamoa/UniversalMedia/textures/panoramas/horizon_3_front.jpg"' ;
+  x3do:leftUrl '"urn:web3d:media:textures/panoramas/horizon_3_left.jpg" "../../Basic/UniversalMediaPanoramas/horizon_3_left.jpg" "https://www.web3d.org/WorkingGroups/media/textures/panoramas/horizon_3_left.jpg" "https://www.web3d.org/x3d/content/examples/UniversalMediaPanoramas/horizon_3_left.jpg" "http://www.web3dmedia.com/UniversalMedia/textures/panoramas/horizon_3_left.jpg" "http://www.officetowers.com/UniversalMedia/textures/panoramas/horizon_3_left.jpg" "http://geometrek.com/UniversalMedia/textures/panoramas/horizon_3_left.jpg" "http://www.sc.ehu.es/ccwgamoa/UniversalMedia/textures/panoramas/horizon_3_left.jpg"' ;
+  x3do:rightUrl '"urn:web3d:media:textures/panoramas/horizon_3_right.jpg" "../../Basic/UniversalMediaPanoramas/horizon_3_right.jpg" "https://www.web3d.org/WorkingGroups/media/textures/panoramas/horizon_3_right.jpg" "https://www.web3d.org/x3d/content/examples/UniversalMediaPanoramas/horizon_3_right.jpg" "http://www.web3dmedia.com/UniversalMedia/textures/panoramas/horizon_3_right.jpg" "http://www.officetowers.com/UniversalMedia/textures/panoramas/horizon_3_right.jpg" "http://geometrek.com/UniversalMedia/textures/panoramas/horizon_3_right.jpg" "http://www.sc.ehu.es/ccwgamoa/UniversalMedia/textures/panoramas/horizon_3_right.jpg"' ;
+  x3do:topUrl '"urn:web3d:media:textures/panoramas/horizon_3_top.jpg" "../../Basic/UniversalMediaPanoramas/horizon_3_top.jpg" "https://www.web3d.org/WorkingGroups/media/textures/panoramas/horizon_3_top.jpg" "https://www.web3d.org/x3d/content/examples/UniversalMediaPanoramas/horizon_3_top.jpg" "http://www.web3dmedia.com/UniversalMedia/textures/panoramas/horizon_3_top.jpg" "http://www.officetowers.com/UniversalMedia/textures/panoramas/horizon_3_top.jpg" "http://geometrek.com/UniversalMedia/textures/panoramas/horizon_3_top.jpg" "http://www.sc.ehu.es/ccwgamoa/UniversalMedia/textures/panoramas/horizon_3_top.jpg"' .
+:Viewpoint_2_3 a owl:NamedIndividual, x3do:Viewpoint ;
+  x3do:hasParent :Scene ;
+  x3do:description 'Background images view' .
+:Shape_2_4 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Scene ;
+  x3do:hasGeometry :Text_2_4_1 ;
+  x3do:hasAppearance :Appearance_2_4_2 .
+:Text_2_4_1 a owl:NamedIndividual, x3do:Text ;
+  x3do:hasParent :Shape_2_4 ;
+  x3do:hasFontStyle :FontStyle_2_4_1_1 ;
+  x3do:string '"Background node using" "image url arrays"' .
+:FontStyle_2_4_1_1 a owl:NamedIndividual, x3do:FontStyle ;
+  x3do:hasParent :Text_2_4_1 ;
+  x3do:justify '"MIDDLE" "MIDDLE"' ;
+  x3do:cssStyle 'BOLD' .
+:Appearance_2_4_2 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_4 ;
+  x3do:hasMaterial :Material_2_4_2_1 .
+:Material_2_4_2_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_4_2 ;
+  x3do:diffuseColor ( 1 1 1 ) .

@@ -1,0 +1,10 @@
+
+      
+ecmascript:
+
+function colorValueInput (inputValue) // input event received for inputOnly field
+{
+   colorArrayOutput[0] =  inputValue; // perform type conversion, result is sent as output event
+}
+
+    

@@ -1,0 +1,255 @@
+@prefix :        <https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter11LightingEnvironmentalEffects/BackgroundTimeOfDay.ttl#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema:  <http://schema.org/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix x3d:     <https://www.web3d.org/specifications/x3d-4.0.xsd#> .
+@prefix x3do:    <https://www.web3d.org/specifications/X3dOntology4.0#> .
+
+:X3D a owl:NamedIndividual, x3do:X3D ;
+  x3do:hasHead :head ;
+  x3do:hasScene :Scene ;
+  x3do:profile 'Immersive' ;
+  x3do:version '3.3' ;
+  x3do:noNamespaceSchemaLocation 'https://www.web3d.org/specifications/x3d-3.3.xsd' .
+:head a owl:NamedIndividual, x3do:head ;
+  x3do:hasParent :X3D ;
+  x3do:hasMeta :meta_1_1, :meta_1_2, :meta_1_3, :meta_1_4, :meta_1_5, :meta_1_6, :meta_1_7, :meta_1_8, :meta_1_9, :meta_1_10 .
+:meta_1_1 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'BackgroundTimeOfDay.x3d' ;
+  x3do:name 'title' .
+:meta_1_2 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Interpolate between Background color arrays to show a gradually changing time-of-day effect.' ;
+  x3do:name 'description' .
+:meta_1_3 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Don Brutzman and MV4205 class' ;
+  x3do:name 'creator' .
+:meta_1_4 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '22 April 2009' ;
+  x3do:name 'created' .
+:meta_1_5 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '20 October 2019' ;
+  x3do:name 'modified' .
+:meta_1_6 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter11LightingEnvironment/BackgroundSelector.x3d' ;
+  x3do:name 'reference' .
+:meta_1_7 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'X3D Background example' ;
+  x3do:name 'subject' .
+:meta_1_8 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter11LightingEnvironmentalEffects/BackgroundTimeOfDay.x3d' ;
+  x3do:name 'identifier' .
+:meta_1_9 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'X3D-Edit 3.3, https://savage.nps.edu/X3D-Edit' ;
+  x3do:name 'generator' .
+:meta_1_10 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '../license.html' ;
+  x3do:name 'license' .
+:meta dcterms:title "BackgroundTimeOfDay.x3d" .
+:meta dcterms:description "Interpolate between Background color arrays to show a gradually changing time-of-day effect." .
+:meta dcterms:creator "Don Brutzman and MV4205 class" .
+:meta dcterms:created "22 April 2009" .
+:meta dcterms:modified "20 October 2019" .
+:meta dcterms:reference "https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter11LightingEnvironment/BackgroundSelector.x3d" .
+:meta dcterms:subject "X3D Background example" .
+:meta dcterms:identifier "https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter11LightingEnvironmentalEffects/BackgroundTimeOfDay.x3d" .
+:meta dcterms:generator "X3D-Edit 3.3, https://savage.nps.edu/X3D-Edit" .
+:meta dcterms:license "../license.html" .
+:Scene a owl:NamedIndividual, x3do:Scene ;
+  x3do:hasParent :X3D ;
+  x3do:hasChildren :WorldInfo_2_1, :Transform_2_2, :TimeOfDayClock, :BackgroundColorInterpolator, :AnimatedBackground ;
+  x3do:hasROUTE :ROUTE_2_5, :ROUTE_2_7, :ROUTE_2_8 .
+:WorldInfo_2_1 a owl:NamedIndividual, x3do:WorldInfo ;
+  x3do:hasParent :Scene ;
+  x3do:title 'BackgroundTimeOfDay.x3d' .
+:Transform_2_2 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :Shape_2_2_1 ;
+  x3do:translation ( 0 3 0 ) .
+:Shape_2_2_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Transform_2_2 ;
+  x3do:hasGeometry :Text_2_2_1_1 ;
+  x3do:hasAppearance :Appearance_2_2_1_2 .
+:Text_2_2_1_1 a owl:NamedIndividual, x3do:Text ;
+  x3do:hasParent :Shape_2_2_1 ;
+  x3do:hasFontStyle :FontStyle_2_2_1_1_1 ;
+  x3do:string '"Background Time Of Day"' .
+:FontStyle_2_2_1_1_1 a owl:NamedIndividual, x3do:FontStyle ;
+  x3do:hasParent :Text_2_2_1_1 ;
+  x3do:justify '"MIDDLE" "MIDDLE"' .
+:Appearance_2_2_1_2 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_2_1 ;
+  x3do:hasMaterial :Material_2_2_1_2_1 .
+:Material_2_2_1_2_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_2_1_2 .
+:TimeOfDayClock a owl:NamedIndividual, x3do:TimeSensor ;
+  x3do:hasParent :Scene ;
+  x3do:DEF 'TimeOfDayClock' ;
+  x3do:cycleInterval '6' ;
+  x3do:loop true .
+:BackgroundColorInterpolator a owl:NamedIndividual, x3do:Script ;
+  x3do:hasParent :Scene ;
+  x3do:hasField :field_2_4_1, :field_2_4_2, :field_2_4_3, :field_2_4_4, :field_2_4_5, :field_2_4_6, :field_2_4_7, :field_2_4_8, :field_2_4_9, :field_2_4_10, :field_2_4_11 ;
+  x3do:DEF 'BackgroundColorInterpolator' ;
+  x3do:sourceCode """
+ecmascript:
+
+function initialize()
+{
+    Browser.print ('groundColorSunrise length=' + groundColorSunrise.length + ' '  + groundColorSunrise.toString() + '\n');
+    Browser.print ('groundColorNoon    length=' +    groundColorNoon.length +    ' '  + groundColorNoon.toString() + '\n');
+    Browser.print ('groundColorSunset  length=' +  groundColorSunset.length +  ' '  + groundColorSunset.toString() + '\n');
+    Browser.print ('groundColorNight   length=' +   groundColorNight.length +   ' '  + groundColorNight.toString() + '\n');
+    Browser.print ('skyColorSunrise    length=' +    skyColorSunrise.length +    ' '  + skyColorSunrise.toString() + '\n');
+    Browser.print ('skyColorNoon       length=' +       skyColorNoon.length +       ' '  + skyColorNoon.toString() + '\n');
+    Browser.print ('skyColorSunset     length=' +     skyColorSunset.length +     ' '  + skyColorSunset.toString() + '\n');
+    Browser.print ('skyColorNight      length=' +      skyColorNight.length +      ' '  + skyColorNight.toString() + '\n');
+}
+function set_fraction (fraction) // fraction is input value sent by TimeSensor clock
+{
+    // Sunrise to Noon, fraction 0.0 to 0.25, interval=0.25
+    if      (fraction < 0.25)
+    {
+        groundColor_changed = interpolate (groundColorSunrise, groundColorNoon, fraction, 0.00, 0.25);
+           skyColor_changed = interpolate (   skyColorSunrise,    skyColorNoon, fraction, 0.00, 0.25);
+    }
+    // Noon to Evening, fraction 0.25 to 0.5, interval=0.25
+    else if (fraction < 0.5)
+    {
+        groundColor_changed = interpolate (groundColorNoon, groundColorSunset, fraction, 0.25, 0.25);
+           skyColor_changed = interpolate (   skyColorNoon,    skyColorSunset, fraction, 0.25, 0.25);
+    }
+    // Evening to Night, fraction 0.5 to 0.6, interval=0.1
+    else if (fraction < 0.6)
+    {
+        groundColor_changed = interpolate (groundColorSunset, groundColorNight, fraction, 0.5, 0.1);
+           skyColor_changed = interpolate (   skyColorSunset,    skyColorNight, fraction, 0.5, 0.1);
+    }
+    // Night (unchanging), fraction 0.6 to 0.95, interval=0.35
+    else if (fraction < 0.95)
+    {
+        groundColor_changed = groundColorNight;
+           skyColor_changed = skyColorNight;
+    }
+    // Night to Sunrise, fraction 0.95 to 1.0, interval=0.05
+    else // (fraction < 1.0)
+    {
+        groundColor_changed = interpolate (groundColorNight, groundColorSunrise, fraction, 0.95, 0.05);
+           skyColor_changed = interpolate (   skyColorNight,    skyColorSunrise, fraction, 0.95, 0.05);
+    }
+//    Browser.print ('groundColor_changed=' + groundColor_changed.toString() + '\n');
+//    Browser.print ('   skyColor_changed=' +    skyColor_changed.toString() + '\n');
+}
+function interpolate (firstColorArray, secondColorArray, fraction, initialFraction, interval)
+{
+    f = (fraction - initialFraction) / interval; // f should range from 0 to 1
+//  Browser.print ('initialFraction=' + initialFraction + ', fraction=' + fraction + ', f=' + f + '\n');
+
+    color0 = firstColorArray[0] + (secondColorArray[0] - firstColorArray[0]) * f;
+    color1 = firstColorArray[1] + (secondColorArray[1] - firstColorArray[1]) * f;
+    color2 = firstColorArray[2] + (secondColorArray[2] - firstColorArray[2]) * f;
+    color3 = firstColorArray[3] + (secondColorArray[3] - firstColorArray[3]) * f;
+    color4 = firstColorArray[4] + (secondColorArray[4] - firstColorArray[4]) * f;
+    return new MFColor (color0, color1, color2, color3, color4);
+}
+""" .
+:field_2_4_1 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :BackgroundColorInterpolator ;
+  x3do:accessType 'inputOnly' ;
+  x3do:name 'set_fraction' ;
+  x3do:type 'SFFloat' .
+:field_2_4_2 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :BackgroundColorInterpolator ;
+  x3do:accessType 'initializeOnly' ;
+  x3do:name 'groundColorSunrise' ;
+  x3do:type 'MFColor' ;
+  x3do:value ( 0.133 0.419 0 0.36 0.1 0 1 0.74 0.4 1 0.74 0.4 0 0.2 0.75 0 0.1 0.5 ) .
+:field_2_4_3 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :BackgroundColorInterpolator ;
+  x3do:accessType 'initializeOnly' ;
+  x3do:name 'groundColorNoon' ;
+  x3do:type 'MFColor' ;
+  x3do:value ( 0.133 0.419 0 0.36 0.1 0 1 0.74 0.4 1 0.74 0.4 0 0 0.5 0 0 0.2 ) .
+:field_2_4_4 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :BackgroundColorInterpolator ;
+  x3do:accessType 'initializeOnly' ;
+  x3do:name 'groundColorSunset' ;
+  x3do:type 'MFColor' ;
+  x3do:value ( 0.133 0.419 0 0.36 0.1 0 1 0.74 0.4 1 0.74 0.4 0 0 0.5 0 0 0.2 ) .
+:field_2_4_5 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :BackgroundColorInterpolator ;
+  x3do:accessType 'initializeOnly' ;
+  x3do:name 'groundColorNight' ;
+  x3do:type 'MFColor' ;
+  x3do:value ( 0.133 0.419 0 0.36 0.1 0 1 0.74 0.4 1 0.74 0.4 0 0 0.5 0 0 0.2 ) .
+:field_2_4_6 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :BackgroundColorInterpolator ;
+  x3do:accessType 'initializeOnly' ;
+  x3do:name 'skyColorSunrise' ;
+  x3do:type 'MFColor' ;
+  x3do:value ( 1 1 0.2 1 1 0 0.36 0.63 1 0 0.4 1 0 0.4 1 ) .
+:field_2_4_7 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :BackgroundColorInterpolator ;
+  x3do:accessType 'initializeOnly' ;
+  x3do:name 'skyColorNoon' ;
+  x3do:type 'MFColor' ;
+  x3do:value ( 0 0.035 0.34 0 0.015 0.44 0 0.05 0.5 0 0.1 0.6 0.44 0.8 1 1 1 0.7 ) .
+:field_2_4_8 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :BackgroundColorInterpolator ;
+  x3do:accessType 'initializeOnly' ;
+  x3do:name 'skyColorSunset' ;
+  x3do:type 'MFColor' ;
+  x3do:value ( 0 0 0.38 0 0 0.68 0.5 0.2 1 0.5 0.2 1 1 0.3 0 1 0.2 0.8 ) .
+:field_2_4_9 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :BackgroundColorInterpolator ;
+  x3do:accessType 'initializeOnly' ;
+  x3do:name 'skyColorNight' ;
+  x3do:type 'MFColor' ;
+  x3do:value ( 1 1 1 0.8 0.8 0.8 0.1 0.1 0.1 0 0 0 0 0 0 ) .
+:field_2_4_10 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :BackgroundColorInterpolator ;
+  x3do:accessType 'outputOnly' ;
+  x3do:name 'groundColor_changed' ;
+  x3do:type 'MFColor' .
+:field_2_4_11 a owl:NamedIndividual, x3do:field ;
+  x3do:hasParent :BackgroundColorInterpolator ;
+  x3do:accessType 'outputOnly' ;
+  x3do:name 'skyColor_changed' ;
+  x3do:type 'MFColor' .
+:ROUTE_2_5 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'fraction_changed' ;
+  x3do:fromNode 'TimeOfDayClock' ;
+  x3do:toField 'set_fraction' ;
+  x3do:toNode 'BackgroundColorInterpolator' .
+:AnimatedBackground a owl:NamedIndividual, x3do:Background ;
+  x3do:hasParent :Scene ;
+  x3do:DEF 'AnimatedBackground' ;
+  x3do:groundAngle ( 0.03 1.26 1.5 1.57 ) ;
+  x3do:groundColor ( 0.133333 0.419608 0 0.36 0.1 0 1 0.74 0.4 0 0 0.5 0 0 0.2 ) ;
+  x3do:skyAngle ( 0.03 0.05 1.5 1.57 ) ;
+  x3do:skyColor ( 1 1 1 0.8 0.8 0.8 0.1 0.1 0.1 0 0 0 0 0 0 ) .
+:ROUTE_2_7 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'groundColor_changed' ;
+  x3do:fromNode 'BackgroundColorInterpolator' ;
+  x3do:toField 'groundColor' ;
+  x3do:toNode 'AnimatedBackground' .
+:ROUTE_2_8 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Scene ;
+  x3do:fromField 'skyColor_changed' ;
+  x3do:fromNode 'BackgroundColorInterpolator' ;
+  x3do:toField 'skyColor' ;
+  x3do:toNode 'AnimatedBackground' .

@@ -1,0 +1,1 @@
+<ProximitySensor DEF='WhereSensor'/> missing description [/X3D/Scene/ProtoDeclare/ProtoBody/ProximitySensor, warning]

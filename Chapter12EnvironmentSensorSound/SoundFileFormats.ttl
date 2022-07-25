@@ -1,0 +1,543 @@
+@prefix :        <https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter12EnvironmentSensorSound/SoundFileFormats.ttl#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema:  <http://schema.org/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix x3d:     <https://www.web3d.org/specifications/x3d-4.0.xsd#> .
+@prefix x3do:    <https://www.web3d.org/specifications/X3dOntology4.0#> .
+
+:X3D a owl:NamedIndividual, x3do:X3D ;
+  x3do:hasHead :head ;
+  x3do:hasScene :Scene ;
+  x3do:profile 'Immersive' ;
+  x3do:version '3.3' ;
+  x3do:noNamespaceSchemaLocation 'https://www.web3d.org/specifications/x3d-3.3.xsd' .
+:head a owl:NamedIndividual, x3do:head ;
+  x3do:hasParent :X3D ;
+  x3do:hasMeta :meta_1_1, :meta_1_2, :meta_1_3, :meta_1_4, :meta_1_5, :meta_1_6, :meta_1_7, :meta_1_8, :meta_1_9, :meta_1_10, :meta_1_11, :meta_1_12, :meta_1_13, :meta_1_14, :meta_1_15, :meta_1_16, :meta_1_17, :meta_1_18, :meta_1_19, :meta_1_20 .
+:meta_1_1 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'SoundFileFormats.x3d' ;
+  x3do:name 'title' .
+:meta_1_2 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Provide a test scene for sound files using various audio formats.' ;
+  x3do:name 'description' .
+:meta_1_3 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Don Brutzman' ;
+  x3do:name 'creator' .
+:meta_1_4 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '10 November 2013' ;
+  x3do:name 'created' .
+:meta_1_5 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '20 October 2019' ;
+  x3do:name 'modified' .
+:meta_1_6 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'SoundFileFormats.png' ;
+  x3do:name 'Image' .
+:meta_1_7 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'audio/Testing123stereo.wav' ;
+  x3do:name 'Sound' .
+:meta_1_8 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'audio/Testing123stereo.aiff' ;
+  x3do:name 'Sound' .
+:meta_1_9 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'audio/Testing123stereo.mp3' ;
+  x3do:name 'Sound' .
+:meta_1_10 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'audio/Testing123original.wav' ;
+  x3do:name 'Sound' .
+:meta_1_11 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Reunion by Marc Sabatella, distributed with MuseScore' ;
+  x3do:name 'Sound' .
+:meta_1_12 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'audio/Reunion_Example.mid' ;
+  x3do:name 'Sound' .
+:meta_1_13 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'File type requirements, https://www.web3d.org/files/specifications/19775-1/V3.3/Part01/components/sound.html#AudioClip' ;
+  x3do:name 'requires' .
+:meta_1_14 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'X3D audio formats test' ;
+  x3do:name 'subject' .
+:meta_1_15 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter12EnvironmentSensorSound/SoundFileFormats.x3d' ;
+  x3do:name 'identifier' .
+:meta_1_16 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'ZOOM H2next Handy Recorder, http://www.zoom.co.jp/products/h2n' ;
+  x3do:name 'generator' .
+:meta_1_17 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'Audacity, http://audacity.sourceforge.net' ;
+  x3do:name 'generator' .
+:meta_1_18 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'MuseScore, http://musescore.org' ;
+  x3do:name 'generator' .
+:meta_1_19 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content 'X3D-Edit 3.3, https://savage.nps.edu/X3D-Edit' ;
+  x3do:name 'generator' .
+:meta_1_20 a owl:NamedIndividual, x3do:meta ;
+  x3do:hasParent :head ;
+  x3do:content '../license.html' ;
+  x3do:name 'license' .
+:meta dcterms:title "SoundFileFormats.x3d" .
+:meta dcterms:description "Provide a test scene for sound files using various audio formats." .
+:meta dcterms:creator "Don Brutzman" .
+:meta dcterms:created "10 November 2013" .
+:meta dcterms:modified "20 October 2019" .
+:meta dcterms:Image "SoundFileFormats.png" .
+:meta dcterms:Sound "audio/Testing123stereo.wav" .
+:meta dcterms:Sound "audio/Testing123stereo.aiff" .
+:meta dcterms:Sound "audio/Testing123stereo.mp3" .
+:meta dcterms:Sound "audio/Testing123original.wav" .
+:meta dcterms:Sound "Reunion by Marc Sabatella, distributed with MuseScore" .
+:meta dcterms:Sound "audio/Reunion_Example.mid" .
+:meta dcterms:requires "File type requirements, https://www.web3d.org/files/specifications/19775-1/V3.3/Part01/components/sound.html#AudioClip" .
+:meta dcterms:subject "X3D audio formats test" .
+:meta dcterms:identifier "https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter12EnvironmentSensorSound/SoundFileFormats.x3d" .
+:meta dcterms:generator "ZOOM H2next Handy Recorder, http://www.zoom.co.jp/products/h2n" .
+:meta dcterms:generator "Audacity, http://audacity.sourceforge.net" .
+:meta dcterms:generator "MuseScore, http://musescore.org" .
+:meta dcterms:generator "X3D-Edit 3.3, https://savage.nps.edu/X3D-Edit" .
+:meta dcterms:license "../license.html" .
+:Scene a owl:NamedIndividual, x3do:Scene ;
+  x3do:hasParent :X3D ;
+  x3do:hasChildren :WorldInfo_2_1, :Background_2_2, :WavPlay, :WavLaunch, :Mp3Play, :Mp3Launch, :MidiPlay, :MidiLaunch, :AiffPlay, :AiffLaunch, :HeaderBox, :WavRequired, :Mp3Recommended, :AiffOptional .
+:WorldInfo_2_1 a owl:NamedIndividual, x3do:WorldInfo ;
+  x3do:hasParent :Scene ;
+  x3do:title 'SoundFileFormats.x3d' .
+:Background_2_2 a owl:NamedIndividual, x3do:Background ;
+  x3do:hasParent :Scene ;
+  x3do:skyColor ( 0.2 0.2 0.2 ) .
+:WavPlay a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :WavTextClickedSensor, :Sound_2_3_2, :Shape_2_3_4, :TextClickSurface ;
+  x3do:hasROUTE :ROUTE_2_3_3 ;
+  x3do:DEF 'WavPlay' ;
+  x3do:scale ( 0.4 0.4 0.4 ) ;
+  x3do:translation ( -4 0.5 0 ) .
+:WavTextClickedSensor a owl:NamedIndividual, x3do:TouchSensor ;
+  x3do:hasParent :WavPlay ;
+  x3do:DEF 'WavTextClickedSensor' ;
+  x3do:description 'Play file via Sound/AudioClip: Testing123stereo.wav' .
+:Sound_2_3_2 a owl:NamedIndividual, x3do:Sound ;
+  x3do:hasParent :WavPlay ;
+  x3do:hasSource :Testing123stereoWavAudioClip ;
+  x3do:maxBack 100 ;
+  x3do:maxFront 100 ;
+  x3do:minBack 20 ;
+  x3do:minFront 20 .
+:Testing123stereoWavAudioClip a owl:NamedIndividual, x3do:AudioClip ;
+  x3do:hasParent :Sound_2_3_2 ;
+  x3do:DEF 'Testing123stereoWavAudioClip' ;
+  x3do:description 'Playing Testing123stereo.wav' ;
+  x3do:url '"audio/Testing123stereo.wav" "https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter12EnvironmentSensorSound/audio/Testing123stereo.wav"' .
+:ROUTE_2_3_3 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :WavPlay ;
+  x3do:fromField 'touchTime' ;
+  x3do:fromNode 'WavTextClickedSensor' ;
+  x3do:toField 'startTime' ;
+  x3do:toNode 'Testing123stereoWavAudioClip' .
+:Shape_2_3_4 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :WavPlay ;
+  x3do:hasGeometry :Text_2_3_4_1 ;
+  x3do:hasAppearance :GreenAppearance .
+:Text_2_3_4_1 a owl:NamedIndividual, x3do:Text ;
+  x3do:hasParent :Shape_2_3_4 ;
+  x3do:hasFontStyle :MessageFont ;
+  x3do:string '"Testing123stereo.wav"' .
+:MessageFont a owl:NamedIndividual, x3do:FontStyle ;
+  x3do:hasParent :Text_2_3_4_1 ;
+  x3do:DEF 'MessageFont' ;
+  x3do:family '"SANS"' ;
+  x3do:justify '"MIDDLE" "MIDDLE"' ;
+  x3do:cssStyle 'BOLD' .
+:GreenAppearance a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_3_4 ;
+  x3do:hasMaterial :Material_2_3_4_2_1 ;
+  x3do:DEF 'GreenAppearance' .
+:Material_2_3_4_2_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :GreenAppearance ;
+  x3do:diffuseColor ( 0 1 0 ) .
+:TextClickSurface a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :WavPlay ;
+  x3do:hasChildren :Shape_2_3_5_1 ;
+  x3do:DEF 'TextClickSurface' ;
+  x3do:scale ( 5 0.5 1 ) ;
+  x3do:translation ( 0 0.3 0 ) .
+:Shape_2_3_5_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :TextClickSurface ;
+  x3do:hasGeometry :IndexedFaceSet_2_3_5_1_1 ;
+  x3do:hasAppearance :Appearance_2_3_5_1_2 .
+:IndexedFaceSet_2_3_5_1_1 a owl:NamedIndividual, x3do:IndexedFaceSet ;
+  x3do:hasParent :Shape_2_3_5_1 ;
+  x3do:hasCoord :Coordinate_2_3_5_1_1_1 ;
+  x3do:coordIndex ( 0 1 2 3 -1 ) ;
+  x3do:solid false .
+:Coordinate_2_3_5_1_1_1 a owl:NamedIndividual, x3do:Coordinate ;
+  x3do:hasParent :IndexedFaceSet_2_3_5_1_1 ;
+  x3do:point ( 1 1 0 1 -1 0 -1 -1 0 -1 1 0 ) .
+:Appearance_2_3_5_1_2 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_3_5_1 ;
+  x3do:hasMaterial :Material_2_3_5_1_2_1 .
+:Material_2_3_5_1_2_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_3_5_1_2 ;
+  x3do:transparency 1 .
+:WavLaunch a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :Anchor_2_4_1 ;
+  x3do:DEF 'WavLaunch' ;
+  x3do:scale ( 0.4 0.4 0.4 ) ;
+  x3do:translation ( -4 -0.1 0 ) .
+:Anchor_2_4_1 a owl:NamedIndividual, x3do:Anchor ;
+  x3do:hasParent :WavLaunch ;
+  x3do:hasChildren :Shape_2_4_1_1, :TextClickSurface-USE-1 ;
+  x3do:description 'Launch audio file in Web browser: Testing123stereo.wav' ;
+  x3do:parameter '"target=_blank"' ;
+  x3do:url '"audio/Testing123stereo.wav" "https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter12EnvironmentSensorSound/audio/Testing123stereo.wav"' .
+:Shape_2_4_1_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Anchor_2_4_1 ;
+  x3do:hasGeometry :Text_2_4_1_1_1 ;
+  x3do:hasAppearance :GreenAppearance-USE-1 .
+:Text_2_4_1_1_1 a owl:NamedIndividual, x3do:Text ;
+  x3do:hasParent :Shape_2_4_1_1 ;
+  x3do:hasFontStyle :MessageFont-USE-1 ;
+  x3do:string '"(launch)"' .
+:MessageFont-USE-1 a owl:NamedIndividual, x3do:FontStyle ;
+  x3do:hasParent :Text_2_4_1_1_1 ;
+  owl:sameAs :MessageFont . # DEF matching this USE
+:GreenAppearance-USE-1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_4_1_1 ;
+  owl:sameAs :GreenAppearance . # DEF matching this USE
+:TextClickSurface-USE-1 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Anchor_2_4_1 ;
+  owl:sameAs :TextClickSurface . # DEF matching this USE
+:Mp3Play a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :Mp3TextClickedSensor, :Sound_2_5_2, :Shape_2_5_4, :TextClickSurface-USE-2 ;
+  x3do:hasROUTE :ROUTE_2_5_3 ;
+  x3do:DEF 'Mp3Play' ;
+  x3do:scale ( 0.4 0.4 0.4 ) ;
+  x3do:translation ( 0 0.5 0 ) .
+:Mp3TextClickedSensor a owl:NamedIndividual, x3do:TouchSensor ;
+  x3do:hasParent :Mp3Play ;
+  x3do:DEF 'Mp3TextClickedSensor' ;
+  x3do:description 'Play file via Sound/AudioClip: Testing123stereo.mp3' .
+:Sound_2_5_2 a owl:NamedIndividual, x3do:Sound ;
+  x3do:hasParent :Mp3Play ;
+  x3do:hasSource :Testing123stereoMp3AudioClip ;
+  x3do:maxBack 100 ;
+  x3do:maxFront 100 ;
+  x3do:minBack 20 ;
+  x3do:minFront 20 .
+:Testing123stereoMp3AudioClip a owl:NamedIndividual, x3do:AudioClip ;
+  x3do:hasParent :Sound_2_5_2 ;
+  x3do:DEF 'Testing123stereoMp3AudioClip' ;
+  x3do:description 'Play file via Sound/AudioClip: Testing123stereo.mp3' ;
+  x3do:url '"audio/Testing123stereo.mp3" "https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter12EnvironmentSensorSound/audio/Testing123stereo.mp3"' .
+:ROUTE_2_5_3 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :Mp3Play ;
+  x3do:fromField 'touchTime' ;
+  x3do:fromNode 'Mp3TextClickedSensor' ;
+  x3do:toField 'startTime' ;
+  x3do:toNode 'Testing123stereoMp3AudioClip' .
+:Shape_2_5_4 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Mp3Play ;
+  x3do:hasGeometry :Text_2_5_4_1 ;
+  x3do:hasAppearance :TurquoiseAppearance .
+:Text_2_5_4_1 a owl:NamedIndividual, x3do:Text ;
+  x3do:hasParent :Shape_2_5_4 ;
+  x3do:hasFontStyle :MessageFont-USE-2 ;
+  x3do:string '"Testing123stereo.mp3"' .
+:MessageFont-USE-2 a owl:NamedIndividual, x3do:FontStyle ;
+  x3do:hasParent :Text_2_5_4_1 ;
+  owl:sameAs :MessageFont . # DEF matching this USE
+:TurquoiseAppearance a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_5_4 ;
+  x3do:hasMaterial :Material_2_5_4_2_1 ;
+  x3do:DEF 'TurquoiseAppearance' .
+:Material_2_5_4_2_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :TurquoiseAppearance ;
+  x3do:diffuseColor ( 0.156863 0.878431 0.815686 ) .
+:TextClickSurface-USE-2 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Mp3Play ;
+  owl:sameAs :TextClickSurface . # DEF matching this USE
+:Mp3Launch a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :Anchor_2_6_1 ;
+  x3do:DEF 'Mp3Launch' ;
+  x3do:scale ( 0.4 0.4 0.4 ) ;
+  x3do:translation ( 0 -0.1 0 ) .
+:Anchor_2_6_1 a owl:NamedIndividual, x3do:Anchor ;
+  x3do:hasParent :Mp3Launch ;
+  x3do:hasChildren :Shape_2_6_1_1, :TextClickSurface-USE-3 ;
+  x3do:description 'Launch audio file in Web browser: Testing123stereo.mp3' ;
+  x3do:parameter '"target=_blank"' ;
+  x3do:url '"audio/Testing123stereo.mp3" "https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter12EnvironmentSensorSound/audio/Testing123stereo.mp3"' .
+:Shape_2_6_1_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Anchor_2_6_1 ;
+  x3do:hasGeometry :Text_2_6_1_1_1 ;
+  x3do:hasAppearance :TurquoiseAppearance-USE-1 .
+:Text_2_6_1_1_1 a owl:NamedIndividual, x3do:Text ;
+  x3do:hasParent :Shape_2_6_1_1 ;
+  x3do:hasFontStyle :MessageFont-USE-3 ;
+  x3do:string '"(launch)"' .
+:MessageFont-USE-3 a owl:NamedIndividual, x3do:FontStyle ;
+  x3do:hasParent :Text_2_6_1_1_1 ;
+  owl:sameAs :MessageFont . # DEF matching this USE
+:TurquoiseAppearance-USE-1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_6_1_1 ;
+  owl:sameAs :TurquoiseAppearance . # DEF matching this USE
+:TextClickSurface-USE-3 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Anchor_2_6_1 ;
+  owl:sameAs :TextClickSurface . # DEF matching this USE
+:MidiPlay a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :MidiTextClickedSensor, :Sound_2_7_2, :Shape_2_7_4, :TextClickSurface-USE-4 ;
+  x3do:hasROUTE :ROUTE_2_7_3 ;
+  x3do:DEF 'MidiPlay' ;
+  x3do:scale ( 0.4 0.4 0.4 ) ;
+  x3do:translation ( 0 -2 0 ) .
+:MidiTextClickedSensor a owl:NamedIndividual, x3do:TouchSensor ;
+  x3do:hasParent :MidiPlay ;
+  x3do:DEF 'MidiTextClickedSensor' ;
+  x3do:description 'Play file via Sound/AudioClip: Reunion_Example.mid' .
+:Sound_2_7_2 a owl:NamedIndividual, x3do:Sound ;
+  x3do:hasParent :MidiPlay ;
+  x3do:hasSource :Testing123stereoMidiAudioClip ;
+  x3do:maxBack 100 ;
+  x3do:maxFront 100 ;
+  x3do:minBack 20 ;
+  x3do:minFront 20 .
+:Testing123stereoMidiAudioClip a owl:NamedIndividual, x3do:AudioClip ;
+  x3do:hasParent :Sound_2_7_2 ;
+  x3do:DEF 'Testing123stereoMidiAudioClip' ;
+  x3do:description 'Play file via Sound/AudioClip: Reunion_Example.mid' ;
+  x3do:url '"audio/Reunion_Example.mid" "https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter12EnvironmentSensorSound/audio/Reunion_Example.mid"' .
+:ROUTE_2_7_3 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :MidiPlay ;
+  x3do:fromField 'touchTime' ;
+  x3do:fromNode 'MidiTextClickedSensor' ;
+  x3do:toField 'startTime' ;
+  x3do:toNode 'Testing123stereoMidiAudioClip' .
+:Shape_2_7_4 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :MidiPlay ;
+  x3do:hasGeometry :Text_2_7_4_1 ;
+  x3do:hasAppearance :TurquoiseAppearance-USE-2 .
+:Text_2_7_4_1 a owl:NamedIndividual, x3do:Text ;
+  x3do:hasParent :Shape_2_7_4 ;
+  x3do:hasFontStyle :MessageFont-USE-4 ;
+  x3do:string '"Reunion_Example.mid"' .
+:MessageFont-USE-4 a owl:NamedIndividual, x3do:FontStyle ;
+  x3do:hasParent :Text_2_7_4_1 ;
+  owl:sameAs :MessageFont . # DEF matching this USE
+:TurquoiseAppearance-USE-2 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_7_4 ;
+  owl:sameAs :TurquoiseAppearance . # DEF matching this USE
+:TextClickSurface-USE-4 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :MidiPlay ;
+  owl:sameAs :TextClickSurface . # DEF matching this USE
+:MidiLaunch a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :Anchor_2_8_1 ;
+  x3do:DEF 'MidiLaunch' ;
+  x3do:scale ( 0.4 0.4 0.4 ) ;
+  x3do:translation ( 0 -2.6 0 ) .
+:Anchor_2_8_1 a owl:NamedIndividual, x3do:Anchor ;
+  x3do:hasParent :MidiLaunch ;
+  x3do:hasChildren :Shape_2_8_1_1, :TextClickSurface-USE-5 ;
+  x3do:description 'Launch audio file in Web browser: Reunion_Example.mid' ;
+  x3do:parameter '"target=_blank"' ;
+  x3do:url '"audio/Reunion_Example.mid" "https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter12EnvironmentSensorSound/audio/Reunion_Example.mid"' .
+:Shape_2_8_1_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Anchor_2_8_1 ;
+  x3do:hasGeometry :Text_2_8_1_1_1 ;
+  x3do:hasAppearance :TurquoiseAppearance-USE-3 .
+:Text_2_8_1_1_1 a owl:NamedIndividual, x3do:Text ;
+  x3do:hasParent :Shape_2_8_1_1 ;
+  x3do:hasFontStyle :MessageFont-USE-5 ;
+  x3do:string '"(launch)"' .
+:MessageFont-USE-5 a owl:NamedIndividual, x3do:FontStyle ;
+  x3do:hasParent :Text_2_8_1_1_1 ;
+  owl:sameAs :MessageFont . # DEF matching this USE
+:TurquoiseAppearance-USE-3 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_8_1_1 ;
+  owl:sameAs :TurquoiseAppearance . # DEF matching this USE
+:TextClickSurface-USE-5 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Anchor_2_8_1 ;
+  owl:sameAs :TextClickSurface . # DEF matching this USE
+:AiffPlay a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :AiffTextClickedSensor, :Sound_2_9_2, :Shape_2_9_4, :TextClickSurface-USE-6 ;
+  x3do:hasROUTE :ROUTE_2_9_3 ;
+  x3do:DEF 'AiffPlay' ;
+  x3do:scale ( 0.4 0.4 0.4 ) ;
+  x3do:translation ( 4 0.5 0 ) .
+:AiffTextClickedSensor a owl:NamedIndividual, x3do:TouchSensor ;
+  x3do:hasParent :AiffPlay ;
+  x3do:DEF 'AiffTextClickedSensor' ;
+  x3do:description 'Play file via Sound/AudioClip: Testing123stereo.aiff' .
+:Sound_2_9_2 a owl:NamedIndividual, x3do:Sound ;
+  x3do:hasParent :AiffPlay ;
+  x3do:hasSource :Testing123stereoAiffAudioClip ;
+  x3do:maxBack 100 ;
+  x3do:maxFront 100 ;
+  x3do:minBack 20 ;
+  x3do:minFront 20 .
+:Testing123stereoAiffAudioClip a owl:NamedIndividual, x3do:AudioClip ;
+  x3do:hasParent :Sound_2_9_2 ;
+  x3do:DEF 'Testing123stereoAiffAudioClip' ;
+  x3do:description 'Play file via Sound/AudioClip: Testing123stereo.aiff' ;
+  x3do:url '"audio/Testing123stereo.aiff" "https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter12EnvironmentSensorSound/audio/Testing123stereo.aiff"' .
+:ROUTE_2_9_3 a owl:NamedIndividual, x3do:ROUTE ;
+  x3do:hasParent :AiffPlay ;
+  x3do:fromField 'touchTime' ;
+  x3do:fromNode 'AiffTextClickedSensor' ;
+  x3do:toField 'startTime' ;
+  x3do:toNode 'Testing123stereoAiffAudioClip' .
+:Shape_2_9_4 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :AiffPlay ;
+  x3do:hasGeometry :Text_2_9_4_1 ;
+  x3do:hasAppearance :AmberAppearance .
+:Text_2_9_4_1 a owl:NamedIndividual, x3do:Text ;
+  x3do:hasParent :Shape_2_9_4 ;
+  x3do:hasFontStyle :MessageFont-USE-6 ;
+  x3do:string '"Testing123stereo.aiff"' .
+:MessageFont-USE-6 a owl:NamedIndividual, x3do:FontStyle ;
+  x3do:hasParent :Text_2_9_4_1 ;
+  owl:sameAs :MessageFont . # DEF matching this USE
+:AmberAppearance a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_9_4 ;
+  x3do:hasMaterial :Material_2_9_4_2_1 ;
+  x3do:DEF 'AmberAppearance' .
+:Material_2_9_4_2_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :AmberAppearance ;
+  x3do:diffuseColor ( 1 0.760784 0 ) .
+:TextClickSurface-USE-6 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :AiffPlay ;
+  owl:sameAs :TextClickSurface . # DEF matching this USE
+:AiffLaunch a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :Anchor_2_10_1 ;
+  x3do:DEF 'AiffLaunch' ;
+  x3do:scale ( 0.4 0.4 0.4 ) ;
+  x3do:translation ( 4 -0.1 0 ) .
+:Anchor_2_10_1 a owl:NamedIndividual, x3do:Anchor ;
+  x3do:hasParent :AiffLaunch ;
+  x3do:hasChildren :Shape_2_10_1_1, :TextClickSurface-USE-7 ;
+  x3do:description 'Launch audio file in Web browser: Testing123stereo.aiff' ;
+  x3do:parameter '"target=_blank"' ;
+  x3do:url '"audio/Testing123stereo.aiff" "https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter12EnvironmentSensorSound/audio/Testing123stereo.aiff"' .
+:Shape_2_10_1_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Anchor_2_10_1 ;
+  x3do:hasGeometry :Text_2_10_1_1_1 ;
+  x3do:hasAppearance :AmberAppearance-USE-1 .
+:Text_2_10_1_1_1 a owl:NamedIndividual, x3do:Text ;
+  x3do:hasParent :Shape_2_10_1_1 ;
+  x3do:hasFontStyle :MessageFont-USE-7 ;
+  x3do:string '"(launch)"' .
+:MessageFont-USE-7 a owl:NamedIndividual, x3do:FontStyle ;
+  x3do:hasParent :Text_2_10_1_1_1 ;
+  owl:sameAs :MessageFont . # DEF matching this USE
+:AmberAppearance-USE-1 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_10_1_1 ;
+  owl:sameAs :AmberAppearance . # DEF matching this USE
+:TextClickSurface-USE-7 a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Anchor_2_10_1 ;
+  owl:sameAs :TextClickSurface . # DEF matching this USE
+:HeaderBox a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :Shape_2_11_1 ;
+  x3do:DEF 'HeaderBox' ;
+  x3do:translation ( 0 2 -0.1 ) .
+:Shape_2_11_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :HeaderBox ;
+  x3do:hasGeometry :Box_2_11_1_1 ;
+  x3do:hasAppearance :Appearance_2_11_1_2 .
+:Box_2_11_1_1 a owl:NamedIndividual, x3do:Box ;
+  x3do:hasParent :Shape_2_11_1 ;
+  x3do:size ( 12 1 0.1 ) .
+:Appearance_2_11_1_2 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_11_1 ;
+  x3do:hasMaterial :Material_2_11_1_2_1 .
+:Material_2_11_1_2_1 a owl:NamedIndividual, x3do:Material ;
+  x3do:hasParent :Appearance_2_11_1_2 ;
+  x3do:diffuseColor ( 1 1 1 ) ;
+  x3do:transparency 0.75 .
+:WavRequired a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :Shape_2_12_1 ;
+  x3do:DEF 'WavRequired' ;
+  x3do:scale ( 0.4 0.4 0.4 ) ;
+  x3do:translation ( -4 2 0 ) .
+:Shape_2_12_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :WavRequired ;
+  x3do:hasGeometry :Text_2_12_1_1 ;
+  x3do:hasAppearance :GreenAppearance-USE-2 .
+:Text_2_12_1_1 a owl:NamedIndividual, x3do:Text ;
+  x3do:hasParent :Shape_2_12_1 ;
+  x3do:hasFontStyle :MessageFont-USE-8 ;
+  x3do:string '"Required Support"' .
+:MessageFont-USE-8 a owl:NamedIndividual, x3do:FontStyle ;
+  x3do:hasParent :Text_2_12_1_1 ;
+  owl:sameAs :MessageFont . # DEF matching this USE
+:GreenAppearance-USE-2 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_12_1 ;
+  owl:sameAs :GreenAppearance . # DEF matching this USE
+:Mp3Recommended a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :Shape_2_13_1 ;
+  x3do:DEF 'Mp3Recommended' ;
+  x3do:scale ( 0.4 0.4 0.4 ) ;
+  x3do:translation ( 0 2 0 ) .
+:Shape_2_13_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :Mp3Recommended ;
+  x3do:hasGeometry :Text_2_13_1_1 ;
+  x3do:hasAppearance :TurquoiseAppearance-USE-4 .
+:Text_2_13_1_1 a owl:NamedIndividual, x3do:Text ;
+  x3do:hasParent :Shape_2_13_1 ;
+  x3do:hasFontStyle :MessageFont-USE-9 ;
+  x3do:string '"Recommended Support"' .
+:MessageFont-USE-9 a owl:NamedIndividual, x3do:FontStyle ;
+  x3do:hasParent :Text_2_13_1_1 ;
+  owl:sameAs :MessageFont . # DEF matching this USE
+:TurquoiseAppearance-USE-4 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_13_1 ;
+  owl:sameAs :TurquoiseAppearance . # DEF matching this USE
+:AiffOptional a owl:NamedIndividual, x3do:Transform ;
+  x3do:hasParent :Scene ;
+  x3do:hasChildren :Shape_2_14_1 ;
+  x3do:DEF 'AiffOptional' ;
+  x3do:scale ( 0.4 0.4 0.4 ) ;
+  x3do:translation ( 4 2 0 ) .
+:Shape_2_14_1 a owl:NamedIndividual, x3do:Shape ;
+  x3do:hasParent :AiffOptional ;
+  x3do:hasGeometry :Text_2_14_1_1 ;
+  x3do:hasAppearance :AmberAppearance-USE-2 .
+:Text_2_14_1_1 a owl:NamedIndividual, x3do:Text ;
+  x3do:hasParent :Shape_2_14_1 ;
+  x3do:hasFontStyle :MessageFont-USE-10 ;
+  x3do:string '"Optional Support"' .
+:MessageFont-USE-10 a owl:NamedIndividual, x3do:FontStyle ;
+  x3do:hasParent :Text_2_14_1_1 ;
+  owl:sameAs :MessageFont . # DEF matching this USE
+:AmberAppearance-USE-2 a owl:NamedIndividual, x3do:Appearance ;
+  x3do:hasParent :Shape_2_14_1 ;
+  owl:sameAs :AmberAppearance . # DEF matching this USE

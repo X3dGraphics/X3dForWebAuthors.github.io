@@ -1,0 +1,13 @@
+
+      
+ecmascript:
+function eventLoaded (value)
+{
+	Browser.println ('InlineLoadSensor isLoaded=' + value);
+}
+function loadTimeEvent (value)
+{
+	Browser.println ('InlineLoadSensor loadTime=' + value);
+}
+
+    

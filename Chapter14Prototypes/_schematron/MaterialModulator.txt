@@ -1,0 +1,3 @@
+<ProtoDeclare name='MaterialModulator'> ProtoInterface can only contain field declarations or comments [/X3D/Scene/ProtoDeclare/ProtoInterface, error]
+<Script DEF='MaterialModulatorScript'/> must have url or contained CDATA source [/X3D/Scene/ProtoDeclare/ProtoBody/Script, error]
+<TimeSensor DEF='ModulationClock'/> missing description [/X3D/Scene/ProtoDeclare/ProtoBody/TimeSensor, warning]

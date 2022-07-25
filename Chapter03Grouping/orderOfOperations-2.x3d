@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE X3D PUBLIC "ISO//Web3D//DTD X3D 3.1//EN" "http://www.web3d.org/specifications/x3d-3.1.dtd">
+<X3D profile='Immersive' version='3.1' xmlns:xsd='http://www.w3.org/2001/XMLSchema-instance' xsd:noNamespaceSchemaLocation='http://www.web3d.org/specifications/x3d-3.1.xsd'>
+  <head>
+    <meta content='orderOfOperations-2.x3d' name='title'/>
+    <meta content='Illustration of Order of Operations - intermediate and final result from translation, rotation, and scale' name='description'/>
+    <meta content='Leonard Daly' name='creator'/>
+    <meta content='2006-05-22 (22 May 2006)' name='created'/>
+    <meta content='23 March 2007' name='modified'/>
+    <meta content='V1.0' name='version'/>
+    <meta content='http://www.X3dGraphics.com' name='reference'/>
+    <meta content='http://www.web3d.org/x3d/content/examples/help.html' name='reference'/>
+    <meta content='Copyright (c) 2006, Daly Realism and Don Brutzman' name='rights'/>
+    <meta content='*enter image filename/url here*' name='image'/>
+    <meta content='*enter keywords here*' name='subject'/>
+    <meta content='http://www.X3dGraphics.com/examples/X3dForWebAuthors/.x3d' name='identifier'/>
+    <meta content='X3D-Edit, http://www.web3d.org/x3d/content/README.X3D-Edit.html' name='generator'/>
+    <meta content='../license.html' name='license'/>
+  </head>
+  <Scene>
+    <!-- Scene graph nodes are added here -->
+    <Background skyColor='1 1 1'/>
+    <Shape>
+      <Appearance>
+        <Material diffuseColor='0 .5 1'/>
+      </Appearance>
+      <Sphere radius='.2 .2 .2'/>
+    </Shape>
+    <Shape>
+      <Appearance>
+        <Material/>
+      </Appearance>
+      <Box size='.3 .6 .9'/>
+    </Shape>
+    <Transform scale='3 2 1.5'>
+      <Shape>
+        <Appearance>
+          <Material diffuseColor='1 .5 0' transparency='.8'/>
+        </Appearance>
+        <Box size='.3 .6 .9'/>
+      </Shape>
+    </Transform>
+    <Transform rotation='.3 .3 .3 1' scale='3 2 1.5'>
+      <Shape>
+        <Appearance>
+          <Material diffuseColor='1 .5 0' transparency='.85'/>
+        </Appearance>
+        <Box size='.3 .6 .9'/>
+      </Shape>
+    </Transform>
+    <Transform rotation='.3 .3 .3 1' scale='3 2 1.5' translation='1 1 0'>
+      <Shape>
+        <Appearance>
+          <Material diffuseColor='1 .5 0'/>
+        </Appearance>
+        <Box size='.3 .6 .9'/>
+      </Shape>
+    </Transform>
+  </Scene>
+</X3D>

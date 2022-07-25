@@ -1,0 +1,131 @@
+{ "X3D": {
+    "encoding":"UTF-8",
+    "@profile":"Interactive",
+    "@version":"3.3",
+    "@xsd:noNamespaceSchemaLocation":"http://www.web3d.org/specifications/x3d-3.3.xsd",
+    "JSON schema":"http://www.web3d.org/specifications/x3d-3.3-JSONSchema.json",
+    "head": {
+        "meta": [
+          {
+            "@name":"title",
+            "@content":"ElevationGrid.x3d"
+          },
+          {
+            "@name":"description",
+            "@content":"Simple ElevationGrid example."
+          },
+          {
+            "@name":"creator",
+            "@content":"Don Brutzman"
+          },
+          {
+            "@name":"organization",
+            "@content":"U.S. Naval Postgraduate School (NPS)"
+          },
+          {
+            "@name":"created",
+            "@content":"8 May 2008"
+          },
+          {
+            "@name":"modified",
+            "@content":"20 October 2019"
+          },
+          {
+            "@name":"identifier",
+            "@content":"http://X3dGraphics.com/examples/X3dForWebAuthors/Chapter06GeometryPointsLinesPolygons/ElevationGrid.x3d"
+          },
+          {
+            "@name":"generator",
+            "@content":"X3D-Edit 3.3, https://savage.nps.edu/X3D-Edit"
+          },
+          {
+            "@name":"license",
+            "@content":"../license.html"
+          },
+          {
+            "@name":"translated",
+            "@content":"25 March 2020"
+          },
+          {
+            "@name":"generator",
+            "@content":"X3dToJson.xslt, https://www.web3d.org/x3d/stylesheets/X3dToJson.html"
+          },
+          {
+            "@name":"reference",
+            "@content":"X3D JSON encoding: https://www.web3d.org/wiki/index.php/X3D_JSON_Encoding"
+          }
+        ]
+    },
+    "Scene": {
+        "-children":[
+          { "WorldInfo":
+            {
+              "@title":"ElevationGrid.x3d"
+            }
+          },
+          { "Background":
+            {
+              "@skyColor":[1,1,1]
+            }
+          },
+          { "NavigationInfo":
+            {
+            }
+          },
+          { "Viewpoint":
+            {
+              "@description":"ElevationGrid oblique view",
+              "@orientation":[1,0,0,-0.588003],
+              "@position":[0,4,6]
+            }
+          },
+          { "Viewpoint":
+            {
+              "@description":"ElevationGrid overhead view",
+              "@orientation":[1,0,0,-1.570796],
+              "@position":[0,8,0]
+            }
+          },
+          { "Viewpoint":
+            {
+              "@description":"ElevationGrid ground-level view",
+              "@position":[0,0.2,6]
+            }
+          },
+          { "Transform":
+            {
+              "@translation":[-2.5,0,-2.5],
+              "-children":[
+                { "Shape":
+                  {
+                    "@DEF":"ExampleElevationGridShape",
+                    "-geometry":
+                      { "ElevationGrid":
+                        {
+                          "@height":[0,0,0,0,0,0,0,1,1,1,1,0,0,1,2,2,1,0,0,1,2,2,1,0,0,1,1,1,1,0,0,0,0,0,0,0],
+                          "@solid":false,
+                          "@xDimension":6,
+                          "@zDimension":6
+                        }
+                      },
+                    "-appearance":
+                      { "Appearance":
+                        {
+                          "@DEF":"DiffuseRedAppearance",
+                          "-material":
+                            { "Material":
+                              {
+                                "@diffuseColor":[0.9,0.1,0.1]
+                              }
+                            }
+                        }
+                      }
+                  }
+                }
+              ]
+            }
+          }
+        ]
+    }
+  }
+}

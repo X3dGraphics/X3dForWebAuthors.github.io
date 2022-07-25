@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <link rel="shortcut icon" href="../images/X3DtextIcon16.png" title="X3D"/>
+      <title>X3D4WA, X3D for Web Authors Examples Archive, Chapter 02 Geometry Primitives</title>
+      <meta http-equiv="X-UA-Compatible" content="chrome=1,IE=edge"/>
+      <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+      <meta name="author" content="Don Brutzman"/>
+      <meta name="generator"
+             content="https://www.web3d.org/x3d/tools/CreateContentCatalog/CreateContentCatalogPages.xslt"/>
+      <meta name="modified" content="2022-07-03-07:00"/>
+      <meta name="keyword"
+             content="X3D, X3DV, VRML, VRML97, Extensible 3D, Virtual Reality Modeling Language"/>
+   </head>
+   <body>
+      <table
+              align="center"
+              summary="navigation"
+              border="1"
+              cellpadding="2"
+              width="95%">
+         <tr>
+            <td align="center" width="17%">
+               <a href="../index.html" target="_top">
+                  <img src="../images/ToC.png"
+                        title="Table of Contents"
+                        alt="Table of Contents"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter01TechnicalOverview/index.html" target="_top">
+                  <img src="../images/PreviousChapter.png"
+                        title="Previous Directory Summary"
+                        alt="Previous Directory Summary"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="viewpointSlideshow.html" target="_top">
+                  <img src="../images/MootoolsSlideshowLogo.jpg"
+                        title="Directory Viewpoint Slideshow"
+                        alt="Directory Viewpoint Slideshow"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="15%">
+               <a href="../javadoc/index.html?X3dForWebAuthors/Chapter02GeometryPrimitives/package-summary.html"
+                   title="Javadoc for translated java source"
+                   alt="Javadoc for translated java source"
+                   target="_blank">
+                  <img src="../images/Java-32.png"
+                        title="Javadoc for translated java source"
+                        alt="Javadoc for translated java source"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter03Grouping/index.html" target="_top">
+                  <img src="../images/NextChapter.png"
+                        title="Next Directory Summary"
+                        alt="Next Directory Summary"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="15%">
+               <a href="../../X3dResources.html" target="helpPage">
+                  <img src="../images/Help.png"
+                        title="X3D Resources"
+                        alt="X3D Resources"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+         </tr>
+      </table>
+      <h2 align="center">
+         <i> X3D Example Archives: </i>X3D4WA, X3D for Web Authors, Chapter 02 Geometry Primitives</h2>
+      <table align="center"
+              width="85%"
+              summary=""
+              border="0"
+              cellpadding="0">
+         <tr align="center">
+            <td><!--ChapterPackageDescription--><!--Contents of file ../../content/examples/X3dForWebAuthors/Chapter02GeometryPrimitives/package-catalog.html-->
+    
+    <table bgColor="#ffffff" border="0" width="100%">
+        <tbody>
+            <tr>
+                <td width="100%" align="center">
+                    <br />
+                    
+                    <a href="index.html"><img alt="Geometry Primitives" title="Geometry Primitives" border="0" hspace="0" src="GeometryPrimitiveNodesWhiteBackground.png" width="412" height="81" align="middle"/></a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <p>
+                 Shape nodes can contain one geometry node and one Appearance node.
+                 Geometry primitives include the 
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#Box" target="X3dTooltips" title="X3D Tooltip">Box</a>,
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#Cone" target="X3dTooltips" title="X3D Tooltip">Cone</a>,
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#Cylinder" target="X3dTooltips" title="X3D Tooltip">Cylinder</a>,
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#Sphere" target="X3dTooltips" title="X3D Tooltip">Sphere</a> 
+                 and
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#Text" target="X3dTooltips" title="X3D Tooltip">Text</a> nodes.
+                 Each is placed individually inside a
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#Shape" target="X3dTooltips" title="X3D Tooltip">Shape</a>
+                 node.
+				 Text nodes are further configured by
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#FontStyle" target="X3dTooltips" title="X3D Tooltip">FontStyle</a> nodes.
+    </p>
+    
+
+    <p>
+                 The supporting
+                 <a href="http://x3dgraphics.com/slidesets/X3dForWebAuthors/Chapter02GeometryPrimitives.pdf" target="X3dChapterSlideset">Chapter&nbsp;2 slideset</a>
+                 and course videos
+                (<a href="https://www.movesinstitute.org/Video/Courses/X3dForWebAuthors/X3dForWebAuthorsVideo.html#2" target="X3dChapterVideos">NPS</a>,
+                 <a href="https://www.youtube.com/playlist?list=PLuSIsM-86sik5uZNJ5sl5z5RxB2qvb1ji" target="X3dChapterYouTubeVideos">YouTube</a>)
+                 for <i>X3D for Web Authors</i> are available online via
+                 <a href="http://X3dGraphics.com" target="_blank">X3dGraphics.com</a>.
+    </p>
+    
+
+
+  </td>
+         </tr>
+      </table>
+      <table align="center"
+              width="85%"
+              summary=""
+              border="1"
+              cellpadding="6">
+         <tr align="center">
+            <th colspan="2" width="25%" align="center">&nbsp;&nbsp;10 X3D Models</th>
+            <th width="75%" align="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;X3D Model Descriptions</th>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="BoxExample"/>
+               <a href="BoxExampleIndex.html">
+                  <img src="_thumbnails/BoxExampleThumbnail.png"
+                        height="48"
+                        alt="BoxExample"
+                        title="BoxExample"/>
+               </a>
+            </td>
+            <td>
+               <a href="BoxExampleIndex.html">Box Example</a>
+            </td>
+            <td>Box geometric primitive node.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="ConeExample"/>
+               <a href="ConeExampleIndex.html">
+                  <img src="_thumbnails/ConeExampleThumbnail.png"
+                        height="48"
+                        alt="ConeExample"
+                        title="ConeExample"/>
+               </a>
+            </td>
+            <td>
+               <a href="ConeExampleIndex.html">Cone Example</a>
+            </td>
+            <td>Cone geometric primitive node.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="CylinderExample"/>
+               <a href="CylinderExampleIndex.html">
+                  <img src="_thumbnails/CylinderExampleThumbnail.png"
+                        height="48"
+                        alt="CylinderExample"
+                        title="CylinderExample"/>
+               </a>
+            </td>
+            <td>
+               <a href="CylinderExampleIndex.html">Cylinder Example</a>
+            </td>
+            <td>Cylinder geometric primitive node.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="GeometryPrimitiveNodes"/>
+               <a href="GeometryPrimitiveNodesIndex.html">
+                  <img src="_thumbnails/GeometryPrimitiveNodesThumbnail.png"
+                        height="48"
+                        alt="GeometryPrimitiveNodes"
+                        title="GeometryPrimitiveNodes"/>
+               </a>
+            </td>
+            <td>
+               <a href="GeometryPrimitiveNodesIndex.html">Geometry Primitive Nodes</a>
+            </td>
+            <td>Geometry Primitive Nodes: Shape, Box, Cone, Cylinder, Sphere, Text, FontStyle</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="GeometryPrimitiveNodesWhiteBackground"/>
+               <a href="GeometryPrimitiveNodesWhiteBackgroundIndex.html">
+                  <img src="_thumbnails/GeometryPrimitiveNodesWhiteBackgroundThumbnail.png"
+                        height="48"
+                        alt="GeometryPrimitiveNodesWhiteBackground"
+                        title="GeometryPrimitiveNodesWhiteBackground"/>
+               </a>
+            </td>
+            <td>
+               <a href="GeometryPrimitiveNodesWhiteBackgroundIndex.html">Geometry Primitive Nodes White Background</a>
+            </td>
+            <td>Geometry Primitive Nodes: Shape, Box, Cone, Cylinder, Sphere, Text, FontStyle</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="GeometryPrimitiveSubstituteMeshes"/>
+               <a href="GeometryPrimitiveSubstituteMeshesIndex.html">
+                  <img src="_thumbnails/GeometryPrimitiveSubstituteMeshesThumbnail.png"
+                        height="48"
+                        alt="GeometryPrimitiveSubstituteMeshes"
+                        title="GeometryPrimitiveSubstituteMeshes"/>
+               </a>
+            </td>
+            <td>
+               <a href="GeometryPrimitiveSubstituteMeshesIndex.html">Geometry Primitive Substitute Meshes</a>
+            </td>
+            <td>Substitute IndexedFaceSet mesh versions of Geometry Primitive Nodes: Shape, Box, Cone, Cylinder, Sphere.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="SphereExample"/>
+               <a href="SphereExampleIndex.html">
+                  <img src="_thumbnails/SphereExampleThumbnail.png"
+                        height="48"
+                        alt="SphereExample"
+                        title="SphereExample"/>
+               </a>
+            </td>
+            <td>
+               <a href="SphereExampleIndex.html">Sphere Example</a>
+            </td>
+            <td>Sphere geometric primitive node.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="TextHaveFunWithX3D"/>
+               <a href="TextHaveFunWithX3DIndex.html">
+                  <img src="_thumbnails/TextHaveFunWithX3DThumbnail.png"
+                        height="48"
+                        alt="TextHaveFunWithX3D"
+                        title="TextHaveFunWithX3D"/>
+               </a>
+            </td>
+            <td>
+               <a href="TextHaveFunWithX3DIndex.html">Text Have Fun With X3D</a>
+            </td>
+            <td>Simple smiley-face example illustrating an emoticon character entity, used in an MFString Text.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="TextLengthMaxExtent"/>
+               <a href="TextLengthMaxExtentIndex.html">
+                  <img src="_thumbnails/TextLengthMaxExtentThumbnail.png"
+                        height="48"
+                        alt="TextLengthMaxExtent"
+                        title="TextLengthMaxExtent"/>
+               </a>
+            </td>
+            <td>
+               <a href="TextLengthMaxExtentIndex.html">Text Length Max Extent</a>
+            </td>
+            <td>Simple Text node, illustrating length array and maxExtent field</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="TextSpecialCharacters"/>
+               <a href="TextSpecialCharactersIndex.html">
+                  <img src="_thumbnails/TextSpecialCharactersThumbnail.png"
+                        height="48"
+                        alt="TextSpecialCharacters"
+                        title="TextSpecialCharacters"/>
+               </a>
+            </td>
+            <td>
+               <a href="TextSpecialCharactersIndex.html">Text Special Characters</a>
+            </td>
+            <td>Text node demonstration of quotation, apostrophe, ampersand and backslash characters using X3D MFString escaping for XML character entities.</td>
+         </tr>
+      </table>
+      <table width="80%" border="0" align="center">
+         <tr>
+            <td>
+               <p style="text-align:center">Online at <a href="https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter02GeometryPrimitives/index.html">https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter02GeometryPrimitives</a>
+               </p>
+               <p align="center" width="80%">
+                  <a href="https://validator.w3.org/check?uri=https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter02GeometryPrimitives/index.html"
+                      target="_blank">
+                     <img src="https://www.w3.org/Icons/valid-xhtml10"
+                           title="Validate XHTML 1.1"
+                           alt="Validate XHTML 1.1"
+                           height="31"
+                           width="88"
+                           border="0"
+                           align="right"/>
+                  </a>
+               </p>
+               <p style="text-align:center">Master source-code model archive is under subversion control at <br/>
+                  <a href="https://sourceforge.net/p/x3d/code/HEAD/tree/www.web3d.org/x3d/content/examples/X3dForWebAuthors/Chapter02GeometryPrimitives/"
+                      target="_blank">https://sourceforge.net/p/x3d/code/HEAD/tree/www.web3d.org/x3d/content/examples/X3dForWebAuthors/Chapter02GeometryPrimitives</a>
+               </p>
+            </td>
+         </tr>
+      </table>
+      <p align="center">
+The 
+<a href="../../X3dResources.html#X3dForWebAuthors">X3D Resources: Examples</a> page
+and
+<a href="https://savage.nps.edu/Savage/developers.html">Savage Developers Guide</a>
+provide more information about the production of this archive.</p>
+      <table
+              align="center"
+              summary="navigation"
+              border="1"
+              cellpadding="2"
+              width="95%">
+         <tr>
+            <td align="center" width="17%">
+               <a href="../index.html" target="_top">
+                  <img src="../images/ToC.png"
+                        title="Table of Contents"
+                        alt="Table of Contents"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter01TechnicalOverview/index.html" target="_top">
+                  <img src="../images/PreviousChapter.png"
+                        title="Previous Directory Summary"
+                        alt="Previous Directory Summary"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="viewpointSlideshow.html" target="_top">
+                  <img src="../images/MootoolsSlideshowLogo.jpg"
+                        title="Directory Viewpoint Slideshow"
+                        alt="Directory Viewpoint Slideshow"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="15%">
+               <a href="../javadoc/index.html?X3dForWebAuthors/Chapter02GeometryPrimitives/package-summary.html"
+                   title="Javadoc for translated java source"
+                   alt="Javadoc for translated java source"
+                   target="_blank">
+                  <img src="../images/Java-32.png"
+                        title="Javadoc for translated java source"
+                        alt="Javadoc for translated java source"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter03Grouping/index.html" target="_top">
+                  <img src="../images/NextChapter.png"
+                        title="Next Directory Summary"
+                        alt="Next Directory Summary"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="15%">
+               <a href="../../X3dResources.html" target="helpPage">
+                  <img src="../images/Help.png"
+                        title="X3D Resources"
+                        alt="X3D Resources"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+         </tr>
+      </table>
+   </body>
+</html>

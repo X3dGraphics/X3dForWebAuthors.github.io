@@ -1,0 +1,651 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <link rel="shortcut icon" href="../images/X3DtextIcon16.png" title="X3D"/>
+      <title>X3D4WA, X3D for Web Authors Examples Archive, Chapter 07 Event Animation Interpolation</title>
+      <meta http-equiv="X-UA-Compatible" content="chrome=1,IE=edge"/>
+      <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+      <meta name="author" content="Don Brutzman"/>
+      <meta name="generator"
+             content="https://www.web3d.org/x3d/tools/CreateContentCatalog/CreateContentCatalogPages.xslt"/>
+      <meta name="modified" content="2022-07-03-07:00"/>
+      <meta name="keyword"
+             content="X3D, X3DV, VRML, VRML97, Extensible 3D, Virtual Reality Modeling Language"/>
+   </head>
+   <body>
+      <table
+              align="center"
+              summary="navigation"
+              border="1"
+              cellpadding="2"
+              width="95%">
+         <tr>
+            <td align="center" width="17%">
+               <a href="../index.html" target="_top">
+                  <img src="../images/ToC.png"
+                        title="Table of Contents"
+                        alt="Table of Contents"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter06GeometryPointsLinesPolygons/index.html" target="_top">
+                  <img src="../images/PreviousChapter.png"
+                        title="Previous Directory Summary"
+                        alt="Previous Directory Summary"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="viewpointSlideshow.html" target="_top">
+                  <img src="../images/MootoolsSlideshowLogo.jpg"
+                        title="Directory Viewpoint Slideshow"
+                        alt="Directory Viewpoint Slideshow"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="15%">
+               <a href="../javadoc/index.html?X3dForWebAuthors/Chapter07EventAnimationInterpolation/package-summary.html"
+                   title="Javadoc for translated java source"
+                   alt="Javadoc for translated java source"
+                   target="_blank">
+                  <img src="../images/Java-32.png"
+                        title="Javadoc for translated java source"
+                        alt="Javadoc for translated java source"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter08UserInteractivity/index.html" target="_top">
+                  <img src="../images/NextChapter.png"
+                        title="Next Directory Summary"
+                        alt="Next Directory Summary"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="15%">
+               <a href="../../X3dResources.html" target="helpPage">
+                  <img src="../images/Help.png"
+                        title="X3D Resources"
+                        alt="X3D Resources"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+         </tr>
+      </table>
+      <h2 align="center">
+         <i> X3D Example Archives: </i>X3D4WA, X3D for Web Authors, Chapter 07 Event Animation Interpolation</h2>
+      <table align="center"
+              width="85%"
+              summary=""
+              border="0"
+              cellpadding="0">
+         <tr align="center">
+            <td><!--ChapterPackageDescription--><!--Contents of file ../../content/examples/X3dForWebAuthors/Chapter07EventAnimationInterpolation/package-catalog.html-->
+    
+    <table bgColor="#ffffff" border="0" width="100%">
+        <tbody>
+            <tr>
+                <td width="100%" align="center">
+                    <br />
+                    
+                    <a href="index.html"><img alt="Dolphin Wireframe: Coordinate Interpolator Morphing" title="Dolphin Wireframe: Coordinate Interpolator Morphing" border="0" hspace="0" src="DolphinWireframe.png" width="350" height="105" align="middle"/></a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <p>
+		 Event values can be generated through TimeSensor, ROUTE and interpolator chains to create animation effects in a scene graph.
+                 Strong typing requirements ensure that only valid values are allowed to modify the scene graph.
+    </p>
+    
+
+
+    <p>
+                 The
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#TimeSensor" target="X3dTooltips" title="X3D Tooltip">TimeSensor</a>
+                 node produces output stimulus events that track the passage of time intervals using the computer clock.
+                 Event animation and interpolation is accomplished by 
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#ROUTE" target="X3dTooltips" title="X3D Tooltip">ROUTE</a>
+                 connections that pass events between nodes.
+    </p>
+    
+
+
+    <p>
+                 Strictly typed interpolation values are produced by 
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#ScalarInterpolator" target="X3dTooltips" title="X3D Tooltip">ScalarInterpolator</a>,
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#ColorInterpolator" target="X3dTooltips" title="X3D Tooltip">ColorInterpolator</a>,
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#PositionInterpolator" target="X3dTooltips" title="X3D Tooltip">PositionInterpolator</a>,
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#PositionInterpolator2D" target="X3dTooltips" title="X3D Tooltip">PositionInterpolator2D</a>,
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#OrientationInterpolator" target="X3dTooltips" title="X3D Tooltip">OrientationInterpolator</a>,
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#NormalInterpolator" target="X3dTooltips" title="X3D Tooltip">NormalInterpolator</a>, 
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#CoordinateInterpolator" target="X3dTooltips" title="X3D Tooltip">CoordinateInterpolator</a>,
+                 and 
+                 <a href="https://www.web3d.org/x3d/content/X3dTooltips.html#CoordinateInterpolator2D" target="X3dTooltips" title="X3D Tooltip">CoordinateInterpolator2D</a> nodes.
+    </p>
+    
+
+
+    <p>
+		 Authors can use a
+                 <a href="Chapter07-EventAnimationInterpolation.10StepAnimationDesignProcess.pdf">10-step algorithm checklist</a>
+                (with <a href="TimeSensorScalarInterpolatorFilterDiagram.png">example diagram</a>)
+                        as an event-animation design pattern that helps build consistent event-routing chains.
+                 The supporting
+                 <a href="http://x3dgraphics.com/slidesets/X3dForWebAuthors/Chapter07EventAnimationInterpolation.pdf" target="X3dChapterSlideset">Chapter&nbsp;7 slideset</a>
+                 and course videos
+                (<a href="https://www.movesinstitute.org/Video/Courses/X3dForWebAuthors/X3dForWebAuthorsVideo.html#7" target="X3dChapterVideos">NPS</a>,
+                 <a href="https://www.youtube.com/playlist?list=PLuSIsM-86simo9kv21MLgaNKw7LGg8HjL" target="X3dChapterYouTubeVideos">YouTube</a>)
+                 for <i>X3D for Web Authors</i> are available online via
+                 <a href="http://X3dGraphics.com" target="_blank">X3dGraphics.com</a>.
+    </p>
+    
+
+
+  </td>
+         </tr>
+      </table>
+      <table align="center"
+              width="85%"
+              summary=""
+              border="1"
+              cellpadding="6">
+         <tr align="center">
+            <th colspan="2" width="25%" align="center">&nbsp;&nbsp;25 X3D Models</th>
+            <th width="75%" align="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;X3D Model Descriptions</th>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="CircleFishPositionInterpolator"/>
+               <a href="CircleFishPositionInterpolatorIndex.html">
+                  <img src="_thumbnails/CircleFishPositionInterpolatorThumbnail.png"
+                        height="48"
+                        alt="CircleFishPositionInterpolator"
+                        title="CircleFishPositionInterpolator"/>
+               </a>
+            </td>
+            <td>
+               <a href="CircleFishPositionInterpolatorIndex.html">Circle Fish Position Interpolator</a>
+            </td>
+            <td>Run-time modification of a fishes position using PositionInterpolator.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="CircleFishPrototype"/>
+               <a href="CircleFishPrototypeIndex.html">
+                  <img src="_thumbnails/CircleFishPrototypeThumbnail.png"
+                        height="48"
+                        alt="CircleFishPrototype"
+                        title="CircleFishPrototype"/>
+               </a>
+            </td>
+            <td>
+               <a href="CircleFishPrototypeIndex.html">Circle Fish Prototype</a>
+            </td>
+            <td>This is a prototype for a CircleFish, which is also used by CircleFishLod. Default fish size: length is 1 m (Y-axis), max Height is 1 m (Z-axis), max Width is 10 cm (X-axis).</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="CircleFishPTPrototype"/>
+               <a href="CircleFishPTPrototypeIndex.html">
+                  <img src="_thumbnails/CircleFishPTPrototypeThumbnail.png"
+                        height="48"
+                        alt="CircleFishPTPrototype"
+                        title="CircleFishPTPrototype"/>
+               </a>
+            </td>
+            <td>
+               <a href="CircleFishPTPrototypeIndex.html">Circle Fish PTPrototype</a>
+            </td>
+            <td>This is a prototype for a CircleFish, which is also used by CircleFishLod. Default fish size: length is 1 m (Y-axis), max Height is 1 m (Z-axis), max Width is 10 cm (X-axis).</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="ColorInterpolatorExample"/>
+               <a href="ColorInterpolatorExampleIndex.html">
+                  <img src="_thumbnails/ColorInterpolatorExampleThumbnail.png"
+                        height="48"
+                        alt="ColorInterpolatorExample"
+                        title="ColorInterpolatorExample"/>
+               </a>
+            </td>
+            <td>
+               <a href="ColorInterpolatorExampleIndex.html">Color Interpolator Example</a>
+            </td>
+            <td>Demonstrate basic design pattern for animating a node.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="ColorInterpolatorFishPrototype"/>
+               <a href="ColorInterpolatorFishPrototypeIndex.html">
+                  <img src="_thumbnails/ColorInterpolatorFishPrototypeThumbnail.png"
+                        height="48"
+                        alt="ColorInterpolatorFishPrototype"
+                        title="ColorInterpolatorFishPrototype"/>
+               </a>
+            </td>
+            <td>
+               <a href="ColorInterpolatorFishPrototypeIndex.html">Color Interpolator Fish Prototype</a>
+            </td>
+            <td>This is a prototype for a CircleFish, which is also used by CircleFishLod. Default fish size: length is 1 m (Y-axis), max Height is 1 m (Z-axis), max Width is 10 cm (X-axis).</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="CoordinateInterpolator2dExample"/>
+               <a href="CoordinateInterpolator2dExampleIndex.html">
+                  <img src="_thumbnails/CoordinateInterpolator2dExampleThumbnail.png"
+                        height="48"
+                        alt="CoordinateInterpolator2dExample"
+                        title="CoordinateInterpolator2dExample"/>
+               </a>
+            </td>
+            <td>
+               <a href="CoordinateInterpolator2dExampleIndex.html">Coordinate Interpolator 2D Example</a>
+            </td>
+            <td>Example to interpolate using CoordinateInterpolator2D - click geometry to activate animation loop.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="DolphinMorpher"/>
+               <a href="DolphinMorpherIndex.html">
+                  <img src="_thumbnails/DolphinMorpherThumbnail.png"
+                        height="48"
+                        alt="DolphinMorpher"
+                        title="DolphinMorpher"/>
+               </a>
+            </td>
+            <td>
+               <a href="DolphinMorpherIndex.html">Dolphin Morpher</a>
+            </td>
+            <td>Morph coordinates for smooth animation between 3 different dolphin poses using CoordinateInterpolator.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="DolphinPose01"/>
+               <a href="DolphinPose01Index.html">
+                  <img src="_thumbnails/DolphinPose01Thumbnail.png"
+                        height="48"
+                        alt="DolphinPose01"
+                        title="DolphinPose01"/>
+               </a>
+            </td>
+            <td>
+               <a href="DolphinPose01Index.html">Dolphin Pose 01</a>
+            </td>
+            <td>First pose for bottlenose dolphin is neutral position, exported from Maya with values used in DolphinMorpher.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="DolphinPose02"/>
+               <a href="DolphinPose02Index.html">
+                  <img src="_thumbnails/DolphinPose02Thumbnail.png"
+                        height="48"
+                        alt="DolphinPose02"
+                        title="DolphinPose02"/>
+               </a>
+            </td>
+            <td>
+               <a href="DolphinPose02Index.html">Dolphin Pose 02</a>
+            </td>
+            <td>Second pose for bottlenose dolphin is curved upward, exported from Maya with values used in DolphinMorpher.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="DolphinPose03"/>
+               <a href="DolphinPose03Index.html">
+                  <img src="_thumbnails/DolphinPose03Thumbnail.png"
+                        height="48"
+                        alt="DolphinPose03"
+                        title="DolphinPose03"/>
+               </a>
+            </td>
+            <td>
+               <a href="DolphinPose03Index.html">Dolphin Pose 03</a>
+            </td>
+            <td>Third pose for bottlenose dolphin is curved downward, exported from Maya with values used in DolphinMorpher.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="DolphinSwitcher"/>
+               <a href="DolphinSwitcherIndex.html">
+                  <img src="_thumbnails/DolphinSwitcherThumbnail.png"
+                        height="48"
+                        alt="DolphinSwitcher"
+                        title="DolphinSwitcher"/>
+               </a>
+            </td>
+            <td>
+               <a href="DolphinSwitcherIndex.html">Dolphin Switcher</a>
+            </td>
+            <td>Switch animation among three different dolphin poses in a freeze-frame style.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="Garibaldi"/>
+               <a href="GaribaldiIndex.html">
+                  <img src="_thumbnails/GaribaldiThumbnail.png"
+                        height="48"
+                        alt="Garibaldi"
+                        title="Garibaldi"/>
+               </a>
+            </td>
+            <td>
+               <a href="GaribaldiIndex.html">Garibaldi</a>
+            </td>
+            <td>The basic, unanimated Garibaldi fish.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="HelloX3dAuthorsAnimationChain"/>
+               <a href="HelloX3dAuthorsAnimationChainIndex.html">
+                  <img src="_thumbnails/HelloX3dAuthorsAnimationChainThumbnail.png"
+                        height="48"
+                        alt="HelloX3dAuthorsAnimationChain"
+                        title="HelloX3dAuthorsAnimationChain"/>
+               </a>
+            </td>
+            <td>
+               <a href="HelloX3dAuthorsAnimationChainIndex.html">Hello X3D Authors Animation Chain</a>
+            </td>
+            <td>Fully developed animation-chain example showing spinning globe and text: Hello!</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="MotionInterpolatorFishPrototype"/>
+               <a href="MotionInterpolatorFishPrototypeIndex.html">
+                  <img src="_thumbnails/MotionInterpolatorFishPrototypeThumbnail.png"
+                        height="48"
+                        alt="MotionInterpolatorFishPrototype"
+                        title="MotionInterpolatorFishPrototype"/>
+               </a>
+            </td>
+            <td>
+               <a href="MotionInterpolatorFishPrototypeIndex.html">Motion Interpolator Fish Prototype</a>
+            </td>
+            <td>This is a prototype for a CircleFish, which is also used by CircleFishLod. Default fish size: length is 1 m (Y-axis), max Height is 1 m (Z-axis), max Width is 10 cm (X-axis).</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="NormalInterpolatorExample"/>
+               <a href="NormalInterpolatorExampleIndex.html">
+                  <img src="_thumbnails/NormalInterpolatorExampleThumbnail.png"
+                        height="48"
+                        alt="NormalInterpolatorExample"
+                        title="NormalInterpolatorExample"/>
+               </a>
+            </td>
+            <td>
+               <a href="NormalInterpolatorExampleIndex.html">Normal Interpolator Example</a>
+            </td>
+            <td>Example normal (perpendicular vector) animation, where orange vectors show normal direction at each polygon vertex.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="OrientationInterpolatorFishExample"/>
+               <a href="OrientationInterpolatorFishExampleIndex.html">
+                  <img src="_thumbnails/OrientationInterpolatorFishExampleThumbnail.png"
+                        height="48"
+                        alt="OrientationInterpolatorFishExample"
+                        title="OrientationInterpolatorFishExample"/>
+               </a>
+            </td>
+            <td>
+               <a href="OrientationInterpolatorFishExampleIndex.html">Orientation Interpolator Fish Example</a>
+            </td>
+            <td>Run-time modification of fishes position and orientation using PositionInterpolator and OrientationInterpolator.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="OrientationInterpolatorFishPrototype"/>
+               <a href="OrientationInterpolatorFishPrototypeIndex.html">
+                  <img src="_thumbnails/OrientationInterpolatorFishPrototypeThumbnail.png"
+                        height="48"
+                        alt="OrientationInterpolatorFishPrototype"
+                        title="OrientationInterpolatorFishPrototype"/>
+               </a>
+            </td>
+            <td>
+               <a href="OrientationInterpolatorFishPrototypeIndex.html">Orientation Interpolator Fish Prototype</a>
+            </td>
+            <td>This is a prototype for a CircleFish, which is also used by CircleFishLod. Default fish size: length is 1 m (Y-axis), max Height is 1 m (Z-axis), max Width is 10 cm (X-axis).</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="PositionInterpolator2dExample"/>
+               <a href="PositionInterpolator2dExampleIndex.html">
+                  <img src="_thumbnails/PositionInterpolator2dExampleThumbnail.png"
+                        height="48"
+                        alt="PositionInterpolator2dExample"
+                        title="PositionInterpolator2dExample"/>
+               </a>
+            </td>
+            <td>
+               <a href="PositionInterpolator2dExampleIndex.html">Position Interpolator 2D Example</a>
+            </td>
+            <td>Interpolation example using PositionInterpolator2D, user can touch (select) the geometry to activate an animation loop that rescales the image texture superimposed on the geometry.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="PositionInterpolatorPrototype"/>
+               <a href="PositionInterpolatorPrototypeIndex.html">
+                  <img src="_thumbnails/PositionInterpolatorPrototypeThumbnail.png"
+                        height="48"
+                        alt="PositionInterpolatorPrototype"
+                        title="PositionInterpolatorPrototype"/>
+               </a>
+            </td>
+            <td>
+               <a href="PositionInterpolatorPrototypeIndex.html">Position Interpolator Prototype</a>
+            </td>
+            <td>This is a prototype for a CircleFish, which is also used by CircleFishLod. Default fish size: length is 1 m (Y-axis), max Height is 1 m (Z-axis), max Width is 10 cm (X-axis).</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="PositionOrientationInterpolatorsExample"/>
+               <a href="PositionOrientationInterpolatorsExampleIndex.html">
+                  <img src="_thumbnails/PositionOrientationInterpolatorsExampleThumbnail.png"
+                        height="48"
+                        alt="PositionOrientationInterpolatorsExample"
+                        title="PositionOrientationInterpolatorsExample"/>
+               </a>
+            </td>
+            <td>
+               <a href="PositionOrientationInterpolatorsExampleIndex.html">Position Orientation Interpolators Example</a>
+            </td>
+            <td>Demonstrate use of PositionInterpolator and OrientationInterpolator to animate object motion.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="PositionOrientationInterpolatorsExampleTraced"/>
+               <a href="PositionOrientationInterpolatorsExampleTracedIndex.html">
+                  <img src="_thumbnails/PositionOrientationInterpolatorsExampleTracedThumbnail.png"
+                        height="48"
+                        alt="PositionOrientationInterpolatorsExampleTraced"
+                        title="PositionOrientationInterpolatorsExampleTraced"/>
+               </a>
+            </td>
+            <td>
+               <a href="PositionOrientationInterpolatorsExampleTracedIndex.html">Position Orientation Interpolators Example Traced</a>
+            </td>
+            <td>Demonstrate use of PositionInterpolator and OrientationInterpolator to animate object motion, with console output tracing added for PositionInterpolator and ROUTE events.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="ScalarInterpolatorExample"/>
+               <a href="ScalarInterpolatorExampleIndex.html">
+                  <img src="_thumbnails/ScalarInterpolatorExampleThumbnail.png"
+                        height="48"
+                        alt="ScalarInterpolatorExample"
+                        title="ScalarInterpolatorExample"/>
+               </a>
+            </td>
+            <td>
+               <a href="ScalarInterpolatorExampleIndex.html">Scalar Interpolator Example</a>
+            </td>
+            <td>Demonstrate use of ScalarInterpolator to animate transparency.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="ScalarInterpolatorFishExample"/>
+               <a href="ScalarInterpolatorFishExampleIndex.html">
+                  <img src="_thumbnails/ScalarInterpolatorFishExampleThumbnail.png"
+                        height="48"
+                        alt="ScalarInterpolatorFishExample"
+                        title="ScalarInterpolatorFishExample"/>
+               </a>
+            </td>
+            <td>
+               <a href="ScalarInterpolatorFishExampleIndex.html">Scalar Interpolator Fish Example</a>
+            </td>
+            <td>Run-time changing of a scalar property: Material transparency.</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="ScalarInterpolatorFishPrototype"/>
+               <a href="ScalarInterpolatorFishPrototypeIndex.html">
+                  <img src="_thumbnails/ScalarInterpolatorFishPrototypeThumbnail.png"
+                        height="48"
+                        alt="ScalarInterpolatorFishPrototype"
+                        title="ScalarInterpolatorFishPrototype"/>
+               </a>
+            </td>
+            <td>
+               <a href="ScalarInterpolatorFishPrototypeIndex.html">Scalar Interpolator Fish Prototype</a>
+            </td>
+            <td>This is a prototype for a CircleFish, which is also used by CircleFishLod. Default fish size: length is 1 m (Y-axis), max Height is 1 m (Z-axis), max Width is 10 cm (X-axis).</td>
+         </tr>
+         <tr align="left">
+            <td align="center" width="5%">
+               <a name="TimeSensorChaining"/>
+               <a href="TimeSensorChainingIndex.html">
+                  <img src="_thumbnails/TimeSensorChainingThumbnail.png"
+                        height="48"
+                        alt="TimeSensorChaining"
+                        title="TimeSensorChaining"/>
+               </a>
+            </td>
+            <td>
+               <a href="TimeSensorChainingIndex.html">Time Sensor Chaining</a>
+            </td>
+            <td>Connecting TimeSensor nodes so that the completion of one behavior chain triggers another.</td>
+         </tr>
+      </table>
+      <table width="80%" border="0" align="center">
+         <tr>
+            <td>
+               <p style="text-align:center">Online at <a href="https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter07EventAnimationInterpolation/index.html">https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter07EventAnimationInterpolation</a>
+               </p>
+               <p align="center" width="80%">
+                  <a href="https://validator.w3.org/check?uri=https://X3dGraphics.com/examples/X3dForWebAuthors/Chapter07EventAnimationInterpolation/index.html"
+                      target="_blank">
+                     <img src="https://www.w3.org/Icons/valid-xhtml10"
+                           title="Validate XHTML 1.1"
+                           alt="Validate XHTML 1.1"
+                           height="31"
+                           width="88"
+                           border="0"
+                           align="right"/>
+                  </a>
+               </p>
+               <p style="text-align:center">Master source-code model archive is under subversion control at <br/>
+                  <a href="https://sourceforge.net/p/x3d/code/HEAD/tree/www.web3d.org/x3d/content/examples/X3dForWebAuthors/Chapter07EventAnimationInterpolation/"
+                      target="_blank">https://sourceforge.net/p/x3d/code/HEAD/tree/www.web3d.org/x3d/content/examples/X3dForWebAuthors/Chapter07EventAnimationInterpolation</a>
+               </p>
+            </td>
+         </tr>
+      </table>
+      <p align="center">
+The 
+<a href="../../X3dResources.html#X3dForWebAuthors">X3D Resources: Examples</a> page
+and
+<a href="https://savage.nps.edu/Savage/developers.html">Savage Developers Guide</a>
+provide more information about the production of this archive.</p>
+      <table
+              align="center"
+              summary="navigation"
+              border="1"
+              cellpadding="2"
+              width="95%">
+         <tr>
+            <td align="center" width="17%">
+               <a href="../index.html" target="_top">
+                  <img src="../images/ToC.png"
+                        title="Table of Contents"
+                        alt="Table of Contents"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter06GeometryPointsLinesPolygons/index.html" target="_top">
+                  <img src="../images/PreviousChapter.png"
+                        title="Previous Directory Summary"
+                        alt="Previous Directory Summary"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="viewpointSlideshow.html" target="_top">
+                  <img src="../images/MootoolsSlideshowLogo.jpg"
+                        title="Directory Viewpoint Slideshow"
+                        alt="Directory Viewpoint Slideshow"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="15%">
+               <a href="../javadoc/index.html?X3dForWebAuthors/Chapter07EventAnimationInterpolation/package-summary.html"
+                   title="Javadoc for translated java source"
+                   alt="Javadoc for translated java source"
+                   target="_blank">
+                  <img src="../images/Java-32.png"
+                        title="Javadoc for translated java source"
+                        alt="Javadoc for translated java source"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="17%">
+               <a href="../Chapter08UserInteractivity/index.html" target="_top">
+                  <img src="../images/NextChapter.png"
+                        title="Next Directory Summary"
+                        alt="Next Directory Summary"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+            <td align="center" width="15%">
+               <a href="../../X3dResources.html" target="helpPage">
+                  <img src="../images/Help.png"
+                        title="X3D Resources"
+                        alt="X3D Resources"
+                        height="32"
+                        width="32"
+                        style="border-width:0px"/>
+               </a>
+            </td>
+         </tr>
+      </table>
+   </body>
+</html>
